@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "WFRP 2ed - Docs",
+    pageTitle: "DOS1 - Docs",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "pl-PL",
-    baseUrl: "robak132.github.io/wfrp2e-docs",
+    baseUrl: "robak132.github.io/DOS-crafting-docs",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -55,7 +55,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
-	  Plugin.HardLineBreaks(),
+      Plugin.HardLineBreaks(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],

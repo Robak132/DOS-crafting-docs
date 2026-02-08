@@ -1,0 +1,64 @@
+@use "./base.scss";
+
+.backlinks {
+  margin-top: 2rem;
+
+  .backlinks-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .tag-group {
+    margin-bottom: 0.8rem;
+  }
+
+  .tag-header {
+    background: var(--lightgray);
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background: var(--highlight);
+      color: var(--text-on-highlight);
+    }
+  }
+
+  .tag-links {
+    list-style: none;
+    margin: 0.4rem 0 0 1rem;
+    padding: 0;
+
+    li {
+      margin: 0.2rem 0;
+    }
+  }
+}
+
+/* Rozciągnięcie tabel do pełnej szerokości strony */
+.page article table {
+  width: 100%;
+  max-width: none;
+  margin-left: calc(-1 * var(--popover-width, 0px));
+  margin-right: calc(-1 * var(--popover-width, 0px));
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+/* Na wąskich ekranach zostaw domyślną szerokość */
+@media (max-width: 768px) {
+  .page article table {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

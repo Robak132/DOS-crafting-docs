@@ -1,0 +1,36 @@
+@use "../../styles/variables.scss" as *;
+
+ul.section-ul {
+  list-style: none;
+  margin-top: 2em;
+  padding-left: 0;
+}
+
+li.section-li {
+  margin-bottom: 0.5em;
+
+  & > .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    @media all and ($mobile) {
+      & > .tags {
+        display: none;
+      }
+    }
+
+    & > .desc > a {
+      background-color: transparent;
+    }
+  }
+}
+
+// modifications in popover context
+.popover .section {
+
+  & > .tags {
+    display: none;
+  }
+}

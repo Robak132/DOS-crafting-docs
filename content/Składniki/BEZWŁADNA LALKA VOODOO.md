@@ -1,0 +1,1 @@
+[[DREWNIANA FIGURKA]] + [[IGŁA]]

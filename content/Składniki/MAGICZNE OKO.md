@@ -1,0 +1,2 @@
+[[CZARODZIEJSKI PYŁ]] + [[OKO]]
+- **Wymagania:** Crafting 1

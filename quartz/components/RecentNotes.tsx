@@ -41,6 +41,7 @@ export default ((userOpts?: Partial<Options>) => {
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
+            const visibleTags = tags.filter((tag) => tag !== "index")
 
             return (
               <li class="recent-li">
@@ -59,11 +60,12 @@ export default ((userOpts?: Partial<Options>) => {
                   )}
                   {opts.showTags && (
                     <ul class="tags">
-                      {tags.map((tag) => (
+                      {visibleTags.map((tag) => (
                         <li>
                           <a
                             class="internal tag-link"
                             href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                            data-no-popover="true"
                           >
                             {tag}
                           </a>

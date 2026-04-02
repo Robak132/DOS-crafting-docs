@@ -1,0 +1,249 @@
+.tag-explorer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .tag-explorer-header {
+    margin-top: 1rem;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .tag-explorer-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0;
+    color: var(--dark);
+
+    & h3 {
+      font-size: 1rem;
+      margin: 0;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .fold {
+      transition: transform 0.3s ease;
+
+      &.collapsed {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .active-filters {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    min-height: 1.5rem;
+    margin-top: 0.5rem;
+
+    .filters-label {
+      font-size: 0.8rem;
+      color: var(--gray);
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    .reset-filters-btn {
+      background-color: var(--highlight);
+      border: 1px solid var(--lightgray);
+      border-radius: 4px;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.75rem;
+      cursor: pointer;
+      color: var(--secondary);
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: var(--lightgray);
+        color: var(--dark);
+      }
+    }
+  }
+
+  .tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: none;
+    overflow: visible;
+    box-sizing: border-box;
+
+    &.collapsed {
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    li {
+      margin: 0.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 0.5rem; // Space for scrollbar
+      min-width: 0; // Allow flex children to shrink
+    }
+
+    .tag-button {
+      color: var(--secondary);
+      text-decoration: none;
+      background-color: var(--highlight);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: calc(100% - 3rem); // Leave space for count
+      font-size: 0.85rem;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--tertiary);
+      }
+
+      &[data-state='include'] {
+        background-color: rgba(34, 197, 94, 0.2);
+        border-color: #22c55e;
+        color: #22c55e;
+      }
+
+      &[data-state='exclude'] {
+        background-color: rgba(239, 68, 68, 0.2);
+        border-color: #ef4444;
+        color: #ef4444;
+        text-decoration: line-through;
+      }
+    }
+
+    .tag-link {
+      color: var(--secondary);
+      text-decoration: none;
+      background-color: var(--highlight);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+
+      &:hover {
+        color: var(--tertiary);
+      }
+    }
+
+    .tag-count {
+      color: var(--gray);
+      font-size: 0.8rem;
+    }
+  }
+
+  .index-links {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    .index-links-header {
+      h4 {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+    }
+
+    .index-links-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.2rem;
+
+      li {
+        min-width: 0;
+      }
+
+      .index-link {
+        color: var(--secondary);
+        text-decoration: none;
+        background-color: var(--highlight);
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: var(--tertiary);
+        }
+      }
+    }
+  }
+}
+
+// Styles for results displayed in main article window
+.tag-filter-results-main {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 0;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--dark);
+    text-align: center;
+  }
+
+  .results-count {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .filtered-pages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--lightgray);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: var(--secondary);
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+          color: var(--tertiary);
+        }
+      }
+    }
+  }
+}
+
+// Ensure article maintains proper layout when showing filter results
+article:has(.tag-filter-results-main) {
+  display: block;
+  width: 100%;
+}

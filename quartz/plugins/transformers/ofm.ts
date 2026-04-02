@@ -12,8 +12,8 @@ import { Element, Literal, Root as HtmlRoot } from "hast"
 import { ReplaceFunction, findAndReplace as mdastFindReplace } from "mdast-util-find-and-replace"
 import rehypeRaw from "rehype-raw"
 import { SKIP, visit } from "unist-util-visit"
-import path from "path"
-import { splitAnchor } from "../../util/path"
+import path from "node:path"
+import { splitAnchor, FilePath, slugTag, slugifyFilePath } from "../../util/path"
 import { JSResource, CSSResource } from "../../util/resources"
 // @ts-ignore
 import calloutScript from "../../components/scripts/callout.inline"
@@ -22,7 +22,7 @@ import checkboxScript from "../../components/scripts/checkbox.inline"
 // @ts-ignore
 import mermaidScript from "../../components/scripts/mermaid.inline"
 import mermaidStyle from "../../components/styles/mermaid.inline.scss"
-import { FilePath, pathToRoot, slugTag, slugifyFilePath } from "../../util/path"
+
 import { toHast } from "mdast-util-to-hast"
 import { toHtml } from "hast-util-to-html"
 import { capitalize } from "../../util/lang"
@@ -212,7 +212,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
       plugins.push(() => {
         return (tree: Root, file) => {
           const replacements: [RegExp, string | ReplaceFunction][] = []
-          const base = pathToRoot(file.data.slug!)
 
           if (opts.wikilinks) {
             replacements.push([
@@ -334,19 +333,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                 }
 
                 return {
-                  type: "link",
-                  url: base + `/tags/${tag}`,
-                  data: {
-                    hProperties: {
-                      className: ["tag-link"],
-                    },
-                  },
-                  children: [
-                    {
-                      type: "text",
-                      value: tag,
-                    },
-                  ],
+                  type: "html",
+                  value: "",
                 }
               },
             ])

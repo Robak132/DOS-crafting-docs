@@ -436,6 +436,19 @@ export async function handleBuild(argv) {
         }
       }
 
+      if (fp !== "/" && fp.endsWith("/")) {
+        const indexFp = path.posix.join(fp, "index.html")
+        let base = fp.slice(0, -1)
+        if (path.extname(base) === "") {
+          base += ".html"
+        }
+        const hasIndex = fs.existsSync(path.posix.join(argv.output, indexFp))
+        const hasBase = fs.existsSync(path.posix.join(argv.output, base))
+        if (!hasIndex && !hasBase) {
+          return redirect("/")
+        }
+      }
+
       return serve()
     })
 

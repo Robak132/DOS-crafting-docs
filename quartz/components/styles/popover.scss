@@ -22,6 +22,29 @@
   left: 0;
   top: 0;
   will-change: transform;
+  isolation: isolate;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 1rem;
+    border-radius: 5px;
+    padding: 2px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    background: conic-gradient(
+      from -90deg,
+      var(--secondary) calc(var(--lock-progress, 0) * 1turn),
+      transparent 0
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 2;
+  }
 
   & > .popover-inner {
     position: relative;
@@ -81,8 +104,16 @@
   }
 }
 
+.popover[data-locking="true"]::after {
+  opacity: 1;
+}
+
+.popover[data-locked="true"]::after {
+  opacity: 0.45;
+}
+
 .active-popover,
-.popover:hover {
+.popover[data-locked="true"]:hover {
   animation: dropin 0.3s ease;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;

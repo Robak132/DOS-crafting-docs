@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/backlinks.scss"
-import { resolveRelative, simplifySlug } from "../util/path"
+import { FullSlug, resolveRelative, slugifyFilePath } from "../util/path"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import OverflowListFactory from "./OverflowList"
@@ -23,21 +23,47 @@ export default ((opts?: Partial<BacklinksOptions>) => {
     displayClass,
     cfg,
   }: QuartzComponentProps) => {
-    const slug = simplifySlug(fileData.slug!)
-    const backlinkFiles = allFiles.filter((file) => file.links?.includes(slug))
+    const backlinkFiles = allFiles
+      .filter((file) => (file.links ?? []).some((l) => slugifyFilePath(l as any) === fileData.slug))
+      .map((file) => ({
+        slug: file.slug! as FullSlug,
+        title: (file.frontmatter?.title ?? file.slug ?? "Untitled") as string,
+        tags: (file.frontmatter?.tags ?? []).filter((tag) => tag !== "index"),
+      }))
+      .sort((a, b) => a.title.localeCompare(b.title))
     if (options.hideWhenEmpty && backlinkFiles.length == 0) {
       return null
     }
+    const filterPath = resolveRelative(fileData.slug!, "index" as FullSlug)
     return (
       <div class={classNames(displayClass, "backlinks")}>
         <h3>{i18n(cfg.locale).components.backlinks.title}</h3>
-        <OverflowList>
+        <OverflowList class="backlinks-list">
           {backlinkFiles.length > 0 ? (
             backlinkFiles.map((f) => (
-              <li>
-                <a href={resolveRelative(fileData.slug!, f.slug!)} class="internal">
-                  {f.frontmatter?.title}
+              <li class="backlink-item">
+                <a href={resolveRelative(fileData.slug!, f.slug)} class="internal">
+                  {f.title}
                 </a>
+                {f.tags.length > 0 ? (
+                  <ul class="tags backlinks-tags">
+                    {f.tags.map((tag) => {
+                      const linkDest = `${filterPath}?include=${encodeURIComponent(tag)}`
+                      return (
+                        <li>
+                          <a
+                            href={linkDest}
+                            class="internal tag-link"
+                            data-no-popover="true"
+                            data-tag-filter={tag}
+                          >
+                            {tag}
+                          </a>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                ) : null}
               </li>
             ))
           ) : (

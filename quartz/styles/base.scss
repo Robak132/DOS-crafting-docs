@@ -166,19 +166,30 @@ a {
     }
   }
 
-  & > #quartz-body {
-    display: grid;
-    grid-template-columns: #{map.get($desktopGrid, templateColumns)};
-    grid-template-rows: #{map.get($desktopGrid, templateRows)};
-    column-gap: #{map.get($desktopGrid, columnGap)};
-    row-gap: #{map.get($desktopGrid, rowGap)};
-    grid-template-areas: #{map.get($desktopGrid, templateAreas)};
+    & > #quartz-body {
+      display: grid;
+      grid-template-columns: #{map.get($desktopGrid, templateColumns)};
+      grid-template-rows: #{map.get($desktopGrid, templateRows)};
+      column-gap: #{map.get($desktopGrid, columnGap)};
+      row-gap: #{map.get($desktopGrid, rowGap)};
+      grid-template-areas: #{map.get($desktopGrid, templateAreas)};
 
-    @media all and ($tablet) {
-      grid-template-columns: #{map.get($tabletGrid, templateColumns)};
-      grid-template-rows: #{map.get($tabletGrid, templateRows)};
-      column-gap: #{map.get($tabletGrid, columnGap)};
-      row-gap: #{map.get($tabletGrid, rowGap)};
+      @media all and ($desktop) {
+        &:has(.sidebar.right:empty) {
+          grid-template-columns: #{$sidePanelWidth} auto;
+          grid-template-rows: auto auto auto;
+          grid-template-areas:
+            '"grid-sidebar-left grid-header"\
+              "grid-sidebar-left grid-center"\
+              "grid-sidebar-left grid-footer"';
+        }
+      }
+
+      @media all and ($tablet) {
+        grid-template-columns: #{map.get($tabletGrid, templateColumns)};
+        grid-template-rows: #{map.get($tabletGrid, templateRows)};
+        column-gap: #{map.get($tabletGrid, columnGap)};
+        row-gap: #{map.get($tabletGrid, rowGap)};
       grid-template-areas: #{map.get($tabletGrid, templateAreas)};
     }
     @media all and ($mobile) {
@@ -210,6 +221,8 @@ a {
       z-index: 1;
       grid-area: grid-sidebar-left;
       flex-direction: column;
+      position: static;
+      height: auto;
       @media all and ($mobile) {
         gap: 0;
         align-items: center;

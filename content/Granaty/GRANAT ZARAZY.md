@@ -6,4 +6,4 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** 75% Disease chance 5m radius
 
-#Granat
+#Granaty

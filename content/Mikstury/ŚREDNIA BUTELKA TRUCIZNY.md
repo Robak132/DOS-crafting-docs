@@ -6,4 +6,4 @@
 - **Wymagania:** Crafting 1
 - **Uwagi:** 100% Poison chance (3 Turns)
 
-#Mikstura
+#Mikstury

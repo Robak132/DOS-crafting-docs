@@ -3,4 +3,4 @@
 - **Uwagi:** Add 1 Constitution
 - **Źródło:** Fun With Fluids VI
 
-#Mikstura
+#Mikstury

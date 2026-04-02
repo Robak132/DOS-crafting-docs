@@ -3,4 +3,4 @@
 - **Uwagi:** Add HP, Water Resist
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

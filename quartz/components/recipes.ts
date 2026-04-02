@@ -26,6 +26,7 @@ export type TagStat = {
 export type RecipeData = {
   recipes: RecipeRow[]
   tags: TagStat[]
+  requirements: TagStat[]
 }
 
 function normalizeKey(value: string): string {
@@ -254,14 +255,25 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
   recipes.sort((a, b) => collator.compare(a.result.name, b.result.name))
 
   const tagCounts = new Map<string, number>()
+  const requirementCounts = new Map<string, number>()
   recipes.forEach((recipe) => {
     recipe.tags.forEach((tag) => {
       tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1)
     })
+    const req = recipe.requirements?.trim()
+    if (req) {
+      req.split(";").map((val) => val.trim()).filter(Boolean).forEach((val) => {
+        requirementCounts.set(val, (requirementCounts.get(val) ?? 0) + 1)
+      })
+    }
   })
   const tags: TagStat[] = [...tagCounts.entries()]
     .map(([tag, count]) => ({ tag, count }))
     .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
 
-  return { recipes, tags }
+  const requirements: TagStat[] = [...requirementCounts.entries()]
+    .map(([tag, count]) => ({ tag, count }))
+    .sort((a, b) => a.tag.localeCompare(b.tag))
+
+  return { recipes, tags, requirements }
 }

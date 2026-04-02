@@ -8,4 +8,4 @@
 - **Uwagi:** Skill Book spell same as Skill Scroll used
 - **Źródło:** Secrets of the Scroll X
 
-#Księga-umiejętności
+#Księgi-umiejętności

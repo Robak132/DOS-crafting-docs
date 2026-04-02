@@ -3,4 +3,4 @@
 - **Uwagi:** Add Charisma
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

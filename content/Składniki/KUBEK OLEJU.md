@@ -2,4 +2,4 @@
 
 [[PUSTY KUBEK]] + [[BECZKA OLEJU]]
 
-#Składnik
+#Składniki

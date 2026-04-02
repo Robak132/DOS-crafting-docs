@@ -2,4 +2,4 @@
 
 [[WIADRO]] + [[STUDNIA]]
 
-#Składnik
+#Składniki

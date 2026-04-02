@@ -3,4 +3,4 @@
 - **Uwagi:** Add Lucky Charm
 - **Źródło:** Secrets of the Scroll III
 
-#Pierścień
+#Pierścienie

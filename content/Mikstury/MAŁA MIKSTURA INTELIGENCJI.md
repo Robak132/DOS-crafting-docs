@@ -3,4 +3,4 @@
 - **Uwagi:** Add 1 Intelligence
 - **Źródło:** Fun With Fluids X
 
-#Mikstura
+#Mikstury

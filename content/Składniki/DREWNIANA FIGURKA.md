@@ -1,3 +1,3 @@
 [[NIĆ]] + [[SKRAWKI MATERIAŁU]]
 
-#Składnik
+#Składniki

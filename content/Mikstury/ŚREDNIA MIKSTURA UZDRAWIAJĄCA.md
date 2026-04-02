@@ -11,4 +11,4 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add 30% Heal
 
-#Mikstura
+#Mikstury

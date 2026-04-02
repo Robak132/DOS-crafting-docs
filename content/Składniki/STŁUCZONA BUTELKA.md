@@ -8,4 +8,4 @@
 
 [[PUSTA BUTELKA]] + [[MORTAR & PESTLE / HAMMER]]
 
-#Składnik
+#Składniki

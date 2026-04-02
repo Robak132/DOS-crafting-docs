@@ -5,4 +5,4 @@
 - **Wymagania:** Blacksmithing 1
 - **Źródło:** He Who Smelts It IV
 
-#Składnik
+#Składniki

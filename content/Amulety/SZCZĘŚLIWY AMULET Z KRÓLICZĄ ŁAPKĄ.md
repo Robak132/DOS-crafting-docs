@@ -7,4 +7,4 @@
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add Speed, Movement
 
-#Amulet
+#Amulety

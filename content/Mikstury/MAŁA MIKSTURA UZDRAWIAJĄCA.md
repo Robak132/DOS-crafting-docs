@@ -3,4 +3,4 @@
 - **Uwagi:** Add 20% Heal
 - **Źródło:** Fun With Fluids I
 
-#Mikstura
+#Mikstury

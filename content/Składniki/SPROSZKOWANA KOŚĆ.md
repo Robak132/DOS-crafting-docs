@@ -8,4 +8,4 @@
 
 [[MAGICZNA PRASTARA LUDZKA CZASZKA]] + [[MORTAR & PESTLE]]
 
-#Składnik
+#Składniki

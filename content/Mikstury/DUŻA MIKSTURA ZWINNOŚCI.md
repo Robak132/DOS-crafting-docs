@@ -7,4 +7,4 @@
 - **Uwagi:** Add 3 Dexterity
 - **Źródło:** Fun With Fluids X
 
-#Mikstura
+#Mikstury

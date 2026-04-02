@@ -8,4 +8,4 @@ folder: "Arrows"
 [[GAŁĄŹ]] + [[ANY KNIFE]] (x3)
 - **Źródło:** Crafting & Cooking with Maradino
 
-#Strzała
+#Strzały

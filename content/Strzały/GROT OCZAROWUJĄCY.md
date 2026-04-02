@@ -1,4 +1,4 @@
 [[GROT]] + [[DRUDANAE]]
 - **Wymagania:** Crafting 4
 
-#Strzała
+#Strzały

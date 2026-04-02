@@ -3,4 +3,4 @@
 - **Uwagi:** Add Strength
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

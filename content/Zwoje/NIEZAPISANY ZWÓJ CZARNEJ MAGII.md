@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 1
 - **Źródło:** Secrets of the Scroll V
 
-#Zwój
+#Zwoje

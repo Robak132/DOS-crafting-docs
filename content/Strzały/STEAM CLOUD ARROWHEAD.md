@@ -8,4 +8,4 @@
 [[GROT OGNIOWY]] + [[KUBEK WODY]]
 - **Wymagania:** Crafting 2
 
-#Strzała
+#Strzały

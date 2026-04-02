@@ -3,4 +3,4 @@
 - **Uwagi:** Add Dexterity, Telekinesis
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

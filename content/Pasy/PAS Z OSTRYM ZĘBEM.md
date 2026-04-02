@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Charisma, Fire Resist
 
-#Pas
+#Pasy

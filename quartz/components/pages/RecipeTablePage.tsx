@@ -1,5 +1,5 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
-import { resolveRelative } from "../../util/path"
+import { FullSlug, resolveRelative } from "../../util/path"
 import { classNames } from "../../util/lang"
 import style from "../styles/recipeTable.scss"
 import { buildRecipeData, RecipeItem, RecipeRow } from "../recipes"
@@ -33,7 +33,7 @@ export default (() => {
     return (
         <a
           class="internal recipe-item"
-          href={resolveRelative(fileData.slug!, item.slug)}
+          href={resolveRelative(fileData.slug! as FullSlug, item.slug as FullSlug)}
         >
           {item.name}
         </a>
@@ -125,9 +125,6 @@ export default (() => {
               ))}
             </tbody>
           </table>
-          <div class="recipe-results">
-            <span class="recipe-results-count">Wyników: {grouped.size}</span>
-          </div>
         </div>
       </div>
     )

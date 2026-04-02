@@ -41,7 +41,7 @@ export const FilteredTagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (us
     },
     async *emit(ctx, content, resources) {
       const allFiles = content.map((c) => c[1].data)
-      const slug = "index" as FullSlug
+      const slug = "receptury" as FullSlug
       const cfg = ctx.cfg.configuration
 
       // Create a fake file data for the filter page

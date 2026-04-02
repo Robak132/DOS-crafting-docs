@@ -27,11 +27,11 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ConditionalRender({
       component: Component.RecipeTagSidebar(),
-      condition: (props) => props.fileData.slug === "index",
+      condition: (props) => props.fileData.slug === "receptury",
     }),
     Component.ConditionalRender({
       component: Component.TagExplorer(),
-      condition: (props) => props.fileData.slug !== "index",
+      condition: (props) => props.fileData.slug !== "receptury",
     }),
   ],
   right: [],
@@ -53,11 +53,11 @@ export const defaultListPageLayout: PageLayout = {
     }),
     Component.ConditionalRender({
       component: Component.RecipeTagSidebar(),
-      condition: (props) => props.fileData.slug === "index",
+      condition: (props) => props.fileData.slug === "receptury",
     }),
     Component.ConditionalRender({
       component: Component.TagExplorer(),
-      condition: (props) => props.fileData.slug !== "index",
+      condition: (props) => props.fileData.slug !== "receptury",
     }),
   ],
   right: [],

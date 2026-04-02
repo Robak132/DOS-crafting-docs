@@ -7,3 +7,5 @@
 [[BUTELKA WINA]] + [[MORTAR & PESTLE / HAMMER]]
 
 [[PUSTA BUTELKA]] + [[MORTAR & PESTLE / HAMMER]]
+
+#Składnik

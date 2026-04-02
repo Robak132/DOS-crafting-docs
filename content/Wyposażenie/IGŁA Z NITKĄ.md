@@ -1,1 +1,3 @@
 [[IGŁA]] + [[NIĆ]]
+
+#Wyposażenie

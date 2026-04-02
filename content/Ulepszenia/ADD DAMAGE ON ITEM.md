@@ -23,3 +23,5 @@
 [[KAMIEŃ KSIĘŻYCOWY]] + [[ANY STAFF]]
 - **Wymagania:** Crafting 3
 - **Źródło:** The Adventurer's Field Guide IX
+
+#Ulepszenia

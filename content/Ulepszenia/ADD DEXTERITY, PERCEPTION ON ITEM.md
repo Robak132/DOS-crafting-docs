@@ -5,3 +5,5 @@
 [[ZAKRES]] + [[ANY CROSSBOW]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level
+
+#Ulepszenia

@@ -7,3 +7,5 @@
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 15% Air, Earth, Fire, Poison, Water Resist
 - **Źródło:** Fun With Fluids II
+
+#Mikstura

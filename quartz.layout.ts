@@ -17,7 +17,6 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
         {
@@ -26,7 +25,14 @@ export const defaultContentPageLayout: PageLayout = {
         },
       ],
     }),
-    Component.TagExplorer(),
+    Component.ConditionalRender({
+      component: Component.RecipeTagSidebar(),
+      condition: (props) => props.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.TagExplorer(),
+      condition: (props) => props.fileData.slug !== "index",
+    }),
   ],
   right: [],
 }
@@ -45,7 +51,14 @@ export const defaultListPageLayout: PageLayout = {
         }
       ],
     }),
-    Component.TagExplorer(),
+    Component.ConditionalRender({
+      component: Component.RecipeTagSidebar(),
+      condition: (props) => props.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.TagExplorer(),
+      condition: (props) => props.fileData.slug !== "index",
+    }),
   ],
   right: [],
 }

@@ -6,3 +6,5 @@
 
 [[DZIEWIĘCIOCALOWE GWOŹDZIE]] + [[MŁOTEK]] (x4)
 - **Wymagania:** Crafting 3
+
+#Wyposażenie

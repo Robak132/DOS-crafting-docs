@@ -7,3 +7,5 @@
 - **Wymagania:** Crafting 1
 - **Uwagi:** Doesn't work with higher tier potions
 - **Źródło:** Fun With Fluids II
+
+#Mikstura

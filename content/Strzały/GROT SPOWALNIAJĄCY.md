@@ -5,3 +5,5 @@
 - **Wymagan[[BUTELKA OLEJU]]
 [[GROT]] + [[BECZKA OLEJU]]
 - **Wymagania:** Crafting 2
+
+#Strzała

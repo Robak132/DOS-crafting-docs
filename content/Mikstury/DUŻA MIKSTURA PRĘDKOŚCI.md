@@ -6,3 +6,5 @@
 [[ŚREDNIA MIKSTURA PRĘDKOŚCI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Speed
+
+#Mikstura

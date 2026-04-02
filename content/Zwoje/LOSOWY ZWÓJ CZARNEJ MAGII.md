@@ -17,3 +17,5 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Novice Spells possible
 - **Źródło:** Secrets of the Scroll V
+
+#Zwój

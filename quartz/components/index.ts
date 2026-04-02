@@ -2,6 +2,7 @@ import Content from "./pages/Content"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import FilteredTagContent from "./pages/FilteredTagContent"
+import RecipeTablePage from "./pages/RecipeTablePage"
 import NotFound from "./pages/404"
 import ArticleTitle from "./ArticleTitle"
 import Darkmode from "./Darkmode"
@@ -25,6 +26,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TagExplorer from "./TagExplorer"
+import RecipeTagSidebar from "./RecipeTagSidebar"
 
 export {
   ArticleTitle,
@@ -53,5 +55,7 @@ export {
   Flex,
   ConditionalRender,
   TagExplorer,
+  RecipeTagSidebar,
   FilteredTagContent,
+  RecipeTablePage,
 }

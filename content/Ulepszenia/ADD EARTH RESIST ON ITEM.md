@@ -13,3 +13,5 @@
 [[ESENCJA ZIEMI]] + [[ANY METAL CHEST]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Also changes item color (orange)
+
+#Ulepszenia

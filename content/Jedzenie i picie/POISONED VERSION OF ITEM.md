@@ -11,3 +11,5 @@
 
 [[ANY FOOD OR DRINK]] + [[BECZKA ZE SZLAMEM]]
 - **Uwagi:** 100% Poison chance
+
+#Jedzenie-i-picie

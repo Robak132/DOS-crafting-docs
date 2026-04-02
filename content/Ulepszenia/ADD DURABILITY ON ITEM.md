@@ -7,3 +7,5 @@
 - **Wymagania:** Blacksmithing 2
 - **Uwagi:** If BS skill is above 2, shield will get Add Blocking
 - **Źródło:** The Adventurer's Field Guide II
+
+#Ulepszenia

@@ -3,3 +3,4 @@
 - **Uwagi:** Add Intelligence, Poison Resist, Air Resist
 
 #Pierścienie
+#Inteligencja

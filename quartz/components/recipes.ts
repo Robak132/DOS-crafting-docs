@@ -21,6 +21,7 @@ export type RecipeRow = {
 export type TagStat = {
   tag: string
   count: number
+  label?: string
 }
 
 export type RecipeData = {
@@ -38,12 +39,18 @@ type TagHierarchyNode = {
 type TagHierarchyIndex = {
   byLowerTag: Map<string, string>
   byLowerLabel: Map<string, Set<string>>
+  labelByTag: Map<string, string>
+  orderedTags: string[]
 }
 
 let cachedHierarchyIndex: TagHierarchyIndex | null = null
 
 function normalizeKey(value: string): string {
-  return value.trim().toLowerCase()
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase()
 }
 
 function extractWikiTargets(line: string): string[] {
@@ -181,6 +188,8 @@ function getTagHierarchyIndex(): TagHierarchyIndex {
 
   const byLowerTag = new Map<string, string>()
   const byLowerLabel = new Map<string, Set<string>>()
+  const labelByTag = new Map<string, string>()
+  const orderedTags: string[] = []
   const hierarchyPath = path.join(process.cwd(), "content", "recipeTagHierarchy.json")
 
   try {
@@ -195,6 +204,10 @@ function getTagHierarchyIndex(): TagHierarchyIndex {
       byLowerTag.set(normalizeKey(canonical), canonical)
       addLabelIndex(byLowerLabel, node.label ?? "", canonical)
       addLabelIndex(byLowerLabel, canonical.split("/").at(-1) ?? "", canonical)
+      if (node.label?.trim()) {
+        labelByTag.set(canonical, node.label.trim())
+      }
+      orderedTags.push(canonical)
 
       const children = Array.isArray(node.children) ? node.children : []
       children.forEach(walk)
@@ -205,7 +218,7 @@ function getTagHierarchyIndex(): TagHierarchyIndex {
     // Static hierarchy file is optional during development; fallback keeps existing tags unchanged.
   }
 
-  cachedHierarchyIndex = { byLowerTag, byLowerLabel }
+  cachedHierarchyIndex = { byLowerTag, byLowerLabel, labelByTag, orderedTags }
   return cachedHierarchyIndex
 }
 
@@ -261,6 +274,7 @@ function requirementTokens(value: string): string[] {
 export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
   const itemLookup = new Map<string, RecipeItem>()
   const itemTagsBySlug = new Map<string, string[]>()
+  const displayByNormalizedTag = new Map<string, string>()
 
   allFiles.forEach((file) => {
     if (!file.slug) return
@@ -270,6 +284,22 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
     const title = (file.frontmatter?.title as string | undefined) ?? fallbackName
 
     const frontmatterTags = Array.isArray(file.frontmatter?.tags) ? file.frontmatter?.tags : []
+
+    frontmatterTags.forEach((rawTag) => {
+      if (typeof rawTag !== "string") return
+      const clean = rawTag.trim().replace(/^\/+|\/+$/g, "")
+      if (!clean) return
+      const normalizedFull = normalizeKey(clean)
+      if (normalizedFull && !displayByNormalizedTag.has(normalizedFull)) {
+        displayByNormalizedTag.set(normalizedFull, clean)
+      }
+      const leaf = clean.split("/").filter(Boolean).at(-1) ?? clean
+      const normalizedLeaf = normalizeKey(leaf)
+      if (normalizedLeaf && !displayByNormalizedTag.has(normalizedLeaf)) {
+        displayByNormalizedTag.set(normalizedLeaf, leaf)
+      }
+    })
+
     const tags = uniqueTags(expandHierarchicalTags([...(frontmatterTags ?? [])]))
 
     itemTagsBySlug.set(file.slug, tags)
@@ -365,16 +395,57 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
   const tagCounts = new Map<string, number>()
   const requirementCounts = new Map<string, number>()
   recipes.forEach((recipe) => {
-    recipe.tags.forEach((tag) => {
+    const resultTags = recipe.result?.tags ?? []
+    resultTags.forEach((tag) => {
       tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1)
     })
     requirementTokens(recipe.requirements ?? "").forEach((token) => {
       requirementCounts.set(token, (requirementCounts.get(token) ?? 0) + 1)
     })
   })
+
+  const hierarchyIndex = getTagHierarchyIndex()
+  const hierarchyOrder = hierarchyIndex.orderedTags
+  const hierarchyOrderIndex = new Map(hierarchyOrder.map((tag, index) => [tag, index]))
+  const impliedAncestorOrder = new Map<string, number>()
+  hierarchyOrder.forEach((tag, index) => {
+    const segments = tag.split("/").filter(Boolean)
+    for (let depth = 1; depth < segments.length; depth++) {
+      const ancestor = segments.slice(0, depth).join("/")
+      if (hierarchyOrderIndex.has(ancestor)) continue
+      const existing = impliedAncestorOrder.get(ancestor)
+      if (existing === undefined || index < existing) {
+        impliedAncestorOrder.set(ancestor, index)
+      }
+    }
+  })
+  const getSortOrder = (tag: string): number => {
+    const exact = hierarchyOrderIndex.get(tag)
+    if (exact !== undefined) return exact * 2
+    const implied = impliedAncestorOrder.get(tag)
+    if (implied !== undefined) return implied * 2 - 1
+    return Number.MAX_SAFE_INTEGER
+  }
+  const tagDepth = (tag: string): number => tag.split("/").filter(Boolean).length
   const tags: TagStat[] = [...tagCounts.entries()]
-    .map(([tag, count]) => ({ tag, count }))
-    .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
+    .map(([tag, count]) => {
+      const leaf = tag.split("/").filter(Boolean).at(-1) ?? tag
+      const label =
+        displayByNormalizedTag.get(normalizeKey(tag)) ??
+        hierarchyIndex.labelByTag.get(tag) ??
+        displayByNormalizedTag.get(normalizeKey(leaf)) ??
+        leaf
+      return { tag, count, label }
+    })
+    .sort((a, b) => {
+      const orderA = getSortOrder(a.tag)
+      const orderB = getSortOrder(b.tag)
+      if (orderA !== orderB) return orderA - orderB
+      const depthA = tagDepth(a.tag)
+      const depthB = tagDepth(b.tag)
+      if (depthA !== depthB) return depthA - depthB
+      return a.tag.localeCompare(b.tag)
+    })
 
   const requirements: TagStat[] = [...requirementCounts.entries()]
     .map(([tag, count]) => ({ tag, count }))

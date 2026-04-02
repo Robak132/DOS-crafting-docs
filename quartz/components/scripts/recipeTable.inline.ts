@@ -171,7 +171,7 @@
     const requirementExcludeSet = requirementsExclude.map((req) => req.toLowerCase())
 
     const filtered = recipes.filter((recipe) => {
-      const candidateTags = recipe.tags ?? []
+      const candidateTags = recipe.result?.tags ?? []
       const hasAllInclude = include.every((incTag) => matchesTag(candidateTags, incTag))
       const hasNoExclude = !exclude.some((excTag) => matchesTag(candidateTags, excTag))
       const reqTokens = requirementTokens(recipe.requirements ?? "")

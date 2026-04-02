@@ -3,3 +3,4 @@
 - **Uwagi:** Add Perception
 
 #Pierścienie
+#Percepcja

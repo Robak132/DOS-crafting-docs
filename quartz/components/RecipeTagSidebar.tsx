@@ -84,7 +84,7 @@ export default (() => {
             >
               <span class="recipe-tag-name">
                 <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
-                {formatHierarchyLabel(tag.tag)}
+                {prettifyLabel(tag.label ?? formatHierarchyLabel(tag.tag))}
               </span>
               <span class="recipe-tag-count">({tag.count})</span>
             </button>

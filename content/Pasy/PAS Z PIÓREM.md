@@ -3,3 +3,4 @@
 - **Uwagi:** Add Dexterity, Initiative
 
 #Pasy
+#Zręczność

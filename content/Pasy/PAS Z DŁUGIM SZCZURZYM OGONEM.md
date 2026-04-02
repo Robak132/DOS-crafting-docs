@@ -3,3 +3,4 @@
 - **Uwagi:** Add Poison Resist
 
 #Pasy
+#Odporność-na-truciznę

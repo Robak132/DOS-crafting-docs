@@ -4,3 +4,4 @@
 - **Źródło:** The Adventurer's Field Guide XIX
 
 #Amulety
+#Charyzma

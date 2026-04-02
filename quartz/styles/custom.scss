@@ -11,15 +11,15 @@ html {
 }
 
 @media all and (#{$desktop}) {
-  body[data-slug="index" i] .sidebar.right {
+  body[data-slug="receptury" i] .sidebar.right {
     display: none;
   }
 
-  body[data-slug="index" i] .sidebar.left {
+  body[data-slug="receptury" i] .sidebar.left {
     display: none;
   }
 
-  body[data-slug="index" i] #quartz-body {
+  body[data-slug="receptury" i] #quartz-body {
     grid-template-columns: 1fr;
     grid-template-areas:
       '"grid-header"\

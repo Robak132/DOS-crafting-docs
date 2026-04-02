@@ -1,0 +1,96 @@
+{
+  "hierarchy": [
+    {
+      "tag": "Typ",
+      "label": "Typ",
+      "children": [
+        {
+          "tag": "Typ/Amulety",
+          "label": "Amulety",
+          "children": []
+        },
+        {
+          "tag": "Typ/Bron",
+          "label": "Bron",
+          "children": []
+        },
+        {
+          "tag": "Typ/Granaty",
+          "label": "Granaty",
+          "children": []
+        },
+        {
+          "tag": "Typ/Jedzenie-i-picie",
+          "label": "Jedzenie-i-picie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Ksiegi-umiejetnosci",
+          "label": "Ksiegi-umiejetnosci",
+          "children": []
+        },
+        {
+          "tag": "Typ/Mikstury",
+          "label": "Mikstury",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pancerz",
+          "label": "Pancerz",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pasy",
+          "label": "Pasy",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pierscienie",
+          "label": "Pierscienie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Skladniki",
+          "label": "Skladniki",
+          "children": []
+        },
+        {
+          "tag": "Typ/Specjalne",
+          "label": "Specjalne",
+          "children": []
+        },
+        {
+          "tag": "Typ/Strzaly",
+          "label": "Strzaly",
+          "children": []
+        },
+        {
+          "tag": "Typ/Ulepszenia",
+          "label": "Ulepszenia",
+          "children": []
+        },
+        {
+          "tag": "Typ/Wyposazenie",
+          "label": "Wyposazenie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Zwoje",
+          "label": "Zwoje",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "Cechy",
+      "label": "Cechy",
+      "children": [
+        {
+          "tag": "Cechy/Inteligencja",
+          "label": "Inteligencja",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { FullSlug } from "./quartz/util/path"
 
 /**
  * Quartz 4 Configuration
@@ -74,6 +75,10 @@ const config: QuartzConfig = {
     filters: [Plugin.RemoveDrafts()],
     emitters: [
       Plugin.FilteredTagPage(),
+      Plugin.RootRedirect({
+        from: "index" as FullSlug,
+        to: "receptury" as FullSlug,
+      }),
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),

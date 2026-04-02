@@ -89,6 +89,17 @@
   justify-content: space-between;
 }
 
+.recipe-sidebar .recipe-tag-button.tag-hierarchy {
+  margin-left: calc(var(--tag-depth, 0) * 0.75rem);
+  width: calc(100% - (var(--tag-depth, 0) * 0.75rem));
+}
+
+.recipe-sidebar .recipe-tag-connector {
+  color: var(--gray);
+  font-weight: 400;
+  opacity: 0.85;
+}
+
 .recipe-sidebar .recipe-tag-count {
   margin-left: auto;
 }
@@ -182,7 +193,7 @@
 .recipe-table td,
 .recipe-table th {
   padding: 0.85rem 1rem;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .recipe-group-inner td {
@@ -256,11 +267,4 @@
   font-size: 0.8rem;
   color: var(--gray);
   margin-left: 0.25rem;
-}
-
-.recipe-results {
-  padding: 0.65rem 1rem 0.9rem;
-  font-size: 0.85rem;
-  color: var(--gray);
-  text-align: right;
 }

@@ -1,10 +1,23 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { buildRecipeData } from "./recipes"
+import { FullSlug, resolveRelative } from "../util/path"
 import style from "./styles/recipeTable.scss"
 
 export default (() => {
-  const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass }: QuartzComponentProps) => {
+  const prettifyLabel = (value: string): string => value.replaceAll("-", " ")
+  const getTagParts = (tag: string): string[] => tag.split("/").filter(Boolean)
+  const formatHierarchyLabel = (tag: string): string => {
+    const parts = getTagParts(tag)
+    return prettifyLabel(parts[parts.length - 1] ?? tag)
+  }
+  const getTagConnector = (tag: string): string => {
+    const depth = Math.max(0, getTagParts(tag).length - 1)
+    return depth > 0 ? "↳ ".repeat(depth) : ""
+  }
+  const getTagDepth = (tag: string): number => Math.max(0, tag.split("/").filter(Boolean).length - 1)
+
+  const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
     const { tags, requirements } = buildRecipeData(allFiles)
 
     if (tags.length === 0) {
@@ -14,8 +27,20 @@ export default (() => {
     return (
       <div class={classNames(displayClass, "recipe-sidebar")}>
         <div class="recipe-sidebar-nav">
-          <a class="internal recipe-nav-link" href="./" data-no-popover="true">Receptury</a>
-          <a class="internal recipe-nav-link" href="./przedmioty" data-no-popover="true">Przedmioty</a>
+          <a
+            class="internal recipe-nav-link"
+            href={resolveRelative(fileData.slug! as FullSlug, "receptury" as FullSlug)}
+            data-no-popover="true"
+          >
+            Receptury
+          </a>
+          <a
+            class="internal recipe-nav-link"
+            href={resolveRelative(fileData.slug! as FullSlug, "przedmioty" as FullSlug)}
+            data-no-popover="true"
+          >
+            Przedmioty
+          </a>
         </div>
         <div class="recipe-active-filters top">
           <span class="recipe-filters-label"></span>
@@ -36,7 +61,9 @@ export default (() => {
                   data-requirement={req.tag}
                   data-state="neutral"
                 >
-                  <span class="recipe-tag-name">{req.tag}</span>
+                  <span class="recipe-tag-name">
+                    {req.tag === "-" ? "Brak" : prettifyLabel(req.tag)}
+                  </span>
                   <span class="recipe-tag-count">({req.count})</span>
                 </button>
               ))}
@@ -50,11 +77,15 @@ export default (() => {
           {tags.map((tag) => (
             <button
               type="button"
-              class="recipe-tag-button"
+              class="recipe-tag-button tag-hierarchy"
               data-tag={tag.tag}
               data-state="neutral"
+              style={`--tag-depth: ${getTagDepth(tag.tag)};`}
             >
-              <span class="recipe-tag-name">{tag.tag}</span>
+              <span class="recipe-tag-name">
+                <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
+                {formatHierarchyLabel(tag.tag)}
+              </span>
               <span class="recipe-tag-count">({tag.count})</span>
             </button>
           ))}

@@ -148,6 +148,14 @@
     return tags.some((tag) => tag === target || tag.startsWith(target + "/"))
   }
 
+  function requirementTokens(value: string): string[] {
+    const tokens = value
+      .split(";")
+      .map((val) => val.trim().toLowerCase())
+      .filter(Boolean)
+    return tokens.length > 0 ? tokens : ["-"]
+  }
+
   function applyFilters(
     recipes: RecipeRow[],
     include: string[],
@@ -166,17 +174,15 @@
       const candidateTags = recipe.tags ?? []
       const hasAllInclude = include.every((incTag) => matchesTag(candidateTags, incTag))
       const hasNoExclude = !exclude.some((excTag) => matchesTag(candidateTags, excTag))
-      const requirementTokens = recipe.requirements
-        ? recipe.requirements.split(";").map((val) => val.trim().toLowerCase()).filter(Boolean)
-        : []
+      const reqTokens = requirementTokens(recipe.requirements ?? "")
       const matchesRequirements =
         requirementSet.length === 0
           ? true
-          : requirementTokens.some((token) => requirementSet.includes(token))
+          : reqTokens.some((token) => requirementSet.includes(token))
       const matchesExcludedRequirements =
         requirementExcludeSet.length === 0
           ? false
-          : requirementTokens.some((token) => requirementExcludeSet.includes(token))
+          : reqTokens.some((token) => requirementExcludeSet.includes(token))
 
       if (include.length > 0 && !hasAllInclude) return false
       if (!hasNoExclude) return false
@@ -222,9 +228,14 @@
     }
     const includeText = include.length > 0 ? include.join(", ") : ""
     const excludeText = exclude.length > 0 ? "bez: " + exclude.join(", ") : ""
-    const reqText = requirements.length > 0 ? "wym: " + requirements.join(", ") : ""
+    const reqText =
+      requirements.length > 0
+        ? "wym: " + requirements.map((req) => (req === "-" ? "Brak" : req)).join(", ")
+        : ""
     const reqExcludeText =
-      requirementsExclude.length > 0 ? "bez wym: " + requirementsExclude.join(", ") : ""
+      requirementsExclude.length > 0
+        ? "bez wym: " + requirementsExclude.map((req) => (req === "-" ? "Brak" : req)).join(", ")
+        : ""
     label.textContent = [includeText, excludeText, reqText, reqExcludeText]
       .filter(Boolean)
       .join(" | ")

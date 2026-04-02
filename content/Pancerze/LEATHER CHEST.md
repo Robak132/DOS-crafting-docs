@@ -6,3 +6,5 @@
 [[SKRAWKI SKÓRY]] + [[MAGICAL NEEDLE & THREAD]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Random Stats Upon Creation
+
+#Pancerz

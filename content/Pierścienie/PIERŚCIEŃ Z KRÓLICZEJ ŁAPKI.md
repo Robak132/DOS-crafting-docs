@@ -2,3 +2,5 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Lucky Charm
 - **Źródło:** Secrets of the Scroll III
+
+#Pierścień

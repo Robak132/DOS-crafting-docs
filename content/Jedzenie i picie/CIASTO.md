@@ -13,3 +13,5 @@
 [[MĄKA]] + [[KUBEK WODY]]
 - **Uwagi:** Add 5% Heal -1 Speed
 - **Źródło:** Crafting & Cooking with Maradino; Patty Cake, Patty Cake II
+
+#Jedzenie-i-picie

@@ -10,3 +10,5 @@
 [[MAŁA MIKSTURA UZDRAWIAJĄCA]] + [[MAŁA MIKSTURA UZDRAWIAJĄCA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add 30% Heal
+
+#Mikstura

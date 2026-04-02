@@ -6,3 +6,5 @@
 [[ŚREDNIA MIKSTURA KONDYCJI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Constitution
+
+#Mikstura

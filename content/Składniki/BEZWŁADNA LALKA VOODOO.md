@@ -1,1 +1,3 @@
 [[DREWNIANA FIGURKA]] + [[IGŁA]]
+
+#Składnik

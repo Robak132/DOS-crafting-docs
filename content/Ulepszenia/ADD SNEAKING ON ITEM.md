@@ -2,3 +2,5 @@
 - **Wymagania:** Crafting 4
 - **Uwagi:** Also changes item color (green)
 - **Źródło:** The Adventurer's Guide XV
+
+#Ulepszenia

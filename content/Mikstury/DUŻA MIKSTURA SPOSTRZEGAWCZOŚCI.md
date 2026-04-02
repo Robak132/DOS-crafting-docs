@@ -6,3 +6,5 @@
 [[ŚREDNIA MIKSTURA SPOSTRZEGAWCZOŚCI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Perception
+
+#Mikstura

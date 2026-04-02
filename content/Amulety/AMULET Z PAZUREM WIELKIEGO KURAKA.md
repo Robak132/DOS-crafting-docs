@@ -2,3 +2,5 @@
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Initiative
 - **Źródło:** The Adventurer's Field Guide XIX
+
+#Amulet

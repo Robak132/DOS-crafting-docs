@@ -6,3 +6,5 @@
 [[MAŁA MIKSTURA KONDYCJI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Add 2 Constitution
+
+#Mikstura

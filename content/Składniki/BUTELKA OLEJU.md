@@ -1,1 +1,3 @@
 [[PUSTA BUTELKA]] + [[BECZKA OLEJU]]
+
+#Składnik

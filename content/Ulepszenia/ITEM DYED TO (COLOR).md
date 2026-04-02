@@ -9,3 +9,5 @@
 
 [[FABRIC DYE (BLUE)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
 - **Wymagania:** Crafting 3
+
+#Ulepszenia

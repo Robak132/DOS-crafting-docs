@@ -15,3 +15,5 @@
 
 [[PUSTY KUBEK]] + [[STUDNIA]]
 - **Uwagi:** Add 5% Heal
+
+#Jedzenie-i-picie

@@ -200,12 +200,6 @@ a {
       grid-template-areas: #{map.get($mobileGrid, templateAreas)};
     }
 
-    @media all and not ($desktop) {
-      padding: 0 1rem;
-    }
-    @media all and ($mobile) {
-      margin: 0 auto;
-    }
 
     & .sidebar {
       gap: 2rem;
@@ -239,24 +233,6 @@ a {
       grid-area: grid-sidebar-right;
       margin-right: 0;
       flex-direction: column;
-      @media all and ($mobile) {
-        margin-left: inherit;
-        margin-right: inherit;
-      }
-      @media all and not ($desktop) {
-        position: initial;
-        height: unset;
-        width: 100%;
-        flex-direction: row;
-        padding: 0;
-        & > * {
-          flex: 1;
-          max-height: 24rem;
-        }
-        & > .toc {
-          display: none;
-        }
-      }
     }
     & .page-header,
     & .page-footer {

@@ -4,6 +4,11 @@
   margin-top: 1.5rem;
 }
 
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
 /* Rozciągnięcie tabel do pełnej szerokości strony */
 .page article table {
   width: 100%;

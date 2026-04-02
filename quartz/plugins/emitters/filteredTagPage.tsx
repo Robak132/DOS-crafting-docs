@@ -6,7 +6,7 @@ import { pageResources, renderPage } from "../../components/renderPage"
 import { FullPageLayout } from "../../cfg"
 import { pathToRoot, FullSlug } from "../../util/path"
 import { sharedPageComponents, defaultListPageLayout } from "../../../quartz.layout"
-import FilteredTagContent from "../../components/pages/FilteredTagContent"
+import RecipeTablePage from "../../components/pages/RecipeTablePage"
 import { write } from "./helpers"
 import { QuartzPluginData } from "../vfile"
 import { Root } from "hast"
@@ -15,7 +15,7 @@ export const FilteredTagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (us
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultListPageLayout,
-    pageBody: FilteredTagContent(),
+    pageBody: RecipeTablePage(),
     ...userOpts,
   }
 
@@ -48,7 +48,7 @@ export const FilteredTagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (us
       const fileData: QuartzPluginData = {
         slug,
         frontmatter: {
-          title: "Notatki",
+          title: "Receptury",
           tags: [],
         },
       } as QuartzPluginData

@@ -13,3 +13,5 @@
 [[ESENCJA POWIETRZA]] + [[ANY CLOTH CHEST, ROBE, OR SARONG]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Also changes item color (cyan)
+
+#Ulepszenia

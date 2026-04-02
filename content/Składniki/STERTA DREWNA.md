@@ -3,3 +3,5 @@
 
 [[DRZAZGI]] + [[BECZKA WODY]]
 - **Źródło:** Secrets of the Scroll VI
+
+#Składnik

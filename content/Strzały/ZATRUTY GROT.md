@@ -11,3 +11,5 @@
 
 [[GROT]] + [[ZGNIŁE JAJKA]]
 - **Wymagania:** Crafting 2
+
+#Strzała

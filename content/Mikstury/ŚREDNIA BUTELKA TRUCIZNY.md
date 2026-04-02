@@ -5,3 +5,5 @@
 [[MINOR POISON BOTTLE]] + [[MINOR POISON BOTTLE]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** 100% Poison chance (3 Turns)
+
+#Mikstura

@@ -73,7 +73,6 @@ const config: QuartzConfig = {
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
-      Plugin.ClientAuth(),
       Plugin.FilteredTagPage(),
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),

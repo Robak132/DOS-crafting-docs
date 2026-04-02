@@ -25,3 +25,5 @@
 [[FRAGMENTY ŁUSEK]] + [[ANY METAL CHEST]]
 - **Wymagania:** Crafting 5
 - **Źródło:** The Adventurer's Field Guide XI
+
+#Ulepszenia

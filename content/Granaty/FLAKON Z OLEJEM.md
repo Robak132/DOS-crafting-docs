@@ -6,3 +6,5 @@
 
 [[PUSTA BUTELKA]] + [[BECZKA OLEJU]]
 - **Uwagi:** Oil Puddle 1m radius
+
+#Granat

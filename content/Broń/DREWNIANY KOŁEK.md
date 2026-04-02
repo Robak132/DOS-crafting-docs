@@ -1,4 +1,4 @@
-[[DZIENNIK]] + [[ANY KNIFE OR DAGGER]]
+[[KŁODA]] + [[NÓŻ LUB SZTYLET]]
 - **Źródło:** Crafting & Cooking with Maradino
 
 #Broń

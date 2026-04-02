@@ -1,6 +1,6 @@
-[[PODUSZKA]] + [[ANY KNIFE OR DAGGER]]
+[[PODUSZKA]] + [[NÓŻ LUB SZTYLET]]
 
-[[ANY FEATHER]] + [[ANY KNIFE OR DAGGER]]
+[[ANY FEATHER]] + [[NÓŻ LUB SZTYLET]]
 - **Źródło:** Secrets of the Scroll IV
 
 #Składniki

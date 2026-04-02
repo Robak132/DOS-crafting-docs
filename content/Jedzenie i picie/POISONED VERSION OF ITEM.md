@@ -1,4 +1,4 @@
-[[ANY FOOD OR DRINK]] + [[ANY POISON BOTTLE]]
+[[ANY FOOD OR DRINK]] + [[BUTELKA TRUCIZNY]]
 - **Uwagi:** 100% Poison chance
 - **Źródło:** Rat Extermination
 

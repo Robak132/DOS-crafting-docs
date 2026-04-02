@@ -44,6 +44,7 @@ export const PageList: QuartzComponent = ({ fileData, allFiles, limit, sort }: P
       {list.map((page) => {
         const title = page.frontmatter?.title
         const tags = page.frontmatter?.tags ?? []
+        const visibleTags = tags.filter((tag) => tag !== "index")
 
         return (
           <li class="section-li">
@@ -54,11 +55,12 @@ export const PageList: QuartzComponent = ({ fileData, allFiles, limit, sort }: P
                 </a>
               </div>
               <ul class="tags">
-                {tags.map((tag) => (
+                {visibleTags.map((tag) => (
                   <li>
                     <a
                       class="internal tag-link"
                       href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                      data-no-popover="true"
                     >
                       {tag}
                     </a>

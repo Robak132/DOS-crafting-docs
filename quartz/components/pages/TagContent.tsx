@@ -53,7 +53,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
         tagItemMap.set(tag, allPagesWithTag(tag))
       }
       return (
-        <div class="popover-hint">
+        <div class="tag-content">
           <article class={classes}>
             <p>{content}</p>
           </article>
@@ -80,7 +80,7 @@ export default ((opts?: Partial<TagContentOptions>) => {
               return (
                 <div>
                   <h2>
-                    <a class="internal tag-link" href={href}>
+                    <a class="internal tag-link" href={href} data-no-popover="true">
                       {tag}
                     </a>
                   </h2>
@@ -114,15 +114,27 @@ export default ((opts?: Partial<TagContentOptions>) => {
         allFiles: pages,
       }
 
+      const indexPages = tag === "index" ? pages : []
+
       return (
-        <div class="popover-hint">
-          <article class={classes}>{content}</article>
-          <div class="page-listing">
-            <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
-            <div>
-              <PageList {...listProps} sort={options?.sort} />
+        <div class="tag-content">
+          {tag === "index" && indexPages.length > 0 && (
+            <div class="page-listing">
+              <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: indexPages.length })}</p>
+              <div>
+                <PageList {...listProps} sort={options?.sort} />
+              </div>
             </div>
-          </div>
+          )}
+          <article class={classes}>{content}</article>
+          {tag !== "index" && (
+            <div class="page-listing">
+              <p>{i18n(cfg.locale).pages.tagContent.itemsUnderTag({ count: pages.length })}</p>
+              <div>
+                <PageList {...listProps} sort={options?.sort} />
+              </div>
+            </div>
+          )}
         </div>
       )
     }

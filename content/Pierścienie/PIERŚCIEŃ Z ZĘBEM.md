@@ -3,3 +3,4 @@
 - **Uwagi:** Add Charisma
 
 #Pierścienie
+#Charyzma

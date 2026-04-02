@@ -4,3 +4,6 @@
 - **Źródło:** The Adventurer's Field Guide XIX
 
 #Amulety
+#Inteligencja
+#Loremaster
+#Odporność-na-powietrze

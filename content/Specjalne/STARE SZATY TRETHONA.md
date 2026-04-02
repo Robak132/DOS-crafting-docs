@@ -3,3 +3,4 @@
 - **Uwagi:** Add Intelligence, Speed, Resist-All
 
 #Specjalne
+#Inteligencja

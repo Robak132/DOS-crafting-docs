@@ -3,3 +3,4 @@
 - **Uwagi:** Add Charisma, Fire Resist
 
 #Pierścienie
+#Charyzma

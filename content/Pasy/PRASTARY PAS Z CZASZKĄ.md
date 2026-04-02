@@ -3,3 +3,4 @@
 - **Uwagi:** Add Intelligence, Earth Resist
 
 #Pasy
+#Inteligencja

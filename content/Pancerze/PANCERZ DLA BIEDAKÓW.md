@@ -2,3 +2,4 @@
 - **Uwagi:** Add Initiative -Fire Resist -Movement
 
 #Pancerz
+#Inicjatywa

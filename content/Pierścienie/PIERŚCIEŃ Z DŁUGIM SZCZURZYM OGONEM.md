@@ -3,3 +3,4 @@
 - **Uwagi:** Add Poison Resist
 
 #Pierścienie
+#Odporność-na-truciznę

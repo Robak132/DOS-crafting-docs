@@ -82,12 +82,38 @@
       ]
     },
     {
-      "tag": "Cechy",
-      "label": "Cechy",
+      "tag": "Cechy-podstawowe",
+      "label": "Cechy Podstawowe",
       "children": [
         {
           "tag": "Cechy/Inteligencja",
           "label": "Inteligencja",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Zwinność",
+          "label": "Zwinność",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Siła",
+          "label": "Siła",
+          "children": []
+        },
+        {
+          "tag": "Cechy/HP",
+          "label": "HP",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "Cechy-zaawansowane",
+      "label": "Cechy Zaawansowane",
+      "children": [
+        {
+          "tag": "Cechy/Szybkość",
+          "label": "Szybkość",
           "children": []
         }
       ]

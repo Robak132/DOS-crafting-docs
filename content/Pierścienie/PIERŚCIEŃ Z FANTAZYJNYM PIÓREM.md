@@ -3,3 +3,4 @@
 - **Uwagi:** Add HP
 
 #Pierścienie
+#HP

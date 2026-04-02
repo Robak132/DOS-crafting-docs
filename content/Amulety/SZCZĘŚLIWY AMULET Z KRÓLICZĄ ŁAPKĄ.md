@@ -8,3 +8,4 @@
 - **Uwagi:** Add Speed, Movement
 
 #Amulety
+#Szybkość

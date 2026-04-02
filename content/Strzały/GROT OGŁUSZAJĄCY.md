@@ -1,4 +1,4 @@
-[[ANY TOOTH]] + [[ANY KNIFE OR DAGGER]]
+[[ANY TOOTH]] + [[NÓŻ LUB SZTYLET]]
 - **Wymagania:** Crafting 1
 
 #Strzały

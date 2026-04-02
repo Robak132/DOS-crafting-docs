@@ -1,4 +1,4 @@
-[[GROT]] + [[ANY POISON BOTTLE]]
+[[GROT]] + [[BUTELKA TRUCIZNY]]
 - **Wymagania:** Crafting 2
 - **Źródło:** The String Enthusiast III
 

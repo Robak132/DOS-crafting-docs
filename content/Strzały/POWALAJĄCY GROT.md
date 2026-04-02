@@ -1,4 +1,4 @@
-[[ANY ANTLER]] + [[ANY KNIFE OR DAGGER]]
+[[ANY ANTLER]] + [[NÓŻ LUB SZTYLET]]
 - **Wymagania:** Crafting 1
 
 #Strzały

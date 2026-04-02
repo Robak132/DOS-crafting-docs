@@ -3,9 +3,9 @@ title: "ARROW SHAFT (2X)"
 original: "Arrow Shaft (2x)"
 folder: "Arrows"
 ---
-[[ANY WOODEN STAKE]] + [[ANY KNIFE OR DAGGER]] (x2)
+[[ANY WOODEN STAKE]] + [[NÓŻ LUB SZTYLET]] (x2)
 
-[[GAŁĄŹ]] + [[ANY KNIFE]] (x3)
+[[GAŁĄŹ]] + [[NÓŻ]] (x3)
 - **Źródło:** Crafting & Cooking with Maradino
 
 #Strzały

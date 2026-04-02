@@ -1,4 +1,4 @@
-[[SKÓRA ZWIERZĘCA]] + [[ANY KNIFE OR DAGGER]]
+[[SKÓRA ZWIERZĘCA]] + [[NÓŻ LUB SZTYLET]]
 - **Wymagania:** Crafting 1
 - **Źródło:** The Adventurer's Field Guide XX
 

@@ -1,4 +1,4 @@
-[[PUSTA BUTELKA]] + [[ANY POISON BOTTLE]]
+[[PUSTA BUTELKA]] + [[BUTELKA TRUCIZNY]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Ooze Puddle 1m radius
 

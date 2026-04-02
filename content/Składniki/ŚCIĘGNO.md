@@ -1,3 +1,3 @@
-[[MOCNE ŚCIĘGNO]] + [[ANY KNIFE OR DAGGER]] (x2)
+[[MOCNE ŚCIĘGNO]] + [[NÓŻ LUB SZTYLET]] (x2)
 
 #Składniki

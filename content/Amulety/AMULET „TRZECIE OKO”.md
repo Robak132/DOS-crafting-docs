@@ -3,4 +3,4 @@
 - **Uwagi:** Add Perception
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

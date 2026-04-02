@@ -3,4 +3,4 @@
 - **Uwagi:** Add 15% Fire Resist
 - **Źródło:** Fun With Fluids II
 
-#Mikstura
+#Mikstury

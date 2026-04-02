@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Pierce Dmg Explosion 75% Bleed chance 5m radius
 
-#Granat
+#Granaty

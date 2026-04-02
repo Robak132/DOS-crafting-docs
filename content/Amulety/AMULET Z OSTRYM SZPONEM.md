@@ -3,4 +3,4 @@
 - **Uwagi:** Add Strength, Sight
 - **Źródło:** The Adventurer's Field Guide XIX
 
-#Amulet
+#Amulety

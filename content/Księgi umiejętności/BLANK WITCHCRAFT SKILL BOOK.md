@@ -1,4 +1,4 @@
 [[NIEZAPISANY ZWÓJ CZARNEJ MAGII]] + [[NIEZAPISANY ZWÓJ CZARNEJ MAGII]]
 - **Wymagania:** Crafting 5
 
-#Księga-umiejętności
+#Księgi-umiejętności

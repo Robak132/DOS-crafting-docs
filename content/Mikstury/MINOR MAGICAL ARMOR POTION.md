@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add 10 Armor
 
-#Mikstura
+#Mikstury

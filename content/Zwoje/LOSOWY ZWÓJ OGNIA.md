@@ -18,4 +18,4 @@
 - **Uwagi:** Novice Spells possible
 - **Źródło:** Secrets of the Scroll V
 
-#Zwój
+#Zwoje

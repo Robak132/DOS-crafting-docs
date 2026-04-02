@@ -3,4 +3,4 @@
 - **Uwagi:** Add 15% Poison Resist
 - **Źródło:** Fun With Fluids IV
 
-#Mikstura
+#Mikstury

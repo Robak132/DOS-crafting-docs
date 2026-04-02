@@ -6,4 +6,4 @@
 - **Wymagania:** Crafting 1
 - **Uwagi:** Ooze Puddle 1m radius
 
-#Granat
+#Granaty

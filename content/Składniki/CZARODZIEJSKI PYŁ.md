@@ -4,4 +4,4 @@
 [[GWIEZDNY PYŁ]] + [[KSIĘŻYCOWY PYŁ]]
 - **Źródło:** Secrets of the Scroll II
 
-#Składnik
+#Składniki

@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Intelligence
 
-#Pas
+#Pasy

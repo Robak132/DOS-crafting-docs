@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 4
 - **Uwagi:** 100% Charm chance
 
-#Strzała
+#Strzały

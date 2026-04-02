@@ -3,4 +3,4 @@
 - **Uwagi:** -2 Strength Serves No Function
 - **Źródło:** The String Enthusiast III
 
-#Mikstura
+#Mikstury

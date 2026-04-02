@@ -3,4 +3,4 @@
 - **Uwagi:** Add 1 Strength
 - **Źródło:** Fun With Fluids X
 
-#Mikstura
+#Mikstury

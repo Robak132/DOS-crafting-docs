@@ -3,4 +3,4 @@
 - **Uwagi:** Add 1 Telekinesis
 - **Źródło:** Fun With Fluids IX
 
-#Mikstura
+#Mikstury

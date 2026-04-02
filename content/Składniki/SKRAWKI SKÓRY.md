@@ -2,4 +2,4 @@
 - **Wymagania:** Crafting 1
 - **Źródło:** The Adventurer's Field Guide XX
 
-#Składnik
+#Składniki

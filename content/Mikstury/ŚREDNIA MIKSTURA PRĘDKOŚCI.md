@@ -7,4 +7,4 @@
 - **Wymagania:** Crafting 4
 - **Uwagi:** Add 2 Speed
 
-#Mikstura
+#Mikstury

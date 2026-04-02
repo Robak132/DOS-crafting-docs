@@ -4,4 +4,4 @@
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add Lucky Charm, Movement
 
-#Pas
+#Pasy

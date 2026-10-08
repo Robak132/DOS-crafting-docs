@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pancerze/LEATHER BOOTS|Leather Boots]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pancerze/LEATHER BOOTS|Leather Boots]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armors!A37:H37

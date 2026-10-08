@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/PENNY BUN MUSHROOM|Penny Bun Mushroom]] = [[Barwniki/RED DYE|Red Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/PENNY BUN MUSHROOM|Penny Bun Mushroom]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/RED DYE|Red Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A6:H6

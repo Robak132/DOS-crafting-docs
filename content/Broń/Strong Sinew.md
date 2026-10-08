@@ -12,5 +12,5 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/CAMPFIRE|Campfire]] + [[Składniki/SINEW|Sinew]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Broń/STRONG SINEW|Strong Sinew]]
+[[Stanowiska i pojemniki/CAMPFIRE|Campfire]] + [[Składniki/SINEW|Sinew]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Broń/STRONG SINEW|Strong Sinew]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A4:H4

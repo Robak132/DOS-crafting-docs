@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/PUMPKIN|Pumpkin]] + [[Składniki/KNIFE-DAGGER|Knife/Dagger]] = [[Przedmioty wydarzeń/EDIBLE PUMPKIN|Edible Pumpkin]]
-- **Wymagania:** Event Craft Station
+[[Składniki/PUMPKIN|Pumpkin]] + [[Składniki/KNIFE-DAGGER|Knife/Dagger]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/EDIBLE PUMPKIN|Edible Pumpkin]]
+
 - **Uwagi:** Yessh it's edible. Eat it!
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A28:H28

@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/YELLOW DYE|Yellow Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Barwniki/YELLOW PASTEL|Yellow Pastel]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/YELLOW DYE|Yellow Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/YELLOW PASTEL|Yellow Pastel]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A34:H34

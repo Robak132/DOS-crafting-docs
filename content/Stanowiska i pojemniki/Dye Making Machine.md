@@ -2,9 +2,8 @@
 itemPage: true
 title: Dye Making Machine
 tags:
-  - Typ/Stanowiska-i-pojemniki
-  - Typ/Barwniki
   - DOS2-CO
+  - Typ/Stanowiska-i-pojemniki
 ---
 
 # Dye Making Machine

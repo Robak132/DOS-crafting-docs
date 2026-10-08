@@ -12,5 +12,5 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Strzały i granaty/EMPTY CYLINDER GRENADE|Empty Cylinder Grenade]] + [[Składniki/CAMPFIRE|Campfire]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Strzały i granaty/SMOKE GRENADE|Smoke Grenade]]
+[[Strzały i granaty/EMPTY CYLINDER GRENADE|Empty Cylinder Grenade]] + [[Stanowiska i pojemniki/CAMPFIRE|Campfire]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Strzały i granaty/SMOKE GRENADE|Smoke Grenade]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Arrows & Grenades!A29:H29

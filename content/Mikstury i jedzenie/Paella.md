@@ -16,7 +16,7 @@ Leadership (+1)
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/RAW BIRD LEG|Raw Bird Leg]] + [[Składniki/PEPPER|Pepper]] + [[Składniki/GARLIC|Garlic]] + [[Mikstury i jedzenie/SAFRAN|Safran]] = [[Mikstury i jedzenie/PAELLA|Paella]]
-- **Wymagania:** Boiling Pot
+[[Składniki/RAW BIRD LEG|Raw Bird Leg]] + [[Składniki/PEPPER|Pepper]] + [[Składniki/GARLIC|Garlic]] + [[Mikstury i jedzenie/SAFRAN|Safran]] + [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]] = [[Mikstury i jedzenie/PAELLA|Paella]]
+
 - **Uwagi:** Leadership (+1)
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A66:H66

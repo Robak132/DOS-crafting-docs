@@ -16,7 +16,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/APPLE|Apple]] + [[Składniki/DOUGH|Dough]] + [[Mikstury i jedzenie/STRANGE CINNAMON|Strange Cinnamon]] = [[Mikstury i jedzenie/STRANGE APPLE PIE|Strange Apple Pie]]
-- **Wymagania:** Oven
+[[Składniki/APPLE|Apple]] + [[Składniki/DOUGH|Dough]] + [[Mikstury i jedzenie/STRANGE CINNAMON|Strange Cinnamon]] + [[Stanowiska i pojemniki/OVEN|Oven]] = [[Mikstury i jedzenie/STRANGE APPLE PIE|Strange Apple Pie]]
+
 - **Uwagi:** ?? (Test yourself)
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A70:H70

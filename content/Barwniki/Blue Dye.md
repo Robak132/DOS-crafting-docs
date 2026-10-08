@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/BLUEGILL MUSHROOM|Bluegill Mushroom]] = [[Barwniki/BLUE DYE|Blue Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/BLUEGILL MUSHROOM|Bluegill Mushroom]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/BLUE DYE|Blue Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A7:H7

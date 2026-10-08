@@ -16,7 +16,7 @@ Finesse (+1) Ranged Skill (+1) Movement Bonus (+%5) Range Boost (+%5)
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/APPLE|Apple]] + [[Składniki/DOUGH|Dough]] + [[Mikstury i jedzenie/CINNAMON|Cinnamon]] = [[Mikstury i jedzenie/RANGER'S APPLE ELVEN TOAST|Ranger's Apple Elven Toast]]
-- **Wymagania:** Oven
+[[Składniki/APPLE|Apple]] + [[Składniki/DOUGH|Dough]] + [[Mikstury i jedzenie/CINNAMON|Cinnamon]] + [[Stanowiska i pojemniki/OVEN|Oven]] = [[Mikstury i jedzenie/RANGER'S APPLE ELVEN TOAST|Ranger's Apple Elven Toast]]
+
 - **Uwagi:** Finesse (+1) Ranged Skill (+1) Movement Bonus (+%5) Range Boost (+%5)
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A49:H49

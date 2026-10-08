@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Przedmioty wydarzeń/SHAMBLING POTION|Shambling Potion]]
-- **Wymagania:** Event Craft Station
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/SHAMBLING POTION|Shambling Potion]]
+
 - **Uwagi:** It's a hard wood.
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A13:H13

@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/NAVY DYE|Navy Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Barwniki/NAVY PASTEL|Navy Pastel]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/NAVY DYE|Navy Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/NAVY PASTEL|Navy Pastel]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A31:H31

@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] = [[Przedmioty wydarzeń/DJINN PANTS|Djinn Pants]]
-- **Wymagania:** Event Craft Station
+[[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/DJINN PANTS|Djinn Pants]]
+
 - **Uwagi:** Lizards Only
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A23:H23

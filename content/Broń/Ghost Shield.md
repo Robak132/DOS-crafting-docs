@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/LIVEWOOD LOG|Livewood Log]] + [[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Składniki/ROPE|Rope]] + [[Składniki/RUNE OF UNIQUENESS-9F58AF67|Rune Of Uniqueness]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Broń/GHOST SHIELD|Ghost Shield]]
-- **Wymagania:** Anvil
+[[Składniki/LIVEWOOD LOG|Livewood Log]] + [[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Składniki/ROPE|Rope]] + [[Składniki/RUNE OF UNIQUENESS-9F58AF67|Rune Of Uniqueness]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Broń/GHOST SHIELD|Ghost Shield]]
+
 - **Uwagi:** Scales With Constution. Check Workbench tab for Rune of Uniqueness.
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A47:H47

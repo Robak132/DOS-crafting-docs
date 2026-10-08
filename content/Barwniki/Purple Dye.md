@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/MUSHROOM CALOCERA|Mushroom Calocera]] = [[Barwniki/PURPLE DYE|Purple Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/MUSHROOM CALOCERA|Mushroom Calocera]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/PURPLE DYE|Purple Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A10:H10

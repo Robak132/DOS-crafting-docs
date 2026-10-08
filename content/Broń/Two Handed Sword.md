@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Broń/TWO HANDED SWORD|Two Handed Sword]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Broń/TWO HANDED SWORD|Two Handed Sword]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A23:H23

@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/PRESENT BOX|Present Box]] + [[Składniki/FUSE|Fuse]] = [[Przedmioty wydarzeń/PRESENT GRENADE|Present Grenade]]
-- **Wymagania:** Event Craft Station
+[[Składniki/PRESENT BOX|Present Box]] + [[Składniki/FUSE|Fuse]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/PRESENT GRENADE|Present Grenade]]
+
 - **Uwagi:** Soul of winter is here.
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A36:H36

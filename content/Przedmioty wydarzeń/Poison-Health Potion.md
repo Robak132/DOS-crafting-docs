@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/LARGE POSION BOTTLE|Large Posion Bottle]] = [[Przedmioty wydarzeń/POISON-HEALTH POTION|Poison/Health Potion]]
-- **Wymagania:** Event Craft Station
+[[Składniki/LARGE POSION BOTTLE|Large Posion Bottle]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/POISON-HEALTH POTION|Poison/Health Potion]]
+
 - **Uwagi:** Trick or Treat
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A33:H33

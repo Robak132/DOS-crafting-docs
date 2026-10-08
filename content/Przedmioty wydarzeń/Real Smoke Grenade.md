@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Strzały i granaty/SMOKE GRENADE|Smoke Grenade]] = [[Przedmioty wydarzeń/REAL SMOKE GRENADE|Real Smoke Grenade]]
-- **Wymagania:** Event Craft Station
+[[Strzały i granaty/SMOKE GRENADE|Smoke Grenade]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/REAL SMOKE GRENADE|Real Smoke Grenade]]
+
 - **Uwagi:** Put it on ground to get spooky
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A29:H29

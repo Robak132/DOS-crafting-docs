@@ -1,19 +1,19 @@
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { recipeCatalogSlug } from "./recipeView"
+import { getTagCatalogSlug } from "./recipeCatalog"
 
 // @ts-ignore
 import style from "./styles/tagList.scss"
 
-const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+const TagList: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
   const tags = fileData.frontmatter?.tags
   const visibleTags = tags?.filter((tag) => tag !== "index")
   if (visibleTags && visibleTags.length > 0) {
     return (
       <ul class={classNames(displayClass, "tags")}>
         {visibleTags.map((tag) => {
-          const catalog = recipeCatalogSlug(tag, tags ?? [])
+          const catalog = getTagCatalogSlug(allFiles, tag, tags ?? [])
           const filterPath = resolveRelative(fileData.slug!, catalog as FullSlug)
           const linkDest = `${filterPath}?tag=${encodeURIComponent(tag)}`
 

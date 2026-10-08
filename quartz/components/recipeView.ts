@@ -3,7 +3,7 @@ import type { RecipeItem, RecipeRow } from "./recipes"
 export const recipeColumns = [
   { key: "ingredients", label: "Składniki" },
   { key: "result", label: "Wynik" },
-  { key: "requirements", label: "Wymagania / stanowisko" },
+  { key: "requirements", label: "Wymagania" },
   { key: "notes", label: "Uwagi / efekty" },
   { key: "tags", label: "Tagi" },
   { key: "source", label: "Źródło" },

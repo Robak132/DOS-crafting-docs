@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/BARREL|Barrel]] = [[Przedmioty wydarzeń/BARREL ARMOR|Barrel Armor]]
-- **Wymagania:** Event Craft Station
+[[Składniki/BARREL|Barrel]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/BARREL ARMOR|Barrel Armor]]
+
 - **Uwagi:** Smexy barrels
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A19:H19

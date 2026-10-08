@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Składniki/ROPE|Rope]] = [[Przedmioty wydarzeń/FROST SHIELD|Frost Shield]]
-- **Wymagania:** Event Craft Station
+[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/FROST SHIELD|Frost Shield]]
+
 - **Uwagi:** Shield of winter
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A41:H41

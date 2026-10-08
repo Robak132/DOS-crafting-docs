@@ -4,16 +4,13 @@ categoryPage: true
 tags:
   - Typ/Pancerz
 ---
-
 # Pancerze
 
-- [[Pancerze/ANVIL|Anvil]]
 - [[Pancerze/BONE BOOTS|Bone Boots]]
 - [[Pancerze/BONE GLOVES|Bone Gloves]]
 - [[Pancerze/BONE HELMET|Bone Helmet]]
 - [[Pancerze/BONE PANTS|Bone Pants]]
 - [[Pancerze/BONE TORSO|Bone Torso]]
-- [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]]
 - [[Pancerze/DYNIOWY HEŁM|DYNIOWY HEŁM]]
 - [[Pancerze/HEŁM „TRZECIE OKO”|HEŁM „TRZECIE OKO”]]
 - [[Pancerze/HEŁM Z FANTAZYJNYM PIÓREM|HEŁM Z FANTAZYJNYM PIÓREM]]
@@ -42,7 +39,6 @@ tags:
 - [[Pancerze/PHYSICAL ARMOUR BOOST (UP TO 10)|Physical Armour Boost (Up to 10)]]
 - [[Pancerze/PHYSICAL ARMOUR BOOST (UP TO 20)|Physical Armour Boost (Up to 20)]]
 - [[Pancerze/PHYSICAL ARMOUR BOOST (UP TO 30)|Physical Armour Boost (Up to 30)]]
-- [[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]]
 - [[Pancerze/PŁÓCIENNA ZBROJA|PŁÓCIENNA ZBROJA]]
 - [[Pancerze/PŁÓCIENNE BUTY|PŁÓCIENNE BUTY]]
 - [[Pancerze/SKÓRZANE BUTY|SKÓRZANE BUTY]]

@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG } from "./recipeCatalog"
-import { recipeCatalogSlug } from "./recipeView"
+import { groupRecipeTags, recipeCatalogSlug } from "./recipeView"
 import type { RecipeData, TagStat } from "./recipes"
 import { FullSlug, resolveRelative } from "../util/path"
 import style from "./styles/recipeTable.scss"
@@ -46,6 +46,10 @@ export default (() => {
   const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
     const filterPage = isRecipePage(fileData.slug)
     const { tags, requirements } = filterPage ? getRecipeCatalog(allFiles, fileData.slug) : combinedData(allFiles)
+    const tagGroups = groupRecipeTags(tags)
+    const pageTags = fileData.frontmatter?.tags ?? []
+    const overhaulPage = fileData.slug === OVERHAUL_SLUG || (pageTags.includes("DOS2-CO") && !pageTags.includes("DOS1"))
+    const showRequirements = !overhaulPage && requirements.some((req) => req.tag !== "-")
     const preferred = recipeCatalogSlug("", fileData.frontmatter?.tags ?? [])
     const filterHref = (value: string, kind: "tag" | "requirement") => {
       const field = kind === "tag" ? "tags" : "requirements"
@@ -105,7 +109,7 @@ export default (() => {
                 Resetuj
               </button>
             </div>
-            {requirements.length > 0 && (
+            {showRequirements && (
               <div class="recipe-sidebar-section">
                 <div class="recipe-sidebar-header">
                   <h3>WYMAGANIA</h3>
@@ -133,28 +137,35 @@ export default (() => {
             <div class="recipe-sidebar-header">
               <h3>TAGI</h3>
             </div>
-            <div class="recipe-tag-list">
-              {tags.map((tag) => {
-                const Control = filterPage ? "button" : "a"
-                return (
-                  <Control
-                    type={filterPage ? "button" : undefined}
-                    href={filterPage ? undefined : filterHref(tag.tag, "tag")}
-                    class={`recipe-tag-button tag-hierarchy${filterPage ? "" : " internal"}`}
-                    data-no-popover="true"
-                    data-tag={tag.tag}
-                    data-state="neutral"
-                    style={`--tag-depth: ${getTagDepth(tag.tag)};`}
-                  >
-                    <span class="recipe-tag-name">
-                      <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
-                      {prettifyLabel(categoryLabels.get(tag.tag) ?? tag.label ?? formatHierarchyLabel(tag.tag))}
-                    </span>
-                    <span class="recipe-tag-count">({tag.count})</span>
-                  </Control>
-                )
-              })}
-            </div>
+            {tagGroups.map((group) => (
+              <details class="recipe-tag-group" open={group.label === "Kategorie"}>
+                <summary>{group.label}</summary>
+                <div class="recipe-tag-list">
+                  {group.tags.map((tag) => {
+                    const Control = filterPage ? "button" : "a"
+                    return (
+                      <Control
+                        type={filterPage ? "button" : undefined}
+                        href={filterPage ? undefined : filterHref(tag.tag, "tag")}
+                        class={`recipe-tag-button tag-hierarchy${filterPage ? "" : " internal"}`}
+                        data-no-popover="true"
+                        data-tag={tag.tag}
+                        data-state="neutral"
+                        style={`--tag-depth: ${Math.max(0, getTagDepth(tag.tag) - (tag.tag.startsWith("Typ/") ? 1 : 0))};`}
+                      >
+                        <span class="recipe-tag-name">
+                          {!tag.tag.startsWith("Typ/") && (
+                            <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
+                          )}
+                          {prettifyLabel(categoryLabels.get(tag.tag) ?? tag.label ?? formatHierarchyLabel(tag.tag))}
+                        </span>
+                        <span class="recipe-tag-count">({tag.count})</span>
+                      </Control>
+                    )
+                  })}
+                </div>
+              </details>
+            ))}
           </div>
         </details>
         {categoryPages.length > 0 && (

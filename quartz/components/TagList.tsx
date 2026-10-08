@@ -1,14 +1,15 @@
 import { FullSlug, resolveRelative } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { getTagCatalogSlug } from "./recipeCatalog"
+import { getTagCatalogSlug, isRecipePage } from "./recipeCatalog"
+import { isGameTag } from "./recipeView"
 
 // @ts-ignore
 import style from "./styles/tagList.scss"
 
 const TagList: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
   const tags = fileData.frontmatter?.tags
-  const visibleTags = tags?.filter((tag) => tag !== "index")
+  const visibleTags = tags?.filter((tag) => tag !== "index" && !(isRecipePage(fileData.slug) && isGameTag(tag)))
   if (visibleTags && visibleTags.length > 0) {
     return (
       <ul class={classNames(displayClass, "tags")}>

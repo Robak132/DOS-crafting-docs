@@ -1,4 +1,4 @@
-import type { RecipeItem, RecipeRow } from "./recipes"
+import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 
 export const recipeColumns = [
   { key: "ingredients", label: "Składniki" },
@@ -10,6 +10,79 @@ export const recipeColumns = [
 ] as const
 
 export type RecipeGroup = { result: RecipeItem; variants: RecipeRow[] }
+
+export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
+
+const mergedCategoryTags: Record<string, string> = {
+  "Typ/Mikstury": "Typ/Mikstury-i-jedzenie",
+  "Typ/Jedzenie-i-picie": "Typ/Mikstury-i-jedzenie",
+  "Typ/Strzaly": "Typ/Strzaly-i-granaty",
+  "Typ/Granaty": "Typ/Strzaly-i-granaty",
+}
+
+export function groupRecipeTags(tags: TagStat[]): { label: string; tags: TagStat[] }[] {
+  const names = new Set(tags.map((tag) => tag.tag))
+  const weapons = new Set([
+    "Weapon",
+    "Axe",
+    "Bow",
+    "Crossbow",
+    "Dagger",
+    "Knife",
+    "Mace",
+    "One-Handed-Sword",
+    "Spear",
+    "Sword",
+    "Two-Handed-Axe",
+    "Two-Handed-Mace",
+    "Two-Handed-Sword",
+  ])
+  const armor = new Set(["Armor", "Boot-Armor", "Glove-Armor", "Helmet-Armor", "Lowerbody-Armor", "Upperbody-Armor"])
+  const groups = new Map<string, TagStat[]>([
+    ["Kategorie", []],
+    ["Broń i narzędzia", []],
+    ["Pancerze", []],
+    ["Biżuteria", []],
+    ["Księgi i zwoje", []],
+    ["Materiały i wytwarzanie", []],
+    ["Jedzenie", []],
+    ["Cechy", []],
+    ["Pozostałe", []],
+  ])
+  for (const stat of tags) {
+    const tag = stat.tag
+    if (isGameTag(tag) || tag === "Typ" || names.has(mergedCategoryTags[tag])) continue
+    const label = tag.startsWith("Typ/")
+      ? "Kategorie"
+      : weapons.has(tag)
+        ? "Broń i narzędzia"
+        : armor.has(tag)
+          ? "Pancerze"
+          : ["Amulet", "Ring"].includes(tag)
+            ? "Biżuteria"
+            : /(?:Skillbook|Scroll)$/.test(tag)
+              ? "Księgi i zwoje"
+              : ["Dye", "Gold-Object", "Poison-Source", "Skull"].includes(tag)
+                ? "Materiały i wytwarzanie"
+                : tag === "Fish"
+                  ? "Jedzenie"
+                  : tag.startsWith("Cechy")
+                    ? "Cechy"
+                    : "Pozostałe"
+    groups.get(label)!.push(stat)
+  }
+  return [...groups]
+    .filter(([, tags]) => tags.length > 0)
+    .map(([label, tags]) => ({
+      label,
+      tags: tags.sort((a, b) =>
+        tagLabel(a.tag, { [a.tag]: a.label ?? a.tag }).localeCompare(
+          tagLabel(b.tag, { [b.tag]: b.label ?? b.tag }),
+          "pl",
+        ),
+      ),
+    }))
+}
 
 export function recipeCatalogSlug(tag: string, pageTags: readonly string[]): string {
   if (tag === "DOS1") return "receptury"
@@ -30,7 +103,10 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
 }
 
 export function visibleRecipeTags(tags: string[]): string[] {
-  return tags.filter((tag) => !tags.some((other) => other.startsWith(`${tag}/`)))
+  return tags.filter(
+    (tag) =>
+      !isGameTag(tag) && !tags.includes(mergedCategoryTags[tag]) && !tags.some((other) => other.startsWith(`${tag}/`)),
+  )
 }
 
 export function tagLabel(tag: string, labels: Record<string, string>): string {

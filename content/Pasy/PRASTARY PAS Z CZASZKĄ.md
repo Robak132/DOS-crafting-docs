@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PRASTARY PAS Z CZASZKĄ
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PRASTARY PAS Z CZASZKĄ

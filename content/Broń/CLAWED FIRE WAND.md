@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: CLAWED FIRE WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # CLAWED FIRE WAND

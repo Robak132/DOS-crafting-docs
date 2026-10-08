@@ -1,9 +1,9 @@
-import FlexSearch from "flexsearch"
+import FlexSearch, { type DefaultDocumentSearchResults } from "flexsearch"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 import { registerEscapeHandler, removeAllChildren } from "./util"
 import { FullSlug, normalizeRelativeURLs, resolveRelative } from "../../util/path"
 
-interface Item {
+type Item = {
   id: number
   slug: FullSlug
   title: string
@@ -17,7 +17,6 @@ let searchType: SearchType = "basic"
 let currentSearchTerm: string = ""
 const encoder = (str: string) => str.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/)
 let index = new FlexSearch.Document<Item>({
-  charset: "latin:extra",
   encode: encoder,
   document: {
     id: "id",
@@ -97,9 +96,7 @@ function highlight(searchTerm: string, text: string, trim?: boolean) {
     })
     .join(" ")
 
-  return `${startIndex === 0 ? "" : "..."}${slice}${
-    endIndex === tokenizedText.length - 1 ? "" : "..."
-  }`
+  return `${startIndex === 0 ? "" : "..."}${slice}${endIndex === tokenizedText.length - 1 ? "" : "..."}`
 }
 
 function highlightHTML(searchTerm: string, el: HTMLElement) {
@@ -237,9 +234,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
       e.preventDefault()
       if (results.contains(document.activeElement)) {
         // If an element in results-container already has focus, focus previous one
-        const currentResult = currentHover
-          ? currentHover
-          : (document.activeElement as HTMLInputElement | null)
+        const currentResult = currentHover ? currentHover : (document.activeElement as HTMLInputElement | null)
         const prevResult = currentResult?.previousElementSibling as HTMLInputElement | null
         currentResult?.classList.remove("focus")
         prevResult?.focus()
@@ -397,7 +392,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     searchLayout.classList.toggle("display-results", currentSearchTerm !== "")
     searchType = currentSearchTerm.startsWith("#") ? "tags" : "basic"
 
-    let searchResults: FlexSearch.SimpleDocumentSearchResultSetUnit[]
+    let searchResults: DefaultDocumentSearchResults<Item> = []
     if (searchType === "tags") {
       currentSearchTerm = currentSearchTerm.substring(1).trim()
       const separatorIndex = currentSearchTerm.indexOf(" ")
@@ -410,7 +405,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
           // return at least 10000 documents, so it is enough to filter them by tag (implemented in flexsearch)
           limit: Math.max(numSearchResults, 10000),
           index: ["title", "content"],
-          tag: tag,
+          tag: { tags: tag },
         })
         for (let searchResult of searchResults) {
           searchResult.result = searchResult.result.slice(0, numSearchResults)
@@ -440,11 +435,7 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
     }
 
     // order titles ahead of content
-    const allIds: Set<number> = new Set([
-      ...getByField("title"),
-      ...getByField("content"),
-      ...getByField("tags"),
-    ])
+    const allIds: Set<number> = new Set([...getByField("title"), ...getByField("content"), ...getByField("tags")])
     const finalResults = [...allIds].map((id) => formatForDisplay(currentSearchTerm, id))
     await displayResults(finalResults)
   }

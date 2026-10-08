@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ONE HANDED AXE
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # ONE HANDED AXE

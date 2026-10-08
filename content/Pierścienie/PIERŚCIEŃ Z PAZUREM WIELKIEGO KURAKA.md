@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z PAZUREM WIELKIEGO KURAKA
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z PAZUREM WIELKIEGO KURAKA
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNA NÓŻKA WIELKIEGO KURAKA]]
+#Ring-Kit + [[MAGICZNA NÓŻKA WIELKIEGO KURAKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Movement
 

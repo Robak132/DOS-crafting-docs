@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD IMMUNITY TO SLIPPING ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD IMMUNITY TO SLIPPING ON ITEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[DZIEWIĘCIOCALOWE GWOŹDZIE]] + [[ANY BOOTS]]
+[[DZIEWIĘCIOCALOWE GWOŹDZIE]] + #Boots
 - **Wymagania:** Crafting 5
 
 #Ulepszenia

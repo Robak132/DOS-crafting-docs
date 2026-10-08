@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: STŁUCZONA BUTELKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # STŁUCZONA BUTELKA

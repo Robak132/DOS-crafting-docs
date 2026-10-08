@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z OSTRYM SZPONEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z OSTRYM SZPONEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY OSTRY SZPON]]
+#Ring-Kit + [[MAGICZNY OSTRY SZPON]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Constitution, Sight
 

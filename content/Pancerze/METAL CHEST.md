@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: METAL CHEST
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # METAL CHEST

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: GAŁĄŹ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # GAŁĄŹ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[KŁODA]] + [[ANY ONE-HANDED AXE]] (x2)
+[[KŁODA]] + #One-handed-Axe (x2)
 - **Źródło:** The Adventurer's Field Guide V
 
 #Składniki

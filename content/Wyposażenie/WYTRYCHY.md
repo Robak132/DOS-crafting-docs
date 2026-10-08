@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WYTRYCHY
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # WYTRYCHY
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[MYDŁO]] + [[ANY KEY]]
+[[MYDŁO]] + #Key
 - **Wymagania:** Crafting 2
 
 [[IGŁA]] + [[IGŁA]]

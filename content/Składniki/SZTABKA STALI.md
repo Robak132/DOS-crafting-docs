@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZTABKA STALI
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SZTABKA STALI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY ONE-HANDED AXE]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
+#One-handed-Axe + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
 - **Wymagania:** Blacksmithing 1
 
 [[SZTABKA ŻELAZA]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]

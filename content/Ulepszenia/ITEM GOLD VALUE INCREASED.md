@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ITEM GOLD VALUE INCREASED
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ITEM GOLD VALUE INCREASED
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[PERŁA]] + [[ANY CHEST, GLOVES, HELMET, BELT, SARONG, OR SHIELD]]
+[[PERŁA]] + #Chest-Gloves-Helmet-Belt-Sarong-Or-Shield
 - **Wymagania:** Crafting 1
 - **Źródło:** The Adventurer's Field Guide VII
 

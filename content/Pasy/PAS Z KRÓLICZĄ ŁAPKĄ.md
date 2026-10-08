@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z KRÓLICZĄ ŁAPKĄ

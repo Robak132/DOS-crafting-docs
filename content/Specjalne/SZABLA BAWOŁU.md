@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZABLA BAWOŁU
+tags:
+  - Typ/Specjalne
+  - DOS1
 ---
 
 # SZABLA BAWOŁU

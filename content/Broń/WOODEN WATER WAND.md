@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WOODEN WATER WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # WOODEN WATER WAND

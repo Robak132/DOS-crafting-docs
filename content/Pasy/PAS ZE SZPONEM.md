@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS ZE SZPONEM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS ZE SZPONEM

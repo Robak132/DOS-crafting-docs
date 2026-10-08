@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DWURĘCZNY MIECZ
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DWURĘCZNY MIECZ

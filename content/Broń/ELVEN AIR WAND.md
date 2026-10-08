@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ELVEN AIR WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # ELVEN AIR WAND

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z KRÓLICZĄ ŁAPKĄ

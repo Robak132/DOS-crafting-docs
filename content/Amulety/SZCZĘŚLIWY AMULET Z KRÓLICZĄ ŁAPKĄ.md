@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZCZĘŚLIWY AMULET Z KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # SZCZĘŚLIWY AMULET Z KRÓLICZĄ ŁAPKĄ

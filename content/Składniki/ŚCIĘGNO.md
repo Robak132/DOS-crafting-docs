@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ŚCIĘGNO
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # ŚCIĘGNO

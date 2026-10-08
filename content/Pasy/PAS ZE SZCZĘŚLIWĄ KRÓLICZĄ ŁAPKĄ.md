@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ

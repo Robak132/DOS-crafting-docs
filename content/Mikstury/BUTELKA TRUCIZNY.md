@@ -1,5 +1,0 @@
----
-itemPage: true
----
-
-# BUTELKA TRUCIZNY

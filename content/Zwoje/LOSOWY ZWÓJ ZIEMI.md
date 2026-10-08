@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LOSOWY ZWÓJ ZIEMI
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # LOSOWY ZWÓJ ZIEMI

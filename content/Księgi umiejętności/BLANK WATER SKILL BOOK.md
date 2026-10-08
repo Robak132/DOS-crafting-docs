@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: BLANK WATER SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # BLANK WATER SKILL BOOK

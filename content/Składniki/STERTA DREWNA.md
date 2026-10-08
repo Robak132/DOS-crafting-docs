@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: STERTA DREWNA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # STERTA DREWNA

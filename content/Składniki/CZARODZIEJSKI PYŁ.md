@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: CZARODZIEJSKI PYŁ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # CZARODZIEJSKI PYŁ

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z OSTRYM SZPONEM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z OSTRYM SZPONEM

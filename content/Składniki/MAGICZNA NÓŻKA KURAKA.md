@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA NÓŻKA KURAKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNA NÓŻKA KURAKA

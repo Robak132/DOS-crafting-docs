@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIĆ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # NIĆ

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY OSTRY ZĄB
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNY OSTRY ZĄB

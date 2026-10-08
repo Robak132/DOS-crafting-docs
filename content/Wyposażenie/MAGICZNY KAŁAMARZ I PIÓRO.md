@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY KAŁAMARZ I PIÓRO
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # MAGICZNY KAŁAMARZ I PIÓRO

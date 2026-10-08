@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z CZASZKĄ
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z CZASZKĄ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNA CZASZKA]]
+#Ring-Kit + [[MAGICZNA CZASZKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Constitution
 

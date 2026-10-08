@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WOODEN FIRE WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # WOODEN FIRE WAND

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KSIĘŻYCOWY PYŁ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # KSIĘŻYCOWY PYŁ

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DRZAZGI
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # DRZAZGI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[KŁODA]] + [[ANY ONE-HANDED AXE]]
+[[KŁODA]] + #One-handed-Axe
 - **Źródło:** The Adventurer's Field Guide V
 
 #Składniki

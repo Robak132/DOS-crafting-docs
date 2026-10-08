@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: JELENI HEŁM
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # JELENI HEŁM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICZNE POROŻE]]
+#Leather-Helmet + [[MAGICZNE POROŻE]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Constitution
 

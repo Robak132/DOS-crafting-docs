@@ -19,17 +19,9 @@ export default (() => {
 
   const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
     const { tags, requirements } = getRecipeCatalog(allFiles, fileData.slug)
-    const isOverhaul = fileData.slug === OVERHAUL_SLUG
-    const categoryPages = isOverhaul
-      ? allFiles
-          .filter(
-            (file) =>
-              file.frontmatter?.catalog === "dos2" &&
-              file.frontmatter?.itemPage !== true &&
-              file.slug !== OVERHAUL_SLUG,
-          )
-          .sort((a, b) => (a.frontmatter?.title ?? "").localeCompare(b.frontmatter?.title ?? "", "pl"))
-      : []
+    const categoryPages = allFiles
+      .filter((file) => file.frontmatter?.categoryPage === true)
+      .sort((a, b) => (a.frontmatter?.title ?? "").localeCompare(b.frontmatter?.title ?? "", "pl"))
     const categoryLabels = new Map(
       categoryPages.flatMap((file) =>
         (file.frontmatter?.tags ?? []).map((tag) => [tag, file.frontmatter?.title ?? tag] as const),
@@ -77,7 +69,7 @@ export default (() => {
             {requirements.length > 0 && (
               <div class="recipe-sidebar-section">
                 <div class="recipe-sidebar-header">
-                  <h3>{isOverhaul ? "STANOWISKA" : "WYMAGANIA"}</h3>
+                  <h3>WYMAGANIA / STANOWISKA</h3>
                 </div>
                 <div class="recipe-tag-list requirements-list">
                   {requirements.map((req) => (
@@ -95,7 +87,7 @@ export default (() => {
               </div>
             )}
             <div class="recipe-sidebar-header">
-              <h3>{isOverhaul ? "KATEGORIE" : "TAGI"}</h3>
+              <h3>TAGI</h3>
             </div>
             <div class="recipe-tag-list">
               {tags.map((tag) => (

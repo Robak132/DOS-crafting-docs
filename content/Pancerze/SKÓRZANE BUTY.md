@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SKÓRZANE BUTY
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # SKÓRZANE BUTY

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: BUTELKA OLEJU
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # BUTELKA OLEJU

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WEŁNA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # WEŁNA

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WOODEN EARTH WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # WOODEN EARTH WAND

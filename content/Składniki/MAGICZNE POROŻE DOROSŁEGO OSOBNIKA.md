@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNE POROŻE DOROSŁEGO OSOBNIKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNE POROŻE DOROSŁEGO OSOBNIKA

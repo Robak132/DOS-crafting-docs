@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY DŁUGI SZCZURZY OGON
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNY DŁUGI SZCZURZY OGON

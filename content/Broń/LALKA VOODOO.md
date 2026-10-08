@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LALKA VOODOO
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # LALKA VOODOO

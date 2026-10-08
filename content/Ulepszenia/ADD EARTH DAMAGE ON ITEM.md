@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD EARTH DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD EARTH DAMAGE ON ITEM

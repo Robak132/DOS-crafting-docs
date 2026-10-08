@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MĄKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MĄKA

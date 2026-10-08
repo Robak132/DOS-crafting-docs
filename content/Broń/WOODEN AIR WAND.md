@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WOODEN AIR WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # WOODEN AIR WAND

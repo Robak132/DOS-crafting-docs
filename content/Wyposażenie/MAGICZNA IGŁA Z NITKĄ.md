@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA IGŁA Z NITKĄ
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # MAGICZNA IGŁA Z NITKĄ

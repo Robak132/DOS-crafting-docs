@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ ZE SZCZURZYM OGONEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ ZE SZCZURZYM OGONEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY SZCZURZY OGON]]
+#Ring-Kit + [[MAGICZNY SZCZURZY OGON]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Poison Resist
 

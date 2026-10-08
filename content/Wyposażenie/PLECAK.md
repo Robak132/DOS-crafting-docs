@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PLECAK
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # PLECAK

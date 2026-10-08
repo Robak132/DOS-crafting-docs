@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LEATHER CHEST
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # LEATHER CHEST

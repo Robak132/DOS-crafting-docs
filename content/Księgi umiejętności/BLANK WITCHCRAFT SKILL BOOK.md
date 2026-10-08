@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: BLANK WITCHCRAFT SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # BLANK WITCHCRAFT SKILL BOOK

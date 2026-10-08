@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ITEM GOLD VALUE INCREASED ITEM DYED TO YELLOW
+tags:
+  - Typ/Specjalne
+  - DOS1
 ---
 
 # ITEM GOLD VALUE INCREASED ITEM DYED TO YELLOW
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ZŁOTY GRAAL]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
+[[ZŁOTY GRAAL]] + #Chest-Gloves-Boots-Or-Sarong
 - **Uwagi:** DLC Item; Reusable
 
 #Specjalne

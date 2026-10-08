@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS ZE SZCZURZYM OGONEM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS ZE SZCZURZYM OGONEM

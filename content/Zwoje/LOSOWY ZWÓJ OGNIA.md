@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LOSOWY ZWÓJ OGNIA
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # LOSOWY ZWÓJ OGNIA

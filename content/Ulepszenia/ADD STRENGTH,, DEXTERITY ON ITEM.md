@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: 'ADD STRENGTH,, DEXTERITY ON ITEM'
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD STRENGTH,, DEXTERITY ON ITEM

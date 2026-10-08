@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PRZĘDZA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # PRZĘDZA

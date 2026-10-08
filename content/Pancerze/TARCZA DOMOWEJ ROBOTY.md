@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: TARCZA DOMOWEJ ROBOTY
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # TARCZA DOMOWEJ ROBOTY

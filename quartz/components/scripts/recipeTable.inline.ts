@@ -1,3 +1,5 @@
+import { groupRecipes, matchesRecipeQuery, recipeColumns, tagLabel, visibleRecipeTags } from "../recipeView"
+import type { RecipeItem, RecipeRow } from "../recipes"
 ;(() => {
   const STORAGE_INCLUDE = "wfrp_filter_include"
   const STORAGE_EXCLUDE = "wfrp_filter_exclude"
@@ -5,23 +7,9 @@
   const STORAGE_REQUIREMENTS_EXCLUDE = "wfrp_filter_requirements_exclude"
   type TagState = "neutral" | "include" | "exclude"
 
-  interface RecipeItem {
-    name: string
-    slug?: string
-    tags: string[]
-  }
-
-  interface RecipeRow {
-    id: string
-    ingredients: RecipeItem[]
-    result: RecipeItem
-    tags: string[]
-    requirements: string
-    notes: string
-  }
-
   interface RecipeData {
     recipes: RecipeRow[]
+    labels: Record<string, string>
   }
 
   type FilterState = {
@@ -89,39 +77,25 @@
   }
 
   function renderItem(item: RecipeItem): string {
+    if (item.selectorTag) {
+      return `<button type="button" class="recipe-item recipe-ingredient-tag" data-search-tag="${escapeHtml(item.selectorTag)}">${escapeHtml(item.name)}</button>`
+    }
     if (!item.slug) {
       return `<span class="recipe-item">${escapeHtml(item.name)}</span>`
     }
     return `<a class="internal recipe-item" href="${escapeHtml(buildRelativeHref(item.slug))}">${escapeHtml(item.name)}</a>`
   }
 
-  function groupRecipes(recipes: RecipeRow[]) {
-    const grouped = new Map<string, { result: RecipeItem; variants: RecipeRow[] }>()
-    recipes.forEach((recipe) => {
-      const key = recipe.result.slug ?? recipe.result.name
-      const existing = grouped.get(key)
-      if (existing) {
-        existing.variants.push(recipe)
-      } else {
-        grouped.set(key, { result: recipe.result, variants: [recipe] })
-      }
-    })
-    return [...grouped.values()]
-  }
-
   function buildRecipeHtml(group: { result: RecipeItem; variants: RecipeRow[] }): string {
     return group.variants
       .map((variant, index) => {
-        const first = variant.ingredients[0]
-        const second = variant.ingredients[1]
-        const extraCount = variant.ingredients.length > 2 ? variant.ingredients.length - 2 : 0
-        const isOverhaul = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog === "dos2"
-        const extra = !isOverhaul && extraCount > 0 ? `<span class="recipe-extra">+${extraCount}</span>` : ""
-        const remainingIngredients = isOverhaul
-          ? `<div class="recipe-ingredients">${variant.ingredients.slice(1).map(renderItem).join("") || `<span class="recipe-empty">—</span>`}</div>`
-          : second
-            ? renderItem(second)
-            : `<span class="recipe-empty">—</span>`
+        const ingredients = `<ul class="recipe-ingredients">${variant.ingredients.map((item) => `<li>${renderItem(item)}</li>`).join("")}</ul>`
+        const tags = visibleRecipeTags(variant.tags)
+          .map(
+            (tag) =>
+              `<button type="button" class="recipe-search-tag" data-search-tag="${escapeHtml(tag)}">${escapeHtml(tagLabel(tag, parsedData?.labels ?? {}))}</button>`,
+          )
+          .join("")
         const requirements = variant.requirements?.trim()
         const notes = variant.notes?.trim()
         const resultCell =
@@ -136,14 +110,12 @@
           .filter(Boolean)
           .join(" ")
         return `<tr data-recipe-id="${escapeHtml(group.result.slug ?? group.result.name)}" class="${rowClass}">
-          <td class="recipe-cell">${first ? renderItem(first) : `<span class="recipe-empty">—</span>`}</td>
-          <td class="recipe-cell">
-            ${remainingIngredients}
-            ${extra}
-          </td>
+          <td class="recipe-cell ingredients">${ingredients}</td>
           ${resultCell}
           <td class="recipe-cell meta">${requirements ? escapeHtml(requirements) : `<span class="recipe-empty">—</span>`}</td>
           <td class="recipe-cell meta">${notes ? escapeHtml(notes) : `<span class="recipe-empty">—</span>`}</td>
+          <td class="recipe-cell tags"><div class="recipe-row-tags">${tags}</div></td>
+          <td class="recipe-cell meta source">${variant.source ? escapeHtml(variant.source) : `<span class="recipe-empty">—</span>`}</td>
         </tr>`
       })
       .join("")
@@ -171,12 +143,11 @@
     tableBody: HTMLElement,
     countLabel: HTMLElement | null,
   ) {
-    const normalizedQuery = query.trim().toLowerCase()
     const requirementSet = requirements.map((req) => req.toLowerCase())
     const requirementExcludeSet = requirementsExclude.map((req) => req.toLowerCase())
 
     const filtered = recipes.filter((recipe) => {
-      const candidateTags = recipe.result?.tags ?? []
+      const candidateTags = recipe.tags
       const hasAllInclude = include.every((incTag) => matchesTag(candidateTags, incTag))
       const hasNoExclude = !exclude.some((excTag) => matchesTag(candidateTags, excTag))
       const reqTokens = requirementTokens(recipe.requirements ?? "")
@@ -190,25 +161,14 @@
       if (!matchesRequirements) return false
       if (matchesExcludedRequirements) return false
 
-      if (!normalizedQuery) return true
-      const haystack = [
-        recipe.result?.name ?? "",
-        ...(recipe.ingredients ?? []).map((ing) => ing.name ?? ""),
-        ...(recipe.tags ?? []),
-        recipe.requirements ?? "",
-        recipe.notes ?? "",
-      ]
-        .join(" ")
-        .toLowerCase()
-
-      return haystack.includes(normalizedQuery)
+      return matchesRecipeQuery(recipe, query, parsedData?.labels ?? {})
     })
 
     const grouped = groupRecipes(filtered)
     tableBody.innerHTML =
       grouped.length > 0
         ? grouped.map(buildRecipeHtml).join("")
-        : `<tr><td colspan="5" class="recipe-empty">Brak przepisów pasujących do filtrów.</td></tr>`
+        : `<tr><td colspan="${recipeColumns.length}" class="recipe-empty">Brak przepisów pasujących do filtrów.</td></tr>`
     countLabel && (countLabel.textContent = `Wyników: ${grouped.length}`)
     document.dispatchEvent(new CustomEvent("contentChanged", { detail: {} }))
   }
@@ -248,6 +208,7 @@
     const countLabel = document.querySelector<HTMLElement>(".recipe-results-count")
 
     if (!dataScript || !tableBody || !root) {
+      parsedData = null
       return
     }
 
@@ -270,6 +231,8 @@
     const tagStates = new Map<string, TagState>()
     const requirementStates = new Map<string, TagState>()
     const stored = readStoredFilters()
+    const queryTag = new URLSearchParams(window.location.search).get("tag")
+    if (searchInput && queryTag) searchInput.value = `#${queryTag}`
 
     tagButtons.forEach((btn) => {
       const tag = btn.dataset.tag
@@ -336,6 +299,15 @@
     }
 
     const cleanupHandlers: Array<() => void> = []
+    const onTagClick = (event: MouseEvent) => {
+      const target =
+        event.target instanceof Element ? event.target.closest<HTMLButtonElement>("button[data-search-tag]") : null
+      if (!target?.dataset.searchTag || !searchInput) return
+      searchInput.value = `#${target.dataset.searchTag}`
+      applyFromState()
+    }
+    root.addEventListener("click", onTagClick)
+    cleanupHandlers.push(() => root.removeEventListener("click", onTagClick))
     const filterDetails = document.querySelector<HTMLDetailsElement>(".recipe-sidebar-filters")
     const mobileLayout = window.matchMedia("(max-width: 800px)")
     const updateFilterLayout = () => {
@@ -437,7 +409,7 @@
   }
 
   document.addEventListener("filterChanged", () => {
-    const tableBody = document.querySelector<HTMLElement>(".recipe-table-body")
+    const tableBody = document.querySelector<HTMLElement>(".recipe-app .recipe-table-body")
     if (!tableBody || !parsedData) return
     const { include, exclude, requirements, requirementsExclude } = readStoredFilters()
     const query = document.querySelector<HTMLInputElement>(".recipe-search-input")?.value ?? ""

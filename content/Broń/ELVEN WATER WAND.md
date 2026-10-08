@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ELVEN WATER WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # ELVEN WATER WAND

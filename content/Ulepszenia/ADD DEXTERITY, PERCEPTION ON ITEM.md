@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: 'ADD DEXTERITY, PERCEPTION ON ITEM'
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD DEXTERITY, PERCEPTION ON ITEM
@@ -8,11 +12,11 @@ itemPage: true
 
 ### DOS1
 
-[[ZAKRES]] + [[ANY BOW]]
+[[ZAKRES]] + #Bow
 - **Wymagania:** Crafting 3
 - **Uwagi:** Stats Increase with Hero Level
 
-[[ZAKRES]] + [[ANY CROSSBOW]]
+[[ZAKRES]] + #Crossbow
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level
 

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY SZCZURZY OGON
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNY SZCZURZY OGON

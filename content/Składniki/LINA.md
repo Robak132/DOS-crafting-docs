@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LINA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # LINA

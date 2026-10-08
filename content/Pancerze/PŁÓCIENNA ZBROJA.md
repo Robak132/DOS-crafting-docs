@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PŁÓCIENNA ZBROJA
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # PŁÓCIENNA ZBROJA

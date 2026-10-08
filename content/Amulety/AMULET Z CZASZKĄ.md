@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z CZASZKĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z CZASZKĄ

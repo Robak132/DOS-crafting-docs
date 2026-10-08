@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: GAŁĄŹ Z GWOŹDZIAMI
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # GAŁĄŹ Z GWOŹDZIAMI

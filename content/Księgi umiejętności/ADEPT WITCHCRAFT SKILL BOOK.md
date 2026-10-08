@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADEPT WITCHCRAFT SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # ADEPT WITCHCRAFT SKILL BOOK
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[BLANK WITCHCRAFT SKILL BOOK]] + [[ANY ADEPT WITCHCRAFT SKILL SCROLL]]
+[[BLANK WITCHCRAFT SKILL BOOK]] + #Adept-Witchcraft-Skill-Scroll
 - **Wymagania:** Crafting 3
 - **Uwagi:** Skill Book spell same as Skill Scroll used
 - **Źródło:** Secrets of the Scroll X

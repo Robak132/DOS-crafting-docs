@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD AIR DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD AIR DAMAGE ON ITEM

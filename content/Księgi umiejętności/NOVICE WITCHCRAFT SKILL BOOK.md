@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NOVICE WITCHCRAFT SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # NOVICE WITCHCRAFT SKILL BOOK
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[BLANK WITCHCRAFT SKILL BOOK]] + [[ANY NOVICE WITCHCRAFT SKILL SCROLL]]
+[[BLANK WITCHCRAFT SKILL BOOK]] + #Novice-Witchcraft-Skill-Scroll
 - **Wymagania:** Crafting 2
 - **Uwagi:** Skill Book spell same as Skill Scroll used
 - **Źródło:** Secrets of the Scroll X

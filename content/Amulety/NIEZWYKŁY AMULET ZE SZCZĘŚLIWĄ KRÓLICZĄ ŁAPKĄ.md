@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZWYKŁY AMULET ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # NIEZWYKŁY AMULET ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ

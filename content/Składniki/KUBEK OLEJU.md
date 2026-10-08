@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KUBEK OLEJU
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # KUBEK OLEJU

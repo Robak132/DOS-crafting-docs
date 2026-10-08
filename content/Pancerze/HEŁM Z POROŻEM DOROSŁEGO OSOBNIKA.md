@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM Z POROŻEM DOROSŁEGO OSOBNIKA
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM Z POROŻEM DOROSŁEGO OSOBNIKA
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICZNE POROŻE DOROSŁEGO OSOBNIKA]]
+#Leather-Helmet + [[MAGICZNE POROŻE DOROSŁEGO OSOBNIKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Constitution, Water Resist
 

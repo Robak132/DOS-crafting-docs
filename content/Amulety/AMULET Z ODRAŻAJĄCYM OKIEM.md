@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z ODRAŻAJĄCYM OKIEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z ODRAŻAJĄCYM OKIEM

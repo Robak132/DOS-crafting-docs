@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA CZASZKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNA CZASZKA

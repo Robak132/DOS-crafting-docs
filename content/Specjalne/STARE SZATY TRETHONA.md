@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: STARE SZATY TRETHONA
+tags:
+  - Typ/Specjalne
+  - DOS1
 ---
 
 # STARE SZATY TRETHONA

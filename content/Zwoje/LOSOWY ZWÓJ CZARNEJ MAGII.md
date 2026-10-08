@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: LOSOWY ZWÓJ CZARNEJ MAGII
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # LOSOWY ZWÓJ CZARNEJ MAGII

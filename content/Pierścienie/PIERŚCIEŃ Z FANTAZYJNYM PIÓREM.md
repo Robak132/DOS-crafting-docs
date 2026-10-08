@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z FANTAZYJNYM PIÓREM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z FANTAZYJNYM PIÓREM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNE FANTAZYJNE PIÓRO]]
+#Ring-Kit + [[MAGICZNE FANTAZYJNE PIÓRO]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add HP
 

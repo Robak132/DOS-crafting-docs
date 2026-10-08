@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: CLAWED EARTH WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # CLAWED EARTH WAND

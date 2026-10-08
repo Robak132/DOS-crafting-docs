@@ -1,4 +1,5 @@
-(() => {
+import { recipeCatalogSlug } from "../recipeView"
+;(() => {
   type TagStateValue = "neutral" | "include" | "exclude"
 
   const STORAGE_INCLUDE = "wfrp_filter_include"
@@ -170,6 +171,23 @@
         const tag = btn.dataset.tag
         if (!tag) return
 
+        if (!isFilterPage) {
+          const pageTags = [
+            ...(document.querySelector("ul.tags")?.querySelectorAll<HTMLAnchorElement>("a[data-tag-filter]") ?? []),
+          ]
+            .map((link) => link.dataset.tagFilter!)
+            .filter(Boolean)
+          const catalog = recipeCatalogSlug(tag, pageTags)
+          const navigation = [...document.querySelectorAll<HTMLAnchorElement>(".recipe-tabs a")].find((link) =>
+            new URL(link.href).pathname.endsWith(`/${catalog}`),
+          )
+          if (!navigation) throw new Error(`Brak nawigacji do katalogu ${catalog}`)
+          const url = new URL(navigation.href)
+          url.searchParams.set("tag", tag)
+          navigateTo(url)
+          return
+        }
+
         const currentState = btn.dataset.state || "neutral"
         const nextState = getNextState(currentState)
 
@@ -211,7 +229,6 @@
       const link = target?.closest("a.tag-link") as HTMLAnchorElement | null
       const tag = link?.dataset?.tagFilter
       if (!tag) return
-      writeStoredFilters([tag], [])
     }
     document.addEventListener("click", tagLinkClick)
     ;(globalThis as any).addCleanup?.(() => document.removeEventListener("click", tagLinkClick))

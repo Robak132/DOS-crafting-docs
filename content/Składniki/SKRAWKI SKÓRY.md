@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SKRAWKI SKÓRY
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SKRAWKI SKÓRY

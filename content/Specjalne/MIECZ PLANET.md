@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MIECZ PLANET
+tags:
+  - Typ/Specjalne
+  - DOS1
 ---
 
 # MIECZ PLANET

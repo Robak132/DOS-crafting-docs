@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z OSTRYM ZĘBEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z OSTRYM ZĘBEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY OSTRY ZĄB]]
+#Ring-Kit + [[MAGICZNY OSTRY ZĄB]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Charisma, Fire Resist
 

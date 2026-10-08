@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZWYKŁY PIERŚCIEŃ ZE SZCZĘŚLIWEJ KRÓLICZEJ ŁAPKI
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # NIEZWYKŁY PIERŚCIEŃ ZE SZCZĘŚLIWEJ KRÓLICZEJ ŁAPKI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[NIEZWYKŁY AMULET ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ]]
+#Ring-Kit + [[NIEZWYKŁY AMULET ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Lucky Charm, Movement
 #Pierścienie

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z PAZUREM WIELKIEGO KURAKA
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z PAZUREM WIELKIEGO KURAKA

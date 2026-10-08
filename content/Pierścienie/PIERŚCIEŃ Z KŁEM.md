@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z KŁEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z KŁEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGIC TUSK]]
+#Ring-Kit + [[MAGIC TUSK]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Poison Resist
 

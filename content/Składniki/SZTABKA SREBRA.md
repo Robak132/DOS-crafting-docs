@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZTABKA SREBRA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SZTABKA SREBRA

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGIC TUSK
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGIC TUSK

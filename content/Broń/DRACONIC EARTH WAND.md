@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DRACONIC EARTH WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DRACONIC EARTH WAND

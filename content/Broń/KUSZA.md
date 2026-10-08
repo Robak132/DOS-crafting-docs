@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KUSZA
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # KUSZA

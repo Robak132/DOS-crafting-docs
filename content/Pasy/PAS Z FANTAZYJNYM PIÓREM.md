@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z FANTAZYJNYM PIÓREM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z FANTAZYJNYM PIÓREM

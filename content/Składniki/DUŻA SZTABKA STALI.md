@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DUŻA SZTABKA STALI
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # DUŻA SZTABKA STALI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY TWO-HANDED AXE]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
+#Two-handed-Axe + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
 - **Wymagania:** Blacksmithing 1
 
 [[DUŻA SZTABKA ŻELAZA]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]

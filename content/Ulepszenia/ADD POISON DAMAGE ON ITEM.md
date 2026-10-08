@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD POISON DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD POISON DAMAGE ON ITEM

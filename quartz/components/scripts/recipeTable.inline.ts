@@ -1,4 +1,4 @@
-import { groupRecipes, matchesRecipeQuery, recipeColumns, tagLabel, visibleRecipeTags } from "../recipeView"
+import { groupRecipes, isGameTag, matchesRecipeQuery, recipeColumns, tagLabel, visibleRecipeTags } from "../recipeView"
 import type { RecipeItem, RecipeRow } from "../recipes"
 ;(() => {
   const STORAGE_INCLUDE = "wfrp_filter_include"
@@ -31,11 +31,14 @@ import type { RecipeItem, RecipeRow } from "../recipes"
 
   function readStoredFilters(): FilterState {
     try {
+      const supportsRequirements = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog !== "dos2"
       return {
-        include: splitCsv(sessionStorage.getItem(storageKey(STORAGE_INCLUDE))),
-        exclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_EXCLUDE))),
-        requirements: splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS))),
-        requirementsExclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS_EXCLUDE))),
+        include: splitCsv(sessionStorage.getItem(storageKey(STORAGE_INCLUDE))).filter((tag) => !isGameTag(tag)),
+        exclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_EXCLUDE))).filter((tag) => !isGameTag(tag)),
+        requirements: supportsRequirements ? splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS))) : [],
+        requirementsExclude: supportsRequirements
+          ? splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS_EXCLUDE)))
+          : [],
       }
     } catch {
       return { include: [], exclude: [], requirements: [], requirementsExclude: [] }
@@ -232,7 +235,7 @@ import type { RecipeItem, RecipeRow } from "../recipes"
     const requirementStates = new Map<string, TagState>()
     const params = new URLSearchParams(window.location.search)
     const queryTag = params.get("tag")
-    const queryRequirement = params.get("requirement")
+    const queryRequirement = root.dataset.catalog === "dos2" ? null : params.get("requirement")
     const stored =
       queryTag || queryRequirement
         ? {
@@ -256,6 +259,10 @@ import type { RecipeItem, RecipeRow } from "../recipes"
         tagStates.set(tag, "exclude")
       }
       btn.dataset.state = state
+      if (state !== "neutral") {
+        const group = btn.closest<HTMLDetailsElement>(".recipe-tag-group")
+        if (group) group.open = true
+      }
     })
 
     requirementButtons.forEach((btn) => {

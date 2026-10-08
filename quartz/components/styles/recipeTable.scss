@@ -207,6 +207,15 @@
   padding-top: 0.8rem;
 }
 
+.recipe-tag-group > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.recipe-tag-group > .recipe-tag-list {
+  padding-top: 0.65rem;
+}
+
 @media all and ($mobile) {
   .page .sidebar.left:has(.recipe-sidebar) {
     flex-wrap: wrap;

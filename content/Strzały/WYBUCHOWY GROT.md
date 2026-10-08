@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# WYBUCHOWY GROT
+
+## Przepisy
+
+### DOS1
+
 [[GROT OGNIOWY]] + [[BOTTLE OF OIL]]
 - **Wymagania:** Crafting 2
 

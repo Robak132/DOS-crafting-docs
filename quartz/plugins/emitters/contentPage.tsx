@@ -14,6 +14,8 @@ import { BuildCtx } from "../../util/ctx"
 import { Node } from "unist"
 import { StaticResources } from "../../util/resources"
 import { QuartzPluginData } from "../vfile"
+import RecipeTablePage from "../../components/pages/RecipeTablePage"
+import { OVERHAUL_SLUG } from "../../components/recipeCatalog"
 
 async function processContent(
   ctx: BuildCtx,
@@ -46,10 +48,12 @@ async function processContent(
 }
 
 export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) => {
+  const contentBody = Content()
+  const recipeBody = RecipeTablePage()
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultContentPageLayout,
-    pageBody: Content(),
+    pageBody: (props) => (props.fileData.slug === OVERHAUL_SLUG ? recipeBody(props) : contentBody(props)),
     ...userOpts,
   }
 
@@ -67,6 +71,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
         ...header,
         ...beforeBody,
         pageBody,
+        recipeBody,
         ...afterBody,
         ...left,
         ...right,

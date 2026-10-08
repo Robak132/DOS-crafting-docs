@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA BUTELKA TRUCIZNY
+
+## Przepisy
+
+### DOS1
+
 [[MINOR POISON BOTTLE]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** 100% Poison chance (3 Turns)

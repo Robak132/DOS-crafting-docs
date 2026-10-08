@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA MIKSTURA UZDRAWIAJĄCA
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[BOROWIK]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 30% Heal

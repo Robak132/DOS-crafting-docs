@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# DUŻA MIKSTURA ZWINNOŚCI
+
+## Przepisy
+
+### DOS1
+
 [[ŚREDNIA MIKSTURA ZWINNOŚCI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Dexterity

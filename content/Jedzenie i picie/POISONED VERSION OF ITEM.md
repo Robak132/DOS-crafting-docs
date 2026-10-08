@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# POISONED VERSION OF ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ANY FOOD OR DRINK]] + [[BUTELKA TRUCIZNY]]
 - **Uwagi:** 100% Poison chance
 - **Źródło:** Rat Extermination

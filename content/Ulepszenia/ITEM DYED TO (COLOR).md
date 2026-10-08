@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ITEM DYED TO (COLOR)
+
+## Przepisy
+
+### DOS1
+
 [[FABRIC DYE (PURPLE, GREEN)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
 - **Wymagania:** Crafting 2
 

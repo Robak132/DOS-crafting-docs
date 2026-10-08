@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# STERTA DREWNA
+
+## Przepisy
+
+### DOS1
+
 [[DRZAZGI]] + [[WIADRO Z WODĄ]]
 - **Źródło:** Secrets of the Scroll VI
 

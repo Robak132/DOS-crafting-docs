@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# DUŻA SZTABKA STALI
+
+## Przepisy
+
+### DOS1
+
 [[ANY TWO-HANDED AXE]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
 - **Wymagania:** Blacksmithing 1
 

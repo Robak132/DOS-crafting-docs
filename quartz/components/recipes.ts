@@ -55,10 +55,10 @@ function normalizeKey(value: string): string {
 
 function extractWikiTargets(line: string): string[] {
   const results: string[] = []
-  const regex = /\[\[([^\]|#]+)(?:[^\]]*)\]\]/g
+  const regex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]/g
   let match: RegExpExecArray | null = null
   while ((match = regex.exec(line)) !== null) {
-    const target = match[1]?.trim()
+    const target = (match[2] ?? match[1])?.trim()
     if (target) {
       results.push(target)
     }
@@ -107,12 +107,16 @@ type ParsedRecipeLine = {
   requirements: string
   notes: string
   source: string
+  catalog: RecipeCatalog
 }
+
+export type RecipeCatalog = "dos1" | "dos2" | "dos2-overhaul"
 
 function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
   const lines = stripFrontmatter(contents.split(/\r?\n/))
   const entries: ParsedRecipeLine[] = []
   let current: ParsedRecipeLine | null = null
+  let catalog: RecipeCatalog = "dos1"
 
   const pushCurrent = () => {
     if (current) {
@@ -127,10 +131,16 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
     const line = rawLine.trim()
     if (!line) continue
 
+    if (/^#{1,6}\s+DOS(?:1|2)(?:\s*[–-]\s*Crafting Overhaul)?$/.test(line)) {
+      pushCurrent()
+      catalog = line.includes("Crafting Overhaul") ? "dos2-overhaul" : line.endsWith("DOS2") ? "dos2" : "dos1"
+      continue
+    }
+
     const isRecipe = line.includes("[[") && line.includes("]]") && extractWikiTargets(line).length >= 2
     if (isRecipe) {
       pushCurrent()
-      current = { line, requirements: "", notes: "", source: "" }
+      current = { line, requirements: "", notes: "", source: "", catalog }
       continue
     }
 
@@ -140,17 +150,11 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
         const label = match[1]
         const value = match[2]?.trim() ?? ""
         if (label === "Wymagania") {
-          current.requirements = current.requirements
-            ? `${current.requirements}; ${value}`
-            : value
+          current.requirements = current.requirements ? `${current.requirements}; ${value}` : value
         } else if (label === "Uwagi") {
-          current.notes = current.notes
-            ? `${current.notes}; ${value}`
-            : value
+          current.notes = current.notes ? `${current.notes}; ${value}` : value
         } else if (label === "Źródło") {
-          current.source = current.source
-            ? `${current.source}; ${value}`
-            : value
+          current.source = current.source ? `${current.source}; ${value}` : value
         }
       }
     }
@@ -165,6 +169,7 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
     requirements: "",
     notes: "",
     source: "",
+    catalog,
   }))
 }
 
@@ -271,7 +276,7 @@ function requirementTokens(value: string): string[] {
   return tokens.length > 0 ? tokens : ["-"]
 }
 
-export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
+export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCatalog = "dos1"): RecipeData {
   const itemLookup = new Map<string, RecipeItem>()
   const itemTagsBySlug = new Map<string, string[]>()
   const displayByNormalizedTag = new Map<string, string>()
@@ -280,7 +285,7 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
     if (!file.slug) return
 
     const filePath = file.filePath
-    const fallbackName = filePath ? path.parse(filePath).name : file.slug.split("/").at(-1) ?? file.slug
+    const fallbackName = filePath ? path.parse(filePath).name : (file.slug.split("/").at(-1) ?? file.slug)
     const title = (file.frontmatter?.title as string | undefined) ?? fallbackName
 
     const frontmatterTags = Array.isArray(file.frontmatter?.tags) ? file.frontmatter?.tags : []
@@ -330,7 +335,7 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
       return
     }
 
-    const recipeEntries = parseRecipeEntries(contents)
+    const recipeEntries = parseRecipeEntries(contents).filter((entry) => entry.catalog === catalog)
     if (recipeEntries.length === 0) return
 
     const fileTitle = (file.frontmatter?.title as string | undefined) ?? path.parse(file.filePath).name
@@ -348,17 +353,15 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
       const targets = extractWikiTargets(entry.line)
       if (targets.length < 2) return
 
-      const hasExplicitResult = entry.line.includes("=") && targets.length >= 3
+      const hasExplicitResult = entry.line.includes("=") && targets.length >= 2
       const ingredientsTargets =
-        hasExplicitResult && normalizeKey(targets.at(-1) ?? "") === normalizedResult
-          ? targets.slice(0, -1)
-          : targets
+        hasExplicitResult && normalizeKey(targets.at(-1) ?? "") === normalizedResult ? targets.slice(0, -1) : targets
 
       const ingredients = ingredientsTargets.map((target) => {
         const lookup = itemLookup.get(normalizeKey(target))
         if (lookup) {
           return {
-            name: lookup.name,
+            name: target,
             slug: lookup.slug,
             tags: lookup.tags,
           }
@@ -370,10 +373,7 @@ export function buildRecipeData(allFiles: QuartzPluginData[]): RecipeData {
       })
 
       const recipeTags = uniqueTags(
-        expandHierarchicalTags([
-          ...resultTags,
-          ...ingredients.flatMap((ingredient) => ingredient.tags ?? []),
-        ]),
+        expandHierarchicalTags([...resultTags, ...ingredients.flatMap((ingredient) => ingredient.tags ?? [])]),
       )
 
       const id = `${resultSlug}:${ingredientsTargets.join("+")}`

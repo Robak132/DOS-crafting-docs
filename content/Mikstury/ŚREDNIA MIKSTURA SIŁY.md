@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA MIKSTURA SIŁY
+
+## Przepisy
+
+### DOS1
+
 [[MAŁA MIKSTURA KONDYCJI]] + [[SPROSZKOWANA KOŚĆ]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 2 Strength

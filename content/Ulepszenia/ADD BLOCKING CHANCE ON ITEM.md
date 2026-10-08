@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD BLOCKING CHANCE ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[KOWADŁO]] + [[ANY METAL SHIELD]]
 - **Wymagania:** Blacksmithing 3
 - **Uwagi:** Stats Increase with Blacksmithing Level

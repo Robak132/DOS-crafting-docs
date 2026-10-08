@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADEPT WATER SKILL BOOK
+
+## Przepisy
+
+### DOS1
+
 [[BLANK WATER SKILL BOOK]] + [[ANY ADEPT WATER SKILL SCROLL]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Skill Book spell same as Skill Scroll used

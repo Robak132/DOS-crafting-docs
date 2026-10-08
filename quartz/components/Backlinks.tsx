@@ -16,15 +16,26 @@ const defaultOptions: BacklinksOptions = {
 export default ((opts?: Partial<BacklinksOptions>) => {
   const options: BacklinksOptions = { ...defaultOptions, ...opts }
   const { OverflowList, overflowListAfterDOMLoaded } = OverflowListFactory()
+  const cache = new WeakMap<QuartzComponentProps["allFiles"], Map<string, QuartzComponentProps["allFiles"]>>()
 
-  const Backlinks: QuartzComponent = ({
-    fileData,
-    allFiles,
-    displayClass,
-    cfg,
-  }: QuartzComponentProps) => {
-    const backlinkFiles = allFiles
-      .filter((file) => (file.links ?? []).some((l) => slugifyFilePath(l as any) === fileData.slug))
+  const getBacklinkIndex = (allFiles: QuartzComponentProps["allFiles"]) => {
+    const cached = cache.get(allFiles)
+    if (cached) return cached
+    const index = new Map<string, QuartzComponentProps["allFiles"]>()
+    allFiles.forEach((file) => {
+      const targets = new Set((file.links ?? []).map((link) => slugifyFilePath(link as any)))
+      targets.forEach((target) => {
+        const sources = index.get(target) ?? []
+        sources.push(file)
+        index.set(target, sources)
+      })
+    })
+    cache.set(allFiles, index)
+    return index
+  }
+
+  const Backlinks: QuartzComponent = ({ fileData, allFiles, displayClass, cfg }: QuartzComponentProps) => {
+    const backlinkFiles = (getBacklinkIndex(allFiles).get(fileData.slug!) ?? [])
       .map((file) => ({
         slug: file.slug! as FullSlug,
         title: (file.frontmatter?.title ?? file.slug ?? "Untitled") as string,
@@ -51,12 +62,7 @@ export default ((opts?: Partial<BacklinksOptions>) => {
                       const linkDest = `${filterPath}?include=${encodeURIComponent(tag)}`
                       return (
                         <li>
-                          <a
-                            href={linkDest}
-                            class="internal tag-link"
-                            data-no-popover="true"
-                            data-tag-filter={tag}
-                          >
+                          <a href={linkDest} class="internal tag-link" data-no-popover="true" data-tag-filter={tag}>
                             {tag}
                           </a>
                         </li>

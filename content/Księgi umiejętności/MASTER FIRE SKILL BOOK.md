@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MASTER FIRE SKILL BOOK
+
+## Przepisy
+
+### DOS1
+
 [[BLANK FIRE SKILL BOOK]] + [[ANY MASTER FIRE SKILL SCROLL]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Skill Book spell same as Skill Scroll used

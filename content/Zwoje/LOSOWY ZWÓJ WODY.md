@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# LOSOWY ZWÓJ WODY
+
+## Przepisy
+
+### DOS1
+
 [[NIEZAPISANY ZWÓJ WODY]] + [[MAGICZNY KAŁAMARZ I PIÓRO]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Novice/Adept Spells possible

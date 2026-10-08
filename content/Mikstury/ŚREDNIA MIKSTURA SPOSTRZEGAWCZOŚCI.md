@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA MIKSTURA SPOSTRZEGAWCZOŚCI
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[ANY EYE]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 2 Perception

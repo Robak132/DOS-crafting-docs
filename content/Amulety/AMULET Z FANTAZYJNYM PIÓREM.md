@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# AMULET Z FANTAZYJNYM PIÓREM
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGICZNE FANTAZYJNE PIÓRO]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Dexterity, Telekinesis

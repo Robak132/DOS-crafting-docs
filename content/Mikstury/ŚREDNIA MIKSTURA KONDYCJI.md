@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA MIKSTURA KONDYCJI
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[FARHANGORA]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 2 Constitution

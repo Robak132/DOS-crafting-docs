@@ -26,51 +26,42 @@ export const FilteredTagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (us
   return {
     name: "FilteredTagPage",
     getQuartzComponents() {
-      return [
-        Head,
-        Header,
-        Body,
-        ...header,
-        ...beforeBody,
-        pageBody,
-        ...afterBody,
-        ...left,
-        ...right,
-        Footer,
-      ]
+      return [Head, Header, Body, ...header, ...beforeBody, pageBody, ...afterBody, ...left, ...right, Footer]
     },
     async *emit(ctx, content, resources) {
       const allFiles = content.map((c) => c[1].data)
-      const slug = "receptury" as FullSlug
-      const cfg = ctx.cfg.configuration
+      for (const page of [{ slug: "receptury", title: "Receptury" }]) {
+        const slug = page.slug as FullSlug
+        const cfg = ctx.cfg.configuration
 
-      // Create a fake file data for the filter page
-      const fileData: QuartzPluginData = {
-        slug,
-        frontmatter: {
-          title: "Receptury",
-          tags: [],
-        },
-      } as QuartzPluginData
+        // Create a fake file data for the filter page
+        const fileData: QuartzPluginData = {
+          slug,
+          frontmatter: {
+            title: page.title,
+            tags: [],
+          },
+        } as QuartzPluginData
 
-      const externalResources = pageResources(pathToRoot(slug), resources)
-      const componentData: QuartzComponentProps = {
-        ctx,
-        fileData,
-        externalResources,
-        cfg,
-        children: [],
-        tree: { type: "root", children: [] } as Root,
-        allFiles,
+        const externalResources = pageResources(pathToRoot(slug), resources)
+        const componentData: QuartzComponentProps = {
+          ctx,
+          fileData,
+          externalResources,
+          cfg,
+          children: [],
+          tree: { type: "root", children: [] } as Root,
+          allFiles,
+        }
+
+        const contentHtml = renderPage(cfg, slug, componentData, opts, externalResources)
+        yield write({
+          ctx,
+          content: contentHtml,
+          slug,
+          ext: ".html",
+        })
       }
-
-      const contentHtml = renderPage(cfg, slug, componentData, opts, externalResources)
-      yield write({
-        ctx,
-        content: contentHtml,
-        slug,
-        ext: ".html",
-      })
     },
   }
 }

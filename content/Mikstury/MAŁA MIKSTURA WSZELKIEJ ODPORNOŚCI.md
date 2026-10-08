@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MAŁA MIKSTURA WSZELKIEJ ODPORNOŚCI
+
+## Przepisy
+
+### DOS1
+
 [[MIKSTURA ODPORNOŚCI NA POWIETRZE]] + [[WATER RESIST POTION]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 15% Air, Earth, Fire, Poison, Water Resist

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MASTER WATER SKILL BOOK
+
+## Przepisy
+
+### DOS1
+
 [[BLANK WATER SKILL BOOK]] + [[ANY MASTER WATER SKILL SCROLL]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Skill Book spell same as Skill Scroll used

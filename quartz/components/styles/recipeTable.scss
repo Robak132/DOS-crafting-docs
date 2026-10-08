@@ -6,6 +6,29 @@
   gap: 1.5rem;
 }
 
+.recipe-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+  }
+
+  a[aria-current="page"] {
+    border-color: var(--secondary);
+    background: color-mix(in srgb, var(--secondary) 20%, var(--light));
+  }
+}
+
+.recipe-ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
 .recipe-header {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +59,9 @@
   padding: 0.6rem 0.8rem;
   font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .recipe-search-input:focus {
@@ -65,7 +90,9 @@
   padding: 0.3rem 0.8rem;
   font-size: 0.85rem;
   cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .recipe-reset-btn:hover {
@@ -110,6 +137,37 @@
   gap: 1rem;
 }
 
+.recipe-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 0.8rem;
+}
+
+.recipe-sidebar-filters > summary,
+.recipe-category-navigation > summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.recipe-category-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+}
+
+@media all and ($mobile) {
+  .page .sidebar.left:has(.recipe-sidebar) {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .recipe-sidebar {
+    flex-basis: 100%;
+  }
+}
+
 .recipe-sidebar-nav {
   display: flex;
   flex-direction: column;
@@ -141,7 +199,10 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .recipe-tag-button[data-state="include"] {
@@ -249,7 +310,6 @@
   line-height: 1.5rem;
   white-space: normal;
 }
-
 
 .recipe-cell.result {
   font-weight: 700;

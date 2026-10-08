@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MINOR POISON BOTTLE
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[MUCHOMOR CZERWONY]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** 100% Poison chance (2 Turns)

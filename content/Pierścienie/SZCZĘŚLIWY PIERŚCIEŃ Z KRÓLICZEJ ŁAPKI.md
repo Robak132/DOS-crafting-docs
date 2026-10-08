@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# SZCZĘŚLIWY PIERŚCIEŃ Z KRÓLICZEJ ŁAPKI
+
+## Przepisy
+
+### DOS1
+
 [[ANY RING KIT]] + [[MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Lucky Charm, Movement

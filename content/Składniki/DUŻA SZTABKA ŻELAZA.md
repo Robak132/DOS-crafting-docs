@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# DUŻA SZTABKA ŻELAZA
+
+## Przepisy
+
+### DOS1
+
 [[SZTABKA ŻELAZA]] + [[SZTABKA ŻELAZA]]
 
 [[ANY TWO-HANDED SWORD]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]

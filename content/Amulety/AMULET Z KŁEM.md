@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# AMULET Z KŁEM
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGIC TUSK]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Loremaster

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD EARTH RESIST ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ESENCJA ZIEMI]] + [[ANY SHIELD]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level

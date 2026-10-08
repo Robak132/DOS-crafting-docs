@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŁUK
+
+## Przepisy
+
+### DOS1
+
 [[CIĘCIWA]] + [[GAŁĄŹ]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Stats Increase with Crafting Level

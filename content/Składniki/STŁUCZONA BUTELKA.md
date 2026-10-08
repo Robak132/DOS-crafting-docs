@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# STŁUCZONA BUTELKA
+
+## Przepisy
+
+### DOS1
+
 [[BUTELKA PIWA]] + [[MORTAR & PESTLE / HAMMER]]
 
 [[BUTELKA OLEJU]] + [[MORTAR & PESTLE / HAMMER]]

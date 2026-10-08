@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# SZCZĘŚLIWY AMULET Z KRÓLICZĄ ŁAPKĄ
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Speed, Movement

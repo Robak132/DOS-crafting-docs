@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MINOR INVISIBILITY POTION
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[ESENCJA CIENIA]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Invisible (5 Turns)

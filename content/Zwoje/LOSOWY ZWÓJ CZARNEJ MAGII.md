@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# LOSOWY ZWÓJ CZARNEJ MAGII
+
+## Przepisy
+
+### DOS1
+
 [[NIEZAPISANY ZWÓJ CZARNEJ MAGII]] + [[MAGICZNY KAŁAMARZ I PIÓRO]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Novice/Adept Spells possible

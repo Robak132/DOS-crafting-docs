@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ZATRUTY GROT
+
+## Przepisy
+
+### DOS1
+
 [[GROT]] + [[BUTELKA TRUCIZNY]]
 - **Wymagania:** Crafting 2
 - **Źródło:** The String Enthusiast III

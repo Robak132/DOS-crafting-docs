@@ -4,11 +4,19 @@ title: Minor Resist All Potion
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS2-CO
+  - DOS2
 ---
 
 # Minor Resist All Potion
 
 ## Przepisy
+
+
+### DOS2
+
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[Składniki/TRUMPET OF DEATH|Trumpet Of Death]] = [[Mikstury i jedzenie/MINOR RESIST ALL POTION|Minor Resist All Potion]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A319:G319
 
 ### DOS2 – Crafting Overhaul
 

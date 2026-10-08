@@ -4,14 +4,25 @@ categoryPage: true
 tags:
   - Typ/Pancerz
 ---
+
 # Pancerze
 
+- [[Pancerze/ARMOUR OF ETERNALS|Armour of Eternals]]
 - [[Pancerze/BONE BOOTS|Bone Boots]]
 - [[Pancerze/BONE GLOVES|Bone Gloves]]
 - [[Pancerze/BONE HELMET|Bone Helmet]]
 - [[Pancerze/BONE PANTS|Bone Pants]]
 - [[Pancerze/BONE TORSO|Bone Torso]]
+- [[Pancerze/DWARVEN MASK OF THE SHAPESHIFTER|Dwarven Mask of the Shapeshifter]]
 - [[Pancerze/DYNIOWY HEŁM|DYNIOWY HEŁM]]
+- [[Pancerze/ELVEN MASK OF THE SHAPESHIFTER|Elven Mask of the Shapeshifter]]
+- [[Pancerze/HANDMADE CHAIN ARMOUR|Handmade Chain Armour]]
+- [[Pancerze/HANDMADE CLOTH SHIRT|Handmade Cloth Shirt]]
+- [[Pancerze/HANDMADE LEATHER ARMOUR|Handmade Leather Armour]]
+- [[Pancerze/HANDMADE MAGE ARMOUR|Handmade Mage Armour]]
+- [[Pancerze/HANDMADE PLATE ARMOUR|Handmade Plate Armour]]
+- [[Pancerze/HANDMADE SCALE ARMOUR|Handmade Scale Armour]]
+- [[Pancerze/HANDMADE SHIELD|Handmade Shield]]
 - [[Pancerze/HEŁM „TRZECIE OKO”|HEŁM „TRZECIE OKO”]]
 - [[Pancerze/HEŁM Z FANTAZYJNYM PIÓREM|HEŁM Z FANTAZYJNYM PIÓREM]]
 - [[Pancerze/HEŁM Z ODRAŻAJĄCYM OKIEM|HEŁM Z ODRAŻAJĄCYM OKIEM]]
@@ -19,6 +30,7 @@ tags:
 - [[Pancerze/HEŁM Z POROŻEM DOROSŁEGO OSOBNIKA|HEŁM Z POROŻEM DOROSŁEGO OSOBNIKA]]
 - [[Pancerze/HEŁM Z ROZGWIAZDĄ|HEŁM Z ROZGWIAZDĄ]]
 - [[Pancerze/HEŁM ZE ŚWIETLISTĄ ROZGWIAZDĄ|HEŁM ZE ŚWIETLISTĄ ROZGWIAZDĄ]]
+- [[Pancerze/HUMAN MASK OF THE SHAPESHIFTER|Human Mask of the Shapeshifter]]
 - [[Pancerze/JELENI HEŁM|JELENI HEŁM]]
 - [[Pancerze/KRABI HEŁM|KRABI HEŁM]]
 - [[Pancerze/LEATHER BOOTS|Leather Boots]]
@@ -26,6 +38,7 @@ tags:
 - [[Pancerze/LEATHER GLOVES|Leather Gloves]]
 - [[Pancerze/LEATHER HELMET|Leather Helmet]]
 - [[Pancerze/LEATHER PANTS|Leather Pants]]
+- [[Pancerze/LIZARD MASK OF THE SHAPESHIFTER|Lizard Mask of the Shapeshifter]]
 - [[Pancerze/MAGE BOOTS|Mage Boots]]
 - [[Pancerze/MAGE GLOVES|Mage Gloves]]
 - [[Pancerze/MAGE HELMET|Mage Helmet]]
@@ -35,6 +48,7 @@ tags:
 - [[Pancerze/METAL CHEST|METAL CHEST]]
 - [[Pancerze/METAL HELMET|Metal Helmet]]
 - [[Pancerze/METAL LOWERBODY|Metal Lowerbody]]
+- [[Pancerze/NEEDLE AND THREAD|Needle and Thread]]
 - [[Pancerze/PANCERZ DLA BIEDAKÓW|PANCERZ DLA BIEDAKÓW]]
 - [[Pancerze/PHYSICAL ARMOUR BOOST (UP TO 10)|Physical Armour Boost (Up to 10)]]
 - [[Pancerze/PHYSICAL ARMOUR BOOST (UP TO 20)|Physical Armour Boost (Up to 20)]]

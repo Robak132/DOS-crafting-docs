@@ -4,11 +4,19 @@ title: Feather
 tags:
   - Typ/Warsztat
   - DOS2-CO
+  - DOS2
 ---
 
 # Feather
 
 ## Przepisy
+
+
+### DOS2
+
+[[Składniki/PILLOW|Pillow]] + [[Składniki/CUTTINGTOOL|CuttingTool]] = [[Warsztat/FEATHER|Feather]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A25:G25
 
 ### DOS2 – Crafting Overhaul
 

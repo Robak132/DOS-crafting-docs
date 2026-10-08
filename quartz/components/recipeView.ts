@@ -54,17 +54,18 @@ export function groupRecipeTags(tags: TagStat[]): { label: string; tags: TagStat
     if (isGameTag(tag) || tag === "Typ" || names.has(mergedCategoryTags[tag])) continue
     const label = tag.startsWith("Typ/")
       ? "Kategorie"
-      : weapons.has(tag)
+      : weapons.has(tag) || /(?:Weapon|Cutting-Tool)/i.test(tag)
         ? "Broń i narzędzia"
-        : armor.has(tag)
+        : armor.has(tag) || /(?:Armor|Shoes|Boots)/i.test(tag)
           ? "Pancerze"
-          : ["Amulet", "Ring"].includes(tag)
+          : ["Amulet", "Ring"].includes(tag) || /Trinket/i.test(tag)
             ? "Biżuteria"
-            : /(?:Skillbook|Scroll)$/.test(tag)
+            : /(?:Skillbook|Scroll)(?:-|$)/i.test(tag)
               ? "Księgi i zwoje"
-              : ["Dye", "Gold-Object", "Poison-Source", "Skull"].includes(tag)
+              : ["Dye", "Gold-Object", "Poison-Source", "Skull"].includes(tag) ||
+                  /Essence|Rune|Soul|Source|Bone|Skull|Bottle|Nails|Dust|Wool|Yarn|Antler|Claw|Doll/i.test(tag)
                 ? "Materiały i wytwarzanie"
-                : tag === "Fish"
+                : /Fish|Honey|Poison-or-Rotten-Eggs|Jellyroom/i.test(tag)
                   ? "Jedzenie"
                   : tag.startsWith("Cechy")
                     ? "Cechy"
@@ -86,6 +87,8 @@ export function groupRecipeTags(tags: TagStat[]): { label: string; tags: TagStat
 
 export function recipeCatalogSlug(tag: string, pageTags: readonly string[]): string {
   if (tag === "DOS1") return "receptury"
+  if (tag === "DOS2") return "DOS2"
+  if (!pageTags.includes("DOS1") && !pageTags.includes("DOS2-CO") && pageTags.includes("DOS2")) return "DOS2"
   return tag === "DOS2-CO" || (pageTags.includes("DOS2-CO") && !pageTags.includes("DOS1"))
     ? "dos2-crafting-overhaul"
     : "receptury"

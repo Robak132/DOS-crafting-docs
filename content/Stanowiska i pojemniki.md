@@ -4,6 +4,7 @@ categoryPage: true
 tags:
   - Typ/Stanowiska-i-pojemniki
 ---
+
 # Stanowiska i pojemniki
 
 - [[Stanowiska i pojemniki/AMMUNITION BAG|Ammunition Bag]]
@@ -15,7 +16,9 @@ tags:
 - [[Stanowiska i pojemniki/BLESSED WATER BARREL|Blessed Water Barrel]]
 - [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]]
 - [[Stanowiska i pojemniki/BOOKCASE|Bookcase]]
+- [[Stanowiska i pojemniki/BUCKET OF WATER|Bucket of water]]
 - [[Stanowiska i pojemniki/CAMPFIRE|Campfire]]
+- [[Stanowiska i pojemniki/COOKING STATION|Cooking station]]
 - [[Stanowiska i pojemniki/CRAFTER'S ANVIL|Crafter's Anvil]]
 - [[Stanowiska i pojemniki/CRAFTER'S CAMPFIRE|Crafter's Campfire]]
 - [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]]

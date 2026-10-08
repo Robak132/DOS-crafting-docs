@@ -5,6 +5,7 @@ tags:
   - Typ/Materialy-z-odzysku
   - Typ/Pancerz
   - DOS2-CO
+  - DOS2
 ---
 
 # Plate Scraps

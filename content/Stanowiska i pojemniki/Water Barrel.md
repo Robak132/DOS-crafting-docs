@@ -4,6 +4,7 @@ title: Water Barrel
 tags:
   - Typ/Stanowiska-i-pojemniki
   - DOS2-CO
+  - DOS2
 ---
 
 # Water Barrel

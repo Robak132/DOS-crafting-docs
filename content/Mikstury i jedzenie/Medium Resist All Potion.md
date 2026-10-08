@@ -4,11 +4,27 @@ title: Medium Resist All Potion
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS2-CO
+  - DOS2
 ---
 
 # Medium Resist All Potion
 
 ## Przepisy
+
+
+### DOS2
+
+[[Mikstury i jedzenie/MINOR RESIST ALL POTION|Minor Resist All Potion]] + [[Składniki/HIGH QUALITY AUGMENTOR|High Quality Augmentor]] = [[Mikstury i jedzenie/MEDIUM RESIST ALL POTION|Medium Resist All Potion]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A316:G316
+
+[[Mikstury i jedzenie/MINOR RESIST ALL POTION|Minor Resist All Potion]] + [[Mikstury i jedzenie/MINOR RESIST ALL POTION|Minor Resist All Potion]] = [[Mikstury i jedzenie/MEDIUM RESIST ALL POTION|Medium Resist All Potion]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A317:G317
+
+[[Mikstury i jedzenie/MINOR RESIST ALL POTION|Minor Resist All Potion]] + [[Składniki/ULTIMATE AUGMENTOR HERB|Ultimate Augmentor Herb]] = [[Mikstury i jedzenie/MEDIUM RESIST ALL POTION|Medium Resist All Potion]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A318:G318
 
 ### DOS2 – Crafting Overhaul
 

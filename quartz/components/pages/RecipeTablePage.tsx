@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { FullSlug } from "../../util/path"
 import { classNames } from "../../util/lang"
 import style from "../styles/recipeTable.scss"
-import { getRecipeCatalog, OVERHAUL_SLUG } from "../recipeCatalog"
+import { getRecipeCatalog, OVERHAUL_SLUG, DOS2_SLUG } from "../recipeCatalog"
 import { RecipeTable } from "../RecipeTable"
 import { groupRecipes } from "../recipeView"
 
@@ -15,7 +15,10 @@ export default (() => {
     const labels = Object.fromEntries(tags.map((tag) => [tag.tag, tag.label ?? tag.tag]))
     const slug = fileData.slug! as FullSlug
     return (
-      <div class={classNames(displayClass, "recipe-app")} data-catalog={slug === OVERHAUL_SLUG ? "dos2" : "dos1"}>
+      <div
+        class={classNames(displayClass, "recipe-app")}
+        data-catalog={slug === OVERHAUL_SLUG ? "dos2" : slug === DOS2_SLUG ? "dos2-base" : "dos1"}
+      >
         <script
           id="recipe-table-data"
           type="application/json"

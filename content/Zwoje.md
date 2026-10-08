@@ -7,6 +7,8 @@ tags:
 
 # Zwoje
 
+- [[Zwoje/CURSE SCROLL|Curse Scroll]]
+- [[Zwoje/HUNGRY FLOWER SCROLL|Hungry Flower Scroll]]
 - [[Zwoje/LOSOWY ZWÓJ CZARNEJ MAGII|LOSOWY ZWÓJ CZARNEJ MAGII]]
 - [[Zwoje/LOSOWY ZWÓJ OGNIA|LOSOWY ZWÓJ OGNIA]]
 - [[Zwoje/LOSOWY ZWÓJ POWIETRZA|LOSOWY ZWÓJ POWIETRZA]]

@@ -25,7 +25,6 @@ tags:
 - [[Materiały z odzysku/MYSTERIOUS PART C|Mysterious Part C]]
 - [[Materiały z odzysku/MYSTERIOUS PART D|Mysterious Part D]]
 - [[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]]
-- [[Stanowiska i pojemniki/SCRAPPER'S PICKAXE|Scrapper's Pickaxe]]
 - [[Materiały z odzysku/SHARP PIECE OF METAL|Sharp Piece of Metal]]
 - [[Materiały z odzysku/SHARP PIECE OF METAL (SIMPLE RECIPE)|Sharp Piece of Metal (Simple Recipe)]]
 - [[Materiały z odzysku/SHARP ROCK (SIMPLE RECIPE)|Sharp Rock (Simple Recipe)]]

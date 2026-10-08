@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG } from "./recipeCatalog"
+import { getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG, DOS2_SLUG } from "./recipeCatalog"
 import { groupRecipeTags, recipeCatalogSlug } from "./recipeView"
 import type { RecipeData, TagStat } from "./recipes"
 import { FullSlug, resolveRelative } from "../util/path"
@@ -13,7 +13,11 @@ export default (() => {
   const combinedData = (allFiles: QuartzComponentProps["allFiles"]): RecipeData => {
     const cached = cache.get(allFiles)
     if (cached) return cached
-    const catalogs = [getCatalogData(allFiles, "dos1"), getCatalogData(allFiles, "dos2-overhaul")]
+    const catalogs = [
+      getCatalogData(allFiles, "dos1"),
+      getCatalogData(allFiles, "dos2"),
+      getCatalogData(allFiles, "dos2-overhaul"),
+    ]
     const combine = (field: "tags" | "requirements") => {
       const entries = new Map<string, TagStat>()
       for (const catalog of catalogs)
@@ -48,12 +52,15 @@ export default (() => {
     const { tags, requirements } = filterPage ? getRecipeCatalog(allFiles, fileData.slug) : combinedData(allFiles)
     const tagGroups = groupRecipeTags(tags)
     const pageTags = fileData.frontmatter?.tags ?? []
-    const overhaulPage = fileData.slug === OVERHAUL_SLUG || (pageTags.includes("DOS2-CO") && !pageTags.includes("DOS1"))
+    const overhaulPage =
+      fileData.slug === DOS2_SLUG ||
+      fileData.slug === OVERHAUL_SLUG ||
+      ((pageTags.includes("DOS2-CO") || pageTags.includes("DOS2")) && !pageTags.includes("DOS1"))
     const showRequirements = !overhaulPage && requirements.some((req) => req.tag !== "-")
     const preferred = recipeCatalogSlug("", fileData.frontmatter?.tags ?? [])
     const filterHref = (value: string, kind: "tag" | "requirement") => {
       const field = kind === "tag" ? "tags" : "requirements"
-      const catalog = [preferred, preferred === OVERHAUL_SLUG ? "receptury" : OVERHAUL_SLUG].find((slug) =>
+      const catalog = [preferred, DOS2_SLUG, OVERHAUL_SLUG, "receptury"].find((slug) =>
         getRecipeCatalog(allFiles, slug)[field].some((stat) => stat.tag === value && stat.count > 0),
       )
       if (!catalog) throw new Error(`Brak katalogu dla filtra ${value}`)
@@ -84,6 +91,13 @@ export default (() => {
             data-no-popover="true"
           >
             DOS1 – Receptury
+          </a>
+          <a
+            class="internal recipe-nav-link"
+            href={resolveRelative(fileData.slug! as FullSlug, DOS2_SLUG as FullSlug)}
+            data-no-popover="true"
+          >
+            DOS2 – Receptury
           </a>
           <a
             class="internal recipe-nav-link"

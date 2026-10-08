@@ -4,6 +4,7 @@ title: Sharp Piece of Metal
 tags:
   - Typ/Materialy-z-odzysku
   - DOS2-CO
+  - DOS2
 ---
 
 # Sharp Piece of Metal

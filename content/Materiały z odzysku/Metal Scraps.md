@@ -4,6 +4,7 @@ title: Metal Scraps
 tags:
   - Typ/Materialy-z-odzysku
   - DOS2-CO
+  - DOS2
 ---
 
 # Metal Scraps

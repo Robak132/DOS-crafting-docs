@@ -4,6 +4,7 @@ categoryPage: true
 tags:
   - Typ/Magia
 ---
+
 # Magia
 
 - [[Magia/AIR AXE|Air Axe]]
@@ -88,12 +89,20 @@ tags:
 - [[Magia/FIRE TWO HANDED MACE|Fire Two Handed Mace]]
 - [[Magia/FIRE TWO HANDED SWORD|Fire Two Handed Sword]]
 - [[Magia/FIRE WAND|Fire Wand]]
+- [[Magia/GIANT % RUNE|Giant % Rune]]
+- [[Magia/GIANT % RUNE OF POWER|Giant % Rune of Power]]
 - [[Magia/INKPOT & QUILL|Inkpot & Quill]]
+- [[Magia/LARGE % RUNE OF POWER|Large % Rune of Power]]
 - [[Magia/LIFE ESSENCE|Life Essence]]
 - [[Magia/LIFE ESSENCE (X2 OR X3)|Life Essence (x2 or x3)]]
 - [[Magia/MAGICAL CLEANSER|Magical Cleanser]]
 - [[Magia/MAGICAL INKPOT & QUILL|Magical Inkpot & Quill]]
 - [[Magia/MALACHITE|Malachite]]
+- [[Magia/MEDIUM % RUNE OF POWER|Medium % Rune of Power]]
+- [[Magia/MYSTICAL GIANT % RUNE|Mystical Giant % Rune]]
+- [[Magia/MYSTICAL LARGE % RUNE|Mystical Large % Rune]]
+- [[Magia/MYSTICAL MEDIUM % RUNE|Mystical Medium % Rune]]
+- [[Magia/MYSTICAL SMALL % RUNE|Mystical Small % Rune]]
 - [[Magia/NECROMANCY EMPTY SKILLBOOK|Necromancy Empty Skillbook]]
 - [[Magia/ONE OF THE TEN BLANK SCROLLS|One of the ten Blank Scrolls]]
 - [[Magia/PEARL|Pearl]]
@@ -113,6 +122,7 @@ tags:
 - [[Magia/POISON TWO HANDED SWORD|Poison Two Handed Sword]]
 - [[Magia/POISON WAND|Poison Wand]]
 - [[Magia/POLYMORPH EMPTY SKILLBOOK|Polymorph Empty Skillbook]]
+- [[Magia/POUCH OF SUPERIOR STAR DUST|Pouch Of Superior Star Dust]]
 - [[Magia/RANDOM AIR SCROLL|Random Air Scroll]]
 - [[Magia/RANDOM EARTH SCROLL|Random Earth Scroll]]
 - [[Magia/RANDOM FIRE SCROLL|Random Fire Scroll]]
@@ -146,6 +156,13 @@ tags:
 - [[Magia/SHADOW TWO HANDED SWORD|Shadow Two Handed Sword]]
 - [[Magia/SHADOW WAND|Shadow Wand]]
 - [[Magia/SHEET OF PAPER (VANILLA RECIPE)|Sheet Of Paper (Vanilla Recipe)]]
+- [[Magia/SMALL % RUNE OF POWER|Small % Rune of Power]]
+- [[Magia/SMALL FLAME RUNE|Small Flame Rune]]
+- [[Magia/SMALL FROST RUNE|Small Frost Rune]]
+- [[Magia/SMALL MASTERWORK RUNE|Small Masterwork Rune]]
+- [[Magia/SMALL ROCK RUNE|Small Rock Rune]]
+- [[Magia/SMALL THUNDER RUNE|Small Thunder Rune]]
+- [[Magia/SMALL VENOM RUNE|Small Venom Rune]]
 - [[Magia/SUMMONING EMPTY SKILLBOOK|Summoning Empty Skillbook]]
 - [[Magia/SUPERIOR PIXIE DUST|Superior Pixie Dust]]
 - [[Magia/TOPAZ|Topaz]]

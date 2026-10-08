@@ -4,6 +4,8 @@ title: Nails
 tags:
   - Typ/Warsztat
   - DOS2-CO
+  - DOS2
+  - Broken-Bottle-Or-Nails
 ---
 
 # Nails

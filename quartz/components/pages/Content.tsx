@@ -3,7 +3,7 @@ import { htmlToJsx } from "../../util/jsx"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 import { Element, Root, RootContent } from "hast"
 import { toString } from "hast-util-to-string"
-import { getCatalogData, OVERHAUL_SLUG } from "../recipeCatalog"
+import { getCatalogData, OVERHAUL_SLUG, DOS2_SLUG } from "../recipeCatalog"
 import { RecipeCatalog } from "../recipes"
 import { RecipeTable } from "../RecipeTable"
 import { FullSlug } from "../../util/path"
@@ -43,7 +43,9 @@ const Content: QuartzComponent = ({ fileData, tree, allFiles }: QuartzComponentP
               recipes={recipes}
               slug={fileData.slug! as FullSlug}
               labels={labels}
-              catalogSlug={(catalog === "dos1" ? "receptury" : OVERHAUL_SLUG) as FullSlug}
+              catalogSlug={
+                (catalog === "dos1" ? "receptury" : catalog === "dos2" ? DOS2_SLUG : OVERHAUL_SLUG) as FullSlug
+              }
             />
           )
         }

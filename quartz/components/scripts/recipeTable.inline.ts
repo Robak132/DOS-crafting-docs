@@ -22,7 +22,8 @@ import type { RecipeItem, RecipeRow } from "../recipes"
   let parsedData: RecipeData | null = null
 
   function storageKey(key: string): string {
-    return document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog === "dos2" ? `dos2_${key}` : key
+    const catalog = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog
+    return catalog === "dos2" ? `dos2_${key}` : catalog === "dos2-base" ? `dos2_base_${key}` : key
   }
 
   function splitCsv(value: string | null): string[] {
@@ -31,7 +32,7 @@ import type { RecipeItem, RecipeRow } from "../recipes"
 
   function readStoredFilters(): FilterState {
     try {
-      const supportsRequirements = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog !== "dos2"
+      const supportsRequirements = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog === "dos1"
       return {
         include: splitCsv(sessionStorage.getItem(storageKey(STORAGE_INCLUDE))).filter((tag) => !isGameTag(tag)),
         exclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_EXCLUDE))).filter((tag) => !isGameTag(tag)),
@@ -235,7 +236,7 @@ import type { RecipeItem, RecipeRow } from "../recipes"
     const requirementStates = new Map<string, TagState>()
     const params = new URLSearchParams(window.location.search)
     const queryTag = params.get("tag")
-    const queryRequirement = root.dataset.catalog === "dos2" ? null : params.get("requirement")
+    const queryRequirement = root.dataset.catalog === "dos1" ? params.get("requirement") : null
     const stored =
       queryTag || queryRequirement
         ? {

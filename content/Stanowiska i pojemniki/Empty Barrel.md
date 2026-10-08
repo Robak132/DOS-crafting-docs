@@ -4,6 +4,7 @@ title: Empty Barrel
 tags:
   - Typ/Stanowiska-i-pojemniki
   - DOS2-CO
+  - DOS2
 ---
 
 # Empty Barrel

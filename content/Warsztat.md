@@ -79,4 +79,3 @@ tags:
 - [[Warsztat/UNIQUE SUMMONER CAPE|Unique Summoner Cape]]
 - [[Warsztat/UNIQUE WARRIOR BELT|Unique Warrior Belt]]
 - [[Warsztat/UNIQUE WARRIOR CAPE|Unique Warrior Cape]]
-- [[Stanowiska i pojemniki/WOOD PILE|Wood Pile]]

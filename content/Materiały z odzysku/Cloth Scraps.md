@@ -4,11 +4,27 @@ title: Cloth Scraps
 tags:
   - Typ/Materialy-z-odzysku
   - DOS2-CO
+  - DOS2
 ---
 
 # Cloth Scraps
 
 ## Przepisy
+
+
+### DOS2
+
+[[Składniki/BED LINEN|Bed Linen]] + [[Składniki/CUTTINGTOOL|CuttingTool]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A23:G23
+
+[[Składniki/BED LINEN|Bed Linen]] + [[Składniki/ - CUTTING TOOL -|<Cutting Tool>]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A54:G54
+
+[[Składniki/BED LINEN|Bed Linen]] + [[Składniki/CUTTING TOOL|Cutting Tool]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A76:G76
 
 ### DOS2 – Crafting Overhaul
 

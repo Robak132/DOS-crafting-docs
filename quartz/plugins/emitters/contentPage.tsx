@@ -15,7 +15,7 @@ import { Node } from "unist"
 import { StaticResources } from "../../util/resources"
 import { QuartzPluginData } from "../vfile"
 import RecipeTablePage from "../../components/pages/RecipeTablePage"
-import { OVERHAUL_SLUG } from "../../components/recipeCatalog"
+import { OVERHAUL_SLUG, DOS2_SLUG } from "../../components/recipeCatalog"
 
 async function processContent(
   ctx: BuildCtx,
@@ -53,7 +53,8 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
   const opts: FullPageLayout = {
     ...sharedPageComponents,
     ...defaultContentPageLayout,
-    pageBody: (props) => (props.fileData.slug === OVERHAUL_SLUG ? recipeBody(props) : contentBody(props)),
+    pageBody: (props) =>
+      [OVERHAUL_SLUG, DOS2_SLUG].includes(props.fileData.slug!) ? recipeBody(props) : contentBody(props),
     ...userOpts,
   }
 

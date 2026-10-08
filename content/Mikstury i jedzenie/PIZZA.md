@@ -4,6 +4,7 @@ title: PIZZA
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS1
+  - DOS2
 ---
 
 # PIZZA
@@ -17,3 +18,9 @@ tags:
 - **Źródło:** Crafting & Cooking with Maradino
 
 #Jedzenie-i-picie
+
+### DOS2
+
+[[Mikstury i jedzenie/PIZZA DOUGH|Pizza Dough]] + [[Stanowiska i pojemniki/OVEN|Oven]] = [[Mikstury i jedzenie/PIZZA|PIZZA]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A713:G713

@@ -4,6 +4,7 @@ title: Empty Potion Bottle
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS2-CO
+  - DOS2
 ---
 
 # Empty Potion Bottle

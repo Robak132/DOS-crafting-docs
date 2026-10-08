@@ -384,11 +384,7 @@ export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCat
 
       const gameTag = catalog === "dos1" ? "DOS1" : catalog === "dos2" ? "DOS2" : "DOS2-CO"
       const recipeTags = uniqueTags(
-        expandHierarchicalTags(
-          [...resultTags, ...ingredients.flatMap((ingredient) => ingredient.tags ?? [])]
-            .filter((tag) => !["DOS1", "DOS2", "DOS2-CO"].includes(tag))
-            .concat(gameTag),
-        ),
+        expandHierarchicalTags(resultTags.filter((tag) => !["DOS1", "DOS2", "DOS2-CO"].includes(tag)).concat(gameTag)),
       )
 
       const id = `${resultSlug}:${ingredientsTargets.join("+")}`

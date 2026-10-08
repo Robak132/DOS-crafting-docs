@@ -4,6 +4,7 @@ title: Short Stick
 tags:
   - Typ/Materialy-z-odzysku
   - DOS2-CO
+  - DOS2
 ---
 
 # Short Stick

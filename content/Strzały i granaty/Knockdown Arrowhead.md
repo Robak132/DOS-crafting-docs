@@ -4,11 +4,19 @@ title: Knockdown Arrowhead
 tags:
   - Typ/Strzaly-i-granaty
   - DOS2-CO
+  - DOS2
 ---
 
 # Knockdown Arrowhead
 
 ## Przepisy
+
+
+### DOS2
+
+[[Składniki/CUTTINGTOOL|CuttingTool]] + #Antler-Or-Adult-Antler = [[Strzały i granaty/KNOCKDOWN ARROWHEAD|Knockdown Arrowhead]]
+
+- **Źródło:** [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A132:G132
 
 ### DOS2 – Crafting Overhaul
 

@@ -19,7 +19,6 @@ tags:
 - [[Barwniki/CRIMSON DYE|Crimson Dye]]
 - [[Barwniki/CYAN DYE|Cyan Dye]]
 - [[Barwniki/DARK FOREST DYE|Dark Forest Dye]]
-- [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]]
 - [[Barwniki/EMPTY VIAL|Empty Vial]]
 - [[Barwniki/GOLDEN DYE|Golden Dye]]
 - [[Barwniki/GREEN DYE|Green Dye]]

@@ -4,6 +4,7 @@ title: Dagger
 tags:
   - Typ/Bron
   - DOS2-CO
+  - DOS2
 ---
 
 # Dagger

@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/PUFFBALL|Puffball]] = [[Barwniki/BLACK DYE|Black Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/PUFFBALL|Puffball]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/BLACK DYE|Black Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A8:H8

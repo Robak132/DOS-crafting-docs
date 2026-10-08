@@ -12,5 +12,5 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/COOKING POT|Cooking Pot]] + [[Składniki/CAMPFIRE|Campfire]] = [[Stanowiska i pojemniki/CRAFTER'S MOBILE KITCHEN|Crafter's Mobile Kitchen]]
+[[Składniki/COOKING POT|Cooking Pot]] + [[Stanowiska i pojemniki/CAMPFIRE|Campfire]] = [[Stanowiska i pojemniki/CRAFTER'S MOBILE KITCHEN|Crafter's Mobile Kitchen]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Craft Stations & Chests!A8:H8

@@ -4,7 +4,7 @@ import { FullSlug, resolveRelative, slugifyFilePath } from "../util/path"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 import OverflowListFactory from "./OverflowList"
-import { recipeCatalogSlug } from "./recipeView"
+import { getTagCatalogSlug } from "./recipeCatalog"
 
 interface BacklinksOptions {
   hideWhenEmpty: boolean
@@ -59,7 +59,10 @@ export default ((opts?: Partial<BacklinksOptions>) => {
                 {f.tags.length > 0 ? (
                   <ul class="tags backlinks-tags">
                     {f.tags.map((tag) => {
-                      const filterPath = resolveRelative(fileData.slug!, recipeCatalogSlug(tag, f.tags) as FullSlug)
+                      const filterPath = resolveRelative(
+                        fileData.slug!,
+                        getTagCatalogSlug(allFiles, tag, f.tags) as FullSlug,
+                      )
                       const linkDest = `${filterPath}?tag=${encodeURIComponent(tag)}`
                       return (
                         <li>

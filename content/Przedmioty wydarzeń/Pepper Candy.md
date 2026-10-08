@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/PEPPER|Pepper]] = [[Przedmioty wydarzeń/PEPPER CANDY|Pepper Candy]]
-- **Wymagania:** Event Craft Station
+[[Składniki/PEPPER|Pepper]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/PEPPER CANDY|Pepper Candy]]
+
 - **Uwagi:** Eet it or do not eet it? That's da question
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A27:H27

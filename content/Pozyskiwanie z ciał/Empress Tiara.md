@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Pozyskiwanie z ciał/CRUELTY OF EMPRESS|Cruelty of Empress]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pozyskiwanie z ciał/EMPRESS TIARA|Empress Tiara]]
-- **Wymagania:** Anvil
+[[Pozyskiwanie z ciał/CRUELTY OF EMPRESS|Cruelty of Empress]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pozyskiwanie z ciał/EMPRESS TIARA|Empress Tiara]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Corpse Harvester!A81:H81

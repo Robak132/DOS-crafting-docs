@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/BROOM|Broom]] = [[Przedmioty wydarzeń/BROOM STAFF|Broom Staff]]
-- **Wymagania:** Event Craft Station
+[[Składniki/BROOM|Broom]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/BROOM STAFF|Broom Staff]]
+
 - **Uwagi:** Witch Broom
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A16:H16

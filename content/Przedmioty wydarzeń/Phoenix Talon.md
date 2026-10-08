@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Warsztat/FEATHER|Feather]] = [[Przedmioty wydarzeń/PHOENIX TALON|Phoenix Talon]]
-- **Wymagania:** Event Craft Station
+[[Warsztat/FEATHER|Feather]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/PHOENIX TALON|Phoenix Talon]]
+
 - **Uwagi:** Spread your wings!
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A24:H24

@@ -4,7 +4,6 @@ categoryPage: true
 tags:
   - Typ/Skladniki
 ---
-
 # Składniki
 
 - [[Składniki/ABOMINATION CORPSE|Abomination Corpse]]
@@ -65,7 +64,6 @@ tags:
 - [[Składniki/BUCKET|Bucket]]
 - [[Składniki/BURNING WITCH CORPSE|Burning Witch Corpse]]
 - [[Składniki/BUTELKA OLEJU|BUTELKA OLEJU]]
-- [[Składniki/CAMPFIRE|Campfire]]
 - [[Składniki/CAPE|Cape]]
 - [[Składniki/CARROT|Carrot]]
 - [[Składniki/CAT CORPSE|Cat Corpse]]

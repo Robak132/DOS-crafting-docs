@@ -27,6 +27,6 @@ tags:
 [[Stanowiska i pojemniki/SCRAPPER'S PICKAXE|Scrapper's Pickaxe]] + [[Składniki/CLOTH JUNK|Cloth Junk]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Scrap Materials!A35:H35
 
-[[Składniki/THREAD|Thread]] + [[Składniki/THREAD|Thread]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
-- **Wymagania:** Spinning Wheel
+[[Składniki/THREAD|Thread]] + [[Składniki/THREAD|Thread]] + [[Stanowiska i pojemniki/SPINNING WHEEL|Spinning Wheel]] = [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Scrap Materials!A40:H40

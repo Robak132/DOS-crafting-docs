@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Pozyskiwanie z ciał/PIG GLUTTON|Pig Glutton]] + [[Składniki/POTATO|Potato]] = [[Pozyskiwanie z ciał/BACON OF LIFE|Bacon of Life]]
-- **Wymagania:** Oven
+[[Pozyskiwanie z ciał/PIG GLUTTON|Pig Glutton]] + [[Składniki/POTATO|Potato]] + [[Stanowiska i pojemniki/OVEN|Oven]] = [[Pozyskiwanie z ciał/BACON OF LIFE|Bacon of Life]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Corpse Harvester!A129:H129

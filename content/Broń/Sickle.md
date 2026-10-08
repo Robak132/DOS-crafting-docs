@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Materiały z odzysku/SHORT STICK|Short Stick]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Broń/SICKLE|Sickle]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Materiały z odzysku/SHORT STICK|Short Stick]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Broń/SICKLE|Sickle]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A29:H29

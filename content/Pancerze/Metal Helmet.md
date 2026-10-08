@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Składniki/SCALE SCRAPS|Scale Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pancerze/METAL HELMET|Metal Helmet]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Składniki/SCALE SCRAPS|Scale Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pancerze/METAL HELMET|Metal Helmet]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armors!A32:H32

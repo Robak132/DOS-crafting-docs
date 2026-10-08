@@ -55,16 +55,32 @@ export function getFullSlug(window: Window): FullSlug {
 
 function sluggify(s: string): string {
   const polishCharacterMap: Record<string, string> = {
-    'ą':'a','ć':'c','ę':'e','ł':'l','ń':'n','ó':'o','ś':'s','ź':'z','ż':'z',
-    'Ą':'A','Ć':'C','Ę':'E','Ł':'L','Ń':'N','Ó':'O','Ś':'S','Ź':'Z','Ż':'Z'
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z",
+    Ą: "A",
+    Ć: "C",
+    Ę: "E",
+    Ł: "L",
+    Ń: "N",
+    Ó: "O",
+    Ś: "S",
+    Ź: "Z",
+    Ż: "Z",
   }
   return s
     .split("/")
     .map((segment) =>
       segment
-        .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, ch => polishCharacterMap[ch] ?? ch)
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/g, (ch) => polishCharacterMap[ch] ?? ch)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
         .replace(/\s/g, "-")
         .replace(/&/g, "-and-")
         .replace(/%/g, "-percent")
@@ -117,7 +133,7 @@ export function transformInternalLink(link: string): RelativeURL {
 // https://github.com/natemoo-re/micromorph/blob/main/src/utils.ts#L5
 const _rebaseHtmlElement = (el: Element, attr: string, newBase: string | URL) => {
   const rebased = new URL(el.getAttribute(attr)!, newBase)
-  el.setAttribute(attr, rebased.pathname + rebased.hash)
+  el.setAttribute(attr, rebased.pathname + rebased.search + rebased.hash)
 }
 export function normalizeRelativeURLs(el: Element | Document, destination: string | URL) {
   el.querySelectorAll('[href=""], [href^="./"], [href^="../"]').forEach((item) =>
@@ -128,12 +144,7 @@ export function normalizeRelativeURLs(el: Element | Document, destination: strin
   )
 }
 
-const _rebaseHastElement = (
-  el: HastElement,
-  attr: string,
-  curBase: FullSlug,
-  newBase: FullSlug,
-) => {
+const _rebaseHastElement = (el: HastElement, attr: string, curBase: FullSlug, newBase: FullSlug) => {
   if (el.properties?.[attr]) {
     if (!isRelativeURL(String(el.properties[attr]))) {
       return
@@ -147,9 +158,7 @@ export function normalizeHastElement(rawEl: HastElement, curBase: FullSlug, newB
   _rebaseHastElement(el, "src", curBase, newBase)
   _rebaseHastElement(el, "href", curBase, newBase)
   if (el.children) {
-    el.children = el.children.map((child) =>
-      normalizeHastElement(child as HastElement, curBase, newBase),
-    )
+    el.children = el.children.map((child) => normalizeHastElement(child as HastElement, curBase, newBase))
   }
 
   return el
@@ -261,10 +270,7 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
 // path helpers
 export function isFolderPath(fplike: string): boolean {
   return (
-    fplike.endsWith("/") ||
-    endsWith(fplike, "index") ||
-    endsWith(fplike, "index.md") ||
-    endsWith(fplike, "index.html")
+    fplike.endsWith("/") || endsWith(fplike, "index") || endsWith(fplike, "index.md") || endsWith(fplike, "index.html")
   )
 }
 

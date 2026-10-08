@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/SHARP PIECE OF METAL|Sharp Piece of Metal]] + [[Materiały z odzysku/SHARP PIECE OF METAL|Sharp Piece of Metal]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Broń/BIFURCATED SPEAR|Bifurcated Spear]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/SHARP PIECE OF METAL|Sharp Piece of Metal]] + [[Materiały z odzysku/SHARP PIECE OF METAL|Sharp Piece of Metal]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Broń/BIFURCATED SPEAR|Bifurcated Spear]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A33:H33

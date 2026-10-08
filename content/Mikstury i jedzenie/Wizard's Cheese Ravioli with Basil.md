@@ -16,7 +16,7 @@ Intelligence (+4) Single Handed/Two Handed Skill (+2) Elemental Specialist (+1)
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/CHEESE|Cheese]] + [[Składniki/LEMON|Lemon]] + [[Mikstury i jedzenie/BASIL|Basil]] + [[Składniki/LEMON|Lemon]] + [[Mikstury i jedzenie/BASIL|Basil]] = [[Mikstury i jedzenie/WIZARD'S CHEESE RAVIOLI WITH BASIL|Wizard's Cheese Ravioli with Basil]]
-- **Wymagania:** Boiling Pot
+[[Składniki/CHEESE|Cheese]] + [[Składniki/LEMON|Lemon]] + [[Mikstury i jedzenie/BASIL|Basil]] + [[Składniki/LEMON|Lemon]] + [[Mikstury i jedzenie/BASIL|Basil]] + [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]] = [[Mikstury i jedzenie/WIZARD'S CHEESE RAVIOLI WITH BASIL|Wizard's Cheese Ravioli with Basil]]
+
 - **Uwagi:** Intelligence (+4) Single Handed/Two Handed Skill (+2) Elemental Specialist (+1)
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A52:H52

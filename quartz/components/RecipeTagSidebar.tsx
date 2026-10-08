@@ -1,10 +1,36 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { getRecipeCatalog, OVERHAUL_SLUG } from "./recipeCatalog"
+import { getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG } from "./recipeCatalog"
+import { recipeCatalogSlug } from "./recipeView"
+import type { RecipeData, TagStat } from "./recipes"
 import { FullSlug, resolveRelative } from "../util/path"
 import style from "./styles/recipeTable.scss"
+// @ts-ignore
+import script from "./scripts/recipeSidebar.inline"
 
 export default (() => {
+  const cache = new WeakMap<QuartzComponentProps["allFiles"], RecipeData>()
+  const combinedData = (allFiles: QuartzComponentProps["allFiles"]): RecipeData => {
+    const cached = cache.get(allFiles)
+    if (cached) return cached
+    const catalogs = [getCatalogData(allFiles, "dos1"), getCatalogData(allFiles, "dos2-overhaul")]
+    const combine = (field: "tags" | "requirements") => {
+      const entries = new Map<string, TagStat>()
+      for (const catalog of catalogs)
+        for (const stat of catalog[field]) {
+          const previous = entries.get(stat.tag)
+          entries.set(stat.tag, { ...stat, count: stat.count + (previous?.count ?? 0) })
+        }
+      return [...entries.values()].sort((a, b) => (a.label ?? a.tag).localeCompare(b.label ?? b.tag, "pl"))
+    }
+    const data = {
+      recipes: catalogs.flatMap((data) => data.recipes),
+      tags: combine("tags"),
+      requirements: combine("requirements"),
+    }
+    cache.set(allFiles, data)
+    return data
+  }
   const prettifyLabel = (value: string): string => value.replaceAll("-", " ")
   const getTagParts = (tag: string): string[] => tag.split("/").filter(Boolean)
   const formatHierarchyLabel = (tag: string): string => {
@@ -18,7 +44,20 @@ export default (() => {
   const getTagDepth = (tag: string): number => Math.max(0, tag.split("/").filter(Boolean).length - 1)
 
   const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
-    const { tags, requirements } = getRecipeCatalog(allFiles, fileData.slug)
+    const filterPage = isRecipePage(fileData.slug)
+    const { tags, requirements } = filterPage ? getRecipeCatalog(allFiles, fileData.slug) : combinedData(allFiles)
+    const preferred = recipeCatalogSlug("", fileData.frontmatter?.tags ?? [])
+    const filterHref = (value: string, kind: "tag" | "requirement") => {
+      const field = kind === "tag" ? "tags" : "requirements"
+      const catalog = [preferred, preferred === OVERHAUL_SLUG ? "receptury" : OVERHAUL_SLUG].find((slug) =>
+        getRecipeCatalog(allFiles, slug)[field].some((stat) => stat.tag === value && stat.count > 0),
+      )
+      if (!catalog) throw new Error(`Brak katalogu dla filtra ${value}`)
+      return `${resolveRelative(fileData.slug! as FullSlug, catalog as FullSlug)}?${kind}=${encodeURIComponent(value)}`
+    }
+    const itemIndex = allFiles.find(
+      (file) => file.frontmatter?.title === "Przedmioty" && file.frontmatter?.tags?.includes("index"),
+    )
     const categoryPages = allFiles
       .filter((file) => file.frontmatter?.categoryPage === true)
       .sort((a, b) => (a.frontmatter?.title ?? "").localeCompare(b.frontmatter?.title ?? "", "pl"))
@@ -40,7 +79,7 @@ export default (() => {
             href={resolveRelative(fileData.slug! as FullSlug, "receptury" as FullSlug)}
             data-no-popover="true"
           >
-            Receptury
+            DOS1 – Receptury
           </a>
           <a
             class="internal recipe-nav-link"
@@ -51,7 +90,7 @@ export default (() => {
           </a>
           <a
             class="internal recipe-nav-link"
-            href={resolveRelative(fileData.slug! as FullSlug, "przedmioty" as FullSlug)}
+            href={resolveRelative(fileData.slug! as FullSlug, itemIndex?.slug ?? ("Przedmioty" as FullSlug))}
             data-no-popover="true"
           >
             Przedmioty
@@ -69,20 +108,25 @@ export default (() => {
             {requirements.length > 0 && (
               <div class="recipe-sidebar-section">
                 <div class="recipe-sidebar-header">
-                  <h3>WYMAGANIA / STANOWISKA</h3>
+                  <h3>WYMAGANIA</h3>
                 </div>
                 <div class="recipe-tag-list requirements-list">
-                  {requirements.map((req) => (
-                    <button
-                      type="button"
-                      class="recipe-tag-button requirement-button"
-                      data-requirement={req.tag}
-                      data-state="neutral"
-                    >
-                      <span class="recipe-tag-name">{req.tag === "-" ? "Brak" : prettifyLabel(req.tag)}</span>
-                      <span class="recipe-tag-count">({req.count})</span>
-                    </button>
-                  ))}
+                  {requirements.map((req) => {
+                    const Control = filterPage ? "button" : "a"
+                    return (
+                      <Control
+                        type={filterPage ? "button" : undefined}
+                        href={filterPage ? undefined : filterHref(req.tag, "requirement")}
+                        class={`recipe-tag-button requirement-button${filterPage ? "" : " internal"}`}
+                        data-no-popover="true"
+                        data-requirement={req.tag}
+                        data-state="neutral"
+                      >
+                        <span class="recipe-tag-name">{req.tag === "-" ? "Brak" : prettifyLabel(req.tag)}</span>
+                        <span class="recipe-tag-count">({req.count})</span>
+                      </Control>
+                    )
+                  })}
                 </div>
               </div>
             )}
@@ -90,21 +134,26 @@ export default (() => {
               <h3>TAGI</h3>
             </div>
             <div class="recipe-tag-list">
-              {tags.map((tag) => (
-                <button
-                  type="button"
-                  class="recipe-tag-button tag-hierarchy"
-                  data-tag={tag.tag}
-                  data-state="neutral"
-                  style={`--tag-depth: ${getTagDepth(tag.tag)};`}
-                >
-                  <span class="recipe-tag-name">
-                    <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
-                    {prettifyLabel(categoryLabels.get(tag.tag) ?? tag.label ?? formatHierarchyLabel(tag.tag))}
-                  </span>
-                  <span class="recipe-tag-count">({tag.count})</span>
-                </button>
-              ))}
+              {tags.map((tag) => {
+                const Control = filterPage ? "button" : "a"
+                return (
+                  <Control
+                    type={filterPage ? "button" : undefined}
+                    href={filterPage ? undefined : filterHref(tag.tag, "tag")}
+                    class={`recipe-tag-button tag-hierarchy${filterPage ? "" : " internal"}`}
+                    data-no-popover="true"
+                    data-tag={tag.tag}
+                    data-state="neutral"
+                    style={`--tag-depth: ${getTagDepth(tag.tag)};`}
+                  >
+                    <span class="recipe-tag-name">
+                      <span class="recipe-tag-connector">{getTagConnector(tag.tag)}</span>
+                      {prettifyLabel(categoryLabels.get(tag.tag) ?? tag.label ?? formatHierarchyLabel(tag.tag))}
+                    </span>
+                    <span class="recipe-tag-count">({tag.count})</span>
+                  </Control>
+                )
+              })}
             </div>
           </div>
         </details>
@@ -129,6 +178,7 @@ export default (() => {
   }
 
   RecipeTagSidebar.css = style
+  RecipeTagSidebar.afterDOMLoaded = script
 
   return RecipeTagSidebar
 }) satisfies QuartzComponentConstructor

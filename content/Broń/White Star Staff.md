@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Magia/AIR ESSENCE|Air Essence]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Broń/WHITE STAR STAFF|White Star Staff]]
-- **Wymagania:** Anvil
+[[Materiały z odzysku/PLATE SCRAPS|Plate Scraps]] + [[Magia/AIR ESSENCE|Air Essence]] + [[Materiały z odzysku/LONG BRANCH|Long Branch]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Broń/WHITE STAR STAFF|White Star Staff]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A38:H38

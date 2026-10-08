@@ -16,7 +16,7 @@ Memory (+3) 20 turn duration
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/EGGS|Eggs]] + [[Składniki/TOMATO|Tomato]] + [[Składniki/PEPPER|Pepper]] = [[Mikstury i jedzenie/MENEMEN|Menemen]]
-- **Wymagania:** Boiling Pot
+[[Składniki/EGGS|Eggs]] + [[Składniki/TOMATO|Tomato]] + [[Składniki/PEPPER|Pepper]] + [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]] = [[Mikstury i jedzenie/MENEMEN|Menemen]]
+
 - **Uwagi:** Memory (+3) 20 turn duration
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A60:H60

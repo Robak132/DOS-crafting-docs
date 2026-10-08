@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Pozyskiwanie z ciał/VOID WINGS|Void Wings]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pozyskiwanie z ciał/WINGED BOOTS|Winged Boots]]
-- **Wymagania:** Anvil
+[[Pozyskiwanie z ciał/VOID WINGS|Void Wings]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pozyskiwanie z ciał/WINGED BOOTS|Winged Boots]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Corpse Harvester!A72:H72

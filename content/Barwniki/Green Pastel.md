@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/GREEN DYE|Green Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] = [[Barwniki/GREEN PASTEL|Green Pastel]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/GREEN DYE|Green Dye]] + [[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/GREEN PASTEL|Green Pastel]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A29:H29

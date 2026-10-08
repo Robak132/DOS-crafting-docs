@@ -230,8 +230,18 @@ import type { RecipeItem, RecipeRow } from "../recipes"
 
     const tagStates = new Map<string, TagState>()
     const requirementStates = new Map<string, TagState>()
-    const stored = readStoredFilters()
-    const queryTag = new URLSearchParams(window.location.search).get("tag")
+    const params = new URLSearchParams(window.location.search)
+    const queryTag = params.get("tag")
+    const queryRequirement = params.get("requirement")
+    const stored =
+      queryTag || queryRequirement
+        ? {
+            include: [],
+            exclude: [],
+            requirements: queryRequirement ? [queryRequirement] : [],
+            requirementsExclude: [],
+          }
+        : readStoredFilters()
     if (searchInput && queryTag) searchInput.value = `#${queryTag}`
 
     tagButtons.forEach((btn) => {
@@ -308,14 +318,6 @@ import type { RecipeItem, RecipeRow } from "../recipes"
     }
     root.addEventListener("click", onTagClick)
     cleanupHandlers.push(() => root.removeEventListener("click", onTagClick))
-    const filterDetails = document.querySelector<HTMLDetailsElement>(".recipe-sidebar-filters")
-    const mobileLayout = window.matchMedia("(max-width: 800px)")
-    const updateFilterLayout = () => {
-      if (filterDetails) filterDetails.open = !mobileLayout.matches
-    }
-    updateFilterLayout()
-    mobileLayout.addEventListener("change", updateFilterLayout)
-    cleanupHandlers.push(() => mobileLayout.removeEventListener("change", updateFilterLayout))
 
     tagButtons.forEach((btn) => {
       const handler = () => {

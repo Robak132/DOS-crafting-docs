@@ -1,6 +1,5 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { isRecipePage } from "./quartz/components/recipeCatalog"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -23,14 +22,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
       ],
     }),
-    Component.ConditionalRender({
-      component: Component.RecipeTagSidebar(),
-      condition: (props) => isRecipePage(props.fileData.slug),
-    }),
-    Component.ConditionalRender({
-      component: Component.TagExplorer(),
-      condition: (props) => !isRecipePage(props.fileData.slug),
-    }),
+    Component.RecipeTagSidebar(),
   ],
   right: [],
 }
@@ -40,7 +32,6 @@ export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.ArticleTitle()],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
         {
@@ -49,14 +40,7 @@ export const defaultListPageLayout: PageLayout = {
         },
       ],
     }),
-    Component.ConditionalRender({
-      component: Component.RecipeTagSidebar(),
-      condition: (props) => isRecipePage(props.fileData.slug),
-    }),
-    Component.ConditionalRender({
-      component: Component.TagExplorer(),
-      condition: (props) => !isRecipePage(props.fileData.slug),
-    }),
+    Component.RecipeTagSidebar(),
   ],
   right: [],
 }

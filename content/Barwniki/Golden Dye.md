@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Materiały z odzysku/GOLD BAR|Gold Bar]] = [[Barwniki/GOLDEN DYE|Golden Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Materiały z odzysku/GOLD BAR|Gold Bar]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/GOLDEN DYE|Golden Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A16:H16

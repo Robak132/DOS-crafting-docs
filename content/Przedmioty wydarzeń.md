@@ -4,7 +4,6 @@ categoryPage: true
 tags:
   - Typ/Przedmioty-wydarzen
 ---
-
 # Przedmioty wydarzeń
 
 - [[Przedmioty wydarzeń/ABOMINATION POTION|Abomination Potion]]
@@ -17,7 +16,6 @@ tags:
 - [[Przedmioty wydarzeń/CURSED WITCH POTION|Cursed Witch Potion]]
 - [[Przedmioty wydarzeń/DJINN PANTS|Djinn Pants]]
 - [[Przedmioty wydarzeń/EDIBLE PUMPKIN|Edible Pumpkin]]
-- [[Przedmioty wydarzeń/EVENT CRAFT STATION|Event Craft Station]]
 - [[Przedmioty wydarzeń/FROST 2H MACE|Frost 2H Mace]]
 - [[Przedmioty wydarzeń/FROST SHIELD|Frost Shield]]
 - [[Przedmioty wydarzeń/FROST STAFF|Frost Staff]]
@@ -32,7 +30,6 @@ tags:
 - [[Przedmioty wydarzeń/POISON-HEALTH POTION|Poison/Health Potion]]
 - [[Przedmioty wydarzeń/PRESENT GRENADE|Present Grenade]]
 - [[Przedmioty wydarzeń/PUMPKIN GRENADE|Pumpkin Grenade]]
-- [[Pozyskiwanie z ciał/PUMPKIN HELMET|Pumpkin Helmet]]
 - [[Przedmioty wydarzeń/REAL SMOKE GRENADE|Real Smoke Grenade]]
 - [[Przedmioty wydarzeń/REAL TREMOR GRENADE|Real Tremor Grenade]]
 - [[Przedmioty wydarzeń/REAPER'S SCYTHE|Reaper's Scythe]]

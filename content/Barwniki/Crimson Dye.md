@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/GUEPINIA MUSHROOM|Guepinia Mushroom]] = [[Barwniki/CRIMSON DYE|Crimson Dye]]
-- **Wymagania:** Dye Making Machine
+[[Barwniki/EMPTY VIAL|Empty Vial]] + [[Składniki/GUEPINIA MUSHROOM|Guepinia Mushroom]] + [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]] = [[Barwniki/CRIMSON DYE|Crimson Dye]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armor Dyeing!A12:H12

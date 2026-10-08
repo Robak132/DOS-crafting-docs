@@ -12,7 +12,7 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/SHORT STICK|Short Stick]] = [[Przedmioty wydarzeń/CANDLE WAND|Candle Wand]]
-- **Wymagania:** Event Craft Station
+[[Materiały z odzysku/SHORT STICK|Short Stick]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/CANDLE WAND|Candle Wand]]
+
 - **Uwagi:** Burn your friends
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A15:H15

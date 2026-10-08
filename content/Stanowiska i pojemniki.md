@@ -4,16 +4,18 @@ categoryPage: true
 tags:
   - Typ/Stanowiska-i-pojemniki
 ---
-
 # Stanowiska i pojemniki
 
 - [[Stanowiska i pojemniki/AMMUNITION BAG|Ammunition Bag]]
 - [[Stanowiska i pojemniki/AMMUNITION CHEST|Ammunition Chest]]
+- [[Stanowiska i pojemniki/ANVIL|Anvil]]
 - [[Stanowiska i pojemniki/ARMOR BAG|Armor Bag]]
 - [[Stanowiska i pojemniki/ARMOR CHEST|Armor Chest]]
 - [[Stanowiska i pojemniki/BARRICADE|Barricade]]
 - [[Stanowiska i pojemniki/BLESSED WATER BARREL|Blessed Water Barrel]]
+- [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]]
 - [[Stanowiska i pojemniki/BOOKCASE|Bookcase]]
+- [[Stanowiska i pojemniki/CAMPFIRE|Campfire]]
 - [[Stanowiska i pojemniki/CRAFTER'S ANVIL|Crafter's Anvil]]
 - [[Stanowiska i pojemniki/CRAFTER'S CAMPFIRE|Crafter's Campfire]]
 - [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]]
@@ -27,6 +29,7 @@ tags:
 - [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]]
 - [[Stanowiska i pojemniki/DYE MAKING MACHINE|Dye Making Machine]]
 - [[Stanowiska i pojemniki/EMPTY BARREL|Empty Barrel]]
+- [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]]
 - [[Stanowiska i pojemniki/FOOD  BAG|Food  Bag]]
 - [[Stanowiska i pojemniki/FOOD CHEST|Food Chest]]
 - [[Stanowiska i pojemniki/FOOD SACK|Food Sack]]
@@ -41,6 +44,7 @@ tags:
 - [[Stanowiska i pojemniki/MINI CHEST (LOCKBOX)|Mini Chest (Lockbox)]]
 - [[Stanowiska i pojemniki/OIL BARREL|Oil Barrel]]
 - [[Stanowiska i pojemniki/OOZE BARREL|Ooze Barrel]]
+- [[Stanowiska i pojemniki/OVEN|Oven]]
 - [[Stanowiska i pojemniki/POTION  BAG|Potion  Bag]]
 - [[Stanowiska i pojemniki/POTION CHEST|Potion Chest]]
 - [[Stanowiska i pojemniki/QUEST ITEMS BAG|Quest Items Bag]]
@@ -49,10 +53,12 @@ tags:
 - [[Stanowiska i pojemniki/SCRAPPER'S PICKAXE|Scrapper's Pickaxe]]
 - [[Stanowiska i pojemniki/SKILLBOOK & SCROLL BAG|Skillbook & Scroll Bag]]
 - [[Stanowiska i pojemniki/SKILLBOOK SCROLL CHEST|Skillbook Scroll Chest]]
+- [[Stanowiska i pojemniki/SPINNING WHEEL|Spinning Wheel]]
 - [[Stanowiska i pojemniki/VALUABLES BAG|Valuables Bag]]
 - [[Stanowiska i pojemniki/WATER BARREL|Water Barrel]]
 - [[Stanowiska i pojemniki/WEAPON  BAG|Weapon  Bag]]
 - [[Stanowiska i pojemniki/WEAPON CHEST|Weapon Chest]]
 - [[Stanowiska i pojemniki/WEAPON RACK|Weapon Rack]]
+- [[Stanowiska i pojemniki/WELL|Well]]
 - [[Stanowiska i pojemniki/WHEEL FROM WHEELBARROW|Wheel from Wheelbarrow]]
 - [[Stanowiska i pojemniki/WOOD PILE|Wood Pile]]

@@ -3,7 +3,6 @@ import { FullSlug } from "../../util/path"
 import { classNames } from "../../util/lang"
 import style from "../styles/recipeTable.scss"
 import { getRecipeCatalog, OVERHAUL_SLUG } from "../recipeCatalog"
-import { RecipeNavigation } from "../RecipeNavigation"
 import { RecipeTable } from "../RecipeTable"
 import { groupRecipes } from "../recipeView"
 
@@ -17,7 +16,6 @@ export default (() => {
     const slug = fileData.slug! as FullSlug
     return (
       <div class={classNames(displayClass, "recipe-app")} data-catalog={slug === OVERHAUL_SLUG ? "dos2" : "dos1"}>
-        <RecipeNavigation slug={slug} />
         <script
           id="recipe-table-data"
           type="application/json"

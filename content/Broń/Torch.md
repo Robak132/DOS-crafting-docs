@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Materiały z odzysku/SHORT STICK|Short Stick]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] = [[Broń/TORCH|Torch]]
-- **Wymagania:** Campfire
+[[Materiały z odzysku/SHORT STICK|Short Stick]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Stanowiska i pojemniki/CAMPFIRE|Campfire]] = [[Broń/TORCH|Torch]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Weapons!A63:H63

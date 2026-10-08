@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/BONE|Bone]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pancerze/BONE PANTS|Bone Pants]]
-- **Wymagania:** Anvil
+[[Składniki/BONE|Bone]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Materiały z odzysku/CLOTH SCRAPS|Cloth Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pancerze/BONE PANTS|Bone Pants]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armors!A47:H47

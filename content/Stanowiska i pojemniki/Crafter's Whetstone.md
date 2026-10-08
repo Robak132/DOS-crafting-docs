@@ -2,8 +2,8 @@
 itemPage: true
 title: Crafter's Whetstone
 tags:
-  - Typ/Stanowiska-i-pojemniki
   - DOS2-CO
+  - Typ/Stanowiska-i-pojemniki
 ---
 
 # Crafter's Whetstone

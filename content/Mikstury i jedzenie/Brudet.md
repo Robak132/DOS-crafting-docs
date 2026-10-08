@@ -16,7 +16,7 @@ Constitution (+1) All Resistances (+%5) Total Vitality Boost (+%5)
 
 ### DOS2 – Crafting Overhaul
 
-#Fish + [[Składniki/TOMATO|Tomato]] + [[Składniki/GARLIC|Garlic]] = [[Mikstury i jedzenie/BRUDET|Brudet]]
-- **Wymagania:** Boiling Pot
+#Fish + [[Składniki/TOMATO|Tomato]] + [[Składniki/GARLIC|Garlic]] + [[Stanowiska i pojemniki/BOILING POT|Boiling Pot]] = [[Mikstury i jedzenie/BRUDET|Brudet]]
+
 - **Uwagi:** Constitution (+1) All Resistances (+%5) Total Vitality Boost (+%5)
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A57:H57

@@ -16,7 +16,7 @@ Constitution (+1) Strength  (+1) Disease Immunity
 
 ### DOS2 – Crafting Overhaul
 
-[[Składniki/GARLIC|Garlic]] + [[Składniki/BREAD|Bread]] = [[Mikstury i jedzenie/GARLIC BREAD|Garlic Bread]]
-- **Wymagania:** Oven
+[[Składniki/GARLIC|Garlic]] + [[Składniki/BREAD|Bread]] + [[Stanowiska i pojemniki/OVEN|Oven]] = [[Mikstury i jedzenie/GARLIC BREAD|Garlic Bread]]
+
 - **Uwagi:** Constitution (+1) Strength  (+1) Disease Immunity
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Potions & Food!A56:H56

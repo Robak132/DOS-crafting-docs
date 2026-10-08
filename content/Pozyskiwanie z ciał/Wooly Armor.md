@@ -12,6 +12,6 @@ tags:
 
 ### DOS2 – Crafting Overhaul
 
-[[Pozyskiwanie z ciał/SHEEP WOOL|Sheep Wool]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] = [[Pozyskiwanie z ciał/WOOLY ARMOR|Wooly Armor]]
-- **Wymagania:** Anvil
+[[Pozyskiwanie z ciał/SHEEP WOOL|Sheep Wool]] + [[Materiały z odzysku/LEATHER SCRAPS|Leather Scraps]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pozyskiwanie z ciał/WOOLY ARMOR|Wooly Armor]]
+
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Corpse Harvester!A75:H75

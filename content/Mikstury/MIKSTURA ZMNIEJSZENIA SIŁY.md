@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MIKSTURA ZMNIEJSZENIA SIŁY
+
+## Przepisy
+
+### DOS1
+
 [[BUTELKA TRUCIZNY]] + [[ANY TOOTH]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** -2 Strength Serves No Function

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# KUBEK WODY
+
+## Przepisy
+
+### DOS1
+
 [[PUSTY KUBEK]] + [[BUTELKA WODY]]
 - **Uwagi:** Add 5% Heal
 

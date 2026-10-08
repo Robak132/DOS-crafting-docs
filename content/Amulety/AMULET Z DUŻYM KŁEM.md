@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# AMULET Z DUŻYM KŁEM
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGICZNY DUŻY KIEŁ]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Intelligence, Loremaster, Air Resist

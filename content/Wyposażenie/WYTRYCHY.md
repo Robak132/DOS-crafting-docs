@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# WYTRYCHY
+
+## Przepisy
+
+### DOS1
+
 [[MYDŁO]] + [[ANY KEY]]
 - **Wymagania:** Crafting 2
 

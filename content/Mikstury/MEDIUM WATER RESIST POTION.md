@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MEDIUM WATER RESIST POTION
+
+## Przepisy
+
+### DOS1
+
 [[WATER RESIST POTION]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Add 25% Water Resist

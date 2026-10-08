@@ -2,18 +2,17 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { FullSlug, resolveRelative } from "../../util/path"
 import { classNames } from "../../util/lang"
 import style from "../styles/recipeTable.scss"
-import { buildRecipeData, RecipeItem, RecipeRow } from "../recipes"
+import { RecipeItem, RecipeRow } from "../recipes"
+import { getRecipeCatalog, OVERHAUL_SLUG } from "../recipeCatalog"
+import { RecipeNavigation } from "../RecipeNavigation"
 
 // @ts-ignore
 import script from "../scripts/recipeTable.inline"
 
 export default (() => {
-  const RecipeTablePage: QuartzComponent = ({
-    allFiles,
-    fileData,
-    displayClass,
-  }: QuartzComponentProps) => {
-    const { recipes, tags } = buildRecipeData(allFiles)
+  const RecipeTablePage: QuartzComponent = ({ allFiles, fileData, displayClass }: QuartzComponentProps) => {
+    const { recipes, tags } = getRecipeCatalog(allFiles, fileData.slug)
+    const isOverhaul = fileData.slug === OVERHAUL_SLUG
 
     const grouped = new Map<string, { result: RecipeItem; variants: RecipeRow[] }>()
     recipes.forEach((recipe) => {
@@ -30,18 +29,16 @@ export default (() => {
       if (!item.slug) {
         return <span class="recipe-item">{item.name}</span>
       }
-    return (
-        <a
-          class="internal recipe-item"
-          href={resolveRelative(fileData.slug! as FullSlug, item.slug as FullSlug)}
-        >
+      return (
+        <a class="internal recipe-item" href={resolveRelative(fileData.slug! as FullSlug, item.slug as FullSlug)}>
           {item.name}
         </a>
-    )
-  }
+      )
+    }
 
     return (
-      <div class={classNames(displayClass, "recipe-app")}>
+      <div class={classNames(displayClass, "recipe-app")} data-catalog={isOverhaul ? "dos2" : "dos1"}>
+        <RecipeNavigation slug={fileData.slug! as FullSlug} />
         <script
           id="recipe-table-data"
           type="application/json"
@@ -49,10 +46,13 @@ export default (() => {
             __html: JSON.stringify({
               recipes,
               tags,
-            }),
+            }).replaceAll("<", "\\u003c"),
           }}
         />
         <div class="recipe-header">
+          <span class="recipe-results-count" role="status" aria-live="polite">
+            Wyników: {grouped.size}
+          </span>
           <div class="recipe-search">
             <label class="recipe-label" for="recipe-search-input">
               Szukaj
@@ -78,14 +78,14 @@ export default (() => {
             <thead>
               <tr>
                 <th>Składnik 1</th>
-                <th>Składnik 2</th>
+                <th>{isOverhaul ? "Pozostałe składniki" : "Składnik 2"}</th>
                 <th>Wynik</th>
-                <th>Wymagania</th>
-                <th>Uwagi</th>
+                <th>{isOverhaul ? "Stanowisko" : "Wymagania"}</th>
+                <th>{isOverhaul ? "Uwagi / efekty" : "Uwagi"}</th>
               </tr>
             </thead>
             <tbody class="recipe-table-body">
-              {[...grouped.values()].map((group) => (
+              {[...grouped.values()].map((group) =>
                 group.variants.map((variant, index) => (
                   <tr
                     data-recipe-id={group.result.slug ?? group.result.name}
@@ -97,15 +97,27 @@ export default (() => {
                       .join(" ")}
                   >
                     <td class="recipe-cell">
-                      {variant.ingredients[0]
-                        ? renderItem(variant.ingredients[0])
-                        : <span class="recipe-empty">—</span>}
+                      {variant.ingredients[0] ? (
+                        renderItem(variant.ingredients[0])
+                      ) : (
+                        <span class="recipe-empty">—</span>
+                      )}
                     </td>
                     <td class="recipe-cell">
-                      {variant.ingredients[1]
-                        ? renderItem(variant.ingredients[1])
-                        : <span class="recipe-empty">—</span>}
-                      {variant.ingredients.length > 2 && (
+                      {isOverhaul ? (
+                        <div class="recipe-ingredients">
+                          {variant.ingredients.length > 1 ? (
+                            variant.ingredients.slice(1).map(renderItem)
+                          ) : (
+                            <span class="recipe-empty">—</span>
+                          )}
+                        </div>
+                      ) : variant.ingredients[1] ? (
+                        renderItem(variant.ingredients[1])
+                      ) : (
+                        <span class="recipe-empty">—</span>
+                      )}
+                      {!isOverhaul && variant.ingredients.length > 2 && (
                         <span class="recipe-extra">+{variant.ingredients.length - 2}</span>
                       )}
                     </td>
@@ -121,8 +133,8 @@ export default (() => {
                       {variant.notes ? variant.notes : <span class="recipe-empty">—</span>}
                     </td>
                   </tr>
-                ))
-              ))}
+                )),
+              )}
             </tbody>
           </table>
         </div>

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD DEXTERITY, PERCEPTION ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ZAKRES]] + [[ANY BOW]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Stats Increase with Hero Level

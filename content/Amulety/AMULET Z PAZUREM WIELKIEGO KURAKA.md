@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# AMULET Z PAZUREM WIELKIEGO KURAKA
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGICZNA NÓŻKA WIELKIEGO KURAKA]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add Initiative

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD AIR, EARTH, FIRE, WATER RESIST ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[RUBIN]] + [[ANY CHEST, GLOVES, HELMET, BELT, OR SARONG]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Stats Increase with Hero Level

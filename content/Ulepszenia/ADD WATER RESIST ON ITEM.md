@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD WATER RESIST ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ESENCJA WODY]] + [[ANY SHIELD]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level

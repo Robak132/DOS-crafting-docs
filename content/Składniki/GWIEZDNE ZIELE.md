@@ -1,0 +1,5 @@
+---
+itemPage: true
+---
+
+# GWIEZDNE ZIELE

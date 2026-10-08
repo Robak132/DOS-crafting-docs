@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD ARMOR ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[KUCHNIA PRZENOŚNA]] + [[ANY LEATHER CHEST]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Less effective than Metal Scraps

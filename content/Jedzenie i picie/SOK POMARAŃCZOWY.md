@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# SOK POMARAŃCZOWY
+
+## Przepisy
+
+### DOS1
+
 [[PUSTY KUBEK]] + [[POMARAŃCZA]]
 - **Uwagi:** Add 10% Heal, 1 Dexterity
 

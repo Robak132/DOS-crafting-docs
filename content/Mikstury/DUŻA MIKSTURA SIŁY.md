@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# DUŻA MIKSTURA SIŁY
+
+## Przepisy
+
+### DOS1
+
 [[ŚREDNIA MIKSTURA SIŁY]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Strength

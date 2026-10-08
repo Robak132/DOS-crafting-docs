@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# PUSTA BUTELKA NA MIKSTURĘ
+
+## Przepisy
+
+### DOS1
+
 [[MIKSTURA ODPORNOŚCI NA POWIETRZE]] + [[MIKSTURA ODPORNOŚCI NA ZIEMIĘ]] (x2)
 - **Wymagania:** Crafting 1
 - **Uwagi:** Doesn't work with higher tier potions

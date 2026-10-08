@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# DUŻA MIKSTURA KONDYCJI
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA NA MIKSTURĘ]] + [[FARHANGORA]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Add 3 Constitution

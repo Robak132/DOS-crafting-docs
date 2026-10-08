@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import style from "./styles/tagExplorer.scss"
 import { getAllSegmentPrefixes, resolveRelative } from "../util/path"
 import { classNames } from "../util/lang"
+import { RecipeNavigation } from "./RecipeNavigation"
 
 // @ts-ignore
 import script from "./scripts/tagExplorer.inline"
@@ -18,29 +19,26 @@ const defaultOptions: TagExplorerOptions = {
 
 export default ((opts?: Partial<TagExplorerOptions>) => {
   const options: TagExplorerOptions = { ...defaultOptions, ...opts }
+  type ExplorerData = {
+    sortedTagsByCount: string[]
+    tagCounts: Map<string, number>
+    indexPages: QuartzComponentProps["allFiles"]
+  }
+  const cache = new WeakMap<QuartzComponentProps["allFiles"], ExplorerData>()
 
-  const TagExplorer: QuartzComponent = ({
-    allFiles,
-    displayClass,
-    fileData,
-  }: QuartzComponentProps) => {
-    const allTags = new Set<string>()
+  const getExplorerData = (allFiles: QuartzComponentProps["allFiles"]): ExplorerData => {
+    const cached = cache.get(allFiles)
+    if (cached) return cached
+    const tagCounts = new Map<string, number>()
     allFiles.forEach((file) => {
       const tags = file.frontmatter?.tags ?? []
-      tags.flatMap(getAllSegmentPrefixes).forEach((tag) => allTags.add(tag))
-    })
-
-    const sortedTags = [...allTags].sort((a, b) => a.localeCompare(b))
-    const tagCounts = new Map<string, number>()
-    sortedTags.forEach((tag) => {
-      const count = allFiles.filter((file) =>
-        (file.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes).includes(tag),
-      ).length
-      tagCounts.set(tag, count)
+      new Set(tags.flatMap(getAllSegmentPrefixes)).forEach((tag) => {
+        tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1)
+      })
     })
 
     // Sort tags by count (descending), then alphabetically
-    const sortedTagsByCount = [...sortedTags].sort((a, b) => {
+    const sortedTagsByCount = [...tagCounts.keys()].sort((a, b) => {
       const countA = tagCounts.get(a) ?? 0
       const countB = tagCounts.get(b) ?? 0
       if (countB !== countA) {
@@ -50,14 +48,20 @@ export default ((opts?: Partial<TagExplorerOptions>) => {
     })
 
     const indexPages = allFiles
-      .filter((file) =>
-        (file.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes).includes("index"),
-      )
+      .filter((file) => (file.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes).includes("index"))
       .toSorted((a, b) => {
         const aTitle = a.frontmatter?.title?.toLowerCase() ?? ""
         const bTitle = b.frontmatter?.title?.toLowerCase() ?? ""
         return aTitle.localeCompare(bTitle)
       })
+
+    const data = { sortedTagsByCount, tagCounts, indexPages }
+    cache.set(allFiles, data)
+    return data
+  }
+
+  const TagExplorer: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
+    const { sortedTagsByCount, tagCounts, indexPages } = getExplorerData(allFiles)
 
     if (options.hideWhenEmpty && sortedTagsByCount.length === 0) {
       return null
@@ -65,6 +69,7 @@ export default ((opts?: Partial<TagExplorerOptions>) => {
 
     return (
       <div class={classNames(displayClass, "tag-explorer")}>
+        <RecipeNavigation slug={fileData.slug!} />
         {indexPages.length > 0 && (
           <div class="index-links">
             <ul class="index-links-list">
@@ -87,19 +92,16 @@ export default ((opts?: Partial<TagExplorerOptions>) => {
         </div>
         <div class="active-filters">
           <span class="filters-label"></span>
-          <button type="button" class="reset-filters-btn" style="display: none;">Resetuj</button>
+          <button type="button" class="reset-filters-btn" style="display: none;">
+            Resetuj
+          </button>
         </div>
         <ul id="tag-explorer-content" class="tag-list overflow">
           {sortedTagsByCount.map((tag) => {
             const count = tagCounts.get(tag) ?? 0
             return (
               <li>
-                <button
-                  type="button"
-                  class="tag-button"
-                  data-tag={tag}
-                  data-state="neutral"
-                >
+                <button type="button" class="tag-button" data-tag={tag} data-state="neutral">
                   {tag}
                 </button>
                 <span class="tag-count">({count})</span>
@@ -116,4 +118,3 @@ export default ((opts?: Partial<TagExplorerOptions>) => {
 
   return TagExplorer
 }) satisfies QuartzComponentConstructor
-

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MAGICZNY AMULET Z ROZGWIAZDĄ
+
+## Przepisy
+
+### DOS1
+
 [[NIĆ]] + [[MAGICZNA ROZGWIAZDA]]
 - **Wymagania:** Crafting 1
 - **Uwagi:** Add HP

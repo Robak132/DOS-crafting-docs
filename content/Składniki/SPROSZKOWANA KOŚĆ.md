@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# SPROSZKOWANA KOŚĆ
+
+## Przepisy
+
+### DOS1
+
 [[ANY SKULL]] + [[MORTAR & PESTLE]]
 - **Źródło:** Secrets of the Scroll I
 

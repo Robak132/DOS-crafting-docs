@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# MIKSTURA ZMNIEJSZENIA PRĘDKOŚCI
+
+## Przepisy
+
+### DOS1
+
 [[BUTELKA TRUCIZNY]] + [[ESENCJA CIENIA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** -2 Speed Serves No Function

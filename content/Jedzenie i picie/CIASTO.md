@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# CIASTO
+
+## Przepisy
+
+### DOS1
+
 [[MĄKA]] + [[BUTELKA WODY]]
 - **Uwagi:** Add 5% Heal -1 Speed
 - **Źródło:** Crafting & Cooking with Maradino; Patty Cake, Patty Cake II

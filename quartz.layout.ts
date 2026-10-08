@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { isRecipePage } from "./quartz/components/recipeCatalog"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -11,10 +12,7 @@ export const sharedPageComponents: SharedLayout = {
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [
-    Component.ArticleTitle(),
-    Component.TagList(),
-  ],
+  beforeBody: [Component.ArticleTitle(), Component.TagList()],
   left: [
     Component.PageTitle(),
     Component.Flex({
@@ -27,11 +25,11 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.ConditionalRender({
       component: Component.RecipeTagSidebar(),
-      condition: (props) => props.fileData.slug === "receptury",
+      condition: (props) => isRecipePage(props.fileData.slug),
     }),
     Component.ConditionalRender({
       component: Component.TagExplorer(),
-      condition: (props) => props.fileData.slug !== "receptury",
+      condition: (props) => !isRecipePage(props.fileData.slug),
     }),
   ],
   right: [],
@@ -48,16 +46,16 @@ export const defaultListPageLayout: PageLayout = {
         {
           Component: Component.Search(),
           grow: true,
-        }
+        },
       ],
     }),
     Component.ConditionalRender({
       component: Component.RecipeTagSidebar(),
-      condition: (props) => props.fileData.slug === "receptury",
+      condition: (props) => isRecipePage(props.fileData.slug),
     }),
     Component.ConditionalRender({
       component: Component.TagExplorer(),
-      condition: (props) => props.fileData.slug !== "receptury",
+      condition: (props) => !isRecipePage(props.fileData.slug),
     }),
   ],
   right: [],

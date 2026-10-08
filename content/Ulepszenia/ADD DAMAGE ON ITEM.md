@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD DAMAGE ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[OSEŁKA]] + [[ANY BLADED MELEE WEAPON]]
 - **Wymagania:** Blacksmithing 2
 - **Uwagi:** Stats Increase with Blacksmithing Level

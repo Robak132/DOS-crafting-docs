@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD FIRE RESIST ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ESENCJA OGNIA]] + [[ANY SHIELD]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level

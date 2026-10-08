@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# LOSOWY ZWÓJ OGNIA
+
+## Przepisy
+
+### DOS1
+
 [[NIEZAPISANY ZWÓJ OGNIA]] + [[MAGICZNY KAŁAMARZ I PIÓRO]]
 - **Wymagania:** Crafting 3
 - **Uwagi:** Novice/Adept Spells possible

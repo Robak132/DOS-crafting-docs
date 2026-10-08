@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# LEATHER CHEST
+
+## Przepisy
+
+### DOS1
+
 [[SKRAWKI SKÓRY]] + [[IGŁA Z NITKĄ]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Stats Increase with Crafting Level

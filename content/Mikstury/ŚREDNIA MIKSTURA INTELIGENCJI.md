@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ŚREDNIA MIKSTURA INTELIGENCJI
+
+## Przepisy
+
+### DOS1
+
 [[MAŁA MIKSTURA INTELIGENCJI]] + [[ULEPSZACZ]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Add 2 Intelligence

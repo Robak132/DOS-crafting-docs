@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# PIÓRO
+
+## Przepisy
+
+### DOS1
+
 [[PODUSZKA]] + [[NÓŻ LUB SZTYLET]]
 
 [[ANY FEATHER]] + [[NÓŻ LUB SZTYLET]]

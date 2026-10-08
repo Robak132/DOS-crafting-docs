@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# BUTELKA WODY
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA]] + [[BECZKA WODY]]
 - **Uwagi:** Add 5% Heal
 

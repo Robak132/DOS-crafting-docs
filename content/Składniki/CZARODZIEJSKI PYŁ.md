@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# CZARODZIEJSKI PYŁ
+
+## Przepisy
+
+### DOS1
+
 [[GWIEZDNY PYŁ]] + [[SPROSZKOWANA KOŚĆ]]
 - **Źródło:** Secrets of the Scroll II
 

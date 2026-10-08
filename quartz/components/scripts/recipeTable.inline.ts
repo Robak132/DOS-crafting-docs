@@ -1,4 +1,4 @@
-(() => {
+;(() => {
   const STORAGE_INCLUDE = "wfrp_filter_include"
   const STORAGE_EXCLUDE = "wfrp_filter_exclude"
   const STORAGE_REQUIREMENTS = "wfrp_filter_requirements"
@@ -33,6 +33,10 @@
 
   let parsedData: RecipeData | null = null
 
+  function storageKey(key: string): string {
+    return document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog === "dos2" ? `dos2_${key}` : key
+  }
+
   function splitCsv(value: string | null): string[] {
     return value ? value.split(",").filter(Boolean) : []
   }
@@ -40,10 +44,10 @@
   function readStoredFilters(): FilterState {
     try {
       return {
-        include: splitCsv(sessionStorage.getItem(STORAGE_INCLUDE)),
-        exclude: splitCsv(sessionStorage.getItem(STORAGE_EXCLUDE)),
-        requirements: splitCsv(sessionStorage.getItem(STORAGE_REQUIREMENTS)),
-        requirementsExclude: splitCsv(sessionStorage.getItem(STORAGE_REQUIREMENTS_EXCLUDE)),
+        include: splitCsv(sessionStorage.getItem(storageKey(STORAGE_INCLUDE))),
+        exclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_EXCLUDE))),
+        requirements: splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS))),
+        requirementsExclude: splitCsv(sessionStorage.getItem(storageKey(STORAGE_REQUIREMENTS_EXCLUDE))),
       }
     } catch {
       return { include: [], exclude: [], requirements: [], requirementsExclude: [] }
@@ -56,21 +60,16 @@
     requirements: string[],
     requirementsExclude: string[],
   ) {
-    if (
-      include.length > 0 ||
-      exclude.length > 0 ||
-      requirements.length > 0 ||
-      requirementsExclude.length > 0
-    ) {
-      sessionStorage.setItem(STORAGE_INCLUDE, include.join(","))
-      sessionStorage.setItem(STORAGE_EXCLUDE, exclude.join(","))
-      sessionStorage.setItem(STORAGE_REQUIREMENTS, requirements.join(","))
-      sessionStorage.setItem(STORAGE_REQUIREMENTS_EXCLUDE, requirementsExclude.join(","))
+    if (include.length > 0 || exclude.length > 0 || requirements.length > 0 || requirementsExclude.length > 0) {
+      sessionStorage.setItem(storageKey(STORAGE_INCLUDE), include.join(","))
+      sessionStorage.setItem(storageKey(STORAGE_EXCLUDE), exclude.join(","))
+      sessionStorage.setItem(storageKey(STORAGE_REQUIREMENTS), requirements.join(","))
+      sessionStorage.setItem(storageKey(STORAGE_REQUIREMENTS_EXCLUDE), requirementsExclude.join(","))
     } else {
-      sessionStorage.removeItem(STORAGE_INCLUDE)
-      sessionStorage.removeItem(STORAGE_EXCLUDE)
-      sessionStorage.removeItem(STORAGE_REQUIREMENTS)
-      sessionStorage.removeItem(STORAGE_REQUIREMENTS_EXCLUDE)
+      sessionStorage.removeItem(storageKey(STORAGE_INCLUDE))
+      sessionStorage.removeItem(storageKey(STORAGE_EXCLUDE))
+      sessionStorage.removeItem(storageKey(STORAGE_REQUIREMENTS))
+      sessionStorage.removeItem(storageKey(STORAGE_REQUIREMENTS_EXCLUDE))
     }
   }
 
@@ -93,7 +92,7 @@
     if (!item.slug) {
       return `<span class="recipe-item">${escapeHtml(item.name)}</span>`
     }
-    return `<a class="internal recipe-item" href="${buildRelativeHref(item.slug)}">${escapeHtml(item.name)}</a>`
+    return `<a class="internal recipe-item" href="${escapeHtml(buildRelativeHref(item.slug))}">${escapeHtml(item.name)}</a>`
   }
 
   function groupRecipes(recipes: RecipeRow[]) {
@@ -116,7 +115,13 @@
         const first = variant.ingredients[0]
         const second = variant.ingredients[1]
         const extraCount = variant.ingredients.length > 2 ? variant.ingredients.length - 2 : 0
-        const extra = extraCount > 0 ? `<span class="recipe-extra">+${extraCount}</span>` : ""
+        const isOverhaul = document.querySelector<HTMLElement>(".recipe-app")?.dataset.catalog === "dos2"
+        const extra = !isOverhaul && extraCount > 0 ? `<span class="recipe-extra">+${extraCount}</span>` : ""
+        const remainingIngredients = isOverhaul
+          ? `<div class="recipe-ingredients">${variant.ingredients.slice(1).map(renderItem).join("") || `<span class="recipe-empty">—</span>`}</div>`
+          : second
+            ? renderItem(second)
+            : `<span class="recipe-empty">—</span>`
         const requirements = variant.requirements?.trim()
         const notes = variant.notes?.trim()
         const resultCell =
@@ -133,7 +138,7 @@
         return `<tr data-recipe-id="${escapeHtml(group.result.slug ?? group.result.name)}" class="${rowClass}">
           <td class="recipe-cell">${first ? renderItem(first) : `<span class="recipe-empty">—</span>`}</td>
           <td class="recipe-cell">
-            ${second ? renderItem(second) : `<span class="recipe-empty">—</span>`}
+            ${remainingIngredients}
             ${extra}
           </td>
           ${resultCell}
@@ -176,13 +181,9 @@
       const hasNoExclude = !exclude.some((excTag) => matchesTag(candidateTags, excTag))
       const reqTokens = requirementTokens(recipe.requirements ?? "")
       const matchesRequirements =
-        requirementSet.length === 0
-          ? true
-          : reqTokens.some((token) => requirementSet.includes(token))
+        requirementSet.length === 0 ? true : reqTokens.some((token) => requirementSet.includes(token))
       const matchesExcludedRequirements =
-        requirementExcludeSet.length === 0
-          ? false
-          : reqTokens.some((token) => requirementExcludeSet.includes(token))
+        requirementExcludeSet.length === 0 ? false : reqTokens.some((token) => requirementExcludeSet.includes(token))
 
       if (include.length > 0 && !hasAllInclude) return false
       if (!hasNoExclude) return false
@@ -204,7 +205,10 @@
     })
 
     const grouped = groupRecipes(filtered)
-    tableBody.innerHTML = grouped.map(buildRecipeHtml).join("")
+    tableBody.innerHTML =
+      grouped.length > 0
+        ? grouped.map(buildRecipeHtml).join("")
+        : `<tr><td colspan="5" class="recipe-empty">Brak przepisów pasujących do filtrów.</td></tr>`
     countLabel && (countLabel.textContent = `Wyników: ${grouped.length}`)
     document.dispatchEvent(new CustomEvent("contentChanged", { detail: {} }))
   }
@@ -217,34 +221,24 @@
     label: HTMLElement | null,
   ) {
     if (!label) return
-    if (
-      include.length === 0 &&
-      exclude.length === 0 &&
-      requirements.length === 0 &&
-      requirementsExclude.length === 0
-    ) {
+    if (include.length === 0 && exclude.length === 0 && requirements.length === 0 && requirementsExclude.length === 0) {
       label.textContent = ""
       return
     }
     const includeText = include.length > 0 ? include.join(", ") : ""
     const excludeText = exclude.length > 0 ? "bez: " + exclude.join(", ") : ""
     const reqText =
-      requirements.length > 0
-        ? "wym: " + requirements.map((req) => (req === "-" ? "Brak" : req)).join(", ")
-        : ""
+      requirements.length > 0 ? "wym: " + requirements.map((req) => (req === "-" ? "Brak" : req)).join(", ") : ""
     const reqExcludeText =
       requirementsExclude.length > 0
         ? "bez wym: " + requirementsExclude.map((req) => (req === "-" ? "Brak" : req)).join(", ")
         : ""
-    label.textContent = [includeText, excludeText, reqText, reqExcludeText]
-      .filter(Boolean)
-      .join(" | ")
+    label.textContent = [includeText, excludeText, reqText, reqExcludeText].filter(Boolean).join(" | ")
   }
 
   function setupRecipeTable() {
     const dataScript = document.getElementById("recipe-table-data")
     const tableBody = document.querySelector<HTMLElement>(".recipe-table-body")
-    const tableWrap = document.querySelector<HTMLElement>(".recipe-table-wrap")
     const root = document.querySelector<HTMLElement>(".recipe-app")
     const tagButtons = document.querySelectorAll<HTMLButtonElement>(".recipe-tag-button:not(.requirement-button)")
     const requirementButtons = document.querySelectorAll<HTMLButtonElement>(".requirement-button")
@@ -335,16 +329,21 @@
 
       if (resetBtn) {
         resetBtn.style.display =
-          include.length > 0 ||
-          exclude.length > 0 ||
-          requirements.length > 0 ||
-          requirementsExclude.length > 0
+          include.length > 0 || exclude.length > 0 || requirements.length > 0 || requirementsExclude.length > 0
             ? "inline-flex"
             : "none"
       }
     }
 
     const cleanupHandlers: Array<() => void> = []
+    const filterDetails = document.querySelector<HTMLDetailsElement>(".recipe-sidebar-filters")
+    const mobileLayout = window.matchMedia("(max-width: 800px)")
+    const updateFilterLayout = () => {
+      if (filterDetails) filterDetails.open = !mobileLayout.matches
+    }
+    updateFilterLayout()
+    mobileLayout.addEventListener("change", updateFilterLayout)
+    cleanupHandlers.push(() => mobileLayout.removeEventListener("change", updateFilterLayout))
 
     tagButtons.forEach((btn) => {
       const handler = () => {
@@ -406,12 +405,6 @@
 
     if (searchInput) {
       const handler = () => {
-        if (tableWrap?.style.width === "") {
-          const width = tableWrap.getBoundingClientRect().width
-          if (width > 0) {
-            tableWrap.style.width = `${width}px`
-          }
-        }
         const { include, exclude, requirements, requirementsExclude } = readStoredFilters()
         applyFilters(
           parsedData!.recipes,
@@ -429,7 +422,6 @@
     }
 
     applyFromState()
-
     ;(root as any).recipeTableCleanup = () => {
       cleanupHandlers.forEach((fn) => fn())
       delete (root as any).recipeTableCleanup
@@ -450,16 +442,7 @@
     const { include, exclude, requirements, requirementsExclude } = readStoredFilters()
     const query = document.querySelector<HTMLInputElement>(".recipe-search-input")?.value ?? ""
     const countLabel = document.querySelector<HTMLElement>(".recipe-results-count")
-    applyFilters(
-      parsedData.recipes,
-      include,
-      exclude,
-      requirements,
-      requirementsExclude,
-      query,
-      tableBody,
-      countLabel,
-    )
+    applyFilters(parsedData.recipes, include, exclude, requirements, requirementsExclude, query, tableBody, countLabel)
     updateFilterLabel(
       include,
       exclude,

@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# ADD AIR RESIST ON ITEM
+
+## Przepisy
+
+### DOS1
+
 [[ESENCJA POWIETRZA]] + [[ANY SHIELD]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level

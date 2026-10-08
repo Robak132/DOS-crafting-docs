@@ -1,3 +1,13 @@
+---
+itemPage: true
+---
+
+# FLAKON Z OLEJEM
+
+## Przepisy
+
+### DOS1
+
 [[PUSTA BUTELKA]] + [[BUTELKA OLEJU]]
 - **Uwagi:** Oil Puddle 1m radius
 

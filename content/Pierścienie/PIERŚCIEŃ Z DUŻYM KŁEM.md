@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z DUŻYM KŁEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z DUŻYM KŁEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY DUŻY KIEŁ]]
+#Ring-Kit + [[MAGICZNY DUŻY KIEŁ]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Intelligence, Poison Resist, Air Resist
 

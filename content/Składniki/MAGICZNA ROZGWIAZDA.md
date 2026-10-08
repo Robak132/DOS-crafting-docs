@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA ROZGWIAZDA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNA ROZGWIAZDA

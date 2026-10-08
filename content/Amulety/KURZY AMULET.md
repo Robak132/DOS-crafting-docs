@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KURZY AMULET
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # KURZY AMULET

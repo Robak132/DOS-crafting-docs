@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z PIÓREM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z PIÓREM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNE PIÓRO]]
+#Ring-Kit + [[MAGICZNE PIÓRO]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Perception
 

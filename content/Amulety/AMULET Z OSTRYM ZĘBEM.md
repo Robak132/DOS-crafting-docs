@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z OSTRYM ZĘBEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z OSTRYM ZĘBEM

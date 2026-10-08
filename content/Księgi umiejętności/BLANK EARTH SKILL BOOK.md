@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: BLANK EARTH SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # BLANK EARTH SKILL BOOK

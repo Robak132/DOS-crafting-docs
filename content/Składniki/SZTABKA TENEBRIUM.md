@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZTABKA TENEBRIUM
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SZTABKA TENEBRIUM

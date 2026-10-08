@@ -1,6 +1,7 @@
 import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { QuartzComponent, QuartzComponentProps } from "./types"
+import { recipeCatalogSlug } from "./recipeView"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -59,7 +60,7 @@ export const PageList: QuartzComponent = ({ fileData, allFiles, limit, sort }: P
                   <li>
                     <a
                       class="internal tag-link"
-                      href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                      href={`${resolveRelative(fileData.slug!, recipeCatalogSlug(tag, tags) as FullSlug)}?tag=${encodeURIComponent(tag)}`}
                       data-no-popover="true"
                     >
                       {tag}

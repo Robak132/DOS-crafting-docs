@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z DŁUGIM SZCZURZYM OGONEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z DŁUGIM SZCZURZYM OGONEM

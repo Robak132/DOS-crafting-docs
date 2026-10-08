@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD EARTH RESIST ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD EARTH RESIST ON ITEM
@@ -8,19 +12,19 @@ itemPage: true
 
 ### DOS1
 
-[[ESENCJA ZIEMI]] + [[ANY SHIELD]]
+[[ESENCJA ZIEMI]] + #Shield
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level
 
-[[ESENCJA ZIEMI]] + [[ANY CLOTH CHEST, ROBE, OR SARONG]]
+[[ESENCJA ZIEMI]] + #Cloth-Chest-Robe-Or-Sarong
 - **Wymagania:** Crafting 2
 - **Uwagi:** Also changes item color (orange)
 
-[[ESENCJA ZIEMI]] + [[ANY LEATHER CHEST, GLOVES, HELMET, OR BELT]]
+[[ESENCJA ZIEMI]] + #Leather-Chest-Gloves-Helmet-Or-Belt
 - **Wymagania:** Crafting 3
 - **Uwagi:** Also changes item color (orange)
 
-[[ESENCJA ZIEMI]] + [[ANY METAL CHEST]]
+[[ESENCJA ZIEMI]] + #Metal-Chest
 - **Wymagania:** Crafting 5
 - **Uwagi:** Also changes item color (orange)
 

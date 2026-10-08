@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: GWIEZDNY PYŁ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # GWIEZDNY PYŁ

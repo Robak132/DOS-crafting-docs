@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD MOVEMENT ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD MOVEMENT ON ITEM
@@ -8,12 +12,12 @@ itemPage: true
 
 ### DOS1
 
-[[KOWADŁO]] + [[ANY METAL CHEST]]
+[[KOWADŁO]] + #Metal-Chest
 - **Wymagania:** Crafting 2
 - **Źródło:** The Adventurer's Field Guide XIII
 
-[[BUTELKA OLEJU]] + [[ANY METAL CHEST]]
+[[BUTELKA OLEJU]] + #Metal-Chest
 
-[[KUBEK OLEJU]] + [[ANY METAL CHEST]]
+[[KUBEK OLEJU]] + #Metal-Chest
 
 #Ulepszenia

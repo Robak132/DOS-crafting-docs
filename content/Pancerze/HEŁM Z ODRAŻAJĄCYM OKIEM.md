@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM Z ODRAŻAJĄCYM OKIEM
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM Z ODRAŻAJĄCYM OKIEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICZNE ODRAŻAJĄCE OKO]]
+#Leather-Helmet + [[MAGICZNE ODRAŻAJĄCE OKO]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Perception, Sight
 

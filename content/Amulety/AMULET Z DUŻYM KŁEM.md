@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z DUŻYM KŁEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z DUŻYM KŁEM

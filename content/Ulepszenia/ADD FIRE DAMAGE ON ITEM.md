@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD FIRE DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD FIRE DAMAGE ON ITEM

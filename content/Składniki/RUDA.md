@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: RUDA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # RUDA
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY PICKAXE]] + [[ANY ORE VEIN]] (x5)
+#Pickaxe + #Ore-Vein (x5)
 - **Uwagi:** Ore type depends on the vein
 
 #Składniki

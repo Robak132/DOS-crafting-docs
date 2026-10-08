@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET „TRZECIE OKO”
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET „TRZECIE OKO”

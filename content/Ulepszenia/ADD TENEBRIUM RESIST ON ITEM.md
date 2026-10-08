@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD TENEBRIUM RESIST ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD TENEBRIUM RESIST ON ITEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ESENCJA CIENIA]] + [[ANY SHIELD]]
+[[ESENCJA CIENIA]] + #Shield
 - **Wymagania:** Crafting 4
 - **Uwagi:** Stats Increase with Hero Level
 

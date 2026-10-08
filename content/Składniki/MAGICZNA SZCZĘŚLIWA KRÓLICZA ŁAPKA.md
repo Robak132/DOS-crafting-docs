@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA

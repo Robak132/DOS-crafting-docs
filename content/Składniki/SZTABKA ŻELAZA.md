@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZTABKA ŻELAZA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SZTABKA ŻELAZA
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY ONE-HANDED SWORD]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
+#One-handed-Sword + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
 - **Wymagania:** Blacksmithing 1
 
 [[RUDA ŻELAZA]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]

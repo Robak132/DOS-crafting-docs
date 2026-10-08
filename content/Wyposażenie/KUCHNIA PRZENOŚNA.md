@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KUCHNIA PRZENOŚNA
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # KUCHNIA PRZENOŚNA

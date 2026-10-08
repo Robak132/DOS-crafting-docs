@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WŁÓCZNIA
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # WŁÓCZNIA

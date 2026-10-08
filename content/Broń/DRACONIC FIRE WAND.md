@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DRACONIC FIRE WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DRACONIC FIRE WAND

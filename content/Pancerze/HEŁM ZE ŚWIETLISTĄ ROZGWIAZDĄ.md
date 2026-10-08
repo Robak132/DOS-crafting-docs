@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM ZE ŚWIETLISTĄ ROZGWIAZDĄ
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM ZE ŚWIETLISTĄ ROZGWIAZDĄ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICZNA ŚWIETLISTA ROZGWIAZDA]]
+#Leather-Helmet + [[MAGICZNA ŚWIETLISTA ROZGWIAZDA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Leadership, Water Resist
 

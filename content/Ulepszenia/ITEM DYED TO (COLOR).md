@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ITEM DYED TO (COLOR)
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ITEM DYED TO (COLOR)
@@ -8,16 +12,16 @@ itemPage: true
 
 ### DOS1
 
-[[FABRIC DYE (PURPLE, GREEN)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
+[[FABRIC DYE (PURPLE, GREEN)]] + #Chest-Gloves-Boots-Or-Sarong
 - **Wymagania:** Crafting 2
 
-[[FABRIC DYE (WHITE, YELLOW, RED)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
+[[FABRIC DYE (WHITE, YELLOW, RED)]] + #Chest-Gloves-Boots-Or-Sarong
 - **Wymagania:** Crafting 1
 
-[[FABRIC DYE (BLACK)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
+[[FABRIC DYE (BLACK)]] + #Chest-Gloves-Boots-Or-Sarong
 - **Wymagania:** Crafting 4
 
-[[FABRIC DYE (BLUE)]] + [[ANY CHEST, GLOVES, BOOTS, OR SARONG]]
+[[FABRIC DYE (BLUE)]] + #Chest-Gloves-Boots-Or-Sarong
 - **Wymagania:** Crafting 3
 
 #Ulepszenia

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KUSZA BEZ CIĘCIWY
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # KUSZA BEZ CIĘCIWY

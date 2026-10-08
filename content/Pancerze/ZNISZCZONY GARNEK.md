@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ZNISZCZONY GARNEK
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # ZNISZCZONY GARNEK

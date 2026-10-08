@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DRACONIC AIR WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DRACONIC AIR WAND

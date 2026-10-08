@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DREWNIANY KOŁEK
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DREWNIANY KOŁEK

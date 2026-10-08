@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD ARMOR ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD ARMOR ON ITEM
@@ -8,31 +12,31 @@ itemPage: true
 
 ### DOS1
 
-[[KUCHNIA PRZENOŚNA]] + [[ANY LEATHER CHEST]]
+[[KUCHNIA PRZENOŚNA]] + #Leather-Chest
 - **Wymagania:** Crafting 2
 - **Uwagi:** Less effective than Metal Scraps
 - **Źródło:** The Adventurer's Field Guide XII
 
-[[SKRAWKI SKÓRY]] + [[ANY CLOTH CHEST]]
+[[SKRAWKI SKÓRY]] + #Cloth-Chest
 - **Wymagania:** Crafting 4
 - **Uwagi:** Less effective than Metal Scraps
 - **Źródło:** The Adventurer's Field Guide XI
 
-[[KAWAŁKI METALU]] + [[ANY CLOTH CHEST]]
+[[KAWAŁKI METALU]] + #Cloth-Chest
 - **Wymagania:** Crafting 5
 - **Uwagi:** More effective than Leather Scraps
 - **Źródło:** The Adventurer's Field Guide XI
 
-[[KAWAŁKI METALU]] + [[ANY LEATHER CHEST]]
+[[KAWAŁKI METALU]] + #Leather-Chest
 - **Wymagania:** Crafting 5
 - **Uwagi:** More effective than Mobile Kitchen
 - **Źródło:** The Adventurer's Field Guide XI
 
-[[KAWAŁKI PŁYT]] + [[ANY METAL CHEST]]
+[[KAWAŁKI PŁYT]] + #Metal-Chest
 - **Wymagania:** Crafting 5
 - **Źródło:** The Adventurer's Field Guide XI
 
-[[FRAGMENTY ŁUSEK]] + [[ANY METAL CHEST]]
+[[FRAGMENTY ŁUSEK]] + #Metal-Chest
 - **Wymagania:** Crafting 5
 - **Źródło:** The Adventurer's Field Guide XI
 

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY DUŻY KIEŁ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNY DUŻY KIEŁ

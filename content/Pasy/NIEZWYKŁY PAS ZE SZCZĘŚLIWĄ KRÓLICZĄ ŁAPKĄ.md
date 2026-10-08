@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZWYKŁY PAS ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # NIEZWYKŁY PAS ZE SZCZĘŚLIWĄ KRÓLICZĄ ŁAPKĄ

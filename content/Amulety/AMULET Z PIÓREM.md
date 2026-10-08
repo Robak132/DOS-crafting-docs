@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z PIÓREM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z PIÓREM

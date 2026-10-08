@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNE ODRAŻAJĄCE OKO
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNE ODRAŻAJĄCE OKO

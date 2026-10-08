@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZAPISANY ZWÓJ OGNIA
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # NIEZAPISANY ZWÓJ OGNIA

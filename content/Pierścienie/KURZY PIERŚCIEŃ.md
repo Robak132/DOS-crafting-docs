@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KURZY PIERŚCIEŃ
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # KURZY PIERŚCIEŃ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNA NÓŻKA KURAKA]]
+#Ring-Kit + [[MAGICZNA NÓŻKA KURAKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Movement
 

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM Z PIÓRAMI
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM Z PIÓRAMI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICAL FEATHER]]
+#Leather-Helmet + [[MAGICAL FEATHER]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Sneaking, Air Resist
 

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: STAFF (ELEMENT RANDOM)
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # STAFF (ELEMENT RANDOM)

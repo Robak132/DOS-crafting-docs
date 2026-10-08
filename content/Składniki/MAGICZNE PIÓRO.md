@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNE PIÓRO
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNE PIÓRO

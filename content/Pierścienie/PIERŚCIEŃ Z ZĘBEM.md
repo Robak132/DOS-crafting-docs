@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ Z ZĘBEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ Z ZĘBEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY ZĄB]]
+#Ring-Kit + [[MAGICZNY ZĄB]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Charisma
 

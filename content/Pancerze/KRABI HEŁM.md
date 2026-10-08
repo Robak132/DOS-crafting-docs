@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KRABI HEŁM
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # KRABI HEŁM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[SZCZYPCE KRABA]]
+#Leather-Helmet + [[SZCZYPCE KRABA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add HP
 

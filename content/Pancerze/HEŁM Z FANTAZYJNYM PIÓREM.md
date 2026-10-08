@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM Z FANTAZYJNYM PIÓREM
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM Z FANTAZYJNYM PIÓREM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICZNE FANTAZYJNE PIÓRO]]
+#Leather-Helmet + [[MAGICZNE FANTAZYJNE PIÓRO]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Sneaking, Air Resist
 

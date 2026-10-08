@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SPROSZKOWANA KOŚĆ
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # SPROSZKOWANA KOŚĆ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY SKULL]] + [[MORTAR & PESTLE]]
+#Skull + [[MORTAR & PESTLE]]
 - **Źródło:** Secrets of the Scroll I
 
 [[KOŚĆ]] + [[MORTAR & PESTLE]]

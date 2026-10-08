@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DYNIOWY HEŁM
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # DYNIOWY HEŁM

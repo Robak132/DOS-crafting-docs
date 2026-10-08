@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DRACONIC WATER WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DRACONIC WATER WAND

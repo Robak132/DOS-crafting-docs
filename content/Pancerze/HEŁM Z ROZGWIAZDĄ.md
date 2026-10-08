@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM Z ROZGWIAZDĄ
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM Z ROZGWIAZDĄ
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICAL STARFISH]]
+#Leather-Helmet + [[MAGICAL STARFISH]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Leadership, Water Resist
 

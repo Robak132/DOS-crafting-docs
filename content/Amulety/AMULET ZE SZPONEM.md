@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET ZE SZPONEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET ZE SZPONEM

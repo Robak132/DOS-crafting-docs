@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z DŁUGIM SZCZURZYM OGONEM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z DŁUGIM SZCZURZYM OGONEM

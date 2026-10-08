@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KARTKA PAPIERU
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # KARTKA PAPIERU

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z FANTAZYJNYM PIÓREM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z FANTAZYJNYM PIÓREM

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET ZE SZCZURZYM OGONEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET ZE SZCZURZYM OGONEM

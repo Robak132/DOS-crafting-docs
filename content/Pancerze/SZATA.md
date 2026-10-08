@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZATA
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # SZATA

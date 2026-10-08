@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ELVEN FIRE WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # ELVEN FIRE WAND

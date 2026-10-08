@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: AMULET Z KŁEM
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # AMULET Z KŁEM

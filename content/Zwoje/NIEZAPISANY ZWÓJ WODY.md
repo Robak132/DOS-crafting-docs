@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZAPISANY ZWÓJ WODY
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # NIEZAPISANY ZWÓJ WODY

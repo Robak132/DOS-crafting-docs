@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PRASTARY AMULET Z CZASZKĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # PRASTARY AMULET Z CZASZKĄ

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DWURĘCZNY TOPÓR
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # DWURĘCZNY TOPÓR

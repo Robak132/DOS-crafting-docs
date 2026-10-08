@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIÓRO
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # PIÓRO
@@ -10,7 +14,7 @@ itemPage: true
 
 [[PODUSZKA]] + [[NÓŻ LUB SZTYLET]]
 
-[[ANY FEATHER]] + [[NÓŻ LUB SZTYLET]]
+#Feather + [[NÓŻ LUB SZTYLET]]
 - **Źródło:** Secrets of the Scroll IV
 
 #Składniki

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD WATER DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD WATER DAMAGE ON ITEM

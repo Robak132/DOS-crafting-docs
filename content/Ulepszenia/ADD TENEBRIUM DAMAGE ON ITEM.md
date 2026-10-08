@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: ADD TENEBRIUM DAMAGE ON ITEM
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD TENEBRIUM DAMAGE ON ITEM

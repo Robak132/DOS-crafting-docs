@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z OSTRYM ZĘBEM
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z OSTRYM ZĘBEM

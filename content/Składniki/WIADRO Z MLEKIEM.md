@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: WIADRO Z MLEKIEM
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # WIADRO Z MLEKIEM

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZCZĘŚLIWY PIERŚCIEŃ Z KRÓLICZEJ ŁAPKI
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # SZCZĘŚLIWY PIERŚCIEŃ Z KRÓLICZEJ ŁAPKI
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA]]
+#Ring-Kit + [[MAGICZNA SZCZĘŚLIWA KRÓLICZA ŁAPKA]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Lucky Charm, Movement
 - **Źródło:** Secrets of the Scroll III

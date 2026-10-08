@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: BLANK FIRE SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # BLANK FIRE SKILL BOOK

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY AMULET Z ŚWIETLISTĄ ROZGWIAZDĄ
+tags:
+  - Typ/Amulety
+  - DOS1
 ---
 
 # MAGICZNY AMULET Z ŚWIETLISTĄ ROZGWIAZDĄ

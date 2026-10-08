@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: CIĘCIWA
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # CIĘCIWA

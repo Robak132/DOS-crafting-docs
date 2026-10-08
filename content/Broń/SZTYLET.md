@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: SZTYLET
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # SZTYLET

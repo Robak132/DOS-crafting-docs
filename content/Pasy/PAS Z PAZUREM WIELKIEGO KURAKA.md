@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z PAZUREM WIELKIEGO KURAKA
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z PAZUREM WIELKIEGO KURAKA

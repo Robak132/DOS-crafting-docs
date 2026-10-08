@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNA KRÓLICZA ŁAPKA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNA KRÓLICZA ŁAPKA

@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNY SZPON
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNY SZPON

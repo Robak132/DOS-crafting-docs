@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MASTER FIRE SKILL BOOK
+tags:
+  - Typ/Ksiegi-umiejetnosci
+  - DOS1
 ---
 
 # MASTER FIRE SKILL BOOK
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[BLANK FIRE SKILL BOOK]] + [[ANY MASTER FIRE SKILL SCROLL]]
+[[BLANK FIRE SKILL BOOK]] + #Master-Fire-Skill-Scroll
 - **Wymagania:** Crafting 4
 - **Uwagi:** Skill Book spell same as Skill Scroll used
 - **Źródło:** Secrets of the Scroll X

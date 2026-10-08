@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: CLAWED AIR WAND
+tags:
+  - Typ/Bron
+  - DOS1
 ---
 
 # CLAWED AIR WAND

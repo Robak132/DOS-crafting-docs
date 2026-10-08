@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KURZY PAS
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # KURZY PAS

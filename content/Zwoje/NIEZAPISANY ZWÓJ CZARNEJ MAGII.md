@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: NIEZAPISANY ZWÓJ CZARNEJ MAGII
+tags:
+  - Typ/Zwoje
+  - DOS1
 ---
 
 # NIEZAPISANY ZWÓJ CZARNEJ MAGII

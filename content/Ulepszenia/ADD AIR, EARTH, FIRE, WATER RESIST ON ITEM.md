@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: 'ADD AIR, EARTH, FIRE, WATER RESIST ON ITEM'
+tags:
+  - Typ/Ulepszenia
+  - DOS1
 ---
 
 # ADD AIR, EARTH, FIRE, WATER RESIST ON ITEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[RUBIN]] + [[ANY CHEST, GLOVES, HELMET, BELT, OR SARONG]]
+[[RUBIN]] + #Chest-Gloves-Helmet-Belt-Or-Sarong
 - **Wymagania:** Crafting 5
 - **Uwagi:** Stats Increase with Hero Level
 - **Źródło:** Secrets of the Scroll IX

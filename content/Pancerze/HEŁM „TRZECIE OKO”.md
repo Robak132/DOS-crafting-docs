@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: HEŁM „TRZECIE OKO”
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # HEŁM „TRZECIE OKO”
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY LEATHER HELMET]] + [[MAGICAL EYE]]
+#Leather-Helmet + [[MAGICAL EYE]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Perception
 

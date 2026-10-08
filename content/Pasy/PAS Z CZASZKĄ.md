@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PAS Z CZASZKĄ
+tags:
+  - Typ/Pasy
+  - DOS1
 ---
 
 # PAS Z CZASZKĄ

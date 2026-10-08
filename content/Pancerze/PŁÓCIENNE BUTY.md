@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PŁÓCIENNE BUTY
+tags:
+  - Typ/Pancerz
+  - DOS1
 ---
 
 # PŁÓCIENNE BUTY

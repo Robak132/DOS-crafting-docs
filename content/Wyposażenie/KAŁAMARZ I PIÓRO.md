@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: KAŁAMARZ I PIÓRO
+tags:
+  - Typ/Wyposazenie
+  - DOS1
 ---
 
 # KAŁAMARZ I PIÓRO

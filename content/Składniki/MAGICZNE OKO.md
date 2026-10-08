@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: MAGICZNE OKO
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # MAGICZNE OKO

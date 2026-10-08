@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: PIERŚCIEŃ ZE SZPONEM
+tags:
+  - Typ/Pierscienie
+  - DOS1
 ---
 
 # PIERŚCIEŃ ZE SZPONEM
@@ -8,7 +12,7 @@ itemPage: true
 
 ### DOS1
 
-[[ANY RING KIT]] + [[MAGICZNY SZPON]]
+#Ring-Kit + [[MAGICZNY SZPON]]
 - **Wymagania:** Crafting 2
 - **Uwagi:** Add Constitution
 

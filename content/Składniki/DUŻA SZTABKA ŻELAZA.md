@@ -1,5 +1,9 @@
 ---
 itemPage: true
+title: DUŻA SZTABKA ŻELAZA
+tags:
+  - Typ/Skladniki
+  - DOS1
 ---
 
 # DUŻA SZTABKA ŻELAZA
@@ -10,7 +14,7 @@ itemPage: true
 
 [[SZTABKA ŻELAZA]] + [[SZTABKA ŻELAZA]]
 
-[[ANY TWO-HANDED SWORD]] + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
+#Two-handed-Sword + [[OVEN, FURNACE, OR MOBILE KITCHEN]]
 - **Wymagania:** Blacksmithing 1
 
 #Składniki

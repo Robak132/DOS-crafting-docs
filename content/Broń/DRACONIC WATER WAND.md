@@ -7,13 +7,8 @@ tags:
 ---
 
 # DRACONIC WATER WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA DRAKONICZNA RÓŻDŻKA]] + [[ESENCJA WODY]]
+[[Składniki/INERT DRACONIC WAND|Inert Draconic Wand]] + [[ESENCJA WODY|Water Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Winterblast
-
-#Broń
+- **Efekt:** Grants Spell: Winterblast

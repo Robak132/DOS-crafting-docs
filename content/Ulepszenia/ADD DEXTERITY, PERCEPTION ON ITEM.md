@@ -7,17 +7,14 @@ tags:
 ---
 
 # ADD DEXTERITY, PERCEPTION ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ZAKRES]] + #Bow
 - **Wymagania:** Crafting 3
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 [[ZAKRES]] + #Crossbow
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 #Ulepszenia

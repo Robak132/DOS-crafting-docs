@@ -7,11 +7,7 @@ tags:
 ---
 
 # Wood Mush (Vanilla Recipe)
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
-[[Materiały z odzysku/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/WELL|Well]] = [[Magia/WOOD MUSH (VANILLA RECIPE)|Wood Mush (Vanilla Recipe)]]
-
+[[Składniki/WOOD CHIPS|Wood Chips]] + [[Stanowiska i pojemniki/WELL|Well]] = [[Magia/WOOD MUSH (VANILLA RECIPE)|Wood Mush (Vanilla Recipe)]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A4:H4

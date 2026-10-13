@@ -7,14 +7,9 @@ tags:
 ---
 
 # ONE HANDED AXE
-
 ## Przepisy
-
 ### DOS1
-
-[[SZTABKA STALI]] + [[KOWADŁO]]
+[[Składniki/STEEL BAR|Steel Bar]] + [[KOWADŁO|Anvil]]
 - **Wymagania:** Blacksmithing 1
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** He Who Smelts It II
-
-#Broń

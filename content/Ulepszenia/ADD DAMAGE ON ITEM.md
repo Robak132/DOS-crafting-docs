@@ -7,28 +7,25 @@ tags:
 ---
 
 # ADD DAMAGE ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[OSEŁKA]] + #Bladed-Melee-Weapon
 - **Wymagania:** Blacksmithing 2
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** The Adventurer's Field Guide VIII
 
 [[KOŁO DO OSTRZENIA]] + #Bladed-Melee-Weapon
 - **Wymagania:** Blacksmithing 2
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** The Adventurer's Field Guide VIII
 
 [[CIĘCIWA]] + #Bow
 - **Wymagania:** Crafting 2
-- **Uwagi:** Stats Increase with Crafting Level
+- **Efekt:** Stats Increase with Crafting Level
 
 [[CIĘCIWA]] + #Crossbow
 - **Wymagania:** Crafting 3
-- **Uwagi:** Stats Increase with Crafting Level
+- **Efekt:** Stats Increase with Crafting Level
 
 [[KAMIEŃ KSIĘŻYCOWY]] + #Club
 - **Wymagania:** Crafting 3

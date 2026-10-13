@@ -7,13 +7,8 @@ tags:
 ---
 
 # WIADRO Z WODĄ
-
 ## Przepisy
-
 ### DOS1
+[[WIADRO|Bucket]] + [[Narzędzia/WATER BARREL|Water Barrel]]
 
-[[WIADRO]] + [[BECZKA WODY]]
-
-[[WIADRO]] + [[STUDNIA]]
-
-#Składniki
+[[WIADRO|Bucket]] + [[STUDNIA|Well]]

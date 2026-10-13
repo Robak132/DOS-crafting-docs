@@ -7,14 +7,9 @@ tags:
 ---
 
 # PŁÓCIENNA ZBROJA
-
 ## Przepisy
-
 ### DOS1
-
-[[SKRAWKI MATERIAŁU]] + [[IGŁA Z NITKĄ]]
+[[SKRAWKI MATERIAŁU|Cloth Scraps]] + [[IGŁA Z NITKĄ|Needle and Thread]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** Stats Increase with Crafting Level
+- **Efekt:** Stats Increase with Crafting Level
 - **Źródło:** The Adventurer's Field Guide XVI
-
-#Pancerz

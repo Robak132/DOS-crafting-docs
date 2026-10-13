@@ -7,10 +7,10 @@ tags:
 
 # Wyposażenie
 
-- [[Wyposażenie/IGŁA Z NITKĄ|IGŁA Z NITKĄ]]
-- [[Wyposażenie/KAŁAMARZ I PIÓRO|KAŁAMARZ I PIÓRO]]
-- [[Wyposażenie/KUCHNIA PRZENOŚNA|KUCHNIA PRZENOŚNA]]
-- [[Wyposażenie/MAGICZNA IGŁA Z NITKĄ|MAGICZNA IGŁA Z NITKĄ]]
-- [[Wyposażenie/MAGICZNY KAŁAMARZ I PIÓRO|MAGICZNY KAŁAMARZ I PIÓRO]]
-- [[Wyposażenie/PLECAK|PLECAK]]
-- [[Wyposażenie/WYTRYCHY|WYTRYCHY]]
+- [[Wyposażenie/BACKPACK|Backpack]]
+- [[Wyposażenie/INK POT AND QUILL|Ink Pot and Quill]]
+- [[Wyposażenie/LOCKPICKS|Lockpicks]]
+- [[Wyposażenie/MAGIC INK POT AND QUILL|Magic Ink Pot and Quill]]
+- [[Wyposażenie/MAGIC NEEDLE AND THREAD|Magic Needle and Thread]]
+- [[Wyposażenie/MOBILE KITCHEN|Mobile Kitchen]]
+- [[Wyposażenie/NEEDLE AND THREAD|Needle and Thread]]

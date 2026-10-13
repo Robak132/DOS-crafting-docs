@@ -7,13 +7,8 @@ tags:
 ---
 
 # DRACONIC AIR WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA DRAKONICZNA RÓŻDŻKA]] + [[ESENCJA POWIETRZA]]
+[[Składniki/INERT DRACONIC WAND|Inert Draconic Wand]] + [[ESENCJA POWIETRZA|Air Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Chain Lightning
-
-#Broń
+- **Efekt:** Grants Spell: Chain Lightning

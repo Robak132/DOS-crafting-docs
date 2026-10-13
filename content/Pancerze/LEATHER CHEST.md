@@ -7,18 +7,13 @@ tags:
 ---
 
 # LEATHER CHEST
-
 ## Przepisy
-
 ### DOS1
-
-[[SKRAWKI SKÓRY]] + [[IGŁA Z NITKĄ]]
+[[SKRAWKI SKÓRY|Leather Scraps]] + [[IGŁA Z NITKĄ|Needle and Thread]]
 - **Wymagania:** Crafting 2
-- **Uwagi:** Stats Increase with Crafting Level
+- **Efekt:** Stats Increase with Crafting Level
 - **Źródło:** The Adventurer's Field Guide XVI
 
-[[SKRAWKI SKÓRY]] + [[MAGICAL NEEDLE & THREAD]]
+[[SKRAWKI SKÓRY|Leather Scraps]] + [[MAGICAL NEEDLE & THREAD]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Random Stats Upon Creation
-
-#Pancerz

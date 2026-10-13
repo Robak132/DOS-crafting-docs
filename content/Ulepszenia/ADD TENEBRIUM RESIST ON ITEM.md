@@ -7,13 +7,10 @@ tags:
 ---
 
 # ADD TENEBRIUM RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA CIENIA]] + #Shield
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 #Ulepszenia

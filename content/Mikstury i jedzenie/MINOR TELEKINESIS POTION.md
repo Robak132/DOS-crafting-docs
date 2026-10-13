@@ -7,14 +7,9 @@ tags:
 ---
 
 # MINOR TELEKINESIS POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[DRUDANAE]] + [[MAŁA MIKSTURA WSZELKIEJ ODPORNOŚCI]]
+[[Składniki/DRUDANAE|Drudanae]] + [[MAŁA MIKSTURA WSZELKIEJ ODPORNOŚCI|Minor Resist All Potion]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 1 Telekinesis
+- **Efekt:** Add 1 Telekinesis
 - **Źródło:** Fun With Fluids IX
-
-#Mikstury

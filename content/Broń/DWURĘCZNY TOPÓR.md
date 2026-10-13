@@ -7,14 +7,9 @@ tags:
 ---
 
 # DWURĘCZNY TOPÓR
-
 ## Przepisy
-
 ### DOS1
-
-[[DUŻA SZTABKA STALI]] + [[KOWADŁO]]
+[[Składniki/LARGE STEEL BAR|Large Steel Bar]] + [[KOWADŁO|Anvil]]
 - **Wymagania:** Blacksmithing 2
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** He Who Smelts It III
-
-#Broń

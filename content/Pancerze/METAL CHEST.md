@@ -7,14 +7,9 @@ tags:
 ---
 
 # METAL CHEST
-
 ## Przepisy
-
 ### DOS1
-
-[[KAWAŁKI METALU]] + [[MŁOTEK]]
+[[KAWAŁKI METALU|Metal Scraps]] + [[MŁOTEK|Hammer]]
 - **Wymagania:** Blacksmithing 3
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** He Who Smelts It VI
-
-#Pancerz

@@ -7,11 +7,8 @@ tags:
 ---
 
 # ADD WATER DAMAGE ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA WODY]] + [[MOST WEAPONS]]
 - **Wymagania:** Crafting 5
 - **Uwagi:** Excludes wands and some other weapons

@@ -7,14 +7,11 @@ tags:
 ---
 
 # ADD FIRE RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA OGNIA]] + #Shield
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 [[ESENCJA OGNIA]] + #Cloth-Chest-Robe-Or-Sarong
 - **Wymagania:** Crafting 2

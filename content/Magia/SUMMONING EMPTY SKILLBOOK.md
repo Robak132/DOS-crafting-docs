@@ -7,11 +7,8 @@ tags:
 ---
 
 # Summoning Empty Skillbook
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]] + [[Składniki/BLANK SUMMONING SCROLL|Blank Summoning Scroll]] + [[Składniki/BLANK SUMMONING SCROLL|Blank Summoning Scroll]] = [[Magia/SUMMONING EMPTY SKILLBOOK|Summoning Empty Skillbook]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A28:H28
 

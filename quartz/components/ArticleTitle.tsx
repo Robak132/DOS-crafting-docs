@@ -2,13 +2,27 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { classNames } from "../util/lang"
 
 const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  if (fileData.frontmatter?.categoryPage === true) return null
+
   const title = fileData.frontmatter?.title
-  if (fileData.frontmatter?.itemPage === true || fileData.frontmatter?.categoryPage === true) return null
-  if (title) {
+  if (!title) return null
+
+  if (fileData.frontmatter?.itemPage === true) {
+    const titlePl = fileData.frontmatter?.titlePl as string | undefined
+    if (titlePl && titlePl !== title) {
+      return (
+        <h1 class={classNames(displayClass, "article-title")}>
+          <span class="item-lang">
+            <span class="item-lang-en">{title}</span>
+            <span class="item-lang-pl">{titlePl}</span>
+          </span>
+        </h1>
+      )
+    }
     return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
-  } else {
-    return null
   }
+
+  return <h1 class={classNames(displayClass, "article-title")}>{title}</h1>
 }
 
 ArticleTitle.css = `

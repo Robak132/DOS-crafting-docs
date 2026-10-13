@@ -7,14 +7,11 @@ tags:
 ---
 
 # ADD EARTH RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA ZIEMI]] + #Shield
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 [[ESENCJA ZIEMI]] + #Cloth-Chest-Robe-Or-Sarong
 - **Wymagania:** Crafting 2

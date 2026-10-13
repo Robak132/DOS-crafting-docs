@@ -7,13 +7,8 @@ tags:
 ---
 
 # MEDIUM EARTH RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MIKSTURA ODPORNOŚCI NA ZIEMIĘ]] + [[ULEPSZACZ]]
+[[MIKSTURA ODPORNOŚCI NA ZIEMIĘ|Earth Resistance Potion]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 25% Earth Resist
-
-#Mikstury
+- **Efekt:** Add 25% Earth Resist

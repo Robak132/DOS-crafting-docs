@@ -7,13 +7,8 @@ tags:
 ---
 
 # ELVEN EARTH WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA ELFICKA RÓŻDŻKA]] + [[ESENCJA ZIEMI]]
+[[Składniki/INERT ELVEN WAND|Inert Elven Wand]] + [[ESENCJA ZIEMI|Earth Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Summon Earth Elemental
-
-#Broń
+- **Efekt:** Grants Spell: Summon Earth Elemental

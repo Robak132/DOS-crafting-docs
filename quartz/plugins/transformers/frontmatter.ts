@@ -1,7 +1,6 @@
-import matter from "gray-matter"
 import remarkFrontmatter from "remark-frontmatter"
 import { QuartzTransformerPlugin } from "../types"
-import yaml from "js-yaml"
+import { load as yamlLoad, JSON_SCHEMA as YAML_JSON_SCHEMA } from "js-yaml"
 import toml from "toml"
 import { FilePath, FullSlug, getFileExtension, slugifyFilePath, slugTag } from "../../util/path"
 import { QuartzPluginData } from "../vfile"
@@ -15,6 +14,33 @@ export interface Options {
 const defaultOptions: Options = {
   delimiters: "---",
   language: "yaml",
+}
+
+/** Minimalny parser frontmatteru — bez gray-matter (stary js-yaml/sprintf-js). */
+function parseFrontmatter(
+  source: string,
+  opts: Options,
+): { data: Record<string, unknown>; content: string } {
+  const [open, close] = Array.isArray(opts.delimiters)
+    ? opts.delimiters
+    : [opts.delimiters, opts.delimiters]
+  if (!source.startsWith(open)) return { data: {}, content: source }
+
+  const afterOpen = source.slice(open.length).replace(/^\r?\n/, "")
+  const closeIdx = afterOpen.indexOf(`\n${close}`)
+  if (closeIdx < 0) return { data: {}, content: source }
+
+  const raw = afterOpen.slice(0, closeIdx)
+  const rest = afterOpen.slice(closeIdx + close.length + 1).replace(/^\r?\n/, "")
+  try {
+    const data =
+      opts.language === "toml"
+        ? (toml.parse(raw) as Record<string, unknown>)
+        : ((yamlLoad(raw, { schema: YAML_JSON_SCHEMA }) as Record<string, unknown> | null) ?? {})
+    return { data: data && typeof data === "object" ? data : {}, content: rest }
+  } catch {
+    return { data: {}, content: source }
+  }
 }
 
 function coalesceAliases(data: { [key: string]: any }, aliases: string[]) {
@@ -62,14 +88,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
         [remarkFrontmatter, ["yaml", "toml"]],
         () => {
           return (_, file) => {
-            const fileData = Buffer.from(file.value as Uint8Array)
-            const { data } = matter(fileData, {
-              ...opts,
-              engines: {
-                yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object,
-                toml: (s) => toml.parse(s) as object,
-              },
-            })
+            const { data } = parseFrontmatter(String(file.value), opts)
 
             if (data.title != null && data.title.toString() !== "") {
               data.title = data.title.toString()
@@ -135,6 +154,9 @@ declare module "vfile" {
     } & Partial<{
         tags: string[]
         aliases: string[]
+        titlePl: string
+        itemPage: boolean
+        categoryPage: boolean
         modified: string
         created: string
         published: string

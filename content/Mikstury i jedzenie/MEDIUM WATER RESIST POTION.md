@@ -7,13 +7,10 @@ tags:
 ---
 
 # MEDIUM WATER RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[WATER RESIST POTION]] + [[ULEPSZACZ]]
+[[WATER RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 25% Water Resist
-[[MIKSTURA ODPORNOŚCI NA WODĘ]]
-#Mikstury
+- **Efekt:** Add 25% Water Resist
+
+[[MIKSTURA ODPORNOŚCI NA WODĘ|Water Resistance Potion]]

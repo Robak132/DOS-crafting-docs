@@ -1,6 +1,7 @@
 ---
 itemPage: true
 title: Worm Tremor Scroll
+titlePl: Zwój Robaczywego Wstrząsu
 tags:
   - Typ/Skladniki
   - DOS2

@@ -7,14 +7,11 @@ tags:
 ---
 
 # ADD AIR RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA POWIETRZA]] + #Shield
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 [[ESENCJA POWIETRZA]] + #Leather-Chest-Gloves-Helmet-Or-Belt
 - **Wymagania:** Crafting 3

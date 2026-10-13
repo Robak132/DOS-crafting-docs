@@ -6,6 +6,7 @@ import RecipeTablePage from "./pages/RecipeTablePage"
 import NotFound from "./pages/404"
 import ArticleTitle from "./ArticleTitle"
 import Darkmode from "./Darkmode"
+import ItemLangToggle from "./ItemLangToggle"
 import Head from "./Head"
 import PageTitle from "./PageTitle"
 import ContentMeta from "./ContentMeta"
@@ -34,6 +35,7 @@ export {
   TagContent,
   FolderContent,
   Darkmode,
+  ItemLangToggle,
   Head,
   PageTitle,
   ContentMeta,

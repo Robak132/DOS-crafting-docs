@@ -7,14 +7,11 @@ tags:
 ---
 
 # ADD AIR, EARTH, FIRE, WATER RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[RUBIN]] + #Chest-Gloves-Helmet-Belt-Or-Sarong
 - **Wymagania:** Crafting 5
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 - **Źródło:** Secrets of the Scroll IX
 
 #Ulepszenia

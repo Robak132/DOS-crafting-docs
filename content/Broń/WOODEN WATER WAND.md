@@ -7,13 +7,8 @@ tags:
 ---
 
 # WOODEN WATER WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEAKTYWNA DREWNIANA RÓŻDŻKA]] + [[ESENCJA WODY]]
+[[Składniki/INERT WOODEN WAND|Inert Wooden Wand]] + [[ESENCJA WODY|Water Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Ice Shard
-
-#Broń
+- **Efekt:** Grants Spell: Ice Shard

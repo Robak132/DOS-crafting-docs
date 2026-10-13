@@ -7,12 +7,7 @@ tags:
 ---
 
 # BLANK EARTH SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEZAPISANY ZWÓJ ZIEMI]] + [[NIEZAPISANY ZWÓJ ZIEMI]]
+[[NIEZAPISANY ZWÓJ ZIEMI|Blank Earth Scroll]] + [[NIEZAPISANY ZWÓJ ZIEMI|Blank Earth Scroll]]
 - **Wymagania:** Crafting 5
-
-#Księgi-umiejętności

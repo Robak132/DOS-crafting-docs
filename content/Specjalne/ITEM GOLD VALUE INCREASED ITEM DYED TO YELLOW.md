@@ -7,12 +7,7 @@ tags:
 ---
 
 # ITEM GOLD VALUE INCREASED ITEM DYED TO YELLOW
-
 ## Przepisy
-
 ### DOS1
-
 [[ZŁOTY GRAAL]] + #Chest-Gloves-Boots-Or-Sarong
-- **Uwagi:** DLC Item; Reusable
-
-#Specjalne
+- **Uwagi:** DLC Item Reusable

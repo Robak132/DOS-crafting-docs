@@ -7,26 +7,21 @@ tags:
 ---
 
 # MINOR POISON BOTTLE
-
 ## Przepisy
-
 ### DOS1
-
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[MUCHOMOR CZERWONY]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[MUCHOMOR CZERWONY|Fly Agaric Mushroom]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** 100% Poison chance (2 Turns)
+- **Efekt:** 100% Poison chance (2 Turns)
 - **Źródło:** Fun With Fluids I
 
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[WNĘTRZNOŚCI]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[Składniki/INTESTINES|Intestines]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** 100% Poison chance (2 Turns)
+- **Efekt:** 100% Poison chance (2 Turns)
 
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[BECZKA ZE SZLAMEM]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[BECZKA ZE SZLAMEM|Ooze Barrel]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** 100% Poison chance (2 Turns)
+- **Efekt:** 100% Poison chance (2 Turns)
 
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[ZGNIŁE JAJKA]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[ZGNIŁE JAJKA|Rotten Eggs]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** 100% Poison chance (2 Turns)
-
-#Mikstury
+- **Efekt:** 100% Poison chance (2 Turns)

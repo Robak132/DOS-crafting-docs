@@ -7,13 +7,8 @@ tags:
 ---
 
 # CLAWED EARTH WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA PODRAPANA RÓŻDŻKA]] + [[ESENCJA ZIEMI]]
+[[Składniki/INERT CLAWED WAND|Inert Clawed Wand]] + [[ESENCJA ZIEMI|Earth Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Poison Dart
-
-#Broń
+- **Efekt:** Grants Spell: Poison Dart

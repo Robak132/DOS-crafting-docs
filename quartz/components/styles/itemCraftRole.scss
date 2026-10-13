@@ -1,0 +1,31 @@
+/* Lekki tint linków przedmiotów wg roli w craftingu
+ * dead = szary (niecraftowalny, bez użyć)
+ * mid  = zielony (craftowalny + używany dalej)
+ * end  = fioletowy (craftowalny, bez dalszych użyć)
+ */
+a.internal.item-craft-dead,
+.recipe-item.item-craft-dead {
+  color: color-mix(in srgb, var(--gray) 70%, var(--darkgray)) !important;
+  background-color: color-mix(in srgb, var(--gray) 16%, var(--light)) !important;
+  border-color: color-mix(in srgb, var(--gray) 30%, var(--lightgray));
+}
+
+a.internal.item-craft-mid,
+.recipe-item.item-craft-mid {
+  color: color-mix(in srgb, #2f7d4a 65%, var(--darkgray)) !important;
+  background-color: color-mix(in srgb, #3d9b5f 14%, var(--light)) !important;
+  border-color: color-mix(in srgb, #3d9b5f 28%, var(--lightgray));
+}
+
+a.internal.item-craft-end,
+.recipe-item.item-craft-end {
+  color: color-mix(in srgb, #6b4ea3 65%, var(--darkgray)) !important;
+  background-color: color-mix(in srgb, #7b5cb8 14%, var(--light)) !important;
+  border-color: color-mix(in srgb, #7b5cb8 28%, var(--lightgray));
+}
+
+a.internal.item-craft-dead:hover,
+a.internal.item-craft-mid:hover,
+a.internal.item-craft-end:hover {
+  filter: brightness(0.97);
+}

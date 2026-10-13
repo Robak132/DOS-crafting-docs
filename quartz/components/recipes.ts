@@ -1,12 +1,20 @@
 import fs from "fs"
 import path from "path"
 import { QuartzPluginData } from "../plugins/vfile"
+import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
+import { parseItemQuantity } from "./recipeQuantity"
+import { splitEffectAndRemarks } from "./recipeView"
 
 export type RecipeItem = {
+  /** Bazowa nazwa ENG (źródło w plikach / mapa lokalizacji). */
   name: string
+  /** Opcjonalne tłumaczenie PL — przełączane w UI. */
+  namePl?: string
   slug?: string
   tags: string[]
   selectorTag?: string
+  /** Ilość poza linkiem, np. "x2" / "x3". */
+  quantity?: string
 }
 
 export type RecipeRow = {
@@ -15,7 +23,10 @@ export type RecipeRow = {
   result: RecipeItem
   tags: string[]
   requirements: string
+  /** Efekt przedmiotu („Co daje”) — np. Add Loremaster. */
   notes: string
+  /** Uwagi / instrukcje craftingu — nie efekt. */
+  remarks: string
   source: string
 }
 
@@ -29,6 +40,8 @@ export type RecipeData = {
   recipes: RecipeRow[]
   tags: TagStat[]
   requirements: TagStat[]
+  /** Grupy craftingowe (#selector) używane jako składniki. */
+  selectors: TagStat[]
 }
 
 type TagHierarchyNode = {
@@ -59,12 +72,29 @@ function extractWikiTargets(line: string): string[] {
   const regex = /\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]|(#[\p{L}\p{N}_\/-]+(?:\s+\([^)]*\))?)/gu
   let match: RegExpExecArray | null = null
   while ((match = regex.exec(line)) !== null) {
-    const target = (match[3] ?? match[2] ?? match[1])?.trim()
-    if (target) {
-      results.push(target)
+    let target = (match[3] ?? match[2] ?? match[1])?.trim()
+    if (!target) continue
+    // Ilość poza linkiem: [[Nóż]] (x2) / #Ore-Vein (x5)
+    const after = line.slice(match.index + match[0].length)
+    const trailingQty = after.match(/^\s*(\(\s*(?:X\d+|\d+X)\s*\))/i)
+    if (trailingQty && !/\(\s*(?:X\d+|\d+X)(?:\s+OR\s+(?:X\d+|\d+X))?\s*\)$/i.test(target)) {
+      target = `${target} ${trailingQty[1].replace(/\s+/g, "")}`
     }
+    results.push(target)
   }
   return results
+}
+
+/** Legacy A-Or-B — grupy są na sztywno w plikach; tu tylko odfiltrowujemy ze statystyk. */
+function isOrComboTag(tag: string): boolean {
+  return /-Or-/i.test(tag)
+}
+
+function cartesianProduct<T>(groups: T[][]): T[][] {
+  return groups.reduce<T[][]>(
+    (acc, opts) => (acc.length === 0 ? opts.map((opt) => [opt]) : acc.flatMap((prefix) => opts.map((opt) => [...prefix, opt]))),
+    [],
+  )
 }
 
 function stripFrontmatter(lines: string[]): string[] {
@@ -106,6 +136,7 @@ type ParsedRecipeLine = {
   line: string
   requirements: string
   notes: string
+  remarks: string
   source: string
   catalog: RecipeCatalog
 }
@@ -125,7 +156,7 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
     }
   }
 
-  const metaRegex = /^- \*\*(Wymagania|Uwagi|Źródło):?\*\*:?\s*(.*)$/
+  const metaRegex = /^- \*\*(Wymagania|Efekt|Uwagi|Źródło):?\*\*:?\s*(.*)$/
 
   for (const rawLine of lines) {
     const line = rawLine.trim()
@@ -140,7 +171,7 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
     const isRecipe = /[+=]/.test(line) && extractWikiTargets(line).length >= 2
     if (isRecipe) {
       pushCurrent()
-      current = { line, requirements: "", notes: "", source: "", catalog }
+      current = { line, requirements: "", notes: "", remarks: "", source: "", catalog }
       continue
     }
 
@@ -151,8 +182,17 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
         const value = match[2]?.trim() ?? ""
         if (label === "Wymagania") {
           current.requirements = current.requirements ? `${current.requirements}; ${value}` : value
-        } else if (label === "Uwagi") {
+        } else if (label === "Efekt") {
           current.notes = current.notes ? `${current.notes}; ${value}` : value
+        } else if (label === "Uwagi") {
+          // Legacy: „Uwagi” bywa efektem — rozdzielamy heurystycznie, chyba że jest już osobny Efekt.
+          const split = splitEffectAndRemarks(value)
+          if (split.effect) {
+            current.notes = current.notes ? `${current.notes}; ${split.effect}` : split.effect
+          }
+          if (split.remarks) {
+            current.remarks = current.remarks ? `${current.remarks}; ${split.remarks}` : split.remarks
+          }
         } else if (label === "Źródło") {
           current.source = current.source ? `${current.source}; ${value}` : value
         }
@@ -168,6 +208,7 @@ function parseRecipeEntries(contents: string): ParsedRecipeLine[] {
     line,
     requirements: "",
     notes: "",
+    remarks: "",
     source: "",
     catalog,
   }))
@@ -276,6 +317,24 @@ function requirementTokens(value: string): string[] {
   return tokens.length > 0 ? tokens : ["-"]
 }
 
+function localizeRecipeItem(item: RecipeItem): RecipeItem {
+  if (item.selectorTag) {
+    const label = localisationLookupKey(item.name)
+    const resolved = resolveItemNames(label)
+    return {
+      ...item,
+      name: `#${resolved.name}`,
+      namePl: item.namePl ?? (resolved.namePl ? `#${resolved.namePl}` : undefined),
+    }
+  }
+  // Prefer titlePl zapisane w pliku przedmiotu; mapa lokalizacji jako fallback.
+  if (item.namePl && item.namePl !== item.name) {
+    return { ...item, name: item.name, namePl: item.namePl }
+  }
+  const resolved = resolveItemNames(item.name)
+  return { ...item, name: resolved.name, namePl: resolved.namePl }
+}
+
 export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCatalog = "dos1"): RecipeData {
   const itemLookup = new Map<string, RecipeItem>()
   const itemTagsBySlug = new Map<string, string[]>()
@@ -293,6 +352,7 @@ export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCat
     const filePath = file.filePath
     const fallbackName = filePath ? path.parse(filePath).name : (file.slug.split("/").at(-1) ?? file.slug)
     const title = (file.frontmatter?.title as string | undefined) ?? fallbackName
+    const titlePl = (file.frontmatter?.titlePl as string | undefined) || undefined
 
     const selectorTags = new Set(
       (file.filePath ? (entriesByFile.get(file.filePath) ?? []) : [])
@@ -333,8 +393,12 @@ export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCat
     candidates.forEach((candidate) => {
       const key = normalizeKey(candidate)
       if (!key) return
-      itemLookup.set(key, { name: candidate, slug: file.slug, tags })
+      itemLookup.set(key, { name: title, namePl: titlePl, slug: file.slug, tags })
     })
+    if (titlePl) {
+      const plKey = normalizeKey(titlePl)
+      if (plKey) itemLookup.set(plKey, { name: title, namePl: titlePl, slug: file.slug, tags })
+    }
   })
 
   const recipes: RecipeRow[] = []
@@ -345,72 +409,197 @@ export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCat
     if (recipeEntries.length === 0) return
 
     const fileTitle = (file.frontmatter?.title as string | undefined) ?? path.parse(file.filePath).name
-    const resultSlug = file.slug
-    const resultTags = itemTagsBySlug.get(resultSlug) ?? []
-    const resultItem: RecipeItem = {
-      name: fileTitle,
-      slug: resultSlug,
-      tags: resultTags,
-    }
-
-    const normalizedResult = normalizeKey(fileTitle)
+    const pageSlug = file.slug
+    const pageTags = itemTagsBySlug.get(pageSlug) ?? []
+    const titleQuantity = parseItemQuantity(fileTitle)
+    const baseTitleLeaf = titleQuantity.base.includes("/")
+      ? (titleQuantity.base.split("/").at(-1) ?? titleQuantity.base)
+      : titleQuantity.base
+    const baseResultLookup =
+      itemLookup.get(normalizeKey(baseTitleLeaf)) ?? itemLookup.get(normalizeKey(titleQuantity.base))
+    const resolvedResultBase = localizeRecipeItem({
+      name: baseResultLookup?.name ?? baseTitleLeaf,
+      namePl: baseResultLookup?.namePl,
+      slug: baseResultLookup?.slug ?? pageSlug,
+      tags: baseResultLookup?.tags ?? pageTags,
+    })
+    const normalizedPageTitle = normalizeKey(fileTitle)
+    const normalizedBaseTitle = normalizeKey(baseTitleLeaf)
 
     recipeEntries.forEach((entry) => {
       const targets = extractWikiTargets(entry.line)
       if (targets.length < 2) return
 
       const hasExplicitResult = entry.line.includes("=") && targets.length >= 2
-      const ingredientsTargets =
-        hasExplicitResult && normalizeKey(targets.at(-1) ?? "") === normalizedResult ? targets.slice(0, -1) : targets
-
-      const ingredients = ingredientsTargets.map((target) => {
-        if (target.startsWith("#")) {
-          const selectorTag = target.match(/^#([^\s]+)/)![1]
-          return { name: target, selectorTag, tags: expandHierarchicalTags([selectorTag]) }
-        }
-        const lookup = itemLookup.get(normalizeKey(target))
-        if (lookup) {
-          return {
-            name: target,
-            slug: lookup.slug,
-            tags: lookup.tags,
-          }
-        }
-        return {
-          name: target,
-          tags: [],
-        }
-      })
+      const lastTarget = targets.at(-1) ?? ""
+      const lastParsed = parseItemQuantity(lastTarget)
+      const lastLeaf = (lastParsed.base.split("/").at(-1) ?? lastParsed.base).trim()
+      const lastMatchesPage =
+        normalizeKey(lastTarget) === normalizedPageTitle ||
+        normalizeKey(lastLeaf) === normalizedPageTitle ||
+        normalizeKey(lastLeaf) === normalizedBaseTitle
+      const ingredientTargets =
+        hasExplicitResult && lastMatchesPage ? targets.slice(0, -1) : targets
+      // Ilość z wyniku („Arrowhead (x2)”) ma pierwszeństwo przed ilością z tytułu strony.
+      const resultQuantities: (string | undefined)[] =
+        lastMatchesPage && lastParsed.quantities.length > 0
+          ? lastParsed.quantities
+          : titleQuantity.quantities.length > 0
+            ? titleQuantity.quantities
+            : [undefined]
 
       const gameTag = catalog === "dos1" ? "DOS1" : catalog === "dos2" ? "DOS2" : "DOS2-CO"
+      const resultSourceTags = resolvedResultBase.tags.length > 0 ? resolvedResultBase.tags : pageTags
+      // Tagi przepisu = wyłącznie tagi wyniku; bez markerów A-Or-B (to osobne receptury, nie filtry).
       const recipeTags = uniqueTags(
-        expandHierarchicalTags(resultTags.filter((tag) => !["DOS1", "DOS2", "DOS2-CO"].includes(tag)).concat(gameTag)),
+        expandHierarchicalTags(
+          resultSourceTags
+            .filter((tag) => !["DOS1", "DOS2", "DOS2-CO"].includes(tag) && !isOrComboTag(tag))
+            .concat(gameTag),
+        ),
       )
 
-      const id = `${resultSlug}:${ingredientsTargets.join("+")}`
-      recipes.push({
-        id,
-        ingredients,
-        result: resultItem,
-        tags: recipeTags,
-        requirements: entry.requirements,
-        notes: entry.notes,
-        source: entry.source,
-      })
+      /** #Honey / #Cutting-Tool → konkretny przedmiot, gdy istnieje strona o tej nazwie. */
+      const lookupSelectorItem = (selectorTag: string): RecipeItem | undefined => {
+        const plain = selectorTag.replace(/^#/, "")
+        const spaced = plain.replaceAll("-", " ")
+        return (
+          itemLookup.get(normalizeKey(plain)) ??
+          itemLookup.get(normalizeKey(spaced)) ??
+          itemLookup.get(normalizeKey(plain.replaceAll("-", "")))
+        )
+      }
+
+      const resolveIngredient = (target: string, quantity?: string): RecipeItem => {
+        if (target.startsWith("#")) {
+          const selectorTag = target.match(/^#([^\s]+)/)![1]
+          const asItem = lookupSelectorItem(selectorTag)
+          if (asItem) {
+            return localizeRecipeItem({
+              name: asItem.name,
+              namePl: asItem.namePl,
+              slug: asItem.slug,
+              tags: asItem.tags,
+              quantity,
+            })
+          }
+          return localizeRecipeItem({
+            name: target,
+            selectorTag,
+            tags: expandHierarchicalTags([selectorTag]),
+            quantity,
+          })
+        }
+        const parsed = parseItemQuantity(target)
+        const baseTarget = parsed.base
+        const qty = quantity ?? parsed.quantities[0]
+        const leaf = baseTarget.includes("/") ? (baseTarget.split("/").at(-1) ?? baseTarget) : baseTarget
+        const lookup = itemLookup.get(normalizeKey(baseTarget)) ?? itemLookup.get(normalizeKey(leaf))
+        if (lookup) {
+          return localizeRecipeItem({
+            name: lookup.name,
+            namePl: lookup.namePl,
+            slug: lookup.slug,
+            tags: lookup.tags,
+            quantity: qty,
+          })
+        }
+        return localizeRecipeItem({
+          name: leaf,
+          tags: [],
+          quantity: qty,
+        })
+      }
+
+      type IngredientSpec = { target: string; quantity?: string }
+      /** Tylko warianty ilości (x2/x3) — grupy Or są na sztywno w plikach przedmiotów. */
+      const expandIngredientSpecs = (rawTargets: string[]): IngredientSpec[][] => {
+        const groups: IngredientSpec[][] = rawTargets.map((target) => {
+          const parsed = parseItemQuantity(target)
+          if (parsed.quantities.length === 0) return [{ target: parsed.base }]
+          return parsed.quantities.map((qty) => ({ target: parsed.base, quantity: qty }))
+        })
+        const product = cartesianProduct(groups)
+        return product.length > 0 && product.length <= 12 ? product : [rawTargets.map((target) => ({ target }))]
+      }
+
+      for (const quantity of resultQuantities) {
+        const resultWithTags: RecipeItem = {
+          ...resolvedResultBase,
+          slug: resolvedResultBase.slug ?? pageSlug,
+          tags: recipeTags,
+          quantity,
+        }
+
+        for (const ingredientSpecs of expandIngredientSpecs(ingredientTargets)) {
+          const ingredients = ingredientSpecs.map((spec) => resolveIngredient(spec.target, spec.quantity))
+          const id = `${resultWithTags.slug ?? pageSlug}:${ingredientSpecs
+            .map((spec) => `${spec.target}${spec.quantity ? `@${spec.quantity}` : ""}`)
+            .join("+")}${quantity ? `@${quantity}` : ""}`
+          recipes.push({
+            id,
+            ingredients,
+            result: resultWithTags,
+            tags: recipeTags,
+            requirements: entry.requirements,
+            notes: entry.notes,
+            remarks: entry.remarks,
+            source: entry.source,
+          })
+        }
+      }
     })
   })
+
+  const deduped = new Map<string, RecipeRow>()
+  for (const recipe of recipes) {
+    const ingredientKey = recipe.ingredients
+      .map((item) => `${item.slug ?? item.name}@${item.quantity ?? ""}@${item.selectorTag ?? ""}`)
+      .join("+")
+    const key = [
+      recipe.result.slug ?? recipe.result.name,
+      recipe.result.quantity ?? "",
+      ingredientKey,
+      recipe.requirements.trim(),
+      recipe.notes.trim(),
+      recipe.remarks.trim(),
+    ].join("|")
+    const existing = deduped.get(key)
+    if (!existing) {
+      deduped.set(key, recipe)
+      continue
+    }
+    if (recipe.source.trim()) {
+      const sources = new Set(
+        [...existing.source.split(";"), ...recipe.source.split(";")]
+          .map((part) => part.trim())
+          .filter(Boolean),
+      )
+      existing.source = [...sources].join("; ")
+    }
+  }
+  recipes.length = 0
+  recipes.push(...deduped.values())
 
   const collator = new Intl.Collator("pl", { sensitivity: "base", numeric: true })
   recipes.sort((a, b) => collator.compare(a.result.name, b.result.name))
 
   const tagCounts = new Map<string, number>()
   const requirementCounts = new Map<string, number>()
+  const selectorCounts = new Map<string, number>()
   recipes.forEach((recipe) => {
     recipe.tags.forEach((tag) => {
       tagCounts.set(tag, (tagCounts.get(tag) ?? 0) + 1)
     })
     requirementTokens(recipe.requirements ?? "").forEach((token) => {
       requirementCounts.set(token, (requirementCounts.get(token) ?? 0) + 1)
+    })
+    const seenSelectors = new Set<string>()
+    recipe.ingredients.forEach((ingredient) => {
+      const selector = ingredient.selectorTag?.trim()
+      if (!selector || seenSelectors.has(selector)) return
+      seenSelectors.add(selector)
+      selectorCounts.set(selector, (selectorCounts.get(selector) ?? 0) + 1)
     })
   })
 
@@ -461,5 +650,14 @@ export function buildRecipeData(allFiles: QuartzPluginData[], catalog: RecipeCat
     .map(([tag, count]) => ({ tag, count }))
     .sort((a, b) => a.tag.localeCompare(b.tag))
 
-  return { recipes, tags, requirements }
+  const selectors: TagStat[] = [...selectorCounts.entries()]
+    .filter(([tag]) => !isOrComboTag(tag))
+    .map(([tag, count]) => ({
+      tag,
+      count,
+      label: tag.replaceAll("-", " "),
+    }))
+    .sort((a, b) => (a.label ?? a.tag).localeCompare(b.label ?? b.tag, "pl"))
+
+  return { recipes, tags, requirements, selectors }
 }

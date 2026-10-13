@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: Alien Fire Essence
+titlePl: Obca esencja ognia
 tags:
   - Typ/Skladniki
   - DOS2
-  - Alien-Fire-Essence-Or-High-Quality-Fire-Essence
 ---
 
 # Alien Fire Essence

@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: High Quality Life Essence
+titlePl: Esencja życia wysokiej jakości
 tags:
   - Typ/Skladniki
   - DOS2
-  - Alien-Life-Essence-Or-High-Quality-Life-Essence
 ---
 
 # High Quality Life Essence

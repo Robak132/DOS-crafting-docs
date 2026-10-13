@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: Adult Antler
+titlePl: Poroże dorosłego osobnika
 tags:
   - Typ/Skladniki
   - DOS2
-  - Antler-Or-Adult-Antler
 ---
 
 # Adult Antler

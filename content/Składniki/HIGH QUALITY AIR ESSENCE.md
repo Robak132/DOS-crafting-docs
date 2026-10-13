@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: High Quality Air Essence
+titlePl: Esencja powietrza wysokiej jakości
 tags:
   - Typ/Skladniki
   - DOS2
-  - Alien-Air-Essence-Or-High-Quality-Air-Essence
 ---
 
 # High Quality Air Essence

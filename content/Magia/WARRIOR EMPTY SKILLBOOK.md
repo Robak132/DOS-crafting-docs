@@ -7,11 +7,8 @@ tags:
 ---
 
 # Warrior Empty Skillbook
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]] + [[Składniki/BLANK WARRIOR SCROLL|Blank Warrior Scroll]] + [[Składniki/BLANK WARRIOR SCROLL|Blank Warrior Scroll]] = [[Magia/WARRIOR EMPTY SKILLBOOK|Warrior Empty Skillbook]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A30:H30
 

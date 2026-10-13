@@ -7,12 +7,6 @@ tags:
 ---
 
 # RUDA
-
 ## Przepisy
-
 ### DOS1
-
-#Pickaxe + #Ore-Vein (x5)
 - **Uwagi:** Ore type depends on the vein
-
-#Składniki

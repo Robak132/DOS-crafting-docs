@@ -7,10 +7,7 @@ tags:
 ---
 
 # Magical Inkpot & Quill
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Magia/INKPOT & QUILL|Inkpot & Quill]] + [[Składniki/PIXIE DUST|Pixie Dust]] = [[Magia/MAGICAL INKPOT & QUILL|Magical Inkpot & Quill]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A9:H9

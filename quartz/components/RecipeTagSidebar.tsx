@@ -1,40 +1,19 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
-import { getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG, DOS2_SLUG } from "./recipeCatalog"
-import { groupRecipeTags, recipeCatalogSlug } from "./recipeView"
-import type { RecipeData, TagStat } from "./recipes"
+import { getAllCatalogsData, getCatalogData, getRecipeCatalog, isRecipePage, OVERHAUL_SLUG, DOS2_SLUG } from "./recipeCatalog"
+import {
+  CRAFTING_MAX_LEVELS,
+  groupRecipeTags,
+  groupRequirementStats,
+  matchesCraftingMax,
+  recipeCatalogSlug,
+} from "./recipeView"
 import { FullSlug, resolveRelative } from "../util/path"
 import style from "./styles/recipeTable.scss"
 // @ts-ignore
 import script from "./scripts/recipeSidebar.inline"
 
 export default (() => {
-  const cache = new WeakMap<QuartzComponentProps["allFiles"], RecipeData>()
-  const combinedData = (allFiles: QuartzComponentProps["allFiles"]): RecipeData => {
-    const cached = cache.get(allFiles)
-    if (cached) return cached
-    const catalogs = [
-      getCatalogData(allFiles, "dos1"),
-      getCatalogData(allFiles, "dos2"),
-      getCatalogData(allFiles, "dos2-overhaul"),
-    ]
-    const combine = (field: "tags" | "requirements") => {
-      const entries = new Map<string, TagStat>()
-      for (const catalog of catalogs)
-        for (const stat of catalog[field]) {
-          const previous = entries.get(stat.tag)
-          entries.set(stat.tag, { ...stat, count: stat.count + (previous?.count ?? 0) })
-        }
-      return [...entries.values()].sort((a, b) => (a.label ?? a.tag).localeCompare(b.label ?? b.tag, "pl"))
-    }
-    const data = {
-      recipes: catalogs.flatMap((data) => data.recipes),
-      tags: combine("tags"),
-      requirements: combine("requirements"),
-    }
-    cache.set(allFiles, data)
-    return data
-  }
   const prettifyLabel = (value: string): string => value.replaceAll("-", " ")
   const getTagParts = (tag: string): string[] => tag.split("/").filter(Boolean)
   const formatHierarchyLabel = (tag: string): string => {
@@ -49,7 +28,8 @@ export default (() => {
 
   const RecipeTagSidebar: QuartzComponent = ({ allFiles, displayClass, fileData }: QuartzComponentProps) => {
     const filterPage = isRecipePage(fileData.slug)
-    const { tags, requirements } = filterPage ? getRecipeCatalog(allFiles, fileData.slug) : combinedData(allFiles)
+    const catalog = filterPage ? getRecipeCatalog(allFiles, fileData.slug) : getAllCatalogsData(allFiles)
+    const { tags, requirements, recipes, selectors } = catalog
     const tagGroups = groupRecipeTags(tags)
     const pageTags = fileData.frontmatter?.tags ?? []
     const overhaulPage =
@@ -58,17 +38,32 @@ export default (() => {
       ((pageTags.includes("DOS2-CO") || pageTags.includes("DOS2")) && !pageTags.includes("DOS1"))
     const showRequirements = !overhaulPage && requirements.some((req) => req.tag !== "-")
     const preferred = recipeCatalogSlug("", fileData.frontmatter?.tags ?? [])
-    const filterHref = (value: string, kind: "tag" | "requirement") => {
+    const dos1Href = resolveRelative(fileData.slug! as FullSlug, "receptury" as FullSlug)
+    const filterHref = (value: string, kind: "tag" | "requirement" | "craftingMax" | "selector") => {
+      if (kind === "craftingMax") {
+        return `${dos1Href}?craftingMax=${encodeURIComponent(value)}`
+      }
+      if (kind === "selector") {
+        const catalogSlug = [preferred, DOS2_SLUG, OVERHAUL_SLUG, "receptury"].find((slug) =>
+          getRecipeCatalog(allFiles, slug).selectors.some((stat) => stat.tag === value && stat.count > 0),
+        )
+        if (!catalogSlug) throw new Error(`Brak katalogu dla selektora ${value}`)
+        return `${resolveRelative(fileData.slug! as FullSlug, catalogSlug as FullSlug)}?selector=${encodeURIComponent(value)}`
+      }
       const field = kind === "tag" ? "tags" : "requirements"
-      const catalog = [preferred, DOS2_SLUG, OVERHAUL_SLUG, "receptury"].find((slug) =>
+      const catalogSlug = [preferred, DOS2_SLUG, OVERHAUL_SLUG, "receptury"].find((slug) =>
         getRecipeCatalog(allFiles, slug)[field].some((stat) => stat.tag === value && stat.count > 0),
       )
-      if (!catalog) throw new Error(`Brak katalogu dla filtra ${value}`)
-      return `${resolveRelative(fileData.slug! as FullSlug, catalog as FullSlug)}?${kind}=${encodeURIComponent(value)}`
+      if (!catalogSlug) throw new Error(`Brak katalogu dla filtra ${value}`)
+      return `${resolveRelative(fileData.slug! as FullSlug, catalogSlug as FullSlug)}?${kind}=${encodeURIComponent(value)}`
     }
-    const itemIndex = allFiles.find(
-      (file) => file.frontmatter?.title === "Przedmioty" && file.frontmatter?.tags?.includes("index"),
-    )
+    const dos1Recipes = filterPage && fileData.slug === "receptury" ? recipes : getCatalogData(allFiles, "dos1").recipes
+    const craftingMaxCounts = showRequirements
+      ? CRAFTING_MAX_LEVELS.map((level) => ({
+          level,
+          count: dos1Recipes.filter((recipe) => matchesCraftingMax(recipe.requirements ?? "", level)).length,
+        }))
+      : []
     const categoryPages = allFiles
       .filter((file) => file.frontmatter?.categoryPage === true)
       .sort((a, b) => (a.frontmatter?.title ?? "").localeCompare(b.frontmatter?.title ?? "", "pl"))
@@ -106,16 +101,9 @@ export default (() => {
           >
             DOS2 – Crafting Overhaul
           </a>
-          <a
-            class="internal recipe-nav-link"
-            href={resolveRelative(fileData.slug! as FullSlug, itemIndex?.slug ?? ("Przedmioty" as FullSlug))}
-            data-no-popover="true"
-          >
-            Przedmioty
-          </a>
         </div>
         <details class="recipe-sidebar-filters" open>
-          <summary>Filtry przepisów</summary>
+          <summary>Filtry przedmiotów</summary>
           <div class="recipe-sidebar-content">
             <div class="recipe-active-filters top">
               <span class="recipe-filters-label"></span>
@@ -126,27 +114,78 @@ export default (() => {
             {showRequirements && (
               <div class="recipe-sidebar-section">
                 <div class="recipe-sidebar-header">
-                  <h3>WYMAGANIA</h3>
+                  <h3>MÓJ CRAFTING</h3>
                 </div>
-                <div class="recipe-tag-list requirements-list">
-                  {requirements.map((req) => {
+                <div class="recipe-tag-list crafting-max-list">
+                  {craftingMaxCounts.map(({ level, count }) => {
                     const Control = filterPage ? "button" : "a"
                     return (
                       <Control
                         type={filterPage ? "button" : undefined}
-                        href={filterPage ? undefined : filterHref(req.tag, "requirement")}
-                        class={`recipe-tag-button requirement-button${filterPage ? "" : " internal"}`}
+                        href={filterPage ? undefined : filterHref(String(level), "craftingMax")}
+                        class={`recipe-tag-button crafting-max-button${filterPage ? "" : " internal"}`}
                         data-no-popover="true"
-                        data-requirement={req.tag}
+                        data-crafting-max={level}
                         data-state="neutral"
                       >
-                        <span class="recipe-tag-name">{req.tag === "-" ? "Brak" : prettifyLabel(req.tag)}</span>
-                        <span class="recipe-tag-count">({req.count})</span>
+                        <span class="recipe-tag-name">≤ {level}</span>
+                        <span class="recipe-tag-count">({count})</span>
                       </Control>
                     )
                   })}
                 </div>
+                <div class="recipe-sidebar-header">
+                  <h3>WYMAGANIA</h3>
+                </div>
+                {groupRequirementStats(requirements).map((group) => (
+                  <div class="recipe-requirement-group">
+                    <div class="recipe-requirement-group-label">{group.label}</div>
+                    <div class="recipe-tag-list requirements-list">
+                      {group.items.map((req) => {
+                        const Control = filterPage ? "button" : "a"
+                        return (
+                          <Control
+                            type={filterPage ? "button" : undefined}
+                            href={filterPage ? undefined : filterHref(req.tag, "requirement")}
+                            class={`recipe-tag-button requirement-button${filterPage ? "" : " internal"}`}
+                            data-no-popover="true"
+                            data-requirement={req.tag}
+                            data-state="neutral"
+                          >
+                            <span class="recipe-tag-name">
+                              {req.tag === "-" ? "Brak" : prettifyLabel(req.tag)}
+                            </span>
+                            <span class="recipe-tag-count">({req.count})</span>
+                          </Control>
+                        )
+                      })}
+                    </div>
+                  </div>
+                ))}
               </div>
+            )}
+            {selectors.length > 0 && (
+              <details class="recipe-tag-group recipe-selector-group">
+                <summary>Grupy składników</summary>
+                <div class="recipe-tag-list">
+                  {selectors.map((sel) => {
+                    const Control = filterPage ? "button" : "a"
+                    return (
+                      <Control
+                        type={filterPage ? "button" : undefined}
+                        href={filterPage ? undefined : filterHref(sel.tag, "selector")}
+                        class={`recipe-tag-button selector-button${filterPage ? "" : " internal"}`}
+                        data-no-popover="true"
+                        data-selector={sel.tag}
+                        data-state="neutral"
+                      >
+                        <span class="recipe-tag-name">#{prettifyLabel(sel.label ?? sel.tag)}</span>
+                        <span class="recipe-tag-count">({sel.count})</span>
+                      </Control>
+                    )
+                  })}
+                </div>
+              </details>
             )}
             <div class="recipe-sidebar-header">
               <h3>TAGI</h3>
@@ -182,22 +221,6 @@ export default (() => {
             ))}
           </div>
         </details>
-        {categoryPages.length > 0 && (
-          <details class="recipe-category-navigation">
-            <summary>Przedmioty według kategorii</summary>
-            <nav class="recipe-category-links" aria-label="Kategorie przedmiotów">
-              {categoryPages.map((page) => (
-                <a
-                  class="internal"
-                  href={resolveRelative(fileData.slug! as FullSlug, page.slug! as FullSlug)}
-                  data-no-popover="true"
-                >
-                  {page.frontmatter?.title}
-                </a>
-              ))}
-            </nav>
-          </details>
-        )}
       </div>
     )
   }

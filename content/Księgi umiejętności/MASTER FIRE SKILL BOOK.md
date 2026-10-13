@@ -7,11 +7,8 @@ tags:
 ---
 
 # MASTER FIRE SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
 [[BLANK FIRE SKILL BOOK]] + #Master-Fire-Skill-Scroll
 - **Wymagania:** Crafting 4
 - **Uwagi:** Skill Book spell same as Skill Scroll used
@@ -21,5 +18,3 @@ tags:
 - **Wymagania:** Crafting 5
 - **Uwagi:** Skill Book spell same as Skill Scroll used
 - **Źródło:** Secrets of the Scroll X
-
-#Księgi-umiejętności

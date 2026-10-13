@@ -10,24 +10,6 @@ html {
   overflow-y: scroll;
 }
 
-@media all and (#{$desktop}) {
-  body[data-slug="receptury" i] .sidebar.right {
-    display: none;
-  }
-
-  body[data-slug="receptury" i] .sidebar.left {
-    display: none;
-  }
-
-  body[data-slug="receptury" i] #quartz-body {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      '"grid-header"\
-        "grid-center"\
-        "grid-footer"';
-  }
-}
-
 body[data-slug="przedmioty" i] .tag-explorer {
   .tag-explorer-header {
     margin-top: 0;
@@ -166,6 +148,14 @@ body[data-slug="przedmioty" i] .sidebar.left .tag-explorer {
     transform: translateY(-50%);
     margin: 0 !important;
   }
+}
+
+/* Katalogi receptur: pełna szerokość viewportu (pusty prawy sidebar obsługuje base.scss). */
+body[data-slug="receptury" i] .page,
+body[data-slug="dos2" i] .page,
+body[data-slug="dos2-crafting-overhaul" i] .page {
+  max-width: none;
+  width: 100%;
 }
 
 /* Rozciągnięcie tabel do pełnej szerokości strony */

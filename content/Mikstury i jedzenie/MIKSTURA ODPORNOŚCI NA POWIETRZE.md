@@ -7,14 +7,9 @@ tags:
 ---
 
 # MIKSTURA ODPORNOŚCI NA POWIETRZE
-
 ## Przepisy
-
 ### DOS1
-
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[MEDUZOWIEC]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[MEDUZOWIEC|Jellyroom]]
 - **Wymagania:** Crafting 2
-- **Uwagi:** Add 15% Air Resist
+- **Efekt:** Add 15% Air Resist
 - **Źródło:** Fun With Fluids II
-
-#Mikstury

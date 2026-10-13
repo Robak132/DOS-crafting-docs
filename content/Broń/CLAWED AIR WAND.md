@@ -7,13 +7,8 @@ tags:
 ---
 
 # CLAWED AIR WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA PODRAPANA RÓŻDŻKA]] + [[ESENCJA POWIETRZA]]
+[[Składniki/INERT CLAWED WAND|Inert Clawed Wand]] + [[ESENCJA POWIETRZA|Air Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Thunder Jump
-
-#Broń
+- **Efekt:** Grants Spell: Thunder Jump

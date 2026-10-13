@@ -7,13 +7,8 @@ tags:
 ---
 
 # LARGE AIR RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM AIR RESIST POTION]] + [[ULEPSZACZ]]
+[[MEDIUM AIR RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 40% Air Resist
-
-#Mikstury
+- **Efekt:** Add 40% Air Resist

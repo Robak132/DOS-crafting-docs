@@ -7,19 +7,14 @@ tags:
 ---
 
 # STEAM CLOUD ARROWHEAD
-
 ## Przepisy
-
 ### DOS1
-
-[[GROT]] + #Water-Resist-Potion
+[[GROT|Arrowhead]] + #Water-Resist-Potion
 - **Wymagania:** Crafting 2
 - **Źródło:** The String Enthusiast II
 
-[[GROT OGNIOWY]] + [[BUTELKA WODY]]
+[[GROT OGNIOWY]] + [[Mikstury i jedzenie/BOTTLE OF WATER|Bottle of Water]]
 - **Wymagania:** Crafting 2
 
-[[GROT OGNIOWY]] + [[KUBEK WODY]]
+[[GROT OGNIOWY]] + [[KUBEK WODY|Mug of Water]]
 - **Wymagania:** Crafting 2
-
-#Strzały

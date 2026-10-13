@@ -7,13 +7,8 @@ tags:
 ---
 
 # MEDIUM POISON RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[POISON RESIST POTION]] + [[ULEPSZACZ]]
+[[POISON RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 25% Poison Resist
-
-#Mikstury
+- **Efekt:** Add 25% Poison Resist

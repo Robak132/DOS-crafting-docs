@@ -8,19 +8,12 @@ tags:
 ---
 
 # Metal Boots
-
 ## Przepisy
-
 ### DOS1
-
-[[KAWAŁKI METALU]] + [[KOWADŁO]]
+[[KAWAŁKI METALU|Metal Scraps]] + [[KOWADŁO|Anvil]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Stats Increase with Crafting Level
-
-#Pancerz
+- **Efekt:** Stats Increase with Crafting Level
 
 ### DOS2 – Crafting Overhaul
-
-[[Materiały z odzysku/METAL SCRAPS|Metal Scraps]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pancerze/METAL BOOTS|Metal Boots]]
-
+[[Składniki/METAL SCRAPS|Metal Scraps]] + [[Składniki/ROPE|Rope]] + [[Stanowiska i pojemniki/CRAFTER'S HAMMER|Crafter's Hammer]] + [[Stanowiska i pojemniki/ANVIL|Anvil]] = [[Pancerze/METAL BOOTS|Metal Boots]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Armors!A38:H38

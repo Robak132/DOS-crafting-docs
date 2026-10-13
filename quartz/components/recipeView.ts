@@ -1,15 +1,44 @@
 import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 
+/** dead = szary, mid = zielony, end = fioletowy (bez Node — używane też w inline scripts). */
+export type ItemCraftRole = "dead" | "mid" | "end"
+
+export function itemCraftRoleClass(role: ItemCraftRole | undefined): string {
+  if (!role) return ""
+  return `item-craft-${role}`
+}
+
+/** Legacy markery A-Or-B — nie filtrujemy po nich w UI. */
+export function isOrComboTag(tag: string): boolean {
+  return /-Or-/i.test(tag)
+}
+
 export const recipeColumns = [
-  { key: "ingredients", label: "Składniki" },
-  { key: "result", label: "Wynik" },
+  { key: "result", label: "Przedmiot" },
+  { key: "ingredients", label: "Receptura" },
   { key: "requirements", label: "Wymagania" },
-  { key: "notes", label: "Uwagi / efekty" },
+  { key: "notes", label: "Co daje" },
   { key: "tags", label: "Tagi" },
   { key: "source", label: "Źródło" },
 ] as const
 
+export type RecipeColumnKey = (typeof recipeColumns)[number]["key"]
+
+/** DOS2 / Overhaul nie mają wymagań craftingu — bez kolumny Wymagania. */
+export function recipeColumnsForCatalog(showRequirements: boolean) {
+  return showRequirements ? [...recipeColumns] : recipeColumns.filter((col) => col.key !== "requirements")
+}
+
+export function catalogHasRequirements(catalog: string | undefined): boolean {
+  return catalog === "dos1"
+}
+
 export type RecipeGroup = { result: RecipeItem; variants: RecipeRow[] }
+
+/** Tagi używane do filtrowania / sortowania — wyłącznie wynik craftingu, nigdy składniki. */
+export function recipeResultTags(recipe: RecipeRow): string[] {
+  return recipe.result.tags.length > 0 ? recipe.result.tags : recipe.tags
+}
 
 export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
 
@@ -18,6 +47,17 @@ const mergedCategoryTags: Record<string, string> = {
   "Typ/Jedzenie-i-picie": "Typ/Mikstury-i-jedzenie",
   "Typ/Strzaly": "Typ/Strzaly-i-granaty",
   "Typ/Granaty": "Typ/Strzaly-i-granaty",
+}
+
+/** Czy receptura używa grupy craftingowej (#selector) jako składnika. */
+export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean {
+  const target = selector.replace(/^#/, "").toLowerCase()
+  return recipe.ingredients.some((ingredient) => {
+    const tag = ingredient.selectorTag?.replace(/^#/, "").toLowerCase()
+    if (tag && (tag === target || tag.startsWith(`${target}/`))) return true
+    const name = (ingredient.namePl ?? ingredient.name).replace(/^#/, "").toLowerCase()
+    return name === target
+  })
 }
 
 export function groupRecipeTags(tags: TagStat[]): { label: string; tags: TagStat[] }[] {
@@ -51,7 +91,8 @@ export function groupRecipeTags(tags: TagStat[]): { label: string; tags: TagStat
   ])
   for (const stat of tags) {
     const tag = stat.tag
-    if (isGameTag(tag) || tag === "Typ" || names.has(mergedCategoryTags[tag])) continue
+    // A-Or-B to rozwinięcie receptur, nie osobna kategoria w sidebarze.
+    if (isOrComboTag(tag) || isGameTag(tag) || tag === "Typ" || names.has(mergedCategoryTags[tag])) continue
     const label = tag.startsWith("Typ/")
       ? "Kategorie"
       : weapons.has(tag) || /(?:Weapon|Cutting-Tool)/i.test(tag)
@@ -97,7 +138,8 @@ export function recipeCatalogSlug(tag: string, pageTags: readonly string[]): str
 export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
   const groups = new Map<string, RecipeGroup>()
   for (const recipe of recipes) {
-    const key = recipe.result.slug ?? recipe.result.name
+    const qty = recipe.result.quantity ? `@${recipe.result.quantity}` : ""
+    const key = `${recipe.result.slug ?? recipe.result.name}${qty}`
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
     else groups.set(key, { result: recipe.result, variants: [recipe] })
@@ -108,7 +150,10 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
 export function visibleRecipeTags(tags: string[]): string[] {
   return tags.filter(
     (tag) =>
-      !isGameTag(tag) && !tags.includes(mergedCategoryTags[tag]) && !tags.some((other) => other.startsWith(`${tag}/`)),
+      !isOrComboTag(tag) &&
+      !isGameTag(tag) &&
+      !tags.includes(mergedCategoryTags[tag]) &&
+      !tags.some((other) => other.startsWith(`${tag}/`)),
   )
 }
 
@@ -126,26 +171,249 @@ function normalizeSearch(value: string): string {
     .replaceAll("-", " ")
 }
 
-export function matchesRecipeQuery(recipe: RecipeRow, query: string, labels: Record<string, string>): boolean {
-  const terms = query.trim().split(/\s+/).filter(Boolean).map(normalizeSearch)
-  const tagText = recipe.tags.map((tag) => normalizeSearch(`${tag} ${tagLabel(tag, labels)}`))
-  const matchesTag = (term: string) =>
-    recipe.tags.some((tag) => {
-      const target = term.slice(1)
-      const full = normalizeSearch(tag)
-      const leaf = normalizeSearch(tag.split("/").at(-1) ?? tag)
-      const label = normalizeSearch(tagLabel(tag, labels))
-      return full === target || full.startsWith(`${target}/`) || leaf === target || label === target
-    })
-  const text = normalizeSearch(
-    [
-      recipe.result.name,
-      ...recipe.ingredients.map((item) => item.name),
-      ...tagText,
-      recipe.requirements,
-      recipe.notes,
-      recipe.source,
-    ].join(" "),
-  )
-  return terms.every((term) => (term.startsWith("#") ? term.length > 1 && matchesTag(term) : text.includes(term)))
+export type RecipeSearchScope = "result" | "ingredient"
+
+function matchesHashTag(term: string, tags: string[], labels: Record<string, string>): boolean {
+  if (term.length <= 1) return false
+  const target = term.slice(1)
+  return tags.some((tag) => {
+    const full = normalizeSearch(tag)
+    const leaf = normalizeSearch(tag.split("/").at(-1) ?? tag)
+    const label = normalizeSearch(tagLabel(tag, labels))
+    return full === target || full.startsWith(`${target}/`) || leaf === target || label === target
+  })
 }
+
+export function matchesRecipeQuery(
+  recipe: RecipeRow,
+  query: string,
+  labels: Record<string, string>,
+  scope: RecipeSearchScope = "result",
+): boolean {
+  const terms = query.trim().split(/\s+/).filter(Boolean).map(normalizeSearch)
+  if (terms.length === 0) return true
+
+  const resultTags = recipeResultTags(recipe)
+  if (scope === "ingredient") {
+    const ingredientTags = recipe.ingredients.flatMap((item) => {
+      const tags = [...item.tags]
+      if (item.selectorTag) tags.push(item.selectorTag)
+      return tags
+    })
+    const text = normalizeSearch(
+      recipe.ingredients
+        .flatMap((item) => [item.name, item.namePl, item.selectorTag ? `#${item.selectorTag}` : ""])
+        .filter(Boolean)
+        .join(" "),
+    )
+    return terms.every((term) =>
+      term.startsWith("#") ? matchesHashTag(term, ingredientTags, labels) : text.includes(term),
+    )
+  }
+
+  const tagText = resultTags.map((tag) => normalizeSearch(`${tag} ${tagLabel(tag, labels)}`))
+  const effectText = [recipe.notes, formatEffectNote(recipe.notes ?? "")].filter(Boolean)
+  const text = normalizeSearch(
+    [recipe.result.name, recipe.result.namePl, ...tagText, ...effectText].filter(Boolean).join(" "),
+  )
+  return terms.every((term) =>
+    term.startsWith("#") ? matchesHashTag(term, resultTags, labels) : text.includes(term),
+  )
+}
+
+const EFFECT_PHRASES: Array<[RegExp, string]> = [
+  [/\bScales With Intelligence\b/gi, "Skaluje się z Inteligencją"],
+  [/\bScales With Constution\b/gi, "Skaluje się z Kondycją"],
+  [/\bScales With Constitution\b/gi, "Skaluje się z Kondycją"],
+  [/\bStats Increase with Crafting Level\b/gi, "Statystyki rosną z poziomem Craftingu"],
+  [/\bStats Increase with Blacksmithing Level\b/gi, "Statystyki rosną z poziomem Blacksmithing"],
+  [/\bStats Increase with Hero Level\b/gi, "Statystyki rosną z poziomem bohatera"],
+  [/\bAdd\b/gi, "Dodaje"],
+]
+
+const EFFECT_WORDS: Array<[RegExp, string]> = [
+  [/\bIntelligence\b/gi, "Inteligencja"],
+  [/\bStrength\b/gi, "Siła"],
+  [/\bFinesse\b/gi, "Finezja"],
+  [/\bConstitution\b/gi, "Kondycja"],
+  [/\bMemory\b/gi, "Pamięć"],
+  [/\bWits\b/gi, "Percepcja"],
+  [/\bSpeed\b/gi, "Szybkość"],
+  [/\bInitiative\b/gi, "Inicjatywa"],
+  [/\bMovement\b/gi, "Ruch"],
+  [/\bHeal\b/gi, "leczenie"],
+  [/\bPoison Resist\b/gi, "odporność na truciznę"],
+  [/\bEarth Resist\b/gi, "odporność na ziemię"],
+  [/\bAir Resist\b/gi, "odporność na powietrze"],
+  [/\bFire Resist\b/gi, "odporność na ogień"],
+  [/\bWater Resist\b/gi, "odporność na wodę"],
+  [/\bResist-All\b/gi, "odporność na wszystko"],
+  [/\bLucky Charm\b/gi, "Szczęście"],
+  [/\bLoremaster\b/gi, "Znawca"],
+  [/\bDrunk chance\b/gi, "szansa na upicie"],
+  [/\bPoison chance\b/gi, "szansa na truciznę"],
+  [/\bTurns\b/gi, "tury"],
+]
+
+/** Czytelny opis efektu przedmiotu — lekkie tłumaczenie EN→PL. */
+export function formatEffectNote(note: string): string {
+  const trimmed = note.trim()
+  if (!trimmed || trimmed === "-") return ""
+  let text = trimmed
+  for (const [pattern, replacement] of EFFECT_PHRASES) text = text.replace(pattern, replacement)
+  for (const [pattern, replacement] of EFFECT_WORDS) text = text.replace(pattern, replacement)
+  return text.replace(/\s+/g, " ").trim()
+}
+
+const EFFECT_LINE_RE =
+  /^(add\b|scales with\b|stats increase\b|\+?\d|restore\b|grants?\b|provides?\b|increases?\b|decreases?\b|boosts?\b)/i
+const REMARK_LINE_RE =
+  /^(make sure\b|you can\b|buy\b|find\b|requires?\b|check\b|every\b|boost amount\b|skill book\b|not\b|use\b|black diamond\b|example\b)/i
+
+/** Czy fragment wygląda jak efekt przedmiotu (staty / „Add …”), a nie instrukcja. */
+export function looksLikeEffectNote(text: string): boolean {
+  const trimmed = text.trim()
+  if (!trimmed || trimmed === "-") return false
+  if (REMARK_LINE_RE.test(trimmed)) return false
+  if (EFFECT_LINE_RE.test(trimmed)) return true
+  // Krótkie frazy ze znanymi słowami efektów
+  if (trimmed.length <= 48 && EFFECT_WORDS.some(([pattern]) => pattern.test(trimmed))) return true
+  return false
+}
+
+/**
+ * Rozdziela legacy „Uwagi” na efekt vs uwagi (instrukcje).
+ * Zdania efektowe → effect; reszta → remarks.
+ */
+export function splitEffectAndRemarks(raw: string): { effect: string; remarks: string } {
+  const trimmed = raw.trim()
+  if (!trimmed || trimmed === "-") return { effect: "", remarks: "" }
+
+  const parts = trimmed
+    .split(/\s*;\s*/)
+    .flatMap((chunk) => chunk.split(/(?<=[.!?])\s+(?=[A-ZĄĆĘŁŃÓŚŹŻ])/))
+    .map((part) => part.trim())
+    .filter(Boolean)
+
+  if (parts.length <= 1) {
+    return looksLikeEffectNote(trimmed)
+      ? { effect: trimmed, remarks: "" }
+      : { effect: "", remarks: trimmed }
+  }
+
+  const effects: string[] = []
+  const remarks: string[] = []
+  for (const part of parts) {
+    if (looksLikeEffectNote(part)) effects.push(part)
+    else remarks.push(part)
+  }
+  // Gdy nic nie sklasyfikowano jako efekt, a całość jest krótka i wygląda na efekt — całość to efekt
+  if (effects.length === 0 && looksLikeEffectNote(trimmed)) {
+    return { effect: trimmed, remarks: "" }
+  }
+  return {
+    effect: effects.join("; "),
+    remarks: remarks.join(" "),
+  }
+}
+
+function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks"): string[] {
+  const seen = new Set<string>()
+  const values: string[] = []
+  for (const recipe of recipes) {
+    const raw = recipe[field]?.trim()
+    if (!raw || raw === "-") continue
+    const display = field === "notes" ? formatEffectNote(raw) || raw : raw
+    const key = normalizeSearch(display)
+    if (!key || seen.has(key)) continue
+    seen.add(key)
+    values.push(display)
+  }
+  return values
+}
+
+/** Unikalne efekty wyniku (sekcja „Co daje”). */
+export function uniqueItemEffects(recipes: RecipeRow[]): string[] {
+  return uniqueDisplayNotes(recipes, "notes")
+}
+
+/** Unikalne uwagi / instrukcje (sekcja „Uwagi”). */
+export function uniqueItemRemarks(recipes: RecipeRow[]): string[] {
+  return uniqueDisplayNotes(recipes, "remarks")
+}
+
+/** Czy receptura używa danego przedmiotu jako składnika (po slug lub nazwie PL/EN). */
+export function recipeUsesItem(recipe: RecipeRow, itemSlug: string | undefined, nameKeys: Set<string>): boolean {
+  return recipe.ingredients.some((ingredient) => {
+    if (itemSlug && ingredient.slug === itemSlug) return true
+    const keys = [ingredient.name, ingredient.namePl]
+      .filter((value): value is string => Boolean(value))
+      .map((value) =>
+        value
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replaceAll("ł", "l")
+          .replaceAll("Ł", "l")
+          .toLowerCase()
+          .replace(/^#/, "")
+          .replace(/[^a-z0-9]+/g, ""),
+      )
+    return keys.some((key) => key && nameKeys.has(key))
+  })
+}
+
+export function itemNameKeys(...names: Array<string | undefined>): Set<string> {
+  return new Set(
+    names
+      .filter((value): value is string => Boolean(value))
+      .map((value) =>
+        value
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replaceAll("ł", "l")
+          .replaceAll("Ł", "l")
+          .toLowerCase()
+          .replace(/^#/, "")
+          .replace(/[^a-z0-9]+/g, ""),
+      )
+      .filter(Boolean),
+  )
+}
+
+export function groupRequirementStats(requirements: TagStat[]): { label: string; items: TagStat[] }[] {
+  const groups = [
+    { label: "Crafting", items: [] as TagStat[], test: (tag: string) => /^Crafting\b/i.test(tag) },
+    { label: "Blacksmithing", items: [] as TagStat[], test: (tag: string) => /^Blacksmithing\b/i.test(tag) },
+    { label: "Inne", items: [] as TagStat[], test: () => true },
+  ]
+  for (const req of requirements) {
+    const group = groups.find((entry) => entry.test(req.tag)) ?? groups[groups.length - 1]
+    group.items.push(req)
+  }
+  return groups.filter((group) => group.items.length > 0)
+}
+
+/** Tokeny wymagań receptury (np. "Crafting 3"); pusty wpis → ["-"]. */
+export function requirementTokens(value: string): string[] {
+  const tokens = value
+    .split(";")
+    .map((val) => val.trim())
+    .filter(Boolean)
+  return tokens.length > 0 ? tokens : ["-"]
+}
+
+/**
+ * Czy recepturę da się wykonać przy Crafting ≤ maxLevel.
+ * Pasuje: brak wymagań, Crafting 1..maxLevel. Nie pasuje: wyższy Crafting ani same Blacksmithing/Tenebrium.
+ */
+export function matchesCraftingMax(requirements: string, maxLevel: number): boolean {
+  if (!Number.isFinite(maxLevel) || maxLevel < 1) return true
+  const tokens = requirementTokens(requirements)
+  return tokens.some((token) => {
+    if (token === "-") return true
+    const match = /^Crafting\s+(\d+)$/i.exec(token)
+    return Boolean(match && Number(match[1]) <= maxLevel)
+  })
+}
+
+export const CRAFTING_MAX_LEVELS = [1, 2, 3, 4, 5] as const

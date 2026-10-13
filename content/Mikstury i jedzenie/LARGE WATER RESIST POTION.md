@@ -7,13 +7,8 @@ tags:
 ---
 
 # LARGE WATER RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM WATER RESIST POTION]] + [[ULEPSZACZ]]
+[[MEDIUM WATER RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 40% Water Resist
-
-#Mikstury
+- **Efekt:** Add 40% Water Resist

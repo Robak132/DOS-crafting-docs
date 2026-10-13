@@ -7,13 +7,8 @@ tags:
 ---
 
 # ELVEN AIR WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA ELFICKA RÓŻDŻKA]] + [[ESENCJA POWIETRZA]]
+[[Składniki/INERT ELVEN WAND|Inert Elven Wand]] + [[ESENCJA POWIETRZA|Air Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Summon Air Elemental
-
-#Broń
+- **Efekt:** Grants Spell: Summon Air Elemental

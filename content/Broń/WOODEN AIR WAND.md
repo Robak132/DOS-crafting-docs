@@ -7,13 +7,8 @@ tags:
 ---
 
 # WOODEN AIR WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEAKTYWNA DREWNIANA RÓŻDŻKA]] + [[ESENCJA POWIETRZA]]
+[[Składniki/INERT WOODEN WAND|Inert Wooden Wand]] + [[ESENCJA POWIETRZA|Air Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Headvice
-
-#Broń
+- **Efekt:** Grants Spell: Headvice

@@ -7,14 +7,9 @@ tags:
 ---
 
 # POISON RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[DRUDANAE]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[Składniki/DRUDANAE|Drudanae]]
 - **Wymagania:** Crafting 1
-- **Uwagi:** Add 15% Poison Resist
+- **Efekt:** Add 15% Poison Resist
 - **Źródło:** Fun With Fluids IV
-
-#Mikstury

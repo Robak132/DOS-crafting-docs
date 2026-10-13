@@ -7,14 +7,9 @@ tags:
 ---
 
 # ONE HANDED SWORD
-
 ## Przepisy
-
 ### DOS1
-
-[[SZTABKA ŻELAZA]] + [[KOWADŁO]]
+[[Składniki/IRON BAR|Iron Bar]] + [[KOWADŁO|Anvil]]
 - **Wymagania:** Blacksmithing 1
-- **Uwagi:** Stats Increase with Blacksmithing Level
+- **Efekt:** Stats Increase with Blacksmithing Level
 - **Źródło:** He Who Smelts It I
-
-#Broń

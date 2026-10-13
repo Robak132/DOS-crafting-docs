@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: High Quality Water Essence
+titlePl: Esencja wody wysokiej jakości
 tags:
   - Typ/Skladniki
   - DOS2
-  - Alien-Water-Essence-Or-High-Quality-Water-Essence
 ---
 
 # High Quality Water Essence

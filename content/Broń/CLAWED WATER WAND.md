@@ -7,13 +7,8 @@ tags:
 ---
 
 # CLAWED WATER WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA PODRAPANA RÓŻDŻKA]] + [[ESENCJA WODY]]
+[[Składniki/INERT CLAWED WAND|Inert Clawed Wand]] + [[ESENCJA WODY|Water Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Water of Life
-
-#Broń
+- **Efekt:** Grants Spell: Water of Life

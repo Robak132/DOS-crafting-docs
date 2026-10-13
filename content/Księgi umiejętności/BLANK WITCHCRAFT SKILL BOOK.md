@@ -7,12 +7,7 @@ tags:
 ---
 
 # BLANK WITCHCRAFT SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEZAPISANY ZWÓJ CZARNEJ MAGII]] + [[NIEZAPISANY ZWÓJ CZARNEJ MAGII]]
+[[Zwoje/BLANK WITCHCRAFT SCROLL|Blank Witchcraft Scroll]] + [[Zwoje/BLANK WITCHCRAFT SCROLL|Blank Witchcraft Scroll]]
 - **Wymagania:** Crafting 5
-
-#Księgi-umiejętności

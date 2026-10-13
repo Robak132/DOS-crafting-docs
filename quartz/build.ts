@@ -3,8 +3,8 @@ sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
 import { rimraf } from "rimraf"
-import { GlobbyFilterFunction, isGitIgnored } from "globby"
 import chalk from "chalk"
+import { createGitIgnoredFilter, PathFilter } from "./util/gitignore"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
@@ -35,7 +35,7 @@ type ContentMap = Map<
 
 type BuildData = {
   ctx: BuildCtx
-  ignored: GlobbyFilterFunction
+  ignored: PathFilter
   mut: Mutex
   contentMap: ContentMap
   changesSinceLastBuild: Record<FilePath, ChangeEvent["type"]>
@@ -118,14 +118,14 @@ async function startWatching(
     })
   }
 
-  const gitIgnoredMatcher = await isGitIgnored()
+  const gitIgnoredMatcher = await createGitIgnoredFilter(argv.directory)
   const buildData: BuildData = {
     ctx,
     mut,
     contentMap,
-    ignored: (path) => {
-      if (gitIgnoredMatcher(path)) return true
-      const pathStr = path.toString()
+    ignored: (filePath) => {
+      const pathStr = filePath.toString()
+      if (gitIgnoredMatcher(pathStr)) return true
       for (const pattern of cfg.configuration.ignorePatterns) {
         if (minimatch(pathStr, pattern)) {
           return true

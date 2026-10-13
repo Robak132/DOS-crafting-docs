@@ -15,7 +15,7 @@ import { WebSocketServer } from "ws"
 import { randomUUID } from "crypto"
 import { Mutex } from "async-mutex"
 import { CreateArgv } from "./args.js"
-import { globby } from "globby"
+import { glob as tinyglob } from "tinyglobby"
 import {
   exitIfCancel,
   escapePath,
@@ -466,7 +466,7 @@ export async function handleBuild(argv) {
   }
 
   if (argv.watch) {
-    const paths = await globby([
+    const paths = await tinyglob([
       "**/*.ts",
       "quartz/cli/*.js",
       "quartz/static/**/*",

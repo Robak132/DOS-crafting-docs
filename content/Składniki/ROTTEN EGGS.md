@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: Rotten Eggs
+titlePl: Zgniłe jajka
 tags:
   - Typ/Skladniki
   - DOS2
-  - Poison-Or-Rotten-Eggs
 ---
 
 # Rotten Eggs

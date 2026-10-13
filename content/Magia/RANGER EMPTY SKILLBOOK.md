@@ -7,11 +7,8 @@ tags:
 ---
 
 # Ranger Empty Skillbook
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]] + [[Składniki/BLANK RANGER SCROLL|Blank Ranger Scroll]] + [[Składniki/BLANK RANGER SCROLL|Blank Ranger Scroll]] = [[Magia/RANGER EMPTY SKILLBOOK|Ranger Empty Skillbook]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A31:H31
 

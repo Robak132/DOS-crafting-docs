@@ -7,14 +7,11 @@ tags:
 ---
 
 # ADD WATER RESIST ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA WODY]] + #Shield
 - **Wymagania:** Crafting 4
-- **Uwagi:** Stats Increase with Hero Level
+- **Efekt:** Stats Increase with Hero Level
 
 [[ESENCJA WODY]] + #Cloth-Chest-Robe-Or-Sarong
 - **Wymagania:** Crafting 2

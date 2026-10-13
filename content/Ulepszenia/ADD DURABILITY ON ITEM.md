@@ -7,11 +7,8 @@ tags:
 ---
 
 # ADD DURABILITY ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[KOWADŁO]] + #Metal-Shield
 - **Wymagania:** Blacksmithing 2
 - **Uwagi:** If BS skill is above 2, shield will get Add Blocking

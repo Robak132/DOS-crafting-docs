@@ -7,13 +7,8 @@ tags:
 ---
 
 # LARGE EARTH RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM EARTH RESIST POTION]] + [[ULEPSZACZ]]
+[[MEDIUM EARTH RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 40% Earth Resist
-
-#Mikstury
+- **Efekt:** Add 40% Earth Resist

@@ -1,0 +1,11 @@
+---
+itemPage: true
+title: Slime
+titlePl: Szlam
+tags:
+  - Typ/Skladniki
+  - DOS2-CO
+  - DOS2
+---
+
+# Slime

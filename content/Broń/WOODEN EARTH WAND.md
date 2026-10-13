@@ -7,13 +7,8 @@ tags:
 ---
 
 # WOODEN EARTH WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEAKTYWNA DREWNIANA RÓŻDŻKA]] + [[ESENCJA ZIEMI]]
+[[Składniki/INERT WOODEN WAND|Inert Wooden Wand]] + [[ESENCJA ZIEMI|Earth Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Summon Wolf
-
-#Broń
+- **Efekt:** Grants Spell: Summon Wolf

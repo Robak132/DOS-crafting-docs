@@ -7,12 +7,7 @@ tags:
 ---
 
 # BLANK FIRE SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEZAPISANY ZWÓJ OGNIA]] + [[NIEZAPISANY ZWÓJ OGNIA]]
+[[NIEZAPISANY ZWÓJ OGNIA|Blank Fire Scroll]] + [[NIEZAPISANY ZWÓJ OGNIA|Blank Fire Scroll]]
 - **Wymagania:** Crafting 5
-
-#Księgi-umiejętności

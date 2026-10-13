@@ -7,12 +7,7 @@ tags:
 ---
 
 # BLANK WATER SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEZAPISANY ZWÓJ WODY]] + [[NIEZAPISANY ZWÓJ WODY]]
+[[NIEZAPISANY ZWÓJ WODY|Blank Water Scroll]] + [[NIEZAPISANY ZWÓJ WODY|Blank Water Scroll]]
 - **Wymagania:** Crafting 5
-
-#Księgi-umiejętności

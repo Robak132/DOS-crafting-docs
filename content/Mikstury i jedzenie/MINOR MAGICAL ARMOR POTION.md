@@ -7,13 +7,8 @@ tags:
 ---
 
 # MINOR MAGICAL ARMOR POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[SZEPTODRZEW]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[SZEPTODRZEW|Whisperwood]]
 - **Wymagania:** Crafting 2
-- **Uwagi:** Add 10 Armor
-
-#Mikstury
+- **Efekt:** Add 10 Armor

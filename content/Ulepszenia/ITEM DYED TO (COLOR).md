@@ -7,11 +7,8 @@ tags:
 ---
 
 # ITEM DYED TO (COLOR)
-
 ## Przepisy
-
 ### DOS1
-
 [[FABRIC DYE (PURPLE, GREEN)]] + #Chest-Gloves-Boots-Or-Sarong
 - **Wymagania:** Crafting 2
 

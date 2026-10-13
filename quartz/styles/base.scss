@@ -176,12 +176,17 @@ a {
 
       @media all and ($desktop) {
         &:has(.sidebar.right:empty) {
-          grid-template-columns: #{$sidePanelWidth} auto;
+          // Trzecia kolumna = prawy margines (bez pustego sidebara).
+          grid-template-columns: #{$sidePanelWidth} minmax(0, 1fr) 2rem;
           grid-template-rows: auto auto auto;
           grid-template-areas:
-            '"grid-sidebar-left grid-header"\
-              "grid-sidebar-left grid-center"\
-              "grid-sidebar-left grid-footer"';
+            "grid-sidebar-left grid-header ."
+            "grid-sidebar-left grid-center ."
+            "grid-sidebar-left grid-footer .";
+
+          & > .sidebar.right {
+            display: none;
+          }
         }
       }
 

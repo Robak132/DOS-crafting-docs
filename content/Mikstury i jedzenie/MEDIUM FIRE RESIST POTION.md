@@ -7,13 +7,8 @@ tags:
 ---
 
 # MEDIUM FIRE RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MIKSTURA ODPORNOŚCI NA OGIEŃ]] + [[ULEPSZACZ]]
+[[MIKSTURA ODPORNOŚCI NA OGIEŃ|Fire Resistance Potion]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 25% Fire Resist
-
-#Mikstury
+- **Efekt:** Add 25% Fire Resist

@@ -7,13 +7,8 @@ tags:
 ---
 
 # LARGE POISON RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM POISON RESIST POTION]] + [[ULEPSZACZ]]
+[[MEDIUM POISON RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 40% Poison Resist
-
-#Mikstury
+- **Efekt:** Add 40% Poison Resist

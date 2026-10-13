@@ -7,11 +7,8 @@ tags:
 ---
 
 # ADD ARMOR ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[KUCHNIA PRZENOŚNA]] + #Leather-Chest
 - **Wymagania:** Crafting 2
 - **Uwagi:** Less effective than Metal Scraps

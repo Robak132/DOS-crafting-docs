@@ -7,11 +7,8 @@ tags:
 ---
 
 # Fire Empty Skillbook
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]] + [[Składniki/BLANK FIRE SCROLL|Blank Fire Scroll]] + [[Składniki/BLANK FIRE SCROLL|Blank Fire Scroll]] = [[Magia/FIRE EMPTY SKILLBOOK|Fire Empty Skillbook]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A23:H23
 

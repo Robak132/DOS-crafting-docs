@@ -7,13 +7,8 @@ tags:
 ---
 
 # ELVEN FIRE WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA ELFICKA RÓŻDŻKA]] + [[ESENCJA OGNIA]]
+[[Składniki/INERT ELVEN WAND|Inert Elven Wand]] + [[ESENCJA OGNIA|Fire Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Summon Fire Elemental
-
-#Broń
+- **Efekt:** Grants Spell: Summon Fire Elemental

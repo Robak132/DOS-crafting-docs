@@ -7,13 +7,8 @@ tags:
 ---
 
 # ELVEN WATER WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA ELFICKA RÓŻDŻKA]] + [[ESENCJA WODY]]
+[[Składniki/INERT ELVEN WAND|Inert Elven Wand]] + [[ESENCJA WODY|Water Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Summon Ice Elemental
-
-#Broń
+- **Efekt:** Grants Spell: Summon Ice Elemental

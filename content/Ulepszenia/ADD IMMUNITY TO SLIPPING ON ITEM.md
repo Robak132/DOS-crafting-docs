@@ -7,11 +7,8 @@ tags:
 ---
 
 # ADD IMMUNITY TO SLIPPING ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[DZIEWIĘCIOCALOWE GWOŹDZIE]] + #Boots
 - **Wymagania:** Crafting 5
 

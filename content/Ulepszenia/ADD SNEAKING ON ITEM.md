@@ -7,11 +7,8 @@ tags:
 ---
 
 # ADD SNEAKING ON ITEM
-
 ## Przepisy
-
 ### DOS1
-
 [[ESENCJA CIENIA]] + #Chest-Gloves-Helmet-Belt-Or-Sarong
 - **Wymagania:** Crafting 4
 - **Uwagi:** Also changes item color (green)

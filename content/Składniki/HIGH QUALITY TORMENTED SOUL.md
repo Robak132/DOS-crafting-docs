@@ -1,10 +1,10 @@
 ---
 itemPage: true
 title: High quality Tormented Soul
+titlePl: Udręczona dusza wysokiej jakości
 tags:
   - Typ/Skladniki
   - DOS2
-  - Alien-Tormented-Soul-Or-High-Quality-Tormented-Soul
 ---
 
 # High quality Tormented Soul

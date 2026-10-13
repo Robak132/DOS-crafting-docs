@@ -1,19 +1,15 @@
 ---
 itemPage: true
-title: MEDIUM MAGICAL ARMOR POTION
+title: Medium Magical Armor Potion
+titlePl: Średnia mikstura magicznej zbroi
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS1
 ---
 
-# MEDIUM MAGICAL ARMOR POTION
-
+# Medium Magical Armor Potion
 ## Przepisy
-
 ### DOS1
-
-[[MINOR MAGICAL ARMOR POTION]] + [[ULEPSZACZ]]
+[[MINOR MAGICAL ARMOR POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 14 Armor
-
-#Mikstury
+- **Efekt:** Add 14 Armor

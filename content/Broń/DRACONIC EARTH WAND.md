@@ -7,13 +7,8 @@ tags:
 ---
 
 # DRACONIC EARTH WAND
-
 ## Przepisy
-
 ### DOS1
-
-[[BEZCZYNNA DRAKONICZNA RÓŻDŻKA]] + [[ESENCJA ZIEMI]]
+[[Składniki/INERT DRACONIC WAND|Inert Draconic Wand]] + [[ESENCJA ZIEMI|Earth Essence]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Grants Spell: Tectonic Spray
-
-#Broń
+- **Efekt:** Grants Spell: Tectonic Spray

@@ -1,0 +1,14 @@
+---
+itemPage: true
+title: Present Grenade
+tags:
+  - Typ/Przedmioty-wydarzen
+  - DOS2-CO
+---
+
+# Present Grenade
+## Przepisy
+### DOS2 – Crafting Overhaul
+[[Składniki/PRESENT BOX|Present Box]] + [[Składniki/FUSE|Fuse]] + [[Stanowiska i pojemniki/EVENT CRAFT STATION|Event Craft Station]] = [[Przedmioty wydarzeń/PRESENT GRENADE|Present Grenade]]
+- **Uwagi:** Soul of winter is here.
+- **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Event Special Items!A36:H36

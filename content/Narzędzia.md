@@ -7,9 +7,9 @@ tags:
 
 # Narzędzia
 
-- [[Narzędzia/BECZKA WODY|BECZKA WODY]]
-- [[Narzędzia/KOWADŁO|KOWADŁO]]
-- [[Narzędzia/NÓŻ|NÓŻ]]
+- [[Narzędzia/WATER BARREL|Water Barrel]]
+- [[Narzędzia/ANVIL|Anvil]]
+- [[Składniki/KNIFE|Knife]]
 - [[Narzędzia/NÓŻ LUB SZTYLET|NÓŻ LUB SZTYLET]]
-- [[Narzędzia/STUDNIA|STUDNIA]]
-- [[Narzędzia/SZTYLET|SZTYLET]]
+- [[Narzędzia/WELL|Well]]
+- [[Narzędzia/DAGGER|Dagger]]

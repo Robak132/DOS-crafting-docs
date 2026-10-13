@@ -7,14 +7,9 @@ tags:
 ---
 
 # STAFF (ELEMENT RANDOM)
-
 ## Przepisy
-
 ### DOS1
-
-[[GAŁĄŹ]] + [[GAŁĄŹ]]
+[[Składniki/BRANCH|Branch]] + [[Składniki/BRANCH|Branch]]
 - **Wymagania:** Crafting 2
-- **Uwagi:** Stats Increase with Crafting Level
+- **Efekt:** Stats Increase with Crafting Level
 - **Źródło:** Crafting & Cooking with Maradino
-
-#Broń

@@ -7,12 +7,9 @@ tags:
 ---
 
 # MINOR INVISIBILITY POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[PUSTA BUTELKA NA MIKSTURĘ]] + [[ESENCJA CIENIA]]
+[[Mikstury i jedzenie/EMPTY POTION BOTTLE|Empty Potion Bottle]] + [[ESENCJA CIENIA|Shadow Essence]]
 - **Wymagania:** Crafting 4
 - **Uwagi:** Invisible (5 Turns)
 
@@ -20,5 +17,3 @@ tags:
 - **Wymagania:** Crafting 4
 - **Uwagi:** Invisible (5 Turns)
 - **Źródło:** Fun With Fluids VIII
-
-#Mikstury

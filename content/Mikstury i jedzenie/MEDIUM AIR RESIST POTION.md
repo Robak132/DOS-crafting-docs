@@ -7,13 +7,8 @@ tags:
 ---
 
 # MEDIUM AIR RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MIKSTURA ODPORNOŚCI NA POWIETRZE]] + [[ULEPSZACZ]]
+[[MIKSTURA ODPORNOŚCI NA POWIETRZE]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 3
-- **Uwagi:** Add 25% Air Resist
-
-#Mikstury
+- **Efekt:** Add 25% Air Resist

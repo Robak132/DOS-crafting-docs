@@ -7,13 +7,8 @@ tags:
 ---
 
 # LARGE FIRE RESIST POTION
-
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM FIRE RESIST POTION]] + [[ULEPSZACZ]]
+[[MEDIUM FIRE RESIST POTION]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 40% Fire Resist
-
-#Mikstury
+- **Efekt:** Add 40% Fire Resist

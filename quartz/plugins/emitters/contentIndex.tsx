@@ -1,6 +1,7 @@
 import { Root } from "hast"
 import { GlobalConfiguration } from "../../cfg"
 import { getDate } from "../../components/Date"
+import { getItemCraftRoles } from "../../components/recipeItemRoles"
 import { escapeHTML } from "../../util/escape"
 import { FilePath, FullSlug, SimpleSlug, joinSegments, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
@@ -153,6 +154,14 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         ctx,
         content: JSON.stringify(simplifiedIndex),
         slug: fp,
+        ext: ".json",
+      })
+
+      const allFiles = content.map(([_, file]) => file.data)
+      yield write({
+        ctx,
+        content: JSON.stringify(getItemCraftRoles(allFiles)),
+        slug: joinSegments("static", "itemRoles") as FullSlug,
         ext: ".json",
       })
     },

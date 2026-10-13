@@ -1,9 +1,10 @@
 ---
 itemPage: true
 title: Empty Grenade
+titlePl: Pusty granat
 tags:
   - Typ/Skladniki
-  - DOS2
+  - DOS1
 ---
 
 # Empty Grenade

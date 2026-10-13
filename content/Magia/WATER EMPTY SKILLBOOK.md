@@ -7,11 +7,8 @@ tags:
 ---
 
 # Water Empty Skillbook
-
 ## Przepisy
-
 ### DOS2 – Crafting Overhaul
-
 [[Stanowiska i pojemniki/DEMON ALTAR|Demon Altar]] + [[Składniki/BLANK WATER SCROLL|Blank Water Scroll]] + [[Składniki/BLANK WATER SCROLL|Blank Water Scroll]] = [[Magia/WATER EMPTY SKILLBOOK|Water Empty Skillbook]]
 - **Źródło:** Crafting Overhaul Spreadsheet.xlsx — Demonic!A25:H25
 

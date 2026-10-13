@@ -7,12 +7,7 @@ tags:
 ---
 
 # BLANK AIR SKILL BOOK
-
 ## Przepisy
-
 ### DOS1
-
-[[NIEZAPISANY ZWÓJ POWIETRZA]] + [[NIEZAPISANY ZWÓJ POWIETRZA]]
+[[NIEZAPISANY ZWÓJ POWIETRZA|Blank Air Scroll]] + [[NIEZAPISANY ZWÓJ POWIETRZA|Blank Air Scroll]]
 - **Wymagania:** Crafting 5
-
-#Księgi-umiejętności

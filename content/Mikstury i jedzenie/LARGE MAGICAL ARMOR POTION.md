@@ -1,19 +1,15 @@
 ---
 itemPage: true
-title: LARGE MAGICAL ARMOR POTION
+title: Large Magical Armor Potion
+titlePl: Duża mikstura magicznej zbroi
 tags:
   - Typ/Mikstury-i-jedzenie
   - DOS1
 ---
 
-# LARGE MAGICAL ARMOR POTION
-
+# Large Magical Armor Potion
 ## Przepisy
-
 ### DOS1
-
-[[MEDIUM MAGICAL ARMOR POTION]] + [[ULEPSZACZ]]
+[[Mikstury i jedzenie/MEDIUM MAGICAL ARMOR POTION|Medium Magical Armor Potion]] + [[ULEPSZACZ|Augmentor]]
 - **Wymagania:** Crafting 4
-- **Uwagi:** Add 20 Armor
-
-#Mikstury
+- **Efekt:** Add 20 Armor

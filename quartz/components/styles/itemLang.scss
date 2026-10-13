@@ -1,0 +1,46 @@
+.item-lang-toggle {
+  cursor: pointer;
+  padding: 0.15rem 0.45rem;
+  margin: 0 6px;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  background: var(--light);
+  color: var(--darkgray);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.item-lang-toggle:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.item-lang-toggle .lang-en,
+.item-lang-toggle .lang-pl {
+  display: none;
+}
+
+:root[data-item-lang="en"] .item-lang-toggle .lang-en,
+:root:not([data-item-lang]) .item-lang-toggle .lang-en {
+  display: inline;
+}
+
+:root[data-item-lang="pl"] .item-lang-toggle .lang-pl {
+  display: inline;
+}
+
+.item-lang .item-lang-pl {
+  display: none;
+}
+
+:root[data-item-lang="pl"] .item-lang:has(.item-lang-pl) .item-lang-en {
+  display: none;
+}
+
+:root[data-item-lang="pl"] .item-lang .item-lang-pl {
+  display: inline;
+}

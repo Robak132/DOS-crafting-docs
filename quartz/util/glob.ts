@@ -1,6 +1,7 @@
 import path from "path"
+import { glob as tinyglob } from "tinyglobby"
 import { FilePath } from "./path"
-import { globby } from "globby"
+import { createGitIgnoredFilter } from "./gitignore"
 
 export function toPosixPath(fp: string): string {
   return fp.split(path.sep).join("/")
@@ -11,12 +12,15 @@ export async function glob(
   cwd: string,
   ignorePatterns: string[],
 ): Promise<FilePath[]> {
+  const gitIgnored = await createGitIgnoredFilter(cwd)
   const fps = (
-    await globby(pattern, {
+    await tinyglob(pattern, {
       cwd,
       ignore: ignorePatterns,
-      gitignore: true,
+      onlyFiles: true,
     })
-  ).map(toPosixPath)
+  )
+    .map(toPosixPath)
+    .filter((fp) => !gitIgnored(fp))
   return fps as FilePath[]
 }

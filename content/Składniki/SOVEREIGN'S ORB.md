@@ -1,6 +1,7 @@
 ---
 itemPage: true
 title: Sovereign's Orb
+titlePl: Kula suwerena
 tags:
   - Typ/Skladniki
   - DOS2

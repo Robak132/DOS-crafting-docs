@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tooltip performance regression</title>
+  </head>
+  <body>
+    <div
+      id="benchmark"
+      style="
+        position: fixed;
+        right: 8px;
+        bottom: 8px;
+        z-index: 100;
+        background: #fff;
+        color: #111;
+        padding: 12px;
+        max-width: 600px;
+        max-height: 45vh;
+        overflow: auto;
+      "
+    >
+      <button id="run-benchmark">Run tooltip benchmark</button>
+      <pre id="benchmark-result">Ready. Tests the full Overhaul recipe table.</pre>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="./tooltipBrowserBenchmark.tsx"></script>
+  </body>
+</html>

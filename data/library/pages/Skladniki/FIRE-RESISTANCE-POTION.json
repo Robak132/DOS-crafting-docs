@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/FIRE-RESISTANCE-POTION",
+  "title": "Fire Resistance Potion",
+  "titlePl": "Mikstura odporności na ogień",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Odpornosc-na-ogien"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "Mikstury-i-jedzenie/MINOR-RESIST-ALL-POTION",
+  "title": "Minor Resist All Potion",
+  "titlePl": "Mała mikstura wszelkiej odporności",
+  "tags": [
+    "Typ/Mikstury-i-jedzenie",
+    "DOS1",
+    "DOS2-CO",
+    "DOS2",
+    "Cechy/Odpornosc-na-wszystko"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

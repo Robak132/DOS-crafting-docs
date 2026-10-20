@@ -1,0 +1,14 @@
+{
+  "slug": "Skladniki/BLANK-FIRE-SKILLBOOK",
+  "title": "Blank Fire Skillbook",
+  "titlePl": "Niezapisana księga umiejętności ognia",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/BLANK-SKILLBOOK-FIRE"
+  ]
+}

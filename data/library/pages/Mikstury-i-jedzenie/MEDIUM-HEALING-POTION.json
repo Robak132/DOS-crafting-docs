@@ -1,0 +1,14 @@
+{
+  "slug": "Mikstury-i-jedzenie/MEDIUM-HEALING-POTION",
+  "title": "Medium Healing Potion",
+  "titlePl": "Średnia mikstura uzdrawiająca",
+  "tags": [
+    "Typ/Mikstury-i-jedzenie",
+    "DOS2-CO",
+    "DOS2",
+    "Cechy/Leczenie"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

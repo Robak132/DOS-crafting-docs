@@ -1,0 +1,207 @@
+{
+  "hierarchy": [
+    {
+      "tag": "Typ",
+      "label": "Typ",
+      "children": [
+        {
+          "tag": "Typ/Amulety",
+          "label": "Amulety",
+          "children": []
+        },
+        {
+          "tag": "Typ/Bron",
+          "label": "Bron",
+          "children": []
+        },
+        {
+          "tag": "Typ/Granaty",
+          "label": "Granaty",
+          "children": []
+        },
+        {
+          "tag": "Typ/Jedzenie-i-picie",
+          "label": "Jedzenie-i-picie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Ksiegi-umiejetnosci",
+          "label": "Ksiegi-umiejetnosci",
+          "children": []
+        },
+        {
+          "tag": "Typ/Mikstury",
+          "label": "Mikstury",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pancerz",
+          "label": "Pancerz",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pasy",
+          "label": "Pasy",
+          "children": []
+        },
+        {
+          "tag": "Typ/Pierscienie",
+          "label": "Pierscienie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Skladniki",
+          "label": "Skladniki",
+          "children": []
+        },
+        {
+          "tag": "Typ/Przedmioty-wydarzen",
+          "label": "Przedmioty sezonowe",
+          "children": []
+        },
+        {
+          "tag": "Typ/Specjalne",
+          "label": "Specjalne",
+          "children": []
+        },
+        {
+          "tag": "Typ/Strzaly",
+          "label": "Strzaly",
+          "children": []
+        },
+        {
+          "tag": "Typ/Ulepszenia",
+          "label": "Ulepszenia",
+          "children": []
+        },
+        {
+          "tag": "Typ/Wyposazenie",
+          "label": "Wyposazenie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Zwoje",
+          "label": "Zwoje",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "Cechy-podstawowe",
+      "label": "Cechy",
+      "children": [
+        { "tag": "Cechy/Siła", "label": "Siła", "children": [] },
+        { "tag": "Cechy/Zwinność", "label": "Finezja", "children": [] },
+        { "tag": "Cechy/Inteligencja", "label": "Inteligencja", "children": [] },
+        { "tag": "Cechy/Kondycja", "label": "Kondycja", "children": [] },
+        { "tag": "Cechy/Pamięć", "label": "Pamięć", "children": [] },
+        { "tag": "Cechy/Spryt", "label": "Spryt", "children": [] },
+        { "tag": "Cechy/HP", "label": "Witalność", "children": [] },
+        { "tag": "Cechy/Celność", "label": "Celność", "children": [] },
+        { "tag": "Cechy/Krytyk", "label": "Szansa na krytyka", "children": [] },
+        { "tag": "Cechy/Unik", "label": "Unik", "children": [] },
+        { "tag": "Cechy/Blok", "label": "Blok", "children": [] },
+        { "tag": "Cechy/Pancerz", "label": "Pancerz", "children": [] },
+        { "tag": "Cechy/Pancerz-fizyczny", "label": "Pancerz fizyczny", "children": [] },
+        { "tag": "Cechy/Pancerz-magiczny", "label": "Pancerz magiczny", "children": [] },
+        { "tag": "Cechy/Inicjatywa", "label": "Inicjatywa", "children": [] },
+        { "tag": "Cechy/Ruch", "label": "Ruch", "children": [] },
+        { "tag": "Cechy/Szybkość", "label": "Szybkość", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-odporności",
+      "label": "Odporności",
+      "children": [
+        { "tag": "Cechy/Odporność-na-ogień", "label": "Odporność na ogień", "children": [] },
+        { "tag": "Cechy/Odporność-na-wodę", "label": "Odporność na wodę", "children": [] },
+        { "tag": "Cechy/Odporność-na-powietrze", "label": "Odporność na powietrze", "children": [] },
+        { "tag": "Cechy/Odporność-na-ziemię", "label": "Odporność na ziemię", "children": [] },
+        { "tag": "Cechy/Odporność-na-truciznę", "label": "Odporność na truciznę", "children": [] },
+        { "tag": "Cechy/Odporność-na-wszystko", "label": "Odporność na wszystko", "children": [] },
+        { "tag": "Cechy/Immunitet-na-ogień", "label": "Niewrażliwość na ogień", "children": [] },
+        { "tag": "Cechy/Immunitet-na-zamrożenie", "label": "Niewrażliwość na zamrożenie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-ogłuszenie", "label": "Niewrażliwość na ogłuszenie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-oślepienie", "label": "Niewrażliwość na oślepienie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-krwawienie", "label": "Niewrażliwość na krwawienie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-kwas", "label": "Niewrażliwość na kwas", "children": [] },
+        { "tag": "Cechy/Immunitet-na-potrącenie", "label": "Niewrażliwość na potrącenie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-spowolnienie", "label": "Niewrażliwość na spowolnienie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-urok", "label": "Niewrażliwość na urok", "children": [] },
+        { "tag": "Cechy/Immunitet-na-strach", "label": "Niewrażliwość na strach", "children": [] },
+        { "tag": "Cechy/Immunitet-na-szok", "label": "Niewrażliwość na szok", "children": [] },
+        { "tag": "Cechy/Immunitet-na-teleport", "label": "Niewrażliwość na teleport", "children": [] },
+        { "tag": "Cechy/Immunitet-na-uduszenie", "label": "Niewrażliwość na uduszenie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-okaleczenie", "label": "Niewrażliwość na okaleczenie", "children": [] },
+        { "tag": "Cechy/Immunitet-na-szaleństwo", "label": "Niewrażliwość na szaleństwo", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-obrazenia",
+      "label": "Obrażenia",
+      "children": [
+        { "tag": "Cechy/Obrażenia-ognia", "label": "Obrażenia od ognia", "children": [] },
+        { "tag": "Cechy/Obrażenia-wody", "label": "Obrażenia od wody", "children": [] },
+        { "tag": "Cechy/Obrażenia-powietrza", "label": "Obrażenia od powietrza", "children": [] },
+        { "tag": "Cechy/Obrażenia-ziemi", "label": "Obrażenia od ziemi", "children": [] },
+        { "tag": "Cechy/Obrażenia-trucizny", "label": "Obrażenia od trucizny", "children": [] },
+        { "tag": "Cechy/Obrażenia-fizyczne", "label": "Obrażenia fizyczne", "children": [] },
+        { "tag": "Cechy/Obrażenia-tenebrium", "label": "Obrażenia od tenebrium", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-bron",
+      "label": "Bronie",
+      "children": [
+        { "tag": "Cechy/Jednoręczna", "label": "Broń jednoręczna", "children": [] },
+        { "tag": "Cechy/Dwuręczna", "label": "Broń dwuręczna", "children": [] },
+        { "tag": "Cechy/Walka-dwoma-broniami", "label": "Walka dwiema broniami", "children": [] },
+        { "tag": "Cechy/Dystansowa", "label": "Broń dystansowa", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-obrona",
+      "label": "Obrona",
+      "children": [
+        { "tag": "Cechy/Przywództwo", "label": "Przywództwo", "children": [] },
+        { "tag": "Cechy/Wytrwałość", "label": "Wytrwałość", "children": [] },
+        { "tag": "Cechy/Odbicie", "label": "Odbicie", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-umiejetnosci",
+      "label": "Szkoły umiejętności",
+      "children": [
+        { "tag": "Cechy/Wojna", "label": "Wojna", "children": [] },
+        { "tag": "Cechy/Łobuz", "label": "Łobuz", "children": [] },
+        { "tag": "Cechy/Pyrokinetyka", "label": "Pyrokinetyka", "children": [] },
+        { "tag": "Cechy/Hydrosophia", "label": "Hydrosophia", "children": [] },
+        { "tag": "Cechy/Geomancja", "label": "Geomancja", "children": [] },
+        { "tag": "Cechy/Aeroteurgia", "label": "Aeroteurgia", "children": [] },
+        { "tag": "Cechy/Nekromancja", "label": "Nekromancja", "children": [] },
+        { "tag": "Cechy/Przyzywanie", "label": "Przyzywanie", "children": [] },
+        { "tag": "Cechy/Polimorfia", "label": "Polimorfia", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-cywilne",
+      "label": "Zdolności cywilne",
+      "children": [
+        { "tag": "Cechy/Handel", "label": "Handel", "children": [] },
+        { "tag": "Cechy/Szczęście", "label": "Szczęśliwy traf", "children": [] },
+        { "tag": "Cechy/Perswazja", "label": "Perswazja", "children": [] },
+        { "tag": "Cechy/Znawca", "label": "Znawca", "children": [] },
+        { "tag": "Cechy/Telekineza", "label": "Telekineza", "children": [] },
+        { "tag": "Cechy/Skradanie", "label": "Skradanie", "children": [] },
+        { "tag": "Cechy/Złodziejstwo", "label": "Złodziejstwo", "children": [] }
+      ]
+    },
+    {
+      "tag": "Cechy-inne",
+      "label": "Inne",
+      "children": [
+        { "tag": "Cechy/Leczenie", "label": "Leczenie", "children": [] }
+      ]
+    }
+  ]
+}

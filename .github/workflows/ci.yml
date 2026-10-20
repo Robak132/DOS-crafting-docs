@@ -1,0 +1,25 @@
+name: Check catalog
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - name: Build with a GitHub Pages repository path
+        run: npm run build
+        env:
+          VITE_BASE_PATH: /DOS-crafting-docs/
+      - run: npm run verify:dist

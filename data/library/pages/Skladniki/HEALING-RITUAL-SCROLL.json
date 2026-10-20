@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/HEALING-RITUAL-SCROLL",
+  "title": "Healing Ritual Scroll",
+  "titlePl": "Zwój Rytuału Uzdrawiającego",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Leczenie"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

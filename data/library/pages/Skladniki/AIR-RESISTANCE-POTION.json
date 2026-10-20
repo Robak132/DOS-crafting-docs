@@ -1,0 +1,14 @@
+{
+  "slug": "Skladniki/AIR-RESISTANCE-POTION",
+  "title": "Air Resistance Potion",
+  "titlePl": "Mikstura odporności na powietrze",
+  "tags": [
+    "DOS1",
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Odpornosc-na-powietrze"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

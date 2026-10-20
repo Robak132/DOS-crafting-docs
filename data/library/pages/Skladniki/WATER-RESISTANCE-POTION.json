@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/WATER-RESISTANCE-POTION",
+  "title": "Water Resistance Potion",
+  "titlePl": "Mikstura odporności na wodę",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Odpornosc-na-wode"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

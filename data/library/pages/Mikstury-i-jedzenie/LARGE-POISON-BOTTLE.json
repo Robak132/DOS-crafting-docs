@@ -1,0 +1,16 @@
+{
+  "slug": "Mikstury-i-jedzenie/LARGE-POISON-BOTTLE",
+  "title": "Large Poison Bottle",
+  "titlePl": "Duża butelka trucizny",
+  "tags": [
+    "Typ/Mikstury-i-jedzenie",
+    "DOS1",
+    "Typ/Skladniki",
+    "DOS2-CO"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/LARGE-POSION-BOTTLE"
+  ]
+}

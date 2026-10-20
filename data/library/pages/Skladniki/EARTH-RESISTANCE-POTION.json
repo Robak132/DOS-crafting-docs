@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/EARTH-RESISTANCE-POTION",
+  "title": "Earth Resistance Potion",
+  "titlePl": "Mikstura odporności na ziemię",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Odpornosc-na-ziemie"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

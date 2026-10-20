@@ -1,0 +1,16 @@
+{
+  "slug": "Skladniki/SHEET-OF-PAPER",
+  "title": "Sheet of Paper",
+  "titlePl": "Kartka papieru",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS1",
+    "DOS2-CO",
+    "DOS2"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/SHEET-PAPER"
+  ]
+}

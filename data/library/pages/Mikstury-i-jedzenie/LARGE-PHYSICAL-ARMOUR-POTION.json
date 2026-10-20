@@ -1,0 +1,17 @@
+{
+  "slug": "Mikstury-i-jedzenie/LARGE-PHYSICAL-ARMOUR-POTION",
+  "title": "Large Physical Armour Potion",
+  "titlePl": "Duża mikstura Pancerza Fizycznego",
+  "tags": [
+    "Typ/Mikstury-i-jedzenie",
+    "DOS2",
+    "Cechy/Pancerz-fizyczny",
+    "Typ/Skladniki",
+    "DOS2-CO"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/LARGE-PHYSICAL-ARMOR"
+  ]
+}

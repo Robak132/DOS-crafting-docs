@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/SMALL-AIR-RESISTANCE-POTION",
+  "title": "Small Air Resistance Potion",
+  "titlePl": "Mała mikstura odporności na żywioł powietrza",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Odpornosc-na-powietrze"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

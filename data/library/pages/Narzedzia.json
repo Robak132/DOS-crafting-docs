@@ -1,0 +1,11 @@
+{
+  "slug": "Narzedzia",
+  "title": "Narzędzia",
+  "tags": [
+    "Typ/Narzedzia"
+  ],
+  "itemPage": false,
+  "categoryPage": true,
+  "html": "<h1>Narzędzia</h1>\n<ul>\n<li><a href=\"__APP_BASE__/Narzedzia/ANVIL\">Anvil</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/DAGGER\">Dagger</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/KNIFE\">Knife</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/KNIFE-OR-DAGGER\">Knife or Dagger</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/SCISSORS\">Scissors</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/WATER-BARREL\">Water Barrel</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/WELL\">Well</a></li>\n<li><a href=\"__APP_BASE__/Narzedzia/WHETSTONE\">Whetstone</a></li>\n</ul>\n",
+  "aliases": []
+}

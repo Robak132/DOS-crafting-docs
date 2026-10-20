@@ -1,0 +1,11 @@
+{
+  "slug": "Wyposazenie",
+  "title": "Wyposażenie",
+  "tags": [
+    "Typ/Wyposazenie"
+  ],
+  "itemPage": false,
+  "categoryPage": true,
+  "html": "<h1>Wyposażenie</h1>\n<ul>\n<li><a href=\"__APP_BASE__/Wyposazenie/BACKPACK\">Backpack</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/INK-POT\">Ink Pot</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/INK-POT-AND-QUILL\">Ink Pot and Quill</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/LOCKPICKS\">Lockpicks</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/MAGIC-INK-POT-AND-QUILL\">Magic Ink Pot and Quill</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/MAGIC-NEEDLE-AND-THREAD\">Magic Needle &amp; Thread</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/MOBILE-KITCHEN\">Mobile Kitchen</a></li>\n<li><a href=\"__APP_BASE__/Wyposazenie/NEEDLE-AND-THREAD\">Needle and Thread</a></li>\n</ul>\n",
+  "aliases": []
+}

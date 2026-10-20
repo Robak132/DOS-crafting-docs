@@ -1,0 +1,11 @@
+{
+  "slug": "Pierscienie",
+  "title": "Pierścienie",
+  "tags": [
+    "Typ/Pierscienie"
+  ],
+  "itemPage": false,
+  "categoryPage": true,
+  "html": "<h1>Pierścienie</h1>\n<ul>\n<li><a href=\"__APP_BASE__/Pierscienie/EMPTY-RING\">Empty Ring</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-AEROTHROUGE\">Unique Ring of Aerothrouge</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-GEOMANCER\">Unique Ring of Geomancer</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-HUNTSMAN\">Unique Ring of Huntsman</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-HYDROSOPHIST\">Unique Ring of Hydrosophist</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-NECROMANCER\">Unique Ring of Necromancer</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-POLYMORPH\">Unique Ring of Polymorph</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-PYROMANCER\">Unique Ring of Pyromancer</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-SCOUNDREL\">Unique Ring of Scoundrel</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-SUMMONER\">Unique Ring of Summoner</a></li>\n<li><a href=\"__APP_BASE__/Pierscienie/UNIQUE-RING-OF-WARFARE\">Unique Ring of Warfare</a></li>\n</ul>\n",
+  "aliases": []
+}

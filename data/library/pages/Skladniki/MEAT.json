@@ -1,0 +1,12 @@
+{
+  "slug": "Skladniki/MEAT",
+  "title": "Meat",
+  "titlePl": "Mięso",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

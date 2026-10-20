@@ -3,9 +3,9 @@
   "title": "Unique Tenebrium 2H Axe",
   "tags": [
     "Typ/Bron",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

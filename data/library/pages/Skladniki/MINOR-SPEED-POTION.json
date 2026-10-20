@@ -3,11 +3,14 @@
   "title": "Minor Speed Potion",
   "titlePl": "Mała mikstura prędkości",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Szybkosc"
+    "Cechy",
+    "Cechy/Szybkość",
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -1,11 +1,11 @@
 {
   "slug": "Specjalne/HERBMIX_ENLIGHTENMENT_POTENT",
-  "title": "Herbmix_Enlightenment_Potent",
+  "title": "Potent Enlightenment Herbmix",
   "tags": [
     "Typ/Specjalne",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

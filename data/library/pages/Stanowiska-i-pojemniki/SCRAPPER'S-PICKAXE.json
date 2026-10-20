@@ -2,11 +2,11 @@
   "slug": "Stanowiska-i-pojemniki/SCRAPPER'S-PICKAXE",
   "title": "Scrapper's Pickaxe",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Narzedzia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

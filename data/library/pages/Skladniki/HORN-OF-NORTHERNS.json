@@ -2,10 +2,11 @@
   "slug": "Skladniki/HORN-OF-NORTHERNS",
   "title": "Horn of Northerns",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

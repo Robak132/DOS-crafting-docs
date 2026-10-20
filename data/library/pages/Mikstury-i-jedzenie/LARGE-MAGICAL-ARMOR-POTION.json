@@ -4,9 +4,9 @@
   "titlePl": "Duża mikstura magicznej zbroi",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

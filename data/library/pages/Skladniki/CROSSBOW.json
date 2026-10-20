@@ -3,11 +3,11 @@
   "title": "Crossbow",
   "titlePl": "Kusza",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

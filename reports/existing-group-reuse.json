@@ -1,0 +1,186 @@
+{
+  "scope": "Reuse only the existing Knife or Dagger group where game recipes prove equivalent Knife and Dagger variants. No new groups.",
+  "catalogs": {
+    "dos1": {
+      "changes": [],
+      "merged_duplicates": [],
+      "saved_tools": []
+    },
+    "dos2": {
+      "changes": [
+        {
+          "recipe": "Mikstury-i-jedzenie/COLD-FRIES:Dagger+Potato",
+          "from": "Dagger",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "Knife_CON_Food_Potato_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 9719
+            },
+            "Dagger": {
+              "id": "Dagger_CON_Food_Potato_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 9732
+            }
+          }
+        },
+        {
+          "recipe": "Mikstury-i-jedzenie/COLD-FRIES:Knife+Potato",
+          "from": "Knife",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "Knife_CON_Food_Potato_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 9719
+            },
+            "Dagger": {
+              "id": "Dagger_CON_Food_Potato_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 9732
+            }
+          }
+        },
+        {
+          "recipe": "Bron/KNIFE-ON-A-STICK:Short Stick+Dagger+Rope",
+          "from": "Dagger",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "LOOT_WoodenStick_A_Knife",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8221
+            },
+            "Dagger": {
+              "id": "LOOT_WoodenStick_A_Dagger",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8203
+            }
+          }
+        },
+        {
+          "recipe": "Bron/KNIFE-ON-A-STICK:Short Stick+Knife+Rope",
+          "from": "Knife",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "LOOT_WoodenStick_A_Knife",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8221
+            },
+            "Dagger": {
+              "id": "LOOT_WoodenStick_A_Dagger",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8203
+            }
+          }
+        },
+        {
+          "recipe": "Skladniki/LEATHER-SCRAPS:Dagger+Animal Hide",
+          "from": "Dagger",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "Knife_LOOT_Hide_Animal_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8616
+            },
+            "Dagger": {
+              "id": "Dagger_LOOT_Hide_Animal_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8629
+            }
+          }
+        },
+        {
+          "recipe": "Skladniki/LEATHER-SCRAPS:Knife+Animal Hide",
+          "from": "Knife",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "Knife_LOOT_Hide_Animal_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8616
+            },
+            "Dagger": {
+              "id": "Dagger_LOOT_Hide_Animal_A",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8629
+            }
+          }
+        },
+        {
+          "recipe": "Bron/PRIMITIVE-HARPOON:Long Branch+Dagger+Rope",
+          "from": "Dagger",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "LOOT_WoodenBranch_A_Knife",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8257
+            },
+            "Dagger": {
+              "id": "LOOT_WoodenBranch_A_Dagger",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8239
+            }
+          }
+        },
+        {
+          "recipe": "Bron/PRIMITIVE-HARPOON:Long Branch+Knife+Rope",
+          "from": "Knife",
+          "to": "Knife or Dagger",
+          "evidence": {
+            "Knife": {
+              "id": "LOOT_WoodenBranch_A_Knife",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8257
+            },
+            "Dagger": {
+              "id": "LOOT_WoodenBranch_A_Dagger",
+              "file": ".pak-work/audit-current/dos2-Patch3/Public/Shared/Stats/Generated/ItemCombos.txt",
+              "line": 8239
+            }
+          }
+        }
+      ],
+      "merged_duplicates": [
+        {
+          "removed": "Mikstury-i-jedzenie/COLD-FRIES:Knife+Potato",
+          "kept": "Mikstury-i-jedzenie/COLD-FRIES:Dagger+Potato"
+        },
+        {
+          "removed": "Bron/KNIFE-ON-A-STICK:Short Stick+Knife+Rope",
+          "kept": "Bron/KNIFE-ON-A-STICK:Short Stick+Dagger+Rope"
+        },
+        {
+          "removed": "Skladniki/LEATHER-SCRAPS:Knife+Animal Hide",
+          "kept": "Skladniki/LEATHER-SCRAPS:Dagger+Animal Hide"
+        },
+        {
+          "removed": "Bron/PRIMITIVE-HARPOON:Long Branch+Knife+Rope",
+          "kept": "Bron/PRIMITIVE-HARPOON:Long Branch+Dagger+Rope"
+        },
+        {
+          "removed": "Mikstury-i-jedzenie/COLD-FRIES:Potato+NÓŻ LUB SZTYLET",
+          "kept": "Mikstury-i-jedzenie/COLD-FRIES:Dagger+Potato"
+        }
+      ],
+      "saved_tools": [
+        "Dagger",
+        "Knife"
+      ]
+    },
+    "dos2-overhaul": {
+      "changes": [
+        {
+          "recipe": "Skladniki/SHARP-PIECE-OF-METAL:Scrapper's Pickaxe+Knife, Dagger",
+          "action": "canonical_existing_group_spelling"
+        }
+      ],
+      "merged_duplicates": [],
+      "saved_tools": []
+    }
+  }
+}

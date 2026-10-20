@@ -2,12 +2,14 @@
   "slug": "Skladniki/BLANK-SUMMONING-SCROLL",
   "title": "Blank Summoning Scroll",
   "tags": [
-    "Typ/Magia",
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Przyzywanie"
+    "Cechy/Przyzywanie",
+    "Cechy",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

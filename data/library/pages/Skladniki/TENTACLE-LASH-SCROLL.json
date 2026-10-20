@@ -3,11 +3,11 @@
   "title": "Tentacle Lash Scroll",
   "titlePl": "Zwój Uderzenia Macką",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Life-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

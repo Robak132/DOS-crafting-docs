@@ -2,10 +2,11 @@
   "slug": "Skladniki/INKPOT",
   "title": "Inkpot",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Wyposazenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,10 +3,11 @@
   "title": "Wooden Crate",
   "titlePl": "Drewniana skrzynia",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

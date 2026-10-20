@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Adept-Air-Skill-Scroll"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

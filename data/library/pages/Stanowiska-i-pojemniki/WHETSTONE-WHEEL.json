@@ -3,10 +3,9 @@
   "title": "Whetstone Wheel",
   "titlePl": "Koło do ostrzenia",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

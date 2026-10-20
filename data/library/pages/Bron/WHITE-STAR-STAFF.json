@@ -3,9 +3,9 @@
   "title": "White Star Staff",
   "tags": [
     "Typ/Bron",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

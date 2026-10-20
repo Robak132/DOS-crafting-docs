@@ -3,11 +3,11 @@
   "title": "Blood Sucker Scroll",
   "titlePl": "Zwój Krwiopijcy",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Shadow-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

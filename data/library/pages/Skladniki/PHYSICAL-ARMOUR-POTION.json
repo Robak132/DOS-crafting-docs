@@ -3,11 +3,13 @@
   "title": "Physical Armour Potion",
   "titlePl": "Mikstura Pancerza Fizycznego",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Pancerz-fizyczny"
+    "Cechy/Pancerz-fizyczny",
+    "Cechy",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

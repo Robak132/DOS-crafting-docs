@@ -3,12 +3,15 @@
   "title": "Medium Fire Resistance Potion",
   "titlePl": "Średnia mikstura odporności na ogień",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
     "DOS2",
-    "Cechy/Odpornosc-na-ogien"
+    "Typ/Mikstury-i-jedzenie",
+    "DOS1",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

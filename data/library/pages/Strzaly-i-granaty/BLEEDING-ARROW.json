@@ -4,9 +4,9 @@
   "titlePl": "Strzała wykrwawiająca",
   "tags": [
     "Typ/Strzaly-i-granaty",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

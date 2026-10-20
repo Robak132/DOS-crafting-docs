@@ -3,12 +3,15 @@
   "title": "Minor Strength Potion",
   "titlePl": "Mała mikstura Siły",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
     "DOS2",
-    "Cechy/Sila"
+    "Cechy",
+    "Cechy/Siła",
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

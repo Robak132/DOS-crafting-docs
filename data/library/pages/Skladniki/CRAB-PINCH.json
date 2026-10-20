@@ -3,9 +3,9 @@
   "title": "Crab's Pinch",
   "tags": [
     "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

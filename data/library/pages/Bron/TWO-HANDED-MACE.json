@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Bron",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -1,12 +1,14 @@
 {
   "slug": "Magia/EARTH-TWO-HANDED-AXE",
-  "title": "Earth Two Handed Axe",
+  "title": "2H Earth Axe",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

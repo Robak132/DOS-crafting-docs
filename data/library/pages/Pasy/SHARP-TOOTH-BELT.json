@@ -5,9 +5,9 @@
   "tags": [
     "Typ/Pasy",
     "DOS1",
-    "Charyzma"
+    "Cechy/Charyzma",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

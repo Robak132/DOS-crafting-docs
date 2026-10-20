@@ -3,10 +3,11 @@
   "title": "Red Fabric Dye",
   "titlePl": "Czerwona farba do tkanin",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Barwniki",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

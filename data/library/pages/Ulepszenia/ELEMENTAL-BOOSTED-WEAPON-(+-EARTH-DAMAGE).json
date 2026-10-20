@@ -4,10 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Cechy/Obrazenia-ziemi",
-    "Weapon"
+    "Cechy",
+    "Cechy/Obrażenia-ziemi",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

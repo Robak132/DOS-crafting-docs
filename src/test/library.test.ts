@@ -14,7 +14,6 @@ async function fixture() {
     title: "An item",
     titlePl: "Przedmiot",
     tags: ["Typ/Materialy"],
-    aliases: ["old-item"],
     itemPage: true,
     categoryPage: false,
     html: "<p>Source note</p>",
@@ -39,7 +38,7 @@ async function fixture() {
   return { directory, page, recipe }
 }
 
-test("JSON library reads structured recipes, page metadata, aliases and source notes directly", async () => {
+test("JSON library reads structured recipes, page metadata and source notes directly", async () => {
   const { directory, page, recipe } = await fixture()
   try {
     const library = await loadLibrary(directory)
@@ -94,7 +93,7 @@ test("item metadata omits unused HTML and every active library link resolves", a
     "receptury",
     "DOS2",
     "dos2-crafting-overhaul",
-    ...library.pages.flatMap((page) => [page.slug, ...page.aliases]),
+    ...library.pages.map((page) => page.slug),
   ])
   for (const page of library.pages) {
     const raw = JSON.parse(await fs.readFile(path.join("data/library/pages", `${page.slug}.json`), "utf8"))
@@ -115,7 +114,7 @@ test("item metadata omits unused HTML and every active library link resolves", a
   }
 })
 
-test("merged mushroom pages retain old URLs and their game names have inventory icons", async () => {
+test("mushroom pages use game names and inventory icons", async () => {
   const library = await loadLibrary()
   const icons = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
   const { resolveItemIcon } = await import("../main/domain/itemIcons")
@@ -126,7 +125,6 @@ test("merged mushroom pages retain old URLs and their game names have inventory 
   ]) {
     const page = library.pages.find((page) => page.slug === `Skladniki/${slug}`)
     assert.equal(page?.title, name)
-    assert.ok(page?.aliases.includes(`Skladniki/MUSHROOM-${slug}`))
     assert.ok(!library.pages.some((page) => page.title === `Mushroom ${name}`))
     const references = library.sources["dos2-overhaul"].flatMap((row) => [row.result, ...row.ingredients])
     const item = references.find((item) => item.slug === page?.slug)
@@ -146,4 +144,194 @@ test("item metadata can omit HTML while a content page must provide it", async (
   } finally {
     await fs.rm(directory, { recursive: true, force: true })
   }
+})
+
+test("the White Dye URL uses the actual White Fabric Dye name and inventory icon", async () => {
+  const library = await loadLibrary()
+  const page = library.pages.find((page) => page.slug === "Barwniki/WHITE-DYE")
+  assert.equal(page?.title, "White Fabric Dye")
+  const recipe = library.sources["dos2-overhaul"].find((row) => row.result.slug === page?.slug)
+  assert.equal(recipe?.result.name, "White Fabric Dye")
+  const sources = JSON.parse(await fs.readFile("data/itemIcons.provenance.json", "utf8"))
+  assert.equal(sources["dos2-overhaul"].whitefabricdye?.icon, "Item_TOOL_Dye_White")
+  const icons = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
+  assert.ok(icons["dos2-overhaul"].whitefabricdye?.endsWith("/white-fabric-dye.webp"))
+})
+
+test("Branch bow and spear recipes belong to DOS1 and use the DOS1 branch icon", async () => {
+  const library = await loadLibrary()
+  const ids = ["Bron/BOW:Bowstring+Branch", "Bron/SPEAR:Dagger+Branch"]
+  for (const id of ids) {
+    assert.ok(library.sources.dos1.some((row) => row.id === id))
+    assert.ok(!library.sources["dos2-overhaul"].some((row) => row.id === id))
+  }
+  assert.ok(
+    !library.sources["dos2-overhaul"].some((row) =>
+      [row.result, ...row.ingredients].some((item) => item.slug === "Skladniki/BRANCH"),
+    ),
+  )
+  const sources = JSON.parse(await fs.readFile("data/itemIcons.provenance.json", "utf8"))
+  assert.equal(sources.dos1.branch?.icon, "Item_WPN_Branch_A")
+  assert.equal(sources.dos1.branch?.template, "568ab219-039b-4200-a24b-d29c9500fe4f")
+})
+
+test("Big Tongs Roped Together retain both DOS2 recipes and use the game recipe preview icon", async () => {
+  const library = await loadLibrary()
+  const slug = "Bron/BIG-TONGS-ROPED-TOGETHER"
+  const recipes = library.sources.dos2.filter((row) => row.result.slug === slug)
+  assert.equal(recipes.length, 2)
+  assert.ok(recipes.every((row) => row.result.name === "Big Tongs Roped Together"))
+  assert.deepEqual(recipes.map((row) => row.ingredients.map((item) => item.name).sort()).sort(), [
+    ["Cloth Scraps", "Tongs"],
+    ["Leather Scraps", "Tongs"],
+  ])
+  const sources = JSON.parse(await fs.readFile("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"]) {
+    assert.equal(sources[game].bigtongsropedtogether?.icon, "Item_WPN_Common_Mace_2H_B")
+    assert.equal(sources[game].bigtongsropedtogether?.stats, "WPN_CraftedMace_2H_B")
+  }
+})
+
+test("DOS1 crafting-level recipes stay out of Overhaul and mod silver arrowheads yield four", async () => {
+  const { sources } = await loadLibrary()
+  assert.ok(sources["dos2-overhaul"].every((row) => !/\b(?:Crafting|Blacksmithing) [1-5]\b/.test(row.requirements)))
+  const dagger = sources.dos1.find((row) => row.id === "Narzedzia/DAGGER:Knife+Anvil")
+  assert.equal(dagger?.requirements, "Blacksmithing 1")
+  assert.ok(!sources.dos1.some((row) => row.source === "Crafting Overhaul"))
+  const silver = sources["dos2-overhaul"].find(
+    (row) => row.id === "Strzaly-i-granaty/SILVER-ARROWHEAD:Scrapper's Pickaxe+Silver Ore",
+  )
+  assert.equal(silver?.result.quantity, "x4")
+})
+
+test("audited DOS1 requirements and flask/chicken ingredients follow game definitions", async () => {
+  const { sources } = await loadLibrary()
+  for (const [name, ingredients, requirement] of [
+    ["Explosive Arrowhead", ["Fire Arrowhead", "Cup of Oil"], "Crafting 2"],
+    ["Large Iron Bar", ["Iron Bar", "Iron Bar"], ""],
+    ["Lucky Rabbit Paw Belt", ["Rope", "Magical Lucky Rabbit Paw"], "Crafting 1"],
+    ["Poorman's Best", ["Barrel", "Rope"], "Crafting 1"],
+    ["Slowdown Arrow", ["Arrow Shaft", "Slowdown Arrowhead"], "Crafting 1"],
+    ["Slowdown Arrowhead", ["Arrowhead", "Cup of Oil"], "Crafting 2"],
+  ] as const) {
+    const row = sources.dos1.find(
+      (r) =>
+        r.result.name === name &&
+        r.ingredients
+          .map((i) => i.name)
+          .sort()
+          .join("|") === [...ingredients].sort().join("|"),
+    )
+    assert.ok(row, name)
+    assert.equal(row.requirements, requirement, name)
+  }
+  for (const name of ["Chicken Amulet", "Chicken Belt"])
+    assert.ok(
+      sources.dos1.find((r) => r.result.name === name)?.ingredients.some((i) => i.name === "Magical Chicken foot"),
+    )
+  const magicalFoot = sources.dos1.find((r) => r.result.name === "Magical Chicken foot")
+  assert.ok(magicalFoot?.ingredients.some((i) => i.name === "Pixie Dust"))
+  assert.equal(magicalFoot?.result.slug, "Skladniki/MAGICAL-CHICKEN-FOOT")
+  for (const row of sources.dos1.filter((r) => ["Oil Flask", "Poison Flask"].includes(r.result.name))) {
+    assert.ok(row.ingredients.some((i) => i.name === "Empty Flask"))
+    assert.ok(!row.ingredients.some((i) => i.name === "Empty Bottle"))
+  }
+})
+
+test("audited DOS2 and Workshop recipes retain correct modes, stations, quantities and outputs", async () => {
+  const { sources, pages } = await loadLibrary()
+  assert.ok(sources.dos2.every((r) => !r.requirements))
+  assert.ok(
+    !sources.dos2.some(
+      (r) => r.result.name === "Charming Arrowhead" && r.ingredients.some((i) => i.name === "Drudanae"),
+    ),
+  )
+  assert.ok(
+    sources.dos1.some(
+      (r) => r.result.name === "Charming Arrowhead" && r.ingredients.some((i) => i.name === "Drudenae"),
+    ),
+  )
+  for (const name of ["Cluster Grenade", "Thunderbolt Grenade", "Static Cloud Arrow"])
+    assert.ok(
+      sources.dos2.some((r) => r.result.name === name),
+      `Preserve valid DOS2 ${name}`,
+    )
+  assert.ok(sources.dos1.some((r) => r.result.name === "Taser Grenade" && r.requirements === "Crafting 4"))
+  const hair = sources.dos2.find(
+    (r) =>
+      r.result.name === "Thread" &&
+      r.ingredients.length === 2 &&
+      r.ingredients[0].name === "Hair" &&
+      r.ingredients[1].name !== "Hair",
+  )
+  assert.equal(hair?.ingredients[1].name, "Spinning Wheel")
+  assert.ok(
+    sources.dos2
+      .find((r) => r.result.name === "Shocking Touch Scroll")
+      ?.ingredients.some((i) => i.selectorTag === "EssenceAir"),
+  )
+  assert.ok(
+    !sources.dos2.find((r) => r.result.name === "Tainted Stew")?.ingredients.some((i) => i.name === "Cooking station"),
+  )
+  const cloth = sources["dos2-overhaul"].find(
+    (r) =>
+      r.result.name === "Cloth Scraps" && r.ingredients.map((i) => i.name).join("|") === "Thread|Thread|Spinning Wheel",
+  )
+  assert.equal(cloth?.result.quantity, "x2")
+  const scythe = sources["dos2-overhaul"].find(
+    (r) => r.ingredients.some((i) => i.name === "Shrieker Soul") && r.ingredients.some((i) => i.name === "Long Branch"),
+  )
+  assert.equal(scythe?.result.name, "Shrieker's Scythe")
+  assert.equal(pages.find((p) => p.slug === scythe?.result.slug)?.title, "Shrieker's Scythe")
+  assert.ok(sources["dos2-overhaul"].some((r) => r.result.name === "Crafter's Anvil"))
+  assert.ok(sources["dos2-overhaul"].some((r) => r.result.name === "Crafted Barricade"))
+  const icons = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
+  assert.ok(icons.dos1.magicalchickenfoot)
+  assert.ok(icons["dos2-overhaul"].shriekersscythe)
+})
+
+test("Workshop requires its crafted workbench and does not consume its own crafted result", async () => {
+  const { sources } = await loadLibrary()
+  for (const row of sources["dos2-overhaul"].filter((r) => r.ingredients.some((i) => i.name === "Workbench")))
+    assert.ok(
+      row.ingredients.some((i) => i.name === "Scrapper's Pickaxe"),
+      row.id,
+    )
+  for (const name of ["Nails", "Needle", "Ghost Cape"])
+    assert.ok(
+      sources["dos2-overhaul"]
+        .find((r) => r.result.name === name)
+        ?.ingredients.some((i) => i.name === "Crafter's Workbench"),
+      name,
+    )
+  const magic = sources["dos2-overhaul"].find((r) => r.result.name === "Magic Needle & Thread")!
+  assert.equal(magic.ingredients.length, 2)
+  assert.ok(!magic.ingredients.some((i) => i.name === magic.result.name))
+  const cursed = sources["dos2-overhaul"].find((r) => r.result.name === "Cursed Frost Grenade")!
+  assert.ok(cursed.ingredients.some((i) => i.name === "Frost Grenade"))
+  assert.ok(!cursed.ingredients.some((i) => i.name === "Cursed Frost Grenade"))
+})
+
+test("DOS1 crafted quality names and scripted DOS2 interactions follow game rules", async () => {
+  const { sources } = await loadLibrary()
+  for (const [name, level] of [
+    ["Homemade Shortbow", "Crafting 1"],
+    ["Superior Longbow", "Crafting 5"],
+    ["Superior Spear", "Crafting 5"],
+    ["Superior Arbalest", "Crafting 5"],
+  ])
+    assert.ok(
+      sources.dos1.some((r) => r.result.name === name && r.requirements === level),
+      name,
+    )
+  assert.ok(!sources.dos2.some((r) => r.ingredients.length === 1 && r.ingredients[0].name === "Dreamer Pipe"))
+  assert.ok(sources.dos2.some((r) => r.result.name === "Alertness Herbmix" && r.ingredients.length === 2))
+  const statue = sources.dos2.find((r) => r.result.name === "Curious Angelic Statue")!
+  assert.deepEqual(
+    new Set(statue.ingredients.map((i) => i.name)),
+    new Set(["Broken Angelic Statue", "Head of Angelic Statue"]),
+  )
+  assert.ok(!sources.dos2.some((r) => r.result.name === "Head of Angelic Statue"))
+  for (const row of sources.dos2.filter((r) => r.result.name === "Glass of Wine"))
+    assert.ok(row.ingredients.some((i) => i.name === "Empty Cup"))
 })

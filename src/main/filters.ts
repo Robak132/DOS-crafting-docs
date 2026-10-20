@@ -16,6 +16,7 @@ export type Filters = {
   scope: "result" | "ingredient"
   selectors: string[]
   query: string
+  group: string | null
 }
 export const emptyFilters = (): Filters => ({
   include: [],
@@ -26,6 +27,7 @@ export const emptyFilters = (): Filters => ({
   scope: "result",
   selectors: [],
   query: "",
+  group: null,
 })
 export function restoreFilters(game: Game, search = ""): Filters {
   let stored = emptyFilters()
@@ -36,6 +38,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
   }
   const params = new URLSearchParams(search)
   const fields = [
+    "view",
     "tag",
     "include",
     "exclude",
@@ -46,6 +49,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     "craftingMax",
     "selector",
     "as",
+    "group",
   ]
   if (fields.some((key) => params.has(key))) {
     stored = emptyFilters()
@@ -55,6 +59,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     stored.requirementsExclude = (params.get("requirementsExclude") ?? "").split(",").filter(Boolean)
     stored.selectors = (params.get("selector") ?? "").split(",").filter(Boolean)
     stored.query = params.get("q") ?? ""
+    stored.group = params.get("group")
     stored.scope = params.get("as") === "ingredient" ? "ingredient" : "result"
     const max = Number(params.get("craftingMax"))
     stored.craftingMax = Number.isInteger(max) && max >= 1 && max <= 5 ? max : null
@@ -87,6 +92,7 @@ export function filtersToSearch(filters: Filters, view: string): string {
   for (const field of ["include", "exclude", "requirements", "requirementsExclude"] as const) {
     if (filters[field].length) params.set(field, filters[field].join(","))
   }
+  if (filters.group) params.set("group", filters.group)
   if (filters.query) params.set("q", filters.query)
   if (filters.scope !== "result") params.set("as", filters.scope)
   if (filters.selectors.length) params.set("selector", filters.selectors.join(","))

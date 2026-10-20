@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "Glove-Armor"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

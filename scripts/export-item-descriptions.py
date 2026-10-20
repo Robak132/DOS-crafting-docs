@@ -16,7 +16,90 @@ helpers = runpy.run_path(str(ROOT / 'scripts/export-item-icons.py'))
 
 
 def plain(value):
-    return html.unescape(re.sub(r'<[^>]+>', '', value)).strip()
+    value = html.unescape(value)
+    value = re.sub(r'<br\s*/?>', '\n', value, flags=re.I)
+    return re.sub(r'<[^>]+>', '', value).strip()
+
+
+def collect_descriptions(templates, strings, translations, provenance=None, stats=None):
+    """Use inventory names first, after removing game rich-text markup."""
+    def inherit(template, seen=None):
+        seen = set() if seen is None else seen
+        parent = template.get('ParentTemplateId')
+        if parent in templates and parent not in seen:
+            seen.add(parent)
+            resolved = {**inherit(templates[parent], seen), **{k: v for k, v in template.items() if v}}
+            for field in ['DisplayName', 'Description']:
+                if template.get(field) and not template.get(field + 'Handle'):
+                    resolved.pop(field + 'Handle', None)
+            return resolved
+        return template
+
+    provenance = provenance or {}
+    stats = stats or {}
+    def root_for(stat, seen=None):
+        seen = set() if seen is None else seen
+        if stat in seen:
+            return None
+        seen.add(stat)
+        entry = stats.get(stat, {})
+        return entry.get('fields', {}).get('RootTemplate') or root_for(entry.get('parent'), seen)
+    primary, fallback = defaultdict(set), defaultdict(set)
+    identities = {field: defaultdict(set) for field in ['template', 'stats', 'icon']}
+    for template in templates.values():
+        item = inherit(template)
+        if item.get('Type', 'item') != 'item':
+            continue
+        english = plain(item.get('Description') or strings.get(item.get('DescriptionHandle'), ''))
+        if not english:
+            continue
+        polish = plain(translations.get(item.get('DescriptionHandle'), ''))
+        candidate = (english, polish, template.get('MapKey', ''), item.get('Stats', ''), item.get('Icon', ''))
+        for field, index in [('template', 2), ('stats', 3), ('icon', 4)]:
+            if candidate[index]:
+                identities[field][candidate[index]].add(candidate)
+        display = item.get('DisplayName') or strings.get(item.get('DisplayNameHandle'), '')
+        display_key = helpers['key'](plain(display)) if display else ''
+        for name, target in [(display, primary), (strings.get(item.get('Stats')), fallback), (strings.get(item.get('Name')), fallback)]:
+            if name:
+                normalized = helpers['key'](plain(name))
+                # Stats labels can name a different item (e.g. Phase Capacitor
+                # retains Eternal Artefact's Stats label).
+                if normalized and (target is primary or not display_key or normalized == display_key):
+                    target[normalized].add(candidate)
+    output = {}
+    for name in sorted(primary.keys() | fallback.keys() | provenance.keys()):
+        candidates = primary.get(name, fallback.get(name, set()))
+        if not candidates or len({candidate[0] for candidate in candidates}) > 1:
+            evidence = provenance.get(name, {})
+            pool = primary.get(name, set()) | fallback.get(name, set())
+            if not pool:
+                for field in ['template', 'stats', 'icon']:
+                    if evidence.get(field):
+                        pool = identities[field].get(evidence[field], set())
+                        if pool:
+                            break
+            verified = False
+            for field, index in [('template', 2), ('stats', 3), ('icon', 4)]:
+                if evidence.get(field):
+                    matching = {candidate for candidate in pool if candidate[index] == evidence[field]}
+                    if matching:
+                        pool = matching
+                        verified = True
+            stat_ids = {evidence['stats']} if evidence.get('stats') else {candidate[3] for candidate in pool if candidate[3]}
+            if len(stat_ids) == 1:
+                root = root_for(next(iter(stat_ids)))
+                canonical = {candidate for candidate in pool if root and candidate[2] == root}
+                if canonical:
+                    pool = canonical
+                    verified = True
+            if verified:
+                candidates = pool
+        english = {candidate[0] for candidate in candidates}
+        polish = {candidate[1] for candidate in candidates if candidate[1]}
+        if len(english) == 1:
+            output[name] = {'en': next(iter(english)), **({'pl': next(iter(polish))} if len(polish) == 1 else {})}
+    return output
 
 
 def main():
@@ -26,32 +109,22 @@ def main():
     translations = {}
     for game, file in zip(['dos1', 'dos2'], sys.argv[2:]):
         translations[game] = {e.get('contentuid'): ''.join(e.itertext()) for e in ET.parse(file).iter('content')}
+    provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text())
     resources = {game: helpers['resources'](source / game) for game in ['dos1', 'dos2', 'overhaul']}
     output = {}
     for game in ['dos1', 'dos2', 'dos2-overhaul']:
         layers = ['dos1'] if game == 'dos1' else ['dos2', 'overhaul'] if game == 'dos2-overhaul' else ['dos2']
-        templates, strings = {}, {}
+        templates, strings, stats = {}, {}, {}
         for layer in layers:
             _, tt, ss = resources[layer]
             templates.update(tt); strings.update(ss)
-        def inherit(a, seen=None):
-            seen = set() if seen is None else seen
-            parent = a.get('ParentTemplateId')
-            if parent in templates and parent not in seen:
-                seen.add(parent)
-                return {**inherit(templates[parent], seen), **{k: v for k, v in a.items() if v}}
-            return a
-        candidates = defaultdict(set)
-        for template in templates.values():
-            a = inherit(template)
-            if a.get('Type', 'item') != 'item' or not a.get('Description'):
-                continue
-            english = plain(a['Description'])
-            polish = plain(translations['dos1' if game == 'dos1' else 'dos2'].get(a.get('DescriptionHandle'), ''))
-            for name in [a.get('DisplayName'), strings.get(a.get('Stats')), strings.get(a.get('Name'))]:
-                if name and english:
-                    candidates[helpers['key'](name)].add((english, polish))
-        output[game] = {key: {'en': next(iter(values))[0], **({'pl': next(iter(values))[1]} if next(iter(values))[1] else {})} for key, values in sorted(candidates.items()) if len(values) == 1}
+            stats.update(helpers['stat_entries'](source / layer))
+            if layer == 'dos2':
+                current = ROOT / '.pak-work/audit-current'
+                for directory in [current / 'dos2', *sorted(current.glob('dos2-Patch*'), key=lambda p: int(re.search(r'Patch(\d+)', p.name)[1]))]:
+                    for module in sorted((directory / 'Public').glob('*'), key=lambda p: p.name != 'Shared'):
+                        stats.update(helpers['stat_entries'](module))
+        output[game] = collect_descriptions(templates, strings, translations['dos1' if game == 'dos1' else 'dos2'], provenance.get(game, {}), stats)
         print(game, len(output[game]), 'descriptions')
     (ROOT / 'data/itemDescriptions.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
 

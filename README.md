@@ -46,7 +46,7 @@ VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 
 ## Dane i architektura
 
-- `data/library/pages/` — metadane przedmiotów i kategorii w JSON, aliasy oraz HTML stron informacyjnych.
+- `data/library/pages/` — metadane przedmiotów i kategorii w JSON oraz HTML stron informacyjnych.
 - `data/library/recipes/` — strukturalne receptury DOS1, DOS2 DE oraz dodatki Crafting Overhaul.
 - `data/recipeTagHierarchy.json` i `data/tagLabels.json` — hierarchia i nazwy tagów.
 - `data/` — zapisane słowniki lokalizacji, niezależne od lokalnej instalacji gry.
@@ -77,7 +77,7 @@ recepturami; różne warianty mogą mieć historycznie ten sam identyfikator.
 
 Plik strony ma ścieżkę zgodną z adresem, np.
 `data/library/pages/Skladniki/LEATHER-SCRAPS.json`. Pole `slug` musi odpowiadać
-tej ścieżce bez rozszerzenia. `title`, `titlePl`, `tags`, `aliases`, `itemPage`
+tej ścieżce bez rozszerzenia. `title`, `titlePl`, `tags`, `itemPage`
 i `categoryPage` opisują stronę. Strony przedmiotów zawierają tylko metadane — receptury, efekty i opisy
 pochodzą z danych strukturalnych. Pole `html` przechowuje treść stron kategorii
 i informacyjnych; generator sanitizuje HTML przed publikacją. Odnośniki wewnętrzne
@@ -116,6 +116,9 @@ Obrazki są ładowane leniwie i mają zarezerwowane miejsce w tabeli.
 - `data/itemIcons.report.json` — pokrycie katalogu oraz lista niedopasowanych nazw.
 
 Eksport łączy nazwy szablonów, lokalizacje wyników receptur oraz identyfikatory Stats.
+Odczytuje także `PreviewTooltip` i `PreviewIcon` z wyników receptur gry,
+np. dla broni Big Tongs Roped Together. Odczytuje również oficjalne ikony
+i przetłumaczone etykiety z `Stats/ItemComboPreviews.lsx`, m.in. dla pustego kubka.
 Usuwa znaczniki koloru z nazw, dzięki czemu rozpoznaje również barwniki moda.
 Przypisania ikon są zapisane bezpośrednio w `data/itemIcons.json`, a ich
 pochodzenie w pliku provenance. Eksport zachowuje zweryfikowane przypisania
@@ -130,9 +133,13 @@ nie są wymagane w GitHub Actions.
 
 Aby odtworzyć eksport, przygotuj katalog roboczy z podkatalogami `dos1/`, `dos2/`
 i `overhaul/`. Za pomocą LSLib wyodrębnij z odpowiednich archiwów `Icons.pak`
-i `Main.pak` (DOS1), `Shared.pak` (DOS2 Definitive Edition) oraz
+i `Main.pak` (DOS1), `Shared.pak` i `Origins.pak` (DOS2 Definitive Edition) oraz
 `Crafting_Overhaul.pak` pliki GUI, tekstury atlasów, RootTemplates i lokalizacje
-Stats i ItemCombinations oraz pliki `Stats/Generated/` (dane przedmiotów i receptur).
+Stats i ItemCombinations, pliki `Stats/Generated/` (dane przedmiotów i receptur)
+oraz `Stats/ItemComboPreviews.lsx`.
+Dla DOS1 dodaj również pliki `DEFAULT.xml`, `ROOTTEMPLATES.xml` oraz
+`LOCALIZATION.xml` z `Localization/Reference.pak`, zachowując katalog
+`Localization/Reference/`.
 Dla DOS2 DE dodaj również wyodrębniony `Localization/English/english.xml`
 do katalogu zasobów `dos2/`; końcowe tłumaczenia nazw mają pierwszeństwo
 wobec nazw roboczych w szablonach.
@@ -182,3 +189,20 @@ wykonuje 120 ruchów wskaźnika i sprawdza, że nie renderują one ponownie apli
 tabel ani komponentu tooltipa. Weryfikuje również zmianę pozycji i przejście na
 inny przedmiot oraz podaje czas pierwszego wyświetlenia i obsługi ruchu myszy.
 Fixture służy do testowania w serwerze deweloperskim; nie jest wejściem buildu produkcyjnego.
+
+## Grupy składników
+
+Selektory (`#Fish`, `#Essence` itd.) i listy alternatywnych składników z co najmniej
+czterema dopasowanymi przedmiotami mają fioletową ramkę oraz licznik. Kliknięcie
+otwiera listę członków grupy w bieżącym katalogu; uwzględnia też składniki bez
+własnej receptury. Wybór jest zapisany w parametrze URL `group`.
+
+Grupy nie wyświetlają ikon. Obwódka i liczba członków odróżniają je od pojedynczych przedmiotów.
+Grupy z 1–3 rozpoznanymi członkami są rozwijane podczas generowania danych
+w osobne warianty receptury. Przy kilku małych grupach powstają wszystkie
+kombinacje, z zachowaniem ilości, wymagań i uwag.
+
+Kategorie craftingu pochodzące z gry są zapisane w polu `craftingCategories`
+przedmiotów w źródłowych JSON-ach receptur. Przy odświeżaniu zasobów można je
+odtworzyć poleceniem `python3 scripts/export-item-categories.py /sciezka/do/wyodrebnionych-zasobow`.
+GitHub Actions korzysta z zapisanych danych i nie wymaga plików gry ani Pythona.

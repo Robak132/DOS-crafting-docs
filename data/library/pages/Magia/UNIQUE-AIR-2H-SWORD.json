@@ -1,11 +1,12 @@
 {
   "slug": "Magia/UNIQUE-AIR-2H-SWORD",
-  "title": "Unique Air 2H Sword",
+  "title": "Unique 2H Air Sword",
   "tags": [
-    "Typ/Magia",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

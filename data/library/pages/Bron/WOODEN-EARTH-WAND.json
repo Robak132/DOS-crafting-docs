@@ -3,9 +3,9 @@
   "title": "WOODEN EARTH WAND",
   "tags": [
     "Typ/Bron",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

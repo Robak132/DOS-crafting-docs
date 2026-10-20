@@ -3,9 +3,9 @@
   "title": "Strange Cinnamon",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

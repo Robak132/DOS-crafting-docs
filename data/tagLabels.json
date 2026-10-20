@@ -32,10 +32,7 @@
   "Cechy/Dwuręczna": "Broń dwuręczna",
   "Cechy-inne": "Inne",
   "Cechy/Leczenie": "Leczenie",
-  "Charyzma": "Charyzma",
   "DOS1": "DOS1",
-  "Percepcja": "Percepcja",
-  "Zrecznosc": "Zrecznosc",
   "Typ/Magia": "Magia",
   "Typ/Mikstury-i-jedzenie": "Mikstury i jedzenie",
   "Typ/Stanowiska-i-pojemniki": "Stanowiska i pojemniki",
@@ -97,5 +94,8 @@
   "Cechy/Złodziejstwo": "Złodziejstwo",
   "DOS2-CO": "DOS2-CO",
   "Typ/Barwniki": "Barwniki",
-  "Typ/Narzedzia": "Narzędzia"
+  "Typ/Narzedzia": "Narzędzia",
+  "Cechy/Zręczność": "Zręczność",
+  "Cechy/Percepcja": "Percepcja",
+  "Cechy/Charyzma": "Charyzma"
 }

@@ -3,10 +3,11 @@
   "title": "Silver Ore",
   "titlePl": "Ruda srebra",
   "tags": [
-    "Typ/Strzaly-i-granaty",
-    "DOS2-CO"
+    "DOS2-CO",
+    "DOS1",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

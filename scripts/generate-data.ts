@@ -1,3 +1,5 @@
+import { buildItemGroups, expandSmallGroups, isItemGroup } from "../src/main/domain/itemGroups"
+import { itemIconKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
 import sanitizeHtml from "sanitize-html"
@@ -5,8 +7,10 @@ import { resolveItemIcon, type ItemIconMap } from "../src/main/domain/itemIcons"
 import { buildCatalogs } from "../src/main/domain/recipeCatalog"
 import { getItemCraftRoles } from "../src/main/domain/recipeItemRoles"
 import { catalogItems } from "../src/main/domain/recipeView"
-import { getCechySidebarGroups, resetRecipeSources } from "../src/main/domain/recipes"
+import { collectRecipeStats, getCechySidebarGroups, resetRecipeSources } from "../src/main/domain/recipes"
 import { resetLocalisationSources } from "../src/main/domain/itemLocalisation"
+import { localizeItemForCatalog } from "../src/main/domain/recipes"
+import { isPublicPage } from "../src/main/routing"
 import type { PageSummary, CatalogManifest } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
 
@@ -26,13 +30,52 @@ export async function generateData(outputDirectory = generatedDir) {
   await fs.cp("assets/item-icons", path.join(outputDirectory, "data/icons"), { recursive: true })
   for (const game of Object.keys(catalogs) as (keyof typeof catalogs)[]) {
     const data = catalogs[game]
+    // Catalogs share base recipes; each mode resolves its own group membership.
+    data.recipes = data.recipes.map((row) => ({
+      ...row,
+      result: { ...row.result },
+      ingredients: row.ingredients.map((item) => ({ ...item })),
+    }))
     await fs.writeFile(path.join(outputDirectory, `data/descriptions-${game}.json`), JSON.stringify(descriptions[game]))
     for (const row of data.recipes) {
-      for (const item of [row.result, ...row.ingredients]) item.icon = resolveItemIcon(icons, game, item)
+      for (const item of [row.result, ...row.ingredients]) {
+        item.icon = resolveItemIcon(icons, game, item)
+        delete item.groupId
+        delete item.groupSize
+      }
+    }
+    const inventory = (
+      game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
+    ).map((sourceItem) => {
+      const item = localizeItemForCatalog(sourceItem, game)
+      return { ...item, icon: resolveItemIcon(icons, game, item) }
+    })
+    const resolvedGroups = buildItemGroups(data.recipes, 1, inventory)
+    data.recipes = expandSmallGroups(data.recipes, resolvedGroups)
+    const statLabels = new Map(
+      [...data.tags, ...data.requirements, ...data.selectors]
+        .filter((stat) => stat.label)
+        .map((stat) => [stat.tag, stat.label!]),
+    )
+    const stats = collectRecipeStats(data.recipes)
+    for (const field of ["tags", "requirements", "selectors"] as const)
+      for (const stat of stats[field]) stat.label = statLabels.get(stat.tag) ?? stat.label
+    Object.assign(data, stats)
+    data.groups = Object.fromEntries(Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4))
+    for (const row of data.recipes) {
+      for (const item of [row.result, ...row.ingredients]) {
+        const group = data.groups[itemIconKey(item.name)]
+        if (group && isItemGroup(item)) {
+          item.groupId = group.id
+          item.groupSize = group.members.length
+          delete item.icon
+        }
+      }
     }
     await fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data))
   }
-  const pages: PageSummary[] = library.pages.map(({ slug, title, titlePl, tags, itemPage, categoryPage }) => ({
+  const publishedPages = library.pages.filter(isPublicPage)
+  const pages: PageSummary[] = publishedPages.map(({ slug, title, titlePl, tags, itemPage, categoryPage }) => ({
     slug,
     title,
     titlePl,
@@ -40,13 +83,8 @@ export async function generateData(outputDirectory = generatedDir) {
     itemPage,
     categoryPage,
   }))
-  const aliases: Record<string, string> = {}
   await Promise.all(
-    library.pages.map(async ({ aliases: pageAliases, html, ...page }) => {
-      for (const alias of pageAliases) {
-        if (aliases[alias] && aliases[alias] !== page.slug) throw new Error(`Duplicate alias: ${alias}`)
-        aliases[alias] = page.slug
-      }
+    publishedPages.map(async ({ html, ...page }) => {
       const safeHtml = sanitizeHtml(html, {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
         allowedAttributes: { ...sanitizeHtml.defaults.allowedAttributes, img: ["src", "alt"], "*": ["id"] },
@@ -58,7 +96,6 @@ export async function generateData(outputDirectory = generatedDir) {
   )
   const manifest: CatalogManifest = {
     pages,
-    aliases,
     itemRoles: getItemCraftRoles(
       pages,
       Object.values(catalogs).flatMap((data) => data.recipes),

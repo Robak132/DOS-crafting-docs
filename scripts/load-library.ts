@@ -27,6 +27,7 @@ function validItem(item: RecipeItem): boolean {
     typeof item.name === "string" &&
     item.name.trim() &&
     strings(item.tags) &&
+    (item.craftingCategories === undefined || strings(item.craftingCategories)) &&
     (item.slug === undefined || typeof item.slug === "string") &&
     (item.namePl === undefined || typeof item.namePl === "string") &&
     (item.quantity === undefined || typeof item.quantity === "string") &&
@@ -48,7 +49,7 @@ export async function loadLibrary(directory = "data/library") {
       )
       assert.ok(typeof page.title === "string" && page.title.trim(), `Missing title: ${filename}`)
       assert.ok(page.titlePl === undefined || typeof page.titlePl === "string", `Invalid Polish title: ${filename}`)
-      assert.ok(strings(page.tags) && strings(page.aliases), `Invalid tags/aliases: ${filename}`)
+      assert.ok(strings(page.tags), `Invalid tags: ${filename}`)
       assert.ok(
         (typeof page.html === "string" ||
           (page.html === undefined &&
@@ -57,27 +58,37 @@ export async function loadLibrary(directory = "data/library") {
           typeof page.categoryPage === "boolean",
         `Invalid page: ${filename}`,
       )
-      for (const alias of page.aliases) {
-        assert.ok(
-          !alias.startsWith("/") && !alias.split("/").some((part) => !part || part === "." || part === ".."),
-          `Invalid alias: ${filename}`,
-        )
-      }
       return { ...page, html: page.html ?? "" }
     }),
   )
   assert.ok(pages.length > 0, "The JSON library contains no pages")
   const sources = {} as RecipeSources
+  const items = {} as Record<RecipeCatalog, RecipeItem[]>
   for (const game of ["dos1", "dos2", "dos2-overhaul"] as RecipeCatalog[]) {
     const filename = path.join(directory, "recipes", `${game}.json`)
-    const source: { game: RecipeCatalog; recipes: RecipeRow[] } = JSON.parse(await fs.readFile(filename, "utf8"))
+    const source: { game: RecipeCatalog; recipes: RecipeRow[]; items?: RecipeItem[] } = JSON.parse(
+      await fs.readFile(filename, "utf8"),
+    )
     assert.equal(source.game, game, `Wrong game: ${filename}`)
     assert.ok(Array.isArray(source.recipes), `Missing recipes: ${filename}`)
+    assert.ok(
+      source.items === undefined || (Array.isArray(source.items) && source.items.every(validItem)),
+      `Invalid items: ${filename}`,
+    )
+    items[game] = source.items ?? []
     for (const row of source.recipes) {
       assert.ok(typeof row.id === "string" && row.id.trim() && validItem(row.result), `Invalid result: ${filename}`)
       assert.ok(
         Array.isArray(row.ingredients) && row.ingredients.length > 0 && row.ingredients.every(validItem),
         `Invalid ingredients: ${row.id}`,
+      )
+      assert.ok(
+        row.transformsIngredient === undefined ||
+          (Number.isInteger(row.transformsIngredient) &&
+            row.transformsIngredient >= 0 &&
+            row.transformsIngredient < row.ingredients.length &&
+            row.notes.trim().length > 0),
+        `Invalid transformed ingredient: ${row.id}`,
       )
       assert.ok(strings(row.tags), `Invalid recipe tags: ${row.id}`)
       for (const field of ["requirements", "notes", "remarks", "source"] as const)
@@ -85,5 +96,5 @@ export async function loadLibrary(directory = "data/library") {
     }
     sources[game] = source.recipes
   }
-  return { pages, sources }
+  return { pages, sources, items }
 }

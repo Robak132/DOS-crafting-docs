@@ -3,9 +3,10 @@
   "title": "Phoenix Talon",
   "tags": [
     "Typ/Przedmioty-wydarzen",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

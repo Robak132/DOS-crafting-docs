@@ -4,14 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Bladed-Melee-Weapon",
-    "Bow",
-    "Crossbow",
-    "Club",
-    "Staff",
-    "Ulepszenia"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

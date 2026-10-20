@@ -87,3 +87,57 @@ test("corrected game names have icons and raw frog legs retain the ingredient im
     }
   }
 })
+
+test("Definitive Edition story items resolve their displayed names and icons", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"] as const) {
+    const expected = {
+      glowingidolofrebirth: "Item_QUEST_Resurrection_Idol_A",
+      ashenidolofrebirth: "Item_QUEST_Resurrection_Idol_A_Inert",
+      alertnessherbmix: "Item_QUEST_Herbmix_Alertness",
+      bladeoftheswornbreaker: "Item_UNI_WPN_Ataraxians_Scythe_2H_A_Blade",
+    }
+    for (const [name, icon] of Object.entries(expected)) {
+      assert.equal(sources[game][name]?.icon, icon, `${game}: ${name}`)
+    }
+  }
+})
+
+test("Nails use the final localized Stats name and their actual inventory icon", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"] as const) {
+    assert.equal(sources[game].nails?.icon, "Item_TOOL_Nails_A")
+    assert.ok(resolveItemIcon(icons, game, { name: "Nails", namePl: "Gwoździe", tags: [] }))
+  }
+})
+
+test("technical identifiers and abbreviated recipe labels resolve through game names", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"] as const) {
+    assert.equal(sources[game].yarn?.icon, "Item_LOOT_Yarn_A_Wool_A")
+    assert.equal(sources[game].brokenangelicstatue?.icon, "Portrait_PUZ_Statue_Angel_Broken")
+    assert.equal(sources[game].headofangelicstatue?.icon, "Item_PUZ_Statue_Angel_Head")
+    assert.equal(sources[game].trapdisarmingkit?.icon, "Item_TOOL_TrapDisarmToolkit_A")
+  }
+  assert.ok(resolveItemIcon(icons, "dos1", { name: "Large Fire Resistance Potion", tags: [] }))
+  assert.ok(resolveItemIcon(icons, "dos1", { name: "Drudenae", tags: [] }))
+  assert.ok(resolveItemIcon(icons, "dos2-overhaul", { name: "Ink Pot and Quill", tags: [] }))
+})
+
+test("game preview metadata supplies empty cups and named elemental weapon icons", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"]) {
+    assert.equal(sources[game].emptycup?.icon, "Item_CON_Drink_Cup_A_Empty")
+  }
+  const expected = {
+    "2hairaxe": "TwoHandedAxeAir",
+    "2hfiremace": "TwoHandedMaceFire",
+    "2hwatersword": "TwoHandedSwordWater",
+    unique2hairsword: "UniqueSwordAir2H",
+    holyblessedgrenade: "GrenadeBlessedHoly",
+    shriekersoul: "Orb_Shadow",
+  }
+  for (const [name, icon] of Object.entries(expected)) {
+    assert.equal(sources["dos2-overhaul"][name]?.icon, icon, name)
+  }
+})

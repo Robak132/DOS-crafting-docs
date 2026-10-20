@@ -2,12 +2,14 @@
   "slug": "Skladniki/BLANK-POLYMORPH-SCROLL",
   "title": "Blank Polymorph Scroll",
   "tags": [
-    "Typ/Magia",
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "Cechy",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

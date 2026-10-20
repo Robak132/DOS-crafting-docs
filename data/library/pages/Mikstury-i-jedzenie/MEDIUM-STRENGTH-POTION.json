@@ -4,10 +4,12 @@
   "titlePl": "Średnia mikstura Siły",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
+    "DOS1",
     "DOS2-CO",
-    "Cechy/Sila"
+    "Cechy",
+    "Cechy/Siła",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

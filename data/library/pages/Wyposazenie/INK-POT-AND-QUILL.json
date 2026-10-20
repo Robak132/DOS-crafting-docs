@@ -4,9 +4,11 @@
   "titlePl": "Kałamarz i pióro",
   "tags": [
     "Typ/Wyposazenie",
-    "DOS1"
+    "DOS1",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

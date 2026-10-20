@@ -5,9 +5,8 @@
   "tags": [
     "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "One-Handed-Sword"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,9 +3,9 @@
   "title": "MAGIC TUSK",
   "tags": [
     "Typ/Skladniki",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

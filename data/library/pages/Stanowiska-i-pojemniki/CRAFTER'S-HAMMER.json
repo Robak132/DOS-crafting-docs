@@ -2,12 +2,11 @@
   "slug": "Stanowiska-i-pojemniki/CRAFTER'S-HAMMER",
   "title": "Crafter's Hammer",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
-    "Typ/Pancerz",
-    "Typ/Bron",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Narzedzia",
+    "Typ/Bron"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

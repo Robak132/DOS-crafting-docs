@@ -2,13 +2,12 @@
   "slug": "Skladniki/BURNING-HELMET",
   "title": "Burning Helmet",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ/Przedmioty-wydarzen"
+    "Typ/Przedmioty-wydarzen",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Przedmioty-wydarzen/BURNING-HEAD-HELMET"
-  ]
+  "categoryPage": false
 }

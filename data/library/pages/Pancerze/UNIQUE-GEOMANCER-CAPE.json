@@ -2,11 +2,13 @@
   "slug": "Pancerze/UNIQUE-GEOMANCER-CAPE",
   "title": "Unique Geomancer Cape",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Cechy/Geomancja"
+    "Cechy/Geomancja",
+    "Cechy",
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

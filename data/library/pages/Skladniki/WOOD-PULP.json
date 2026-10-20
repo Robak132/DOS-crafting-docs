@@ -5,9 +5,9 @@
   "tags": [
     "Typ/Skladniki",
     "DOS2",
-    "Water-Source"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

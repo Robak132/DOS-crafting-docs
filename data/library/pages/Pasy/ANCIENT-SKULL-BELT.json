@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Pasy",
     "DOS1",
-    "Inteligencja"
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

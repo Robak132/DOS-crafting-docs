@@ -1,12 +1,14 @@
 {
   "slug": "Magia/POISON-TWO-HANDED-SWORD",
-  "title": "Poison Two Handed Sword",
+  "title": "2H Poison Sword",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

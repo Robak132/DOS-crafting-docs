@@ -29,6 +29,7 @@ def attributes(node):
 
 def resources(directory):
     atlases, templates, strings = {}, {}, {}
+    string_handles = {}
     for file in sorted(directory.rglob('*.lsx')):
         if '/GUI/' not in str(file) and '/RootTemplates/' not in str(file) and 'localization' not in str(file).lower():
             continue
@@ -58,10 +59,18 @@ def resources(directory):
                     templates[a['MapKey']] = a
                 if a.get('UUID') and a.get('Content'):
                     strings[a['UUID']] = a['Content']
-    for file in sorted(directory.rglob("english.xml")):
+                    content = node.find("attribute[@id='Content']")
+                    if content is not None and content.get('handle'):
+                        string_handles[a['UUID']] = content.get('handle')
+    localization_files = set(directory.rglob("english.xml")) | {directory / "Localization/Reference" / name for name in ["DEFAULT.xml", "ROOTTEMPLATES.xml", "LOCALIZATION.xml"] if (directory / "Localization/Reference" / name).exists()}
+    for file in sorted(localization_files):
         for entry in ET.parse(file).iter("content"):
             if entry.get("contentuid"):
-                strings[entry.get("contentuid")] = "".join(entry.itertext())
+                value = "".join(entry.itertext()).strip()
+                if value:
+                    strings[entry.get("contentuid")] = value
+    for uuid, handle in string_handles.items():
+        strings[uuid] = strings.get(handle, strings[uuid])
     return atlases, templates, strings
 
 
@@ -155,12 +164,42 @@ def stats_icon_index(atlases, templates, entries, strings):
             target = targets[0]
         else:
             target = stats
-        name = strings.get(stats)
-        icons = resolve(target)
+        preview = entry['fields'].get('PreviewIcon') if entry['kind'] == 'ItemCombinationResult' else None
+        name = strings.get(stats) or (entry['fields'].get('PreviewTooltip') if entry['kind'] == 'ItemCombinationResult' else None)
+        icons = {preview} if preview in atlases else resolve(target)
         if name and len(icons) == 1:
             candidates[key(plain_name(name))].append({'icon': next(iter(icons)), 'stats': target, 'localizationKey': stats})
     names = {name: values[0] for name, values in candidates.items() if len({value['icon'] for value in values}) == 1}
     return names, resolve
+
+
+def combo_preview_index(directories, atlases, strings):
+    candidates = defaultdict(list)
+    for directory in directories:
+        for file in sorted(directory.rglob('ItemComboPreviews.lsx')):
+            for node in ET.parse(file).findall(".//node[@id='Combo']"):
+                fields = attributes(node)
+                tooltip = node.find("attribute[@id='Tooltip']")
+                name = strings.get(tooltip.get('handle'), fields.get('Tooltip')) if tooltip is not None else None
+                icon = fields.get('Icon')
+                if name and icon in atlases:
+                    candidates[key(plain_name(name))].append({
+                        'icon': icon,
+                        'previewSource': file.relative_to(directory).as_posix(),
+                        **{k: fields[k] for k in ['Category', 'CombinationID'] if k in fields},
+                    })
+        for file in sorted(directory.rglob('*ItemComboPreviewData.txt')):
+            text = file.read_text(encoding='utf-8-sig')
+            for block in re.split(r'^new CraftingPreviewData ', text, flags=re.M)[1:]:
+                fields = dict(re.findall(r'^data "([^"]+)" "([^"\r\n]*)"', block, re.M))
+                icon, name = fields.get('Icon'), fields.get('Tooltip')
+                if name and icon in atlases:
+                    candidates[key(plain_name(name))].append({
+                        'icon': icon,
+                        'previewSource': file.relative_to(directory).as_posix(),
+                        **{k: fields[k] for k in ['Category'] if k in fields},
+                    })
+    return {name: values[0] for name, values in candidates.items() if len({v['icon'] for v in values}) == 1}
 
 
 def main():
@@ -196,6 +235,11 @@ def main():
             if label not in names and len(direct[label]) <= 1:
                 names[label] = match['icon']
                 evidence[label] = match
+        previews = combo_preview_index([source / layer for layer in layers], atlases, strings)
+        for label, match in previews.items():
+            if label not in names:
+                names[label] = match['icon']
+                evidence[label] = match
         catalog = json.loads((catalogs / f'catalog-{game}.json').read_text())
         items = {item['name']: item for row in catalog['recipes'] for item in [row['result'], *row['ingredients']] if not item.get('selectorTag')}
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
@@ -214,7 +258,7 @@ def main():
             previous = existing.get(game, {}).get(key(name), {})
             if previous.get('icon') in atlases:
                 icon = previous['icon']
-                evidence[key(name)] = {k: previous[k] for k in ['stats', 'template', 'localizationKey'] if k in previous}
+                evidence[key(name)] = {k: previous[k] for k in ['stats', 'template', 'localizationKey', 'previewSource', 'Category', 'CombinationID'] if k in previous}
             if icon is None:
                 missing.append(name)
                 continue

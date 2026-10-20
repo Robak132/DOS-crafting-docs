@@ -3,10 +3,11 @@
   "title": "Void-Tainted Umber Monkfish",
   "titlePl": "Skażona Pustką żabnica brunatna",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

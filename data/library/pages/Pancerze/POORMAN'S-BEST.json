@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Pancerz",
     "DOS1",
-    "Inicjatywa"
+    "Cechy",
+    "Cechy/Inicjatywa",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

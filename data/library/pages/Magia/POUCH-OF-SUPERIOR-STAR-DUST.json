@@ -3,10 +3,11 @@
   "title": "Pouch Of Superior Star Dust",
   "titlePl": "Sakiewka znakomitego gwiezdnego pyłu",
   "tags": [
-    "Typ/Magia",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

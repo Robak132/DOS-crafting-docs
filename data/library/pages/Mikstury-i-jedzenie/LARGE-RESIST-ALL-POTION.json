@@ -7,9 +7,10 @@
     "DOS2-CO",
     "DOS1",
     "DOS2",
-    "Cechy/Odpornosc-na-wszystko"
+    "Cechy",
+    "Cechy/Odporność-na-wszystko",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

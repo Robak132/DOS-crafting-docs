@@ -2,13 +2,11 @@
   "slug": "Magia/MAGICAL-CLEANSER",
   "title": "Magical Cleanser",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Skladniki/MAGIC-CLEANSER"
-  ]
+  "categoryPage": false
 }

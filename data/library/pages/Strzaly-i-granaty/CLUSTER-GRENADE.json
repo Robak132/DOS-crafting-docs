@@ -3,11 +3,11 @@
   "title": "Cluster Grenade",
   "titlePl": "Granat kasetowy",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "DOS1",
     "DOS2",
-    "Fire-Essence"
+    "Typ/Strzaly-i-granaty",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

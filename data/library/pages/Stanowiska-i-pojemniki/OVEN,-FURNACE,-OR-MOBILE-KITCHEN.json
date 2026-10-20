@@ -4,9 +4,10 @@
   "titlePl": "Piecyk, piec lub kuchnia przenośna",
   "tags": [
     "Typ/Stanowiska-i-pojemniki",
-    "DOS1"
+    "DOS1",
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

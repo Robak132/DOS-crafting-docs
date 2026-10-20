@@ -3,10 +3,11 @@
   "title": "Laser Ray Scroll",
   "titlePl": "Zwój Laserowego Promienia",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

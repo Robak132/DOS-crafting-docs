@@ -3,10 +3,14 @@
   "title": "Dagger",
   "titlePl": "Sztylet",
   "tags": [
+    "DOS1",
+    "DOS2",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
     "Typ/Narzedzia",
-    "DOS1"
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

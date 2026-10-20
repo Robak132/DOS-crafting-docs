@@ -2,11 +2,13 @@
   "slug": "Pancerze/UNIQUE-NECROMANCER-CAPE",
   "title": "Unique Necromancer Cape",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Cechy/Nekromancja"
+    "Cechy/Nekromancja",
+    "Cechy",
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

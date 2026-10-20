@@ -1,11 +1,11 @@
 {
   "slug": "Skladniki/PUZ_STATUE_ANGEL_BROKEN",
-  "title": "PUZ_Statue_Angel_Broken",
+  "title": "Broken Angelic Statue",
   "tags": [
     "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

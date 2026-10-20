@@ -6,14 +6,13 @@
     "DOS2",
     "Cechy/HP",
     "Cechy/Inicjatywa",
-    "Cechy/Celnosc",
     "Cechy/Krytyk",
     "Cechy/Unik",
     "Cechy/Pancerz-magiczny",
-    "Trinket-With-Empty-Rune-Socket",
-    "Small-Or-Medium-Or-Large-Or-Giant-Rune"
+    "Cechy",
+    "Cechy/Celność",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -9,10 +9,12 @@
     "Cechy/Krytyk",
     "Cechy/Unik",
     "Cechy/Pancerz-magiczny",
-    "Trinket-With-Empty-Rune-Socket",
-    "Small-Or-Medium-Or-Large-Or-Giant-Rune-Of-Power"
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Siła",
+    "Cechy/Zwinność",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

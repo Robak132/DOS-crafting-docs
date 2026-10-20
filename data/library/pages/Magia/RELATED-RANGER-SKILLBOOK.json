@@ -2,11 +2,11 @@
   "slug": "Magia/RELATED-RANGER-SKILLBOOK",
   "title": "Related Ranger Skillbook",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Ranger-Scroll"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

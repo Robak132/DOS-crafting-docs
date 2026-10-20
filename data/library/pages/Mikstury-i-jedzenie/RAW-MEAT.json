@@ -3,10 +3,10 @@
   "title": "Raw Meat",
   "titlePl": "Surowe mięso",
   "tags": [
-    "Typ/Jedzenie-i-picie",
-    "DOS1"
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

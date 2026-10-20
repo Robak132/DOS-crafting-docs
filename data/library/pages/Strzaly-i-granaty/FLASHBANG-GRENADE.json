@@ -5,9 +5,9 @@
   "tags": [
     "Typ/Strzaly-i-granaty",
     "DOS1",
-    "Air-Resist-Potion"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

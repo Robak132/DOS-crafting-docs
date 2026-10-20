@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Chest-Gloves-Boots-Or-Sarong"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

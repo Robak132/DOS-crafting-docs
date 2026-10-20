@@ -6,6 +6,10 @@ import { ItemIcon } from "./ItemIcon"
 
 export type ItemDescription = { en: string; pl?: string }
 
+export function itemDescriptionText(description: ItemDescription | undefined, lang: "pl" | "en"): string {
+  return (lang === "pl" && description?.pl?.trim()) || description?.en?.trim() || ""
+}
+
 export function tooltipItemName(item: RecipeItem, lang: "pl" | "en"): string {
   const polish = item.namePl?.trim()
   return lang === "pl" && polish && polish.toLocaleLowerCase() !== item.name.trim().toLocaleLowerCase()
@@ -23,39 +27,37 @@ export function ItemTooltip({
   lang,
   recipes,
   description,
-  descriptionLoading,
   elementRef,
 }: {
   item: RecipeItem
   lang: "pl" | "en"
   recipes: RecipeRow[]
   description?: ItemDescription
-  descriptionLoading?: boolean
   elementRef?: RefObject<HTMLDivElement | null>
 }) {
   const effects = uniqueItemEffects(recipes)
+  const descriptionText = itemDescriptionText(description, lang)
   return (
     <div ref={elementRef} class="item-preview" role="tooltip">
       <strong class="preview-title">
         <ItemIcon icon={item.icon} />
         {tooltipItemName(item, lang)}
       </strong>
-      <section>
-        <h3>Opis</h3>
-        <p>
-          {(lang === "pl" ? description?.pl || description?.en : description?.en) ||
-            (descriptionLoading ? "Wczytywanie opisu…" : "Brak opisu w danych gry.")}
-        </p>
-      </section>
+      {descriptionText && (
+        <section>
+          <h3>Opis</h3>
+          <p>{descriptionText}</p>
+        </section>
+      )}
       {effects.length > 0 && (
         <section>
           <h3>Efekt</h3>
           <p>{effects.join(" · ")}</p>
         </section>
       )}
-      <section>
-        <h3>Wytwarzanie</h3>
-        {recipes.length > 0 ? (
+      {recipes.length > 0 && (
+        <section>
+          <h3>Wytwarzanie</h3>
           <ul class="preview-recipes">
             {recipes.map((recipe) => (
               <li key={recipe.id}>
@@ -65,10 +67,8 @@ export function ItemTooltip({
               </li>
             ))}
           </ul>
-        ) : (
-          <p>Brak receptury wytwarzania w tym trybie gry.</p>
-        )}
-      </section>
+        </section>
+      )}
     </div>
   )
 }

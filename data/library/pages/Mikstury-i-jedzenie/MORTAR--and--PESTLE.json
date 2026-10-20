@@ -2,10 +2,13 @@
   "slug": "Mikstury-i-jedzenie/MORTAR--and--PESTLE",
   "title": "Mortar And Pestle",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2-CO"
+    "DOS2-CO",
+    "DOS1",
+    "DOS2",
+    "Typ",
+    "Typ/Narzedzia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

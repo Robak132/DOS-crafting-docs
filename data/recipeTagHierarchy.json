@@ -106,7 +106,9 @@
         { "tag": "Cechy/Pancerz-magiczny", "label": "Pancerz magiczny", "children": [] },
         { "tag": "Cechy/Inicjatywa", "label": "Inicjatywa", "children": [] },
         { "tag": "Cechy/Ruch", "label": "Ruch", "children": [] },
-        { "tag": "Cechy/Szybkość", "label": "Szybkość", "children": [] }
+        { "tag": "Cechy/Szybkość", "label": "Szybkość", "children": [] },
+        { "tag": "Cechy/Zręczność", "label": "Zręczność", "children": [] },
+        { "tag": "Cechy/Percepcja", "label": "Percepcja", "children": [] }
       ]
     },
     {
@@ -193,7 +195,8 @@
         { "tag": "Cechy/Znawca", "label": "Znawca", "children": [] },
         { "tag": "Cechy/Telekineza", "label": "Telekineza", "children": [] },
         { "tag": "Cechy/Skradanie", "label": "Skradanie", "children": [] },
-        { "tag": "Cechy/Złodziejstwo", "label": "Złodziejstwo", "children": [] }
+        { "tag": "Cechy/Złodziejstwo", "label": "Złodziejstwo", "children": [] },
+        { "tag": "Cechy/Charyzma", "label": "Charyzma", "children": [] }
       ]
     },
     {

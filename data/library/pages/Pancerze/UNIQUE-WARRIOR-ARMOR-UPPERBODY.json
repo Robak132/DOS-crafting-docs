@@ -3,9 +3,9 @@
   "title": "Unique Warrior Armor Upperbody",
   "tags": [
     "Typ/Pancerz",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -2,10 +2,11 @@
   "slug": "Skladniki/DEVIL'S-ADVOCATE",
   "title": "Devil's Advocate",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

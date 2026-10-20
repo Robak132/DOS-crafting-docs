@@ -1,5 +1,6 @@
-import type { ItemDescription } from "./components/ItemTooltip"
+import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
+import { groupItemRows } from "./domain/itemGroups"
 import { itemIconKey } from "./domain/itemIcons"
 import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
@@ -65,18 +66,28 @@ export function App() {
   const manifest = useJson<CatalogManifest>("manifest.json")
   const catalog = useJson<CatalogData>(`catalog-${game}.json`)
   const isCatalog = !route.slug || route.slug === "index" || Boolean(gameForSlug(route.slug))
-  const descriptions = useJson<Record<string, ItemDescription>>(!isCatalog ? `descriptions-${game}.json` : null)
-  const canonicalSlug = manifest.data?.aliases[route.slug] ?? route.slug
-  const detail = useJson<PageDetail>(isCatalog ? null : `pages/${canonicalSlug}.json`)
+  const isItemRoute = Boolean(
+    manifest.data?.pages.some((page) => page.slug === route.slug && page.itemPage && !page.categoryPage),
+  )
+  const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute
+  const descriptions = useJson<Record<string, ItemDescription>>(
+    !isCatalog || view === "items" ? `descriptions-${game}.json` : null,
+  )
+  const detail = useJson<PageDetail>(isItemRoute ? `pages/${route.slug}.json` : null)
   const activeGame = games.find((entry) => entry.id === game)!
   const labels = useMemo(
     () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
     [catalog.data],
   )
-  const filtered = useMemo(
-    () => filterRecipes(catalog.data?.recipes ?? [], filters, labels),
-    [catalog.data, filters, labels],
-  )
+  const filtered = useMemo(() => {
+    const group = filters.group ? catalog.data?.groups?.[filters.group] : undefined
+    const rows = group
+      ? groupItemRows(catalog.data?.recipes ?? [], group)
+      : filters.group
+        ? []
+        : (catalog.data?.recipes ?? [])
+    return filterRecipes(rows, filters, labels)
+  }, [catalog.data, filters, labels])
   const tagGroups = useMemo(
     () => groupRecipeTags(catalog.data?.tags ?? [], manifest.data?.traitGroups ?? []),
     [catalog.data, manifest.data],
@@ -161,8 +172,10 @@ export function App() {
   useEffect(() => {
     document.title = isCatalog
       ? `${activeGame.label} — katalog craftingu`
-      : `${detail.data?.title ?? "Przedmiot"} — Divinity`
-  }, [activeGame.label, detail.data, isCatalog])
+      : unavailablePage
+        ? "Nie znaleziono strony — Divinity"
+        : `${detail.data?.title ?? "Przedmiot"} — Divinity`
+  }, [activeGame.label, detail.data, isCatalog, unavailablePage])
 
   const changeQuery = (value: string, scope: Filters["scope"] = "result") => {
     setQuery(value)
@@ -229,6 +242,7 @@ export function App() {
     ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
     filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
     filters.selectors.length ? `grupa: ${filters.selectors.map((value) => `#${value}`).join(", ")}` : "",
+    filters.group ? `grupa: ${catalog.data?.groups?.[filters.group]?.name ?? filters.group}` : "",
     filters.query ? `${filters.scope === "ingredient" ? "składnik" : "szukaj"}: ${filters.query}` : "",
   ]
     .filter(Boolean)
@@ -242,19 +256,23 @@ export function App() {
     return {
       craft: catalog.data.recipes.filter(
         (row) =>
-          row.result.slug === canonicalSlug ||
+          row.result.slug === route.slug ||
           (parsed.quantities.length > 0 &&
             Boolean(row.result.quantity) &&
             [...itemNameKeys(row.result.name, row.result.namePl)].some((key) => baseKeys.has(key))),
       ),
-      used: catalog.data.recipes.filter((row) => recipeUsesItem(row, canonicalSlug, keys)),
+      used: catalog.data.recipes.filter((row) => recipeUsesItem(row, route.slug, keys)),
     }
-  }, [detail.data, catalog.data, canonicalSlug])
+  }, [detail.data, catalog.data, route.slug])
   const detailName =
     itemRecipes.craft[0]?.result ??
-    catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === canonicalSlug)
+    catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === route.slug)
   const detailDescription =
     descriptions.data?.[itemIconKey(parseItemQuantity(detailName?.name ?? detail.data?.title ?? "").base)]
+
+  const detailDescriptionText = itemDescriptionText(detailDescription, lang)
+  const detailEffects = uniqueItemEffects(itemRecipes.craft)
+  const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
 
   return (
     <div ref={root} class="app-shell" onClick={onClick}>
@@ -382,6 +400,8 @@ export function App() {
             <h1>
               {isCatalog ? (
                 activeGame.label
+              ) : unavailablePage ? (
+                "Nie znaleziono strony"
               ) : (
                 <>
                   <ItemIcon icon={detailName?.icon} />
@@ -449,7 +469,14 @@ export function App() {
               <p class="catalog-note">Przedmioty i receptury z DOS2 Definitive Edition oraz Crafting Overhaul.</p>
             )}
             {view === "items" ? (
-              <ItemTable recipes={filtered} labels={labels} itemHref={itemHref} itemRoles={manifest.data?.itemRoles} />
+              <ItemTable
+                recipes={filtered}
+                labels={labels}
+                itemHref={itemHref}
+                itemRoles={manifest.data?.itemRoles}
+                descriptions={descriptions.data ?? undefined}
+                lang={lang}
+              />
             ) : (
               <RecipeSections recipes={filtered} game={game} labels={labels} roles={manifest.data?.itemRoles} />
             )}
@@ -457,29 +484,19 @@ export function App() {
         )}
         {!isCatalog && catalog.data && (
           <div class="item-detail">
-            {detail.error && (
+            {(unavailablePage || detail.error) && (
               <div role="alert">
                 <h2>Nie znaleziono strony</h2>
                 <p>Sprawdź adres lub wyszukaj przedmiot w katalogu.</p>
               </div>
             )}
-            {!detail.data && !detail.error && <p role="status">Wczytywanie przedmiotu…</p>}
-            {detail.data && (
+            {!unavailablePage && !detail.data && !detail.error && <p role="status">Wczytywanie przedmiotu…</p>}
+            {isItemRoute && detail.data?.itemPage && !detail.data.categoryPage && (
               <>
-                {detail.data.itemPage && (
+                {detail.data.itemPage && detailDescriptionText && (
                   <section class="item-description">
                     <h2>Opis</h2>
-                    {detailDescription ? (
-                      <p>{lang === "pl" ? detailDescription.pl || detailDescription.en : detailDescription.en}</p>
-                    ) : descriptions.error ? (
-                      <p class="muted">Nie udało się wczytać opisu przedmiotu.</p>
-                    ) : !descriptions.data ? (
-                      <p class="muted" role="status">
-                        Wczytywanie opisu…
-                      </p>
-                    ) : (
-                      <p class="muted">Brak opisu w danych gry.</p>
-                    )}
+                    <p>{detailDescriptionText}</p>
                   </section>
                 )}
                 <div class="detail-tags">
@@ -491,60 +508,52 @@ export function App() {
                 </div>
                 {detail.data.itemPage ? (
                   <>
-                    <section>
-                      <h2>Efekt</h2>
-                      {uniqueItemEffects(itemRecipes.craft).length ? (
+                    {detailEffects.length > 0 && (
+                      <section>
+                        <h2>Efekt</h2>
                         <ul>
-                          {uniqueItemEffects(itemRecipes.craft).map((effect) => (
+                          {detailEffects.map((effect) => (
                             <li key={effect}>{effect}</li>
                           ))}
                         </ul>
-                      ) : (
-                        <p class="muted">Brak opisu efektu w danych receptur.</p>
-                      )}
-                    </section>
-                    {uniqueItemRemarks(itemRecipes.craft).length > 0 && (
+                      </section>
+                    )}
+                    {detailRemarks.length > 0 && (
                       <section>
                         <h2>Uwagi</h2>
                         <ul>
-                          {uniqueItemRemarks(itemRecipes.craft).map((remark) => (
+                          {detailRemarks.map((remark) => (
                             <li key={remark}>{remark}</li>
                           ))}
                         </ul>
                       </section>
                     )}
-                    <section>
-                      <h2>Jak wytworzyć</h2>
-                      {itemRecipes.craft.length ? (
+                    {itemRecipes.craft.length > 0 && (
+                      <section>
+                        <h2>Jak wytworzyć</h2>
                         <RecipeTable
                           recipes={itemRecipes.craft}
-                          slug={canonicalSlug}
                           catalogSlug={activeGame.slug}
                           labels={labels}
                           showRequirements={game === "dos1"}
                           searchable
                           itemRoles={manifest.data?.itemRoles}
                         />
-                      ) : (
-                        <p class="muted">Brak receptur w wybranym trybie gry.</p>
-                      )}
-                    </section>
-                    <section>
-                      <h2>Do czego służy</h2>
-                      {itemRecipes.used.length ? (
+                      </section>
+                    )}
+                    {itemRecipes.used.length > 0 && (
+                      <section>
+                        <h2>Do czego służy</h2>
                         <RecipeTable
                           recipes={itemRecipes.used}
-                          slug={canonicalSlug}
                           catalogSlug={activeGame.slug}
                           labels={labels}
                           showRequirements={game === "dos1"}
                           searchable
                           itemRoles={manifest.data?.itemRoles}
                         />
-                      ) : (
-                        <p class="muted">Brak użyć jako składnik w wybranym trybie gry.</p>
-                      )}
-                    </section>
+                      </section>
+                    )}
                   </>
                 ) : (
                   <div
@@ -589,7 +598,6 @@ function RecipeSections({
           <h2>{section.label}</h2>
           <RecipeTable
             recipes={section.recipes}
-            slug=""
             catalogSlug={games.find((entry) => entry.id === game)!.slug}
             labels={labels}
             showRequirements={game === "dos1"}

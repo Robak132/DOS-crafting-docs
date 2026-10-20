@@ -1,12 +1,14 @@
 {
   "slug": "Magia/AIR-TWO-HANDED-AXE",
-  "title": "Air Two Handed Axe",
+  "title": "2H Air Axe",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Pierscienie",
     "DOS2-CO",
-    "Cechy/Lobuz"
+    "Cechy",
+    "Cechy/Łobuz",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

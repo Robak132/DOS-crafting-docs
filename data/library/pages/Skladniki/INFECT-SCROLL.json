@@ -3,11 +3,11 @@
   "title": "Infect Scroll",
   "titlePl": "Zwój Zakażenia",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Shadow-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

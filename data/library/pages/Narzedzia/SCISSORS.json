@@ -4,9 +4,9 @@
   "titlePl": "Nożyce",
   "tags": [
     "Typ/Narzedzia",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

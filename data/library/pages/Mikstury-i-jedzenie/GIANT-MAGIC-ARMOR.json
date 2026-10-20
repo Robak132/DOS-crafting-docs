@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Mikstury-i-jedzenie",
     "DOS2-CO",
-    "Cechy/Pancerz-magiczny"
+    "Cechy/Pancerz-magiczny",
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

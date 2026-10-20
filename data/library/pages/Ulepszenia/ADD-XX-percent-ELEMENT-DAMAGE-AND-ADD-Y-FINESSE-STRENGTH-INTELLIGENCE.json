@@ -4,11 +4,17 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2",
-    "Cechy/Sila",
-    "Cechy/Zwinnosc",
-    "Cechy/Inteligencja"
+    "Cechy/Inteligencja",
+    "Cechy",
+    "Cechy/HP",
+    "Cechy/Inicjatywa",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Siła",
+    "Cechy/Unik",
+    "Cechy/Zwinność",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

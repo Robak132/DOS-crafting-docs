@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Skladniki",
     "DOS2-CO",
-    "Gold-Object"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Cechy/Jednoreczna"
+    "Cechy",
+    "Cechy/Jednoręczna",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

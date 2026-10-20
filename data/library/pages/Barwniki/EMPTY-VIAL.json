@@ -3,10 +3,10 @@
   "title": "Empty vial",
   "titlePl": "Pusta fiolka",
   "tags": [
-    "Typ/Barwniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

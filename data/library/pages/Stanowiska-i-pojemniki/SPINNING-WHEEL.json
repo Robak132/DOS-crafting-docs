@@ -4,9 +4,10 @@
   "titlePl": "Kołowrotek",
   "tags": [
     "DOS2-CO",
-    "Typ/Stanowiska-i-pojemniki"
+    "Typ/Stanowiska-i-pojemniki",
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

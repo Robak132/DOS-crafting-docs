@@ -44,6 +44,17 @@
         640
       ]
     },
+    "armorpiercinggrenade": {
+      "name": "Armor-Piercing Grenade",
+      "icon": "Item_GRN_ArmorPiercing",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        1728,
+        1408,
+        1792
+      ]
+    },
     "arrowshaft": {
       "name": "Arrow Shaft",
       "icon": "Item_WPN_ArrowShaft_A",
@@ -230,6 +241,19 @@
         768,
         1152
       ]
+    },
+    "branch": {
+      "name": "Branch",
+      "icon": "Item_WPN_Branch_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        1408,
+        832,
+        1472
+      ],
+      "stats": "WPN_Branch_A",
+      "template": "568ab219-039b-4200-a24b-d29c9500fe4f"
     },
     "branchwithnails": {
       "name": "Branch With Nails",
@@ -440,6 +464,17 @@
         1088
       ]
     },
+    "clustergrenade": {
+      "name": "Cluster Grenade",
+      "icon": "Item_GRN_ClusterBomb",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        1728,
+        1536,
+        1792
+      ]
+    },
     "cookingpot": {
       "name": "Cooking Pot",
       "icon": "Item_FUR_CookingPot_A",
@@ -482,6 +517,17 @@
         576,
         832,
         640
+      ]
+    },
+    "dagger": {
+      "name": "Dagger",
+      "icon": "Item_WPN_Human_Normal_Dagger_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        1472,
+        1536,
+        1536
       ]
     },
     "debuffconstitutionpotion": {
@@ -572,6 +618,17 @@
         704
       ]
     },
+    "drudenae": {
+      "name": "Drudenae",
+      "icon": "Item_CON_Herb_Drudanae_ABC",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1984,
+        576,
+        2048,
+        640
+      ]
+    },
     "earthessence": {
       "name": "Earth Essence",
       "icon": "Item_Quest_Orb_A_Green",
@@ -625,6 +682,17 @@
         512,
         64,
         576
+      ]
+    },
+    "emptyflask": {
+      "name": "Empty Flask",
+      "icon": "Item_GRN_Flask_Empty",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1088,
+        1856,
+        1152,
+        1920
       ]
     },
     "emptygrenade": {
@@ -946,6 +1014,17 @@
         1280
       ]
     },
+    "holyhandgrenade": {
+      "name": "Holy Hand Grenade",
+      "icon": "Item_GRN_Holy",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1728,
+        1664,
+        1792
+      ]
+    },
     "inertclawedwand": {
       "name": "Inert Clawed Wand",
       "icon": "Item_WPN_Wand_B",
@@ -1089,6 +1168,50 @@
         1408
       ]
     },
+    "largeairresistancepotion": {
+      "name": "Large Air Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Purple",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        704,
+        1408,
+        768
+      ]
+    },
+    "largedexteritypotion": {
+      "name": "Large Dexterity Potion",
+      "icon": "Item_CON_Potion_A_Purple_Max",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        192,
+        704,
+        256,
+        768
+      ]
+    },
+    "largeearthresistancepotion": {
+      "name": "Large Earth Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Orange",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        704,
+        1344,
+        768
+      ]
+    },
+    "largefireresistancepotion": {
+      "name": "Large Fire Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Red",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        704,
+        1472,
+        768
+      ]
+    },
     "largehealingpotion": {
       "name": "Large Healing Potion",
       "icon": "Item_CON_Potion_A_Red_Max",
@@ -1144,6 +1267,17 @@
         768
       ]
     },
+    "largeperceptionpotion": {
+      "name": "Large Perception Potion",
+      "icon": "Item_CON_Potion_A_Pink_Max",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        704,
+        64,
+        768
+      ]
+    },
     "largepoisonbottle": {
       "name": "Large Poison Bottle",
       "icon": "Item_CON_Potion_A_Green_Max",
@@ -1153,6 +1287,28 @@
         640,
         1664,
         704
+      ]
+    },
+    "largepoisonresistancepotion": {
+      "name": "Large Poison Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Green",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1216,
+        704,
+        1280,
+        768
+      ]
+    },
+    "largespeedpotion": {
+      "name": "Large Speed Potion",
+      "icon": "Item_CON_Potion_A_Yellow_Max",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
       ]
     },
     "largesteelbar": {
@@ -1188,6 +1344,17 @@
         768
       ]
     },
+    "largewaterresistancepotion": {
+      "name": "Large Water Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Turquoise",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        704,
+        1536,
+        768
+      ]
+    },
     "leatherscraps": {
       "name": "Leather Scraps",
       "icon": "Item_LOOT_Scraps_Leather_A",
@@ -1219,6 +1386,17 @@
         1728,
         1792,
         1792
+      ]
+    },
+    "luckyrabbitspawamulet": {
+      "name": "Lucky Rabbit's Paw Amulet",
+      "icon": "Item_LOOT_Rabbit_Paw_MagicAmulet_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        1024,
+        960,
+        1088
       ]
     },
     "magicantler": {
@@ -1320,6 +1498,18 @@
         1024
       ]
     },
+    "magicalchickenfoot": {
+      "name": "Magical Chicken foot",
+      "icon": "Item_LOOT_Chicken_Claw_A_Magic",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        640,
+        1600,
+        704,
+        1664
+      ],
+      "stats": "LOOT_Foot_Chicken_A_Magic"
+    },
     "magicalstarfishamulet": {
       "name": "Magical Starfish Amulet",
       "icon": "Item_LOOT_Star_Fish_MagicAmulet_A",
@@ -1329,6 +1519,50 @@
         1088,
         704,
         1152
+      ]
+    },
+    "mediumairresistancepotion": {
+      "name": "Medium Air Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Purple",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        704,
+        1408,
+        768
+      ]
+    },
+    "mediumdexteritypotion": {
+      "name": "Medium Dexterity Potion",
+      "icon": "Item_CON_Potion_A_Purple_Normal",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ]
+    },
+    "mediumearthresistancepotion": {
+      "name": "Medium Earth Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Orange",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        704,
+        1344,
+        768
+      ]
+    },
+    "mediumfireresistancepotion": {
+      "name": "Medium Fire Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Red",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        704,
+        1472,
+        768
       ]
     },
     "mediumhealingpotion": {
@@ -1375,6 +1609,17 @@
         768
       ]
     },
+    "mediumperceptionpotion": {
+      "name": "Medium Perception Potion",
+      "icon": "Item_CON_Potion_A_Pink_Normal",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        704,
+        192,
+        768
+      ]
+    },
     "mediumpoisonbottle": {
       "name": "Medium Poison Bottle",
       "icon": "Item_CON_Potion_A_Green_Normal",
@@ -1384,6 +1629,28 @@
         640,
         1792,
         704
+      ]
+    },
+    "mediumpoisonresistancepotion": {
+      "name": "Medium Poison Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Green",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1216,
+        704,
+        1280,
+        768
+      ]
+    },
+    "mediumspeedpotion": {
+      "name": "Medium Speed Potion",
+      "icon": "Item_CON_Potion_A_Yellow_Normal",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1088,
+        704,
+        1152,
+        768
       ]
     },
     "mediumstrengthpotion": {
@@ -1405,6 +1672,17 @@
         1536,
         704,
         1600,
+        768
+      ]
+    },
+    "mediumwaterresistancepotion": {
+      "name": "Medium Water Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Turquoise",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        704,
+        1536,
         768
       ]
     },
@@ -1793,6 +2071,17 @@
         1408
       ]
     },
+    "poisonedarrowhead": {
+      "name": "Poisoned Arrowhead",
+      "icon": "Item_WPN_ArrowHead_Poison_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1344,
+        1344,
+        1408
+      ]
+    },
     "poormansbest": {
       "name": "Poorman's Best",
       "icon": "Item_ARM_Wood_Torso_Barrel_A",
@@ -2136,6 +2425,17 @@
         1408
       ]
     },
+    "smallairresistancepotion": {
+      "name": "Small Air Resistance Potion",
+      "icon": "Item_CON_Potion_Debuff_A_Purple",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        704,
+        1408,
+        768
+      ]
+    },
     "smokescreenarrow": {
       "name": "Smokescreen Arrow",
       "icon": "Item_WPN_Arrow_SmokeScreen_A",
@@ -2169,6 +2469,17 @@
         896
       ]
     },
+    "sovereignsorb": {
+      "name": "Sovereign's Orb",
+      "icon": "Item_GRN_Holy_Empty",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1856,
+        768,
+        1920
+      ]
+    },
     "stardust": {
       "name": "Stardust",
       "icon": "Item_TOOL_Pouch_A",
@@ -2178,6 +2489,28 @@
         1280,
         192,
         1344
+      ]
+    },
+    "staticcloudarrow": {
+      "name": "Static Cloud Arrow",
+      "icon": "Item_WPN_Arrow_Static_Cloud_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        576,
+        1344,
+        640,
+        1408
+      ]
+    },
+    "staticcloudarrowhead": {
+      "name": "Static Cloud Arrowhead",
+      "icon": "Item_WPN_ArrowHead_Static_Cloud_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1344,
+        1664,
+        1408
       ]
     },
     "steelbar": {
@@ -2222,6 +2555,17 @@
         1472,
         1856,
         1536
+      ]
+    },
+    "tasergrenade": {
+      "name": "Taser Grenade",
+      "icon": "Item_GRN_Taser",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        1792,
+        192,
+        1856
       ]
     },
     "tenebriumbar": {
@@ -2626,6 +2970,28 @@
         1024
       ]
     },
+    "airresistancepotion": {
+      "name": "Air Resistance Potion",
+      "icon": "Item_CON_PotionII_B_Purple_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        448,
+        1088,
+        512
+      ]
+    },
+    "alertnessherbmix": {
+      "name": "Alertness Herbmix",
+      "icon": "Item_QUEST_Herbmix_Alertness",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        960,
+        832,
+        1024,
+        896
+      ]
+    },
     "alienairessence": {
       "name": "Alien Air Essence",
       "icon": "Item_LOOT_Essence_Air_Step3_A",
@@ -2724,6 +3090,19 @@
         704,
         64
       ]
+    },
+    "amulet": {
+      "name": "Amulet",
+      "icon": "Item_LOOT_MagicAmulet_Red",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        704,
+        1088,
+        768
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "ArmorAmulet"
     },
     "ancienthumanskull": {
       "name": "Ancient Human Skull",
@@ -2978,6 +3357,17 @@
         896
       ]
     },
+    "ashenidolofrebirth": {
+      "name": "Ashen Idol of Rebirth",
+      "icon": "Item_QUEST_Resurrection_Idol_A_Inert",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        640,
+        768,
+        704,
+        832
+      ]
+    },
     "augmentor": {
       "name": "Augmentor",
       "icon": "Item_CON_Herb_Augmentor_Step1_A",
@@ -3035,6 +3425,19 @@
         1152
       ]
     },
+    "belt": {
+      "name": "Belt",
+      "icon": "Item_ARM_Leather_Belt_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1152,
+        64,
+        1216,
+        128
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "ArmorBelt"
+    },
     "benchsaw": {
       "name": "Bench Saw",
       "icon": "Portrait_BLD_Humans_Sawmill_Machine",
@@ -3045,6 +3448,19 @@
         1536,
         640
       ]
+    },
+    "bigtongsropedtogether": {
+      "name": "Big Tongs Roped Together",
+      "icon": "Item_WPN_Common_Mace_2H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        192,
+        128,
+        256
+      ],
+      "stats": "WPN_CraftedMace_2H_B",
+      "localizationKey": "TOOL_Tong_A_LOOT_Scraps_Cloth_A_1"
     },
     "blackshroudscroll": {
       "name": "Black Shroud Scroll",
@@ -3066,6 +3482,17 @@
         832,
         896,
         896
+      ]
+    },
+    "bladeoftheswornbreaker": {
+      "name": "Blade of the Swornbreaker",
+      "icon": "Item_UNI_WPN_Ataraxians_Scythe_2H_A_Blade",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        896,
+        384,
+        960
       ]
     },
     "blankairskillbook": {
@@ -3143,6 +3570,28 @@
         704,
         768,
         768
+      ]
+    },
+    "bleedfirescroll": {
+      "name": "Bleed Fire Scroll",
+      "icon": "Item_SCROLL_Fire_FireBlood",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ]
+    },
+    "bleedfireskillbook": {
+      "name": "Bleed Fire Skillbook",
+      "icon": "Item_BOOK_Spellbook_SkillCrafting_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        64,
+        768,
+        128,
+        832
       ]
     },
     "blessedicegrenade": {
@@ -3299,6 +3748,17 @@
         640
       ]
     },
+    "boiledstardustpotion": {
+      "name": "Boiled Stardust Potion",
+      "icon": "Item_CON_PotionII_D_Yellow_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        512,
+        1216,
+        576
+      ]
+    },
     "boletus": {
       "name": "Boletus",
       "icon": "Item_CON_Nature_Mushroom_Boletus_A",
@@ -3435,6 +3895,17 @@
         576
       ]
     },
+    "brokenangelicstatue": {
+      "name": "Broken Angelic Statue",
+      "icon": "Portrait_PUZ_Statue_Angel_Broken",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_DOS2_Animals_Exceptions_Icons.dds",
+      "box": [
+        240,
+        300,
+        320,
+        400
+      ]
+    },
     "brokenbottle": {
       "name": "Broken Bottle",
       "icon": "Item_FUR_Bottle_Broken_A",
@@ -3510,6 +3981,28 @@
         0,
         832,
         64
+      ]
+    },
+    "cannibalisescroll": {
+      "name": "Cannibalise Scroll",
+      "icon": "Item_SCROLL_Summoning_Cannibalize",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        384,
+        640,
+        448
+      ]
+    },
+    "cannibaliseskillbook": {
+      "name": "Cannibalise Skillbook",
+      "icon": "Item_BOOK_Spellbook_Summoning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        704,
+        960,
+        768
       ]
     },
     "carrot": {
@@ -3712,6 +4205,17 @@
         1088
       ]
     },
+    "closedcircuitscroll": {
+      "name": "Closed Circuit Scroll",
+      "icon": "Item_SCROLL_Air_ElectricFence",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        256,
+        0,
+        320,
+        64
+      ]
+    },
     "closedcircuitskillbook": {
       "name": "Closed Circuit Skillbook",
       "icon": "Item_BOOK_Spellbook_Air_A_SourceGlow",
@@ -3822,6 +4326,28 @@
         832
       ]
     },
+    "cookingstation": {
+      "name": "Cooking station",
+      "icon": "Item_FUR_CookingPot_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1728,
+        768,
+        1792,
+        832
+      ]
+    },
+    "courageherbmix": {
+      "name": "Courage Herbmix",
+      "icon": "Item_QUEST_Herbmix_Courage",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        832,
+        832,
+        896,
+        896
+      ]
+    },
     "crabsclaw": {
       "name": "Crab's Claw",
       "icon": "Item_LOOT_Claw_Crab_A",
@@ -3845,6 +4371,19 @@
       ],
       "stats": "LOOT_Eye_A_Creepy",
       "localizationKey": "LOOT_Eye_A_Creepy"
+    },
+    "crossbow": {
+      "name": "Crossbow",
+      "icon": "Item_WPN_Human_Normal_Crossbow_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        1472,
+        1472,
+        1536
+      ],
+      "stats": "WPN_Crossbow",
+      "localizationKey": "LOOT_Ingred_CrossbowWithoutString_LOOT_String_Bow_A_1"
     },
     "crossbowwithoutbowstring": {
       "name": "Crossbow Without Bowstring",
@@ -3901,6 +4440,19 @@
         896
       ]
     },
+    "curiousangelicstatue": {
+      "name": "Curious Angelic Statue",
+      "icon": "Portait_PUZ_Statue_Angel",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_DOS2_Animals_Exceptions_Icons.dds",
+      "box": [
+        320,
+        300,
+        400,
+        400
+      ],
+      "previewSource": "dos2/Public/DivinityOrigins_1301db3d-1f54-4e98-9be5-5094030916e4/Stats/Generated/ItemCombos.txt",
+      "CombinationID": "PUZ_Statue_Angel_Head_PUZ_Statue_Angel_Broken"
+    },
     "cursescroll": {
       "name": "Curse Scroll",
       "icon": "Item_SCROLL_Source_Curse",
@@ -3945,6 +4497,17 @@
         1152
       ]
     },
+    "cursedfirestormgrenade": {
+      "name": "Cursed Firestorm Grenade",
+      "icon": "Item_GRN_Molotov_Cursed",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1088,
+        1088,
+        1152,
+        1152
+      ]
+    },
     "cursedpoisonflask": {
       "name": "Cursed Poison Flask",
       "icon": "Item_GRN_PoisonFlask_Cursed",
@@ -3955,6 +4518,32 @@
         320,
         1152
       ]
+    },
+    "cuttingtool": {
+      "name": "CuttingTool",
+      "icon": "Item_WPN_Tool_PocketKnife_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1728,
+        768,
+        1792,
+        832
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "CuttingTool"
+    },
+    "dagger": {
+      "name": "Dagger",
+      "icon": "Item_WPN_Dagger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1408,
+        1344,
+        1472
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Dagger"
     },
     "dazingboltscroll": {
       "name": "Dazing Bolt Scroll",
@@ -4022,6 +4611,28 @@
         832
       ]
     },
+    "deepfreezescroll": {
+      "name": "Deep Freeze Scroll",
+      "icon": "Item_SCROLL_Water_Shatter",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ]
+    },
+    "deepfreezeskillbook": {
+      "name": "Deep Freeze Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ]
+    },
     "dimensionalboltscroll": {
       "name": "Dimensional Bolt Scroll",
       "icon": "Item_SCROLL_Summoning_DimensionalBolt",
@@ -4086,6 +4697,28 @@
         704,
         960,
         768
+      ]
+    },
+    "doortoeternityscroll": {
+      "name": "Door to Eternity Scroll",
+      "icon": "Item_SCROLL_Summoning_CloseTheDoor",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ]
+    },
+    "doortoeternityskillbook": {
+      "name": "Door to Eternity Skillbook",
+      "icon": "Item_BOOK_Spellbook_Summoning_SourceGlow",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        832,
+        768,
+        896
       ]
     },
     "dough": {
@@ -4200,6 +4833,17 @@
       "stats": "CON_Food_Eggs_A",
       "localizationKey": "CON_Food_Eggs_A"
     },
+    "electricdischargescroll": {
+      "name": "Electric Discharge Scroll",
+      "icon": "Item_SCROLL_Air_LightningBolt",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        0,
+        384,
+        64
+      ]
+    },
     "electricdischargeskillbook": {
       "name": "Electric Discharge Skillbook",
       "icon": "Item_BOOK_Spellbook_Air_A",
@@ -4299,6 +4943,17 @@
         1920
       ]
     },
+    "emptyhoneyjar": {
+      "name": "Empty Honey Jar",
+      "icon": "Item_LOOT_Jar_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        960,
+        1856,
+        1024
+      ]
+    },
     "emptymug": {
       "name": "Empty Mug",
       "icon": "Item_CON_Drink_Mug_A_Empty",
@@ -4334,6 +4989,17 @@
       "stats": "CON_Potion_Empty_A",
       "localizationKey": "CON_Potion_Empty_A"
     },
+    "enlightenmentherbmix": {
+      "name": "Enlightenment Herbmix",
+      "icon": "Item_QUEST_Herbmix_Enlightenment",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1088,
+        832,
+        1152,
+        896
+      ]
+    },
     "epidemicoffirescroll": {
       "name": "Epidemic Of Fire Scroll",
       "icon": "Item_SCROLL_Fire_InfectiousFlame",
@@ -4354,6 +5020,28 @@
         832,
         384,
         896
+      ]
+    },
+    "equalisescroll": {
+      "name": "Equalise Scroll",
+      "icon": "Item_SCROLL_Polymorph_Equalize",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ]
+    },
+    "equaliseskillbook": {
+      "name": "Equalise Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
       ]
     },
     "eternalplate": {
@@ -4523,6 +5211,17 @@
         1024
       ]
     },
+    "ferocityherbmix": {
+      "name": "Ferocity Herbmix",
+      "icon": "Item_QUEST_Herbmix_Ferocity",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        832,
+        832,
+        896
+      ]
+    },
     "firearrow": {
       "name": "Fire Arrow",
       "icon": "Item_WPN_Arrow_Fire_A",
@@ -4633,6 +5332,28 @@
         768
       ]
     },
+    "firestormgrenade": {
+      "name": "Firestorm Grenade",
+      "icon": "Item_GRN_Molotov",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        1728,
+        1856,
+        1792
+      ]
+    },
+    "fishpie": {
+      "name": "Fish Pie",
+      "icon": "Item_CON_Food_Pie_Cyseal_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        576,
+        832,
+        640
+      ]
+    },
     "fishpiedough": {
       "name": "Fish Pie Dough",
       "icon": "Item_CON_Ingred_Dough_Cyseal_A",
@@ -4696,6 +5417,28 @@
         384,
         704,
         448,
+        768
+      ]
+    },
+    "flayskinscroll": {
+      "name": "Flay Skin Scroll",
+      "icon": "Item_SCROLL_Polymorph_StripResistance",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        896,
+        704,
+        960,
+        768
+      ]
+    },
+    "flayskinskillbook": {
+      "name": "Flay Skin Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
         768
       ]
     },
@@ -4908,6 +5651,17 @@
         768
       ]
     },
+    "glowingidolofrebirth": {
+      "name": "Glowing Idol of Rebirth",
+      "icon": "Item_QUEST_Resurrection_Idol_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1536,
+        704,
+        1600,
+        768
+      ]
+    },
     "gold": {
       "name": "Gold",
       "icon": "Item_LOOT_Gold_Medium_A",
@@ -4976,6 +5730,17 @@
         704
       ]
     },
+    "haftoftheswornbreaker": {
+      "name": "Haft of the Swornbreaker",
+      "icon": "Item_UNI_WPN_Ataraxians_Scythe_2H_A_Staff",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        384,
+        896,
+        448,
+        960
+      ]
+    },
     "hailstrikescroll": {
       "name": "Hail Strike Scroll",
       "icon": "Item_SCROLL_Water_HailStrike",
@@ -5011,6 +5776,19 @@
       "stats": "LOOT_Hair_A",
       "localizationKey": "LOOT_Hair_A"
     },
+    "hammer": {
+      "name": "Hammer",
+      "icon": "Item_TOOL_Hammer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1664,
+        1216,
+        1728,
+        1280
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Hammer"
+    },
     "handkerchief": {
       "name": "Handkerchief",
       "icon": "Item_LOOT_Handkerchief_A",
@@ -5020,6 +5798,121 @@
         960,
         1472,
         1024
+      ]
+    },
+    "handmadechainarmour": {
+      "name": "Handmade Chain Armour",
+      "icon": "Item_EQ_Armor_Chainmail_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1600,
+        0,
+        1664,
+        64
+      ],
+      "stats": "ARM_Light_UpperBody_Chain_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Metal_A_1"
+    },
+    "handmadeclothshirt": {
+      "name": "Handmade Cloth Shirt",
+      "icon": "Item_EQ_Clothing_Civilian_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        960,
+        64,
+        1024,
+        128
+      ],
+      "stats": "ARM_Cloth_UpperBody_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Cloth_A_1"
+    },
+    "handmadeleatherarmour": {
+      "name": "Handmade Leather Armour",
+      "icon": "Item_EQ_Armor_Leather_UpperBody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1920,
+        0,
+        1984,
+        64
+      ],
+      "stats": "ARM_Light_UpperBody_Leather_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Leather_A_1"
+    },
+    "handmademagearmour": {
+      "name": "Handmade Mage Armour",
+      "icon": "Item_EQ_Armor_Mage_Robe_Fullbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        64,
+        128,
+        128
+      ],
+      "stats": "ARM_Mage_UpperBody_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Cloth_A_TOOL_Pouch_Dust_Pixie_A_1"
+    },
+    "handmadeplatearmour": {
+      "name": "Handmade Plate Armour",
+      "icon": "Item_EQ_Armor_Leather_UpperBody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1920,
+        0,
+        1984,
+        64
+      ],
+      "stats": "ARM_Heavy_UpperBody_Plate_Crafted",
+      "localizationKey": "Anvil_LOOT_Scraps_Plate_A_1"
+    },
+    "handmadescalearmour": {
+      "name": "Handmade Scale Armour",
+      "icon": "Item_EQ_Armor_Scalemail_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        64,
+        832,
+        128
+      ],
+      "stats": "ARM_Heavy_UpperBody_Scale_Crafted",
+      "localizationKey": "Anvil_LOOT_Scraps_Scale_A_1"
+    },
+    "handmadeshield": {
+      "name": "Handmade Shield",
+      "icon": "Item_WPN_Common_Shield_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        192,
+        192,
+        256
+      ],
+      "stats": "WPN_CraftedShield",
+      "localizationKey": "LOOT_Scraps_Metal_A_LOOT_Scraps_Wood_A_1"
+    },
+    "handmadesword": {
+      "name": "Handmade Sword",
+      "icon": "Item_WPN_Common_Sword_1H_A1",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        192,
+        384,
+        256
+      ],
+      "stats": "WPN_Sword_1H",
+      "localizationKey": "Anvil_LOOT_Scraps_Metal_A_Hammer_1"
+    },
+    "hastescroll": {
+      "name": "Haste Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Haste",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
       ]
     },
     "hasteskillbook": {
@@ -5033,6 +5926,17 @@
         768
       ]
     },
+    "headofangelicstatue": {
+      "name": "Head of Angelic Statue",
+      "icon": "Item_PUZ_Statue_Angel_Head",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        832,
+        1216,
+        896
+      ]
+    },
     "healingelixir": {
       "name": "Healing Elixir",
       "icon": "Item_CON_PotionII_D_BloodRed_Large",
@@ -5042,6 +5946,17 @@
         512,
         1600,
         576
+      ]
+    },
+    "healingpotion": {
+      "name": "Healing Potion",
+      "icon": "Item_CON_PotionII_A_Red_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        448,
+        576,
+        512
       ]
     },
     "healingritualscroll": {
@@ -5087,6 +6002,19 @@
         1024,
         768
       ]
+    },
+    "helmet": {
+      "name": "Helmet",
+      "icon": "Item_ARM_Leather_A_Helmet",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        576,
+        64,
+        640,
+        128
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "ArmorHelmet"
     },
     "herring": {
       "name": "Herring",
@@ -5366,6 +6294,17 @@
         1344
       ]
     },
+    "hungryflowerscroll": {
+      "name": "Hungry Flower Scroll",
+      "icon": "Item_SCROLL_Earth_PoisonousPlantMonster",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        384,
+        256,
+        448,
+        320
+      ]
+    },
     "icebreakerscroll": {
       "name": "Ice Breaker Scroll",
       "icon": "Item_SCROLL_Water_IceBreaker",
@@ -5465,6 +6404,19 @@
         768
       ]
     },
+    "improvisedstaff": {
+      "name": "Improvised Staff",
+      "icon": "Item_WPN_Common_Staff_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        256,
+        192,
+        320,
+        256
+      ],
+      "stats": "WPN_CraftedStaff_Fire",
+      "localizationKey": "LOOT_WoodenBranch_A_HAR_Shell_1"
+    },
     "infectscroll": {
       "name": "Infect Scroll",
       "icon": "Item_SCROLL_Decay_Infect",
@@ -5541,6 +6493,32 @@
         256,
         704
       ]
+    },
+    "knife": {
+      "name": "Knife",
+      "icon": "Item_FUR_Cutlery_Knife_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1920,
+        768,
+        1984,
+        832
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Knife"
+    },
+    "knifeonastick": {
+      "name": "Knife On A Stick",
+      "icon": "Item_WPN_Common_Sword_1H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        448,
+        192,
+        512,
+        256
+      ],
+      "stats": "WPN_CraftedSword_1H",
+      "localizationKey": "LOOT_WoodenStick_A_Dagger_1"
     },
     "knockdownarrow": {
       "name": "Knockdown Arrow",
@@ -6036,6 +7014,19 @@
         768
       ]
     },
+    "metal": {
+      "name": "Metal",
+      "icon": "Item_LOOT_Scraps_Metal_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        1024,
+        1856,
+        1088
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Metal"
+    },
     "metalscraps": {
       "name": "Metal Scraps",
       "icon": "Item_LOOT_Scraps_Metal_A",
@@ -6126,6 +7117,17 @@
       "stats": "POTION_Minor_Constitution_Potion",
       "localizationKey": "POTION_Minor_Constitution_Potion"
     },
+    "minorfinessepotion": {
+      "name": "Minor Finesse Potion",
+      "icon": "Item_CON_PotionII_C_Yellow_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        512,
+        256,
+        576
+      ]
+    },
     "minorhealingpotion": {
       "name": "Minor Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Small",
@@ -6169,6 +7171,17 @@
         384,
         512,
         448,
+        576
+      ]
+    },
+    "minorwitspotion": {
+      "name": "Minor Wits Potion",
+      "icon": "Item_CON_PotionII_C_Pink_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        448,
+        512,
+        512,
         576
       ]
     },
@@ -6269,6 +7282,17 @@
         1728,
         1984,
         1792
+      ]
+    },
+    "nails": {
+      "name": "Nails",
+      "icon": "Item_TOOL_Nails_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1280,
+        64,
+        1344
       ]
     },
     "needle": {
@@ -6570,6 +7594,17 @@
         1792
       ]
     },
+    "poisondartscroll": {
+      "name": "Poison Dart Scroll",
+      "icon": "Item_SCROLL_Earth_PoisonDart",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        0,
+        640,
+        64
+      ]
+    },
     "poisondartskillbook": {
       "name": "Poison Dart Skillbook",
       "icon": "Item_BOOK_Spellbook_Earth_A",
@@ -6680,6 +7715,50 @@
         640
       ]
     },
+    "potentalertnessherbmix": {
+      "name": "Potent Alertness Herbmix",
+      "icon": "Item_QUEST_Herbmix_Alertness_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        896,
+        832,
+        960,
+        896
+      ]
+    },
+    "potentenlightenmentherbmix": {
+      "name": "Potent Enlightenment Herbmix",
+      "icon": "Item_QUEST_Herbmix_Enlightenment_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        832,
+        1088,
+        896
+      ]
+    },
+    "potentferocityherbmix": {
+      "name": "Potent Ferocity Herbmix",
+      "icon": "Item_QUEST_Herbmix_Ferocity_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        704,
+        832,
+        768,
+        896
+      ]
+    },
+    "potionofjellyfishskin": {
+      "name": "Potion Of Jellyfish Skin",
+      "icon": "Item_CON_PotionII_A_Blue_Huge",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        576,
+        576,
+        640,
+        640
+      ]
+    },
     "potionofnimbletumble": {
       "name": "Potion Of Nimble Tumble",
       "icon": "Item_CON_PotionII_D_Black_Small",
@@ -6771,6 +7850,19 @@
         320,
         768
       ]
+    },
+    "primitiveharpoon": {
+      "name": "Primitive Harpoon",
+      "icon": "Item_WPN_Common_Spear_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ],
+      "stats": "WPN_PrimitiveHarpoon",
+      "localizationKey": "LOOT_WoodenBranch_A_LOOT_MetalShard_A_1"
     },
     "puffball": {
       "name": "Puffball",
@@ -6871,6 +7963,28 @@
         832
       ]
     },
+    "raisebonewidowscroll": {
+      "name": "Raise Bone Widow Scroll",
+      "icon": "Item_SCROLL_Decay_RaiseBonePile",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        448,
+        640,
+        512
+      ]
+    },
+    "raisebonewidowskillbook": {
+      "name": "Raise Bone Widow Skillbook",
+      "icon": "Item_BOOK_Spellbook_Decay_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        768,
+        64,
+        832
+      ]
+    },
     "rallyingcryscroll": {
       "name": "Rallying Cry Scroll",
       "icon": "Item_SCROLL_Summoning_Harmony",
@@ -6913,6 +8027,39 @@
         576,
         320,
         640
+      ]
+    },
+    "razzledazzlegrenade": {
+      "name": "Razzle Dazzle Grenade",
+      "icon": "Item_GRN_Flashbang",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1536,
+        1728,
+        1600,
+        1792
+      ]
+    },
+    "reactivearmourscroll": {
+      "name": "Reactive Armour Scroll",
+      "icon": "Item_SCROLL_Earth_ReactiveArmor",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        192,
+        768,
+        256
+      ]
+    },
+    "reactivearmourskillbook": {
+      "name": "Reactive Armour Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
       ]
     },
     "redfabricdye": {
@@ -6970,6 +8117,63 @@
         64
       ]
     },
+    "ring": {
+      "name": "Ring",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Ring"
+    },
+    "rippedoffdwarvenface": {
+      "name": "Ripped-Off Dwarven Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Dwarves_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        1088,
+        576,
+        1152
+      ]
+    },
+    "rippedoffelvenface": {
+      "name": "Ripped-Off Elven Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Elves_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        832,
+        1152,
+        896,
+        1216
+      ]
+    },
+    "rippedoffhumanface": {
+      "name": "Ripped-Off Human Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Humans_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        1152,
+        832,
+        1216
+      ]
+    },
+    "rippedofflizardface": {
+      "name": "Ripped-Off Lizard Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Lizards_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        1088,
+        1920,
+        1152
+      ]
+    },
     "rivellonfries": {
       "name": "Rivellon Fries",
       "icon": "Item_CON_Food_Fries_Rivellon_A",
@@ -6980,6 +8184,19 @@
         1728,
         576
       ]
+    },
+    "rock": {
+      "name": "Rock",
+      "icon": "Item_LOOT_Ore_BlackRock_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        64,
+        1024,
+        128,
+        1088
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Rock"
     },
     "rope": {
       "name": "Rope",
@@ -7023,6 +8240,28 @@
         1024,
         1984,
         1088
+      ]
+    },
+    "searingdaggersscroll": {
+      "name": "Searing Daggers Scroll",
+      "icon": "Item_SCROLL_Fire_FlamingDaggers",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        0,
+        768,
+        64
+      ]
+    },
+    "searingdaggersskillbook": {
+      "name": "Searing Daggers Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
       ]
     },
     "shacklesofpainscroll": {
@@ -7115,6 +8354,32 @@
         1088
       ]
     },
+    "sharpstoneonabigbranch": {
+      "name": "Sharp Stone On A Big Branch",
+      "icon": "Item_WPN_Common_Axe_2H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1472,
+        128,
+        1536,
+        192
+      ],
+      "stats": "WPN_CraftedAxe_2H",
+      "localizationKey": "LOOT_WoodenBranch_A_LOOT_PieceOfRock_A_1"
+    },
+    "sharpstoneonastick": {
+      "name": "Sharp Stone On A Stick",
+      "icon": "Item_WPN_Common_Axe_1H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1344,
+        128,
+        1408,
+        192
+      ],
+      "stats": "WPN_CraftedAxe_1H",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_PieceOfRock_A_1"
+    },
     "sharptooth": {
       "name": "Sharp Tooth",
       "icon": "Item_LOOT_Tooth_A",
@@ -7140,6 +8405,41 @@
       ],
       "stats": "BOOK_Paper_Sheet_A",
       "localizationKey": "BOOK_Paper_Sheet_A"
+    },
+    "shiv": {
+      "name": "Shiv",
+      "icon": "Item_WPN_Common_Dagger_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1728,
+        128,
+        1792,
+        192
+      ],
+      "stats": "WPN_CraftedDagger",
+      "localizationKey": "Anvil_LOOT_MetalShard_A_Hammer_1"
+    },
+    "shockingarrow": {
+      "name": "Shocking Arrow",
+      "icon": "Item_WPN_Arrow_Stunning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1344,
+        768,
+        1408
+      ]
+    },
+    "shockingarrowhead": {
+      "name": "Shocking Arrowhead",
+      "icon": "Item_WPN_ArrowHead_Stunning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1728,
+        1344,
+        1792,
+        1408
+      ]
     },
     "shockingtouchscroll": {
       "name": "Shocking Touch Scroll",
@@ -7504,6 +8804,17 @@
         768
       ]
     },
+    "spinningwheel": {
+      "name": "Spinning Wheel",
+      "icon": "Item_FUR_Humans_Citz_Kitchen_SpinningWheel_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1344,
+        64,
+        1408,
+        128
+      ]
+    },
     "spontaneouscombustionscroll": {
       "name": "Spontaneous Combustion Scroll",
       "icon": "Item_SCROLL_Fire_SpontaneousCombustion",
@@ -7680,6 +8991,28 @@
         896
       ]
     },
+    "summonoilyblobscroll": {
+      "name": "Summon Oily Blob Scroll",
+      "icon": "Item_SCROLL_Polymorph_SummonOilBlob",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        128,
+        768,
+        192,
+        832
+      ]
+    },
+    "summonoilyblobskillbook": {
+      "name": "Summon Oily Blob Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
+      ]
+    },
     "superchargerscroll": {
       "name": "Supercharger Scroll",
       "icon": "Item_SCROLL_Summoning_Supercharge",
@@ -7759,6 +9092,28 @@
         768
       ]
     },
+    "swornbreakerschematic": {
+      "name": "Swornbreaker Schematic",
+      "icon": "Item_QUEST_AtaraxianTablet_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        960,
+        576,
+        1024
+      ]
+    },
+    "taintedstew": {
+      "name": "Tainted Stew",
+      "icon": "Item_CON_Food_Stew_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        576,
+        1536,
+        640
+      ]
+    },
     "teaherbs": {
       "name": "Tea Herbs",
       "icon": "Item_CON_Herb_Tea_A",
@@ -7814,6 +9169,28 @@
         768
       ]
     },
+    "terraintransmutationscroll": {
+      "name": "Terrain Transmutation Scroll",
+      "icon": "Item_SCROLL_Polymorph_SwapGround",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        896,
+        768,
+        960
+      ]
+    },
+    "terraintransmutationskillbook": {
+      "name": "Terrain Transmutation Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
+      ]
+    },
     "terrorgrenade": {
       "name": "Terror Grenade",
       "icon": "Item_GRN_Terror",
@@ -7834,6 +9211,17 @@
         1088,
         960,
         1152
+      ]
+    },
+    "thunderboltgrenade": {
+      "name": "Thunderbolt Grenade",
+      "icon": "Item_GRN_Taser",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        1792,
+        192,
+        1856
       ]
     },
     "thunderstormscroll": {
@@ -7957,6 +9345,30 @@
         896
       ]
     },
+    "toycrossbow": {
+      "name": "Toy Crossbow",
+      "icon": "Item_WPN_Common_Crossbow_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1664,
+        128,
+        1728,
+        192
+      ],
+      "stats": "WPN_CraftedCrossbow",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_WoodenBranch_A_1"
+    },
+    "trapdisarmingkit": {
+      "name": "Trap Disarming Kit",
+      "icon": "Item_TOOL_TrapDisarmToolkit_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        576,
+        1088,
+        640
+      ]
+    },
     "tremorgrenade": {
       "name": "Tremor Grenade",
       "icon": "Item_GRN_Tremor",
@@ -7989,6 +9401,19 @@
         1344,
         1152
       ]
+    },
+    "twigwithastring": {
+      "name": "Twig With A String",
+      "icon": "Item_WPN_Common_Bow_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1536,
+        128,
+        1600,
+        192
+      ],
+      "stats": "WPN_CraftedBow",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_String_Bow_A_1"
     },
     "ultimateaugmentorherb": {
       "name": "Ultimate Augmentor Herb",
@@ -8032,6 +9457,17 @@
         640,
         1984,
         704
+      ]
+    },
+    "voidtouchedlivewoodfragments": {
+      "name": "Void-Touched Livewood Fragments",
+      "icon": "Item_LOOT_Scraps_LiveWood_VoidTouched_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        896,
+        1216,
+        960
       ]
     },
     "voidwokenspike": {
@@ -8122,17 +9558,6 @@
         512
       ]
     },
-    "well": {
-      "name": "Well",
-      "icon": "Portrait_Hum_Well_A",
-      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
-      "box": [
-        1344,
-        320,
-        1408,
-        384
-      ]
-    },
     "wheat": {
       "name": "Wheat",
       "icon": "Item_LOOT_Wheat_A",
@@ -8210,6 +9635,19 @@
         1024
       ]
     },
+    "wood": {
+      "name": "Wood",
+      "icon": "Portrait_Gen_Woodpile_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Wood"
+    },
     "woodchips": {
       "name": "Wood Chips",
       "icon": "Item_LOOT_Scraps_Wood_A",
@@ -8219,6 +9657,28 @@
         1024,
         2048,
         1088
+      ]
+    },
+    "woodpulp": {
+      "name": "Wood Pulp",
+      "icon": "Item_LOOT_Scraps_Wood_A_Mush",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1088,
+        64,
+        1152
+      ]
+    },
+    "woodendoll": {
+      "name": "Wooden Doll",
+      "icon": "Item_TOOL_Figurine_Wood_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1216,
+        1664,
+        1280
       ]
     },
     "wool": {
@@ -8302,6 +9762,253 @@
       "stats": "LOOT_Foot_Chicken_A_Big",
       "localizationKey": "LOOT_Foot_Chicken_A_Big"
     },
+    "2hairaxe": {
+      "name": "2H Air Axe",
+      "icon": "TwoHandedAxeAir",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        768,
+        128,
+        832,
+        192
+      ],
+      "stats": "WPN_Axe_2H_Air",
+      "localizationKey": "Craft_Axe_2H_Air_1"
+    },
+    "2hairmace": {
+      "name": "2H Air Mace",
+      "icon": "TwoHandedMaceAir",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1088,
+        128,
+        1152,
+        192
+      ],
+      "stats": "WPN_Mace_2H_Air",
+      "localizationKey": "Craft_Mace_2H_Air_1"
+    },
+    "2hairsword": {
+      "name": "2H Air Sword",
+      "icon": "TwoHandedSwordAir",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1408,
+        128,
+        1472,
+        192
+      ],
+      "stats": "WPN_Sword_2H_Air",
+      "localizationKey": "Craft_Sword_2H_Air_1"
+    },
+    "2hchaosaxe": {
+      "name": "2H Chaos Axe",
+      "icon": "TwoHandedAxeChaos",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ],
+      "stats": "WPN_Axe_2H_Chaos",
+      "localizationKey": "Craft_Axe_2H_Chaos_1"
+    },
+    "2hchaossword": {
+      "name": "2H Chaos Sword",
+      "icon": "TwoHandedSwordChaos",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ],
+      "stats": "WPN_Sword_2H_Chaos",
+      "localizationKey": "Craft_Sword_2H_Chaos_1"
+    },
+    "2hearthaxe": {
+      "name": "2H Earth Axe",
+      "icon": "TwoHandedAxeEarth",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        832,
+        128,
+        896,
+        192
+      ],
+      "stats": "WPN_Axe_2H_Earth",
+      "localizationKey": "Craft_Axe_2H_Earth_1"
+    },
+    "2hearthmace": {
+      "name": "2H Earth Mace",
+      "icon": "TwoHandedMaceEarth",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1152,
+        128,
+        1216,
+        192
+      ],
+      "stats": "WPN_Mace_2H_Earth",
+      "localizationKey": "Craft_Mace_2H_Earth_1"
+    },
+    "2hearthsword": {
+      "name": "2H Earth Sword",
+      "icon": "TwoHandedSwordEarth",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1472,
+        128,
+        1536,
+        192
+      ],
+      "stats": "WPN_Sword_2H_Earth",
+      "localizationKey": "Craft_Sword_2H_Earth_1"
+    },
+    "2hfireaxe": {
+      "name": "2H Fire Axe",
+      "icon": "TwoHandedAxeFire",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        896,
+        128,
+        960,
+        192
+      ],
+      "stats": "WPN_Axe_2H_Fire",
+      "localizationKey": "Craft_Axe_2H_Fire_1"
+    },
+    "2hfiremace": {
+      "name": "2H Fire Mace",
+      "icon": "TwoHandedMaceFire",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1216,
+        128,
+        1280,
+        192
+      ],
+      "stats": "WPN_Mace_2H_Fire",
+      "localizationKey": "Craft_Mace_2H_Fire_1"
+    },
+    "2hfiresword": {
+      "name": "2H Fire Sword",
+      "icon": "TwoHandedSwordFire",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1536,
+        128,
+        1600,
+        192
+      ],
+      "stats": "WPN_Sword_2H_Fire",
+      "localizationKey": "Craft_Sword_2H_Fire_1"
+    },
+    "2hpoisonaxe": {
+      "name": "2H Poison Axe",
+      "icon": "TwoHandedAxePoison",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        960,
+        128,
+        1024,
+        192
+      ],
+      "stats": "WPN_Axe_2H_Poison",
+      "localizationKey": "Craft_Axe_2H_Poison_1"
+    },
+    "2hpoisonmace": {
+      "name": "2H Poison Mace",
+      "icon": "TwoHandedMacePoison",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1280,
+        128,
+        1344,
+        192
+      ],
+      "stats": "WPN_Mace_2H_Poison",
+      "localizationKey": "Craft_Mace_2H_Posion_1"
+    },
+    "2hpoisonsword": {
+      "name": "2H Poison Sword",
+      "icon": "TwoHandedSwordPoison",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1600,
+        128,
+        1664,
+        192
+      ],
+      "stats": "WPN_Sword_2H_Poison",
+      "localizationKey": "Craft_Sword_2H_Poison_1"
+    },
+    "2hshadowaxe": {
+      "name": "2H Shadow Axe",
+      "icon": "TwoHandedAxeShadow",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1856,
+        256,
+        1920,
+        320
+      ],
+      "stats": "WPN_Axe_2H_Shadow",
+      "localizationKey": "Craft_Axe_2H_Shadow_1"
+    },
+    "2hshadowmace": {
+      "name": "2H Shadow Mace",
+      "icon": "TwoHandedMaceShadow",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1728,
+        256,
+        1792,
+        320
+      ],
+      "stats": "WPN_Mace_2H_Shadow",
+      "localizationKey": "Craft_Mace_2H_Shadow_1"
+    },
+    "2hshadowsword": {
+      "name": "2H Shadow Sword",
+      "icon": "TwoHandedSwordShadow",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1600,
+        256,
+        1664,
+        320
+      ],
+      "stats": "WPN_Sword_2H_Shadow",
+      "localizationKey": "Craft_Sword_2H_Shadow_1"
+    },
+    "2hwateraxe": {
+      "name": "2H Water Axe",
+      "icon": "TwoHandedAxeWater",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1024,
+        128,
+        1088,
+        192
+      ],
+      "stats": "WPN_Axe_2H_Water",
+      "localizationKey": "Craft_Axe_2H_Water_1"
+    },
+    "2hwatersword": {
+      "name": "2H Water Sword",
+      "icon": "TwoHandedSwordWater",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1664,
+        128,
+        1728,
+        192
+      ],
+      "stats": "WPN_Sword_2H_Water",
+      "localizationKey": "Craft_Sword_2H_Water_1"
+    },
     "ajarofmindmaggots": {
       "name": "A Jar of Mind Maggots",
       "icon": "Item_LOOT_Jar_MindMaggot_A",
@@ -8370,6 +10077,19 @@
       "stats": "LOOT_Antler_A_Adult",
       "localizationKey": "LOOT_Antler_A_Adult"
     },
+    "airaxe": {
+      "name": "Air Axe",
+      "icon": "AxeAir",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1536,
+        64,
+        1600,
+        128
+      ],
+      "stats": "WPN_Axe_1H_Air",
+      "localizationKey": "Craft_Axe_Air_1"
+    },
     "airbow": {
       "name": "Air Bow",
       "icon": "BowAir",
@@ -8420,6 +10140,30 @@
         1024
       ]
     },
+    "airmace": {
+      "name": "Air Mace",
+      "icon": "MaceAir",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1856,
+        64,
+        1920,
+        128
+      ],
+      "stats": "WPN_Mace_1H_Air",
+      "localizationKey": "Craft_Mace_Air_1"
+    },
+    "airresistancepotion": {
+      "name": "Air Resistance Potion",
+      "icon": "Item_CON_PotionII_B_Purple_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        448,
+        1088,
+        512
+      ]
+    },
     "airspear": {
       "name": "Air Spear",
       "icon": "SpearAir",
@@ -8458,6 +10202,30 @@
       ],
       "stats": "WPN_Sword_1H_Air",
       "localizationKey": "Craft_Sword_Air_1"
+    },
+    "airwand": {
+      "name": "Air Wand",
+      "icon": "Item_WPN_Wand_A_Air",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        960,
+        1600,
+        1024,
+        1664
+      ],
+      "stats": "WPN_Wand_Air",
+      "localizationKey": "Craft_Wand_Air_1_1"
+    },
+    "alertnessherbmix": {
+      "name": "Alertness Herbmix",
+      "icon": "Item_QUEST_Herbmix_Alertness",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        960,
+        832,
+        1024,
+        896
+      ]
     },
     "alienairessence": {
       "name": "Alien Air Essence",
@@ -8568,6 +10336,19 @@
         384,
         768
       ]
+    },
+    "amulet": {
+      "name": "Amulet",
+      "icon": "Item_LOOT_MagicAmulet_Red",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        704,
+        1088,
+        768
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "ArmorAmulet"
     },
     "ancienthumanskull": {
       "name": "Ancient Human Skull",
@@ -8878,6 +10659,17 @@
         896
       ]
     },
+    "ashenidolofrebirth": {
+      "name": "Ashen Idol of Rebirth",
+      "icon": "Item_QUEST_Resurrection_Idol_A_Inert",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        640,
+        768,
+        704,
+        832
+      ]
+    },
     "augmentor": {
       "name": "Augmentor",
       "icon": "Item_CON_Herb_Augmentor_Step1_A",
@@ -8931,17 +10723,6 @@
         128,
         832,
         192
-      ]
-    },
-    "barricade": {
-      "name": "Barricade",
-      "icon": "Portrait_Hum_Barricade_ChevalDeFrise_A",
-      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
-      "box": [
-        512,
-        320,
-        576,
-        384
       ]
     },
     "basil": {
@@ -9047,6 +10828,19 @@
       "stats": "WPN_Mace_1H_Bell_Winter",
       "localizationKey": "Craft_Winter_Mace_1H_Bell_1"
     },
+    "belt": {
+      "name": "Belt",
+      "icon": "Item_ARM_Leather_Belt_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1152,
+        64,
+        1216,
+        128
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "ArmorBelt"
+    },
     "benchsaw": {
       "name": "Bench Saw",
       "icon": "Portrait_BLD_Humans_Sawmill_Machine",
@@ -9070,6 +10864,19 @@
       ],
       "stats": "WPN_Unique_BifurcateSpear",
       "localizationKey": "Craft_Weapon_Unique_BifurcateSpear_1"
+    },
+    "bigtongsropedtogether": {
+      "name": "Big Tongs Roped Together",
+      "icon": "Item_WPN_Common_Mace_2H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        192,
+        128,
+        256
+      ],
+      "stats": "WPN_CraftedMace_2H_B",
+      "localizationKey": "TOOL_Tong_A_LOOT_Scraps_Cloth_A_1"
     },
     "blackchaos": {
       "name": "Black Chaos",
@@ -9113,6 +10920,17 @@
         832,
         896,
         896
+      ]
+    },
+    "bladeoftheswornbreaker": {
+      "name": "Blade of the Swornbreaker",
+      "icon": "Item_UNI_WPN_Ataraxians_Scythe_2H_A_Blade",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        896,
+        384,
+        960
       ]
     },
     "blankairscroll": {
@@ -9291,6 +11109,28 @@
         704,
         768,
         768
+      ]
+    },
+    "bleedfirescroll": {
+      "name": "Bleed Fire Scroll",
+      "icon": "Item_SCROLL_Fire_FireBlood",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ]
+    },
+    "bleedfireskillbook": {
+      "name": "Bleed Fire Skillbook",
+      "icon": "Item_BOOK_Spellbook_SkillCrafting_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        64,
+        768,
+        128,
+        832
       ]
     },
     "bleedingarrow": {
@@ -9580,6 +11420,17 @@
         640
       ]
     },
+    "boiledstardustpotion": {
+      "name": "Boiled Stardust Potion",
+      "icon": "Item_CON_PotionII_D_Yellow_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        512,
+        1216,
+        576
+      ]
+    },
     "boletus": {
       "name": "Boletus",
       "icon": "Item_CON_Nature_Mushroom_Boletus_A",
@@ -9683,6 +11534,19 @@
         896
       ]
     },
+    "bow": {
+      "name": "Bow",
+      "icon": "Item_WPN_Bow_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1408,
+        768,
+        1472
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Bow"
+    },
     "bowl": {
       "name": "Bowl",
       "icon": "Item_FUR_Bowl_A",
@@ -9716,6 +11580,17 @@
         512,
         960,
         576
+      ]
+    },
+    "brokenangelicstatue": {
+      "name": "Broken Angelic Statue",
+      "icon": "Portrait_PUZ_Statue_Angel_Broken",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_DOS2_Animals_Exceptions_Icons.dds",
+      "box": [
+        240,
+        300,
+        320,
+        400
       ]
     },
     "brokenbottle": {
@@ -9828,6 +11703,28 @@
         384,
         1664,
         448
+      ]
+    },
+    "cannibalisescroll": {
+      "name": "Cannibalise Scroll",
+      "icon": "Item_SCROLL_Summoning_Cannibalize",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        384,
+        640,
+        448
+      ]
+    },
+    "cannibaliseskillbook": {
+      "name": "Cannibalise Skillbook",
+      "icon": "Item_BOOK_Spellbook_Summoning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        704,
+        960,
+        768
       ]
     },
     "cape": {
@@ -10217,6 +12114,17 @@
         1088
       ]
     },
+    "closedcircuitscroll": {
+      "name": "Closed Circuit Scroll",
+      "icon": "Item_SCROLL_Air_ElectricFence",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        256,
+        0,
+        320,
+        64
+      ]
+    },
     "closedcircuitskillbook": {
       "name": "Closed Circuit Skillbook",
       "icon": "Item_BOOK_Spellbook_Air_A_SourceGlow",
@@ -10426,6 +12334,17 @@
         832
       ]
     },
+    "cookingstation": {
+      "name": "Cooking station",
+      "icon": "Item_FUR_CookingPot_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1728,
+        768,
+        1792,
+        832
+      ]
+    },
     "corpseharvester": {
       "name": "Corpse Harvester",
       "icon": "Script_CorpseHarvester",
@@ -10434,6 +12353,17 @@
         1280,
         832,
         1344,
+        896
+      ]
+    },
+    "courageherbmix": {
+      "name": "Courage Herbmix",
+      "icon": "Item_QUEST_Herbmix_Courage",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        832,
+        832,
+        896,
         896
       ]
     },
@@ -10479,6 +12409,17 @@
         960,
         64,
         1024
+      ]
+    },
+    "craftedbarricade": {
+      "name": "Crafted Barricade",
+      "icon": "Portrait_Hum_Barricade_ChevalDeFrise_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        512,
+        320,
+        576,
+        384
       ]
     },
     "craftersanvil": {
@@ -10617,6 +12558,19 @@
       "stats": "ARM_CorpseHarvester_8_CrocArms",
       "localizationKey": "Craft_CorpseHarvester_08_CrocodileGloves_1"
     },
+    "crossbow": {
+      "name": "Crossbow",
+      "icon": "Item_WPN_Human_Normal_Crossbow_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        1472,
+        1472,
+        1536
+      ],
+      "stats": "WPN_Crossbow",
+      "localizationKey": "LOOT_Ingred_CrossbowWithoutString_LOOT_String_Bow_A_1"
+    },
     "crossbowwithoutbowstring": {
       "name": "Crossbow Without Bowstring",
       "icon": "Item_LOOT_CrossbowWithoutString_A",
@@ -10693,6 +12647,19 @@
         1408,
         896
       ]
+    },
+    "curiousangelicstatue": {
+      "name": "Curious Angelic Statue",
+      "icon": "Portait_PUZ_Statue_Angel",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_DOS2_Animals_Exceptions_Icons.dds",
+      "box": [
+        320,
+        300,
+        400,
+        400
+      ],
+      "previewSource": "dos2/Public/DivinityOrigins_1301db3d-1f54-4e98-9be5-5094030916e4/Stats/Generated/ItemCombos.txt",
+      "CombinationID": "PUZ_Statue_Angel_Head_PUZ_Statue_Angel_Broken"
     },
     "currywurst": {
       "name": "Currywurst",
@@ -10790,6 +12757,17 @@
         960,
         1088,
         1024,
+        1152
+      ]
+    },
+    "cursedfirestormgrenade": {
+      "name": "Cursed Firestorm Grenade",
+      "icon": "Item_GRN_Molotov_Cursed",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1088,
+        1088,
+        1152,
         1152
       ]
     },
@@ -11002,6 +12980,19 @@
         448
       ]
     },
+    "cuttingtool": {
+      "name": "CuttingTool",
+      "icon": "Item_WPN_Tool_PocketKnife_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1728,
+        768,
+        1792,
+        832
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "CuttingTool"
+    },
     "cyandye": {
       "name": "Cyan Dye",
       "icon": "DyeCyan",
@@ -11013,6 +13004,19 @@
         256
       ]
     },
+    "dagger": {
+      "name": "Dagger",
+      "icon": "Item_WPN_Dagger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1408,
+        1344,
+        1472
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Dagger"
+    },
     "darkforestdye": {
       "name": "Dark Forest Dye",
       "icon": "DyeDarkForest",
@@ -11022,6 +13026,17 @@
         192,
         1216,
         256
+      ]
+    },
+    "darkpearl": {
+      "name": "Dark Pearl",
+      "icon": "Item_HAR_Pearl_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        896,
+        64,
+        960
       ]
     },
     "dazingboltscroll": {
@@ -11099,6 +13114,28 @@
         768,
         64,
         832
+      ]
+    },
+    "deepfreezescroll": {
+      "name": "Deep Freeze Scroll",
+      "icon": "Item_SCROLL_Water_Shatter",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ]
+    },
+    "deepfreezeskillbook": {
+      "name": "Deep Freeze Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
       ]
     },
     "deerhide": {
@@ -11244,6 +13281,28 @@
         512
       ]
     },
+    "doortoeternityscroll": {
+      "name": "Door to Eternity Scroll",
+      "icon": "Item_SCROLL_Summoning_CloseTheDoor",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ]
+    },
+    "doortoeternityskillbook": {
+      "name": "Door to Eternity Skillbook",
+      "icon": "Item_BOOK_Spellbook_Summoning_SourceGlow",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        832,
+        768,
+        896
+      ]
+    },
     "dough": {
       "name": "Dough",
       "icon": "Item_CON_Ingred_Dough_A",
@@ -11309,6 +13368,19 @@
         896,
         640
       ]
+    },
+    "earthaxe": {
+      "name": "Earth Axe",
+      "icon": "AxeEarth",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1600,
+        64,
+        1664,
+        128
+      ],
+      "stats": "WPN_Axe_1H_Earth",
+      "localizationKey": "Craft_Axe_Earth_1"
     },
     "earthbow": {
       "name": "Earth Bow",
@@ -11397,6 +13469,19 @@
       "stats": "WPN_Spear_Earth",
       "localizationKey": "Craft_Spear_Earth_1"
     },
+    "earthstaff": {
+      "name": "Earth Staff",
+      "icon": "earthstaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1344,
+        256,
+        1408,
+        320
+      ],
+      "stats": "WPN_Staff_Earth",
+      "localizationKey": "Craft_Staff_Earth_1_1"
+    },
     "earthsword": {
       "name": "Earth Sword",
       "icon": "SwordEarth",
@@ -11456,6 +13541,19 @@
         768
       ]
     },
+    "egg": {
+      "name": "Egg",
+      "icon": "Item_CON_Food_Eggs_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        0,
+        256,
+        64
+      ],
+      "stats": "CON_Food_Eggs_A",
+      "localizationKey": "CON_Food_Eggs_A"
+    },
     "eggs": {
       "name": "Eggs",
       "icon": "Item_CON_Food_Eggs_A",
@@ -11468,6 +13566,17 @@
       ],
       "stats": "CON_Food_Eggs_A",
       "localizationKey": "CON_Food_Eggs_A"
+    },
+    "electricdischargescroll": {
+      "name": "Electric Discharge Scroll",
+      "icon": "Item_SCROLL_Air_LightningBolt",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        0,
+        384,
+        64
+      ]
     },
     "electricdischargeskillbook": {
       "name": "Electric Discharge Skillbook",
@@ -11603,6 +13712,17 @@
         1920
       ]
     },
+    "emptyhoneyjar": {
+      "name": "Empty Honey Jar",
+      "icon": "Item_LOOT_Jar_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        960,
+        1856,
+        1024
+      ]
+    },
     "emptymug": {
       "name": "Empty Mug",
       "icon": "Item_CON_Drink_Mug_A_Empty",
@@ -11660,6 +13780,17 @@
         960
       ]
     },
+    "enlightenmentherbmix": {
+      "name": "Enlightenment Herbmix",
+      "icon": "Item_QUEST_Herbmix_Enlightenment",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1088,
+        832,
+        1152,
+        896
+      ]
+    },
     "epidemicoffirescroll": {
       "name": "Epidemic Of Fire Scroll",
       "icon": "Item_SCROLL_Fire_InfectiousFlame",
@@ -11680,6 +13811,28 @@
         832,
         384,
         896
+      ]
+    },
+    "equalisescroll": {
+      "name": "Equalise Scroll",
+      "icon": "Item_SCROLL_Polymorph_Equalize",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ]
+    },
+    "equaliseskillbook": {
+      "name": "Equalise Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
       ]
     },
     "estoc": {
@@ -11862,6 +14015,17 @@
         1024
       ]
     },
+    "ferocityherbmix": {
+      "name": "Ferocity Herbmix",
+      "icon": "Item_QUEST_Herbmix_Ferocity",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        832,
+        832,
+        896
+      ]
+    },
     "firearrow": {
       "name": "Fire Arrow",
       "icon": "Item_WPN_Arrow_Fire_A",
@@ -11883,6 +14047,19 @@
         1216,
         1408
       ]
+    },
+    "fireaxe": {
+      "name": "Fire Axe",
+      "icon": "AxeFire",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1664,
+        64,
+        1728,
+        128
+      ],
+      "stats": "WPN_Axe_1H_Fire",
+      "localizationKey": "Craft_Axe_Fire_1"
     },
     "firebow": {
       "name": "Fire Bow",
@@ -11982,6 +14159,19 @@
       "stats": "WPN_Spear_Fire",
       "localizationKey": "Craft_Spear_Fire_1"
     },
+    "firestaff": {
+      "name": "Fire Staff",
+      "icon": "firestaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        960,
+        64,
+        1024,
+        128
+      ],
+      "stats": "WPN_Staff_Fire",
+      "localizationKey": "Craft_Staff_Fire_1_1"
+    },
     "firesword": {
       "name": "Fire Sword",
       "icon": "SwordFire",
@@ -11994,6 +14184,19 @@
       ],
       "stats": "WPN_Sword_1H_Fire",
       "localizationKey": "Craft_Sword_Fire_1"
+    },
+    "firewand": {
+      "name": "Fire Wand",
+      "icon": "Item_WPN_Wand_A_Fire",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1088,
+        1600,
+        1152,
+        1664
+      ],
+      "stats": "WPN_Wand_Fire",
+      "localizationKey": "Craft_Wand_Fire_1_1"
     },
     "firewhipscroll": {
       "name": "Fire Whip Scroll",
@@ -12061,6 +14264,17 @@
         768
       ]
     },
+    "firestormgrenade": {
+      "name": "Firestorm Grenade",
+      "icon": "Item_GRN_Molotov",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        1728,
+        1856,
+        1792
+      ]
+    },
     "fishbone": {
       "name": "Fishbone",
       "icon": "Item_JUNK_FishSkeleton_A",
@@ -12070,6 +14284,17 @@
         1152,
         1088,
         1216
+      ]
+    },
+    "fishpie": {
+      "name": "Fish Pie",
+      "icon": "Item_CON_Food_Pie_Cyseal_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        576,
+        832,
+        640
       ]
     },
     "fishpiedough": {
@@ -12136,6 +14361,28 @@
         1728,
         1600,
         1792
+      ]
+    },
+    "flayskinscroll": {
+      "name": "Flay Skin Scroll",
+      "icon": "Item_SCROLL_Polymorph_StripResistance",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        896,
+        704,
+        960,
+        768
+      ]
+    },
+    "flayskinskillbook": {
+      "name": "Flay Skin Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
       ]
     },
     "flour": {
@@ -12498,6 +14745,17 @@
         768
       ]
     },
+    "glowingidolofrebirth": {
+      "name": "Glowing Idol of Rebirth",
+      "icon": "Item_QUEST_Resurrection_Idol_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1536,
+        704,
+        1600,
+        768
+      ]
+    },
     "goblinpants": {
       "name": "Goblin Pants",
       "icon": "Item_EQ_Armor_StarterLeather_A_Lowerbody_A",
@@ -12669,6 +14927,17 @@
         704
       ]
     },
+    "haftoftheswornbreaker": {
+      "name": "Haft of the Swornbreaker",
+      "icon": "Item_UNI_WPN_Ataraxians_Scythe_2H_A_Staff",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        384,
+        896,
+        448,
+        960
+      ]
+    },
     "hailstrikescroll": {
       "name": "Hail Strike Scroll",
       "icon": "Item_SCROLL_Water_HailStrike",
@@ -12715,6 +14984,19 @@
         128
       ]
     },
+    "hammer": {
+      "name": "Hammer",
+      "icon": "Item_TOOL_Hammer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1664,
+        1216,
+        1728,
+        1280
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Hammer"
+    },
     "handkerchief": {
       "name": "Handkerchief",
       "icon": "Item_LOOT_Handkerchief_A",
@@ -12724,6 +15006,121 @@
         960,
         1472,
         1024
+      ]
+    },
+    "handmadechainarmour": {
+      "name": "Handmade Chain Armour",
+      "icon": "Item_EQ_Armor_Chainmail_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1600,
+        0,
+        1664,
+        64
+      ],
+      "stats": "ARM_Light_UpperBody_Chain_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Metal_A_1"
+    },
+    "handmadeclothshirt": {
+      "name": "Handmade Cloth Shirt",
+      "icon": "Item_EQ_Clothing_Civilian_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        960,
+        64,
+        1024,
+        128
+      ],
+      "stats": "ARM_Cloth_UpperBody_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Cloth_A_1"
+    },
+    "handmadeleatherarmour": {
+      "name": "Handmade Leather Armour",
+      "icon": "Item_EQ_Armor_Leather_UpperBody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1920,
+        0,
+        1984,
+        64
+      ],
+      "stats": "ARM_Light_UpperBody_Leather_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Leather_A_1"
+    },
+    "handmademagearmour": {
+      "name": "Handmade Mage Armour",
+      "icon": "Item_EQ_Armor_Mage_Robe_Fullbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        64,
+        128,
+        128
+      ],
+      "stats": "ARM_Mage_UpperBody_Crafted",
+      "localizationKey": "LOOT_Needle_Thread_A_LOOT_Scraps_Cloth_A_TOOL_Pouch_Dust_Pixie_A_1"
+    },
+    "handmadeplatearmour": {
+      "name": "Handmade Plate Armour",
+      "icon": "Item_EQ_Armor_Leather_UpperBody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1920,
+        0,
+        1984,
+        64
+      ],
+      "stats": "ARM_Heavy_UpperBody_Plate_Crafted",
+      "localizationKey": "Anvil_LOOT_Scraps_Plate_A_1"
+    },
+    "handmadescalearmour": {
+      "name": "Handmade Scale Armour",
+      "icon": "Item_EQ_Armor_Scalemail_Upperbody_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        64,
+        832,
+        128
+      ],
+      "stats": "ARM_Heavy_UpperBody_Scale_Crafted",
+      "localizationKey": "Anvil_LOOT_Scraps_Scale_A_1"
+    },
+    "handmadeshield": {
+      "name": "Handmade Shield",
+      "icon": "Item_WPN_Common_Shield_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        192,
+        192,
+        256
+      ],
+      "stats": "WPN_CraftedShield",
+      "localizationKey": "LOOT_Scraps_Metal_A_LOOT_Scraps_Wood_A_1"
+    },
+    "handmadesword": {
+      "name": "Handmade Sword",
+      "icon": "Item_WPN_Common_Sword_1H_A1",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        192,
+        384,
+        256
+      ],
+      "stats": "WPN_Sword_1H",
+      "localizationKey": "Anvil_LOOT_Scraps_Metal_A_Hammer_1"
+    },
+    "hastescroll": {
+      "name": "Haste Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Haste",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
       ]
     },
     "hasteskillbook": {
@@ -12737,6 +15134,28 @@
         768
       ]
     },
+    "hazyruby": {
+      "name": "Hazy Ruby",
+      "icon": "Item_LOOT_Ruby_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1024,
+        1664,
+        1088
+      ]
+    },
+    "headofangelicstatue": {
+      "name": "Head of Angelic Statue",
+      "icon": "Item_PUZ_Statue_Angel_Head",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        832,
+        1216,
+        896
+      ]
+    },
     "healingelixir": {
       "name": "Healing Elixir",
       "icon": "Item_CON_PotionII_D_BloodRed_Large",
@@ -12746,6 +15165,17 @@
         512,
         1600,
         576
+      ]
+    },
+    "healingpotion": {
+      "name": "Healing Potion",
+      "icon": "Item_CON_PotionII_A_Red_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        448,
+        576,
+        512
       ]
     },
     "healingritualscroll": {
@@ -12791,6 +15221,19 @@
         1024,
         768
       ]
+    },
+    "helmet": {
+      "name": "Helmet",
+      "icon": "Item_ARM_Leather_A_Helmet",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        576,
+        64,
+        640,
+        128
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "ArmorHelmet"
     },
     "herring": {
       "name": "Herring",
@@ -12982,6 +15425,17 @@
         1088
       ]
     },
+    "holyblessedgrenade": {
+      "name": "Holy Blessed Grenade",
+      "icon": "GrenadeBlessedHoly",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1600,
+        320,
+        1664,
+        384
+      ]
+    },
     "holyhandgrenade": {
       "name": "Holy Hand Grenade",
       "icon": "Item_GRN_Holy",
@@ -13090,6 +15544,17 @@
         1280,
         1536,
         1344
+      ]
+    },
+    "hungryflowerscroll": {
+      "name": "Hungry Flower Scroll",
+      "icon": "Item_SCROLL_Earth_PoisonousPlantMonster",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        384,
+        256,
+        448,
+        320
       ]
     },
     "huntersbigos": {
@@ -13237,6 +15702,19 @@
         768
       ]
     },
+    "improvisedstaff": {
+      "name": "Improvised Staff",
+      "icon": "Item_WPN_Common_Staff_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        256,
+        192,
+        320,
+        256
+      ],
+      "stats": "WPN_CraftedStaff_Fire",
+      "localizationKey": "LOOT_WoodenBranch_A_HAR_Shell_1"
+    },
     "indigodye": {
       "name": "Indigo Dye",
       "icon": "DyeIndigo",
@@ -13312,6 +15790,17 @@
         640,
         2048,
         704
+      ]
+    },
+    "inkpotandquill": {
+      "name": "Ink Pot and Quill",
+      "icon": "Item_LOOT_Ink_Pot_A_Quill_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1664,
+        960,
+        1728,
+        1024
       ]
     },
     "inkpot": {
@@ -13456,6 +15945,32 @@
         1856,
         64
       ]
+    },
+    "knife": {
+      "name": "Knife",
+      "icon": "Item_FUR_Cutlery_Knife_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1920,
+        768,
+        1984,
+        832
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Knife"
+    },
+    "knifeonastick": {
+      "name": "Knife On A Stick",
+      "icon": "Item_WPN_Common_Sword_1H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        448,
+        192,
+        512,
+        256
+      ],
+      "stats": "WPN_CraftedSword_1H",
+      "localizationKey": "LOOT_WoodenStick_A_Dagger_1"
     },
     "knightssafranorangecake": {
       "name": "Knight's Safran Orange Cake",
@@ -13720,6 +16235,32 @@
         256
       ]
     },
+    "leatherboots": {
+      "name": "Leather Boots",
+      "icon": "Item_EQ_Armor_Leather_Legs_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1792,
+        0,
+        1856,
+        64
+      ],
+      "previewSource": "Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "BootsLeather"
+    },
+    "leatherhelmet": {
+      "name": "Leather Helmet",
+      "icon": "Item_ARM_Leather_A_Helmet",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        576,
+        64,
+        640,
+        128
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "LeatherHelmet"
+    },
     "leatherscraps": {
       "name": "Leather Scraps",
       "icon": "Item_LOOT_Scraps_Leather_A",
@@ -13910,6 +16451,32 @@
         1920,
         704
       ]
+    },
+    "mageboots": {
+      "name": "Mage Boots",
+      "icon": "Item_EQ_Armor_StarteChainmail_A_Legs_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        384,
+        1216,
+        448,
+        1280
+      ],
+      "previewSource": "Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "BootsMage"
+    },
+    "magehelmet": {
+      "name": "Mage Helmet",
+      "icon": "Item_EQ_Armor_Mage_Robe_Helmet_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        64,
+        192,
+        128
+      ],
+      "previewSource": "Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "HelmetMage"
     },
     "magentadye": {
       "name": "Magenta Dye",
@@ -14280,6 +16847,19 @@
       "stats": "ARM_CorpseHarvester_37_MermanArmor",
       "localizationKey": "Craft_CorpseHarvester_37_MermanUpperbody_1"
     },
+    "metal": {
+      "name": "Metal",
+      "icon": "Item_LOOT_Scraps_Metal_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        1024,
+        1856,
+        1088
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Metal"
+    },
     "metalcrate": {
       "name": "Metal Crate",
       "icon": "Portrait_CONT_Crate_Metal",
@@ -14403,6 +16983,17 @@
         576
       ]
     },
+    "minorfinessepotion": {
+      "name": "Minor Finesse Potion",
+      "icon": "Item_CON_PotionII_C_Yellow_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        512,
+        256,
+        576
+      ]
+    },
     "minorhealingpotion": {
       "name": "Minor Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Small",
@@ -14471,6 +17062,28 @@
         576
       ]
     },
+    "minorwitspotion": {
+      "name": "Minor Wits Potion",
+      "icon": "Item_CON_PotionII_C_Pink_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        448,
+        512,
+        512,
+        576
+      ]
+    },
+    "mistydiamond": {
+      "name": "Misty Diamond",
+      "icon": "Item_LOOT_Gems_Diamond_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        832,
+        960,
+        896,
+        1024
+      ]
+    },
     "mobilekitchen": {
       "name": "Mobile Kitchen",
       "icon": "Item_FUR_CookingPot_A",
@@ -14535,6 +17148,17 @@
         768,
         64,
         832
+      ]
+    },
+    "muddymalachite": {
+      "name": "Muddy Malachite",
+      "icon": "Item_LOOT_Gems_Malachite_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        960,
+        960,
+        1024
       ]
     },
     "mugofbeer": {
@@ -14658,6 +17282,17 @@
         1792
       ]
     },
+    "nails": {
+      "name": "Nails",
+      "icon": "Item_TOOL_Nails_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1280,
+        64,
+        1344
+      ]
+    },
     "navydye": {
       "name": "Navy Dye",
       "icon": "DyeNavy",
@@ -14667,6 +17302,17 @@
         192,
         768,
         256
+      ]
+    },
+    "nebulouscrystal": {
+      "name": "Nebulous Crystal",
+      "icon": "Item_LOOT_Gems_Crystal_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        960,
+        832,
+        1024
       ]
     },
     "needle": {
@@ -15304,6 +17950,19 @@
         1408
       ]
     },
+    "poisonaxe": {
+      "name": "Poison Axe",
+      "icon": "AxePoison",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1728,
+        64,
+        1792,
+        128
+      ],
+      "stats": "WPN_Axe_1H_Poison",
+      "localizationKey": "Craft_Axe_Poison_1"
+    },
     "poisonbow": {
       "name": "Poison Bow",
       "icon": "BowPoison",
@@ -15376,6 +18035,17 @@
       "stats": "WPN_Dagger_Poison",
       "localizationKey": "Craft_Dagger_Poison_1"
     },
+    "poisondartscroll": {
+      "name": "Poison Dart Scroll",
+      "icon": "Item_SCROLL_Earth_PoisonDart",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        0,
+        640,
+        64
+      ]
+    },
     "poisondartskillbook": {
       "name": "Poison Dart Skillbook",
       "icon": "Item_BOOK_Spellbook_Earth_A",
@@ -15422,6 +18092,19 @@
       "stats": "WPN_Mace_1H_Poison",
       "localizationKey": "Craft_Mace_Poison_1"
     },
+    "poisonpotion": {
+      "name": "Poison Potion",
+      "icon": "Item_CON_Potion_A_Green_Mini",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1664,
+        640,
+        1728,
+        704
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "PotionPoison"
+    },
     "poisonspear": {
       "name": "Poison Spear",
       "icon": "SpearPoison",
@@ -15447,6 +18130,19 @@
       ],
       "stats": "WPN_Sword_1H_Poison",
       "localizationKey": "Craft_Sword_Poison_1"
+    },
+    "poisonwand": {
+      "name": "Poison Wand",
+      "icon": "Item_WPN_Wand_A_Poison",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1152,
+        1600,
+        1216,
+        1664
+      ],
+      "stats": "WPN_Wand_Poison",
+      "localizationKey": "Craft_Wand_Poison_1_1"
     },
     "poisonwavescroll": {
       "name": "Poison Wave Scroll",
@@ -15514,6 +18210,39 @@
         640
       ]
     },
+    "potentalertnessherbmix": {
+      "name": "Potent Alertness Herbmix",
+      "icon": "Item_QUEST_Herbmix_Alertness_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        896,
+        832,
+        960,
+        896
+      ]
+    },
+    "potentenlightenmentherbmix": {
+      "name": "Potent Enlightenment Herbmix",
+      "icon": "Item_QUEST_Herbmix_Enlightenment_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        832,
+        1088,
+        896
+      ]
+    },
+    "potentferocityherbmix": {
+      "name": "Potent Ferocity Herbmix",
+      "icon": "Item_QUEST_Herbmix_Ferocity_Potent",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        704,
+        832,
+        768,
+        896
+      ]
+    },
     "potionbag": {
       "name": "Potion  Bag",
       "icon": "potionbag",
@@ -15534,6 +18263,17 @@
         0,
         1344,
         64
+      ]
+    },
+    "potionofjellyfishskin": {
+      "name": "Potion Of Jellyfish Skin",
+      "icon": "Item_CON_PotionII_A_Blue_Huge",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        576,
+        576,
+        640,
+        640
       ]
     },
     "potionofnimbletumble": {
@@ -15627,6 +18367,19 @@
         320,
         768
       ]
+    },
+    "primitiveharpoon": {
+      "name": "Primitive Harpoon",
+      "icon": "Item_WPN_Common_Spear_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ],
+      "stats": "WPN_PrimitiveHarpoon",
+      "localizationKey": "LOOT_WoodenBranch_A_LOOT_MetalShard_A_1"
     },
     "puffball": {
       "name": "Puffball",
@@ -15819,6 +18572,28 @@
         832
       ]
     },
+    "raisebonewidowscroll": {
+      "name": "Raise Bone Widow Scroll",
+      "icon": "Item_SCROLL_Decay_RaiseBonePile",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        576,
+        448,
+        640,
+        512
+      ]
+    },
+    "raisebonewidowskillbook": {
+      "name": "Raise Bone Widow Skillbook",
+      "icon": "Item_BOOK_Spellbook_Decay_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        768,
+        64,
+        832
+      ]
+    },
     "rallyingcryscroll": {
       "name": "Rallying Cry Scroll",
       "icon": "Item_SCROLL_Summoning_Harmony",
@@ -15953,6 +18728,39 @@
         640
       ]
     },
+    "razzledazzlegrenade": {
+      "name": "Razzle Dazzle Grenade",
+      "icon": "Item_GRN_Flashbang",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1536,
+        1728,
+        1600,
+        1792
+      ]
+    },
+    "reactivearmourscroll": {
+      "name": "Reactive Armour Scroll",
+      "icon": "Item_SCROLL_Earth_ReactiveArmor",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        192,
+        768,
+        256
+      ]
+    },
+    "reactivearmourskillbook": {
+      "name": "Reactive Armour Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ]
+    },
     "realsmokegrenade": {
       "name": "Real Smoke Grenade",
       "icon": "Item_GRN_SmokeBomb",
@@ -16008,6 +18816,19 @@
         704
       ]
     },
+    "redstarstaff": {
+      "name": "Red Star Staff",
+      "icon": "Item_WPN_Humans_Staff_Purge_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1088,
+        1152,
+        1152,
+        1216
+      ],
+      "stats": "WPN_Unique_Staff_RedStar",
+      "localizationKey": "Craft_Weapon_Unique_Staff_RedStar_1"
+    },
     "restorationscroll": {
       "name": "Restoration Scroll",
       "icon": "Item_SCROLL_Water_Restoration",
@@ -16052,6 +18873,63 @@
         832
       ]
     },
+    "ring": {
+      "name": "Ring",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Ring"
+    },
+    "rippedoffdwarvenface": {
+      "name": "Ripped-Off Dwarven Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Dwarves_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        1088,
+        576,
+        1152
+      ]
+    },
+    "rippedoffelvenface": {
+      "name": "Ripped-Off Elven Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Elves_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        832,
+        1152,
+        896,
+        1216
+      ]
+    },
+    "rippedoffhumanface": {
+      "name": "Ripped-Off Human Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Humans_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        1152,
+        832,
+        1216
+      ]
+    },
+    "rippedofflizardface": {
+      "name": "Ripped-Off Lizard Face",
+      "icon": "Item_QUEST_Undead_Ripped_Face_Lizards_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        1088,
+        1920,
+        1152
+      ]
+    },
     "rivellonfries": {
       "name": "Rivellon Fries",
       "icon": "Item_CON_Food_Fries_Rivellon_A",
@@ -16073,6 +18951,19 @@
         768,
         1664
       ]
+    },
+    "rock": {
+      "name": "Rock",
+      "icon": "Item_LOOT_Ore_BlackRock_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        64,
+        1024,
+        128,
+        1088
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Rock"
     },
     "rope": {
       "name": "Rope",
@@ -16305,6 +19196,28 @@
         832
       ]
     },
+    "searingdaggersscroll": {
+      "name": "Searing Daggers Scroll",
+      "icon": "Item_SCROLL_Fire_FlamingDaggers",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        0,
+        768,
+        64
+      ]
+    },
+    "searingdaggersskillbook": {
+      "name": "Searing Daggers Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ]
+    },
     "shacklesofpainscroll": {
       "name": "Shackles of Pain Scroll",
       "icon": "Item_SCROLL_Decay_ShacklesOfPain",
@@ -16523,6 +19436,32 @@
         1088
       ]
     },
+    "sharpstoneonabigbranch": {
+      "name": "Sharp Stone On A Big Branch",
+      "icon": "Item_WPN_Common_Axe_2H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1472,
+        128,
+        1536,
+        192
+      ],
+      "stats": "WPN_CraftedAxe_2H",
+      "localizationKey": "LOOT_WoodenBranch_A_LOOT_PieceOfRock_A_1"
+    },
+    "sharpstoneonastick": {
+      "name": "Sharp Stone On A Stick",
+      "icon": "Item_WPN_Common_Axe_1H_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1344,
+        128,
+        1408,
+        192
+      ],
+      "stats": "WPN_CraftedAxe_1H",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_PieceOfRock_A_1"
+    },
     "sharptooth": {
       "name": "Sharp Tooth",
       "icon": "Item_LOOT_Tooth_A",
@@ -16559,6 +19498,41 @@
       ],
       "stats": "BOOK_Paper_Sheet_A",
       "localizationKey": "BOOK_Paper_Sheet_A"
+    },
+    "shiv": {
+      "name": "Shiv",
+      "icon": "Item_WPN_Common_Dagger_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1728,
+        128,
+        1792,
+        192
+      ],
+      "stats": "WPN_CraftedDagger",
+      "localizationKey": "Anvil_LOOT_MetalShard_A_Hammer_1"
+    },
+    "shockingarrow": {
+      "name": "Shocking Arrow",
+      "icon": "Item_WPN_Arrow_Stunning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1344,
+        768,
+        1408
+      ]
+    },
+    "shockingarrowhead": {
+      "name": "Shocking Arrowhead",
+      "icon": "Item_WPN_ArrowHead_Stunning_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1728,
+        1344,
+        1792,
+        1408
+      ]
     },
     "shockingtouchscroll": {
       "name": "Shocking Touch Scroll",
@@ -16603,6 +19577,18 @@
         1600,
         832
       ]
+    },
+    "shriekersscythe": {
+      "name": "Shrieker's Scythe",
+      "icon": "Item_WPN_Tool_Scythe_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1792,
+        768,
+        1856,
+        832
+      ],
+      "stats": "WPN_CorpseHarvester_32_ShriekerSycthe"
     },
     "sickle": {
       "name": "Sickle",
@@ -17026,6 +20012,19 @@
         1920
       ]
     },
+    "spear": {
+      "name": "Spear",
+      "icon": "Item_WPN_Spear_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        1536,
+        1472,
+        1600
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Spear"
+    },
     "spiderlegsscroll": {
       "name": "Spider Legs Scroll",
       "icon": "Item_SCROLL_Polymorph_SpiderLegs",
@@ -17148,6 +20147,19 @@
         960,
         768
       ]
+    },
+    "staff": {
+      "name": "Staff",
+      "icon": "Item_WPN_Human_Normal_2H_Staff_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        384,
+        1472,
+        448,
+        1536
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Staff"
     },
     "starwand": {
       "name": "Star Wand",
@@ -17327,6 +20339,28 @@
         896
       ]
     },
+    "summonoilyblobscroll": {
+      "name": "Summon Oily Blob Scroll",
+      "icon": "Item_SCROLL_Polymorph_SummonOilBlob",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        128,
+        768,
+        192,
+        832
+      ]
+    },
+    "summonoilyblobskillbook": {
+      "name": "Summon Oily Blob Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
+      ]
+    },
     "summonersgoulash": {
       "name": "Summoner's Goulash",
       "icon": "goulash",
@@ -17417,6 +20451,41 @@
         768
       ]
     },
+    "sword": {
+      "name": "Sword",
+      "icon": "Item_WPN_Sword_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        1536,
+        1536,
+        1600
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "Sword"
+    },
+    "swornbreakerschematic": {
+      "name": "Swornbreaker Schematic",
+      "icon": "Item_QUEST_AtaraxianTablet_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        512,
+        960,
+        576,
+        1024
+      ]
+    },
+    "taintedstew": {
+      "name": "Tainted Stew",
+      "icon": "Item_CON_Food_Stew_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        576,
+        1536,
+        640
+      ]
+    },
     "tasergrenade": {
       "name": "Taser Grenade",
       "icon": "Item_GRN_Taser",
@@ -17505,6 +20574,28 @@
         768
       ]
     },
+    "terraintransmutationscroll": {
+      "name": "Terrain Transmutation Scroll",
+      "icon": "Item_SCROLL_Polymorph_SwapGround",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        896,
+        768,
+        960
+      ]
+    },
+    "terraintransmutationskillbook": {
+      "name": "Terrain Transmutation Skillbook",
+      "icon": "Item_BOOK_Spellbook_Polymorph_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        704,
+        1024,
+        768
+      ]
+    },
     "terrorgrenade": {
       "name": "Terror Grenade",
       "icon": "Item_GRN_Terror",
@@ -17525,6 +20616,17 @@
         1088,
         960,
         1152
+      ]
+    },
+    "thunderboltgrenade": {
+      "name": "Thunderbolt Grenade",
+      "icon": "Item_GRN_Taser",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        1792,
+        192,
+        1856
       ]
     },
     "thunderstormscroll": {
@@ -17705,6 +20807,19 @@
         896
       ]
     },
+    "toycrossbow": {
+      "name": "Toy Crossbow",
+      "icon": "Item_WPN_Common_Crossbow_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1664,
+        128,
+        1728,
+        192
+      ],
+      "stats": "WPN_CraftedCrossbow",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_WoodenBranch_A_1"
+    },
     "transmuter": {
       "name": "Transmuter",
       "icon": "Transmutator",
@@ -17714,6 +20829,17 @@
         128,
         1856,
         192
+      ]
+    },
+    "trapdisarmingkit": {
+      "name": "Trap Disarming Kit",
+      "icon": "Item_TOOL_TrapDisarmToolkit_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1024,
+        576,
+        1088,
+        640
       ]
     },
     "tremorgrenade": {
@@ -17819,6 +20945,45 @@
         1152
       ]
     },
+    "twigwithastring": {
+      "name": "Twig With A String",
+      "icon": "Item_WPN_Common_Bow_2H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1536,
+        128,
+        1600,
+        192
+      ],
+      "stats": "WPN_CraftedBow",
+      "localizationKey": "LOOT_WoodenStick_A_LOOT_String_Bow_A_1"
+    },
+    "twohandedaxe": {
+      "name": "Two Handed Axe",
+      "icon": "Item_WPN_2H_Axe_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1280,
+        1344,
+        1344
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "TwoHandedAxe"
+    },
+    "twohandedsword": {
+      "name": "Two Handed Sword",
+      "icon": "Item_WPN_2H_Sword_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        1280,
+        1408,
+        1344
+      ],
+      "previewSource": "Public/Shared/Stats/ItemComboPreviews.lsx",
+      "Category": "TwoHandedSword"
+    },
     "ultimateaugmentorherb": {
       "name": "Ultimate Augmentor Herb",
       "icon": "Item_CON_Herb_Augmentor_Step3_A",
@@ -17829,6 +20994,84 @@
         64,
         1344
       ]
+    },
+    "unique2hairsword": {
+      "name": "Unique 2H Air Sword",
+      "icon": "UniqueSwordAir2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        128,
+        1024,
+        192,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Air",
+      "localizationKey": "Craft_Magical_Weapon_Air_2H_1"
+    },
+    "unique2hearthsword": {
+      "name": "Unique 2H Earth Sword",
+      "icon": "UniqueSwordEarth2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        192,
+        1024,
+        256,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Earth",
+      "localizationKey": "Craft_Magical_Weapon_Earth_2H_1"
+    },
+    "unique2hfiresword": {
+      "name": "Unique 2H Fire Sword",
+      "icon": "UniqueSwordFire2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        256,
+        1024,
+        320,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Fire",
+      "localizationKey": "Craft_Magical_Weapon_Fire_2H_1"
+    },
+    "unique2hpoisonsword": {
+      "name": "Unique 2H Poison Sword",
+      "icon": "UniqueSwordPoison2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        320,
+        1024,
+        384,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Poison",
+      "localizationKey": "Craft_Magical_Weapon_Poison_2H_1"
+    },
+    "unique2hsilversword": {
+      "name": "Unique 2H Silver Sword",
+      "icon": "UniqueSwordSilver2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        384,
+        1024,
+        448,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Silver",
+      "localizationKey": "Craft_Magical_Weapon_Silver_2H_1"
+    },
+    "unique2hwatersword": {
+      "name": "Unique 2H Water Sword",
+      "icon": "UniqueSwordWater2H",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        448,
+        1024,
+        512,
+        1088
+      ],
+      "stats": "WPN_Sword_2H_Unique_Water",
+      "localizationKey": "Craft_Magical_Weapon_Water_2H_1"
     },
     "uniqueaerotherugeboots": {
       "name": "Unique Aerotheruge Boots",
@@ -17895,6 +21138,19 @@
       "stats": "WPN_Dagger_Unique_Air",
       "localizationKey": "Craft_Dagger_Unique_Air_1"
     },
+    "uniqueairstaff": {
+      "name": "Unique Air Staff",
+      "icon": "airstaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        768,
+        64,
+        832,
+        128
+      ],
+      "stats": "WPN_Staff_Unique_Air",
+      "localizationKey": "Craft_Staff_Air_Unique_1"
+    },
     "uniqueairsword": {
       "name": "Unique Air Sword",
       "icon": "UniqueSwordAir",
@@ -17947,6 +21203,19 @@
       "stats": "WPN_Dagger_Unique_Earth",
       "localizationKey": "Craft_Dagger_Unique_Earth_1"
     },
+    "uniqueearthstaff": {
+      "name": "Unique Earth Staff",
+      "icon": "earthstaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1344,
+        256,
+        1408,
+        320
+      ],
+      "stats": "WPN_Staff_Unique_Earth",
+      "localizationKey": "Craft_Staff_Earth_Unique_1"
+    },
     "uniqueearthsword": {
       "name": "Unique Earth Sword",
       "icon": "UniqueSwordEarth",
@@ -17959,6 +21228,19 @@
       ],
       "stats": "WPN_Sword_1H_Unique_Earth",
       "localizationKey": "Craft_Magical_Weapon_Earth_1"
+    },
+    "uniqueearthwand": {
+      "name": "Unique Earth Wand",
+      "icon": "WandEarth",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1408,
+        256,
+        1472,
+        320
+      ],
+      "stats": "WPN_Wand_Unique_Earth",
+      "localizationKey": "Craft_Weapon_Unique_Wand_Earth_1"
     },
     "uniquefirebow": {
       "name": "Unique Fire Bow",
@@ -17985,6 +21267,19 @@
       ],
       "stats": "WPN_Dagger_Unique_Fire",
       "localizationKey": "Craft_Dagger_Unique_Fire_1"
+    },
+    "uniquefirestaff": {
+      "name": "Unique Fire Staff",
+      "icon": "firestaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        960,
+        64,
+        1024,
+        128
+      ],
+      "stats": "WPN_Staff_Unique_Fire",
+      "localizationKey": "Craft_Staff_Fire_Unique_1"
     },
     "uniquefiresword": {
       "name": "Unique Fire Sword",
@@ -18219,6 +21514,19 @@
       ],
       "stats": "WPN_Staff_Unique_Physical",
       "localizationKey": "Craft_Staff_Physical_Unique_1"
+    },
+    "uniquephysicalwand": {
+      "name": "Unique Physical Wand",
+      "icon": "WandPhysical",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1536,
+        256,
+        1600,
+        320
+      ],
+      "stats": "WPN_Wand_Unique_Physical",
+      "localizationKey": "Craft_Weapon_Unique_Wand_Physical_1"
     },
     "uniquepoisonbow": {
       "name": "Unique Poison Bow",
@@ -18753,6 +22061,19 @@
       "stats": "WPN_Dagger_Unique_Water",
       "localizationKey": "Craft_Dagger_Unique_Water_1"
     },
+    "uniquewaterstaff": {
+      "name": "Unique Water Staff",
+      "icon": "waterstaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        832,
+        64,
+        896,
+        128
+      ],
+      "stats": "WPN_Staff_Unique_Water",
+      "localizationKey": "Craft_Staff_Water_Unique_1"
+    },
     "uniquewatersword": {
       "name": "Unique Water Sword",
       "icon": "UniqueSwordWater",
@@ -18856,6 +22177,17 @@
         704
       ]
     },
+    "voidtouchedlivewoodfragments": {
+      "name": "Void-Touched Livewood Fragments",
+      "icon": "Item_LOOT_Scraps_LiveWood_VoidTouched_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1152,
+        896,
+        1216,
+        960
+      ]
+    },
     "voidlingguts": {
       "name": "Voidling Guts",
       "icon": "Item_TOOL_Intestines_A",
@@ -18888,6 +22220,19 @@
         768,
         512
       ]
+    },
+    "wand": {
+      "name": "Wand",
+      "icon": "Item_WPN_Wand_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        1600,
+        960,
+        1664
+      ],
+      "previewSource": "Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Wands"
     },
     "warfarersfishsoup": {
       "name": "Warfarer's Fish Soup",
@@ -18943,6 +22288,19 @@
         1856,
         1408
       ]
+    },
+    "wateraxe": {
+      "name": "Water Axe",
+      "icon": "AxeWater",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1792,
+        64,
+        1856,
+        128
+      ],
+      "stats": "WPN_Axe_1H_Water",
+      "localizationKey": "Craft_Axe_Water_1"
     },
     "waterballoon": {
       "name": "Water Balloon",
@@ -19005,6 +22363,19 @@
         1088
       ]
     },
+    "watermace": {
+      "name": "Water Mace",
+      "icon": "MaceWater",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        64,
+        128,
+        128,
+        192
+      ],
+      "stats": "WPN_Mace_1H_Water",
+      "localizationKey": "Craft_Mace_Water_1"
+    },
     "waterresistancepotion": {
       "name": "Water Resistance Potion",
       "icon": "Item_CON_PotionII_B_Teal_Small",
@@ -19029,6 +22400,19 @@
       "stats": "WPN_Spear_Water",
       "localizationKey": "Craft_Spear_Water_1"
     },
+    "waterstaff": {
+      "name": "Water Staff",
+      "icon": "waterstaff",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        832,
+        64,
+        896,
+        128
+      ],
+      "stats": "WPN_Staff_Water",
+      "localizationKey": "Craft_Staff_Water_1_1"
+    },
     "watersword": {
       "name": "Water Sword",
       "icon": "SwordWater",
@@ -19041,6 +22425,19 @@
       ],
       "stats": "WPN_Sword_1H_Water",
       "localizationKey": "Craft_Sword_Water_1"
+    },
+    "waterwand": {
+      "name": "Water Wand",
+      "icon": "Item_WPN_Wand_A_Water",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1600,
+        1344,
+        1664
+      ],
+      "stats": "WPN_Wand_Water",
+      "localizationKey": "Craft_Wand_Water_1_1"
     },
     "watermelon": {
       "name": "Watermelon",
@@ -19139,6 +22536,17 @@
         640,
         768,
         704
+      ]
+    },
+    "whitefabricdye": {
+      "name": "White Fabric Dye",
+      "icon": "Item_TOOL_Dye_White",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        1216,
+        1472,
+        1280
       ]
     },
     "winebarrel": {
@@ -19266,6 +22674,19 @@
         1152
       ]
     },
+    "wood": {
+      "name": "Wood",
+      "icon": "Portrait_Gen_Woodpile_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ],
+      "previewSource": "Public/Shared/Stats/Generated/ObjectCategoriesItemComboPreviewData.txt",
+      "Category": "Wood"
+    },
     "woodchips": {
       "name": "Wood Chips",
       "icon": "Item_LOOT_Scraps_Wood_A",
@@ -19288,6 +22709,28 @@
         384
       ]
     },
+    "woodpulp": {
+      "name": "Wood Pulp",
+      "icon": "Item_LOOT_Scraps_Wood_A_Mush",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1088,
+        64,
+        1152
+      ]
+    },
+    "woodendoll": {
+      "name": "Wooden Doll",
+      "icon": "Item_TOOL_Figurine_Wood_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1216,
+        1664,
+        1280
+      ]
+    },
     "woodenfigurine": {
       "name": "Wooden Figurine",
       "icon": "Item_TOOL_Figurine_Wood_A",
@@ -19308,17 +22751,6 @@
         1088,
         1728,
         1152
-      ]
-    },
-    "workbench": {
-      "name": "Workbench",
-      "icon": "Item_CONT_Wood_A",
-      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
-      "box": [
-        1472,
-        1856,
-        1536,
-        1920
       ]
     },
     "wormtremorscroll": {

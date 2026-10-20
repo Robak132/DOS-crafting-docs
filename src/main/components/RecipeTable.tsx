@@ -1,9 +1,8 @@
 import { ItemIcon } from "./ItemIcon"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
-import { FullSlug, gameForSlug, resolveRelative } from "../routing"
+import { FullSlug, gameForSlug, pageHref } from "../routing"
 import {
-  formatEffectNote,
   groupRecipes,
   itemCraftRoleClass,
   recipeColumnsForCatalog,
@@ -15,7 +14,6 @@ import {
 
 type Props = {
   recipes: RecipeRow[]
-  slug: FullSlug
   labels: Record<string, string>
   catalogSlug: FullSlug
   searchable?: boolean
@@ -44,7 +42,6 @@ function ItemLabel({ item }: { item: RecipeItem }) {
 
 export function RecipeTable({
   recipes,
-  slug,
   labels,
   catalogSlug,
   searchable = false,
@@ -67,6 +64,19 @@ export function RecipeTable({
     const title = itemAltTitle(item)
     const searchText = item.name.replace(/^#/, "").replace(/^<|>$/g, "")
     const craftClass = roleClass(item)
+    if (item.groupId && (item.groupSize ?? 0) >= 4) {
+      return withQuantity(
+        <a
+          class="internal recipe-item recipe-item-group"
+          data-no-popover="true"
+          href={`${pageHref(catalogSlug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
+        >
+          <ItemLabel item={item} />
+          <span class="group-count">{item.groupSize}</span>
+        </a>,
+        item,
+      )
+    }
     if (item.selectorTag) {
       return withQuantity(
         searchable ? (
@@ -83,7 +93,7 @@ export function RecipeTable({
           <a
             class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
             data-no-popover="true"
-            href={`${resolveRelative(slug, catalogSlug)}?as=ingredient&q=${encodeURIComponent(searchText)}`}
+            href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(searchText)}`}
             title={title}
           >
             <ItemIcon icon={item.icon} />
@@ -98,7 +108,7 @@ export function RecipeTable({
         <a
           class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
           data-slug={item.slug}
-          href={`${resolveRelative(slug, item.slug as FullSlug)}?catalog=${gameForSlug(catalogSlug) ?? "dos1"}`}
+          href={`${pageHref(item.slug)}?catalog=${gameForSlug(catalogSlug) ?? "dos1"}`}
           title={title}
         >
           <ItemIcon icon={item.icon} />
@@ -126,7 +136,7 @@ export function RecipeTable({
         <a
           class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
           data-no-popover="true"
-          href={`${resolveRelative(slug, catalogSlug)}?as=ingredient&q=${encodeURIComponent(item.name)}`}
+          href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(item.name)}`}
           title={title}
         >
           <ItemIcon icon={item.icon} />
@@ -174,6 +184,9 @@ export function RecipeTable({
                 {index === 0 && (
                   <td class="recipe-cell result" rowSpan={group.variants.length}>
                     {renderItem(group.result)}
+                    {recipe.transformsIngredient !== undefined &&
+                      !group.result.groupId &&
+                      !group.result.selectorTag && <p class="recipe-remarks">{recipe.notes}</p>}
                   </td>
                 )}
                 <td class="recipe-cell ingredients">
@@ -182,33 +195,11 @@ export function RecipeTable({
                       <li>{renderItem(item, { ingredient: true })}</li>
                     ))}
                   </ul>
+                  {recipe.remarks?.trim() && <p class="recipe-remarks">{recipe.remarks}</p>}
                 </td>
                 {showRequirements && (
                   <td class="recipe-cell meta">{recipe.requirements?.trim() ? recipe.requirements : empty}</td>
                 )}
-                <td class="recipe-cell meta effects">
-                  {recipe.notes?.trim() || recipe.remarks?.trim() ? (
-                    <div class="recipe-effect-stack">
-                      {recipe.notes?.trim() ? (
-                        <button
-                          type="button"
-                          class="recipe-effect-chip"
-                          data-search-effect={recipe.notes}
-                          title={recipe.notes}
-                        >
-                          {formatEffectNote(recipe.notes) || recipe.notes}
-                        </button>
-                      ) : null}
-                      {recipe.remarks?.trim() ? (
-                        <span class="recipe-remarks" title={recipe.remarks}>
-                          {recipe.remarks}
-                        </span>
-                      ) : null}
-                    </div>
-                  ) : (
-                    empty
-                  )}
-                </td>
                 <td class="recipe-cell tags">
                   <div class="recipe-row-tags">
                     {visibleRecipeTags(recipeResultTags(recipe)).map((tag) => (

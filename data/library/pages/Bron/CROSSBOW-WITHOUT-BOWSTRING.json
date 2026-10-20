@@ -1,0 +1,16 @@
+{
+  "slug": "Bron/CROSSBOW-WITHOUT-BOWSTRING",
+  "title": "Crossbow Without Bowstring",
+  "titlePl": "Kusza bez cięciwy",
+  "tags": [
+    "Typ/Bron",
+    "DOS1",
+    "Typ/Skladniki",
+    "DOS2-CO"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/CROSSBOW-WITHOUT-STRING"
+  ]
+}

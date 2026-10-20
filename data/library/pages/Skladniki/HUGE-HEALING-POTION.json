@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/HUGE-HEALING-POTION",
+  "title": "Huge Healing Potion",
+  "titlePl": "Wielka mikstura uzdrawiająca",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Leczenie"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

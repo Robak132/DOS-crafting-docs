@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/WOOD-PULP",
+  "title": "Wood Pulp",
+  "titlePl": "Sterta drewna",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Water-Source"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

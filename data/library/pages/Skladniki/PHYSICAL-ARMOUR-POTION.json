@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/PHYSICAL-ARMOUR-POTION",
+  "title": "Physical Armour Potion",
+  "titlePl": "Mikstura Pancerza Fizycznego",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Pancerz-fizyczny"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

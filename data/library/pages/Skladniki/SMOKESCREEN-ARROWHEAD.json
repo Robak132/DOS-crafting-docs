@@ -1,0 +1,16 @@
+{
+  "slug": "Skladniki/SMOKESCREEN-ARROWHEAD",
+  "title": "Smokescreen Arrowhead",
+  "titlePl": "Grot zasłony dymnej",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Typ/Strzaly-i-granaty",
+    "DOS2-CO"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Strzaly-i-granaty/SMOKE-ARROWHEAD"
+  ]
+}

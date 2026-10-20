@@ -1,0 +1,13 @@
+{
+  "slug": "Mikstury-i-jedzenie/MEDIUM-STRENGTH-POTION",
+  "title": "Medium Strength Potion",
+  "titlePl": "Średnia mikstura Siły",
+  "tags": [
+    "Typ/Mikstury-i-jedzenie",
+    "DOS2-CO",
+    "Cechy/Sila"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

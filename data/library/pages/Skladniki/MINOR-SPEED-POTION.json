@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/MINOR-SPEED-POTION",
+  "title": "Minor Speed Potion",
+  "titlePl": "Mała mikstura prędkości",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2-CO",
+    "Cechy/Szybkosc"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

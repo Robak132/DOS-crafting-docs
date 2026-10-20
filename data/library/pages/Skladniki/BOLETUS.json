@@ -1,0 +1,15 @@
+{
+  "slug": "Skladniki/BOLETUS",
+  "title": "Boletus",
+  "titlePl": "Borowik",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "DOS2-CO"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": [
+    "Skladniki/MUSHROOM-BOLETUS"
+  ]
+}

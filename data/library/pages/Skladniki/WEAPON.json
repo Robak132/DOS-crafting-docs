@@ -1,0 +1,12 @@
+{
+  "slug": "Skladniki/WEAPON",
+  "title": "weapon",
+  "titlePl": "Broń",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

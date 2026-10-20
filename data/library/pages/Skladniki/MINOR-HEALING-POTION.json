@@ -1,0 +1,13 @@
+{
+  "slug": "Skladniki/MINOR-HEALING-POTION",
+  "title": "Minor Healing Potion",
+  "titlePl": "Mała mikstura uzdrawiająca",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS2",
+    "Cechy/Leczenie"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "Skladniki/EMPTY-GRENADE",
+  "title": "Empty Grenade",
+  "titlePl": "Pusty granat",
+  "tags": [
+    "Typ/Skladniki",
+    "DOS1"
+  ],
+  "itemPage": true,
+  "categoryPage": false,
+  "aliases": []
+}

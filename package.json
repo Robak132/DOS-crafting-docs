@@ -24,13 +24,13 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.6",
-    "@types/node": "^22.0.0",
+    "@types/node": "^26.6.5",
     "@types/sanitize-html": "^2.16.0",
-    "preact-render-to-string": "^6.6.6",
-    "prettier": "^3.9.9",
-    "sanitize-html": "^2.17.0",
+    "preact-render-to-string": "^6.8.1",
+    "prettier": "^3.9.10",
+    "sanitize-html": "^2.18.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^7.3.7"
+    "vite": "^8.3.4"
   }
 }

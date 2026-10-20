@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Pierscienie",
     "DOS2-CO",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

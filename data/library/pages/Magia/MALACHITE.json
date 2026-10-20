@@ -3,10 +3,11 @@
   "title": "Malachite",
   "titlePl": "Malachit",
   "tags": [
-    "Typ/Magia",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

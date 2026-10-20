@@ -1,12 +1,14 @@
 {
   "slug": "Magia/CHAOS-TWO-HANDED-AXE",
-  "title": "Chaos Two Handed Axe",
+  "title": "2H Chaos Axe",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

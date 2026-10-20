@@ -2,11 +2,13 @@
   "slug": "Pancerze/UNIQUE-POLYMORPH-CAPE",
   "title": "Unique Polymorph Cape",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "Cechy",
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

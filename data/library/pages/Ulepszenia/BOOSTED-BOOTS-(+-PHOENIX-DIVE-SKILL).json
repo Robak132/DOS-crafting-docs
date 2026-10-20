@@ -3,9 +3,9 @@
   "title": "Boosted Boots (+ Phoenix Dive Skill)",
   "tags": [
     "Typ/Ulepszenia",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

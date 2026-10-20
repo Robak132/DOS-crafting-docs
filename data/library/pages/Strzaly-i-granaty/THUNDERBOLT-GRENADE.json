@@ -5,9 +5,8 @@
   "tags": [
     "Typ/Strzaly-i-granaty",
     "DOS2",
-    "Air-Essence"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

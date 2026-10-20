@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Cechy/Odpornosc-na-ziemie"
+    "Cechy",
+    "Cechy/Odporność-na-ziemię",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

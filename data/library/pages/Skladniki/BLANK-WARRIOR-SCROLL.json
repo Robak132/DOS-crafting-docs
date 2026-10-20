@@ -2,11 +2,12 @@
   "slug": "Skladniki/BLANK-WARRIOR-SCROLL",
   "title": "Blank Warrior Scroll",
   "tags": [
+    "DOS2-CO",
+    "Typ",
+    "Typ/Zwoje",
     "Typ/Magia",
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

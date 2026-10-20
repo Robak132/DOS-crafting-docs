@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Cechy/Immunitet-na-zamrozenie"
+    "Cechy",
+    "Cechy/Immunitet-na-zamrożenie",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

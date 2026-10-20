@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Pasy",
     "DOS2-CO",
-    "Cechy/Geomancja"
+    "Cechy/Geomancja",
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

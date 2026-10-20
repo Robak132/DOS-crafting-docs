@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Weapon"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

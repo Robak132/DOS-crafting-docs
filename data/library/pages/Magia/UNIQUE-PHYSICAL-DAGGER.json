@@ -2,10 +2,11 @@
   "slug": "Magia/UNIQUE-PHYSICAL-DAGGER",
   "title": "Unique Physical Dagger",
   "tags": [
-    "Typ/Magia",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -156,7 +156,6 @@ export function TooltipLayer({
       recipes={active.recipes}
       lang={lang}
       description={descriptions.data?.[itemIconKey(active.item.name)]}
-      descriptionLoading={!descriptions.data && !descriptions.error}
     />
   ) : null
 }

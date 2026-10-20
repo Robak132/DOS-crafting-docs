@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2",
-    "Cechy/Obrazenia-trucizny"
+    "Cechy",
+    "Cechy/Obrażenia-trucizny",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

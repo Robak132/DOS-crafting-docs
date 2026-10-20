@@ -7,11 +7,10 @@
     "DOS1",
     "DOS2-CO",
     "Cechy/Leczenie",
+    "Cechy",
+    "Typ",
     "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Skladniki/LARGE-HEALTH-POTION"
-  ]
+  "categoryPage": false
 }

@@ -2,11 +2,14 @@
   "slug": "Skladniki/ONE-HANDED-SWORD",
   "title": "One Handed Sword",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Jednoreczna"
+    "Cechy",
+    "Cechy/Jednoręczna",
+    "DOS1",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

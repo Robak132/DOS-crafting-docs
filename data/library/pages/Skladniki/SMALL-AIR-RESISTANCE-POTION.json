@@ -3,11 +3,13 @@
   "title": "Small Air Resistance Potion",
   "titlePl": "Mała mikstura odporności na żywioł powietrza",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Odpornosc-na-powietrze"
+    "Cechy",
+    "Cechy/Odporność-na-powietrze",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

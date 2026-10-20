@@ -4,11 +4,13 @@
   "titlePl": "Średnia mikstura wszelkiej odporności",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
-    "DOS2-CO",
+    "DOS1",
     "DOS2",
-    "Cechy/Odpornosc-na-wszystko"
+    "DOS2-CO",
+    "Cechy",
+    "Cechy/Odporność-na-wszystko",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

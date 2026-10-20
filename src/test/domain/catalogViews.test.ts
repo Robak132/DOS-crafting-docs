@@ -42,3 +42,13 @@ test("uncategorized results remain visible and empty filters produce no sections
   assert.equal(sections[0].label, "Bez kategorii")
   assert.deepEqual(groupCatalogByTags([], "items", {}), [])
 })
+
+test("items and recipes appear in every matching type category", () => {
+  const rows = [recipe("magic-weapon", ["Typ/Bron", "Typ/Magia", "Typ/Skladniki"])]
+  for (const view of ["items", "recipes"] as const) {
+    const sections = groupCatalogByTags(rows, view, {})
+    assert.deepEqual(new Set(sections.map((section) => section.tag)), new Set(rows[0].result.tags))
+    for (const section of sections) assert.deepEqual(section.recipes, rows)
+  }
+  assert.equal(catalogItems(rows).length, 1)
+})

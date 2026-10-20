@@ -2,13 +2,12 @@
   "slug": "Skladniki/MAGIC-INKPOT--and--QUILL",
   "title": "Magic Inkpot & Quill",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ/Magia"
+    "Typ",
+    "Typ/Wyposazenie",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Magia/MAGICAL-INKPOT--and--QUILL"
-  ]
+  "categoryPage": false
 }

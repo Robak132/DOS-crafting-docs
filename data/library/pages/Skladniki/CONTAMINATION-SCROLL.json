@@ -3,11 +3,11 @@
   "title": "Contamination Scroll",
   "titlePl": "Zwój Skażenia",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Earth-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,10 +3,11 @@
   "title": "Chain Lightning Scroll",
   "titlePl": "Zwój Łańcucha Piorunów",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

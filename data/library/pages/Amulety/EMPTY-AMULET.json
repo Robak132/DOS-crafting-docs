@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Amulety",
     "DOS2-CO",
-    "Amulet"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

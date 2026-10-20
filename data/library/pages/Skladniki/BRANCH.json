@@ -5,9 +5,8 @@
   "tags": [
     "Typ/Skladniki",
     "DOS1",
-    "One-handed-Axe"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,9 +3,9 @@
   "title": "Cup of lemonade",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

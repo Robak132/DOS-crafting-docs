@@ -4,9 +4,9 @@
   "titlePl": "Grot ogłuszający",
   "tags": [
     "Typ/Strzaly-i-granaty",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

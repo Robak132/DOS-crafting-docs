@@ -3,10 +3,12 @@
   "title": "Mobile Kitchen",
   "titlePl": "Kuchnia przenośna",
   "tags": [
-    "Typ/Wyposazenie",
-    "DOS1"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki",
+    "DOS1",
+    "DOS2",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

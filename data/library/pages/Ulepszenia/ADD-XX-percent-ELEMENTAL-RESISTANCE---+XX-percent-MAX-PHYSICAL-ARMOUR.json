@@ -5,10 +5,9 @@
     "Typ/Ulepszenia",
     "DOS2",
     "Cechy/Pancerz-fizyczny",
-    "Armor-With-Empty-Rune-Socket",
-    "Small-Or-Medium-Or-Large-Or-Giant-Rune"
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

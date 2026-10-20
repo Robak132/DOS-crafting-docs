@@ -4,12 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Leather-Chest",
-    "Cloth-Chest",
-    "Metal-Chest",
-    "Ulepszenia"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

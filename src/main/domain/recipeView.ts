@@ -1,4 +1,5 @@
 import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
+import { isItemGroup } from "./itemGroups"
 
 /** dead = szary, mid = zielony, end = fioletowy (bez Node — używane też w inline scripts). */
 export type ItemCraftRole = "dead" | "mid" | "end"
@@ -17,7 +18,6 @@ export const recipeColumns = [
   { key: "result", label: "Przedmiot" },
   { key: "ingredients", label: "Receptura" },
   { key: "requirements", label: "Wymagania" },
-  { key: "notes", label: "Efekt" },
   { key: "tags", label: "Tagi" },
   { key: "source", label: "Źródło" },
 ] as const
@@ -203,7 +203,8 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
   const groups = new Map<string, RecipeGroup>()
   for (const recipe of recipes) {
     const qty = recipe.result.quantity ? `@${recipe.result.quantity}` : ""
-    const key = `${recipe.result.slug ?? recipe.result.name}${qty}`
+    const modification = recipe.transformsIngredient === undefined ? "" : `@${recipe.notes}`
+    const key = `${recipe.result.slug ?? recipe.result.name}${qty}${modification}`
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
     else groups.set(key, { result: recipe.result, variants: [recipe] })
@@ -508,6 +509,7 @@ export function groupCatalogByTags(recipes: RecipeRow[], view: CatalogView, labe
 export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
   const items = new Map<string, RecipeItem>()
   for (const { result } of recipes) {
+    if (isItemGroup(result)) continue
     const key = result.slug ?? result.name
     if (!items.has(key)) items.set(key, { ...result, quantity: undefined })
   }

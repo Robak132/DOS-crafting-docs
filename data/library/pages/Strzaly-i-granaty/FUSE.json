@@ -5,9 +5,10 @@
   "tags": [
     "DOS2-CO",
     "Typ/Strzaly-i-granaty",
-    "DOS1"
+    "DOS1",
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

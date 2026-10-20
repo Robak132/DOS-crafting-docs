@@ -3,10 +3,10 @@
   "title": "Demon Altar",
   "tags": [
     "Typ/Stanowiska-i-pojemniki",
-    "Typ/Magia",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

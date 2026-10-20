@@ -5,6 +5,9 @@ import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
 export type RecipeItem = {
   /** Relative static asset URL, exported from this game’s inventory atlas. */
   icon?: string
+  craftingCategories?: string[]
+  groupId?: string
+  groupSize?: number
   /** Bazowa nazwa ENG (źródło w plikach / mapa lokalizacji). */
   name: string
   /** Opcjonalne tłumaczenie PL — przełączane w UI. */
@@ -17,6 +20,10 @@ export type RecipeItem = {
 }
 
 export type RecipeRow = {
+  /** Zero-based ingredient slot modified in place instead of creating another item. */
+  transformsIngredient?: number
+  /** Source recipe shared by expanded ingredient alternatives. */
+  sourceRecipeIds?: string[]
   id: string
   ingredients: RecipeItem[]
   result: RecipeItem
@@ -36,6 +43,7 @@ export type TagStat = {
 }
 
 export type RecipeData = {
+  groups?: import("./itemGroups").ItemGroups
   recipes: RecipeRow[]
   tags: TagStat[]
   requirements: TagStat[]
@@ -216,7 +224,8 @@ export function collectRecipeStats(
 
   recipes.forEach((recipe) => {
     const itemKey = recipeResultKey(recipe)
-    recipe.tags.forEach((tag) => addItemToStat(tagItems, tag, itemKey))
+    const resultTags = recipe.result.tags.length ? recipe.result.tags : recipe.tags
+    resultTags.forEach((tag) => addItemToStat(tagItems, tag, itemKey))
     requirementTokens(recipe.requirements ?? "").forEach((token) => addItemToStat(requirementItems, token, itemKey))
     const seenSelectors = new Set<string>()
     recipe.ingredients.forEach((ingredient) => {

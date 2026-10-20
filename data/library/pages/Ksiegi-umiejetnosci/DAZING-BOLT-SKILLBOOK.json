@@ -4,9 +4,9 @@
   "titlePl": "Księga umiejętności „Rażenie Piorunem”",
   "tags": [
     "Typ/Ksiegi-umiejetnosci",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

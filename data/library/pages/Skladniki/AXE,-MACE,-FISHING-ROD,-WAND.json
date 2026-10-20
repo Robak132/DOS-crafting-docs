@@ -2,10 +2,11 @@
   "slug": "Skladniki/AXE,-MACE,-FISHING-ROD,-WAND",
   "title": "Axe, Mace, Fishing rod, Wand",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

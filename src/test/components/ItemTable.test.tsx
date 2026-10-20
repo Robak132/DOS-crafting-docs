@@ -37,7 +37,8 @@ test("table has three columns and type categories with one row per item", () => 
     <ItemTable recipes={[first, second]} labels={{ "Typ/Mikstury": "Mikstury" }} itemHref={(slug) => `./${slug}`} />,
   )
   assert.ok(html.includes('<th scope="col">Przedmiot</th><th scope="col">Efekt</th><th scope="col">Tagi</th>'))
-  assert.ok(html.includes('colspan="3" scope="rowgroup">Mikstury</th>'))
+  assert.ok(html.includes('<section><h2>Mikstury</h2><div class="recipe-table-wrap"'))
+  assert.ok(html.includes('aria-label="Przedmioty: Mikstury"'))
   assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
   assert.ok(html.includes('data-search-effect="+2 Bystrość"'))
   assert.ok(html.includes('data-search-tag="Cechy/Leczenie"'))
@@ -59,5 +60,41 @@ test("missing effects and categories remain readable; labels are escaped", () =>
   assert.ok(!html.includes("<unsafe>"))
   assert.equal(html.match(/class="recipe-empty">—/g)?.length, 2)
   const empty = renderToString(<ItemTable recipes={[]} labels={{}} itemHref={(slug) => slug} />)
-  assert.ok(empty.includes('colspan="3" class="recipe-empty">Brak przedmiotów pasujących do filtrów.'))
+  assert.equal(empty, '<p class="recipe-empty">Brak przedmiotów pasujących do filtrów.</p>')
+})
+
+test("item list shows descriptions below names in the selected language and omits missing descriptions", () => {
+  const render = (
+    lang: "pl" | "en",
+    descriptions: Record<string, { en: string; pl?: string }> = {
+      potion: { en: "English description", pl: "Polski opis" },
+    },
+  ) =>
+    renderToString(
+      <ItemTable recipes={[first]} labels={{}} itemHref={(slug) => slug} descriptions={descriptions} lang={lang} />,
+    )
+  assert.ok(render("pl").includes('<p class="item-list-description">Polski opis</p>'))
+  assert.ok(!render("pl").includes("English description"))
+  assert.ok(render("en").includes('<p class="item-list-description">English description</p>'))
+  assert.ok(!render("en").includes("Polski opis"))
+  assert.ok(!render("pl", {}).includes("item-list-description"))
+  assert.ok(!render("pl", { potion: { en: " ", pl: " " } }).includes("item-list-description"))
+})
+
+test("item lists and counts omit groups, including unresolved selectors and explicit alternatives", () => {
+  const grouped = {
+    ...first,
+    result: { ...first.result, groupId: "fish", groupSize: 4, icon: "data/icons/should-not-render.webp" },
+  }
+  const recipes = [
+    grouped,
+    { ...first, result: { ...first.result, selectorTag: "Helmet" } },
+    { ...first, result: { ...first.result, name: "Cloth Gloves, Boots" } },
+  ]
+  const html = renderToString(<ItemTable recipes={recipes} labels={{}} itemHref={(slug) => slug} />)
+  assert.equal(catalogItemRows(recipes).length, 0)
+  assert.ok(!html.includes("recipe-item-group"))
+  assert.ok(!html.includes("<table"))
+  assert.ok(html.includes("Brak przedmiotów pasujących do filtrów."))
+  assert.ok(!html.includes("should-not-render.webp"))
 })

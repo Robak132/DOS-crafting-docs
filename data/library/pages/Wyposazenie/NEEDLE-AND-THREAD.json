@@ -5,13 +5,11 @@
   "tags": [
     "Typ/Wyposazenie",
     "DOS1",
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Skladniki/NEEDLE-and-THREAD",
-    "Skladniki/THREAD--and--NEEDLE"
-  ]
+  "categoryPage": false
 }

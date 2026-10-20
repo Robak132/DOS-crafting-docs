@@ -2,10 +2,11 @@
   "slug": "Skladniki/TONGUE-OF-DIPLOMATS",
   "title": "Tongue of Diplomats",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

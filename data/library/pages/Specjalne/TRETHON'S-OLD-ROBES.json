@@ -5,9 +5,11 @@
   "tags": [
     "Typ/Specjalne",
     "DOS1",
-    "Inteligencja"
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

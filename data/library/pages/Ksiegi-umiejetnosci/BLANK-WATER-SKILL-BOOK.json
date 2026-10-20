@@ -3,9 +3,9 @@
   "title": "BLANK WATER SKILL BOOK",
   "tags": [
     "Typ/Ksiegi-umiejetnosci",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,13 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Shield",
-    "Cloth-Chest-Robe-Or-Sarong",
-    "Leather-Chest-Gloves-Helmet-Or-Belt",
-    "Metal-Chest",
-    "Ulepszenia"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

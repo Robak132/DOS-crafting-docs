@@ -3,13 +3,12 @@
   "title": "Resurrection Scroll",
   "titlePl": "Zwój Wskrzeszenia",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
     "DOS2",
-    "Water-Essence",
-    "Life-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,12 +3,13 @@
   "title": "Blank Fire Skillbook",
   "titlePl": "Niezapisana księga umiejętności ognia",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Skladniki/BLANK-SKILLBOOK-FIRE"
-  ]
+  "categoryPage": false
 }

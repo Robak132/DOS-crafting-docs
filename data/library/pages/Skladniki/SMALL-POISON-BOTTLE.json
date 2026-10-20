@@ -3,10 +3,11 @@
   "title": "Small Poison Bottle",
   "titlePl": "Mała butelka trucizny",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

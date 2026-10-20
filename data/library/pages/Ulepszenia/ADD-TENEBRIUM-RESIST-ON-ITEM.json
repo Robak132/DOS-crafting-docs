@@ -4,10 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Shield",
-    "Ulepszenia"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

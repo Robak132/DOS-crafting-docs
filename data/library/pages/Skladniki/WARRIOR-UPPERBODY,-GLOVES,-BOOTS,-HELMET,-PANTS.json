@@ -2,10 +2,11 @@
   "slug": "Skladniki/WARRIOR-UPPERBODY,-GLOVES,-BOOTS,-HELMET,-PANTS",
   "title": "Warrior Upperbody, Gloves, Boots, Helmet, Pants",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

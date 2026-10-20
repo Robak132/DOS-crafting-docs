@@ -4,12 +4,12 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2",
-    "Cechy/Sila",
     "Cechy/Pancerz-fizyczny",
-    "Armor-With-Empty-Rune-Socket",
-    "Small-Or-Medium-Or-Large-Or-Giant-Rune-Of-Power"
+    "Cechy",
+    "Cechy/Siła",
+    "Cechy/Spryt",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -2,11 +2,15 @@
   "slug": "Skladniki/BLANK-SKILLBOOK-POLYMORPH",
   "title": "Blank Polymorph Skillbook",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "DOS2-CO",
+    "Cechy",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

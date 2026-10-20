@@ -4,9 +4,11 @@
   "titlePl": "Esencja ognia",
   "tags": [
     "Typ/Skladniki",
-    "DOS1"
+    "DOS1",
+    "DOS2-CO",
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

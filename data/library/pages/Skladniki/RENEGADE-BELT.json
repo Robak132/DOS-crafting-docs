@@ -2,10 +2,11 @@
   "slug": "Skladniki/RENEGADE-BELT",
   "title": "Renegade Belt",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,9 +4,9 @@
   "titlePl": "Amulet z ostrym szponem",
   "tags": [
     "Typ/Amulety",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

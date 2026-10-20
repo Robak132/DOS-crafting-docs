@@ -10,11 +10,10 @@ export type PageSummary = {
   categoryPage: boolean
 }
 export type PageDetail = PageSummary & { html: string }
-export type LibraryPage = PageDetail & { aliases: string[] }
+export type LibraryPage = PageDetail
 export type CatalogManifest = {
   catalogs: Record<RecipeCatalog, { recipes: number; items: number }>
   pages: PageSummary[]
-  aliases: Record<string, string>
   itemRoles: Record<string, ItemCraftRole>
   traitGroups: CechyGroupMeta[]
 }

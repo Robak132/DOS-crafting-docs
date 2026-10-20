@@ -4,9 +4,12 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2",
-    "Cechy/Spryt"
+    "Cechy/Spryt",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Siła",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

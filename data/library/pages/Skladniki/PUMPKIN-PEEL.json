@@ -4,9 +4,9 @@
   "titlePl": "Obierki z dyni",
   "tags": [
     "Typ/Skladniki",
-    "DOS2"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

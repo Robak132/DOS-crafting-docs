@@ -7,9 +7,9 @@
     "DOS1",
     "DOS2-CO",
     "Cechy/Inteligencja",
-    "Inteligencja"
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

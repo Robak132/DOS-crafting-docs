@@ -2,11 +2,15 @@
   "slug": "Skladniki/BLANK-SKILLBOOK-SUMMONING",
   "title": "Blank Summoning Skillbook",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Przyzywanie"
+    "Cechy/Przyzywanie",
+    "DOS2-CO",
+    "Cechy",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

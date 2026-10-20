@@ -2,11 +2,13 @@
   "slug": "Magia/RANDOM-POLYMORPH-SCROLL",
   "title": "Random Polymorph Scroll",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "Cechy",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

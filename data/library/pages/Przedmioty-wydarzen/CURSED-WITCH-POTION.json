@@ -3,9 +3,10 @@
   "title": "Cursed Witch Potion",
   "tags": [
     "Typ/Przedmioty-wydarzen",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

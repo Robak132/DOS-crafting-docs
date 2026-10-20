@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Ksiegi-umiejetnosci",
     "DOS2",
-    "Cechy/Szybkosc"
+    "Cechy",
+    "Cechy/Szybkość",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

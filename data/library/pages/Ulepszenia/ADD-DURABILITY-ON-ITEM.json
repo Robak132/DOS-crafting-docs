@@ -4,11 +4,8 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS1",
-    "Metal-Shield",
-    "Wooden-Shield",
-    "Ulepszenia"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

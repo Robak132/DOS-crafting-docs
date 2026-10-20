@@ -1,11 +1,11 @@
 {
   "slug": "Specjalne/HERBMIX_COURAGE",
-  "title": "Herbmix_Courage",
+  "title": "Courage Herbmix",
   "tags": [
     "Typ/Specjalne",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

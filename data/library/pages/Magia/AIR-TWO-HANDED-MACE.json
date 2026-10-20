@@ -1,12 +1,14 @@
 {
   "slug": "Magia/AIR-TWO-HANDED-MACE",
-  "title": "Air Two Handed Mace",
+  "title": "2H Air Mace",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

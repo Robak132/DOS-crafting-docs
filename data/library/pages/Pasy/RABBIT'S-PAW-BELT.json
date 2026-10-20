@@ -4,9 +4,9 @@
   "titlePl": "Pas z króliczą łapką",
   "tags": [
     "Typ/Pasy",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

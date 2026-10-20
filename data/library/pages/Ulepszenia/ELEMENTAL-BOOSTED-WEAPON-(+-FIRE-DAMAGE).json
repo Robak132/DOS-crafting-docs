@@ -4,10 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Cechy/Obrazenia-ognia",
-    "Weapon"
+    "Cechy",
+    "Cechy/Obrażenia-ognia",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

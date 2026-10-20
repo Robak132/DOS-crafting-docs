@@ -3,11 +3,14 @@
   "title": "Fire Resistance Potion",
   "titlePl": "Mikstura odporności na ogień",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Odpornosc-na-ogien"
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

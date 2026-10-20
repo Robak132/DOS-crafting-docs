@@ -3,11 +3,13 @@
   "title": "High Tier Blank Summoning Skillbook",
   "titlePl": "Niezapisana księga umiejętności przyzywania wysokiego poziomu",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Przyzywanie"
+    "Cechy/Przyzywanie",
+    "Cechy",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

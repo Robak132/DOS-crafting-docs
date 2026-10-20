@@ -5,13 +5,12 @@
   "tags": [
     "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Pancerz-magiczny"
+    "Cechy/Pancerz-magiczny",
+    "Cechy",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": [
-    "Skladniki/LARGE-MAGIC-ARMOR"
-  ]
+  "categoryPage": false
 }

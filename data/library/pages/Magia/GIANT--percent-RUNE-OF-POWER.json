@@ -3,9 +3,9 @@
   "title": "Giant % Rune of Power",
   "tags": [
     "Typ/Magia",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,10 +3,10 @@
   "title": "Paladin Shield",
   "titlePl": "Tarcza Paladyna",
   "tags": [
-    "Typ/Bron",
-    "DOS2-CO"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Szczescie"
+    "Cechy",
+    "Cechy/Szczęście",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

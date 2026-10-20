@@ -4,9 +4,9 @@
   "titlePl": "Płócienna zbroja",
   "tags": [
     "Typ/Pancerz",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

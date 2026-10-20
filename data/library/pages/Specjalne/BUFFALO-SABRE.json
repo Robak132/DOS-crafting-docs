@@ -4,9 +4,10 @@
   "titlePl": "Szabla bawołu",
   "tags": [
     "Typ/Specjalne",
-    "DOS1"
+    "DOS1",
+    "Typ",
+    "Typ/Bron"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

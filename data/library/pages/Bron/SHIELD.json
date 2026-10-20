@@ -3,10 +3,11 @@
   "title": "Shield",
   "titlePl": "Tarcza",
   "tags": [
-    "Typ/Bron",
-    "DOS2-CO"
+    "DOS2-CO",
+    "DOS1",
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

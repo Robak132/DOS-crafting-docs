@@ -3,11 +3,11 @@
   "title": "Peace of Mind Scroll",
   "titlePl": "Zwój Spokoju Sumienia",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Fire-Essence"
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

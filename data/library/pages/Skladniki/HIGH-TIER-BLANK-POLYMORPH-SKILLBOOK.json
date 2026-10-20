@@ -3,11 +3,13 @@
   "title": "High Tier Blank Polymorph Skillbook",
   "titlePl": "Niezapisana księga umiejętności polimorfii wysokiego poziomu",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Cechy/Polimorfia"
+    "Cechy/Polimorfia",
+    "Cechy",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

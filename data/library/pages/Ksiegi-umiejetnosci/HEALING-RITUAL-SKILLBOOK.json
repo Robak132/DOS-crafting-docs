@@ -5,9 +5,10 @@
   "tags": [
     "Typ/Ksiegi-umiejetnosci",
     "DOS2",
-    "Cechy/Leczenie"
+    "Cechy/Leczenie",
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

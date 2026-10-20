@@ -3,9 +3,9 @@
   "title": "ONE HANDED AXE",
   "tags": [
     "Typ/Bron",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

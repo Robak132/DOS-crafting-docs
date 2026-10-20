@@ -1,12 +1,14 @@
 {
   "slug": "Magia/WATER-TWO-HANDED-SWORD",
-  "title": "Water Two Handed Sword",
+  "title": "2H Water Sword",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Dwureczna"
+    "Cechy",
+    "Cechy/Dwuręczna",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

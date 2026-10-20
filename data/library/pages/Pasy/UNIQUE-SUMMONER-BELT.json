@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Pasy",
     "DOS2-CO",
-    "Cechy/Przyzywanie"
+    "Cechy/Przyzywanie",
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

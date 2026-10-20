@@ -2,11 +2,13 @@
   "slug": "Magia/RANDOM-SUMMONING-SCROLL",
   "title": "Random Summoning Scroll",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Cechy/Przyzywanie"
+    "Cechy/Przyzywanie",
+    "Cechy",
+    "Typ",
+    "Typ/Zwoje",
+    "Typ/Magia"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,9 +4,9 @@
   "titlePl": "Płomienne Serce",
   "tags": [
     "Typ/Specjalne",
-    "DOS1"
+    "DOS1",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

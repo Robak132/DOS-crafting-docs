@@ -4,9 +4,10 @@
   "tags": [
     "Typ/Ulepszenia",
     "DOS2-CO",
-    "Cechy/Immunitet-na-ogien"
+    "Cechy",
+    "Cechy/Immunitet-na-ogień",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

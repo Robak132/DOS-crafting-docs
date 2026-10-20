@@ -4,9 +4,9 @@
   "titlePl": "Ości",
   "tags": [
     "Typ/Skladniki",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

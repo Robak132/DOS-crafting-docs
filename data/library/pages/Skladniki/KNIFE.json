@@ -3,11 +3,12 @@
   "title": "Knife",
   "titlePl": "Nóż",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
-    "DOS2"
+    "DOS2",
+    "DOS1",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -3,11 +3,14 @@
   "title": "Minor Dexterity Potion",
   "titlePl": "Mała mikstura zwinności",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Cechy/Zwinnosc"
+    "Cechy",
+    "Cechy/Zwinność",
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

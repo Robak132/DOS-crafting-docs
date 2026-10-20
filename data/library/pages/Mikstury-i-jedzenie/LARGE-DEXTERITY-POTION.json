@@ -3,10 +3,12 @@
   "title": "Large Dexterity Potion",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
+    "DOS1",
     "DOS2-CO",
-    "Cechy/Zwinnosc"
+    "Cechy",
+    "Cechy/Zwinność",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

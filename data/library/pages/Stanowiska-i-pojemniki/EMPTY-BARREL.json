@@ -4,9 +4,9 @@
   "tags": [
     "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "DOS2"
+    "DOS2",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

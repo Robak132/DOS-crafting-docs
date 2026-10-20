@@ -4,10 +4,12 @@
   "titlePl": "Średnia mikstura Inteligencji",
   "tags": [
     "Typ/Mikstury-i-jedzenie",
+    "Cechy/Inteligencja",
+    "DOS1",
     "DOS2-CO",
-    "Cechy/Inteligencja"
+    "Cechy",
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

@@ -4,9 +4,8 @@
   "tags": [
     "Typ/Strzaly-i-granaty",
     "DOS1",
-    "Water-Resist-Potion"
+    "Typ"
   ],
   "itemPage": true,
-  "categoryPage": false,
-  "aliases": []
+  "categoryPage": false
 }

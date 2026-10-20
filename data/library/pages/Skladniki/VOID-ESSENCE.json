@@ -2,9 +2,9 @@
   "slug": "Skladniki/VOID-ESSENCE",
   "title": "Void Essence",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

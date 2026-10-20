@@ -2,9 +2,14 @@
   "slug": "Magia/EARTH-MACE",
   "title": "Earth Mace",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
     "DOS2-CO",
+    "Efekty/Statusy/PETRIFIED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Bulawy",
     "Typ/Magia"
   ],
   "itemPage": true,

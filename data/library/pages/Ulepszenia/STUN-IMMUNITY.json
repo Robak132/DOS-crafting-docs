@@ -3,11 +3,11 @@
   "title": "Stun Immunity",
   "titlePl": "Niewrażliwość na ogłuszenie",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Immunitet-na-ogłuszenie",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

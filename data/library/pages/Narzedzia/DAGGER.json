@@ -1,13 +1,17 @@
 {
   "slug": "Narzedzia/DAGGER",
-  "title": "Dagger",
-  "titlePl": "Sztylet",
+  "title": "Crafted Dagger",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
     "DOS2",
     "DOS2-CO",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Sztylety",
     "Typ/Narzedzia",
     "Typ/Skladniki"
   ],

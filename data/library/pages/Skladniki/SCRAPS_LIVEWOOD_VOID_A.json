@@ -2,9 +2,9 @@
   "slug": "Skladniki/SCRAPS_LIVEWOOD_VOID_A",
   "title": "Void-Touched Livewood Fragments",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

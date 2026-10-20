@@ -3,9 +3,12 @@
   "title": "Battered Cooking Pot",
   "titlePl": "Zniszczony garnek",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,10 @@
   "title": "Blank Fire Scroll",
   "titlePl": "Niezapisany zwój ognia",
   "tags": [
-    "Typ/Zwoje",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -1,10 +1,15 @@
 {
   "slug": "Magia/POISON-STAFF",
-  "title": "Poison Staff",
+  "title": "Posion Staff",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kostury",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -2,9 +2,13 @@
   "slug": "Magia/PHYSICAL-WAND",
   "title": "Physical Wand",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2-CO",
+    "Efekty/Statusy/BLEEDING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Rozdzki",
     "Typ/Magia"
   ],
   "itemPage": true,

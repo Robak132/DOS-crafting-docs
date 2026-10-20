@@ -3,9 +3,9 @@
   "title": "Magical Adult Antler",
   "titlePl": "Magiczne poroże dorosłego osobnika",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

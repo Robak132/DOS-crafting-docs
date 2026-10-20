@@ -3,9 +3,9 @@
   "title": "Iron Bar",
   "titlePl": "Sztabka żelaza",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

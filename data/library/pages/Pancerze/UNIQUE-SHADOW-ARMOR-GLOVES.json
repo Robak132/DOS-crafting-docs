@@ -1,10 +1,20 @@
 {
   "slug": "Pancerze/UNIQUE-SHADOW-ARMOR-GLOVES",
-  "title": "Unique Shadow Armor Gloves",
+  "title": "Unique Rogue Gloves",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Spryt",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice"
   ],
   "itemPage": true,
   "categoryPage": false

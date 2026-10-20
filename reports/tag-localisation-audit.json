@@ -1,0 +1,1590 @@
+{
+  "dos1": [
+    {
+      "tag": "Typ/Bron",
+      "en": "Weapons",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz",
+      "en": "Armour",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Miecze",
+      "en": "Swords",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Topory",
+      "en": "Axes",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Bulawy",
+      "en": "Maces",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Sztylety",
+      "en": "Daggers",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Wlocznie",
+      "en": "Spears",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Luki",
+      "en": "Bows",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Kusze",
+      "en": "Crossbows",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Rozdzki",
+      "en": "Wands",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Bron/Kostury",
+      "en": "Staff",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Helmy",
+      "en": "Helmet",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Napiersniki",
+      "en": "Chest Armour",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Rekawice",
+      "en": "Gloves",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Spodnie",
+      "en": "Leggings",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Buty",
+      "en": "Boots",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pancerz/Tarcze",
+      "en": "Shields",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Amulety",
+      "en": "Amulet",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pierscienie",
+      "en": "Ring",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Typ/Pasy",
+      "en": "Belt",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Siła",
+      "en": "Strength",
+      "pl": "Siła",
+      "contentuid": [
+        "hb4e3a075g5f82g4a0dgaffbg456e5c15c3db"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Zręczność",
+      "en": "Finesse",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Zwinność",
+      "en": "Dexterity",
+      "pl": "Zwinność",
+      "contentuid": [
+        "h3c550ad8g995eg411fg8af6ge8309f31b1a0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Inteligencja",
+      "en": "Intelligence",
+      "pl": "Inteligencja",
+      "contentuid": [
+        "hfbc938ceg297fg4232ga11dg3fe44985b9f8"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Kondycja",
+      "en": "Constitution",
+      "pl": "Kondycja",
+      "contentuid": [
+        "hb4cd5b0bg5731g40b3gb49bg1fa6db60f346"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Pamięć",
+      "en": "Memory",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Spryt",
+      "en": "Wits",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Percepcja",
+      "en": "Perception",
+      "pl": "Spostrz.",
+      "contentuid": [
+        "hb9f342ecgf1cbg4bacg9c70g5b804230b056"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Szybkość",
+      "en": "Speed",
+      "pl": "Prędkość",
+      "contentuid": [
+        "h89e6e8a0ga37ag4dd7g8ff8g6c2fb35c4790"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Inicjatywa",
+      "en": "Initiative",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Celność",
+      "en": "Chance to hit",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Krytyk",
+      "en": "Critical chance",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Unik",
+      "en": "Dodge",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Pancerz-fizyczny",
+      "en": "Physical Armour",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Pancerz-magiczny",
+      "en": "Magic Armour",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/HP",
+      "en": "Vitality",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Obrażenia",
+      "en": "Damage",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+      "en": "Leadership",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Szczęście",
+      "en": "Lucky Charm",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Znawca",
+      "en": "Loremaster",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Telekineza",
+      "en": "Telekinesis",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Skradanie",
+      "en": "Sneaking",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Złodziejstwo",
+      "en": "Thievery",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Handel",
+      "en": "Bartering",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Perswazja",
+      "en": "Persuasion",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Otwieranie-zamków",
+      "en": "Lockpicking",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Kradzież-kieszonkowa",
+      "en": "Pickpocketing",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Wytwarzanie",
+      "en": "Crafting",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Kowalstwo",
+      "en": "Blacksmithing",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Hydrosophia",
+      "en": "Hydrosophist",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+      "en": "Pyrokinetic",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+      "en": "Aerotheurge",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Geomancja",
+      "en": "Geomancer",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Nekromancja",
+      "en": "Witchcraft",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Przyzywanie",
+      "en": "Summoning",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Polimorfia",
+      "en": "Polymorph",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Wojna",
+      "en": "Man-at-Arms",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Łowiectwo",
+      "en": "Expert Marksman",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Łobuz",
+      "en": "Scoundrel",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+      "en": "Single-Handed",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+      "en": "Two-Handed",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+      "en": "Dual Wielding",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Dystansowa",
+      "en": "Ranged",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Odnawianie-PA",
+      "en": "AP recovery",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Początkowe-PA",
+      "en": "Starting AP",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Maksymalne-PA",
+      "en": "Maximum AP",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Krzepa",
+      "en": "Body Building",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+      "en": "Willpower",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Obrona",
+      "en": "Defence",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Leczenie",
+      "en": "Healing",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Gniazda-run",
+      "en": "Rune Slots",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/POISONED",
+      "en": "Poisoned",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/DRUNK",
+      "en": "Drunk",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/KNOCKDOWN",
+      "en": "Knocked down",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/DISEASED",
+      "en": "Diseased",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/BURNING",
+      "en": "Burning",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/PETRIFIED",
+      "en": "Petrified",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/FROZEN",
+      "en": "Frozen",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/BLIND",
+      "en": "Blind",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/INVISIBLE",
+      "en": "Invisible",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/SLOWED",
+      "en": "Slowed",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/BLEEDING",
+      "en": "Bleeding",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/FEAR",
+      "en": "Fear",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/WET",
+      "en": "Wet",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/MAGIC_SHELL",
+      "en": "Magic Shell",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/CHILLED",
+      "en": "Chilled",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/HEALING",
+      "en": "Healing",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/CHARMED",
+      "en": "Charmed",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/DECAYING_TOUCH",
+      "en": "Decaying",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/KNOCKED_DOWN",
+      "en": "Knocked down",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/FORTIFIED",
+      "en": "Fortified",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/CRIPPLED",
+      "en": "Crippled",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/HASTED",
+      "en": "Hasted",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/WARM",
+      "en": "Warm",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/CLEAR_MINDED",
+      "en": "Clear-minded",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    }
+  ],
+  "dos2": [
+    {
+      "tag": "Typ/Bron",
+      "en": "Weapons",
+      "pl": "Broń",
+      "contentuid": [
+        "h3dffa899g8bedg4bf0g8d81g6f0578338a29",
+        "h47057047g2f4ag46f1g9179g5c11102cd33b",
+        "h5fb2ef9cg4258g446eg9522gd6be58f3ab23",
+        "ha35fea64gafc2g451bga109g6b38657934ff"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz",
+      "en": "Armour",
+      "pl": "Pancerze",
+      "contentuid": [
+        "hd77d5ad9g1150g4c55gafd7ga3d16980c2dc"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Miecze",
+      "en": "Swords",
+      "pl": "Miecze",
+      "contentuid": [
+        "h828ec7b3g0adeg4e8ega516g9bd5649e8eb0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Topory",
+      "en": "Axes",
+      "pl": "Topory",
+      "contentuid": [
+        "hc75be7bcgf009g47c1g8148gb8445d1fb4fe"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Bulawy",
+      "en": "Maces",
+      "pl": "Buławy",
+      "contentuid": [
+        "h41a38775g22c1g4303g8ec7gb73c70b8dc81"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Sztylety",
+      "en": "Daggers",
+      "pl": "Sztylety",
+      "contentuid": [
+        "h8d5d0e0age222g4a53g9caag4e6cdf22f2d6"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Wlocznie",
+      "en": "Spears",
+      "pl": "Włócznie",
+      "contentuid": [
+        "h3d630ed8gd4fag4650g8dcegf7a354cf35fb"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Luki",
+      "en": "Bows",
+      "pl": "Łuki",
+      "contentuid": [
+        "h8ed1ac6cge4b9g462cg8806g190cd915dbb0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Kusze",
+      "en": "Crossbows",
+      "pl": "Kusze",
+      "contentuid": [
+        "ha3f71157ga32dg4745g8732g945f4256e48f"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Rozdzki",
+      "en": "Wands",
+      "pl": "Różdżki",
+      "contentuid": [
+        "hb135e047g6d81g4e68gb805g355316f12982",
+        "he2b9dfc3g462dg4dbagbbdbg55735894ea78"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Bron/Kostury",
+      "en": "Staff",
+      "pl": "Kostur",
+      "contentuid": [
+        "h0172003bg3d9cg492bga07cg55c4db8606a8",
+        "h224cad7bg7f6dg4db0g8c83gbc9c7e3d8acb",
+        "h6a13394bg02ddg4af5g9fd4g50d5becd170a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Helmy",
+      "en": "Helmet",
+      "pl": "Hełm",
+      "contentuid": [
+        "h6eda1a5eg324bg4205ga133g09dd85406be7",
+        "h7f20b3e0gc471g4f41g95f1g0ec1a1bc0aa4",
+        "hd4b98ff5g33a8g44e0ga6a9gdb1ab7d70bf3"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Napiersniki",
+      "en": "Chest Armour",
+      "pl": "Klatka piersiowa",
+      "contentuid": [
+        "hb5c52d20g6855g4929ga78ege3fe776a1f2e"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Rekawice",
+      "en": "Gloves",
+      "pl": "Rękawice",
+      "contentuid": [
+        "h185545eagdaf0g4286ga411gd50cbdcabc8b"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Spodnie",
+      "en": "Leggings",
+      "pl": "Nogawice",
+      "contentuid": [
+        "haf707f39g1d87g4bafg98b1g7720783e4820",
+        "he7042b52g54d7g4f46g8f69g509460dfe595"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Buty",
+      "en": "Boots",
+      "pl": "Buty",
+      "contentuid": [
+        "h9b65aab2gf4c4g4b81g96e6g1dcf7ffa8306",
+        "ha9f52ebbg597ag4897gabb3gb171689c4669"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pancerz/Tarcze",
+      "en": "Shields",
+      "pl": "Tarcze",
+      "contentuid": [
+        "hd74935b2g3746g48b9g9199g1ddf1f186a95"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Amulety",
+      "en": "Amulet",
+      "pl": "Amulet",
+      "contentuid": [
+        "hb9d79ca5g59afg4255g9cdbgf614b894be68",
+        "hca5a4a17g12e5g462dga0cegf2b67c9d042f"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pierscienie",
+      "en": "Ring",
+      "pl": "Pierścień",
+      "contentuid": [
+        "h970199f8ge650g4fa3ga0deg5995696569b6",
+        "h9ae0a86cg482eg4aaaga779gf03d76c67eca",
+        "hbac006f1gdd5bg41ccg97b6ga0820ad29cb8"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Typ/Pasy",
+      "en": "Belt",
+      "pl": "Pas",
+      "contentuid": [
+        "h2a76a9ecg2982g4c7bgb66fgbe707db0ac9e",
+        "h39f15817gdc51g43eagae63g129082e619fc",
+        "hfcbbe2d6g8b5ag473agbe87gacd4ba873c4f"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Siła",
+      "en": "Strength",
+      "pl": "Siła",
+      "contentuid": [
+        "h363413f4g5033g4821ga298g016915a5d625",
+        "hb4e3a075g5f82g4a0dgaffbg456e5c15c3db",
+        "hc8c67074g3c19g44d1g8b7bg9e5a8d06d87f"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Zręczność",
+      "en": "Finesse",
+      "pl": "Zręczność",
+      "contentuid": [
+        "h27e3bc03g87a9g4e13ga38dg641b7db4b441",
+        "h281c2da7g2d2bg4d69g986agfd124c7f569f",
+        "h3b3ad9d6g754fg44a0g953dg4f87d4ac96fe",
+        "h50ac48bdg623bg436bg96d2gc2575a27f0a9"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Zwinność",
+      "en": "Dexterity",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Inteligencja",
+      "en": "Intelligence",
+      "pl": "Inteligencja",
+      "contentuid": [
+        "h33d41553g12cag401eg8c71g640d3d654054",
+        "h8e8351e9gc40ag4e4cgaebfgc810a27ffff8",
+        "hfbc938ceg297fg4232ga11dg3fe44985b9f8"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Kondycja",
+      "en": "Constitution",
+      "pl": "Kondycja",
+      "contentuid": [
+        "h67716d2cga877g4954g9d72g35258549b88c",
+        "hb4cd5b0bg5731g40b3gb49bg1fa6db60f346",
+        "hcd19f46ag85bcg41f2gb8fbg1dc69843d250"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Pamięć",
+      "en": "Memory",
+      "pl": "Pamięć",
+      "contentuid": [
+        "h8565e761ge486g467aga4cfg17344874f1ab",
+        "h8d2cecb4g5be0g4fafg8b9bga446ca226c92",
+        "h9b04e0bdg9e05g4d65gb834g7129a80a3d1f",
+        "hb32b7463gd19dg4458gbb2cg5a52c32ad160",
+        "hbadf03e5gcc3ag40adg973fg1da29a1412ed"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Spryt",
+      "en": "Wits",
+      "pl": "Bystrość",
+      "contentuid": [
+        "h0f1053bbg8ac4g461fg9179g6f28b9d091bd",
+        "h14f0a142ga4bdg4acbg8478g678fbf2aa815",
+        "h2b03f6f9gbf5dg4f51g9b98gf01243633ed3",
+        "h86cf9775ga645g4e65gb963g081a4af74904",
+        "hb385d2f8gfb21g41a1gad09gefe0cbc67c6a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Percepcja",
+      "en": "Perception",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Szybkość",
+      "en": "Speed",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Inicjatywa",
+      "en": "Initiative",
+      "pl": "Inicjatywa",
+      "contentuid": [
+        "h8c8cc7e3gdaf7g46d2g9d3bg04a31d8f0599"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Celność",
+      "en": "Chance to hit",
+      "pl": "Szansa na trafienie",
+      "contentuid": [
+        "h9281fb4fg54cdg43a1g8ee2g718b207eede4",
+        "h94e2ddd9gff64g463agb534g96eb607eab7a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Krytyk",
+      "en": "Critical chance",
+      "pl": "Szansa na trafienie krytyczne",
+      "contentuid": [
+        "h78baa9abga831g4a6egb17bg79d4676ab54a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Unik",
+      "en": "Dodge",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Pancerz-fizyczny",
+      "en": "Physical Armour",
+      "pl": "Pancerz Fizyczny",
+      "contentuid": [
+        "h161d5479g06d6g408egade2g37a203e3361f",
+        "h1feadc00g239ag430bgac99g7b5f3605a1c1",
+        "h622fada7g51abg454fg86e4gb22e50dcd738",
+        "h6b165a70gef80g44fag8001gd3f6343fde73",
+        "ha9d2f52cg91b0g4715g83f1g12b8f49d4c3c",
+        "hb677b3f7g5cf6g49c3g84fag2f773ef50dd6",
+        "hd5aaae39g8dc4g4d7cga540g6c6ca35f0366",
+        "he2545323g7459g43b1gb0d7g0ae7e920ae08"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Pancerz-magiczny",
+      "en": "Magic Armour",
+      "pl": "Pancerz Magiczny",
+      "contentuid": [
+        "h50eb8e33g82edg412eg9886gec19ca591254",
+        "h9a15e1e8gc13bg4586gb1cdgb377a0d2a7b2",
+        "h9c96efa9gd082g4043gace3g208be7503e88",
+        "hc6dcb940gb6b6g41aagaeceg31008af9c082",
+        "hd82fb3dag025bg4caag856egceaf8ecad162",
+        "hd9f9cf80g7affg4a45g8519gd705ed9bc3bd"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/HP",
+      "en": "Vitality",
+      "pl": "Zdrowie",
+      "contentuid": [
+        "h37699573gbb36g4cbcgae41gaca10b132bab",
+        "h67a4c781g589ag4872g8c46g870e336074bd",
+        "h760e5376g9c6dg473dgb08cg9b80611b9a7d",
+        "hc07b544dg0f54g4a8dg9d69g0aeb4497690b"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Obrażenia",
+      "en": "Damage",
+      "pl": "Obrażenia",
+      "contentuid": [
+        "h0f24461cg404bg4661g9659g509e0e160261",
+        "h9531fd22g6366g4e93g9b08g11763cac0d86"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+      "en": "Leadership",
+      "pl": "Przywództwo",
+      "contentuid": [
+        "h7c65fe39g1526g427bg8a2dgab7e74c66202",
+        "hbcbab273g6573g4b68g810cgae231a342df0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Szczęście",
+      "en": "Lucky Charm",
+      "pl": "Fart",
+      "contentuid": [
+        "h2f9ec5acgbcbeg45b8g8058gee363e6875d5"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Znawca",
+      "en": "Loremaster",
+      "pl": "Polihistor",
+      "contentuid": [
+        "hb8aa942egbeaag4452gbfbcg31b493bead6e"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Telekineza",
+      "en": "Telekinesis",
+      "pl": "Telekineza",
+      "contentuid": [
+        "h455eb073g28abg4f3bgae9dga8a592a30cdb"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Skradanie",
+      "en": "Sneaking",
+      "pl": "Skradanie się",
+      "contentuid": [
+        "h6bf7caf0g7756g443bg926dg1ee5975ee133"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Złodziejstwo",
+      "en": "Thievery",
+      "pl": "Złodziejstwo",
+      "contentuid": [
+        "h1633e511g35e3g4e22gb999gbbf3b0d5ce5e"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Handel",
+      "en": "Bartering",
+      "pl": "Handel wymienny",
+      "contentuid": [
+        "hcc404653ga10ag4f56g8119g11162e60f81d"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Perswazja",
+      "en": "Persuasion",
+      "pl": "Perswazja",
+      "contentuid": [
+        "h257372d3g6f98g4450g813bg190e19aecce4",
+        "he714a373g4fa2g47feg94degdab81c6b5770"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Otwieranie-zamków",
+      "en": "Lockpicking",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Kradzież-kieszonkowa",
+      "en": "Pickpocketing",
+      "pl": "Kradzież kieszonkowa",
+      "contentuid": [
+        "h285c0c44g7cf1g43deg8ec7g6d6e9b7deba0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Wytwarzanie",
+      "en": "Crafting",
+      "pl": "Wytwarzanie",
+      "contentuid": [
+        "h5c0d83cbgb3c5g486ag8cd4g4c9392a0ab5f",
+        "h5cbee311g82a2g4f22g877fg703cfae61459",
+        "h9d0ba738g6db4g43b4gac05g864de7d1b249",
+        "he5702039g5527g4ed0gbaa3g3c06955e8789",
+        "hebe1820eg1937g4413g83bcgf02d9720d66c"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Kowalstwo",
+      "en": "Blacksmithing",
+      "pl": "Kowalstwo",
+      "contentuid": [
+        "haa1e9351g5419g4606g91a8ge78181a6d8b0"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Hydrosophia",
+      "en": "Hydrosophist",
+      "pl": "Hydrozofia",
+      "contentuid": [
+        "h21354580g6870g411dgbef4g52f34942686a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+      "en": "Pyrokinetic",
+      "pl": "Pirokineza",
+      "contentuid": [
+        "hf0a5a77dg132ag4517g8701g9d2ca3057a28"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+      "en": "Aerotheurge",
+      "pl": "Aeroturgia",
+      "contentuid": [
+        "hf8056089g5b06g4a54g8dd5gf1fb9a796b53"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Geomancja",
+      "en": "Geomancer",
+      "pl": "Geomancja",
+      "contentuid": [
+        "h814e6bb5g3f51g4549gb3e4ge99e1d0017e1"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Nekromancja",
+      "en": "Necromancer",
+      "pl": "Nekromancja",
+      "contentuid": [
+        "hb7ea4cc5g2a18g416bg9b95g51d928a60398"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Przyzywanie",
+      "en": "Summoning",
+      "pl": "Przyzywanie",
+      "contentuid": [
+        "hac10f374gf9dbg4ee5gb5d0g7b1d3cb6d1fe"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Polimorfia",
+      "en": "Polymorph",
+      "pl": "Polimorfia",
+      "contentuid": [
+        "h70714d89g196eg4affga165gaa9d72a61368"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Wojna",
+      "en": "Warfare",
+      "pl": "Sztuka walki",
+      "contentuid": [
+        "h34cd22c7g2573g4723g9eaeg564bbd1d5a0e",
+        "h8e4bebcbg21c7g43dag8b05gd3b13c1be651"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Łowiectwo",
+      "en": "Huntsman",
+      "pl": "Myślistwo",
+      "contentuid": [
+        "h3d3dc89dgd286g418eg8134g2eb65d063514"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Umiejetnosci/Łobuz",
+      "en": "Scoundrel",
+      "pl": "Szelmostwo",
+      "contentuid": [
+        "hed591025g5c39g48ccga899gc9b1569716c1"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+      "en": "Single-Handed",
+      "pl": "Jednoręczna",
+      "contentuid": [
+        "ha74334b1gd56bg49c2g8738g44da4decd00a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+      "en": "Two-Handed",
+      "pl": "Dwuręczna",
+      "contentuid": [
+        "h3fb5cd5ag9ec8g4746g8f9cg03100b26bd3a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+      "en": "Dual Wielding",
+      "pl": "Dwie bronie",
+      "contentuid": [
+        "h03d68693g35e7g4721ga1b3g9f9882f08b12"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-broni/Dystansowa",
+      "en": "Ranged",
+      "pl": "Dystansowa",
+      "contentuid": [
+        "hdda30cb9g17adg433ag9071g867e97c09c3a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Odnawianie-PA",
+      "en": "AP recovery",
+      "pl": "Odzyskiwanie PA",
+      "contentuid": [
+        "h544d0f04ga5b2g4350g9208g24b6ba25cbe8"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Początkowe-PA",
+      "en": "Starting AP",
+      "pl": "Początkowe PA",
+      "contentuid": [
+        "h89797c80gb705g463fg8efbgdef053221c1e"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Maksymalne-PA",
+      "en": "Maximum AP",
+      "pl": "Maks. PA",
+      "contentuid": [
+        "h1aca489dg4fdeg4bb1g9b2bg982281ae2864"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Krzepa",
+      "en": "Body Building",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+      "en": "Willpower",
+      "pl": "Siła woli",
+      "contentuid": [
+        "h3478fd51gb40bg4a9ega851g25a1b5e62ea5"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Bieglosci-obrony/Obrona",
+      "en": "Defence",
+      "pl": "Obrona",
+      "contentuid": [
+        "h1c702803g6f52g474cg897fgf0f3fd4c3b1c",
+        "ha65cecedg819dg4d17g9f0ag1bf646ec4f6c"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Leczenie",
+      "en": "Healing",
+      "pl": "Leczenie",
+      "contentuid": [
+        "h521a95c7g8eebg4f66gbb08g5fcda3a3356f"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Cechy/Gniazda-run",
+      "en": "Rune Slots",
+      "pl": "MIEJSCA NA RUNY",
+      "contentuid": [
+        "hcb61bdaeg4482g4529gab33gfeee7d750489"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/POISONED",
+      "en": "Poisoned",
+      "pl": "Zatrucie",
+      "contentuid": [
+        "h8cfa7f87g09aag4079gba8fg7b800a0cc64e"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/DRUNK",
+      "en": "Drunk",
+      "pl": "Upojenie",
+      "contentuid": [
+        "hcbf1bbdeg54d4g43b3gb094gd0c171086160"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/KNOCKDOWN",
+      "en": "Knocked down",
+      "pl": "Powalenie",
+      "contentuid": [
+        "h4a390c48ga640g4f98ga491g7b92bb9f7ba8",
+        "hdfa48bb0g5f7dg4756gb6c8g8835b5d8950c"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/DISEASED",
+      "en": "Diseased",
+      "pl": "Choroba",
+      "contentuid": [
+        "h791f1994g94e9g4471g9e10g398f8d194c90"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/BURNING",
+      "en": "Burning",
+      "pl": "Płonięcie",
+      "contentuid": [
+        "h59e5e5e0g4b5fg4f9cg8395g13eb81a9325c"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/PETRIFIED",
+      "en": "Petrified",
+      "pl": "Skamienienie",
+      "contentuid": [
+        "hf2cfd547ga22ag4992g8ed4g723b97f1f746",
+        "hfc001d70gaff3g4f6eg9517g55e11fa7ce51"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/FROZEN",
+      "en": "Frozen",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/BLIND",
+      "en": "Blind",
+      "pl": "Oślepienie",
+      "contentuid": [
+        "h5c47fcd7g8fd1g453bgbbffgd10009874b58"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/INVISIBLE",
+      "en": "Invisible",
+      "pl": "Niewidzialność",
+      "contentuid": [
+        "h1e7cbfe5g4c82g4b90g960bgd4f47ae9fcc0",
+        "h7fa4cea8gf162g40a8g83cbg133d613ee6eb"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/SLOWED",
+      "en": "Slowed",
+      "pl": "Spowolnienie",
+      "contentuid": [
+        "hb016fee2g5bc4g437dgbf8fg25fde21dd319"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/BLEEDING",
+      "en": "Bleeding",
+      "pl": "Krwawienie",
+      "contentuid": [
+        "he7ec9e93g750eg4538g9d87g989c66d27bc9"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/FEAR",
+      "en": "Fear",
+      "pl": "Strach",
+      "contentuid": [
+        "h6f38a9b4gc4deg4318g9f6cg4d073b48bde2",
+        "h7a560f6cgc1d7g49a2g8f60ge21d93878763"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/WET",
+      "en": "Wet",
+      "pl": "Przemoczenie",
+      "contentuid": [
+        "h647ebe97gb196g4d69ga282g57df685c101a"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/MAGIC_SHELL",
+      "en": "Magic Shell",
+      "pl": "Magiczna Skorupa",
+      "contentuid": [
+        "h7047a2ddg6e87g4bf3g995bg5c1b366cc1b3",
+        "headeaff8ge018g4883ga651g04330a3953ab"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/CHILLED",
+      "en": "Chilled",
+      "pl": "Oziębienie",
+      "contentuid": [
+        "ha15e9170g189bg42dag8cbdg68bc6363dac7"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/HEALING",
+      "en": "Healing",
+      "pl": null,
+      "contentuid": [],
+      "untranslated": true
+    },
+    {
+      "tag": "Efekty/Statusy/CHARMED",
+      "en": "Charmed",
+      "pl": "Oczarowanie",
+      "contentuid": [
+        "h30fc0122g6378g408cgac6fg6e3bcb3c852b",
+        "h6aa38624g3426g4956g90ecg732faedf2510",
+        "h74690528g79aag4f61g9cd7gb82b2e55e189",
+        "h85258054g0580g4955g8c9fg0f3f2b782ae2"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/DECAYING_TOUCH",
+      "en": "Decaying",
+      "pl": "Rozkład",
+      "contentuid": [
+        "hbc2789fegb2deg4952ga436ga8a0aad070bf"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/KNOCKED_DOWN",
+      "en": "Knocked down",
+      "pl": "Powalenie",
+      "contentuid": [
+        "h4a390c48ga640g4f98ga491g7b92bb9f7ba8",
+        "hdfa48bb0g5f7dg4756gb6c8g8835b5d8950c"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/FORTIFIED",
+      "en": "Fortified",
+      "pl": "Kamienny Pancerz",
+      "contentuid": [
+        "h735d144egd91cg477agb5e3g80550939204d",
+        "h8f9e4716g7749g45eag967egd009c563c227"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/CRIPPLED",
+      "en": "Crippled",
+      "pl": "Okaleczenie",
+      "contentuid": [
+        "he2818248g8662g4db3g8facgdc4539a9b781"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/HASTED",
+      "en": "Hasted",
+      "pl": "Przyspieszenie",
+      "contentuid": [
+        "h6feb5d8bgb0bcg4a66g8cc3g7f7bc00fd565"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/WARM",
+      "en": "Warm",
+      "pl": "Rozgrzanie",
+      "contentuid": [
+        "h92aa75d2ge0b7g4e42g8a6cg530cffa7cd79"
+      ],
+      "untranslated": false
+    },
+    {
+      "tag": "Efekty/Statusy/CLEAR_MINDED",
+      "en": "Clear-minded",
+      "pl": "Jasny Umysł",
+      "contentuid": [
+        "h386f194eg7bf3g4214g81f8g325fd5b2c38a",
+        "ha7e5af4fgcd57g4097gbd8bg3620071eafe1"
+      ],
+      "untranslated": false
+    }
+  ]
+}

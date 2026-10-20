@@ -3,9 +3,12 @@
   "title": "Bleeding Arrow",
   "titlePl": "Strzała wykrwawiająca",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/BLEEDING",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

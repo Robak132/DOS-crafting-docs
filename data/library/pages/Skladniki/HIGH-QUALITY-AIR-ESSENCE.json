@@ -3,9 +3,9 @@
   "title": "High Quality Air Essence",
   "titlePl": "Esencja powietrza wysokiej jakości",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

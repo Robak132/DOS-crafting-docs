@@ -2,9 +2,9 @@
   "slug": "Skladniki/ATARAXIANSCYTHE_SHAFT",
   "title": "Haft of the Swornbreaker",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,10 +2,11 @@
   "slug": "Przedmioty-wydarzen/FROST-SHIELD",
   "title": "Frost Shield",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
     "Typ",
-    "Typ/Pancerz"
+    "Typ/Pancerz",
+    "Typ/Pancerz/Tarcze",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

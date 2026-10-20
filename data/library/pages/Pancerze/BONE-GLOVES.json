@@ -2,9 +2,16 @@
   "slug": "Pancerze/BONE-GLOVES",
   "title": "Bone Gloves",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Inicjatywa",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice"
   ],
   "itemPage": true,
   "categoryPage": false

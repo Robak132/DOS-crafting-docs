@@ -2,9 +2,10 @@
   "slug": "Pancerze/MAGE-GLOVES",
   "title": "Mage Gloves",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice"
   ],
   "itemPage": true,
   "categoryPage": false

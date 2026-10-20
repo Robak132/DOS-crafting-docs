@@ -2,10 +2,10 @@
   "slug": "Skladniki/POUCH-OF-SUPERIOR-STARDUST",
   "title": "Pouch of Superior Stardust",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
     "Typ",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

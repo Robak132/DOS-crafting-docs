@@ -2,9 +2,9 @@
   "slug": "Skladniki/MAGIC-TUSK",
   "title": "MAGIC TUSK",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

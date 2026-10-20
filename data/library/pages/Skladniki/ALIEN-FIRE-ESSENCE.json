@@ -3,9 +3,9 @@
   "title": "Alien Fire Essence",
   "titlePl": "Obca esencja ognia",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

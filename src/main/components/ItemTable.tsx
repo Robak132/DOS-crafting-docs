@@ -1,4 +1,4 @@
-import { itemIconKey } from "../domain/itemIcons"
+import { itemDataKey } from "../domain/itemIcons"
 import { isItemGroup } from "../domain/itemGroups"
 import { itemDescriptionText, type ItemDescription } from "./ItemTooltip"
 import { ItemIcon } from "./ItemIcon"
@@ -50,8 +50,8 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
                 </tr>
               </thead>
               <tbody class="recipe-table-body">
-                {catalogItemRows(section.recipes).map(({ item, effects, tags }) => {
-                  const description = itemDescriptionText(descriptions[itemIconKey(item.name)], lang)
+                {catalogItemRows(section.recipes, lang).map(({ item, effects, tags }) => {
+                  const description = itemDescriptionText(descriptions[itemDataKey(item)], lang)
                   const label = (
                     <>
                       <ItemIcon icon={item.icon} />
@@ -91,7 +91,7 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
                         {tags.length > 0 ? (
                           <div class="recipe-row-tags">
                             {tags.map((tag) => (
-                              <button type="button" class="recipe-search-tag" data-search-tag={tag}>
+                              <button type="button" class="recipe-search-tag" data-filter-tag={tag}>
                                 {tagLabel(tag, labels)}
                               </button>
                             ))}

@@ -2,9 +2,16 @@
   "slug": "Pasy/UNIQUE-RANGER-BELT",
   "title": "Unique Ranger Belt",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Perswazja",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łowiectwo",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

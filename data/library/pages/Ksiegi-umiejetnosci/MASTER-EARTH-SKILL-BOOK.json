@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/MASTER-EARTH-SKILL-BOOK",
   "title": "MASTER EARTH SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,12 +3,13 @@
   "title": "Large Tusk Amulet",
   "titlePl": "Amulet z dużym kłem",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Inteligencja",
     "Cechy/Odporność-na-powietrze",
-    "Typ"
+    "Cechy/Znawca",
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

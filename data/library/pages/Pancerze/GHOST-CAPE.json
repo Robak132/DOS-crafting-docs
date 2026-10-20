@@ -2,10 +2,21 @@
   "slug": "Pancerze/GHOST-CAPE",
   "title": "Ghost Cape",
   "tags": [
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-DAGGER-(+1)-DUAL-WIELDING",
   "title": "Boosted Dagger (+1) Dual Wielding",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Walka-dwoma-broniami",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

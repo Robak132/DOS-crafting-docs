@@ -3,9 +3,13 @@
   "title": "Crossbow",
   "titlePl": "Kusza",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Skladniki"
   ],
   "itemPage": true,

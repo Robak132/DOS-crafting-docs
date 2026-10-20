@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/ADEPT-AIR-SKILL-BOOK",
   "title": "ADEPT AIR SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

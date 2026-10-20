@@ -2,9 +2,9 @@
   "slug": "Skladniki/ONE-OF-THE-6-STAT-BOOSTING-POTIONS",
   "title": "One of the 6 Stat Boosting Potions",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

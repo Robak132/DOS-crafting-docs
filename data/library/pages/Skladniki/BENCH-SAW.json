@@ -3,9 +3,9 @@
   "title": "Bench Saw",
   "titlePl": "Piła warsztatowa",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

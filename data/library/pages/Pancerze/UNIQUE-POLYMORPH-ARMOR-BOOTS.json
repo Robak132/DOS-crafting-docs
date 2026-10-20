@@ -2,11 +2,15 @@
   "slug": "Pancerze/UNIQUE-POLYMORPH-ARMOR-BOOTS",
   "title": "Unique Polymorph Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Polimorfia",
     "Cechy",
-    "Typ"
+    "Cechy/Odporność-na-obrażenia-fizyczne",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Skradanie",
+    "Cechy/Unik",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

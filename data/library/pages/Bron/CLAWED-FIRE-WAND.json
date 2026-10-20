@@ -2,9 +2,16 @@
   "slug": "Bron/CLAWED-FIRE-WAND",
   "title": "CLAWED FIRE WAND",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/BURNING",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki"
   ],
   "itemPage": true,
   "categoryPage": false

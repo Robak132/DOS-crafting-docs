@@ -35,7 +35,7 @@ export function ItemTooltip({
   description?: ItemDescription
   elementRef?: RefObject<HTMLDivElement | null>
 }) {
-  const effects = uniqueItemEffects(recipes)
+  const effects = uniqueItemEffects(recipes, lang, item)
   const descriptionText = itemDescriptionText(description, lang)
   return (
     <div ref={elementRef} class="item-preview" role="tooltip">

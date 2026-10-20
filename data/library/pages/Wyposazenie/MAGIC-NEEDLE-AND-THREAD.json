@@ -3,11 +3,11 @@
   "title": "Magic Needle & Thread",
   "titlePl": "Magiczna igła z nitką",
   "tags": [
-    "Typ/Wyposazenie",
-    "DOS2-CO",
     "DOS1",
+    "DOS2-CO",
     "Typ",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

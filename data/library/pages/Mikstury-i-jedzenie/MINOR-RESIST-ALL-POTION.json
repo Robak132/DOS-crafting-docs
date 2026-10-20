@@ -3,13 +3,17 @@
   "title": "Minor Resist All Potion",
   "titlePl": "Mała mikstura wszelkiej odporności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS1",
-    "DOS2-CO",
-    "DOS2",
     "Cechy",
-    "Cechy/Odporność-na-wszystko",
-    "Typ"
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Odporność-na-ziemię",
+    "DOS1",
+    "DOS2",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

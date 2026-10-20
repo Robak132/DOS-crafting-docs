@@ -1,12 +1,18 @@
 {
   "slug": "Pasy/UNIQUE-PYROKINETIC-BELT",
-  "title": "Unique Pyrokinetic Belt",
+  "title": "Unique Pyromancer Belt",
   "tags": [
-    "Typ/Pasy",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Inteligencja",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Telekineza",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
+    "Cechy/Znawca",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -34,14 +34,19 @@ test("one item row collects distinct effects across all recipe variants", () => 
 
 test("table has three columns and type categories with one row per item", () => {
   const html = renderToString(
-    <ItemTable recipes={[first, second]} labels={{ "Typ/Mikstury": "Mikstury" }} itemHref={(slug) => `./${slug}`} />,
+    <ItemTable
+      lang="pl"
+      recipes={[first, second]}
+      labels={{ "Typ/Mikstury": "Mikstury" }}
+      itemHref={(slug) => `./${slug}`}
+    />,
   )
   assert.ok(html.includes('<th scope="col">Przedmiot</th><th scope="col">Efekt</th><th scope="col">Tagi</th>'))
   assert.ok(html.includes('<section><h2>Mikstury</h2><div class="recipe-table-wrap"'))
   assert.ok(html.includes('aria-label="Przedmioty: Mikstury"'))
   assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
   assert.ok(html.includes('data-search-effect="+2 Bystrość"'))
-  assert.ok(html.includes('data-search-tag="Cechy/Leczenie"'))
+  assert.ok(html.includes('data-filter-tag="Cechy/Leczenie"'))
   assert.ok(!html.includes("Ingredient only"))
   assert.ok(!html.includes("Crafting instructions"))
   assert.ok(!html.includes("x2"))

@@ -3,10 +3,11 @@
   "title": "Minor Healing Potion",
   "titlePl": "Mała mikstura uzdrawiająca",
   "tags": [
-    "DOS2",
-    "Cechy/Leczenie",
     "Cechy",
+    "Cechy/Leczenie",
     "DOS1",
+    "DOS2",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"

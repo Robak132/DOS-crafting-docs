@@ -2,9 +2,15 @@
   "slug": "Magia/POISON-SWORD",
   "title": "Poison Sword",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Poison",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Miecze",
     "Typ/Magia"
   ],
   "itemPage": true,

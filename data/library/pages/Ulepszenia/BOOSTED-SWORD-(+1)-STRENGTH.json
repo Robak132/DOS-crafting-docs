@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-SWORD-(+1)-STRENGTH",
   "title": "Boosted Sword (+1) Strength",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Siła",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

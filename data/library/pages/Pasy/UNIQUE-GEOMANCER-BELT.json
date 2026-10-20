@@ -2,11 +2,17 @@
   "slug": "Pasy/UNIQUE-GEOMANCER-BELT",
   "title": "Unique Geomancer Belt",
   "tags": [
-    "Typ/Pasy",
-    "DOS2-CO",
-    "Cechy/Geomancja",
     "Cechy",
-    "Typ"
+    "Cechy/Inteligencja",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Telekineza",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
+    "Cechy/Znawca",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

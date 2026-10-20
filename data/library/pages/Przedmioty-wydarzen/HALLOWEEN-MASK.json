@@ -2,10 +2,15 @@
   "slug": "Przedmioty-wydarzen/HALLOWEEN-MASK",
   "title": "Halloween Mask",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-fizyczny",
     "DOS2-CO",
+    "Efekty/Statusy/FEAR",
     "Typ",
-    "Typ/Pancerz"
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

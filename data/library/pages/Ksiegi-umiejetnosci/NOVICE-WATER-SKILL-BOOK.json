@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/NOVICE-WATER-SKILL-BOOK",
   "title": "NOVICE WATER SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

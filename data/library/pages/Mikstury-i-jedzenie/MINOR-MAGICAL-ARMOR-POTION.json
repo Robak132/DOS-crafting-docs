@@ -2,9 +2,11 @@
   "slug": "Mikstury-i-jedzenie/MINOR-MAGICAL-ARMOR-POTION",
   "title": "MINOR MAGICAL ARMOR POTION",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

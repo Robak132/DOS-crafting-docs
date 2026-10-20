@@ -3,9 +3,11 @@
   "title": "Potion Of Nimble Tumble",
   "titlePl": "Mikstura zwinnej przewrotki",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Unik",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

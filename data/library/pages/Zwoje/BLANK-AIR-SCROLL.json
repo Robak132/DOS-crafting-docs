@@ -3,10 +3,10 @@
   "title": "Blank Air Scroll",
   "titlePl": "Niezapisany zwój powietrza",
   "tags": [
-    "Typ/Zwoje",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,10 @@
   "slug": "Mikstury-i-jedzenie/MINOR-POISON-BOTTLE",
   "title": "MINOR POISON BOTTLE",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

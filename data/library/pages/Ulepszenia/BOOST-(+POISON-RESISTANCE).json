@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOST-(+POISON-RESISTANCE)",
   "title": "Boost (+Poison Resistance)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Odporność-na-truciznę",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

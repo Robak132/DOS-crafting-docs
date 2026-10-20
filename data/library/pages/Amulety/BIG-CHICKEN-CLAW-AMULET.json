@@ -3,11 +3,11 @@
   "title": "Big Chicken Claw Amulet",
   "titlePl": "Amulet z pazurem wielkiego kuraka",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Inicjatywa",
-    "Typ"
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

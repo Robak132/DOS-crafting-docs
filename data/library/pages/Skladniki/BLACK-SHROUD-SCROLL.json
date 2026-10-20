@@ -3,10 +3,12 @@
   "title": "Black Shroud Scroll",
   "titlePl": "Zwój Czarnego Całunu",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Skladniki/CAT-CORPSE",
   "title": "Cat Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

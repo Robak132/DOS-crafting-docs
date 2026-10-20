@@ -3,10 +3,12 @@
   "title": "Source Orb",
   "titlePl": "Kula Źródła",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

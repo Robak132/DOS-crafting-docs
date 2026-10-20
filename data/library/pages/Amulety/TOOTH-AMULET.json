@@ -3,10 +3,9 @@
   "title": "Tooth Amulet",
   "titlePl": "Amulet z zębem",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy/Charyzma",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

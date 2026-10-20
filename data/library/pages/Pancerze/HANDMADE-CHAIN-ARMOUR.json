@@ -3,9 +3,14 @@
   "title": "Handmade Chain Armour",
   "titlePl": "Ręcznie wykonany pancerz kolczy",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

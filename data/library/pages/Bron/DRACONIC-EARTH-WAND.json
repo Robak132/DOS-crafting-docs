@@ -2,9 +2,16 @@
   "slug": "Bron/DRACONIC-EARTH-WAND",
   "title": "DRACONIC EARTH WAND",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/PETRIFIED",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -1,0 +1,2495 @@
+{
+  "scope": "DOS1 EE; DOS2 Definitive Edition; DOS2 DE + Crafting Overhaul. Combined mode includes base DOS2. Counts use game Stats identities when available, otherwise unique English names among recipe results and ingredients; no icon is invented for an unresolved name.",
+  "catalogs": {
+    "dos1": {
+      "items": 431,
+      "with_icon": 293,
+      "without_icon": 138,
+      "groups_excluded": 26,
+      "upgrades_excluded": 25,
+      "broken_assigned_files": [],
+      "unresolved": [
+        {
+          "name": "(Big) Chicken Foot",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "ADEPT AIR SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "ADEPT EARTH SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "ADEPT FIRE SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "ADEPT WATER SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "ADEPT WITCHCRAFT SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Adult Antler",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Air Resistance Potion",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Ancient Human Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Ancient Skull Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Ancient Skull Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Arcane Feather {E}",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Backpack",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Barrel Lid",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Beer",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Big Chicken Claw Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Big Chicken Claw Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Boletus",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Boots",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bottle Filled With Oil",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Bottle of Beer",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Cloth Armour",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Cooking station",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Cow",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Creepy Eye",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Creepy Eye Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Custom Made Bow",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Custom Made Crossbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Custom Made Leather Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Custom Made Spear",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Eggs",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Empty Bottle",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Empty Potion Bottle",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Fabric Dye (Black)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fabric Dye (Blue)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fabric Dye (Purple, Green)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fabric Dye (White, Yellow, Red)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fancy Feather",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fancy Feather Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Fancy Feather Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "FoodFish",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Glowing Star Fish Amulet",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Grapes",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Handcrafted Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Handcrafted Bow",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Handcrafted Crossbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Handcrafted Spear",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Homemade Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Homemade Crossbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Homemade Shield",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Homemade Shortbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Homemade Spear",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Key",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Knife",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "LEATHER CHEST",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Large Constitution Potion",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Large Resist All Potion",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Large Tusk",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Large Tusk Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Log",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Long Rat Tail",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Long Rat Tail Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Long Rat Tail Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Lucky Rabbit Paw",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Lucky Rabbit Paw Amulet",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Lucky Rabbit Paw Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Lucky Rabbit Paw Super Amulet",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Lucky Rabbit Paw Super Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "MASTER AIR SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "MASTER EARTH SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "MASTER FIRE SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "MASTER WATER SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "MASTER WITCHCRAFT SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "METAL CHEST",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Adult Antler",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Ancient Human Skull",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Big Chicken Foot",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Creepy Eye",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Fancy Feather",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Glowing Starfish",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Large Tusk",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Long Rat Tail",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Lucky Rabbit Paw",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Sharp Claw",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Magical Sharp Tooth",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Meat",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Medium Constitution Potion",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Medium Resist All Potion",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Metal Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Minor Constitution Potion",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Most Weapons",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "NOVICE AIR SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "NOVICE EARTH SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "NOVICE FIRE SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "NOVICE WATER SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "NOVICE WITCHCRAFT SKILL BOOK",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "ONE HANDED AXE",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Oil",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "One Handed Sword",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Pearl",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Pillow",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Poison Bottle",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Polished Leather Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Polished Longbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Polished Spear",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Pumpkin",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Pumpkin Peel",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Random Air Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Earth Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Fire Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Water Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Witchcraft Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Robe",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Ruby",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "STAFF (ELEMENT RANDOM)",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Scissors",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sharp Claw",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sharp Claw Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Sharp Claw Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Sharp Tooth",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sharp Tooth Amulet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Sharp Tooth Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Sheep",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sheet of Paper",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Starfish (Greater Gold Value)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Starfish (Lesser Gold Value)",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Superior Arbalest",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Superior Leather Boots",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Superior Longbow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Superior Spear",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Two Handed Axe",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Two Handed Sword",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Voodoo Doll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "WIADRO Z MLEKIEM",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "WIADRO Z WODĄ",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Well",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wood Pulp",
+          "roles": [
+            "ingredient"
+          ]
+        }
+      ]
+    },
+    "dos2": {
+      "items": 664,
+      "with_icon": 623,
+      "without_icon": 41,
+      "groups_excluded": 12,
+      "upgrades_excluded": 18,
+      "broken_assigned_files": [],
+      "unresolved": [
+        {
+          "name": "(Fixed) Oil Pump",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Armour of Eternals",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Barrel",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Beer",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bucket and Cup of Milk",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Bucket of water",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Disembodied Hand",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Empty Barrel",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Eternal Artefact",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "FoodFish",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Giant % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Giant % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Honey",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Key",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Large % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Large % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Magic Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Magical Ancient Human Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Medium % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Medium % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Giant % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Large % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Medium % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Small % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Oil",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Oil_Machine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Poison",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Short Stick and Wood Chips",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Small % Rune",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Small % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Voidwoken Fish",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "WIADRO Z WODĄ",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Water",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Water Source",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wood Chips and Arrow Shaft",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Chips and Long Branch",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Chips and Short Stick",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "weapon",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "weapon (except of wands and staves)",
+          "roles": [
+            "ingredient"
+          ]
+        }
+      ]
+    },
+    "dos2-overhaul": {
+      "items": 1477,
+      "with_icon": 1256,
+      "without_icon": 221,
+      "groups_excluded": 62,
+      "upgrades_excluded": 134,
+      "broken_assigned_files": [],
+      "unresolved": [
+        {
+          "name": "(Fixed) Oil Pump",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Abomination Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Advocate Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Advocate' Vacuum",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "All Stats Potion (Min, Medium, Large)",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Anthropod Leg",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Armour of Eternals",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Automaton Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Axe",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Barrel",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bear Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Beer",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Beetle Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Air Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Earth Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Fire Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Life Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Shadow Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Tormented Soul",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bigger Water Essence",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Black Diamond",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Blackring Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Blacksmith Crate",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Boar Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bone Helmet",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Broom",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Bucket and Cup of Milk",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Bucket of water",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Burning Witch Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Cat Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Chicken corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Cloth Junk",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Clouded Black Diamond",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Cow Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Crab Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Crafted Campfire",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Crocodile Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Cursed Electric Cloud Arrow",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Deer Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Demon Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Dirty Sapphire",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Disembodied Hand",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Djinn Pants",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Doctor Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Doctor's Patience",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Dog Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Downgraded Item",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Dragon Breath",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Dragon Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Drillworm Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Dwarven Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Dwarven Face",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Edible Pumpkin",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Electric Cloud Arrow",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Elven Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Elven Face",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Empress Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Eternal Artefact",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Eye Ring",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Eye of Kniles",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Fangs",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fish Type 1",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fish Type 2",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fish Type 3",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Fish Type 4",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Flesh Golem Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "FoodFish",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Framed Rune",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Frog Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Giant % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Giant % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Goblin Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Golem Flesh",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Griff Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Griff's Drudanae",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Health Potion",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "High Grade Item",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Holy Grenade",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Honey",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Human Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Human Face",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Human Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Jailor Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Key",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Kniles Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Lab Jar, Glass Junks, Silver Plate",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Large % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Large % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Leather Gloves",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Leather Pants",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Lizard Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Lizard Face",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Lohar Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Lohar's Bottle",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Lootbox",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Mace",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mage Gloves",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Mage Pants",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Magic Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Magical Ancient Human Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Magister Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Medium % Rune",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Medium % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Merman Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Merman Scales",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Metal Arms",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Metal Boots",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Metal Helmet",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Metal Junk",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Metal Lowerbody",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Milk Cup",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Minor Air Resistance Potion",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Minor Earth Resistance Potion",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Minor Fire Resistance Potion",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Minor Water Resistance Potion",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Mistake Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Mistake of the Mistake",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Molespitter Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Mysterious Item",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Giant % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Large % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Medium % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Mystical Small % Rune",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Nasty Emerald",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Nightfang Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Nightmare Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Oil",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Oil_Machine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "One Handed Sword",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "One of the 6 Stat Boosting Potions",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "One of the ten Blank Scrolls",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Package",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Paladin Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Pig Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Plate",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Plate Upperbody, Gloves, Boots, Helmet, Pants",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Poison",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Poison Arrowhead",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Present Box",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Present Grenade",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Queen Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Rabbit Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Rabid Paw",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Random Air Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Earth Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Fire Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Polymorph Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Ranger Scroll",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Random Rogue Scroll",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Random Summoning Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Random Warrior Scroll",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Random Witchcraft Scroll",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "RandomWater Scroll",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Rat Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Red Wine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Related Ranger Skillbook",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Related Rogue Skillbook",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Related Warrior Skillbook",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Resurrect Scroll",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Ring of the Sea",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Roost Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Ryker Boss Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Salamander Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Scarecrow Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Shambling Potion",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Shark Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sharp Rock (Simple Recipe)",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Sheep Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Sheet Of Paper (Vanilla Recipe)",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Shield",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Short Stick and Wood Chips",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Shrieker Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Silver Cup, Plate, Glass",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Skull",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Slug Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Small % Rune",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Small % Rune of Power",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Spider Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Spider Legs",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Squirrel Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Tiger Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Torch",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Troll Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Turtle Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Unique Aerotheurge Belt",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Aerothrouge",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Geomancer",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Huntsman",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Hydrosophist",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Necromancer",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Polymorph",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Pyromancer",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Scoundrel",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Summoner",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Ring of Warfare",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Summoning Armor Lowerbody",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Unique Summoning Armor Upperbody",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Upgraded Mysterious Item",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Various Items",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Voidling Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Voidling Grunt Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Voidling Insect Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Voidwoken Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Voidwoken Fish",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "WIADRO Z WODĄ",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Water",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Water Source",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wheel from Wheelbarrow",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Wine",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Winter Egg",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Witch Soul",
+          "roles": [
+            "ingredient",
+            "result"
+          ]
+        },
+        {
+          "name": "Wolf Corpse",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wood Chips (Various amount)",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Chips and Arrow Shaft",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Chips and Long Branch",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Chips and Short Stick",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "Wood Junk",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Wooden Crate",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "Zeus Potion",
+          "roles": [
+            "result"
+          ]
+        },
+        {
+          "name": "weapon",
+          "roles": [
+            "ingredient"
+          ]
+        },
+        {
+          "name": "weapon (except of wands and staves)",
+          "roles": [
+            "ingredient"
+          ]
+        }
+      ]
+    }
+  }
+}

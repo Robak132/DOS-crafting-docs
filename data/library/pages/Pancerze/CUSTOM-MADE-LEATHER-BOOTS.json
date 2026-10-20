@@ -2,9 +2,12 @@
   "slug": "Pancerze/CUSTOM-MADE-LEATHER-BOOTS",
   "title": "Custom Made Leather Boots",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false,

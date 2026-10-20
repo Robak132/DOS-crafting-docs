@@ -2,9 +2,9 @@
   "slug": "Strzaly-i-granaty/STEAM-CLOUD-ARROWHEAD",
   "title": "STEAM CLOUD ARROWHEAD",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

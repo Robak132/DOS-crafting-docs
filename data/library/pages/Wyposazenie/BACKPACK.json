@@ -3,11 +3,10 @@
   "title": "Backpack",
   "titlePl": "Plecak",
   "tags": [
-    "Typ/Wyposazenie",
-    "DOS2-CO",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

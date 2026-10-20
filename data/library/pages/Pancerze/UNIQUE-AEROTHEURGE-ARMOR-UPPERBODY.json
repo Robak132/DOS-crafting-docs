@@ -1,12 +1,19 @@
 {
   "slug": "Pancerze/UNIQUE-AEROTHEURGE-ARMOR-UPPERBODY",
-  "title": "Unique Aerotheurge Armor Upperbody",
+  "title": "Unique Aerotheruge Torso",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Aeroteurgia",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

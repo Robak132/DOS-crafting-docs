@@ -3,9 +3,12 @@
   "title": "Meaty Stew",
   "titlePl": "Gulasz",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Siła",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

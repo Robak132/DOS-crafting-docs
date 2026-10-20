@@ -1,12 +1,14 @@
 {
   "slug": "Bron/TWO-HANDED-MACE",
-  "title": "Two Handed Mace",
+  "title": "Crafted 2H Mace",
   "tags": [
-    "Typ/Bron",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
-    "Typ"
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy"
   ],
   "itemPage": true,
   "categoryPage": false

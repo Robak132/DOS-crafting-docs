@@ -1,12 +1,19 @@
 {
   "slug": "Pancerze/UNIQUE-NECROMANCER-ARMOR-UPPERBODY",
-  "title": "Unique Necromancer Armor Upperbody",
+  "title": "Unique Necromancer Torso",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Nekromancja",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

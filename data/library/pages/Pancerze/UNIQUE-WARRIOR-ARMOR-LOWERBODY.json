@@ -1,10 +1,14 @@
 {
   "slug": "Pancerze/UNIQUE-WARRIOR-ARMOR-LOWERBODY",
-  "title": "Unique Warrior Armor Lowerbody",
+  "title": "Unique Warrior Pants",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Pancerz-fizyczny",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Spodnie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,12 @@
   "title": "Cheese Bread",
   "titlePl": "Pieczywo serowe",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Leczenie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,8 +3,8 @@
   "title": "Event Craft Station",
   "tags": [
     "DOS2-CO",
-    "Typ/Stanowiska-i-pojemniki",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

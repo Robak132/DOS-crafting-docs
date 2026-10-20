@@ -3,9 +3,12 @@
   "title": "Dwarven Mask of the Shapeshifter",
   "titlePl": "Krasnoludzka Maska Zmiennokształtnego",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

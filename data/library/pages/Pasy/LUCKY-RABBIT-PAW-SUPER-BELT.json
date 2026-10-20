@@ -3,9 +3,11 @@
   "title": "Lucky Rabbit Paw Super Belt",
   "titlePl": "Niezwykły pas ze szczęśliwą króliczą łapką",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

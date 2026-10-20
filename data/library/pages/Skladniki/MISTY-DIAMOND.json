@@ -3,9 +3,9 @@
   "title": "Misty Diamond",
   "titlePl": "Mglisty diament",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

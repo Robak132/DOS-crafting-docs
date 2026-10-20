@@ -1,10 +1,21 @@
 {
   "slug": "Pancerze/UNIQUE-WARRIOR-ARMOR-UPPERBODY",
-  "title": "Unique Warrior Armor Upperbody",
+  "title": "Unique Warrior Torso",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-obrażenia-fizyczne",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Siła",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Wojna",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

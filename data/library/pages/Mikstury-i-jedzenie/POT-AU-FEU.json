@@ -2,9 +2,12 @@
   "slug": "Mikstury-i-jedzenie/POT-AU-FEU",
   "title": "Pot-au-feu",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Znawca",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

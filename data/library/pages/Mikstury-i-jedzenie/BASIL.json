@@ -2,9 +2,11 @@
   "slug": "Mikstury-i-jedzenie/BASIL",
   "title": "Basil",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

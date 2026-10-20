@@ -2,9 +2,9 @@
   "slug": "Specjalne/HERBMIX_FEROCITY_POTENT",
   "title": "Potent Ferocity Herbmix",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

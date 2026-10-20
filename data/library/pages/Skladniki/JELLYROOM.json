@@ -3,11 +3,13 @@
   "title": "Jellyroom",
   "titlePl": "Meduzowiec",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Odporność-na-powietrze",
+    "DOS1",
     "DOS2",
     "DOS2-CO",
-    "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

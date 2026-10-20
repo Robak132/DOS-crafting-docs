@@ -3,9 +3,10 @@
   "title": "Handmade Shield",
   "titlePl": "Ręcznie wykonana tarcza",
   "tags": [
-    "Typ/Pancerz",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Tarcze"
   ],
   "itemPage": true,
   "categoryPage": false

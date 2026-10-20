@@ -241,24 +241,25 @@ def main():
                 names[label] = match['icon']
                 evidence[label] = match
         catalog = json.loads((catalogs / f'catalog-{game}.json').read_text())
-        items = {item['name']: item for row in catalog['recipes'] for item in [row['result'], *row['ingredients']] if not item.get('selectorTag')}
+        items = {key(item.get('statsId') or item['name']): item for row in catalog['recipes'] for item in [row['result'], *row['ingredients']] if not item.get('selectorTag')}
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
         catalog_names = set(items)
         if game == 'dos2-overhaul':
             for template in templates.values():
                 label = plain_name(template.get('DisplayName', ''))
                 if template.get('Stats', '').startswith('TOOL_Dye_') and key(label) in names:
-                    items.setdefault(label, {'name': label})
+                    items.setdefault(key(label), {'name': label})
         mapping[game], provenance[game], missing = {}, {}, []
-        results = {r['result']['name'] for r in catalog['recipes']}
-        for name in sorted(items):
+        results = {key(r['result'].get('statsId') or r['result']['name']) for r in catalog['recipes']}
+        for item_key in sorted(items):
+            name = items[item_key]['name']
             icon = names.get(key(name))
             # Preserve verified assignments in the exported data: several templates
             # may reuse a label for a different item or potion size.
-            previous = existing.get(game, {}).get(key(name), {})
+            previous = existing.get(game, {}).get(item_key, {})
             if previous.get('icon') in atlases:
                 icon = previous['icon']
-                evidence[key(name)] = {k: previous[k] for k in ['stats', 'template', 'localizationKey', 'previewSource', 'Category', 'CombinationID'] if k in previous}
+                evidence[item_key] = {k: previous[k] for k in ['stats', 'template', 'localizationKey', 'previewSource', 'Category', 'CombinationID'] if k in previous}
             if icon is None:
                 missing.append(name)
                 continue
@@ -270,15 +271,16 @@ def main():
             box = tuple(round(v * (image.width if i % 2 == 0 else image.height) + (-0.5 if i < 2 else 0.5)) for i, v in enumerate(uv))
             crop = image.crop(box)
             layer = dds.relative_to(source).parts[0]
-            slug = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', name.lower()).replace('ł', 'l')).strip('-')
+            asset_name = name + ('-' + items[item_key]['statsId'] if items[item_key].get('statsId') else '')
+            slug = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', asset_name.lower()).replace('ł', 'l')).strip('-')
             filename = f'{layer}/{slug}.webp'
             (destination / layer).mkdir(exist_ok=True)
             if filename not in written:
                 crop.save(destination / filename, 'WEBP', lossless=True)
                 written.add(filename)
-            mapping[game][key(name)] = f'data/icons/{filename}'
-            provenance[game][key(name)] = {'name': name, 'icon': icon, 'atlas': str(dds.relative_to(source)), 'box': box, **evidence.get(key(name), {})}
-        matched_results = len([n for n in results if key(n) in mapping[game]])
+            mapping[game][item_key] = f'data/icons/{filename}'
+            provenance[game][item_key] = {'name': name, 'icon': icon, 'atlas': str(dds.relative_to(source)), 'box': box, **evidence.get(item_key, evidence.get(key(name), {}))}
+        matched_results = len([n for n in results if n in mapping[game]])
         report[game] = {'matched': len(catalog_names) - len(missing), 'total': len(catalog_names), 'matchedResults': matched_results, 'totalResults': len(results), 'unmatched': missing}
         print(f'{game}: {len(catalog_names)-len(missing)}/{len(catalog_names)} catalog items; results {matched_results}/{len(results)}')
     for file in destination.rglob('*.webp'):

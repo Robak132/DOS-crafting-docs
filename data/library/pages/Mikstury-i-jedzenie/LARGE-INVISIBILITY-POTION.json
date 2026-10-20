@@ -3,9 +3,10 @@
   "title": "Large Invisibility Potion",
   "titlePl": "Duża mikstura niewidzialności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/INVISIBLE",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,11 @@
   "title": "Sovereign's Orb",
   "titlePl": "Kula suwerena",
   "tags": [
-    "DOS2",
     "DOS1",
+    "DOS2",
     "Typ",
-    "Typ/Strzaly-i-granaty",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

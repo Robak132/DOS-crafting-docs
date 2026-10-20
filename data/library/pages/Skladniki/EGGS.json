@@ -2,12 +2,14 @@
   "slug": "Skladniki/EGGS",
   "title": "Eggs",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
-    "DOS2",
+    "Cechy",
+    "Cechy/Kondycja",
     "DOS1",
+    "DOS2",
+    "DOS2-CO",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

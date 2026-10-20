@@ -203,7 +203,7 @@ export function RecipeTable({
                 <td class="recipe-cell tags">
                   <div class="recipe-row-tags">
                     {visibleRecipeTags(recipeResultTags(recipe)).map((tag) => (
-                      <button type="button" class="recipe-search-tag" data-search-tag={tag}>
+                      <button type="button" class="recipe-search-tag" data-filter-tag={tag}>
                         {tagLabel(tag, labels)}
                       </button>
                     ))}

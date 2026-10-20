@@ -1,10 +1,12 @@
 {
   "slug": "Specjalne/POTION_HEALING_POISONED_MASKED_VOID_A",
-  "title": "POTION_Healing_Poisoned_Masked_Void_A",
+  "title": "Large healing potion",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

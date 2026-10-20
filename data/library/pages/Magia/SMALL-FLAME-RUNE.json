@@ -3,9 +3,14 @@
   "title": "Small Flame Rune",
   "titlePl": "Mała runa płomienia",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/Krytyk",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Odporność-na-ogień",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

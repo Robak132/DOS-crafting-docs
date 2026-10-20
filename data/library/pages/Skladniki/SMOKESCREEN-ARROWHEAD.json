@@ -3,12 +3,12 @@
   "title": "Smokescreen Arrowhead",
   "titlePl": "Grot zasłony dymnej",
   "tags": [
-    "DOS2",
-    "Typ/Strzaly-i-granaty",
-    "DOS2-CO",
     "DOS1",
+    "DOS2",
+    "DOS2-CO",
     "Typ",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

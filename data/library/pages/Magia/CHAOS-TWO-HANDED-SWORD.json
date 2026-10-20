@@ -2,11 +2,13 @@
   "slug": "Magia/CHAOS-TWO-HANDED-SWORD",
   "title": "2H Chaos Sword",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Statusy/SUFFOCATING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Miecze",
     "Typ/Magia"
   ],
   "itemPage": true,

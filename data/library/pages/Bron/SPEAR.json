@@ -1,11 +1,14 @@
 {
   "slug": "Bron/SPEAR",
-  "title": "Spear",
-  "titlePl": "Włócznia",
+  "title": "Crafted Spear",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Wlocznie"
   ],
   "itemPage": true,
   "categoryPage": false

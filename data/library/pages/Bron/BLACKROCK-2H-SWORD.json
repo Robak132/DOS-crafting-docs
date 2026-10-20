@@ -2,9 +2,21 @@
   "slug": "Bron/BLACKROCK-2H-SWORD",
   "title": "Unique Tenebrium 2H Sword",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Siła",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Wojna",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Miecze"
   ],
   "itemPage": true,
   "categoryPage": false

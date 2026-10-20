@@ -2,9 +2,16 @@
   "slug": "Magia/SHADOW-SPEAR",
   "title": "Shadow Spear",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/cienia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Wlocznie",
     "Typ/Magia"
   ],
   "itemPage": true,

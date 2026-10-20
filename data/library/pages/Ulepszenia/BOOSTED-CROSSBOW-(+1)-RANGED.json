@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-CROSSBOW-(+1)-RANGED",
   "title": "Boosted Crossbow (+1) Ranged",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Dystansowa",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,12 @@
   "title": "Healing Elixir",
   "titlePl": "Eliksir uzdrawiający",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
-    "Cechy/Leczenie",
     "Cechy",
-    "Typ"
+    "Cechy/Leczenie",
+    "DOS2",
+    "Efekty/Statusy/HEALING_ELIXIR",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

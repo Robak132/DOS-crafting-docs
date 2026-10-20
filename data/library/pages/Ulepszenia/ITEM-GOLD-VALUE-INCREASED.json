@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED",
   "title": "ITEM GOLD VALUE INCREASED",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,6 +3,12 @@ import path from "node:path"
 import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
 
 export type RecipeItem = {
+  /** Explicit game identity when inventory names are shared by distinct items. */
+  statsId?: string
+  /** Catalog clarification for distinct items sharing their official game name. */
+  nameQualifier?: { en: string; pl?: string }
+  /** Confirmed game effects, embedded during static generation. */
+  effect?: { en: string; pl?: string }
   /** Relative static asset URL, exported from this game’s inventory atlas. */
   icon?: string
   craftingCategories?: string[]
@@ -20,6 +26,8 @@ export type RecipeItem = {
 }
 
 export type RecipeRow = {
+  /** Official game vocabulary for saved effect notes. */
+  effectLabels?: Record<string, string>
   /** Zero-based ingredient slot modified in place instead of creating another item. */
   transformsIngredient?: number
   /** Source recipe shared by expanded ingredient alternatives. */
@@ -161,12 +169,14 @@ export function getCechySidebarGroups(): CechySidebarGroup[] {
     const raw = fs.readFileSync(hierarchyPath, "utf8")
     const parsed = JSON.parse(raw) as { hierarchy?: TagHierarchyNode[] }
     const roots = Array.isArray(parsed.hierarchy) ? parsed.hierarchy : []
+    const descendants = (nodes: TagHierarchyNode[]): string[] =>
+      nodes.flatMap((node) => [node.tag.trim(), ...descendants(node.children ?? [])])
     return roots
       .filter((node) => node.tag?.startsWith("Cechy-"))
       .map((node) => ({
         parentTag: node.tag.trim(),
         label: node.label?.trim() || node.tag.trim(),
-        childTags: (node.children ?? []).map((child) => child.tag?.trim()).filter((tag): tag is string => Boolean(tag)),
+        childTags: descendants(node.children ?? []),
       }))
   } catch {
     return []
@@ -196,7 +206,14 @@ export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog)
     return { ...item, name: item.name, namePl: item.namePl }
   }
   const resolved = resolveItemNames(item.name, catalog)
-  return { ...item, name: resolved.name, namePl: resolved.namePl }
+  const { nameQualifier, ...base } = item
+  return {
+    ...base,
+    name: resolved.name + (nameQualifier ? ` (${nameQualifier.en})` : ""),
+    namePl: resolved.namePl
+      ? resolved.namePl + (nameQualifier ? ` (${nameQualifier.pl ?? nameQualifier.en})` : "")
+      : undefined,
+  }
 }
 
 export function recipeResultKey(recipe: RecipeRow): string {

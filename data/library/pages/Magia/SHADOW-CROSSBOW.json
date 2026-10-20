@@ -2,9 +2,15 @@
   "slug": "Magia/SHADOW-CROSSBOW",
   "title": "Shadow Crossbow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/cienia",
     "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Magia"
   ],
   "itemPage": true,

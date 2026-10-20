@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-AMULET-(LOREMASTER-+2)",
   "title": "Boosted Amulet (Loremaster +2)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Znawca",
     "Cechy",
-    "Typ"
+    "Cechy/Znawca",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

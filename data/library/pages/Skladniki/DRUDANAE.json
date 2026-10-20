@@ -3,11 +3,19 @@
   "title": "Drudanae",
   "titlePl": "Druadan",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
-    "DOS2",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Percepcja",
+    "Cechy/Spryt",
+    "Cechy/Szybkość",
+    "Cechy/Zręczność",
+    "Cechy/Zwinność",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "DOS2-CO",
+    "Efekty/Statusy/SLOWED",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

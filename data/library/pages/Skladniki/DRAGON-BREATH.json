@@ -3,9 +3,9 @@
   "title": "Dragon Breath",
   "titlePl": "Smoczy oddech",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

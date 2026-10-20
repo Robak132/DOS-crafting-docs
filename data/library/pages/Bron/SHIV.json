@@ -3,9 +3,12 @@
   "title": "Shiv",
   "titlePl": "Kozik",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Sztylety"
   ],
   "itemPage": true,
   "categoryPage": false

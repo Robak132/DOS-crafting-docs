@@ -3,11 +3,11 @@
   "title": "Skull Amulet",
   "titlePl": "Amulet z czaszką",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Inteligencja",
-    "Typ"
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

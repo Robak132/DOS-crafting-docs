@@ -1,12 +1,19 @@
 {
   "slug": "Pancerze/UNIQUE-HYDROSOPHIST-ARMOR-UPPERBODY",
-  "title": "Unique Hydrosophist Armor Upperbody",
+  "title": "Unique Hydrosophist Torso",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

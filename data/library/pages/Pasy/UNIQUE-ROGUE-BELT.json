@@ -2,9 +2,17 @@
   "slug": "Pasy/UNIQUE-ROGUE-BELT",
   "title": "Unique Rogue Belt",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Skradanie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łobuz",
+    "Cechy/Zręczność",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

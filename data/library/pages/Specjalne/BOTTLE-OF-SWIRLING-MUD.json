@@ -3,10 +3,11 @@
   "title": "Bottle of Swirling Mud",
   "titlePl": "Butelka spienionego błota",
   "tags": [
-    "Typ/Specjalne",
     "DOS1",
+    "Efekty/Statusy/DISEASED",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

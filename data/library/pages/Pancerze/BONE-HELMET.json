@@ -2,9 +2,9 @@
   "slug": "Pancerze/BONE-HELMET",
   "title": "Bone Helmet",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

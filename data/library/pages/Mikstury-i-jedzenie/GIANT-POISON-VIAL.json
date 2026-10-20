@@ -3,9 +3,10 @@
   "title": "Giant Poison Vial",
   "titlePl": "Ogromna fiolka trucizny",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

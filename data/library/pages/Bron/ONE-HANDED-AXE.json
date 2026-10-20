@@ -2,9 +2,9 @@
   "slug": "Bron/ONE-HANDED-AXE",
   "title": "ONE HANDED AXE",
   "tags": [
-    "Typ/Bron",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron"
   ],
   "itemPage": true,
   "categoryPage": false

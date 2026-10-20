@@ -3,9 +3,13 @@
   "title": "Sharp Stone On A Big Branch",
   "titlePl": "Zaostrzony kamień na dużym kiju",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory"
   ],
   "itemPage": true,
   "categoryPage": false

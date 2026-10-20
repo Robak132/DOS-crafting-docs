@@ -3,8 +3,9 @@
   "title": "Medium Poison Bottle",
   "titlePl": "Średnia butelka trucizny",
   "tags": [
-    "DOS2",
     "DOS1",
+    "DOS2",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"

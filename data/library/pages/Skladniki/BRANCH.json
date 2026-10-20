@@ -3,9 +3,13 @@
   "title": "Branch",
   "titlePl": "Gałąź",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Obrażenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

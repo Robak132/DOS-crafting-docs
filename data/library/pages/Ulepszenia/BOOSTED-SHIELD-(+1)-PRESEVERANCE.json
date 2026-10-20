@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-SHIELD-(+1)-PRESEVERANCE",
   "title": "Boosted Shield (+1) Preseverance",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Wytrwałość",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Wytrwałość",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

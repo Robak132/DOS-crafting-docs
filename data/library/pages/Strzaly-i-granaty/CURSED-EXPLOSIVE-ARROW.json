@@ -1,10 +1,13 @@
 {
   "slug": "Strzaly-i-granaty/CURSED-EXPLOSIVE-ARROW",
-  "title": "Cursed Explosive Arrow",
+  "title": "Cursed Explosion Arrow",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/NECROFIRE",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

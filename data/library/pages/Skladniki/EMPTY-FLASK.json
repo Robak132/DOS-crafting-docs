@@ -3,10 +3,10 @@
   "title": "Empty Flask",
   "titlePl": "Pusta butelka",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

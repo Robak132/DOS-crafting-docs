@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED-ITEM-DYED-TO-YELLOW",
   "title": "ITEM GOLD VALUE INCREASED ITEM DYED TO YELLOW",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

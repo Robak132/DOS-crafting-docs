@@ -3,10 +3,9 @@
   "title": "Creepy Eye Amulet",
   "titlePl": "Amulet z odrażającym okiem",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy/Percepcja",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

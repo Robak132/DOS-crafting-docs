@@ -3,9 +3,9 @@
   "title": "Magical Creepy Eye",
   "titlePl": "Magiczne odrażające oko",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

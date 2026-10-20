@@ -2,9 +2,13 @@
   "slug": "Bron/POLISHED-LONGBOW",
   "title": "Polished Longbow",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Luki"
   ],
   "itemPage": true,
   "categoryPage": false,

@@ -3,9 +3,13 @@
   "title": "Small Masterwork Rune",
   "titlePl": "Mała runa kunsztu",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

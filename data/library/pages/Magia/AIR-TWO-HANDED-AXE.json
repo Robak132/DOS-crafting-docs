@@ -2,11 +2,15 @@
   "slug": "Magia/AIR-TWO-HANDED-AXE",
   "title": "2H Air Axe",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Statusy/SHOCKED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Topory",
     "Typ/Magia"
   ],
   "itemPage": true,

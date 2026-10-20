@@ -3,9 +3,9 @@
   "title": "Disembodied Hand",
   "titlePl": "Odcięta dłoń",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

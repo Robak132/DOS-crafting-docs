@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/FREEZE-IMMUNITY",
   "title": "Freeze Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Immunitet-na-zamrożenie",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

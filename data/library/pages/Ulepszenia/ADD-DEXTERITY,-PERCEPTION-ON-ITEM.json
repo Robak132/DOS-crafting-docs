@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-DEXTERITY,-PERCEPTION-ON-ITEM",
   "title": "ADD DEXTERITY, PERCEPTION ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

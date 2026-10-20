@@ -3,10 +3,10 @@
   "title": "weapon",
   "titlePl": "Broń",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

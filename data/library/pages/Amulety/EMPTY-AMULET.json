@@ -2,9 +2,11 @@
   "slug": "Amulety/EMPTY-AMULET",
   "title": "Empty Amulet",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Pancerz-magiczny",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

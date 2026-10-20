@@ -2,9 +2,16 @@
   "slug": "Skladniki/TROLOLO-GLOVES",
   "title": "Troll Gloves",
   "tags": [
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Odporność-na-obrażenia-fizyczne",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Znawca",
     "DOS2-CO",
     "Typ",
     "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice",
     "Typ/Skladniki"
   ],
   "itemPage": true,

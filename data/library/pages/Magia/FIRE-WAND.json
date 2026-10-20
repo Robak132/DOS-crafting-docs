@@ -2,9 +2,13 @@
   "slug": "Magia/FIRE-WAND",
   "title": "Fire Wand",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
     "DOS2-CO",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Rozdzki",
     "Typ/Magia"
   ],
   "itemPage": true,

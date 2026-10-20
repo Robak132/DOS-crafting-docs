@@ -1,5 +1,5 @@
 import { buildItemGroups, expandSmallGroups, isItemGroup } from "../src/main/domain/itemGroups"
-import { itemIconKey } from "../src/main/domain/itemIcons"
+import { itemIconKey, itemDataKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
 import sanitizeHtml from "sanitize-html"
@@ -24,6 +24,8 @@ export async function generateData(outputDirectory = generatedDir) {
   const labels: Record<string, string> = JSON.parse(await fs.readFile("data/tagLabels.json", "utf8"))
   const catalogs = buildCatalogs(library.sources, library.pages, labels)
   const descriptions = JSON.parse(await fs.readFile("data/itemDescriptions.json", "utf8"))
+  const tagLocalisation = JSON.parse(await fs.readFile("data/tagLocalisation.json", "utf8"))
+  const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
   const icons: ItemIconMap = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
   await fs.rm(outputDirectory, { recursive: true, force: true })
   await fs.mkdir(path.join(outputDirectory, "data/pages"), { recursive: true })
@@ -40,6 +42,12 @@ export async function generateData(outputDirectory = generatedDir) {
     for (const row of data.recipes) {
       for (const item of [row.result, ...row.ingredients]) {
         item.icon = resolveItemIcon(icons, game, item)
+        if (!item.selectorTag) {
+          const entry = effects[game]?.[itemDataKey(item)]
+          item.effect =
+            (item === row.result && entry?.recipes?.[row.id]) ||
+            (entry?.en ? { en: entry.en, pl: entry.pl } : undefined)
+        }
         delete item.groupId
         delete item.groupSize
       }
@@ -48,7 +56,11 @@ export async function generateData(outputDirectory = generatedDir) {
       game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
     ).map((sourceItem) => {
       const item = localizeItemForCatalog(sourceItem, game)
-      return { ...item, icon: resolveItemIcon(icons, game, item) }
+      return {
+        ...item,
+        icon: resolveItemIcon(icons, game, item),
+        effect: effects[game]?.[itemDataKey(item)]?.en ? effects[game][itemDataKey(item)] : undefined,
+      }
     })
     const resolvedGroups = buildItemGroups(data.recipes, 1, inventory)
     data.recipes = expandSmallGroups(data.recipes, resolvedGroups)
@@ -60,9 +72,20 @@ export async function generateData(outputDirectory = generatedDir) {
     const stats = collectRecipeStats(data.recipes)
     for (const field of ["tags", "requirements", "selectors"] as const)
       for (const stat of stats[field]) stat.label = statLabels.get(stat.tag) ?? stat.label
+    for (const stat of stats.tags) {
+      const localized = tagLocalisation[game]?.[stat.tag]
+      if (localized) stat.label = localized.pl || localized.en
+    }
     Object.assign(data, stats)
     data.groups = Object.fromEntries(Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4))
     for (const row of data.recipes) {
+      const vocabulary = Object.values(tagLocalisation[game] ?? {}) as { en: string; pl?: string }[]
+      const effectLabels = Object.fromEntries(
+        vocabulary
+          .filter((entry) => row.notes.toLocaleLowerCase().includes(entry.en.toLocaleLowerCase()))
+          .map((entry) => [entry.en.toLocaleLowerCase(), entry.pl || entry.en]),
+      )
+      if (Object.keys(effectLabels).length) row.effectLabels = effectLabels
       for (const item of [row.result, ...row.ingredients]) {
         const group = data.groups[itemIconKey(item.name)]
         if (group && isItemGroup(item)) {

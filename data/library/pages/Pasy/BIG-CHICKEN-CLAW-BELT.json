@@ -3,11 +3,12 @@
   "title": "Big Chicken Claw Belt",
   "titlePl": "Pas z pazurem wielkiego kuraka",
   "tags": [
-    "Typ/Pasy",
-    "DOS1",
     "Cechy",
     "Cechy/Inicjatywa",
-    "Typ"
+    "Cechy/Pancerz-fizyczny",
+    "DOS1",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

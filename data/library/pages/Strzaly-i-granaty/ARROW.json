@@ -3,9 +3,9 @@
   "title": "Arrow",
   "titlePl": "Strzała",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

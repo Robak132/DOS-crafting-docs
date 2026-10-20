@@ -3,10 +3,10 @@
   "title": "Golden Grail",
   "titlePl": "Złoty Graal",
   "tags": [
-    "Typ/Specjalne",
     "DOS1",
     "Typ",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

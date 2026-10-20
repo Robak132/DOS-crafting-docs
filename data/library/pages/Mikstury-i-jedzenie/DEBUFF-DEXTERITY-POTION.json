@@ -3,9 +3,11 @@
   "title": "Debuff Dexterity Potion",
   "titlePl": "Mikstura zmniejszenia zwinności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Zwinność",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

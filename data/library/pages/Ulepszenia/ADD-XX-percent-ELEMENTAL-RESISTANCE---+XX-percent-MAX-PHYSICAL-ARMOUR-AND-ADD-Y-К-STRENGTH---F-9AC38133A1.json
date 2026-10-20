@@ -2,13 +2,13 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-Y-К-STRENGTH---F-9AC38133A1",
   "title": "add XX% elemental resistance / +XX% max physical armour AND add Y к Strength / Finesse / Constitution / Intelligence / Memory / Wits",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
-    "Cechy/Pancerz-fizyczny",
     "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "Cechy/Siła",
     "Cechy/Spryt",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

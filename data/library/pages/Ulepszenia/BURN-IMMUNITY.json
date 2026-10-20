@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BURN-IMMUNITY",
   "title": "Burn Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Immunitet-na-ogień",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

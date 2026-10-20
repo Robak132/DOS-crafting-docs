@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-MOVEMENT-ON-ITEM",
   "title": "ADD MOVEMENT ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

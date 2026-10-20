@@ -2,9 +2,15 @@
   "slug": "Pasy/UNIQUE-WARRIOR-BELT",
   "title": "Unique Warrior Belt",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Perswazja",
+    "Cechy/Siła",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Wojna",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

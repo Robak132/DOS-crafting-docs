@@ -1,12 +1,14 @@
 {
   "slug": "Pancerze/UNIQUE-GEOMANCER-ARMOR-LOWERBODY",
-  "title": "Unique Geomancer Armor Lowerbody",
+  "title": "Unique Geomancer Pants",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Geomancja",
     "Cechy",
-    "Typ"
+    "Cechy/Celność",
+    "Cechy/Pancerz-magiczny",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Spodnie"
   ],
   "itemPage": true,
   "categoryPage": false

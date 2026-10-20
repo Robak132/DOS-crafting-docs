@@ -3,9 +3,18 @@
   "title": "Estoc",
   "titlePl": "Estok",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Znawca",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/BLEEDING",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Miecze"
   ],
   "itemPage": true,
   "categoryPage": false

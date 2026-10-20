@@ -3,9 +3,9 @@
   "title": "Source Fountain",
   "titlePl": "Zbiornik Źródła",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

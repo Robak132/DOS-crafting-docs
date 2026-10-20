@@ -3,10 +3,12 @@
   "title": "Sharp Tooth Belt",
   "titlePl": "Pas z ostrym zębem",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Cechy/Charyzma",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

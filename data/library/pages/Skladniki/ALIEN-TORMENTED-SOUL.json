@@ -3,9 +3,9 @@
   "title": "Alien Tormented Soul",
   "titlePl": "Obca udręczona dusza",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

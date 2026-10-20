@@ -1,12 +1,14 @@
 {
   "slug": "Pancerze/UNIQUE-HYDROSOPHIST-ARMOR-LOWERBODY",
-  "title": "Unique Hydrosophist Armor Lowerbody",
+  "title": "Unique Hydrosophist Pants",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
-    "Typ"
+    "Cechy/Celność",
+    "Cechy/Pancerz-magiczny",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Spodnie"
   ],
   "itemPage": true,
   "categoryPage": false

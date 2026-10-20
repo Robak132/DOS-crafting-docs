@@ -2,9 +2,17 @@
   "slug": "Skladniki/MYTHICAL-SPIDER-LEGS",
   "title": "Mythical Spider Legs",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Znawca",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,9 @@
   "title": "Weapon Chest",
   "titlePl": "Skrzynia na broń",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,13 +2,13 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE-AND-ADD-Y-COMBATABILITY-WITS",
   "title": "add XX% element damage AND add Y CombatAbility/Wits",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
-    "Cechy/Spryt",
     "Cechy",
     "Cechy/Pancerz-fizyczny",
     "Cechy/Siła",
-    "Typ"
+    "Cechy/Spryt",
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

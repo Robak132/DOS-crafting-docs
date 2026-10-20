@@ -3,11 +3,11 @@
   "title": "Slowdown Arrowhead",
   "titlePl": "Grot spowalniający",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS1",
     "DOS2",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,11 @@
   "slug": "Mikstury-i-jedzenie/MEDIUM-POISON-RESIST-POTION",
   "title": "Medium Poison Resistance Potion",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Odporność-na-truciznę",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

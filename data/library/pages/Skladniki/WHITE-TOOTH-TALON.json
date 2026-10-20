@@ -2,9 +2,17 @@
   "slug": "Skladniki/WHITE-TOOTH-TALON",
   "title": "White Tooth Talon",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Spryt",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

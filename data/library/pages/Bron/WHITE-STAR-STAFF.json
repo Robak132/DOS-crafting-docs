@@ -2,9 +2,21 @@
   "slug": "Bron/WHITE-STAR-STAFF",
   "title": "White Star Staff",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Krytyk",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/SHOCKED",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Kostury"
   ],
   "itemPage": true,
   "categoryPage": false

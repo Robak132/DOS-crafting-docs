@@ -2,11 +2,18 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-HUNTSMAN",
   "title": "Unique Ring of Huntsman",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Dystansowa",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łowiectwo",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Zręczność",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

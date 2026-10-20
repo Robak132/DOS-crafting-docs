@@ -3,9 +3,13 @@
   "title": "Jar of Honey",
   "titlePl": "Słój miodu",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Leczenie",
+    "Cechy/Odporność-na-truciznę",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

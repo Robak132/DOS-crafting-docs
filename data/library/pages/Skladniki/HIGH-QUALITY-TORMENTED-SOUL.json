@@ -3,9 +3,9 @@
   "title": "High quality Tormented Soul",
   "titlePl": "Udręczona dusza wysokiej jakości",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,16 @@
   "slug": "Magia/SHADOW-TWO-HANDED-AXE",
   "title": "2H Shadow Axe",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/cienia",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Topory",
     "Typ/Magia"
   ],
   "itemPage": true,

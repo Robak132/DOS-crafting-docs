@@ -2,9 +2,9 @@
   "slug": "Skladniki/AUTOMATON-CORPSE",
   "title": "Automaton Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

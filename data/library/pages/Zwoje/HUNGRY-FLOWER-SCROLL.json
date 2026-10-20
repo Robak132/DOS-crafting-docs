@@ -3,9 +3,13 @@
   "title": "Hungry Flower Scroll",
   "titlePl": "Zwój Wygłodniałego Kwiatu",
   "tags": [
-    "Typ/Zwoje",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

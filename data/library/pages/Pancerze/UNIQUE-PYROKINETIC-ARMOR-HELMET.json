@@ -1,12 +1,22 @@
 {
   "slug": "Pancerze/UNIQUE-PYROKINETIC-ARMOR-HELMET",
-  "title": "Unique Pyrokinetic Armor Helmet",
+  "title": "Unique Pyromancer Helmet",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Inteligencja",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Perswazja",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

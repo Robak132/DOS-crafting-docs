@@ -2,9 +2,9 @@
   "slug": "Skladniki/ATARAXIANTABLET_PROMISEINFO",
   "title": "Swornbreaker Schematic",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,14 @@
   "slug": "Mikstury-i-jedzenie/RANGER'S-APPLE-ELVEN-TOAST",
   "title": "Ranger's Apple Elven Toast",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

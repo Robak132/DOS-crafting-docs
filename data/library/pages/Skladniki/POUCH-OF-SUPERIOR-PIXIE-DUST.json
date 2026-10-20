@@ -3,9 +3,9 @@
   "title": "Pouch of Superior Pixie Dust",
   "titlePl": "Sakiewka znakomitego czarodziejskiego pyłu",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,15 @@
   "slug": "Magia/FIRE-SPEAR",
   "title": "Fire Spear",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Statusy/BURNING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Wlocznie",
     "Typ/Magia"
   ],
   "itemPage": true,

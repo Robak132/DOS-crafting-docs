@@ -3,11 +3,13 @@
   "title": "Healing Ritual Skillbook",
   "titlePl": "Księga umiejętności „Rytuał Uzdrawiający”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
-    "DOS2",
-    "Cechy/Leczenie",
     "Cechy",
-    "Typ"
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "DOS2",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

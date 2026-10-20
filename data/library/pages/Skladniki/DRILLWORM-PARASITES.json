@@ -2,9 +2,9 @@
   "slug": "Skladniki/DRILLWORM-PARASITES",
   "title": "Drillworm Parasites",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

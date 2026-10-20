@@ -2,11 +2,15 @@
   "slug": "Magia/EARTH-TWO-HANDED-MACE",
   "title": "2H Earth Mace",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Statusy/PETRIFIED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Bulawy",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -2,9 +2,17 @@
   "slug": "Bron/DRACONIC-FIRE-WAND",
   "title": "DRACONIC FIRE WAND",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ"
+    "Efekty/Powierzchnie/Fire",
+    "Efekty/Statusy/BURNING",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki"
   ],
   "itemPage": true,
   "categoryPage": false

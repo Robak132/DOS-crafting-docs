@@ -3,9 +3,11 @@
   "title": "Debuff Intelligence Potion",
   "titlePl": "Mikstura zmniejszenia inteligencji",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

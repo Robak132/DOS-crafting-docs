@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-EARTH-DAMAGE)",
   "title": "Elemental Boosted Weapon (+ Earth Damage)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Obrażenia-ziemi",
-    "Typ"
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

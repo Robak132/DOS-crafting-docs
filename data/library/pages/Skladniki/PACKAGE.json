@@ -3,9 +3,9 @@
   "title": "Package",
   "titlePl": "Paczka",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

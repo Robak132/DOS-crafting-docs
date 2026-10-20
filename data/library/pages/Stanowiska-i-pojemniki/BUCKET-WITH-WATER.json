@@ -4,9 +4,9 @@
   "titlePl": "Wiadro wody",
   "tags": [
     "DOS1",
-    "Typ/Stanowiska-i-pojemniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

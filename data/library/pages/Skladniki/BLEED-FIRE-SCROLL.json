@@ -3,10 +3,15 @@
   "title": "Bleed Fire Scroll",
   "titlePl": "Zwój Ognistego Krwotoku",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2",
+    "Efekty/Statusy/FIREBLOOD",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

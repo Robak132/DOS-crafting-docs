@@ -2,9 +2,9 @@
   "slug": "Skladniki/LOHAR'S-BOTTLE",
   "title": "Lohar's Bottle",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

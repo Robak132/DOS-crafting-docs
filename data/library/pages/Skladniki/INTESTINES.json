@@ -3,10 +3,11 @@
   "title": "Intestines",
   "titlePl": "Wnętrzności",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "Efekty/Statusy/DISEASED",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

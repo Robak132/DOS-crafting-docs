@@ -3,11 +3,11 @@
   "title": "Ink Pot and Quill",
   "titlePl": "Kałamarz i pióro",
   "tags": [
-    "Typ/Wyposazenie",
     "DOS1",
     "DOS2-CO",
     "Typ",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

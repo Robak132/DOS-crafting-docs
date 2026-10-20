@@ -1,10 +1,16 @@
 {
   "slug": "Pancerze/UNIQUE-SHADOW-ARMOR-LOWERBODY",
-  "title": "Unique Shadow Armor Lowerbody",
+  "title": "Unique Rogue Pants",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Spodnie"
   ],
   "itemPage": true,
   "categoryPage": false

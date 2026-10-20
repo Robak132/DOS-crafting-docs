@@ -3,11 +3,11 @@
   "title": "Minor Finesse Potion",
   "titlePl": "Mała mikstura Zręczności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
     "Cechy",
-    "Cechy/Zwinność",
-    "Typ"
+    "Cechy/Zręczność",
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

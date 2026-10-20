@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/CHARM-IMMUNITY",
   "title": "Charm Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-urok",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-urok",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

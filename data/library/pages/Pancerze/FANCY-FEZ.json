@@ -2,9 +2,17 @@
   "slug": "Pancerze/FANCY-FEZ",
   "title": "Fancy Fez",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Spryt",
+    "Cechy/Telekineza",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

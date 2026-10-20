@@ -3,10 +3,14 @@
   "title": "Cluster Grenade",
   "titlePl": "Granat kasetowy",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
     "DOS2",
-    "Typ/Strzaly-i-granaty",
-    "Typ"
+    "Efekty/Powierzchnie/Fire",
+    "Efekty/Statusy/BURNING",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

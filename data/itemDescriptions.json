@@ -268,13 +268,25 @@
       "en": "Can be used to create a random Air Spell scroll...",
       "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem magii powietrza."
     },
+    "blankairskillbook": {
+      "en": "Ingredient. Can be used to create a skillbook.",
+      "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
+    },
     "blankearthscroll": {
       "en": "Can be used to create a random Earth Spell scroll...",
       "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem magii ziemi."
     },
+    "blankearthskillbook": {
+      "en": "Ingredient. Can be used to create a skillbook.",
+      "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
+    },
     "blankfirescroll": {
       "en": "Can be used to create a random Fire Spell scroll...",
       "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem magii ognia."
+    },
+    "blankfireskillbook": {
+      "en": "Ingredient. Can be used to create a skillbook.",
+      "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
     },
     "blankskillbookair": {
       "en": "Ingredient. Can be used to create a skillbook.",
@@ -300,9 +312,17 @@
       "en": "Can be used to create a random Water Spell scroll...",
       "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem magii wody."
     },
+    "blankwaterskillbook": {
+      "en": "Ingredient. Can be used to create a skillbook.",
+      "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
+    },
     "blankwitchcraftscroll": {
       "en": "Can be used to create a random Witchcraft Spell scroll...",
       "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem czarnej magii."
+    },
+    "blankwitchcraftskillbook": {
+      "en": "Ingredient. Can be used to create a skillbook.",
+      "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
     },
     "blessedearthscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
@@ -563,6 +583,22 @@
     "clawbelt": {
       "en": "Equip to open the cosmic pathways between yourself and the Crab Matriarch. May her blessings delight you.",
       "pl": "Gdy się z niej skorzysta, otwiera kosmiczne połączenie pomiędzy tobą a Krabią Matką. Niech jej błogosławieństwa staną się dla ciebie rozkoszą."
+    },
+    "clawedairwand": {
+      "en": "Crackling with barely-contained energy, this wand promises all the power of a tempest.",
+      "pl": "Różdżka ta, trzeszcząca od buzującej w niej energii, gwarantuje moc huraganu."
+    },
+    "clawedearthwand": {
+      "en": "This wand appears to be cut from still-living wood; tender shoots and fresh green leaves bud from the tip.",
+      "pl": "Ta broń została wyciosana z drewna, które najwyraźniej wciąż żyje; z jej czubka wyrastają delikatne pędy i soczyście zielone listki."
+    },
+    "clawedfirewand": {
+      "en": "Wildfire sparks from this hardy wand; if you're very quiet, you can hear its inner embers crackle.",
+      "pl": "Z czubka tej solidnej różdżki wylatują iskry; jeśli się wsłuchasz, usłyszysz trzaskanie zamkniętego w jej wnętrzu ognia."
+    },
+    "clawedwaterwand": {
+      "en": "This clammy wand feels soggy in your grip. Put it to use, however, and witness as floods of magic pour forth from its tip.",
+      "pl": "Ta lepka różdżka została chyba wykonana z rozmiękłego drewna. Jeśli jej jednak użyjesz, ujrzysz fale magii wylewające się z jej końca."
     },
     "clawring": {
       "en": "Equip to open the cosmic pathways between yourself and the Crab Matriarch. May her blessings delight you.",
@@ -908,6 +944,22 @@
       "en": "Like a newborn babe, this dough's potential is as vast as the imagination itself.",
       "pl": "Podobnie jak w przypadku nowo narodzonego dziecka potencjał tego ciasta ogranicza tylko wyobraźnia."
     },
+    "draconicairwand": {
+      "en": "Sparks fly from the tip of this wand when you hold it aloft, drawing down the power of the skies.",
+      "pl": "Z końca różdżki wylatują iskry, gdy ją unosisz, pobierając moc prosto z niebios."
+    },
+    "draconicearthwand": {
+      "en": "A twisted and twined wand carved from unusual wood topped with gleaming amber. Within the amber, a single ant strives eternally for freedom.",
+      "pl": "Poskręcana różdżka wystrugana z nietypowego drewna i ozdobiona błyszczącym bursztynem. We wnętrzu kamienia samotna mrówka nieustannie próbuje wydostać się na wolność."
+    },
+    "draconicfirewand": {
+      "en": "This wand is topped with a deep red gem; peering closely within reveals a cluster of eternally-smouldering embers.",
+      "pl": "Na końcu tej różdżki umieszczono klejnot o szkarłatnej barwie; przyjrzawszy się bliżej, dostrzeżesz zlepek wiecznie żarzących się węgielków."
+    },
+    "draconicwaterwand": {
+      "en": "Freezing all it touches save your own skin, this wand could be useful for pulling pranks around puddles.",
+      "pl": "Ta różdżka, zamrażająca wszystko oprócz twojej skóry, przyda się do wycinania numerów w pobliżu kałuż."
+    },
     "drainwillpowerscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. By je rzucić, musisz go użyć."
@@ -996,9 +1048,25 @@
       "en": "Man-at-Arms skills are skills for warriors. High Strength improves these skills. Read this book to learn this skill.",
       "pl": "Umiejętności zbrojnego są przeznaczone dla wojownika. Udoskonala je wysoka siła. Przeczytaj tę książkę, aby nauczyć się tej umiejętności."
     },
+    "elvenairwand": {
+      "en": "A wand encased with static energy, it even gives your fingertips a light shock when touched.",
+      "pl": "Różdżka wytwarzająca elektryczność statyczną; przy dotyku czujesz na opuszkach palców miniwyładowania."
+    },
+    "elvenearthwand": {
+      "en": "Tiny spiders crawl around this staff, occasionally disappearing into petite holes in the hollow-seeming wood. Their presence seems to strengthen the rod rather than weaken it.",
+      "pl": "Wokół tej różdżki pełzają mikroskopijne pająki, od czasu do czasu znikając w głębi otworów wydrążonych w drewnie. Ich obecność zdaje się wzmacniać działanie różdżki, miast je osłabiać."
+    },
+    "elvenfirewand": {
+      "en": "The flames that lick this blazing wand hold no heat to your touch, but contain the promise of burning destruction for your foes.",
+      "pl": "Języki ognia liżące tę różdżkę nie parzą cię w dłonie; twoim wrogom obiecują jednak krwisty koniec."
+    },
     "elvenstew": {
       "en": "Packed full of vegetables and unflavoured broth, this meal is typically served at Elven weddings and birthday celebrations.",
       "pl": "Posiłek ten, stworzony na bazie warzyw i nieprzyprawionego bulionu, to typowa potrawa na elfickich ślubach i przyjęciach urodzinowych."
+    },
+    "elvenwaterwand": {
+      "en": "This wand is sheathed in icy crystals, vapour swirling in the air around it. Still, it is oddly warm and comfortable in your hand.",
+      "pl": "Ta różdżka jest pokryta kryształami lodu; wokół niej unoszą się strzępy pary. O dziwo, jest ciepła i przyjemna w dotyku."
     },
     "emptycanister": {
       "en": "An empty, bulbous cylinder stoppered with pockmarked and tarnished brass. The embossed metal worker's mark hails from a faraway military munitions factory.",
@@ -2096,6 +2164,14 @@
       "en": "Healthy-looking fellow, isn't he? If only that kind of glow could be bottled…",
       "pl": "Krzepko wygląda, prawda? Gdyby tylko udało się zamknąć ten blask w butelce."
     },
+    "magictooth": {
+      "en": "Enhanced by magic, this beautiful tooth takes on an even lovelier sheen. Affix to your person to enjoy its benefits.",
+      "pl": "Za sprawą magii ten piękny ząb nabiera jeszcze bardziej urokliwego blasku. Aby cieszyć się z pożytków, jakich dostarcza, noś go przy sobie."
+    },
+    "magictusk": {
+      "en": "Infused with magic, the tusk takes on an otherworldly hue and smells faintly of fresh cut grass. Who knows what benefits the tusk might grant if worn into battle?",
+      "pl": "Ten przepełniony magią kieł cechuje się odcieniem nie z tego świata i pachnie świeżo skoszoną trawą. Kto wie, jakie korzyści może dawać swemu właścicielowi w walce?"
+    },
     "makeinvisiblescroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. By je rzucić, musisz go użyć."
@@ -2284,9 +2360,21 @@
       "en": "This potion smells faintly of old books and is capable of boosting your intelligence.",
       "pl": "Ta mikstura lekko pachnie starymi księgami i może zwiększyć twoją inteligencję."
     },
+    "minorinvisibilitypotion": {
+      "en": "This elixir temporarily coats you in an invisibility spell. The bottle appears to be empty, but...",
+      "pl": "Ten eliksir zapewnia tymczasową niewidzialność. Ta butelka wygląda na pustą, ale..."
+    },
+    "minormagicalarmorpotion": {
+      "en": "A potion that enchants and strengthens your armour.",
+      "pl": "Mikstura, która zaklina i wzmacnia zbroję."
+    },
     "minorperceptionpotion": {
       "en": "The fluorescent liquid in this vial looks more radioactive than potable, but its affect on one's perception is undeniable.",
       "pl": "Fluorescencyjna ciecz wygląda raczej na radioaktywną niż nadającą się do picia, lecz wywiera niezaprzeczalny wpływ na percepcję."
+    },
+    "minorpoisonbottle": {
+      "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down an average-sized wollock.",
+      "pl": "Trucizna ta, powstała z połączenia brudu ze stóp najpodlejszych trolli Rivellonu, dziąseł wiedźm i łajna demonów, uśmierci wollocka przeciętnej wielkości."
     },
     "minorresistallpotion": {
       "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor résistance to all types of elemental magic.",
@@ -2299,6 +2387,10 @@
     "minorstrengthpotion": {
       "en": "This small-sized, strength-enhancing brew still smells of the troll whose sweat grants it its magical properties.",
       "pl": "Ta niewielka, zwiększająca siłę mikstura wciąż cuchnie trollem, którego pot nadaje jej magiczne właściwości."
+    },
+    "minortelekinesispotion": {
+      "en": "This bottle, containing a potion capable of granting telekinesis to its drinker, seems to jump within your hand.",
+      "pl": "Ta butelka zawiera miksturę dającą temu, kto ją wypije, zdolność telekinezy; zdaje się podskakiwać w twojej dłoni."
     },
     "minumn": {
       "en": "Apply to charmable equipment.",
@@ -2732,6 +2824,10 @@
       "en": "Look closely; the only visible difference between this arrow and a normal arrow can be seen in the sizzling dents within the tip of the arrowhead.",
       "pl": "Przyjrzyj się uważnie; jedyną różnicę pomiędzy tą strzałą a zwykłym pociskiem stanowią skwierczące otwory na czubku grotu."
     },
+    "poisonarrowhead": {
+      "en": "An evil-smelling arrowhead that fizzes and hisses beneath its venomous coating; try not to inhale as you craft with it.",
+      "pl": "Plugawy grot, spod którego powłoki wydobywa się złowrogie syczenie; łącząc go z promieniem, staraj się nie oddychać."
+    },
     "poisoncloudarrow": {
       "en": "A sharp arrow shimmering beneath a toxic green mist; best not to inhale as you release this venomous cloud.",
       "pl": "Ostra strzała błyskająca spod toksycznej zielonej mgiełki; wypuszczając tę trującą chmurę, lepiej wstrzymaj oddech."
@@ -2907,6 +3003,10 @@
     "poisonouscreatures": {
       "en": "A book of ancient tales best enjoyed with a pint and a pal.",
       "pl": "Książka ze starymi opowieściami, którą najlepiej czytać z towarzyszem i kuflem piwa w ręku."
+    },
+    "poisonresistpotion": {
+      "en": "This floral-scented potion is commonly called 'King's Pal'. It grants its drinker a gentle resistance to poisoning.",
+      "pl": "Ta kwiatowa mikstura zwana jest powszechnie Kumplem Króla. Daje lekką odporność na truciznę."
     },
     "poorlymadevoodoodoll": {
       "en": "A basic woven voodoo doll that you can use to harm your enemies. Believe!",
@@ -4288,13 +4388,25 @@
       "en": "Beware of splinters! These small chips and scraps of wood are more pernicious than a single log. Soften them up to avoid injury.",
       "pl": "Uważaj na drzazgi! Te niewielkie wióry i kawałki drewna są groźniejsze niż niejedna kłoda. Aby uniknąć obrażeń, postaraj się je rozmiękczyć."
     },
+    "woodenairwand": {
+      "en": "This wand whistles delicately if you wave it in the air-- the song of one at home with the wind.",
+      "pl": "Różdżka gwiżdże delikatnie, gdy machasz nią w powietrzu – śpiewa pieśń jedności z wiatrem."
+    },
     "woodenclub": {
       "en": "This mace is the kind of weapon that marks out its wielder as bad news.",
       "pl": "Ta buława nie najlepiej świadczy o osobie, która ją dzierży."
     },
+    "woodenearthwand": {
+      "en": "Encrusted with clumps of dirt, this staff wafts the scent of earth and loam.",
+      "pl": "Ta pokryta grudkami gleby broń pachnie ziemią i gliną."
+    },
     "woodenfigurine": {
       "en": "A hand-carved figurine of well-oiled Lapiterran wood. Those beady little eyes seem to follow you no matter where you place it.",
       "pl": "Ręcznie rzeźbiona figurka z dobrze naoliwionego, lapiterrańskiego drewna. Jej oczka zdają się przeszywać cię spojrzeniem, niezależnie gdzie ją postawisz."
+    },
+    "woodenfirewand": {
+      "en": "A glowing wand wreathed in phantom flame; it rests warm in your hand, as if its core were made of glowing coals.",
+      "pl": "Żarząca się różdżka spowita widmowym płomieniem; trzymając ją, czujesz ciepło w dłoni, tak jakby jej rdzeń stanowiły tlące się węgle."
     },
     "woodenlog": {
       "en": "This is essentially a log that has been hastily turned into a weapon. You can do better than that, can't you?",
@@ -4307,6 +4419,10 @@
     "woodenstick": {
       "en": "A rudimentary club that looks a lot more like firewood than a sure-fire weapon.",
       "pl": "Prymitywna maczuga, która bardziej przypomina drewno opałowe niż niezawodną broń."
+    },
+    "woodenwaterwand": {
+      "en": "Water drips constantly from the end of this wand, a steady trickle that draws blossoms and shrubs forth from the path you walk.",
+      "pl": "Z końca tej różdżki stale kapie woda; pod nieprzerwaną strużką otwierają się pąki kwiatów i rozwijają się liście na twojej ścieżce."
     },
     "wool": {
       "en": "The raw bounty of a fluffy, generous sheep. Not a ba-a-a-d haul, though you'll need to combine several batches to make a usable length of yarn.",
@@ -4681,10 +4797,6 @@
     "backlashskillbook": {
       "en": "|Rogue skills are skills for rogues and thieves. High Finesse improves these skills. Read this book to learn this skill.|",
       "pl": "Umiejętności szelmowskie przeznaczone są dla łotrzyków i złodziei. Wzmacnia je wysoka Zręczność."
-    },
-    "backpack": {
-      "en": "A charmed satchel capable of carrying far more brick-a-brack than most simple backpacks.",
-      "pl": "Zaklęta torba mieszcząca w sobie więcej bibelotów niż większość prostych plecaków."
     },
     "ballisticshotskillbook": {
       "en": "|Hunting skills are skills for archers and rangers. High Finesse improves these skills. Read this book to learn this skill.|",
@@ -5314,6 +5426,10 @@
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
     },
+    "conpotionhealingwitchpotionmasked": {
+      "en": "A very large-sized potion that restores your vitality. It makes a soft, tinkling sound when you shake it.",
+      "pl": "Bardzo duża mikstura przywracająca siły witalne. Gdy potrząsasz buteleczką, wydaje cichy, brzęczący odgłos."
+    },
     "contaminationscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. Użyj go, by je rzucić."
@@ -5321,6 +5437,10 @@
     "contaminationskillbook": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "contbackpacka": {
+      "en": "A charmed satchel capable of carrying far more brick-a-brack than most simple backpacks.",
+      "pl": "Zaklęta torba mieszcząca w sobie więcej bibelotów niż większość prostych plecaków."
     },
     "cookingpot": {
       "en": "It's a cooking pot! For cooking!",
@@ -8294,6 +8414,10 @@
       "en": "| A more potent version of the Ferocity Herbmix whose effects should last quite a bit longer. |",
       "pl": "Mocniejsza wersja ziołowej mieszanki Zawziętości; efekt działania powinien utrzymywać się sporo dłużej."
     },
+    "potionhealingpoisonedmaskedvoida": {
+      "en": "A large-sized potion that restores your vitality. It makes a soft, tinkling sound when you shake it.",
+      "pl": "Duża mikstura przywracająca siły witalne. Gdy potrząsasz buteleczką, wydaje cichy, brzęczący odgłos."
+    },
     "potionofjellyfishskin": {
       "en": "| Electric skin potion description |",
       "pl": "Silna mikstura, która sprawia, że po twojej skórze tańczą elektryczne iskry."
@@ -8305,6 +8429,10 @@
     "potionofstrongwill": {
       "en": "| Potion of strong will description |",
       "pl": "Żeby wypić tę miksturę duszkiem, nie trzeba może dużo siły woli, ale za to po wypiciu na pewno ci jej nie zabraknie."
+    },
+    "potionpoisonvoida": {
+      "en": "|Powerful poisoned potion|",
+      "pl": "Potężna mikstura trucizny"
     },
     "pouch": {
       "en": "A simple canvas pouch used for holding small trinkets, coins, or herbs.",
@@ -9914,6 +10042,14 @@
       "en": "A worn and frayed teddy bear, clearly loved by generations of children.",
       "pl": "Zużyta przytulanka, ewidentnie uwielbiana przez kilka pokoleń dzieci."
     },
+    "wpncommonmace1hc": {
+      "en": "Spiky and pointy, this looks like the favoured weapon of bullies and thugs. And... you?",
+      "pl": "Ten zaostrzony szpikulec z pewnością cieszy się popularnością wśród zbirów i bandytów. A… ty?"
+    },
+    "wpncraftedmace2h": {
+      "en": "When you really need to hammer a point home. Repeatedly.",
+      "pl": "Kiedy naprawdę musisz wbić komuś do głowy swój punkt widzenia. Wielokrotnie."
+    },
     "wretchedtorso": {
       "en": "Looking fresh from some hellish abbatoir, it's hard to imagine that this partially-dismembered torso was once a walking, talking, thinking being. Just like you.",
       "pl": "Jakby wprost z jakiejś upiornej rzeźni. Ciężko sobie wyobrazić, że ten częściowo pozbawiony kończyn tułów był kiedyś chodzącą, mówiącą i myślącą istotą. Taką jak ty."
@@ -10030,6 +10166,10 @@
     },
     "2hwateraxe": {
       "en": "An immense magical axe that appears to have been crafted solely from hardened spite and malice. It suits you perfectly!"
+    },
+    "2hwatermace": {
+      "en": "This richly-designed warhammer is of Dwarven origin. From the quantity of dried blood upon the handle, it appears to have seen more than one battle in the none-too-distant past.",
+      "pl": "Ta niepowtarzalna broń została stworzona przez krasnoludy. Sądząc po ilości zaschniętej krwi na rękojeści, dzierżono ją w niejednej bitwie w nie tak dalekiej przeszłości."
     },
     "2hwatersword": {
       "en": "An enormous magical two-handed sword that clangs aggressively against other weapons and hums contentedly against the whetstone."
@@ -10298,6 +10438,9 @@
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "armbackpack": {
+      "en": "A charmed wearable satchel capable of carrying far more brick-a-brack than most simple backpacks."
+    },
     "arminnerdemon": {
       "en": "Chainmail Boots Description |",
       "pl": "Ciężko nie cieszyć się na dźwięk podzwaniania przy każdym kroku…"
@@ -10506,6 +10649,12 @@
     "beaktalonofroost": {
       "en": "Harvested from animal corpse parts, this magic Roost's Beak Talon is capable of something powerful."
     },
+    "beardofthedivine": {
+      "en": "An intact dwarven beard flayed from the skull of its former owner."
+    },
+    "beardofthedivineskillbook": {
+      "en": "Divine skills are race based magic spells. Read this book to learn this skill. It is one of the four divine skills combine them for ultimate divine skill."
+    },
     "bearpaw": {
       "en": "Some years ago, a superstition regarding heavy bear feet led to a decimation of the local population by hopeful hunters. The trend was abandoned, but the rumours about the feet were never definitively disproven, either."
     },
@@ -10553,6 +10702,15 @@
     "blackringdarkmirror": {
       "en": "Swirling neath this mirror's obsidian surface, shadows flit and flutter. You can't see your own reflection, but you can certainly see something... else.",
       "pl": "Pod czarną powierzchnią tego zwierciadła wirują i migoczą cienie. Nie widzisz własnego odbicia, ale zdecydowanie widzisz… coś innego."
+    },
+    "blackringmirror": {
+      "en": "This mirror shows inner side of the people."
+    },
+    "blackringrectangularshield": {
+      "en": "You feel like you could hide a small village behind this shield."
+    },
+    "blackringroundshield": {
+      "en": "A small round shield that seems to feature a peephole so that you can see the blow coming."
     },
     "blackringsacrificialdagger": {
       "en": "A blade stained with the blood of dozens of Black Ring victims.",
@@ -10668,6 +10826,10 @@
     "blankwaterskillbook": {
       "en": "Ingredient. Can be used to create a skillbook.",
       "pl": "Składnik. Można wykorzystać do tworzenia księgi umiejętności."
+    },
+    "blankwitchcraftscroll": {
+      "en": "Can be used to create a random Witchcraft Spell scroll...",
+      "pl": "Można wykorzystać, by stworzyć losowy zwój z zaklęciem czarnej magii."
     },
     "bleedfirescroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
@@ -10918,6 +11080,9 @@
       "en": "An experienced marksman will want to keep more than one bowstring on hand. Even this string's high tensile strength won't last forever.",
       "pl": "Doświadczony strzelec musi mieć pod ręką przynajmniej dwie cięciwy. Nawet tak elastyczna cięciwa nie będzie wieczna."
     },
+    "braccusteardropshield": {
+      "en": "Teardrop shield is cold to the touch."
+    },
     "brahmosblade": {
       "en": "A finely-wrought sword of the kind given by royalty of the Ancient Empire to those who have served them well.",
       "pl": "Elegancki miecz wręczany poddanym za zasługi przez członków rodziny królewskiej w Pradawnym Imperium."
@@ -10965,6 +11130,9 @@
     "brudet": {
       "en": "Packed fish and flavoured broth, this meal is typically served at elven dinners."
     },
+    "buckboots": {
+      "en": "Good boots are a hunter's boon, as vital for fleeing an ogre as they are to kicking in a deer's hide."
+    },
     "bucket": {
       "en": "This bucket must have been used for transporting fish. Yeuch.",
       "pl": "Wiadro wykorzystywano zapewne do przenoszenia ryb. Fuj."
@@ -11009,9 +11177,6 @@
     "cannibaliseskillbook": {
       "en": "|Summoning skills let you call temporary allies in battle and buff them|",
       "pl": "Biegłość przyzywania pozwala na wezwanie i wzmacnianie tymczasowych sojuszników podczas walki."
-    },
-    "cape": {
-      "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
     },
     "carrot": {
       "en": "A humble and steadfast vegetable.",
@@ -11083,6 +11248,10 @@
     "chaossword": {
       "en": "A long sword that exudes command from its gilt-edged hilt to the tip of the tapered blade.",
       "pl": "Długi miecz emanujący władczością – od pozłacanej rękojeści aż po czubek zwężanej klingi."
+    },
+    "chaostwohandedmace": {
+      "en": "This richly-designed warhammer is of Dwarven origin. From the quantity of dried blood upon the handle, it appears to have seen more than one battle in the none-too-distant past.",
+      "pl": "Ta niepowtarzalna broń została stworzona przez krasnoludy. Sądząc po ilości zaschniętej krwi na rękojeści, dzierżono ją w niejednej bitwie w nie tak dalekiej przeszłości."
     },
     "chaoswand": {
       "en": "Crackling with barely-contained energy, this wand promises all the power of a tempest.",
@@ -11261,6 +11430,10 @@
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
     },
+    "conpotionhealingwitchpotionmasked": {
+      "en": "A very large-sized potion that restores your vitality. It makes a soft, tinkling sound when you shake it.",
+      "pl": "Bardzo duża mikstura przywracająca siły witalne. Gdy potrząsasz buteleczką, wydaje cichy, brzęczący odgłos."
+    },
     "contaminationscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. Użyj go, by je rzucić."
@@ -11268,6 +11441,10 @@
     "contaminationskillbook": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "contbackpacka": {
+      "en": "A charmed satchel capable of carrying far more brick-a-brack than most simple backpacks.",
+      "pl": "Zaklęta torba mieszcząca w sobie więcej bibelotów niż większość prostych plecaków."
     },
     "cookedfroglegs": {
       "en": "A highly seasoned Dwarven soup or stew of frog legs and vegetables, flavoured with paprika."
@@ -11347,6 +11524,10 @@
     },
     "craftarmouryhowtobeclassy": {
       "en": "Use to read and learn about crafting armor."
+    },
+    "crafted2hmace": {
+      "en": "The eyeballs engraved into the head of this warhammer are unsettling in the extreme. You could swear they blink whenever you look away...",
+      "pl": "Gałki oczne, wyrzeźbione w głowni tego młota bojowego, niezmiennie przyprawiają o dreszcze. Możesz przysiąc, że mrugają za każdym razem, kiedy odwracasz wzrok…"
     },
     "craftersanvil": {
       "en": "Crafter's favorite anvil. You don't need other's anvils when you can make your own. Use it with your favorite hammer to craft items."
@@ -11788,6 +11969,9 @@
       "en": "| Description of Replica |",
       "pl": "Mniejsza niż oryginał, ale równie imponująca."
     },
+    "divineordershield": {
+      "en": "This heavy and dull shield is all work and no play, with not the faintest hint of decoration upon its surface."
+    },
     "doctorswaterring": {
       "en": "It is the wave itself and has healing powers"
     },
@@ -11991,6 +12175,10 @@
     "emptyamulet": {
       "en": "Empty amulet. Bless this item whit whatever you like."
     },
+    "emptybarrel": {
+      "en": "Just a barrel.",
+      "pl": "Po prostu beczka."
+    },
     "emptybottle": {
       "en": "An empty bottle reeking of some rotten liquid that used to be inside.",
       "pl": "Pusta butelka cuchnąca jakimś ohydnym płynem niegdyś w niej przechowywanym."
@@ -12006,6 +12194,10 @@
     "emptycup": {
       "en": "It runneth over not.",
       "pl": "Mój kielich nie jest przeobfity."
+    },
+    "emptycylindergrenade": {
+      "en": "An empty, bulbous cylinder stoppered with pockmarked and tarnished brass. The embossed metal worker's mark hails from a faraway military munitions factory.",
+      "pl": "Pusty, bulwiasty cylinder zatkany poczerniałym, mosiężnym korkiem. Widoczny na nim znak został wytłoczony przez pracownika jednej z fabryk amunicji z odległych krajów."
     },
     "emptydjinnlamp": {
       "en": "|Just an empty bottle from a Djinn|",
@@ -12023,6 +12215,9 @@
       "en": "An empty jar dreaming of one day having its potential tapped.",
       "pl": "Ten pusty słoik marzy o tym, by pewnego dnia w pełni zrealizować swój potencjał."
     },
+    "emptymagicalarmourbelt": {
+      "en": "Made of simple cloth, this unremarkable belt will at least keep your pants where they ought to be."
+    },
     "emptymug": {
       "en": "Where's a trusty tap when you need one?",
       "pl": "Gdzie jest stary, dobry kran, kiedy go potrzeba?"
@@ -12031,12 +12226,20 @@
       "en": "An empty perfume bottle with the lingering hint of an exceedingly beguiling scent. Your only desire is to keep sniffing it forever.",
       "pl": "Pusta butelka, w której wciąż jeszcze unoszą się ostatnie opary urzekającego zapachu perfum. Twoim jedynym pragnieniem jest wdychać je po wsze czasy."
     },
+    "emptyphysicalarmourbelt": {
+      "en": "Made of simple leather, this unremarkable belt will at least keep your pants where they ought to be.",
+      "pl": "To zwykły pas wykonany z pospolitej skóry, ale przynajmniej utrzymuje spodnie na miejscu!"
+    },
     "emptypotionbottle": {
       "en": "An empty vial waiting to hold whatever wild concoction you can brew.",
       "pl": "Pusta butelka, która czeka, aż napełnisz ją jakimś ciekawym wywarem."
     },
     "emptyring": {
       "en": "Empty ring. Bless this item whit whatever you like."
+    },
+    "emptyroundgrenade": {
+      "en": "Two half-spheres of thick yet brittle stone. They are currently empty; why not fill them with something exciting?",
+      "pl": "Dwie półkule z grubego, ale kruchego kamienia. Są na razie puste – może by je tak wypełnić czymś ciekawym?"
     },
     "emptysouljar": {
       "en": "An empty jar of the sort used to contain the ghastly essence of a soul.",
@@ -12124,6 +12327,9 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "eventcraftstation": {
+      "en": "Crafting Station for Event Items."
+    },
     "explosivearrow": {
       "en": "Known as 'Arrow of the Dragon' to the renowned Lapiterran archers, this explosive projectile will just as soon blow up in your face as at your enemy's feet.",
       "pl": "Ten pocisk, zwany przez słynnych lapiterrańskich łuczników Smoczą Strzałą, może eksplodować pod stopami twoich wrogów lub wybuchnąć ci prosto w twarz."
@@ -12147,6 +12353,12 @@
     "eyeofknlies": {
       "en": "Kniles' eye is dim and dull; it's either dead or pretty damned depressed."
     },
+    "eyeofthedivine": {
+      "en": "An intact elven eye flayed from the skull of its former owner."
+    },
+    "eyeofthedivineskillbook": {
+      "en": "Divine skills are race based magic spells. Read this book to learn this skill. It is one of the four divine skills combine them for ultimate divine skill."
+    },
     "eyeringofkniles": {
       "en": "Kept close, this eye ring of Kniles will lend you the magic bestowed upon it."
     },
@@ -12161,6 +12373,9 @@
     "fakezeuspotion": {
       "en": "A polymorph elixir brewed with the essence of Halloween! Turn into a Zeus for short period of time. But it is fake."
     },
+    "fancycape": {
+      "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
+    },
     "fancydagger": {
       "en": "Named for the delivery from suffering offered by Caltry nuns, mercygiver daggers can also be used for far more nefarious purposes.",
       "pl": "Choć mizerykordie pierwotnie służyły dobijaniu konających, można je wykorzystywać również w bardziej nikczemnych celach."
@@ -12168,6 +12383,9 @@
     "fancyfeather": {
       "en": "Who knows what heights this weather-beaten feather has seen? Perhaps hidden corners of Rivellon no human eye has ever breached.",
       "pl": "Kto wie, gdzie też bywało to doświadczone przez pogodę pióro? Być może w jakiś sekretnych zakątkach Rivellonu, jakich nie widziało ludzkie oko?"
+    },
+    "fancyfez": {
+      "en": "Nothing special, just the head covering of a regular eastern citizen."
     },
     "fang": {
       "en": "A fine trophy to commemorate the slaughter of an innocent beast.",
@@ -12518,6 +12736,10 @@
       "en": "A very, very large-sized potion that restores your vitality. It makes a soft, tinkling sound when you shake it.",
       "pl": "Bardzo, ale to bardzo duża mikstura przywracająca siły witalne. Gdy potrząsasz buteleczką, wydaje cichy, brzęczący odgłos."
     },
+    "giantmagicarmor": {
+      "en": "A very large-sized potion that enchants and strengthens your magical armour.",
+      "pl": "Duża mikstura, która zaklina i wzmacnia pancerz magiczny."
+    },
     "giantmasterworkrune": {
       "en": "Hew and hack from the elder tree\r\nSlice and slash from the elven seed\r\nThen in the blood of grapes immerse\r\nA masterwork rune will soon emerge",
       "pl": "Drzewo prastare pod topór bierz; elfie nasiono porąbać chcesz; Teraz winogron krwią zalanie; Sprawi, że runa kunsztu powstanie."
@@ -12525,6 +12747,10 @@
     "giantmasterworkruneofpower": {
       "en": "| Rune description |",
       "pl": "Rzeźbiona runa świeci i szumi od mocy."
+    },
+    "giantphysicalarmor": {
+      "en": "A very large-sized potion that enchants and strengthens your physical armour.",
+      "pl": "Bardzo duża mikstura, która zaklina i wzmacnia Pancerz Fizyczny."
     },
     "giantpoisonvial": {
       "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down a large-sized wollock.",
@@ -12818,6 +13044,15 @@
       "en": "|Polymorph skills allow you to shape your body as well as bodies of your enemies|",
       "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
+    "heartofthedivine": {
+      "en": "An intact human heart flayed from the skull of its former owner."
+    },
+    "heartofthedivineskillbook": {
+      "en": "Divine skills are race based magic spells. Read this book to learn this skill. It is one of the four divine skills combine them for ultimate divine skill."
+    },
+    "heartring": {
+      "en": "Kept close, this demon heart ring will lend you the magic bestowed upon it."
+    },
     "hellstone": {
       "en": "In this primitive state, the ore is little more than dead weight. But when wedded with a white-hot furnace...",
       "pl": "W swoim pierwotnym stanie ruda stanowi tylko zbędny balast. Gdyby jednak znaleźć rozgrzany do czerwoności kowalski piec…"
@@ -12825,6 +13060,9 @@
     "hellstonebar": {
       "en": "A well-made bar of metal fairly itching to be hammered into something useful.",
       "pl": "Porządna metalowa sztabka, która pragnie, by ktoś przekuł ją w coś użytecznego."
+    },
+    "helmetofgrunt": {
+      "en": "Somehow, it's even heavier than it looks. It contains growls of grunts."
     },
     "herring": {
       "en": "Is it just you, or is its eye.... Following you?",
@@ -13451,6 +13689,10 @@
       "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down a large-sized wollock.",
       "pl": "Trucizna ta, powstała z połączenia brudu ze stóp najpodlejszych trolli Rivellonu, dziąseł wiedźm i łajna demonów, uśmierci dużego woloka."
     },
+    "largepoisonpotion": {
+      "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down a large-sized wollock.",
+      "pl": "Trucizna ta, powstała z połączenia brudu ze stóp najpodlejszych trolli Rivellonu, dziąseł wiedźm i łajna demonów, uśmierci dużego woloka."
+    },
     "largepoisonresistancepotion": {
       "en": "This floral-scented potion is commonly called 'King's Pal'. It grants its drinker a considerable resistance to poisoning.",
       "pl": "Ta kwiatowa mikstura zwana jest powszechnie Towarzyszem Króla. Daje znaczącą odporność na truciznę."
@@ -13682,6 +13924,9 @@
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
     },
+    "luckycharm": {
+      "en": "Harvested from animal corpse parts, this magic Rabbit Paw Talon is capable of something powerful."
+    },
     "luckyrabbitpaw": {
       "en": "Some years ago, a superstition regarding lucky rabbits' feet led to a decimation of the local population by hopeful hunters. The trend was abandoned, but the rumours about the feet were never definitively disproven, either.",
       "pl": "Kilka lat temu pewien przesąd dotyczący szczęśliwych króliczych łapek doprowadził do zdziesiątkowania miejscowej populacji tych zwierząt przez pełnych nadziei myśliwych. Później praktyk zaniechano, ale pogłoski na temat łapek nigdy nie zostały zdementowane."
@@ -13898,6 +14143,10 @@
       "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down a medium-sized wollock.",
       "pl": "Trucizna ta, powstała z połączenia brudu ze stóp najpodlejszych trolli Rivellonu, dziąseł wiedźm i łajna demonów, uśmierci woloka średniej wielkości."
     },
+    "mediumpoisonpotion": {
+      "en": "Contrived from the scum of Rivellon's vilest troll's feet, witch's gums, and demon dung, this poison could take down a medium-sized wollock.",
+      "pl": "Trucizna ta, powstała z połączenia brudu ze stóp najpodlejszych trolli Rivellonu, dziąseł wiedźm i łajna demonów, uśmierci woloka średniej wielkości."
+    },
     "mediumpoisonresistancepotion": {
       "en": "This floral-scented potion is commonly called 'King's Pal'. It grants its drinker somewhat of a  resistance to poisoning.",
       "pl": "Ta kwiatowa mikstura zwana jest powszechnie Towarzyszem Króla. Daje niewielką odporność na truciznę."
@@ -14109,6 +14358,10 @@
       "en": "Lizard mystics have been known to use these shells as musical instruments in their death rituals, invoking the haunting howl of far-sea storms.",
       "pl": "Jaszczurzy mistycy słyną z tego, że używają tych muszli jako instrumentów podczas rytuałów pośmiertnych, a ich dźwięk przywodzi na myśl wycie sztormów na pełnym morzu."
     },
+    "molotovgrenade": {
+      "en": "It's impossible to tell what illicit ingredients are mixed together within this old wine bottle. However, from the manner in which the bottle vibrates in your hands, it's fair to say the mixture is volatile indeed...",
+      "pl": "Trudno powiedzieć, jakie zakazane składniki wymieszano w tej starej butelce po winie. Jednak ze sposobu, w jaki drży w twoich rękach, można wywnioskować, że mieszanina jest doprawdy niestabilna..."
+    },
     "moonmoonpotion": {
       "en": "Brewed with using dog tail. This potion gives permanent effects on cosumer until they die."
     },
@@ -14287,6 +14540,15 @@
       "en": "| Rune description |",
       "pl": "Rzeźbiona runa świeci i szumi od mocy."
     },
+    "mythicalangelwings": {
+      "en": "You have to love that cheery bleesing feeling as you fly..."
+    },
+    "mythicalboartusks": {
+      "en": "Harder than stone, sharper than blade. Enemies will tremble with these fierce parts."
+    },
+    "mythicalspiderlegs": {
+      "en": "You have to love that cheery spider legs as you walk..."
+    },
     "mythrilbar": {
       "en": "A strong, promising bar of iron, the core ingredient of any well-made steel.",
       "pl": "Obiecująca sztabka mocnego żelaza będąca podstawą dobrze zahartowanej stali."
@@ -14419,6 +14681,9 @@
       "en": "Beneath the smell of rotten meat and scab of yellow filth, it appears to be made of ivory.",
       "pl": "Pod warstwą zgniłego mięsa i zakrzepniętego żółtego paskudztwa widoczne jest coś, co wygląda na kość słoniową."
     },
+    "ordersofthedeath": {
+      "en": "Gallow of your death. You can lie on it, literally.."
+    },
     "oven": {
       "en": "Crafters favortie oven. Use it for melting glass and your accesories. Also you can cook delicous food."
     },
@@ -14501,6 +14766,9 @@
       "en": "It smells like this particular pair missed more than one laundry day...",
       "pl": "Ta rzecz powinna już dawno trafić do pralni…"
     },
+    "parasiticsword": {
+      "en": "Sword made of drillworm's guts."
+    },
     "parchment": {
       "en": "A blank piece of parchment that can be used to craft a scroll.",
       "pl": "Pusta karta pergaminu, którą można wykorzystać do stworzenia zwoju."
@@ -14563,6 +14831,9 @@
     },
     "pattypumpkineventspecialitems": {
       "en": "Use to read and learn about crafting event special items."
+    },
+    "pawedboots": {
+      "en": "They might not be as comfortable as house slippers, but if you step on a beartrap? You won't even notice."
     },
     "peaceofmindscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
@@ -14997,6 +15268,10 @@
     "potionbag": {
       "en": "A charmed potion bag capable of carrying far more brick-a-brack than most simple backpacks."
     },
+    "potionhealingpoisonedmaskedvoida": {
+      "en": "A large-sized potion that restores your vitality. It makes a soft, tinkling sound when you shake it.",
+      "pl": "Duża mikstura przywracająca siły witalne. Gdy potrząsasz buteleczką, wydaje cichy, brzęczący odgłos."
+    },
     "potionofjellyfishskin": {
       "en": "| Electric skin potion description |",
       "pl": "Silna mikstura, która sprawia, że po twojej skórze tańczą elektryczne iskry."
@@ -15008,6 +15283,10 @@
     "potionofstrongwill": {
       "en": "| Potion of strong will description |",
       "pl": "Żeby wypić tę miksturę duszkiem, nie trzeba może dużo siły woli, ale za to po wypiciu na pewno ci jej nie zabraknie."
+    },
+    "potionpoisonvoida": {
+      "en": "|Powerful poisoned potion|",
+      "pl": "Potężna mikstura trucizny"
     },
     "potionstobemuscleyou": {
       "en": "Use to read and learn about crafting potions."
@@ -15360,6 +15639,9 @@
       "en": "Worn only by the most devout zealots in Rivellon. Each piece brings one closer to the Divine.",
       "pl": "Elementy ubioru noszone tylko przez najpobożniejszych i najżarliwszych wyznawców w Rivellonie. Każda część przybliża właściciela do Boskiego."
     },
+    "ringoftheshells": {
+      "en": "Kept close, this molespitter shell ring will lend you the magic bestowed upon it."
+    },
     "rippedoffdwarvenface": {
       "en": "An intact dwarven face flayed from the skull of its former owner.",
       "pl": "Nienaruszone krasnoludzkie oblicze, zdarte z czaszki poprzedniego właściciela."
@@ -15650,6 +15932,10 @@
       "en": "A pretty sharp piece of metal. If you could make sure you didn't cut yourself handling it, it would make for a nifty weapon.",
       "pl": "Dość ostry kawałek metalu. Jeśli zdołasz się nim nie pokaleczyć, może być z niego niezła broń."
     },
+    "sharppieceofmetalsimplerecipe": {
+      "en": "A pretty sharp piece of metal. If you could make sure you didn't cut yourself handling it, it would make for a nifty weapon.",
+      "pl": "Dość ostry kawałek metalu. Jeśli zdołasz się nim nie pokaleczyć, może być z niego niezła broń."
+    },
     "sharprock": {
       "en": "You almost cut yourself handling this rock. If only you could cut others with it...",
       "pl": "Prawie się o niego skaleczyłeś. Żeby tak dało się nim skaleczyć innych…"
@@ -15705,6 +15991,9 @@
     "shovel": {
       "en": "Use to start digging on the spot. Who knows what you might find?",
       "pl": "Użyj, by zacząć kopać. Kto wie, co uda ci się znaleźć?"
+    },
+    "shriekeroftheshriekers": {
+      "en": "Carved from an ancient metal-like material, the wand is heavier than it appears. This wand allows to remove status of Shriekers and make them vulnerable again."
     },
     "shriekersoul": {
       "en": "Harsh sediments swirl from the Autumn Realm of Lapiterra directly into this dense, enchanted orb."
@@ -16108,6 +16397,10 @@
       "en": "Supple, stretchy, and made from the finest beast-gut, this sinew is sure to serve you well.",
       "pl": "Ta wykonana z najwyższej jakości jelita cięciwa jest miękka i elastyczna. Z pewnością długo ci posłuży."
     },
+    "stuncloudarrowhead": {
+      "en": "A tiny vial almost bursting with the electrical storm fizzling within. Once crafted into a special arrow, it will strike the battlefield like lightning.",
+      "pl": "Tę niewielką fiolkę niemal rozsadza szalejąca w niej elektryczna burza. Jeśli użyjesz jej do stworzenia specjalnej strzały, uderzy w pole bitwy niczym piorun."
+    },
     "stunningarrow": {
       "en": "An arrow infused with the fury of the air. If you listen closely you can hear it whistle and seethe with anticipation.",
       "pl": "Strzała nasycona furią powietrza. Jeśli się wsłuchasz, usłyszysz niespokojny gwizd i świst."
@@ -16158,6 +16451,10 @@
     "superconductorskillbook": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "superiorpixiedust": {
+      "en": "You don't believe in pixies, do you? Well, all that matters is whether they believe in you. And their very belief is the secret ingredient often used in crafting items that require just a pinch of magic.",
+      "pl": "Nie wierzysz we wróżki, prawda? Cóż, ważniejsze pewnie jest to, czy one wierzą w ciebie. Ich wiara jest tajemnym składnikiem często wykorzystywanym do tworzenia przedmiotów, które wymagają jedynie szczypty magii."
     },
     "superiorstardustherb": {
       "en": "A gift to Rivellon from one of the elemental monarchs of the Realm of Faery. Talented craftsmen call it the shock that brings life to runes...",
@@ -16447,12 +16744,21 @@
       "en": "The result of a blessed union between tomato and hammer.",
       "pl": "Owoc burzliwego związku pomidora i młotka."
     },
+    "tomtalon": {
+      "en": "Harvested from animal corpse parts, this magic Cat Fur Talon is capable of something powerful."
+    },
     "tongs": {
       "en": "A sturdy pair of blacksmith's pincers.",
       "pl": "Solidne kowalskie szczypce."
     },
     "tongueofdiplomats": {
       "en": "Once upon a time, diplomats from all Rivellon were using these books to learn secrets of diplomacy."
+    },
+    "tongueofthedivine": {
+      "en": "An intact lizard tongue flayed from the skull of its former owner."
+    },
+    "tongueofthedivineskillbook": {
+      "en": "Divine skills are race based magic spells. Read this book to learn this skill. It is one of the four divine skills combine them for ultimate divine skill."
     },
     "tooth": {
       "en": "The product of a very conscientious tooth-brusher, this tooth makes a fine trophy of war.",
@@ -16648,6 +16954,9 @@
     "unique2hwatersword": {
       "en": "A sword of water can drown all thoughts, a sword of harmony can dispatch all distortion."
     },
+    "uniqueaerotheurgecape": {
+      "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
+    },
     "uniqueairbow": {
       "en": "A military-issue longbow crafted from simple yet functional materials and emblazoned with the insignia of a long-extinct regiment.",
       "pl": "Długi łuk w wydaniu wojskowym, wykonany z pospolitych, lecz użytecznych materiałów i ozdobiony emblematem dawno poległego pułku."
@@ -16714,6 +17023,14 @@
     "uniquenecromancercape": {
       "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
     },
+    "uniquephysicalbow": {
+      "en": "A military-issue longbow crafted from simple yet functional materials and emblazoned with the insignia of a long-extinct regiment.",
+      "pl": "Długi łuk w wydaniu wojskowym, wykonany z pospolitych, lecz użytecznych materiałów i ozdobiony emblematem dawno poległego pułku."
+    },
+    "uniquephysicaldagger": {
+      "en": "Short and shadowy, this dagger is capable of piercing to the very heart of an argument. Twice.",
+      "pl": "Ten krótki i podejrzany sztylet zakończy nawet najbardziej zaciekłą kłótnię. Dwukrotnie."
+    },
     "uniquephysicalstaff": {
       "en": "This sturdy staff appears to be carved from still-living wood; tender shoots and fresh green leaves bud along its length. A blue-red aura emanates from the tip."
     },
@@ -16755,6 +17072,20 @@
       "en": "Somehow, it's even heavier than it looks.",
       "pl": "Z jakiegoś powodu jest nawet cięższy, niż można się spodziewać."
     },
+    "uniquepolymorphpants": {
+      "en": "Heavy as a bag of rocks, these platemail pants may chafe a little but they'll undoubtedly protect your modesty.",
+      "pl": "Ciężkie jak worek kamieni płytowe nogawice – mogą nieco poobcierać, ale na pewno ochronią wrażliwe miejsca."
+    },
+    "uniquepolymorphtorso": {
+      "en": "If you polish it up a little, this platemail armour could double as a mirror.",
+      "pl": "Ta zbroja płytowa, jeśli by ją nieco wypolerować, mogłaby służyć za lustro."
+    },
+    "uniquepyrokineticcape": {
+      "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
+    },
+    "uniquepyromancerbelt": {
+      "en": "Made of simple cloth, this unremarkable belt will at least keep your pants where they ought to be."
+    },
     "uniquerangerbelt": {
       "en": "Made of simple leather, this unremarkable belt will at least keep your pants where they ought to be.",
       "pl": "To zwykły pas wykonany z pospolitej skóry, ale przynajmniej utrzymuje spodnie na miejscu!"
@@ -16774,12 +17105,40 @@
       "en": "Headwear moulded from dappled, bark-tanned hide. Three words are engraved inside: 'Unity is Strength.'",
       "pl": "Nakrycie głowy zrobione z cętkowanej, barwionej korą skóry. Wewnątrz wyryto trzy słowa: „W jedności siła”."
     },
+    "uniquerangerpants": {
+      "en": "The worksmanship on these supple leather trousers is particularly fastidious - every stitch perfectly spaced, every edge carefully reinforced.",
+      "pl": "Bardzo starannie wykonane skórzane spodnie – każdy szew jest idealny, wszystkie krawędzie starannie wzmocniono."
+    },
+    "uniquerangertorso": {
+      "en": "Pliant protection that bends and bolsters in equal measure.",
+      "pl": "Sprężysta osłona – giętka, ale zarazem solidna."
+    },
     "uniqueroguebelt": {
       "en": "Made of simple leather, this unremarkable belt will at least keep your pants where they ought to be.",
       "pl": "To zwykły pas wykonany z pospolitej skóry, ale przynajmniej utrzymuje spodnie na miejscu!"
     },
+    "uniquerogueboots": {
+      "en": "Good boots are a hunter's boon, as vital for fleeing an ogre as they are to kicking in a crocodile's teeth.",
+      "pl": "Dobre buty to błogosławieństwo dla łowcy. Równie niezbędne do ucieczki przed ogrem, jak i do kopnięcia krokodyla w zęby."
+    },
     "uniqueroguecape": {
       "en": "The fancy cape hums faintly with energy. Powerful magic swirls within."
+    },
+    "uniqueroguegloves": {
+      "en": "Flexible but not flimsy, sturdy enough to withstand any storm and skirmish.",
+      "pl": "Elastyczne, ale trwałe – wystarczająco solidne, by wytrzymać atak burzy lub potyczkę."
+    },
+    "uniqueroguehelmet": {
+      "en": "Headwear moulded from dappled, bark-tanned hide. Three words are engraved inside: 'Unity is Strength.'",
+      "pl": "Nakrycie głowy zrobione z cętkowanej, barwionej korą skóry. Wewnątrz wyryto trzy słowa: „W jedności siła”."
+    },
+    "uniqueroguepants": {
+      "en": "The worksmanship on these supple leather trousers is particularly fastidious - every stitch perfectly spaced, every edge carefully reinforced.",
+      "pl": "Bardzo starannie wykonane skórzane spodnie – każdy szew jest idealny, wszystkie krawędzie starannie wzmocniono."
+    },
+    "uniqueroguetorso": {
+      "en": "Pliant protection that bends and bolsters in equal measure.",
+      "pl": "Sprężysta osłona – giętka, ale zarazem solidna."
     },
     "uniquesilversword": {
       "en": "Magic excels from this ancient blade, crackling around the wielder's arm with fiery splendour."
@@ -16852,6 +17211,14 @@
     "uniquewarriorhelmet": {
       "en": "Somehow, it's even heavier than it looks.",
       "pl": "Z jakiegoś powodu jest nawet cięższy, niż można się spodziewać."
+    },
+    "uniquewarriorpants": {
+      "en": "Heavy as a bag of rocks, these platemail pants may chafe a little but they'll undoubtedly protect your modesty.",
+      "pl": "Ciężkie jak worek kamieni płytowe nogawice – mogą nieco poobcierać, ale na pewno ochronią wrażliwe miejsca."
+    },
+    "uniquewarriortorso": {
+      "en": "If you polish it up a little, this platemail armour could double as a mirror.",
+      "pl": "Ta zbroja płytowa, jeśli by ją nieco wypolerować, mogłaby służyć za lustro."
     },
     "uniquewaterbow": {
       "en": "A military-issue longbow crafted from simple yet functional materials and emblazoned with the insignia of a long-extinct regiment.",
@@ -17033,6 +17400,9 @@
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. Użyj go, by je rzucić."
     },
+    "wandofsource": {
+      "en": "It has source in it. Carved from an ancient metal-like material, the wand is heavier than it appears."
+    },
     "wardensreport": {
       "en": "Use to read.",
       "pl": "Otwórz, by przeczytać."
@@ -17176,6 +17546,9 @@
       "en": "|This key looks old and rusty. It may have one use left in it.|",
       "pl": "Klucz wygląda na stary i przerdzewiały. Możliwe, że da się go użyć tylko raz…"
     },
+    "whitestarstaff": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique air staff is as well-crafted as it is powerful."
+    },
     "whitetea": {
       "en": "Best enjoyed near the hearth on a rainy day.",
       "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
@@ -17183,6 +17556,9 @@
     "whitetealeaves": {
       "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
       "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "whitetoothtalon": {
+      "en": "Harvested from animal corpse parts, this magic Wolf ToothTalon is capable of something powerful."
     },
     "winduptoyskillbook": {
       "en": "|Rogue skills are skills for rogues and thieves. High Finesse improves these skills. Read this book to learn this skill.|",
@@ -17215,6 +17591,9 @@
     "witcheye": {
       "en": "The eye is dim and dull; it's either dead or pretty depressed.",
       "pl": "Oko patrzy się mętnym, matowym wzrokiem – jest martwe albo przygnębione."
+    },
+    "witchhelmet": {
+      "en": "Fluffer than clouds, harder than leather. You can still hear moo sound when you listen closely."
     },
     "witchpotion": {
       "en": "|This horrifying brew reeks of a disturbing bovine mix. It was prepared by the Witch in Driftwood Fields.|",
@@ -17262,6 +17641,10 @@
       "en": "| A wooden toy |",
       "pl": "Zabawkowy wózek"
     },
+    "woodmushvanillarecipe": {
+      "en": "A dripping, pulpy mass of mushy wood and water. Better dry it out before it soaks through your whole pack!",
+      "pl": "Kapiąca, papkowata masa rozmiękłego drewna i wody. Lepiej ją wysusz, zanim zamoczy cały twój plecak!"
+    },
     "woodpulp": {
       "en": "A dripping, pulpy mass of mushy wood and water. Better dry it out before it soaks through your whole pack!",
       "pl": "Kapiąca, papkowata masa rozmiękłego drewna i wody. Lepiej ją wysusz, zanim zamoczy cały twój plecak!"
@@ -17269,6 +17652,9 @@
     "wool": {
       "en": "The raw bounty of a fluffy, generous sheep. Not a ba-a-a-d haul, though you'll need to combine several batches to make a usable length of yarn.",
       "pl": "Podarunek od owcy hojnie obdarzonej wełną. Niezły łup, choć żeby otrzymać sensownej długości włóczkę, musisz połączyć ze sobą kilka partii wełny."
+    },
+    "woolyarmor": {
+      "en": "Fluffer than clouds, harder than leather. You can hear baa sound when you listen closely."
     },
     "wormtremorscroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
@@ -17281,6 +17667,50 @@
     "wornteddybear": {
       "en": "A worn and frayed teddy bear, clearly loved by generations of children.",
       "pl": "Zużyta przytulanka, ewidentnie uwielbiana przez kilka pokoleń dzieci."
+    },
+    "wpnaxe2h": {
+      "en": "This immense axe appears to have been crafted solely from hardened spite and malice. It suits you perfectly!",
+      "pl": "Ten potężny topór wykonano, jak się zdaje, wyłącznie z utwardzonej żółci i jadu. Pasuje do ciebie doskonale!"
+    },
+    "wpncommonmace1hc": {
+      "en": "Spiky and pointy, this looks like the favoured weapon of bullies and thugs. And... you?",
+      "pl": "Ten zaostrzony szpikulec z pewnością cieszy się popularnością wśród zbirów i bandytów. A… ty?"
+    },
+    "wpncorpseharvester57mistakestaff": {
+      "en": "Mistake's first mistake is his last mistake also."
+    },
+    "wpncraftedmace2h": {
+      "en": "When you really need to hammer a point home. Repeatedly.",
+      "pl": "Kiedy naprawdę musisz wbić komuś do głowy swój punkt widzenia. Wielokrotnie."
+    },
+    "wpndagger": {
+      "en": "Perfect for backstabbing your foes in the kidneys. Or peeling an apple.",
+      "pl": "Idealne narzędzie do zadawania wrogom ciosów w plecy. Albo obierania jabłek."
+    },
+    "wpnspear": {
+      "en": "Direct the pointy end towards the problem.",
+      "pl": "Skierować ostrym końcem w stronę problemu."
+    },
+    "wpnspookybroomstaff": {
+      "en": "This sturdy staff thrums with energy, waiting to serve your purpose.",
+      "pl": "Ten solidny kostur dudni nagromadzoną energią, czekając, aż go użyjesz."
+    },
+    "wpnspookyreaperscythe": {
+      "en": "The mow-man cometh."
+    },
+    "wpnstaffpoison": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique poison staff is as well-crafted as it is powerful."
+    },
+    "wpnstaffuniquepoison": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique poison staff is as well-crafted as it is powerful."
+    },
+    "wpnsword1h": {
+      "en": "Shiny enough to attract a magpie, sharp enough to kill it.",
+      "pl": "Dostatecznie błyszczący, żeby zwabić srokę i dostatecznie ostry, by ją zabić."
+    },
+    "wpnsword2h": {
+      "en": "A sword of wit can dispel all doubts, a sword of metal can dispatch all enemies.",
+      "pl": "Ostra uwaga może rozwiać wszystkie wątpliwości; ostry miecz może rozpędzić wszystkich wrogów."
     },
     "wretchedtorso": {
       "en": "Looking fresh from some hellish abbatoir, it's hard to imagine that this partially-dismembered torso was once a walking, talking, thinking being. Just like you.",

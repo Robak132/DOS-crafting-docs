@@ -2,11 +2,21 @@
   "slug": "Pancerze/UNIQUE-NECROMANCER-ARMOR-HELMET",
   "title": "Unique Necromancer Helmet",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Nekromancja",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Inteligencja",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Perswazja",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

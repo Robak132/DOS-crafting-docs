@@ -2,9 +2,9 @@
   "slug": "Skladniki/FISH-TYPE-1",
   "title": "Fish Type 1",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

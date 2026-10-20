@@ -2,9 +2,9 @@
   "slug": "Przedmioty-wydarzen/EDIBLE-PUMPKIN",
   "title": "Edible Pumpkin",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

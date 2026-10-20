@@ -3,10 +3,12 @@
   "title": "Bone Cage Scroll",
   "titlePl": "Zwój Kościanej Klatki",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,18 @@
   "slug": "Skladniki/MYTHICAL-BOAR-TUSKS",
   "title": "Mythical Boar Tusks",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Gniazda-run",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Siła",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Znawca",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

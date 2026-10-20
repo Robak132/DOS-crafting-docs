@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/SHOCKED-IMMUNITY",
   "title": "Shocked Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-szok",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-szok",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

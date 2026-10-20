@@ -3,9 +3,11 @@
   "title": "Medium Telekinesis Potion",
   "titlePl": "Średnia mikstura telekinezy",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Telekineza",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

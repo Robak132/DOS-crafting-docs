@@ -2,9 +2,9 @@
   "slug": "Przedmioty-wydarzen/VARIOUS-ITEMS",
   "title": "Various Items",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

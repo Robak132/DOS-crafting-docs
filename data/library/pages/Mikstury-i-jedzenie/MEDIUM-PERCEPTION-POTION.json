@@ -2,10 +2,12 @@
   "slug": "Mikstury-i-jedzenie/MEDIUM-PERCEPTION-POTION",
   "title": "Medium Perception Potion",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Percepcja",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

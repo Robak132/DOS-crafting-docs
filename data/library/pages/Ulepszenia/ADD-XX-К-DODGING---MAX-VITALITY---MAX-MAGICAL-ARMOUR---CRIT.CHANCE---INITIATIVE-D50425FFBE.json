@@ -2,15 +2,15 @@
   "slug": "Ulepszenia/ADD-XX-К-DODGING---MAX-VITALITY---MAX-MAGICAL-ARMOUR---CRIT.CHANCE---INITIATIVE-D50425FFBE",
   "title": "add XX к Dodging / Max Vitality / max magical armour / Crit.chance / Initiative / Accuracy AND add Y Aerotheurge / Memory / Geomancer / Hydrosophist / Pyrocinetic / Necromancer",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
+    "Cechy",
     "Cechy/HP",
     "Cechy/Inicjatywa",
     "Cechy/Krytyk",
-    "Cechy/Unik",
     "Cechy/Pancerz-magiczny",
-    "Cechy",
-    "Typ"
+    "Cechy/Unik",
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,15 @@
   "title": "Flay Skin Scroll",
   "titlePl": "Zwój Obdarcia ze Skóry",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
     "DOS2",
+    "Efekty/Statusy/NULL_RESISTANCE",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-SPEAR-(+1)-TWO-HANDED",
   "title": "Boosted Spear (+1) Two Handed",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

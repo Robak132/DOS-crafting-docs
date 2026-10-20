@@ -2,9 +2,9 @@
   "slug": "Magia/WOOD-MUSH-(VANILLA-RECIPE)",
   "title": "Wood Mush (Vanilla Recipe)",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

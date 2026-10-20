@@ -1,10 +1,12 @@
 {
   "slug": "Specjalne/POTION_HEALING_WITCHPOTION_MASKED",
-  "title": "Potion_Healing_WitchPotion_Masked",
+  "title": "Huge Healing Potion",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/COW",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

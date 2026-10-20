@@ -2,9 +2,14 @@
   "slug": "Magia/EARTH-WAND",
   "title": "Earth Wand",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Oil",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Rozdzki",
     "Typ/Magia"
   ],
   "itemPage": true,

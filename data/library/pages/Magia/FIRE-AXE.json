@@ -2,9 +2,14 @@
   "slug": "Magia/FIRE-AXE",
   "title": "Fire Axe",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
     "DOS2-CO",
+    "Efekty/Statusy/BURNING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Topory",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -2,9 +2,20 @@
   "slug": "Bron/SHRIEKERS-SCYTHE",
   "title": "Shrieker's Scythe",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Kondycja",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Siła",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/WEAK",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory"
   ],
   "itemPage": true,
   "categoryPage": false

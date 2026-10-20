@@ -3,11 +3,11 @@
   "title": "Chicken Amulet",
   "titlePl": "Kurzy amulet",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Inicjatywa",
-    "Typ"
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

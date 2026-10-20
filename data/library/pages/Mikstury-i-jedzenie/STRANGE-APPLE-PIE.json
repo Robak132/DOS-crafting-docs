@@ -2,9 +2,15 @@
   "slug": "Mikstury-i-jedzenie/STRANGE-APPLE-PIE",
   "title": "Strange Apple Pie",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Odnawianie-PA",
+    "Cechy/Początkowe-PA",
+    "Cechy/Spryt",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

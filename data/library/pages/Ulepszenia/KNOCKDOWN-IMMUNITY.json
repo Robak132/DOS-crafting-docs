@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/KNOCKDOWN-IMMUNITY",
   "title": "Knockdown Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Immunitet-na-potrącenie",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

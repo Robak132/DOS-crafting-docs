@@ -2,9 +2,15 @@
   "slug": "Magia/SHADOW-BOW",
   "title": "Shadow Bow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/cienia",
     "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Luki",
     "Typ/Magia"
   ],
   "itemPage": true,

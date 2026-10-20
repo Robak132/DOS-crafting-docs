@@ -2,9 +2,9 @@
   "slug": "Skladniki/<CUTTING-TOOL>",
   "title": "<Cutting Tool>",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

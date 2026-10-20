@@ -1,10 +1,10 @@
 {
   "slug": "Stanowiska-i-pojemniki/MINI-CHEST-(LOCKBOX)",
-  "title": "Mini Chest (Lockbox)",
+  "title": "Lockbox",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

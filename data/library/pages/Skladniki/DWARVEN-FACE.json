@@ -2,9 +2,9 @@
   "slug": "Skladniki/DWARVEN-FACE",
   "title": "Dwarven Face",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

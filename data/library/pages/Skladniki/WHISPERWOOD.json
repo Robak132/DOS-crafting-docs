@@ -3,11 +3,13 @@
   "title": "Whisperwood",
   "titlePl": "Szeptodrzew",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
-    "DOS2",
+    "Cechy",
+    "Cechy/Pancerz-magiczny",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

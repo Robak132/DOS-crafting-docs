@@ -2,9 +2,9 @@
   "slug": "Pancerze/ARMOUR-OF-ETERNALS",
   "title": "Armour of Eternals",
   "tags": [
-    "Typ/Pancerz",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,10 @@
   "slug": "Mikstury-i-jedzenie/MINOR-INVISIBILITY-POTION",
   "title": "MINOR INVISIBILITY POTION",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/INVISIBLE",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

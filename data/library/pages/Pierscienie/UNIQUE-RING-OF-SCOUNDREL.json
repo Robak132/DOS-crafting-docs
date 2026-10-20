@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-SCOUNDREL",
   "title": "Unique Ring of Scoundrel",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Łobuz",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łobuz",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

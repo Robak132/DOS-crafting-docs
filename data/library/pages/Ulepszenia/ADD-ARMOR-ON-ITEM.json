@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-ARMOR-ON-ITEM",
   "title": "ADD ARMOR ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

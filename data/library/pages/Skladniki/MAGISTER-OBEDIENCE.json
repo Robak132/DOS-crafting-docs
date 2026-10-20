@@ -2,9 +2,9 @@
   "slug": "Skladniki/MAGISTER-OBEDIENCE",
   "title": "Magister's Obedience",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,12 @@
   "title": "Healing Potion",
   "titlePl": "Mikstura uzdrawiająca",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
-    "Cechy/Leczenie",
     "Cechy",
-    "Typ"
+    "Cechy/Leczenie",
+    "DOS2",
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

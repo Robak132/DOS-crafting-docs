@@ -2,12 +2,12 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-X-К-COMBAT-ABILITY---CONSTITUTION",
   "title": "add XX% elemental resistance / +XX% max physical armour AND add X к combat ability/Constitution",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
+    "Cechy",
     "Cechy/Kondycja",
     "Cechy/Pancerz-fizyczny",
-    "Cechy",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

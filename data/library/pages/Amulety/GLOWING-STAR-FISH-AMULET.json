@@ -3,11 +3,12 @@
   "title": "Glowing Star Fish Amulet",
   "titlePl": "Amulet ze świetlistą rozgwiazdą",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/HP",
-    "Typ"
+    "Cechy/Odporność-na-wodę",
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

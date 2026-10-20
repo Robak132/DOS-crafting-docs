@@ -141,3 +141,126 @@ test("game preview metadata supplies empty cups and named elemental weapon icons
     assert.equal(sources["dos2-overhaul"][name]?.icon, icon, name)
   }
 })
+
+test("rechecked concrete items resolve from game Stats rather than ambiguous display names", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  for (const game of ["dos2", "dos2-overhaul"] as const) {
+    for (const [name, icon] of Object.entries({
+      "Love Grenade": "Item_GRN_Love",
+      "Empty Bottle": "Item_GRN_Bottle",
+      "Water Barrel": "Item_CONT_Barrel_Water_A",
+      Shell: "Item_HAR_Shell_A",
+      Lemonade: "Item_CON_Drink_Cup_A_Orange",
+    })) {
+      const key = name.toLowerCase().replace(/[^a-z0-9]/g, "")
+      assert.equal(sources[game][key]?.icon, icon, `${game}: ${name}`)
+      assert.ok(resolveItemIcon(icons, game, { name, tags: [] }))
+    }
+  }
+  const mod = sources["dos2-overhaul"]
+  assert.equal(mod["2hwatermace"].icon, "TwoHandedMaceWater")
+  assert.equal(mod.chaostwohandedmace.icon, "TwoHandedMaceChaos")
+  assert.equal(mod.uniquerangertorso.icon, "Armor_Hunter_Upper")
+  assert.equal(mod.beardofthedivine.icon, "Item_LOOT_Hair_A")
+  assert.equal(mod.beardofthedivineskillbook.icon, "Item_BOOK_Spellbook_SkillCrafting_A")
+  assert.notEqual(icons["dos2-overhaul"].beardofthedivine, icons["dos2-overhaul"].beardofthedivineskillbook)
+  assert.equal(sources.dos1.clawedairwand.icon, "Item_WPN_Wand_B_Air")
+  assert.equal(sources.dos1.woodenfirewand.icon, "Item_WPN_Wand_A_Fire")
+})
+
+test("recipe data stores corrected game labels directly", () => {
+  const base = JSON.parse(fs.readFileSync("data/library/recipes/dos2.json", "utf8"))
+  assert.ok(base.recipes.some((row: { result: { name: string } }) => row.result.name === "Lemonade"))
+  const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
+  const names = new Set(
+    source.recipes.flatMap((row: { result: { name: string }; ingredients: { name: string }[] }) =>
+      [row.result, ...row.ingredients].map((item) => item.name),
+    ),
+  )
+  for (const name of ["Unique Ranger Torso", "Blank Air Skillbook", "Face-ripper"]) assert.ok(names.has(name), name)
+  for (const name of [
+    "Unique Ranger Armor Upperbody",
+    "Air Empty Skillbook",
+    "Cup of lemonade",
+    "Face Ripper (In case you missed it)",
+  ])
+    assert.ok(!names.has(name), name)
+})
+
+test("Cyan Dye uses the Jellyroom mushroom instead of a nonexistent Jellyfish item", () => {
+  const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
+  const cyan = source.recipes.find((row: { result: { name: string } }) => row.result.name === "Cyan Dye")
+  assert.ok(cyan)
+  const mushroom = cyan.ingredients.find((item: { name: string }) => item.name === "Jellyroom")
+  assert.ok(mushroom)
+  assert.equal(mushroom.namePl, "Meduzowiec")
+  assert.equal(mushroom.slug, "Skladniki/JELLYROOM")
+  assert.equal(resolveItemIcon(icons, "dos2-overhaul", mushroom), icons["dos2-overhaul"].jellyroom)
+  assert.ok(resolveItemIcon(icons, "dos2-overhaul", mushroom))
+  assert.ok(
+    !source.recipes.some((row: { ingredients: { name: string }[] }) =>
+      row.ingredients.some((item) => item.name === "Jellyfish"),
+    ),
+  )
+  assert.equal(fs.existsSync("data/library/pages/Skladniki/JELLYFISH.json"), false)
+})
+
+test("seasonal Frost Staff uses the mod's Winter Staff name, icon and description", () => {
+  const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
+  const recipe = source.recipes.find(
+    (row: { result: { slug: string } }) => row.result.slug === "Przedmioty-wydarzen/FROST-STAFF",
+  )
+  assert.ok(recipe)
+  assert.equal(recipe.result.name, "Winter Staff")
+  assert.ok(recipe.result.tags.includes("Typ/Bron"))
+  assert.ok(recipe.result.tags.includes("Typ/Przedmioty-wydarzen"))
+  assert.ok(resolveItemIcon(icons, "dos2-overhaul", recipe.result))
+  assert.equal(resolveItemIcon(icons, "dos2", recipe.result), undefined)
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  assert.equal(sources["dos2-overhaul"].winterstaff.icon, "Winter_Staff_Frost")
+  assert.equal(sources["dos2-overhaul"].winterstaff.stats, "WPN_Staff_Frost_Winter")
+  const descriptions = JSON.parse(fs.readFileSync("data/itemDescriptions.json", "utf8"))
+  assert.equal(
+    descriptions["dos2-overhaul"].winterstaff.en,
+    "This frost staff thrums with energy, waiting to serve your purpose.",
+  )
+  const page = JSON.parse(fs.readFileSync("data/library/pages/Przedmioty-wydarzen/FROST-STAFF.json", "utf8"))
+  assert.equal(page.title, "Winter Staff")
+})
+
+test("crafted two-handed mace has its preview icon while upgrade inputs remain selectors", () => {
+  const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
+  const result = source.recipes.find(
+    (row: { result: { slug: string } }) => row.result.slug === "Bron/TWO-HANDED-MACE",
+  )?.result
+  assert.ok(result)
+  assert.equal(result.name, "Crafted 2H Mace")
+  assert.equal(result.selectorTag, undefined)
+  assert.ok(resolveItemIcon(icons, "dos2-overhaul", result))
+  const provenance = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  assert.equal(provenance["dos2-overhaul"].crafted2hmace.icon, "Item_WPN_Human_Normal_WarHammer_B")
+  assert.equal(provenance["dos2-overhaul"].crafted2hmace.stats, "WPN_Mace_2H")
+  const groups = source.recipes
+    .flatMap((row: { ingredients: { name: string; selectorTag?: string; tags: string[] }[] }) => row.ingredients)
+    .filter((item: { selectorTag?: string }) => item.selectorTag === "TwoHandedMaces")
+  assert.ok(groups.length >= 3)
+  for (const group of groups) {
+    assert.equal(group.name, "Two Handed Mace")
+    assert.equal(resolveItemIcon(icons, "dos2-overhaul", group), undefined)
+  }
+})
+
+test("Wand of Source retains its valid generated name and resolves the dragon-wand template", () => {
+  const sources = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
+  assert.equal(sources["dos2-overhaul"].wandofsource.stats, "WPN_CorpseHarvester_40_DragonWand")
+  assert.equal(sources["dos2-overhaul"].wandofsource.template, "a7ae2513-4fa5-4013-a78d-9a5f2d3e465b")
+  assert.equal(sources["dos2-overhaul"].wandofsource.icon, "Item_WPN_Humans_Wand_1H_A")
+  const item = { name: "Wand of Source", tags: [] }
+  assert.ok(resolveItemIcon(icons, "dos2-overhaul", item))
+  assert.equal(resolveItemIcon(icons, "dos2", item), undefined)
+  const descriptions = JSON.parse(fs.readFileSync("data/itemDescriptions.json", "utf8"))
+  assert.ok(descriptions["dos2-overhaul"].wandofsource.en.includes("It has source in it."))
+  const effects = JSON.parse(fs.readFileSync("data/itemEffects.json", "utf8"))["dos2-overhaul"].wandofsource
+  for (const effect of ["-1 Finesse", "+1 Memory", "+1 Single-Handed", "+1 Dual Wielding", "Creates a Source surface"])
+    assert.ok(effects.en.includes(effect), effect)
+})

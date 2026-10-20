@@ -2,11 +2,21 @@
   "slug": "Pancerze/UNIQUE-AEROTHEURGE-ARMOR-HELMET",
   "title": "Unique Aerotheruge Helmet",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Aeroteurgia",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Inteligencja",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Perswazja",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

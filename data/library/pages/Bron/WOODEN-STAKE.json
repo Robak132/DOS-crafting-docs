@@ -3,9 +3,12 @@
   "title": "Wooden Stake",
   "titlePl": "Drewniany kołek",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Sztylety"
   ],
   "itemPage": true,
   "categoryPage": false

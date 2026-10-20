@@ -3,9 +3,12 @@
   "title": "Glass of Wine",
   "titlePl": "Kielich wina",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/DRUNK",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

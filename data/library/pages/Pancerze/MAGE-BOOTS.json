@@ -3,9 +3,9 @@
   "title": "Mage Boots",
   "titlePl": "Buty maga",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

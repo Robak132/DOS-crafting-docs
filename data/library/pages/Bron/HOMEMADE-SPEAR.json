@@ -2,9 +2,12 @@
   "slug": "Bron/HOMEMADE-SPEAR",
   "title": "Homemade Spear",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Wlocznie"
   ],
   "itemPage": true,
   "categoryPage": false,

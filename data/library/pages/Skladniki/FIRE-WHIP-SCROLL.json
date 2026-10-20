@@ -3,10 +3,16 @@
   "title": "Fire Whip Scroll",
   "titlePl": "Zwój Ognistego Bicza",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2",
+    "Efekty/Statusy/BLIND",
+    "Efekty/Statusy/BURNING",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

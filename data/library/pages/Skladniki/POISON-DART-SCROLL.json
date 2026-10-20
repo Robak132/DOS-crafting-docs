@@ -3,10 +3,16 @@
   "title": "Poison Dart Scroll",
   "titlePl": "Zwój Zatrutej Rzutki",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
     "DOS2",
+    "Efekty/Powierzchnie/Poison",
+    "Efekty/Statusy/POISONED",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

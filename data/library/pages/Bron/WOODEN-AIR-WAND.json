@@ -2,9 +2,16 @@
   "slug": "Bron/WOODEN-AIR-WAND",
   "title": "WOODEN AIR WAND",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/BLIND",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki"
   ],
   "itemPage": true,
   "categoryPage": false

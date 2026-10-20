@@ -3,9 +3,9 @@
   "title": "Magic claw",
   "titlePl": "Magiczny szpon",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

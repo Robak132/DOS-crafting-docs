@@ -3,10 +3,13 @@
   "title": "Raining Blood Scroll",
   "titlePl": "Zwój Deszczu Krwi",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "Efekty/Statusy/BLEEDING",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

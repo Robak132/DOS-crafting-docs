@@ -1,10 +1,19 @@
 {
   "slug": "Pancerze/FANCY-MASK",
-  "title": "Fancy Mask",
+  "title": "Mythical Mask",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Znawca",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

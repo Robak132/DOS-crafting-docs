@@ -2,7 +2,7 @@ import type { RefObject } from "preact"
 import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "preact/hooks"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { buildTooltipIndex } from "../domain/tooltipIndex"
-import { itemIconKey } from "../domain/itemIcons"
+import { itemDataKey } from "../domain/itemIcons"
 import { tooltipPosition } from "../domain/tooltipPosition"
 import { useJson } from "../api"
 import { ItemTooltip, type ItemDescription } from "./ItemTooltip"
@@ -155,7 +155,7 @@ export function TooltipLayer({
       item={active.item}
       recipes={active.recipes}
       lang={lang}
-      description={descriptions.data?.[itemIconKey(active.item.name)]}
+      description={descriptions.data?.[itemDataKey(active.item)]}
     />
   ) : null
 }

@@ -3,12 +3,12 @@
   "title": "Large Intelligence Potion",
   "titlePl": "Duża mikstura Inteligencji",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
     "DOS1",
     "DOS2-CO",
-    "Cechy/Inteligencja",
-    "Cechy",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

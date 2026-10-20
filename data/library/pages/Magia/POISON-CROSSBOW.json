@@ -2,9 +2,16 @@
   "slug": "Magia/POISON-CROSSBOW",
   "title": "Poison Crossbow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Poison",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Magia"
   ],
   "itemPage": true,

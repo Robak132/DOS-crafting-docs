@@ -2,9 +2,9 @@
   "slug": "Skladniki/WOOD-CHIPS,-SHARP-ROCK",
   "title": "Wood Chips, Sharp Rock",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

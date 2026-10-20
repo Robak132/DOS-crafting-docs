@@ -2,9 +2,9 @@
   "slug": "Skladniki/FLESH-GOLEM-CORPSE",
   "title": "Flesh Golem Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,13 @@
   "title": "Fancy Feather Belt",
   "titlePl": "Pas z fantazyjnym piórem",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/HP",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Cechy/Zręczność",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

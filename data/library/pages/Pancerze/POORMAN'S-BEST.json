@@ -3,11 +3,14 @@
   "title": "Poorman's Best",
   "titlePl": "Pancerz dla biedaków",
   "tags": [
-    "Typ/Pancerz",
-    "DOS1",
     "Cechy",
     "Cechy/Inicjatywa",
-    "Typ"
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pancerz-fizyczny",
+    "DOS1",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

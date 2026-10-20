@@ -160,6 +160,16 @@ Skrypt eksportu wymaga lokalnego Pythona z Pillow. Odczytuje katalog wygenerowan
 w `.generated/build/data`, zapisuje tylko używane ikony i usuwa nieużywane pliki
 WebP z `assets/item-icons/`.
 
+Aktualny raport brakujących ikon można odtworzyć bez plików gry:
+
+```sh
+npm run generate:data
+python3 scripts/audit-item-icons.py
+```
+
+Raport `reports/item-icon-coverage.json` pomija rozpoznane grupy i opisy ulepszeń,
+a dla pozostałych braków zapisuje użycie jako produkt lub składnik.
+
 ## Podgląd przedmiotu
 
 Po najechaniu lub ustawieniu fokusu na przedmiocie podgląd pokazuje nazwę
@@ -206,3 +216,63 @@ Kategorie craftingu pochodzące z gry są zapisane w polu `craftingCategories`
 przedmiotów w źródłowych JSON-ach receptur. Przy odświeżaniu zasobów można je
 odtworzyć poleceniem `python3 scripts/export-item-categories.py /sciezka/do/wyodrebnionych-zasobow`.
 GitHub Actions korzysta z zapisanych danych i nie wymaga plików gry ani Pythona.
+
+
+## Efekty przedmiotów z plików gry
+
+`data/itemEffects.json` zawiera efekty PL/EN wyodrębnione ze Stats i akcji użycia
+przedmiotów. Generator dołącza je do katalogów, więc tooltip nie wykonuje dodatkowych
+zapytań ani parsowania danych gry. Istniejące efekty receptur zachowują pierwszeństwo.
+Efekty różnych wariantów o tej samej nazwie (np. zatrute mikstury udające lecznicze)
+są przypisywane do potwierdzonych receptur osobno.
+
+Eksport lokalny, po przygotowaniu zasobów opisanych w sekcji ikon:
+
+```sh
+npm run generate:data
+python3 scripts/export-item-effects.py
+npm run build
+```
+
+Raport `reports/item-effects-audit.json` obejmuje wszystkie przedmioty bez efektów,
+pomijając rozpoznane grupy i opisy ulepszeń. Rozróżnia efekty uzupełnione, dopasowania
+niejednoznaczne, nierozpoznane tożsamości i definicje bez obsługiwanego efektu.
+Współczynniki skalowania nie są prezentowane jako końcowe wartości leczenia,
+obrażeń lub pancerza. Eksport nie jest częścią buildu ani GitHub Actions.
+
+
+## Tagi wyposażenia i efektów
+
+Tagi `Typ/Bron/*` są dziećmi „Broń”, a `Typ/Pancerz/*` — „Pancerze”.
+Podtypy wynikają ze slotu i rodzaju broni w danych gry; kategorie craftingowe
+uzupełniają wpisy, dla których nie ma jednoznacznego szablonu. Biżuteria zachowuje
+osobne kategorie. Filtr rodzica obejmuje wszystkie jego podtypy.
+
+Tagi właściwości są wyprowadzane ze zweryfikowanych parametrów i akcji użycia,
+a nie z podobieństwa nazwy przedmiotu. Tag cechy oznacza, że przedmiot wpływa na
+nią; wartość i znak bonusu są podane w efekcie. Nakładane statusy, niewrażliwości,
+odporności oraz tworzone powierzchnie mają oddzielne tagi. Dla różnych przedmiotów
+o tej samej nazwie wynik receptury otrzymuje właściwe tagi, a ogólny składnik —
+jedynie właściwości wspólne wszystkim potwierdzonym wariantom.
+
+Odświeżenie zapisanych tagów po aktualizacji zasobów gry:
+
+```sh
+npm run generate:data
+python3 scripts/export-item-effects.py
+python3 scripts/refresh-item-tags.py
+npm run build
+```
+
+Zmiany źródłowych tagów opisuje `reports/effect-tags-audit.json`.
+
+
+Etykiety zależne od gry znajdują się w `data/tagLocalisation.json`. Są parowane
+z oryginalnymi tekstami EN i PL przez `contentuid`, z zachowaniem odrębności
+DOS1 EE i DOS2 DE. Crafting Overhaul korzysta z lokalizacji DOS2 DE. Brak
+potwierdzonego polskiego tłumaczenia oznacza nazwę angielską. Źródłowe identyfikatory
+par oraz nierozstrzygnięte tłumaczenia zapisuje `reports/tag-localisation-audit.json`.
+
+```sh
+python3 scripts/export-tag-localisation.py
+```

@@ -1,10 +1,21 @@
 {
   "slug": "Skladniki/BEAK-TALON",
-  "title": "Beak Talon",
+  "title": "Beak Talon of Roost",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Perswazja",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

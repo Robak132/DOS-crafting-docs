@@ -28,6 +28,13 @@ function validItem(item: RecipeItem): boolean {
     item.name.trim() &&
     strings(item.tags) &&
     (item.craftingCategories === undefined || strings(item.craftingCategories)) &&
+    (item.statsId === undefined || (typeof item.statsId === "string" && item.statsId.trim().length > 0)) &&
+    (item.nameQualifier === undefined ||
+      (item.nameQualifier !== null &&
+        typeof item.nameQualifier.en === "string" &&
+        item.nameQualifier.en.trim().length > 0 &&
+        (item.nameQualifier.pl === undefined ||
+          (typeof item.nameQualifier.pl === "string" && item.nameQualifier.pl.trim().length > 0)))) &&
     (item.slug === undefined || typeof item.slug === "string") &&
     (item.namePl === undefined || typeof item.namePl === "string") &&
     (item.quantity === undefined || typeof item.quantity === "string") &&

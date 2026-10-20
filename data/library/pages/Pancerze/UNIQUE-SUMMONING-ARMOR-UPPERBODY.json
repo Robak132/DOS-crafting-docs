@@ -2,11 +2,12 @@
   "slug": "Pancerze/UNIQUE-SUMMONING-ARMOR-UPPERBODY",
   "title": "Unique Summoning Armor Upperbody",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Przyzywanie",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

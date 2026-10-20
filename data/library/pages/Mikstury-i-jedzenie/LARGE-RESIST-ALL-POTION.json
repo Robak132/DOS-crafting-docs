@@ -3,13 +3,17 @@
   "title": "Large Resist All Potion",
   "titlePl": "Duża mikstura wszelkiej odporności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Odporność-na-ziemię",
     "DOS1",
     "DOS2",
-    "Cechy",
-    "Cechy/Odporność-na-wszystko",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,12 @@
   "title": "Puffball",
   "titlePl": "Purchawka",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Spryt",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

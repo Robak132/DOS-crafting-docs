@@ -3,10 +3,15 @@
   "title": "Flaming Crescendo Scroll",
   "titlePl": "Zwój Płomiennego Finału",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2",
+    "Efekty/Statusy/FLAMING_CRESCENDO",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

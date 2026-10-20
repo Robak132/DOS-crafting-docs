@@ -3,9 +3,12 @@
   "title": "Handmade Cloth Shirt",
   "titlePl": "Ręcznie wykonana płócienna koszula",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

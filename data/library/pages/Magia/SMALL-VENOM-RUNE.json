@@ -3,9 +3,14 @@
   "title": "Small Venom Rune",
   "titlePl": "Mała runa jadu",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
+    "Cechy/Odporność-na-truciznę",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,14 @@
   "slug": "Mikstury-i-jedzenie/HUNTER'S-BIGOS",
   "title": "Hunter's Bigos",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Inicjatywa",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Unik",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

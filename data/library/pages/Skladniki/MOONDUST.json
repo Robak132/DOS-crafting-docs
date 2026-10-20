@@ -3,9 +3,9 @@
   "title": "Moondust",
   "titlePl": "Księżycowy pył",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,10 +2,10 @@
   "slug": "Przedmioty-wydarzen/DJINN-PANTS",
   "title": "Djinn Pants",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
     "Typ",
-    "Typ/Pancerz"
+    "Typ/Pancerz",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

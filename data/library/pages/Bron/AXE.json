@@ -3,9 +3,10 @@
   "title": "Axe",
   "titlePl": "Topór",
   "tags": [
-    "Typ/Bron",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory"
   ],
   "itemPage": true,
   "categoryPage": false

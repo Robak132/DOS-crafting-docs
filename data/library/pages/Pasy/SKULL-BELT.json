@@ -3,11 +3,12 @@
   "title": "Skull Belt",
   "titlePl": "Pas z czaszką",
   "tags": [
-    "Typ/Pasy",
-    "DOS1",
     "Cechy",
     "Cechy/Inteligencja",
-    "Typ"
+    "Cechy/Pancerz-fizyczny",
+    "DOS1",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

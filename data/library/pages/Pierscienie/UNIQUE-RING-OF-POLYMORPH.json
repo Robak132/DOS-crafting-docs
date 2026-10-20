@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-POLYMORPH",
   "title": "Unique Ring of Polymorph",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Polimorfia",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

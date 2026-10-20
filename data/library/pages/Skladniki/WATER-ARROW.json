@@ -3,11 +3,15 @@
   "title": "Water Arrow",
   "titlePl": "Strzała wodna",
   "tags": [
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
+    "Efekty/Statusy/WET",
     "Typ",
-    "Typ/Strzaly-i-granaty",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

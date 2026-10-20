@@ -2,9 +2,9 @@
   "slug": "Mikstury-i-jedzenie/ALL-STATS-POTION-(MIN,-MEDIUM,-LARGE)",
   "title": "All Stats Potion (Min, Medium, Large)",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

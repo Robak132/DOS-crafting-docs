@@ -2,9 +2,9 @@
   "slug": "Skladniki/FROG-CORPSE",
   "title": "Frog Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

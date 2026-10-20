@@ -2,9 +2,9 @@
   "slug": "Specjalne/HERBMIX_ALERTNESS_POTENT",
   "title": "Potent Alertness Herbmix",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

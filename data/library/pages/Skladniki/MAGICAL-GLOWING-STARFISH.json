@@ -3,9 +3,9 @@
   "title": "Magical Glowing Starfish",
   "titlePl": "Magiczna świetlista rozgwiazda",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

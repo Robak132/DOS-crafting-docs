@@ -2,9 +2,16 @@
   "slug": "Magia/WATER-CROSSBOW",
   "title": "Water Crossbow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
+    "Efekty/Statusy/WET",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Magia"
   ],
   "itemPage": true,

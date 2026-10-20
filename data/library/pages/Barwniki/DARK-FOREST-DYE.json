@@ -2,9 +2,10 @@
   "slug": "Barwniki/DARK-FOREST-DYE",
   "title": "Dark Forest Dye",
   "tags": [
-    "Typ/Barwniki",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Barwniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,11 @@
   "title": "Fancy Feather Amulet",
   "titlePl": "Amulet z fantazyjnym piórem",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Telekineza",
     "DOS1",
-    "Cechy/Zręczność",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

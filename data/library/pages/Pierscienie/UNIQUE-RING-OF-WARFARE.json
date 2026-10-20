@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-WARFARE",
   "title": "Unique Ring of Warfare",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Wojna",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Wojna",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

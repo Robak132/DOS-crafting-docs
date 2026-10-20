@@ -53,3 +53,10 @@ test("browser back to an explicit unfiltered view does not restore the previous 
     else Reflect.deleteProperty(globalThis, "sessionStorage")
   }
 })
+
+test("tags are selected through filters, never through hashtag query syntax", () => {
+  const tagged = { ...recipe, result: { ...recipe.result, tags: ["Typ/Skladniki"] } }
+  assert.equal(filterRecipes([tagged], { ...emptyFilters(), include: ["Typ/Skladniki"] }, {}).length, 1)
+  for (const scope of ["result", "ingredient"] as const)
+    assert.equal(filterRecipes([tagged], { ...emptyFilters(), query: "#Typ/Skladniki", scope }, {}).length, 0)
+})

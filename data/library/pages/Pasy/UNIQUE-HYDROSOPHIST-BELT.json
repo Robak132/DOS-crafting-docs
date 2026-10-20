@@ -2,11 +2,17 @@
   "slug": "Pasy/UNIQUE-HYDROSOPHIST-BELT",
   "title": "Unique Hydrosophist Belt",
   "tags": [
-    "Typ/Pasy",
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
-    "Typ"
+    "Cechy/Inteligencja",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Telekineza",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "Cechy/Znawca",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

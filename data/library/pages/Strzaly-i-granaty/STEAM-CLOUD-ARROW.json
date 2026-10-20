@@ -2,10 +2,14 @@
   "slug": "Strzaly-i-granaty/STEAM-CLOUD-ARROW",
   "title": "STEAM CLOUD ARROW",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/BLIND",
+    "Efekty/Statusy/WET",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

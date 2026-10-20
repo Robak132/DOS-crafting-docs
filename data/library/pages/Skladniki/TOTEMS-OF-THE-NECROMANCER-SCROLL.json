@@ -3,12 +3,12 @@
   "title": "Totems of the Necromancer Scroll",
   "titlePl": "Zwój Totemów Nekromanty",
   "tags": [
-    "DOS2",
-    "Cechy/Nekromancja",
     "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "DOS2",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

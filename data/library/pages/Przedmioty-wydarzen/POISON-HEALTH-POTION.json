@@ -2,10 +2,10 @@
   "slug": "Przedmioty-wydarzen/POISON-HEALTH-POTION",
   "title": "Poison/Health Potion",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

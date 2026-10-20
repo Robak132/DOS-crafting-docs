@@ -2,9 +2,9 @@
   "slug": "Skladniki/SHARP-PIECE-OF-METAL-(SIMPLE-RECIPE)",
   "title": "Sharp Piece of Metal (Simple Recipe)",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

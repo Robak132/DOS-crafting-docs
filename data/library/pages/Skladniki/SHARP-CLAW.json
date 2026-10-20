@@ -3,10 +3,10 @@
   "title": "Sharp Claw",
   "titlePl": "Ostry pazur",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,13 @@
   "slug": "Mikstury-i-jedzenie/VEGETABLE-SOUP",
   "title": "Vegetable Soup",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Spryt",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

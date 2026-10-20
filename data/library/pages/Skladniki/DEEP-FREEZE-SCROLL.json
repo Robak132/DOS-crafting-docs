@@ -3,10 +3,15 @@
   "title": "Deep Freeze Scroll",
   "titlePl": "Zwój Głębokiego Zmrożenia",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
     "DOS2",
+    "Efekty/Statusy/FROZEN",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

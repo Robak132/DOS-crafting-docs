@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/FEAR-IMMUNITY",
   "title": "Fear Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-strach",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-strach",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

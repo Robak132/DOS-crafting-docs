@@ -3,9 +3,9 @@
   "title": "Magic Ink Pot and Quill",
   "titlePl": "Magiczny kałamarz i pióro",
   "tags": [
-    "Typ/Wyposazenie",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,13 @@
   "title": "Decaying Touch Scroll",
   "titlePl": "Zwój Dotyku Rozkładu",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "Efekty/Statusy/DECAYING_TOUCH",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

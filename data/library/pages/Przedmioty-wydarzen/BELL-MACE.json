@@ -2,10 +2,19 @@
   "slug": "Przedmioty-wydarzen/BELL-MACE",
   "title": "Bell Mace",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Znawca",
     "DOS2-CO",
+    "Efekty/Statusy/DAZED",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Bulawy",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

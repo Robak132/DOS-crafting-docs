@@ -3,11 +3,11 @@
   "title": "Totems of the Necromancer Skillbook",
   "titlePl": "Księga umiejętności „Totemy Nekromanty”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
-    "DOS2",
-    "Cechy/Nekromancja",
     "Cechy",
-    "Typ"
+    "Cechy/Uczy-umiejetnosci",
+    "DOS2",
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

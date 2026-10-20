@@ -2,9 +2,9 @@
   "slug": "Skladniki/METAL-SCRAPS,-SCALE-SCRAPS",
   "title": "Metal Scraps, Scale Scraps",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

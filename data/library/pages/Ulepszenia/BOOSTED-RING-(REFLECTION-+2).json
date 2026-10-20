@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-RING-(REFLECTION-+2)",
   "title": "Boosted Ring (Reflection +2)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Odbicie",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Odbicie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,20 @@
   "slug": "Mikstury-i-jedzenie/WIZARD'S-CHEESE-RAVIOLI-WITH-BASIL",
   "title": "Wizard's Cheese Ravioli with Basil",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "Cechy/Umiejetnosci/Geomancja",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

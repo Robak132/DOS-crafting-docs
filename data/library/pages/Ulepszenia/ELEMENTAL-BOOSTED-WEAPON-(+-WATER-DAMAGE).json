@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-WATER-DAMAGE)",
   "title": "Elemental Boosted Weapon (+ Water Damage)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Obrażenia-wody",
-    "Typ"
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM",
   "title": "ADD WATER RESIST ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

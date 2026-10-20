@@ -2,9 +2,9 @@
   "slug": "Skladniki/RABBIT-CORPSE",
   "title": "Rabbit Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

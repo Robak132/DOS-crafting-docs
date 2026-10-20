@@ -2,9 +2,10 @@
   "slug": "Mikstury-i-jedzenie/MEDIUM-POISON-POTION",
   "title": "Medium Poison Potion",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

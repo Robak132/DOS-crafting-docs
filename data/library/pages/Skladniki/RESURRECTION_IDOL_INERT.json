@@ -2,9 +2,9 @@
   "slug": "Skladniki/RESURRECTION_IDOL_INERT",
   "title": "Ashen Idol of Rebirth",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

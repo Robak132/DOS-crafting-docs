@@ -2,11 +2,13 @@
   "slug": "Magia/CHAOS-TWO-HANDED-MACE",
   "title": "Chaos Two Handed Mace",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Statusy/SUFFOCATING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Bulawy",
     "Typ/Magia"
   ],
   "itemPage": true,

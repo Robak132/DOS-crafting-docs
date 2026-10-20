@@ -2,9 +2,11 @@
   "slug": "Skladniki/CORPSE-HARVESTER",
   "title": "Corpse Harvester",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

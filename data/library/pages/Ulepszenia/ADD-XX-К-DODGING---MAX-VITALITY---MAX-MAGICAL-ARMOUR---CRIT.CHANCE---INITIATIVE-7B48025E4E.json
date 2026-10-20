@@ -2,18 +2,18 @@
   "slug": "Ulepszenia/ADD-XX-К-DODGING---MAX-VITALITY---MAX-MAGICAL-ARMOUR---CRIT.CHANCE---INITIATIVE-7B48025E4E",
   "title": "add XX к Dodging/Max Vitality/max magical armour/Crit.chance/Initiative/Accuracy AND add Y Finesse/Strength/Intelligence",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
+    "Cechy",
     "Cechy/HP",
     "Cechy/Inicjatywa",
-    "Cechy/Krytyk",
-    "Cechy/Unik",
-    "Cechy/Pancerz-magiczny",
-    "Cechy",
     "Cechy/Inteligencja",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-magiczny",
     "Cechy/Siła",
+    "Cechy/Unik",
     "Cechy/Zwinność",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

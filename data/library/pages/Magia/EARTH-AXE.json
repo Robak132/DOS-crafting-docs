@@ -2,9 +2,14 @@
   "slug": "Magia/EARTH-AXE",
   "title": "Earth Axe",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
     "DOS2-CO",
+    "Efekty/Statusy/PETRIFIED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Topory",
     "Typ/Magia"
   ],
   "itemPage": true,

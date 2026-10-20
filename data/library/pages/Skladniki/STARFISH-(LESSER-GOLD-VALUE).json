@@ -3,9 +3,9 @@
   "title": "Starfish (Lesser Gold Value)",
   "titlePl": "Rozgwiazda (mniejsza wartość)",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

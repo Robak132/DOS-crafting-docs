@@ -3,11 +3,9 @@
   "title": "Lucky Rabbit Paw Amulet",
   "titlePl": "Szczęśliwy amulet z króliczą łapką",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy",
-    "Cechy/Szybkość",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

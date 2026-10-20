@@ -2,9 +2,11 @@
   "slug": "Strzaly-i-granaty/TASER-GRENADE",
   "title": "Taser Grenade",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ/Strzaly-i-granaty",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

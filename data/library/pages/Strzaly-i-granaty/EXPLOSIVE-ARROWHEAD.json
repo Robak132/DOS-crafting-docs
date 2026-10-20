@@ -3,10 +3,10 @@
   "title": "Explosive Arrowhead",
   "titlePl": "Wybuchowy grot",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/NOVICE-AIR-SKILL-BOOK",
   "title": "NOVICE AIR SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

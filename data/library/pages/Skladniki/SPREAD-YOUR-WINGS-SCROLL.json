@@ -3,10 +3,15 @@
   "title": "Spread Your Wings Scroll",
   "titlePl": "Zwój Rozwinięcia Skrzydeł",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
     "DOS2",
+    "Efekty/Statusy/WINGS",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

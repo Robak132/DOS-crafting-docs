@@ -2,9 +2,11 @@
   "slug": "Pierscienie/EMPTY-RING",
   "title": "Empty Ring",
   "tags": [
-    "Typ/Pierscienie",
+    "Cechy",
+    "Cechy/Pancerz-magiczny",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

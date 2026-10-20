@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BLEEDING-IMMUNITY",
   "title": "Bleeding Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-krwawienie",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-krwawienie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

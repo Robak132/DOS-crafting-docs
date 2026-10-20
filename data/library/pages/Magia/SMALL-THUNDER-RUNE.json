@@ -3,9 +3,14 @@
   "title": "Small Thunder Rune",
   "titlePl": "Mała runa grzmotu",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Unik",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

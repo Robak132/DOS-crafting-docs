@@ -2,9 +2,9 @@
   "slug": "Strzaly-i-granaty/POISON-CLOUD-ARROWHEAD",
   "title": "Poison Cloud Arrowhead",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,13 @@
   "title": "Tusk Belt",
   "titlePl": "Pas z kłem",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Krzepa",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

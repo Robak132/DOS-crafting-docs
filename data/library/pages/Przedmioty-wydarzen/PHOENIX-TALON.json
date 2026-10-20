@@ -2,10 +2,16 @@
   "slug": "Przedmioty-wydarzen/PHOENIX-TALON",
   "title": "Phoenix Talon",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Unik",
     "DOS2-CO",
     "Typ",
-    "Typ/Amulety"
+    "Typ/Amulety",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/POISONED-WEAPON",
   "title": "Poisoned weapon",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
     "Cechy",
-    "Cechy/Obrażenia-trucizny",
-    "Typ"
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

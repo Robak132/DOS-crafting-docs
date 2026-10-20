@@ -6,7 +6,7 @@ import {
   type RecipeCatalog,
   type RecipeRow,
 } from "./recipes"
-import { itemNameKeys } from "./recipeView"
+import { itemNameKeys, recipeUsesItem } from "./recipeView"
 
 export const OVERHAUL_SLUG = "dos2-crafting-overhaul"
 export const DOS2_SLUG = "DOS2"
@@ -97,5 +97,7 @@ export function recipesUsingItem(data: RecipeData, slug: string, names: Set<stri
   for (const name of names) {
     for (const recipe of index.byName.get(name) ?? []) matches.add(recipe)
   }
-  return [...matches].sort((a, b) => index!.order.get(a)! - index!.order.get(b)!)
+  return [...matches]
+    .filter((recipe) => recipeUsesItem(recipe, slug, names))
+    .sort((a, b) => index!.order.get(a)! - index!.order.get(b)!)
 }

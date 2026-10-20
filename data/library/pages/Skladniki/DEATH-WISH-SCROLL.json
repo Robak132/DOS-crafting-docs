@@ -3,10 +3,13 @@
   "title": "Death Wish Scroll",
   "titlePl": "Zwój Życzenia Śmierci",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "Efekty/Statusy/DEATH_WISH",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

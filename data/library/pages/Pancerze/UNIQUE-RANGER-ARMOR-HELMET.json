@@ -2,9 +2,23 @@
   "slug": "Pancerze/UNIQUE-RANGER-ARMOR-HELMET",
   "title": "Unique Ranger Helmet",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Krytyk",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Perswazja",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łowiectwo",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy"
   ],
   "itemPage": true,
   "categoryPage": false

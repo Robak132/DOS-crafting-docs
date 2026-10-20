@@ -2,12 +2,20 @@
   "slug": "Pancerze/UNIQUE-HYDROSOPHIST-CAPE",
   "title": "Unique Hydrosophist Cape",
   "tags": [
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

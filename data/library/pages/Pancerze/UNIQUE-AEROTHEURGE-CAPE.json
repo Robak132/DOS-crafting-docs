@@ -2,11 +2,20 @@
   "slug": "Pancerze/UNIQUE-AEROTHEURGE-CAPE",
   "title": "Unique Aerotheurge Cape",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Aeroteurgia",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

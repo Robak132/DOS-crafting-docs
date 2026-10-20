@@ -3,12 +3,12 @@
   "title": "Medium Intelligence Potion",
   "titlePl": "Średnia mikstura Inteligencji",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
     "Cechy/Inteligencja",
     "DOS1",
     "DOS2-CO",
-    "Cechy",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

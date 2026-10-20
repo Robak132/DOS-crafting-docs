@@ -3,10 +3,16 @@
   "title": "Impalement Scroll",
   "titlePl": "Zwój Nadziania",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
     "DOS2",
+    "Efekty/Powierzchnie/Oil",
+    "Efekty/Statusy/CRIPPLED",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

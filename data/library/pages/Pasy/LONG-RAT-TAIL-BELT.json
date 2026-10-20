@@ -3,11 +3,12 @@
   "title": "Long Rat Tail Belt",
   "titlePl": "Pas z długim szczurzym ogonem",
   "tags": [
-    "Typ/Pasy",
-    "DOS1",
     "Cechy",
     "Cechy/Odporność-na-truciznę",
-    "Typ"
+    "Cechy/Pancerz-fizyczny",
+    "DOS1",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

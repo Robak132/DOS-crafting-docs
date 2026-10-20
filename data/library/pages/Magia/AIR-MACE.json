@@ -2,9 +2,14 @@
   "slug": "Magia/AIR-MACE",
   "title": "Air Mace",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
     "DOS2-CO",
+    "Efekty/Statusy/SHOCKED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Bulawy",
     "Typ/Magia"
   ],
   "itemPage": true,

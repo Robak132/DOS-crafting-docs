@@ -2,9 +2,12 @@
   "slug": "Pancerze/SUPERIOR-LEATHER-BOOTS",
   "title": "Superior Leather Boots",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false,

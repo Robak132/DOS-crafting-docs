@@ -2,18 +2,18 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE-AND-ADD-Y-FINESSE-STRENGTH-INTELLIGENCE",
   "title": "add XX% element damage AND add Y Finesse/Strength/Intelligence",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
-    "Cechy/Inteligencja",
     "Cechy",
     "Cechy/HP",
     "Cechy/Inicjatywa",
+    "Cechy/Inteligencja",
     "Cechy/Krytyk",
     "Cechy/Pancerz-magiczny",
     "Cechy/Siła",
     "Cechy/Unik",
     "Cechy/Zwinność",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

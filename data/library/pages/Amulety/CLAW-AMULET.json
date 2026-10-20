@@ -3,9 +3,11 @@
   "title": "Claw Amulet",
   "titlePl": "Amulet ze szponem",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Siła",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,8 +3,12 @@
   "title": "Raw Red Meat",
   "titlePl": "Surowe czerwone mięso",
   "tags": [
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Leczenie",
     "DOS2",
+    "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"

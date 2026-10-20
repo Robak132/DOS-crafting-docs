@@ -2,9 +2,9 @@
   "slug": "Skladniki/WOOD-CHIPS-AND-SHORT-STICK",
   "title": "Wood Chips and Short Stick",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,10 +2,10 @@
   "slug": "Pancerze/METAL-BOOTS",
   "title": "Metal Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
     "DOS1",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

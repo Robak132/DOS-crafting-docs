@@ -3,11 +3,11 @@
   "title": "Huge Air Resistance Potion",
   "titlePl": "Wielka mikstura odporności na powietrze",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
     "Cechy",
     "Cechy/Odporność-na-powietrze",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

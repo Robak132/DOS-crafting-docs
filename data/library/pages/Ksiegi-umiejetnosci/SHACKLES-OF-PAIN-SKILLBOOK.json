@@ -3,9 +3,11 @@
   "title": "Shackles of Pain Skillbook",
   "titlePl": "Księga umiejętności „Okowy Bólu”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

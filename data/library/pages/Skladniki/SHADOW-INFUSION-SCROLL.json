@@ -3,10 +3,15 @@
   "title": "Shadow Infusion Scroll",
   "titlePl": "Zwój Podsycenia Cienia",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
     "DOS2",
+    "Efekty/Statusy/INF_SHADOW",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

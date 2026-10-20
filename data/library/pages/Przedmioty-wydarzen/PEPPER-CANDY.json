@@ -2,10 +2,13 @@
   "slug": "Przedmioty-wydarzen/PEPPER-CANDY",
   "title": "Pepper Candy",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
+    "Efekty/Statusy/BURNING",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

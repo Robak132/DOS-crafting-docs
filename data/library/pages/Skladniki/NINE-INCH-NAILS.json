@@ -3,9 +3,9 @@
   "title": "Nine Inch Nails",
   "titlePl": "Dziewięciocalowe gwoździe",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

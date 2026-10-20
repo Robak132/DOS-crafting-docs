@@ -1,12 +1,14 @@
 {
   "slug": "Pancerze/UNIQUE-PYROKINETIC-ARMOR-LOWERBODY",
-  "title": "Unique Pyrokinetic Armor Lowerbody",
+  "title": "Unique Pyromancer Pants",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Celność",
+    "Cechy/Pancerz-magiczny",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Spodnie"
   ],
   "itemPage": true,
   "categoryPage": false

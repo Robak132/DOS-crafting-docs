@@ -3,9 +3,11 @@
   "title": "High Quality Augmentor",
   "titlePl": "Ulepszacz wysokiej jakości",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Siła",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

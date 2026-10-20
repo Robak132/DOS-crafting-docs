@@ -3,10 +3,13 @@
   "title": "Dinner",
   "titlePl": "Obiad",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Siła",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

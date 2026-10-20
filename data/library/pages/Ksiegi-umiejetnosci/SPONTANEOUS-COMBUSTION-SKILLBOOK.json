@@ -3,9 +3,13 @@
   "title": "Spontaneous Combustion Skillbook",
   "titlePl": "Księga umiejętności „Samozapłon”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

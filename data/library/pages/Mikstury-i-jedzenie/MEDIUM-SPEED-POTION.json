@@ -2,12 +2,12 @@
   "slug": "Mikstury-i-jedzenie/MEDIUM-SPEED-POTION",
   "title": "Medium Speed Potion",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS1",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Szybkość",
-    "Typ"
+    "DOS1",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

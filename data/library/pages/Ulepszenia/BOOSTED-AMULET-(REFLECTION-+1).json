@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-AMULET-(REFLECTION-+1)",
   "title": "Boosted Amulet (Reflection +1)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Odbicie",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Odbicie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

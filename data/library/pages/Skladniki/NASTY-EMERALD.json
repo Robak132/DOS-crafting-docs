@@ -2,9 +2,9 @@
   "slug": "Skladniki/NASTY-EMERALD",
   "title": "Nasty Emerald",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

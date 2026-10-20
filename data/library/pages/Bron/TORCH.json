@@ -3,9 +3,12 @@
   "title": "Torch",
   "titlePl": "Pochodnia",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy"
   ],
   "itemPage": true,
   "categoryPage": false

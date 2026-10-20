@@ -3,9 +3,9 @@
   "title": "Wood",
   "titlePl": "Drewno",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

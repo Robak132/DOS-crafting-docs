@@ -2,9 +2,9 @@
   "slug": "Skladniki/WEAPON-(EXCEPT-OF-WANDS-AND-STAVES)",
   "title": "weapon (except of wands and staves)",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

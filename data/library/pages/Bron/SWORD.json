@@ -1,11 +1,13 @@
 {
   "slug": "Bron/SWORD",
-  "title": "Sword",
-  "titlePl": "Miecz",
+  "title": "Crafted Sword",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Miecze"
   ],
   "itemPage": true,
   "categoryPage": false

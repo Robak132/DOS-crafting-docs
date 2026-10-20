@@ -2,9 +2,9 @@
   "slug": "Specjalne/RESURRECTION_IDOL",
   "title": "Glowing Idol of Rebirth",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

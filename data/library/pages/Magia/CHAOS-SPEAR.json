@@ -2,9 +2,13 @@
   "slug": "Magia/CHAOS-SPEAR",
   "title": "Chaos Spear",
   "tags": [
+    "Cechy",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Statusy/SUFFOCATING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Wlocznie",
     "Typ/Magia"
   ],
   "itemPage": true,

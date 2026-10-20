@@ -3,9 +3,12 @@
   "title": "Apple Juice",
   "titlePl": "Sok jabłkowy",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Odporność-na-truciznę",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

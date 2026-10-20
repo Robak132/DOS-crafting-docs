@@ -70,6 +70,7 @@
           "tags": [
             "Typ",
             "Typ/Pancerz",
+            "Typ/Pancerz/Tarcze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -703,6 +704,7 @@
           "tags": [
             "Typ",
             "Typ/Bron",
+            "Typ/Bron/Luki",
             "DOS1"
           ],
           "craftingCategories": [
@@ -750,8 +752,9 @@
           "slug": "Skladniki/CROSSBOW",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Skladniki",
+            "Typ/Bron",
+            "Typ/Bron/Kusze",
             "DOS1"
           ],
           "selectorTag": "Crossbow"
@@ -793,7 +796,11 @@
           "name": "#Club",
           "selectorTag": "Club",
           "tags": [
-            "Club"
+            "Club",
+            "Typ",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
+            "DOS1"
           ]
         }
       ],
@@ -835,8 +842,9 @@
           "slug": "Skladniki/STAFF",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Skladniki",
+            "Typ/Bron",
+            "Typ/Bron/Kostury",
             "DOS1"
           ],
           "selectorTag": "Staff"
@@ -881,6 +889,7 @@
           "tags": [
             "Typ",
             "Typ/Bron",
+            "Typ/Bron/Luki",
             "DOS1"
           ],
           "craftingCategories": [
@@ -928,8 +937,9 @@
           "slug": "Skladniki/CROSSBOW",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Skladniki",
+            "Typ/Bron",
+            "Typ/Bron/Kusze",
             "DOS1"
           ],
           "selectorTag": "Crossbow"
@@ -1106,6 +1116,7 @@
           "tags": [
             "Typ",
             "Typ/Pancerz",
+            "Typ/Pancerz/Tarcze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -1334,6 +1345,7 @@
           "tags": [
             "Typ",
             "Typ/Pancerz",
+            "Typ/Pancerz/Tarcze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -1593,6 +1605,11 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Strzaly-i-granaty",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -1635,6 +1652,11 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -1865,6 +1887,7 @@
           "tags": [
             "Typ",
             "Typ/Pancerz",
+            "Typ/Pancerz/Tarcze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -1962,6 +1985,7 @@
           "tags": [
             "Typ",
             "Typ/Pancerz",
+            "Typ/Pancerz/Tarcze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -2351,8 +2375,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Odporność-na-powietrze",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -2363,8 +2387,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Odporność-na-powietrze",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -2402,17 +2426,19 @@
         "slug": "Amulety/ANCIENT-SKULL-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy/Odporność-na-ziemię",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -2450,17 +2476,21 @@
         "slug": "Pasy/ANCIENT-SKULL-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy/Odporność-na-ziemię",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -2544,12 +2574,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -2567,6 +2601,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -2680,6 +2718,10 @@
             "Typ",
             "Typ/Narzedzia",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -2693,7 +2735,10 @@
         "slug": "Pancerze/BATTERED-COOKING-POT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Helmy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -2702,7 +2747,10 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Helmy",
         "DOS1"
       ],
       "requirements": "",
@@ -2740,17 +2788,17 @@
         "slug": "Amulety/BIG-CHICKEN-CLAW-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Inicjatywa",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Inicjatywa",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -2788,17 +2836,19 @@
         "slug": "Pasy/BIG-CHICKEN-CLAW-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Inicjatywa",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -3335,6 +3385,11 @@
           "Typ",
           "Typ/Skladniki",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Inteligencja",
+          "Cechy/Kondycja",
+          "Cechy/Odporność-na-ogień",
+          "Efekty/Statusy/POISONED",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -3342,6 +3397,11 @@
         "Typ",
         "Typ/Skladniki",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Odporność-na-ogień",
+        "Efekty/Statusy/POISONED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3381,12 +3441,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3426,12 +3494,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3470,12 +3546,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3514,12 +3594,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3558,12 +3642,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3603,12 +3691,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3648,12 +3744,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3745,6 +3849,10 @@
         "tags": [
           "Typ",
           "Typ/Skladniki",
+          "Cechy/Obrażenia",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Bulawy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -3754,6 +3862,10 @@
       "tags": [
         "Typ",
         "Typ/Skladniki",
+        "Cechy/Obrażenia",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Bulawy",
         "DOS1"
       ],
       "requirements": "",
@@ -3781,6 +3893,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -3794,7 +3910,10 @@
         "slug": "Bron/BRANCH-WITH-NAILS",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Bulawy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -3804,7 +3923,10 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Bulawy",
         "DOS1"
       ],
       "requirements": "",
@@ -3822,6 +3944,9 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -3844,6 +3969,10 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -3851,6 +3980,10 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -3868,6 +4001,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
+            "Typ/Pancerz",
+            "Typ/Pancerz/Helmy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -3915,6 +4052,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
+            "Typ/Pancerz",
+            "Typ/Pancerz/Helmy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -3962,6 +4103,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
+            "Typ/Pancerz",
+            "Typ/Pancerz/Helmy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -4008,7 +4153,10 @@
           "slug": "Bron/OLD-SABRE",
           "tags": [
             "Typ",
+            "Cechy/Obrażenia",
+            "Cechy",
             "Typ/Bron",
+            "Typ/Bron/Miecze",
             "DOS1"
           ],
           "craftingCategories": [
@@ -4033,8 +4181,12 @@
         "slug": "Specjalne/BUFFALO-SABRE",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Specjalne",
+          "Cechy/Obrażenia",
+          "Cechy/Siła",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Miecze",
           "DOS1"
         ],
         "craftingCategories": [
@@ -4044,8 +4196,12 @@
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Specjalne",
+        "Cechy/Obrażenia",
+        "Cechy/Siła",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Miecze",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4091,6 +4247,8 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -4100,6 +4258,8 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4127,6 +4287,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -4138,12 +4299,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/DISEASED",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/DISEASED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4172,6 +4339,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -4183,12 +4351,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/DISEASED",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/DISEASED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4226,9 +4400,9 @@
         "slug": "Amulety/CHICKEN-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Inicjatywa",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -4237,9 +4411,9 @@
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Inicjatywa",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -4277,9 +4451,10 @@
         "slug": "Pasy/CHICKEN-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Inicjatywa",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -4288,9 +4463,10 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4373,6 +4549,8 @@
         "slug": "Amulety/CLAW-AMULET",
         "tags": [
           "Typ",
+          "Cechy/Siła",
+          "Cechy",
           "Typ/Amulety",
           "DOS1"
         ],
@@ -4382,6 +4560,8 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Siła",
+        "Cechy",
         "Typ/Amulety",
         "DOS1"
       ],
@@ -4420,6 +4600,9 @@
         "slug": "Pasy/CLAW-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy/Siła",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ],
@@ -4429,6 +4612,9 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy/Siła",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -4472,13 +4658,25 @@
         "slug": "Bron/CLAWED-AIR-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/powietrza",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4521,13 +4719,27 @@
         "slug": "Bron/CLAWED-EARTH-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ziemi",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/POISONED",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/POISONED",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4570,13 +4782,27 @@
         "slug": "Bron/CLAWED-FIRE-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ognia",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4619,13 +4845,25 @@
         "slug": "Bron/CLAWED-WATER-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/wody",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4709,14 +4947,20 @@
         "slug": "Pancerze/HOMEMADE-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Buty domowej roboty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -4756,14 +5000,20 @@
         "slug": "Pancerze/HANDCRAFTED-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Ręcznie wykonane buty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4803,14 +5053,20 @@
         "slug": "Pancerze/HANDCRAFTED-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Ręcznie wykonane buty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -4849,14 +5105,12 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy/Percepcja",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy/Percepcja",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -4893,16 +5147,24 @@
         "slug": "Skladniki/HOMEMADE-CROSSBOW",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Skladniki",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Kusze",
           "DOS1"
         ],
         "namePl": "Kusza domowej roboty"
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Skladniki",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -4939,16 +5201,24 @@
         "slug": "Skladniki/HANDCRAFTED-CROSSBOW",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Skladniki",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Kusze",
           "DOS1"
         ],
         "namePl": "Ręcznie wykonana kusza"
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Skladniki",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -4985,16 +5255,24 @@
         "slug": "Skladniki/CUSTOM-MADE-CROSSBOW",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Skladniki",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Kusze",
           "DOS1"
         ],
         "namePl": "Wykonana na zamówienie kusza"
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Skladniki",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -5031,16 +5309,24 @@
         "slug": "Skladniki/SUPERIOR-ARBALEST",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Skladniki",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Kusze",
           "DOS1"
         ],
         "namePl": "Doskonały arbalest"
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Skladniki",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -5068,6 +5354,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -5129,12 +5419,22 @@
         "tags": [
           "Typ",
           "Typ/Skladniki",
+          "Cechy/Inteligencja",
+          "Cechy/Kondycja",
+          "Cechy/Odporność-na-ogień",
+          "Efekty/Statusy/POISONED",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Skladniki",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Odporność-na-ogień",
+        "Efekty/Statusy/POISONED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5153,6 +5453,9 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -5174,16 +5477,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5222,12 +5529,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5269,12 +5580,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5314,12 +5629,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5361,12 +5680,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5409,12 +5732,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5456,12 +5783,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -5479,6 +5810,10 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Kondycja",
+            "Cechy/Leczenie",
+            "Efekty/Statusy/DISEASED",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -5500,12 +5835,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5543,12 +5884,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5589,12 +5936,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5632,12 +5985,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5678,12 +6037,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5722,12 +6087,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5769,12 +6140,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5802,6 +6179,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -5813,12 +6192,18 @@
         "tags": [
           "Typ",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5854,12 +6239,18 @@
         "tags": [
           "Typ",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5888,6 +6279,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -5899,12 +6292,18 @@
         "tags": [
           "Typ",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -5947,13 +6346,25 @@
         "slug": "Bron/DRACONIC-AIR-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/powietrza",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -5996,13 +6407,27 @@
         "slug": "Bron/DRACONIC-EARTH-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ziemi",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/PETRIFIED",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/PETRIFIED",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6045,13 +6470,29 @@
         "slug": "Bron/DRACONIC-FIRE-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ognia",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6094,13 +6535,27 @@
         "slug": "Bron/DRACONIC-WATER-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/wody",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/FROZEN",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/FROZEN",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6128,6 +6583,8 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Odporność-na-ziemię",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -6143,8 +6600,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Odporność-na-ziemię",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6155,8 +6612,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Odporność-na-ziemię",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -6199,13 +6656,25 @@
         "slug": "Bron/ELVEN-AIR-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/powietrza",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6248,13 +6717,25 @@
         "slug": "Bron/ELVEN-EARTH-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ziemi",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6297,13 +6778,25 @@
         "slug": "Bron/ELVEN-FIRE-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ognia",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6346,13 +6839,25 @@
         "slug": "Bron/ELVEN-WATER-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/wody",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -6398,6 +6903,10 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6407,6 +6916,10 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -6438,6 +6951,11 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Strzaly-i-granaty",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -6488,6 +7006,11 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -6643,15 +7166,17 @@
         "slug": "Amulety/FANCY-FEATHER-AMULET",
         "tags": [
           "Typ",
+          "Cechy/Telekineza",
+          "Cechy",
           "Typ/Amulety",
-          "Cechy/Zręczność",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Telekineza",
+        "Cechy",
         "Typ/Amulety",
-        "Cechy/Zręczność",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -6689,15 +7214,21 @@
         "slug": "Pasy/FANCY-FEATHER-BELT",
         "tags": [
           "Typ",
+          "Cechy/HP",
+          "Cechy/Inicjatywa",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
-          "Cechy/Zręczność",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/HP",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
-        "Cechy/Zręczność",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -6784,7 +7315,6 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy/Zręczność",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6794,7 +7324,6 @@
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy/Zręczność",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -6832,8 +7361,10 @@
         "slug": "Pasy/FEATHER-BELT",
         "tags": [
           "Typ",
+          "Cechy/Inicjatywa",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
-          "Cechy/Zręczność",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6842,8 +7373,10 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
-        "Cechy/Zręczność",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -6889,6 +7422,10 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6898,6 +7435,10 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -6925,6 +7466,8 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Odporność-na-ogień",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -6940,8 +7483,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Odporność-na-ogień",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -6952,8 +7495,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Odporność-na-ogień",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -6982,6 +7525,11 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Strzaly-i-granaty",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -6993,12 +7541,20 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -7034,12 +7590,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLIND",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLIND",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -7081,12 +7643,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLIND",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLIND",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -7132,6 +7700,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/FROZEN",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -7141,6 +7712,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/FROZEN",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -7182,12 +7756,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/FROZEN",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/FROZEN",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -7269,17 +7849,19 @@
         "slug": "Amulety/GLOWING-STAR-FISH-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/HP",
+          "Cechy/Odporność-na-wodę",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/HP",
+        "Cechy/Odporność-na-wodę",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -7319,12 +7901,14 @@
         "tags": [
           "Typ",
           "Typ/Pancerz",
+          "Typ/Pancerz/Tarcze",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Pancerz",
+        "Typ/Pancerz/Tarcze",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -7386,6 +7970,7 @@
           "tags": [
             "Typ",
             "Typ/Wyposazenie",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ]
         },
@@ -7788,6 +8373,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/KNOCKDOWN",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -7797,6 +8385,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/KNOCKDOWN",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -7813,6 +8404,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-powietrze",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -7839,6 +8432,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -7848,6 +8443,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -7889,16 +8486,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -7916,8 +8513,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -7942,16 +8539,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -7968,6 +8565,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-ziemię",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -7994,6 +8593,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ziemię",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8003,6 +8604,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8019,6 +8622,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-ogień",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8045,6 +8650,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8054,6 +8661,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8071,8 +8680,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8100,8 +8709,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8111,8 +8720,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8130,8 +8739,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8145,8 +8754,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8161,8 +8770,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8172,8 +8781,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8191,8 +8800,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Inteligencja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8217,16 +8826,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -8245,6 +8854,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Percepcja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8270,16 +8881,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -8297,6 +8908,7 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Efekty/Statusy/INVISIBLE",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8324,6 +8936,7 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/INVISIBLE",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8333,6 +8946,7 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/INVISIBLE",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8394,6 +9008,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8418,12 +9034,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8442,6 +9062,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8470,6 +9091,7 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8480,6 +9102,7 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8498,6 +9121,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8512,6 +9136,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8527,6 +9152,7 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8537,6 +9163,7 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -8553,6 +9180,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8579,6 +9208,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8588,6 +9219,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8605,8 +9238,12 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-ogień",
+            "Cechy/Odporność-na-powietrze",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy/Odporność-na-wodę",
+            "Cechy/Odporność-na-ziemię",
             "Cechy",
-            "Cechy/Odporność-na-wszystko",
             "DOS1"
           ]
         },
@@ -8631,16 +9268,24 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy/Odporność-na-wodę",
+          "Cechy/Odporność-na-ziemię",
           "Cechy",
-          "Cechy/Odporność-na-wszystko",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
         "Cechy",
-        "Cechy/Odporność-na-wszystko",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -8702,8 +9347,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Siła",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8728,16 +9373,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -8756,8 +9401,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8779,16 +9424,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -8806,6 +9451,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Telekineza",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -8830,12 +9477,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Telekineza",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Telekineza",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -8873,19 +9524,21 @@
         "slug": "Amulety/LARGE-TUSK-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Inteligencja",
           "Cechy/Odporność-na-powietrze",
+          "Cechy/Znawca",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Inteligencja",
         "Cechy/Odporność-na-powietrze",
+        "Cechy/Znawca",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -8902,6 +9555,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-wodę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -8928,6 +9583,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-wodę",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -8937,6 +9594,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-wodę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -9184,6 +9843,10 @@
             "Typ",
             "Typ/Narzedzia",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "quantity": "x4",
@@ -9242,17 +9905,17 @@
         "slug": "Amulety/LONG-RAT-TAIL-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Odporność-na-truciznę",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Odporność-na-truciznę",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -9290,17 +9953,19 @@
         "slug": "Pasy/LONG-RAT-TAIL-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Odporność-na-truciznę",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Odporność-na-truciznę",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -9340,12 +10005,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -9384,16 +10053,12 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy",
-          "Cechy/Szybkość",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy",
-        "Cechy/Szybkość",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -9411,8 +10076,6 @@
           "tags": [
             "Typ",
             "Typ/Amulety",
-            "Cechy",
-            "Cechy/Szybkość",
             "DOS1"
           ],
           "craftingCategories": [
@@ -9437,16 +10100,12 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy",
-          "Cechy/Szybkość",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy",
-        "Cechy/Szybkość",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -9484,12 +10143,16 @@
         "slug": "Pasy/LUCKY-RABBIT-PAW-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -9508,8 +10171,6 @@
           "tags": [
             "Typ",
             "Typ/Amulety",
-            "Cechy",
-            "Cechy/Szybkość",
             "DOS1"
           ]
         },
@@ -9531,16 +10192,12 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy",
-          "Cechy/Szybkość",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy",
-        "Cechy/Szybkość",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -9568,8 +10225,6 @@
           "tags": [
             "Typ",
             "Typ/Amulety",
-            "Cechy",
-            "Cechy/Szybkość",
             "DOS1"
           ]
         }
@@ -9580,12 +10235,16 @@
         "slug": "Pasy/LUCKY-RABBIT-PAW-SUPER-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -10630,9 +11289,9 @@
         "slug": "Amulety/MAGICAL-STARFISH-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/HP",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -10641,9 +11300,9 @@
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/HP",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -11054,8 +11713,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-powietrze",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11082,6 +11741,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11091,6 +11752,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11109,8 +11772,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ziemię",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11137,6 +11800,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ziemię",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11146,6 +11811,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11164,8 +11831,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ogień",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11192,6 +11859,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11201,6 +11870,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11217,6 +11888,7 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Efekty/Statusy/INVISIBLE",
             "DOS1"
           ]
         },
@@ -11241,6 +11913,7 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/INVISIBLE",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11250,6 +11923,7 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/INVISIBLE",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11266,6 +11940,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11290,12 +11966,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11312,6 +11992,7 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ]
         },
@@ -11337,6 +12018,7 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11347,6 +12029,7 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11363,6 +12046,7 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ]
         },
@@ -11372,6 +12056,7 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ]
         }
@@ -11384,6 +12069,7 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11394,6 +12080,7 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -11410,6 +12097,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11433,6 +12122,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11442,6 +12133,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11458,6 +12151,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Telekineza",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11482,12 +12177,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Telekineza",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Telekineza",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11506,8 +12205,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-wodę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11534,6 +12233,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-wodę",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11543,6 +12244,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-wodę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -11617,6 +12320,10 @@
             "Typ",
             "Typ/Narzedzia",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11675,6 +12382,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -11682,6 +12391,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -11724,8 +12435,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -11733,8 +12444,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -11753,8 +12464,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11777,8 +12488,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -11786,8 +12497,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -11827,8 +12538,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -11839,8 +12550,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -11859,6 +12570,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Percepcja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11885,8 +12598,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -11894,8 +12607,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -11937,12 +12650,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/INVISIBLE",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/INVISIBLE",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -11959,6 +12674,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Pancerz-fizyczny",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -11970,8 +12687,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-powietrze",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -11985,12 +12702,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/INVISIBLE",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/INVISIBLE",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -12031,12 +12750,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -12079,6 +12802,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12086,6 +12811,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -12113,6 +12840,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12126,12 +12854,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -12159,6 +12889,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -12169,12 +12900,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -12212,12 +12945,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -12246,6 +12981,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -12256,12 +12992,14 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Efekty/Statusy/POISONED",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Efekty/Statusy/POISONED",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -12280,8 +13018,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-powietrze",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12296,8 +13034,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-wodę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12312,16 +13050,24 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy/Odporność-na-wodę",
+          "Cechy/Odporność-na-ziemię",
           "Cechy",
-          "Cechy/Odporność-na-wszystko",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
         "Cechy",
-        "Cechy/Odporność-na-wszystko",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -12340,8 +13086,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ziemię",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12356,8 +13102,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ogień",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12372,16 +13118,24 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy/Odporność-na-wodę",
+          "Cechy/Odporność-na-ziemię",
           "Cechy",
-          "Cechy/Odporność-na-wszystko",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
         "Cechy",
-        "Cechy/Odporność-na-wszystko",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -12424,8 +13178,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12433,8 +13187,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -12453,8 +13207,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -12477,8 +13231,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12486,8 +13240,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -12505,6 +13259,12 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Percepcja",
+            "Cechy/Szybkość",
+            "Cechy/Zwinność",
+            "Efekty/Statusy/SLOWED",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -12518,8 +13278,12 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-ogień",
+            "Cechy/Odporność-na-powietrze",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy/Odporność-na-wodę",
+            "Cechy/Odporność-na-ziemię",
             "Cechy",
-            "Cechy/Odporność-na-wszystko",
             "DOS1"
           ]
         }
@@ -12530,12 +13294,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Telekineza",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Telekineza",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -12621,12 +13389,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12657,6 +13433,10 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Inteligencja",
+            "Cechy/Leczenie",
+            "Efekty/Statusy/DRUNK",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -12668,12 +13448,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12714,12 +13502,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12760,12 +13556,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Inteligencja",
+          "Cechy/Leczenie",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12796,6 +13600,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -12808,6 +13614,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12815,6 +13623,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12857,6 +13667,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12864,6 +13676,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12906,6 +13720,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -12913,6 +13729,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -12943,6 +13761,10 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy/Szybkość",
+            "Efekty/Statusy/DRUNK",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -12954,12 +13776,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13002,12 +13832,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13049,12 +13887,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13096,12 +13942,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Efekty/Statusy/DRUNK",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Efekty/Statusy/DRUNK",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13140,12 +13994,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLEEDING",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLEEDING",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -13413,6 +14273,11 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Strzaly-i-granaty",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -13424,12 +14289,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Oil",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Oil",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13457,6 +14328,11 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -13468,12 +14344,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Oil",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Oil",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13512,12 +14394,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Oil",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Oil",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13606,7 +14494,6 @@
           "Typ/Bron",
           "Typ/Skladniki",
           "Cechy",
-          "Cechy/Jednoręczna",
           "DOS1"
         ]
       },
@@ -13615,7 +14502,6 @@
         "Typ/Bron",
         "Typ/Skladniki",
         "Cechy",
-        "Cechy/Jednoręczna",
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
@@ -13726,6 +14612,9 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -13747,12 +14636,20 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Kondycja",
+          "Cechy/Leczenie",
+          "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Kondycja",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -13795,6 +14692,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/POISONED",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -13804,6 +14704,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/POISONED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -13883,6 +14786,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -13980,6 +14884,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -14042,6 +14947,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/POISONED",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -14051,6 +14959,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/POISONED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -14089,12 +15000,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -14133,12 +15048,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -14177,12 +15096,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14210,6 +15133,12 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Percepcja",
+            "Cechy/Szybkość",
+            "Cechy/Zwinność",
+            "Efekty/Statusy/SLOWED",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -14223,12 +15152,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -14267,9 +15200,12 @@
         "slug": "Pancerze/POORMAN'S-BEST",
         "tags": [
           "Typ",
-          "Typ/Pancerz",
-          "Cechy",
           "Cechy/Inicjatywa",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pancerz",
+          "Typ/Pancerz/Napiersniki",
           "DOS1"
         ],
         "craftingCategories": [
@@ -14279,9 +15215,12 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pancerz",
-        "Cechy",
         "Cechy/Inicjatywa",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Napiersniki",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -14299,6 +15238,8 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -14310,6 +15251,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -14321,12 +15264,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14344,6 +15293,8 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -14355,6 +15306,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -14366,12 +15319,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14390,6 +15349,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -14414,9 +15375,14 @@
         "slug": "Skladniki/PUMPKIN-HELMET",
         "tags": [
           "Typ",
-          "Typ/Pancerz",
           "Typ/Przedmioty-wydarzen",
           "Typ/Skladniki",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Pancerz-fizyczny",
+          "Efekty/Statusy/FEAR",
+          "Cechy",
+          "Typ/Pancerz",
+          "Typ/Pancerz/Helmy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -14425,9 +15391,14 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pancerz",
         "Typ/Przedmioty-wydarzen",
         "Typ/Skladniki",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Pancerz-fizyczny",
+        "Efekty/Statusy/FEAR",
+        "Cechy",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Helmy",
         "DOS1"
       ],
       "requirements": "",
@@ -14446,6 +15417,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -14470,12 +15443,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14494,6 +15473,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -14518,12 +15499,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14562,12 +15549,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14586,6 +15579,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -14610,12 +15605,18 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Leczenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Leczenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -14654,8 +15655,6 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy",
-          "Cechy/Szybkość",
           "DOS1"
         ],
         "craftingCategories": [
@@ -14665,8 +15664,6 @@
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy",
-        "Cechy/Szybkość",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -14704,6 +15701,8 @@
         "slug": "Pasy/RABBIT'S-PAW-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ],
@@ -14713,6 +15712,8 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -15671,9 +16672,9 @@
         "slug": "Amulety/RAT-TAIL-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Odporność-na-truciznę",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -15682,9 +16683,9 @@
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Odporność-na-truciznę",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -15722,9 +16723,10 @@
         "slug": "Pasy/RAT-TAIL-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Odporność-na-truciznę",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -15733,9 +16735,10 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Odporność-na-truciznę",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -15861,12 +16864,16 @@
         "slug": "Amulety/SHARP-CLAW-AMULET",
         "tags": [
           "Typ",
+          "Cechy/Siła",
+          "Cechy",
           "Typ/Amulety",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Siła",
+        "Cechy",
         "Typ/Amulety",
         "DOS1"
       ],
@@ -15905,12 +16912,18 @@
         "slug": "Pasy/SHARP-CLAW-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy/Siła",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy/Siła",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -15949,15 +16962,17 @@
         "slug": "Amulety/SHARP-TOOTH-AMULET",
         "tags": [
           "Typ",
+          "Cechy/Odporność-na-ogień",
+          "Cechy",
           "Typ/Amulety",
-          "Cechy/Charyzma",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Odporność-na-ogień",
+        "Cechy",
         "Typ/Amulety",
-        "Cechy/Charyzma",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -15995,15 +17010,19 @@
         "slug": "Pasy/SHARP-TOOTH-BELT",
         "tags": [
           "Typ",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
-          "Cechy/Charyzma",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
-        "Cechy/Charyzma",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -16093,6 +17112,8 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16102,6 +17123,8 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -16237,9 +17260,9 @@
         "slug": "Amulety/SKULL-AMULET",
         "tags": [
           "Typ",
-          "Typ/Amulety",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
+          "Typ/Amulety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16248,9 +17271,9 @@
       },
       "tags": [
         "Typ",
-        "Typ/Amulety",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
+        "Typ/Amulety",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16291,9 +17314,10 @@
         "slug": "Pasy/SKULL-BELT",
         "tags": [
           "Typ",
-          "Typ/Pasy",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pasy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16302,9 +17326,10 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pasy",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pasy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16350,6 +17375,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/SLOWED",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16359,6 +17387,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/SLOWED",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16391,6 +17422,11 @@
             "Typ",
             "Typ/Skladniki",
             "Typ/Strzaly-i-granaty",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -16442,6 +17478,11 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Kondycja",
+            "Cechy/Odporność-na-ogień",
+            "Efekty/Statusy/POISONED",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -16559,6 +17600,8 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16568,6 +17611,8 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16585,6 +17630,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -16598,6 +17647,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -16660,6 +17713,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLIND",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16669,6 +17725,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLIND",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -16746,6 +17805,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -16796,6 +17857,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ]
         }
@@ -16904,6 +17967,8 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16913,6 +17978,8 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16930,6 +17997,9 @@
           "tags": [
             "Typ",
             "Typ/Specjalne",
+            "Cechy/Odporność-na-ogień",
+            "Cechy/Odporność-na-powietrze",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -16941,6 +18011,7 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Specjalne",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         }
@@ -16951,8 +18022,11 @@
         "slug": "Specjalne/SWORD-OF-PLANETS",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Specjalne",
+          "Cechy/Obrażenia",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Miecze",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16962,8 +18036,11 @@
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Specjalne",
+        "Cechy/Obrażenia",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Miecze",
         "DOS1"
       ],
       "requirements": "",
@@ -17047,12 +18124,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/FEAR",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/FEAR",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -17094,7 +18177,6 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy/Percepcja",
           "DOS1"
         ],
         "craftingCategories": [
@@ -17104,7 +18186,6 @@
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy/Percepcja",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -17167,6 +18248,9 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Leczenie",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -17178,6 +18262,10 @@
             "Typ",
             "Typ/Narzedzia",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -17193,6 +18281,9 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
+          "Cechy/Leczenie",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy",
           "DOS1"
         ]
       },
@@ -17200,6 +18291,9 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
+        "Cechy/Leczenie",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "",
@@ -17241,7 +18335,6 @@
         "tags": [
           "Typ",
           "Typ/Amulety",
-          "Cechy/Charyzma",
           "DOS1"
         ],
         "craftingCategories": [
@@ -17251,7 +18344,6 @@
       "tags": [
         "Typ",
         "Typ/Amulety",
-        "Cechy/Charyzma",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -17292,8 +18384,9 @@
         "slug": "Pasy/TOOTH-BELT",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
-          "Cechy/Charyzma",
           "DOS1"
         ],
         "craftingCategories": [
@@ -17302,8 +18395,9 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
-        "Cechy/Charyzma",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -17345,12 +18439,18 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/KNOCKDOWN",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/KNOCKDOWN",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -17369,6 +18469,7 @@
             "Typ",
             "Typ/Barwniki",
             "Typ/Skladniki",
+            "Efekty/Statusy/POISONED",
             "DOS1"
           ]
         },
@@ -17389,10 +18490,18 @@
         "slug": "Specjalne/TRETHON'S-OLD-ROBES",
         "tags": [
           "Typ",
-          "Typ/Pancerz",
           "Typ/Specjalne",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy/Odporność-na-cień",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy/Odporność-na-wodę",
+          "Cechy/Odporność-na-ziemię",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
+          "Typ/Pancerz",
+          "Typ/Pancerz/Napiersniki",
           "DOS1"
         ],
         "craftingCategories": [
@@ -17403,10 +18512,18 @@
       },
       "tags": [
         "Typ",
-        "Typ/Pancerz",
         "Typ/Specjalne",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy/Odporność-na-cień",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Napiersniki",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -17443,6 +18560,8 @@
         "slug": "Amulety/TUSK-AMULET",
         "tags": [
           "Typ",
+          "Cechy/Znawca",
+          "Cechy",
           "Typ/Amulety",
           "DOS1"
         ],
@@ -17452,6 +18571,8 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Znawca",
+        "Cechy",
         "Typ/Amulety",
         "DOS1"
       ],
@@ -17489,6 +18610,10 @@
         "slug": "Pasy/TUSK-BELT",
         "tags": [
           "Typ",
+          "Cechy/Bieglosci-obrony",
+          "Cechy/Bieglosci-obrony/Krzepa",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pasy",
           "DOS1"
         ],
@@ -17498,6 +18623,10 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Bieglosci-obrony",
+        "Cechy/Bieglosci-obrony/Krzepa",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pasy",
         "DOS1"
       ],
@@ -17541,7 +18670,6 @@
           "Typ",
           "Typ/Bron",
           "Cechy",
-          "Cechy/Dwuręczna",
           "DOS1"
         ]
       },
@@ -17549,7 +18677,6 @@
         "Typ",
         "Typ/Bron",
         "Cechy",
-        "Cechy/Dwuręczna",
         "DOS1"
       ],
       "requirements": "Blacksmithing 2",
@@ -17592,7 +18719,6 @@
           "Typ",
           "Typ/Bron",
           "Cechy",
-          "Cechy/Dwuręczna",
           "DOS1"
         ]
       },
@@ -17600,7 +18726,6 @@
         "Typ",
         "Typ/Bron",
         "Cechy",
-        "Cechy/Dwuręczna",
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
@@ -17663,6 +18788,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         },
@@ -17681,12 +18807,20 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Water",
+          "Efekty/Statusy/WET",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Water",
+        "Efekty/Statusy/WET",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -17704,6 +18838,7 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Efekty/Statusy/DISEASED",
             "DOS1"
           ]
         },
@@ -17725,12 +18860,20 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Water",
+          "Efekty/Statusy/WET",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Water",
+        "Efekty/Statusy/WET",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -17758,6 +18901,8 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Odporność-na-wodę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -17773,8 +18918,8 @@
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "Typ/Skladniki",
-          "Cechy",
           "Cechy/Odporność-na-wodę",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -17785,8 +18930,8 @@
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "Typ/Skladniki",
-        "Cechy",
         "Cechy/Odporność-na-wodę",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -17875,13 +19020,27 @@
         "slug": "Bron/WOODEN-AIR-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/powietrza",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLIND",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLIND",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -17924,13 +19083,25 @@
         "slug": "Bron/WOODEN-EARTH-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ziemi",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -18017,13 +19188,29 @@
         "slug": "Bron/WOODEN-FIRE-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/ognia",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -18065,7 +19252,10 @@
         "slug": "Bron/WOODEN-STAKE",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Sztylety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -18074,7 +19264,10 @@
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Sztylety",
         "DOS1"
       ],
       "requirements": "",
@@ -18117,13 +19310,27 @@
         "slug": "Bron/WOODEN-WATER-WAND",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-magiczne",
+          "Cechy/Obrażenia-magiczne/wody",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/FROZEN",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Rozdzki",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/FROZEN",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Rozdzki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -18238,6 +19445,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18250,14 +19461,22 @@
         "slug": "Bron/HOMEMADE-SHORTBOW",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Luki",
           "DOS1"
         ],
         "namePl": "Łuk krótki domowej roboty"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Luki",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -18284,6 +19503,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18296,14 +19519,22 @@
         "slug": "Bron/HANDCRAFTED-BOW",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Luki",
           "DOS1"
         ],
         "namePl": "Ręcznie wykonany łuk"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Luki",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -18330,6 +19561,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18342,14 +19577,22 @@
         "slug": "Bron/CUSTOM-MADE-BOW",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Luki",
           "DOS1"
         ],
         "namePl": "Wykonany na zamówienie łuk"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Luki",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -18376,6 +19619,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18388,14 +19635,22 @@
         "slug": "Bron/POLISHED-LONGBOW",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Luki",
           "DOS1"
         ],
         "namePl": "Łuk długi wysokiej jakości"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Luki",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -18422,6 +19677,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18434,14 +19693,24 @@
         "slug": "Bron/SUPERIOR-LONGBOW",
         "tags": [
           "Typ",
+          "Cechy/Krytyk",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Luki",
           "DOS1"
         ],
         "namePl": "Doskonały łuk długi"
       },
       "tags": [
         "Typ",
+        "Cechy/Krytyk",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Luki",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -18458,8 +19727,12 @@
           "slug": "Narzedzia/DAGGER",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Narzedzia",
+            "Cechy/Obrażenia",
+            "Cechy/Obrażenia-przeszywające",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18473,6 +19746,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18485,14 +19762,20 @@
         "slug": "Bron/HOMEMADE-SPEAR",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Wlocznie",
           "DOS1"
         ],
         "namePl": "Włócznia domowej roboty"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Wlocznie",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -18509,8 +19792,12 @@
           "slug": "Narzedzia/DAGGER",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Narzedzia",
+            "Cechy/Obrażenia",
+            "Cechy/Obrażenia-przeszywające",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18524,6 +19811,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18536,14 +19827,20 @@
         "slug": "Bron/HANDCRAFTED-SPEAR",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Wlocznie",
           "DOS1"
         ],
         "namePl": "Ręcznie wykonana włócznia"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Wlocznie",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -18560,8 +19857,12 @@
           "slug": "Narzedzia/DAGGER",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Narzedzia",
+            "Cechy/Obrażenia",
+            "Cechy/Obrażenia-przeszywające",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18575,6 +19876,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18587,14 +19892,20 @@
         "slug": "Bron/CUSTOM-MADE-SPEAR",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Wlocznie",
           "DOS1"
         ],
         "namePl": "Wykonana na zamówienie włócznia"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Wlocznie",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -18611,8 +19922,12 @@
           "slug": "Narzedzia/DAGGER",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Narzedzia",
+            "Cechy/Obrażenia",
+            "Cechy/Obrażenia-przeszywające",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18626,6 +19941,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18638,14 +19957,20 @@
         "slug": "Bron/POLISHED-SPEAR",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Wlocznie",
           "DOS1"
         ],
         "namePl": "Włócznia wysokiej jakości"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Wlocznie",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -18662,8 +19987,12 @@
           "slug": "Narzedzia/DAGGER",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Narzedzia",
+            "Cechy/Obrażenia",
+            "Cechy/Obrażenia-przeszywające",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18677,6 +20006,10 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Obrażenia",
+            "Cechy",
+            "Typ/Bron",
+            "Typ/Bron/Bulawy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18689,14 +20022,20 @@
         "slug": "Bron/SUPERIOR-SPEAR",
         "tags": [
           "Typ",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
           "Typ/Bron",
+          "Typ/Bron/Wlocznie",
           "DOS1"
         ],
         "namePl": "Doskonała włócznia"
       },
       "tags": [
         "Typ",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
         "Typ/Bron",
+        "Typ/Bron/Wlocznie",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -18713,8 +20052,9 @@
           "slug": "Skladniki/KNIFE",
           "tags": [
             "Typ",
-            "Typ/Bron",
             "Typ/Skladniki",
+            "Typ/Bron",
+            "Typ/Bron/Sztylety",
             "DOS1"
           ],
           "selectorTag": "Knife"
@@ -18739,8 +20079,12 @@
         "slug": "Narzedzia/DAGGER",
         "tags": [
           "Typ",
-          "Typ/Bron",
           "Typ/Narzedzia",
+          "Cechy/Obrażenia",
+          "Cechy/Obrażenia-przeszywające",
+          "Cechy",
+          "Typ/Bron",
+          "Typ/Bron/Sztylety",
           "DOS1"
         ],
         "craftingCategories": [
@@ -18750,8 +20094,12 @@
       },
       "tags": [
         "Typ",
-        "Typ/Bron",
         "Typ/Narzedzia",
+        "Cechy/Obrażenia",
+        "Cechy/Obrażenia-przeszywające",
+        "Cechy",
+        "Typ/Bron",
+        "Typ/Bron/Sztylety",
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
@@ -18782,8 +20130,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ziemię",
+            "Cechy",
             "DOS1"
           ],
           "quantity": "x2",
@@ -18823,8 +20171,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-wodę",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -18839,8 +20187,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Odporność-na-ogień",
+            "Cechy",
             "DOS1"
           ],
           "quantity": "x2",
@@ -18878,8 +20226,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Zwinność",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -18903,16 +20251,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -18930,8 +20278,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -18952,16 +20300,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19002,12 +20350,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19024,6 +20376,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Percepcja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19047,12 +20401,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19092,16 +20450,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19118,8 +20476,8 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
-            "Cechy",
             "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19143,16 +20501,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19192,14 +20550,20 @@
         "slug": "Pancerze/CUSTOM-MADE-LEATHER-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Wykonane na zamówienie skórzane buty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -19239,14 +20603,20 @@
         "slug": "Pancerze/POLISHED-LEATHER-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Skórzane buty wysokiej jakości"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19286,14 +20656,20 @@
         "slug": "Pancerze/SUPERIOR-LEATHER-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Doskonałe skórzane buty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -19333,14 +20709,20 @@
         "slug": "Pancerze/SUPERIOR-LEATHER-BOOTS",
         "tags": [
           "Typ",
+          "Cechy/Pancerz-fizyczny",
+          "Cechy",
           "Typ/Pancerz",
+          "Typ/Pancerz/Buty",
           "DOS1"
         ],
         "namePl": "Doskonałe skórzane buty"
       },
       "tags": [
         "Typ",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy",
         "Typ/Pancerz",
+        "Typ/Pancerz/Buty",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19382,16 +20764,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19410,8 +20792,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19436,16 +20818,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Kondycja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Kondycja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -19463,8 +20845,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Zwinność",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19488,16 +20870,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -19515,8 +20897,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19537,16 +20919,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Zwinność",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Zwinność",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19585,8 +20967,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -19596,8 +20978,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -19616,8 +20998,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -19645,8 +21027,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -19656,8 +21038,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19676,8 +21058,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -19692,8 +21074,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Leczenie",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -19708,8 +21090,8 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Leczenie",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -19719,8 +21101,8 @@
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Leczenie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -19739,8 +21121,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Inteligencja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19765,16 +21147,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -19792,6 +21174,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Percepcja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19816,16 +21200,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Inteligencja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Inteligencja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19866,12 +21250,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -19889,6 +21277,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
+            "Cechy/Percepcja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -19912,12 +21302,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Percepcja",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Percepcja",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -19935,8 +21329,12 @@
           "tags": [
             "Typ",
             "Typ/Mikstury-i-jedzenie",
+            "Cechy/Odporność-na-ogień",
+            "Cechy/Odporność-na-powietrze",
+            "Cechy/Odporność-na-truciznę",
+            "Cechy/Odporność-na-wodę",
+            "Cechy/Odporność-na-ziemię",
             "Cechy",
-            "Cechy/Odporność-na-wszystko",
             "DOS1"
           ]
         },
@@ -19961,16 +21359,24 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
+          "Cechy/Odporność-na-ogień",
+          "Cechy/Odporność-na-powietrze",
+          "Cechy/Odporność-na-truciznę",
+          "Cechy/Odporność-na-wodę",
+          "Cechy/Odporność-na-ziemię",
           "Cechy",
-          "Cechy/Odporność-na-wszystko",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
         "Cechy",
-        "Cechy/Odporność-na-wszystko",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -20010,16 +21416,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20037,8 +21443,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Szybkość",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -20062,16 +21468,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Szybkość",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Szybkość",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -20090,8 +21496,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Kondycja",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -20113,16 +21519,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20141,8 +21547,8 @@
             "Typ",
             "Typ/Mikstury-i-jedzenie",
             "Typ/Skladniki",
-            "Cechy",
             "Cechy/Siła",
+            "Cechy",
             "DOS1"
           ]
         },
@@ -20167,16 +21573,16 @@
         "tags": [
           "Typ",
           "Typ/Mikstury-i-jedzenie",
-          "Cechy",
           "Cechy/Siła",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Mikstury-i-jedzenie",
-        "Cechy",
         "Cechy/Siła",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -20207,6 +21613,12 @@
           "tags": [
             "Typ",
             "Typ/Skladniki",
+            "Cechy/Inteligencja",
+            "Cechy/Percepcja",
+            "Cechy/Szybkość",
+            "Cechy/Zwinność",
+            "Efekty/Statusy/SLOWED",
+            "Cechy",
             "DOS1"
           ],
           "craftingCategories": [
@@ -20270,12 +21682,20 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Powierzchnie/Fire",
+          "Efekty/Statusy/BURNING",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 5",
@@ -20302,9 +21722,10 @@
           "slug": "Amulety/GLOWING-STAR-FISH-AMULET",
           "tags": [
             "Typ",
-            "Typ/Amulety",
-            "Cechy",
             "Cechy/HP",
+            "Cechy/Odporność-na-wodę",
+            "Cechy",
+            "Typ/Amulety",
             "DOS1"
           ]
         }
@@ -20316,12 +21737,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20360,12 +21785,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20404,12 +21833,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20436,9 +21869,9 @@
           "slug": "Amulety/MAGICAL-STARFISH-AMULET",
           "tags": [
             "Typ",
-            "Typ/Amulety",
-            "Cechy",
             "Cechy/HP",
+            "Cechy",
+            "Typ/Amulety",
             "DOS1"
           ],
           "craftingCategories": [
@@ -20453,12 +21886,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20555,6 +21992,9 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Efekty/Statusy/BLIND",
+          "Cechy",
           "DOS1"
         ],
         "craftingCategories": [
@@ -20564,6 +22004,9 @@
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Efekty/Statusy/BLIND",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20651,12 +22094,16 @@
         "tags": [
           "Typ",
           "Typ/Strzaly-i-granaty",
+          "Cechy/Rzuca-zaklecie",
+          "Cechy",
           "DOS1"
         ]
       },
       "tags": [
         "Typ",
         "Typ/Strzaly-i-granaty",
+        "Cechy/Rzuca-zaklecie",
+        "Cechy",
         "DOS1"
       ],
       "requirements": "Crafting 4",

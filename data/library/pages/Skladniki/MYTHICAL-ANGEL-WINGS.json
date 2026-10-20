@@ -2,9 +2,17 @@
   "slug": "Skladniki/MYTHICAL-ANGEL-WINGS",
   "title": "Mythical Angel Wings",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Inteligencja",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Znawca",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,16 @@
   "title": "Blood Rose",
   "titlePl": "Krwawa róża",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Kondycja",
+    "Cechy/Pamięć",
+    "Cechy/Siła",
+    "Cechy/Spryt",
+    "Cechy/Zręczność",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

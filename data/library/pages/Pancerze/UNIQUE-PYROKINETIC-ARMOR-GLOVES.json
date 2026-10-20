@@ -1,12 +1,20 @@
 {
   "slug": "Pancerze/UNIQUE-PYROKINETIC-ARMOR-GLOVES",
-  "title": "Unique Pyrokinetic Armor Gloves",
+  "title": "Unique Pyromancer Gloves",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Spryt",
+    "Cechy/Telekineza",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,10 @@
   "slug": "Skladniki/POTION_POISON_VOID_A",
   "title": "Potion_Poison_Void_A",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,15 @@
   "title": "Poison Flask",
   "titlePl": "Fiolka trucizny",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
     "DOS2",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Powierzchnie/Poison",
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

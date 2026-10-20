@@ -3,9 +3,11 @@
   "title": "Blood Sucker Skillbook",
   "titlePl": "Księga umiejętności „Krwiopijca”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

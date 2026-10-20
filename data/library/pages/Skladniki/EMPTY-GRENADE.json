@@ -3,10 +3,10 @@
   "title": "Empty Grenade",
   "titlePl": "Pusty granat",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

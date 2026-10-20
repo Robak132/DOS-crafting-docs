@@ -3,9 +3,9 @@
   "title": "Leather Pants",
   "titlePl": "Skórzane portki",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

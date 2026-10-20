@@ -2,9 +2,9 @@
   "slug": "Mikstury-i-jedzenie/BUCKET-AND-CUP-OF-MILK",
   "title": "Bucket and Cup of Milk",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

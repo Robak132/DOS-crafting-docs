@@ -2,9 +2,15 @@
   "slug": "Bron/WOODEN-EARTH-WAND",
   "title": "WOODEN EARTH WAND",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki"
   ],
   "itemPage": true,
   "categoryPage": false

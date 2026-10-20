@@ -3,10 +3,10 @@
   "title": "Blank Witchcraft Scroll",
   "titlePl": "Niezapisany zwój czarnej magii",
   "tags": [
-    "Typ/Zwoje",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

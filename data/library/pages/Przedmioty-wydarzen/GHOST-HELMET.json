@@ -2,10 +2,17 @@
   "slug": "Przedmioty-wydarzen/GHOST-HELMET",
   "title": "Ghost Helm",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
     "DOS2-CO",
+    "Efekty/Statusy/FEAR",
     "Typ",
-    "Typ/Pancerz"
+    "Typ/Pancerz",
+    "Typ/Pancerz/Helmy",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

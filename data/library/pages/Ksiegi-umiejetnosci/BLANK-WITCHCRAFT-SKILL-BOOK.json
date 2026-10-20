@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/BLANK-WITCHCRAFT-SKILL-BOOK",
   "title": "BLANK WITCHCRAFT SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

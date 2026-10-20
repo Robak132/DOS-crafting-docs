@@ -1,11 +1,21 @@
 {
   "slug": "Przedmioty-wydarzen/FROST-STAFF",
-  "title": "Frost Staff",
+  "title": "Winter Staff",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Statusy/WET",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Kostury",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

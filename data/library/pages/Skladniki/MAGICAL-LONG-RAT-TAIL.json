@@ -3,9 +3,9 @@
   "title": "Magical Long Rat Tail",
   "titlePl": "Magiczny długi szczurzy ogon",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

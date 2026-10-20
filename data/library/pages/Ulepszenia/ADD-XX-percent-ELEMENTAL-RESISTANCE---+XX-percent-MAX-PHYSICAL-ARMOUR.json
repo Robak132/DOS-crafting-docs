@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR",
   "title": "add XX% elemental resistance / +XX% max physical armour",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
-    "Cechy/Pancerz-fizyczny",
     "Cechy",
-    "Typ"
+    "Cechy/Pancerz-fizyczny",
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

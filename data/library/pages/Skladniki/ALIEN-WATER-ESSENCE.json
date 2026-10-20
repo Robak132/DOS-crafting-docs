@@ -3,9 +3,9 @@
   "title": "Alien Water Essence",
   "titlePl": "Obca esencja wody",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

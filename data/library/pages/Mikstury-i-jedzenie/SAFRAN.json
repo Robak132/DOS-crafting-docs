@@ -2,9 +2,11 @@
   "slug": "Mikstury-i-jedzenie/SAFRAN",
   "title": "Safran",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Siła",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

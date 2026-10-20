@@ -3,10 +3,14 @@
   "title": "Firestorm Grenade",
   "titlePl": "Granat burzy ognistej",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Efekty/Powierzchnie/Fire",
+    "Efekty/Statusy/BURNING",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

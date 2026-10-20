@@ -2,11 +2,9 @@
   "slug": "Amulety/LUCKY-RABBITS-PAW-AMULET",
   "title": "Lucky Rabbit's Paw Amulet",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy",
-    "Cechy/Szybkość",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

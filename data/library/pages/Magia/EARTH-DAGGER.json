@@ -2,9 +2,14 @@
   "slug": "Magia/EARTH-DAGGER",
   "title": "Earth Dagger",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
     "DOS2-CO",
+    "Efekty/Statusy/PETRIFIED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Sztylety",
     "Typ/Magia"
   ],
   "itemPage": true,

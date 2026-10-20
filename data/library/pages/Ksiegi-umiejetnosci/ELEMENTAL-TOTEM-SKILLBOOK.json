@@ -3,9 +3,13 @@
   "title": "Elemental Totem Skillbook",
   "titlePl": "Księga umiejętności „Totem Żywiołów”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

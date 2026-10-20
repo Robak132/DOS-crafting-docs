@@ -3,9 +3,13 @@
   "title": "Farsight Infusion Skillbook",
   "titlePl": "Księga umiejętności „Podsycenie Dalekowidzenia”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

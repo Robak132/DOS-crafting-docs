@@ -2,11 +2,14 @@
   "slug": "Pancerze/UNIQUE-HYDROSOPHIST-ARMOR-BOOTS",
   "title": "Unique Hydrosophist Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
-    "Typ"
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Unik",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

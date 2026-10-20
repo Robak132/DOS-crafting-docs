@@ -3,10 +3,10 @@
   "title": "Boiled Stardust Potion",
   "titlePl": "Mikstura gotowanego gwiezdnego pyłu",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
     "Typ",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

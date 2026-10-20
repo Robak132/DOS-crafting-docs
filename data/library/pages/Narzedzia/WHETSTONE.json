@@ -3,9 +3,9 @@
   "title": "Whetstone",
   "titlePl": "Osełka",
   "tags": [
-    "Typ/Narzedzia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Narzedzia"
   ],
   "itemPage": true,
   "categoryPage": false

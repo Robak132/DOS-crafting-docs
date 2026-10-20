@@ -2,9 +2,9 @@
   "slug": "Strzaly-i-granaty/SHORT-STICK-AND-WOOD-CHIPS",
   "title": "Short Stick and Wood Chips",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,14 @@
   "title": "Cup of Oil",
   "titlePl": "Kubek oleju",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Kondycja",
+    "Cechy/Odporność-na-ogień",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

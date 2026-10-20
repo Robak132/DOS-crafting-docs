@@ -3,10 +3,12 @@
   "title": "Augmentor",
   "titlePl": "Ulepszacz",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2",
+    "Cechy",
+    "Cechy/Siła",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

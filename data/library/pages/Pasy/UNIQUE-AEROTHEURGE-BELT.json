@@ -2,11 +2,12 @@
   "slug": "Pasy/UNIQUE-AEROTHEURGE-BELT",
   "title": "Unique Aerotheurge Belt",
   "tags": [
-    "Typ/Pasy",
-    "DOS2-CO",
-    "Cechy/Aeroteurgia",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

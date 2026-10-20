@@ -4,9 +4,9 @@
   "titlePl": "Wiadro mleka",
   "tags": [
     "DOS1",
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

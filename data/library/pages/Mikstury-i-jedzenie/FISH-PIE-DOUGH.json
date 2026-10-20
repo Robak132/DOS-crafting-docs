@@ -3,11 +3,14 @@
   "title": "Fish Pie Dough",
   "titlePl": "Ciasto na placek rybny",
   "tags": [
-    "DOS2",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Szybkość",
     "DOS1",
+    "DOS2",
     "Typ",
-    "Typ/Skladniki",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

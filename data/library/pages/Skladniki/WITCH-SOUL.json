@@ -2,9 +2,9 @@
   "slug": "Skladniki/WITCH-SOUL",
   "title": "Witch Soul",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

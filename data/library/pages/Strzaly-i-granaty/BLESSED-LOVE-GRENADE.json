@@ -2,9 +2,12 @@
   "slug": "Strzaly-i-granaty/BLESSED-LOVE-GRENADE",
   "title": "Blessed Love Grenade",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/CHARMED",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,12 @@
   "title": "Cheese Bread Dough",
   "titlePl": "Ciasto na pieczywo serowe",
   "tags": [
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2",
     "Typ",
-    "Typ/Skladniki",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,11 @@
   "title": "Rabbit's Paw Belt",
   "titlePl": "Pas z króliczą łapką",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

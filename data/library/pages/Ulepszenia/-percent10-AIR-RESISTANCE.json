@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/-percent10-AIR-RESISTANCE",
   "title": "%10 Air Resistance",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Odporność-na-powietrze",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,11 @@
   "title": "Huge Fire Resistance Potion",
   "titlePl": "Wielka mikstura odporności na ogień",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
     "Cechy",
     "Cechy/Odporność-na-ogień",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,11 @@
   "slug": "Mikstury-i-jedzenie/GIANT-MAGIC-ARMOR",
   "title": "Giant Magic Armor",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2-CO",
-    "Cechy/Pancerz-magiczny",
     "Cechy",
-    "Typ"
+    "Cechy/Pancerz-magiczny",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

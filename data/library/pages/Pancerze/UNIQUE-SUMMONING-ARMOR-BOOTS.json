@@ -2,11 +2,15 @@
   "slug": "Pancerze/UNIQUE-SUMMONING-ARMOR-BOOTS",
   "title": "Unique Summoner  Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Przyzywanie",
     "Cechy",
-    "Typ"
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Perswazja",
+    "Cechy/Unik",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

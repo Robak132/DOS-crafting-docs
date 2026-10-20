@@ -2,9 +2,9 @@
   "slug": "Skladniki/BEAK-OF-ROOST",
   "title": "Beak of Roost",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

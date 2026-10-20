@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/ADEPT-WATER-SKILL-BOOK",
   "title": "ADEPT WATER SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

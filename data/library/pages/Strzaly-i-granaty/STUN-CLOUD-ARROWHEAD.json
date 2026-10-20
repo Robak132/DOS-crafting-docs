@@ -2,9 +2,9 @@
   "slug": "Strzaly-i-granaty/STUN-CLOUD-ARROWHEAD",
   "title": "Stun Cloud Arrowhead",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

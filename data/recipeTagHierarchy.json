@@ -11,8 +11,54 @@
         },
         {
           "tag": "Typ/Bron",
-          "label": "Bron",
-          "children": []
+          "label": "Broń",
+          "children": [
+            {
+              "tag": "Typ/Bron/Bulawy",
+              "label": "Buławy i młoty",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Kostury",
+              "label": "Kostury",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Sztylety",
+              "label": "Sztylety",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Miecze",
+              "label": "Miecze",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Rozdzki",
+              "label": "Różdżki",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Luki",
+              "label": "Łuki",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Kusze",
+              "label": "Kusze",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Topory",
+              "label": "Topory",
+              "children": []
+            },
+            {
+              "tag": "Typ/Bron/Wlocznie",
+              "label": "Włócznie",
+              "children": []
+            }
+          ]
         },
         {
           "tag": "Typ/Granaty",
@@ -26,7 +72,7 @@
         },
         {
           "tag": "Typ/Ksiegi-umiejetnosci",
-          "label": "Ksiegi-umiejetnosci",
+          "label": "Księgi umiejętności",
           "children": []
         },
         {
@@ -36,8 +82,39 @@
         },
         {
           "tag": "Typ/Pancerz",
-          "label": "Pancerz",
-          "children": []
+          "label": "Pancerze",
+          "children": [
+            {
+              "tag": "Typ/Pancerz/Helmy",
+              "label": "Hełmy",
+              "children": []
+            },
+            {
+              "tag": "Typ/Pancerz/Napiersniki",
+              "label": "Napierśniki",
+              "children": []
+            },
+            {
+              "tag": "Typ/Pancerz/Rekawice",
+              "label": "Rękawice",
+              "children": []
+            },
+            {
+              "tag": "Typ/Pancerz/Buty",
+              "label": "Buty",
+              "children": []
+            },
+            {
+              "tag": "Typ/Pancerz/Spodnie",
+              "label": "Spodnie",
+              "children": []
+            },
+            {
+              "tag": "Typ/Pancerz/Tarcze",
+              "label": "Tarcze",
+              "children": []
+            }
+          ]
         },
         {
           "tag": "Typ/Pasy",
@@ -46,12 +123,12 @@
         },
         {
           "tag": "Typ/Pierscienie",
-          "label": "Pierscienie",
+          "label": "Pierścienie",
           "children": []
         },
         {
           "tag": "Typ/Skladniki",
-          "label": "Skladniki",
+          "label": "Składniki",
           "children": []
         },
         {
@@ -76,7 +153,7 @@
         },
         {
           "tag": "Typ/Wyposazenie",
-          "label": "Wyposazenie",
+          "label": "Wyposażenie",
           "children": []
         },
         {
@@ -90,120 +167,962 @@
       "tag": "Cechy-podstawowe",
       "label": "Cechy",
       "children": [
-        { "tag": "Cechy/Siła", "label": "Siła", "children": [] },
-        { "tag": "Cechy/Zwinność", "label": "Finezja", "children": [] },
-        { "tag": "Cechy/Inteligencja", "label": "Inteligencja", "children": [] },
-        { "tag": "Cechy/Kondycja", "label": "Kondycja", "children": [] },
-        { "tag": "Cechy/Pamięć", "label": "Pamięć", "children": [] },
-        { "tag": "Cechy/Spryt", "label": "Spryt", "children": [] },
-        { "tag": "Cechy/HP", "label": "Witalność", "children": [] },
-        { "tag": "Cechy/Celność", "label": "Celność", "children": [] },
-        { "tag": "Cechy/Krytyk", "label": "Szansa na krytyka", "children": [] },
-        { "tag": "Cechy/Unik", "label": "Unik", "children": [] },
-        { "tag": "Cechy/Blok", "label": "Blok", "children": [] },
-        { "tag": "Cechy/Pancerz", "label": "Pancerz", "children": [] },
-        { "tag": "Cechy/Pancerz-fizyczny", "label": "Pancerz fizyczny", "children": [] },
-        { "tag": "Cechy/Pancerz-magiczny", "label": "Pancerz magiczny", "children": [] },
-        { "tag": "Cechy/Inicjatywa", "label": "Inicjatywa", "children": [] },
-        { "tag": "Cechy/Ruch", "label": "Ruch", "children": [] },
-        { "tag": "Cechy/Szybkość", "label": "Szybkość", "children": [] },
-        { "tag": "Cechy/Zręczność", "label": "Zręczność", "children": [] },
-        { "tag": "Cechy/Percepcja", "label": "Percepcja", "children": [] }
+        {
+          "tag": "Cechy/Siła",
+          "label": "Siła",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Zwinność",
+          "label": "Zwinność",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Inteligencja",
+          "label": "Inteligencja",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Kondycja",
+          "label": "Kondycja",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Pamięć",
+          "label": "Pamięć",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Spryt",
+          "label": "Bystrość",
+          "children": []
+        },
+        {
+          "tag": "Cechy/HP",
+          "label": "Witalność",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Celność",
+          "label": "Celność",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Krytyk",
+          "label": "Szansa na trafienie krytyczne",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Unik",
+          "label": "Unik",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Blok",
+          "label": "Blok",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Pancerz",
+          "label": "Pancerz",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Pancerz-fizyczny",
+          "label": "Pancerz fizyczny",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Pancerz-magiczny",
+          "label": "Pancerz magiczny",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Pancerz-zbalansowany",
+          "label": "Pancerz zbalansowany",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Inicjatywa",
+          "label": "Inicjatywa",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Ruch",
+          "label": "Ruch",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Szybkość",
+          "label": "Szybkość",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Zręczność",
+          "label": "Zręczność",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Percepcja",
+          "label": "Percepcja",
+          "children": []
+        }
       ]
     },
     {
       "tag": "Cechy-odporności",
       "label": "Odporności",
       "children": [
-        { "tag": "Cechy/Odporność-na-ogień", "label": "Odporność na ogień", "children": [] },
-        { "tag": "Cechy/Odporność-na-wodę", "label": "Odporność na wodę", "children": [] },
-        { "tag": "Cechy/Odporność-na-powietrze", "label": "Odporność na powietrze", "children": [] },
-        { "tag": "Cechy/Odporność-na-ziemię", "label": "Odporność na ziemię", "children": [] },
-        { "tag": "Cechy/Odporność-na-truciznę", "label": "Odporność na truciznę", "children": [] },
-        { "tag": "Cechy/Odporność-na-wszystko", "label": "Odporność na wszystko", "children": [] },
-        { "tag": "Cechy/Immunitet-na-ogień", "label": "Niewrażliwość na ogień", "children": [] },
-        { "tag": "Cechy/Immunitet-na-zamrożenie", "label": "Niewrażliwość na zamrożenie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-ogłuszenie", "label": "Niewrażliwość na ogłuszenie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-oślepienie", "label": "Niewrażliwość na oślepienie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-krwawienie", "label": "Niewrażliwość na krwawienie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-kwas", "label": "Niewrażliwość na kwas", "children": [] },
-        { "tag": "Cechy/Immunitet-na-potrącenie", "label": "Niewrażliwość na potrącenie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-spowolnienie", "label": "Niewrażliwość na spowolnienie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-urok", "label": "Niewrażliwość na urok", "children": [] },
-        { "tag": "Cechy/Immunitet-na-strach", "label": "Niewrażliwość na strach", "children": [] },
-        { "tag": "Cechy/Immunitet-na-szok", "label": "Niewrażliwość na szok", "children": [] },
-        { "tag": "Cechy/Immunitet-na-teleport", "label": "Niewrażliwość na teleport", "children": [] },
-        { "tag": "Cechy/Immunitet-na-uduszenie", "label": "Niewrażliwość na uduszenie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-okaleczenie", "label": "Niewrażliwość na okaleczenie", "children": [] },
-        { "tag": "Cechy/Immunitet-na-szaleństwo", "label": "Niewrażliwość na szaleństwo", "children": [] }
+        {
+          "tag": "Cechy/Odporność-na-ogień",
+          "label": "Odporność na ogień",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-wodę",
+          "label": "Odporność na wodę",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-powietrze",
+          "label": "Odporność na powietrze",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-ziemię",
+          "label": "Odporność na ziemię",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-truciznę",
+          "label": "Odporność na truciznę",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-wszystko",
+          "label": "Odporność na wszystko",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-ogień",
+          "label": "Niewrażliwość na ogień",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-zamrożenie",
+          "label": "Niewrażliwość na zamrożenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-ogłuszenie",
+          "label": "Niewrażliwość na ogłuszenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-oślepienie",
+          "label": "Niewrażliwość na oślepienie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-krwawienie",
+          "label": "Niewrażliwość na krwawienie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-kwas",
+          "label": "Niewrażliwość na kwas",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-potrącenie",
+          "label": "Niewrażliwość na potrącenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-spowolnienie",
+          "label": "Niewrażliwość na spowolnienie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-urok",
+          "label": "Niewrażliwość na urok",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-strach",
+          "label": "Niewrażliwość na strach",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-szok",
+          "label": "Niewrażliwość na szok",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-teleport",
+          "label": "Niewrażliwość na teleport",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-uduszenie",
+          "label": "Niewrażliwość na uduszenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-okaleczenie",
+          "label": "Niewrażliwość na okaleczenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-szaleństwo",
+          "label": "Niewrażliwość na szaleństwo",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-cień",
+          "label": "Odporność na cień",
+          "children": []
+        }
       ]
     },
     {
       "tag": "Cechy-obrazenia",
       "label": "Obrażenia",
       "children": [
-        { "tag": "Cechy/Obrażenia-ognia", "label": "Obrażenia od ognia", "children": [] },
-        { "tag": "Cechy/Obrażenia-wody", "label": "Obrażenia od wody", "children": [] },
-        { "tag": "Cechy/Obrażenia-powietrza", "label": "Obrażenia od powietrza", "children": [] },
-        { "tag": "Cechy/Obrażenia-ziemi", "label": "Obrażenia od ziemi", "children": [] },
-        { "tag": "Cechy/Obrażenia-trucizny", "label": "Obrażenia od trucizny", "children": [] },
-        { "tag": "Cechy/Obrażenia-fizyczne", "label": "Obrażenia fizyczne", "children": [] },
-        { "tag": "Cechy/Obrażenia-tenebrium", "label": "Obrażenia od tenebrium", "children": [] }
+        {
+          "tag": "Cechy/Obrażenia-magiczne",
+          "label": "Obrażenia magiczne",
+          "children": [
+            {
+              "tag": "Cechy/Obrażenia-magiczne/ognia",
+              "label": "Obrażenia od ognia",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/wody",
+              "label": "Obrażenia od wody",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/powietrza",
+              "label": "Obrażenia od powietrza",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/ziemi",
+              "label": "Obrażenia od ziemi",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/trucizny",
+              "label": "Obrażenia od trucizny",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/cienia",
+              "label": "Obrażenia od cienia",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Obrażenia-magiczne/tenebrium",
+              "label": "Obrażenia od tenebrium",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "Cechy/Obrażenia-fizyczne",
+          "label": "Obrażenia fizyczne",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Obrażenia-przeszywające",
+          "label": "Obrażenia przeszywające",
+          "children": []
+        }
       ]
     },
     {
-      "tag": "Cechy-bron",
-      "label": "Bronie",
+      "tag": "Cechy-bieglosci-bojowe",
+      "label": "Biegłości bojowe",
       "children": [
-        { "tag": "Cechy/Jednoręczna", "label": "Broń jednoręczna", "children": [] },
-        { "tag": "Cechy/Dwuręczna", "label": "Broń dwuręczna", "children": [] },
-        { "tag": "Cechy/Walka-dwoma-broniami", "label": "Walka dwiema broniami", "children": [] },
-        { "tag": "Cechy/Dystansowa", "label": "Broń dystansowa", "children": [] }
-      ]
-    },
-    {
-      "tag": "Cechy-obrona",
-      "label": "Obrona",
-      "children": [
-        { "tag": "Cechy/Przywództwo", "label": "Przywództwo", "children": [] },
-        { "tag": "Cechy/Wytrwałość", "label": "Wytrwałość", "children": [] },
-        { "tag": "Cechy/Odbicie", "label": "Odbicie", "children": [] }
-      ]
-    },
-    {
-      "tag": "Cechy-umiejetnosci",
-      "label": "Szkoły umiejętności",
-      "children": [
-        { "tag": "Cechy/Wojna", "label": "Wojna", "children": [] },
-        { "tag": "Cechy/Łobuz", "label": "Łobuz", "children": [] },
-        { "tag": "Cechy/Pyrokinetyka", "label": "Pyrokinetyka", "children": [] },
-        { "tag": "Cechy/Hydrosophia", "label": "Hydrosophia", "children": [] },
-        { "tag": "Cechy/Geomancja", "label": "Geomancja", "children": [] },
-        { "tag": "Cechy/Aeroteurgia", "label": "Aeroteurgia", "children": [] },
-        { "tag": "Cechy/Nekromancja", "label": "Nekromancja", "children": [] },
-        { "tag": "Cechy/Przyzywanie", "label": "Przyzywanie", "children": [] },
-        { "tag": "Cechy/Polimorfia", "label": "Polimorfia", "children": [] }
+        {
+          "tag": "Cechy/Bieglosci-broni",
+          "label": "Biegłości broni",
+          "children": [
+            {
+              "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+              "label": "Broń jednoręczna",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+              "label": "Broń dwuręczna",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+              "label": "Walka dwiema broniami",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-broni/Dystansowa",
+              "label": "Broń dystansowa",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "Cechy/Bieglosci-obrony",
+          "label": "Biegłości obrony",
+          "children": [
+            {
+              "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+              "label": "Przywództwo",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-obrony/Wytrwałość",
+              "label": "Wytrwałość",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-obrony/Odbicie",
+              "label": "Odbicie",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-obrony/Krzepa",
+              "label": "Krzepa",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+              "label": "Siła woli",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Bieglosci-obrony/Obrona",
+              "label": "Obrona",
+              "children": []
+            }
+          ]
+        },
+        {
+          "tag": "Cechy/Umiejetnosci",
+          "label": "Umiejętności",
+          "children": [
+            {
+              "tag": "Cechy/Umiejetnosci/Wojna",
+              "label": "Wojna",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Łowiectwo",
+              "label": "Łowiectwo",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Łobuz",
+              "label": "Łobuz",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+              "label": "Pirokineza",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Hydrosophia",
+              "label": "Hydrozofia",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Geomancja",
+              "label": "Geomancja",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+              "label": "Aeroturgia",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Nekromancja",
+              "label": "Nekromancja",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Przyzywanie",
+              "label": "Przyzywanie",
+              "children": []
+            },
+            {
+              "tag": "Cechy/Umiejetnosci/Polimorfia",
+              "label": "Polimorfia",
+              "children": []
+            }
+          ]
+        }
       ]
     },
     {
       "tag": "Cechy-cywilne",
       "label": "Zdolności cywilne",
       "children": [
-        { "tag": "Cechy/Handel", "label": "Handel", "children": [] },
-        { "tag": "Cechy/Szczęście", "label": "Szczęśliwy traf", "children": [] },
-        { "tag": "Cechy/Perswazja", "label": "Perswazja", "children": [] },
-        { "tag": "Cechy/Znawca", "label": "Znawca", "children": [] },
-        { "tag": "Cechy/Telekineza", "label": "Telekineza", "children": [] },
-        { "tag": "Cechy/Skradanie", "label": "Skradanie", "children": [] },
-        { "tag": "Cechy/Złodziejstwo", "label": "Złodziejstwo", "children": [] },
-        { "tag": "Cechy/Charyzma", "label": "Charyzma", "children": [] }
+        {
+          "tag": "Cechy/Handel",
+          "label": "Handel",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Szczęście",
+          "label": "Szczęśliwy traf",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Perswazja",
+          "label": "Perswazja",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Znawca",
+          "label": "Znawca",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Telekineza",
+          "label": "Telekineza",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Skradanie",
+          "label": "Skradanie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Złodziejstwo",
+          "label": "Złodziejstwo",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Charyzma",
+          "label": "Charyzma",
+          "children": []
+        }
       ]
     },
     {
       "tag": "Cechy-inne",
       "label": "Inne",
       "children": [
-        { "tag": "Cechy/Leczenie", "label": "Leczenie", "children": [] }
+        {
+          "tag": "Cechy/Leczenie",
+          "label": "Leczenie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Gniazda-run",
+          "label": "Gniazda run",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-sen",
+          "label": "Niewrażliwość na sen",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Immunitet-na-truciznę",
+          "label": "Niewrażliwość na truciznę",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Kowalstwo",
+          "label": "Kowalstwo",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Kradzież-kieszonkowa",
+          "label": "Kradzież kieszonkowa",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Maksymalne-PA",
+          "label": "Maksymalne PA",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Obrażenia",
+          "label": "Bonus obrażeń",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odnawianie-PA",
+          "label": "Odnawianie PA",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-obrażenia-fizyczne",
+          "label": "Odporność na obrażenia fizyczne",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Odporność-na-obrażenia-przeszywające",
+          "label": "Odporność na obrażenia przeszywające",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Otwieranie-zamków",
+          "label": "Otwieranie zamków",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Początkowe-PA",
+          "label": "Początkowe PA",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Rzuca-zaklecie",
+          "label": "Rzuca zaklęcie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Uczy-umiejetnosci",
+          "label": "Uczy umiejętności",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Wytwarzanie",
+          "label": "Wytwarzanie",
+          "children": []
+        },
+        {
+          "tag": "Cechy/Zapewnia-umiejetnosc",
+          "label": "Zapewnia umiejętność",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "Cechy-statusy",
+      "label": "Nakładane statusy",
+      "children": [
+        {
+          "tag": "Efekty/Statusy/ACID",
+          "label": "Kwas",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/APOTHEOSIS",
+          "label": "Apoteoza",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/ARCANE_STITCH",
+          "label": "Magiczny Szew",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/BLEEDING",
+          "label": "Krwawienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/BLIND",
+          "label": "Oślepienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/BLOOD_BUBBLE",
+          "label": "Krwawy Pęcherz",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/BURNING",
+          "label": "Płonięcie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CHAIN_HEAL",
+          "label": "Uzdrowienie łańcuchowe",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CHARMED",
+          "label": "Oczarowanie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CHICKEN",
+          "label": "Chicken Shape",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CHILLED",
+          "label": "Oziębienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CLEAR_MINDED",
+          "label": "Jasny Umysł",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/COW",
+          "label": "Cow Shape",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CRIPPLED",
+          "label": "Okaleczenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/CURSED",
+          "label": "Przekleństwo",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DAZED",
+          "label": "Oszołomienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DEATH_RESIST",
+          "label": "Odparcie śmierci",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DEATH_WISH",
+          "label": "Życzenie Śmierci",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DECAYING_TOUCH",
+          "label": "Rozkład",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DEMONIC_BARGAIN",
+          "label": "Demoniczny układ",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DISARMED",
+          "label": "Disarmed",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DISEASED",
+          "label": "Choroba",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/DRUNK",
+          "label": "Upojenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/ENTANGLED",
+          "label": "Splątanie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/ETERNITY_DOOR",
+          "label": "Opór",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FAVOURABLE_WIND_AURA",
+          "label": "Aura Korzystnego Wiatru",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FEAR",
+          "label": "Strach",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FIREBLOOD",
+          "label": "Fireblood",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FIRE_BRAND_AURA",
+          "label": "Fire Brand",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FLAMING_CRESCENDO",
+          "label": "Płomienny Finał",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FLAMING_TONGUES",
+          "label": "Płomienne Języki",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FORTIFIED",
+          "label": "Kamienny Pancerz",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FROST_AURA",
+          "label": "Frost Aura",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/FROZEN",
+          "label": "Frozen",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/HASTED",
+          "label": "Przyspieszenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/HEALING",
+          "label": "Healing",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/HEALING_ELIXIR",
+          "label": "Eliksir uzdrawiający",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/HEAL_SHARING",
+          "label": "Bratnia Dusza",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/HORNS",
+          "label": "Bycze Rogi",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/INF_POWER",
+          "label": "Podsycenie Mocy",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/INF_RANGED",
+          "label": "Ranged Infusion",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/INF_SHADOW",
+          "label": "Podsycenie Cienia",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/INF_WARP",
+          "label": "Podsycenie Zakrzywienia",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/INVISIBLE",
+          "label": "Niewidzialność",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/KNOCKDOWN",
+          "label": "Knocked down",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/KNOCKED_DOWN",
+          "label": "Powalenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MADNESS",
+          "label": "Szał",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MAGIC_SHELL",
+          "label": "Magiczna Skorupa",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MEDUSASPOOKY",
+          "label": "Medusa ",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MEDUSA_HEAD",
+          "label": "Głowa meduzy",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MEND_METAL",
+          "label": "Mending Metal",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/MUTED",
+          "label": "Uciszenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/NECROFIRE",
+          "label": "Nekroogień",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/NULL_RESISTANCE",
+          "label": "Zneutralizowana odporność",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/PAINCASTERSPOOKY",
+          "label": "Bólomiot",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/PAINDOGSPOOKY",
+          "label": "Pain Doggy",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/PERMAFROST",
+          "label": "Zmarzlina",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/PETRIFIED",
+          "label": "Skamienienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/POISONED",
+          "label": "Zatrucie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/REGENERATION",
+          "label": "Regeneracja",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/RESURRECT",
+          "label": "Wskrzeszenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SCARECROW",
+          "label": "Scarecrow Shape",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SHED_SKIN",
+          "label": "Linienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SHOCKED",
+          "label": "Porażenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SLOWED",
+          "label": "Spowolnienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SPIDER_LEGS",
+          "label": "Pajęcze Nogi",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/STEAM_LANCE",
+          "label": "Lanca Parowa",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/STEEL_SKIN",
+          "label": "Steel Skin",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SUFFOCATING",
+          "label": "Duszenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/SUPERCHARGE",
+          "label": "Doładowanie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/TONGUED",
+          "label": "Diplomat Tongue",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/WARM",
+          "label": "Rozgrzanie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/WEAK",
+          "label": "Osłabienie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/WEB",
+          "label": "Omotanie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/WET",
+          "label": "Przemoczenie",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Statusy/WINGS",
+          "label": "Skrzydła",
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "Cechy-powierzchnie",
+      "label": "Tworzone powierzchnie",
+      "children": [
+        {
+          "tag": "Efekty/Powierzchnie/Fire",
+          "label": "Powierzchnia: Ogień",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Powierzchnie/Oil",
+          "label": "Powierzchnia: Olej",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Powierzchnie/Poison",
+          "label": "Powierzchnia: Trucizna",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Powierzchnie/Source",
+          "label": "Powierzchnia: Źródło",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Powierzchnie/Water",
+          "label": "Powierzchnia: Woda",
+          "children": []
+        },
+        {
+          "tag": "Efekty/Powierzchnie/WaterFrozen",
+          "label": "Powierzchnia: Lód",
+          "children": []
+        }
       ]
     }
   ]

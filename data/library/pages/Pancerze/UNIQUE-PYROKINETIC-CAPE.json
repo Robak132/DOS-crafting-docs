@@ -2,11 +2,20 @@
   "slug": "Pancerze/UNIQUE-PYROKINETIC-CAPE",
   "title": "Unique Pyrokinetic Cape",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

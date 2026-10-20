@@ -3,9 +3,12 @@
   "title": "Old Sabre",
   "titlePl": "Stara szabla",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Miecze"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Skladniki/METAL-SCRAPS,-WOOD-CHIPS,-NAILS",
   "title": "Metal Scraps, Wood Chips, Nails",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

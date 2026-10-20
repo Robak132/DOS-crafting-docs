@@ -3,9 +3,10 @@
   "title": "Mace",
   "titlePl": "Buława",
   "tags": [
-    "Typ/Bron",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,14 @@
   "slug": "Magia/FIRE-SWORD",
   "title": "Fire Sword",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
     "DOS2-CO",
+    "Efekty/Statusy/BURNING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Miecze",
     "Typ/Magia"
   ],
   "itemPage": true,

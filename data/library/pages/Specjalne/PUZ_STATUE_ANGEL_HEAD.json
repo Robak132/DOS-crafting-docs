@@ -2,9 +2,9 @@
   "slug": "Specjalne/PUZ_STATUE_ANGEL_HEAD",
   "title": "Head of Angelic Statue",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

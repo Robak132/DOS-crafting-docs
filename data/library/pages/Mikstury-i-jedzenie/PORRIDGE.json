@@ -3,9 +3,12 @@
   "title": "Porridge",
   "titlePl": "Owsianka",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Siła",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

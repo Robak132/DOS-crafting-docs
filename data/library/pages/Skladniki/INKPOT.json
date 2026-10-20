@@ -3,9 +3,10 @@
   "title": "Inkpot",
   "tags": [
     "DOS2-CO",
+    "Efekty/Statusy/POISONED",
     "Typ",
-    "Typ/Wyposazenie",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

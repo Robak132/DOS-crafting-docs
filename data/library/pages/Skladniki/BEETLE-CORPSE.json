@@ -2,9 +2,9 @@
   "slug": "Skladniki/BEETLE-CORPSE",
   "title": "Beetle Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

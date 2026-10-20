@@ -3,9 +3,9 @@
   "title": "Cursed Fire Arrowhead",
   "titlePl": "Przeklęty grot ognisty",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

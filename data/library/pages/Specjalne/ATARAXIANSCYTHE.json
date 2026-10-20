@@ -2,9 +2,21 @@
   "slug": "Specjalne/ATARAXIANSCYTHE",
   "title": "AtaraxianScythe",
   "tags": [
-    "Typ/Specjalne",
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Inteligencja",
+    "Cechy/Krytyk",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Siła",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

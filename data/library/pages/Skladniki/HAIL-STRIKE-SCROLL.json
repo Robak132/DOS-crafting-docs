@@ -3,10 +3,16 @@
   "title": "Hail Strike Scroll",
   "titlePl": "Zwój Gradobicia",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
     "DOS2",
+    "Efekty/Powierzchnie/WaterFrozen",
+    "Efekty/Statusy/CHILLED",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

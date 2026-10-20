@@ -3,9 +3,12 @@
   "title": "Sharp Claw Belt",
   "titlePl": "Pas z ostrym szponem",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Siła",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

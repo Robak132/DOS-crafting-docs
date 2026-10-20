@@ -7,6 +7,7 @@ import { parseItemQuantity } from "./recipeQuantity"
 export function buildTooltipIndex(recipes: RecipeRow[]) {
   const itemsBySlug = new Map<string, RecipeItem>()
   const itemsByName = new Map<string, RecipeItem>()
+  const resultsByStats = new Map<string, Set<RecipeRow>>()
   const resultsBySlug = new Map<string, Set<RecipeRow>>()
   const resultsByName = new Map<string, Set<RecipeRow>>()
   const order = new Map<RecipeRow, number>()
@@ -18,11 +19,12 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
   }
   recipes.forEach((row, position) => {
     order.set(row, position)
+    if (row.result.statsId) add(resultsByStats, row.result.statsId, row)
     if (row.result.slug) add(resultsBySlug, row.result.slug, row)
-    for (const key of itemNameKeys(row.result.name)) add(resultsByName, key, row)
+    if (!row.result.statsId) for (const key of itemNameKeys(row.result.name)) add(resultsByName, key, row)
     for (const item of [row.result, ...row.ingredients]) {
       if (item.selectorTag) continue
-      if (item.slug) itemsBySlug.set(item.slug, item)
+      if (item.slug && (item === row.result || !itemsBySlug.has(item.slug))) itemsBySlug.set(item.slug, item)
       itemsByName.set(itemIconKey(item.name), item)
     }
   })
@@ -33,8 +35,10 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
     recipesFor(item: RecipeItem) {
       const cached = cache.get(item)
       if (cached) return cached
-      const rows = new Set(item.slug ? resultsBySlug.get(item.slug) : undefined)
-      for (const key of itemNameKeys(item.name, parseItemQuantity(item.name).base)) {
+      const rows = new Set(
+        item.statsId ? resultsByStats.get(item.statsId) : item.slug ? resultsBySlug.get(item.slug) : undefined,
+      )
+      for (const key of item.statsId ? [] : itemNameKeys(item.name, parseItemQuantity(item.name).base)) {
         for (const row of resultsByName.get(key) ?? []) rows.add(row)
       }
       const result = [...rows].sort((a, b) => order.get(a)! - order.get(b)!)

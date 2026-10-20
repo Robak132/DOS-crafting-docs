@@ -2,9 +2,15 @@
   "slug": "Magia/WATER-SWORD",
   "title": "Water Sword",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
+    "Efekty/Statusy/WET",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Miecze",
     "Typ/Magia"
   ],
   "itemPage": true,

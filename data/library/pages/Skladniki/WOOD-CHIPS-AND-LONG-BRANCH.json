@@ -2,9 +2,9 @@
   "slug": "Skladniki/WOOD-CHIPS-AND-LONG-BRANCH",
   "title": "Wood Chips and Long Branch",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

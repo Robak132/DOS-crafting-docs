@@ -3,10 +3,12 @@
   "title": "Feather Belt",
   "titlePl": "Pas z piórem",
   "tags": [
-    "Typ/Pasy",
+    "Cechy",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Cechy/Zręczność",
-    "Typ"
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

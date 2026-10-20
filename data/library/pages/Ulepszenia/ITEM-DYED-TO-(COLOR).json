@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ITEM-DYED-TO-(COLOR)",
   "title": "ITEM DYED TO (COLOR)",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

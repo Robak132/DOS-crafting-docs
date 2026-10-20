@@ -3,11 +3,12 @@
   "title": "Ancient Skull Amulet",
   "titlePl": "Prastary amulet z czaszką",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Inteligencja",
-    "Typ"
+    "Cechy/Odporność-na-ziemię",
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

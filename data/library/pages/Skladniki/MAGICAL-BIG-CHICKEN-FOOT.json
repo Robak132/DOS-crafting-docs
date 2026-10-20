@@ -3,9 +3,9 @@
   "title": "Magical Big Chicken Foot",
   "titlePl": "Magiczna nóżka wielkiego kuraka",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

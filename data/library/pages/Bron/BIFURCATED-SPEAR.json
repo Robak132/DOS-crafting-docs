@@ -2,9 +2,17 @@
   "slug": "Bron/BIFURCATED-SPEAR",
   "title": "Bifurcated Spear",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/CRIPPLED",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Wlocznie"
   ],
   "itemPage": true,
   "categoryPage": false

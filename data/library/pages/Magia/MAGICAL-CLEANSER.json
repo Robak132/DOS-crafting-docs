@@ -3,9 +3,9 @@
   "title": "Magical Cleanser",
   "tags": [
     "DOS2-CO",
-    "Typ/Skladniki",
     "Typ",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

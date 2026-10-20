@@ -3,10 +3,15 @@
   "title": "Chameleon Cloak Scroll",
   "titlePl": "Zwój Płaszcza Kameleona",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
     "DOS2",
+    "Efekty/Statusy/INVISIBLE",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

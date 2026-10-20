@@ -3,11 +3,11 @@
   "title": "Earth Essence",
   "titlePl": "Esencja Ziemi",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "DOS2-CO",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

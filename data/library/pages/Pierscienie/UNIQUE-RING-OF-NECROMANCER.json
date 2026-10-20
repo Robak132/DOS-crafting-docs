@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-NECROMANCER",
   "title": "Unique Ring of Necromancer",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Nekromancja",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

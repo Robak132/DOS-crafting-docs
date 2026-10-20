@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE",
   "title": "add XX% element damage",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

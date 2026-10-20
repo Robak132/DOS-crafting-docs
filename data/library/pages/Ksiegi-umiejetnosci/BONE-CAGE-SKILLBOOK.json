@@ -3,9 +3,11 @@
   "title": "Bone Cage Skillbook",
   "titlePl": "Księga umiejętności „Kościana Klatka”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

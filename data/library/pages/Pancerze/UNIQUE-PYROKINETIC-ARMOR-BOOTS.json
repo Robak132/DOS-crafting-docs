@@ -1,12 +1,15 @@
 {
   "slug": "Pancerze/UNIQUE-PYROKINETIC-ARMOR-BOOTS",
-  "title": "Unique Pyrokinetic Armor Boots",
+  "title": "Unique Pyromancer Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Unik",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -4,9 +4,9 @@
   "tags": [
     "DOS2-CO",
     "Typ",
-    "Typ/Wyposazenie",
     "Typ/Magia",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,12 @@
   "slug": "Strzaly-i-granaty/CURSED-SILVER-ARROW",
   "title": "Cursed Silver Arrow",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/CURSED",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

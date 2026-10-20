@@ -3,9 +3,9 @@
   "title": "Magical Starfish",
   "titlePl": "Magiczna rozgwiazda",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

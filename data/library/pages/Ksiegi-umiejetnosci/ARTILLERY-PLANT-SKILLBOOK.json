@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/ARTILLERY-PLANT-SKILLBOOK",
   "title": "Artillery Plant Skillbook",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,12 @@
   "slug": "Mikstury-i-jedzenie/MENEMEN",
   "title": "Menemen",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Pamięć",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

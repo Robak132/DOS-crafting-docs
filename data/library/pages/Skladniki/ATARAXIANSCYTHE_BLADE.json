@@ -2,9 +2,9 @@
   "slug": "Skladniki/ATARAXIANSCYTHE_BLADE",
   "title": "Blade of the Swornbreaker",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

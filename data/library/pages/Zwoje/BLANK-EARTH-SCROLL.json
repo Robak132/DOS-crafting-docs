@@ -3,10 +3,10 @@
   "title": "Blank Earth Scroll",
   "titlePl": "Niezapisany zwój ziemi",
   "tags": [
-    "Typ/Zwoje",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

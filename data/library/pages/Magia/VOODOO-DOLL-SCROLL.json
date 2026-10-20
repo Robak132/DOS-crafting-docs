@@ -2,10 +2,13 @@
   "slug": "Magia/VOODOO-DOLL-SCROLL",
   "title": "Voodoo Doll Scroll",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
+    "Efekty/Statusy/BLEEDING",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

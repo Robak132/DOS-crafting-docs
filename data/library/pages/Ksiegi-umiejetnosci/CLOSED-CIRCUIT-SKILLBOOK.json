@@ -3,9 +3,13 @@
   "title": "Closed Circuit Skillbook",
   "titlePl": "Księga umiejętności „Obwód Zamknięty”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

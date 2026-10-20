@@ -2,10 +2,11 @@
   "slug": "Przedmioty-wydarzen/PAINCASTER-POTION",
   "title": "Paincaster Potion",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
+    "Efekty/Statusy/PAINCASTERSPOOKY",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

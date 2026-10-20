@@ -3,9 +3,13 @@
   "title": "Primitive Harpoon",
   "titlePl": "Prymitywny harpun",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Wlocznie"
   ],
   "itemPage": true,
   "categoryPage": false

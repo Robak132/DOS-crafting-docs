@@ -3,9 +3,14 @@
   "title": "Potion Of Strong Will",
   "titlePl": "Mikstura siły woli",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Immunitet-na-oślepienie",
+    "Cechy/Immunitet-na-sen",
+    "Cechy/Immunitet-na-strach",
+    "Cechy/Immunitet-na-urok",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

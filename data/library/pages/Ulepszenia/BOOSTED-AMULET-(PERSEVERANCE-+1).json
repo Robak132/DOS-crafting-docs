@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-AMULET-(PERSEVERANCE-+1)",
   "title": "Boosted Amulet (Perseverance +1)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Wytrwałość",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Wytrwałość",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

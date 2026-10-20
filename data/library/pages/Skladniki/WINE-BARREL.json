@@ -3,11 +3,11 @@
   "title": "Wine barrel",
   "titlePl": "Beczka wina",
   "tags": [
-    "DOS2",
     "DOS1",
+    "DOS2",
     "Typ",
-    "Typ/Stanowiska-i-pojemniki",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

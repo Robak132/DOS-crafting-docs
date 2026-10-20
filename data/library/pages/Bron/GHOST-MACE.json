@@ -2,9 +2,18 @@
   "slug": "Bron/GHOST-MACE",
   "title": "Ghost Mace",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Kondycja",
+    "Cechy/Siła",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/DAZED",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,14 @@
   "title": "Cannibalise Scroll",
   "titlePl": "Zwój Kanibalizmu",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
     "DOS2",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,11 @@
   "title": "Giant Healing Potion",
   "titlePl": "Ogromna mikstura uzdrawiająca",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
-    "Cechy/Leczenie",
     "Cechy",
-    "Typ"
+    "Cechy/Leczenie",
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

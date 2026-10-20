@@ -3,9 +3,9 @@
   "title": "Potion Of Jellyfish Skin",
   "titlePl": "Mikstura ze Skóry Meduzy",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

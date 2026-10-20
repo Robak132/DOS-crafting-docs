@@ -3,9 +3,19 @@
   "title": "Sickle",
   "titlePl": "Sierp",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Wojna",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/BLEEDING",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Miecze"
   ],
   "itemPage": true,
   "categoryPage": false

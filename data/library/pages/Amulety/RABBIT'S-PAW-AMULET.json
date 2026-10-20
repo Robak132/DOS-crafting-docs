@@ -3,11 +3,9 @@
   "title": "Rabbit's Paw Amulet",
   "titlePl": "Amulet z króliczą łapką",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy",
-    "Cechy/Szybkość",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

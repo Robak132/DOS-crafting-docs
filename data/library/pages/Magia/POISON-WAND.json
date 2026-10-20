@@ -2,9 +2,14 @@
   "slug": "Magia/POISON-WAND",
   "title": "Poison Wand",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Poison",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Rozdzki",
     "Typ/Magia"
   ],
   "itemPage": true,

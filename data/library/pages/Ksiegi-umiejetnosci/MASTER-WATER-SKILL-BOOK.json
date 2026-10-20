@@ -2,9 +2,9 @@
   "slug": "Ksiegi-umiejetnosci/MASTER-WATER-SKILL-BOOK",
   "title": "MASTER WATER SKILL BOOK",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

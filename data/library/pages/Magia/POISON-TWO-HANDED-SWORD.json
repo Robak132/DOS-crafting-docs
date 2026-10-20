@@ -2,11 +2,16 @@
   "slug": "Magia/POISON-TWO-HANDED-SWORD",
   "title": "2H Poison Sword",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/trucizny",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Powierzchnie/Poison",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Miecze",
     "Typ/Magia"
   ],
   "itemPage": true,

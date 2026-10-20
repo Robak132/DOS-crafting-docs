@@ -2,9 +2,14 @@
   "slug": "Magia/WATER-STAFF",
   "title": "Water Staff",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kostury",
     "Typ/Magia"
   ],
   "itemPage": true,

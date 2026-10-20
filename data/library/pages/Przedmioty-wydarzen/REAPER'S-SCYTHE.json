@@ -1,11 +1,17 @@
 {
   "slug": "Przedmioty-wydarzen/REAPER'S-SCYTHE",
-  "title": "Reaper's Scythe",
+  "title": "Halloween Reaper's Scythe",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Statusy/FEAR",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Topory",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

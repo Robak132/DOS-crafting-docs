@@ -2,9 +2,9 @@
   "slug": "Magia/BLACK-DIAMOND",
   "title": "Black Diamond",
   "tags": [
-    "Typ/Magia",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

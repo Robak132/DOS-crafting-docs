@@ -3,9 +3,9 @@
   "title": "Robe",
   "titlePl": "Szata",
   "tags": [
-    "Typ/Pancerz",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-GLOVES-(+-percent5)-CRITICAL-CHANCE",
   "title": "Boosted Gloves (+%5) Critical Chance",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Krytyk",
     "Cechy",
-    "Typ"
+    "Cechy/Krytyk",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

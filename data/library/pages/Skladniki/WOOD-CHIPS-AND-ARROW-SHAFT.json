@@ -2,9 +2,9 @@
   "slug": "Skladniki/WOOD-CHIPS-AND-ARROW-SHAFT",
   "title": "Wood Chips and Arrow Shaft",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

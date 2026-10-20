@@ -3,10 +3,11 @@
   "title": "Witch's Brewed Potion",
   "titlePl": "Mikstura uwarzona przez wiedźmę",
   "tags": [
-    "Typ/Specjalne",
     "DOS2",
+    "Efekty/Statusy/COW",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

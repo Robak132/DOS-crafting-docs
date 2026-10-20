@@ -3,9 +3,9 @@
   "title": "Pilgrim's Shell",
   "titlePl": "Skorupa pielgrzyma",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

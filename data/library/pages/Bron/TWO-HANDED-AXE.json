@@ -1,14 +1,15 @@
 {
   "slug": "Bron/TWO-HANDED-AXE",
-  "title": "Two Handed Axe",
-  "titlePl": "Dwuręczny topór",
+  "title": "Crafted 2H Axe",
   "tags": [
-    "DOS1",
-    "Typ/Bron",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
-    "Typ"
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS1",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,15 @@
   "title": "Door to Eternity Scroll",
   "titlePl": "Zwój Drzwi do Wieczności",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
     "DOS2",
+    "Efekty/Statusy/ETERNITY_DOOR",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

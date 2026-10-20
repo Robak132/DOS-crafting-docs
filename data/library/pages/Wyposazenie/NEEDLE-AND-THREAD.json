@@ -3,12 +3,12 @@
   "title": "Needle and Thread",
   "titlePl": "Igła z nitką",
   "tags": [
-    "Typ/Wyposazenie",
     "DOS1",
-    "DOS2-CO",
     "DOS2",
+    "DOS2-CO",
     "Typ",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

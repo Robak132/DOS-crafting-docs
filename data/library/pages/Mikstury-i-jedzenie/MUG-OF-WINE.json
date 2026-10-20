@@ -3,9 +3,13 @@
   "title": "Mug of Wine",
   "titlePl": "Kubek wina",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Szybkość",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/DRUNK",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

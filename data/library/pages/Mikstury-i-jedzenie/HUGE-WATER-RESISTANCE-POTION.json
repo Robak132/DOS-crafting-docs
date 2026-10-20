@@ -3,11 +3,11 @@
   "title": "Huge Water Resistance Potion",
   "titlePl": "Wielka mikstura odporności na wodę",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
     "Cechy",
     "Cechy/Odporność-na-wodę",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

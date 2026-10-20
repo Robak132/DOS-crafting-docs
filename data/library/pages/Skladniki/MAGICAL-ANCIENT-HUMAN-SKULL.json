@@ -3,10 +3,10 @@
   "title": "Magical Ancient Human Skull",
   "titlePl": "Magiczna prastara ludzka czaszka",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

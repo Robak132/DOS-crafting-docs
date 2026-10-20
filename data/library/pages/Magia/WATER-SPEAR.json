@@ -2,9 +2,16 @@
   "slug": "Magia/WATER-SPEAR",
   "title": "Water Spear",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
+    "Efekty/Statusy/WET",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Wlocznie",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -2,9 +2,9 @@
   "slug": "Skladniki/VOIDLING-INSECT-CORPSE",
   "title": "Voidling Insect Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

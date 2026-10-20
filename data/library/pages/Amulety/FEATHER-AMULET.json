@@ -3,10 +3,9 @@
   "title": "Feather Amulet",
   "titlePl": "Amulet z piórem",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Cechy/Zręczność",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

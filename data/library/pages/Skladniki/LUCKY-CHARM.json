@@ -3,11 +3,18 @@
   "title": "Lucky Charm",
   "titlePl": "Fart",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Szczęście",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Odporność-na-ziemię",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Spryt",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

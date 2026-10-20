@@ -2,9 +2,12 @@
   "slug": "Przedmioty-wydarzen/PUMPKIN-GRENADE",
   "title": "Spooky Pumpkin Grenade",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
+    "Efekty/Statusy/FEAR",
     "Typ",
+    "Typ/Przedmioty-wydarzen",
     "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,

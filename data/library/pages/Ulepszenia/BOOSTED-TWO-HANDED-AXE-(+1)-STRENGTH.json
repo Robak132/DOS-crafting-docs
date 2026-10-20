@@ -2,12 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-TWO-HANDED-AXE-(+1)-STRENGTH",
   "title": "Boosted Two Handed Axe (+1) Strength",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
     "Cechy/Siła",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

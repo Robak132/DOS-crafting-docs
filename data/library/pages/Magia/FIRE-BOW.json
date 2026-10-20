@@ -2,9 +2,14 @@
   "slug": "Magia/FIRE-BOW",
   "title": "Fire Bow",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
     "DOS2-CO",
+    "Efekty/Statusy/BURNING",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Luki",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -60,9 +60,23 @@ export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean
   })
 }
 
+export type TagFilterNode = TagStat & { children?: TagFilterNode[] }
+
+export function nestTagStats(tags: TagStat[]): TagFilterNode[] {
+  const nodes = new Map(tags.map((tag) => [tag.tag, { ...tag, children: [] as TagFilterNode[] }]))
+  const roots: TagFilterNode[] = []
+  for (const node of nodes.values()) {
+    let parent = node.tag.split("/").slice(0, -1).join("/")
+    while (parent && !nodes.has(parent)) parent = parent.slice(0, Math.max(0, parent.lastIndexOf("/")))
+    if (parent && nodes.has(parent)) nodes.get(parent)!.children.push(node)
+    else roots.push(node)
+  }
+  return roots
+}
+
 export type RecipeTagGroup = {
   label: string
-  tags: TagStat[]
+  tags: TagFilterNode[]
   /** Sekcje Cechy — bez wcięć ścieżkowych (rodzic jest tytułem grupy). */
   flat?: boolean
 }
@@ -128,8 +142,18 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
       sectionTags.push(child)
     }
     if (sectionTags.length > 0) {
-      cechySections.push({ label: group.label, tags: sectionTags, flat: true })
+      cechySections.push({ label: group.label, tags: nestTagStats(sectionTags), flat: true })
     }
+  }
+
+  // Keep newly exported traits available even before the hierarchy is updated.
+  const unassignedTraits = tags.filter(
+    ({ tag }) => !claimedCechy.has(tag) && (tag.startsWith("Cechy/") || tag.startsWith("Cechy-")),
+  )
+  if (unassignedTraits.length > 0) {
+    const fallback = cechySections.find((section) => section.label === "Inne")
+    if (fallback) fallback.tags.push(...nestTagStats(unassignedTraits))
+    else cechySections.push({ label: "Inne", tags: nestTagStats(unassignedTraits), flat: true })
   }
 
   for (const stat of tags) {
@@ -171,15 +195,13 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
   let cechyInserted = false
   for (const [label, groupTags] of groups) {
     if (groupTags.length === 0) continue
-    result.push({
-      label,
-      tags: groupTags.sort((a, b) =>
-        tagLabel(a.tag, { [a.tag]: a.label ?? a.tag }).localeCompare(
-          tagLabel(b.tag, { [b.tag]: b.label ?? b.tag }),
-          "pl",
-        ),
+    const sortedTags = groupTags.sort((a, b) =>
+      tagLabel(a.tag, { [a.tag]: a.label ?? a.tag }).localeCompare(
+        tagLabel(b.tag, { [b.tag]: b.label ?? b.tag }),
+        "pl",
       ),
-    })
+    )
+    result.push({ label, tags: label === "Kategorie" ? nestTagStats(sortedTags) : sortedTags })
     // Cechy zaraz po Kategorie.
     if (label === "Kategorie" && cechySections.length > 0) {
       result.push(...cechySections)
@@ -241,17 +263,6 @@ function normalizeSearch(value: string): string {
 
 export type RecipeSearchScope = "result" | "ingredient"
 
-function matchesHashTag(term: string, tags: string[], labels: Record<string, string>): boolean {
-  if (term.length <= 1) return false
-  const target = term.slice(1)
-  return tags.some((tag) => {
-    const full = normalizeSearch(tag)
-    const leaf = normalizeSearch(tag.split("/").at(-1) ?? tag)
-    const label = normalizeSearch(tagLabel(tag, labels))
-    return full === target || full.startsWith(`${target}/`) || leaf === target || label === target
-  })
-}
-
 export function matchesRecipeQuery(
   recipe: RecipeRow,
   query: string,
@@ -263,28 +274,26 @@ export function matchesRecipeQuery(
 
   const resultTags = recipeResultTags(recipe)
   if (scope === "ingredient") {
-    const ingredientTags = recipe.ingredients.flatMap((item) => {
-      const tags = [...item.tags]
-      if (item.selectorTag) tags.push(item.selectorTag)
-      return tags
-    })
     const text = normalizeSearch(
       recipe.ingredients
         .flatMap((item) => [item.name, item.namePl, item.selectorTag ? `#${item.selectorTag}` : ""])
         .filter(Boolean)
         .join(" "),
     )
-    return terms.every((term) =>
-      term.startsWith("#") ? matchesHashTag(term, ingredientTags, labels) : text.includes(term),
-    )
+    return terms.every((term) => text.includes(term))
   }
 
   const tagText = resultTags.map((tag) => normalizeSearch(`${tag} ${tagLabel(tag, labels)}`))
-  const effectText = [recipe.notes, formatEffectNote(recipe.notes ?? "")].filter(Boolean)
+  const effectText = [
+    recipe.notes,
+    formatEffectNote(recipe.notes ?? "", recipe.effectLabels),
+    recipe.result.effect?.en,
+    recipe.result.effect?.pl,
+  ].filter(Boolean)
   const text = normalizeSearch(
     [recipe.result.name, recipe.result.namePl, ...tagText, ...effectText].filter(Boolean).join(" "),
   )
-  return terms.every((term) => (term.startsWith("#") ? matchesHashTag(term, resultTags, labels) : text.includes(term)))
+  return terms.every((term) => text.includes(term))
 }
 
 const EFFECT_PHRASES: Array<[RegExp, string]> = [
@@ -322,12 +331,13 @@ const EFFECT_WORDS: Array<[RegExp, string]> = [
 ]
 
 /** Czytelny opis efektu przedmiotu — lekkie tłumaczenie EN→PL. */
-export function formatEffectNote(note: string): string {
+export function formatEffectNote(note: string, labels: Record<string, string> = {}): string {
   const trimmed = note.trim()
   if (!trimmed || trimmed === "-") return ""
   let text = trimmed
   for (const [pattern, replacement] of EFFECT_PHRASES) text = text.replace(pattern, replacement)
-  for (const [pattern, replacement] of EFFECT_WORDS) text = text.replace(pattern, replacement)
+  for (const [pattern, replacement] of EFFECT_WORDS)
+    text = text.replace(pattern, (match) => labels[match.toLocaleLowerCase()] ?? replacement)
   return text.replace(/\s+/g, " ").trim()
 }
 
@@ -381,13 +391,13 @@ export function splitEffectAndRemarks(raw: string): { effect: string; remarks: s
   }
 }
 
-function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks"): string[] {
+function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks", lang: "pl" | "en" = "pl"): string[] {
   const seen = new Set<string>()
   const values: string[] = []
   for (const recipe of recipes) {
     const raw = recipe[field]?.trim()
     if (!raw || raw === "-") continue
-    const display = field === "notes" ? formatEffectNote(raw) || raw : raw
+    const display = field === "notes" && lang === "pl" ? formatEffectNote(raw, recipe.effectLabels) || raw : raw
     const key = normalizeSearch(display)
     if (!key || seen.has(key)) continue
     seen.add(key)
@@ -397,8 +407,14 @@ function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks"): s
 }
 
 /** Unikalne efekty wyniku (sekcja „Efekt”). */
-export function uniqueItemEffects(recipes: RecipeRow[]): string[] {
-  return uniqueDisplayNotes(recipes, "notes")
+export function uniqueItemEffects(recipes: RecipeRow[], lang: "pl" | "en" = "pl", item?: RecipeItem): string[] {
+  const notes = uniqueDisplayNotes(recipes, "notes", lang)
+  if (notes.length) return notes
+  const effects = [item, ...recipes.map((row) => row.result)].flatMap((entry) => {
+    const value = (lang === "pl" && entry?.effect?.pl?.trim()) || entry?.effect?.en?.trim()
+    return value ? [value] : []
+  })
+  return [...new Set(effects)]
 }
 
 /** Unikalne uwagi / instrukcje (sekcja „Uwagi”). */
@@ -409,7 +425,7 @@ export function uniqueItemRemarks(recipes: RecipeRow[]): string[] {
 /** Czy receptura używa danego przedmiotu jako składnika (po slug lub nazwie PL/EN). */
 export function recipeUsesItem(recipe: RecipeRow, itemSlug: string | undefined, nameKeys: Set<string>): boolean {
   return recipe.ingredients.some((ingredient) => {
-    if (itemSlug && ingredient.slug === itemSlug) return true
+    if (itemSlug && ingredient.slug) return ingredient.slug === itemSlug
     const keys = [ingredient.name, ingredient.namePl]
       .filter((value): value is string => Boolean(value))
       .map((value) =>
@@ -517,7 +533,7 @@ export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
 }
 
 /** Jeden wiersz przedmiotu zbiera efekty i tagi ze wszystkich jego receptur. */
-export function catalogItemRows(recipes: RecipeRow[]) {
+export function catalogItemRows(recipes: RecipeRow[], lang: "pl" | "en" = "pl") {
   const variants = new Map<string, RecipeRow[]>()
   for (const recipe of recipes) {
     const key = recipe.result.slug ?? recipe.result.name
@@ -529,7 +545,7 @@ export function catalogItemRows(recipes: RecipeRow[]) {
     const rows = variants.get(item.slug ?? item.name) ?? []
     return {
       item,
-      effects: uniqueItemEffects(rows),
+      effects: uniqueItemEffects(rows, lang, item),
       tags: visibleRecipeTags([...new Set(rows.flatMap(recipeResultTags))]),
     }
   })

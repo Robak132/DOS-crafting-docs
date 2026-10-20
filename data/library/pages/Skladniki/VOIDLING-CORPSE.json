@@ -2,9 +2,9 @@
   "slug": "Skladniki/VOIDLING-CORPSE",
   "title": "Voidling Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

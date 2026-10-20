@@ -2,9 +2,14 @@
   "slug": "Magia/FIRE-STAFF",
   "title": "Fire Staff",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kostury",
     "Typ/Magia"
   ],
   "itemPage": true,

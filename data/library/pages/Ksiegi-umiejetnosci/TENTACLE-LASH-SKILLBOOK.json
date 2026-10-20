@@ -3,9 +3,13 @@
   "title": "Tentacle Lash Skillbook",
   "titlePl": "Księga umiejętności „Uderzenie Macką”",
   "tags": [
-    "Typ/Ksiegi-umiejetnosci",
+    "Cechy",
+    "Cechy/Uczy-umiejetnosci",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Polimorfia",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Ksiegi-umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

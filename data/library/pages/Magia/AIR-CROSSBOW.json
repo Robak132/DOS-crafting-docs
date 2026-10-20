@@ -2,9 +2,15 @@
   "slug": "Magia/AIR-CROSSBOW",
   "title": "Air Crossbow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/powietrza",
     "DOS2-CO",
+    "Efekty/Statusy/SHOCKED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Magia"
   ],
   "itemPage": true,

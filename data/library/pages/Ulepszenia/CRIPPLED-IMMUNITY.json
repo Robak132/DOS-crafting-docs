@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/CRIPPLED-IMMUNITY",
   "title": "Crippled Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-okaleczenie",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-okaleczenie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

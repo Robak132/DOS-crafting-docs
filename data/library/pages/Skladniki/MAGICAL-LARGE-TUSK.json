@@ -3,9 +3,9 @@
   "title": "Magical Large Tusk",
   "titlePl": "Magiczny duży kieł",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

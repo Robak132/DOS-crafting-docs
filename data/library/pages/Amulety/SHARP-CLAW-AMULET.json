@@ -3,9 +3,11 @@
   "title": "Sharp Claw Amulet",
   "titlePl": "Amulet z ostrym szponem",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Siła",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

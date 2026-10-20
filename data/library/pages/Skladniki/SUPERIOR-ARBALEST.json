@@ -2,9 +2,13 @@
   "slug": "Skladniki/SUPERIOR-ARBALEST",
   "title": "Superior Arbalest",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Skladniki"
   ],
   "itemPage": true,

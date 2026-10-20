@@ -2,9 +2,23 @@
   "slug": "Bron/BLACKROCK-SCYTHE",
   "title": "Unique Tenebrium Scythe",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Siła",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "Cechy/Umiejetnosci/Wojna",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Topory"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,11 @@
   "slug": "Skladniki/OCMIUM-LEAVES",
   "title": "Ocmium Leaves",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

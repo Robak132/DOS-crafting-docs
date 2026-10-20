@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-STAFF-(+1)-INTELLIGENCE",
   "title": "Boosted Staff (+1) Intelligence",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Inteligencja",
     "Cechy",
-    "Typ"
+    "Cechy/Inteligencja",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

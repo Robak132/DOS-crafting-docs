@@ -3,11 +3,11 @@
   "title": "Minor Wits Potion",
   "titlePl": "Mała mikstura Bystrości",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS2",
-    "Cechy/Spryt",
     "Cechy",
-    "Typ"
+    "Cechy/Spryt",
+    "DOS2",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

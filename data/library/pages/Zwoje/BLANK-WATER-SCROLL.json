@@ -3,10 +3,10 @@
   "title": "Blank Water Scroll",
   "titlePl": "Niezapisany zwój wody",
   "tags": [
-    "Typ/Zwoje",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

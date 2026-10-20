@@ -2,9 +2,20 @@
   "slug": "Bron/NEW-WORLD-CROSSBOW",
   "title": "New World Crossbow",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "Cechy/Celność",
+    "Cechy/Gniazda-run",
+    "Cechy/Obrażenia-fizyczne",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łowiectwo",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/MADNESS",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Kusze"
   ],
   "itemPage": true,
   "categoryPage": false

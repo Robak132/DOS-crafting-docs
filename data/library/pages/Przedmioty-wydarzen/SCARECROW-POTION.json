@@ -2,10 +2,11 @@
   "slug": "Przedmioty-wydarzen/SCARECROW-POTION",
   "title": "Scarecrow Potion",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
     "DOS2-CO",
+    "Efekty/Statusy/SCARECROW",
     "Typ",
-    "Typ/Mikstury-i-jedzenie"
+    "Typ/Mikstury-i-jedzenie",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

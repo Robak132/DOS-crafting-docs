@@ -2,12 +2,20 @@
   "slug": "Pancerze/UNIQUE-SUMMONER-CAPE",
   "title": "Unique Summoner Cape",
   "tags": [
-    "DOS2-CO",
-    "Cechy/Przyzywanie",
     "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

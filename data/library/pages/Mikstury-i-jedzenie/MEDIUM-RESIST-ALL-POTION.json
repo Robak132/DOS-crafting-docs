@@ -3,13 +3,17 @@
   "title": "Medium Resist All Potion",
   "titlePl": "Średnia mikstura wszelkiej odporności",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Odporność-na-ziemię",
     "DOS1",
     "DOS2",
     "DOS2-CO",
-    "Cechy",
-    "Cechy/Odporność-na-wszystko",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,9 @@
   "title": "Inert Elven Wand",
   "titlePl": "Bezczynna elficka różdżka",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

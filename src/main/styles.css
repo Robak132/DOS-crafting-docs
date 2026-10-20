@@ -447,3 +447,28 @@ footer {
 .item-description p {
   white-space: pre-line;
 }
+
+.tag-filter-node {
+  width: 100%;
+}
+.tag-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.tag-filter-row .recipe-tag-button {
+  flex: 1;
+  min-width: 0;
+}
+.tag-filter-toggle {
+  padding: 0.35rem;
+  border: 0;
+  background: transparent;
+  color: var(--darkgray);
+  cursor: pointer;
+}
+.tag-filter-children {
+  margin-left: 0.65rem;
+  padding-left: 0.45rem;
+  border-left: 1px solid var(--lightgray);
+}

@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BLIND-IMMUNITY",
   "title": "Blind Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Immunitet-na-oślepienie",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

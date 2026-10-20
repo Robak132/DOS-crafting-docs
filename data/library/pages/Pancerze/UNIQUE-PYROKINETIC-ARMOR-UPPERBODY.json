@@ -1,12 +1,19 @@
 {
   "slug": "Pancerze/UNIQUE-PYROKINETIC-ARMOR-UPPERBODY",
-  "title": "Unique Pyrokinetic Armor Upperbody",
+  "title": "Unique Pyromancer Torso",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Pyrokinetyka",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

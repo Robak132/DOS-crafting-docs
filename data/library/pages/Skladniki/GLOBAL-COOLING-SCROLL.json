@@ -3,10 +3,15 @@
   "title": "Global Cooling Scroll",
   "titlePl": "Zwój Globalnego Ochłodzenia",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
     "DOS2",
+    "Efekty/Statusy/CHILLED",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

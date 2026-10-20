@@ -2,9 +2,9 @@
   "slug": "Pancerze/METAL-HELMET",
   "title": "Metal Helmet",
   "tags": [
-    "Typ/Pancerz",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz"
   ],
   "itemPage": true,
   "categoryPage": false

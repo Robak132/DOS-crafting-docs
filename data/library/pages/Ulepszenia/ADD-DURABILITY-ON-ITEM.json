@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-DURABILITY-ON-ITEM",
   "title": "ADD DURABILITY ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,14 @@
   "title": "Bottle of Beer",
   "titlePl": "Butelka piwa",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Leczenie",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/DRUNK",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

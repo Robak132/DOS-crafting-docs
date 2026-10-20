@@ -3,11 +3,11 @@
   "title": "Water Essence",
   "titlePl": "Esencja wody",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "DOS2-CO",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

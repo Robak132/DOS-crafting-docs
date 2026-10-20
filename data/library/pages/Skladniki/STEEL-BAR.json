@@ -3,9 +3,9 @@
   "title": "Steel Bar",
   "titlePl": "Sztabka stali",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

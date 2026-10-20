@@ -3,10 +3,10 @@
   "title": "Oven, Furnace, or Mobile Kitchen",
   "titlePl": "Piecyk, piec lub kuchnia przenośna",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

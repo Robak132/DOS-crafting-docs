@@ -6,7 +6,8 @@
     "Typ/Skladniki",
     "DOS2-CO",
     "DOS2",
-    "Cechy/Wojna"
+    "Cechy/Umiejetnosci/Wojna",
+    "Cechy/Umiejetnosci"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Skladniki/TRAP-DISARM",
   "title": "Trap Disarming Kit",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

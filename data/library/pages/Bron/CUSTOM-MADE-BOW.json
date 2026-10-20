@@ -2,9 +2,13 @@
   "slug": "Bron/CUSTOM-MADE-BOW",
   "title": "Custom Made Bow",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
+    "Cechy/Obrażenia-przeszywające",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Luki"
   ],
   "itemPage": true,
   "categoryPage": false,

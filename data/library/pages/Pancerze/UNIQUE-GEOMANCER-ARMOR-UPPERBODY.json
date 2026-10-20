@@ -1,12 +1,19 @@
 {
   "slug": "Pancerze/UNIQUE-GEOMANCER-ARMOR-UPPERBODY",
-  "title": "Unique Geomancer Armor Upperbody",
+  "title": "Unique Geomancer Torso",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Geomancja",
     "Cechy",
-    "Typ"
+    "Cechy/Gniazda-run",
+    "Cechy/Inteligencja",
+    "Cechy/Odporność-na-ziemię",
+    "Cechy/Pamięć",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

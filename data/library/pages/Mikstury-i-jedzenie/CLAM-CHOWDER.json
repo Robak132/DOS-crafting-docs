@@ -2,9 +2,12 @@
   "slug": "Mikstury-i-jedzenie/CLAM-CHOWDER",
   "title": "Clam Chowder",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Perswazja",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

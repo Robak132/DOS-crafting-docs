@@ -3,9 +3,12 @@
   "title": "Fiery Heart",
   "titlePl": "Płomienne Serce",
   "tags": [
-    "Typ/Specjalne",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Odporność-na-powietrze",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

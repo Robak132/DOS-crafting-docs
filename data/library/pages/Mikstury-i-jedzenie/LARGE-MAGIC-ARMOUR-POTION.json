@@ -3,12 +3,12 @@
   "title": "Large Magic Armour Potion",
   "titlePl": "Duża mikstura Pancerza Magicznego",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Pancerz-magiczny",
     "DOS2",
     "DOS2-CO",
-    "Cechy/Pancerz-magiczny",
-    "Cechy",
     "Typ",
+    "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"
   ],
   "itemPage": true,

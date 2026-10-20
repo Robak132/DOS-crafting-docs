@@ -1,0 +1,17 @@
+{
+  "slug": "Amulety/BACKPACK",
+  "title": "Backpack",
+  "titlePl": "Plecak",
+  "tags": [
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Znawca",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Amulety"
+  ],
+  "itemPage": true,
+  "categoryPage": false
+}

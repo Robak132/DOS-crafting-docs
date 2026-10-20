@@ -3,9 +3,10 @@
   "title": "Poison Elixir",
   "titlePl": "Trujący eliksir",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/HEALING_ELIXIR",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

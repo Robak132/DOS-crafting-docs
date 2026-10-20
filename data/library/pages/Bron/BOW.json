@@ -1,11 +1,13 @@
 {
   "slug": "Bron/BOW",
-  "title": "Bow",
-  "titlePl": "Łuk",
+  "title": "Crafted Bow",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-fizyczne",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Luki"
   ],
   "itemPage": true,
   "categoryPage": false

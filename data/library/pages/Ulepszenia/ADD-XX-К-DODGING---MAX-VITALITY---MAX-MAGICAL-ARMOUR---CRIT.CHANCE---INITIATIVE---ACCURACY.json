@@ -2,16 +2,16 @@
   "slug": "Ulepszenia/ADD-XX-К-DODGING---MAX-VITALITY---MAX-MAGICAL-ARMOUR---CRIT.CHANCE---INITIATIVE---ACCURACY",
   "title": "add XX к Dodging / Max Vitality / max magical armour / Crit.chance / Initiative / Accuracy",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2",
+    "Cechy",
+    "Cechy/Celność",
     "Cechy/HP",
     "Cechy/Inicjatywa",
     "Cechy/Krytyk",
-    "Cechy/Unik",
     "Cechy/Pancerz-magiczny",
-    "Cechy",
-    "Cechy/Celność",
-    "Typ"
+    "Cechy/Unik",
+    "DOS2",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

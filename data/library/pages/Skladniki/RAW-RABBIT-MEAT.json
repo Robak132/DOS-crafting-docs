@@ -3,7 +3,11 @@
   "title": "Raw Rabbit Meat",
   "titlePl": "Surowe królicze mięso",
   "tags": [
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Leczenie",
     "DOS2-CO",
+    "Efekty/Statusy/DISEASED",
     "Typ",
     "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"

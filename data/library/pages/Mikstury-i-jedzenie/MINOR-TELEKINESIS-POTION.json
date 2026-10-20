@@ -2,9 +2,11 @@
   "slug": "Mikstury-i-jedzenie/MINOR-TELEKINESIS-POTION",
   "title": "MINOR TELEKINESIS POTION",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Telekineza",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,11 @@
   "title": "Knife",
   "titlePl": "Nóż",
   "tags": [
-    "DOS2",
     "DOS1",
+    "DOS2",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Sztylety",
     "Typ/Skladniki"
   ],
   "itemPage": true,

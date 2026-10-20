@@ -3,9 +3,9 @@
   "title": "Starfish (Greater Gold Value)",
   "titlePl": "Rozgwiazda (większa wartość)",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

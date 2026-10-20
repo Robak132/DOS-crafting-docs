@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/-percent10-FIRE-RESISTANCE",
   "title": "%10 Fire Resistance",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Odporność-na-ogień",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

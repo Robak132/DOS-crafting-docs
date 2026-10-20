@@ -3,10 +3,15 @@
   "title": "Favourable Wind Scroll",
   "titlePl": "Zwój Korzystnego Wiatru",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Aeroteurgia",
     "DOS2",
+    "Efekty/Statusy/FAVOURABLE_WIND_AURA",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

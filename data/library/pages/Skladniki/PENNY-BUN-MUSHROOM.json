@@ -3,10 +3,12 @@
   "title": "Penny Bun Mushroom",
   "titlePl": "Borowik szlachetny",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

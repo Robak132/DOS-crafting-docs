@@ -3,9 +3,11 @@
   "title": "Cold Mashed Potatoes",
   "titlePl": "Zimne tłuczone ziemniaki",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

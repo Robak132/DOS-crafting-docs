@@ -3,9 +3,12 @@
   "title": "Fish Pie",
   "titlePl": "Placek rybny",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Leczenie",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

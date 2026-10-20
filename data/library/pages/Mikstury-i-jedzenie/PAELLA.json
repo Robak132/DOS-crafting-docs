@@ -2,9 +2,13 @@
   "slug": "Mikstury-i-jedzenie/PAELLA",
   "title": "Paella",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Odporność-na-truciznę",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

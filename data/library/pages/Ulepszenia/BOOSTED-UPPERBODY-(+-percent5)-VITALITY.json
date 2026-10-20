@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-UPPERBODY-(+-percent5)-VITALITY",
   "title": "Boosted Upperbody (+%5) Vitality",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/HP",
     "Cechy",
-    "Typ"
+    "Cechy/HP",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

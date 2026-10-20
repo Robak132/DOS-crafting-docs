@@ -3,9 +3,9 @@
   "title": "Broom",
   "titlePl": "Miotła",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

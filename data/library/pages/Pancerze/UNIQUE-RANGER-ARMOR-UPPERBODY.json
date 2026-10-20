@@ -1,10 +1,22 @@
 {
   "slug": "Pancerze/UNIQUE-RANGER-ARMOR-UPPERBODY",
-  "title": "Unique Ranger Armor Upperbody",
+  "title": "Unique Ranger Torso",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łowiectwo",
+    "Cechy/Zręczność",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

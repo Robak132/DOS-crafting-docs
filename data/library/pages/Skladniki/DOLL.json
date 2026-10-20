@@ -3,9 +3,9 @@
   "title": "Doll",
   "titlePl": "Lalka",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,15 @@
   "slug": "Pancerze/FANCY-CAPE",
   "title": "Fancy Cape",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Skradanie",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

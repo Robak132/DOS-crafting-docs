@@ -2,10 +2,21 @@
   "slug": "Pancerze/UNIQUE-ROGUE-CAPE",
   "title": "Unique Rogue Cape",
   "tags": [
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Odporność-na-obrażenia-fizyczne",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Łobuz",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

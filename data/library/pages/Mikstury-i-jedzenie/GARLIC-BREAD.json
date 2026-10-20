@@ -2,9 +2,12 @@
   "slug": "Mikstury-i-jedzenie/GARLIC-BREAD",
   "title": "Garlic Bread",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Siła",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

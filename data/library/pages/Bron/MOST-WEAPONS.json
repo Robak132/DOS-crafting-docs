@@ -3,9 +3,9 @@
   "title": "Most Weapons",
   "titlePl": "Większość broni",
   "tags": [
-    "Typ/Bron",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron"
   ],
   "itemPage": true,
   "categoryPage": false

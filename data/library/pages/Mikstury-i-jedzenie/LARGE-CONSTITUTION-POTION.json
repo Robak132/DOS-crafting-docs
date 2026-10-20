@@ -3,12 +3,12 @@
   "title": "Large Constitution Potion",
   "titlePl": "Duża mikstura Kondycji",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Kondycja",
     "DOS1",
     "DOS2-CO",
-    "Cechy/Kondycja",
-    "Cechy",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

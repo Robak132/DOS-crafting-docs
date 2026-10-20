@@ -3,10 +3,13 @@
   "title": "Sword of Planets",
   "titlePl": "Miecz Planet",
   "tags": [
-    "Typ/Specjalne",
+    "Cechy",
+    "Cechy/Obrażenia",
     "DOS1",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Miecze",
+    "Typ/Specjalne"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,10 +3,10 @@
   "title": "Wooden Figurine",
   "titlePl": "Drewniana figurka",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

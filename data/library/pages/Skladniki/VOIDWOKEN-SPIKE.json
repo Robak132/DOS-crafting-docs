@@ -3,9 +3,9 @@
   "title": "Voidwoken Spike",
   "titlePl": "Kolec pustkowca",
   "tags": [
-    "Typ/Skladniki",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,19 @@
   "slug": "Mikstury-i-jedzenie/WARFARER'S-FISH-SOUP",
   "title": "Warfarer's Fish Soup",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/HP",
+    "Cechy/Kondycja",
+    "Cechy/Odporność-na-obrażenia-fizyczne",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Odporność-na-ogień",
+    "Cechy/Odporność-na-powietrze",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Odporność-na-wodę",
+    "Cechy/Odporność-na-ziemię",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

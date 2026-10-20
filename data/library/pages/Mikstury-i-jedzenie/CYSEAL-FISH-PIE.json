@@ -3,11 +3,13 @@
   "title": "Cyseal Fish Pie",
   "titlePl": "Cysealański placek rybny",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS1",
     "Cechy",
     "Cechy/Inteligencja",
-    "Typ"
+    "Cechy/Leczenie",
+    "Cechy/Szybkość",
+    "DOS1",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

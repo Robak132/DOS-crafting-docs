@@ -2,9 +2,16 @@
   "slug": "Mikstury-i-jedzenie/KNIGHT'S-SAFRAN-ORANGE-CAKE",
   "title": "Knight's Safran Orange Cake",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "Cechy/Obrażenia",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Siła",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

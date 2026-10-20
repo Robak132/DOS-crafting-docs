@@ -3,12 +3,12 @@
   "title": "Pixie Dust",
   "titlePl": "Czarodziejski pył",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "DOS2-CO",
     "DOS2",
+    "DOS2-CO",
     "Typ",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

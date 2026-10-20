@@ -3,11 +3,11 @@
   "title": "Rat Tail Amulet",
   "titlePl": "Amulet ze szczurzym ogonem",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/Odporność-na-truciznę",
-    "Typ"
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

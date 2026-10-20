@@ -3,10 +3,13 @@
   "title": "Mosquito Swarm Scroll",
   "titlePl": "Zwój Roju Komarów",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "Efekty/Statusy/BLEEDING",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

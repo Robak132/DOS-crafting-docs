@@ -3,9 +3,12 @@
   "title": "Handmade Scale Armour",
   "titlePl": "Ręcznie wykonana zbroja łuskowa",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

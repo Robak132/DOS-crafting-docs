@@ -3,9 +3,12 @@
   "title": "Handmade Mage Armour",
   "titlePl": "Ręcznie wykonany pancerz maga",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Pancerz-magiczny",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

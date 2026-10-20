@@ -3,10 +3,13 @@
   "title": "Living on the Edge Scroll",
   "titlePl": "Zwój Życia na Krawędzi",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
+    "Efekty/Statusy/DEATH_RESIST",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

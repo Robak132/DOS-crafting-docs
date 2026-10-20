@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-HYDROSOPHIST",
   "title": "Unique Ring of Hydrosophist",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Hydrosophia",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Hydrosophia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

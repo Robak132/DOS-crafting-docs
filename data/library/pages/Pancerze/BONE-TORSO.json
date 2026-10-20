@@ -2,9 +2,16 @@
   "slug": "Pancerze/BONE-TORSO",
   "title": "Bone Torso",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Napiersniki"
   ],
   "itemPage": true,
   "categoryPage": false

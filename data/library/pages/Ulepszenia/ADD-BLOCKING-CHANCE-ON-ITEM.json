@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-BLOCKING-CHANCE-ON-ITEM",
   "title": "ADD BLOCKING CHANCE ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

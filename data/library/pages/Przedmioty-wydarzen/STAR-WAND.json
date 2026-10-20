@@ -2,10 +2,21 @@
   "slug": "Przedmioty-wydarzen/STAR-WAND",
   "title": "Star Wand",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "Cechy/Gniazda-run",
+    "Cechy/Inicjatywa",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
+    "Efekty/Powierzchnie/WaterFrozen",
+    "Efekty/Statusy/WET",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

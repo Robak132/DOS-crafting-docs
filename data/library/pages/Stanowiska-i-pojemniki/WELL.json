@@ -3,10 +3,10 @@
   "title": "Well",
   "titlePl": "Studnia",
   "tags": [
-    "DOS2-CO",
-    "Typ/Stanowiska-i-pojemniki",
     "DOS1",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

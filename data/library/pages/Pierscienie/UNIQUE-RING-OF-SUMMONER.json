@@ -2,11 +2,12 @@
   "slug": "Pierscienie/UNIQUE-RING-OF-SUMMONER",
   "title": "Unique Ring of Summoner",
   "tags": [
-    "Typ/Pierscienie",
-    "DOS2-CO",
-    "Cechy/Przyzywanie",
     "Cechy",
-    "Typ"
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Przyzywanie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pierscienie"
   ],
   "itemPage": true,
   "categoryPage": false

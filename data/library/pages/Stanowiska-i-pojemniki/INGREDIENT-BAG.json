@@ -2,9 +2,9 @@
   "slug": "Stanowiska-i-pojemniki/INGREDIENT-BAG",
   "title": "Ingredient Bag",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -1,7 +1,9 @@
+import { TagFilterTree } from "./components/TagFilterTree"
+import { searchCatalogPages } from "./domain/pageSearch"
 import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
 import { groupItemRows } from "./domain/itemGroups"
-import { itemIconKey } from "./domain/itemIcons"
+import { itemIconKey, itemDataKey } from "./domain/itemIcons"
 import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
 import { ItemTable } from "./components/ItemTable"
@@ -106,15 +108,8 @@ export function App() {
     return { title: name?.name ?? page.title, titlePl: name?.namePl ?? (game === "dos1" ? page.titlePl : undefined) }
   }
   const pageMatches = useMemo(
-    () =>
-      pageQuery.trim()
-        ? (manifest.data?.pages ?? [])
-            .filter((page) =>
-              `${page.title} ${page.titlePl ?? ""}`.toLocaleLowerCase().includes(pageQuery.toLocaleLowerCase()),
-            )
-            .slice(0, 10)
-        : [],
-    [manifest.data, pageQuery],
+    () => searchCatalogPages(manifest.data?.pages ?? [], itemNames, pageQuery),
+    [manifest.data, itemNames, pageQuery],
   )
   const navigate = (url: URL) => {
     window.history.pushState({}, "", url)
@@ -188,10 +183,10 @@ export function App() {
   const onClick = (event: MouseEvent) => {
     if (!(event.target instanceof Element)) return
     const chip = event.target.closest<HTMLButtonElement>(
-      "button[data-search-tag], button[data-search-effect], button[data-search-text]",
+      "button[data-filter-tag], button[data-search-effect], button[data-search-text]",
     )
     if (chip) {
-      if (chip.dataset.searchTag) changeQuery(`#${chip.dataset.searchTag}`)
+      if (chip.dataset.filterTag) cycle(chip.dataset.filterTag)
       else if (chip.dataset.searchEffect) changeQuery(formatEffectNote(chip.dataset.searchEffect))
       else if (chip.dataset.searchText) changeQuery(chip.dataset.searchText, "ingredient")
       return
@@ -268,10 +263,12 @@ export function App() {
     itemRecipes.craft[0]?.result ??
     catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === route.slug)
   const detailDescription =
-    descriptions.data?.[itemIconKey(parseItemQuantity(detailName?.name ?? detail.data?.title ?? "").base)]
+    descriptions.data?.[
+      detailName ? itemDataKey(detailName) : itemIconKey(parseItemQuantity(detail.data?.title ?? "").base)
+    ]
 
   const detailDescriptionText = itemDescriptionText(detailDescription, lang)
-  const detailEffects = uniqueItemEffects(itemRecipes.craft)
+  const detailEffects = uniqueItemEffects(itemRecipes.craft, lang, detailName)
   const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
 
   return (
@@ -369,26 +366,13 @@ export function App() {
         {tagGroups.map((group) => (
           <details key={group.label} open={group.label === "Kategorie"}>
             <summary>{group.label}</summary>
-            <div class="recipe-tag-list">
-              {group.tags.map((entry) => (
-                <button
-                  key={entry.tag}
-                  type="button"
-                  class="recipe-tag-button"
-                  data-state={
-                    filters.include.includes(entry.tag)
-                      ? "include"
-                      : filters.exclude.includes(entry.tag)
-                        ? "exclude"
-                        : "neutral"
-                  }
-                  onClick={() => cycle(entry.tag)}
-                >
-                  <span>{entry.label?.replaceAll("-", " ") ?? tagLabel(entry.tag, labels)}</span>
-                  <span class="recipe-tag-count">({entry.count})</span>
-                </button>
-              ))}
-            </div>
+            <TagFilterTree
+              entries={group.tags}
+              include={filters.include}
+              exclude={filters.exclude}
+              labels={labels}
+              onCycle={(tag) => cycle(tag)}
+            />
           </details>
         ))}
         <p class="filter-hint">Kliknij tag, aby uwzględnić. Kliknij ponownie, aby wykluczyć.</p>
@@ -461,7 +445,7 @@ export function App() {
                   type="search"
                   value={query}
                   onInput={(event) => setQuery(event.currentTarget.value)}
-                  placeholder={filters.scope === "ingredient" ? "Nazwa składnika lub #grupa" : "Nazwa, efekt lub #tag"}
+                  placeholder={filters.scope === "ingredient" ? "Nazwa składnika lub grupy" : "Nazwa lub efekt"}
                 />
               </div>
             </div>
@@ -501,7 +485,7 @@ export function App() {
                 )}
                 <div class="detail-tags">
                   {visibleRecipeTags(detail.data.tags).map((tag) => (
-                    <button key={tag} class="recipe-search-tag" data-search-tag={tag}>
+                    <button key={tag} class="recipe-search-tag" data-filter-tag={tag}>
                       {tagLabel(tag, labels)}
                     </button>
                   ))}

@@ -3,11 +3,11 @@
   "title": "Leather Scraps",
   "titlePl": "Skrawki skóry",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2-CO",
     "DOS1",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

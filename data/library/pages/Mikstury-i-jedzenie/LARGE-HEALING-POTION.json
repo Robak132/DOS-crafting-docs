@@ -3,12 +3,13 @@
   "title": "Large Healing Potion",
   "titlePl": "Duża mikstura uzdrawiająca",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS1",
     "DOS2-CO",
-    "Cechy/Leczenie",
-    "Cechy",
+    "Efekty/Statusy/POISONED",
     "Typ",
+    "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"
   ],
   "itemPage": true,

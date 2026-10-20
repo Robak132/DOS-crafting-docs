@@ -2,9 +2,9 @@
   "slug": "Skladniki/GROWL-OF-GRUNT",
   "title": "Growl of Grunt",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,9 @@
   "title": "Buffalo Amulet",
   "titlePl": "Amulet bawołu",
   "tags": [
-    "Typ/Amulety",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

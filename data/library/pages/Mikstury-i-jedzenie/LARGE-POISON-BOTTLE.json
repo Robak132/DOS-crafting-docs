@@ -3,9 +3,10 @@
   "title": "Large Poison Bottle",
   "titlePl": "Duża butelka trucizny",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
     "DOS2-CO",
+    "Efekty/Statusy/POISONED",
     "Typ",
+    "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"
   ],
   "itemPage": true,

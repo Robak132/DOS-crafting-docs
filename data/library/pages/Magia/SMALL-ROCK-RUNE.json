@@ -3,9 +3,14 @@
   "title": "Small Rock Rune",
   "titlePl": "Mała runa kamienia",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/HP",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
+    "Cechy/Odporność-na-ziemię",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

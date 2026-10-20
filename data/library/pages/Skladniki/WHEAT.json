@@ -3,10 +3,13 @@
   "title": "Wheat",
   "titlePl": "Pszenica",
   "tags": [
-    "Typ/Skladniki",
-    "DOS2",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Leczenie",
     "DOS1",
-    "Typ"
+    "DOS2",
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

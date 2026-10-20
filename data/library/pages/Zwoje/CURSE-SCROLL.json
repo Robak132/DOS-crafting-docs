@@ -3,9 +3,12 @@
   "title": "Curse Scroll",
   "titlePl": "Zwój Przekleństwa",
   "tags": [
-    "Typ/Zwoje",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/CURSED",
+    "Typ",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

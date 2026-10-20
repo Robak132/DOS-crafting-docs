@@ -3,13 +3,13 @@
   "title": "Medium Water Resistance Potion",
   "titlePl": "Średnia mikstura odporności na wodę",
   "tags": [
-    "DOS2-CO",
-    "DOS2",
-    "Typ/Mikstury-i-jedzenie",
-    "DOS1",
     "Cechy",
     "Cechy/Odporność-na-wodę",
+    "DOS1",
+    "DOS2",
+    "DOS2-CO",
     "Typ",
+    "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"
   ],
   "itemPage": true,

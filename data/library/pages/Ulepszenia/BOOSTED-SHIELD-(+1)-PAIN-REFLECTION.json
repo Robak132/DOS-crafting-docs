@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-SHIELD-(+1)-PAIN-REFLECTION",
   "title": "Boosted Shield (+1) Pain Reflection",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Odbicie",
     "Cechy",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Odbicie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/BOOSTED-SHIELD-(+-percent5)-BLOCK-CHANCE",
   "title": "Boosted Shield (+%5) Block Chance",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Blok",
     "Cechy",
-    "Typ"
+    "Cechy/Blok",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

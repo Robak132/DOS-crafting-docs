@@ -3,9 +3,11 @@
   "title": "Medium Magical Armor Potion",
   "titlePl": "Średnia mikstura magicznej zbroi",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Pancerz-fizyczny",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

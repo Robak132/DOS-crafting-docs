@@ -3,9 +3,10 @@
   "title": "Homemade Shield",
   "titlePl": "Tarcza domowej roboty",
   "tags": [
-    "Typ/Pancerz",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Tarcze"
   ],
   "itemPage": true,
   "categoryPage": false

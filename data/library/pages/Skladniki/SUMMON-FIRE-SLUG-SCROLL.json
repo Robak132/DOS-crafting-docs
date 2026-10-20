@@ -3,10 +3,14 @@
   "title": "Summon Fire Slug Scroll",
   "titlePl": "Zwój Przyzwania Ognistego Ślimaka",
   "tags": [
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
     "DOS2",
     "Typ",
-    "Typ/Zwoje",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

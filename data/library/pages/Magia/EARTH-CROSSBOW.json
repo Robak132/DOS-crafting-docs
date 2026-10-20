@@ -2,9 +2,15 @@
   "slug": "Magia/EARTH-CROSSBOW",
   "title": "Earth Crossbow",
   "tags": [
+    "Cechy",
+    "Cechy/Celność",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ziemi",
     "DOS2-CO",
+    "Efekty/Statusy/PETRIFIED",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Kusze",
     "Typ/Magia"
   ],
   "itemPage": true,

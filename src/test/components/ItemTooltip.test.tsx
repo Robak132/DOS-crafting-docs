@@ -92,3 +92,14 @@ test("English mode shows only English names and description throughout the toolt
   assert.ok(!html.includes("Skóra zwierzęca"))
   assert.ok(!html.includes("Opis skóry"))
 })
+
+test("ingredients without crafting recipes show exported effects in the selected language", () => {
+  const ingredient = { ...item, effect: { en: "+5% air resistance", pl: "+5% odporności na powietrze" } }
+  const pl = renderToString(<ItemTooltip item={ingredient} lang="pl" recipes={[]} />)
+  const en = renderToString(<ItemTooltip item={ingredient} lang="en" recipes={[]} />)
+  assert.ok(pl.includes("<h3>Efekt</h3>"))
+  assert.ok(pl.includes("+5% odporności na powietrze"))
+  assert.ok(en.includes("+5% air resistance"))
+  assert.ok(!en.includes("+5% odporności na powietrze"))
+  assert.ok(!pl.includes("Wytwarzanie"))
+})

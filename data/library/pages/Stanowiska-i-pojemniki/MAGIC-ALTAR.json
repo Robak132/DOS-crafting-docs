@@ -2,10 +2,10 @@
   "slug": "Stanowiska-i-pojemniki/MAGIC-ALTAR",
   "title": "Magic Altar",
   "tags": [
-    "Typ/Stanowiska-i-pojemniki",
     "DOS2-CO",
     "Typ",
-    "Typ/Magia"
+    "Typ/Magia",
+    "Typ/Stanowiska-i-pojemniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,14 @@
   "slug": "Pancerze/UNIQUE-GEOMANCER-ARMOR-BOOTS",
   "title": "Unique Geomancer Boots",
   "tags": [
-    "Typ/Pancerz",
-    "DOS2-CO",
-    "Cechy/Geomancja",
     "Cechy",
-    "Typ"
+    "Cechy/Odporność-na-ziemię",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Unik",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

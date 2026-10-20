@@ -3,9 +3,9 @@
   "title": "Arcane Feather {E}",
   "titlePl": "Magiczne pióro",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

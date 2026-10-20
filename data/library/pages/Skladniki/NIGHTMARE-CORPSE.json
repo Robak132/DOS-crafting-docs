@@ -2,9 +2,9 @@
   "slug": "Skladniki/NIGHTMARE-CORPSE",
   "title": "Nightmare Corpse",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

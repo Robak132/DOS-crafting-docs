@@ -3,9 +3,14 @@
   "title": "Improvised Staff",
   "titlePl": "Prowizoryczny kostur",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Kostury"
   ],
   "itemPage": true,
   "categoryPage": false

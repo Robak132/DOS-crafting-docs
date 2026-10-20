@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-RING-(LEADERSHIP-+2)",
   "title": "Boosted Ring (Leadership +2)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Przywództwo",
-    "Typ"
+    "Cechy/Bieglosci-obrony",
+    "Cechy/Bieglosci-obrony/Przywództwo",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

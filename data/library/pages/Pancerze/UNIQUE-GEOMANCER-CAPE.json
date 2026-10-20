@@ -2,12 +2,20 @@
   "slug": "Pancerze/UNIQUE-GEOMANCER-CAPE",
   "title": "Unique Geomancer Cape",
   "tags": [
-    "DOS2-CO",
-    "Cechy/Geomancja",
     "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-ziemię",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Geomancja",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

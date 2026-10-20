@@ -3,9 +3,9 @@
   "title": "Stunning Arrowhead",
   "titlePl": "Grot ogłuszający",
   "tags": [
-    "Typ/Strzaly-i-granaty",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

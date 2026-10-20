@@ -3,11 +3,11 @@
   "title": "Fuse",
   "titlePl": "Lont",
   "tags": [
-    "DOS2-CO",
-    "Typ/Strzaly-i-granaty",
     "DOS1",
     "DOS2",
-    "Typ"
+    "DOS2-CO",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

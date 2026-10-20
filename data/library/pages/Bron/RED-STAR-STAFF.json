@@ -2,9 +2,21 @@
   "slug": "Bron/RED-STAR-STAFF",
   "title": "Red Star Staff",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dwuręczna",
+    "Cechy/Gniazda-run",
+    "Cechy/Krytyk",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Pyrokinetyka",
+    "Cechy/Zapewnia-umiejetnosc",
     "DOS2-CO",
-    "Typ"
+    "Efekty/Statusy/BURNING",
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Kostury"
   ],
   "itemPage": true,
   "categoryPage": false

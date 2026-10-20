@@ -3,9 +3,11 @@
   "title": "Tusk Amulet",
   "titlePl": "Amulet z kłem",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Znawca",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

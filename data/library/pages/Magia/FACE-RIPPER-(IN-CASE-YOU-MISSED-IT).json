@@ -1,10 +1,12 @@
 {
   "slug": "Magia/FACE-RIPPER-(IN-CASE-YOU-MISSED-IT)",
-  "title": "Face Ripper (In case you missed it)",
+  "title": "Face-ripper",
   "tags": [
-    "Typ/Magia",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Magia"
   ],
   "itemPage": true,
   "categoryPage": false

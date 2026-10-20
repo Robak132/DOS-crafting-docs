@@ -3,9 +3,9 @@
   "title": "Silver Bar",
   "titlePl": "Sztabka srebra",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

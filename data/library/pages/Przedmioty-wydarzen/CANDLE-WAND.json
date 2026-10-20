@@ -2,10 +2,15 @@
   "slug": "Przedmioty-wydarzen/CANDLE-WAND",
   "title": "Candle Wand",
   "tags": [
-    "Typ/Przedmioty-wydarzen",
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Fire",
     "Typ",
-    "Typ/Bron"
+    "Typ/Bron",
+    "Typ/Bron/Rozdzki",
+    "Typ/Przedmioty-wydarzen"
   ],
   "itemPage": true,
   "categoryPage": false

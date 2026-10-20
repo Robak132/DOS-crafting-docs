@@ -2,11 +2,11 @@
   "slug": "Pasy/EMPTY-PHYSICAL-ARMOUR-BELT",
   "title": "Empty Physical Armour Belt",
   "tags": [
-    "Typ/Pasy",
-    "DOS2-CO",
-    "Cechy/Pancerz-fizyczny",
     "Cechy",
-    "Typ"
+    "Cechy/Pancerz-fizyczny",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Pasy"
   ],
   "itemPage": true,
   "categoryPage": false

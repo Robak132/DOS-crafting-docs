@@ -3,10 +3,12 @@
   "title": "Tea Herbs",
   "titlePl": "Liście herbaty",
   "tags": [
-    "Typ/Skladniki",
+    "Cechy",
+    "Cechy/Leczenie",
     "DOS2",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,11 +3,11 @@
   "title": "Magical Starfish Amulet",
   "titlePl": "Magiczny amulet z rozgwiazdą",
   "tags": [
-    "Typ/Amulety",
-    "DOS1",
     "Cechy",
     "Cechy/HP",
-    "Typ"
+    "DOS1",
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,15 @@
   "slug": "Pancerze/BONE-BOOTS",
   "title": "Bone Boots",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Odporność-na-obrażenia-przeszywające",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Buty"
   ],
   "itemPage": true,
   "categoryPage": false

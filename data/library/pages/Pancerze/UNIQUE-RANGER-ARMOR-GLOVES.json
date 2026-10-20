@@ -2,9 +2,19 @@
   "slug": "Pancerze/UNIQUE-RANGER-ARMOR-GLOVES",
   "title": "Unique Ranger Gloves",
   "tags": [
-    "Typ/Pancerz",
+    "Cechy",
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Dystansowa",
+    "Cechy/Inicjatywa",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Spryt",
+    "Cechy/Złodziejstwo",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Pancerz",
+    "Typ/Pancerz/Rekawice"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -3,9 +3,12 @@
   "title": "Branch With Nails",
   "titlePl": "Gałąź z gwoździami",
   "tags": [
-    "Typ/Bron",
+    "Cechy",
+    "Cechy/Obrażenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Bron",
+    "Typ/Bron/Bulawy"
   ],
   "itemPage": true,
   "categoryPage": false

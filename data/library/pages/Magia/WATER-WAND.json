@@ -2,9 +2,14 @@
   "slug": "Magia/WATER-WAND",
   "title": "Water Wand",
   "tags": [
+    "Cechy",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
     "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Rozdzki",
     "Typ/Magia"
   ],
   "itemPage": true,

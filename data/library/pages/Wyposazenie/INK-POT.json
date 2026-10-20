@@ -3,9 +3,10 @@
   "title": "Ink Pot",
   "titlePl": "Kałamarz",
   "tags": [
-    "Typ/Wyposazenie",
     "DOS1",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Wyposazenie"
   ],
   "itemPage": true,
   "categoryPage": false

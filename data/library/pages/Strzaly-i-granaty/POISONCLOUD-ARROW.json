@@ -3,9 +3,12 @@
   "title": "Poisoncloud Arrow",
   "titlePl": "Strzała trującej chmury",
   "tags": [
-    "Typ/Strzaly-i-granaty",
+    "Cechy",
+    "Cechy/Rzuca-zaklecie",
     "DOS2",
-    "Typ"
+    "Efekty/Statusy/POISONED",
+    "Typ",
+    "Typ/Strzaly-i-granaty"
   ],
   "itemPage": true,
   "categoryPage": false

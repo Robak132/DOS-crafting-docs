@@ -3,7 +3,11 @@
   "title": "Roasted Pork Dish",
   "titlePl": "Pieczeń wieprzowa",
   "tags": [
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Siła",
     "DOS2-CO",
+    "Efekty/Statusy/SLOWED",
     "Typ",
     "Typ/Mikstury-i-jedzenie",
     "Typ/Skladniki"

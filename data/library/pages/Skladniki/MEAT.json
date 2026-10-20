@@ -3,9 +3,9 @@
   "title": "Meat",
   "titlePl": "Mięso",
   "tags": [
-    "Typ/Skladniki",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

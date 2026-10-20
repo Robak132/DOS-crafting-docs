@@ -3,12 +3,10 @@
   "title": "Blank Polymorph Scroll",
   "tags": [
     "DOS2-CO",
-    "Cechy/Polimorfia",
-    "Cechy",
     "Typ",
-    "Typ/Zwoje",
     "Typ/Magia",
-    "Typ/Skladniki"
+    "Typ/Skladniki",
+    "Typ/Zwoje"
   ],
   "itemPage": true,
   "categoryPage": false

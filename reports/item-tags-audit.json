@@ -850,16 +850,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS1"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS1",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS1"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS1",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -1305,16 +1307,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -1966,16 +1970,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -1989,16 +1995,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -2181,16 +2189,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -5267,16 +5277,18 @@
             "Typ",
             "Typ/Zwoje",
             "Cechy",
-            "Cechy/Nekromancja",
-            "DOS2"
+            "Cechy/Umiejetnosci/Nekromancja",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Zwoje",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Nekromancja",
-            "DOS2"
+            "Cechy/Umiejetnosci/Nekromancja",
+            "DOS2",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -5704,16 +5716,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -5727,16 +5741,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -5750,16 +5766,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -6076,8 +6094,9 @@
             "Typ",
             "Typ/Zwoje",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
@@ -6085,8 +6104,9 @@
             "Typ/Magia",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -6100,16 +6120,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -6197,8 +6219,9 @@
             "Typ",
             "Typ/Zwoje",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
@@ -6206,8 +6229,9 @@
             "Typ/Magia",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -6221,16 +6245,18 @@
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Ksiegi-umiejetnosci",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -7162,16 +7188,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -7185,16 +7213,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -7206,16 +7236,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -7934,16 +7966,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -7957,16 +7991,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -7980,16 +8016,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -8318,16 +8356,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -8341,16 +8381,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -8364,16 +8406,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -9914,16 +9958,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -9937,16 +9983,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -9960,16 +10008,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -10112,16 +10162,18 @@
             "Typ",
             "Typ/Zwoje",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Zwoje",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -10167,16 +10219,18 @@
             "Typ",
             "Typ/Zwoje",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Zwoje",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -10567,16 +10621,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -10590,16 +10646,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -10613,16 +10671,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -10672,16 +10732,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -11237,16 +11299,18 @@
             "Typ",
             "Typ/Amulety",
             "Cechy",
-            "Cechy/Geomancja",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Geomancja",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Amulety",
             "Typ/Pancerz",
             "Cechy",
-            "Cechy/Geomancja",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Geomancja",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11260,16 +11324,18 @@
             "Typ",
             "Typ/Amulety",
             "Cechy",
-            "Cechy/Hydrosophia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Hydrosophia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Amulety",
             "Typ/Pancerz",
             "Cechy",
-            "Cechy/Hydrosophia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Hydrosophia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11283,16 +11349,18 @@
             "Typ",
             "Typ/Amulety",
             "Cechy",
-            "Cechy/Nekromancja",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Nekromancja",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Amulety",
             "Typ/Pancerz",
             "Cechy",
-            "Cechy/Nekromancja",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Nekromancja",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11490,16 +11558,18 @@
             "Typ",
             "Typ/Amulety",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Amulety",
             "Typ/Pancerz",
             "Cechy",
-            "Cechy/Polimorfia",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Polimorfia",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11589,16 +11659,18 @@
             "Typ",
             "Typ/Amulety",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "after": [
             "Typ",
             "Typ/Amulety",
             "Typ/Pancerz",
             "Cechy",
-            "Cechy/Przyzywanie",
-            "DOS2-CO"
+            "Cechy/Umiejetnosci/Przyzywanie",
+            "DOS2-CO",
+            "Cechy/Umiejetnosci"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11952,16 +12024,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -11975,16 +12049,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -12001,16 +12077,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Magia",
             "Cechy",
-            "Cechy/Dwuręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Dwuręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": [
@@ -12043,16 +12121,18 @@
             "Typ",
             "Typ/Bron",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "after": [
             "Typ",
             "Typ/Bron",
             "Typ/Skladniki",
             "Cechy",
-            "Cechy/Jednoręczna",
-            "DOS2-CO"
+            "Cechy/Bieglosci-broni/Jednoręczna",
+            "DOS2-CO",
+            "Cechy/Bieglosci-broni"
           ],
           "reason": "Preserve additional item roles; remove only explicit misclassifications.",
           "stats": []
@@ -13163,19 +13243,21 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Jednoręczna",
+        "Cechy/Bieglosci-broni/Jednoręczna",
         "DOS1",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Jednoręczna",
+        "Cechy/Bieglosci-broni/Jednoręczna",
         "DOS1",
         "Typ",
         "Typ/Bron",
-        "Typ/Skladniki"
+        "Typ/Skladniki",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -13505,18 +13587,20 @@
       "slug": "Skladniki/HIGH-TIER-BLANK-POLYMORPH-SKILLBOOK",
       "before": [
         "DOS2",
-        "Cechy/Polimorfia",
-        "Cechy",
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci"
-      ],
-      "after": [
-        "DOS2",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "Cechy",
         "Typ",
         "Typ/Ksiegi-umiejetnosci",
-        "Typ/Skladniki"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2",
+        "Cechy/Umiejetnosci/Polimorfia",
+        "Cechy",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci",
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -13895,39 +13979,43 @@
       "slug": "Skladniki/BLANK-SKILLBOOK-POLYMORPH",
       "before": [
         "DOS2",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "DOS2-CO",
         "Cechy",
         "Typ",
-        "Typ/Ksiegi-umiejetnosci"
+        "Typ/Ksiegi-umiejetnosci",
+        "Cechy/Umiejetnosci"
       ],
       "after": [
         "DOS2",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "DOS2-CO",
         "Cechy",
         "Typ",
         "Typ/Ksiegi-umiejetnosci",
         "Typ/Magia",
-        "Typ/Skladniki"
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
       "slug": "Skladniki/HIGH-TIER-BLANK-SUMMONING-SKILLBOOK",
       "before": [
         "DOS2",
-        "Cechy/Przyzywanie",
-        "Cechy",
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci"
-      ],
-      "after": [
-        "DOS2",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "Cechy",
         "Typ",
         "Typ/Ksiegi-umiejetnosci",
-        "Typ/Skladniki"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2",
+        "Cechy/Umiejetnosci/Przyzywanie",
+        "Cechy",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci",
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -14048,21 +14136,23 @@
       "slug": "Skladniki/BLANK-SKILLBOOK-SUMMONING",
       "before": [
         "DOS2",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "DOS2-CO",
         "Cechy",
         "Typ",
-        "Typ/Ksiegi-umiejetnosci"
+        "Typ/Ksiegi-umiejetnosci",
+        "Cechy/Umiejetnosci"
       ],
       "after": [
         "DOS2",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "DOS2-CO",
         "Cechy",
         "Typ",
         "Typ/Ksiegi-umiejetnosci",
         "Typ/Magia",
-        "Typ/Skladniki"
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -15861,18 +15951,20 @@
       "slug": "Skladniki/TOTEMS-OF-THE-NECROMANCER-SCROLL",
       "before": [
         "DOS2",
-        "Cechy/Nekromancja",
-        "Cechy",
-        "Typ",
-        "Typ/Zwoje"
-      ],
-      "after": [
-        "DOS2",
-        "Cechy/Nekromancja",
+        "Cechy/Umiejetnosci/Nekromancja",
         "Cechy",
         "Typ",
         "Typ/Zwoje",
-        "Typ/Skladniki"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2",
+        "Cechy/Umiejetnosci/Nekromancja",
+        "Cechy",
+        "Typ",
+        "Typ/Zwoje",
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -16132,17 +16224,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -16150,17 +16244,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -16168,17 +16264,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -16325,19 +16423,21 @@
       "slug": "Skladniki/BLANK-POLYMORPH-SCROLL",
       "before": [
         "DOS2-CO",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "Cechy",
         "Typ",
-        "Typ/Zwoje"
+        "Typ/Zwoje",
+        "Cechy/Umiejetnosci"
       ],
       "after": [
         "DOS2-CO",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "Cechy",
         "Typ",
         "Typ/Zwoje",
         "Typ/Magia",
-        "Typ/Skladniki"
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -16402,19 +16502,21 @@
       "slug": "Skladniki/BLANK-SUMMONING-SCROLL",
       "before": [
         "DOS2-CO",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "Cechy",
         "Typ",
-        "Typ/Zwoje"
+        "Typ/Zwoje",
+        "Cechy/Umiejetnosci"
       ],
       "after": [
         "DOS2-CO",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "Cechy",
         "Typ",
         "Typ/Zwoje",
         "Typ/Magia",
-        "Typ/Skladniki"
+        "Typ/Skladniki",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -16762,17 +16864,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -16780,17 +16884,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -16798,17 +16904,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17222,17 +17330,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17240,17 +17350,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17258,17 +17370,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17458,17 +17572,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17476,17 +17592,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -17494,17 +17612,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18159,17 +18279,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18177,17 +18299,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18195,17 +18319,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18254,18 +18380,20 @@
       "slug": "Magia/RANDOM-POLYMORPH-SCROLL",
       "before": [
         "DOS2-CO",
-        "Cechy/Polimorfia",
-        "Cechy",
-        "Typ",
-        "Typ/Zwoje"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "Cechy",
         "Typ",
         "Typ/Zwoje",
-        "Typ/Magia"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Polimorfia",
+        "Cechy",
+        "Typ",
+        "Typ/Zwoje",
+        "Typ/Magia",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -18300,18 +18428,20 @@
       "slug": "Magia/RANDOM-SUMMONING-SCROLL",
       "before": [
         "DOS2-CO",
-        "Cechy/Przyzywanie",
-        "Cechy",
-        "Typ",
-        "Typ/Zwoje"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "Cechy",
         "Typ",
         "Typ/Zwoje",
-        "Typ/Magia"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Przyzywanie",
+        "Cechy",
+        "Typ",
+        "Typ/Zwoje",
+        "Typ/Magia",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -18557,17 +18687,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18575,17 +18707,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -18593,17 +18727,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -19016,54 +19152,60 @@
       "slug": "Pancerze/UNIQUE-GEOMANCER-CAPE",
       "before": [
         "DOS2-CO",
-        "Cechy/Geomancja",
-        "Cechy",
-        "Typ",
-        "Typ/Amulety"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Geomancja",
+        "Cechy/Umiejetnosci/Geomancja",
         "Cechy",
         "Typ",
         "Typ/Amulety",
-        "Typ/Pancerz"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Geomancja",
+        "Cechy",
+        "Typ",
+        "Typ/Amulety",
+        "Typ/Pancerz",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
       "slug": "Pancerze/UNIQUE-HYDROSOPHIST-CAPE",
       "before": [
         "DOS2-CO",
-        "Cechy/Hydrosophia",
-        "Cechy",
-        "Typ",
-        "Typ/Amulety"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Hydrosophia",
+        "Cechy/Umiejetnosci/Hydrosophia",
         "Cechy",
         "Typ",
         "Typ/Amulety",
-        "Typ/Pancerz"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Hydrosophia",
+        "Cechy",
+        "Typ",
+        "Typ/Amulety",
+        "Typ/Pancerz",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
       "slug": "Pancerze/UNIQUE-NECROMANCER-CAPE",
       "before": [
         "DOS2-CO",
-        "Cechy/Nekromancja",
-        "Cechy",
-        "Typ",
-        "Typ/Amulety"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Nekromancja",
+        "Cechy/Umiejetnosci/Nekromancja",
         "Cechy",
         "Typ",
         "Typ/Amulety",
-        "Typ/Pancerz"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Nekromancja",
+        "Cechy",
+        "Typ",
+        "Typ/Amulety",
+        "Typ/Pancerz",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -19210,18 +19352,20 @@
       "slug": "Pancerze/UNIQUE-POLYMORPH-CAPE",
       "before": [
         "DOS2-CO",
-        "Cechy/Polimorfia",
-        "Cechy",
-        "Typ",
-        "Typ/Amulety"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Polimorfia",
+        "Cechy/Umiejetnosci/Polimorfia",
         "Cechy",
         "Typ",
         "Typ/Amulety",
-        "Typ/Pancerz"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Polimorfia",
+        "Cechy",
+        "Typ",
+        "Typ/Amulety",
+        "Typ/Pancerz",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -19284,18 +19428,20 @@
       "slug": "Pancerze/UNIQUE-SUMMONER-CAPE",
       "before": [
         "DOS2-CO",
-        "Cechy/Przyzywanie",
-        "Cechy",
-        "Typ",
-        "Typ/Amulety"
-      ],
-      "after": [
-        "DOS2-CO",
-        "Cechy/Przyzywanie",
+        "Cechy/Umiejetnosci/Przyzywanie",
         "Cechy",
         "Typ",
         "Typ/Amulety",
-        "Typ/Pancerz"
+        "Cechy/Umiejetnosci"
+      ],
+      "after": [
+        "DOS2-CO",
+        "Cechy/Umiejetnosci/Przyzywanie",
+        "Cechy",
+        "Typ",
+        "Typ/Amulety",
+        "Typ/Pancerz",
+        "Cechy/Umiejetnosci"
       ]
     },
     {
@@ -19555,17 +19701,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -19573,17 +19721,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {
@@ -19591,17 +19741,19 @@
       "before": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
-        "Typ/Bron"
+        "Typ/Bron",
+        "Cechy/Bieglosci-broni"
       ],
       "after": [
         "DOS2-CO",
         "Cechy",
-        "Cechy/Dwuręczna",
+        "Cechy/Bieglosci-broni/Dwuręczna",
         "Typ",
         "Typ/Bron",
-        "Typ/Magia"
+        "Typ/Magia",
+        "Cechy/Bieglosci-broni"
       ]
     },
     {

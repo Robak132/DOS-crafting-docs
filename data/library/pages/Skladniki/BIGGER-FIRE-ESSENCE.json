@@ -2,9 +2,9 @@
   "slug": "Skladniki/BIGGER-FIRE-ESSENCE",
   "title": "Bigger Fire Essence",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

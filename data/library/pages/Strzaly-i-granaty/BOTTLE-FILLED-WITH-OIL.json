@@ -3,8 +3,13 @@
   "title": "Bottle Filled With Oil",
   "titlePl": "Butelka oleju",
   "tags": [
-    "DOS2",
+    "Cechy",
+    "Cechy/Inteligencja",
+    "Cechy/Kondycja",
+    "Cechy/Odporność-na-ogień",
     "DOS1",
+    "DOS2",
+    "Efekty/Statusy/POISONED",
     "Typ",
     "Typ/Skladniki",
     "Typ/Strzaly-i-granaty"

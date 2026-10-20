@@ -2,9 +2,9 @@
   "slug": "Skladniki/CRATES,--BASKET,-BUCKET,-WOODEN-BOX",
   "title": "Crates,  Basket, Bucket, Wooden Box",
   "tags": [
-    "Typ/Skladniki",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Skladniki"
   ],
   "itemPage": true,
   "categoryPage": false

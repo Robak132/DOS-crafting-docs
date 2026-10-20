@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-FIRE-DAMAGE)",
   "title": "Elemental Boosted Weapon (+ Fire Damage)",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Obrażenia-ognia",
-    "Typ"
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/ognia",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

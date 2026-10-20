@@ -2,12 +2,22 @@
   "slug": "Pancerze/UNIQUE-NECROMANCER-CAPE",
   "title": "Unique Necromancer Cape",
   "tags": [
-    "DOS2-CO",
-    "Cechy/Nekromancja",
     "Cechy",
+    "Cechy/Gniazda-run",
+    "Cechy/Odporność-na-truciznę",
+    "Cechy/Pancerz-fizyczny",
+    "Cechy/Pancerz-magiczny",
+    "Cechy/Pancerz-zbalansowany",
+    "Cechy/Skradanie",
+    "Cechy/Spryt",
+    "Cechy/Umiejetnosci",
+    "Cechy/Umiejetnosci/Nekromancja",
+    "Cechy/Unik",
+    "Cechy/Zapewnia-umiejetnosc",
+    "Cechy/Złodziejstwo",
+    "DOS2-CO",
     "Typ",
-    "Typ/Amulety",
-    "Typ/Pancerz"
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/ADD-STRENGTH,,-DEXTERITY-ON-ITEM",
   "title": "ADD STRENGTH,, DEXTERITY ON ITEM",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS1",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

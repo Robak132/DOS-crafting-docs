@@ -3,10 +3,11 @@
   "title": "Sharp Tooth Amulet",
   "titlePl": "Amulet z ostrym zębem",
   "tags": [
-    "Typ/Amulety",
+    "Cechy",
+    "Cechy/Odporność-na-ogień",
     "DOS1",
-    "Cechy/Charyzma",
-    "Typ"
+    "Typ",
+    "Typ/Amulety"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -1,10 +1,13 @@
 {
   "slug": "Mikstury-i-jedzenie/CUP-OF-LEMONADE",
-  "title": "Cup of lemonade",
+  "title": "Lemonade",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Leczenie",
+    "Cechy/Spryt",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,9 +2,9 @@
   "slug": "Ulepszenia/MAGIC-DAMAGE-BOOST",
   "title": "Magic Damage Boost",
   "tags": [
-    "Typ/Ulepszenia",
     "DOS2-CO",
-    "Typ"
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

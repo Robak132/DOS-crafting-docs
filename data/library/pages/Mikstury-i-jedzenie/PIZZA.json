@@ -3,10 +3,14 @@
   "title": "PIZZA",
   "titlePl": "Pizza",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
+    "Cechy",
+    "Cechy/Kondycja",
+    "Cechy/Leczenie",
+    "Cechy/Szybkość",
     "DOS1",
     "DOS2",
-    "Typ"
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

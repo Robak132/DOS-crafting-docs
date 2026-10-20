@@ -3,12 +3,12 @@
   "title": "Large Strength Potion",
   "titlePl": "Duża mikstura Siły",
   "tags": [
-    "Typ/Mikstury-i-jedzenie",
-    "DOS1",
-    "DOS2-CO",
     "Cechy",
     "Cechy/Siła",
-    "Typ"
+    "DOS1",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Mikstury-i-jedzenie"
   ],
   "itemPage": true,
   "categoryPage": false

@@ -2,11 +2,12 @@
   "slug": "Ulepszenia/BOOSTED-AXE-(+1)-ONE-HANDED",
   "title": "Boosted Axe (+1) One Handed",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Jednoręczna",
-    "Typ"
+    "Cechy/Bieglosci-broni",
+    "Cechy/Bieglosci-broni/Jednoręczna",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

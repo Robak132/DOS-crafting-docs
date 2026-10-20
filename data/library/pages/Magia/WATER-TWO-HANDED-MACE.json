@@ -2,11 +2,16 @@
   "slug": "Magia/WATER-TWO-HANDED-MACE",
   "title": "2H Water Mace",
   "tags": [
-    "DOS2-CO",
     "Cechy",
-    "Cechy/Dwuręczna",
+    "Cechy/Obrażenia-magiczne",
+    "Cechy/Obrażenia-magiczne/wody",
+    "Cechy/Zapewnia-umiejetnosc",
+    "DOS2-CO",
+    "Efekty/Powierzchnie/Water",
+    "Efekty/Statusy/WET",
     "Typ",
     "Typ/Bron",
+    "Typ/Bron/Bulawy",
     "Typ/Magia"
   ],
   "itemPage": true,

@@ -2,11 +2,11 @@
   "slug": "Ulepszenia/SLOWED-IMMUNITY",
   "title": "Slowed Immunity",
   "tags": [
-    "Typ/Ulepszenia",
-    "DOS2-CO",
-    "Cechy/Immunitet-na-spowolnienie",
     "Cechy",
-    "Typ"
+    "Cechy/Immunitet-na-spowolnienie",
+    "DOS2-CO",
+    "Typ",
+    "Typ/Ulepszenia"
   ],
   "itemPage": true,
   "categoryPage": false

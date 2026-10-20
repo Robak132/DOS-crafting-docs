@@ -1,5 +1,6 @@
 import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 import { isItemGroup } from "./itemGroups"
+import { tooltipItemKey } from "./tooltipIdentity"
 
 /** dead = szary, mid = zielony, end = fioletowy (bez Node — używane też w inline scripts). */
 export type ItemCraftRole = "dead" | "mid" | "end"
@@ -226,7 +227,7 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
   for (const recipe of recipes) {
     const qty = recipe.result.quantity ? `@${recipe.result.quantity}` : ""
     const modification = recipe.transformsIngredient === undefined ? "" : `@${recipe.notes}`
-    const key = `${recipe.result.slug ?? recipe.result.name}${qty}${modification}`
+    const key = `${tooltipItemKey(recipe.result)}${qty}${modification}`
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
     else groups.set(key, { result: recipe.result, variants: [recipe] })
@@ -497,29 +498,6 @@ export function matchesCraftingMax(requirements: string, maxLevel: number): bool
 }
 
 export const CRAFTING_MAX_LEVELS = [1, 2, 3, 4, 5] as const
-
-export type CatalogView = "items" | "recipes"
-
-/** Kategoria receptury pochodzi z tagu Typ wyniku; przedmiot może należeć do wielu tagów. */
-export function groupCatalogByTags(recipes: RecipeRow[], view: CatalogView, labels: Record<string, string>) {
-  const sections = new Map<string, RecipeRow[]>()
-  for (const recipe of recipes) {
-    const tags = visibleRecipeTags(recipeResultTags(recipe))
-    const categories = view === "recipes" ? tags.filter((tag) => tag.startsWith("Typ/")) : tags
-    for (const tag of categories.length > 0 ? categories : [""]) {
-      const section = sections.get(tag) ?? []
-      section.push(recipe)
-      sections.set(tag, section)
-    }
-  }
-  return [...sections]
-    .map(([tag, rows]) => ({
-      tag,
-      label: tag ? tagLabel(tag, labels) : "Bez kategorii",
-      recipes: rows,
-    }))
-    .sort((a, b) => (a.tag === "" ? 1 : b.tag === "" ? -1 : a.label.localeCompare(b.label, "pl")))
-}
 
 /** Lista przedmiotów pomija ilość produkowaną przez poszczególne receptury. */
 export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {

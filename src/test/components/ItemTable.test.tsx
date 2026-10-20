@@ -4,6 +4,7 @@ import { renderToString } from "preact-render-to-string"
 import { ItemTable } from "../../main/components/ItemTable"
 import { catalogItemRows } from "../../main/domain/recipeView"
 import type { RecipeRow } from "../../main/domain/recipes"
+import { emptyFilters, filterRecipes } from "../../main/filters"
 
 const first: RecipeRow = {
   id: "one",
@@ -32,7 +33,7 @@ test("one item row collects distinct effects across all recipe variants", () => 
   assert.deepEqual(rows[0].tags, ["Typ/Mikstury", "Cechy/Leczenie"])
 })
 
-test("table has three columns and type categories with one row per item", () => {
+test("table has three columns and one row per item without category sections", () => {
   const html = renderToString(
     <ItemTable
       lang="pl"
@@ -42,8 +43,10 @@ test("table has three columns and type categories with one row per item", () => 
     />,
   )
   assert.ok(html.includes('<th scope="col">Przedmiot</th><th scope="col">Efekt</th><th scope="col">Tagi</th>'))
-  assert.ok(html.includes('<section><h2>Mikstury</h2><div class="recipe-table-wrap"'))
-  assert.ok(html.includes('aria-label="Przedmioty: Mikstury"'))
+  assert.equal(html.match(/<table /g)?.length, 1)
+  assert.ok(!html.includes("<section"))
+  assert.ok(!html.includes("<h2"))
+  assert.ok(html.includes('aria-label="Lista przedmiotów"'))
   assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
   assert.ok(html.includes('data-search-effect="+2 Bystrość"'))
   assert.ok(html.includes('data-filter-tag="Cechy/Leczenie"'))
@@ -60,12 +63,25 @@ test("missing effects and categories remain readable; labels are escaped", () =>
       itemHref={(slug) => slug}
     />,
   )
-  assert.ok(html.includes("Bez kategorii"))
+  assert.ok(!html.includes("<h2"))
   assert.ok(html.includes("&lt;unsafe"))
   assert.ok(!html.includes("<unsafe>"))
   assert.equal(html.match(/class="recipe-empty">—/g)?.length, 2)
   const empty = renderToString(<ItemTable recipes={[]} labels={{}} itemHref={(slug) => slug} />)
   assert.equal(empty, '<p class="recipe-empty">Brak przedmiotów pasujących do filtrów.</p>')
+})
+
+test("items with multiple type tags occur once alongside uncategorized items", () => {
+  const multi = { ...first, result: { ...first.result, tags: ["Typ/Bron", "Typ/Magia", "Typ/Skladniki"] } }
+  const other = { ...first, id: "other", result: { name: "Other item", slug: "other", tags: [] }, tags: [] }
+  const html = renderToString(
+    <ItemTable recipes={[multi, { ...multi, id: "variant" }, other]} labels={{}} itemHref={(slug) => slug} />,
+  )
+  assert.equal(html.match(/<table /g)?.length, 1)
+  assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
+  assert.equal(html.match(/data-slug="other"/g)?.length, 1)
+  assert.equal(html.match(/<tr class=/g)?.length, 2)
+  assert.ok(!html.includes("<h2"))
 })
 
 test("item list shows descriptions below names in the selected language and omits missing descriptions", () => {
@@ -102,4 +118,31 @@ test("item lists and counts omit groups, including unresolved selectors and expl
   assert.ok(!html.includes("<table"))
   assert.ok(html.includes("Brak przedmiotów pasujących do filtrów."))
   assert.ok(!html.includes("should-not-render.webp"))
+})
+
+test("displayed effect search text finds its source with game vocabulary in both languages", () => {
+  const recipes: RecipeRow[] = [
+    {
+      ...first,
+      result: { name: "Apple Pie Dough", tags: [] },
+      notes: "Add 10% Heal -1 Speed",
+      effectLabels: { speed: "Speed" },
+    },
+    {
+      ...first,
+      result: {
+        name: "Blood Rose Elixir",
+        tags: [],
+        effect: { en: "+1 Finesse; +1 Loremaster", pl: "+1 Zręczność; +1 Loremaster" },
+      },
+      notes: "",
+    },
+  ]
+  for (const lang of ["pl", "en"] as const) {
+    for (const row of recipes) {
+      const html = renderToString(<ItemTable recipes={[row]} labels={{}} itemHref={(slug) => slug} lang={lang} />)
+      const clickedEffect = html.match(/data-search-effect="([^"]+)"/)![1]
+      assert.deepEqual(filterRecipes(recipes, { ...emptyFilters(), query: clickedEffect }, {}), [row])
+    }
+  }
 })

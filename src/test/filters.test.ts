@@ -1,6 +1,13 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { emptyFilters, filterRecipes, filtersToSearch, restoreFilters } from "../main/filters"
+import {
+  cycleFilter,
+  emptyFilters,
+  filterRecipes,
+  filtersToSearch,
+  rememberedCatalogHref,
+  restoreFilters,
+} from "../main/filters"
 import type { RecipeRow } from "../main/domain/recipes"
 const recipe: RecipeRow = {
   id: "one",
@@ -12,6 +19,46 @@ const recipe: RecipeRow = {
   remarks: "",
   source: "",
 }
+test("category selections coexist and cycle independently through include, exclude and neutral", () => {
+  const bow = "Typ/Bron/Luki"
+  const staff = "Typ/Bron/Kostury"
+  const selected = cycleFilter(cycleFilter(emptyFilters(), bow), staff)
+  assert.deepEqual(selected.include, [bow, staff])
+  assert.deepEqual(restoreFilters("dos2", filtersToSearch(selected, "items")), selected)
+  const excluded = cycleFilter(selected, bow)
+  assert.deepEqual(excluded.include, [staff])
+  assert.deepEqual(excluded.exclude, [bow])
+  const cleared = cycleFilter(excluded, bow)
+  assert.deepEqual(cleared.include, [staff])
+  assert.deepEqual(cleared.exclude, [])
+  assert.deepEqual(selected.include, [bow, staff])
+})
+
+test("categories match any selection while traits and exclusions still narrow the results", () => {
+  const row = (name: string, tags: string[]): RecipeRow => ({
+    ...recipe,
+    id: name,
+    result: { name, tags },
+  })
+  const bow = row("Bow", ["Typ/Bron/Luki", "Cechy/Ogien", "Cechy/Sila"])
+  const staff = row("Staff", ["Typ/Bron/Kostury", "Cechy/Ogien", "Cechy/Sila"])
+  const plainStaff = row("Plain Staff", ["Typ/Bron/Kostury", "Cechy/Sila"])
+  const weakStaff = row("Weak Staff", ["Typ/Bron/Kostury", "Cechy/Ogien"])
+  const boots = row("Boots", ["Typ/Pancerz/Buty", "Cechy/Ogien", "Cechy/Sila"])
+  const recipes = [bow, staff, plainStaff, weakStaff, boots]
+  const filters = { ...emptyFilters(), include: ["Typ/Bron/Luki", "Typ/Bron/Kostury"] }
+  assert.deepEqual(filterRecipes(recipes, filters, {}), [bow, staff, plainStaff, weakStaff])
+  assert.deepEqual(
+    filterRecipes(recipes, { ...filters, include: [...filters.include, "Cechy/Ogien", "Cechy/Sila"] }, {}),
+    [bow, staff],
+  )
+  assert.deepEqual(filterRecipes(recipes, { ...filters, exclude: ["Typ/Bron/Kostury"] }, {}), [bow])
+  assert.deepEqual(filterRecipes(recipes, { ...filters, include: ["Typ/Bron"], exclude: ["Typ/Bron/Luki"] }, {}), [
+    staff,
+    plainStaff,
+    weakStaff,
+  ])
+})
 test("filters apply to result tags, effects, ingredients and crafting level", () => {
   assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Typ/Mikstury"] }, {}).length, 1)
   assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Typ/Materialy"] }, {}).length, 0)
@@ -59,4 +106,29 @@ test("tags are selected through filters, never through hashtag query syntax", ()
   assert.equal(filterRecipes([tagged], { ...emptyFilters(), include: ["Typ/Skladniki"] }, {}).length, 1)
   for (const scope of ["result", "ingredient"] as const)
     assert.equal(filterRecipes([tagged], { ...emptyFilters(), query: "#Typ/Skladniki", scope }, {}).length, 0)
+})
+
+test("catalog navigation restores each game's filters while explicit empty views still reset them", () => {
+  const original = Object.getOwnPropertyDescriptor(globalThis, "sessionStorage")
+  const saved = {
+    dos1: { ...emptyFilters(), query: "Apple", craftingMax: 2 },
+    dos2: { ...emptyFilters(), query: "Potion", include: ["Typ/Skladniki"], group: "fish" },
+  }
+  Object.defineProperty(globalThis, "sessionStorage", {
+    configurable: true,
+    value: { getItem: (key: string) => JSON.stringify(saved[key.split(".").at(-1) as keyof typeof saved]) },
+  })
+  try {
+    for (const game of ["dos1", "dos2"] as const) {
+      const href = rememberedCatalogHref(game, "items")
+      assert.deepEqual(restoreFilters(game, new URL(href, "https://example.test").search), saved[game])
+      assert.deepEqual(restoreFilters(game, "?view=items"), emptyFilters())
+    }
+    const active = { ...saved.dos2, query: "Unsaved change" }
+    const back = rememberedCatalogHref("dos2", "recipes", active)
+    assert.deepEqual(restoreFilters("dos2", new URL(back, "https://example.test").search), active)
+  } finally {
+    if (original) Object.defineProperty(globalThis, "sessionStorage", original)
+    else Reflect.deleteProperty(globalThis, "sessionStorage")
+  }
 })

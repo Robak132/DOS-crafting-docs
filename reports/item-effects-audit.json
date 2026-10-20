@@ -168,7 +168,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +3% earth resistance; Physical armour (scales with item level)",
-                "pl": "+1 Inteligencja; +3% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +3% odporności na ziemię; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -448,7 +448,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -539,7 +539,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+2 Initiative; Physical armour (scales with item level)",
-                "pl": "+2 Initiative; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+2 Initiative; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -1202,7 +1202,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -1472,7 +1472,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; Physical armour (scales with item level)",
-                "pl": "+1 Initiative; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Initiative; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -1576,7 +1576,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; Physical armour (scales with item level)",
-                "pl": "+1 Siła; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Siła; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -1607,7 +1607,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-11.2% Damage; Deals air damage (scales with item level); Use: Lightning Strike; Deals air damage (scales with level)",
-                "pl": "-11.2% Damage; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Użycie: Lightning Strike; Obrażenia od powietrza (wartość zależy od poziomu)"
+                "pl": "-11.2% Damage; Obrażenia od powietrza (~poziom); Użycie: Lightning Strike; Obrażenia od powietrza (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -1655,7 +1655,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-11.2% Damage; Deals earth damage (scales with item level); Use: Magical Poison Dart; Poisoned (100%), turns: 3; Deals poison damage (scales with level)",
-                "pl": "-11.2% Damage; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Użycie: Magical Poison Dart; Poisoned (100%), tury: 3; Obrażenia od trucizny (wartość zależy od poziomu)"
+                "pl": "-11.2% Damage; Obrażenia od ziemi (~poziom); Użycie: Magical Poison Dart; Poisoned (100%), tury: 3; Obrażenia od trucizny (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -1705,7 +1705,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-11.2% Damage; Deals fire damage (scales with item level); Use: Immolation; Burning (100%), turns: 3; Deals fire damage (scales with level)",
-                "pl": "-11.2% Damage; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Użycie: Immolation; Burning (100%), tury: 3; Obrażenia od ognia (wartość zależy od poziomu)"
+                "pl": "-11.2% Damage; Obrażenia od ognia (~poziom); Użycie: Immolation; Burning (100%), tury: 3; Obrażenia od ognia (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -1750,7 +1750,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-11.2% Damage; Deals water damage (scales with item level); Use: Water Of Life",
-                "pl": "-11.2% Damage; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Użycie: Water Of Life"
+                "pl": "-11.2% Damage; Obrażenia od wody (~poziom); Użycie: Water Of Life"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2092,7 +2092,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-15% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-15% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2126,7 +2126,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-5% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-5% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-5% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2160,7 +2160,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -2192,7 +2192,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -2259,7 +2259,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-12% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-12% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-12% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2282,7 +2282,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-20% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-20% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2582,7 +2582,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Damage; Deals air damage (scales with item level); Use: Chain Lightning; Deals air damage (scales with level)",
-                "pl": "-20% Damage; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Użycie: Chain Lightning; Obrażenia od powietrza (wartość zależy od poziomu)"
+                "pl": "-20% Damage; Obrażenia od powietrza (~poziom); Użycie: Chain Lightning; Obrażenia od powietrza (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2634,7 +2634,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Damage; Deals earth damage (scales with item level); Use: Tectonic Spray; Petrified (80%), turns: 1; Deals earth damage (scales with level)",
-                "pl": "-20% Damage; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Użycie: Tectonic Spray; Petrified (80%), tury: 1; Obrażenia od ziemi (wartość zależy od poziomu)"
+                "pl": "-20% Damage; Obrażenia od ziemi (~poziom); Użycie: Tectonic Spray; Petrified (80%), tury: 1; Obrażenia od ziemi (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2679,7 +2679,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Damage; Deals fire damage (scales with item level); Use: Infectious Flame; Burning (100%), turns: 2; Creates a fire surface; Deals fire damage (scales with level)",
-                "pl": "-20% Damage; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Użycie: Infectious Flame; Burning (100%), tury: 2; Tworzy powierzchnię ognistą; Obrażenia od ognia (wartość zależy od poziomu)"
+                "pl": "-20% Damage; Obrażenia od ognia (~poziom); Użycie: Infectious Flame; Burning (100%), tury: 2; Tworzy powierzchnię ognistą; Obrażenia od ognia (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2735,7 +2735,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Damage; Deals water damage (scales with item level); Use: Winterblast; Frozen (100%), turns: 1; Deals water damage (scales with level)",
-                "pl": "-20% Damage; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Użycie: Winterblast; Frozen (100%), tury: 1; Obrażenia od wody (wartość zależy od poziomu)"
+                "pl": "-20% Damage; Obrażenia od wody (~poziom); Użycie: Winterblast; Frozen (100%), tury: 1; Obrażenia od wody (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2919,7 +2919,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15.6% Damage; Deals air damage (scales with item level); Use: Summon Air Elemental",
-                "pl": "-15.6% Damage; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Użycie: Summon Air Elemental"
+                "pl": "-15.6% Damage; Obrażenia od powietrza (~poziom); Użycie: Summon Air Elemental"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -2962,7 +2962,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15.6% Damage; Deals earth damage (scales with item level); Use: Summon Earth Elemental",
-                "pl": "-15.6% Damage; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Użycie: Summon Earth Elemental"
+                "pl": "-15.6% Damage; Obrażenia od ziemi (~poziom); Użycie: Summon Earth Elemental"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -3005,7 +3005,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15.6% Damage; Deals fire damage (scales with item level); Use: Summon Fire Elemental",
-                "pl": "-15.6% Damage; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Użycie: Summon Fire Elemental"
+                "pl": "-15.6% Damage; Obrażenia od ognia (~poziom); Użycie: Summon Fire Elemental"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -3048,7 +3048,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15.6% Damage; Deals water damage (scales with item level); Use: Summon Ice Elemental",
-                "pl": "-15.6% Damage; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Użycie: Summon Ice Elemental"
+                "pl": "-15.6% Damage; Obrażenia od wody (~poziom); Użycie: Summon Ice Elemental"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -3435,7 +3435,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; +4% Vitality; Physical armour (scales with item level)",
-                "pl": "+1 Initiative; +4% Vitality; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Initiative; +4% Vitality; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/HP",
@@ -3550,7 +3550,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; Physical armour (scales with item level)",
-                "pl": "+1 Initiative; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Initiative; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -4211,7 +4211,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -4243,7 +4243,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-15% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-15% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -4277,7 +4277,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-5% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-5% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-5% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -4311,7 +4311,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -4386,7 +4386,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -4418,7 +4418,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-5% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-5% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-5% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -4475,7 +4475,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-15% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-15% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -4509,7 +4509,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -5168,7 +5168,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -5718,7 +5718,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% poison resistance; Physical armour (scales with item level)",
-                "pl": "+5% odporności na truciznę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% odporności na truciznę; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-truciznę",
@@ -5835,7 +5835,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -5890,7 +5890,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -6798,7 +6798,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -7350,7 +7350,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -8567,7 +8567,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -8599,7 +8599,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-15% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-15% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-15% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -8633,7 +8633,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -8665,7 +8665,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; -5% fire resistance; Physical armour (scales with item level)",
-                "pl": "+1 Initiative; -5% odporności na ogień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Initiative; -5% odporności na ogień; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -8764,7 +8764,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+4% fire resistance; Physical armour (scales with item level); Fear (5%), turns: 1",
-                "pl": "+4% odporności na ogień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Fear (5%), tury: 1"
+                "pl": "+4% odporności na ogień; Pancerz fizyczny (~poziom); Fear (5%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ogień",
@@ -8966,7 +8966,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -9088,7 +9088,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+3% poison resistance; Physical armour (scales with item level)",
-                "pl": "+3% odporności na truciznę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+3% odporności na truciznę; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-truciznę",
@@ -9351,7 +9351,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; Physical armour (scales with item level)",
-                "pl": "+1 Siła; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Siła; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -9435,7 +9435,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+3% fire resistance; Physical armour (scales with item level)",
-                "pl": "+3% odporności na ogień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+3% odporności na ogień; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ogień",
@@ -9735,7 +9735,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; Physical armour (scales with item level)",
-                "pl": "+1 Inteligencja; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -10224,7 +10224,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-5% Damage; Deals piercing damage (scales with item level)",
-                "pl": "-5% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "-5% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -10259,7 +10259,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -10291,7 +10291,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+2% Critical chance; -15% Damage; Deals piercing damage (scales with item level)",
-                "pl": "+2% Critical chance; -15% Damage; Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "+2% Critical chance; -15% Damage; Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Krytyk",
@@ -10327,7 +10327,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -10674,7 +10674,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -10762,7 +10762,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +3% fire resistance; +3% water resistance; +3% air resistance; +3% earth resistance; +3% poison resistance; +3% shadow resistance; Physical armour (scales with item level)",
-                "pl": "+1 Inteligencja; +3% odporności na ogień; +3% odporności na wodę; +3% odporności na powietrze; +3% odporności na ziemię; +3% odporności na truciznę; +3% odporności na cień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +3% odporności na ogień; +3% odporności na wodę; +3% odporności na powietrze; +3% odporności na ziemię; +3% odporności na truciznę; +3% odporności na cień; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -10855,7 +10855,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Body Building; Physical armour (scales with item level)",
-                "pl": "+1 Body Building; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Body Building; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -11231,7 +11231,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-3.5% Damage; Deals air damage (scales with item level); Use: Headvice; Blind (100%), turns: 3; Deals air damage (scales with level)",
-                "pl": "-3.5% Damage; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Użycie: Headvice; Blind (100%), tury: 3; Obrażenia od powietrza (wartość zależy od poziomu)"
+                "pl": "-3.5% Damage; Obrażenia od powietrza (~poziom); Użycie: Headvice; Blind (100%), tury: 3; Obrażenia od powietrza (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -11276,7 +11276,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-3.5% Damage; Deals earth damage (scales with item level); Use: Summon Wolf",
-                "pl": "-3.5% Damage; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Użycie: Summon Wolf"
+                "pl": "-3.5% Damage; Obrażenia od ziemi (~poziom); Użycie: Summon Wolf"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -11341,7 +11341,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-3.5% Damage; Deals fire damage (scales with item level); Use: Small Fireball; Burning (100%), turns: 2; Creates a fire surface; Deals fire damage (scales with level)",
-                "pl": "-3.5% Damage; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Użycie: Small Fireball; Burning (100%), tury: 2; Tworzy powierzchnię ognistą; Obrażenia od ognia (wartość zależy od poziomu)"
+                "pl": "-3.5% Damage; Obrażenia od ognia (~poziom); Użycie: Small Fireball; Burning (100%), tury: 2; Tworzy powierzchnię ognistą; Obrażenia od ognia (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -11397,7 +11397,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals piercing damage (scales with item level)",
-                "pl": "Obrażenia przeszywające (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia przeszywające (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-przeszywające"
@@ -11427,7 +11427,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-3.5% Damage; Deals water damage (scales with item level); Use: Ice Shard; Frozen (100%), turns: 1; Deals water damage (scales with level)",
-                "pl": "-3.5% Damage; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Użycie: Ice Shard; Frozen (100%), tury: 1; Obrażenia od wody (wartość zależy od poziomu)"
+                "pl": "-3.5% Damage; Obrażenia od wody (~poziom); Użycie: Ice Shard; Frozen (100%), tury: 1; Obrażenia od wody (wartość zależy od poziomu)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia",
@@ -11882,7 +11882,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 2 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 2 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 2 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -12662,7 +12662,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
-                "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Wiarołom"
+                "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -12941,7 +12941,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -13921,7 +13921,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 3 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 3 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 3 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -15855,7 +15855,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals physical damage (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -19612,7 +19612,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -20221,7 +20221,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -20258,7 +20258,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -20290,7 +20290,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -20327,7 +20327,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -20360,7 +20360,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -20391,7 +20391,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -20447,7 +20447,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -20576,7 +20576,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level); Healing Elixir (100%)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu); Eliksir uzdrawiający (100%)"
+                "pl": "Przywraca żywotność (~poziom); Eliksir uzdrawiający (100%)"
               },
               "effect_tags": [
                 "Cechy/Leczenie",
@@ -20645,7 +20645,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -21343,7 +21343,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -21871,7 +21871,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Grants skill: Staff Of Magus",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia od ognia (~poziom); Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -22173,7 +22173,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -22378,7 +22378,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -22416,7 +22416,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -23443,7 +23443,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -23480,7 +23480,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -23518,7 +23518,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -24201,7 +24201,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -25193,7 +25193,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -26432,7 +26432,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -27854,7 +27854,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -27890,7 +27890,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -28000,7 +28000,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -28633,7 +28633,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -29703,7 +29703,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Immune to Burn; Immune to Poison; Immune to Petrified; Immune to Bleeding; Immune to Stun; Immune to Shocked; Duration: 2 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Burn; Niewrażliwość: Poison; Niewrażliwość: Skamienienie; Niewrażliwość: Krwawienie; Niewrażliwość: Stun; Niewrażliwość: Shocked; Czas trwania: 2 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Niewrażliwość: Burn; Niewrażliwość: Poison; Niewrażliwość: Skamienienie; Niewrażliwość: Krwawienie; Niewrażliwość: Stun; Niewrażliwość: Shocked; Czas trwania: 2 tur"
               },
               "effect_tags": [
                 "Cechy/Immunitet-na-krwawienie",
@@ -30934,7 +30934,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals physical damage (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -31094,7 +31094,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -31665,7 +31665,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 2 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 2 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 2 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -32099,7 +32099,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -32129,7 +32129,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -32258,7 +32258,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (15%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32304,7 +32304,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (15%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32350,7 +32350,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (15%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32470,7 +32470,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32516,7 +32516,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32562,7 +32562,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32608,7 +32608,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32654,7 +32654,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32700,7 +32700,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32746,7 +32746,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32789,7 +32789,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32832,7 +32832,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -32875,7 +32875,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -32918,7 +32918,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -32961,7 +32961,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -33004,7 +33004,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals water damage (scales with item level); Creates a water surface; Wet (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od wody (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od wody (~poziom); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33047,7 +33047,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals water damage (scales with item level); Creates a water surface; Wet (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od wody (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od wody (~poziom); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33090,7 +33090,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals water damage (scales with item level); Creates a water surface; Wet (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od wody (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od wody (~poziom); Tworzy powierzchnię wodną; Przemoczenie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33315,7 +33315,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (10%), turns: 1",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (10%), tury: 1"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33358,7 +33358,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (15%), turns: 1",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33401,7 +33401,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals air damage (scales with item level); Shocked (15%), turns: 1",
-                "pl": "+5% Szansa na trafienie; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1"
+                "pl": "+5% Szansa na trafienie; Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -33446,7 +33446,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (10%), turns: 1",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (10%), tury: 1"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33511,7 +33511,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (10%), turns: 1",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (10%), tury: 1"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33588,7 +33588,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (15%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (15%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33634,7 +33634,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Grants skill: Staff Of Magus",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia od powietrza (~poziom); Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33672,7 +33672,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level); Shocked (10%), turns: 1",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Porażenie (10%), tury: 1"
+                "pl": "Obrażenia od powietrza (~poziom); Porażenie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33715,7 +33715,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals air damage (scales with item level)",
-                "pl": "Obrażenia od powietrza (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia od powietrza (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -33943,7 +33943,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 2 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 2 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 2 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -34554,7 +34554,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; +1 Loremaster; Physical armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inicjatywa; +1 Polihistor; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inicjatywa; +1 Polihistor; Pancerz fizyczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -34920,7 +34920,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
-                "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Wiarołom"
+                "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -35157,7 +35157,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Constitution; -1 Wits; +1 Sneaking; +1 Persuasion; Physical armour (scales with item level); Fear (13%), turns: 1",
-                "pl": "+1 Kondycja; -1 Bystrość; +1 Skradanie się; +1 Perswazja; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Strach (13%), tury: 1"
+                "pl": "+1 Kondycja; -1 Bystrość; +1 Skradanie się; +1 Perswazja; Pancerz fizyczny (~poziom); Strach (13%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Kondycja",
@@ -35275,7 +35275,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Initiative; +1 Persuasion; +1 Polymorph; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Perswazja; +1 Polimorfia; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Perswazja; +1 Polimorfia; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -35512,7 +35512,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Leadership; +1 Loremaster; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Dazed (100%), turns: 1",
-                "pl": "+1 Przywództwo; +1 Polihistor; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Oszołomienie (100%), tury: 1"
+                "pl": "+1 Przywództwo; +1 Polihistor; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Oszołomienie (100%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -35596,7 +35596,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Crippled (15%), turns: 1; Grants skill: Sparking Swings",
-                "pl": "+1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Okaleczenie (15%), tury: 1; Zapewnia umiejętność: Iskrzące Ciosy"
+                "pl": "+1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Okaleczenie (15%), tury: 1; Zapewnia umiejętność: Iskrzące Ciosy"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -35718,7 +35718,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -37564,7 +37564,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 3 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 3 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 3 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -37598,7 +37598,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-obrażenia-przeszywające",
@@ -37736,7 +37736,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+2 Initiative; +10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+2 Inicjatywa; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+2 Inicjatywa; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -37783,7 +37783,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+10% physical resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+10% odporności na obrażenia fizyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+10% odporności na obrażenia fizyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-obrażenia-fizyczne",
@@ -37825,7 +37825,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -38200,7 +38200,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; +1 Sneaking; +5% Dodge; -10% water resistance; -10% physical resistance; +10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Immune to Slowed",
-                "pl": "+1 Inicjatywa; +1 Skradanie się; +5% Dodge; -10% odporności na wodę; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Spowolnienie"
+                "pl": "+1 Inicjatywa; +1 Skradanie się; +5% Dodge; -10% odporności na wodę; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Niewrażliwość: Spowolnienie"
               },
               "effect_tags": [
                 "Cechy/Immunitet-na-spowolnienie",
@@ -38408,7 +38408,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Pyrokinetic; +10% fire resistance; -10% water resistance; Physical armour (scales with item level); Immune to Wet",
-                "pl": "+1 Pamięć; +1 Pirokineza; +10% odporności na ogień; -10% odporności na wodę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Przemoczenie"
+                "pl": "+1 Pamięć; +1 Pirokineza; +10% odporności na ogień; -10% odporności na wodę; Pancerz fizyczny (~poziom); Niewrażliwość: Przemoczenie"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ogień",
@@ -38558,7 +38558,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Creates a fire surface",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię ognistą"
+                "pl": "Obrażenia od ognia (~poziom); Tworzy powierzchnię ognistą"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -39639,7 +39639,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Initiative; +1 Telekinesis; +5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Immune to Chicken",
-                "pl": "+1 Pamięć; +1 Inicjatywa; +1 Telekineza; +5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Niewrażliwość: Chicken"
+                "pl": "+1 Pamięć; +1 Inicjatywa; +1 Telekineza; +5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Niewrażliwość: Chicken"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -40907,7 +40907,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -41312,7 +41312,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Constitution; +1 Loremaster; -10% air resistance; -10% physical resistance; +10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Immune to Bleeding; Grants skill: Scalify",
-                "pl": "+1 Kondycja; +1 Polihistor; -10% odporności na powietrze; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Krwawienie; Zapewnia umiejętność: Scalify"
+                "pl": "+1 Kondycja; +1 Polihistor; -10% odporności na powietrze; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Niewrażliwość: Krwawienie; Zapewnia umiejętność: Scalify"
               },
               "effect_tags": [
                 "Cechy/Immunitet-na-krwawienie",
@@ -41382,7 +41382,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals physical damage (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -43504,7 +43504,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Strength; -2 Constitution; +1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Dazed (15%), turns: 1; Grants skill: Speak of the Devil",
-                "pl": "+1 Siła; -2 Kondycja; +1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Oszołomienie (15%), tury: 1; Zapewnia umiejętność: Speak of the Devil"
+                "pl": "+1 Siła; -2 Kondycja; +1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Oszołomienie (15%), tury: 1; Zapewnia umiejętność: Speak of the Devil"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -44247,7 +44247,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44290,7 +44290,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44333,7 +44333,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "+5% Szansa na trafienie; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "+5% Szansa na trafienie; Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -44378,7 +44378,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44443,7 +44443,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44599,7 +44599,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44645,7 +44645,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Grants skill: Staff Of Magus",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia od ziemi (~poziom); Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44688,7 +44688,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Petrified (10%), turns: 1",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Skamienienie (10%), tury: 1"
+                "pl": "Obrażenia od ziemi (~poziom); Skamienienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -44765,7 +44765,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals earth damage (scales with item level); Creates a oil surface",
-                "pl": "Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię oleistą"
+                "pl": "Obrażenia od ziemi (~poziom); Tworzy powierzchnię oleistą"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -45159,7 +45159,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Leadership; +1 Persuasion; +1 Pyrokinetic; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Pirokineza; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Pirokineza; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -45207,7 +45207,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Magic armour (scales with item level)",
-                "pl": "Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -45403,7 +45403,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Magic armour (scales with item level)",
-                "pl": "Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -45472,7 +45472,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -45521,7 +45521,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Magic armour (scales with item level)",
-                "pl": "Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -45781,7 +45781,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Loremaster; +1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (15%), turns: 1; Grants skill: Venom Coating",
-                "pl": "+1 Polihistor; +1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (15%), tury: 1; Zapewnia umiejętność: Jadowy Smar"
+                "pl": "+1 Polihistor; +1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (15%), tury: 1; Zapewnia umiejętność: Jadowy Smar"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -46215,7 +46215,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Initiative; +1 Sneaking; +1 Thievery; Physical armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inicjatywa; +1 Skradanie się; +1 Złodziejstwo; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inicjatywa; +1 Skradanie się; +1 Złodziejstwo; Pancerz fizyczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -46274,7 +46274,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Wits; +1 Telekinesis; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Pamięć; +1 Bystrość; +1 Telekineza; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Pamięć; +1 Bystrość; +1 Telekineza; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pamięć",
@@ -46641,7 +46641,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -46767,7 +46767,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -46886,7 +46886,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "+5% Szansa na trafienie; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "+5% Szansa na trafienie; Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -46931,7 +46931,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -46996,7 +46996,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Strength; -1 Intelligence; +1 Pyrokinetic; +1 Warfare; +1 Two-Handed; +5% Accuracy; Deals physical damage (scales with item level); Rune slots: 1; Burning (20%), turns: 1; Grants skill: All In",
-                "pl": "+1 Siła; -1 Inteligencja; +1 Pirokineza; +1 Sztuka walki; +1 Dwuręczna; +5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (20%), tury: 1; Zapewnia umiejętność: Idź na całość"
+                "pl": "+1 Siła; -1 Inteligencja; +1 Pirokineza; +1 Sztuka walki; +1 Dwuręczna; +5% Szansa na trafienie; Obrażenia fizyczne (~poziom); Gniazda run: 1; Płonięcie (20%), tury: 1; Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -47061,7 +47061,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -47140,7 +47140,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -47186,7 +47186,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Grants skill: Staff Of Magus",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia od ognia (~poziom); Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -47272,7 +47272,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Burning (10%), turns: 1",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Płonięcie (10%), tury: 1"
+                "pl": "Obrażenia od ognia (~poziom); Płonięcie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -47315,7 +47315,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level)",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia od ognia (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -48380,7 +48380,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Telekinesis; +1 Hydrosophist; +10% water resistance; Deals water damage (scales with item level); Rune slots: 1; Creates a ice surface; Wet (100%), turns: 1; Grants skill: All In",
-                "pl": "+1 Telekineza; +1 Hydrozofia; +10% odporności na wodę; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię lodową; Przemoczenie (100%), tury: 1; Zapewnia umiejętność: Idź na całość"
+                "pl": "+1 Telekineza; +1 Hydrozofia; +10% odporności na wodę; Obrażenia od wody (~poziom); Gniazda run: 1; Tworzy powierzchnię lodową; Przemoczenie (100%), tury: 1; Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -48615,7 +48615,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Sneaking; +1 Thievery; +1 Necromancer; +5% Dodge; +5% poison resistance; Magic armour (scales with item level); Rune slots: 1; Grants skill: Chameleon Skin",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Nekromancja; +5% Dodge; +5% odporności na truciznę; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Chameleon Skin"
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Nekromancja; +5% Dodge; +5% odporności na truciznę; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Chameleon Skin"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -48666,7 +48666,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Necromancer; Physical armour (scales with item level); Fear (10%), turns: 1",
-                "pl": "+1 Pamięć; +1 Nekromancja; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Strach (10%), tury: 1"
+                "pl": "+1 Pamięć; +1 Nekromancja; Pancerz fizyczny (~poziom); Strach (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Pamięć",
@@ -48780,7 +48780,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -48813,7 +48813,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -48847,7 +48847,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -49132,7 +49132,7 @@
               "type": "Armor",
               "effect": {
                 "en": "-1 Sneaking; +1 Thievery; +1 Summoning; +5% Accuracy; -10% earth resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "-1 Skradanie się; +1 Złodziejstwo; +1 Przyzywanie; +5% Szansa na trafienie; -10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "-1 Skradanie się; +1 Złodziejstwo; +1 Przyzywanie; +5% Szansa na trafienie; -10% odporności na ziemię; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -49282,7 +49282,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Wits; -1 Geomancer; +1 Warfare; +1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: All In",
-                "pl": "-1 Bystrość; -1 Geomancja; +1 Sztuka walki; +1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Idź na całość"
+                "pl": "-1 Bystrość; -1 Geomancja; +1 Sztuka walki; +1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -49750,7 +49750,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; Physical armour (scales with item level); Fear (13%), turns: 1",
-                "pl": "+1 Pamięć; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Strach (13%), tury: 1"
+                "pl": "+1 Pamięć; Pancerz fizyczny (~poziom); Strach (13%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Pamięć",
@@ -49816,7 +49816,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -49853,7 +49853,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -49885,7 +49885,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -49922,7 +49922,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -49955,7 +49955,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -49986,7 +49986,7 @@
               "type": "Armor",
               "effect": {
                 "en": "Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -50042,7 +50042,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -50191,7 +50191,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level); Healing Elixir (100%)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu); Eliksir uzdrawiający (100%)"
+                "pl": "Przywraca żywotność (~poziom); Eliksir uzdrawiający (100%)"
               },
               "effect_tags": [
                 "Cechy/Leczenie",
@@ -50260,7 +50260,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -50505,7 +50505,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Geomancer; -10% fire resistance; +10% earth resistance; Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Geomancja; -10% odporności na ogień; +10% odporności na ziemię; Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Geomancja; -10% odporności na ogień; +10% odporności na ziemię; Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -50550,7 +50550,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; -1 Intelligence; -2 Sneaking; +1 Polymorph; +1 Warfare; -10% water resistance; Physical armour (scales with item level); Magic armour (scales with item level); Immune to Clairvoyant",
-                "pl": "+1 Siła; -1 Inteligencja; -2 Skradanie się; +1 Polimorfia; +1 Sztuka walki; -10% odporności na wodę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Clairvoyant"
+                "pl": "+1 Siła; -1 Inteligencja; -2 Skradanie się; +1 Polimorfia; +1 Sztuka walki; -10% odporności na wodę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Niewrażliwość: Clairvoyant"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -51059,7 +51059,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Geomancer; +10% physical resistance; -10% piercing resistance; Magic armour (scales with item level); Immune to Drunk",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Geomancja; +10% odporności na obrażenia fizyczne; -10% odporności na obrażenia przeszywające; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Upojenie"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Geomancja; +10% odporności na obrażenia fizyczne; -10% odporności na obrażenia przeszywające; Pancerz magiczny (~poziom); Niewrażliwość: Upojenie"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -51220,7 +51220,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -51649,7 +51649,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Warfare; +1 Two-Handed; Deals water damage (scales with item level); Rune slots: 1; Wet (15%), turns: 1; Grants skill: Ice Breaker",
-                "pl": "+1 Sztuka walki; +1 Dwuręczna; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Przemoczenie (15%), tury: 1; Zapewnia umiejętność: Lodołamacz"
+                "pl": "+1 Sztuka walki; +1 Dwuręczna; Obrażenia od wody (~poziom); Gniazda run: 1; Przemoczenie (15%), tury: 1; Zapewnia umiejętność: Lodołamacz"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -51947,7 +51947,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals fire damage (scales with item level); Grants skill: Staff Of Magus",
-                "pl": "Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia od ognia (~poziom); Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -52321,7 +52321,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Finesse; +1 Wits; +2 Huntsman; +1 Ranged; Magic armour (scales with item level); Grants skill: Farsight",
-                "pl": "+1 Zręczność; +1 Bystrość; +2 Myślistwo; +1 Dystansowa; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Dalekowidzenie"
+                "pl": "+1 Zręczność; +1 Bystrość; +2 Myślistwo; +1 Dystansowa; Pancerz magiczny (~poziom); Zapewnia umiejętność: Dalekowidzenie"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -52695,7 +52695,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -53124,7 +53124,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -53170,7 +53170,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -54148,7 +54148,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Initiative; -10% earth resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Immune to Slipping",
-                "pl": "+1 Bystrość; +1 Inicjatywa; -10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Niewrażliwość: Slipping"
+                "pl": "+1 Bystrość; +1 Inicjatywa; -10% odporności na ziemię; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Niewrażliwość: Slipping"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -54819,7 +54819,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -54893,7 +54893,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -54939,7 +54939,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -55418,7 +55418,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Polymorph; +5% Dodge; +10% water resistance; -10% air resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polimorfia; +5% Dodge; +10% odporności na wodę; -10% odporności na powietrze; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polimorfia; +5% Dodge; +10% odporności na wodę; -10% odporności na powietrze; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -55995,7 +55995,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Restores vitality (amount scales with item level)",
-                "pl": "Przywraca żywotność (wartość zależy od poziomu przedmiotu)"
+                "pl": "Przywraca żywotność (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Leczenie"
@@ -56760,7 +56760,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Initiative; +1 Loremaster; Magic armour (scales with item level); Rune slots: 1; Grants skill: Flight",
-                "pl": "+1 Inteligencja; +1 Inicjatywa; +1 Polihistor; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Lot"
+                "pl": "+1 Inteligencja; +1 Inicjatywa; +1 Polihistor; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Lot"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -56802,7 +56802,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; +1 Leadership; +1 Loremaster; Magic armour (scales with item level); Rune slots: 1; Grants skill: Bull Rush",
-                "pl": "+1 Siła; +1 Przywództwo; +1 Polihistor; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Bycza szarża"
+                "pl": "+1 Siła; +1 Przywództwo; +1 Polihistor; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Bycza szarża"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -56845,7 +56845,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+2 Wits; +1 Initiative; +1 Loremaster; +1 Sneaking; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+2 Bystrość; +1 Inicjatywa; +1 Polihistor; +1 Skradanie się; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+2 Bystrość; +1 Inicjatywa; +1 Polihistor; +1 Skradanie się; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -56895,7 +56895,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Finesse; +1 Loremaster; +5% Dodge; Magic armour (scales with item level); Rune slots: 1; Grants skill: Spin Web",
-                "pl": "+1 Zręczność; +1 Polihistor; +5% Dodge; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Snucie sieci"
+                "pl": "+1 Zręczność; +1 Polihistor; +5% Dodge; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Snucie sieci"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -57177,7 +57177,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Huntsman; +1 Ranged; +5% Accuracy; Deals physical damage (scales with item level); Rune slots: 1; Mad (15%), turns: 1; Grants skill: Sabotage",
-                "pl": "+1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Szał (15%), tury: 1; Zapewnia umiejętność: Sabotaż"
+                "pl": "+1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie; Obrażenia fizyczne (~poziom); Gniazda run: 1; Szał (15%), tury: 1; Zapewnia umiejętność: Sabotaż"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -57227,7 +57227,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Initiative; +1 Sneaking; +1 Aerotheurge; +5% Dodge; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Skradanie się; +1 Aeroturgia; +5% Dodge; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Skradanie się; +1 Aeroturgia; +5% Dodge; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -57318,7 +57318,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Initiative; +1 Loremaster; +1 Aerotheurge; Magic armour (scales with item level); Rune slots: 1; Grants skill: Flight",
-                "pl": "+1 Inteligencja; +1 Inicjatywa; +1 Polihistor; +1 Aeroturgia; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Lot"
+                "pl": "+1 Inteligencja; +1 Inicjatywa; +1 Polihistor; +1 Aeroturgia; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Lot"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -57921,7 +57921,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Constitution; -1 Aerotheurge; +1 Warfare; +1 Two-Handed; Deals poison damage (scales with item level); Rune slots: 1; Immune to Acid; Creates a poison surface; Acid (10%), turns: 1; Grants skill: All In",
-                "pl": "-1 Kondycja; -1 Aeroturgia; +1 Sztuka walki; +1 Dwuręczna; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Niewrażliwość: Acid; Tworzy powierzchnię zatrutą; Kwas (10%), tury: 1; Zapewnia umiejętność: Idź na całość"
+                "pl": "-1 Kondycja; -1 Aeroturgia; +1 Sztuka walki; +1 Dwuręczna; Obrażenia od trucizny (~poziom); Gniazda run: 1; Niewrażliwość: Acid; Tworzy powierzchnię zatrutą; Kwas (10%), tury: 1; Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -58195,7 +58195,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; -1 Finesse; -1 Initiative; -1 Sneaking; +5% Dodge; -10% fire resistance; +10% physical resistance; -10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Immune to Petrified; Grants skill: Enrage",
-                "pl": "+1 Siła; -1 Zręczność; -1 Inicjatywa; -1 Skradanie się; +5% Dodge; -10% odporności na ogień; +10% odporności na obrażenia fizyczne; -10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Skamienienie; Zapewnia umiejętność: Wściekłość"
+                "pl": "+1 Siła; -1 Zręczność; -1 Inicjatywa; -1 Skradanie się; +5% Dodge; -10% odporności na ogień; +10% odporności na obrażenia fizyczne; -10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Niewrażliwość: Skamienienie; Zapewnia umiejętność: Wściekłość"
               },
               "effect_tags": [
                 "Cechy/Inicjatywa",
@@ -58522,7 +58522,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +1% fire resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +1% odporności na ogień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +1% odporności na ogień; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ogień",
@@ -58567,7 +58567,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny"
@@ -58603,7 +58603,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Bleeding (10%), turns: 1; Grants skill: Staff Of Magus",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Krwawienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga"
+                "pl": "Obrażenia fizyczne (~poziom); Krwawienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -58642,7 +58642,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Bleeding (10%), turns: 1",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Krwawienie (10%), tury: 1"
+                "pl": "Obrażenia fizyczne (~poziom); Krwawienie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -58676,7 +58676,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -59169,7 +59169,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59209,7 +59209,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59354,7 +59354,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "+5% Szansa na trafienie; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "+5% Szansa na trafienie; Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -59396,7 +59396,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59612,7 +59612,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59660,7 +59660,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59703,7 +59703,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface; Poisoned (10%), turns: 1",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -59743,7 +59743,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals poison damage (scales with item level); Creates a poison surface",
-                "pl": "Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Tworzy powierzchnię zatrutą"
+                "pl": "Obrażenia od trucizny (~poziom); Tworzy powierzchnię zatrutą"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-magiczne",
@@ -60494,7 +60494,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -60598,7 +60598,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Persuasion; -10% earth resistance; Physical armour (scales with item level); Grants skill: Scarecrow's Wail",
-                "pl": "+1 Pamięć; +1 Perswazja; -10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Płacz stracha na wróble"
+                "pl": "+1 Pamięć; +1 Perswazja; -10% odporności na ziemię; Pancerz fizyczny (~poziom); Zapewnia umiejętność: Płacz stracha na wróble"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ziemię",
@@ -60780,7 +60780,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+3 Memory; -1 Initiative; +2 Leadership; +2 Persuasion; +1 Aerotheurge; -20% Accuracy; +1 AP recovery; Magic armour (scales with item level); Immune to Invisibility",
-                "pl": "+3 Pamięć; -1 Inicjatywa; +2 Przywództwo; +2 Perswazja; +1 Aeroturgia; -20% Szansa na trafienie; +1 Odzyskiwanie PA; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Invisibility"
+                "pl": "+3 Pamięć; -1 Inicjatywa; +2 Przywództwo; +2 Perswazja; +1 Aeroturgia; -20% Szansa na trafienie; +1 Odzyskiwanie PA; Pancerz magiczny (~poziom); Niewrażliwość: Invisibility"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -61448,7 +61448,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Loremaster; +1 Single-Handed; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Venom Coating",
-                "pl": "+1 Polihistor; +1 Jednoręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Jadowy Smar"
+                "pl": "+1 Polihistor; +1 Jednoręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Jadowy Smar"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -61992,7 +61992,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Pyrokinetic; +1 Two-Handed; +3% Critical chance; Deals fire damage (scales with item level); Rune slots: 1; Burning (10%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Fireblood",
-                "pl": "+1 Pirokineza; +1 Dwuręczna; +3% Szansa na trafienie krytyczne; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Fireblood"
+                "pl": "+1 Pirokineza; +1 Dwuręczna; +3% Szansa na trafienie krytyczne; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Fireblood"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -62079,7 +62079,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Memory; +1 Leadership; +1 Huntsman; +1 Scoundrel; +5% Vitality; +10% air resistance; -10% earth resistance; Physical armour (scales with item level); Immune to Blessed",
-                "pl": "+1 Pamięć; +1 Przywództwo; +1 Myślistwo; +1 Szelmostwo; +5% Zdrowie; +10% odporności na powietrze; -10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Blessed"
+                "pl": "+1 Pamięć; +1 Przywództwo; +1 Myślistwo; +1 Szelmostwo; +5% Zdrowie; +10% odporności na powietrze; -10% odporności na ziemię; Pancerz fizyczny (~poziom); Niewrażliwość: Blessed"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -62302,7 +62302,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Hydrosophist; +10% water resistance; -10% air resistance; Magic armour (scales with item level); Immune to Warm; Grants skill: Healing Tears",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Hydrozofia; +10% odporności na wodę; -10% odporności na powietrze; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Rozgrzanie; Zapewnia umiejętność: Uzdrawiające Łzy"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Hydrozofia; +10% odporności na wodę; -10% odporności na powietrze; Pancerz magiczny (~poziom); Niewrażliwość: Rozgrzanie; Zapewnia umiejętność: Uzdrawiające Łzy"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -63012,7 +63012,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Warfare; +1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Weak (13%), turns: 1; Grants skill: Vampiric Hunger",
-                "pl": "+1 Sztuka walki; +1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Osłabienie (13%), tury: 1; Zapewnia umiejętność: Wampiryczny Głód"
+                "pl": "+1 Sztuka walki; +1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Osłabienie (13%), tury: 1; Zapewnia umiejętność: Wampiryczny Głód"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -63218,7 +63218,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63258,7 +63258,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63298,7 +63298,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63338,7 +63338,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63474,7 +63474,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63514,7 +63514,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1; Grants skill: Magical All In",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1; Zapewnia umiejętność: Magical All In"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63557,7 +63557,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1; Grants skill: Staff Of Magus",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1; Zapewnia umiejętność: Kostur Maga"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1; Zapewnia umiejętność: Kostur Maga"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63600,7 +63600,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63640,7 +63640,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-20% Accuracy; Deals shadow damage (scales with item level); Diseased (10%), turns: 1",
-                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (wartość zależy od poziomu przedmiotu); Choroba (10%), tury: 1"
+                "pl": "-20% Szansa na trafienie; Obrażenia od cienia (~poziom); Choroba (10%), tury: 1"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -63804,7 +63804,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level); Grants skill: All In",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Idź na całość"
+                "pl": "Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Idź na całość"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne",
@@ -63840,7 +63840,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -63994,7 +63994,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -64268,7 +64268,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; -1 Constitution; +1 Two-Handed; Deals physical damage (scales with item level); Rune slots: 1; Weak (13%), turns: 1; Grants skill: Harvest Souls",
-                "pl": "-1 Siła; +1 Inteligencja; -1 Kondycja; +1 Dwuręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Osłabienie (13%), tury: 1; Zapewnia umiejętność: Harvest Souls"
+                "pl": "-1 Siła; +1 Inteligencja; -1 Kondycja; +1 Dwuręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Osłabienie (13%), tury: 1; Zapewnia umiejętność: Harvest Souls"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -64319,7 +64319,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Warfare; +1 Single-Handed; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Vampiric Hunger",
-                "pl": "+1 Sztuka walki; +1 Jednoręczna; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Wampiryczny Głód"
+                "pl": "+1 Sztuka walki; +1 Jednoręczna; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Wampiryczny Głód"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -64991,7 +64991,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants magic armour (amount scales with item level); Duration: 5 turns",
-                "pl": "Zwiększa pancerz magiczny (wartość zależy od poziomu przedmiotu); Czas trwania: 5 tur"
+                "pl": "Zwiększa pancerz magiczny (~poziom); Czas trwania: 5 tur"
               },
               "effect_tags": [
                 "Cechy/Pancerz-magiczny"
@@ -65585,7 +65585,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Finesse; +1 Loremaster; +5% Dodge; Magic armour (scales with item level); Rune slots: 1; Grants skill: Spin Web",
-                "pl": "+1 Zręczność; +1 Polihistor; +5% Dodge; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Snucie sieci"
+                "pl": "+1 Zręczność; +1 Polihistor; +5% Dodge; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Snucie sieci"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -65982,7 +65982,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Memory; -1 Hydrosophist; +1 Pyrokinetic; +1 Two-Handed; +3% Critical chance; Deals fire damage (scales with item level); Rune slots: 1; Burning (20%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Flaming Skin",
-                "pl": "-1 Pamięć; -1 Hydrozofia; +1 Pirokineza; +1 Dwuręczna; +3% Szansa na trafienie krytyczne; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (20%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Płonąca Skóra"
+                "pl": "-1 Pamięć; -1 Hydrozofia; +1 Pirokineza; +1 Dwuręczna; +3% Szansa na trafienie krytyczne; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (20%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Płonąca Skóra"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -66142,7 +66142,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Leadership; Deals water damage (scales with item level); Rune slots: 1; Creates a ice surface; Wet (100%), turns: 1; Grants skill: Cryotherapy",
-                "pl": "+1 Inicjatywa; +1 Przywództwo; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię lodową; Przemoczenie (100%), tury: 1; Zapewnia umiejętność: Krioterapia"
+                "pl": "+1 Inicjatywa; +1 Przywództwo; Obrażenia od wody (~poziom); Gniazda run: 1; Tworzy powierzchnię lodową; Przemoczenie (100%), tury: 1; Zapewnia umiejętność: Krioterapia"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -66407,7 +66407,7 @@
               "type": "Potion",
               "effect": {
                 "en": "Grants physical armour (amount scales with item level); Immune to Burn; Immune to Poison; Immune to Petrified; Immune to Bleeding; Immune to Stun; Immune to Shocked; Duration: 2 turns",
-                "pl": "Zwiększa pancerz fizyczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Burn; Niewrażliwość: Poison; Niewrażliwość: Skamienienie; Niewrażliwość: Krwawienie; Niewrażliwość: Stun; Niewrażliwość: Shocked; Czas trwania: 2 tur"
+                "pl": "Zwiększa pancerz fizyczny (~poziom); Niewrażliwość: Burn; Niewrażliwość: Poison; Niewrażliwość: Skamienienie; Niewrażliwość: Krwawienie; Niewrażliwość: Stun; Niewrażliwość: Shocked; Czas trwania: 2 tur"
               },
               "effect_tags": [
                 "Cechy/Immunitet-na-krwawienie",
@@ -67694,7 +67694,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Initiative; +5% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Immune to Disarmed; Grants skill: Eye of the Tiger",
-                "pl": "+1 Bystrość; +1 Inicjatywa; +5% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Niewrażliwość: Disarmed; Zapewnia umiejętność: Eye of the Tiger"
+                "pl": "+1 Bystrość; +1 Inicjatywa; +5% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Niewrażliwość: Disarmed; Zapewnia umiejętność: Eye of the Tiger"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -67813,7 +67813,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Initiative; +1 Loremaster; +5% Dodge; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Immune to Decaying",
-                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Polihistor; +5% Dodge; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Niewrażliwość: Decaying"
+                "pl": "+1 Bystrość; +1 Inicjatywa; +1 Polihistor; +5% Dodge; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Niewrażliwość: Decaying"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -68018,7 +68018,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -68228,7 +68228,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+5% Accuracy; Deals physical damage (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -68380,7 +68380,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Constitution; +1 Loremaster; -10% physical resistance; +10% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Immune to Regenerating",
-                "pl": "+1 Kondycja; +1 Polihistor; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Niewrażliwość: Regenerating"
+                "pl": "+1 Kondycja; +1 Polihistor; -10% odporności na obrażenia fizyczne; +10% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Niewrażliwość: Regenerating"
               },
               "effect_tags": [
                 "Cechy/Kondycja",
@@ -68597,7 +68597,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "Deals physical damage (scales with item level)",
-                "pl": "Obrażenia fizyczne (wartość zależy od poziomu przedmiotu)"
+                "pl": "Obrażenia fizyczne (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Obrażenia-fizyczne"
@@ -68671,7 +68671,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Aerotheurge; +1 Warfare; +1 Two-Handed; +10% Damage; Deals air damage (scales with item level); Rune slots: 1; Shocked (19%), turns: 1; Grants skill: Magical All In; Grants skill: Smoke Cover",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Aeroturgia; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Zasłona Dymna"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Aeroturgia; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Zasłona Dymna"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -68734,7 +68734,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Geomancer; +1 Warfare; +1 Two-Handed; +10% Damage; Deals earth damage (scales with item level); Rune slots: 1; Petrified (19%), turns: 1; Grants skill: Magical All In; Grants skill: Petrifying Touch",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Geomancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Petryfikujący dotyk"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Geomancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Petryfikujący dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -68797,7 +68797,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Pyrokinetic; +1 Warfare; +1 Two-Handed; +10% Damage; Deals fire damage (scales with item level); Rune slots: 1; Burning (19%), turns: 1; Grants skill: Magical All In; Grants skill: Flaming Skin",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Pirokineza; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Płonąca Skóra"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Pirokineza; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Płonąca Skóra"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -68860,7 +68860,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Geomancer; +1 Warfare; +1 Two-Handed; +10% Damage; Deals poison damage (scales with item level); Rune slots: 1; Creates a poison surface; Poisoned (19%), turns: 1; Grants skill: Magical All In; Grants skill: Corrosive Touch",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Geomancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Żrący Dotyk"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Geomancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od trucizny (~poziom); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Żrący Dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -68920,7 +68920,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Necromancer; +1 Warfare; +1 Two-Handed; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (19%), turns: 1; Grants skill: Magical All In; Grants skill: Crippling Blow",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Nekromancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Okaleczający Cios"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Nekromancja; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Okaleczający Cios"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -68976,7 +68976,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +2 Hydrosophist; +1 Warfare; +1 Two-Handed; +10% Damage; Deals water damage (scales with item level); Rune slots: 1; Creates a water surface; Wet (19%), turns: 1; Grants skill: Magical All In; Grants skill: Cryotherapy",
-                "pl": "-1 Siła; +1 Inteligencja; +2 Hydrozofia; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od wody (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię wodną; Przemoczenie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Krioterapia"
+                "pl": "-1 Siła; +1 Inteligencja; +2 Hydrozofia; +1 Sztuka walki; +1 Dwuręczna; +10% Obrażenia; Obrażenia od wody (~poziom); Gniazda run: 1; Tworzy powierzchnię wodną; Przemoczenie (19%), tury: 1; Zapewnia umiejętność: Magical All In; Zapewnia umiejętność: Krioterapia"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69036,7 +69036,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +10% air resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +10% odporności na powietrze; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +10% odporności na powietrze; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-powietrze",
@@ -69073,7 +69073,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Telekinesis; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69119,7 +69119,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Leadership; +1 Persuasion; +1 Aerotheurge; +3% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Grants skill: Force Push",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Aeroturgia; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Pchnięcie mocy"
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Aeroturgia; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Zapewnia umiejętność: Pchnięcie mocy"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -69168,7 +69168,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -69206,7 +69206,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +2 Aerotheurge; +10% air resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inteligencja; +1 Pamięć; +2 Aeroturgia; +10% odporności na powietrze; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inteligencja; +1 Pamięć; +2 Aeroturgia; +10% odporności na powietrze; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -69258,7 +69258,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Aerotheurge; +3% Dodge; +5% air resistance; Magic armour (scales with item level); Rune slots: 1; Grants skill: Evasive Aura",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Aeroturgia; +3% Dodge; +5% odporności na powietrze; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Aura Uniku"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Aeroturgia; +3% Dodge; +5% odporności na powietrze; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Aura Uniku"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -69309,7 +69309,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Loremaster; +1 Aerotheurge; +1 Huntsman; +1 Ranged; +5% Critical chance; +10% Damage; +10% air resistance; Deals air damage (scales with item level); Rune slots: 1; Shocked (15%), turns: 1; Grants skill: Smoke Cover",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Aeroturgia; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (15%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Aeroturgia; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (15%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69378,7 +69378,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Finesse; +1 Intelligence; +1 Initiative; +1 Persuasion; +1 Aerotheurge; +1 Scoundrel; +1 Dual Wielding; +10% Damage; +10% air resistance; Deals air damage (scales with item level); Rune slots: 1; Shocked (10%), turns: 1; Grants skill: Shocking Touch",
-                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Aeroturgia; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Porażający Dotyk"
+                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Aeroturgia; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Porażający Dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69447,7 +69447,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Aerotheurge; +1 Two-Handed; +5% Critical chance; +10% Damage; +15% air resistance; Deals air damage (scales with item level); Rune slots: 1; Shocked (10%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Blessed Smoke Cloud",
-                "pl": "+1 Aeroturgia; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na powietrze; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Błogosławiona Chmura Dymu"
+                "pl": "+1 Aeroturgia; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na powietrze; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Błogosławiona Chmura Dymu"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69503,7 +69503,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Aerotheurge; +1 Warfare; +10% Damage; Deals air damage (scales with item level); Rune slots: 1; Shocked (10%), turns: 1; Grants skill: Smoke Cover",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Aeroturgia; +1 Sztuka walki; +10% Obrażenia; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Aeroturgia; +1 Sztuka walki; +10% Obrażenia; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -69563,7 +69563,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Aerotheurge; +1 Single-Handed; +3% Critical chance; +10% Damage; +10% air resistance; Deals air damage (scales with item level); Rune slots: 1; Shocked (10%), turns: 1; Grants skill: Smoke Cover",
-                "pl": "+1 Inicjatywa; +1 Aeroturgia; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
+                "pl": "+1 Inicjatywa; +1 Aeroturgia; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na powietrze; Obrażenia od powietrza (~poziom); Gniazda run: 1; Porażenie (10%), tury: 1; Zapewnia umiejętność: Zasłona Dymna"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69626,7 +69626,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Loremaster; +1 Geomancer; +1 Huntsman; +1 Ranged; +5% Critical chance; +10% Damage; +10% earth resistance; Deals earth damage (scales with item level); Rune slots: 1; Petrified (10%), turns: 1; Grants skill: Oily Carapace",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Geomancja; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Oleisty Pancerz"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Geomancja; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Oleisty Pancerz"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69695,7 +69695,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Finesse; +1 Intelligence; +1 Initiative; +1 Persuasion; +1 Geomancer; +1 Scoundrel; +1 Dual Wielding; +10% Damage; +10% earth resistance; Deals earth damage (scales with item level); Rune slots: 1; Petrified (10%), turns: 1; Grants skill: Petrifying Touch",
-                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Geomancja; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Petryfikujący dotyk"
+                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Geomancja; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Petryfikujący dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69764,7 +69764,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Geomancer; +1 Two-Handed; +5% Critical chance; +10% Damage; +15% earth resistance; Deals earth damage (scales with item level); Rune slots: 1; Petrified (10%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Dimensional Bolt",
-                "pl": "+1 Geomancja; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na ziemię; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Wielowymiarowy Pocisk"
+                "pl": "+1 Geomancja; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na ziemię; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Wielowymiarowy Pocisk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69820,7 +69820,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Geomancer; +1 Warfare; +10% Damage; Deals earth damage (scales with item level); Rune slots: 1; Petrified (10%), turns: 1; Grants skill: Petrifying Touch",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Geomancja; +1 Sztuka walki; +10% Obrażenia; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Petryfikujący dotyk"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Geomancja; +1 Sztuka walki; +10% Obrażenia; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Petryfikujący dotyk"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -69880,7 +69880,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Geomancer; +1 Single-Handed; +3% Critical chance; +10% Damage; +10% earth resistance; Deals earth damage (scales with item level); Rune slots: 1; Petrified (10%), turns: 1; Grants skill: Oily Carapace",
-                "pl": "+1 Inicjatywa; +1 Geomancja; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Oleisty Pancerz"
+                "pl": "+1 Inicjatywa; +1 Geomancja; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ziemię; Obrażenia od ziemi (~poziom); Gniazda run: 1; Skamienienie (10%), tury: 1; Zapewnia umiejętność: Oleisty Pancerz"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -69943,7 +69943,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Loremaster; +1 Pyrokinetic; +1 Huntsman; +1 Ranged; +5% Critical chance; +10% Damage; +10% fire resistance; Deals fire damage (scales with item level); Rune slots: 1; Burning (10%), turns: 1; Grants skill: Flaming Skin",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Pirokineza; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Pirokineza; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70007,7 +70007,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Finesse; +1 Intelligence; +1 Initiative; +1 Persuasion; +1 Pyrokinetic; +1 Scoundrel; +1 Dual Wielding; +10% Damage; +10% fire resistance; Deals fire damage (scales with item level); Rune slots: 1; Burning (10%), turns: 1; Grants skill: Burning Touch",
-                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Pirokineza; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Palący dotyk"
+                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Pirokineza; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Palący dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70076,7 +70076,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Pyrokinetic; +1 Two-Handed; +5% Critical chance; +10% Damage; +15% fire resistance; Deals fire damage (scales with item level); Rune slots: 1; Burning (10%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Fireblood",
-                "pl": "+1 Pirokineza; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na ogień; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Fireblood"
+                "pl": "+1 Pirokineza; +1 Dwuręczna; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +15% odporności na ogień; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Fireblood"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70132,7 +70132,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Pyrokinetic; +1 Warfare; +10% Damage; Deals fire damage (scales with item level); Rune slots: 1; Burning (10%), turns: 1; Grants skill: Flaming Skin",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Pirokineza; +1 Sztuka walki; +10% Obrażenia; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Pirokineza; +1 Sztuka walki; +10% Obrażenia; Obrażenia od ognia (~poziom); Gniazda run: 1; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70192,7 +70192,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Pyrokinetic; +1 Single-Handed; +3% Critical chance; +10% Damage; +10% fire resistance; Deals fire damage (scales with item level); Rune slots: 1; Creates a fire surface; Burning (10%), turns: 1; Grants skill: Flaming Skin",
-                "pl": "+1 Inicjatywa; +1 Pirokineza; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię ognistą; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
+                "pl": "+1 Inicjatywa; +1 Pirokineza; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na ogień; Obrażenia od ognia (~poziom); Gniazda run: 1; Tworzy powierzchnię ognistą; Płonięcie (10%), tury: 1; Zapewnia umiejętność: Płonąca Skóra"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70250,7 +70250,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Loremaster; +1 Telekinesis; +1 Geomancer; Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Geomancja; Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Geomancja; Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -70292,7 +70292,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +10% earth resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +10% odporności na ziemię; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ziemię",
@@ -70329,7 +70329,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Geomancer; +3% Dodge; +5% earth resistance; Magic armour (scales with item level); Rune slots: 1; Grants skill: Reactive Armor",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Geomancja; +3% Dodge; +5% odporności na ziemię; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Reactive Armor"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Geomancja; +3% Dodge; +5% odporności na ziemię; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Reactive Armor"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70380,7 +70380,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Telekinesis; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70426,7 +70426,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Leadership; +1 Persuasion; +1 Geomancer; +3% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Grants skill: Earthquake",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Geomancja; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Trzęsienie Ziemi"
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Geomancja; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Zapewnia umiejętność: Trzęsienie Ziemi"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -70475,7 +70475,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -70513,7 +70513,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +2 Geomancer; +10% earth resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inteligencja; +1 Pamięć; +2 Geomancja; +10% odporności na ziemię; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inteligencja; +1 Pamięć; +2 Geomancja; +10% odporności na ziemię; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70557,7 +70557,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Loremaster; +1 Telekinesis; +1 Hydrosophist; Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Hydrozofia; Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Hydrozofia; Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -70599,7 +70599,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +10% water resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +10% odporności na wodę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +10% odporności na wodę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-wodę",
@@ -70636,7 +70636,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Hydrosophist; +3% Dodge; +5% water resistance; Magic armour (scales with item level); Rune slots: 1; Grants skill: Frost Aura",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Hydrozofia; +3% Dodge; +5% odporności na wodę; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Frost Aura"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Hydrozofia; +3% Dodge; +5% odporności na wodę; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Frost Aura"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70687,7 +70687,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Telekinesis; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -70733,7 +70733,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Leadership; +1 Persuasion; +1 Hydrosophist; +3% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Grants skill: Jellyfish Skin",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Hydrozofia; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Skóra Meduzy"
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Hydrozofia; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Zapewnia umiejętność: Skóra Meduzy"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -70782,7 +70782,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -70820,7 +70820,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +2 Hydrosophist; +10% water resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inteligencja; +1 Pamięć; +2 Hydrozofia; +10% odporności na wodę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inteligencja; +1 Pamięć; +2 Hydrozofia; +10% odporności na wodę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70864,7 +70864,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Loremaster; +1 Telekinesis; +1 Necromancer; Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Nekromancja; Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Nekromancja; Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -70906,7 +70906,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +10% poison resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +10% odporności na truciznę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +10% odporności na truciznę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-truciznę",
@@ -70943,7 +70943,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Necromancer; +3% Dodge; +5% poison resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Grants skill: DeathsDoor",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Nekromancja; +3% Dodge; +5% odporności na truciznę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: DeathsDoor"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Nekromancja; +3% Dodge; +5% odporności na truciznę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: DeathsDoor"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -70998,7 +70998,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Telekinesis; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71044,7 +71044,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Wits; +1 Leadership; +1 Persuasion; +1 Necromancer; +3% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Grants skill:  Turn Into a Human; Grants skill:  Turn Into a Lizard; Grants skill:  Turn Into a Elf; Grants skill:  Turn Into a Dwarf; Grants skill:  Revert To Original Form ",
-                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Nekromancja; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność:  Turn Into a Human; Zapewnia umiejętność:  Turn Into a Lizard; Zapewnia umiejętność:  Turn Into a Elf; Zapewnia umiejętność:  Turn Into a Dwarf; Zapewnia umiejętność:  Revert To Original Form "
+                "pl": "+1 Inteligencja; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Nekromancja; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Zapewnia umiejętność:  Turn Into a Human; Zapewnia umiejętność:  Turn Into a Lizard; Zapewnia umiejętność:  Turn Into a Elf; Zapewnia umiejętność:  Turn Into a Dwarf; Zapewnia umiejętność:  Revert To Original Form "
               },
               "effect_tags": [
                 "Cechy/Bieglosci-obrony",
@@ -71093,7 +71093,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -71131,7 +71131,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +2 Necromancer; +10% poison resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Inteligencja; +1 Pamięć; +2 Nekromancja; +10% odporności na truciznę; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Inteligencja; +1 Pamięć; +2 Nekromancja; +10% odporności na truciznę; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -71175,7 +71175,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Loremaster; +1 Huntsman; +1 Ranged; +5% Dodge; +5% Critical chance; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Guardian Angel",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Myślistwo; +1 Dystansowa; +5% Dodge; +5% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Anioł Stróż"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Myślistwo; +1 Dystansowa; +5% Dodge; +5% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Anioł Stróż"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71233,7 +71233,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Finesse; +1 Intelligence; +1 Initiative; +1 Persuasion; +2 Scoundrel; +1 Dual Wielding; +5% Dodge; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Crippling Touch",
-                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +2 Szelmostwo; +1 Dwie bronie; +5% Dodge; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Crippling Touch"
+                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +2 Szelmostwo; +1 Dwie bronie; +5% Dodge; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Crippling Touch"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71293,7 +71293,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Warfare; +1 Two-Handed; +7% Dodge; +5% Critical chance; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Staff Of Magus; Grants skill: Guardian Angel",
-                "pl": "+1 Sztuka walki; +1 Dwuręczna; +7% Dodge; +5% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Anioł Stróż"
+                "pl": "+1 Sztuka walki; +1 Dwuręczna; +7% Dodge; +5% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Kostur Maga; Zapewnia umiejętność: Anioł Stróż"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71347,7 +71347,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Warfare; +1 Single-Handed; +5% Dodge; +3% Critical chance; +10% Damage; Deals physical damage (scales with item level); Rune slots: 1; Bleeding (10%), turns: 1; Grants skill: Guardian Angel",
-                "pl": "+1 Inicjatywa; +1 Sztuka walki; +1 Jednoręczna; +5% Dodge; +3% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Anioł Stróż"
+                "pl": "+1 Inicjatywa; +1 Sztuka walki; +1 Jednoręczna; +5% Dodge; +3% Szansa na trafienie krytyczne; +10% Obrażenia; Obrażenia fizyczne (~poziom); Gniazda run: 1; Krwawienie (10%), tury: 1; Zapewnia umiejętność: Anioł Stróż"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71403,7 +71403,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Loremaster; +1 Necromancer; +1 Huntsman; +1 Ranged; +5% Critical chance; +10% Damage; +10% poison resistance; Deals poison damage (scales with item level); Rune slots: 1; Poisoned (10%), turns: 1; Grants skill: Corrosive Touch",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Nekromancja; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Polihistor; +1 Nekromancja; +1 Myślistwo; +1 Dystansowa; +5% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (~poziom); Gniazda run: 1; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71467,7 +71467,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Finesse; +1 Intelligence; +1 Initiative; +1 Persuasion; +1 Necromancer; +1 Scoundrel; +1 Dual Wielding; +10% Damage; +10% poison resistance; Deals poison damage (scales with item level); Rune slots: 1; Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Corrosive Touch",
-                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Nekromancja; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
+                "pl": "-1 Zręczność; +1 Inteligencja; +1 Inicjatywa; +1 Perswazja; +1 Nekromancja; +1 Szelmostwo; +1 Dwie bronie; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (~poziom); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71533,7 +71533,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "-1 Strength; +1 Intelligence; +1 Geomancer; +1 Warfare; +10% Damage; Deals poison damage (scales with item level); Rune slots: 1; Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Corrosive Touch",
-                "pl": "-1 Siła; +1 Inteligencja; +1 Geomancja; +1 Sztuka walki; +10% Obrażenia; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
+                "pl": "-1 Siła; +1 Inteligencja; +1 Geomancja; +1 Sztuka walki; +10% Obrażenia; Obrażenia od trucizny (~poziom); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -71590,7 +71590,7 @@
               "type": "Weapon",
               "effect": {
                 "en": "+1 Initiative; +1 Necromancer; +1 Single-Handed; +3% Critical chance; +10% Damage; +10% poison resistance; Deals poison damage (scales with item level); Rune slots: 1; Creates a poison surface; Poisoned (10%), turns: 1; Grants skill: Corrosive Touch",
-                "pl": "+1 Inicjatywa; +1 Nekromancja; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
+                "pl": "+1 Inicjatywa; +1 Nekromancja; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; +10% Obrażenia; +10% odporności na truciznę; Obrażenia od trucizny (~poziom); Gniazda run: 1; Tworzy powierzchnię zatrutą; Zatrucie (10%), tury: 1; Zapewnia umiejętność: Żrący Dotyk"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71648,7 +71648,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; +1 Loremaster; +1 Persuasion; +1 Polymorph; Physical armour (scales with item level)",
-                "pl": "+1 Siła; +1 Polihistor; +1 Perswazja; +1 Polimorfia; Pancerz fizyczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Siła; +1 Polihistor; +1 Perswazja; +1 Polimorfia; Pancerz fizyczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Pancerz-fizyczny",
@@ -71688,7 +71688,7 @@
               "type": "Armor",
               "effect": {
                 "en": "-1 Sneaking; +5% Dodge; +10% physical resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "-1 Skradanie się; +5% Dodge; +10% odporności na obrażenia fizyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "-1 Skradanie się; +5% Dodge; +10% odporności na obrażenia fizyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-obrażenia-fizyczne",
@@ -71727,7 +71727,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Polymorph; +3% Dodge; +5% piercing resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1; Grants skill: Swap Ground",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Polimorfia; +3% Dodge; +5% odporności na obrażenia przeszywające; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Swap Ground"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Polimorfia; +3% Dodge; +5% odporności na obrażenia przeszywające; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Swap Ground"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -71782,7 +71782,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Loremaster; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Polihistor; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Polihistor; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71828,7 +71828,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; +1 Wits; +1 Leadership; +1 Persuasion; +1 Polymorph; +1 Single-Handed; +3% Critical chance; Physical armour (scales with item level); Magic armour (scales with item level); Grants skill: Bull Horns",
-                "pl": "+1 Siła; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Polimorfia; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Zapewnia umiejętność: Bycze Rogi"
+                "pl": "+1 Siła; +1 Bystrość; +1 Przywództwo; +1 Perswazja; +1 Polimorfia; +1 Jednoręczna; +3% Szansa na trafienie krytyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Zapewnia umiejętność: Bycze Rogi"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71880,7 +71880,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Accuracy; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Szansa na trafienie; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Celność",
@@ -71918,7 +71918,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Strength; +2 Polymorph; +1 Two-Handed; +1 Single-Handed; +10% physical resistance; Physical armour (scales with item level); Magic armour (scales with item level); Rune slots: 1",
-                "pl": "+1 Siła; +2 Polimorfia; +1 Dwuręczna; +1 Jednoręczna; +10% odporności na obrażenia fizyczne; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1"
+                "pl": "+1 Siła; +2 Polimorfia; +1 Dwuręczna; +1 Jednoręczna; +10% odporności na obrażenia fizyczne; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom); Gniazda run: 1"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",
@@ -71965,7 +71965,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +1 Sneaking; +1 Thievery; +1 Pyrokinetic; +3% Dodge; +5% fire resistance; Magic armour (scales with item level); Rune slots: 1; Grants skill: Ignition",
-                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Pirokineza; +3% Dodge; +5% odporności na ogień; Pancerz magiczny (wartość zależy od poziomu przedmiotu); Gniazda run: 1; Zapewnia umiejętność: Zapłon"
+                "pl": "+1 Bystrość; +1 Skradanie się; +1 Złodziejstwo; +1 Pirokineza; +3% Dodge; +5% odporności na ogień; Pancerz magiczny (~poziom); Gniazda run: 1; Zapewnia umiejętność: Zapłon"
               },
               "effect_tags": [
                 "Cechy/Gniazda-run",
@@ -72014,7 +72014,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Intelligence; +1 Memory; +1 Loremaster; +1 Telekinesis; +1 Pyrokinetic; Magic armour (scales with item level)",
-                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Pirokineza; Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Inteligencja; +1 Pamięć; +1 Polihistor; +1 Telekineza; +1 Pirokineza; Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Inteligencja",
@@ -72054,7 +72054,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+5% Dodge; +10% fire resistance; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+5% Dodge; +10% odporności na ogień; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+5% Dodge; +10% odporności na ogień; Pancerz fizyczny (~poziom); Pancerz magiczny (~poziom)"
               },
               "effect_tags": [
                 "Cechy/Odporność-na-ogień",
@@ -72089,7 +72089,7 @@
               "type": "Armor",
               "effect": {
                 "en": "+1 Wits; +2 Initiative; +1 Telekinesis; +1 Two-Handed; +1 Single-Handed; +1 Dual Wielding; Physical armour (scales with item level); Magic armour (scales with item level)",
-                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (wartość zależy od poziomu przedmiotu); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
+                "pl": "+1 Bystrość; +2 Inicjatywa; +1 Telekineza; +1 Dwuręczna; +1 Jednoręczna; +1 Dwie bronie; Pancerz fizyczny (~poziom); Pancerz magiczny (wartość zależy od poziomu przedmiotu)"
               },
               "effect_tags": [
                 "Cechy/Bieglosci-broni",

@@ -3,6 +3,8 @@ import { test } from "node:test"
 import { renderToString } from "preact-render-to-string"
 import { RecipeTable } from "../../main/components/RecipeTable"
 import type { RecipeRow } from "../../main/domain/recipes"
+import { buildTooltipIndex } from "../../main/domain/tooltipIndex"
+import { tooltipItemKey } from "../../main/domain/tooltipIdentity"
 
 const recipe: RecipeRow = {
   id: "fallback-name",
@@ -49,6 +51,18 @@ test("recipe tables omit effects but preserve crafting instructions and align op
   }
 })
 
+test("multiple categories do not duplicate recipes or their crafting variants", () => {
+  const multi = { ...recipe, result: { ...recipe.result, tags: ["Typ/Bron", "Typ/Magia", "Typ/Skladniki"] } }
+  const variant = { ...multi, id: "variant", ingredients: [{ name: "Another ingredient", tags: [] }] }
+  const other = { ...recipe, id: "other", result: { name: "Uncategorized", tags: [] } }
+  const html = renderToString(<RecipeTable recipes={[multi, variant, other]} catalogSlug="DOS2" labels={{}} />)
+  assert.equal(html.match(/<table /g)?.length, 1)
+  assert.equal(html.match(/<tr data-recipe-id=/g)?.length, 3)
+  assert.equal(html.match(/class="recipe-cell result"/g)?.length, 2)
+  assert.ok(html.includes('rowspan="2"'))
+  assert.ok(!html.includes("<h2"))
+})
+
 test("group chips omit icons and link to matching items instead of an item page", () => {
   const html = renderToString(
     <RecipeTable
@@ -89,4 +103,24 @@ test("expanded upgrades retain their modification and remain separate from ordin
   assert.ok(html.includes('<p class="recipe-remarks">Tactical Retreat</p>'))
   assert.ok(html.includes('<p class="recipe-remarks">Haste</p>'))
   assert.equal(html.match(/class="recipe-cell result"/g)?.length, 3)
+})
+
+test("shared item slugs with different effects render separate results with exact tooltip identities", () => {
+  const healing = {
+    ...recipe,
+    result: { ...recipe.result, slug: "potion", effect: { en: "Restores vitality" } },
+  }
+  const poisoned = {
+    ...healing,
+    id: "poisoned",
+    result: { ...healing.result, effect: { en: "Poisoned" } },
+  }
+  const html = renderToString(<RecipeTable recipes={[healing, poisoned]} catalogSlug="DOS2" labels={{}} />)
+  assert.equal(html.match(/class="recipe-cell result"/g)?.length, 2)
+  const index = buildTooltipIndex([healing, poisoned])
+  for (const row of [healing, poisoned]) {
+    const key = tooltipItemKey(row.result)
+    assert.ok(html.includes(`data-tooltip-key="${key.replaceAll('"', "&quot;")}"`))
+    assert.equal(index.find("potion", row.result.name, key), row.result)
+  }
 })

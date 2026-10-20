@@ -1,4 +1,5 @@
 import { ItemIcon } from "./ItemIcon"
+import { tooltipItemKey } from "../domain/tooltipIdentity"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { FullSlug, gameForSlug, pageHref } from "../routing"
@@ -108,6 +109,7 @@ export function RecipeTable({
         <a
           class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
           data-slug={item.slug}
+          data-tooltip-key={tooltipItemKey(item)}
           href={`${pageHref(item.slug)}?catalog=${gameForSlug(catalogSlug) ?? "dos1"}`}
           title={title}
         >
@@ -123,6 +125,7 @@ export function RecipeTable({
           type="button"
           class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
           data-search-text={item.name}
+          data-tooltip-key={tooltipItemKey(item)}
           title={title}
         >
           <ItemIcon icon={item.icon} />
@@ -146,7 +149,11 @@ export function RecipeTable({
       )
     }
     return withQuantity(
-      <span class={["recipe-item", craftClass].filter(Boolean).join(" ")} title={title}>
+      <span
+        class={["recipe-item", craftClass].filter(Boolean).join(" ")}
+        title={title}
+        data-tooltip-key={tooltipItemKey(item)}
+      >
         <ItemIcon icon={item.icon} />
         <ItemLabel item={item} />
       </span>,

@@ -90,7 +90,7 @@ export function TooltipLayer({
       // No DOM text queries, name normalization or recipe lookups on moves within the same item.
       if (link !== activeLink.current) {
         const name = (link.querySelector(".item-lang-en") ?? link.querySelector(".item-lang"))?.textContent ?? ""
-        const item = index.find(link.dataset.slug ?? "", name)
+        const item = index.find(link.dataset.slug ?? "", name, link.dataset.tooltipKey)
         if (!item) {
           hide()
           return

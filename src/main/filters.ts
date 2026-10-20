@@ -6,7 +6,7 @@ import {
   recipeUsesSelector,
   requirementTokens,
 } from "./domain/recipeView"
-import type { Game } from "./routing"
+import { catalogHref, type Game, type View } from "./routing"
 export type Filters = {
   include: string[]
   exclude: string[]
@@ -29,6 +29,17 @@ export const emptyFilters = (): Filters => ({
   query: "",
   group: null,
 })
+export function cycleFilter(filters: Filters, tag: string, kind: "tag" | "requirement" = "tag"): Filters {
+  const yes = kind === "tag" ? "include" : "requirements"
+  const no = kind === "tag" ? "exclude" : "requirementsExclude"
+  const included = filters[yes].includes(tag)
+  const excluded = filters[no].includes(tag)
+  const positive = filters[yes].filter((value) => value !== tag)
+  const negative = filters[no].filter((value) => value !== tag)
+  if (!included && !excluded) positive.push(tag)
+  else if (included) negative.push(tag)
+  return { ...filters, [yes]: positive, [no]: negative }
+}
 export function restoreFilters(game: Game, search = ""): Filters {
   let stored = emptyFilters()
   try {
@@ -69,10 +80,16 @@ export function restoreFilters(game: Game, search = ""): Filters {
 export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Record<string, string>): RecipeRow[] {
   const tagMatch = (tags: string[], target: string) =>
     tags.some((tag) => tag === target || tag.startsWith(target + "/"))
+  const categories = filters.include.filter((tag) => tag === "Typ" || tag.startsWith("Typ/"))
+  const traits = filters.include.filter((tag) => tag !== "Typ" && !tag.startsWith("Typ/"))
   return recipes.filter((recipe) => {
     const tags = recipeResultTags(recipe)
     const reqs = requirementTokens(recipe.requirements).map((value) => value.toLowerCase())
-    if (!filters.include.every((tag) => tagMatch(tags, tag)) || filters.exclude.some((tag) => tagMatch(tags, tag)))
+    if (
+      (categories.length > 0 && !categories.some((tag) => tagMatch(tags, tag))) ||
+      !traits.every((tag) => tagMatch(tags, tag)) ||
+      filters.exclude.some((tag) => tagMatch(tags, tag))
+    )
       return false
     if (filters.requirements.length && !filters.requirements.some((value) => reqs.includes(value.toLowerCase())))
       return false
@@ -98,4 +115,9 @@ export function filtersToSearch(filters: Filters, view: string): string {
   if (filters.selectors.length) params.set("selector", filters.selectors.join(","))
   if (filters.craftingMax !== null) params.set("craftingMax", String(filters.craftingMax))
   return params.toString()
+}
+
+/** Internal navigation carries remembered filters; explicit URL views retain reset semantics. */
+export function rememberedCatalogHref(game: Game, view: View, filters = restoreFilters(game)): string {
+  return `${catalogHref(game, view).split("?")[0]}?${filtersToSearch(filters, view)}`
 }

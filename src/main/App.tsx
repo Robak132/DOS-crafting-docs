@@ -11,8 +11,6 @@ import { RecipeTable } from "./components/RecipeTable"
 import type { CatalogManifest, CatalogData, PageDetail } from "./domain/types"
 import {
   catalogItems,
-  formatEffectNote,
-  groupCatalogByTags,
   groupRecipeTags,
   groupRequirementStats,
   itemNameKeys,
@@ -24,7 +22,15 @@ import {
   CRAFTING_MAX_LEVELS,
 } from "./domain/recipeView"
 import { parseItemQuantity } from "./domain/recipeQuantity"
-import { emptyFilters, filterRecipes, filtersToSearch, restoreFilters, type Filters } from "./filters"
+import {
+  emptyFilters,
+  cycleFilter,
+  filterRecipes,
+  filtersToSearch,
+  rememberedCatalogHref,
+  restoreFilters,
+  type Filters,
+} from "./filters"
 import { catalogHref, gameForSlug, games, pageHref, routeSlug, type Game, type View } from "./routing"
 import { useJson } from "./api"
 
@@ -187,7 +193,7 @@ export function App() {
     )
     if (chip) {
       if (chip.dataset.filterTag) cycle(chip.dataset.filterTag)
-      else if (chip.dataset.searchEffect) changeQuery(formatEffectNote(chip.dataset.searchEffect))
+      else if (chip.dataset.searchEffect) changeQuery(chip.dataset.searchEffect)
       else if (chip.dataset.searchText) changeQuery(chip.dataset.searchText, "ingredient")
       return
     }
@@ -209,17 +215,7 @@ export function App() {
     navigate(url)
   }
   const cycle = (tag: string, kind: "tag" | "requirement" = "tag") => {
-    const yes = kind === "tag" ? "include" : "requirements"
-    const no = kind === "tag" ? "exclude" : "requirementsExclude"
-    const included = filters[yes].includes(tag),
-      excluded = filters[no].includes(tag)
-    let positive = filters[yes].filter((value) => value !== tag)
-    const negative = filters[no].filter((value) => value !== tag)
-    if (!included && !excluded) {
-      if (kind === "tag" && tag.startsWith("Typ/")) positive = positive.filter((value) => !value.startsWith("Typ/"))
-      positive.push(tag)
-    } else if (included) negative.push(tag)
-    const next = { ...filters, [yes]: positive, [no]: negative }
+    const next = cycleFilter(filters, tag, kind)
     if (isCatalog) setFilters(next)
     else
       navigate(
@@ -274,7 +270,7 @@ export function App() {
   return (
     <div ref={root} class="app-shell" onClick={onClick}>
       <aside class="sidebar">
-        <a class="brand" href={catalogHref(game, view)}>
+        <a class="brand" href={rememberedCatalogHref(game, view, filters)}>
           Divinity<span>Katalog craftingu</span>
         </a>
         <div class="sidebar-tools">
@@ -309,7 +305,11 @@ export function App() {
         )}
         <nav class="game-nav" aria-label="Tryb gry">
           {games.map((entry) => (
-            <a key={entry.id} href={catalogHref(entry.id, view)} aria-current={entry.id === game ? "page" : undefined}>
+            <a
+              key={entry.id}
+              href={rememberedCatalogHref(entry.id, view, entry.id === game ? filters : undefined)}
+              aria-current={entry.id === game ? "page" : undefined}
+            >
               {entry.label}
             </a>
           ))}
@@ -375,7 +375,10 @@ export function App() {
             />
           </details>
         ))}
-        <p class="filter-hint">Kliknij tag, aby uwzględnić. Kliknij ponownie, aby wykluczyć.</p>
+        <p class="filter-hint">
+          Kliknij tag, aby uwzględnić. Kliknij ponownie, aby wykluczyć. Wybrane kategorie łączą się — wystarczy
+          dopasowanie do jednej z nich. Pozostałe wybrane cechy muszą być spełnione jednocześnie.
+        </p>
       </aside>
       <main>
         <header class="main-header">
@@ -398,7 +401,7 @@ export function App() {
             </h1>
           </div>
           {!isCatalog && (
-            <a class="back-link" href={catalogHref(game, view)}>
+            <a class="back-link" href={rememberedCatalogHref(game, view, filters)}>
               ← Wróć do katalogu
             </a>
           )}
@@ -461,8 +464,17 @@ export function App() {
                 descriptions={descriptions.data ?? undefined}
                 lang={lang}
               />
+            ) : filtered.length ? (
+              <RecipeTable
+                recipes={filtered}
+                catalogSlug={activeGame.slug}
+                labels={labels}
+                showRequirements={game === "dos1"}
+                searchable
+                itemRoles={manifest.data?.itemRoles}
+              />
             ) : (
-              <RecipeSections recipes={filtered} game={game} labels={labels} roles={manifest.data?.itemRoles} />
+              <p class="empty-message">Brak receptur pasujących do filtrów.</p>
             )}
           </div>
         )}
@@ -561,37 +573,5 @@ export function App() {
         routeKey={`${game}:${route.slug}:${view}`}
       />
     </div>
-  )
-}
-function RecipeSections({
-  recipes,
-  game,
-  labels,
-  roles,
-}: {
-  recipes: CatalogData["recipes"]
-  game: Game
-  labels: Record<string, string>
-  roles?: CatalogManifest["itemRoles"]
-}) {
-  const sections = useMemo(() => groupCatalogByTags(recipes, "recipes", labels), [recipes, labels])
-  return sections.length ? (
-    <div class="recipe-sections">
-      {sections.map((section) => (
-        <section key={section.tag}>
-          <h2>{section.label}</h2>
-          <RecipeTable
-            recipes={section.recipes}
-            catalogSlug={games.find((entry) => entry.id === game)!.slug}
-            labels={labels}
-            showRequirements={game === "dos1"}
-            searchable
-            itemRoles={roles}
-          />
-        </section>
-      ))}
-    </div>
-  ) : (
-    <p class="empty-message">Brak receptur pasujących do filtrów.</p>
   )
 }

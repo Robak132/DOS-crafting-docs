@@ -113,13 +113,13 @@ def render_effect(fields, kind, skill_name=lambda name: None, on_use=(), status_
             # Vitality/Armor/MagicArmor in Stats are scaling inputs, not the final
             # values shown by the game. Do not present 400 as 400 HP of healing.
             for field,en,pl in [('Vitality','Restores vitality','Przywraca żywotność'),('Armor','Grants physical armour','Zwiększa pancerz fizyczny'),('MagicArmor','Grants magic armour','Zwiększa pancerz magiczny')]:
-                if number(fields.get(field))>0:add(en+' (amount scales with item level)',pl+' (wartość zależy od poziomu przedmiotu)',field)
+                if number(fields.get(field))>0:add(en+' (amount scales with item level)',pl+' (~poziom)',field)
         if kind == 'Weapon' and fields.get('Damage Type') in ELEMENTS:
             en,pl=ELEMENTS[fields['Damage Type']]
-            add(f'Deals {en} damage (scales with item level)',DAMAGE_PL[fields['Damage Type']]+' (wartość zależy od poziomu przedmiotu)','Damage Type')
+            add(f'Deals {en} damage (scales with item level)',DAMAGE_PL[fields['Damage Type']]+' (~poziom)','Damage Type')
         if kind == 'Armor':
             for field,en,pl in [('Armor Defense Value','Physical armour','Pancerz fizyczny'),('Magic Armor Value','Magic armour','Pancerz magiczny')]:
-                if number(fields.get(field))>0:add(en+' (scales with item level)',pl+' (wartość zależy od poziomu przedmiotu)',field)
+                if number(fields.get(field))>0:add(en+' (scales with item level)',pl+' (~poziom)',field)
         slots=number(fields.get('RuneSlots'))
         if slots>0:add(f'Rune slots: {slots:g}',f'Gniazda run: {slots:g}','RuneSlots')
         for flag in fields.get('Flags','').split(';'):

@@ -29,8 +29,10 @@ export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Pr
                   include.includes(entry.tag) ? "include" : exclude.includes(entry.tag) ? "exclude" : "neutral"
                 }
                 onClick={() => onCycle(entry.tag)}
+                aria-pressed={include.includes(entry.tag)}
               >
                 <span>{label}</span>
+                {exclude.includes(entry.tag) && <span class="sr-only"> (wykluczone)</span>}
                 <span class="recipe-tag-count">({entry.count})</span>
               </button>
               {children.length > 0 && (

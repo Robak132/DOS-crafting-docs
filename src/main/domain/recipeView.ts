@@ -30,11 +30,7 @@ export function recipeColumnsForCatalog(showRequirements: boolean) {
   return showRequirements ? [...recipeColumns] : recipeColumns.filter((col) => col.key !== "requirements")
 }
 
-export function catalogHasRequirements(catalog: string | undefined): boolean {
-  return catalog === "dos1"
-}
-
-export type RecipeGroup = { result: RecipeItem; variants: RecipeRow[] }
+export type RecipeGroup = { key: string; result: RecipeItem; variants: RecipeRow[] }
 
 /** Tagi używane do filtrowania / sortowania — wyłącznie wynik craftingu, nigdy składniki. */
 export function recipeResultTags(recipe: RecipeRow): string[] {
@@ -213,15 +209,6 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
   return result
 }
 
-export function recipeCatalogSlug(tag: string, pageTags: readonly string[]): string {
-  if (tag === "DOS1") return "receptury"
-  if (tag === "DOS2") return "DOS2"
-  if (!pageTags.includes("DOS1") && !pageTags.includes("DOS2-CO") && pageTags.includes("DOS2")) return "DOS2"
-  return tag === "DOS2-CO" || (pageTags.includes("DOS2-CO") && !pageTags.includes("DOS1"))
-    ? "dos2-crafting-overhaul"
-    : "receptury"
-}
-
 export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
   const groups = new Map<string, RecipeGroup>()
   for (const recipe of recipes) {
@@ -230,7 +217,7 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
     const key = `${tooltipItemKey(recipe.result)}${qty}${modification}`
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
-    else groups.set(key, { result: recipe.result, variants: [recipe] })
+    else groups.set(key, { key, result: recipe.result, variants: [recipe] })
   }
   return [...groups.values()]
 }
@@ -252,7 +239,7 @@ export function tagLabel(tag: string, labels: Record<string, string>): string {
   return labels[tag] ?? (tag.split("/").at(-1) ?? tag).replaceAll("-", " ")
 }
 
-function normalizeSearch(value: string): string {
+export function normalizeSearch(value: string): string {
   return value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -340,56 +327,6 @@ export function formatEffectNote(note: string, labels: Record<string, string> = 
   for (const [pattern, replacement] of EFFECT_WORDS)
     text = text.replace(pattern, (match) => labels[match.toLocaleLowerCase()] ?? replacement)
   return text.replace(/\s+/g, " ").trim()
-}
-
-const EFFECT_LINE_RE =
-  /^(add\b|scales with\b|stats increase\b|\+?\d|restore\b|grants?\b|provides?\b|increases?\b|decreases?\b|boosts?\b)/i
-const REMARK_LINE_RE =
-  /^(make sure\b|you can\b|buy\b|find\b|requires?\b|check\b|every\b|boost amount\b|skill book\b|not\b|use\b|black diamond\b|example\b)/i
-
-/** Czy fragment wygląda jak efekt przedmiotu (staty / „Add …”), a nie instrukcja. */
-export function looksLikeEffectNote(text: string): boolean {
-  const trimmed = text.trim()
-  if (!trimmed || trimmed === "-") return false
-  if (REMARK_LINE_RE.test(trimmed)) return false
-  if (EFFECT_LINE_RE.test(trimmed)) return true
-  // Krótkie frazy ze znanymi słowami efektów
-  if (trimmed.length <= 48 && EFFECT_WORDS.some(([pattern]) => pattern.test(trimmed))) return true
-  return false
-}
-
-/**
- * Rozdziela legacy „Uwagi” na efekt vs uwagi (instrukcje).
- * Zdania efektowe → effect; reszta → remarks.
- */
-export function splitEffectAndRemarks(raw: string): { effect: string; remarks: string } {
-  const trimmed = raw.trim()
-  if (!trimmed || trimmed === "-") return { effect: "", remarks: "" }
-
-  const parts = trimmed
-    .split(/\s*;\s*/)
-    .flatMap((chunk) => chunk.split(/(?<=[.!?])\s+(?=[A-ZĄĆĘŁŃÓŚŹŻ])/))
-    .map((part) => part.trim())
-    .filter(Boolean)
-
-  if (parts.length <= 1) {
-    return looksLikeEffectNote(trimmed) ? { effect: trimmed, remarks: "" } : { effect: "", remarks: trimmed }
-  }
-
-  const effects: string[] = []
-  const remarks: string[] = []
-  for (const part of parts) {
-    if (looksLikeEffectNote(part)) effects.push(part)
-    else remarks.push(part)
-  }
-  // Gdy nic nie sklasyfikowano jako efekt, a całość jest krótka i wygląda na efekt — całość to efekt
-  if (effects.length === 0 && looksLikeEffectNote(trimmed)) {
-    return { effect: trimmed, remarks: "" }
-  }
-  return {
-    effect: effects.join("; "),
-    remarks: remarks.join(" "),
-  }
 }
 
 function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks", lang: "pl" | "en" = "pl"): string[] {

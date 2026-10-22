@@ -168,10 +168,10 @@ def action_index(directories):
 
 def main():
     helpers=runpy.run_path(str(ROOT/'scripts/audit-recipes.py')); key=helpers['key']; plain=helpers['plain']
-    recipe_audit=json.loads((ROOT/'reports/recipe-audit.json').read_text())
-    provenance=json.loads((ROOT/'data/itemIcons.provenance.json').read_text())
+    recipe_audit=json.loads((ROOT/'reports/recipe-audit.json').read_text(encoding='utf-8'))
+    provenance=json.loads((ROOT/'data/itemIcons.provenance.json').read_text(encoding='utf-8'))
     tag_rules=runpy.run_path(str(ROOT/'scripts/item-tag-rules.py'))
-    tag_localisation=json.loads((ROOT/'data/tagLocalisation.json').read_text())
+    tag_localisation=json.loads((ROOT/'data/tagLocalisation.json').read_text(encoding='utf-8'))
     base_statuses=dict(STATUSES)
     output={}; report={'scope':'All concrete recipe results and ingredients, including items with existing recipe effects; Stats are also used as the base for property tags. DOS1 EE / DOS2 DE + patches / DOS2 DE + Crafting Overhaul. Known groups and upgrade labels excluded. Unknown identities and unsupported effects remain unresolved; stat scaling coefficients are never shown as final HP, damage or armour values.','catalogs':{}}
     # Pair official localized skill names by string handle; no invented translations.
@@ -205,7 +205,7 @@ def main():
             fields=index.fields(stat);raw=index.strings.get(fields.get('DisplayName')) or fields.get('DisplayNameRef','').strip('|')
             if not raw or raw==fields.get('DisplayName') and '_' in raw:return None
             name=plain(raw);return name,translations['dos1' if game=='dos1' else 'dos2'].get(name,name)
-        data=json.loads((ROOT/'.generated/build/data'/f'catalog-{game}.json').read_text())
+        data=json.loads((ROOT/'.generated/build/data'/f'catalog-{game}.json').read_text(encoding='utf-8'))
         existing={key(row['result']['name']) for row in data['recipes'] if row.get('notes','').strip() not in ['','-']}
         items={key(i.get('statsId') or i['name']):i for row in data['recipes'] for i in [row['result'],*row['ingredients']] if not i.get('selectorTag') and not i.get('groupId') and 'Typ/Ulepszenia' not in i['tags']}
         verified_outputs=defaultdict(set)
@@ -277,8 +277,8 @@ def main():
             audit.append({'data_key':item_key,'name':item['name'],'had_recipe_effect':item_key in existing,'recipe_stats':verified_recipes[item_key],'status':status,'identities':matches})
         counts=dict(Counter(r['status'] for r in audit));report['catalogs'][game]={'total_items':len(items),'already_has_recipe_effect':len(set(items)&existing),'audited_items':len(audit),'audited_without_effect':len(audit)-len(set(items)&existing),'summary':counts,'items':audit}
         print(game,counts,flush=True)
-    (ROOT/'data/itemEffects.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'reports/item-effects-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/itemEffects.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
+    (ROOT/'reports/item-effects-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 
 
 if __name__=='__main__':main()

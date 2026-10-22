@@ -19,8 +19,8 @@ test("container and wearable Backpacks retain separate game identities in the co
   const wearable = backpacks.find((row) => row.result.statsId === "ARM_Backpack")!
   assert.ok(container)
   assert.ok(wearable)
-  assert.equal(container.result.slug, "Wyposazenie/BACKPACK")
-  assert.equal(wearable.result.slug, "Amulety/BACKPACK")
+  assert.equal(container.result.slug, "backpack")
+  assert.equal(wearable.result.slug, "backpack-2")
   assert.equal(container.ingredients.length, 2)
   assert.equal(wearable.ingredients.length, 5)
   assert.ok(!container.result.tags.includes("Typ/Amulety"))
@@ -53,11 +53,16 @@ test("container and wearable Backpacks retain separate game identities in the co
 test("the mod's Unique Pyromancer Belt uses its game recipe name, icon and effects", () => {
   const source = read("data/library/recipes/dos2-overhaul.json")
   const recipe = source.recipes.find(
-    (row: { result: { slug?: string } }) => row.result.slug === "Pasy/UNIQUE-PYROKINETIC-BELT",
+    (row: { result: { slug?: string } }) => row.result.slug === "unique-pyromancer-belt",
   )
   assert.ok(recipe)
   assert.equal(recipe.result.name, "Unique Pyromancer Belt")
-  assert.equal(read("data/library/pages/Pasy/UNIQUE-PYROKINETIC-BELT.json").title, recipe.result.name)
+  assert.equal(
+    read("data/library/pages/dos2-co.json").pages.find(
+      (page: { slug: string }) => page.slug === "unique-pyromancer-belt",
+    ).title,
+    recipe.result.name,
+  )
   assert.deepEqual(
     recipe.ingredients.map((item: { name: string }) => item.name),
     ["Crafter's Workbench", "Fire Essence", "Rune Of Uniqueness", "Empty Magical Armour Belt"],
@@ -99,14 +104,14 @@ test("masked quest potions show game names while preserving their distinct effec
     const variants = [
       [
         "POTION_Healing_Poisoned_Masked_Void_A",
-        "Specjalne/POTION_HEALING_POISONED_MASKED_VOID_A",
+        "large-healing-potion-2",
         "Large healing potion",
         "Duża mikstura uzdrawiająca",
         "Poisoned",
       ],
       [
         "CON_Potion_Healing_WitchPotion_Masked",
-        "Specjalne/POTION_HEALING_WITCHPOTION_MASKED",
+        "huge-healing-potion-2",
         "Huge Healing Potion",
         "Wielka mikstura uzdrawiająca",
         "Cow",
@@ -138,17 +143,17 @@ test("masked quest potions show game names while preserving their distinct effec
 
 test("audited crafted and seasonal weapons have verified Stats, damage effects, subtypes and icons", () => {
   const definitions = [
-    ["Bron/BOW", "WPN_Bow", "Crafted Bow", "Luki"],
-    ["Narzedzia/DAGGER", "WPN_Dagger", "Crafted Dagger", "Sztylety"],
-    ["Bron/SPEAR", "WPN_Spear", "Crafted Spear", "Wlocznie"],
-    ["Bron/SWORD", "WPN_Sword_1H", "Crafted Sword", "Miecze"],
-    ["Bron/TWO-HANDED-AXE", "WPN_Axe_2H", "Crafted 2H Axe", "Topory"],
-    ["Bron/TWO-HANDED-SWORD", "WPN_Sword_2H", "Crafted 2H Sword", "Miecze"],
-    ["Magia/POISON-STAFF", "WPN_Staff_Poison", "Posion Staff", "Kostury"],
-    ["Magia/UNIQUE-POISON-STAFF", "WPN_Staff_Unique_Poison", "Unique Posion Staff", "Kostury"],
-    ["Przedmioty-wydarzen/BROOM-STAFF", "WPN_Spooky_Broom_Staff", "Witch Broom", "Kostury"],
-    ["Przedmioty-wydarzen/REAPER'S-SCYTHE", "WPN_Spooky_Reaper_Scythe", "Halloween Reaper's Scythe", "Topory"],
-    ["Skladniki/THE-MISTAKE-STAFF", "WPN_CorpseHarvester_57_MistakeStaff", "The Mistake", "Kostury"],
+    ["crafted-bow", "WPN_Bow", "Crafted Bow", "Luki"],
+    ["crafted-dagger", "WPN_Dagger", "Crafted Dagger", "Sztylety"],
+    ["crafted-spear", "WPN_Spear", "Crafted Spear", "Wlocznie"],
+    ["crafted-sword", "WPN_Sword_1H", "Crafted Sword", "Miecze"],
+    ["crafted-2h-axe", "WPN_Axe_2H", "Crafted 2H Axe", "Topory"],
+    ["crafted-2h-sword", "WPN_Sword_2H", "Crafted 2H Sword", "Miecze"],
+    ["posion-staff", "WPN_Staff_Poison", "Posion Staff", "Kostury"],
+    ["unique-posion-staff", "WPN_Staff_Unique_Poison", "Unique Posion Staff", "Kostury"],
+    ["witch-broom", "WPN_Spooky_Broom_Staff", "Witch Broom", "Kostury"],
+    ["halloween-reapers-scythe", "WPN_Spooky_Reaper_Scythe", "Halloween Reaper's Scythe", "Topory"],
+    ["the-mistake", "WPN_CorpseHarvester_57_MistakeStaff", "The Mistake", "Kostury"],
   ]
   const source = read("data/library/recipes/dos2-overhaul.json").recipes
   const icons = read("data/itemIcons.json") as ItemIconMap
@@ -176,7 +181,7 @@ test("Makeshift Club recipes distinguish the one-handed and two-handed outputs",
   for (const recipe of clubs) {
     const one = recipe.ingredients.some((item: { name: string }) => item.name === "Sharp Rock")
     assert.equal(recipe.result.statsId, one ? "WPN_Common_Mace_1H_C" : "WPN_CraftedMace_2H")
-    assert.equal(recipe.result.slug, one ? "Bron/MAKESHIFT-CLUB-ONE-HANDED" : "Bron/MAKESHIFT-CLUB")
+    assert.equal(recipe.result.slug, one ? "makeshift-club-2" : "makeshift-club")
     assert.equal(recipe.result.nameQualifier.pl, one ? "jednoręczna" : "dwuręczna")
     assert.ok(recipe.result.tags.includes("Typ/Bron/Bulawy"))
   }

@@ -2,10 +2,9 @@ import { buildItemGroups, expandSmallGroups, isItemGroup } from "../src/main/dom
 import { itemIconKey, itemDataKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
-import sanitizeHtml from "sanitize-html"
 import { resolveItemIcon, type ItemIconMap } from "../src/main/domain/itemIcons"
 import { buildCatalogs } from "../src/main/domain/recipeCatalog"
-import { getItemCraftRoles } from "../src/main/domain/recipeItemRoles"
+import { getCatalogItemRoles } from "../src/main/domain/recipeItemRoles"
 import { catalogItems } from "../src/main/domain/recipeView"
 import { collectRecipeStats, getCechySidebarGroups, resetRecipeSources } from "../src/main/domain/recipes"
 import { resetLocalisationSources } from "../src/main/domain/itemLocalisation"
@@ -22,7 +21,7 @@ export async function generateData(outputDirectory = generatedDir) {
   // Validate source JSON before replacing the previously generated output.
   const library = await loadLibrary()
   const labels: Record<string, string> = JSON.parse(await fs.readFile("data/tagLabels.json", "utf8"))
-  const catalogs = buildCatalogs(library.sources, library.pages, labels)
+  const catalogs = buildCatalogs(library.sources, library.pages, labels, library.upgrades)
   const descriptions = JSON.parse(await fs.readFile("data/itemDescriptions.json", "utf8"))
   const tagLocalisation = JSON.parse(await fs.readFile("data/tagLocalisation.json", "utf8"))
   const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
@@ -52,6 +51,15 @@ export async function generateData(outputDirectory = generatedDir) {
         delete item.groupSize
       }
     }
+    data.upgrades = (data.upgrades ?? []).map((upgrade) => {
+      const copy = {
+        ...upgrade,
+        target: { ...upgrade.target },
+        ingredients: upgrade.ingredients.map((item) => ({ ...item })),
+      }
+      for (const item of [copy.target, ...copy.ingredients]) item.icon = resolveItemIcon(icons, game, item)
+      return copy
+    })
     const inventory = (
       game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
     ).map((sourceItem) => {
@@ -74,7 +82,7 @@ export async function generateData(outputDirectory = generatedDir) {
       for (const stat of stats[field]) stat.label = statLabels.get(stat.tag) ?? stat.label
     for (const stat of stats.tags) {
       const localized = tagLocalisation[game]?.[stat.tag]
-      if (localized) stat.label = localized.pl || localized.en
+      if (localized) stat.label = localized.pl || stat.label || localized.en
     }
     Object.assign(data, stats)
     data.groups = Object.fromEntries(Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4))
@@ -82,8 +90,8 @@ export async function generateData(outputDirectory = generatedDir) {
       const vocabulary = Object.values(tagLocalisation[game] ?? {}) as { en: string; pl?: string }[]
       const effectLabels = Object.fromEntries(
         vocabulary
-          .filter((entry) => row.notes.toLocaleLowerCase().includes(entry.en.toLocaleLowerCase()))
-          .map((entry) => [entry.en.toLocaleLowerCase(), entry.pl || entry.en]),
+          .filter((entry) => entry.pl && row.notes.toLocaleLowerCase().includes(entry.en.toLocaleLowerCase()))
+          .map((entry) => [entry.en.toLocaleLowerCase(), entry.pl!]),
       )
       if (Object.keys(effectLabels).length) row.effectLabels = effectLabels
       for (const item of [row.result, ...row.ingredients]) {
@@ -107,23 +115,17 @@ export async function generateData(outputDirectory = generatedDir) {
     categoryPage,
   }))
   await Promise.all(
-    publishedPages.map(async ({ html, ...page }) => {
-      const safeHtml = sanitizeHtml(html, {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
-        allowedAttributes: { ...sanitizeHtml.defaults.allowedAttributes, img: ["src", "alt"], "*": ["id"] },
-      })
+    pages.map(async (page) => {
       const output = path.join(outputDirectory, "data/pages", `${page.slug}.json`)
       await fs.mkdir(path.dirname(output), { recursive: true })
-      await fs.writeFile(output, JSON.stringify({ ...page, html: safeHtml }))
+      await fs.writeFile(output, JSON.stringify(page))
     }),
   )
   const manifest: CatalogManifest = {
     pages,
-    itemRoles: getItemCraftRoles(
-      pages,
-      Object.values(catalogs).flatMap((data) => data.recipes),
-    ),
+    itemRoles: getCatalogItemRoles(pages, catalogs),
     traitGroups: getCechySidebarGroups(),
+    redirects: library.redirects,
     catalogs: Object.fromEntries(
       Object.entries(catalogs).map(([game, data]) => [
         game,

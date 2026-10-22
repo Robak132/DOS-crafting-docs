@@ -1,5 +1,6 @@
 import type { RecipeItem } from "./recipes"
 import type { PageSummary } from "./types"
+import { normalizeSearch } from "./recipeView"
 
 /** The active catalog supplies both membership and names; the global manifest only supplies routes. */
 export function searchCatalogPages(
@@ -8,7 +9,7 @@ export function searchCatalogPages(
   query: string,
   limit = 10,
 ): PageSummary[] {
-  const term = query.trim().toLocaleLowerCase()
+  const term = normalizeSearch(query.trim())
   if (!term) return []
   return pages
     .filter((page) => {
@@ -17,7 +18,7 @@ export function searchCatalogPages(
         page.itemPage &&
         !page.categoryPage &&
         item &&
-        `${item.name} ${item.namePl ?? ""}`.toLocaleLowerCase().includes(term),
+        normalizeSearch(`${item.name} ${item.namePl ?? ""}`).includes(term),
       )
     })
     .slice(0, limit)

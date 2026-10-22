@@ -58,7 +58,8 @@
       "en": "Ring"
     },
     "Typ/Pasy": {
-      "en": "Belt"
+      "en": "Belt",
+      "pl": "Pas"
     },
     "Cechy/Siła": {
       "en": "Strength",
@@ -103,7 +104,8 @@
       "en": "Critical chance"
     },
     "Cechy/Unik": {
-      "en": "Dodge"
+      "en": "Dodge",
+      "pl": "Unik"
     },
     "Cechy/Pancerz-fizyczny": {
       "en": "Physical Armour"
@@ -113,9 +115,6 @@
     },
     "Cechy/HP": {
       "en": "Vitality"
-    },
-    "Cechy/Obrażenia": {
-      "en": "Damage"
     },
     "Cechy/Bieglosci-obrony/Przywództwo": {
       "en": "Leadership"
@@ -215,9 +214,6 @@
     },
     "Cechy/Leczenie": {
       "en": "Healing"
-    },
-    "Cechy/Gniazda-run": {
-      "en": "Rune Slots"
     },
     "Efekty/Statusy/POISONED": {
       "en": "Poisoned"
@@ -382,7 +378,8 @@
       "pl": "Zręczność"
     },
     "Cechy/Zwinność": {
-      "en": "Dexterity"
+      "en": "Dexterity",
+      "pl": "Zręczność"
     },
     "Cechy/Inteligencja": {
       "en": "Intelligence",
@@ -404,7 +401,8 @@
       "en": "Perception"
     },
     "Cechy/Szybkość": {
-      "en": "Speed"
+      "en": "Speed",
+      "pl": "Szybkość"
     },
     "Cechy/Inicjatywa": {
       "en": "Initiative",
@@ -419,7 +417,8 @@
       "pl": "Szansa na trafienie krytyczne"
     },
     "Cechy/Unik": {
-      "en": "Dodge"
+      "en": "Dodge",
+      "pl": "Unik"
     },
     "Cechy/Pancerz-fizyczny": {
       "en": "Physical Armour",
@@ -432,10 +431,6 @@
     "Cechy/HP": {
       "en": "Vitality",
       "pl": "Zdrowie"
-    },
-    "Cechy/Obrażenia": {
-      "en": "Damage",
-      "pl": "Obrażenia"
     },
     "Cechy/Bieglosci-obrony/Przywództwo": {
       "en": "Leadership",
@@ -567,10 +562,6 @@
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Cechy/Gniazda-run": {
-      "en": "Rune Slots",
-      "pl": "MIEJSCA NA RUNY"
-    },
     "Efekty/Statusy/POISONED": {
       "en": "Poisoned",
       "pl": "Zatrucie"
@@ -596,7 +587,8 @@
       "pl": "Skamienienie"
     },
     "Efekty/Statusy/FROZEN": {
-      "en": "Frozen"
+      "en": "Frozen",
+      "pl": "Zamrożenie"
     },
     "Efekty/Statusy/BLIND": {
       "en": "Blind",
@@ -631,7 +623,8 @@
       "pl": "Oziębienie"
     },
     "Efekty/Statusy/HEALING": {
-      "en": "Healing"
+      "en": "Healing",
+      "pl": "Leczenie"
     },
     "Efekty/Statusy/CHARMED": {
       "en": "Charmed",
@@ -756,7 +749,8 @@
       "pl": "Zręczność"
     },
     "Cechy/Zwinność": {
-      "en": "Dexterity"
+      "en": "Dexterity",
+      "pl": "Zręczność"
     },
     "Cechy/Inteligencja": {
       "en": "Intelligence",
@@ -778,7 +772,8 @@
       "en": "Perception"
     },
     "Cechy/Szybkość": {
-      "en": "Speed"
+      "en": "Speed",
+      "pl": "Szybkość"
     },
     "Cechy/Inicjatywa": {
       "en": "Initiative",
@@ -793,7 +788,8 @@
       "pl": "Szansa na trafienie krytyczne"
     },
     "Cechy/Unik": {
-      "en": "Dodge"
+      "en": "Dodge",
+      "pl": "Unik"
     },
     "Cechy/Pancerz-fizyczny": {
       "en": "Physical Armour",
@@ -806,10 +802,6 @@
     "Cechy/HP": {
       "en": "Vitality",
       "pl": "Zdrowie"
-    },
-    "Cechy/Obrażenia": {
-      "en": "Damage",
-      "pl": "Obrażenia"
     },
     "Cechy/Bieglosci-obrony/Przywództwo": {
       "en": "Leadership",
@@ -941,10 +933,6 @@
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Cechy/Gniazda-run": {
-      "en": "Rune Slots",
-      "pl": "MIEJSCA NA RUNY"
-    },
     "Efekty/Statusy/POISONED": {
       "en": "Poisoned",
       "pl": "Zatrucie"
@@ -970,7 +958,8 @@
       "pl": "Skamienienie"
     },
     "Efekty/Statusy/FROZEN": {
-      "en": "Frozen"
+      "en": "Frozen",
+      "pl": "Zamrożenie"
     },
     "Efekty/Statusy/BLIND": {
       "en": "Blind",
@@ -1005,7 +994,8 @@
       "pl": "Oziębienie"
     },
     "Efekty/Statusy/HEALING": {
-      "en": "Healing"
+      "en": "Healing",
+      "pl": "Leczenie"
     },
     "Efekty/Statusy/CHARMED": {
       "en": "Charmed",

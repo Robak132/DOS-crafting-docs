@@ -7,6 +7,7 @@ is used as a translation source.
 """
 import json
 import re
+import runpy
 import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -26,13 +27,12 @@ def main():
     if len(sys.argv) != 3:
         raise SystemExit(__doc__)
     english, polish = map(strings, sys.argv[1:])
-    candidates = set(json.loads((ROOT / "data/itemLocalisation.en-pl.json").read_text()))
-    for path in (ROOT / "data/library/pages").rglob("*.json"):
-        page = json.loads(path.read_text())
+    candidates = set(json.loads((ROOT / "data/itemLocalisation.en-pl.json").read_text(encoding='utf-8')))
+    for page in runpy.run_path(str(ROOT / "scripts/library-pages.py"))["load_pages"]().values():
         candidates.update(value for value in [page.get("title"), page.get("titlePl")] if value)
         candidates.update(page.get("tags", []))
     for path in (ROOT / "data/library/recipes").glob("*.json"):
-        for recipe in json.loads(path.read_text())["recipes"]:
+        for recipe in json.loads(path.read_text(encoding='utf-8'))["recipes"]:
             for item in [recipe["result"], *recipe["ingredients"]]:
                 candidates.add(item["name"].lstrip("#"))
                 if item.get("namePl"):
@@ -70,7 +70,7 @@ def main():
         "selectors": selectors,
     }
     destination = ROOT / "data/itemLocalisation.dos2-de.en-pl.json"
-    destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n")
+    destination.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding='utf-8')
     print(f"{destination}: {len(names)} names, {len(selectors)} contextual selector")
 
 

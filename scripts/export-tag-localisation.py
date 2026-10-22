@@ -19,12 +19,12 @@ TERMS={
 }
 for field,suffix in rules['ATTRIBUTES'].items():
  if field in effects['BONUSES']:TERMS[rules['attribute_tag'](suffix)]=effects['BONUSES'][field][0]
-TERMS.update({'Cechy/HP':'Vitality','Cechy/Leczenie':'Healing','Cechy/Pancerz-fizyczny':'Physical Armour','Cechy/Pancerz-magiczny':'Magic Armour','Cechy/Gniazda-run':'Rune Slots','Cechy/Umiejetnosci/Łowiectwo':'Huntsman','Cechy/Umiejetnosci/Nekromancja':'Necromancer','Cechy/Umiejetnosci/Wojna':'Warfare','Cechy/Umiejetnosci/Łobuz':'Scoundrel'})
+TERMS.update({'Cechy/HP':'Vitality','Cechy/Leczenie':'Healing','Cechy/Pancerz-fizyczny':'Physical Armour','Cechy/Pancerz-magiczny':'Magic Armour','Cechy/Umiejetnosci/Łowiectwo':'Huntsman','Cechy/Umiejetnosci/Nekromancja':'Necromancer','Cechy/Umiejetnosci/Wojna':'Warfare','Cechy/Umiejetnosci/Łobuz':'Scoundrel'})
 PREFERRED={'Armour':'Pancerze','Boots':'Buty','Necromancer':'Nekromancja','Huntsman':'Myślistwo','Magic Armour':'Pancerz Magiczny'}
 
 
 def main():
- labels=json.loads((ROOT/'data/tagLabels.json').read_text());data={};report={}
+ labels=json.loads((ROOT/'data/tagLabels.json').read_text(encoding='utf-8'));data={};report={}
  for tag in labels:
   if tag.startswith('Efekty/Statusy/'):
    status=tag.rsplit('/',1)[-1]
@@ -46,8 +46,8 @@ def main():
    data[game][tag]={'en':term,**({'pl':chosen} if chosen else {})}
    report[game].append({'tag':tag,'en':term,'pl':chosen,'contentuid':[h for v,h in matches if v==chosen],'untranslated':chosen is None})
  data['dos2-overhaul']=dict(data['dos2'])
- (ROOT/'data/tagLocalisation.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'reports/tag-localisation-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'data/tagLocalisation.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
+ (ROOT/'reports/tag-localisation-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
  print({g:sum('pl' in v for v in entries.values()) for g,entries in data.items()})
 
 

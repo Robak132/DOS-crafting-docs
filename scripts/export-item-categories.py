@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 m = runpy.run_path(str(ROOT / 'scripts/export-item-icons.py'))
 source = Path(sys.argv[1])
-provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text())
+provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text(encoding='utf-8'))
 base = {g: m['resources'](source / g) for g in ['dos1', 'dos2', 'overhaul']}
 for game, layers in [('dos1', ['dos1']), ('dos2', ['dos2']), ('dos2-overhaul', ['dos2', 'overhaul'])]:
     templates, strings, entries = {}, {}, {}
@@ -47,7 +47,7 @@ for game, layers in [('dos1', ['dos1']), ('dos2', ['dos2']), ('dos2-overhaul', [
                 categories[name_key].update(values)
                 icon_categories[(name_key, template.get('Icon', ''))].update(values)
     path = ROOT / 'data/library/recipes' / (game + '.json')
-    data = json.loads(path.read_text())
+    data = json.loads(path.read_text(encoding='utf-8'))
     count = 0
     for row in data['recipes']:
         for item in [row['result'], *row['ingredients']]:
@@ -57,5 +57,5 @@ for game, layers in [('dos1', ['dos1']), ('dos2', ['dos2']), ('dos2-overhaul', [
             if values and not item.get('selectorTag'):
                 item['craftingCategories'] = sorted(values)
                 count += 1
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print(game, count, 'categorized item references')

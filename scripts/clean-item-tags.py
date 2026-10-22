@@ -134,7 +134,7 @@ def main():
     args = parser.parse_args()
     helpers = runpy.run_path(str(ROOT / 'scripts/audit-recipes.py'))
     key = helpers['key']
-    provenance = json.loads((ROOT/'data/itemIcons.provenance.json').read_text())
+    provenance = json.loads((ROOT/'data/itemIcons.provenance.json').read_text(encoding='utf-8'))
     report = {'scope':'Saved item types, normalized game tags and consistent references. DOS1 EE / DOS2 DE / Crafting Overhaul. No new ingredient groups.', 'catalogs':{}, 'page_changes':[]}
     page_tags = defaultdict(set)
     for game,layers,game_tag in [('dos1',['dos1'],'DOS1'),('dos2',['dos2'],'DOS2'),('dos2-overhaul',['dos2','overhaul'],'DOS2-CO')]:
@@ -146,7 +146,7 @@ def main():
             for directory in sorted(current.glob('dos2-Patch*'),key=lambda p:int(re.search(r'Patch(\d+)',p.name)[1])): index.add_dos2(directory)
             if game == 'dos2-overhaul': index.add_dos2(current/'overhaul')
         path = ROOT/'data/library/recipes'/f'{game}.json'
-        data = json.loads(path.read_text())
+        data = json.loads(path.read_text(encoding='utf-8'))
         references = defaultdict(list)
         for item in [i for row in data['recipes'] for i in [row['result'],*row['ingredients']]] + data.get('items',[]):
             # A category reference is independent of a concrete item with the same name.
@@ -167,18 +167,19 @@ def main():
                 if item.get('slug') and not selector: page_tags[item['slug']].update(new)
         for row in data['recipes']:row['tags']=list(row['result']['tags'])
         report['catalogs'][game]={'changed_references':len(changes),'changed_names':len({c['name'] for c in changes}),'changes':changes}
-        if args.write:path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+        if args.write:path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
         print(game,len(changes),'reference corrections',flush=True)
+    library_pages=runpy.run_path(str(ROOT/'scripts/library-pages.py'));pages=library_pages['load_pages']()
     for slug,tags in page_tags.items():
-        path=ROOT/'data/library/pages'/(slug+'.json')
-        if not path.exists():continue
-        page=json.loads(path.read_text());new=[t for t in page['tags'] if t in tags] + sorted(tags - set(page['tags']))
+        page=pages.get(slug)
+        if not page:continue
+        new=[t for t in page['tags'] if t in tags] + sorted(tags - set(page['tags']))
         if page['tags']!=new:
             report['page_changes'].append({'slug':slug,'before':page['tags'],'after':new})
             page['tags']=new
-            if args.write:path.write_text(json.dumps(page,ensure_ascii=False,indent=2)+'\n')
+    if args.write:library_pages['save_pages'](pages)
     report['applied']=args.write
-    (ROOT/'reports/item-tags-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'reports/item-tags-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 
 
 if __name__ == '__main__':main()

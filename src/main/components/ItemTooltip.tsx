@@ -59,8 +59,8 @@ export function ItemTooltip({
         <section>
           <h3>Wytwarzanie</h3>
           <ul class="preview-recipes">
-            {recipes.map((recipe) => (
-              <li key={recipe.id}>
+            {recipes.map((recipe, index) => (
+              <li key={`${recipe.id}#${index}`}>
                 <span>{recipe.ingredients.map((ingredient) => ingredientName(ingredient, lang)).join(" + ")}</span>
                 <span class="preview-recipe-result">→ {ingredientName(recipe.result, lang)}</span>
                 {recipe.requirements.trim() && <small>Wymagania: {recipe.requirements}</small>}

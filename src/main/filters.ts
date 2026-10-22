@@ -1,4 +1,5 @@
-import type { RecipeRow } from "./domain/recipes"
+import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
+import { matchesUpgradeQuery } from "./domain/upgrades"
 import {
   matchesCraftingMax,
   matchesRecipeQuery,
@@ -40,10 +41,29 @@ export function cycleFilter(filters: Filters, tag: string, kind: "tag" | "requir
   else if (included) negative.push(tag)
   return { ...filters, [yes]: positive, [no]: negative }
 }
+const stringList = (value: unknown): string[] =>
+  Array.isArray(value) ? value.filter((entry): entry is string => typeof entry === "string" && entry.length > 0) : []
+const validCraftingMax = (value: unknown): number | null =>
+  typeof value === "number" && Number.isInteger(value) && value >= 1 && value <= 5 ? value : null
+
+function storedFilters(raw: unknown): Filters {
+  const value = raw && typeof raw === "object" ? (raw as Record<string, unknown>) : {}
+  return {
+    include: stringList(value.include),
+    exclude: stringList(value.exclude),
+    requirements: stringList(value.requirements),
+    requirementsExclude: stringList(value.requirementsExclude),
+    craftingMax: validCraftingMax(value.craftingMax),
+    scope: value.scope === "ingredient" ? "ingredient" : "result",
+    selectors: stringList(value.selectors),
+    query: typeof value.query === "string" ? value.query : "",
+    group: typeof value.group === "string" && value.group ? value.group : null,
+  }
+}
 export function restoreFilters(game: Game, search = ""): Filters {
   let stored = emptyFilters()
   try {
-    stored = { ...stored, ...JSON.parse(sessionStorage.getItem(`crafting.filters.${game}`) ?? "{}") }
+    stored = storedFilters(JSON.parse(sessionStorage.getItem(`crafting.filters.${game}`) ?? "{}"))
   } catch {
     /* unavailable storage */
   }
@@ -72,8 +92,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     stored.query = params.get("q") ?? ""
     stored.group = params.get("group")
     stored.scope = params.get("as") === "ingredient" ? "ingredient" : "result"
-    const max = Number(params.get("craftingMax"))
-    stored.craftingMax = Number.isInteger(max) && max >= 1 && max <= 5 ? max : null
+    stored.craftingMax = validCraftingMax(Number(params.get("craftingMax")))
   }
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
 }
@@ -102,6 +121,24 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
     )
       return false
     return matchesRecipeQuery(recipe, filters.query, labels, filters.scope)
+  })
+}
+export function filterUpgrades(upgrades: RecipeUpgrade[], filters: Filters): RecipeUpgrade[] {
+  const related = (a: string, b: string) => a === b || a.startsWith(b + "/") || b.startsWith(a + "/")
+  const categories = filters.include.filter((tag) => tag === "Typ" || tag.startsWith("Typ/"))
+  const traits = filters.include.filter((tag) => tag !== "Typ" && !tag.startsWith("Typ/"))
+  return upgrades.filter((upgrade) => {
+    const tags = [...upgrade.targetTags, ...upgrade.tags]
+    if (categories.length && !categories.some((tag) => upgrade.targetTags.some((target) => related(target, tag))))
+      return false
+    if (!traits.every((tag) => upgrade.tags.some((own) => own === tag || own.startsWith(tag + "/")))) return false
+    if (filters.exclude.some((tag) => tags.some((own) => own === tag || own.startsWith(tag + "/")))) return false
+    const reqs = requirementTokens(upgrade.requirements).map((value) => value.toLowerCase())
+    if (filters.requirements.length && !filters.requirements.some((value) => reqs.includes(value.toLowerCase())))
+      return false
+    if (filters.requirementsExclude.some((value) => reqs.includes(value.toLowerCase()))) return false
+    if (filters.craftingMax !== null && !matchesCraftingMax(upgrade.requirements, filters.craftingMax)) return false
+    return matchesUpgradeQuery(upgrade, filters.query)
   })
 }
 export function filtersToSearch(filters: Filters, view: string): string {

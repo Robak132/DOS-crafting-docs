@@ -22,7 +22,12 @@ export default defineConfig(({ command }) => {
     async configureServer(server) {
       manifest = await generateData(generatedDir)
       server.middlewares.use(async (request, response, next) => {
-        const pathname = decodeURIComponent(new URL(request.url ?? "/", "http://localhost").pathname)
+        let pathname: string
+        try {
+          pathname = decodeURIComponent(new URL(request.url ?? "/", "http://localhost").pathname)
+        } catch {
+          return next() // malformed %-escape: let Vite answer instead of an unhandled rejection
+        }
         const local = pathname.startsWith(base) ? pathname.slice(base.length) : pathname.replace(/^\//, "")
         if (!local.startsWith("data/")) return next()
         const filename = path.resolve(generatedDir, local)
@@ -58,6 +63,8 @@ export default defineConfig(({ command }) => {
       server.watcher.on("add", regenerate).on("change", regenerate).on("unlink", regenerate)
       server.httpServer?.once("close", () => {
         clearTimeout(timer)
+        // Each dev session writes to its own .generated/dev-<uuid>; do not leave them behind.
+        void fs.rm(generatedDir, { recursive: true, force: true })
         server.watcher.off("add", regenerate).off("change", regenerate).off("unlink", regenerate)
       })
     },
@@ -65,7 +72,13 @@ export default defineConfig(({ command }) => {
       if (command !== "build") return
       await fs.cp(path.join(generatedDir, "data"), path.join(outDir, "data"), { recursive: true })
       const html = await fs.readFile(path.join(outDir, "index.html"), "utf8")
-      const slugs = new Set(["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)])
+      const slugs = new Set([
+        "receptury",
+        "DOS2",
+        "dos2-crafting-overhaul",
+        ...manifest.pages.map((page) => page.slug),
+        ...Object.keys(manifest.redirects),
+      ])
       await Promise.all(
         [...slugs]
           .filter((slug) => slug !== "index")

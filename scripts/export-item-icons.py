@@ -211,7 +211,7 @@ def main():
     destination = ROOT / 'assets/item-icons'
     destination.mkdir(parents=True, exist_ok=True)
     provenance_file = ROOT / "data/itemIcons.provenance.json"
-    existing = json.loads(provenance_file.read_text()) if provenance_file.exists() else {}
+    existing = json.loads(provenance_file.read_text(encoding='utf-8')) if provenance_file.exists() else {}
     mapping, provenance, report, images, written = {}, {}, {}, {}, set()
     for game in ['dos1', 'dos2', 'dos2-overhaul']:
         layers = ['dos1'] if game == 'dos1' else ['dos2', 'overhaul'] if game == 'dos2-overhaul' else ['dos2']
@@ -240,7 +240,7 @@ def main():
             if label not in names:
                 names[label] = match['icon']
                 evidence[label] = match
-        catalog = json.loads((catalogs / f'catalog-{game}.json').read_text())
+        catalog = json.loads((catalogs / f'catalog-{game}.json').read_text(encoding='utf-8'))
         items = {key(item.get('statsId') or item['name']): item for row in catalog['recipes'] for item in [row['result'], *row['ingredients']] if not item.get('selectorTag')}
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
         catalog_names = set(items)
@@ -286,9 +286,9 @@ def main():
     for file in destination.rglob('*.webp'):
         if file.relative_to(destination).as_posix() not in written:
             file.unlink()
-    (ROOT / 'data/itemIcons.json').write_text(json.dumps(mapping, indent=2, ensure_ascii=False) + '\n')
-    (ROOT / 'data/itemIcons.provenance.json').write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + '\n')
-    (ROOT / 'data/itemIcons.report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n')
+    (ROOT / 'data/itemIcons.json').write_text(json.dumps(mapping, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    (ROOT / 'data/itemIcons.provenance.json').write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    (ROOT / 'data/itemIcons.report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print(f'{len(written)} images, {sum(p.stat().st_size for p in destination.rglob("*.webp")) / 1024:.0f} KiB')
 
 

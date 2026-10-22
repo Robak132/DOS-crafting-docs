@@ -1,0 +1,5299 @@
+{
+  "game": "DOS1",
+  "pages": [
+    {
+      "slug": "adept-air-skill-book",
+      "title": "ADEPT AIR SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "adept-earth-skill-book",
+      "title": "ADEPT EARTH SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "adept-fire-skill-book",
+      "title": "ADEPT FIRE SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "adept-water-skill-book",
+      "title": "ADEPT WATER SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "adept-witchcraft-skill-book",
+      "title": "ADEPT WITCHCRAFT SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "adult-antler",
+      "title": "Adult Antler",
+      "titlePl": "Poroże dorosłego osobnika",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "air-essence",
+      "title": "Air Essence",
+      "titlePl": "Esencja powietrza",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "air-resistance-potion",
+      "title": "Air Resistance Potion",
+      "titlePl": "Mikstura odporności na powietrze",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-powietrze",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "ancient-human-skull",
+      "title": "Ancient Human Skull",
+      "titlePl": "Prastara ludzka czaszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "ancient-skull-amulet",
+      "title": "Ancient Skull Amulet",
+      "titlePl": "Prastary amulet z czaszką",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "ancient-skull-belt",
+      "title": "Ancient Skull Belt",
+      "titlePl": "Prastary pas z czaszką",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "animal-hide",
+      "title": "Animal Hide",
+      "titlePl": "Skóra zwierzęca",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "antler",
+      "title": "Antler",
+      "titlePl": "Poroże",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "anvil",
+      "title": "Anvil",
+      "titlePl": "Kowadło",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "arcane-feather-e",
+      "title": "Arcane Feather {E}",
+      "titlePl": "Magiczne pióro",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "armour-piercing-grenade",
+      "title": "Armour-Piercing Grenade",
+      "titlePl": "Granat przeszywający",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "arrow-shaft",
+      "title": "Arrow Shaft",
+      "titlePl": "Promień strzały",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "arrowhead",
+      "title": "Arrowhead",
+      "titlePl": "Grot",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "augmentor",
+      "title": "Augmentor",
+      "titlePl": "Ulepszacz",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "backpack",
+      "title": "Backpack",
+      "titlePl": "Plecak",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "barrel",
+      "title": "Barrel",
+      "titlePl": "Beczka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "barrel-lid",
+      "title": "Barrel Lid",
+      "titlePl": "Pokrywa beczki",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "battered-cooking-pot",
+      "title": "Battered Cooking Pot",
+      "titlePl": "Zniszczony garnek",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Helmy"
+      ]
+    },
+    {
+      "slug": "beer",
+      "title": "Beer",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "beer-barrel",
+      "title": "Beer Barrel",
+      "titlePl": "Beczka piwa",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "big-chicken-claw-amulet",
+      "title": "Big Chicken Claw Amulet",
+      "titlePl": "Amulet z pazurem wielkiego kuraka",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "big-chicken-claw-belt",
+      "title": "Big Chicken Claw Belt",
+      "titlePl": "Pas z pazurem wielkiego kuraka",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "big-chicken-foot",
+      "title": "(Big) Chicken Foot",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "blank-air-scroll",
+      "title": "Blank Air Scroll",
+      "titlePl": "Niezapisany zwój powietrza",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "blank-air-skill-book",
+      "title": "BLANK AIR SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "blank-earth-scroll",
+      "title": "Blank Earth Scroll",
+      "titlePl": "Niezapisany zwój ziemi",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "blank-earth-skill-book",
+      "title": "BLANK EARTH SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "blank-fire-scroll",
+      "title": "Blank Fire Scroll",
+      "titlePl": "Niezapisany zwój ognia",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "blank-fire-skill-book",
+      "title": "BLANK FIRE SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "blank-water-scroll",
+      "title": "Blank Water Scroll",
+      "titlePl": "Niezapisany zwój wody",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "blank-water-skill-book",
+      "title": "BLANK WATER SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "blank-witchcraft-scroll",
+      "title": "Blank Witchcraft Scroll",
+      "titlePl": "Niezapisany zwój czarnej magii",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "blank-witchcraft-skill-book",
+      "title": "BLANK WITCHCRAFT SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "bluegill-mushroom",
+      "title": "Bluegill Mushroom",
+      "titlePl": "Błękitniak",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-wodę",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "boiling-pot",
+      "title": "Boiling Pot",
+      "titlePl": "Garnek",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "boletus",
+      "title": "Boletus",
+      "titlePl": "Borowik",
+      "tags": [
+        "Cechy",
+        "Cechy/Zręczność",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "bonedust",
+      "title": "Bonedust",
+      "titlePl": "Sproszkowana kość",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "boots",
+      "title": "Boots",
+      "titlePl": "Obuwie",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "bottle-filled-with-oil",
+      "title": "Bottle Filled With Oil",
+      "titlePl": "Butelka oleju",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "bottle-of-beer",
+      "title": "Bottle of Beer",
+      "titlePl": "Butelka piwa",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/DRUNK",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "bottle-of-swirling-mud",
+      "title": "Bottle of Swirling Mud",
+      "titlePl": "Butelka spienionego błota",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/DISEASED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "bottle-of-water",
+      "title": "Bottle of Water",
+      "titlePl": "Butelka wody",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "bottle-of-wine",
+      "title": "Bottle of Wine",
+      "titlePl": "Butelka wina",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/DRUNK",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "bowstring",
+      "title": "Bowstring",
+      "titlePl": "Cięciwa",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "branch",
+      "title": "Branch",
+      "titlePl": "Gałąź",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Bulawy",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "branch-with-nails",
+      "title": "Branch With Nails",
+      "titlePl": "Gałąź z gwoździami",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Bulawy"
+      ]
+    },
+    {
+      "slug": "bread",
+      "title": "Bread",
+      "titlePl": "Chleb",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "broken-bottle",
+      "title": "Broken Bottle",
+      "titlePl": "Stłuczona butelka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "bucket",
+      "title": "Bucket",
+      "titlePl": "Wiadro",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Helmy",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "bucket-with-milk",
+      "title": "Bucket with Milk",
+      "titlePl": "Wiadro mleka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "bucket-with-water",
+      "title": "Bucket with Water",
+      "titlePl": "Wiadro wody",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "buffalo-amulet",
+      "title": "Buffalo Amulet",
+      "titlePl": "Amulet bawołu",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "buffalo-sabre",
+      "title": "Buffalo Sabre",
+      "titlePl": "Szabla bawołu",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Miecze",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "campfire",
+      "title": "Campfire",
+      "titlePl": "Ognisko",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "charming-arrow",
+      "title": "Charming Arrow",
+      "titlePl": "Strzała oczarowująca",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/CHARMED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "charming-arrowhead",
+      "title": "Charming Arrowhead",
+      "titlePl": "Grot oczarowujący",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "chemical-warfare-grenade",
+      "title": "Chemical Warfare Grenade",
+      "titlePl": "Granat chemiczny",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/DISEASED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "chicken-amulet",
+      "title": "Chicken Amulet",
+      "titlePl": "Kurzy amulet",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "chicken-belt",
+      "title": "Chicken Belt",
+      "titlePl": "Kurzy pas",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "chicken-foot",
+      "title": "Chicken Foot",
+      "titlePl": "Kurza łapka",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "claw",
+      "title": "Claw",
+      "titlePl": "Szpon",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "claw-amulet",
+      "title": "Claw Amulet",
+      "titlePl": "Amulet ze szponem",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "claw-belt",
+      "title": "Claw Belt",
+      "titlePl": "Pas ze szponem",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "clawed-air-wand",
+      "title": "CLAWED AIR WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "clawed-earth-wand",
+      "title": "CLAWED EARTH WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "clawed-fire-wand",
+      "title": "CLAWED FIRE WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "clawed-water-wand",
+      "title": "CLAWED WATER WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "cloth-armour",
+      "title": "Cloth Armour",
+      "titlePl": "Płócienna zbroja",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz"
+      ]
+    },
+    {
+      "slug": "cloth-boots",
+      "title": "Cloth Boots",
+      "titlePl": "Płócienne buty",
+      "tags": [
+        "Typ/Pancerz",
+        "DOS1"
+      ]
+    },
+    {
+      "slug": "cloth-scraps",
+      "title": "Cloth Scraps",
+      "titlePl": "Skrawki materiału",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "cluster-grenade",
+      "title": "Cluster Grenade",
+      "titlePl": "Granat kasetowy",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "cooking-pot",
+      "title": "Cooking Pot",
+      "titlePl": "Garnek",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "cooking-station",
+      "title": "Cooking station",
+      "titlePl": "Kuchnia polowa",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "cow",
+      "title": "Cow",
+      "titlePl": "Krowa",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "crafted-2h-axe",
+      "title": "Crafted 2H Axe",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-fizyczne",
+        "Cechy/Zapewnia-umiejetnosc",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Topory"
+      ]
+    },
+    {
+      "slug": "crafted-2h-sword",
+      "title": "Crafted 2H Sword",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-fizyczne",
+        "Cechy/Zapewnia-umiejetnosc",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Miecze"
+      ]
+    },
+    {
+      "slug": "crafted-dagger",
+      "title": "Crafted Dagger",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-fizyczne",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Sztylety",
+        "Typ/Narzedzia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "creepy-eye",
+      "title": "Creepy Eye",
+      "titlePl": "Odrażające oko",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "creepy-eye-amulet",
+      "title": "Creepy Eye Amulet",
+      "titlePl": "Amulet z odrażającym okiem",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "crossbow-without-bowstring",
+      "title": "Crossbow Without Bowstring",
+      "titlePl": "Kusza bez cięciwy",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "cup-of-oil",
+      "title": "Cup of Oil",
+      "titlePl": "Kubek oleju",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "custom-made-bow",
+      "title": "Custom Made Bow",
+      "titlePl": "Wykonany na zamówienie łuk",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Luki"
+      ]
+    },
+    {
+      "slug": "custom-made-crossbow",
+      "title": "Custom Made Crossbow",
+      "titlePl": "Wykonana na zamówienie kusza",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "custom-made-leather-boots",
+      "title": "Custom Made Leather Boots",
+      "titlePl": "Wykonane na zamówienie skórzane buty",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Buty"
+      ]
+    },
+    {
+      "slug": "custom-made-spear",
+      "title": "Custom Made Spear",
+      "titlePl": "Wykonana na zamówienie włócznia",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Wlocznie"
+      ]
+    },
+    {
+      "slug": "cyseal-fish-pie",
+      "title": "Cyseal Fish Pie",
+      "titlePl": "Cysealański placek rybny",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-constitution-potion",
+      "title": "Debuff Constitution Potion",
+      "titlePl": "Mikstura zmniejszenia kondycji",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-dexterity-potion",
+      "title": "Debuff Dexterity Potion",
+      "titlePl": "Mikstura zmniejszenia zwinności",
+      "tags": [
+        "Cechy",
+        "Cechy/Zwinność",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-intelligence-potion",
+      "title": "Debuff Intelligence Potion",
+      "titlePl": "Mikstura zmniejszenia inteligencji",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-perception-potion",
+      "title": "Debuff Perception Potion",
+      "titlePl": "Mikstura zmniejszenia spostrzegawczości",
+      "tags": [
+        "Cechy",
+        "Cechy/Percepcja",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-speed-potion",
+      "title": "Debuff Speed Potion",
+      "titlePl": "Mikstura zmniejszenia prędkości",
+      "tags": [
+        "Cechy",
+        "Cechy/Szybkość",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "debuff-strength-potion",
+      "title": "Debuff Strength Potion",
+      "titlePl": "Mikstura zmniejszenia siły",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "dinner",
+      "title": "Dinner",
+      "titlePl": "Obiad",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "dough",
+      "title": "Dough",
+      "titlePl": "Ciasto",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "draconic-air-wand",
+      "title": "DRACONIC AIR WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "draconic-earth-wand",
+      "title": "DRACONIC EARTH WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/PETRIFIED",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "draconic-fire-wand",
+      "title": "DRACONIC FIRE WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "draconic-water-wand",
+      "title": "DRACONIC WATER WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/FROZEN",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "drudanae",
+      "title": "Drudanae",
+      "titlePl": "Druadan",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Percepcja",
+        "Cechy/Spryt",
+        "Cechy/Szybkość",
+        "Cechy/Zręczność",
+        "Cechy/Zwinność",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/SLOWED",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "earth-essence",
+      "title": "Earth Essence",
+      "titlePl": "Esencja Ziemi",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "earth-resistance-potion",
+      "title": "Earth Resistance Potion",
+      "titlePl": "Mikstura odporności na ziemię",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "earth-tongue-mushroom",
+      "title": "Earth Tongue Mushroom",
+      "titlePl": "Łopatnica",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "eggs",
+      "title": "Eggs",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "elven-air-wand",
+      "title": "ELVEN AIR WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "elven-earth-wand",
+      "title": "ELVEN EARTH WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "elven-fire-wand",
+      "title": "ELVEN FIRE WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "elven-water-wand",
+      "title": "ELVEN WATER WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "empty-bottle",
+      "title": "Empty Bottle",
+      "titlePl": "Pusta butelka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-canister",
+      "title": "Empty Canister",
+      "titlePl": "Pusty kanister",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-cup",
+      "title": "Empty Cup",
+      "titlePl": "Pusty puchar",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-flask",
+      "title": "Empty Flask",
+      "titlePl": "Pusta butelka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-grenade",
+      "title": "Empty Grenade",
+      "titlePl": "Pusty granat",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-mug",
+      "title": "Empty Mug",
+      "titlePl": "Pusty kubek",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-perfume-bottle",
+      "title": "Empty Perfume Bottle",
+      "titlePl": "Pusta butelka na perfumy",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "empty-potion-bottle",
+      "title": "Empty Potion Bottle",
+      "titlePl": "Pusta butelka na miksturę",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "explosive-arrow",
+      "title": "Explosive Arrow",
+      "titlePl": "Wybuchowa strzała",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "explosive-arrowhead",
+      "title": "Explosive Arrowhead",
+      "titlePl": "Wybuchowy grot",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "eye",
+      "title": "Eye",
+      "titlePl": "Oko",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fabric-dye-black",
+      "title": "Fabric Dye (Black)",
+      "titlePl": "Czarna farba do włókien",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fabric-dye-blue",
+      "title": "Fabric Dye (Blue)",
+      "titlePl": "Niebieska farba do włókien",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fabric-dye-purple-green",
+      "title": "Fabric Dye (Purple, Green)",
+      "titlePl": "Farba do włókien (fiolet, zieleń)",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fabric-dye-white-yellow-red",
+      "title": "Fabric Dye (White, Yellow, Red)",
+      "titlePl": "Farba do włókien (biel, żółć, czerwień)",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fancy-feather",
+      "title": "Fancy Feather",
+      "titlePl": "Fantazyjne pióro",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fancy-feather-amulet",
+      "title": "Fancy Feather Amulet",
+      "titlePl": "Amulet z fantazyjnym piórem",
+      "tags": [
+        "Cechy",
+        "Cechy/Telekineza",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "fancy-feather-belt",
+      "title": "Fancy Feather Belt",
+      "titlePl": "Pas z fantazyjnym piórem",
+      "tags": [
+        "Cechy",
+        "Cechy/HP",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "fanny-blossom",
+      "title": "Fanny Blossom",
+      "titlePl": "Kwiat Franciszki",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "farhangite",
+      "title": "Farhangite",
+      "titlePl": "Farhangora",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "feather",
+      "title": "Feather",
+      "titlePl": "Pióro",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "feather-amulet",
+      "title": "Feather Amulet",
+      "titlePl": "Amulet z piórem",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "feather-belt",
+      "title": "Feather Belt",
+      "titlePl": "Pas z piórem",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "fiery-heart",
+      "title": "Fiery Heart",
+      "titlePl": "Płomienne Serce",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "DOS1",
+        "Typ",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "fire-arrow",
+      "title": "Fire Arrow",
+      "titlePl": "Ognista strzała",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "fire-arrowhead",
+      "title": "Fire Arrowhead",
+      "titlePl": "Grot ognisty",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "fire-essence",
+      "title": "Fire Essence",
+      "titlePl": "Esencja ognia",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fire-resistance-potion",
+      "title": "Fire Resistance Potion",
+      "titlePl": "Mikstura odporności na ogień",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "firestorm-grenade",
+      "title": "Firestorm Grenade",
+      "titlePl": "Granat burzy ognistej",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "fish-pie-dough",
+      "title": "Fish Pie Dough",
+      "titlePl": "Ciasto na placek rybny",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "flashbang-grenade",
+      "title": "Flashbang Grenade",
+      "titlePl": "Granat błysków",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Efekty/Statusy/BLIND",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "flour",
+      "title": "Flour",
+      "titlePl": "Mąka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "fly-agaric-mushroom",
+      "title": "Fly Agaric Mushroom",
+      "titlePl": "Muchomor czerwony",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "foodfish",
+      "title": "FoodFish",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "freezing-arrow",
+      "title": "Freezing Arrow",
+      "titlePl": "Zamrażająca strzała",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/WaterFrozen",
+        "Efekty/Statusy/CHILLED",
+        "Efekty/Statusy/FROZEN",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "freezing-arrowhead",
+      "title": "Freezing Arrowhead",
+      "titlePl": "Grot zamrażający",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "frost-grenade",
+      "title": "Frost Grenade",
+      "titlePl": "Granat mrozu",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/WaterFrozen",
+        "Efekty/Statusy/CHILLED",
+        "Efekty/Statusy/FROZEN",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "fuse",
+      "title": "Fuse",
+      "titlePl": "Lont",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "glowing-star-fish-amulet",
+      "title": "Glowing Star Fish Amulet",
+      "titlePl": "Amulet ze świetlistą rozgwiazdą",
+      "tags": [
+        "Cechy",
+        "Cechy/HP",
+        "Cechy/Odporność-na-wodę",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "golden-grail",
+      "title": "Golden Grail",
+      "titlePl": "Złoty Graal",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "grapes",
+      "title": "Grapes",
+      "titlePl": "Winogrona",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "grumios-cotton-candy-dye",
+      "title": "Grumio's Cotton Candy Dye",
+      "titlePl": "Barwnik Grumia w kolorze waty cukrowej",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "guepinia-mushroom",
+      "title": "Guepinia Mushroom",
+      "titlePl": "Płomykowiec",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "hair",
+      "title": "Hair",
+      "titlePl": "Włosy",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "hammer",
+      "title": "Hammer",
+      "titlePl": "Młotek",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Bulawy",
+        "Typ/Narzedzia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "handcrafted-boots",
+      "title": "Handcrafted Boots",
+      "titlePl": "Ręcznie wykonane buty",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Buty"
+      ]
+    },
+    {
+      "slug": "handcrafted-bow",
+      "title": "Handcrafted Bow",
+      "titlePl": "Ręcznie wykonany łuk",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Luki"
+      ]
+    },
+    {
+      "slug": "handcrafted-crossbow",
+      "title": "Handcrafted Crossbow",
+      "titlePl": "Ręcznie wykonana kusza",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "handcrafted-spear",
+      "title": "Handcrafted Spear",
+      "titlePl": "Ręcznie wykonana włócznia",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Wlocznie"
+      ]
+    },
+    {
+      "slug": "holy-hand-grenade",
+      "title": "Holy Hand Grenade",
+      "titlePl": "Święty granat ręczny",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "homemade-boots",
+      "title": "Homemade Boots",
+      "titlePl": "Buty domowej roboty",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Buty"
+      ]
+    },
+    {
+      "slug": "homemade-crossbow",
+      "title": "Homemade Crossbow",
+      "titlePl": "Kusza domowej roboty",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "homemade-shield",
+      "title": "Homemade Shield",
+      "titlePl": "Tarcza domowej roboty",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Tarcze"
+      ]
+    },
+    {
+      "slug": "homemade-shortbow",
+      "title": "Homemade Shortbow",
+      "titlePl": "Łuk krótki domowej roboty",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Luki"
+      ]
+    },
+    {
+      "slug": "homemade-spear",
+      "title": "Homemade Spear",
+      "titlePl": "Włócznia domowej roboty",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Wlocznie"
+      ]
+    },
+    {
+      "slug": "inert-clawed-wand",
+      "title": "Inert Clawed Wand",
+      "titlePl": "Bezczynna podrapana różdżka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "inert-draconic-wand",
+      "title": "Inert Draconic Wand",
+      "titlePl": "Bezczynna drakoniczna różdżka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "inert-elven-wand",
+      "title": "Inert Elven Wand",
+      "titlePl": "Bezczynna elficka różdżka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "inert-voodoo-doll",
+      "title": "Inert Voodoo Doll",
+      "titlePl": "Nieaktywna laleczka voodoo",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "inert-wooden-wand",
+      "title": "Inert Wooden Wand",
+      "titlePl": "Nieaktywna drewniana różdżka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "ink-pot",
+      "title": "Ink Pot",
+      "titlePl": "Kałamarz",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "ink-pot-and-quill",
+      "title": "Ink Pot and Quill",
+      "titlePl": "Kałamarz i pióro",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "intestines",
+      "title": "Intestines",
+      "titlePl": "Wnętrzności",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/DISEASED",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "iron-bar",
+      "title": "Iron Bar",
+      "titlePl": "Sztabka żelaza",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "iron-ore",
+      "title": "Iron Ore",
+      "titlePl": "Ruda żelaza",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "jellyroom",
+      "title": "Jellyroom",
+      "titlePl": "Meduzowiec",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-powietrze",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "key",
+      "title": "Key",
+      "titlePl": "Klucz",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "knife",
+      "title": "Knife",
+      "titlePl": "Nóż",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Sztylety",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "knife-or-dagger",
+      "title": "Knife or Dagger",
+      "titlePl": "Nóż lub sztylet",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Narzedzia"
+      ]
+    },
+    {
+      "slug": "knockdown-arrow",
+      "title": "Knockdown Arrow",
+      "titlePl": "Strzała powalająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/KNOCKDOWN",
+        "Efekty/Statusy/KNOCKED_DOWN",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "knockdown-arrowhead",
+      "title": "Knockdown Arrowhead",
+      "titlePl": "Powalający grot",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "large-air-resistance-potion",
+      "title": "Large Air Resistance Potion",
+      "titlePl": "Duża mikstura odporności na powietrze",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-powietrze",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-constitution-potion",
+      "title": "Large Constitution Potion",
+      "titlePl": "Duża mikstura Kondycji",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-dexterity-potion",
+      "title": "Large Dexterity Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Zwinność",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-earth-resistance-potion",
+      "title": "Large Earth Resistance Potion",
+      "titlePl": "Duża mikstura odporności na ziemię",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-fire-resistance-potion",
+      "title": "Large Fire Resistance Potion",
+      "titlePl": "Duża mikstura odporności na ogień",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-healing-potion",
+      "title": "Large Healing Potion",
+      "titlePl": "Duża mikstura uzdrawiająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-intelligence-potion",
+      "title": "Large Intelligence Potion",
+      "titlePl": "Duża mikstura Inteligencji",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-invisibility-potion",
+      "title": "Large Invisibility Potion",
+      "titlePl": "Duża mikstura niewidzialności",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/INVISIBLE",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-iron-bar",
+      "title": "Large Iron Bar",
+      "titlePl": "Duża sztabka żelaza",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-magical-armor-potion",
+      "title": "Large Magical Armor Potion",
+      "titlePl": "Duża mikstura magicznej zbroi",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-perception-potion",
+      "title": "Large Perception Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Percepcja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-poison-bottle",
+      "title": "Large Poison Bottle",
+      "titlePl": "Duża butelka trucizny",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-poison-resistance-potion",
+      "title": "Large Poison Resistance Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-resist-all-potion",
+      "title": "Large Resist All Potion",
+      "titlePl": "Duża mikstura wszelkiej odporności",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-speed-potion",
+      "title": "Large Speed Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-steel-bar",
+      "title": "Large Steel Bar",
+      "titlePl": "Duża sztabka stali",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-strength-potion",
+      "title": "Large Strength Potion",
+      "titlePl": "Duża mikstura Siły",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-telekinesis-potion",
+      "title": "Large Telekinesis Potion",
+      "titlePl": "Duża mikstura telekinezy",
+      "tags": [
+        "Cechy",
+        "Cechy/Telekineza",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "large-tusk",
+      "title": "Large Tusk",
+      "titlePl": "Duży kieł",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "large-tusk-amulet",
+      "title": "Large Tusk Amulet",
+      "titlePl": "Amulet z dużym kłem",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Znawca",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "large-water-resistance-potion",
+      "title": "Large Water Resistance Potion",
+      "titlePl": "Duża mikstura odporności na wodę",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-wodę",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "leather-chest",
+      "title": "LEATHER CHEST",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz"
+      ]
+    },
+    {
+      "slug": "leather-scraps",
+      "title": "Leather Scraps",
+      "titlePl": "Skrawki skóry",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "lockpicks",
+      "title": "Lockpicks",
+      "titlePl": "Wytrychy",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "log",
+      "title": "Log",
+      "titlePl": "Kłoda",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "long-rat-tail",
+      "title": "Long Rat Tail",
+      "titlePl": "Długi szczurzy ogon",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "long-rat-tail-amulet",
+      "title": "Long Rat Tail Amulet",
+      "titlePl": "Amulet z długim szczurzym ogonem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "long-rat-tail-belt",
+      "title": "Long Rat Tail Belt",
+      "titlePl": "Pas z długim szczurzym ogonem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "love-grenade",
+      "title": "Love Grenade",
+      "titlePl": "Granat miłości",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/CHARMED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "lucky-rabbit-paw",
+      "title": "Lucky Rabbit Paw",
+      "titlePl": "Szczęśliwa królicza łapka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "lucky-rabbit-paw-amulet",
+      "title": "Lucky Rabbit Paw Amulet",
+      "titlePl": "Szczęśliwy amulet z króliczą łapką",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "lucky-rabbit-paw-belt",
+      "title": "Lucky Rabbit Paw Belt",
+      "titlePl": "Pas ze szczęśliwą króliczą łapką",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "lucky-rabbit-paw-super-amulet",
+      "title": "Lucky Rabbit Paw Super Amulet",
+      "titlePl": "Niezwykły amulet ze szczęśliwą króliczą łapką",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "lucky-rabbit-paw-super-belt",
+      "title": "Lucky Rabbit Paw Super Belt",
+      "titlePl": "Niezwykły pas ze szczęśliwą króliczą łapką",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "lucky-rabbits-paw-amulet",
+      "title": "Lucky Rabbit's Paw Amulet",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "magic-antler",
+      "title": "Magic Antler",
+      "titlePl": "Magiczne poroże",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-claw",
+      "title": "Magic claw",
+      "titlePl": "Magiczny szpon",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-eye",
+      "title": "Magic eye",
+      "titlePl": "Magiczne oko",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-ink-pot-and-quill",
+      "title": "Magic Ink Pot and Quill",
+      "titlePl": "Magiczny kałamarz i pióro",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "magic-needle-thread",
+      "title": "Magic Needle & Thread",
+      "titlePl": "Magiczna igła z nitką",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "magic-rabbits-paw",
+      "title": "Magic Rabbit's Paw",
+      "titlePl": "Magiczna królicza łapka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-rats-tail",
+      "title": "Magic Rat's tail",
+      "titlePl": "Magiczny szczurzy ogon",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-skull",
+      "title": "Magic Skull",
+      "titlePl": "Magiczna czaszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-starfish",
+      "title": "Magic Starfish",
+      "titlePl": "Magiczna rozgwiazda",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-tooth",
+      "title": "Magic Tooth",
+      "titlePl": "Magiczny ząb",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magic-tusk",
+      "title": "MAGIC TUSK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-adult-antler",
+      "title": "Magical Adult Antler",
+      "titlePl": "Magiczne poroże dorosłego osobnika",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-ancient-human-skull",
+      "title": "Magical Ancient Human Skull",
+      "titlePl": "Magiczna prastara ludzka czaszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-big-chicken-foot",
+      "title": "Magical Big Chicken Foot",
+      "titlePl": "Magiczna nóżka wielkiego kuraka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-chicken-foot",
+      "title": "Magical Chicken foot",
+      "titlePl": "Magiczna nóżka kuraka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-creepy-eye",
+      "title": "Magical Creepy Eye",
+      "titlePl": "Magiczne odrażające oko",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-fancy-feather",
+      "title": "Magical Fancy Feather",
+      "titlePl": "Magiczne fantazyjne pióro",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-glowing-starfish",
+      "title": "Magical Glowing Starfish",
+      "titlePl": "Magiczna świetlista rozgwiazda",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-large-tusk",
+      "title": "Magical Large Tusk",
+      "titlePl": "Magiczny duży kieł",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-long-rat-tail",
+      "title": "Magical Long Rat Tail",
+      "titlePl": "Magiczny długi szczurzy ogon",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-lucky-rabbit-paw",
+      "title": "Magical Lucky Rabbit Paw",
+      "titlePl": "Magiczna szczęśliwa królicza łapka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-sharp-claw",
+      "title": "Magical Sharp Claw",
+      "titlePl": "Magiczny ostry szpon",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-sharp-tooth",
+      "title": "Magical Sharp Tooth",
+      "titlePl": "Magiczny ostry ząb",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-starfish",
+      "title": "Magical Starfish",
+      "titlePl": "Magiczna rozgwiazda",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "magical-starfish-amulet",
+      "title": "Magical Starfish Amulet",
+      "titlePl": "Magiczny amulet z rozgwiazdą",
+      "tags": [
+        "Cechy",
+        "Cechy/HP",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "master-air-skill-book",
+      "title": "MASTER AIR SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "master-earth-skill-book",
+      "title": "MASTER EARTH SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "master-fire-skill-book",
+      "title": "MASTER FIRE SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "master-water-skill-book",
+      "title": "MASTER WATER SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "master-witchcraft-skill-book",
+      "title": "MASTER WITCHCRAFT SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "meat",
+      "title": "Meat",
+      "titlePl": "Mięso",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "medium-air-resistance-potion",
+      "title": "Medium Air Resistance Potion",
+      "titlePl": "Średnia mikstura odporności na powietrze",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-powietrze",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "medium-constitution-potion",
+      "title": "Medium Constitution Potion",
+      "titlePl": "Średnia mikstura Kondycji",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-dexterity-potion",
+      "title": "Medium Dexterity Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Zwinność",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-earth-resistance-potion",
+      "title": "Medium Earth Resistance Potion",
+      "titlePl": "Średnia mikstura odporności na ziemię",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "medium-fire-resistance-potion",
+      "title": "Medium Fire Resistance Potion",
+      "titlePl": "Średnia mikstura odporności na ogień",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "medium-healing-potion",
+      "title": "Medium Healing Potion",
+      "titlePl": "Średnia mikstura uzdrawiająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-intelligence-potion",
+      "title": "Medium Intelligence Potion",
+      "titlePl": "Średnia mikstura Inteligencji",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-invisibility-potion",
+      "title": "Medium Invisibility Potion",
+      "titlePl": "Średnia mikstura niewidzialności",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/INVISIBLE",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-magical-armor-potion",
+      "title": "Medium Magical Armor Potion",
+      "titlePl": "Średnia mikstura magicznej zbroi",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-perception-potion",
+      "title": "Medium Perception Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Percepcja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-poison-bottle",
+      "title": "Medium Poison Bottle",
+      "titlePl": "Średnia butelka trucizny",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "medium-poison-resistance-potion",
+      "title": "Medium Poison Resistance Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-resist-all-potion",
+      "title": "Medium Resist All Potion",
+      "titlePl": "Średnia mikstura wszelkiej odporności",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-speed-potion",
+      "title": "Medium Speed Potion",
+      "tags": [
+        "Cechy",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-strength-potion",
+      "title": "Medium Strength Potion",
+      "titlePl": "Średnia mikstura Siły",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-telekinesis-potion",
+      "title": "Medium Telekinesis Potion",
+      "titlePl": "Średnia mikstura telekinezy",
+      "tags": [
+        "Cechy",
+        "Cechy/Telekineza",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "medium-water-resistance-potion",
+      "title": "Medium Water Resistance Potion",
+      "titlePl": "Średnia mikstura odporności na wodę",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-wodę",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "metal-boots",
+      "title": "Metal Boots",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Pancerz"
+      ]
+    },
+    {
+      "slug": "metal-chest",
+      "title": "METAL CHEST",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz"
+      ]
+    },
+    {
+      "slug": "metal-scraps",
+      "title": "Metal Scraps",
+      "titlePl": "Kawałki metalu",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "milk",
+      "title": "Milk",
+      "titlePl": "Mleko",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-constitution-potion",
+      "title": "Minor Constitution Potion",
+      "titlePl": "Mała mikstura Kondycji",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-dexterity-potion",
+      "title": "Minor Dexterity Potion",
+      "titlePl": "Mała mikstura zwinności",
+      "tags": [
+        "Cechy",
+        "Cechy/Zwinność",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-healing-potion",
+      "title": "Minor Healing Potion",
+      "titlePl": "Mała mikstura uzdrawiająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-intelligence-potion",
+      "title": "Minor Intelligence Potion",
+      "titlePl": "Mała mikstura Inteligencji",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-invisibility-potion",
+      "title": "MINOR INVISIBILITY POTION",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/INVISIBLE",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "minor-magical-armor-potion",
+      "title": "MINOR MAGICAL ARMOR POTION",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "minor-perception-potion",
+      "title": "Minor Perception Potion",
+      "titlePl": "Mała mikstura spostrzegawczości",
+      "tags": [
+        "Cechy",
+        "Cechy/Percepcja",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-poison-bottle",
+      "title": "MINOR POISON BOTTLE",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "minor-resist-all-potion",
+      "title": "Minor Resist All Potion",
+      "titlePl": "Mała mikstura wszelkiej odporności",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "minor-speed-potion",
+      "title": "Minor Speed Potion",
+      "titlePl": "Mała mikstura prędkości",
+      "tags": [
+        "Cechy",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-strength-potion",
+      "title": "Minor Strength Potion",
+      "titlePl": "Mała mikstura Siły",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "minor-telekinesis-potion",
+      "title": "MINOR TELEKINESIS POTION",
+      "tags": [
+        "Cechy",
+        "Cechy/Telekineza",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "mobile-kitchen",
+      "title": "Mobile Kitchen",
+      "titlePl": "Kuchnia przenośna",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "moondust",
+      "title": "Moondust",
+      "titlePl": "Księżycowy pył",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "moonstone",
+      "title": "Moonstone",
+      "titlePl": "Kamień księżycowy",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "mortar-and-pestle",
+      "title": "Mortar And Pestle",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Narzedzia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "most-weapons",
+      "title": "Most Weapons",
+      "titlePl": "Większość broni",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Bron"
+      ]
+    },
+    {
+      "slug": "mug-of-beer",
+      "title": "Mug of Beer",
+      "titlePl": "Kufel piwa",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/DRUNK",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "mug-of-water",
+      "title": "Mug of Water",
+      "titlePl": "Kubek wody",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "mug-of-wine",
+      "title": "Mug of Wine",
+      "titlePl": "Kubek wina",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "Efekty/Statusy/DRUNK",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "mysterious-fabric-dye",
+      "title": "Mysterious Fabric Dye",
+      "titlePl": "Tajemnicza farba do włókien",
+      "tags": [
+        "DOS1",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Barwniki",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "nailbomb-grenade",
+      "title": "Nailbomb Grenade",
+      "titlePl": "Granat z gwoździami",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/BLEEDING",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "needle",
+      "title": "Needle",
+      "titlePl": "Igła",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "needle-and-thread",
+      "title": "Needle and Thread",
+      "titlePl": "Igła z nitką",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Wyposazenie"
+      ]
+    },
+    {
+      "slug": "nine-inch-nails",
+      "title": "Nine Inch Nails",
+      "titlePl": "Dziewięciocalowe gwoździe",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "novice-air-skill-book",
+      "title": "NOVICE AIR SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "novice-earth-skill-book",
+      "title": "NOVICE EARTH SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "novice-fire-skill-book",
+      "title": "NOVICE FIRE SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "novice-water-skill-book",
+      "title": "NOVICE WATER SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "novice-witchcraft-skill-book",
+      "title": "NOVICE WITCHCRAFT SKILL BOOK",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Ksiegi-umiejetnosci"
+      ]
+    },
+    {
+      "slug": "oil",
+      "title": "Oil",
+      "titlePl": "Olej",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "oil-barrel",
+      "title": "Oil Barrel",
+      "titlePl": "Beczka oleju",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "oil-flask",
+      "title": "Oil Flask",
+      "titlePl": "Flakon oleju",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Oil",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "old-sabre",
+      "title": "Old Sabre",
+      "titlePl": "Stara szabla",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Miecze"
+      ]
+    },
+    {
+      "slug": "one-handed-axe",
+      "title": "ONE HANDED AXE",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Bron"
+      ]
+    },
+    {
+      "slug": "one-handed-sword",
+      "title": "One Handed Sword",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "ooze-barrel",
+      "title": "Ooze Barrel",
+      "titlePl": "Beczka ze szlamem",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "oven",
+      "title": "Oven",
+      "titlePl": "Piecyk",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "oven-furnace-or-mobile-kitchen",
+      "title": "Oven, Furnace, or Mobile Kitchen",
+      "titlePl": "Piecyk, piec lub kuchnia przenośna",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "pearl",
+      "title": "Pearl",
+      "titlePl": "Perła",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pillow",
+      "title": "Pillow",
+      "titlePl": "Poduszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pixie-dust",
+      "title": "Pixie Dust",
+      "titlePl": "Czarodziejski pył",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pizza",
+      "title": "PIZZA",
+      "titlePl": "Pizza",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "pizza-dough",
+      "title": "Pizza Dough",
+      "titlePl": "Ciasto na pizzę",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Szybkość",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "plate-scraps",
+      "title": "Plate Scraps",
+      "titlePl": "Kawałki płyt",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "poison-arrow",
+      "title": "Poison Arrow",
+      "titlePl": "Zatruta strzała",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Poison",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "poison-arrowhead",
+      "title": "Poison Arrowhead",
+      "titlePl": "Zatruty grot",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "poison-bottle",
+      "title": "Poison Bottle",
+      "titlePl": "Butelka trucizny",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "poison-cloud-arrow",
+      "title": "Poison Cloud Arrow",
+      "titlePl": "Strzała trującej chmury",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "poison-cloud-grenade",
+      "title": "Poison Cloud Grenade",
+      "titlePl": "Granat trującej chmury",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "poison-flask",
+      "title": "Poison Flask",
+      "titlePl": "Fiolka trucizny",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Poison",
+        "Efekty/Statusy/POISONED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "poison-resist-potion",
+      "title": "POISON RESIST POTION",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "poisoncloud-arrowhead",
+      "title": "Poisoncloud Arrowhead",
+      "titlePl": "Grot trującej chmury",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "polished-leather-boots",
+      "title": "Polished Leather Boots",
+      "titlePl": "Skórzane buty wysokiej jakości",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Buty"
+      ]
+    },
+    {
+      "slug": "polished-longbow",
+      "title": "Polished Longbow",
+      "titlePl": "Łuk długi wysokiej jakości",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Luki"
+      ]
+    },
+    {
+      "slug": "polished-spear",
+      "title": "Polished Spear",
+      "titlePl": "Włócznia wysokiej jakości",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Wlocznie"
+      ]
+    },
+    {
+      "slug": "poormans-best",
+      "title": "Poorman's Best",
+      "titlePl": "Pancerz dla biedaków",
+      "tags": [
+        "Cechy",
+        "Cechy/Inicjatywa",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Napiersniki"
+      ]
+    },
+    {
+      "slug": "porridge",
+      "title": "Porridge",
+      "titlePl": "Owsianka",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "pumpkin",
+      "title": "Pumpkin",
+      "titlePl": "Dynia",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pumpkin-helmet",
+      "title": "Pumpkin Helmet",
+      "titlePl": "Dyniowy hełm",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy/Pamięć",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy/Perswazja",
+        "Cechy/Zapewnia-umiejetnosc",
+        "DOS1",
+        "DOS2-CO",
+        "Efekty/Statusy/FEAR",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Helmy",
+        "Typ/Przedmioty-wydarzen",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pumpkin-part",
+      "title": "Pumpkin Part",
+      "titlePl": "Kawałek dyni",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pumpkin-peel",
+      "title": "Pumpkin Peel",
+      "titlePl": "Obierki z dyni",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "pumpkin-soup",
+      "title": "Pumpkin Soup",
+      "titlePl": "Zupa z dyni",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Percepcja",
+        "DOS1",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "quill",
+      "title": "Quill",
+      "titlePl": "Pióro",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "rabbits-paw",
+      "title": "Rabbit's Paw",
+      "titlePl": "Królicza łapka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "rabbits-paw-amulet",
+      "title": "Rabbit's Paw Amulet",
+      "titlePl": "Amulet z króliczą łapką",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "rabbits-paw-belt",
+      "title": "Rabbit's Paw Belt",
+      "titlePl": "Pas z króliczą łapką",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "random-air-scroll",
+      "title": "Random Air Scroll",
+      "titlePl": "Losowy zwój powietrza",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "random-earth-scroll",
+      "title": "Random Earth Scroll",
+      "titlePl": "Losowy zwój ziemi",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "random-fire-scroll",
+      "title": "Random Fire Scroll",
+      "titlePl": "Losowy zwój ognia",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "random-water-scroll",
+      "title": "Random Water Scroll",
+      "titlePl": "Losowy zwój wody",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "random-witchcraft-scroll",
+      "title": "Random Witchcraft Scroll",
+      "titlePl": "Losowy zwój czarnej magii",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Zwoje"
+      ]
+    },
+    {
+      "slug": "rat-tail-amulet",
+      "title": "Rat Tail Amulet",
+      "titlePl": "Amulet ze szczurzym ogonem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "rat-tail-belt",
+      "title": "Rat Tail Belt",
+      "titlePl": "Pas ze szczurzym ogonem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "rats-tail",
+      "title": "Rat's Tail",
+      "titlePl": "Szczurzy ogon",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "raw-meat",
+      "title": "Raw Meat",
+      "titlePl": "Surowe mięso",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "Cechy/Leczenie",
+        "DOS1",
+        "Efekty/Statusy/DISEASED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie"
+      ]
+    },
+    {
+      "slug": "robe",
+      "title": "Robe",
+      "titlePl": "Szata",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz"
+      ]
+    },
+    {
+      "slug": "rope",
+      "title": "Rope",
+      "titlePl": "Lina",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "rotten-eggs",
+      "title": "Rotten Eggs",
+      "titlePl": "Zgniłe jajka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/DISEASED",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "ruby",
+      "title": "Ruby",
+      "titlePl": "Rubin",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "scale-scraps",
+      "title": "Scale Scraps",
+      "titlePl": "Fragmenty łusek",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "scissors",
+      "title": "Scissors",
+      "titlePl": "Nożyce",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Narzedzia"
+      ]
+    },
+    {
+      "slug": "scope",
+      "title": "Scope",
+      "titlePl": "Zakres",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "shadow-essence",
+      "title": "Shadow Essence",
+      "titlePl": "Esencja cienia",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sharp-claw",
+      "title": "Sharp Claw",
+      "titlePl": "Ostry pazur",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sharp-claw-amulet",
+      "title": "Sharp Claw Amulet",
+      "titlePl": "Amulet z ostrym szponem",
+      "tags": [
+        "Cechy",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "sharp-claw-belt",
+      "title": "Sharp Claw Belt",
+      "titlePl": "Pas z ostrym szponem",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "Cechy/Siła",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "sharp-tooth",
+      "title": "Sharp Tooth",
+      "titlePl": "Ostry ząb",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sharp-tooth-amulet",
+      "title": "Sharp Tooth Amulet",
+      "titlePl": "Amulet z ostrym zębem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "sharp-tooth-belt",
+      "title": "Sharp Tooth Belt",
+      "titlePl": "Pas z ostrym zębem",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "sheep",
+      "title": "Sheep",
+      "titlePl": "Owca",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sheet-of-paper",
+      "title": "Sheet of Paper",
+      "titlePl": "Kartka papieru",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "shield",
+      "title": "Shield",
+      "titlePl": "Tarcza",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Tarcze"
+      ]
+    },
+    {
+      "slug": "silver-arrow",
+      "title": "Silver Arrow",
+      "titlePl": "Srebrna strzała",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "silver-arrowhead",
+      "title": "Silver Arrowhead",
+      "titlePl": "Srebrny grot",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "silver-bar",
+      "title": "Silver Bar",
+      "titlePl": "Sztabka srebra",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "silver-ore",
+      "title": "Silver Ore",
+      "titlePl": "Ruda srebra",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sinew",
+      "title": "Sinew",
+      "titlePl": "Ścięgno",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "skull",
+      "title": "Skull",
+      "titlePl": "Czaszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "skull-amulet",
+      "title": "Skull Amulet",
+      "titlePl": "Amulet z czaszką",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "skull-belt",
+      "title": "Skull Belt",
+      "titlePl": "Pas z czaszką",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "slowdown-arrow",
+      "title": "Slowdown Arrow",
+      "titlePl": "Strzała spowalniająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/SLOWED",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "slowdown-arrowhead",
+      "title": "Slowdown Arrowhead",
+      "titlePl": "Grot spowalniający",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "smokescreen-arrow",
+      "title": "Smokescreen Arrow",
+      "titlePl": "Strzała zasłony dymnej",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "smokescreen-arrowhead",
+      "title": "Smokescreen Arrowhead",
+      "titlePl": "Grot zasłony dymnej",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "soap",
+      "title": "Soap",
+      "titlePl": "Mydło",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "sovereigns-orb",
+      "title": "Sovereign's Orb",
+      "titlePl": "Kula suwerena",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "staff-element-random",
+      "title": "STAFF (ELEMENT RANDOM)",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Bron"
+      ]
+    },
+    {
+      "slug": "stardust",
+      "title": "Stardust",
+      "titlePl": "Gwiezdny pył",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "starfish-greater-gold-value",
+      "title": "Starfish (Greater Gold Value)",
+      "titlePl": "Rozgwiazda (większa wartość)",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "starfish-lesser-gold-value",
+      "title": "Starfish (Lesser Gold Value)",
+      "titlePl": "Rozgwiazda (mniejsza wartość)",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "static-cloud-arrow",
+      "title": "Static Cloud Arrow",
+      "titlePl": "Strzała naelektryzowanej chmury",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "Efekty/Statusy/BLIND",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "static-cloud-arrowhead",
+      "title": "Static Cloud Arrowhead",
+      "titlePl": "Grot naelektryzowanej chmury",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "steam-cloud-arrow",
+      "title": "STEAM CLOUD ARROW",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Efekty/Statusy/BLIND",
+        "Efekty/Statusy/WET",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "steam-cloud-arrowhead",
+      "title": "STEAM CLOUD ARROWHEAD",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "steel-bar",
+      "title": "Steel Bar",
+      "titlePl": "Sztabka stali",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "stunning-arrow",
+      "title": "Stunning Arrow",
+      "titlePl": "Strzała ogłuszająca",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "stunning-arrowhead",
+      "title": "Stunning Arrowhead",
+      "titlePl": "Grot ogłuszający",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "superior-arbalest",
+      "title": "Superior Arbalest",
+      "titlePl": "Doskonały arbalest",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Kusze",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "superior-leather-boots",
+      "title": "Superior Leather Boots",
+      "titlePl": "Doskonałe skórzane buty",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Buty"
+      ]
+    },
+    {
+      "slug": "superior-longbow",
+      "title": "Superior Longbow",
+      "titlePl": "Doskonały łuk długi",
+      "tags": [
+        "Cechy",
+        "Cechy/Krytyk",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Luki"
+      ]
+    },
+    {
+      "slug": "superior-spear",
+      "title": "Superior Spear",
+      "titlePl": "Doskonała włócznia",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Wlocznie"
+      ]
+    },
+    {
+      "slug": "sword-of-planets",
+      "title": "Sword of Planets",
+      "titlePl": "Miecz Planet",
+      "tags": [
+        "Cechy",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Miecze",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "taser-grenade-2",
+      "title": "Taser Grenade",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "tenebrium-bar",
+      "title": "Tenebrium Bar",
+      "titlePl": "Sztabka tenebrium",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tenebrium-ore",
+      "title": "Tenebrium Ore",
+      "titlePl": "Ruda tenebrium",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "terror-grenade",
+      "title": "Terror Grenade",
+      "titlePl": "Granat grozy",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/FEAR",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "the-third-eye-amulet",
+      "title": "The Third Eye Amulet",
+      "titlePl": "Amulet „trzecie oko”",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "thread",
+      "title": "Thread",
+      "titlePl": "Nić",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tomato",
+      "title": "Tomato",
+      "titlePl": "Pomidor",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tomato-sauce",
+      "title": "Tomato Sauce",
+      "titlePl": "Sos pomidorowy",
+      "tags": [
+        "Cechy",
+        "Cechy/Leczenie",
+        "Cechy/Odporność-na-truciznę",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tooth",
+      "title": "Tooth",
+      "titlePl": "Ząb",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tooth-amulet",
+      "title": "Tooth Amulet",
+      "titlePl": "Amulet z zębem",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "tooth-belt",
+      "title": "Tooth Belt",
+      "titlePl": "Pas z zębem",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "tormented-soul",
+      "title": "Tormented Soul",
+      "titlePl": "Udręczona dusza",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tremor-grenade",
+      "title": "Tremor Grenade",
+      "titlePl": "Granat wstrząsowy",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Statusy/KNOCKDOWN",
+        "Efekty/Statusy/KNOCKED_DOWN",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "trethons-old-robes",
+      "title": "Trethon's Old Robes",
+      "titlePl": "Stare szaty Trethona",
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Odporność-na-cień",
+        "Cechy/Odporność-na-ogień",
+        "Cechy/Odporność-na-powietrze",
+        "Cechy/Odporność-na-truciznę",
+        "Cechy/Odporność-na-wodę",
+        "Cechy/Odporność-na-ziemię",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pancerz",
+        "Typ/Pancerz/Napiersniki",
+        "Typ/Specjalne"
+      ]
+    },
+    {
+      "slug": "tusk",
+      "title": "Tusk",
+      "titlePl": "Kieł",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "tusk-amulet",
+      "title": "Tusk Amulet",
+      "titlePl": "Amulet z kłem",
+      "tags": [
+        "Cechy",
+        "Cechy/Znawca",
+        "DOS1",
+        "Typ",
+        "Typ/Amulety"
+      ]
+    },
+    {
+      "slug": "tusk-belt",
+      "title": "Tusk Belt",
+      "titlePl": "Pas z kłem",
+      "tags": [
+        "Cechy",
+        "Cechy/Bieglosci-obrony",
+        "Cechy/Bieglosci-obrony/Krzepa",
+        "Cechy/Pancerz-fizyczny",
+        "DOS1",
+        "Typ",
+        "Typ/Pasy"
+      ]
+    },
+    {
+      "slug": "voodoo-doll",
+      "title": "Voodoo Doll",
+      "titlePl": "Lalka voodoo",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Bron"
+      ]
+    },
+    {
+      "slug": "water-balloon",
+      "title": "Water Balloon",
+      "titlePl": "Balon z wodą",
+      "tags": [
+        "Cechy",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Efekty/Powierzchnie/Water",
+        "Efekty/Statusy/WET",
+        "Typ",
+        "Typ/Strzaly-i-granaty"
+      ]
+    },
+    {
+      "slug": "water-barrel",
+      "title": "Water Barrel",
+      "titlePl": "Beczka z wodą",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "water-essence",
+      "title": "Water Essence",
+      "titlePl": "Esencja wody",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "water-resistance-potion",
+      "title": "Water Resistance Potion",
+      "titlePl": "Mikstura odporności na wodę",
+      "tags": [
+        "Cechy",
+        "Cechy/Odporność-na-wodę",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "well",
+      "title": "Well",
+      "titlePl": "Studnia",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "wheat",
+      "title": "Wheat",
+      "titlePl": "Pszenica",
+      "tags": [
+        "Cechy",
+        "Cechy/Kondycja",
+        "Cechy/Leczenie",
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "whetstone",
+      "title": "Whetstone",
+      "titlePl": "Osełka",
+      "tags": [
+        "DOS1",
+        "Typ",
+        "Typ/Narzedzia"
+      ]
+    },
+    {
+      "slug": "whetstone-wheel",
+      "title": "Whetstone Wheel",
+      "titlePl": "Koło do ostrzenia",
+      "tags": [
+        "DOS1",
+        "Typ"
+      ]
+    },
+    {
+      "slug": "whisperwood",
+      "title": "Whisperwood",
+      "titlePl": "Szeptodrzew",
+      "tags": [
+        "Cechy",
+        "Cechy/Pancerz-magiczny",
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "wine",
+      "title": "Wine",
+      "titlePl": "Wino",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "wine-barrel",
+      "title": "Wine barrel",
+      "titlePl": "Beczka wina",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki",
+        "Typ/Stanowiska-i-pojemniki"
+      ]
+    },
+    {
+      "slug": "wood-chips",
+      "title": "Wood Chips",
+      "titlePl": "Drzazgi",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "wood-pulp",
+      "title": "Wood Pulp",
+      "titlePl": "Sterta drewna",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "wooden-air-wand",
+      "title": "WOODEN AIR WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/powietrza",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/BLIND",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "wooden-earth-wand",
+      "title": "WOODEN EARTH WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ziemi",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "wooden-figurine",
+      "title": "Wooden Figurine",
+      "titlePl": "Drewniana figurka",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "wooden-fire-wand",
+      "title": "WOODEN FIRE WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/ognia",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Powierzchnie/Fire",
+        "Efekty/Statusy/BURNING",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "wooden-stake",
+      "title": "Wooden Stake",
+      "titlePl": "Drewniany kołek",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-przeszywające",
+        "DOS1",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Sztylety"
+      ]
+    },
+    {
+      "slug": "wooden-water-wand",
+      "title": "WOODEN WATER WAND",
+      "tags": [
+        "Cechy",
+        "Cechy/Obrażenia-magiczne",
+        "Cechy/Obrażenia-magiczne/wody",
+        "Cechy/Rzuca-zaklecie",
+        "DOS1",
+        "Efekty/Statusy/FROZEN",
+        "Typ",
+        "Typ/Bron",
+        "Typ/Bron/Rozdzki"
+      ]
+    },
+    {
+      "slug": "wool",
+      "title": "Wool",
+      "titlePl": "Wełna",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    },
+    {
+      "slug": "yarn",
+      "title": "Yarn",
+      "titlePl": "Przędza",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Typ",
+        "Typ/Skladniki"
+      ]
+    }
+  ]
+}

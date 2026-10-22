@@ -34,3 +34,22 @@ test("selecting a subtype expands its parent and keeps sibling categories visibl
   assert.ok(html.includes('aria-label="Rozwiń Pancerze" aria-expanded="false"'))
   assert.ok(html.includes('data-state="include"'))
 })
+
+test("include and exclude states are exposed to assistive technology, not only by colour", () => {
+  const html = renderToString(
+    <TagFilterTree
+      entries={[
+        { tag: "Typ/Bron", count: 2, label: "Broń" },
+        { tag: "Typ/Pancerz", count: 1, label: "Pancerze" },
+        { tag: "Typ/Magia", count: 1, label: "Magia" },
+      ]}
+      include={["Typ/Bron"]}
+      exclude={["Typ/Pancerz"]}
+      labels={{}}
+      onCycle={() => {}}
+    />,
+  )
+  assert.match(html, /aria-pressed="true"[^>]*><span>Broń<\/span>/)
+  assert.match(html, /<span>Pancerze<\/span><span class="sr-only"> \(wykluczone\)<\/span>/)
+  assert.match(html, /aria-pressed="false"[^>]*><span>Magia<\/span>/)
+})

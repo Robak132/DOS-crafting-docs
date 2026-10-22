@@ -109,7 +109,7 @@ def main():
     translations = {}
     for game, file in zip(['dos1', 'dos2'], sys.argv[2:]):
         translations[game] = {e.get('contentuid'): ''.join(e.itertext()) for e in ET.parse(file).iter('content')}
-    provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text())
+    provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text(encoding='utf-8'))
     resources = {game: helpers['resources'](source / game) for game in ['dos1', 'dos2', 'overhaul']}
     output = {}
     for game in ['dos1', 'dos2', 'dos2-overhaul']:
@@ -126,7 +126,7 @@ def main():
                         stats.update(helpers['stat_entries'](module))
         output[game] = collect_descriptions(templates, strings, translations['dos1' if game == 'dos1' else 'dos2'], provenance.get(game, {}), stats)
         print(game, len(output[game]), 'descriptions')
-    (ROOT / 'data/itemDescriptions.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
+    (ROOT / 'data/itemDescriptions.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
 if __name__ == '__main__':

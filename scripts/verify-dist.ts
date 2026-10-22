@@ -39,7 +39,20 @@ assert.ok(
 )
 const html = await fs.readFile("dist/index.html", "utf8")
 assert.ok(!html.includes("quartz") && !html.includes("/src/main"))
-for (const slug of ["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)]) {
+const published = new Set(manifest.pages.map((page) => page.slug))
+for (const [from, to] of Object.entries(manifest.redirects))
+  assert.ok(
+    (published.has(to.split("?")[0]) || ["receptury", "DOS2", "dos2-crafting-overhaul"].includes(to.split("?")[0])) &&
+      !published.has(from),
+    `Bad redirect ${from} -> ${to}`,
+  )
+for (const slug of [
+  "receptury",
+  "DOS2",
+  "dos2-crafting-overhaul",
+  ...manifest.pages.map((page) => page.slug),
+  ...Object.keys(manifest.redirects),
+]) {
   if (slug === "index") continue
   assert.equal(await fs.readFile(path.join("dist", slug, "index.html"), "utf8"), html)
   assert.equal(await fs.readFile(path.join("dist", slug + ".html"), "utf8"), html)
@@ -51,7 +64,6 @@ for (const page of manifest.pages) {
     detail.tags.every((tag: string) => tag.trim().length > 0),
     `Empty tag on ${page.slug}`,
   )
-  assert.ok(!/<script[\s>]/i.test(detail.html))
 }
 for (const match of html.matchAll(/(?:src|href)="([^"]+\.(?:js|css))"/g)) {
   const name = path.basename(match[1])

@@ -1,5 +1,5 @@
 import type { PageSummary } from "./types"
-import type { RecipeRow } from "./recipes"
+import type { RecipeCatalog, RecipeRow } from "./recipes"
 import type { ItemCraftRole } from "./recipeView"
 
 export type { ItemCraftRole }
@@ -33,4 +33,15 @@ export function getItemCraftRoles(pages: PageSummary[], recipes: RecipeRow[]): R
   }
 
   return roles
+}
+
+export function getCatalogItemRoles(
+  pages: PageSummary[],
+  catalogs: Record<RecipeCatalog, { recipes: RecipeRow[] }>,
+): Record<RecipeCatalog, Record<string, ItemCraftRole>> {
+  return {
+    dos1: getItemCraftRoles(pages, catalogs.dos1.recipes),
+    dos2: getItemCraftRoles(pages, catalogs.dos2.recipes),
+    "dos2-overhaul": getItemCraftRoles(pages, catalogs["dos2-overhaul"].recipes),
+  }
 }

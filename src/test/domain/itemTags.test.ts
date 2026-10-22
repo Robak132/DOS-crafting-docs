@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import { test } from "node:test"
-import { collectRecipeStats, type RecipeRow } from "../../main/domain/recipes"
+import { collectRecipeStats, type RecipeRow, type RecipeUpgrade } from "../../main/domain/recipes"
 
 test("sidebar statistics count product tags rather than stale recipe or ingredient categories", () => {
   const recipe: RecipeRow = {
@@ -16,7 +16,7 @@ test("sidebar statistics count product tags rather than stale recipe or ingredie
   }
   assert.deepEqual(
     collectRecipeStats([recipe]).tags.map((tag) => tag.tag),
-    ["Typ/Zwoje", "Typ/Magia"],
+    ["Typ/Magia", "Typ/Zwoje"],
   )
 })
 
@@ -44,8 +44,13 @@ test("saved item types are consistent across recipe references and distinguish m
     },
   }
   for (const [game, names] of Object.entries(expected)) {
-    const source: { recipes: RecipeRow[] } = JSON.parse(await fs.readFile(`data/library/recipes/${game}.json`, "utf8"))
-    const refs = source.recipes.flatMap((row) => [row.result, ...row.ingredients])
+    const source: { recipes: RecipeRow[]; upgrades: RecipeUpgrade[] } = JSON.parse(
+      await fs.readFile(`data/library/recipes/${game}.json`, "utf8"),
+    )
+    const refs = [
+      ...source.recipes.flatMap((row) => [row.result, ...row.ingredients]),
+      ...source.upgrades.flatMap((row) => [row.target, ...row.ingredients]),
+    ]
     for (const [name, type] of Object.entries(names)) {
       const matches = refs.filter((item) => item.name === name)
       assert.ok(matches.length, `${game}: ${name}`)

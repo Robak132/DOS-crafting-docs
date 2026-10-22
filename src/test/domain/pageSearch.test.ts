@@ -38,3 +38,11 @@ test("switching catalogs changes results; combined Overhaul can include base ite
   )
   assert.equal(searchCatalogPages(pages, combined, "sword", 1).length, 1)
 })
+
+test("page search ignores Polish diacritics like the catalog search does", () => {
+  const items = new Map([["shared", { name: "Iron Bar", namePl: "Żelazna sztaba" }]])
+  assert.equal(searchCatalogPages(pages, items, "zelazna").length, 1)
+  assert.equal(searchCatalogPages(pages, items, "ŻELAZNA").length, 1)
+  const wool = new Map([["shared", { name: "Wool", namePl: "Wełna" }]])
+  assert.equal(searchCatalogPages(pages, wool, "welna").length, 1)
+})

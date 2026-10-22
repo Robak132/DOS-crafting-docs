@@ -63,7 +63,7 @@ test("healing and disguised poison variants retain their own tooltip effects and
   for (const game of ["dos2", "dos2-overhaul"] as const) {
     const catalog = buildCatalogs(sources, [], {})[game]
     const variants = catalog.recipes
-      .filter((row) => row.result.slug === "Skladniki/MINOR-HEALING-POTION")
+      .filter((row) => row.result.slug === "minor-healing-potion")
       .map((row) => ({
         ...row,
         result: { ...row.result, effect: effects[game].minorhealingpotion.recipes[row.id] },

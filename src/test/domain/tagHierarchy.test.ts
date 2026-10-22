@@ -2,7 +2,12 @@ import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
 import { nestTagStats, groupRecipeTags } from "../../main/domain/recipeView"
-import { collectRecipeStats, getCechySidebarGroups, type RecipeRow } from "../../main/domain/recipes"
+import {
+  collectRecipeStats,
+  getCechySidebarGroups,
+  type RecipeRow,
+  type RecipeUpgrade,
+} from "../../main/domain/recipes"
 import { emptyFilters, filterRecipes } from "../../main/filters"
 
 const row = (id: string, tags: string[]): RecipeRow => ({
@@ -167,10 +172,12 @@ test("weapon ability filters describe granted bonuses rather than weapon handedn
   for (const statsId of ["WPN_Bow", "WPN_Sword_2H", "WPN_Spooky_Broom_Staff"])
     for (const recipe of source.filter((r) => r.result.statsId === statsId))
       assert.ok(!recipe.result.tags.some((tag) => tag.startsWith(prefix)), statsId)
-  const strengthUpgrade = source.find((r) => r.result.name === "Boosted Two Handed Axe (+1) Strength")!
-  assert.ok(!strengthUpgrade.result.tags.some((tag) => tag.startsWith(prefix)))
-  const abilityUpgrade = source.find((r) => r.result.name === "Boosted Two Handed Axe (+1) Two Handed")!
-  assert.ok(abilityUpgrade.result.tags.includes(`${prefix}/Dwuręczna`))
+  const upgrades = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
+    .upgrades as RecipeUpgrade[]
+  const strengthUpgrade = upgrades.find((u) => u.effect.en === "Boosted Two Handed Axe (+1) Strength")!
+  assert.ok(!strengthUpgrade.tags.some((tag) => tag.startsWith(prefix)))
+  const abilityUpgrade = upgrades.find((u) => u.effect.en === "Boosted Two Handed Axe (+1) Two Handed")!
+  assert.ok(abilityUpgrade.tags.includes(`${prefix}/Dwuręczna`))
   const audit = JSON.parse(fs.readFileSync("reports/item-effects-audit.json", "utf8"))
   const fields = {
     Jednoręczna: "SingleHanded",
@@ -209,4 +216,27 @@ test("armour tags classify the base profile at 75 percent without removing real 
   const effects = JSON.parse(fs.readFileSync("data/itemEffects.json", "utf8"))["dos2-overhaul"]
   assert.ok(effects.empresstiara.en.includes("Physical armour"))
   assert.ok(effects.empresstiara.en.includes("Magic armour"))
+})
+
+test("every category tag used by a recipe result is listed under Typ in the hierarchy", () => {
+  const hierarchy = JSON.parse(fs.readFileSync("data/recipeTagHierarchy.json", "utf8")).hierarchy as {
+    tag: string
+    children?: { tag: string; children?: unknown[] }[]
+  }[]
+  const listed = new Set<string>()
+  const walk = (node: { tag: string; children?: unknown[] }) => {
+    listed.add(node.tag)
+    for (const child of (node.children ?? []) as { tag: string }[]) walk(child)
+  }
+  hierarchy.filter((node) => node.tag === "Typ").forEach(walk)
+  const used = new Set<string>()
+  for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
+    const { recipes } = JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8")) as {
+      recipes: RecipeRow[]
+    }
+    for (const recipe of recipes)
+      for (const tag of recipe.result.tags.length ? recipe.result.tags : recipe.tags)
+        if (tag.startsWith("Typ/")) used.add(tag)
+  }
+  assert.deepEqual([...used].filter((tag) => !listed.has(tag)).sort(), [])
 })

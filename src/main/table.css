@@ -591,3 +591,52 @@ a.recipe-effect-chip {
   font-size: 0.75rem;
   font-weight: 700;
 }
+
+/* A random result lists the items it can roll, collapsed by default. */
+.recipe-pool {
+  margin-top: 0.4rem;
+  font-size: 0.9em;
+
+  summary {
+    cursor: pointer;
+    color: var(--gray);
+    width: fit-content;
+  }
+
+  summary:hover,
+  &[open] summary {
+    color: var(--darkgray);
+  }
+
+  .recipe-pool-list {
+    margin-top: 0.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      max-width: 100%;
+      white-space: normal;
+    }
+
+    .recipe-item {
+      max-width: 100%;
+      white-space: normal;
+    }
+  }
+
+  .recipe-pool-level {
+    margin-left: 0.4rem;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--gray);
+  }
+}
+
+/* A craft that makes several items lists them together in the result cell. */
+.recipe-cell.result .recipe-products {
+  flex-direction: column;
+  align-items: flex-start;
+}

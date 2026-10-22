@@ -52,3 +52,53 @@ test("tag labels and effect vocabulary are Polish, never an untranslated English
     await fs.rm(directory, { recursive: true, force: true })
   }
 })
+
+test("built catalogs never repeat a recipe that a group ingredient already covers", async () => {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-generated-"))
+  try {
+    await generateData(directory)
+    for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
+      const catalog: CatalogData = JSON.parse(
+        await fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8"),
+      )
+      const members = new Map(
+        Object.entries(catalog.groups ?? {}).map(([id, group]) => [id, new Set(group.members.map((m) => m.name))]),
+      )
+      const key = (item: { name: string; selectorTag?: string; quantity?: string }) =>
+        `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
+      const rest = (items: { name: string }[], skip: number) =>
+        JSON.stringify(
+          items
+            .filter((_, index) => index !== skip)
+            .map(key)
+            .sort(),
+        )
+      for (const row of catalog.recipes)
+        row.ingredients.forEach((group, slot) => {
+          const names = group.groupId ? members.get(group.groupId) : undefined
+          if (!names) return
+          const covered = catalog.recipes.find(
+            (other) =>
+              other !== row &&
+              key(other.result) === key(row.result) &&
+              other.requirements === row.requirements &&
+              other.ingredients.some(
+                (item, index) =>
+                  !item.groupId &&
+                  names.has(item.name) &&
+                  (item.quantity ?? "") === (group.quantity ?? "") &&
+                  rest(other.ingredients, index) === rest(row.ingredients, slot),
+              ),
+          )
+          assert.ok(!covered, `${game}: ${covered?.id} is covered by ${row.id}`)
+        })
+    }
+    const cheese = JSON.parse(
+      await fs.readFile(path.join(directory, "data/catalog-dos2-overhaul.json"), "utf8"),
+    ).recipes.filter((row: { result: { slug?: string } }) => row.result.slug === "cheese-bread")
+    assert.equal(cheese.length, 1)
+    assert.match(cheese[0].source, /main_sheet!A672:G672/)
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true })
+  }
+})

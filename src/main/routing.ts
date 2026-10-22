@@ -34,12 +34,6 @@ export function routeSlug(pathname: string, base = appBase): string {
     .replace(/\.html$/, "")
     .replace(/\/$/, "")
 }
-export function redirectHref(slug: string, search: string, redirects: Record<string, string> = {}): string | undefined {
-  const target = redirects[slug]
-  if (target === undefined) return undefined
-  const [path, query] = target.split("?")
-  return query === undefined ? pageHref(path) + search : `${pageHref(path)}?${query}`
-}
 export function gameForSlug(slug: string): Game | undefined {
   return games.find((game) => game.slug === slug)?.id
 }

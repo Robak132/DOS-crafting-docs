@@ -10,9 +10,17 @@ const pageFiles = { DOS1: "dos1.json", DOS2: "dos2.json", "DOS2-CO": "dos2-co.js
 function strings(value: unknown): value is string[] {
   return Array.isArray(value) && value.every((entry) => typeof entry === "string" && entry.trim().length > 0)
 }
-function validItem(item: RecipeItem): boolean {
+const quantityPattern = /^x(?:\d+|\((?:\d+-\d+|\?)\))$/
+function validItem(item: RecipeItem, inPool = false): boolean {
   return Boolean(
     item &&
+    (item.pool === undefined ||
+      (!inPool &&
+        !item.slug &&
+        Array.isArray(item.pool) &&
+        item.pool.length > 1 &&
+        item.pool.every((entry) => validItem(entry, true)))) &&
+    (item.requirements === undefined || (inPool && /^(?:Crafting|Blacksmithing) [1-5]$/.test(item.requirements))) &&
     typeof item.name === "string" &&
     item.name.trim() &&
     strings(item.tags) &&
@@ -26,7 +34,7 @@ function validItem(item: RecipeItem): boolean {
           (typeof item.nameQualifier.pl === "string" && item.nameQualifier.pl.trim().length > 0)))) &&
     (item.slug === undefined || typeof item.slug === "string") &&
     (item.namePl === undefined || typeof item.namePl === "string") &&
-    (item.quantity === undefined || typeof item.quantity === "string") &&
+    (item.quantity === undefined || (typeof item.quantity === "string" && quantityPattern.test(item.quantity))) &&
     (item.selectorTag === undefined || typeof item.selectorTag === "string"),
   )
 }
@@ -66,16 +74,6 @@ export async function loadLibrary(directory = "data/library") {
   }
   const pages = [...pagesBySlug.values()].sort((a, b) => (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0))
   assert.ok(pages.length > 0, "The JSON library contains no pages")
-  const redirectsFile = path.join(directory, "redirects.json")
-  const redirects: Record<string, string> = JSON.parse(await fs.readFile(redirectsFile, "utf8").catch(() => "{}"))
-  for (const [from, to] of Object.entries(redirects)) {
-    assert.ok(!pagesBySlug.has(from), `Redirect shadows an existing page: ${from}`)
-    const target = to.split("?")[0]
-    assert.ok(
-      pagesBySlug.has(target) || ["receptury", "DOS2", "dos2-crafting-overhaul"].includes(target),
-      `Redirect to a missing page: ${from} -> ${to}`,
-    )
-  }
   const sources = {} as RecipeSources
   const items = {} as Record<RecipeCatalog, RecipeItem[]>
   const upgrades = {} as Record<RecipeCatalog, RecipeUpgrade[]>
@@ -86,15 +84,26 @@ export async function loadLibrary(directory = "data/library") {
     assert.equal(source.game, game, `Wrong game: ${filename}`)
     assert.ok(Array.isArray(source.recipes), `Missing recipes: ${filename}`)
     assert.ok(
-      source.items === undefined || (Array.isArray(source.items) && source.items.every(validItem)),
+      source.items === undefined ||
+        (Array.isArray(source.items) && source.items.every((item) => validItem(item) && !item.pool)),
       `Invalid items: ${filename}`,
     )
     items[game] = source.items ?? []
     for (const row of source.recipes) {
       assert.ok(typeof row.id === "string" && row.id.trim() && validItem(row.result), `Invalid result: ${filename}`)
       assert.ok(
-        Array.isArray(row.ingredients) && row.ingredients.length > 0 && row.ingredients.every(validItem),
+        Array.isArray(row.ingredients) &&
+          row.ingredients.length > 0 &&
+          row.ingredients.every((item) => validItem(item) && !item.pool),
         `Invalid ingredients: ${row.id}`,
+      )
+      assert.ok(
+        row.extraResults === undefined ||
+          (Array.isArray(row.extraResults) &&
+            row.extraResults.length > 0 &&
+            row.extraResults.every((item) => validItem(item) && !item.pool) &&
+            row.transformsIngredient === undefined),
+        `Invalid extra results: ${row.id}`,
       )
       assert.ok(
         row.transformsIngredient === undefined ||
@@ -121,6 +130,7 @@ export async function loadLibrary(directory = "data/library") {
       )
       assert.ok(
         validItem(upgrade.target) &&
+          !upgrade.target.pool &&
           strings(upgrade.targetTags) &&
           upgrade.targetTags.length > 0 &&
           upgrade.targetTags.every((tag) => tag.startsWith("Typ/")),
@@ -128,12 +138,12 @@ export async function loadLibrary(directory = "data/library") {
       )
       assert.ok(strings(upgrade.tags), `Invalid upgrade tags: ${upgrade.id}`)
       assert.ok(
-        Array.isArray(upgrade.ingredients) && upgrade.ingredients.every(validItem),
+        Array.isArray(upgrade.ingredients) && upgrade.ingredients.every((item) => validItem(item) && !item.pool),
         `Invalid upgrade ingredients: ${upgrade.id}`,
       )
       for (const field of ["requirements", "notes", "remarks", "source"] as const)
         assert.equal(typeof upgrade[field], "string", `Missing ${field}: ${upgrade.id}`)
     }
   }
-  return { pages, sources, items, upgrades, redirects }
+  return { pages, sources, items, upgrades }
 }

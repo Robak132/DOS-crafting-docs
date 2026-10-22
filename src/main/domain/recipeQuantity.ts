@@ -51,8 +51,17 @@ export function parseItemQuantity(raw: string): { base: string; quantities: stri
   return { base: raw, quantities: [] }
 }
 
+/** Losowa ilość: "x(1-3)" lub nieznany zakres "x(?)". */
+const RANDOM_QUANTITY_RE = /^x\((?:(\d+)-(\d+)|\?)\)$/i
+
+export function isRandomQuantity(quantity: string | undefined): boolean {
+  return Boolean(quantity && RANDOM_QUANTITY_RE.test(quantity.trim()))
+}
+
 export function formatItemQuantity(quantity: string | undefined): string {
   if (!quantity) return ""
+  const random = quantity.trim().match(RANDOM_QUANTITY_RE)
+  if (random) return random[1] ? `×(${random[1]}–${random[2]})` : "×(?)"
   const normalized = normalizeQtyToken(quantity)
   const digits = normalized.replace(/^x/i, "")
   return digits ? `×${digits}` : ""

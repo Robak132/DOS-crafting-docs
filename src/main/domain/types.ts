@@ -16,6 +16,5 @@ export type CatalogManifest = {
   pages: PageSummary[]
   itemRoles: Record<RecipeCatalog, Record<string, ItemCraftRole>>
   traitGroups: CechyGroupMeta[]
-  redirects: Record<string, string>
 }
 export type CatalogData = RecipeData

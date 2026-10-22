@@ -22,11 +22,17 @@ test("tooltip index preserves crafting variants and order for all three catalogs
     const items = [...new Set(catalog.recipes.flatMap((row) => [row.result, ...row.ingredients]))]
     for (const item of items) {
       const keys = itemNameKeys(item.name, parseItemQuantity(item.name).base)
+      const rolls = (row: RecipeRow) =>
+        (row.result.pool ?? []).some(
+          (entry) =>
+            (item.slug && entry.slug === item.slug) || [...itemNameKeys(entry.name)].some((key) => keys.has(key)),
+        )
       const expected = catalog.recipes.filter((row) =>
         item.statsId
           ? row.result.statsId === item.statsId
           : (item.slug && row.result.slug === item.slug) ||
-            (!row.result.statsId && [...itemNameKeys(row.result.name)].some((key) => keys.has(key))),
+            (!row.result.statsId && [...itemNameKeys(row.result.name)].some((key) => keys.has(key))) ||
+            rolls(row),
       )
       assert.deepEqual(index.recipesFor(item), expected, item.name)
       assert.equal(index.recipesFor(item), index.recipesFor(item), "Repeated hovers reuse the cached array")

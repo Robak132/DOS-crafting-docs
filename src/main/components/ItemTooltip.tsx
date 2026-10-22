@@ -2,6 +2,7 @@ import type { RefObject } from "preact"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { uniqueItemEffects } from "../domain/recipeView"
+import { recipeResults } from "../domain/recipeResults"
 import { ItemIcon } from "./ItemIcon"
 
 export type ItemDescription = { en: string; pl?: string }
@@ -62,7 +63,12 @@ export function ItemTooltip({
             {recipes.map((recipe, index) => (
               <li key={`${recipe.id}#${index}`}>
                 <span>{recipe.ingredients.map((ingredient) => ingredientName(ingredient, lang)).join(" + ")}</span>
-                <span class="preview-recipe-result">→ {ingredientName(recipe.result, lang)}</span>
+                <span class="preview-recipe-result">
+                  →{" "}
+                  {recipeResults(recipe)
+                    .map((product) => ingredientName(product, lang))
+                    .join(" + ")}
+                </span>
                 {recipe.requirements.trim() && <small>Wymagania: {recipe.requirements}</small>}
               </li>
             ))}

@@ -1808,7 +1808,6 @@
       "title": "FoodFish",
       "tags": [
         "DOS1",
-        "DOS2",
         "Typ",
         "Typ/Skladniki"
       ]
@@ -4130,66 +4129,6 @@
       ]
     },
     {
-      "slug": "random-air-scroll",
-      "title": "Random Air Scroll",
-      "titlePl": "Losowy zwój powietrza",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-earth-scroll",
-      "title": "Random Earth Scroll",
-      "titlePl": "Losowy zwój ziemi",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-fire-scroll",
-      "title": "Random Fire Scroll",
-      "titlePl": "Losowy zwój ognia",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-water-scroll",
-      "title": "Random Water Scroll",
-      "titlePl": "Losowy zwój wody",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-witchcraft-scroll",
-      "title": "Random Witchcraft Scroll",
-      "titlePl": "Losowy zwój czarnej magii",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
       "slug": "rat-tail-amulet",
       "title": "Rat Tail Amulet",
       "titlePl": "Amulet ze szczurzym ogonem",
@@ -4606,15 +4545,6 @@
         "Typ",
         "Typ/Skladniki",
         "Typ/Strzaly-i-granaty"
-      ]
-    },
-    {
-      "slug": "staff-element-random",
-      "title": "STAFF (ELEMENT RANDOM)",
-      "tags": [
-        "DOS1",
-        "Typ",
-        "Typ/Bron"
       ]
     },
     {

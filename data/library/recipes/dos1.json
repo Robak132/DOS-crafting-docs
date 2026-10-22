@@ -2713,60 +2713,7 @@
       ],
       "requirements": "Crafting 2",
       "notes": "Stats Increase with Crafting Level",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Pancerze/HANDCRAFTED-BOOTS:Cloth Scraps+Anvil:Crafting 3",
-      "ingredients": [
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Anvil",
-          "namePl": "Kowadło",
-          "slug": "anvil",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Anvil"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Handcrafted Boots",
-        "slug": "handcrafted-boots",
-        "tags": [
-          "Typ",
-          "Cechy/Pancerz-fizyczny",
-          "Cechy",
-          "Typ/Pancerz",
-          "Typ/Pancerz/Buty",
-          "DOS1"
-        ],
-        "namePl": "Ręcznie wykonane buty"
-      },
-      "tags": [
-        "Typ",
-        "Cechy/Pancerz-fizyczny",
-        "Cechy",
-        "Typ/Pancerz",
-        "Typ/Pancerz/Buty",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "Stats Increase with Crafting Level",
-      "remarks": "",
+      "remarks": "Crafting 3: adds an Armour or Movement bonus",
       "source": ""
     },
     {
@@ -8732,46 +8679,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-AIR-SKILL-BOOK:BLANK AIR SKILL BOOK+#Master-Air-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK AIR SKILL BOOK",
-          "slug": "blank-air-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "#Master-Air-Skill-Scroll",
-          "selectorTag": "Master-Air-Skill-Scroll",
-          "tags": [
-            "Master-Air-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER AIR SKILL BOOK",
-        "slug": "master-air-skill-book",
-        "tags": [
-          "Typ",
-          "Typ/Ksiegi-umiejetnosci",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
+      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Chain Lightning, Make Invisible, Lightning Storm",
       "source": "Secrets of the Scroll X"
     },
     {
@@ -8810,46 +8718,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-EARTH-SKILL-BOOK:BLANK EARTH SKILL BOOK+#Master-Earth-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK EARTH SKILL BOOK",
-          "slug": "blank-earth-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "#Master-Earth-Skill-Scroll",
-          "selectorTag": "Master-Earth-Skill-Scroll",
-          "tags": [
-            "Master-Earth-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER EARTH SKILL BOOK",
-        "slug": "master-earth-skill-book",
-        "tags": [
-          "Typ",
-          "Typ/Ksiegi-umiejetnosci",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
+      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Summon Earth Elemental, Earthquake",
       "source": "Secrets of the Scroll X"
     },
     {
@@ -8888,48 +8757,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-FIRE-SKILL-BOOK:BLANK FIRE SKILL BOOK+BLANK FIRE SKILL BOOK",
-      "ingredients": [
-        {
-          "name": "BLANK FIRE SKILL BOOK",
-          "slug": "blank-fire-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "BLANK FIRE SKILL BOOK",
-          "slug": "blank-fire-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER FIRE SKILL BOOK",
-        "slug": "master-fire-skill-book",
-        "tags": [
-          "Typ",
-          "Typ/Ksiegi-umiejetnosci",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
+      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Infectious Flame, Meteorstrike",
       "source": "Secrets of the Scroll X"
     },
     {
@@ -8968,46 +8796,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-WATER-SKILL-BOOK:BLANK WATER SKILL BOOK+#Master-Water-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WATER SKILL BOOK",
-          "slug": "blank-water-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "#Master-Water-Skill-Scroll",
-          "selectorTag": "Master-Water-Skill-Scroll",
-          "tags": [
-            "Master-Water-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER WATER SKILL BOOK",
-        "slug": "master-water-skill-book",
-        "tags": [
-          "Typ",
-          "Typ/Ksiegi-umiejetnosci",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
+      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Hail Attack, Mass Slow",
       "source": "Secrets of the Scroll X"
     },
     {
@@ -9046,46 +8835,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-WITCHCRAFT-SKILL-BOOK:BLANK WITCHCRAFT SKILL BOOK+#Master-Witchcraft-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WITCHCRAFT SKILL BOOK",
-          "slug": "blank-witchcraft-skill-book",
-          "tags": [
-            "Typ",
-            "Typ/Ksiegi-umiejetnosci",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "#Master-Witchcraft-Skill-Scroll",
-          "selectorTag": "Master-Witchcraft-Skill-Scroll",
-          "tags": [
-            "Master-Witchcraft-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER WITCHCRAFT SKILL BOOK",
-        "slug": "master-witchcraft-skill-book",
-        "tags": [
-          "Typ",
-          "Typ/Ksiegi-umiejetnosci",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Ksiegi-umiejetnosci",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
+      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Death Punch, Invulnerability",
       "source": "Secrets of the Scroll X"
     },
     {
@@ -13085,150 +12835,173 @@
       "result": {
         "name": "Random Air Scroll",
         "namePl": "Losowy zwój powietrza",
-        "slug": "random-air-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "",
-      "remarks": "Novice/Adept Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-AIR-SCROLL:Blank Air Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Air Scroll",
-          "namePl": "Niezapisany zwój powietrza",
-          "slug": "blank-air-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Air Scroll",
-        "namePl": "Losowy zwój powietrza",
-        "slug": "random-air-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Novice/Adept/Master Spells possible (Some)",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-AIR-SCROLL:Blank Air Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Air Scroll",
-          "namePl": "Niezapisany zwój powietrza",
-          "slug": "blank-air-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Air Scroll",
-        "namePl": "Losowy zwój powietrza",
-        "slug": "random-air-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "All Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-AIR-SCROLL:Blank Air Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Air Scroll",
-          "namePl": "Niezapisany zwój powietrza",
-          "slug": "blank-air-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Air Scroll",
-        "namePl": "Losowy zwój powietrza",
-        "slug": "random-air-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Airshield Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Bitter Cold Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Blitz Bolt Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Farseer Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Headvice Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Remove Petrification Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Summon Air Elemental Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Teleportation Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Immune to Electrified Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Invisible Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Lightning Strike Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Shocking Touch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Tornado Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Chain Lightning Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Lightning Storm Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Make Invisible Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
         ]
       },
       "tags": [
@@ -13239,7 +13012,7 @@
       ],
       "requirements": "Crafting 2",
       "notes": "",
-      "remarks": "Novice Spells possible",
+      "remarks": "Rolls one spell; higher Crafting levels add more spells.",
       "source": "Secrets of the Scroll V"
     },
     {
@@ -13269,150 +13042,143 @@
       "result": {
         "name": "Random Earth Scroll",
         "namePl": "Losowy zwój ziemi",
-        "slug": "random-earth-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "",
-      "remarks": "Novice/Adept Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-EARTH-SCROLL:Blank Earth Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Earth Scroll",
-          "namePl": "Niezapisany zwój ziemi",
-          "slug": "blank-earth-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Earth Scroll",
-        "namePl": "Losowy zwój ziemi",
-        "slug": "random-earth-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Novice/Adept/Master Spells possible (Some)",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-EARTH-SCROLL:Blank Earth Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Earth Scroll",
-          "namePl": "Niezapisany zwój ziemi",
-          "slug": "blank-earth-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Earth Scroll",
-        "namePl": "Losowy zwój ziemi",
-        "slug": "random-earth-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "All Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-EARTH-SCROLL:Blank Earth Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Earth Scroll",
-          "namePl": "Niezapisany zwój ziemi",
-          "slug": "blank-earth-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Earth Scroll",
-        "namePl": "Losowy zwój ziemi",
-        "slug": "random-earth-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Bless Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Earth Shield Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Fortify Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Immune to Poisoning Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Magical Poison Dart Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Midnight Oil Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Summon Earth Elemental Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Summon Wolf Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Petrifying Touch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Blessed Earth Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Deadly Spores Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Summon Spider Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Earthquake Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
         ]
       },
       "tags": [
@@ -13423,7 +13189,7 @@
       ],
       "requirements": "Crafting 2",
       "notes": "",
-      "remarks": "Novice Spells possible",
+      "remarks": "Rolls one spell; higher Crafting levels add more spells.",
       "source": "Secrets of the Scroll V"
     },
     {
@@ -13453,334 +13219,173 @@
       "result": {
         "name": "Random Fire Scroll",
         "namePl": "Losowy zwój ognia",
-        "slug": "random-fire-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "",
-      "remarks": "Novice/Adept Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-FIRE-SCROLL:Blank Fire Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Fire Scroll",
-          "namePl": "Niezapisany zwój ognia",
-          "slug": "blank-fire-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Fire Scroll",
-        "namePl": "Losowy zwój ognia",
-        "slug": "random-fire-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Novice/Adept/Master Spells possible (Some)",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-FIRE-SCROLL:Blank Fire Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Fire Scroll",
-          "namePl": "Niezapisany zwój ognia",
-          "slug": "blank-fire-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Fire Scroll",
-        "namePl": "Losowy zwój ognia",
-        "slug": "random-fire-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "All Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-FIRE-SCROLL:Blank Fire Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Fire Scroll",
-          "namePl": "Niezapisany zwój ognia",
-          "slug": "blank-fire-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Fire Scroll",
-        "namePl": "Losowy zwój ognia",
-        "slug": "random-fire-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Novice Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WATER-SCROLL:Blank Water Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Water Scroll",
-        "namePl": "Losowy zwój wody",
-        "slug": "random-water-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "",
-      "remarks": "Novice/Adept Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WATER-SCROLL:Blank Water Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Water Scroll",
-        "namePl": "Losowy zwój wody",
-        "slug": "random-water-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Novice/Adept/Master Spells possible (Some)",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WATER-SCROLL:Blank Water Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Water Scroll",
-        "namePl": "Losowy zwój wody",
-        "slug": "random-water-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "All Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WATER-SCROLL:Blank Water Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Water Scroll",
-        "namePl": "Losowy zwój wody",
-        "slug": "random-water-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Burn My Eyes Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Burning Touch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Fire Shield Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Fireball Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Firefly Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Flare Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Immune to Freezing Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Smokescreen Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Summon Fire Elemental Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Wildfire Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Purifying Fire Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Self Immolation Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Explode Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Immolate Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Infectious Flame Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Meteorstrike Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
         ]
       },
       "tags": [
@@ -13791,16 +13396,16 @@
       ],
       "requirements": "Crafting 2",
       "notes": "",
-      "remarks": "Novice Spells possible",
+      "remarks": "Rolls one spell; higher Crafting levels add more spells.",
       "source": "Secrets of the Scroll V"
     },
     {
-      "id": "Magia/RANDOM-WITCHCRAFT-SCROLL:Blank Witchcraft Scroll+Magic Ink Pot and Quill",
+      "id": "Magia/RANDOM-WATER-SCROLL:Blank Water Scroll+Magic Ink Pot and Quill",
       "ingredients": [
         {
-          "name": "Blank Witchcraft Scroll",
-          "namePl": "Niezapisany zwój czarnej magii",
-          "slug": "blank-witchcraft-scroll",
+          "name": "Blank Water Scroll",
+          "namePl": "Niezapisany zwój wody",
+          "slug": "blank-water-scroll",
           "tags": [
             "Typ",
             "Typ/Zwoje",
@@ -13819,152 +13424,165 @@
         }
       ],
       "result": {
-        "name": "Random Witchcraft Scroll",
-        "namePl": "Losowy zwój czarnej magii",
-        "slug": "random-witchcraft-scroll",
+        "name": "Random Water Scroll",
+        "namePl": "Losowy zwój wody",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 3",
-      "notes": "",
-      "remarks": "Novice/Adept Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WITCHCRAFT-SCROLL:Blank Witchcraft Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Witchcraft Scroll",
-          "namePl": "Niezapisany zwój czarnej magii",
-          "slug": "blank-witchcraft-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Witchcraft Scroll",
-        "namePl": "Losowy zwój czarnej magii",
-        "slug": "random-witchcraft-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Novice/Adept/Master Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WITCHCRAFT-SCROLL:Blank Witchcraft Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Witchcraft Scroll",
-          "namePl": "Niezapisany zwój czarnej magii",
-          "slug": "blank-witchcraft-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Witchcraft Scroll",
-        "namePl": "Losowy zwój czarnej magii",
-        "slug": "random-witchcraft-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Zwoje",
-        "Typ/Magia",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "",
-      "remarks": "Master Spells possible",
-      "source": "Secrets of the Scroll V"
-    },
-    {
-      "id": "Magia/RANDOM-WITCHCRAFT-SCROLL:Blank Witchcraft Scroll+Magic Ink Pot and Quill",
-      "ingredients": [
-        {
-          "name": "Blank Witchcraft Scroll",
-          "namePl": "Niezapisany zwój czarnej magii",
-          "slug": "blank-witchcraft-scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Magic Ink Pot and Quill",
-          "namePl": "Magiczny kałamarz i pióro",
-          "slug": "magic-ink-pot-and-quill",
-          "tags": [
-            "Typ",
-            "Typ/Wyposazenie",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Random Witchcraft Scroll",
-        "namePl": "Losowy zwój czarnej magii",
-        "slug": "random-witchcraft-scroll",
-        "tags": [
-          "Typ",
-          "Typ/Zwoje",
-          "Typ/Magia",
-          "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Freezing Touch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Ice Shard Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Minor Heal Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Rain Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Slow Current Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Summon Ice Elemental Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Water Shield Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Water of Life Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Cleansing Water Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Ice Wall Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Immune to Burning Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Mass Disease Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Winterblast Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Hail Attack Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Mass Slow Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
         ]
       },
       "tags": [
@@ -13975,7 +13593,184 @@
       ],
       "requirements": "Crafting 2",
       "notes": "",
-      "remarks": "Novice Spells possible",
+      "remarks": "Rolls one spell; higher Crafting levels add more spells.",
+      "source": "Secrets of the Scroll V"
+    },
+    {
+      "id": "Magia/RANDOM-WITCHCRAFT-SCROLL:Blank Witchcraft Scroll+Magic Ink Pot and Quill",
+      "ingredients": [
+        {
+          "name": "Blank Witchcraft Scroll",
+          "namePl": "Niezapisany zwój czarnej magii",
+          "slug": "blank-witchcraft-scroll",
+          "tags": [
+            "Typ",
+            "Typ/Zwoje",
+            "DOS1"
+          ]
+        },
+        {
+          "name": "Magic Ink Pot and Quill",
+          "namePl": "Magiczny kałamarz i pióro",
+          "slug": "magic-ink-pot-and-quill",
+          "tags": [
+            "Typ",
+            "Typ/Wyposazenie",
+            "DOS1"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Random Witchcraft Scroll",
+        "namePl": "Losowy zwój czarnej magii",
+        "tags": [
+          "Typ",
+          "Typ/Zwoje",
+          "Typ/Magia",
+          "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Magical Unlock Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Malediction Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Oath of Desecration Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Resurrect Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Destroy Summon Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Drain Willpower Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Summon Undead Warrior Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Vampiric Touch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Enfeeble Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Horrific Scream Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Summon Armoured Undead Decapitator Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Death Punch Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Invulnerability Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
+        ]
+      },
+      "tags": [
+        "Typ",
+        "Typ/Zwoje",
+        "Typ/Magia",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Rolls one spell; higher Crafting levels add more spells.",
       "source": "Secrets of the Scroll V"
     },
     {
@@ -14957,7 +14752,7 @@
       "source": ""
     },
     {
-      "id": "Bron/STAFF-(ELEMENT-RANDOM):Branch+Branch",
+      "id": "Bron/RANDOM-ELEMENTAL-STAFF:Branch+Branch",
       "ingredients": [
         {
           "name": "Branch",
@@ -14993,12 +14788,158 @@
         }
       ],
       "result": {
-        "name": "STAFF (ELEMENT RANDOM)",
-        "slug": "staff-element-random",
+        "name": "Random Elemental Staff",
+        "namePl": "Losowy kostur żywiołu",
         "tags": [
           "Typ",
           "Typ/Bron",
           "DOS1"
+        ],
+        "pool": [
+          {
+            "name": "Homemade Air Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Homemade Earth Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Homemade Fire Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Homemade Water Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 2"
+          },
+          {
+            "name": "Handcrafted Air Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Handcrafted Earth Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Handcrafted Fire Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Handcrafted Water Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 3"
+          },
+          {
+            "name": "Polished Air Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Polished Earth Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Polished Fire Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Polished Water Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 4"
+          },
+          {
+            "name": "Superior Air Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Superior Earth Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Superior Fire Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          },
+          {
+            "name": "Superior Water Staff",
+            "tags": [
+              "Typ",
+              "Typ/Bron",
+              "DOS1"
+            ],
+            "requirements": "Crafting 5"
+          }
         ]
       },
       "tags": [
@@ -15008,7 +14949,7 @@
       ],
       "requirements": "Crafting 2",
       "notes": "Stats Increase with Crafting Level",
-      "remarks": "",
+      "remarks": "The element is random; the staff quality follows the Crafting level.",
       "source": "Crafting & Cooking with Maradino"
     },
     {
@@ -17973,60 +17914,7 @@
       ],
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Crafting Level",
-      "remarks": "",
-      "source": "He Who Smelts It VII"
-    },
-    {
-      "id": "Pancerze/SUPERIOR-LEATHER-BOOTS:Leather Scraps+Anvil:Crafting 5",
-      "ingredients": [
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Anvil",
-          "namePl": "Kowadło",
-          "slug": "anvil",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Anvil"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Superior Leather Boots",
-        "slug": "superior-leather-boots",
-        "tags": [
-          "Typ",
-          "Cechy/Pancerz-fizyczny",
-          "Cechy",
-          "Typ/Pancerz",
-          "Typ/Pancerz/Buty",
-          "DOS1"
-        ],
-        "namePl": "Doskonałe skórzane buty"
-      },
-      "tags": [
-        "Typ",
-        "Cechy/Pancerz-fizyczny",
-        "Cechy",
-        "Typ/Pancerz",
-        "Typ/Pancerz/Buty",
-        "DOS1"
-      ],
-      "requirements": "Crafting 5",
-      "notes": "Stats Increase with Crafting Level",
-      "remarks": "",
+      "remarks": "Crafting 5: adds an Armour or Movement bonus",
       "source": "He Who Smelts It VII"
     },
     {

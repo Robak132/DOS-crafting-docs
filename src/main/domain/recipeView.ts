@@ -1,6 +1,7 @@
 import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 import { isItemGroup } from "./itemGroups"
 import { tooltipItemKey } from "./tooltipIdentity"
+import { recipeResults } from "./recipeResults"
 
 /** dead = szary, mid = zielony, end = fioletowy (bez Node — używane też w inline scripts). */
 export type ItemCraftRole = "dead" | "mid" | "end"
@@ -30,12 +31,16 @@ export function recipeColumnsForCatalog(showRequirements: boolean) {
   return showRequirements ? [...recipeColumns] : recipeColumns.filter((col) => col.key !== "requirements")
 }
 
-export type RecipeGroup = { key: string; result: RecipeItem; variants: RecipeRow[] }
+export type RecipeGroup = { key: string; result: RecipeItem; results: RecipeItem[]; variants: RecipeRow[] }
 
 /** Tagi używane do filtrowania / sortowania — wyłącznie wynik craftingu, nigdy składniki. */
 export function recipeResultTags(recipe: RecipeRow): string[] {
-  return recipe.result.tags.length > 0 ? recipe.result.tags : recipe.tags
+  const main = recipe.result.tags.length > 0 ? recipe.result.tags : recipe.tags
+  if (!recipe.extraResults?.length) return main
+  return [...new Set([...main, ...recipe.extraResults.flatMap((item) => item.tags)])]
 }
+
+export { recipeResults }
 
 export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
 
@@ -212,12 +217,15 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
 export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
   const groups = new Map<string, RecipeGroup>()
   for (const recipe of recipes) {
-    const qty = recipe.result.quantity ? `@${recipe.result.quantity}` : ""
     const modification = recipe.transformsIngredient === undefined ? "" : `@${recipe.notes}`
-    const key = `${tooltipItemKey(recipe.result)}${qty}${modification}`
+    // Recipes with the same products share one result cell.
+    const key =
+      recipeResults(recipe)
+        .map((item) => `${tooltipItemKey(item)}${item.quantity ? `@${item.quantity}` : ""}`)
+        .join("+") + modification
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
-    else groups.set(key, { key, result: recipe.result, variants: [recipe] })
+    else groups.set(key, { key, result: recipe.result, results: recipeResults(recipe), variants: [recipe] })
   }
   return [...groups.values()]
 }
@@ -278,9 +286,11 @@ export function matchesRecipeQuery(
     recipe.result.effect?.en,
     recipe.result.effect?.pl,
   ].filter(Boolean)
-  const text = normalizeSearch(
-    [recipe.result.name, recipe.result.namePl, ...tagText, ...effectText].filter(Boolean).join(" "),
-  )
+  const productText = [...recipeResults(recipe), ...(recipe.result.pool ?? [])].flatMap((item) => [
+    item.name,
+    item.namePl,
+  ])
+  const text = normalizeSearch([...productText, ...tagText, ...effectText].filter(Boolean).join(" "))
   return terms.every((term) => text.includes(term))
 }
 
@@ -345,10 +355,21 @@ function uniqueDisplayNotes(recipes: RecipeRow[], field: "notes" | "remarks", la
 }
 
 /** Unikalne efekty wyniku (sekcja „Efekt”). */
+/** The product of a recipe that is this item; the main result unless the item is made alongside it. */
+function productFor(recipe: RecipeRow, item: RecipeItem | undefined): RecipeItem {
+  const key = item && (item.slug ?? item.name)
+  return (recipe.extraResults ?? []).find((product) => (product.slug ?? product.name) === key) ?? recipe.result
+}
+
 export function uniqueItemEffects(recipes: RecipeRow[], lang: "pl" | "en" = "pl", item?: RecipeItem): string[] {
-  const notes = uniqueDisplayNotes(recipes, "notes", lang)
+  // Saved effect notes describe the main result, never the items made alongside it.
+  const notes = uniqueDisplayNotes(
+    recipes.filter((row) => productFor(row, item) === row.result),
+    "notes",
+    lang,
+  )
   if (notes.length) return notes
-  const effects = [item, ...recipes.map((row) => row.result)].flatMap((entry) => {
+  const effects = [item, ...recipes.map((row) => productFor(row, item))].flatMap((entry) => {
     const value = (lang === "pl" && entry?.effect?.pl?.trim()) || entry?.effect?.en?.trim()
     return value ? [value] : []
   })
@@ -377,6 +398,14 @@ export function recipeUsesItem(recipe: RecipeRow, itemSlug: string | undefined, 
           .replace(/[^a-z0-9]+/g, ""),
       )
     return keys.some((key) => key && nameKeys.has(key))
+  })
+}
+
+/** Czy losowy wynik receptury może dać dany przedmiot (po slug lub nazwie PL/EN). */
+export function recipeRollsItem(recipe: RecipeRow, itemSlug: string | undefined, nameKeys: Set<string>): boolean {
+  return (recipe.result.pool ?? []).some((item) => {
+    if (itemSlug && item.slug) return item.slug === itemSlug
+    return [...itemNameKeys(item.name, item.namePl)].some((key) => nameKeys.has(key))
   })
 }
 
@@ -439,10 +468,12 @@ export const CRAFTING_MAX_LEVELS = [1, 2, 3, 4, 5] as const
 /** Lista przedmiotów pomija ilość produkowaną przez poszczególne receptury. */
 export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
   const items = new Map<string, RecipeItem>()
-  for (const { result } of recipes) {
-    if (isItemGroup(result)) continue
-    const key = result.slug ?? result.name
-    if (!items.has(key)) items.set(key, { ...result, quantity: undefined })
+  // A random pool is not an item; each item it can roll is.
+  for (const item of recipes.flatMap((recipe) => recipe.result.pool ?? recipeResults(recipe))) {
+    if (isItemGroup(item)) continue
+    const key = item.slug ?? item.name
+    const { requirements: _level, ...entry } = item
+    if (!items.has(key)) items.set(key, { ...entry, quantity: undefined })
   }
   return [...items.values()].sort((a, b) => a.name.localeCompare(b.name, "pl"))
 }
@@ -451,17 +482,25 @@ export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
 export function catalogItemRows(recipes: RecipeRow[], lang: "pl" | "en" = "pl") {
   const variants = new Map<string, RecipeRow[]>()
   for (const recipe of recipes) {
-    const key = recipe.result.slug ?? recipe.result.name
-    const rows = variants.get(key) ?? []
-    rows.push(recipe)
-    variants.set(key, rows)
+    for (const product of recipeResults(recipe)) {
+      const key = product.slug ?? product.name
+      const rows = variants.get(key) ?? []
+      rows.push(recipe)
+      variants.set(key, rows)
+    }
   }
   return catalogItems(recipes).map((item) => {
     const rows = variants.get(item.slug ?? item.name) ?? []
     return {
       item,
       effects: uniqueItemEffects(rows, lang, item),
-      tags: visibleRecipeTags([...new Set(rows.flatMap(recipeResultTags))]),
+      tags: visibleRecipeTags([
+        ...new Set(
+          rows.flatMap((row) =>
+            productFor(row, item) === row.result ? recipeResultTags(row) : productFor(row, item).tags,
+          ),
+        ),
+      ]),
     }
   })
 }

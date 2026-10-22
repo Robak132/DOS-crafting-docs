@@ -44,6 +44,7 @@ export function buildCatalogs(
     const recipes = sources[game].map((row) => ({
       ...row,
       result: localizeItemForCatalog(row.result, game),
+      ...(row.extraResults && { extraResults: row.extraResults.map((item) => localizeItemForCatalog(item, game)) }),
       ingredients: row.ingredients.map((item) => localizeItemForCatalog(item, game)),
     }))
     const data: RecipeData = { recipes, ...collectRecipeStats(recipes, displayLabels) }

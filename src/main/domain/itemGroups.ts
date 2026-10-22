@@ -1,5 +1,6 @@
 import type { RecipeItem, RecipeRow } from "./recipes"
 import { itemDataKey, itemIconKey } from "./itemIcons"
+import { recipeResults } from "./recipeResults"
 
 export type ItemGroup = { id: string; name: string; members: RecipeItem[] }
 export type ItemGroups = Record<string, ItemGroup>
@@ -204,7 +205,7 @@ export function isItemGroup(item: RecipeItem): boolean {
 export function buildItemGroups(recipes: RecipeRow[], minimumSize = 4, inventory: RecipeItem[] = []): ItemGroups {
   const all = new Map<string, RecipeItem>()
   const definitions = new Map<string, RecipeItem>()
-  for (const item of [...recipes.flatMap((row) => [row.result, ...row.ingredients]), ...inventory]) {
+  for (const item of [...recipes.flatMap((row) => [...recipeResults(row), ...row.ingredients]), ...inventory]) {
     const id = itemIconKey(item.name)
     if (groupMatcher(item)) definitions.set(id, item)
     else if (!item.selectorTag) {
@@ -319,6 +320,7 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
   const key = (row: RecipeRow, includeRemarks = true) =>
     JSON.stringify([
       itemKey(row.result),
+      (row.extraResults ?? []).map((item) => JSON.stringify(itemKey(item))).sort(),
       row.ingredients.map((item) => JSON.stringify(itemKey(item))).sort(),
       row.requirements,
       includeRemarks ? row.remarks : null,

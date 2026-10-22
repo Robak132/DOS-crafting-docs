@@ -680,7 +680,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/AIR-ESSENCE:Magic Altar+Bigger Air Essence+Blessed Cleanser@x2",
+      "id": "Skladniki/AIR-ESSENCE:Magic Altar+High Quality Air Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -693,8 +693,9 @@
           ]
         },
         {
-          "name": "Bigger Air Essence",
-          "slug": "bigger-air-essence",
+          "name": "High Quality Air Essence",
+          "namePl": "Esencja powietrza wysokiej jakości",
+          "slug": "high-quality-air-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -738,7 +739,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/AIR-ESSENCE:Magic Altar+Bigger Air Essence+Blessed Cleanser@x3",
+      "id": "Skladniki/AIR-ESSENCE:Magic Altar+Alien Air Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -751,8 +752,9 @@
           ]
         },
         {
-          "name": "Bigger Air Essence",
-          "slug": "bigger-air-essence",
+          "name": "Alien Air Essence",
+          "namePl": "Obca esencja powietrza",
+          "slug": "alien-air-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -1498,71 +1500,143 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Mikstury-i-jedzenie/ALL-STATS-POTION-(MIN,-MEDIUM,-LARGE):One of the 6 Stat Boosting Potions+One of the 6 Stat Boosting Potions+One of the 6 Stat Boosting Potions+One of the 6 Stat Boosting Potions+One of the 6 Stat Boosting Potions",
+      "id": "Mikstury-i-jedzenie/MINOR-ALL-STATS-POTION:Different Minor Stat Potions",
       "ingredients": [
         {
-          "name": "One of the 6 Stat Boosting Potions",
-          "slug": "one-of-the-6-stat-boosting-potions",
+          "name": "Different Minor Stat Potions",
           "tags": [
             "Typ",
-            "Typ/Skladniki",
+            "Typ/Mikstury-i-jedzenie",
             "DOS2-CO"
-          ]
-        },
-        {
-          "name": "One of the 6 Stat Boosting Potions",
-          "slug": "one-of-the-6-stat-boosting-potions",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "One of the 6 Stat Boosting Potions",
-          "slug": "one-of-the-6-stat-boosting-potions",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "One of the 6 Stat Boosting Potions",
-          "slug": "one-of-the-6-stat-boosting-potions",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "One of the 6 Stat Boosting Potions",
-          "slug": "one-of-the-6-stat-boosting-potions",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
+          ],
+          "quantity": "x5"
         }
       ],
       "result": {
-        "name": "All Stats Potion (Min, Medium, Large)",
-        "slug": "all-stats-potion-min-medium-large",
+        "name": "Minor All Stats Potion",
+        "slug": "minor-all-stats-potion",
         "tags": [
+          "Cechy",
+          "Cechy/Inteligencja",
+          "Cechy/Kondycja",
+          "Cechy/Pamięć",
+          "Cechy/Siła",
+          "Cechy/Spryt",
+          "Cechy/Zręczność",
+          "Typ",
+          "Typ/Mikstury-i-jedzenie",
+          "Typ/Skladniki",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Pamięć",
+        "Cechy/Siła",
+        "Cechy/Spryt",
+        "Cechy/Zręczność",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "Typ/Skladniki",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "Five different Minor stat potions (one of the six stats can be left out).",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Mikstury-i-jedzenie/MEDIUM-ALL-STATS-POTION:Different Medium Stat Potions",
+      "ingredients": [
+        {
+          "name": "Different Medium Stat Potions",
+          "tags": [
+            "Typ",
+            "Typ/Mikstury-i-jedzenie",
+            "DOS2-CO"
+          ],
+          "quantity": "x5"
+        }
+      ],
+      "result": {
+        "name": "Medium All Stats Potion",
+        "slug": "medium-all-stats-potion",
+        "tags": [
+          "Cechy",
+          "Cechy/Inteligencja",
+          "Cechy/Kondycja",
+          "Cechy/Pamięć",
+          "Cechy/Siła",
+          "Cechy/Spryt",
+          "Cechy/Zręczność",
           "Typ",
           "Typ/Mikstury-i-jedzenie",
           "DOS2-CO"
         ]
       },
       "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Pamięć",
+        "Cechy/Siła",
+        "Cechy/Spryt",
+        "Cechy/Zręczność",
         "Typ",
         "Typ/Mikstury-i-jedzenie",
         "DOS2-CO"
       ],
       "requirements": "",
       "notes": "",
-      "remarks": "",
+      "remarks": "Five different Medium stat potions (one of the six stats can be left out).",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Mikstury-i-jedzenie/LARGE-ALL-STATS-POTION:Different Large Stat Potions",
+      "ingredients": [
+        {
+          "name": "Different Large Stat Potions",
+          "tags": [
+            "Typ",
+            "Typ/Mikstury-i-jedzenie",
+            "DOS2-CO"
+          ],
+          "quantity": "x5"
+        }
+      ],
+      "result": {
+        "name": "Large All Stats Potion",
+        "slug": "large-all-stats-potion",
+        "tags": [
+          "Cechy",
+          "Cechy/Inteligencja",
+          "Cechy/Kondycja",
+          "Cechy/Pamięć",
+          "Cechy/Siła",
+          "Cechy/Spryt",
+          "Cechy/Zręczność",
+          "Typ",
+          "Typ/Mikstury-i-jedzenie",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Cechy",
+        "Cechy/Inteligencja",
+        "Cechy/Kondycja",
+        "Cechy/Pamięć",
+        "Cechy/Siła",
+        "Cechy/Spryt",
+        "Cechy/Zręczność",
+        "Typ",
+        "Typ/Mikstury-i-jedzenie",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "Five different Large stat potions (one of the six stats can be left out).",
       "source": "Crafting Overhaul"
     },
     {
@@ -2680,7 +2754,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/BASE-RUNE,-FRAME:Framed Rune+Gold Bar+Accessory Kit",
+      "id": "Skladniki/BASE-RUNE,-RUNE-FRAME-OF-POWER:Framed Rune+Gold Bar+Accessory Kit",
       "ingredients": [
         {
           "name": "Framed Rune",
@@ -2720,8 +2794,7 @@
         }
       ],
       "result": {
-        "name": "Base Rune, Frame",
-        "slug": "base-rune-frame",
+        "name": "Base Rune",
         "tags": [
           "Typ",
           "Typ/Magia",
@@ -2729,6 +2802,18 @@
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Rune Frame of Power",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Typ",
+            "Typ/Magia",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Magia",
@@ -2737,7 +2822,79 @@
       ],
       "requirements": "",
       "notes": "",
-      "remarks": "",
+      "remarks": "When the rune was set in a Rune Frame of Power.",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Skladniki/BASE-RUNE,-MYSTICAL-RUNE-FRAME:Framed Rune+Gold Bar+Accessory Kit",
+      "ingredients": [
+        {
+          "name": "Framed Rune",
+          "slug": "framed-rune",
+          "tags": [
+            "Typ",
+            "Typ/Magia",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Gold Bar",
+          "slug": "gold-bar",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "craftingCategories": [
+            "Gold",
+            "GoldBar",
+            "Precious"
+          ]
+        },
+        {
+          "name": "Accessory Kit",
+          "slug": "accessory-kit",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "craftingCategories": [
+            "Tool"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Base Rune",
+        "tags": [
+          "Typ",
+          "Typ/Magia",
+          "Typ/Skladniki",
+          "DOS2-CO"
+        ]
+      },
+      "extraResults": [
+        {
+          "name": "Mystical Rune Frame",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Typ",
+            "Typ/Magia",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "tags": [
+        "Typ",
+        "Typ/Magia",
+        "Typ/Skladniki",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "When the rune was set in a Mystical Rune Frame.",
       "source": "Crafting Overhaul"
     },
     {
@@ -13693,7 +13850,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/CROSSBOW-WITHOUT-STRING,-BOWSTRING:Scrapper's Pickaxe+Crossbow",
+      "id": "Skladniki/CROSSBOW-WITHOUT-BOWSTRING,-BOWSTRING:Scrapper's Pickaxe+Crossbow",
       "ingredients": [
         {
           "name": "Scrapper's Pickaxe",
@@ -13729,14 +13886,25 @@
         }
       ],
       "result": {
-        "name": "Crossbow without string, Bowstring",
-        "slug": "crossbow-without-string-bowstring",
+        "name": "Crossbow Without Bowstring",
+        "slug": "crossbow-without-bowstring-2",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Bowstring",
+          "slug": "bowstring",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -17222,7 +17390,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/EARTH-ESSENCE:Magic Altar+Bigger Earth Essence+Blessed Cleanser@x2",
+      "id": "Skladniki/EARTH-ESSENCE:Magic Altar+High Quality Earth Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -17235,8 +17403,9 @@
           ]
         },
         {
-          "name": "Bigger Earth Essence",
-          "slug": "bigger-earth-essence",
+          "name": "High Quality Earth Essence",
+          "namePl": "Esencja ziemi wysokiej jakości",
+          "slug": "high-quality-earth-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -17280,7 +17449,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/EARTH-ESSENCE:Magic Altar+Bigger Earth Essence+Blessed Cleanser@x3",
+      "id": "Skladniki/EARTH-ESSENCE:Magic Altar+Alien Earth Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -17293,8 +17462,9 @@
           ]
         },
         {
-          "name": "Bigger Earth Essence",
-          "slug": "bigger-earth-essence",
+          "name": "Alien Earth Essence",
+          "namePl": "Obca esencja ziemi",
+          "slug": "alien-earth-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -20355,7 +20525,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/FIRE-ESSENCE:Magic Altar+Bigger Fire Essence+Blessed Cleanser@x2",
+      "id": "Skladniki/FIRE-ESSENCE:Magic Altar+High Quality Fire Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -20368,8 +20538,9 @@
           ]
         },
         {
-          "name": "Bigger Fire Essence",
-          "slug": "bigger-fire-essence",
+          "name": "High Quality Fire Essence",
+          "namePl": "Esencja ognia wysokiej jakości",
+          "slug": "high-quality-fire-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -20413,7 +20584,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/FIRE-ESSENCE:Magic Altar+Bigger Fire Essence+Blessed Cleanser@x3",
+      "id": "Skladniki/FIRE-ESSENCE:Magic Altar+Alien Fire Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -20426,8 +20597,9 @@
           ]
         },
         {
-          "name": "Bigger Fire Essence",
-          "slug": "bigger-fire-essence",
+          "name": "Alien Fire Essence",
+          "namePl": "Obca esencja ognia",
+          "slug": "alien-fire-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -26770,7 +26942,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/LIFE-ESSENCE:Magic Altar+Bigger Life Essence+Blessed Cleanser@x2",
+      "id": "Magia/LIFE-ESSENCE:Magic Altar+High Quality Life Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -26783,8 +26955,9 @@
           ]
         },
         {
-          "name": "Bigger Life Essence",
-          "slug": "bigger-life-essence",
+          "name": "High Quality Life Essence",
+          "namePl": "Esencja życia wysokiej jakości",
+          "slug": "high-quality-life-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -26830,7 +27003,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/LIFE-ESSENCE:Magic Altar+Bigger Life Essence+Blessed Cleanser@x3",
+      "id": "Magia/LIFE-ESSENCE:Magic Altar+Alien Life Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -26843,8 +27016,9 @@
           ]
         },
         {
-          "name": "Bigger Life Essence",
-          "slug": "bigger-life-essence",
+          "name": "Alien Life Essence",
+          "namePl": "Obca esencja życia",
+          "slug": "alien-life-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -27036,7 +27210,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/LONG-BRANCH,-METAL-SCRAPS:Scrapper's Pickaxe+Two Handed Sword",
+      "id": "Skladniki/SHORT-STICK,-METAL-SCRAPS:Scrapper's Pickaxe+Two Handed Sword",
       "ingredients": [
         {
           "name": "Scrapper's Pickaxe",
@@ -27071,14 +27245,26 @@
         }
       ],
       "result": {
-        "name": "Long Branch, Metal Scraps",
-        "slug": "long-branch-metal-scraps",
+        "name": "Short Stick",
+        "slug": "short-stick",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Metal Scraps",
+          "slug": "metal-scraps",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "quantity": "x2"
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -29967,14 +30153,25 @@
         }
       ],
       "result": {
-        "name": "Metal Scraps, Scale Scraps",
-        "slug": "metal-scraps-scale-scraps",
+        "name": "Metal Scraps",
+        "slug": "metal-scraps",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Scale Scraps",
+          "slug": "scale-scraps",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -30019,14 +30216,36 @@
         }
       ],
       "result": {
-        "name": "Metal Scraps, Wood Chips, Nails",
-        "slug": "metal-scraps-wood-chips-nails",
+        "name": "Metal Scraps",
+        "slug": "metal-scraps",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
-        ]
+        ],
+        "quantity": "x2"
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "slug": "wood-chips",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "quantity": "x3"
+        },
+        {
+          "name": "Nails",
+          "slug": "nails",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -35815,12 +36034,143 @@
       ],
       "result": {
         "name": "Random Air Scroll",
-        "slug": "random-air-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Apportation Scroll",
+            "slug": "apportation-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Blinding Radiance Scroll",
+            "slug": "blinding-radiance-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Dazing Bolt Scroll",
+            "slug": "dazing-bolt-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Efekty/Statusy/SHOCKED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Electric Discharge Scroll",
+            "slug": "electric-discharge-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Efekty/Statusy/SHOCKED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Favourable Wind Scroll",
+            "slug": "favourable-wind-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Efekty/Statusy/FAVOURABLE_WIND_AURA",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Nether Swap Scroll",
+            "slug": "nether-swap-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Pressure Spike Scroll",
+            "slug": "pressure-spike-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Shocking Touch Scroll",
+            "slug": "shocking-touch-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Efekty/Statusy/SHOCKED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Teleportation Scroll",
+            "slug": "teleportation-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -35871,12 +36221,163 @@
       ],
       "result": {
         "name": "Random Earth Scroll",
-        "slug": "random-earth-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Contamination Scroll",
+            "slug": "contamination-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Statusy/POISONED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Earthquake Scroll",
+            "slug": "earthquake-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Statusy/KNOCKED_DOWN",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Fortify Scroll",
+            "slug": "fortify-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Statusy/FORTIFIED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Fossil Strike Scroll",
+            "slug": "fossil-strike-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Powierzchnie/Oil",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Impalement Scroll",
+            "slug": "impalement-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Powierzchnie/Oil",
+              "Efekty/Statusy/CRIPPLED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Mend Metal Scroll",
+            "slug": "mend-metal-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Statusy/MEND_METAL",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Poison Dart Scroll",
+            "slug": "poison-dart-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Powierzchnie/Poison",
+              "Efekty/Statusy/POISONED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Poison Wave Scroll",
+            "slug": "poison-wave-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Reactive Armour Scroll",
+            "slug": "reactive-armour-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Worm Tremor Scroll",
+            "slug": "worm-tremor-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Geomancja",
+              "Efekty/Statusy/ENTANGLED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -35927,12 +36428,165 @@
       ],
       "result": {
         "name": "Random Fire Scroll",
-        "slug": "random-fire-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Fire Whip Scroll",
+            "slug": "fire-whip-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/BLIND",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Fireball Scroll",
+            "slug": "fireball-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Powierzchnie/Fire",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Flaming Tongues Scroll",
+            "slug": "flaming-tongues-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/FLAMING_TONGUES",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Haste Scroll",
+            "slug": "haste-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/HASTED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ignition Scroll",
+            "slug": "ignition-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Laser Ray Scroll",
+            "slug": "laser-ray-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Peace of Mind Scroll",
+            "slug": "peace-of-mind-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Statusy/CLEAR_MINDED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Searing Daggers Scroll",
+            "slug": "searing-daggers-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Powierzchnie/Fire",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Spontaneous Combustion Scroll",
+            "slug": "spontaneous-combustion-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Supernova Scroll",
+            "slug": "supernova-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Efekty/Powierzchnie/Fire",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -35984,7 +36638,6 @@
       ],
       "result": {
         "name": "Random Polymorph Scroll",
-        "slug": "random-polymorph-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
@@ -35993,6 +36646,171 @@
           "Cechy/Umiejetnosci/Polimorfia",
           "Cechy/Umiejetnosci",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Bull Horns Scroll",
+            "slug": "bull-horns-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/HORNS",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Chameleon Cloak Scroll",
+            "slug": "chameleon-cloak-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/INVISIBLE",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Chicken Claw Scroll",
+            "slug": "chicken-claw-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/CHICKEN",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Heart of Steel Scroll",
+            "slug": "heart-of-steel-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/STEEL_SKIN",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Medusa Head Scroll",
+            "slug": "medusa-head-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/MEDUSA_HEAD",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Skin Graft Scroll",
+            "slug": "skin-graft-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/SHED_SKIN",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Spider Legs Scroll",
+            "slug": "spider-legs-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/SPIDER_LEGS",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Spread Your Wings Scroll",
+            "slug": "spread-your-wings-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/WINGS",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Summon Oily Blob Scroll",
+            "slug": "summon-oily-blob-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Tentacle Lash Scroll",
+            "slug": "tentacle-lash-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Efekty/Statusy/DISARMED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Terrain Transmutation Scroll",
+            "slug": "terrain-transmutation-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36047,12 +36865,103 @@
       ],
       "result": {
         "name": "Random Ranger Scroll",
-        "slug": "random-ranger-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Barrage Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Elemental Arrowheads Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "First Aid Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Glitter Dust Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Marksman's Fang Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Pindown Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Reactive Shot Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ricochet Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Sky Shot Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Tactical Retreat Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36104,12 +37013,94 @@
       ],
       "result": {
         "name": "Random Rogue Scroll",
-        "slug": "random-rogue-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Backlash Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Choloroform Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Cloak and Dagger Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Corrupted Blade Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Gag Order Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Rupture Tendons Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Sawtooth Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Sleeping Arms Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Throwing Knife Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36161,7 +37152,6 @@
       ],
       "result": {
         "name": "Random Summoning Scroll",
-        "slug": "random-summoning-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
@@ -36170,6 +37160,168 @@
           "Cechy/Umiejetnosci/Przyzywanie",
           "Cechy/Umiejetnosci",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Charm Scroll",
+            "slug": "charm-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/CHARMED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Conjure Incarnate Scroll",
+            "slug": "conjure-incarnate-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Dimensional Bolt Scroll",
+            "slug": "dimensional-bolt-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Elemental Totem Scroll",
+            "slug": "elemental-totem-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Farsight Infusion Scroll",
+            "slug": "farsight-infusion-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/INF_RANGED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Planar Gateway Scroll",
+            "slug": "planar-gateway-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Power Infusion Scroll",
+            "slug": "power-infusion-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/INF_POWER",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Rallying Cry Scroll",
+            "slug": "rallying-cry-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Shadow Infusion Scroll",
+            "slug": "shadow-infusion-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/INF_SHADOW",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Soul Mate Scroll",
+            "slug": "soul-mate-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/HEAL_SHARING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Supercharger Scroll",
+            "slug": "supercharger-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Efekty/Statusy/SUPERCHARGE",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36224,12 +37376,103 @@
       ],
       "result": {
         "name": "Random Warrior Scroll",
-        "slug": "random-warrior-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Battering Ram Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Battle Stomp Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Blitz Attack Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Bouncing Shield Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Crippling Blow Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Deflective Barrier Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Enrage Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Phoenix Dive Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Provoke Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Whirlwind Scroll",
+            "tags": [
+              "Typ",
+              "Typ/Zwoje",
+              "Typ/Magia",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36244,7 +37487,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/RANDOM-WATER-SCROLL:Demon Altar+Blank Water Scroll+Magic Inkpot & Quill+RandomWater Scroll",
+      "id": "Magia/RANDOM-WATER-SCROLL:Demon Altar+Blank Water Scroll+Magic Inkpot & Quill",
       "ingredients": [
         {
           "name": "Demon Altar",
@@ -36276,25 +37519,139 @@
             "Typ/Skladniki",
             "DOS2-CO"
           ]
-        },
-        {
-          "name": "RandomWater Scroll",
-          "tags": [
-            "Typ",
-            "Typ/Zwoje",
-            "Typ/Magia",
-            "DOS2-CO"
-          ]
         }
       ],
       "result": {
         "name": "Random Water Scroll",
-        "slug": "random-water-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Armour of Frost Scroll",
+            "slug": "armour-of-frost-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/MAGIC_SHELL",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Cryogenic Stasis Scroll",
+            "slug": "cryogenic-stasis-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/PERMAFROST",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Hail Strike Scroll",
+            "slug": "hail-strike-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Powierzchnie/WaterFrozen",
+              "Efekty/Statusy/CHILLED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ice Fan Scroll",
+            "slug": "ice-fan-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Powierzchnie/WaterFrozen",
+              "Efekty/Statusy/CHILLED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Rain Scroll",
+            "slug": "rain-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/WET",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Restoration Scroll",
+            "slug": "restoration-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/REGENERATION",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Soothing Cold Scroll",
+            "slug": "soothing-cold-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/FROST_AURA",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Winter Blast Scroll",
+            "slug": "winter-blast-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Hydrosophia",
+              "Efekty/Statusy/CHILLED",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -36344,12 +37701,138 @@
       ],
       "result": {
         "name": "Random Witchcraft Scroll",
-        "slug": "random-witchcraft-scroll",
         "tags": [
           "Typ",
           "Typ/Zwoje",
           "Typ/Magia",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Blood Sucker Scroll",
+            "slug": "blood-sucker-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Efekty/Statusy/BLOOD_BUBBLE",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Bone Cage Scroll",
+            "slug": "bone-cage-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Death Wish Scroll",
+            "slug": "death-wish-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Efekty/Statusy/DEATH_WISH",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Decaying Touch Scroll",
+            "slug": "decaying-touch-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Efekty/Statusy/DECAYING_TOUCH",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Infect Scroll",
+            "slug": "infect-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Living on the Edge Scroll",
+            "slug": "living-on-the-edge-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Efekty/Statusy/DEATH_RESIST",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Mosquito Swarm Scroll",
+            "slug": "mosquito-swarm-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Efekty/Statusy/BLEEDING",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Raise Bloated Corpse Scroll",
+            "slug": "raise-bloated-corpse-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Raise Bone Widow Scroll",
+            "slug": "raise-bone-widow-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Shackles of Pain Scroll",
+            "slug": "shackles-of-pain-scroll",
+            "tags": [
+              "Cechy",
+              "Cechy/Rzuca-zaklecie",
+              "Typ",
+              "Typ/Skladniki",
+              "Typ/Zwoje",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -39146,7 +40629,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/SHADOW-ESSENCE:Magic Altar+Bigger Shadow Essence+Blessed Cleanser@x2",
+      "id": "Magia/SHADOW-ESSENCE:Magic Altar+High Quality Shadow Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -39159,8 +40642,9 @@
           ]
         },
         {
-          "name": "Bigger Shadow Essence",
-          "slug": "bigger-shadow-essence",
+          "name": "High Quality Shadow Essence",
+          "namePl": "Esencja cienia wysokiej jakości",
+          "slug": "high-quality-shadow-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -39206,7 +40690,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/SHADOW-ESSENCE:Magic Altar+Bigger Shadow Essence+Blessed Cleanser@x3",
+      "id": "Magia/SHADOW-ESSENCE:Magic Altar+Alien Shadow Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -39219,8 +40703,9 @@
           ]
         },
         {
-          "name": "Bigger Shadow Essence",
-          "slug": "bigger-shadow-essence",
+          "name": "Alien Shadow Essence",
+          "namePl": "Obca esencja cienia",
+          "slug": "alien-shadow-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -40509,14 +41994,25 @@
         }
       ],
       "result": {
-        "name": "Short Stick, Bowstring",
-        "slug": "short-stick-bowstring",
+        "name": "Short Stick",
+        "slug": "short-stick",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Bowstring",
+          "slug": "bowstring",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -40561,14 +42057,25 @@
         }
       ],
       "result": {
-        "name": "Short Stick, Metal Scraps",
-        "slug": "short-stick-metal-scraps",
+        "name": "Short Stick",
+        "slug": "short-stick",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Metal Scraps",
+          "slug": "metal-scraps",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -43425,7 +44932,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/TORMENTED-SOUL:Magic Altar+Bigger Tormented Soul+Blessed Cleanser@x2",
+      "id": "Skladniki/TORMENTED-SOUL:Magic Altar+High quality Tormented Soul+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -43438,8 +44945,9 @@
           ]
         },
         {
-          "name": "Bigger Tormented Soul",
-          "slug": "bigger-tormented-soul",
+          "name": "High quality Tormented Soul",
+          "namePl": "Udręczona dusza wysokiej jakości",
+          "slug": "high-quality-tormented-soul",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -43485,7 +44993,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/TORMENTED-SOUL:Magic Altar+Bigger Tormented Soul+Blessed Cleanser@x3",
+      "id": "Skladniki/TORMENTED-SOUL:Magic Altar+Alien Tormented Soul+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -43498,8 +45006,9 @@
           ]
         },
         {
-          "name": "Bigger Tormented Soul",
-          "slug": "bigger-tormented-soul",
+          "name": "Alien Tormented Soul",
+          "namePl": "Obca udręczona dusza",
+          "slug": "alien-tormented-soul",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -57862,7 +59371,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Przedmioty-wydarzen/VARIOUS-ITEMS:Lootbox+Pickaxe",
+      "id": "Przedmioty-wydarzen/RANDOM-LOOTBOX-ITEM:Lootbox+Pickaxe",
       "ingredients": [
         {
           "name": "Lootbox",
@@ -57896,12 +59405,647 @@
         }
       ],
       "result": {
-        "name": "Various Items",
-        "slug": "various-items",
+        "name": "Random Lootbox Item",
+        "namePl": "Losowy przedmiot ze skrzynki",
         "tags": [
           "Typ",
           "Typ/Przedmioty-wydarzen",
           "DOS2-CO"
+        ],
+        "pool": [
+          {
+            "name": "Angel Wings",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Barrel Armor",
+            "slug": "barrel-armor",
+            "tags": [
+              "Cechy",
+              "Cechy/Kondycja",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Perswazja",
+              "Cechy/Skradanie",
+              "Cechy/Spryt",
+              "Efekty/Statusy/FEAR",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Napiersniki",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Bifurcated Spear",
+            "slug": "bifurcated-spear",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Obrażenia-fizyczne",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/CRIPPLED",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Wlocznie",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Blackring Magical Shield",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Blackring Shield",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Blue Star Staff",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Boar Tusks",
+            "slug": "boar-tusks",
+            "tags": [
+              "Typ",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Demon Heart Ring",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Divine Shield",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Doctor's Water Ring",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Empress Tiara",
+            "slug": "empress-tiara",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-obrony",
+              "Cechy/Bieglosci-obrony/Przywództwo",
+              "Cechy/Inteligencja",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Perswazja",
+              "Cechy/Spryt",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Estoc",
+            "slug": "estoc",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Obrażenia-fizyczne",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Cechy/Znawca",
+              "Efekty/Statusy/BLEEDING",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Miecze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ghost Helm",
+            "slug": "ghost-helm",
+            "tags": [
+              "Cechy",
+              "Cechy/Pamięć",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Nekromancja",
+              "Efekty/Statusy/FEAR",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ghost Mace",
+            "slug": "ghost-mace",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Kondycja",
+              "Cechy/Siła",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/DAZED",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Bulawy",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ghost Shield",
+            "slug": "ghost-shield",
+            "tags": [
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Tarcze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Goblin Pants",
+            "slug": "goblin-pants",
+            "tags": [
+              "Cechy",
+              "Cechy/Celność",
+              "Cechy/Odporność-na-ziemię",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Skradanie",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Przyzywanie",
+              "Cechy/Złodziejstwo",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Spodnie",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Grunt Helmet",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Halloween Mask",
+            "slug": "halloween-mask",
+            "tags": [
+              "Cechy",
+              "Cechy/Pamięć",
+              "Cechy/Pancerz-fizyczny",
+              "Efekty/Statusy/FEAR",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Ice Sword",
+            "slug": "ice-sword",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Obrażenia-magiczne",
+              "Cechy/Obrażenia-magiczne/wody",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Wojna",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/WET",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Miecze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Merman Armor",
+            "slug": "merman-armor",
+            "tags": [
+              "Cechy",
+              "Cechy/Inteligencja",
+              "Cechy/Odporność-na-powietrze",
+              "Cechy/Odporność-na-wodę",
+              "Cechy/Pamięć",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Polimorfia",
+              "Cechy/Unik",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Napiersniki",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Mistake's Staff",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Mordus' Skull Ring",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "New World Crossbow",
+            "slug": "new-world-crossbow",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dystansowa",
+              "Cechy/Celność",
+              "Cechy/Obrażenia-fizyczne",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Łowiectwo",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/MADNESS",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Kusze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Night Cape",
+            "slug": "night-cape",
+            "tags": [
+              "Cechy",
+              "Cechy/Inicjatywa",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Skradanie",
+              "Cechy/Spryt",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Cechy/Unik",
+              "Typ",
+              "Typ/Amulety",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Paladin Shield",
+            "slug": "paladin-shield",
+            "tags": [
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Tarcze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Phoenix wings",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Pumpkin Helmet",
+            "slug": "pumpkin-helmet",
+            "tags": [
+              "Cechy",
+              "Cechy/Odporność-na-ogień",
+              "Cechy/Odporność-na-ziemię",
+              "Cechy/Pamięć",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Perswazja",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/FEAR",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "Typ/Przedmioty-wydarzen",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Queen's Sigil",
+            "slug": "queens-sigil",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-obrony",
+              "Cechy/Bieglosci-obrony/Przywództwo",
+              "Cechy/Celność",
+              "Cechy/Inicjatywa",
+              "Cechy/Odnawianie-PA",
+              "Cechy/Pamięć",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Perswazja",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Aeroteurgia",
+              "Typ",
+              "Typ/Pierscienie",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Red Star Staff",
+            "slug": "red-star-staff",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Krytyk",
+              "Cechy/Obrażenia-magiczne",
+              "Cechy/Obrażenia-magiczne/ognia",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Pyrokinetyka",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/BURNING",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Kostury",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Scythe",
+            "slug": "scythe",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Obrażenia-fizyczne",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Wojna",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/WEAK",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Topory",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Sickle",
+            "slug": "sickle",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Jednoręczna",
+              "Cechy/Obrażenia-fizyczne",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Wojna",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Efekty/Statusy/BLEEDING",
+              "Typ",
+              "Typ/Bron",
+              "Typ/Bron/Miecze",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Spider Legs",
+            "slug": "spider-legs",
+            "tags": [
+              "Typ",
+              "Typ/Skladniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Teardrop Shield",
+            "tags": [
+              "Typ",
+              "Typ/Przedmioty-wydarzen",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Ranger Boots",
+            "slug": "unique-ranger-boots",
+            "tags": [
+              "Cechy",
+              "Cechy/Odporność-na-obrażenia-przeszywające",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Skradanie",
+              "Cechy/Unik",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Buty",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Ranger Gloves",
+            "slug": "unique-ranger-gloves",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dystansowa",
+              "Cechy/Inicjatywa",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Spryt",
+              "Cechy/Złodziejstwo",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Rekawice",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Ranger Helmet",
+            "slug": "unique-ranger-helmet",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-obrony",
+              "Cechy/Bieglosci-obrony/Przywództwo",
+              "Cechy/Krytyk",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Perswazja",
+              "Cechy/Spryt",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Łowiectwo",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Cechy/Zręczność",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Ranger Pants",
+            "slug": "unique-ranger-pants",
+            "tags": [
+              "Cechy",
+              "Cechy/Celność",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Spodnie",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Ranger Torso",
+            "slug": "unique-ranger-torso",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dystansowa",
+              "Cechy/Odporność-na-obrażenia-przeszywające",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Pancerz-magiczny",
+              "Cechy/Pancerz-zbalansowany",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Łowiectwo",
+              "Cechy/Zręczność",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Napiersniki",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Warrior Boots",
+            "slug": "unique-warrior-boots",
+            "tags": [
+              "Cechy",
+              "Cechy/Odporność-na-obrażenia-fizyczne",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Skradanie",
+              "Cechy/Unik",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Buty",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Warrior Gloves",
+            "slug": "unique-warrior-gloves",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Bieglosci-broni/Jednoręczna",
+              "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+              "Cechy/Inicjatywa",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Spryt",
+              "Cechy/Znawca",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Rekawice",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Warrior Helmet",
+            "slug": "unique-warrior-helmet",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Jednoręczna",
+              "Cechy/Bieglosci-obrony",
+              "Cechy/Bieglosci-obrony/Przywództwo",
+              "Cechy/Krytyk",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Perswazja",
+              "Cechy/Siła",
+              "Cechy/Spryt",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Wojna",
+              "Cechy/Zapewnia-umiejetnosc",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Helmy",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Warrior Pants",
+            "slug": "unique-warrior-pants",
+            "tags": [
+              "Cechy",
+              "Cechy/Celność",
+              "Cechy/Pancerz-fizyczny",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Spodnie",
+              "DOS2-CO"
+            ]
+          },
+          {
+            "name": "Unique Warrior Torso",
+            "slug": "unique-warrior-torso",
+            "tags": [
+              "Cechy",
+              "Cechy/Bieglosci-broni",
+              "Cechy/Bieglosci-broni/Dwuręczna",
+              "Cechy/Bieglosci-broni/Jednoręczna",
+              "Cechy/Odporność-na-obrażenia-fizyczne",
+              "Cechy/Pancerz-fizyczny",
+              "Cechy/Siła",
+              "Cechy/Umiejetnosci",
+              "Cechy/Umiejetnosci/Wojna",
+              "Typ",
+              "Typ/Pancerz",
+              "Typ/Pancerz/Napiersniki",
+              "DOS2-CO"
+            ]
+          }
         ]
       },
       "tags": [
@@ -59052,7 +61196,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/WATER-ESSENCE:Magic Altar+Bigger Water Essence+Blessed Cleanser@x2",
+      "id": "Skladniki/WATER-ESSENCE:Magic Altar+High Quality Water Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -59065,8 +61209,9 @@
           ]
         },
         {
-          "name": "Bigger Water Essence",
-          "slug": "bigger-water-essence",
+          "name": "High Quality Water Essence",
+          "namePl": "Esencja wody wysokiej jakości",
+          "slug": "high-quality-water-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -59110,7 +61255,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/WATER-ESSENCE:Magic Altar+Bigger Water Essence+Blessed Cleanser@x3",
+      "id": "Skladniki/WATER-ESSENCE:Magic Altar+Alien Water Essence+Blessed Cleanser",
       "ingredients": [
         {
           "name": "Magic Altar",
@@ -59123,8 +61268,9 @@
           ]
         },
         {
-          "name": "Bigger Water Essence",
-          "slug": "bigger-water-essence",
+          "name": "Alien Water Essence",
+          "namePl": "Obca esencja wody",
+          "slug": "alien-water-essence",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -61161,7 +63307,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/WOOD-CHIPS-(VARIOUS-AMOUNT):Scrapper's Pickaxe+Crates,  Basket, Bucket, Wooden Box",
+      "id": "Skladniki/WOOD-CHIPS:Scrapper's Pickaxe+Crates,  Basket, Bucket, Wooden Box@x(1-3)",
       "ingredients": [
         {
           "name": "Scrapper's Pickaxe",
@@ -61193,13 +63339,14 @@
         }
       ],
       "result": {
-        "name": "Wood Chips (Various amount)",
-        "slug": "wood-chips-various-amount",
+        "name": "Wood Chips",
+        "slug": "wood-chips",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
-        ]
+        ],
+        "quantity": "x(1-3)"
       },
       "tags": [
         "Typ",
@@ -61245,14 +63392,25 @@
         }
       ],
       "result": {
-        "name": "Wood Chips, Nails",
-        "slug": "wood-chips-nails",
+        "name": "Wood Chips",
+        "slug": "wood-chips",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Nails",
+          "slug": "nails",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",
@@ -61264,7 +63422,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/WOOD-CHIPS,-SHARP-ROCK:Scrapper's Pickaxe+Wooden Crate, Barrel",
+      "id": "Skladniki/WOOD-CHIPS,-SHARP-ROCK:Scrapper's Pickaxe+Wooden Crate",
       "ingredients": [
         {
           "name": "Scrapper's Pickaxe",
@@ -61286,25 +63444,103 @@
           ]
         },
         {
-          "name": "Wooden Crate, Barrel",
-          "slug": "wooden-crate-barrel",
+          "name": "Wooden Crate",
+          "slug": "wooden-crate",
           "tags": [
             "Typ",
-            "Typ/Stanowiska-i-pojemniki",
             "Typ/Skladniki",
+            "Typ/Stanowiska-i-pojemniki",
             "DOS2-CO"
           ]
         }
       ],
       "result": {
-        "name": "Wood Chips, Sharp Rock",
-        "slug": "wood-chips-sharp-rock",
+        "name": "Wood Chips",
+        "slug": "wood-chips",
         "tags": [
           "Typ",
           "Typ/Skladniki",
           "DOS2-CO"
-        ]
+        ],
+        "quantity": "x3"
       },
+      "extraResults": [
+        {
+          "name": "Sharp Rock",
+          "slug": "sharp-rock",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "quantity": "x2"
+        }
+      ],
+      "tags": [
+        "Typ",
+        "Typ/Skladniki",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Skladniki/WOOD-CHIPS,-SHARP-ROCK:Scrapper's Pickaxe+Barrel",
+      "ingredients": [
+        {
+          "name": "Scrapper's Pickaxe",
+          "slug": "scrappers-pickaxe",
+          "tags": [
+            "Typ",
+            "Typ/Narzedzia",
+            "Typ/Skladniki",
+            "Typ/Bron",
+            "Typ/Bron/Topory",
+            "DOS2-CO"
+          ],
+          "craftingCategories": [
+            "2HAxe_Intelligence",
+            "CuttingTool",
+            "Junk",
+            "TwoHandedAxe",
+            "Weapon"
+          ]
+        },
+        {
+          "name": "Barrel",
+          "slug": "barrel",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "Typ/Stanowiska-i-pojemniki",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Wood Chips",
+        "slug": "wood-chips",
+        "tags": [
+          "Typ",
+          "Typ/Skladniki",
+          "DOS2-CO"
+        ],
+        "quantity": "x2"
+      },
+      "extraResults": [
+        {
+          "name": "Sharp Rock",
+          "slug": "sharp-rock",
+          "tags": [
+            "Typ",
+            "Typ/Skladniki",
+            "DOS2-CO"
+          ],
+          "quantity": "x2"
+        }
+      ],
       "tags": [
         "Typ",
         "Typ/Skladniki",

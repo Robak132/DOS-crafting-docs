@@ -124,3 +124,31 @@ test("shared item slugs with different effects render separate results with exac
     assert.equal(index.find("potion", row.result.name, key), row.result)
   }
 })
+
+test("a random result lists its possible items with links, levels and random amounts", () => {
+  const html = renderToString(
+    <RecipeTable
+      recipes={[
+        {
+          ...recipe,
+          id: "random",
+          result: {
+            name: "Random Air Scroll",
+            tags: [],
+            pool: [
+              { name: "Teleportation Scroll", slug: "teleportation-scroll", tags: [], requirements: "Crafting 2" },
+              { name: "Tornado Scroll", tags: [], requirements: "Crafting 4" },
+            ],
+          },
+          ingredients: [{ name: "Wood Chips", tags: [], quantity: "x(1-3)" }],
+        },
+      ]}
+      catalogSlug="receptury"
+      labels={{}}
+    />,
+  )
+  assert.match(html, /<details class="recipe-pool"><summary>Możliwe wyniki \(2\)<\/summary>/)
+  assert.ok(html.includes('href="/teleportation-scroll?catalog=dos1"'))
+  assert.ok(html.includes('<span class="recipe-pool-level">Crafting 4</span>'))
+  assert.ok(html.includes("×(1–3)"))
+})

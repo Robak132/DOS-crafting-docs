@@ -12,6 +12,7 @@ import { localizeItemForCatalog } from "../src/main/domain/recipes"
 import { isPublicPage } from "../src/main/routing"
 import type { PageSummary, CatalogManifest } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
+import { recipeResults } from "../src/main/domain/recipeResults"
 
 export const generatedDir = path.resolve(".generated", "build")
 export async function generateData(outputDirectory = generatedDir) {
@@ -34,17 +35,20 @@ export async function generateData(outputDirectory = generatedDir) {
     // Catalogs share base recipes; each mode resolves its own group membership.
     data.recipes = data.recipes.map((row) => ({
       ...row,
-      result: { ...row.result },
+      result: row.result.pool
+        ? { ...row.result, pool: row.result.pool.map((item) => ({ ...item })) }
+        : { ...row.result },
+      ...(row.extraResults && { extraResults: row.extraResults.map((item) => ({ ...item })) }),
       ingredients: row.ingredients.map((item) => ({ ...item })),
     }))
     await fs.writeFile(path.join(outputDirectory, `data/descriptions-${game}.json`), JSON.stringify(descriptions[game]))
     for (const row of data.recipes) {
-      for (const item of [row.result, ...row.ingredients]) {
+      for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
         item.icon = resolveItemIcon(icons, game, item)
         if (!item.selectorTag) {
           const entry = effects[game]?.[itemDataKey(item)]
           item.effect =
-            (item === row.result && entry?.recipes?.[row.id]) ||
+            (recipeResults(row).includes(item) && entry?.recipes?.[row.id]) ||
             (entry?.en ? { en: entry.en, pl: entry.pl } : undefined)
         }
         delete item.groupId
@@ -125,7 +129,6 @@ export async function generateData(outputDirectory = generatedDir) {
     pages,
     itemRoles: getCatalogItemRoles(pages, catalogs),
     traitGroups: getCechySidebarGroups(),
-    redirects: library.redirects,
     catalogs: Object.fromEntries(
       Object.entries(catalogs).map(([game, data]) => [
         game,

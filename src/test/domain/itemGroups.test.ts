@@ -192,6 +192,30 @@ test("ingredient order does not duplicate concrete recipes or lose quantities, e
   assert.deepEqual([first, second], before)
 })
 
+test("deduplication keeps the localized alias instead of the first spelling", () => {
+  const plain = row(item("Cloth Scraps"), [item("Bed Linen"), item("CuttingTool", { slug: "cuttingtool" })])
+  const localized = {
+    ...plain,
+    id: "localized",
+    ingredients: [item("Bed Linen"), item("Cutting Tool", { slug: "cutting-tool", namePl: "Narzędzie do krojenia" })],
+  }
+  const duplicatePage = {
+    ...plain,
+    id: "duplicate-page",
+    ingredients: [item("Bed Linen"), item("Cutting Tool", { slug: "cutting-tool-2", namePl: "Narzędzie do krojenia" })],
+  }
+  for (const recipes of [
+    [plain, localized, duplicatePage],
+    [duplicatePage, plain, localized],
+    [localized, duplicatePage, plain],
+  ]) {
+    const [result] = expandSmallGroups(recipes, {})
+    assert.equal(result.ingredients[1].name, "Cutting Tool")
+    assert.equal(result.ingredients[1].slug, "cutting-tool")
+    assert.equal(result.ingredients[1].namePl, "Narzędzie do krojenia")
+  }
+})
+
 test("deduplication preserves distinct identities, effects, quantities, selectors and instructions", () => {
   const base = row(item("Potion"), [item("Water"), item("Herb")])
   const variants = [

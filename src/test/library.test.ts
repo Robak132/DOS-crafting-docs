@@ -248,6 +248,18 @@ test("Elven Stew has one recipe preserving its effects and source", async () => 
   }
 })
 
+test("merged alias ingredients keep the localized catalog page", async () => {
+  const { sources } = await loadLibrary()
+  const cloth = sources.dos2.find((row) => row.id === "Skladniki/CLOTH-SCRAPS:Bed Linen+CuttingTool")!
+  assert.equal(cloth.ingredients[1].name, "Cutting Tool")
+  assert.equal(cloth.ingredients[1].slug, "cutting-tool")
+  assert.equal(cloth.ingredients[1].namePl, "Narzędzie do krojenia")
+  const pixie = sources.dos2.find((row) => row.result.slug === "pouch-of-superior-pixie-dust")!
+  assert.equal(pixie.ingredients[1].name, "Pouch Of Superior Star Dust")
+  assert.equal(pixie.ingredients[1].slug, "pouch-of-superior-star-dust")
+  assert.equal(pixie.ingredients[1].namePl, "Sakiewka znakomitego gwiezdnego pyłu")
+})
+
 test("Jar of Honey has one recipe using the localized Empty Honey Jar, not its Jar alias", async () => {
   const { sources } = await loadLibrary()
   for (const recipes of [sources.dos2, [...sources.dos2, ...sources["dos2-overhaul"]]]) {

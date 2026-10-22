@@ -1314,60 +1314,11 @@
       "requirements": "",
       "notes": "Add 5% Heal -1 Intelligence 60% Drunk chance",
       "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/BOTTLE-OF-BEER:Beer Barrel+Empty Bottle",
-      "ingredients": [
-        {
-          "name": "Beer Barrel",
-          "namePl": "Beczka piwa",
-          "slug": "beer-barrel",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Empty Bottle",
-          "namePl": "Pusta butelka",
-          "slug": "empty-bottle",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Bottle of Beer",
-        "namePl": "Butelka piwa",
-        "slug": "bottle-of-beer",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Inteligencja",
-          "Cechy/Leczenie",
-          "Efekty/Statusy/DRUNK",
-          "Cechy",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Inteligencja",
-        "Cechy/Leczenie",
-        "Efekty/Statusy/DRUNK",
-        "Cechy",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A667:G667"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A667:G667",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/BOTTLE-OF-BEER:Empty Bottle+Beer Barrel",
+        "Mikstury-i-jedzenie/BOTTLE-OF-BEER:Beer Barrel+Empty Bottle"
+      ]
     },
     {
       "id": "Mikstury-i-jedzenie/BOTTLE-OF-WATER:Empty Bottle+Water Barrel",
@@ -1415,7 +1366,10 @@
       "requirements": "",
       "notes": "Add 5% Heal",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A668:G668",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/BOTTLE-OF-WATER:Empty Bottle+Water Barrel"
+      ]
     },
     {
       "id": "Mikstury-i-jedzenie/BOTTLE-OF-WATER:Empty Bottle+Well",
@@ -1464,54 +1418,6 @@
       "notes": "Add 5% Heal",
       "remarks": "",
       "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/BOTTLE-OF-WATER:Empty Bottle+Water Barrel",
-      "ingredients": [
-        {
-          "name": "Empty Bottle",
-          "namePl": "Pusta butelka",
-          "slug": "empty-bottle",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Water Barrel",
-          "namePl": "Beczka z wodą",
-          "slug": "water-barrel",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Bottle of Water",
-        "namePl": "Butelka wody",
-        "slug": "bottle-of-water",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A668:G668"
     },
     {
       "id": "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Empty Bottle+Wine barrel",
@@ -1564,60 +1470,11 @@
       "requirements": "",
       "notes": "Add 5% Heal -1 Speed 60% Drunk chance",
       "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Wine barrel+Empty Bottle",
-      "ingredients": [
-        {
-          "name": "Wine barrel",
-          "namePl": "Beczka wina",
-          "slug": "wine-barrel",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Empty Bottle",
-          "namePl": "Pusta butelka",
-          "slug": "empty-bottle",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Bottle of Wine",
-        "namePl": "Butelka wina",
-        "slug": "bottle-of-wine",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Szybkość",
-          "Efekty/Statusy/DRUNK",
-          "Cechy",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Szybkość",
-        "Efekty/Statusy/DRUNK",
-        "Cechy",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A669:G669"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A669:G669",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Empty Bottle+Wine barrel",
+        "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Wine barrel+Empty Bottle"
+      ]
     },
     {
       "id": "Skladniki/BOWSTRING:Sinew+Sinew",
@@ -12812,62 +12669,10 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/PORRIDGE:Wheat+Milk",
-      "ingredients": [
-        {
-          "name": "Wheat",
-          "namePl": "Pszenica",
-          "slug": "wheat",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Kondycja",
-            "Cechy",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Porridge",
-        "namePl": "Owsianka",
-        "slug": "porridge",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Siła",
-          "Cechy",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Siła",
-        "Cechy",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A714:G714"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A714:G714",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/PORRIDGE:Wheat+Milk"
+      ]
     },
     {
       "id": "Skladniki/PUMPKIN-HELMET:Pumpkin+NÓŻ LUB SZTYLET",

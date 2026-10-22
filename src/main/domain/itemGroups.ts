@@ -1,5 +1,5 @@
 import type { RecipeItem, RecipeRow } from "./recipes"
-import { itemIconKey } from "./itemIcons"
+import { itemDataKey, itemIconKey } from "./itemIcons"
 
 export type ItemGroup = { id: string; name: string; members: RecipeItem[] }
 export type ItemGroups = Record<string, ItemGroup>
@@ -286,13 +286,19 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
       ingredients,
     }))
   })
-  const key = (row: RecipeRow) =>
+  const itemKey = (item: RecipeItem) => [
+    itemDataKey(item),
+    item.selectorTag ?? "",
+    item.quantity ?? "",
+    item.effect?.en ?? "",
+  ]
+  const key = (row: RecipeRow, includeRemarks = true) =>
     JSON.stringify([
-      [itemIconKey(row.result.name), row.result.quantity ?? ""],
-      row.ingredients.map((item) => [itemIconKey(item.name), item.quantity ?? ""]).sort(),
+      itemKey(row.result),
+      row.ingredients.map((item) => JSON.stringify(itemKey(item))).sort(),
       row.requirements,
-      row.remarks,
-      row.transformsIngredient === undefined ? null : [row.transformsIngredient, row.notes],
+      includeRemarks ? row.remarks : null,
+      row.transformsIngredient === undefined ? null : [itemKey(row.ingredients[row.transformsIngredient]), row.notes],
     ])
   // Keep an existing concrete recipe when expansion reaches the same combination.
   const concrete = new Map(expanded.filter((row) => !row.sourceRecipeIds).map((row) => [key(row), row]))
@@ -329,5 +335,29 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
       output.push(row)
     }
   }
-  return output
+  const unique = new Map<string, RecipeRow[]>()
+  for (const row of output) {
+    const signature = key(row, false)
+    const variants = unique.get(signature) ?? []
+    const index = variants.findIndex(
+      (previous) => !previous.remarks || !row.remarks || previous.remarks === row.remarks,
+    )
+    if (index === -1) {
+      variants.push(row)
+      unique.set(signature, variants)
+      continue
+    }
+    const previous = variants[index]
+    variants[index] = {
+      ...previous,
+      remarks: previous.remarks || row.remarks,
+      tags: [...new Set([...previous.tags, ...row.tags])],
+      sourceRecipeIds: [
+        ...new Set([...(previous.sourceRecipeIds ?? [previous.id]), ...(row.sourceRecipeIds ?? [row.id])]),
+      ],
+      source: [...new Set([...previous.source.split("; "), ...row.source.split("; ")].filter(Boolean))].join("; "),
+      notes: [...new Set([...previous.notes.split("\n"), ...row.notes.split("\n")].filter(Boolean))].join("\n"),
+    }
+  }
+  return [...unique.values()].flat()
 }

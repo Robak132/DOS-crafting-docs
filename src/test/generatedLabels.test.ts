@@ -17,6 +17,16 @@ test("tag labels and effect vocabulary are Polish, never an untranslated English
       const catalog: CatalogData = JSON.parse(
         await fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8"),
       )
+      if (game !== "dos1") {
+        for (const slug of ["milk-and-honey", "pizza-dough", "arrow"]) {
+          const recipes = catalog.recipes.filter((row) => row.result.slug === slug)
+          assert.equal(recipes.length, 1, `${game}: ${slug}`)
+          assert.ok(recipes[0].source)
+          if (slug === "arrow") assert.equal(recipes[0].remarks, "Serves No Function")
+          else assert.ok(recipes[0].notes)
+          assert.equal(recipes[0].sourceRecipeIds?.length, 2)
+        }
+      }
       const labels = Object.fromEntries(catalog.tags.map((tag) => [tag.tag, tag.label]))
       const dos1 = game === "dos1"
       const dexterity = dos1 ? "Zwinność" : "Zręczność"

@@ -46,7 +46,7 @@ VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 
 ## Dane i architektura
 
-- `data/library/pages/` — metadane przedmiotów i kategorii w JSON oraz HTML stron informacyjnych.
+- `data/library/pages/` — metadane stron przedmiotów: `dos1.json`, `dos2.json`, `dos2-co.json`.
 - `data/library/recipes/` — strukturalne receptury DOS1, DOS2 DE oraz dodatki Crafting Overhaul.
 - `data/recipeTagHierarchy.json` i `data/tagLabels.json` — hierarchia i nazwy tagów.
 - `data/` — zapisane słowniki lokalizacji, niezależne od lokalnej instalacji gry.
@@ -55,7 +55,7 @@ VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 - `src/main/App.tsx` — nawigacja, filtry, wyszukiwanie, strony przedmiotów i podglądy.
 - `src/test/` — testy jednostkowe logiki i komponentów, z układem odpowiadającym `src/main/`.
 - `scripts/load-library.ts` — odczyt i walidacja źródłowej biblioteki JSON.
-- `scripts/generate-data.ts` — generowanie katalogów, statystyk, ról craftingu i bezpiecznego HTML notatek z JSON.
+- `scripts/generate-data.ts` — generowanie katalogów, statystyk i ról craftingu z JSON.
 - `scripts/verify-dist.ts` — kontrola wynikowego artefaktu GitHub Pages.
 - `vite.config.ts` — serwer deweloperski, aktualizacja danych i generowanie plików pod istniejące adresy.
 
@@ -75,13 +75,25 @@ Przedmiot w recepturze ma `name`, opcjonalne `namePl`, `slug`, `quantity`,
 `selectorTag` oraz tablicę `tags`. Identyfikator `id` zachowuje zgodność z dotychczasowymi
 recepturami; różne warianty mogą mieć historycznie ten sam identyfikator.
 
-Plik strony ma ścieżkę zgodną z adresem, np.
-`data/library/pages/Skladniki/LEATHER-SCRAPS.json`. Pole `slug` musi odpowiadać
-tej ścieżce bez rozszerzenia. `title`, `titlePl`, `tags`, `itemPage`
-i `categoryPage` opisują stronę. Strony przedmiotów zawierają tylko metadane — receptury, efekty i opisy
-pochodzą z danych strukturalnych. Pole `html` przechowuje treść stron kategorii
-i informacyjnych; generator sanitizuje HTML przed publikacją. Odnośniki wewnętrzne
-w tej treści używają prefiksu `__APP_BASE__/`, zastępowanego właściwą ścieżką wdrożenia.
+Ulepszenia przedmiotów (zmiany istniejącego przedmiotu, np. dodanie odporności tarczy albo
+gniazda runy) są zapisane osobno, w tablicy `upgrades` pliku receptur. Wpis ma `effect`
+(`en`, opcjonalnie `pl`), `target` (ulepszany przedmiot lub grupa, np. „Most Weapons”),
+`targetTags` (kategorie `Typ/…`, których dotyczy — na ich podstawie strona przedmiotu pokazuje
+„Możliwe ulepszenia”), `tags` (cechy nadawane przez ulepszenie), `ingredients` oraz `requirements`,
+`notes`, `remarks` i `source`. Ulepszenia nie są przedmiotami: mają własną zakładkę w katalogu
+i nie mają stron.
+
+Strony przedmiotów są zapisane w trzech plikach, po jednym na grę:
+`data/library/pages/dos1.json`, `dos2.json` i `dos2-co.json` (pola `game` — `DOS1`, `DOS2`
+lub `DOS2-CO` — oraz `pages`). Wpis ma `slug`, `title`, opcjonalne `titlePl` i `tags`.
+Przedmiot z kilku gier występuje w pliku każdej gry, której tag ma, a jego kopie muszą być
+identyczne. Slug to angielska nazwa przedmiotu zapisana małymi literami i myślnikami
+(np. `leather-scraps`, `crafters-workbench`, `boosted-ring-luck-plus-2`); gdy dwa różne
+przedmioty mają tę samą nazwę, kolejny dostaje końcówkę `-2`, `-3`. Polska nazwa jest tylko
+tłumaczeniem w `titlePl`. Receptury, efekty i opisy pochodzą z danych strukturalnych.
+
+`data/library/redirects.json` mapuje dawne adresy (np. `Skladniki/LEATHER-SCRAPS`) na obecne
+slugi; aplikacja przekierowuje je z zachowaniem parametrów, a build tworzy dla nich pliki HTML.
 
 Opisy z gry edytuje się w `data/itemDescriptions.json`, a lokalizacje i mapę ikon
 w odpowiednich plikach `data/`. Liczniki filtrów, role przedmiotów, manifest,

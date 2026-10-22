@@ -7,7 +7,7 @@ ATTRIBUTES = {
  'Initiative':'Inicjatywa','AccuracyBoost':'Celność','ChanceToHitBoost':'Celność','CriticalChance':'Krytyk',
  'DodgeBoost':'Unik','ArmorBoost':'Pancerz-fizyczny','MagicArmorBoost':'Pancerz-magiczny',
  'Armor':'Pancerz-fizyczny','MagicArmor':'Pancerz-magiczny','Armor Defense Value':'Pancerz-fizyczny','Magic Armor Value':'Pancerz-magiczny',
- 'VitalityBoost':'HP','Vitality':'Leczenie','VitalityPercentage':'Leczenie','DamageBoost':'Obrażenia',
+ 'VitalityBoost':'HP','Vitality':'Leczenie','VitalityPercentage':'Leczenie',
  'Leadership':'Przywództwo','LuckyCharm':'Szczęście','Loremaster':'Znawca','Telekinesis':'Telekineza',
  'Sneaking':'Skradanie','Thievery':'Złodziejstwo','Bartering':'Handel','Persuasion':'Perswazja',
  'Lockpicking':'Otwieranie-zamków','Pickpocket':'Kradzież-kieszonkowa','Crafting':'Wytwarzanie','Blacksmithing':'Kowalstwo',
@@ -88,7 +88,6 @@ def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=()):
             if active:add('Cechy/Odporność-na-'+resist)
         if kind=='Weapon':
             if fields.get('Damage Type') in ELEMENTS:add(damage_tag(ELEMENTS[fields['Damage Type']][1]))
-        if float(fields.get('RuneSlots','0') or 0)>0:add('Cechy/Gniazda-run','Gniazda run')
         immunities={'Burn':'ogień','Burning':'ogień','Freeze':'zamrożenie','Frozen':'zamrożenie','Stun':'ogłuszenie','Stunned':'ogłuszenie','Blind':'oślepienie','Bleeding':'krwawienie','Acid':'kwas','Knockdown':'potrącenie','KnockedDown':'potrącenie','Slowed':'spowolnienie','Charm':'urok','Fear':'strach','Poison':'truciznę','Sleeping':'sen','Crippled':'okaleczenie'}
         for flag in fields.get('Flags','').split(';'):
             if flag.endswith('Immunity') and flag[:-8] in immunities:

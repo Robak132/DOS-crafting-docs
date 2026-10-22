@@ -1,6 +1,6 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { routeSlug, gameForSlug, isPublicPage } from "../main/routing"
+import { routeSlug, gameForSlug, isPublicPage, redirectHref } from "../main/routing"
 test("item routes resolve nested pages under the deployment base", () => {
   assert.equal(
     routeSlug("/DOS-crafting-docs/Mikstury-i-jedzenie/HEALING-POTION/", "/DOS-crafting-docs/"),
@@ -18,4 +18,22 @@ test("only item pages and game catalogs are public; category and tag landing pag
   for (const slug of ["Bron", "Skladniki", "Typ/Bron", "tags/Essence", "Przedmioty"])
     assert.equal(isPublicPage({ slug, itemPage: false, categoryPage: slug !== "Przedmioty" }), false)
   assert.equal(isPublicPage({ slug: "Bron", itemPage: true, categoryPage: true }), false)
+})
+
+test("a malformed percent escape in the address does not crash routing", () => {
+  // decodeURIComponent throws URIError here; App reads the route during its first render.
+  assert.doesNotThrow(() => routeSlug("/DOS-crafting-docs/Bron/%E0%A4%A", "/DOS-crafting-docs/"))
+  assert.equal(routeSlug("/DOS-crafting-docs/100%", "/DOS-crafting-docs/"), "100%")
+  assert.equal(routeSlug("/DOS-crafting-docs/Bron/%C5%81UK", "/DOS-crafting-docs/"), "Bron/ŁUK")
+})
+
+test("old item addresses redirect to the English slug and keep the query", () => {
+  const redirects = { "Skladniki/APPLE": "apple" }
+  assert.equal(redirectHref("Skladniki/APPLE", "?catalog=dos2", redirects), "/apple?catalog=dos2")
+  assert.equal(redirectHref("apple", "", redirects), undefined)
+  assert.equal(redirectHref("Skladniki/APPLE", "", undefined), undefined)
+  assert.equal(
+    redirectHref("Ulepszenia/WITS", "?catalog=dos2", { "Ulepszenia/WITS": "DOS2?view=upgrades&q=Wits" }),
+    "/DOS2?view=upgrades&q=Wits",
+  )
 })

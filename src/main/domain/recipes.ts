@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
+import { isOrComboTag, requirementTokens } from "./recipeView"
 
 export type RecipeItem = {
   /** Explicit game identity when inventory names are shared by distinct items. */
@@ -44,6 +45,19 @@ export type RecipeRow = {
   source: string
 }
 
+export type RecipeUpgrade = {
+  id: string
+  effect: { en: string; pl?: string }
+  target: RecipeItem
+  targetTags: string[]
+  tags: string[]
+  ingredients: RecipeItem[]
+  requirements: string
+  notes: string
+  remarks: string
+  source: string
+}
+
 export type TagStat = {
   tag: string
   count: number
@@ -53,6 +67,7 @@ export type TagStat = {
 export type RecipeData = {
   groups?: import("./itemGroups").ItemGroups
   recipes: RecipeRow[]
+  upgrades?: RecipeUpgrade[]
   tags: TagStat[]
   requirements: TagStat[]
   /** Grupy craftingowe (#selector) używane jako składniki. */
@@ -66,12 +81,8 @@ type TagHierarchyNode = {
 }
 
 type TagHierarchyIndex = {
-  byLowerTag: Map<string, string>
-  byLowerLabel: Map<string, Set<string>>
   labelByTag: Map<string, string>
   orderedTags: string[]
-  /** Bezpośredni rodzic w recipeTagHierarchy.json (np. Cechy/Siła → Cechy-podstawowe). */
-  parentByTag: Map<string, string>
 }
 
 let cachedHierarchyIndex: TagHierarchyIndex | null = null
@@ -98,31 +109,13 @@ function normalizeKey(value: string): string {
     .toLowerCase()
 }
 
-function isOrComboTag(tag: string): boolean {
-  return /-Or-/i.test(tag)
-}
-
 export type RecipeCatalog = "dos1" | "dos2" | "dos2-overhaul"
-
-function addLabelIndex(map: Map<string, Set<string>>, label: string, tag: string): void {
-  const normalized = normalizeKey(label)
-  if (!normalized) return
-  const existing = map.get(normalized)
-  if (existing) {
-    existing.add(tag)
-    return
-  }
-  map.set(normalized, new Set([tag]))
-}
 
 function getTagHierarchyIndex(): TagHierarchyIndex {
   if (cachedHierarchyIndex) return cachedHierarchyIndex
 
-  const byLowerTag = new Map<string, string>()
-  const byLowerLabel = new Map<string, Set<string>>()
   const labelByTag = new Map<string, string>()
   const orderedTags: string[] = []
-  const parentByTag = new Map<string, string>()
   const hierarchyPath = path.join(process.cwd(), "data", "recipeTagHierarchy.json")
 
   try {
@@ -130,21 +123,17 @@ function getTagHierarchyIndex(): TagHierarchyIndex {
     const parsed = JSON.parse(raw) as { hierarchy?: TagHierarchyNode[] }
     const roots = Array.isArray(parsed.hierarchy) ? parsed.hierarchy : []
 
-    const walk = (node: TagHierarchyNode, parent?: string) => {
+    const walk = (node: TagHierarchyNode) => {
       const canonical = node.tag?.trim().replace(/^\/+|\/+$/g, "")
       if (!canonical) return
 
-      byLowerTag.set(normalizeKey(canonical), canonical)
-      addLabelIndex(byLowerLabel, node.label ?? "", canonical)
-      addLabelIndex(byLowerLabel, canonical.split("/").at(-1) ?? "", canonical)
       if (node.label?.trim()) {
         labelByTag.set(canonical, node.label.trim())
       }
       orderedTags.push(canonical)
-      if (parent) parentByTag.set(canonical, parent)
 
       const children = Array.isArray(node.children) ? node.children : []
-      children.forEach((child) => walk(child, canonical))
+      children.forEach((child) => walk(child))
     }
 
     roots.forEach((root) => walk(root))
@@ -152,7 +141,7 @@ function getTagHierarchyIndex(): TagHierarchyIndex {
     // Static hierarchy file is optional during development; fallback keeps existing tags unchanged.
   }
 
-  cachedHierarchyIndex = { byLowerTag, byLowerLabel, labelByTag, orderedTags, parentByTag }
+  cachedHierarchyIndex = { labelByTag, orderedTags }
   return cachedHierarchyIndex
 }
 
@@ -181,14 +170,6 @@ export function getCechySidebarGroups(): CechySidebarGroup[] {
   } catch {
     return []
   }
-}
-
-function requirementTokens(value: string): string[] {
-  const tokens = value
-    .split(";")
-    .map((val) => val.trim())
-    .filter(Boolean)
-  return tokens.length > 0 ? tokens : ["-"]
 }
 
 export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog): RecipeItem {

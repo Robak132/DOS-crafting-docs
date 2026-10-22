@@ -12,9 +12,9 @@ key=runpy.run_path(str(ROOT/'scripts/export-item-icons.py'))['key']
 
 
 def main():
-    audit=json.loads((ROOT/'reports/item-effects-audit.json').read_text())
-    labels=json.loads((ROOT/'data/tagLabels.json').read_text())
-    hierarchy=json.loads((ROOT/'data/recipeTagHierarchy.json').read_text())
+    audit=json.loads((ROOT/'reports/item-effects-audit.json').read_text(encoding='utf-8'))
+    labels=json.loads((ROOT/'data/tagLabels.json').read_text(encoding='utf-8'))
+    hierarchy=json.loads((ROOT/'data/recipeTagHierarchy.json').read_text(encoding='utf-8'))
     for slug,name in set(rules['WEAPONS'].values()):labels['Typ/Bron/'+slug]=name
     for slot,(slug,name) in rules['SLOTS'].items():
         if slot not in ['Amulet','Ring','Belt']:labels['Typ/Pancerz/'+slug]=name
@@ -22,11 +22,11 @@ def main():
     # New numeric-property tags get human labels instead of falling back to IDs.
     for suffix in rules['ATTRIBUTES'].values():labels.setdefault(rules['attribute_tag'](suffix),suffix.replace('-',' '))
     for _,(_,damage) in rules['ELEMENTS'].items():labels.setdefault(rules['damage_tag'](damage),'Obrażenia od '+damage)
-    labels.update({'Cechy/Krytyk':'Szansa na trafienie krytyczne','Cechy/Obrażenia':'Bonus obrażeń','Cechy/Odporność-na-obrażenia-fizyczne':'Odporność na obrażenia fizyczne','Cechy/Odporność-na-obrażenia-przeszywające':'Odporność na obrażenia przeszywające','Cechy/Obrażenia-fizyczne':'Obrażenia fizyczne','Cechy/Obrażenia-przeszywające':'Obrażenia przeszywające'})
+    labels.update({'Cechy/Krytyk':'Szansa na trafienie krytyczne','Cechy/Odporność-na-obrażenia-fizyczne':'Odporność na obrażenia fizyczne','Cechy/Odporność-na-obrażenia-przeszywające':'Odporność na obrażenia przeszywające','Cechy/Obrażenia-fizyczne':'Obrażenia fizyczne','Cechy/Obrażenia-przeszywające':'Obrażenia przeszywające'})
     pages=defaultdict(set);counts={}
     for game,data_audit in audit['catalogs'].items():
         by_name={item.get('data_key',key(item['name'])):item for item in data_audit['items']}
-        path=ROOT/'data/library/recipes'/f'{game}.json';data=json.loads(path.read_text());changes=[]
+        path=ROOT/'data/library/recipes'/f'{game}.json';data=json.loads(path.read_text(encoding='utf-8'));changes=[]
         def refresh(item,recipe_id=None):
             before=item['tags'];record=by_name.get(key(item.get('statsId') or item['name']));identities=record['identities'] if record and not item.get('selectorTag') else []
             if recipe_id and record:
@@ -67,13 +67,13 @@ def main():
             for item in row['ingredients']:refresh(item)
             row['tags']=list(row['result']['tags'])
         for item in data.get('items',[]):refresh(item)
-        path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+        path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
         counts[game]={'changed_references':len(changes),'changed_names':len({c['name'] for c in changes}),'changes':changes}
         print(game,counts[game]['changed_names'],'items tagged',flush=True)
+    library_pages=runpy.run_path(str(ROOT/'scripts/library-pages.py'));library=library_pages['load_pages']()
     for slug,tags in pages.items():
-        path=ROOT/'data/library/pages'/(slug+'.json')
-        if path.exists():
-            page=json.loads(path.read_text());page['tags']=sorted(tags);path.write_text(json.dumps(page,ensure_ascii=False,indent=2)+'\n')
+        if slug in library:library[slug]['tags']=sorted(tags)
+    library_pages['save_pages'](library)
     for node in hierarchy['hierarchy']:
         if node['tag']=='Typ':
             for category in node['children']:
@@ -94,7 +94,7 @@ def main():
             localize_nodes(node.get('children',[]))
     localize_nodes(hierarchy['hierarchy'])
     for file,data in [('data/tagLabels.json',labels),('data/recipeTagHierarchy.json',hierarchy),('reports/effect-tags-audit.json',{'scope':'Equipment types from game slot/WeaponType; property tags from verified game effects. Existing ingredient groups unchanged. Generic ambiguous ingredients use only properties common to all matching identities.','catalogs':counts})]:
-        (ROOT/file).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+        (ROOT/file).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 
 
 if __name__=='__main__':main()

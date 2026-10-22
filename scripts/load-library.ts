@@ -2,22 +2,11 @@ import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import path from "node:path"
 import type { LibraryPage } from "../src/main/domain/types"
-import type { RecipeCatalog, RecipeItem, RecipeRow } from "../src/main/domain/recipes"
+import type { RecipeCatalog, RecipeItem, RecipeRow, RecipeUpgrade } from "../src/main/domain/recipes"
 import type { RecipeSources } from "../src/main/domain/recipeCatalog"
 
-async function jsonFiles(directory: string): Promise<string[]> {
-  const entries = await fs.readdir(directory, { withFileTypes: true })
-  return (
-    await Promise.all(
-      entries.map((entry) => {
-        const file = path.join(directory, entry.name)
-        return entry.isDirectory() ? jsonFiles(file) : Promise.resolve(entry.name.endsWith(".json") ? [file] : [])
-      }),
-    )
-  )
-    .flat()
-    .sort()
-}
+const reservedSlugs = new Set(["index", "receptury", "dos2", "dos2-crafting-overhaul", "data", "assets", "404"])
+const pageFiles = { DOS1: "dos1.json", DOS2: "dos2.json", "DOS2-CO": "dos2-co.json" } as const
 function strings(value: unknown): value is string[] {
   return Array.isArray(value) && value.every((entry) => typeof entry === "string" && entry.trim().length > 0)
 }
@@ -42,40 +31,58 @@ function validItem(item: RecipeItem): boolean {
   )
 }
 export async function loadLibrary(directory = "data/library") {
-  const pages = await Promise.all(
-    (await jsonFiles(path.join(directory, "pages"))).map(async (filename) => {
-      const page: Omit<LibraryPage, "html"> & { html?: string } = JSON.parse(await fs.readFile(filename, "utf8"))
-      const expected = path
-        .relative(path.join(directory, "pages"), filename)
-        .replaceAll(path.sep, "/")
-        .replace(/\.json$/, "")
-      assert.equal(page.slug, expected, `Page slug must match its path: ${filename}`)
-      assert.ok(
-        page.slug && !page.slug.split("/").some((part) => !part || part === "." || part === ".."),
-        `Invalid slug: ${filename}`,
-      )
-      assert.ok(typeof page.title === "string" && page.title.trim(), `Missing title: ${filename}`)
-      assert.ok(page.titlePl === undefined || typeof page.titlePl === "string", `Invalid Polish title: ${filename}`)
-      assert.ok(strings(page.tags), `Invalid tags: ${filename}`)
-      assert.ok(
-        (typeof page.html === "string" ||
-          (page.html === undefined &&
-            (page.itemPage || ["index", "DOS2", "dos2-crafting-overhaul"].includes(page.slug)))) &&
-          typeof page.itemPage === "boolean" &&
-          typeof page.categoryPage === "boolean",
-        `Invalid page: ${filename}`,
-      )
-      return { ...page, html: page.html ?? "" }
-    }),
-  )
-  assert.ok(pages.length > 0, "The JSON library contains no pages")
-  const sources = {} as RecipeSources
-  const items = {} as Record<RecipeCatalog, RecipeItem[]>
-  for (const game of ["dos1", "dos2", "dos2-overhaul"] as RecipeCatalog[]) {
-    const filename = path.join(directory, "recipes", `${game}.json`)
-    const source: { game: RecipeCatalog; recipes: RecipeRow[]; items?: RecipeItem[] } = JSON.parse(
+  const pagesBySlug = new Map<string, LibraryPage>()
+  const gamesBySlug = new Map<string, string[]>()
+  for (const [game, name] of Object.entries(pageFiles)) {
+    const filename = path.join(directory, "pages", name)
+    const source: { game: string; pages: Omit<LibraryPage, "itemPage" | "categoryPage">[] } = JSON.parse(
       await fs.readFile(filename, "utf8"),
     )
+    assert.equal(source.game, game, `Wrong game: ${filename}`)
+    assert.ok(Array.isArray(source.pages), `Missing pages: ${filename}`)
+    for (const page of source.pages) {
+      const where = `${filename}: ${page?.slug}`
+      assert.ok(
+        typeof page.slug === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(page.slug),
+        `Invalid slug (lowercase English words joined by hyphens): ${where}`,
+      )
+      assert.ok(!reservedSlugs.has(page.slug), `Slug reserved for a route or asset folder: ${where}`)
+      assert.ok(typeof page.title === "string" && page.title.trim(), `Missing title: ${where}`)
+      assert.ok(page.titlePl === undefined || typeof page.titlePl === "string", `Invalid Polish title: ${where}`)
+      assert.ok(strings(page.tags), `Invalid tags: ${where}`)
+      assert.ok(page.tags.includes(game), `Page without its game tag ${game}: ${where}`)
+      const previous = pagesBySlug.get(page.slug)
+      if (previous) {
+        const { itemPage: _item, categoryPage: _category, ...copy } = previous
+        assert.deepEqual(page, copy, `Copies of a shared page differ: ${where}`)
+      }
+      pagesBySlug.set(page.slug, { ...page, itemPage: true, categoryPage: false })
+      gamesBySlug.set(page.slug, [...(gamesBySlug.get(page.slug) ?? []), game])
+    }
+  }
+  for (const [slug, games] of gamesBySlug) {
+    const tagged = Object.keys(pageFiles).filter((game) => pagesBySlug.get(slug)!.tags.includes(game))
+    assert.deepEqual(games, tagged, `Shared page must be listed in every game file it is tagged with: ${slug}`)
+  }
+  const pages = [...pagesBySlug.values()].sort((a, b) => (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0))
+  assert.ok(pages.length > 0, "The JSON library contains no pages")
+  const redirectsFile = path.join(directory, "redirects.json")
+  const redirects: Record<string, string> = JSON.parse(await fs.readFile(redirectsFile, "utf8").catch(() => "{}"))
+  for (const [from, to] of Object.entries(redirects)) {
+    assert.ok(!pagesBySlug.has(from), `Redirect shadows an existing page: ${from}`)
+    const target = to.split("?")[0]
+    assert.ok(
+      pagesBySlug.has(target) || ["receptury", "DOS2", "dos2-crafting-overhaul"].includes(target),
+      `Redirect to a missing page: ${from} -> ${to}`,
+    )
+  }
+  const sources = {} as RecipeSources
+  const items = {} as Record<RecipeCatalog, RecipeItem[]>
+  const upgrades = {} as Record<RecipeCatalog, RecipeUpgrade[]>
+  for (const game of ["dos1", "dos2", "dos2-overhaul"] as RecipeCatalog[]) {
+    const filename = path.join(directory, "recipes", `${game}.json`)
+    const source: { game: RecipeCatalog; recipes: RecipeRow[]; upgrades?: RecipeUpgrade[]; items?: RecipeItem[] } =
+      JSON.parse(await fs.readFile(filename, "utf8"))
     assert.equal(source.game, game, `Wrong game: ${filename}`)
     assert.ok(Array.isArray(source.recipes), `Missing recipes: ${filename}`)
     assert.ok(
@@ -102,6 +109,31 @@ export async function loadLibrary(directory = "data/library") {
         assert.equal(typeof row[field], "string", `Missing ${field}: ${row.id}`)
     }
     sources[game] = source.recipes
+    upgrades[game] = source.upgrades ?? []
+    assert.ok(Array.isArray(upgrades[game]), `Invalid upgrades: ${filename}`)
+    for (const upgrade of upgrades[game]) {
+      assert.ok(typeof upgrade.id === "string" && upgrade.id.trim(), `Invalid upgrade id: ${filename}`)
+      assert.ok(
+        typeof upgrade.effect?.en === "string" &&
+          upgrade.effect.en.trim() &&
+          (upgrade.effect.pl === undefined || typeof upgrade.effect.pl === "string"),
+        `Invalid upgrade effect: ${upgrade.id}`,
+      )
+      assert.ok(
+        validItem(upgrade.target) &&
+          strings(upgrade.targetTags) &&
+          upgrade.targetTags.length > 0 &&
+          upgrade.targetTags.every((tag) => tag.startsWith("Typ/")),
+        `Invalid upgrade target: ${upgrade.id}`,
+      )
+      assert.ok(strings(upgrade.tags), `Invalid upgrade tags: ${upgrade.id}`)
+      assert.ok(
+        Array.isArray(upgrade.ingredients) && upgrade.ingredients.every(validItem),
+        `Invalid upgrade ingredients: ${upgrade.id}`,
+      )
+      for (const field of ["requirements", "notes", "remarks", "source"] as const)
+        assert.equal(typeof upgrade[field], "string", `Missing ${field}: ${upgrade.id}`)
+    }
   }
-  return { pages, sources, items }
+  return { pages, sources, items, upgrades, redirects }
 }

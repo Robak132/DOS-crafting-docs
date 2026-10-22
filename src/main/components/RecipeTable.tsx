@@ -1,3 +1,4 @@
+import type { ComponentChild } from "preact"
 import { ItemIcon } from "./ItemIcon"
 import { tooltipItemKey } from "../domain/tooltipIdentity"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
@@ -50,7 +51,7 @@ export function RecipeTable({
   itemRoles = {},
 }: Props) {
   const columns = recipeColumnsForCatalog(showRequirements)
-  const withQuantity = (node: any, item: RecipeItem) => {
+  const withQuantity = (node: ComponentChild, item: RecipeItem) => {
     const qty = formatItemQuantity(item.quantity)
     if (!qty) return node
     return (
@@ -166,13 +167,15 @@ export function RecipeTable({
       <table class="recipe-table">
         <colgroup>
           {columns.map(({ key }) => (
-            <col class={`recipe-col ${key}`} />
+            <col key={key} class={`recipe-col ${key}`} />
           ))}
         </colgroup>
         <thead>
           <tr>
-            {columns.map(({ label }) => (
-              <th scope="col">{label}</th>
+            {columns.map(({ key, label }) => (
+              <th key={key} scope="col">
+                {label}
+              </th>
             ))}
           </tr>
         </thead>
@@ -180,6 +183,7 @@ export function RecipeTable({
           {groupRecipes(recipes).map((group) =>
             group.variants.map((recipe, index) => (
               <tr
+                key={`${group.key}|${recipe.id}#${index}`}
                 data-recipe-id={group.result.slug ?? group.result.name}
                 class={[
                   index === 0 ? "recipe-group-start" : "recipe-group-inner",
@@ -198,8 +202,8 @@ export function RecipeTable({
                 )}
                 <td class="recipe-cell ingredients">
                   <ul class="recipe-ingredients">
-                    {recipe.ingredients.map((item) => (
-                      <li>{renderItem(item, { ingredient: true })}</li>
+                    {recipe.ingredients.map((item, index) => (
+                      <li key={index}>{renderItem(item, { ingredient: true })}</li>
                     ))}
                   </ul>
                   {recipe.remarks?.trim() && <p class="recipe-remarks">{recipe.remarks}</p>}
@@ -210,7 +214,7 @@ export function RecipeTable({
                 <td class="recipe-cell tags">
                   <div class="recipe-row-tags">
                     {visibleRecipeTags(recipeResultTags(recipe)).map((tag) => (
-                      <button type="button" class="recipe-search-tag" data-filter-tag={tag}>
+                      <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
                         {tagLabel(tag, labels)}
                       </button>
                     ))}

@@ -5,14 +5,28 @@ import {
   type RecipeData,
   type RecipeCatalog,
   type RecipeRow,
+  type RecipeUpgrade,
 } from "./recipes"
 import { itemNameKeys, recipeUsesItem } from "./recipeView"
 
-export const OVERHAUL_SLUG = "dos2-crafting-overhaul"
-export const DOS2_SLUG = "DOS2"
 export type RecipeSources = Record<RecipeCatalog, RecipeRow[]>
 
-export function buildCatalogs(sources: RecipeSources, pages: PageSummary[], labels: Record<string, string>) {
+export function buildCatalogs(
+  sources: RecipeSources,
+  pages: PageSummary[],
+  labels: Record<string, string>,
+  upgradeSources: Record<RecipeCatalog, RecipeUpgrade[]> = { dos1: [], dos2: [], "dos2-overhaul": [] },
+) {
+  const localizeUpgrades = (game: RecipeCatalog, upgrades: RecipeUpgrade[]): RecipeUpgrade[] =>
+    upgrades.map((upgrade) => {
+      const effect = localizeItemForCatalog({ name: upgrade.effect.en, namePl: upgrade.effect.pl, tags: [] }, game)
+      return {
+        ...upgrade,
+        effect: { en: upgrade.effect.en, pl: upgrade.effect.pl ?? effect.namePl },
+        target: localizeItemForCatalog(upgrade.target, game),
+        ingredients: upgrade.ingredients.map((item) => localizeItemForCatalog(item, game)),
+      }
+    })
   const categories = new Map(
     pages.filter((page) => page.categoryPage).flatMap((page) => page.tags.map((tag) => [tag, page.title] as const)),
   )
@@ -32,7 +46,7 @@ export function buildCatalogs(sources: RecipeSources, pages: PageSummary[], labe
       result: localizeItemForCatalog(row.result, game),
       ingredients: row.ingredients.map((item) => localizeItemForCatalog(item, game)),
     }))
-    const data = { recipes, ...collectRecipeStats(recipes, displayLabels) }
+    const data: RecipeData = { recipes, ...collectRecipeStats(recipes, displayLabels) }
     data.tags.forEach((tag) => {
       tag.label = categories.get(tag.tag) ?? tag.label
     })
@@ -41,7 +55,11 @@ export function buildCatalogs(sources: RecipeSources, pages: PageSummary[], labe
   const dos1 = build("dos1")
   const dos2 = build("dos2")
   const overhaul = build("dos2-overhaul")
-  return { dos1, dos2, "dos2-overhaul": mergeCatalogs([dos2, overhaul]) }
+  dos1.upgrades = localizeUpgrades("dos1", upgradeSources.dos1)
+  dos2.upgrades = localizeUpgrades("dos2", upgradeSources.dos2)
+  const combined = mergeCatalogs([dos2, overhaul])
+  combined.upgrades = [...dos2.upgrades, ...localizeUpgrades("dos2-overhaul", upgradeSources["dos2-overhaul"])]
+  return { dos1, dos2, "dos2-overhaul": combined }
 }
 
 function mergeCatalogs(catalogs: RecipeData[]): RecipeData {

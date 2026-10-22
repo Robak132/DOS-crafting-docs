@@ -19,13 +19,13 @@ def key(name):
 
 
 def main():
-    icons = json.loads((ROOT / 'data/itemIcons.json').read_text())
+    icons = json.loads((ROOT / 'data/itemIcons.json').read_text(encoding='utf-8'))
     report = {
         'scope': 'DOS1 EE; DOS2 Definitive Edition; DOS2 DE + Crafting Overhaul. Combined mode includes base DOS2. Counts use game Stats identities when available, otherwise unique English names among recipe results and ingredients; no icon is invented for an unresolved name.',
         'catalogs': {},
     }
     for game, mapping in icons.items():
-        catalog = json.loads((ROOT / '.generated/build/data' / f'catalog-{game}.json').read_text())
+        catalog = json.loads((ROOT / '.generated/build/data' / f'catalog-{game}.json').read_text(encoding='utf-8'))
         items, groups, upgrades = {}, set(), set()
         roles = defaultdict(set)
         for recipe in catalog['recipes']:
@@ -49,7 +49,7 @@ def main():
             'unresolved': missing,
         }
         print(f'{game}: {len(items) - len(missing)}/{len(items)} with icons; {len(missing)} unresolved; {len(broken)} broken files')
-    (ROOT / 'reports/item-icon-coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    (ROOT / 'reports/item-icon-coverage.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
 if __name__ == '__main__':

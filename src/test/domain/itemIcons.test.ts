@@ -194,7 +194,7 @@ test("Cyan Dye uses the Jellyroom mushroom instead of a nonexistent Jellyfish it
   const mushroom = cyan.ingredients.find((item: { name: string }) => item.name === "Jellyroom")
   assert.ok(mushroom)
   assert.equal(mushroom.namePl, "Meduzowiec")
-  assert.equal(mushroom.slug, "Skladniki/JELLYROOM")
+  assert.equal(mushroom.slug, "jellyroom")
   assert.equal(resolveItemIcon(icons, "dos2-overhaul", mushroom), icons["dos2-overhaul"].jellyroom)
   assert.ok(resolveItemIcon(icons, "dos2-overhaul", mushroom))
   assert.ok(
@@ -202,14 +202,17 @@ test("Cyan Dye uses the Jellyroom mushroom instead of a nonexistent Jellyfish it
       row.ingredients.some((item) => item.name === "Jellyfish"),
     ),
   )
-  assert.equal(fs.existsSync("data/library/pages/Skladniki/JELLYFISH.json"), false)
+  for (const name of ["dos1", "dos2", "dos2-co"])
+    assert.ok(
+      !JSON.parse(fs.readFileSync(`data/library/pages/${name}.json`, "utf8")).pages.some(
+        (page: { slug: string }) => page.slug === "Skladniki/JELLYFISH",
+      ),
+    )
 })
 
 test("seasonal Frost Staff uses the mod's Winter Staff name, icon and description", () => {
   const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
-  const recipe = source.recipes.find(
-    (row: { result: { slug: string } }) => row.result.slug === "Przedmioty-wydarzen/FROST-STAFF",
-  )
+  const recipe = source.recipes.find((row: { result: { slug: string } }) => row.result.slug === "winter-staff")
   assert.ok(recipe)
   assert.equal(recipe.result.name, "Winter Staff")
   assert.ok(recipe.result.tags.includes("Typ/Bron"))
@@ -224,14 +227,16 @@ test("seasonal Frost Staff uses the mod's Winter Staff name, icon and descriptio
     descriptions["dos2-overhaul"].winterstaff.en,
     "This frost staff thrums with energy, waiting to serve your purpose.",
   )
-  const page = JSON.parse(fs.readFileSync("data/library/pages/Przedmioty-wydarzen/FROST-STAFF.json", "utf8"))
+  const page = JSON.parse(fs.readFileSync("data/library/pages/dos2-co.json", "utf8")).pages.find(
+    (entry: { slug: string }) => entry.slug === "winter-staff",
+  )
   assert.equal(page.title, "Winter Staff")
 })
 
 test("crafted two-handed mace has its preview icon while upgrade inputs remain selectors", () => {
   const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
   const result = source.recipes.find(
-    (row: { result: { slug: string } }) => row.result.slug === "Bron/TWO-HANDED-MACE",
+    (row: { result: { slug: string } }) => row.result.slug === "crafted-2h-mace",
   )?.result
   assert.ok(result)
   assert.equal(result.name, "Crafted 2H Mace")
@@ -240,9 +245,13 @@ test("crafted two-handed mace has its preview icon while upgrade inputs remain s
   const provenance = JSON.parse(fs.readFileSync("data/itemIcons.provenance.json", "utf8"))
   assert.equal(provenance["dos2-overhaul"].crafted2hmace.icon, "Item_WPN_Human_Normal_WarHammer_B")
   assert.equal(provenance["dos2-overhaul"].crafted2hmace.stats, "WPN_Mace_2H")
-  const groups = source.recipes
-    .flatMap((row: { ingredients: { name: string; selectorTag?: string; tags: string[] }[] }) => row.ingredients)
-    .filter((item: { selectorTag?: string }) => item.selectorTag === "TwoHandedMaces")
+  const groups = [
+    ...source.recipes.flatMap((row: { ingredients: { name: string; selectorTag?: string }[] }) => row.ingredients),
+    ...source.upgrades.flatMap((row: { target: { name: string }; ingredients: { name: string }[] }) => [
+      row.target,
+      ...row.ingredients,
+    ]),
+  ].filter((item: { selectorTag?: string }) => item.selectorTag === "TwoHandedMaces")
   assert.ok(groups.length >= 3)
   for (const group of groups) {
     assert.equal(group.name, "Two Handed Mace")

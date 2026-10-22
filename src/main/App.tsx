@@ -8,6 +8,8 @@ import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
 import { ItemTable } from "./components/ItemTable"
 import { RecipeTable } from "./components/RecipeTable"
+import { UpgradeTable } from "./components/UpgradeTable"
+import { upgradesForItem } from "./domain/upgrades"
 import type { CatalogManifest, CatalogData, PageDetail } from "./domain/types"
 import {
   catalogItems,
@@ -26,12 +28,13 @@ import {
   emptyFilters,
   cycleFilter,
   filterRecipes,
+  filterUpgrades,
   filtersToSearch,
   rememberedCatalogHref,
   restoreFilters,
   type Filters,
 } from "./filters"
-import { catalogHref, gameForSlug, games, pageHref, routeSlug, type Game, type View } from "./routing"
+import { catalogHref, gameForSlug, games, pageHref, redirectHref, routeSlug, type Game, type View } from "./routing"
 import { useJson } from "./api"
 
 const stored = (key: string, fallback: string) => {
@@ -47,9 +50,8 @@ function routeGame(route: ReturnType<typeof currentRoute>): Game {
   return gameForSlug(route.slug) ?? (games.some((entry) => entry.id === candidate) ? (candidate as Game) : "dos1")
 }
 function routeView(search: string): View {
-  return (new URLSearchParams(search).get("view") ?? stored("crafting_catalog_view", "items")) === "recipes"
-    ? "recipes"
-    : "items"
+  const view = new URLSearchParams(search).get("view") ?? stored("crafting_catalog_view", "items")
+  return view === "recipes" || view === "upgrades" ? view : "items"
 }
 function LanguageName({ page, lang }: { page: { title: string; titlePl?: string }; lang: string }) {
   return <>{lang === "pl" ? (page.titlePl ?? page.title) : page.title}</>
@@ -77,7 +79,8 @@ export function App() {
   const isItemRoute = Boolean(
     manifest.data?.pages.some((page) => page.slug === route.slug && page.itemPage && !page.categoryPage),
   )
-  const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute
+  const redirect = redirectHref(route.slug, route.search, manifest.data?.redirects)
+  const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute && !redirect
   const descriptions = useJson<Record<string, ItemDescription>>(
     !isCatalog || view === "items" ? `descriptions-${game}.json` : null,
   )
@@ -87,15 +90,16 @@ export function App() {
     () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
     [catalog.data],
   )
-  const filtered = useMemo(() => {
+  const sourceRows = useMemo(() => {
     const group = filters.group ? catalog.data?.groups?.[filters.group] : undefined
-    const rows = group
+    return group
       ? groupItemRows(catalog.data?.recipes ?? [], group)
       : filters.group
         ? []
         : (catalog.data?.recipes ?? [])
-    return filterRecipes(rows, filters, labels)
-  }, [catalog.data, filters, labels])
+  }, [catalog.data, filters.group])
+  const filtered = useMemo(() => filterRecipes(sourceRows, filters, labels), [sourceRows, filters, labels])
+  const upgrades = useMemo(() => filterUpgrades(catalog.data?.upgrades ?? [], filters), [catalog.data, filters])
   const tagGroups = useMemo(
     () => groupRecipeTags(catalog.data?.tags ?? [], manifest.data?.traitGroups ?? []),
     [catalog.data, manifest.data],
@@ -117,33 +121,38 @@ export function App() {
     () => searchCatalogPages(manifest.data?.pages ?? [], itemNames, pageQuery),
     [manifest.data, itemNames, pageQuery],
   )
-  const navigate = (url: URL) => {
-    window.history.pushState({}, "", url)
+  const currentFilters = query === filters.query ? filters : { ...filters, query }
+  const applyLocation = () => {
     const next = currentRoute()
     const nextGame = routeGame(next)
     const nextFilters = restoreFilters(nextGame, next.search)
+    setRoute(next)
     setGame(nextGame)
     setView(routeView(next.search))
     setFilters(nextFilters)
     setQuery(nextFilters.query)
-    setRoute(next)
+  }
+  const navigate = (url: URL) => {
+    if (isCatalog && currentFilters !== filters) {
+      try {
+        sessionStorage.setItem(`crafting.filters.${game}`, JSON.stringify(currentFilters))
+      } catch {}
+    }
+    window.history.pushState({}, "", url)
+    applyLocation()
     setPageQuery("")
     window.scrollTo(0, 0)
   }
   useEffect(() => {
-    const pop = () => {
-      const next = currentRoute()
-      const nextGame = routeGame(next)
-      const nextFilters = restoreFilters(nextGame, next.search)
-      setRoute(next)
-      setGame(nextGame)
-      setView(routeView(next.search))
-      setFilters(nextFilters)
-      setQuery(nextFilters.query)
-    }
+    const pop = () => applyLocation()
     window.addEventListener("popstate", pop)
     return () => window.removeEventListener("popstate", pop)
   }, [])
+  useEffect(() => {
+    if (!redirect) return
+    window.history.replaceState({}, "", redirect)
+    applyLocation()
+  }, [redirect])
   useEffect(() => {
     document.documentElement.dataset.itemLang = lang
     try {
@@ -215,7 +224,7 @@ export function App() {
     navigate(url)
   }
   const cycle = (tag: string, kind: "tag" | "requirement" = "tag") => {
-    const next = cycleFilter(filters, tag, kind)
+    const next = cycleFilter(currentFilters, tag, kind)
     if (isCatalog) setFilters(next)
     else
       navigate(
@@ -255,6 +264,10 @@ export function App() {
       used: catalog.data.recipes.filter((row) => recipeUsesItem(row, route.slug, keys)),
     }
   }, [detail.data, catalog.data, route.slug])
+  const itemUpgrades = useMemo(
+    () => (detail.data ? upgradesForItem(catalog.data?.upgrades ?? [], detail.data.tags) : []),
+    [detail.data, catalog.data],
+  )
   const detailName =
     itemRecipes.craft[0]?.result ??
     catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === route.slug)
@@ -270,7 +283,7 @@ export function App() {
   return (
     <div ref={root} class="app-shell" onClick={onClick}>
       <aside class="sidebar">
-        <a class="brand" href={rememberedCatalogHref(game, view, filters)}>
+        <a class="brand" href={rememberedCatalogHref(game, view, currentFilters)}>
           Divinity<span>Katalog craftingu</span>
         </a>
         <div class="sidebar-tools">
@@ -307,7 +320,7 @@ export function App() {
           {games.map((entry) => (
             <a
               key={entry.id}
-              href={rememberedCatalogHref(entry.id, view, entry.id === game ? filters : undefined)}
+              href={rememberedCatalogHref(entry.id, view, entry.id === game ? currentFilters : undefined)}
               aria-current={entry.id === game ? "page" : undefined}
             >
               {entry.label}
@@ -352,8 +365,10 @@ export function App() {
                             : "neutral"
                       }
                       onClick={() => cycle(entry.tag, "requirement")}
+                      aria-pressed={filters.requirements.includes(entry.tag)}
                     >
                       {entry.tag === "-" ? "Brak wymagań" : entry.tag}
+                      {filters.requirementsExclude.includes(entry.tag) && <span class="sr-only"> (wykluczone)</span>}
                       <span>({entry.count})</span>
                     </button>
                   ))}
@@ -401,7 +416,7 @@ export function App() {
             </h1>
           </div>
           {!isCatalog && (
-            <a class="back-link" href={rememberedCatalogHref(game, view, filters)}>
+            <a class="back-link" href={rememberedCatalogHref(game, view, currentFilters)}>
               ← Wróć do katalogu
             </a>
           )}
@@ -423,12 +438,19 @@ export function App() {
                 <button class="recipe-view-btn" aria-pressed={view === "recipes"} onClick={() => setView("recipes")}>
                   Receptury
                 </button>
+                <button class="recipe-view-btn" aria-pressed={view === "upgrades"} onClick={() => setView("upgrades")}>
+                  Ulepszenia
+                </button>
               </div>
               <span role="status" aria-live="polite" class="result-count">
-                {view === "items" ? `Przedmioty: ${catalogItems(filtered).length}` : `Receptury: ${filtered.length}`}
+                {view === "items"
+                  ? `Przedmioty: ${catalogItems(filtered).length}`
+                  : view === "upgrades"
+                    ? `Ulepszenia: ${upgrades.length}`
+                    : `Receptury: ${filtered.length}`}
               </span>
               <div class="catalog-search">
-                <div class="search-scope" role="group" aria-label="Zakres wyszukiwania">
+                <div class="search-scope" role="group" aria-label="Zakres wyszukiwania" hidden={view === "upgrades"}>
                   <button
                     aria-pressed={filters.scope === "result"}
                     onClick={() => setFilters((state) => ({ ...state, scope: "result" }))}
@@ -448,19 +470,27 @@ export function App() {
                   type="search"
                   value={query}
                   onInput={(event) => setQuery(event.currentTarget.value)}
-                  placeholder={filters.scope === "ingredient" ? "Nazwa składnika lub grupy" : "Nazwa lub efekt"}
+                  placeholder={
+                    view === "upgrades"
+                      ? "Efekt, przedmiot lub składnik"
+                      : filters.scope === "ingredient"
+                        ? "Nazwa składnika lub grupy"
+                        : "Nazwa lub efekt"
+                  }
                 />
               </div>
             </div>
             {game === "dos2-overhaul" && (
               <p class="catalog-note">Przedmioty i receptury z DOS2 Definitive Edition oraz Crafting Overhaul.</p>
             )}
-            {view === "items" ? (
+            {view === "upgrades" ? (
+              <UpgradeTable upgrades={upgrades} labels={labels} game={game} showRequirements={game === "dos1"} />
+            ) : view === "items" ? (
               <ItemTable
                 recipes={filtered}
                 labels={labels}
                 itemHref={itemHref}
-                itemRoles={manifest.data?.itemRoles}
+                itemRoles={manifest.data?.itemRoles?.[game]}
                 descriptions={descriptions.data ?? undefined}
                 lang={lang}
               />
@@ -471,7 +501,7 @@ export function App() {
                 labels={labels}
                 showRequirements={game === "dos1"}
                 searchable
-                itemRoles={manifest.data?.itemRoles}
+                itemRoles={manifest.data?.itemRoles?.[game]}
               />
             ) : (
               <p class="empty-message">Brak receptur pasujących do filtrów.</p>
@@ -489,7 +519,7 @@ export function App() {
             {!unavailablePage && !detail.data && !detail.error && <p role="status">Wczytywanie przedmiotu…</p>}
             {isItemRoute && detail.data?.itemPage && !detail.data.categoryPage && (
               <>
-                {detail.data.itemPage && detailDescriptionText && (
+                {detailDescriptionText && (
                   <section class="item-description">
                     <h2>Opis</h2>
                     <p>{detailDescriptionText}</p>
@@ -502,62 +532,62 @@ export function App() {
                     </button>
                   ))}
                 </div>
-                {detail.data.itemPage ? (
-                  <>
-                    {detailEffects.length > 0 && (
-                      <section>
-                        <h2>Efekt</h2>
-                        <ul>
-                          {detailEffects.map((effect) => (
-                            <li key={effect}>{effect}</li>
-                          ))}
-                        </ul>
-                      </section>
-                    )}
-                    {detailRemarks.length > 0 && (
-                      <section>
-                        <h2>Uwagi</h2>
-                        <ul>
-                          {detailRemarks.map((remark) => (
-                            <li key={remark}>{remark}</li>
-                          ))}
-                        </ul>
-                      </section>
-                    )}
-                    {itemRecipes.craft.length > 0 && (
-                      <section>
-                        <h2>Jak wytworzyć</h2>
-                        <RecipeTable
-                          recipes={itemRecipes.craft}
-                          catalogSlug={activeGame.slug}
-                          labels={labels}
-                          showRequirements={game === "dos1"}
-                          searchable
-                          itemRoles={manifest.data?.itemRoles}
-                        />
-                      </section>
-                    )}
-                    {itemRecipes.used.length > 0 && (
-                      <section>
-                        <h2>Do czego służy</h2>
-                        <RecipeTable
-                          recipes={itemRecipes.used}
-                          catalogSlug={activeGame.slug}
-                          labels={labels}
-                          showRequirements={game === "dos1"}
-                          searchable
-                          itemRoles={manifest.data?.itemRoles}
-                        />
-                      </section>
-                    )}
-                  </>
-                ) : (
-                  <div
-                    class="markdown"
-                    dangerouslySetInnerHTML={{
-                      __html: detail.data.html.replaceAll("__APP_BASE__/", import.meta.env.BASE_URL),
-                    }}
-                  />
+                {detailEffects.length > 0 && (
+                  <section>
+                    <h2>Efekt</h2>
+                    <ul>
+                      {detailEffects.map((effect) => (
+                        <li key={effect}>{effect}</li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
+                {detailRemarks.length > 0 && (
+                  <section>
+                    <h2>Uwagi</h2>
+                    <ul>
+                      {detailRemarks.map((remark) => (
+                        <li key={remark}>{remark}</li>
+                      ))}
+                    </ul>
+                  </section>
+                )}
+                {itemRecipes.craft.length > 0 && (
+                  <section>
+                    <h2>Jak wytworzyć</h2>
+                    <RecipeTable
+                      recipes={itemRecipes.craft}
+                      catalogSlug={activeGame.slug}
+                      labels={labels}
+                      showRequirements={game === "dos1"}
+                      searchable
+                      itemRoles={manifest.data?.itemRoles?.[game]}
+                    />
+                  </section>
+                )}
+                {itemUpgrades.length > 0 && (
+                  <section>
+                    <h2>Możliwe ulepszenia</h2>
+                    <UpgradeTable
+                      upgrades={itemUpgrades}
+                      labels={labels}
+                      game={game}
+                      showRequirements={game === "dos1"}
+                    />
+                  </section>
+                )}
+                {itemRecipes.used.length > 0 && (
+                  <section>
+                    <h2>Do czego służy</h2>
+                    <RecipeTable
+                      recipes={itemRecipes.used}
+                      catalogSlug={activeGame.slug}
+                      labels={labels}
+                      showRequirements={game === "dos1"}
+                      searchable
+                      itemRoles={manifest.data?.itemRoles?.[game]}
+                    />
+                  </section>
                 )}
               </>
             )}

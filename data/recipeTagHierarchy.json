@@ -10,6 +10,11 @@
           "children": []
         },
         {
+          "tag": "Typ/Barwniki",
+          "label": "Barwniki",
+          "children": []
+        },
+        {
           "tag": "Typ/Bron",
           "label": "Broń",
           "children": [
@@ -76,8 +81,23 @@
           "children": []
         },
         {
+          "tag": "Typ/Magia",
+          "label": "Magia",
+          "children": []
+        },
+        {
           "tag": "Typ/Mikstury",
           "label": "Mikstury",
+          "children": []
+        },
+        {
+          "tag": "Typ/Mikstury-i-jedzenie",
+          "label": "Mikstury i jedzenie",
+          "children": []
+        },
+        {
+          "tag": "Typ/Narzedzia",
+          "label": "Narzędzia",
           "children": []
         },
         {
@@ -142,8 +162,18 @@
           "children": []
         },
         {
+          "tag": "Typ/Stanowiska-i-pojemniki",
+          "label": "Stanowiska i pojemniki",
+          "children": []
+        },
+        {
           "tag": "Typ/Strzaly",
           "label": "Strzaly",
+          "children": []
+        },
+        {
+          "tag": "Typ/Strzaly-i-granaty",
+          "label": "Strzały i granaty",
           "children": []
         },
         {
@@ -568,7 +598,7 @@
     },
     {
       "tag": "Cechy-cywilne",
-      "label": "Zdolności cywilne",
+      "label": "Biegłości niebojowe",
       "children": [
         {
           "tag": "Cechy/Handel",
@@ -622,11 +652,6 @@
           "children": []
         },
         {
-          "tag": "Cechy/Gniazda-run",
-          "label": "Gniazda run",
-          "children": []
-        },
-        {
           "tag": "Cechy/Immunitet-na-sen",
           "label": "Niewrażliwość na sen",
           "children": []
@@ -649,11 +674,6 @@
         {
           "tag": "Cechy/Maksymalne-PA",
           "label": "Maksymalne PA",
-          "children": []
-        },
-        {
-          "tag": "Cechy/Obrażenia",
-          "label": "Bonus obrażeń",
           "children": []
         },
         {
@@ -874,7 +894,7 @@
         },
         {
           "tag": "Efekty/Statusy/FROZEN",
-          "label": "Frozen",
+          "label": "Zamrożenie",
           "children": []
         },
         {
@@ -884,7 +904,7 @@
         },
         {
           "tag": "Efekty/Statusy/HEALING",
-          "label": "Healing",
+          "label": "Leczenie",
           "children": []
         },
         {
@@ -929,7 +949,7 @@
         },
         {
           "tag": "Efekty/Statusy/KNOCKDOWN",
-          "label": "Knocked down",
+          "label": "Powalenie",
           "children": []
         },
         {

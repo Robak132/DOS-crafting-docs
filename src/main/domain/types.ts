@@ -9,12 +9,13 @@ export type PageSummary = {
   itemPage: boolean
   categoryPage: boolean
 }
-export type PageDetail = PageSummary & { html: string }
-export type LibraryPage = PageDetail
+export type PageDetail = PageSummary
+export type LibraryPage = PageSummary
 export type CatalogManifest = {
   catalogs: Record<RecipeCatalog, { recipes: number; items: number }>
   pages: PageSummary[]
-  itemRoles: Record<string, ItemCraftRole>
+  itemRoles: Record<RecipeCatalog, Record<string, ItemCraftRole>>
   traitGroups: CechyGroupMeta[]
+  redirects: Record<string, string>
 }
 export type CatalogData = RecipeData

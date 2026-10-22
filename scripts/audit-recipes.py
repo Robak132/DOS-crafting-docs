@@ -219,7 +219,7 @@ def main():
     args = parser.parse_args()
     output = ROOT / args.output
     output.parent.mkdir(parents=True, exist_ok=True)
-    provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text())
+    provenance = json.loads((ROOT / 'data/itemIcons.provenance.json').read_text(encoding='utf-8'))
     root = ROOT / '.pak-work/audit-current'
     report = {'scope': 'Audyt źródłowych JSON-ów, przed rozwinięciem grup w widoku. Overhaul obejmuje bazowe DOS2 i dodatki moda. Dopasowania używają nazw gry, Stats ID i kategorii, bez podobieństwa tekstowego. Dopasowanie oznacza znalezienie zgodnej definicji, a nie pełną weryfikację działania gry. Ilości DOS1, efekty, zużywanie narzędzi, losowe wyniki i ulepszenia wyposażenia nie są w pełni sprawdzane. Brak dopasowania nie oznacza błędu. Opcjonalne Gift Bagi pominięto. Różne wyniki są kandydatami do oceny, nie automatycznym dowodem błędu.', 'catalogs': {}}
     for game, layers in [('dos1', ['dos1']), ('dos2', ['dos2']), ('dos2-overhaul', ['dos2', 'overhaul'])]:
@@ -229,15 +229,15 @@ def main():
             index.add_dos2(root / 'dos2')
             for directory in sorted(root.glob('dos2-Patch*'), key=lambda p: int(re.search(r'Patch(\d+)', p.name)[1])): index.add_dos2(directory)
             if game == 'dos2-overhaul': index.add_dos2(root / 'overhaul')
-        rows = json.loads((ROOT / 'data/library/recipes' / f'{game}.json').read_text())['recipes']
+        rows = json.loads((ROOT / 'data/library/recipes' / f'{game}.json').read_text(encoding='utf-8'))['recipes']
         if game == 'dos2-overhaul':
-            rows = json.loads((ROOT / 'data/library/recipes/dos2.json').read_text())['recipes'] + rows
+            rows = json.loads((ROOT / 'data/library/recipes/dos2.json').read_text(encoding='utf-8'))['recipes'] + rows
         result = audit(game, rows, index, provenance.get(game, {}))
         report['catalogs'][game] = result
         print(game, result['catalog_recipes'], result['game_definitions'], result['summary'], flush=True)
-    report['sources'] = json.loads((root / 'sources.json').read_text())
+    report['sources'] = json.loads((root / 'sources.json').read_text(encoding='utf-8'))
     report['files'] = [{'path': str(p.relative_to(ROOT)), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(root.rglob('*.txt'))]
-    output.with_suffix('.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    output.with_suffix('.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     lines = ['# Audyt receptur na podstawie plików gry', '', report['scope'], '', '| Katalog | Wpisy źródłowe | Definicje gry | Dopasowane | Rozbieżne ilości/wymagania | Inny wynik | Pozostałe do sprawdzenia |', '|---|---:|---:|---:|---:|---:|---:|']
     for game, data in report['catalogs'].items():
         counts = data['summary']; handled = sum(counts.get(k, 0) for k in ['matched', 'mismatch', 'different_result'])
@@ -248,6 +248,6 @@ def main():
             lines += [f'- **{finding["result"]}**: ' + ' + '.join(i['name'] for i in finding['ingredients']) + f' — `{finding["status"]}`. ' + '; '.join(finding['details'])]
             for evidence in finding['evidence'][:2]:
                 lines += [f'  - `{evidence["file"]}:{evidence["line"]}` (`{evidence["id"]}`). Wyniki: ' + ', '.join('/'.join(x['names']) or x['stats'] for x in evidence['outputs'])]
-    output.with_suffix('.md').write_text('\n'.join(lines) + '\n')
+    output.with_suffix('.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 if __name__ == '__main__': main()

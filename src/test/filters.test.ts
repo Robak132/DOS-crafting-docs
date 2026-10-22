@@ -4,11 +4,12 @@ import {
   cycleFilter,
   emptyFilters,
   filterRecipes,
+  filterUpgrades,
   filtersToSearch,
   rememberedCatalogHref,
   restoreFilters,
 } from "../main/filters"
-import type { RecipeRow } from "../main/domain/recipes"
+import type { RecipeRow, RecipeUpgrade } from "../main/domain/recipes"
 const recipe: RecipeRow = {
   id: "one",
   result: { name: "Potion", namePl: "Mikstura", tags: ["Typ/Mikstury"] },
@@ -131,4 +132,59 @@ test("catalog navigation restores each game's filters while explicit empty views
     if (original) Object.defineProperty(globalThis, "sessionStorage", original)
     else Reflect.deleteProperty(globalThis, "sessionStorage")
   }
+})
+
+test("hand-edited or corrupted stored filters fall back to safe values instead of crashing", () => {
+  const original = Object.getOwnPropertyDescriptor(globalThis, "sessionStorage")
+  const stored = {
+    include: "Typ/Bron",
+    exclude: null,
+    requirements: [1, "Crafting 2"],
+    requirementsExclude: {},
+    craftingMax: 99,
+    scope: "everything",
+    selectors: "Plants",
+    query: 42,
+    group: ["x"],
+  }
+  Object.defineProperty(globalThis, "sessionStorage", {
+    configurable: true,
+    value: { getItem: () => JSON.stringify(stored) },
+  })
+  try {
+    const filters = restoreFilters("dos1")
+    assert.deepEqual(filters, { ...emptyFilters(), requirements: ["Crafting 2"] })
+    assert.doesNotThrow(() => filterRecipes([recipe], filters, {}))
+  } finally {
+    if (original) Object.defineProperty(globalThis, "sessionStorage", original)
+    else Reflect.deleteProperty(globalThis, "sessionStorage")
+  }
+})
+
+test("upgrade view filters by target category, granted traits, requirements and query", () => {
+  const upgrade = (id: string, targetTags: string[], tags: string[], requirements = ""): RecipeUpgrade => ({
+    id,
+    effect: { en: id },
+    target: { name: "Target", tags: [] },
+    targetTags,
+    tags,
+    ingredients: [],
+    requirements,
+    notes: "",
+    remarks: "",
+    source: "",
+  })
+  const all = [
+    upgrade("weapons fire", ["Typ/Bron"], ["Cechy/Obrażenia-magiczne/ognia"], "Crafting 5"),
+    upgrade("bow finesse", ["Typ/Bron/Luki"], ["Cechy/Zręczność"]),
+    upgrade("shield air", ["Typ/Pancerz/Tarcze"], ["Cechy/Odporność-na-powietrze"], "Crafting 4"),
+  ]
+  const ids = (filters: Partial<ReturnType<typeof emptyFilters>>) =>
+    filterUpgrades(all, { ...emptyFilters(), ...filters }).map((entry) => entry.id)
+  assert.deepEqual(ids({ include: ["Typ/Bron/Luki"] }), ["weapons fire", "bow finesse"])
+  assert.deepEqual(ids({ include: ["Typ/Bron"] }), ["weapons fire", "bow finesse"])
+  assert.deepEqual(ids({ include: ["Cechy/Zręczność"] }), ["bow finesse"])
+  assert.deepEqual(ids({ exclude: ["Typ/Pancerz"] }), ["weapons fire", "bow finesse"])
+  assert.deepEqual(ids({ craftingMax: 4 }), ["bow finesse", "shield air"])
+  assert.deepEqual(ids({ query: "AIR" }), ["shield air"])
 })

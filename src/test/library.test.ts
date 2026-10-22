@@ -13,10 +13,7 @@ async function fixture() {
     slug: "item",
     title: "An item",
     titlePl: "Przedmiot",
-    tags: ["Typ/Materialy"],
-    itemPage: true,
-    categoryPage: false,
-    html: "<p>Source note</p>",
+    tags: ["DOS2", "Typ/Materialy"],
   }
   const recipe = {
     id: "craft-item",
@@ -28,38 +25,104 @@ async function fixture() {
     remarks: "Instruction",
     source: "Spreadsheet A1",
   }
-  await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify(page))
+  const writePages = async (pages: Record<string, object[]>) => {
+    for (const [game, name] of [
+      ["DOS1", "dos1"],
+      ["DOS2", "dos2"],
+      ["DOS2-CO", "dos2-co"],
+    ])
+      await fs.writeFile(path.join(directory, `pages/${name}.json`), JSON.stringify({ game, pages: pages[game] ?? [] }))
+  }
+  await writePages({ DOS2: [page] })
   for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
     await fs.writeFile(
       path.join(directory, "recipes", `${game}.json`),
       JSON.stringify({ game, recipes: game === "dos2" ? [recipe] : [] }),
     )
   }
-  return { directory, page, recipe }
+  return { directory, page, recipe, writePages }
 }
 
-test("JSON library reads structured recipes, page metadata and source notes directly", async () => {
-  const { directory, page, recipe } = await fixture()
+test("JSON library reads structured recipes and item pages from one file per game", async () => {
+  const { directory, page, recipe, writePages } = await fixture()
   try {
     const library = await loadLibrary(directory)
-    assert.deepEqual(library.pages, [page])
+    assert.deepEqual(library.pages, [{ ...page, itemPage: true, categoryPage: false }])
     assert.deepEqual(library.sources.dos2, [recipe])
     assert.deepEqual(library.sources["dos2-overhaul"], [])
-    page.html = "<p>Updated note</p>"
-    await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify(page))
-    assert.equal((await loadLibrary(directory)).pages[0].html, page.html)
+    await writePages({ DOS2: [{ ...page, title: "Renamed" }] })
+    assert.equal((await loadLibrary(directory)).pages[0].title, "Renamed")
   } finally {
     await fs.rm(directory, { recursive: true, force: true })
   }
 })
 
-test("JSON source rejects empty tags and mismatched page URLs", async () => {
-  const { directory, page } = await fixture()
+test("JSON source rejects empty tags, wrong game files and pages without their game tag", async () => {
+  const { directory, page, writePages } = await fixture()
   try {
-    await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify({ ...page, tags: [""] }))
+    await writePages({ DOS2: [{ ...page, tags: [""] }] })
     await assert.rejects(loadLibrary(directory), /Invalid tags/)
-    await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify({ ...page, slug: "other-url" }))
-    await assert.rejects(loadLibrary(directory), /Page slug must match/)
+    await writePages({ DOS1: [page] })
+    await assert.rejects(loadLibrary(directory), /without its game tag DOS1/)
+    await writePages({ DOS2: [page] })
+    await fs.writeFile(path.join(directory, "pages/dos2.json"), JSON.stringify({ game: "DOS1", pages: [page] }))
+    await assert.rejects(loadLibrary(directory), /Wrong game/)
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true })
+  }
+})
+
+test("a page shared by several games is listed identically in each of their files", async () => {
+  const { directory, page, writePages } = await fixture()
+  const shared = { ...page, tags: ["DOS1", "DOS2", "Typ/Materialy"] }
+  try {
+    await writePages({ DOS1: [shared], DOS2: [shared] })
+    const library = await loadLibrary(directory)
+    assert.deepEqual(library.pages, [{ ...shared, itemPage: true, categoryPage: false }])
+    await writePages({ DOS1: [shared], DOS2: [{ ...shared, titlePl: "Inny" }] })
+    await assert.rejects(loadLibrary(directory), /Copies of a shared page differ/)
+    await writePages({ DOS2: [shared] })
+    await assert.rejects(loadLibrary(directory), /listed in every game file/)
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true })
+  }
+})
+
+test("page slugs are lowercase English words joined by hyphens and never shadow app routes", async () => {
+  const { directory, page, writePages } = await fixture()
+  try {
+    for (const slug of [
+      "Skladniki/apple",
+      "Apple",
+      "apple_pie",
+      "-apple",
+      "apple-",
+      "a--b",
+      "cutting-tool>",
+      "jabłko",
+    ]) {
+      await writePages({ DOS2: [{ ...page, slug }] })
+      await assert.rejects(loadLibrary(directory), /Invalid slug/, slug)
+    }
+    for (const slug of ["receptury", "dos2", "data", "assets"]) {
+      await writePages({ DOS2: [{ ...page, slug }] })
+      await assert.rejects(loadLibrary(directory), /reserved/, slug)
+    }
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true })
+  }
+})
+
+test("redirects map retired addresses to existing pages only", async () => {
+  const { directory } = await fixture()
+  const write = (redirects: object) => fs.writeFile(path.join(directory, "redirects.json"), JSON.stringify(redirects))
+  try {
+    await write({ "Skladniki/ITEM": "item" })
+    assert.deepEqual((await loadLibrary(directory)).redirects, { "Skladniki/ITEM": "item" })
+    await write({ "Skladniki/ITEM": "missing" })
+    await assert.rejects(loadLibrary(directory), /Redirect to a missing page/)
+    await write({ item: "item" })
+    await assert.rejects(loadLibrary(directory), /shadows an existing page/)
   } finally {
     await fs.rm(directory, { recursive: true, force: true })
   }
@@ -81,30 +144,14 @@ test("JSON source rejects malformed recipes and wrong game files", async () => {
 test("repository JSON library is complete and independent of the removed Markdown directory", async () => {
   const library = await loadLibrary()
   assert.ok(library.pages.length > 0)
-  assert.ok(library.pages.some((page) => page.slug === "Stanowiska-i-pojemniki/WOOD-PILE"))
+  assert.ok(library.pages.some((page) => page.slug === "wood-pile"))
   assert.ok(library.sources.dos1.length && library.sources.dos2.length && library.sources["dos2-overhaul"].length)
   await assert.rejects(fs.access("content"), /ENOENT/)
 })
 
-test("item metadata omits unused HTML and every active library link resolves", async () => {
+test("every recipe item link resolves to an item page", async () => {
   const library = await loadLibrary()
-  const known = new Set([
-    "index",
-    "receptury",
-    "DOS2",
-    "dos2-crafting-overhaul",
-    ...library.pages.map((page) => page.slug),
-  ])
-  for (const page of library.pages) {
-    const raw = JSON.parse(await fs.readFile(path.join("data/library/pages", `${page.slug}.json`), "utf8"))
-    if (page.itemPage) {
-      assert.equal(Object.hasOwn(raw, "html"), false, page.slug)
-      assert.equal(page.html, "")
-    }
-    for (const match of page.html.matchAll(/href="__APP_BASE__\/([^"#?]+)/g)) {
-      assert.ok(known.has(decodeURIComponent(match[1])), `Broken link on ${page.slug}: ${match[1]}`)
-    }
-  }
+  const known = new Set(library.pages.map((page) => page.slug))
   for (const rows of Object.values(library.sources)) {
     for (const row of rows) {
       for (const item of [row.result, ...row.ingredients]) {
@@ -119,11 +166,11 @@ test("mushroom pages use game names and inventory icons", async () => {
   const icons = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
   const { resolveItemIcon } = await import("../main/domain/itemIcons")
   for (const [name, slug] of [
-    ["Calocera", "CALOCERA"],
-    ["Boletus", "BOLETUS"],
-    ["Amethyst Deceiver", "AMETHYST-DECEIVER"],
+    ["Calocera", "calocera"],
+    ["Boletus", "boletus"],
+    ["Amethyst Deceiver", "amethyst-deceiver"],
   ]) {
-    const page = library.pages.find((page) => page.slug === `Skladniki/${slug}`)
+    const page = library.pages.find((page) => page.slug === slug)
     assert.equal(page?.title, name)
     assert.ok(!library.pages.some((page) => page.title === `Mushroom ${name}`))
     const references = library.sources["dos2-overhaul"].flatMap((row) => [row.result, ...row.ingredients])
@@ -133,22 +180,9 @@ test("mushroom pages use game names and inventory icons", async () => {
   }
 })
 
-test("item metadata can omit HTML while a content page must provide it", async () => {
-  const { directory, page } = await fixture()
-  try {
-    const { html: _html, ...metadata } = page
-    await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify(metadata))
-    assert.equal((await loadLibrary(directory)).pages[0].html, "")
-    await fs.writeFile(path.join(directory, "pages/item.json"), JSON.stringify({ ...metadata, itemPage: false }))
-    await assert.rejects(loadLibrary(directory), /Invalid page/)
-  } finally {
-    await fs.rm(directory, { recursive: true, force: true })
-  }
-})
-
 test("the White Dye URL uses the actual White Fabric Dye name and inventory icon", async () => {
   const library = await loadLibrary()
-  const page = library.pages.find((page) => page.slug === "Barwniki/WHITE-DYE")
+  const page = library.pages.find((page) => page.slug === "white-fabric-dye")
   assert.equal(page?.title, "White Fabric Dye")
   const recipe = library.sources["dos2-overhaul"].find((row) => row.result.slug === page?.slug)
   assert.equal(recipe?.result.name, "White Fabric Dye")
@@ -167,7 +201,7 @@ test("Branch bow and spear recipes belong to DOS1 and use the DOS1 branch icon",
   }
   assert.ok(
     !library.sources["dos2-overhaul"].some((row) =>
-      [row.result, ...row.ingredients].some((item) => item.slug === "Skladniki/BRANCH"),
+      [row.result, ...row.ingredients].some((item) => item.slug === "branch"),
     ),
   )
   const sources = JSON.parse(await fs.readFile("data/itemIcons.provenance.json", "utf8"))
@@ -177,7 +211,7 @@ test("Branch bow and spear recipes belong to DOS1 and use the DOS1 branch icon",
 
 test("Big Tongs Roped Together retain both DOS2 recipes and use the game recipe preview icon", async () => {
   const library = await loadLibrary()
-  const slug = "Bron/BIG-TONGS-ROPED-TOGETHER"
+  const slug = "big-tongs-roped-together"
   const recipes = library.sources.dos2.filter((row) => row.result.slug === slug)
   assert.equal(recipes.length, 2)
   assert.ok(recipes.every((row) => row.result.name === "Big Tongs Roped Together"))
@@ -231,7 +265,7 @@ test("audited DOS1 requirements and flask/chicken ingredients follow game defini
     )
   const magicalFoot = sources.dos1.find((r) => r.result.name === "Magical Chicken foot")
   assert.ok(magicalFoot?.ingredients.some((i) => i.name === "Pixie Dust"))
-  assert.equal(magicalFoot?.result.slug, "Skladniki/MAGICAL-CHICKEN-FOOT")
+  assert.equal(magicalFoot?.result.slug, "magical-chicken-foot")
   for (const row of sources.dos1.filter((r) => ["Oil Flask", "Poison Flask"].includes(r.result.name))) {
     assert.ok(row.ingredients.some((i) => i.name === "Empty Flask"))
     assert.ok(!row.ingredients.some((i) => i.name === "Empty Bottle"))
@@ -334,4 +368,39 @@ test("DOS1 crafted quality names and scripted DOS2 interactions follow game rule
   assert.ok(!sources.dos2.some((r) => r.result.name === "Head of Angelic Statue"))
   for (const row of sources.dos2.filter((r) => r.result.name === "Glass of Wine"))
     assert.ok(row.ingredients.some((i) => i.name === "Empty Cup"))
+})
+
+test("recipe files carry upgrades separately and reject malformed ones", async () => {
+  const { directory, recipe } = await fixture()
+  const filename = path.join(directory, "recipes/dos2.json")
+  const upgrade = {
+    id: "shield:air",
+    effect: { en: "Air Resistance" },
+    target: { name: "Shield", tags: [] },
+    targetTags: ["Typ/Pancerz/Tarcze"],
+    tags: [],
+    ingredients: [{ name: "Air Essence", tags: [] }],
+    requirements: "",
+    notes: "",
+    remarks: "",
+    source: "",
+  }
+  try {
+    await fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [upgrade] }))
+    const library = await loadLibrary(directory)
+    assert.deepEqual(library.upgrades.dos2, [upgrade])
+    assert.deepEqual(library.upgrades.dos1, [])
+    await fs.writeFile(
+      filename,
+      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, targetTags: [] }] }),
+    )
+    await assert.rejects(loadLibrary(directory), /Invalid upgrade target: shield:air/)
+    await fs.writeFile(
+      filename,
+      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, effect: { en: "" } }] }),
+    )
+    await assert.rejects(loadLibrary(directory), /Invalid upgrade effect: shield:air/)
+  } finally {
+    await fs.rm(directory, { recursive: true, force: true })
+  }
 })

@@ -48,7 +48,7 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
             )
             const role = itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
             return (
-              <tr class="recipe-group-start recipe-group-end">
+              <tr key={item.slug ?? item.name} class="recipe-group-start recipe-group-end">
                 <td class="recipe-cell result">
                   {item.slug ? (
                     <a class={`internal recipe-item ${role}`} href={itemHref(item.slug)} data-slug={item.slug}>
@@ -63,7 +63,7 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
                   {effects.length > 0 ? (
                     <div class="recipe-effect-stack">
                       {effects.map((effect) => (
-                        <button type="button" class="recipe-effect-chip" data-search-effect={effect}>
+                        <button key={effect} type="button" class="recipe-effect-chip" data-search-effect={effect}>
                           {effect}
                         </button>
                       ))}
@@ -76,7 +76,7 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
                   {tags.length > 0 ? (
                     <div class="recipe-row-tags">
                       {tags.map((tag) => (
-                        <button type="button" class="recipe-search-tag" data-filter-tag={tag}>
+                        <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
                           {tagLabel(tag, labels)}
                         </button>
                       ))}

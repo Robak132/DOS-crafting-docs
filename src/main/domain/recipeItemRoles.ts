@@ -1,6 +1,7 @@
 import type { PageSummary } from "./types"
 import type { RecipeCatalog, RecipeRow } from "./recipes"
 import type { ItemCraftRole } from "./recipeView"
+import { recipeResults } from "./recipeResults"
 
 export type { ItemCraftRole }
 
@@ -15,7 +16,7 @@ export function getItemCraftRoles(pages: PageSummary[], recipes: RecipeRow[]): R
   const craftable = new Set<string>()
   const usable = new Set<string>()
   for (const recipe of recipes) {
-    if (recipe.result.slug) craftable.add(recipe.result.slug)
+    for (const item of recipe.result.pool ?? recipeResults(recipe)) if (item.slug) craftable.add(item.slug)
     for (const ingredient of recipe.ingredients) {
       if (ingredient.slug) usable.add(ingredient.slug)
     }

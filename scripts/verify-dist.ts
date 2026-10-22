@@ -22,7 +22,7 @@ for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
   }
   const icons = new Set(
     catalog.recipes
-      .flatMap((row) => [row.result, ...row.ingredients])
+      .flatMap((row) => [row.result, ...(row.extraResults ?? []), ...(row.result.pool ?? []), ...row.ingredients])
       .flatMap((item) => (item.icon ? [item.icon] : [])),
   )
   assert.ok(icons.size > 0, `Missing icons for ${game}`)
@@ -39,20 +39,7 @@ assert.ok(
 )
 const html = await fs.readFile("dist/index.html", "utf8")
 assert.ok(!html.includes("quartz") && !html.includes("/src/main"))
-const published = new Set(manifest.pages.map((page) => page.slug))
-for (const [from, to] of Object.entries(manifest.redirects))
-  assert.ok(
-    (published.has(to.split("?")[0]) || ["receptury", "DOS2", "dos2-crafting-overhaul"].includes(to.split("?")[0])) &&
-      !published.has(from),
-    `Bad redirect ${from} -> ${to}`,
-  )
-for (const slug of [
-  "receptury",
-  "DOS2",
-  "dos2-crafting-overhaul",
-  ...manifest.pages.map((page) => page.slug),
-  ...Object.keys(manifest.redirects),
-]) {
+for (const slug of ["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)]) {
   if (slug === "index") continue
   assert.equal(await fs.readFile(path.join("dist", slug, "index.html"), "utf8"), html)
   assert.equal(await fs.readFile(path.join("dist", slug + ".html"), "utf8"), html)

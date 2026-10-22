@@ -409,68 +409,6 @@
       "source": ""
     },
     {
-      "id": "Mikstury-i-jedzenie/APPLE-PIE:Apple Pie Dough+Oven",
-      "ingredients": [
-        {
-          "name": "Apple Pie Dough",
-          "namePl": "Ciasto na jabłecznik",
-          "slug": "apple-pie-dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Typ/Mikstury-i-jedzenie",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Apple Pie",
-        "namePl": "Jabłecznik",
-        "slug": "apple-pie",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Odporność-na-truciznę",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Odporność-na-truciznę",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A665:G665"
-    },
-    {
       "id": "Mikstury-i-jedzenie/APPLE-PIE:Apple Pie Dough+Oven, Furnace, or Mobile Kitchen",
       "ingredients": [
         {
@@ -526,7 +464,7 @@
       "requirements": "",
       "notes": "Add 10% Heal, 10% Poison Resist",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A665:G665"
     },
     {
       "id": "Mikstury-i-jedzenie/APPLE-PIE-DOUGH:Apple+Dough",
@@ -4774,68 +4712,6 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A126:G126"
     },
     {
-      "id": "Mikstury-i-jedzenie/CHEESE-BREAD:Cheese Bread Dough+Oven",
-      "ingredients": [
-        {
-          "name": "Cheese Bread Dough",
-          "namePl": "Ciasto na pieczywo serowe",
-          "slug": "cheese-bread-dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Typ/Mikstury-i-jedzenie",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cheese Bread",
-        "namePl": "Pieczywo serowe",
-        "slug": "cheese-bread",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Kondycja",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Kondycja",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A672:G672"
-    },
-    {
       "id": "Mikstury-i-jedzenie/CHEESE-BREAD:Cheese Bread Dough+Oven, Furnace, or Mobile Kitchen",
       "ingredients": [
         {
@@ -4891,7 +4767,7 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Constitution",
       "remarks": "",
-      "source": "Crafting & Cooking with Maradino"
+      "source": "Crafting & Cooking with Maradino; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A672:G672"
     },
     {
       "id": "Mikstury-i-jedzenie/CHEESE-BREAD-DOUGH:Cheese+Dough",
@@ -10039,63 +9915,6 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A693:G693"
     },
     {
-      "id": "Mikstury-i-jedzenie/FISH-PIE-DOUGH:FoodFish+Dough",
-      "ingredients": [
-        {
-          "name": "FoodFish",
-          "slug": "foodfish",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Fish Pie Dough",
-        "namePl": "Ciasto na placek rybny",
-        "slug": "fish-pie-dough",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A692:G692"
-    },
-    {
       "id": "Mikstury-i-jedzenie/FISH-PIE-DOUGH:Dough+#Fish",
       "ingredients": [
         {
@@ -10149,7 +9968,7 @@
       "requirements": "",
       "notes": "Add 10% Heal -1 Speed",
       "remarks": "",
-      "source": "Crafting & Cooking with Maradino; Patty Cake, Patty Cake III"
+      "source": "Crafting & Cooking with Maradino; Patty Cake, Patty Cake III; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A692:G692"
     },
     {
       "id": "Skladniki/FLAMING-CRESCENDO-SCROLL:Sheet of Paper+Alien Fire Essence+Needle",
@@ -19642,67 +19461,6 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A701:G701"
     },
     {
-      "id": "Mikstury-i-jedzenie/MASHED-POTATOES:Cold Mashed Potatoes+Oven",
-      "ingredients": [
-        {
-          "name": "Cold Mashed Potatoes",
-          "namePl": "Zimne tłuczone ziemniaki",
-          "slug": "cold-mashed-potatoes",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mashed Potatoes",
-        "namePl": "Tłuczone ziemniaki",
-        "slug": "mashed-potatoes",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Siła",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Siła",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A702:G702"
-    },
-    {
       "id": "Mikstury-i-jedzenie/MASHED-POTATOES:Cold Mashed Potatoes+Oven, Furnace, or Mobile Kitchen",
       "ingredients": [
         {
@@ -19757,7 +19515,7 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A702:G702"
     },
     {
       "id": "Skladniki/MEDIUM--percent-RUNE:Pixie Dust+Small % Rune+Small % Rune",

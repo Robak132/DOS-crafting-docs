@@ -522,15 +522,6 @@
       ]
     },
     {
-      "slug": "all-stats-potion-min-medium-large",
-      "title": "All Stats Potion (Min, Medium, Large)",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Mikstury-i-jedzenie"
-      ]
-    },
-    {
       "slug": "amadouvier",
       "title": "Amadouvier",
       "titlePl": "Hubiak pospolity",
@@ -845,16 +836,6 @@
       ]
     },
     {
-      "slug": "base-rune-frame",
-      "title": "Base Rune, Frame",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Skladniki"
-      ]
-    },
-    {
       "slug": "basil",
       "title": "Basil",
       "tags": [
@@ -1002,69 +983,6 @@
         "Typ",
         "Typ/Bron",
         "Typ/Bron/Wlocznie"
-      ]
-    },
-    {
-      "slug": "bigger-air-essence",
-      "title": "Bigger Air Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-earth-essence",
-      "title": "Bigger Earth Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-fire-essence",
-      "title": "Bigger Fire Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-life-essence",
-      "title": "Bigger Life Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-shadow-essence",
-      "title": "Bigger Shadow Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-tormented-soul",
-      "title": "Bigger Tormented Soul",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "bigger-water-essence",
-      "title": "Bigger Water Essence",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
       ]
     },
     {
@@ -3023,15 +2941,6 @@
       "slug": "crossbow-without-bowstring-2",
       "title": "Crossbow Without Bowstring",
       "titlePl": "Kusza bez cięciwy",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "crossbow-without-string-bowstring",
-      "title": "Crossbow without string, Bowstring",
       "tags": [
         "DOS2-CO",
         "Typ",
@@ -6011,15 +5920,6 @@
       ]
     },
     {
-      "slug": "long-branch-metal-scraps",
-      "title": "Long Branch, Metal Scraps",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
       "slug": "lootbox",
       "title": "Lootbox",
       "tags": [
@@ -6547,24 +6447,6 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "metal-scraps-scale-scraps",
-      "title": "Metal Scraps, Scale Scraps",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "metal-scraps-wood-chips-nails",
-      "title": "Metal Scraps, Wood Chips, Nails",
-      "tags": [
         "DOS2-CO",
         "Typ",
         "Typ/Skladniki"
@@ -7209,15 +7091,6 @@
         "DOS2-CO",
         "Typ",
         "Typ/Bron",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "one-of-the-6-stat-boosting-potions",
-      "title": "One of the 6 Stat Boosting Potions",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
         "Typ/Skladniki"
       ]
     },
@@ -8154,122 +8027,6 @@
       ]
     },
     {
-      "slug": "random-air-scroll",
-      "title": "Random Air Scroll",
-      "titlePl": "Losowy zwój powietrza",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-earth-scroll",
-      "title": "Random Earth Scroll",
-      "titlePl": "Losowy zwój ziemi",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-fire-scroll",
-      "title": "Random Fire Scroll",
-      "titlePl": "Losowy zwój ognia",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-polymorph-scroll",
-      "title": "Random Polymorph Scroll",
-      "tags": [
-        "Cechy",
-        "Cechy/Umiejetnosci",
-        "Cechy/Umiejetnosci/Polimorfia",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-ranger-scroll",
-      "title": "Random Ranger Scroll",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-rogue-scroll",
-      "title": "Random Rogue Scroll",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-summoning-scroll",
-      "title": "Random Summoning Scroll",
-      "tags": [
-        "Cechy",
-        "Cechy/Umiejetnosci",
-        "Cechy/Umiejetnosci/Przyzywanie",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-warrior-scroll",
-      "title": "Random Warrior Scroll",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-water-scroll",
-      "title": "Random Water Scroll",
-      "titlePl": "Losowy zwój wody",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
-      "slug": "random-witchcraft-scroll",
-      "title": "Random Witchcraft Scroll",
-      "titlePl": "Losowy zwój czarnej magii",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Magia",
-        "Typ/Zwoje"
-      ]
-    },
-    {
       "slug": "rangers-apple-elven-toast",
       "title": "Ranger's Apple Elven Toast",
       "tags": [
@@ -9175,24 +8932,6 @@
       "titlePl": "Krótki kij",
       "tags": [
         "DOS2",
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "short-stick-bowstring",
-      "title": "Short Stick, Bowstring",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "short-stick-metal-scraps",
-      "title": "Short Stick, Metal Scraps",
-      "tags": [
         "DOS2-CO",
         "Typ",
         "Typ/Skladniki"
@@ -12629,15 +12368,6 @@
       ]
     },
     {
-      "slug": "various-items",
-      "title": "Various Items",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Przedmioty-wydarzen"
-      ]
-    },
-    {
       "slug": "vegetable-soup",
       "title": "Vegetable Soup",
       "tags": [
@@ -13397,33 +13127,6 @@
       ]
     },
     {
-      "slug": "wood-chips-nails",
-      "title": "Wood Chips, Nails",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "wood-chips-sharp-rock",
-      "title": "Wood Chips, Sharp Rock",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
-      "slug": "wood-chips-various-amount",
-      "title": "Wood Chips (Various amount)",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki"
-      ]
-    },
-    {
       "slug": "wood-junk",
       "title": "Wood Junk",
       "tags": [
@@ -13455,16 +13158,6 @@
       "slug": "wooden-crate",
       "title": "Wooden Crate",
       "titlePl": "Drewniana skrzynia",
-      "tags": [
-        "DOS2-CO",
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Stanowiska-i-pojemniki"
-      ]
-    },
-    {
-      "slug": "wooden-crate-barrel",
-      "title": "Wooden Crate, Barrel",
       "tags": [
         "DOS2-CO",
         "Typ",

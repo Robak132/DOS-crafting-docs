@@ -22,8 +22,12 @@ export type RecipeItem = {
   slug?: string
   tags: string[]
   selectorTag?: string
-  /** Ilość poza linkiem, np. "x2" / "x3". */
+  /** Ilość poza linkiem, np. "x2" / "x3", losowa "x(1-3)" lub nieznana "x(?)". */
   quantity?: string
+  /** Wynik losowany z puli: możliwe przedmioty z plików gry. Taki wynik nie ma własnej strony. */
+  pool?: RecipeItem[]
+  /** Element puli: najniższy poziom craftingu, od którego może wypaść (DOS1). */
+  requirements?: string
 }
 
 export type RecipeRow = {
@@ -36,6 +40,8 @@ export type RecipeRow = {
   id: string
   ingredients: RecipeItem[]
   result: RecipeItem
+  /** Further products of the same craft, made at the same time as `result` (e.g. scrap from disassembly). */
+  extraResults?: RecipeItem[]
   tags: string[]
   requirements: string
   /** Efekt przedmiotu („Efekt”) — np. Add Loremaster. */
@@ -173,6 +179,13 @@ export function getCechySidebarGroups(): CechySidebarGroup[] {
 }
 
 export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog): RecipeItem {
+  if (item.pool) {
+    const { pool, ...base } = item
+    return {
+      ...localizeItemForCatalog(base, catalog),
+      pool: pool.map((entry) => localizeItemForCatalog(entry, catalog)),
+    }
+  }
   if (item.selectorTag) {
     const label = localisationLookupKey(item.name)
     const resolved = resolveItemNames(label, catalog, "selector")
@@ -224,6 +237,10 @@ export function collectRecipeStats(
     const itemKey = recipeResultKey(recipe)
     const resultTags = recipe.result.tags.length ? recipe.result.tags : recipe.tags
     resultTags.forEach((tag) => addItemToStat(tagItems, tag, itemKey))
+    for (const product of recipe.extraResults ?? []) {
+      const productKey = `${product.slug ?? product.name}${product.quantity ? `@${product.quantity}` : ""}`
+      product.tags.forEach((tag) => addItemToStat(tagItems, tag, productKey))
+    }
     requirementTokens(recipe.requirements ?? "").forEach((token) => addItemToStat(requirementItems, token, itemKey))
     const seenSelectors = new Set<string>()
     recipe.ingredients.forEach((ingredient) => {

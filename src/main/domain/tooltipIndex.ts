@@ -3,6 +3,18 @@ import { itemIconKey } from "./itemIcons"
 import { itemNameKeys } from "./recipeView"
 import { parseItemQuantity } from "./recipeQuantity"
 import { tooltipItemKey } from "./tooltipIdentity"
+import { recipeResults } from "./recipeResults"
+
+/** The product of a recipe that is this item: an extra product it names, otherwise the main result. */
+function productOf(row: RecipeRow, item: RecipeItem): RecipeItem {
+  const keys = itemNameKeys(item.name)
+  return (
+    (row.extraResults ?? []).find(
+      (product) =>
+        (item.slug && product.slug === item.slug) || [...itemNameKeys(product.name)].some((key) => keys.has(key)),
+    ) ?? row.result
+  )
+}
 
 /** Built once per catalog. Hover and pointer movement never scan all recipes. */
 export function buildTooltipIndex(recipes: RecipeRow[]) {
@@ -24,11 +36,17 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
     if (row.result.statsId) add(resultsByStats, row.result.statsId, row)
     if (row.result.slug) add(resultsBySlug, row.result.slug, row)
     if (!row.result.statsId) for (const key of itemNameKeys(row.result.name)) add(resultsByName, key, row)
-    for (const item of [row.result, ...row.ingredients]) {
+    // Items made alongside the result, or rolled from a random pool, are crafted by this recipe too.
+    for (const item of [...(row.extraResults ?? []), ...(row.result.pool ?? [])]) {
+      if (item.slug) add(resultsBySlug, item.slug, row)
+      for (const key of itemNameKeys(item.name)) add(resultsByName, key, row)
+    }
+    for (const item of [row.result, ...(row.extraResults ?? []), ...(row.result.pool ?? []), ...row.ingredients]) {
       if (item.selectorTag) continue
       const key = tooltipItemKey(item)
       if (!itemsByVariant.has(key)) itemsByVariant.set(key, item)
-      if (item.slug && (item === row.result || !itemsBySlug.has(item.slug))) itemsBySlug.set(item.slug, item)
+      if (item.slug && (recipeResults(row).includes(item) || !itemsBySlug.has(item.slug)))
+        itemsBySlug.set(item.slug, item)
       itemsByName.set(itemIconKey(item.name), item)
     }
   })
@@ -40,7 +58,10 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
   ] as const) {
     for (const [key, item] of items) {
       const effects = new Set(
-        [...(results.get(key) ?? [])].map((row) => JSON.stringify([row.result.effect?.en, row.result.effect?.pl])),
+        [...(results.get(key) ?? [])].map((row) => {
+          const product = productOf(row, item)
+          return JSON.stringify([product.effect?.en, product.effect?.pl])
+        }),
       )
       if (effects.size > 1) items.set(key, { ...item, effect: undefined })
     }
@@ -62,7 +83,8 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
       const result = [...rows]
         .filter(
           (row) =>
-            !item.effect || (row.result.effect?.en === item.effect.en && row.result.effect?.pl === item.effect.pl),
+            !item.effect ||
+            (productOf(row, item).effect?.en === item.effect.en && productOf(row, item).effect?.pl === item.effect.pl),
         )
         .sort((a, b) => order.get(a)! - order.get(b)!)
       cache.set(item, result)

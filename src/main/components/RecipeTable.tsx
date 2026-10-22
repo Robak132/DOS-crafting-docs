@@ -194,7 +194,28 @@ export function RecipeTable({
               >
                 {index === 0 && (
                   <td class="recipe-cell result" rowSpan={group.variants.length}>
-                    {renderItem(group.result)}
+                    {group.results.length > 1 ? (
+                      <ul class="recipe-ingredients recipe-products">
+                        {group.results.map((item, index) => (
+                          <li key={index}>{renderItem(item)}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      renderItem(group.result)
+                    )}
+                    {group.result.pool && (
+                      <details class="recipe-pool">
+                        <summary>Możliwe wyniki ({group.result.pool.length})</summary>
+                        <ul class="recipe-ingredients recipe-pool-list">
+                          {group.result.pool.map((item) => (
+                            <li key={item.slug ?? item.name}>
+                              {renderItem(item)}
+                              {item.requirements && <span class="recipe-pool-level">{item.requirements}</span>}
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    )}
                     {recipe.transformsIngredient !== undefined &&
                       !group.result.groupId &&
                       !group.result.selectorTag && <p class="recipe-remarks">{recipe.notes}</p>}

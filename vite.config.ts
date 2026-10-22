@@ -72,13 +72,7 @@ export default defineConfig(({ command }) => {
       if (command !== "build") return
       await fs.cp(path.join(generatedDir, "data"), path.join(outDir, "data"), { recursive: true })
       const html = await fs.readFile(path.join(outDir, "index.html"), "utf8")
-      const slugs = new Set([
-        "receptury",
-        "DOS2",
-        "dos2-crafting-overhaul",
-        ...manifest.pages.map((page) => page.slug),
-        ...Object.keys(manifest.redirects),
-      ])
+      const slugs = new Set(["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)])
       await Promise.all(
         [...slugs]
           .filter((slug) => slug !== "index")

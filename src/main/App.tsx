@@ -16,6 +16,8 @@ import {
   groupRecipeTags,
   groupRequirementStats,
   itemNameKeys,
+  recipeResults,
+  recipeRollsItem,
   recipeUsesItem,
   tagLabel,
   uniqueItemEffects,
@@ -34,7 +36,7 @@ import {
   restoreFilters,
   type Filters,
 } from "./filters"
-import { catalogHref, gameForSlug, games, pageHref, redirectHref, routeSlug, type Game, type View } from "./routing"
+import { catalogHref, gameForSlug, games, pageHref, routeSlug, type Game, type View } from "./routing"
 import { useJson } from "./api"
 
 const stored = (key: string, fallback: string) => {
@@ -79,8 +81,7 @@ export function App() {
   const isItemRoute = Boolean(
     manifest.data?.pages.some((page) => page.slug === route.slug && page.itemPage && !page.categoryPage),
   )
-  const redirect = redirectHref(route.slug, route.search, manifest.data?.redirects)
-  const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute && !redirect
+  const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute
   const descriptions = useJson<Record<string, ItemDescription>>(
     !isCatalog || view === "items" ? `descriptions-${game}.json` : null,
   )
@@ -107,7 +108,7 @@ export function App() {
   const itemNames = useMemo(() => {
     const index = new Map<string, { name: string; namePl?: string; icon?: string }>()
     for (const row of catalog.data?.recipes ?? []) {
-      for (const item of [row.result, ...row.ingredients]) {
+      for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
         if (item.slug && !index.has(item.slug)) index.set(item.slug, item)
       }
     }
@@ -148,11 +149,6 @@ export function App() {
     window.addEventListener("popstate", pop)
     return () => window.removeEventListener("popstate", pop)
   }, [])
-  useEffect(() => {
-    if (!redirect) return
-    window.history.replaceState({}, "", redirect)
-    applyLocation()
-  }, [redirect])
   useEffect(() => {
     document.documentElement.dataset.itemLang = lang
     try {
@@ -249,18 +245,19 @@ export function App() {
     .join(" · ")
   const itemHref = (slug: string) => `${pageHref(slug)}?catalog=${game}`
   const itemRecipes = useMemo(() => {
-    if (!detail.data || !catalog.data) return { craft: [], used: [] }
+    if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
     const parsed = parseItemQuantity(detail.data.title)
     const keys = itemNameKeys(detail.data.title, parsed.base, detail.data.slug.split("/").at(-1))
     const baseKeys = itemNameKeys(parsed.base)
     return {
       craft: catalog.data.recipes.filter(
         (row) =>
-          row.result.slug === route.slug ||
+          recipeResults(row).some((product) => product.slug === route.slug) ||
           (parsed.quantities.length > 0 &&
             Boolean(row.result.quantity) &&
             [...itemNameKeys(row.result.name, row.result.namePl)].some((key) => baseKeys.has(key))),
       ),
+      rolled: catalog.data.recipes.filter((row) => recipeRollsItem(row, route.slug, keys)),
       used: catalog.data.recipes.filter((row) => recipeUsesItem(row, route.slug, keys)),
     }
   }, [detail.data, catalog.data, route.slug])
@@ -269,7 +266,9 @@ export function App() {
     [detail.data, catalog.data],
   )
   const detailName =
+    itemRecipes.craft.flatMap(recipeResults).find((item) => item.slug === route.slug) ??
     itemRecipes.craft[0]?.result ??
+    catalog.data?.recipes.flatMap((row) => row.result.pool ?? []).find((item) => item.slug === route.slug) ??
     catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === route.slug)
   const detailDescription =
     descriptions.data?.[
@@ -557,6 +556,19 @@ export function App() {
                     <h2>Jak wytworzyć</h2>
                     <RecipeTable
                       recipes={itemRecipes.craft}
+                      catalogSlug={activeGame.slug}
+                      labels={labels}
+                      showRequirements={game === "dos1"}
+                      searchable
+                      itemRoles={manifest.data?.itemRoles?.[game]}
+                    />
+                  </section>
+                )}
+                {itemRecipes.rolled.length > 0 && (
+                  <section>
+                    <h2>Można wylosować z</h2>
+                    <RecipeTable
+                      recipes={itemRecipes.rolled}
                       catalogSlug={activeGame.slug}
                       labels={labels}
                       showRequirements={game === "dos1"}

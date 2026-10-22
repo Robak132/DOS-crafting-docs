@@ -92,9 +92,6 @@ identyczne. Slug to angielska nazwa przedmiotu zapisana małymi literami i myśl
 przedmioty mają tę samą nazwę, kolejny dostaje końcówkę `-2`, `-3`. Polska nazwa jest tylko
 tłumaczeniem w `titlePl`. Receptury, efekty i opisy pochodzą z danych strukturalnych.
 
-`data/library/redirects.json` mapuje dawne adresy (np. `Skladniki/LEATHER-SCRAPS`) na obecne
-slugi; aplikacja przekierowuje je z zachowaniem parametrów, a build tworzy dla nich pliki HTML.
-
 Opisy z gry edytuje się w `data/itemDescriptions.json`, a lokalizacje i mapę ikon
 w odpowiednich plikach `data/`. Liczniki filtrów, role przedmiotów, manifest,
 połączony katalog Overhaul i pliki `dist/` są obliczane automatycznie.

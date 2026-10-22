@@ -1,14 +1,16 @@
-import { randomUUID } from "node:crypto"
 import { defineConfig, type Plugin } from "vite"
 import preact from "@preact/preset-vite"
 import fs from "node:fs/promises"
+import os from "node:os"
 import path from "node:path"
 import { generateData } from "./scripts/generate-data"
 import type { CatalogManifest } from "./src/main/domain/types"
+import { games, itemPath, pageGames } from "./src/main/routing"
 
 export default defineConfig(({ command }) => {
   const base = `/${(process.env.VITE_BASE_PATH ?? "").replace(/^\/+|\/+$/g, "")}/`.replace(/^\/\/$/, "/")
-  const generatedDir = path.resolve(".generated", command === "build" ? "build" : `dev-${randomUUID()}`)
+  // The dev server keeps generated data in a temporary folder outside the repository.
+  let generatedDir = ""
   let manifest: CatalogManifest
   let outDir = "dist"
   const dataPlugin: Plugin = {
@@ -16,10 +18,8 @@ export default defineConfig(({ command }) => {
     configResolved(config) {
       outDir = config.build.outDir
     },
-    async buildStart() {
-      if (command === "build") manifest = await generateData(generatedDir)
-    },
     async configureServer(server) {
+      generatedDir = await fs.mkdtemp(path.join(os.tmpdir(), "dos-crafting-dev-"))
       manifest = await generateData(generatedDir)
       server.middlewares.use(async (request, response, next) => {
         let pathname: string
@@ -63,25 +63,27 @@ export default defineConfig(({ command }) => {
       server.watcher.on("add", regenerate).on("change", regenerate).on("unlink", regenerate)
       server.httpServer?.once("close", () => {
         clearTimeout(timer)
-        // Each dev session writes to its own .generated/dev-<uuid>; do not leave them behind.
         void fs.rm(generatedDir, { recursive: true, force: true })
         server.watcher.off("add", regenerate).off("change", regenerate).off("unlink", regenerate)
       })
     },
     async closeBundle() {
       if (command !== "build") return
-      await fs.cp(path.join(generatedDir, "data"), path.join(outDir, "data"), { recursive: true })
+      manifest = await generateData(outDir)
       const html = await fs.readFile(path.join(outDir, "index.html"), "utf8")
-      const slugs = new Set(["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)])
+      // One folder per game: <catalog>.html is the catalog, <catalog>/<item>.html its item pages.
+      const slugs = new Set([
+        ...games.map((game) => game.slug),
+        ...manifest.pages
+          .filter((page) => page.itemPage)
+          .flatMap((page) => pageGames(page.tags).map((game) => itemPath(game, page.slug))),
+      ])
+      await Promise.all(games.map((game) => fs.mkdir(path.join(outDir, game.slug), { recursive: true })))
       await Promise.all(
         [...slugs]
           .filter((slug) => slug !== "index")
-          .map(async (slug) => {
-            for (const filename of [path.join(outDir, slug + ".html"), path.join(outDir, slug, "index.html")]) {
-              await fs.mkdir(path.dirname(filename), { recursive: true })
-              await fs.writeFile(filename, html)
-            }
-          }),
+          // GitHub Pages serves /slug from slug.html; 404.html covers every other address.
+          .map((slug) => fs.writeFile(path.join(outDir, slug + ".html"), html)),
       )
       await fs.writeFile(path.join(outDir, "404.html"), html)
       await fs.writeFile(path.join(outDir, ".nojekyll"), "")
@@ -96,7 +98,7 @@ export default defineConfig(({ command }) => {
     server: {
       host: "127.0.0.1",
       port: 5173,
-      watch: { ignored: ["**/.generated/**", "**/dist/**", "**/.pak-work/**"] },
+      watch: { ignored: ["**/dist/**", "**/.pak-work/**"] },
     },
   }
 })

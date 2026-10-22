@@ -2,14 +2,17 @@ import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import path from "node:path"
 import type { CatalogManifest, CatalogData } from "../src/main/domain/types"
-import { isPublicPage } from "../src/main/routing"
+import { games, isPublicPage, itemPath, pageGames } from "../src/main/routing"
 import { loadLibrary } from "./load-library"
 const manifest: CatalogManifest = JSON.parse(await fs.readFile("dist/data/manifest.json", "utf8"))
 assert.ok(manifest.pages.every(isPublicPage), "Category and tag pages must not be published")
 const library = await loadLibrary()
 for (const page of library.pages.filter((page) => !isPublicPage(page))) {
-  for (const filename of [`${page.slug}.html`, `${page.slug}/index.html`, `data/pages/${page.slug}.json`])
-    await assert.rejects(fs.access(path.join("dist", filename)), `Blocked page was published: ${filename}`)
+  for (const game of games)
+    await assert.rejects(
+      fs.access(path.join("dist", `${itemPath(game.id, page.slug)}.html`)),
+      `Blocked page was published: ${page.slug}`,
+    )
 }
 const base: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2.json", "utf8"))
 const combined: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2-overhaul.json", "utf8"))
@@ -39,19 +42,39 @@ assert.ok(
 )
 const html = await fs.readFile("dist/index.html", "utf8")
 assert.ok(!html.includes("quartz") && !html.includes("/src/main"))
-for (const slug of ["receptury", "DOS2", "dos2-crafting-overhaul", ...manifest.pages.map((page) => page.slug)]) {
-  if (slug === "index") continue
-  assert.equal(await fs.readFile(path.join("dist", slug, "index.html"), "utf8"), html)
-  assert.equal(await fs.readFile(path.join("dist", slug + ".html"), "utf8"), html)
-}
-for (const page of manifest.pages) {
-  const detail = JSON.parse(await fs.readFile(path.join("dist/data/pages", page.slug + ".json"), "utf8"))
-  assert.equal(detail.slug, page.slug)
+// HTML is grouped by game: <catalog>.html and <catalog>/<item>.html for every item that game lists.
+const expected = new Set([
+  ...games.map((game) => `${game.slug}.html`),
+  ...manifest.pages
+    .filter((page) => page.itemPage)
+    .flatMap((page) => pageGames(page.tags).map((game) => `${itemPath(game, page.slug)}.html`)),
+])
+for (const file of expected) assert.equal(await fs.readFile(path.join("dist", file), "utf8"), html, file)
+const published = [
+  ...(await fs.readdir("dist")).filter((name) => name.endsWith(".html") && !["index.html", "404.html"].includes(name)),
+  ...(
+    await Promise.all(
+      games.map(async (game) => (await fs.readdir(path.join("dist", game.slug))).map((name) => `${game.slug}/${name}`)),
+    )
+  ).flat(),
+]
+assert.deepEqual(
+  published.filter((file) => !expected.has(file)),
+  [],
+  "HTML outside its game folder",
+)
+assert.equal(await fs.readFile("dist/404.html", "utf8"), html)
+const folders = (await fs.readdir("dist", { withFileTypes: true })).filter((entry) => entry.isDirectory())
+assert.deepEqual(
+  folders.map((entry) => entry.name).sort(),
+  ["assets", "data", ...games.map((game) => game.slug)].sort(),
+)
+await assert.rejects(fs.access("dist/data/pages"), /ENOENT/)
+for (const page of manifest.pages)
   assert.ok(
-    detail.tags.every((tag: string) => tag.trim().length > 0),
+    page.tags.every((tag: string) => tag.trim().length > 0),
     `Empty tag on ${page.slug}`,
   )
-}
 for (const match of html.matchAll(/(?:src|href)="([^"]+\.(?:js|css))"/g)) {
   const name = path.basename(match[1])
   await fs.access(path.join("dist/assets", name))

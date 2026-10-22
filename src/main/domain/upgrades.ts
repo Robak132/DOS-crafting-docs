@@ -1,13 +1,16 @@
 import type { RecipeUpgrade } from "./recipes"
 import { normalizeSearch } from "./recipeView"
+import { isTagWithin } from "./tagTree"
 
 export function upgradeEffect(upgrade: RecipeUpgrade, lang: "pl" | "en"): string {
   return (lang === "pl" && upgrade.effect.pl) || upgrade.effect.en
 }
 
+/** Upgrades whose target category covers the item, e.g. one for any weapon applies to a bow. */
 export function upgradesForItem(upgrades: RecipeUpgrade[], itemTags: string[]): RecipeUpgrade[] {
-  const tags = new Set(itemTags)
-  return upgrades.filter((upgrade) => upgrade.targetTags.some((tag) => tags.has(tag)))
+  return upgrades.filter((upgrade) =>
+    upgrade.targetTags.some((target) => itemTags.some((tag) => isTagWithin(tag, target))),
+  )
 }
 
 export function matchesUpgradeQuery(upgrade: RecipeUpgrade, query: string): boolean {

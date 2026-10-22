@@ -23,11 +23,9 @@ def index():
     return result
 
 
-def scratch_root():
-    # The audit records paths relative to the repository, so fixtures must live inside it.
-    folder = ROOT / '.generated'
-    folder.mkdir(exist_ok=True)
-    return folder
+def scratch():
+    # The audit records paths relative to the repository, so fixtures live in a temporary folder inside it.
+    return tempfile.TemporaryDirectory(dir=ROOT, prefix='.audit-test-')
 
 
 def recipe(quantity=''):
@@ -78,7 +76,7 @@ class RecipeAuditTest(unittest.TestCase):
 
     def test_patches_override_results_without_discarding_combination(self):
         game = index()
-        with tempfile.TemporaryDirectory(dir=scratch_root()) as folder:
+        with scratch() as folder:
             directory = Path(folder)
             source = directory / 'Public/Shared/Stats/Generated/ItemCombos.txt'
             source.parent.mkdir(parents=True)
@@ -91,7 +89,7 @@ class RecipeAuditTest(unittest.TestCase):
 
     def test_dos1_transform_outputs_and_requirements(self):
         game = index()
-        with tempfile.TemporaryDirectory(dir=scratch_root()) as folder:
+        with scratch() as folder:
             source = Path(folder) / 'Public/Shared/Stats/ItemCombos.txt'
             source.parent.mkdir(parents=True)
             source.write_text('start transform code TransformBoth\n  set transforms param1\n  set transforms param2\nend transform code\nuse object A on object B with transform code TransformBoth parameters C,A,0,0,0,0,1,1 requires Crafting 2 autolevel 0 autoValue 0\n')

@@ -4,6 +4,7 @@ import path from "node:path"
 import type { LibraryPage } from "../src/main/domain/types"
 import type { RecipeCatalog, RecipeItem, RecipeRow, RecipeUpgrade } from "../src/main/domain/recipes"
 import type { RecipeSources } from "../src/main/domain/recipeCatalog"
+import { isCategoryTag } from "../src/main/domain/tagTree"
 
 const reservedSlugs = new Set(["index", "receptury", "dos2", "dos2-crafting-overhaul", "data", "assets", "404"])
 const pageFiles = { DOS1: "dos1.json", DOS2: "dos2.json", "DOS2-CO": "dos2-co.json" } as const
@@ -133,7 +134,7 @@ export async function loadLibrary(directory = "data/library") {
           !upgrade.target.pool &&
           strings(upgrade.targetTags) &&
           upgrade.targetTags.length > 0 &&
-          upgrade.targetTags.every((tag) => tag.startsWith("Typ/")),
+          upgrade.targetTags.every((tag) => tag !== "Category" && isCategoryTag(tag)),
         `Invalid upgrade target: ${upgrade.id}`,
       )
       assert.ok(strings(upgrade.tags), `Invalid upgrade tags: ${upgrade.id}`)

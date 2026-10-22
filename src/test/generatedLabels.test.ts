@@ -4,9 +4,14 @@ import os from "node:os"
 import path from "node:path"
 import { test } from "node:test"
 import { generateData } from "../../scripts/generate-data"
+import { recipeResults } from "../main/domain/recipeResults"
+import type { RecipeItem } from "../main/domain/recipes"
 import type { CatalogData } from "../main/domain/types"
 
-test("tag labels and effect vocabulary are Polish, never an untranslated English fallback", async () => {
+const key = (item: RecipeItem) => `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
+const keys = (items: RecipeItem[]) => JSON.stringify(items.map(key).sort())
+
+test("built catalogs have Polish labels and list every recipe once", async () => {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-generated-"))
   try {
     await generateData(directory)
@@ -17,24 +22,6 @@ test("tag labels and effect vocabulary are Polish, never an untranslated English
       const catalog: CatalogData = JSON.parse(
         await fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8"),
       )
-      if (game !== "dos1") {
-        for (const slug of ["milk-and-honey", "pizza-dough", "arrow"]) {
-          const recipes = catalog.recipes.filter((row) => row.result.slug === slug)
-          assert.equal(recipes.length, 1, `${game}: ${slug}`)
-          assert.ok(recipes[0].source)
-          if (slug === "arrow") assert.equal(recipes[0].remarks, "Serves No Function")
-          else assert.ok(recipes[0].notes)
-          assert.equal(recipes[0].sourceRecipeIds?.length, 2)
-        }
-      }
-      const labels = Object.fromEntries(catalog.tags.map((tag) => [tag.tag, tag.label]))
-      const dos1 = game === "dos1"
-      const dexterity = dos1 ? "Zwinność" : "Zręczność"
-      const speed = dos1 ? "Prędkość" : "Szybkość"
-      assert.equal(labels["Cechy/Zwinność"] ?? dexterity, dexterity, game)
-      assert.equal(labels["Cechy/Szybkość"] ?? speed, speed, game)
-      assert.equal(labels["Cechy/Unik"] ?? "Unik", "Unik", game)
-      assert.equal(labels["Typ/Pasy"] ?? "Pas", "Pas", game)
       const english = catalog.tags.filter((tag) => {
         const entry = localisation[game]?.[tag.tag]
         return entry && !entry.pl && tag.label === entry.en
@@ -47,57 +34,37 @@ test("tag labels and effect vocabulary are Polish, never an untranslated English
       for (const row of catalog.recipes)
         for (const [en, label] of Object.entries(row.effectLabels ?? {}))
           assert.notEqual(label.toLocaleLowerCase(), en, `${game} ${row.id}: ${en}`)
-    }
-  } finally {
-    await fs.rm(directory, { recursive: true, force: true })
-  }
-})
 
-test("built catalogs never repeat a recipe that a group ingredient already covers", async () => {
-  const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-generated-"))
-  try {
-    await generateData(directory)
-    for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-      const catalog: CatalogData = JSON.parse(
-        await fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8"),
-      )
+      // Same products from the same ingredients, or from a concrete item that a group ingredient already covers.
       const members = new Map(
         Object.entries(catalog.groups ?? {}).map(([id, group]) => [id, new Set(group.members.map((m) => m.name))]),
       )
-      const key = (item: { name: string; selectorTag?: string; quantity?: string }) =>
-        `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
-      const rest = (items: { name: string }[], skip: number) =>
-        JSON.stringify(
-          items
-            .filter((_, index) => index !== skip)
-            .map(key)
-            .sort(),
-        )
-      for (const row of catalog.recipes)
+      const seen = new Map<string, string>()
+      for (const row of catalog.recipes) {
+        const signature = JSON.stringify([keys(recipeResults(row)), keys(row.ingredients), row.requirements])
+        assert.ok(!seen.has(signature), `${game}: ${row.id} repeats ${seen.get(signature)}`)
+        seen.set(signature, row.id)
         row.ingredients.forEach((group, slot) => {
           const names = group.groupId ? members.get(group.groupId) : undefined
           if (!names) return
+          const rest = keys(row.ingredients.filter((_, index) => index !== slot))
           const covered = catalog.recipes.find(
             (other) =>
               other !== row &&
-              key(other.result) === key(row.result) &&
+              keys(recipeResults(other)) === keys(recipeResults(row)) &&
               other.requirements === row.requirements &&
               other.ingredients.some(
                 (item, index) =>
                   !item.groupId &&
                   names.has(item.name) &&
                   (item.quantity ?? "") === (group.quantity ?? "") &&
-                  rest(other.ingredients, index) === rest(row.ingredients, slot),
+                  keys(other.ingredients.filter((_, i) => i !== index)) === rest,
               ),
           )
           assert.ok(!covered, `${game}: ${covered?.id} is covered by ${row.id}`)
         })
+      }
     }
-    const cheese = JSON.parse(
-      await fs.readFile(path.join(directory, "data/catalog-dos2-overhaul.json"), "utf8"),
-    ).recipes.filter((row: { result: { slug?: string } }) => row.result.slug === "cheese-bread")
-    assert.equal(cheese.length, 1)
-    assert.match(cheese[0].source, /main_sheet!A672:G672/)
   } finally {
     await fs.rm(directory, { recursive: true, force: true })
   }

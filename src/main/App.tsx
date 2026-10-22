@@ -10,7 +10,7 @@ import { ItemTable } from "./components/ItemTable"
 import { RecipeTable } from "./components/RecipeTable"
 import { UpgradeTable } from "./components/UpgradeTable"
 import { upgradesForItem } from "./domain/upgrades"
-import type { CatalogManifest, CatalogData, PageDetail } from "./domain/types"
+import type { CatalogManifest, CatalogData, PageSummary } from "./domain/types"
 import {
   catalogItems,
   groupRecipeTags,
@@ -36,7 +36,17 @@ import {
   restoreFilters,
   type Filters,
 } from "./filters"
-import { catalogHref, gameForSlug, games, pageHref, routeSlug, type Game, type View } from "./routing"
+import {
+  catalogHref,
+  gameForSlug,
+  games,
+  itemHref as gameItemHref,
+  pageGames,
+  parseItemRoute,
+  routeSlug,
+  type Game,
+  type View,
+} from "./routing"
 import { useJson } from "./api"
 
 const stored = (key: string, fallback: string) => {
@@ -48,8 +58,12 @@ const stored = (key: string, fallback: string) => {
 }
 const currentRoute = () => ({ slug: routeSlug(window.location.pathname), search: window.location.search })
 function routeGame(route: ReturnType<typeof currentRoute>): Game {
-  const candidate = new URLSearchParams(route.search).get("catalog") ?? stored("dos_active_catalog", "dos1")
-  return gameForSlug(route.slug) ?? (games.some((entry) => entry.id === candidate) ? (candidate as Game) : "dos1")
+  const candidate = stored("dos_active_catalog", "dos1")
+  return (
+    gameForSlug(route.slug) ??
+    parseItemRoute(route.slug)?.game ??
+    (games.some((entry) => entry.id === candidate) ? (candidate as Game) : "dos1")
+  )
 }
 function routeView(search: string): View {
   const view = new URLSearchParams(search).get("view") ?? stored("crafting_catalog_view", "items")
@@ -78,14 +92,16 @@ export function App() {
   const manifest = useJson<CatalogManifest>("manifest.json")
   const catalog = useJson<CatalogData>(`catalog-${game}.json`)
   const isCatalog = !route.slug || route.slug === "index" || Boolean(gameForSlug(route.slug))
-  const isItemRoute = Boolean(
-    manifest.data?.pages.some((page) => page.slug === route.slug && page.itemPage && !page.categoryPage),
-  )
+  const itemSlug = parseItemRoute(route.slug)?.item
+  const page = itemSlug
+    ? manifest.data?.pages.find((entry) => entry.slug === itemSlug && pageGames(entry.tags).includes(game))
+    : undefined
+  const isItemRoute = Boolean(page?.itemPage && !page.categoryPage)
   const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute
   const descriptions = useJson<Record<string, ItemDescription>>(
     !isCatalog || view === "items" ? `descriptions-${game}.json` : null,
   )
-  const detail = useJson<PageDetail>(isItemRoute ? `pages/${route.slug}.json` : null)
+  const detail: { data?: PageSummary; error?: string } = { data: isItemRoute ? page : undefined }
   const activeGame = games.find((entry) => entry.id === game)!
   const labels = useMemo(
     () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
@@ -243,7 +259,7 @@ export function App() {
   ]
     .filter(Boolean)
     .join(" · ")
-  const itemHref = (slug: string) => `${pageHref(slug)}?catalog=${game}`
+  const itemHref = (slug: string) => gameItemHref(game, slug)
   const itemRecipes = useMemo(() => {
     if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
     const parsed = parseItemQuantity(detail.data.title)
@@ -252,24 +268,24 @@ export function App() {
     return {
       craft: catalog.data.recipes.filter(
         (row) =>
-          recipeResults(row).some((product) => product.slug === route.slug) ||
+          recipeResults(row).some((product) => product.slug === itemSlug) ||
           (parsed.quantities.length > 0 &&
             Boolean(row.result.quantity) &&
             [...itemNameKeys(row.result.name, row.result.namePl)].some((key) => baseKeys.has(key))),
       ),
-      rolled: catalog.data.recipes.filter((row) => recipeRollsItem(row, route.slug, keys)),
-      used: catalog.data.recipes.filter((row) => recipeUsesItem(row, route.slug, keys)),
+      rolled: catalog.data.recipes.filter((row) => recipeRollsItem(row, itemSlug, keys)),
+      used: catalog.data.recipes.filter((row) => recipeUsesItem(row, itemSlug, keys)),
     }
-  }, [detail.data, catalog.data, route.slug])
+  }, [detail.data, catalog.data, itemSlug])
   const itemUpgrades = useMemo(
     () => (detail.data ? upgradesForItem(catalog.data?.upgrades ?? [], detail.data.tags) : []),
     [detail.data, catalog.data],
   )
   const detailName =
-    itemRecipes.craft.flatMap(recipeResults).find((item) => item.slug === route.slug) ??
+    itemRecipes.craft.flatMap(recipeResults).find((item) => item.slug === itemSlug) ??
     itemRecipes.craft[0]?.result ??
-    catalog.data?.recipes.flatMap((row) => row.result.pool ?? []).find((item) => item.slug === route.slug) ??
-    catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === route.slug)
+    catalog.data?.recipes.flatMap((row) => row.result.pool ?? []).find((item) => item.slug === itemSlug) ??
+    catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === itemSlug)
   const detailDescription =
     descriptions.data?.[
       detailName ? itemDataKey(detailName) : itemIconKey(parseItemQuantity(detail.data?.title ?? "").base)

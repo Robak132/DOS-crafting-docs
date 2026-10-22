@@ -23,7 +23,7 @@ test("tooltip index preserves crafting variants and order for all three catalogs
     for (const item of items) {
       const keys = itemNameKeys(item.name, parseItemQuantity(item.name).base)
       const rolls = (row: RecipeRow) =>
-        (row.result.pool ?? []).some(
+        [...(row.extraResults ?? []), ...(row.result.pool ?? [])].some(
           (entry) =>
             (item.slug && entry.slug === item.slug) || [...itemNameKeys(entry.name)].some((key) => keys.has(key)),
         )

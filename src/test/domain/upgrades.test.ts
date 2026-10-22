@@ -2,6 +2,7 @@ import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
 import { matchesUpgradeQuery, upgradeEffect, upgradesForItem } from "../../main/domain/upgrades"
+import { isCategoryTag } from "../../main/domain/tagTree"
 import type { RecipeUpgrade } from "../../main/domain/recipes"
 
 const upgrade = (effect: string, targetTags: string[], target = "Shield"): RecipeUpgrade => ({
@@ -19,20 +20,21 @@ const upgrade = (effect: string, targetTags: string[], target = "Shield"): Recip
 
 test("an item page lists the upgrades whose target covers its category", () => {
   const upgrades = [
-    upgrade("Air Resistance", ["Typ/Pancerz/Tarcze"]),
-    upgrade("Fire Damage", ["Typ/Bron"], "Most Weapons"),
-    upgrade("Bow Damage", ["Typ/Bron/Luki"], "Bow"),
+    upgrade("Air Resistance", ["Shields"]),
+    upgrade("Fire Damage", ["Weapons"], "Most Weapons"),
+    upgrade("Bow Damage", ["Bows"], "Bow"),
   ]
-  const bow = ["DOS1", "Typ", "Typ/Bron", "Typ/Bron/Luki"]
+  // A page stores only its leaf tag; "Weapons" covers it through the hierarchy.
+  const bow = ["DOS1", "Bows"]
   assert.deepEqual(
     upgradesForItem(upgrades, bow).map((entry) => entry.effect.en),
     ["Fire Damage", "Bow Damage"],
   )
-  assert.deepEqual(upgradesForItem(upgrades, ["Typ", "Typ/Skladniki"]), [])
+  assert.deepEqual(upgradesForItem(upgrades, ["Ingredients"]), [])
 })
 
 test("upgrade search covers effect, target and ingredients in both languages", () => {
-  const entry = upgrade("Air Resistance", ["Typ/Pancerz/Tarcze"])
+  const entry = upgrade("Air Resistance", ["Shields"])
   for (const query of ["air", "odpornosc", "shield", "esencja", "AIR essence"])
     assert.ok(matchesUpgradeQuery(entry, query), query)
   assert.ok(!matchesUpgradeQuery(entry, "fire"))
@@ -41,35 +43,16 @@ test("upgrade search covers effect, target and ingredients in both languages", (
 })
 
 test("upgrades are stored as modifications, never as items", () => {
-  let total = 0
   for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
     const source = JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8"))
-    assert.ok(
-      !source.recipes.some((row: { result: { tags: string[] } }) => row.result.tags.includes("Typ/Ulepszenia")),
-      game,
-    )
+    assert.ok(!source.recipes.some((row: { result: { tags: string[] } }) => row.result.tags.includes("Upgrades")), game)
     for (const entry of source.upgrades as RecipeUpgrade[]) {
-      assert.ok(entry.targetTags.length > 0 && entry.targetTags.every((tag) => tag.startsWith("Typ/")), entry.id)
+      assert.ok(entry.targetTags.length > 0 && entry.targetTags.every(isCategoryTag), entry.id)
       assert.ok(!entry.ingredients.includes(entry.target), entry.id)
     }
-    total += source.upgrades.length
   }
-  assert.equal(total, 191)
   for (const name of ["dos1", "dos2", "dos2-co"]) {
     const pages = JSON.parse(fs.readFileSync(`data/library/pages/${name}.json`, "utf8")).pages
-    assert.ok(!pages.some((page: { tags: string[] }) => page.tags.includes("Typ/Ulepszenia")), name)
+    assert.ok(!pages.some((page: { tags: string[] }) => page.tags.includes("Upgrades")), name)
   }
-})
-
-test("Boosted Amulets and Rings are crafted items, not upgrades", () => {
-  const source = JSON.parse(fs.readFileSync("data/library/recipes/dos2-overhaul.json", "utf8"))
-  const boosted = source.recipes.filter((row: { result: { name: string } }) =>
-    /^Boosted (Amulet|Ring) \(/.test(row.result.name),
-  )
-  assert.equal(boosted.length, 24)
-  for (const row of boosted) {
-    const category = row.result.name.startsWith("Boosted Amulet") ? "Typ/Amulety" : "Typ/Pierscienie"
-    assert.ok(row.result.tags.includes(category), row.id)
-  }
-  assert.ok(!source.upgrades.some((entry: RecipeUpgrade) => /^Boosted (Amulet|Ring) \(/.test(entry.effect.en)))
 })

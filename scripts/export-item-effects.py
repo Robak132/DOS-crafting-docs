@@ -181,7 +181,7 @@ def main():
         translations[game]={plain(v):plain(pl[k]) for k,v in en.items() if k in pl}
     for game,layers in [('dos1',['dos1']),('dos2',['dos2']),('dos2-overhaul',['dos2','overhaul'])]:
         for status,original in base_statuses.items():
-            entry=tag_localisation[game].get('Efekty/Statusy/'+status)
+            entry=tag_localisation[game].get(status)
             STATUSES[status]=(original[0],(entry.get('pl') or entry['en']) if entry else original[1])
         index=helpers['GameIndex'](layers);directories=[ROOT/'.pak-work/icons'/layer for layer in layers]
         # Read the same DE patch order as GameIndex. Restrict optional modules.
@@ -205,9 +205,9 @@ def main():
             fields=index.fields(stat);raw=index.strings.get(fields.get('DisplayName')) or fields.get('DisplayNameRef','').strip('|')
             if not raw or raw==fields.get('DisplayName') and '_' in raw:return None
             name=plain(raw);return name,translations['dos1' if game=='dos1' else 'dos2'].get(name,name)
-        data=json.loads((ROOT/'.generated/build/data'/f'catalog-{game}.json').read_text(encoding='utf-8'))
+        data=json.loads((ROOT/'dist/data'/f'catalog-{game}.json').read_text(encoding='utf-8'))
         existing={key(row['result']['name']) for row in data['recipes'] if row.get('notes','').strip() not in ['','-']}
-        items={key(i.get('statsId') or i['name']):i for row in data['recipes'] for i in [row['result'],*row['ingredients']] if not i.get('selectorTag') and not i.get('groupId') and 'Typ/Ulepszenia' not in i['tags']}
+        items={key(i.get('statsId') or i['name']):i for row in data['recipes'] for i in [row['result'],*row['ingredients']] if not i.get('selectorTag') and not i.get('groupId') and 'Upgrades' not in i['tags']}
         verified_outputs=defaultdict(set)
         verified_recipes=defaultdict(dict)
         current_ids={row['id'] for row in data['recipes']}
@@ -243,7 +243,7 @@ def main():
                 if effect:
                     for field,(_,old_label) in BONUSES.items():
                         suffix=tag_rules['ATTRIBUTES'].get(field)
-                        localized=tag_localisation[game].get(tag_rules['attribute_tag'](suffix)) if suffix else None
+                        localized=tag_localisation[game].get(suffix) if suffix else None
                         if localized:
                             new_label=localized.get('pl') or localized['en']
                             effect['pl']=re.sub(r'([+-]\d+(?:\.\d+)?%? )'+re.escape(old_label)+r'(?!\w)',lambda m:m[1]+new_label,effect['pl'])
@@ -251,17 +251,16 @@ def main():
                 for action in on_use:
                     skill=action.get('SkillID')
                     if not skill:continue
-                    field='Cechy/Uczy-umiejetnosci' if action.get('ActionType')=='13' else 'Cechy/Rzuca-zaklecie'
+                    field='Teaches-Skill' if action.get('ActionType')=='13' else 'Casts-Spell'
                     tags.append(field);tag_labels[field]='Uczy umiejętności' if action.get('ActionType')=='13' else 'Rzuca zaklęcie'
-                    schools={'Fire':'Pyrokinetyka','Water':'Hydrosophia','Air':'Aeroteurgia','Earth':'Geomancja','Necromancy':'Nekromancja','Summoning':'Przyzywanie','Polymorph':'Polimorfia','Warrior':'Wojna','Ranger':'Łowiectwo','Rogue':'Łobuz'}
+                    schools={'Fire':'Pyrokinetic','Water':'Hydrosophist','Air':'Aerotheurge','Earth':'Geomancer','Necromancy':'Necromancer','Summoning':'Summoning','Polymorph':'Polymorph','Warrior':'Warfare','Ranger':'Huntsman','Rogue':'Scoundrel'}
                     ability=index.fields(skill).get('Ability')
-                    if ability in schools:tags.append(tag_rules['attribute_tag'](schools[ability]))
+                    if ability in schools:tags.append(schools[ability])
                     if action.get('ActionType')!='13':
                         def add_action(tag,name=None):
                             tags.append(tag)
                             if name:tag_labels[tag]=name
                         tag_rules['properties'](index.fields(skill).get('SkillProperties',''),add_action,lambda status: STATUSES.get(status) or skill_name(status))
-                tags+=tag_rules['combat_parents'](tags)
                 matches.append({'stats':stat,'type':kind,'effect':effect,'effect_tags':sorted(set(tags)),'tag_labels':tag_labels,'type_tags':tag_rules['type_tags'](fields,kind),'fields':{k:fields[k] for k in used if k in fields},'on_use':on_use,'unhandled':unknown})
             effects={json.dumps(m['effect'],sort_keys=True,ensure_ascii=False) for m in matches}
             effect=matches[0]['effect'] if len(effects)==1 else None

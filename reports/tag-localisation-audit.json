@@ -1,147 +1,147 @@
 {
   "dos1": [
     {
-      "tag": "Typ/Bron",
+      "tag": "Weapons",
       "en": "Weapons",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz",
+      "tag": "Armour",
       "en": "Armour",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Miecze",
+      "tag": "Swords",
       "en": "Swords",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Topory",
+      "tag": "Axes",
       "en": "Axes",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Bulawy",
+      "tag": "Maces",
       "en": "Maces",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Sztylety",
+      "tag": "Daggers",
       "en": "Daggers",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Wlocznie",
+      "tag": "Spears",
       "en": "Spears",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Luki",
+      "tag": "Bows",
       "en": "Bows",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Kusze",
+      "tag": "Crossbows",
       "en": "Crossbows",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Rozdzki",
+      "tag": "Wands",
       "en": "Wands",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Bron/Kostury",
+      "tag": "Staves",
       "en": "Staff",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Helmy",
+      "tag": "Helmets",
       "en": "Helmet",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Napiersniki",
+      "tag": "Chest-Armour",
       "en": "Chest Armour",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Rekawice",
+      "tag": "Gloves",
       "en": "Gloves",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Spodnie",
+      "tag": "Leggings",
       "en": "Leggings",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Buty",
+      "tag": "Boots",
       "en": "Boots",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pancerz/Tarcze",
+      "tag": "Shields",
       "en": "Shields",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Amulety",
+      "tag": "Amulets",
       "en": "Amulet",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pierscienie",
+      "tag": "Rings",
       "en": "Ring",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Typ/Pasy",
+      "tag": "Belts",
       "en": "Belt",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Siła",
+      "tag": "Strength",
       "en": "Strength",
       "pl": "Siła",
       "contentuid": [
@@ -150,14 +150,14 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Zręczność",
+      "tag": "Finesse",
       "en": "Finesse",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Zwinność",
+      "tag": "Dexterity",
       "en": "Dexterity",
       "pl": "Zwinność",
       "contentuid": [
@@ -166,7 +166,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Inteligencja",
+      "tag": "Intelligence",
       "en": "Intelligence",
       "pl": "Inteligencja",
       "contentuid": [
@@ -175,7 +175,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Kondycja",
+      "tag": "Constitution",
       "en": "Constitution",
       "pl": "Kondycja",
       "contentuid": [
@@ -184,21 +184,21 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Pamięć",
+      "tag": "Memory",
       "en": "Memory",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Spryt",
+      "tag": "Wits",
       "en": "Wits",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Percepcja",
+      "tag": "Perception",
       "en": "Perception",
       "pl": "Spostrz.",
       "contentuid": [
@@ -207,7 +207,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Szybkość",
+      "tag": "Speed",
       "en": "Speed",
       "pl": "Prędkość",
       "contentuid": [
@@ -216,462 +216,462 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Inicjatywa",
+      "tag": "Initiative",
       "en": "Initiative",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Celność",
+      "tag": "Accuracy",
       "en": "Chance to hit",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Krytyk",
+      "tag": "Critical-Chance",
       "en": "Critical chance",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Unik",
+      "tag": "Dodge",
       "en": "Dodge",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Pancerz-fizyczny",
+      "tag": "Physical-Armour",
       "en": "Physical Armour",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Pancerz-magiczny",
+      "tag": "Magic-Armour",
       "en": "Magic Armour",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/HP",
+      "tag": "Vitality",
       "en": "Vitality",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Obrażenia",
+      "tag": "Damage-Bonus",
       "en": "Damage",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+      "tag": "Leadership",
       "en": "Leadership",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Szczęście",
+      "tag": "Lucky-Charm",
       "en": "Lucky Charm",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Znawca",
+      "tag": "Loremaster",
       "en": "Loremaster",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Telekineza",
+      "tag": "Telekinesis",
       "en": "Telekinesis",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Skradanie",
+      "tag": "Sneaking",
       "en": "Sneaking",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Złodziejstwo",
+      "tag": "Thievery",
       "en": "Thievery",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Handel",
+      "tag": "Bartering",
       "en": "Bartering",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Perswazja",
+      "tag": "Persuasion",
       "en": "Persuasion",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Otwieranie-zamków",
+      "tag": "Lockpicking",
       "en": "Lockpicking",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Kradzież-kieszonkowa",
+      "tag": "Pickpocketing",
       "en": "Pickpocketing",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Wytwarzanie",
+      "tag": "Crafting",
       "en": "Crafting",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Kowalstwo",
+      "tag": "Blacksmithing",
       "en": "Blacksmithing",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Hydrosophia",
+      "tag": "Hydrosophist",
       "en": "Hydrosophist",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+      "tag": "Pyrokinetic",
       "en": "Pyrokinetic",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+      "tag": "Aerotheurge",
       "en": "Aerotheurge",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Geomancja",
+      "tag": "Geomancer",
       "en": "Geomancer",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Nekromancja",
+      "tag": "Necromancer",
       "en": "Witchcraft",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Przyzywanie",
+      "tag": "Summoning",
       "en": "Summoning",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Polimorfia",
+      "tag": "Polymorph",
       "en": "Polymorph",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Wojna",
+      "tag": "Warfare",
       "en": "Man-at-Arms",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Łowiectwo",
+      "tag": "Huntsman",
       "en": "Expert Marksman",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Umiejetnosci/Łobuz",
+      "tag": "Scoundrel",
       "en": "Scoundrel",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+      "tag": "Single-Handed",
       "en": "Single-Handed",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+      "tag": "Two-Handed",
       "en": "Two-Handed",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+      "tag": "Dual-Wielding",
       "en": "Dual Wielding",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Dystansowa",
+      "tag": "Ranged",
       "en": "Ranged",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Odnawianie-PA",
+      "tag": "AP-Recovery",
       "en": "AP recovery",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Początkowe-PA",
+      "tag": "Starting-AP",
       "en": "Starting AP",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Maksymalne-PA",
+      "tag": "Max-AP",
       "en": "Maximum AP",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Krzepa",
+      "tag": "Bodybuilding",
       "en": "Body Building",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+      "tag": "Willpower",
       "en": "Willpower",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Obrona",
+      "tag": "Defence",
       "en": "Defence",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Leczenie",
+      "tag": "Healing",
       "en": "Healing",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Gniazda-run",
+      "tag": "Rune-Slots",
       "en": "Rune Slots",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/POISONED",
+      "tag": "POISONED",
       "en": "Poisoned",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/DRUNK",
+      "tag": "DRUNK",
       "en": "Drunk",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/KNOCKDOWN",
+      "tag": "KNOCKDOWN",
       "en": "Knocked down",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/DISEASED",
+      "tag": "DISEASED",
       "en": "Diseased",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/BURNING",
+      "tag": "BURNING",
       "en": "Burning",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/PETRIFIED",
+      "tag": "PETRIFIED",
       "en": "Petrified",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/FROZEN",
+      "tag": "FROZEN",
       "en": "Frozen",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/BLIND",
+      "tag": "BLIND",
       "en": "Blind",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/INVISIBLE",
+      "tag": "INVISIBLE",
       "en": "Invisible",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/SLOWED",
+      "tag": "SLOWED",
       "en": "Slowed",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/BLEEDING",
+      "tag": "BLEEDING",
       "en": "Bleeding",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/FEAR",
+      "tag": "FEAR",
       "en": "Fear",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/WET",
+      "tag": "WET",
       "en": "Wet",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/MAGIC_SHELL",
+      "tag": "MAGIC_SHELL",
       "en": "Magic Shell",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/CHILLED",
+      "tag": "CHILLED",
       "en": "Chilled",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/HEALING",
+      "tag": "HEALING",
       "en": "Healing",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/CHARMED",
+      "tag": "CHARMED",
       "en": "Charmed",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/DECAYING_TOUCH",
+      "tag": "DECAYING_TOUCH",
       "en": "Decaying",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/KNOCKED_DOWN",
+      "tag": "KNOCKED_DOWN",
       "en": "Knocked down",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/FORTIFIED",
+      "tag": "FORTIFIED",
       "en": "Fortified",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/CRIPPLED",
+      "tag": "CRIPPLED",
       "en": "Crippled",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/HASTED",
+      "tag": "HASTED",
       "en": "Hasted",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/WARM",
+      "tag": "WARM",
       "en": "Warm",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/CLEAR_MINDED",
+      "tag": "CLEAR_MINDED",
       "en": "Clear-minded",
       "pl": null,
       "contentuid": [],
@@ -680,7 +680,7 @@
   ],
   "dos2": [
     {
-      "tag": "Typ/Bron",
+      "tag": "Weapons",
       "en": "Weapons",
       "pl": "Broń",
       "contentuid": [
@@ -692,7 +692,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz",
+      "tag": "Armour",
       "en": "Armour",
       "pl": "Pancerze",
       "contentuid": [
@@ -701,7 +701,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Miecze",
+      "tag": "Swords",
       "en": "Swords",
       "pl": "Miecze",
       "contentuid": [
@@ -710,7 +710,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Topory",
+      "tag": "Axes",
       "en": "Axes",
       "pl": "Topory",
       "contentuid": [
@@ -719,7 +719,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Bulawy",
+      "tag": "Maces",
       "en": "Maces",
       "pl": "Buławy",
       "contentuid": [
@@ -728,7 +728,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Sztylety",
+      "tag": "Daggers",
       "en": "Daggers",
       "pl": "Sztylety",
       "contentuid": [
@@ -737,7 +737,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Wlocznie",
+      "tag": "Spears",
       "en": "Spears",
       "pl": "Włócznie",
       "contentuid": [
@@ -746,7 +746,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Luki",
+      "tag": "Bows",
       "en": "Bows",
       "pl": "Łuki",
       "contentuid": [
@@ -755,7 +755,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Kusze",
+      "tag": "Crossbows",
       "en": "Crossbows",
       "pl": "Kusze",
       "contentuid": [
@@ -764,7 +764,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Rozdzki",
+      "tag": "Wands",
       "en": "Wands",
       "pl": "Różdżki",
       "contentuid": [
@@ -774,7 +774,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Bron/Kostury",
+      "tag": "Staves",
       "en": "Staff",
       "pl": "Kostur",
       "contentuid": [
@@ -785,7 +785,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Helmy",
+      "tag": "Helmets",
       "en": "Helmet",
       "pl": "Hełm",
       "contentuid": [
@@ -796,7 +796,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Napiersniki",
+      "tag": "Chest-Armour",
       "en": "Chest Armour",
       "pl": "Klatka piersiowa",
       "contentuid": [
@@ -805,7 +805,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Rekawice",
+      "tag": "Gloves",
       "en": "Gloves",
       "pl": "Rękawice",
       "contentuid": [
@@ -814,7 +814,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Spodnie",
+      "tag": "Leggings",
       "en": "Leggings",
       "pl": "Nogawice",
       "contentuid": [
@@ -824,7 +824,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Buty",
+      "tag": "Boots",
       "en": "Boots",
       "pl": "Buty",
       "contentuid": [
@@ -834,7 +834,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pancerz/Tarcze",
+      "tag": "Shields",
       "en": "Shields",
       "pl": "Tarcze",
       "contentuid": [
@@ -843,7 +843,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Amulety",
+      "tag": "Amulets",
       "en": "Amulet",
       "pl": "Amulet",
       "contentuid": [
@@ -853,7 +853,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pierscienie",
+      "tag": "Rings",
       "en": "Ring",
       "pl": "Pierścień",
       "contentuid": [
@@ -864,7 +864,7 @@
       "untranslated": false
     },
     {
-      "tag": "Typ/Pasy",
+      "tag": "Belts",
       "en": "Belt",
       "pl": "Pas",
       "contentuid": [
@@ -875,7 +875,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Siła",
+      "tag": "Strength",
       "en": "Strength",
       "pl": "Siła",
       "contentuid": [
@@ -886,7 +886,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Zręczność",
+      "tag": "Finesse",
       "en": "Finesse",
       "pl": "Zręczność",
       "contentuid": [
@@ -898,14 +898,14 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Zwinność",
+      "tag": "Dexterity",
       "en": "Dexterity",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Inteligencja",
+      "tag": "Intelligence",
       "en": "Intelligence",
       "pl": "Inteligencja",
       "contentuid": [
@@ -916,7 +916,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Kondycja",
+      "tag": "Constitution",
       "en": "Constitution",
       "pl": "Kondycja",
       "contentuid": [
@@ -927,7 +927,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Pamięć",
+      "tag": "Memory",
       "en": "Memory",
       "pl": "Pamięć",
       "contentuid": [
@@ -940,7 +940,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Spryt",
+      "tag": "Wits",
       "en": "Wits",
       "pl": "Bystrość",
       "contentuid": [
@@ -953,21 +953,21 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Percepcja",
+      "tag": "Perception",
       "en": "Perception",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Szybkość",
+      "tag": "Speed",
       "en": "Speed",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Inicjatywa",
+      "tag": "Initiative",
       "en": "Initiative",
       "pl": "Inicjatywa",
       "contentuid": [
@@ -976,7 +976,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Celność",
+      "tag": "Accuracy",
       "en": "Chance to hit",
       "pl": "Szansa na trafienie",
       "contentuid": [
@@ -986,7 +986,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Krytyk",
+      "tag": "Critical-Chance",
       "en": "Critical chance",
       "pl": "Szansa na trafienie krytyczne",
       "contentuid": [
@@ -995,14 +995,14 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Unik",
+      "tag": "Dodge",
       "en": "Dodge",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Pancerz-fizyczny",
+      "tag": "Physical-Armour",
       "en": "Physical Armour",
       "pl": "Pancerz Fizyczny",
       "contentuid": [
@@ -1018,7 +1018,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Pancerz-magiczny",
+      "tag": "Magic-Armour",
       "en": "Magic Armour",
       "pl": "Pancerz Magiczny",
       "contentuid": [
@@ -1032,7 +1032,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/HP",
+      "tag": "Vitality",
       "en": "Vitality",
       "pl": "Zdrowie",
       "contentuid": [
@@ -1044,7 +1044,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Obrażenia",
+      "tag": "Damage-Bonus",
       "en": "Damage",
       "pl": "Obrażenia",
       "contentuid": [
@@ -1054,7 +1054,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+      "tag": "Leadership",
       "en": "Leadership",
       "pl": "Przywództwo",
       "contentuid": [
@@ -1064,7 +1064,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Szczęście",
+      "tag": "Lucky-Charm",
       "en": "Lucky Charm",
       "pl": "Fart",
       "contentuid": [
@@ -1073,7 +1073,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Znawca",
+      "tag": "Loremaster",
       "en": "Loremaster",
       "pl": "Polihistor",
       "contentuid": [
@@ -1082,7 +1082,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Telekineza",
+      "tag": "Telekinesis",
       "en": "Telekinesis",
       "pl": "Telekineza",
       "contentuid": [
@@ -1091,7 +1091,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Skradanie",
+      "tag": "Sneaking",
       "en": "Sneaking",
       "pl": "Skradanie się",
       "contentuid": [
@@ -1100,7 +1100,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Złodziejstwo",
+      "tag": "Thievery",
       "en": "Thievery",
       "pl": "Złodziejstwo",
       "contentuid": [
@@ -1109,7 +1109,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Handel",
+      "tag": "Bartering",
       "en": "Bartering",
       "pl": "Handel wymienny",
       "contentuid": [
@@ -1118,7 +1118,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Perswazja",
+      "tag": "Persuasion",
       "en": "Persuasion",
       "pl": "Perswazja",
       "contentuid": [
@@ -1128,14 +1128,14 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Otwieranie-zamków",
+      "tag": "Lockpicking",
       "en": "Lockpicking",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Kradzież-kieszonkowa",
+      "tag": "Pickpocketing",
       "en": "Pickpocketing",
       "pl": "Kradzież kieszonkowa",
       "contentuid": [
@@ -1144,7 +1144,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Wytwarzanie",
+      "tag": "Crafting",
       "en": "Crafting",
       "pl": "Wytwarzanie",
       "contentuid": [
@@ -1157,7 +1157,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Kowalstwo",
+      "tag": "Blacksmithing",
       "en": "Blacksmithing",
       "pl": "Kowalstwo",
       "contentuid": [
@@ -1166,7 +1166,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Hydrosophia",
+      "tag": "Hydrosophist",
       "en": "Hydrosophist",
       "pl": "Hydrozofia",
       "contentuid": [
@@ -1175,7 +1175,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+      "tag": "Pyrokinetic",
       "en": "Pyrokinetic",
       "pl": "Pirokineza",
       "contentuid": [
@@ -1184,7 +1184,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+      "tag": "Aerotheurge",
       "en": "Aerotheurge",
       "pl": "Aeroturgia",
       "contentuid": [
@@ -1193,7 +1193,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Geomancja",
+      "tag": "Geomancer",
       "en": "Geomancer",
       "pl": "Geomancja",
       "contentuid": [
@@ -1202,7 +1202,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Nekromancja",
+      "tag": "Necromancer",
       "en": "Necromancer",
       "pl": "Nekromancja",
       "contentuid": [
@@ -1211,7 +1211,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Przyzywanie",
+      "tag": "Summoning",
       "en": "Summoning",
       "pl": "Przyzywanie",
       "contentuid": [
@@ -1220,7 +1220,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Polimorfia",
+      "tag": "Polymorph",
       "en": "Polymorph",
       "pl": "Polimorfia",
       "contentuid": [
@@ -1229,7 +1229,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Wojna",
+      "tag": "Warfare",
       "en": "Warfare",
       "pl": "Sztuka walki",
       "contentuid": [
@@ -1239,7 +1239,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Łowiectwo",
+      "tag": "Huntsman",
       "en": "Huntsman",
       "pl": "Myślistwo",
       "contentuid": [
@@ -1248,7 +1248,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Umiejetnosci/Łobuz",
+      "tag": "Scoundrel",
       "en": "Scoundrel",
       "pl": "Szelmostwo",
       "contentuid": [
@@ -1257,7 +1257,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+      "tag": "Single-Handed",
       "en": "Single-Handed",
       "pl": "Jednoręczna",
       "contentuid": [
@@ -1266,7 +1266,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+      "tag": "Two-Handed",
       "en": "Two-Handed",
       "pl": "Dwuręczna",
       "contentuid": [
@@ -1275,7 +1275,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+      "tag": "Dual-Wielding",
       "en": "Dual Wielding",
       "pl": "Dwie bronie",
       "contentuid": [
@@ -1284,7 +1284,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-broni/Dystansowa",
+      "tag": "Ranged",
       "en": "Ranged",
       "pl": "Dystansowa",
       "contentuid": [
@@ -1293,7 +1293,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Odnawianie-PA",
+      "tag": "AP-Recovery",
       "en": "AP recovery",
       "pl": "Odzyskiwanie PA",
       "contentuid": [
@@ -1302,7 +1302,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Początkowe-PA",
+      "tag": "Starting-AP",
       "en": "Starting AP",
       "pl": "Początkowe PA",
       "contentuid": [
@@ -1311,7 +1311,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Maksymalne-PA",
+      "tag": "Max-AP",
       "en": "Maximum AP",
       "pl": "Maks. PA",
       "contentuid": [
@@ -1320,14 +1320,14 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Krzepa",
+      "tag": "Bodybuilding",
       "en": "Body Building",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+      "tag": "Willpower",
       "en": "Willpower",
       "pl": "Siła woli",
       "contentuid": [
@@ -1336,7 +1336,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Bieglosci-obrony/Obrona",
+      "tag": "Defence",
       "en": "Defence",
       "pl": "Obrona",
       "contentuid": [
@@ -1346,7 +1346,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Leczenie",
+      "tag": "Healing",
       "en": "Healing",
       "pl": "Leczenie",
       "contentuid": [
@@ -1355,7 +1355,7 @@
       "untranslated": false
     },
     {
-      "tag": "Cechy/Gniazda-run",
+      "tag": "Rune-Slots",
       "en": "Rune Slots",
       "pl": "MIEJSCA NA RUNY",
       "contentuid": [
@@ -1364,7 +1364,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/POISONED",
+      "tag": "POISONED",
       "en": "Poisoned",
       "pl": "Zatrucie",
       "contentuid": [
@@ -1373,7 +1373,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/DRUNK",
+      "tag": "DRUNK",
       "en": "Drunk",
       "pl": "Upojenie",
       "contentuid": [
@@ -1382,7 +1382,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/KNOCKDOWN",
+      "tag": "KNOCKDOWN",
       "en": "Knocked down",
       "pl": "Powalenie",
       "contentuid": [
@@ -1392,7 +1392,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/DISEASED",
+      "tag": "DISEASED",
       "en": "Diseased",
       "pl": "Choroba",
       "contentuid": [
@@ -1401,7 +1401,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/BURNING",
+      "tag": "BURNING",
       "en": "Burning",
       "pl": "Płonięcie",
       "contentuid": [
@@ -1410,7 +1410,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/PETRIFIED",
+      "tag": "PETRIFIED",
       "en": "Petrified",
       "pl": "Skamienienie",
       "contentuid": [
@@ -1420,14 +1420,14 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/FROZEN",
+      "tag": "FROZEN",
       "en": "Frozen",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/BLIND",
+      "tag": "BLIND",
       "en": "Blind",
       "pl": "Oślepienie",
       "contentuid": [
@@ -1436,7 +1436,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/INVISIBLE",
+      "tag": "INVISIBLE",
       "en": "Invisible",
       "pl": "Niewidzialność",
       "contentuid": [
@@ -1446,7 +1446,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/SLOWED",
+      "tag": "SLOWED",
       "en": "Slowed",
       "pl": "Spowolnienie",
       "contentuid": [
@@ -1455,7 +1455,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/BLEEDING",
+      "tag": "BLEEDING",
       "en": "Bleeding",
       "pl": "Krwawienie",
       "contentuid": [
@@ -1464,7 +1464,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/FEAR",
+      "tag": "FEAR",
       "en": "Fear",
       "pl": "Strach",
       "contentuid": [
@@ -1474,7 +1474,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/WET",
+      "tag": "WET",
       "en": "Wet",
       "pl": "Przemoczenie",
       "contentuid": [
@@ -1483,7 +1483,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/MAGIC_SHELL",
+      "tag": "MAGIC_SHELL",
       "en": "Magic Shell",
       "pl": "Magiczna Skorupa",
       "contentuid": [
@@ -1493,7 +1493,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/CHILLED",
+      "tag": "CHILLED",
       "en": "Chilled",
       "pl": "Oziębienie",
       "contentuid": [
@@ -1502,14 +1502,14 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/HEALING",
+      "tag": "HEALING",
       "en": "Healing",
       "pl": null,
       "contentuid": [],
       "untranslated": true
     },
     {
-      "tag": "Efekty/Statusy/CHARMED",
+      "tag": "CHARMED",
       "en": "Charmed",
       "pl": "Oczarowanie",
       "contentuid": [
@@ -1521,7 +1521,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/DECAYING_TOUCH",
+      "tag": "DECAYING_TOUCH",
       "en": "Decaying",
       "pl": "Rozkład",
       "contentuid": [
@@ -1530,7 +1530,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/KNOCKED_DOWN",
+      "tag": "KNOCKED_DOWN",
       "en": "Knocked down",
       "pl": "Powalenie",
       "contentuid": [
@@ -1540,7 +1540,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/FORTIFIED",
+      "tag": "FORTIFIED",
       "en": "Fortified",
       "pl": "Kamienny Pancerz",
       "contentuid": [
@@ -1550,7 +1550,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/CRIPPLED",
+      "tag": "CRIPPLED",
       "en": "Crippled",
       "pl": "Okaleczenie",
       "contentuid": [
@@ -1559,7 +1559,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/HASTED",
+      "tag": "HASTED",
       "en": "Hasted",
       "pl": "Przyspieszenie",
       "contentuid": [
@@ -1568,7 +1568,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/WARM",
+      "tag": "WARM",
       "en": "Warm",
       "pl": "Rozgrzanie",
       "contentuid": [
@@ -1577,7 +1577,7 @@
       "untranslated": false
     },
     {
-      "tag": "Efekty/Statusy/CLEAR_MINDED",
+      "tag": "CLEAR_MINDED",
       "en": "Clear-minded",
       "pl": "Jasny Umysł",
       "contentuid": [

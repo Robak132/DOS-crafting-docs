@@ -12,23 +12,21 @@ ROOT=Path(__file__).resolve().parents[1]
 effects=runpy.run_path(str(ROOT/'scripts/export-item-effects.py'))
 rules=runpy.run_path(str(ROOT/'scripts/item-tag-rules.py'))
 TERMS={
- 'Typ/Bron':'Weapons','Typ/Pancerz':'Armour',
- 'Typ/Bron/Miecze':'Swords','Typ/Bron/Topory':'Axes','Typ/Bron/Bulawy':'Maces','Typ/Bron/Sztylety':'Daggers','Typ/Bron/Wlocznie':'Spears','Typ/Bron/Luki':'Bows','Typ/Bron/Kusze':'Crossbows','Typ/Bron/Rozdzki':'Wands','Typ/Bron/Kostury':'Staff',
- 'Typ/Pancerz/Helmy':'Helmet','Typ/Pancerz/Napiersniki':'Chest Armour','Typ/Pancerz/Rekawice':'Gloves','Typ/Pancerz/Spodnie':'Leggings','Typ/Pancerz/Buty':'Boots','Typ/Pancerz/Tarcze':'Shields',
- 'Typ/Amulety':'Amulet','Typ/Pierscienie':'Ring','Typ/Pasy':'Belt',
+ 'Weapons':'Weapons','Armour':'Armour',
+ 'Swords':'Swords','Axes':'Axes','Maces':'Maces','Daggers':'Daggers','Spears':'Spears','Bows':'Bows','Crossbows':'Crossbows','Wands':'Wands','Staves':'Staff',
+ 'Helmets':'Helmet','Chest-Armour':'Chest Armour','Gloves':'Gloves','Leggings':'Leggings','Boots':'Boots','Shields':'Shields',
+ 'Amulets':'Amulet','Rings':'Ring','Belts':'Belt',
 }
-for field,suffix in rules['ATTRIBUTES'].items():
- if field in effects['BONUSES']:TERMS[rules['attribute_tag'](suffix)]=effects['BONUSES'][field][0]
-TERMS.update({'Cechy/HP':'Vitality','Cechy/Leczenie':'Healing','Cechy/Pancerz-fizyczny':'Physical Armour','Cechy/Pancerz-magiczny':'Magic Armour','Cechy/Umiejetnosci/Łowiectwo':'Huntsman','Cechy/Umiejetnosci/Nekromancja':'Necromancer','Cechy/Umiejetnosci/Wojna':'Warfare','Cechy/Umiejetnosci/Łobuz':'Scoundrel'})
+for field,tag in rules['ATTRIBUTES'].items():
+ if field in effects['BONUSES']:TERMS[tag]=effects['BONUSES'][field][0]
+TERMS.update({'Vitality':'Vitality','Healing':'Healing','Physical-Armour':'Physical Armour','Magic-Armour':'Magic Armour','Huntsman':'Huntsman','Necromancer':'Necromancer','Warfare':'Warfare','Scoundrel':'Scoundrel'})
 PREFERRED={'Armour':'Pancerze','Boots':'Buty','Necromancer':'Nekromancja','Huntsman':'Myślistwo','Magic Armour':'Pancerz Magiczny'}
 
 
 def main():
  labels=json.loads((ROOT/'data/tagLabels.json').read_text(encoding='utf-8'));data={};report={}
  for tag in labels:
-  if tag.startswith('Efekty/Statusy/'):
-   status=tag.rsplit('/',1)[-1]
-   if status in effects['STATUSES']:TERMS[tag]=effects['STATUSES'][status][0]
+  if tag in effects['STATUSES']:TERMS[tag]=effects['STATUSES'][tag][0]
  for game,enfiles,plfile in [
   ('dos1',[ROOT/'.pak-work/extracted/dos1-ee/reference/Localization/Reference'/name for name in ['DEFAULT.xml','UI.xml','UISKILLTREETEXTS.xml','STATUSHIT.xml','LOCALIZATION.xml']],ROOT/'.pak-work/extracted/dos1-ee/polish/Localization/Polish/polish.xml'),
   ('dos2',[ROOT/'.pak-work/icons/dos2/localization/English/english.xml'],ROOT/'.pak-work/extracted/polish/Localization/Polish/polish.xml')]:
@@ -39,7 +37,7 @@ def main():
   data[game]={};report[game]=[]
   terms=dict(TERMS)
   if game=='dos1':
-   terms.update({'Cechy/Zwinność':'Dexterity','Cechy/Szybkość':'Speed','Cechy/Percepcja':'Perception','Cechy/Umiejetnosci/Wojna':'Man-at-Arms','Cechy/Umiejetnosci/Łowiectwo':'Expert Marksman','Cechy/Umiejetnosci/Nekromancja':'Witchcraft'})
+   terms.update({'Dexterity':'Dexterity','Speed':'Speed','Perception':'Perception','Warfare':'Man-at-Arms','Huntsman':'Expert Marksman','Necromancer':'Witchcraft'})
   for tag,term in terms.items():
    matches=pairs.get(term.casefold(),[]);choices={name for name,_ in matches}
    chosen=next(iter(choices)) if len(choices)==1 else PREFERRED.get(term) if PREFERRED.get(term) in choices else labels.get(tag) if labels.get(tag) in choices else None

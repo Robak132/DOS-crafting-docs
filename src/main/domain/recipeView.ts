@@ -2,6 +2,10 @@ import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 import { isItemGroup } from "./itemGroups"
 import { tooltipItemKey } from "./tooltipIdentity"
 import { recipeResults } from "./recipeResults"
+import { isCategoryTag, isTagWithin, tagAncestors, traitSections } from "./tagTree"
+
+/** A trait or effect tag: anything in the hierarchy outside the item categories. */
+const isTraitTag = (tag: string) => traitSections.some((section) => isTagWithin(tag, section.tag))
 
 /** dead = szary, mid = zielony, end = fioletowy (bez Node — używane też w inline scripts). */
 export type ItemCraftRole = "dead" | "mid" | "end"
@@ -45,10 +49,10 @@ export { recipeResults }
 export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
 
 const mergedCategoryTags: Record<string, string> = {
-  "Typ/Mikstury": "Typ/Mikstury-i-jedzenie",
-  "Typ/Jedzenie-i-picie": "Typ/Mikstury-i-jedzenie",
-  "Typ/Strzaly": "Typ/Strzaly-i-granaty",
-  "Typ/Granaty": "Typ/Strzaly-i-granaty",
+  Potions: "Potions-And-Food",
+  "Food-And-Drink": "Potions-And-Food",
+  Arrows: "Arrows-And-Grenades",
+  Grenades: "Arrows-And-Grenades",
 }
 
 /** Czy receptura używa grupy craftingowej (#selector) jako składnika. */
@@ -56,7 +60,7 @@ export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean
   const target = selector.replace(/^#/, "").toLowerCase()
   return recipe.ingredients.some((ingredient) => {
     const tag = ingredient.selectorTag?.replace(/^#/, "").toLowerCase()
-    if (tag && (tag === target || tag.startsWith(`${target}/`))) return true
+    if (tag === target) return true
     const name = (ingredient.namePl ?? ingredient.name).replace(/^#/, "").toLowerCase()
     return name === target
   })
@@ -68,9 +72,8 @@ export function nestTagStats(tags: TagStat[]): TagFilterNode[] {
   const nodes = new Map(tags.map((tag) => [tag.tag, { ...tag, children: [] as TagFilterNode[] }]))
   const roots: TagFilterNode[] = []
   for (const node of nodes.values()) {
-    let parent = node.tag.split("/").slice(0, -1).join("/")
-    while (parent && !nodes.has(parent)) parent = parent.slice(0, Math.max(0, parent.lastIndexOf("/")))
-    if (parent && nodes.has(parent)) nodes.get(parent)!.children.push(node)
+    const parent = tagAncestors(node.tag).find((ancestor) => nodes.has(ancestor))
+    if (parent) nodes.get(parent)!.children.push(node)
     else roots.push(node)
   }
   return roots
@@ -148,33 +151,21 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
     }
   }
 
-  // Keep newly exported traits available even before the hierarchy is updated.
-  const unassignedTraits = tags.filter(
-    ({ tag }) => !claimedCechy.has(tag) && (tag.startsWith("Cechy/") || tag.startsWith("Cechy-")),
-  )
-  if (unassignedTraits.length > 0) {
-    const fallback = cechySections.find((section) => section.label === "Inne")
-    if (fallback) fallback.tags.push(...nestTagStats(unassignedTraits))
-    else cechySections.push({ label: "Inne", tags: nestTagStats(unassignedTraits), flat: true })
-  }
-
   for (const stat of tags) {
     const tag = stat.tag
     // A-Or-B to rozwinięcie receptur, nie osobna kategoria w sidebarze.
     if (
       isOrComboTag(tag) ||
       isGameTag(tag) ||
-      tag === "Typ" ||
-      tag === "Cechy" ||
+      tag === "Category" ||
       claimedCechy.has(tag) ||
       cechyParentTags.has(tag) ||
       cechyChildToParent.has(tag) ||
-      tag.startsWith("Cechy/") ||
-      tag.startsWith("Cechy-") ||
+      isTraitTag(tag) ||
       names.has(mergedCategoryTags[tag])
     )
       continue
-    const label = tag.startsWith("Typ/")
+    const label = isCategoryTag(tag)
       ? "Kategorie"
       : weapons.has(tag) || /(?:Weapon|Cutting-Tool)/i.test(tag)
         ? "Broń i narzędzia"
@@ -237,14 +228,12 @@ export function visibleRecipeTags(tags: string[]): string[] {
       !isOrComboTag(tag) &&
       !isGameTag(tag) &&
       !tags.includes(mergedCategoryTags[tag]) &&
-      !tags.some((other) => other.startsWith(`${tag}/`)) &&
-      // Grupy Cechy-* z hierarchy — zbyteczne na wierszu, gdy jest liść Cechy/...
-      !(tag.startsWith("Cechy-") && tags.some((other) => other.startsWith("Cechy/"))),
+      !tags.some((other) => other !== tag && isTagWithin(other, tag)),
   )
 }
 
 export function tagLabel(tag: string, labels: Record<string, string>): string {
-  return labels[tag] ?? (tag.split("/").at(-1) ?? tag).replaceAll("-", " ")
+  return labels[tag] ?? tag.replaceAll("-", " ")
 }
 
 export function normalizeSearch(value: string): string {

@@ -52,7 +52,7 @@ test("recipe tables omit effects but preserve crafting instructions and align op
 })
 
 test("multiple categories do not duplicate recipes or their crafting variants", () => {
-  const multi = { ...recipe, result: { ...recipe.result, tags: ["Typ/Bron", "Typ/Magia", "Typ/Skladniki"] } }
+  const multi = { ...recipe, result: { ...recipe.result, tags: ["Weapons", "Magic", "Ingredients"] } }
   const variant = { ...multi, id: "variant", ingredients: [{ name: "Another ingredient", tags: [] }] }
   const other = { ...recipe, id: "other", result: { name: "Uncategorized", tags: [] } }
   const html = renderToString(<RecipeTable recipes={[multi, variant, other]} catalogSlug="DOS2" labels={{}} />)
@@ -148,7 +148,26 @@ test("a random result lists its possible items with links, levels and random amo
     />,
   )
   assert.match(html, /<details class="recipe-pool"><summary>Możliwe wyniki \(2\)<\/summary>/)
-  assert.ok(html.includes('href="/teleportation-scroll?catalog=dos1"'))
+  assert.ok(html.includes('href="/receptury/teleportation-scroll"'))
   assert.ok(html.includes('<span class="recipe-pool-level">Crafting 4</span>'))
   assert.ok(html.includes("×(1–3)"))
+})
+
+test("a recipe with several products lists each of them in the result cell", () => {
+  const html = renderToString(
+    <RecipeTable
+      recipes={[
+        {
+          ...recipe,
+          result: { name: "Short Stick", slug: "short-stick", tags: [] },
+          extraResults: [{ name: "Metal Scraps", slug: "metal-scraps", tags: [], quantity: "x2" }],
+        },
+      ]}
+      catalogSlug="DOS2"
+      labels={{}}
+    />,
+  )
+  assert.match(html, /<ul class="recipe-ingredients recipe-products">/)
+  assert.ok(html.includes('href="/DOS2/short-stick"') && html.includes('href="/DOS2/metal-scraps"'))
+  assert.ok(html.includes("×2"))
 })

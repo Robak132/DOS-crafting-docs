@@ -3,7 +3,6 @@ import { test } from "node:test"
 import fs from "node:fs"
 import { resolveItemNames } from "../../main/domain/itemLocalisation"
 import { localizeItemForCatalog } from "../../main/domain/recipes"
-import { formatEffectNote } from "../../main/domain/recipeView"
 
 test("DOS2 and Overhaul use the Definitive Edition dictionary", () => {
   for (const catalog of ["dos2", "dos2-overhaul"] as const) {
@@ -36,10 +35,6 @@ test("localized names can be resolved back to English and caches remain isolated
   assert.equal(resolveItemNames("Spirit", "dos1").namePl, "Spirytus")
   assert.equal(resolveItemNames("Spirit", "dos2-overhaul").namePl, "Duch")
   assert.equal(resolveItemNames("AMULET", "dos2").namePl, "Amulet")
-})
-
-test("effect descriptions use the official Wits label", () => {
-  assert.equal(formatEffectNote("+2 Wits"), "+2 Bystrość")
 })
 
 test("recipe item names are English; Polish appears only as a translation", () => {

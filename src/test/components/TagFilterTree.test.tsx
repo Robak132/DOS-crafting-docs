@@ -8,22 +8,22 @@ test("selecting a subtype expands its parent and keeps sibling categories visibl
     <TagFilterTree
       entries={[
         {
-          tag: "Typ/Bron",
+          tag: "Weapons",
           count: 2,
           label: "Broń",
           children: [
-            { tag: "Typ/Bron/Luki", count: 1, label: "Łuki" },
-            { tag: "Typ/Bron/Kostury", count: 1, label: "Kostury" },
+            { tag: "Bows", count: 1, label: "Łuki" },
+            { tag: "Staves", count: 1, label: "Kostury" },
           ],
         },
         {
-          tag: "Typ/Pancerz",
+          tag: "Armour",
           count: 1,
           label: "Pancerze",
-          children: [{ tag: "Typ/Pancerz/Buty", count: 1, label: "Buty" }],
+          children: [{ tag: "Boots", count: 1, label: "Buty" }],
         },
       ]}
-      include={["Typ/Bron/Luki"]}
+      include={["Bows"]}
       exclude={[]}
       labels={{}}
       onCycle={() => {}}
@@ -39,12 +39,12 @@ test("include and exclude states are exposed to assistive technology, not only b
   const html = renderToString(
     <TagFilterTree
       entries={[
-        { tag: "Typ/Bron", count: 2, label: "Broń" },
-        { tag: "Typ/Pancerz", count: 1, label: "Pancerze" },
-        { tag: "Typ/Magia", count: 1, label: "Magia" },
+        { tag: "Weapons", count: 2, label: "Broń" },
+        { tag: "Armour", count: 1, label: "Pancerze" },
+        { tag: "Magic", count: 1, label: "Magia" },
       ]}
-      include={["Typ/Bron"]}
-      exclude={["Typ/Pancerz"]}
+      include={["Weapons"]}
+      exclude={["Armour"]}
       labels={{}}
       onCycle={() => {}}
     />,

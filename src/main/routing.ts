@@ -34,6 +34,30 @@ export function routeSlug(pathname: string, base = appBase): string {
     .replace(/\.html$/, "")
     .replace(/\/$/, "")
 }
+/** An item page lives under the catalog of its game: `<catalog>/<item>`. */
+export function itemPath(game: Game, slug: string): string {
+  return `${games.find((entry) => entry.id === game)!.slug}/${slug}`
+}
+export function itemHref(game: Game, slug: string): string {
+  return pageHref(itemPath(game, slug))
+}
+export function parseItemRoute(slug: string): { game: Game; item: string } | undefined {
+  const [catalog, item, ...rest] = slug.split("/")
+  const game = gameForSlug(catalog)
+  return game && item && rest.length === 0 ? { game, item } : undefined
+}
+/** Games whose catalog lists a page; Overhaul also contains every base DOS2 item. */
+export function pageGames(tags: string[]): Game[] {
+  return games
+    .filter(({ id }) =>
+      id === "dos1"
+        ? tags.includes("DOS1")
+        : id === "dos2"
+          ? tags.includes("DOS2")
+          : tags.some((tag) => tag === "DOS2" || tag === "DOS2-CO"),
+    )
+    .map(({ id }) => id)
+}
 export function gameForSlug(slug: string): Game | undefined {
   return games.find((game) => game.slug === slug)?.id
 }

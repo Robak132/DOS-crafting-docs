@@ -1,3 +1,4 @@
+import { isTagWithin } from "../domain/tagTree"
 import { useState } from "preact/hooks"
 import type { TagFilterNode } from "../domain/recipeView"
 import { tagLabel } from "../domain/recipeView"
@@ -18,7 +19,9 @@ export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Pr
       {entries.map((entry) => {
         const label = entry.label?.replaceAll("-", " ") ?? tagLabel(entry.tag, labels)
         const children = entry.children ?? []
-        const open = expanded[entry.tag] ?? [...include, ...exclude].some((tag) => tag.startsWith(entry.tag + "/"))
+        const open =
+          expanded[entry.tag] ??
+          [...include, ...exclude].some((tag) => tag !== entry.tag && isTagWithin(tag, entry.tag))
         return (
           <div key={entry.tag} class="tag-filter-node">
             <div class="tag-filter-row">

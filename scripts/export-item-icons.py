@@ -208,7 +208,7 @@ def main():
 
     source = Path(sys.argv[1])
     base = {game: resources(source / game) for game in ['dos1', 'dos2', 'overhaul']}
-    catalogs = ROOT / '.generated/build/data'
+    catalogs = ROOT / 'dist/data'
     destination = ROOT / 'assets/item-icons'
     destination.mkdir(parents=True, exist_ok=True)
     provenance_file = ROOT / "data/itemIcons.provenance.json"

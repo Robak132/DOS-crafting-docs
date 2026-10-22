@@ -1,6 +1,7 @@
 import type { RecipeItem, RecipeRow } from "./recipes"
 import { itemDataKey, itemIconKey } from "./itemIcons"
 import { recipeResults } from "./recipeResults"
+import { isTagWithin } from "./tagTree"
 
 export type ItemGroup = { id: string; name: string; members: RecipeItem[] }
 export type ItemGroups = Record<string, ItemGroup>
@@ -136,7 +137,7 @@ export function groupMatcher(item: RecipeItem): ((candidate: RecipeItem) => bool
         !/\b(pie|pile|skeleton|amulet|ring|bone)\b/.test(name)
       )
     if (term === "essence") return /\bessence\b/.test(name)
-    if (term === "armor" || term === "armour") return candidate.tags.some((tag) => tag === "Typ/Pancerz")
+    if (term === "armor" || term === "armour") return candidate.tags.some((tag) => isTagWithin(tag, "Armour"))
     if (term === "dye") return /\bdye\b/.test(name) && !/\b(bag|machine)\b/.test(name)
     if (term === "shoes boots") return /\b(shoes|boots)\b/.test(name)
     const tokens = term.split(" ").filter((token) => !["with", "empty", "rune", "socket"].includes(token))

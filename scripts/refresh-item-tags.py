@@ -1,28 +1,44 @@
 """Save equipment subtypes and effect-based tags from item-effects-audit.json.
 Run after export-item-effects.py. Does not create ingredient groups or aliases.
+Tags are English leaf names; each item stores only its most specific tags, and the hierarchy
+(data/recipeTagHierarchy.json) holds every parent.
 """
-from collections import defaultdict, Counter
+from collections import defaultdict
 import json
 from pathlib import Path
 import runpy
 
 ROOT=Path(__file__).resolve().parents[1]
 rules=runpy.run_path(str(ROOT/'scripts/item-tag-rules.py'))
+tree=runpy.run_path(str(ROOT/'scripts/tag_tree.py'))
 key=runpy.run_path(str(ROOT/'scripts/export-item-icons.py'))['key']
+GAME_MARKER={'dos1':'DOS1','dos2':'DOS2','dos2-overhaul':'DOS2-CO'}
+SURFACE_TAGS={tag for tag,_ in rules['SURFACES'].values()}
+STATS=set(rules['ATTRIBUTES'].values())
+
+
+def kind(tag):
+    if tag in SURFACE_TAGS:return 'surface'
+    if tree['is_status'](tag,STATS):return 'status'
+    return 'trait'
 
 
 def main():
     audit=json.loads((ROOT/'reports/item-effects-audit.json').read_text(encoding='utf-8'))
     labels=json.loads((ROOT/'data/tagLabels.json').read_text(encoding='utf-8'))
     hierarchy=json.loads((ROOT/'data/recipeTagHierarchy.json').read_text(encoding='utf-8'))
-    for slug,name in set(rules['WEAPONS'].values()):labels['Typ/Bron/'+slug]=name
-    for slot,(slug,name) in rules['SLOTS'].items():
-        if slot not in ['Amulet','Ring','Belt']:labels['Typ/Pancerz/'+slug]=name
-    labels.update({'Cechy/Spryt':'Bystrość','Cechy/Zwinność':'Zwinność','Cechy/Umiejetnosci/Pyrokinetyka':'Pirokineza','Cechy/Umiejetnosci/Hydrosophia':'Hydrozofia','Cechy/Umiejetnosci/Aeroteurgia':'Aeroturgia'})
-    # New numeric-property tags get human labels instead of falling back to IDs.
-    for suffix in rules['ATTRIBUTES'].values():labels.setdefault(rules['attribute_tag'](suffix),suffix.replace('-',' '))
-    for _,(_,damage) in rules['ELEMENTS'].items():labels.setdefault(rules['damage_tag'](damage),'Obrażenia od '+damage)
-    labels.update({'Cechy/Krytyk':'Szansa na trafienie krytyczne','Cechy/Odporność-na-obrażenia-fizyczne':'Odporność na obrażenia fizyczne','Cechy/Odporność-na-obrażenia-przeszywające':'Odporność na obrażenia przeszywające','Cechy/Obrażenia-fizyczne':'Obrażenia fizyczne','Cechy/Obrażenia-przeszywające':'Obrażenia przeszywające'})
+    weapons=dict.fromkeys(tag for tag,_ in rules['WEAPONS'].values())
+    armour=dict.fromkeys(tag for slot,(tag,_) in rules['SLOTS'].items() if slot not in ['Amulet','Ring','Belt'])
+    for tag,name in [*rules['WEAPONS'].values(),*rules['SLOTS'].values()]:labels.setdefault(tag,name)
+    effect_tags=set()
+    for data_audit in audit['catalogs'].values():
+        for item in data_audit['items']:
+            for identity in item['identities']:effect_tags.update(identity['effect_tags'])
+    # New effect tags get a readable label until the game localisation provides one.
+    for tag in sorted(effect_tags|STATS):labels.setdefault(tag,tag.replace('-',' '))
+    structural={'Weapons','Armour','Amulets','Rings','Belts'}
+    # Effect, status and surface tags: anything the hierarchy files outside the item categories.
+    is_property=lambda t: t in effect_tags or (t in tree['PARENTS'] and not tree['is_category'](t))
     pages=defaultdict(set);counts={}
     for game,data_audit in audit['catalogs'].items():
         by_name={item.get('data_key',key(item['name'])):item for item in data_audit['items']}
@@ -40,25 +56,21 @@ def main():
             if identities:
                 effects=set.intersection(*(set(m['effect_tags']) for m in identities))
                 for m in identities:labels.update(m['tag_labels'])
-                new=[t for t in new if t!='Cechy' and not t.startswith(('Cechy/','Efekty/','Cechy-'))]
+                new=[t for t in new if not is_property(t)]
                 new+=sorted(effects)
-                if any(t.startswith('Cechy/') for t in new):new.append('Cechy')
             types={tuple(m['type_tags']) for m in identities}
             resolved=list(next(iter(types))) if len(types)==1 else []
             if not resolved:
                 candidates={rules['CATEGORY_TYPES'][c] for c in [*item.get('craftingCategories',[]),item.get('selectorTag','')] if c in rules['CATEGORY_TYPES']}
-                if len(candidates)==1:
-                    leaf=next(iter(candidates));resolved=['/'.join(leaf.split('/')[:2]),leaf]
+                if len(candidates)==1:resolved=[next(iter(candidates))]
             if resolved:
                 # Structural type tags are replaced together, while material,
                 # magic, seasonal and other independent roles are preserved.
-                new=[t for t in new if not (t in ['Typ/Bron','Typ/Pancerz','Typ/Amulety','Typ/Pierscienie','Typ/Pasy'] or t.startswith(('Typ/Bron/','Typ/Pancerz/')))]
+                new=[t for t in new if not any(tree['within'](t,s) for s in structural)]
                 new+=resolved
-            if any(t.startswith('Typ/') for t in new):
-                new=[t for t in new if t not in ['DOS1','DOS2','DOS2-CO']]
-                new+=['Typ',{'dos1':'DOS1','dos2':'DOS2','dos2-overhaul':'DOS2-CO'}[game]]
-            new+=rules['combat_parents'](new)
-            new=list(dict.fromkeys(new))
+            if any(tree['is_category'](t) for t in new):
+                new=[t for t in new if t not in tree['MARKERS']]+[GAME_MARKER[game]]
+            new=tree['most_specific'](new)
             if before!=new:changes.append({'name':item['name'],'recipe':recipe_id,'before':before,'after':new})
             item['tags']=new
             if item.get('slug') and not item.get('selectorTag'):pages[item['slug']].update(new)
@@ -72,22 +84,21 @@ def main():
         print(game,counts[game]['changed_names'],'items tagged',flush=True)
     library_pages=runpy.run_path(str(ROOT/'scripts/library-pages.py'));library=library_pages['load_pages']()
     for slug,tags in pages.items():
-        if slug in library:library[slug]['tags']=sorted(tags)
+        if slug in library:library[slug]['tags']=tree['most_specific'](sorted(tags))
     library_pages['save_pages'](library)
-    for node in hierarchy['hierarchy']:
-        if node['tag']=='Typ':
-            for category in node['children']:
-                if category['tag'] in ['Typ/Bron','Typ/Pancerz']:
-                    prefix=category['tag']+'/';category['label']=labels[category['tag']]
-                    category['children']=[{'tag':t,'label':label,'children':[]} for t,label in labels.items() if t.startswith(prefix)]
-    def all_tags(nodes):
-        return {node['tag'] for node in nodes}|set().union(*(all_tags(node.get('children',[])) for node in nodes)) if nodes else set()
-    known=all_tags(hierarchy['hierarchy']);extra=next(n for n in hierarchy['hierarchy'] if n['tag']=='Cechy-inne')
-    for tag,label in sorted(labels.items()):
-        if tag.startswith('Cechy/') and tag not in known:extra['children'].append({'tag':tag,'label':label,'children':[]})
-    for prefix,title,root in [('Efekty/Statusy/','Nakładane statusy','Cechy-statusy'),('Efekty/Powierzchnie/','Tworzone powierzchnie','Cechy-powierzchnie')]:
-        hierarchy['hierarchy']=[n for n in hierarchy['hierarchy'] if n['tag']!=root]
-        hierarchy['hierarchy'].append({'tag':root,'label':title,'children':[{'tag':t,'label':v,'children':[]} for t,v in sorted(labels.items()) if t.startswith(prefix)]})
+    roots={node['tag']:node for node in hierarchy['hierarchy']}
+    for category in roots['Category']['children']:
+        subtypes=weapons if category['tag']=='Weapons' else armour if category['tag']=='Armour' else None
+        if subtypes is not None:
+            current=[c['tag'] for c in category['children']]
+            category['children']=[{'tag':t,'label':labels[t],'children':[]} for t in current+[t for t in subtypes if t not in current]]
+    known=set(tree['load_parents'](hierarchy))
+    for tag in sorted(effect_tags|STATS):
+        if tag not in known and kind(tag)=='trait':roots['Other-Traits']['children'].append({'tag':tag,'label':labels[tag],'children':[]})
+    for root,wanted in [('Statuses','status'),('Surfaces','surface')]:
+        current=[c['tag'] for c in roots[root]['children']]
+        found=sorted(t for t in effect_tags if kind(t)==wanted and t not in current)
+        roots[root]['children']=[{'tag':t,'label':labels.get(t,t),'children':[]} for t in sorted(current+found)]
     def localize_nodes(nodes):
         for node in nodes:
             node['label']=labels.get(node['tag'],node.get('label',node['tag']))

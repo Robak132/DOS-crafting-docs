@@ -12,11 +12,11 @@ const first: RecipeRow = {
     name: "Potion",
     namePl: "Mikstura",
     slug: "potion",
-    tags: ["DOS2", "Typ/Mikstury", "Cechy/Leczenie"],
+    tags: ["DOS2", "Potions", "Healing"],
     quantity: "x2",
   },
   ingredients: [{ name: "Ingredient only", tags: [] }],
-  tags: ["Typ/Materialy"],
+  tags: ["Materialy"],
   notes: "+2 Wits",
   remarks: "Crafting instructions",
   requirements: "",
@@ -30,17 +30,12 @@ test("one item row collects distinct effects across all recipe variants", () => 
   assert.equal(rows.length, 1)
   assert.deepEqual(rows[0].effects, ["+2 Bystrość", "+3 Inteligencja"])
   assert.equal(rows[0].item.quantity, undefined)
-  assert.deepEqual(rows[0].tags, ["Typ/Mikstury", "Cechy/Leczenie"])
+  assert.deepEqual(rows[0].tags, ["Potions", "Healing"])
 })
 
 test("table has three columns and one row per item without category sections", () => {
   const html = renderToString(
-    <ItemTable
-      lang="pl"
-      recipes={[first, second]}
-      labels={{ "Typ/Mikstury": "Mikstury" }}
-      itemHref={(slug) => `./${slug}`}
-    />,
+    <ItemTable lang="pl" recipes={[first, second]} labels={{ Potions: "Mikstury" }} itemHref={(slug) => `./${slug}`} />,
   )
   assert.ok(html.includes('<th scope="col">Przedmiot</th><th scope="col">Efekt</th><th scope="col">Tagi</th>'))
   assert.equal(html.match(/<table /g)?.length, 1)
@@ -49,7 +44,7 @@ test("table has three columns and one row per item without category sections", (
   assert.ok(html.includes('aria-label="Lista przedmiotów"'))
   assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
   assert.ok(html.includes('data-search-effect="+2 Bystrość"'))
-  assert.ok(html.includes('data-filter-tag="Cechy/Leczenie"'))
+  assert.ok(html.includes('data-filter-tag="Healing"'))
   assert.ok(!html.includes("Ingredient only"))
   assert.ok(!html.includes("Crafting instructions"))
   assert.ok(!html.includes("x2"))
@@ -72,7 +67,7 @@ test("missing effects and categories remain readable; labels are escaped", () =>
 })
 
 test("items with multiple type tags occur once alongside uncategorized items", () => {
-  const multi = { ...first, result: { ...first.result, tags: ["Typ/Bron", "Typ/Magia", "Typ/Skladniki"] } }
+  const multi = { ...first, result: { ...first.result, tags: ["Weapons", "Magic", "Ingredients"] } }
   const other = { ...first, id: "other", result: { name: "Other item", slug: "other", tags: [] }, tags: [] }
   const html = renderToString(
     <ItemTable recipes={[multi, { ...multi, id: "variant" }, other]} labels={{}} itemHref={(slug) => slug} />,

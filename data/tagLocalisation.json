@@ -1,1031 +1,1031 @@
 {
   "dos1": {
-    "Typ/Bron": {
+    "Weapons": {
       "en": "Weapons"
     },
-    "Typ/Pancerz": {
+    "Armour": {
       "en": "Armour"
     },
-    "Typ/Bron/Miecze": {
+    "Swords": {
       "en": "Swords"
     },
-    "Typ/Bron/Topory": {
+    "Axes": {
       "en": "Axes"
     },
-    "Typ/Bron/Bulawy": {
+    "Maces": {
       "en": "Maces"
     },
-    "Typ/Bron/Sztylety": {
+    "Daggers": {
       "en": "Daggers"
     },
-    "Typ/Bron/Wlocznie": {
+    "Spears": {
       "en": "Spears"
     },
-    "Typ/Bron/Luki": {
+    "Bows": {
       "en": "Bows"
     },
-    "Typ/Bron/Kusze": {
+    "Crossbows": {
       "en": "Crossbows"
     },
-    "Typ/Bron/Rozdzki": {
+    "Wands": {
       "en": "Wands"
     },
-    "Typ/Bron/Kostury": {
+    "Staves": {
       "en": "Staff"
     },
-    "Typ/Pancerz/Helmy": {
+    "Helmets": {
       "en": "Helmet"
     },
-    "Typ/Pancerz/Napiersniki": {
+    "Chest-Armour": {
       "en": "Chest Armour"
     },
-    "Typ/Pancerz/Rekawice": {
+    "Gloves": {
       "en": "Gloves"
     },
-    "Typ/Pancerz/Spodnie": {
+    "Leggings": {
       "en": "Leggings"
     },
-    "Typ/Pancerz/Buty": {
+    "Boots": {
       "en": "Boots"
     },
-    "Typ/Pancerz/Tarcze": {
+    "Shields": {
       "en": "Shields"
     },
-    "Typ/Amulety": {
+    "Amulets": {
       "en": "Amulet"
     },
-    "Typ/Pierscienie": {
+    "Rings": {
       "en": "Ring"
     },
-    "Typ/Pasy": {
+    "Belts": {
       "en": "Belt",
       "pl": "Pas"
     },
-    "Cechy/Siła": {
+    "Strength": {
       "en": "Strength",
       "pl": "Siła"
     },
-    "Cechy/Zręczność": {
+    "Finesse": {
       "en": "Finesse"
     },
-    "Cechy/Zwinność": {
+    "Dexterity": {
       "en": "Dexterity",
       "pl": "Zwinność"
     },
-    "Cechy/Inteligencja": {
+    "Intelligence": {
       "en": "Intelligence",
       "pl": "Inteligencja"
     },
-    "Cechy/Kondycja": {
+    "Constitution": {
       "en": "Constitution",
       "pl": "Kondycja"
     },
-    "Cechy/Pamięć": {
+    "Memory": {
       "en": "Memory"
     },
-    "Cechy/Spryt": {
+    "Wits": {
       "en": "Wits"
     },
-    "Cechy/Percepcja": {
+    "Perception": {
       "en": "Perception",
       "pl": "Spostrz."
     },
-    "Cechy/Szybkość": {
+    "Speed": {
       "en": "Speed",
       "pl": "Prędkość"
     },
-    "Cechy/Inicjatywa": {
+    "Initiative": {
       "en": "Initiative"
     },
-    "Cechy/Celność": {
+    "Accuracy": {
       "en": "Chance to hit"
     },
-    "Cechy/Krytyk": {
+    "Critical-Chance": {
       "en": "Critical chance"
     },
-    "Cechy/Unik": {
+    "Dodge": {
       "en": "Dodge",
       "pl": "Unik"
     },
-    "Cechy/Pancerz-fizyczny": {
+    "Physical-Armour": {
       "en": "Physical Armour"
     },
-    "Cechy/Pancerz-magiczny": {
+    "Magic-Armour": {
       "en": "Magic Armour"
     },
-    "Cechy/HP": {
+    "Vitality": {
       "en": "Vitality"
     },
-    "Cechy/Bieglosci-obrony/Przywództwo": {
+    "Leadership": {
       "en": "Leadership"
     },
-    "Cechy/Szczęście": {
+    "Lucky-Charm": {
       "en": "Lucky Charm"
     },
-    "Cechy/Znawca": {
+    "Loremaster": {
       "en": "Loremaster"
     },
-    "Cechy/Telekineza": {
+    "Telekinesis": {
       "en": "Telekinesis"
     },
-    "Cechy/Skradanie": {
+    "Sneaking": {
       "en": "Sneaking"
     },
-    "Cechy/Złodziejstwo": {
+    "Thievery": {
       "en": "Thievery"
     },
-    "Cechy/Handel": {
+    "Bartering": {
       "en": "Bartering"
     },
-    "Cechy/Perswazja": {
+    "Persuasion": {
       "en": "Persuasion"
     },
-    "Cechy/Otwieranie-zamków": {
+    "Lockpicking": {
       "en": "Lockpicking"
     },
-    "Cechy/Kradzież-kieszonkowa": {
+    "Pickpocketing": {
       "en": "Pickpocketing"
     },
-    "Cechy/Wytwarzanie": {
+    "Crafting": {
       "en": "Crafting"
     },
-    "Cechy/Kowalstwo": {
+    "Blacksmithing": {
       "en": "Blacksmithing"
     },
-    "Cechy/Umiejetnosci/Hydrosophia": {
+    "Hydrosophist": {
       "en": "Hydrosophist"
     },
-    "Cechy/Umiejetnosci/Pyrokinetyka": {
+    "Pyrokinetic": {
       "en": "Pyrokinetic"
     },
-    "Cechy/Umiejetnosci/Aeroteurgia": {
+    "Aerotheurge": {
       "en": "Aerotheurge"
     },
-    "Cechy/Umiejetnosci/Geomancja": {
+    "Geomancer": {
       "en": "Geomancer"
     },
-    "Cechy/Umiejetnosci/Nekromancja": {
+    "Necromancer": {
       "en": "Witchcraft"
     },
-    "Cechy/Umiejetnosci/Przyzywanie": {
+    "Summoning": {
       "en": "Summoning"
     },
-    "Cechy/Umiejetnosci/Polimorfia": {
+    "Polymorph": {
       "en": "Polymorph"
     },
-    "Cechy/Umiejetnosci/Wojna": {
+    "Warfare": {
       "en": "Man-at-Arms"
     },
-    "Cechy/Umiejetnosci/Łowiectwo": {
+    "Huntsman": {
       "en": "Expert Marksman"
     },
-    "Cechy/Umiejetnosci/Łobuz": {
+    "Scoundrel": {
       "en": "Scoundrel"
     },
-    "Cechy/Bieglosci-broni/Jednoręczna": {
+    "Single-Handed": {
       "en": "Single-Handed"
     },
-    "Cechy/Bieglosci-broni/Dwuręczna": {
+    "Two-Handed": {
       "en": "Two-Handed"
     },
-    "Cechy/Bieglosci-broni/Walka-dwoma-broniami": {
+    "Dual-Wielding": {
       "en": "Dual Wielding"
     },
-    "Cechy/Bieglosci-broni/Dystansowa": {
+    "Ranged": {
       "en": "Ranged"
     },
-    "Cechy/Odnawianie-PA": {
+    "AP-Recovery": {
       "en": "AP recovery"
     },
-    "Cechy/Początkowe-PA": {
+    "Starting-AP": {
       "en": "Starting AP"
     },
-    "Cechy/Maksymalne-PA": {
+    "Max-AP": {
       "en": "Maximum AP"
     },
-    "Cechy/Bieglosci-obrony/Krzepa": {
+    "Bodybuilding": {
       "en": "Body Building"
     },
-    "Cechy/Bieglosci-obrony/Siła-woli": {
+    "Willpower": {
       "en": "Willpower"
     },
-    "Cechy/Bieglosci-obrony/Obrona": {
+    "Defence": {
       "en": "Defence"
     },
-    "Cechy/Leczenie": {
+    "Healing": {
       "en": "Healing"
     },
-    "Efekty/Statusy/POISONED": {
+    "POISONED": {
       "en": "Poisoned"
     },
-    "Efekty/Statusy/DRUNK": {
+    "DRUNK": {
       "en": "Drunk"
     },
-    "Efekty/Statusy/KNOCKDOWN": {
+    "KNOCKDOWN": {
       "en": "Knocked down"
     },
-    "Efekty/Statusy/DISEASED": {
+    "DISEASED": {
       "en": "Diseased"
     },
-    "Efekty/Statusy/BURNING": {
+    "BURNING": {
       "en": "Burning"
     },
-    "Efekty/Statusy/PETRIFIED": {
+    "PETRIFIED": {
       "en": "Petrified"
     },
-    "Efekty/Statusy/FROZEN": {
+    "FROZEN": {
       "en": "Frozen"
     },
-    "Efekty/Statusy/BLIND": {
+    "BLIND": {
       "en": "Blind"
     },
-    "Efekty/Statusy/INVISIBLE": {
+    "INVISIBLE": {
       "en": "Invisible"
     },
-    "Efekty/Statusy/SLOWED": {
+    "SLOWED": {
       "en": "Slowed"
     },
-    "Efekty/Statusy/BLEEDING": {
+    "BLEEDING": {
       "en": "Bleeding"
     },
-    "Efekty/Statusy/FEAR": {
+    "FEAR": {
       "en": "Fear"
     },
-    "Efekty/Statusy/WET": {
+    "WET": {
       "en": "Wet"
     },
-    "Efekty/Statusy/MAGIC_SHELL": {
+    "MAGIC_SHELL": {
       "en": "Magic Shell"
     },
-    "Efekty/Statusy/CHILLED": {
+    "CHILLED": {
       "en": "Chilled"
     },
-    "Efekty/Statusy/HEALING": {
+    "HEALING": {
       "en": "Healing"
     },
-    "Efekty/Statusy/CHARMED": {
+    "CHARMED": {
       "en": "Charmed"
     },
-    "Efekty/Statusy/DECAYING_TOUCH": {
+    "DECAYING_TOUCH": {
       "en": "Decaying"
     },
-    "Efekty/Statusy/KNOCKED_DOWN": {
+    "KNOCKED_DOWN": {
       "en": "Knocked down"
     },
-    "Efekty/Statusy/FORTIFIED": {
+    "FORTIFIED": {
       "en": "Fortified"
     },
-    "Efekty/Statusy/CRIPPLED": {
+    "CRIPPLED": {
       "en": "Crippled"
     },
-    "Efekty/Statusy/HASTED": {
+    "HASTED": {
       "en": "Hasted"
     },
-    "Efekty/Statusy/WARM": {
+    "WARM": {
       "en": "Warm"
     },
-    "Efekty/Statusy/CLEAR_MINDED": {
+    "CLEAR_MINDED": {
       "en": "Clear-minded"
     }
   },
   "dos2": {
-    "Typ/Bron": {
+    "Weapons": {
       "en": "Weapons",
       "pl": "Broń"
     },
-    "Typ/Pancerz": {
+    "Armour": {
       "en": "Armour",
       "pl": "Pancerze"
     },
-    "Typ/Bron/Miecze": {
+    "Swords": {
       "en": "Swords",
       "pl": "Miecze"
     },
-    "Typ/Bron/Topory": {
+    "Axes": {
       "en": "Axes",
       "pl": "Topory"
     },
-    "Typ/Bron/Bulawy": {
+    "Maces": {
       "en": "Maces",
       "pl": "Buławy"
     },
-    "Typ/Bron/Sztylety": {
+    "Daggers": {
       "en": "Daggers",
       "pl": "Sztylety"
     },
-    "Typ/Bron/Wlocznie": {
+    "Spears": {
       "en": "Spears",
       "pl": "Włócznie"
     },
-    "Typ/Bron/Luki": {
+    "Bows": {
       "en": "Bows",
       "pl": "Łuki"
     },
-    "Typ/Bron/Kusze": {
+    "Crossbows": {
       "en": "Crossbows",
       "pl": "Kusze"
     },
-    "Typ/Bron/Rozdzki": {
+    "Wands": {
       "en": "Wands",
       "pl": "Różdżki"
     },
-    "Typ/Bron/Kostury": {
+    "Staves": {
       "en": "Staff",
       "pl": "Kostur"
     },
-    "Typ/Pancerz/Helmy": {
+    "Helmets": {
       "en": "Helmet",
       "pl": "Hełm"
     },
-    "Typ/Pancerz/Napiersniki": {
+    "Chest-Armour": {
       "en": "Chest Armour",
       "pl": "Klatka piersiowa"
     },
-    "Typ/Pancerz/Rekawice": {
+    "Gloves": {
       "en": "Gloves",
       "pl": "Rękawice"
     },
-    "Typ/Pancerz/Spodnie": {
+    "Leggings": {
       "en": "Leggings",
       "pl": "Nogawice"
     },
-    "Typ/Pancerz/Buty": {
+    "Boots": {
       "en": "Boots",
       "pl": "Buty"
     },
-    "Typ/Pancerz/Tarcze": {
+    "Shields": {
       "en": "Shields",
       "pl": "Tarcze"
     },
-    "Typ/Amulety": {
+    "Amulets": {
       "en": "Amulet",
       "pl": "Amulet"
     },
-    "Typ/Pierscienie": {
+    "Rings": {
       "en": "Ring",
       "pl": "Pierścień"
     },
-    "Typ/Pasy": {
+    "Belts": {
       "en": "Belt",
       "pl": "Pas"
     },
-    "Cechy/Siła": {
+    "Strength": {
       "en": "Strength",
       "pl": "Siła"
     },
-    "Cechy/Zręczność": {
+    "Finesse": {
       "en": "Finesse",
       "pl": "Zręczność"
     },
-    "Cechy/Zwinność": {
+    "Dexterity": {
       "en": "Dexterity",
       "pl": "Zręczność"
     },
-    "Cechy/Inteligencja": {
+    "Intelligence": {
       "en": "Intelligence",
       "pl": "Inteligencja"
     },
-    "Cechy/Kondycja": {
+    "Constitution": {
       "en": "Constitution",
       "pl": "Kondycja"
     },
-    "Cechy/Pamięć": {
+    "Memory": {
       "en": "Memory",
       "pl": "Pamięć"
     },
-    "Cechy/Spryt": {
+    "Wits": {
       "en": "Wits",
       "pl": "Bystrość"
     },
-    "Cechy/Percepcja": {
+    "Perception": {
       "en": "Perception"
     },
-    "Cechy/Szybkość": {
+    "Speed": {
       "en": "Speed",
       "pl": "Szybkość"
     },
-    "Cechy/Inicjatywa": {
+    "Initiative": {
       "en": "Initiative",
       "pl": "Inicjatywa"
     },
-    "Cechy/Celność": {
+    "Accuracy": {
       "en": "Chance to hit",
       "pl": "Szansa na trafienie"
     },
-    "Cechy/Krytyk": {
+    "Critical-Chance": {
       "en": "Critical chance",
       "pl": "Szansa na trafienie krytyczne"
     },
-    "Cechy/Unik": {
+    "Dodge": {
       "en": "Dodge",
       "pl": "Unik"
     },
-    "Cechy/Pancerz-fizyczny": {
+    "Physical-Armour": {
       "en": "Physical Armour",
       "pl": "Pancerz Fizyczny"
     },
-    "Cechy/Pancerz-magiczny": {
+    "Magic-Armour": {
       "en": "Magic Armour",
       "pl": "Pancerz Magiczny"
     },
-    "Cechy/HP": {
+    "Vitality": {
       "en": "Vitality",
       "pl": "Zdrowie"
     },
-    "Cechy/Bieglosci-obrony/Przywództwo": {
+    "Leadership": {
       "en": "Leadership",
       "pl": "Przywództwo"
     },
-    "Cechy/Szczęście": {
+    "Lucky-Charm": {
       "en": "Lucky Charm",
       "pl": "Fart"
     },
-    "Cechy/Znawca": {
+    "Loremaster": {
       "en": "Loremaster",
       "pl": "Polihistor"
     },
-    "Cechy/Telekineza": {
+    "Telekinesis": {
       "en": "Telekinesis",
       "pl": "Telekineza"
     },
-    "Cechy/Skradanie": {
+    "Sneaking": {
       "en": "Sneaking",
       "pl": "Skradanie się"
     },
-    "Cechy/Złodziejstwo": {
+    "Thievery": {
       "en": "Thievery",
       "pl": "Złodziejstwo"
     },
-    "Cechy/Handel": {
+    "Bartering": {
       "en": "Bartering",
       "pl": "Handel wymienny"
     },
-    "Cechy/Perswazja": {
+    "Persuasion": {
       "en": "Persuasion",
       "pl": "Perswazja"
     },
-    "Cechy/Otwieranie-zamków": {
+    "Lockpicking": {
       "en": "Lockpicking"
     },
-    "Cechy/Kradzież-kieszonkowa": {
+    "Pickpocketing": {
       "en": "Pickpocketing",
       "pl": "Kradzież kieszonkowa"
     },
-    "Cechy/Wytwarzanie": {
+    "Crafting": {
       "en": "Crafting",
       "pl": "Wytwarzanie"
     },
-    "Cechy/Kowalstwo": {
+    "Blacksmithing": {
       "en": "Blacksmithing",
       "pl": "Kowalstwo"
     },
-    "Cechy/Umiejetnosci/Hydrosophia": {
+    "Hydrosophist": {
       "en": "Hydrosophist",
       "pl": "Hydrozofia"
     },
-    "Cechy/Umiejetnosci/Pyrokinetyka": {
+    "Pyrokinetic": {
       "en": "Pyrokinetic",
       "pl": "Pirokineza"
     },
-    "Cechy/Umiejetnosci/Aeroteurgia": {
+    "Aerotheurge": {
       "en": "Aerotheurge",
       "pl": "Aeroturgia"
     },
-    "Cechy/Umiejetnosci/Geomancja": {
+    "Geomancer": {
       "en": "Geomancer",
       "pl": "Geomancja"
     },
-    "Cechy/Umiejetnosci/Nekromancja": {
+    "Necromancer": {
       "en": "Necromancer",
       "pl": "Nekromancja"
     },
-    "Cechy/Umiejetnosci/Przyzywanie": {
+    "Summoning": {
       "en": "Summoning",
       "pl": "Przyzywanie"
     },
-    "Cechy/Umiejetnosci/Polimorfia": {
+    "Polymorph": {
       "en": "Polymorph",
       "pl": "Polimorfia"
     },
-    "Cechy/Umiejetnosci/Wojna": {
+    "Warfare": {
       "en": "Warfare",
       "pl": "Sztuka walki"
     },
-    "Cechy/Umiejetnosci/Łowiectwo": {
+    "Huntsman": {
       "en": "Huntsman",
       "pl": "Myślistwo"
     },
-    "Cechy/Umiejetnosci/Łobuz": {
+    "Scoundrel": {
       "en": "Scoundrel",
       "pl": "Szelmostwo"
     },
-    "Cechy/Bieglosci-broni/Jednoręczna": {
+    "Single-Handed": {
       "en": "Single-Handed",
       "pl": "Jednoręczna"
     },
-    "Cechy/Bieglosci-broni/Dwuręczna": {
+    "Two-Handed": {
       "en": "Two-Handed",
       "pl": "Dwuręczna"
     },
-    "Cechy/Bieglosci-broni/Walka-dwoma-broniami": {
+    "Dual-Wielding": {
       "en": "Dual Wielding",
       "pl": "Dwie bronie"
     },
-    "Cechy/Bieglosci-broni/Dystansowa": {
+    "Ranged": {
       "en": "Ranged",
       "pl": "Dystansowa"
     },
-    "Cechy/Odnawianie-PA": {
+    "AP-Recovery": {
       "en": "AP recovery",
       "pl": "Odzyskiwanie PA"
     },
-    "Cechy/Początkowe-PA": {
+    "Starting-AP": {
       "en": "Starting AP",
       "pl": "Początkowe PA"
     },
-    "Cechy/Maksymalne-PA": {
+    "Max-AP": {
       "en": "Maximum AP",
       "pl": "Maks. PA"
     },
-    "Cechy/Bieglosci-obrony/Krzepa": {
+    "Bodybuilding": {
       "en": "Body Building"
     },
-    "Cechy/Bieglosci-obrony/Siła-woli": {
+    "Willpower": {
       "en": "Willpower",
       "pl": "Siła woli"
     },
-    "Cechy/Bieglosci-obrony/Obrona": {
+    "Defence": {
       "en": "Defence",
       "pl": "Obrona"
     },
-    "Cechy/Leczenie": {
+    "Healing": {
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Efekty/Statusy/POISONED": {
+    "POISONED": {
       "en": "Poisoned",
       "pl": "Zatrucie"
     },
-    "Efekty/Statusy/DRUNK": {
+    "DRUNK": {
       "en": "Drunk",
       "pl": "Upojenie"
     },
-    "Efekty/Statusy/KNOCKDOWN": {
+    "KNOCKDOWN": {
       "en": "Knocked down",
       "pl": "Powalenie"
     },
-    "Efekty/Statusy/DISEASED": {
+    "DISEASED": {
       "en": "Diseased",
       "pl": "Choroba"
     },
-    "Efekty/Statusy/BURNING": {
+    "BURNING": {
       "en": "Burning",
       "pl": "Płonięcie"
     },
-    "Efekty/Statusy/PETRIFIED": {
+    "PETRIFIED": {
       "en": "Petrified",
       "pl": "Skamienienie"
     },
-    "Efekty/Statusy/FROZEN": {
+    "FROZEN": {
       "en": "Frozen",
       "pl": "Zamrożenie"
     },
-    "Efekty/Statusy/BLIND": {
+    "BLIND": {
       "en": "Blind",
       "pl": "Oślepienie"
     },
-    "Efekty/Statusy/INVISIBLE": {
+    "INVISIBLE": {
       "en": "Invisible",
       "pl": "Niewidzialność"
     },
-    "Efekty/Statusy/SLOWED": {
+    "SLOWED": {
       "en": "Slowed",
       "pl": "Spowolnienie"
     },
-    "Efekty/Statusy/BLEEDING": {
+    "BLEEDING": {
       "en": "Bleeding",
       "pl": "Krwawienie"
     },
-    "Efekty/Statusy/FEAR": {
+    "FEAR": {
       "en": "Fear",
       "pl": "Strach"
     },
-    "Efekty/Statusy/WET": {
+    "WET": {
       "en": "Wet",
       "pl": "Przemoczenie"
     },
-    "Efekty/Statusy/MAGIC_SHELL": {
+    "MAGIC_SHELL": {
       "en": "Magic Shell",
       "pl": "Magiczna Skorupa"
     },
-    "Efekty/Statusy/CHILLED": {
+    "CHILLED": {
       "en": "Chilled",
       "pl": "Oziębienie"
     },
-    "Efekty/Statusy/HEALING": {
+    "HEALING": {
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Efekty/Statusy/CHARMED": {
+    "CHARMED": {
       "en": "Charmed",
       "pl": "Oczarowanie"
     },
-    "Efekty/Statusy/DECAYING_TOUCH": {
+    "DECAYING_TOUCH": {
       "en": "Decaying",
       "pl": "Rozkład"
     },
-    "Efekty/Statusy/KNOCKED_DOWN": {
+    "KNOCKED_DOWN": {
       "en": "Knocked down",
       "pl": "Powalenie"
     },
-    "Efekty/Statusy/FORTIFIED": {
+    "FORTIFIED": {
       "en": "Fortified",
       "pl": "Kamienny Pancerz"
     },
-    "Efekty/Statusy/CRIPPLED": {
+    "CRIPPLED": {
       "en": "Crippled",
       "pl": "Okaleczenie"
     },
-    "Efekty/Statusy/HASTED": {
+    "HASTED": {
       "en": "Hasted",
       "pl": "Przyspieszenie"
     },
-    "Efekty/Statusy/WARM": {
+    "WARM": {
       "en": "Warm",
       "pl": "Rozgrzanie"
     },
-    "Efekty/Statusy/CLEAR_MINDED": {
+    "CLEAR_MINDED": {
       "en": "Clear-minded",
       "pl": "Jasny Umysł"
     }
   },
   "dos2-overhaul": {
-    "Typ/Bron": {
+    "Weapons": {
       "en": "Weapons",
       "pl": "Broń"
     },
-    "Typ/Pancerz": {
+    "Armour": {
       "en": "Armour",
       "pl": "Pancerze"
     },
-    "Typ/Bron/Miecze": {
+    "Swords": {
       "en": "Swords",
       "pl": "Miecze"
     },
-    "Typ/Bron/Topory": {
+    "Axes": {
       "en": "Axes",
       "pl": "Topory"
     },
-    "Typ/Bron/Bulawy": {
+    "Maces": {
       "en": "Maces",
       "pl": "Buławy"
     },
-    "Typ/Bron/Sztylety": {
+    "Daggers": {
       "en": "Daggers",
       "pl": "Sztylety"
     },
-    "Typ/Bron/Wlocznie": {
+    "Spears": {
       "en": "Spears",
       "pl": "Włócznie"
     },
-    "Typ/Bron/Luki": {
+    "Bows": {
       "en": "Bows",
       "pl": "Łuki"
     },
-    "Typ/Bron/Kusze": {
+    "Crossbows": {
       "en": "Crossbows",
       "pl": "Kusze"
     },
-    "Typ/Bron/Rozdzki": {
+    "Wands": {
       "en": "Wands",
       "pl": "Różdżki"
     },
-    "Typ/Bron/Kostury": {
+    "Staves": {
       "en": "Staff",
       "pl": "Kostur"
     },
-    "Typ/Pancerz/Helmy": {
+    "Helmets": {
       "en": "Helmet",
       "pl": "Hełm"
     },
-    "Typ/Pancerz/Napiersniki": {
+    "Chest-Armour": {
       "en": "Chest Armour",
       "pl": "Klatka piersiowa"
     },
-    "Typ/Pancerz/Rekawice": {
+    "Gloves": {
       "en": "Gloves",
       "pl": "Rękawice"
     },
-    "Typ/Pancerz/Spodnie": {
+    "Leggings": {
       "en": "Leggings",
       "pl": "Nogawice"
     },
-    "Typ/Pancerz/Buty": {
+    "Boots": {
       "en": "Boots",
       "pl": "Buty"
     },
-    "Typ/Pancerz/Tarcze": {
+    "Shields": {
       "en": "Shields",
       "pl": "Tarcze"
     },
-    "Typ/Amulety": {
+    "Amulets": {
       "en": "Amulet",
       "pl": "Amulet"
     },
-    "Typ/Pierscienie": {
+    "Rings": {
       "en": "Ring",
       "pl": "Pierścień"
     },
-    "Typ/Pasy": {
+    "Belts": {
       "en": "Belt",
       "pl": "Pas"
     },
-    "Cechy/Siła": {
+    "Strength": {
       "en": "Strength",
       "pl": "Siła"
     },
-    "Cechy/Zręczność": {
+    "Finesse": {
       "en": "Finesse",
       "pl": "Zręczność"
     },
-    "Cechy/Zwinność": {
+    "Dexterity": {
       "en": "Dexterity",
       "pl": "Zręczność"
     },
-    "Cechy/Inteligencja": {
+    "Intelligence": {
       "en": "Intelligence",
       "pl": "Inteligencja"
     },
-    "Cechy/Kondycja": {
+    "Constitution": {
       "en": "Constitution",
       "pl": "Kondycja"
     },
-    "Cechy/Pamięć": {
+    "Memory": {
       "en": "Memory",
       "pl": "Pamięć"
     },
-    "Cechy/Spryt": {
+    "Wits": {
       "en": "Wits",
       "pl": "Bystrość"
     },
-    "Cechy/Percepcja": {
+    "Perception": {
       "en": "Perception"
     },
-    "Cechy/Szybkość": {
+    "Speed": {
       "en": "Speed",
       "pl": "Szybkość"
     },
-    "Cechy/Inicjatywa": {
+    "Initiative": {
       "en": "Initiative",
       "pl": "Inicjatywa"
     },
-    "Cechy/Celność": {
+    "Accuracy": {
       "en": "Chance to hit",
       "pl": "Szansa na trafienie"
     },
-    "Cechy/Krytyk": {
+    "Critical-Chance": {
       "en": "Critical chance",
       "pl": "Szansa na trafienie krytyczne"
     },
-    "Cechy/Unik": {
+    "Dodge": {
       "en": "Dodge",
       "pl": "Unik"
     },
-    "Cechy/Pancerz-fizyczny": {
+    "Physical-Armour": {
       "en": "Physical Armour",
       "pl": "Pancerz Fizyczny"
     },
-    "Cechy/Pancerz-magiczny": {
+    "Magic-Armour": {
       "en": "Magic Armour",
       "pl": "Pancerz Magiczny"
     },
-    "Cechy/HP": {
+    "Vitality": {
       "en": "Vitality",
       "pl": "Zdrowie"
     },
-    "Cechy/Bieglosci-obrony/Przywództwo": {
+    "Leadership": {
       "en": "Leadership",
       "pl": "Przywództwo"
     },
-    "Cechy/Szczęście": {
+    "Lucky-Charm": {
       "en": "Lucky Charm",
       "pl": "Fart"
     },
-    "Cechy/Znawca": {
+    "Loremaster": {
       "en": "Loremaster",
       "pl": "Polihistor"
     },
-    "Cechy/Telekineza": {
+    "Telekinesis": {
       "en": "Telekinesis",
       "pl": "Telekineza"
     },
-    "Cechy/Skradanie": {
+    "Sneaking": {
       "en": "Sneaking",
       "pl": "Skradanie się"
     },
-    "Cechy/Złodziejstwo": {
+    "Thievery": {
       "en": "Thievery",
       "pl": "Złodziejstwo"
     },
-    "Cechy/Handel": {
+    "Bartering": {
       "en": "Bartering",
       "pl": "Handel wymienny"
     },
-    "Cechy/Perswazja": {
+    "Persuasion": {
       "en": "Persuasion",
       "pl": "Perswazja"
     },
-    "Cechy/Otwieranie-zamków": {
+    "Lockpicking": {
       "en": "Lockpicking"
     },
-    "Cechy/Kradzież-kieszonkowa": {
+    "Pickpocketing": {
       "en": "Pickpocketing",
       "pl": "Kradzież kieszonkowa"
     },
-    "Cechy/Wytwarzanie": {
+    "Crafting": {
       "en": "Crafting",
       "pl": "Wytwarzanie"
     },
-    "Cechy/Kowalstwo": {
+    "Blacksmithing": {
       "en": "Blacksmithing",
       "pl": "Kowalstwo"
     },
-    "Cechy/Umiejetnosci/Hydrosophia": {
+    "Hydrosophist": {
       "en": "Hydrosophist",
       "pl": "Hydrozofia"
     },
-    "Cechy/Umiejetnosci/Pyrokinetyka": {
+    "Pyrokinetic": {
       "en": "Pyrokinetic",
       "pl": "Pirokineza"
     },
-    "Cechy/Umiejetnosci/Aeroteurgia": {
+    "Aerotheurge": {
       "en": "Aerotheurge",
       "pl": "Aeroturgia"
     },
-    "Cechy/Umiejetnosci/Geomancja": {
+    "Geomancer": {
       "en": "Geomancer",
       "pl": "Geomancja"
     },
-    "Cechy/Umiejetnosci/Nekromancja": {
+    "Necromancer": {
       "en": "Necromancer",
       "pl": "Nekromancja"
     },
-    "Cechy/Umiejetnosci/Przyzywanie": {
+    "Summoning": {
       "en": "Summoning",
       "pl": "Przyzywanie"
     },
-    "Cechy/Umiejetnosci/Polimorfia": {
+    "Polymorph": {
       "en": "Polymorph",
       "pl": "Polimorfia"
     },
-    "Cechy/Umiejetnosci/Wojna": {
+    "Warfare": {
       "en": "Warfare",
       "pl": "Sztuka walki"
     },
-    "Cechy/Umiejetnosci/Łowiectwo": {
+    "Huntsman": {
       "en": "Huntsman",
       "pl": "Myślistwo"
     },
-    "Cechy/Umiejetnosci/Łobuz": {
+    "Scoundrel": {
       "en": "Scoundrel",
       "pl": "Szelmostwo"
     },
-    "Cechy/Bieglosci-broni/Jednoręczna": {
+    "Single-Handed": {
       "en": "Single-Handed",
       "pl": "Jednoręczna"
     },
-    "Cechy/Bieglosci-broni/Dwuręczna": {
+    "Two-Handed": {
       "en": "Two-Handed",
       "pl": "Dwuręczna"
     },
-    "Cechy/Bieglosci-broni/Walka-dwoma-broniami": {
+    "Dual-Wielding": {
       "en": "Dual Wielding",
       "pl": "Dwie bronie"
     },
-    "Cechy/Bieglosci-broni/Dystansowa": {
+    "Ranged": {
       "en": "Ranged",
       "pl": "Dystansowa"
     },
-    "Cechy/Odnawianie-PA": {
+    "AP-Recovery": {
       "en": "AP recovery",
       "pl": "Odzyskiwanie PA"
     },
-    "Cechy/Początkowe-PA": {
+    "Starting-AP": {
       "en": "Starting AP",
       "pl": "Początkowe PA"
     },
-    "Cechy/Maksymalne-PA": {
+    "Max-AP": {
       "en": "Maximum AP",
       "pl": "Maks. PA"
     },
-    "Cechy/Bieglosci-obrony/Krzepa": {
+    "Bodybuilding": {
       "en": "Body Building"
     },
-    "Cechy/Bieglosci-obrony/Siła-woli": {
+    "Willpower": {
       "en": "Willpower",
       "pl": "Siła woli"
     },
-    "Cechy/Bieglosci-obrony/Obrona": {
+    "Defence": {
       "en": "Defence",
       "pl": "Obrona"
     },
-    "Cechy/Leczenie": {
+    "Healing": {
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Efekty/Statusy/POISONED": {
+    "POISONED": {
       "en": "Poisoned",
       "pl": "Zatrucie"
     },
-    "Efekty/Statusy/DRUNK": {
+    "DRUNK": {
       "en": "Drunk",
       "pl": "Upojenie"
     },
-    "Efekty/Statusy/KNOCKDOWN": {
+    "KNOCKDOWN": {
       "en": "Knocked down",
       "pl": "Powalenie"
     },
-    "Efekty/Statusy/DISEASED": {
+    "DISEASED": {
       "en": "Diseased",
       "pl": "Choroba"
     },
-    "Efekty/Statusy/BURNING": {
+    "BURNING": {
       "en": "Burning",
       "pl": "Płonięcie"
     },
-    "Efekty/Statusy/PETRIFIED": {
+    "PETRIFIED": {
       "en": "Petrified",
       "pl": "Skamienienie"
     },
-    "Efekty/Statusy/FROZEN": {
+    "FROZEN": {
       "en": "Frozen",
       "pl": "Zamrożenie"
     },
-    "Efekty/Statusy/BLIND": {
+    "BLIND": {
       "en": "Blind",
       "pl": "Oślepienie"
     },
-    "Efekty/Statusy/INVISIBLE": {
+    "INVISIBLE": {
       "en": "Invisible",
       "pl": "Niewidzialność"
     },
-    "Efekty/Statusy/SLOWED": {
+    "SLOWED": {
       "en": "Slowed",
       "pl": "Spowolnienie"
     },
-    "Efekty/Statusy/BLEEDING": {
+    "BLEEDING": {
       "en": "Bleeding",
       "pl": "Krwawienie"
     },
-    "Efekty/Statusy/FEAR": {
+    "FEAR": {
       "en": "Fear",
       "pl": "Strach"
     },
-    "Efekty/Statusy/WET": {
+    "WET": {
       "en": "Wet",
       "pl": "Przemoczenie"
     },
-    "Efekty/Statusy/MAGIC_SHELL": {
+    "MAGIC_SHELL": {
       "en": "Magic Shell",
       "pl": "Magiczna Skorupa"
     },
-    "Efekty/Statusy/CHILLED": {
+    "CHILLED": {
       "en": "Chilled",
       "pl": "Oziębienie"
     },
-    "Efekty/Statusy/HEALING": {
+    "HEALING": {
       "en": "Healing",
       "pl": "Leczenie"
     },
-    "Efekty/Statusy/CHARMED": {
+    "CHARMED": {
       "en": "Charmed",
       "pl": "Oczarowanie"
     },
-    "Efekty/Statusy/DECAYING_TOUCH": {
+    "DECAYING_TOUCH": {
       "en": "Decaying",
       "pl": "Rozkład"
     },
-    "Efekty/Statusy/KNOCKED_DOWN": {
+    "KNOCKED_DOWN": {
       "en": "Knocked down",
       "pl": "Powalenie"
     },
-    "Efekty/Statusy/FORTIFIED": {
+    "FORTIFIED": {
       "en": "Fortified",
       "pl": "Kamienny Pancerz"
     },
-    "Efekty/Statusy/CRIPPLED": {
+    "CRIPPLED": {
       "en": "Crippled",
       "pl": "Okaleczenie"
     },
-    "Efekty/Statusy/HASTED": {
+    "HASTED": {
       "en": "Hasted",
       "pl": "Przyspieszenie"
     },
-    "Efekty/Statusy/WARM": {
+    "WARM": {
       "en": "Warm",
       "pl": "Rozgrzanie"
     },
-    "Efekty/Statusy/CLEAR_MINDED": {
+    "CLEAR_MINDED": {
       "en": "Clear-minded",
       "pl": "Jasny Umysł"
     }

@@ -59,7 +59,7 @@ VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 - `scripts/verify-dist.ts` — kontrola wynikowego artefaktu GitHub Pages.
 - `vite.config.ts` — serwer deweloperski, aktualizacja danych i generowanie plików pod istniejące adresy.
 
-Aplikacja pobiera manifest i tylko aktualnie wybrany katalog. Szczegóły notatek są ładowane na żądanie. Filtry zapamiętywane są osobno dla każdej gry; parametry URL umożliwiają udostępnianie wyników. Działają dotychczasowe adresy `receptury`, `DOS2`, `dos2-crafting-overhaul` oraz adresy stron przedmiotów. Dla znanych adresów budowane są zarówno pliki `.html`, jak i `index.html` w podkatalogach, więc odświeżenie strony działa również na hostingu statycznym.
+Aplikacja pobiera manifest i tylko aktualnie wybrany katalog. Filtry zapamiętywane są osobno dla każdej gry; parametry URL umożliwiają udostępnianie wyników. Działają dotychczasowe adresy `receptury`, `DOS2`, `dos2-crafting-overhaul` oraz adresy stron przedmiotów. Strony przedmiotów mają adres `<katalog>/<przedmiot>` (np. `DOS2/apple`), a build grupuje je w folderach gier: `receptury/`, `DOS2/` i `dos2-crafting-overhaul/`. Każdy adres ma jeden plik `.html`, a `404.html` obsługuje pozostałe adresy, więc odświeżenie strony działa również na hostingu statycznym.
 
 ## Edycja biblioteki JSON
 
@@ -78,7 +78,7 @@ recepturami; różne warianty mogą mieć historycznie ten sam identyfikator.
 Ulepszenia przedmiotów (zmiany istniejącego przedmiotu, np. dodanie odporności tarczy albo
 gniazda runy) są zapisane osobno, w tablicy `upgrades` pliku receptur. Wpis ma `effect`
 (`en`, opcjonalnie `pl`), `target` (ulepszany przedmiot lub grupa, np. „Most Weapons”),
-`targetTags` (kategorie `Typ/…`, których dotyczy — na ich podstawie strona przedmiotu pokazuje
+`targetTags` (kategorie, których dotyczy, np. `Weapons` lub `Shields` — na ich podstawie strona przedmiotu pokazuje
 „Możliwe ulepszenia”), `tags` (cechy nadawane przez ulepszenie), `ingredients` oraz `requirements`,
 `notes`, `remarks` i `source`. Ulepszenia nie są przedmiotami: mają własną zakładkę w katalogu
 i nie mają stron.
@@ -166,7 +166,7 @@ npm run verify:dist
 ```
 
 Skrypt eksportu wymaga lokalnego Pythona z Pillow. Odczytuje katalog wygenerowany
-w `.generated/build/data`, zapisuje tylko używane ikony i usuwa nieużywane pliki
+w `dist/data` (przez `npm run generate:data` lub `npm run build`), zapisuje tylko używane ikony i usuwa nieużywane pliki
 WebP z `assets/item-icons/`.
 
 Aktualny raport brakujących ikon można odtworzyć bez plików gry:
@@ -252,7 +252,10 @@ obrażeń lub pancerza. Eksport nie jest częścią buildu ani GitHub Actions.
 
 ## Tagi wyposażenia i efektów
 
-Tagi `Typ/Bron/*` są dziećmi „Broń”, a `Typ/Pancerz/*` — „Pancerze”.
+Tagi mają angielskie identyfikatory bez ścieżek (np. `Bows`, `Fire-Resistance`, `WET`); polska nazwa
+jest tylko etykietą. Przedmiot zapisuje wyłącznie najbardziej szczegółowe tagi, a rodziców określa
+jedynie `data/recipeTagHierarchy.json`: korzeń `Category` zawiera kategorie przedmiotów, a pozostałe
+korzenie są sekcjami cech w panelu bocznym. Np. `Bows` leży pod `Weapons`, a ta pod `Category`.
 Podtypy wynikają ze slotu i rodzaju broni w danych gry; kategorie craftingowe
 uzupełniają wpisy, dla których nie ma jednoznacznego szablonu. Biżuteria zachowuje
 osobne kategorie. Filtr rodzica obejmuje wszystkie jego podtypy.

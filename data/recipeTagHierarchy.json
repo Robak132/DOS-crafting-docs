@@ -1,594 +1,594 @@
 {
   "hierarchy": [
     {
-      "tag": "Typ",
+      "tag": "Category",
       "label": "Typ",
       "children": [
         {
-          "tag": "Typ/Amulety",
+          "tag": "Amulets",
           "label": "Amulety",
           "children": []
         },
         {
-          "tag": "Typ/Barwniki",
+          "tag": "Dyes",
           "label": "Barwniki",
           "children": []
         },
         {
-          "tag": "Typ/Bron",
+          "tag": "Weapons",
           "label": "Broń",
           "children": [
             {
-              "tag": "Typ/Bron/Bulawy",
+              "tag": "Maces",
               "label": "Buławy i młoty",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Kostury",
+              "tag": "Staves",
               "label": "Kostury",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Sztylety",
+              "tag": "Daggers",
               "label": "Sztylety",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Miecze",
+              "tag": "Swords",
               "label": "Miecze",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Rozdzki",
+              "tag": "Wands",
               "label": "Różdżki",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Luki",
+              "tag": "Bows",
               "label": "Łuki",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Kusze",
+              "tag": "Crossbows",
               "label": "Kusze",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Topory",
+              "tag": "Axes",
               "label": "Topory",
               "children": []
             },
             {
-              "tag": "Typ/Bron/Wlocznie",
+              "tag": "Spears",
               "label": "Włócznie",
               "children": []
             }
           ]
         },
         {
-          "tag": "Typ/Granaty",
+          "tag": "Grenades",
           "label": "Granaty",
           "children": []
         },
         {
-          "tag": "Typ/Jedzenie-i-picie",
+          "tag": "Food-And-Drink",
           "label": "Jedzenie-i-picie",
           "children": []
         },
         {
-          "tag": "Typ/Ksiegi-umiejetnosci",
+          "tag": "Skillbooks",
           "label": "Księgi umiejętności",
           "children": []
         },
         {
-          "tag": "Typ/Magia",
+          "tag": "Magic",
           "label": "Magia",
           "children": []
         },
         {
-          "tag": "Typ/Mikstury",
+          "tag": "Potions",
           "label": "Mikstury",
           "children": []
         },
         {
-          "tag": "Typ/Mikstury-i-jedzenie",
+          "tag": "Potions-And-Food",
           "label": "Mikstury i jedzenie",
           "children": []
         },
         {
-          "tag": "Typ/Narzedzia",
+          "tag": "Tools",
           "label": "Narzędzia",
           "children": []
         },
         {
-          "tag": "Typ/Pancerz",
+          "tag": "Armour",
           "label": "Pancerze",
           "children": [
             {
-              "tag": "Typ/Pancerz/Helmy",
+              "tag": "Helmets",
               "label": "Hełmy",
               "children": []
             },
             {
-              "tag": "Typ/Pancerz/Napiersniki",
+              "tag": "Chest-Armour",
               "label": "Napierśniki",
               "children": []
             },
             {
-              "tag": "Typ/Pancerz/Rekawice",
+              "tag": "Gloves",
               "label": "Rękawice",
               "children": []
             },
             {
-              "tag": "Typ/Pancerz/Buty",
+              "tag": "Boots",
               "label": "Buty",
               "children": []
             },
             {
-              "tag": "Typ/Pancerz/Spodnie",
+              "tag": "Leggings",
               "label": "Spodnie",
               "children": []
             },
             {
-              "tag": "Typ/Pancerz/Tarcze",
+              "tag": "Shields",
               "label": "Tarcze",
               "children": []
             }
           ]
         },
         {
-          "tag": "Typ/Pasy",
+          "tag": "Belts",
           "label": "Pasy",
           "children": []
         },
         {
-          "tag": "Typ/Pierscienie",
+          "tag": "Rings",
           "label": "Pierścienie",
           "children": []
         },
         {
-          "tag": "Typ/Skladniki",
+          "tag": "Ingredients",
           "label": "Składniki",
           "children": []
         },
         {
-          "tag": "Typ/Przedmioty-wydarzen",
+          "tag": "Seasonal-Items",
           "label": "Przedmioty sezonowe",
           "children": []
         },
         {
-          "tag": "Typ/Specjalne",
+          "tag": "Special",
           "label": "Specjalne",
           "children": []
         },
         {
-          "tag": "Typ/Stanowiska-i-pojemniki",
+          "tag": "Stations-And-Containers",
           "label": "Stanowiska i pojemniki",
           "children": []
         },
         {
-          "tag": "Typ/Strzaly",
+          "tag": "Arrows",
           "label": "Strzaly",
           "children": []
         },
         {
-          "tag": "Typ/Strzaly-i-granaty",
+          "tag": "Arrows-And-Grenades",
           "label": "Strzały i granaty",
           "children": []
         },
         {
-          "tag": "Typ/Ulepszenia",
+          "tag": "Upgrades",
           "label": "Ulepszenia",
           "children": []
         },
         {
-          "tag": "Typ/Wyposazenie",
+          "tag": "Equipment",
           "label": "Wyposażenie",
           "children": []
         },
         {
-          "tag": "Typ/Zwoje",
+          "tag": "Scrolls",
           "label": "Zwoje",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-podstawowe",
+      "tag": "Attributes",
       "label": "Cechy",
       "children": [
         {
-          "tag": "Cechy/Siła",
+          "tag": "Strength",
           "label": "Siła",
           "children": []
         },
         {
-          "tag": "Cechy/Zwinność",
+          "tag": "Dexterity",
           "label": "Zwinność",
           "children": []
         },
         {
-          "tag": "Cechy/Inteligencja",
+          "tag": "Intelligence",
           "label": "Inteligencja",
           "children": []
         },
         {
-          "tag": "Cechy/Kondycja",
+          "tag": "Constitution",
           "label": "Kondycja",
           "children": []
         },
         {
-          "tag": "Cechy/Pamięć",
+          "tag": "Memory",
           "label": "Pamięć",
           "children": []
         },
         {
-          "tag": "Cechy/Spryt",
+          "tag": "Wits",
           "label": "Bystrość",
           "children": []
         },
         {
-          "tag": "Cechy/HP",
+          "tag": "Vitality",
           "label": "Witalność",
           "children": []
         },
         {
-          "tag": "Cechy/Celność",
+          "tag": "Accuracy",
           "label": "Celność",
           "children": []
         },
         {
-          "tag": "Cechy/Krytyk",
+          "tag": "Critical-Chance",
           "label": "Szansa na trafienie krytyczne",
           "children": []
         },
         {
-          "tag": "Cechy/Unik",
+          "tag": "Dodge",
           "label": "Unik",
           "children": []
         },
         {
-          "tag": "Cechy/Blok",
+          "tag": "Block",
           "label": "Blok",
           "children": []
         },
         {
-          "tag": "Cechy/Pancerz",
+          "tag": "Armour-Value",
           "label": "Pancerz",
           "children": []
         },
         {
-          "tag": "Cechy/Pancerz-fizyczny",
+          "tag": "Physical-Armour",
           "label": "Pancerz fizyczny",
           "children": []
         },
         {
-          "tag": "Cechy/Pancerz-magiczny",
+          "tag": "Magic-Armour",
           "label": "Pancerz magiczny",
           "children": []
         },
         {
-          "tag": "Cechy/Pancerz-zbalansowany",
+          "tag": "Balanced-Armour",
           "label": "Pancerz zbalansowany",
           "children": []
         },
         {
-          "tag": "Cechy/Inicjatywa",
+          "tag": "Initiative",
           "label": "Inicjatywa",
           "children": []
         },
         {
-          "tag": "Cechy/Ruch",
+          "tag": "Movement",
           "label": "Ruch",
           "children": []
         },
         {
-          "tag": "Cechy/Szybkość",
+          "tag": "Speed",
           "label": "Szybkość",
           "children": []
         },
         {
-          "tag": "Cechy/Zręczność",
+          "tag": "Finesse",
           "label": "Zręczność",
           "children": []
         },
         {
-          "tag": "Cechy/Percepcja",
+          "tag": "Perception",
           "label": "Percepcja",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-odporności",
+      "tag": "Resistances",
       "label": "Odporności",
       "children": [
         {
-          "tag": "Cechy/Odporność-na-ogień",
+          "tag": "Fire-Resistance",
           "label": "Odporność na ogień",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-wodę",
+          "tag": "Water-Resistance",
           "label": "Odporność na wodę",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-powietrze",
+          "tag": "Air-Resistance",
           "label": "Odporność na powietrze",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-ziemię",
+          "tag": "Earth-Resistance",
           "label": "Odporność na ziemię",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-truciznę",
+          "tag": "Poison-Resistance",
           "label": "Odporność na truciznę",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-wszystko",
+          "tag": "All-Resistance",
           "label": "Odporność na wszystko",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-ogień",
+          "tag": "Burning-Immunity",
           "label": "Niewrażliwość na ogień",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-zamrożenie",
+          "tag": "Freezing-Immunity",
           "label": "Niewrażliwość na zamrożenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-ogłuszenie",
+          "tag": "Stun-Immunity",
           "label": "Niewrażliwość na ogłuszenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-oślepienie",
+          "tag": "Blind-Immunity",
           "label": "Niewrażliwość na oślepienie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-krwawienie",
+          "tag": "Bleeding-Immunity",
           "label": "Niewrażliwość na krwawienie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-kwas",
+          "tag": "Acid-Immunity",
           "label": "Niewrażliwość na kwas",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-potrącenie",
+          "tag": "Knockdown-Immunity",
           "label": "Niewrażliwość na potrącenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-spowolnienie",
+          "tag": "Slow-Immunity",
           "label": "Niewrażliwość na spowolnienie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-urok",
+          "tag": "Charm-Immunity",
           "label": "Niewrażliwość na urok",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-strach",
+          "tag": "Fear-Immunity",
           "label": "Niewrażliwość na strach",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-szok",
+          "tag": "Shock-Immunity",
           "label": "Niewrażliwość na szok",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-teleport",
+          "tag": "Teleport-Immunity",
           "label": "Niewrażliwość na teleport",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-uduszenie",
+          "tag": "Suffocation-Immunity",
           "label": "Niewrażliwość na uduszenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-okaleczenie",
+          "tag": "Crippled-Immunity",
           "label": "Niewrażliwość na okaleczenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-szaleństwo",
+          "tag": "Madness-Immunity",
           "label": "Niewrażliwość na szaleństwo",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-cień",
+          "tag": "Shadow-Resistance",
           "label": "Odporność na cień",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-obrazenia",
+      "tag": "Damage",
       "label": "Obrażenia",
       "children": [
         {
-          "tag": "Cechy/Obrażenia-magiczne",
+          "tag": "Magic-Damage",
           "label": "Obrażenia magiczne",
           "children": [
             {
-              "tag": "Cechy/Obrażenia-magiczne/ognia",
+              "tag": "Fire-Damage",
               "label": "Obrażenia od ognia",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/wody",
+              "tag": "Water-Damage",
               "label": "Obrażenia od wody",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/powietrza",
+              "tag": "Air-Damage",
               "label": "Obrażenia od powietrza",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/ziemi",
+              "tag": "Earth-Damage",
               "label": "Obrażenia od ziemi",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/trucizny",
+              "tag": "Poison-Damage",
               "label": "Obrażenia od trucizny",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/cienia",
+              "tag": "Shadow-Damage",
               "label": "Obrażenia od cienia",
               "children": []
             },
             {
-              "tag": "Cechy/Obrażenia-magiczne/tenebrium",
+              "tag": "Tenebrium-Damage",
               "label": "Obrażenia od tenebrium",
               "children": []
             }
           ]
         },
         {
-          "tag": "Cechy/Obrażenia-fizyczne",
+          "tag": "Physical-Damage",
           "label": "Obrażenia fizyczne",
           "children": []
         },
         {
-          "tag": "Cechy/Obrażenia-przeszywające",
+          "tag": "Piercing-Damage",
           "label": "Obrażenia przeszywające",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-bieglosci-bojowe",
+      "tag": "Combat-Abilities",
       "label": "Biegłości bojowe",
       "children": [
         {
-          "tag": "Cechy/Bieglosci-broni",
+          "tag": "Weapon-Abilities",
           "label": "Biegłości broni",
           "children": [
             {
-              "tag": "Cechy/Bieglosci-broni/Jednoręczna",
+              "tag": "Single-Handed",
               "label": "Broń jednoręczna",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-broni/Dwuręczna",
+              "tag": "Two-Handed",
               "label": "Broń dwuręczna",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-broni/Walka-dwoma-broniami",
+              "tag": "Dual-Wielding",
               "label": "Walka dwiema broniami",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-broni/Dystansowa",
+              "tag": "Ranged",
               "label": "Broń dystansowa",
               "children": []
             }
           ]
         },
         {
-          "tag": "Cechy/Bieglosci-obrony",
+          "tag": "Defence-Abilities",
           "label": "Biegłości obrony",
           "children": [
             {
-              "tag": "Cechy/Bieglosci-obrony/Przywództwo",
+              "tag": "Leadership",
               "label": "Przywództwo",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-obrony/Wytrwałość",
+              "tag": "Perseverance",
               "label": "Wytrwałość",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-obrony/Odbicie",
+              "tag": "Retribution",
               "label": "Odbicie",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-obrony/Krzepa",
+              "tag": "Bodybuilding",
               "label": "Krzepa",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-obrony/Siła-woli",
+              "tag": "Willpower",
               "label": "Siła woli",
               "children": []
             },
             {
-              "tag": "Cechy/Bieglosci-obrony/Obrona",
+              "tag": "Defence",
               "label": "Obrona",
               "children": []
             }
           ]
         },
         {
-          "tag": "Cechy/Umiejetnosci",
+          "tag": "Skill-Schools",
           "label": "Umiejętności",
           "children": [
             {
-              "tag": "Cechy/Umiejetnosci/Wojna",
+              "tag": "Warfare",
               "label": "Wojna",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Łowiectwo",
+              "tag": "Huntsman",
               "label": "Łowiectwo",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Łobuz",
+              "tag": "Scoundrel",
               "label": "Łobuz",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Pyrokinetyka",
+              "tag": "Pyrokinetic",
               "label": "Pirokineza",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Hydrosophia",
+              "tag": "Hydrosophist",
               "label": "Hydrozofia",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Geomancja",
+              "tag": "Geomancer",
               "label": "Geomancja",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Aeroteurgia",
+              "tag": "Aerotheurge",
               "label": "Aeroturgia",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Nekromancja",
+              "tag": "Necromancer",
               "label": "Nekromancja",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Przyzywanie",
+              "tag": "Summoning",
               "label": "Przyzywanie",
               "children": []
             },
             {
-              "tag": "Cechy/Umiejetnosci/Polimorfia",
+              "tag": "Polymorph",
               "label": "Polimorfia",
               "children": []
             }
@@ -597,549 +597,549 @@
       ]
     },
     {
-      "tag": "Cechy-cywilne",
+      "tag": "Civil-Abilities",
       "label": "Biegłości niebojowe",
       "children": [
         {
-          "tag": "Cechy/Handel",
+          "tag": "Bartering",
           "label": "Handel",
           "children": []
         },
         {
-          "tag": "Cechy/Szczęście",
+          "tag": "Lucky-Charm",
           "label": "Szczęśliwy traf",
           "children": []
         },
         {
-          "tag": "Cechy/Perswazja",
+          "tag": "Persuasion",
           "label": "Perswazja",
           "children": []
         },
         {
-          "tag": "Cechy/Znawca",
+          "tag": "Loremaster",
           "label": "Znawca",
           "children": []
         },
         {
-          "tag": "Cechy/Telekineza",
+          "tag": "Telekinesis",
           "label": "Telekineza",
           "children": []
         },
         {
-          "tag": "Cechy/Skradanie",
+          "tag": "Sneaking",
           "label": "Skradanie",
           "children": []
         },
         {
-          "tag": "Cechy/Złodziejstwo",
+          "tag": "Thievery",
           "label": "Złodziejstwo",
           "children": []
         },
         {
-          "tag": "Cechy/Charyzma",
+          "tag": "Charisma",
           "label": "Charyzma",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-inne",
+      "tag": "Other-Traits",
       "label": "Inne",
       "children": [
         {
-          "tag": "Cechy/Leczenie",
+          "tag": "Healing",
           "label": "Leczenie",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-sen",
+          "tag": "Sleep-Immunity",
           "label": "Niewrażliwość na sen",
           "children": []
         },
         {
-          "tag": "Cechy/Immunitet-na-truciznę",
+          "tag": "Poison-Immunity",
           "label": "Niewrażliwość na truciznę",
           "children": []
         },
         {
-          "tag": "Cechy/Kowalstwo",
+          "tag": "Blacksmithing",
           "label": "Kowalstwo",
           "children": []
         },
         {
-          "tag": "Cechy/Kradzież-kieszonkowa",
+          "tag": "Pickpocketing",
           "label": "Kradzież kieszonkowa",
           "children": []
         },
         {
-          "tag": "Cechy/Maksymalne-PA",
+          "tag": "Max-AP",
           "label": "Maksymalne PA",
           "children": []
         },
         {
-          "tag": "Cechy/Odnawianie-PA",
+          "tag": "AP-Recovery",
           "label": "Odnawianie PA",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-obrażenia-fizyczne",
+          "tag": "Physical-Resistance",
           "label": "Odporność na obrażenia fizyczne",
           "children": []
         },
         {
-          "tag": "Cechy/Odporność-na-obrażenia-przeszywające",
+          "tag": "Piercing-Resistance",
           "label": "Odporność na obrażenia przeszywające",
           "children": []
         },
         {
-          "tag": "Cechy/Otwieranie-zamków",
+          "tag": "Lockpicking",
           "label": "Otwieranie zamków",
           "children": []
         },
         {
-          "tag": "Cechy/Początkowe-PA",
+          "tag": "Starting-AP",
           "label": "Początkowe PA",
           "children": []
         },
         {
-          "tag": "Cechy/Rzuca-zaklecie",
+          "tag": "Casts-Spell",
           "label": "Rzuca zaklęcie",
           "children": []
         },
         {
-          "tag": "Cechy/Uczy-umiejetnosci",
+          "tag": "Teaches-Skill",
           "label": "Uczy umiejętności",
           "children": []
         },
         {
-          "tag": "Cechy/Wytwarzanie",
+          "tag": "Crafting",
           "label": "Wytwarzanie",
           "children": []
         },
         {
-          "tag": "Cechy/Zapewnia-umiejetnosc",
+          "tag": "Grants-Skill",
           "label": "Zapewnia umiejętność",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-statusy",
+      "tag": "Statuses",
       "label": "Nakładane statusy",
       "children": [
         {
-          "tag": "Efekty/Statusy/ACID",
+          "tag": "ACID",
           "label": "Kwas",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/APOTHEOSIS",
+          "tag": "APOTHEOSIS",
           "label": "Apoteoza",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/ARCANE_STITCH",
+          "tag": "ARCANE_STITCH",
           "label": "Magiczny Szew",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/BLEEDING",
+          "tag": "BLEEDING",
           "label": "Krwawienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/BLIND",
+          "tag": "BLIND",
           "label": "Oślepienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/BLOOD_BUBBLE",
+          "tag": "BLOOD_BUBBLE",
           "label": "Krwawy Pęcherz",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/BURNING",
+          "tag": "BURNING",
           "label": "Płonięcie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CHAIN_HEAL",
+          "tag": "CHAIN_HEAL",
           "label": "Uzdrowienie łańcuchowe",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CHARMED",
+          "tag": "CHARMED",
           "label": "Oczarowanie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CHICKEN",
+          "tag": "CHICKEN",
           "label": "Chicken Shape",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CHILLED",
+          "tag": "CHILLED",
           "label": "Oziębienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CLEAR_MINDED",
+          "tag": "CLEAR_MINDED",
           "label": "Jasny Umysł",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/COW",
+          "tag": "COW",
           "label": "Cow Shape",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CRIPPLED",
+          "tag": "CRIPPLED",
           "label": "Okaleczenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/CURSED",
+          "tag": "CURSED",
           "label": "Przekleństwo",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DAZED",
+          "tag": "DAZED",
           "label": "Oszołomienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DEATH_RESIST",
+          "tag": "DEATH_RESIST",
           "label": "Odparcie śmierci",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DEATH_WISH",
+          "tag": "DEATH_WISH",
           "label": "Życzenie Śmierci",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DECAYING_TOUCH",
+          "tag": "DECAYING_TOUCH",
           "label": "Rozkład",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DEMONIC_BARGAIN",
+          "tag": "DEMONIC_BARGAIN",
           "label": "Demoniczny układ",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DISARMED",
+          "tag": "DISARMED",
           "label": "Disarmed",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DISEASED",
+          "tag": "DISEASED",
           "label": "Choroba",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/DRUNK",
+          "tag": "DRUNK",
           "label": "Upojenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/ENTANGLED",
+          "tag": "ENTANGLED",
           "label": "Splątanie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/ETERNITY_DOOR",
+          "tag": "ETERNITY_DOOR",
           "label": "Opór",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FAVOURABLE_WIND_AURA",
+          "tag": "FAVOURABLE_WIND_AURA",
           "label": "Aura Korzystnego Wiatru",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FEAR",
+          "tag": "FEAR",
           "label": "Strach",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FIREBLOOD",
+          "tag": "FIREBLOOD",
           "label": "Fireblood",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FIRE_BRAND_AURA",
+          "tag": "FIRE_BRAND_AURA",
           "label": "Fire Brand",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FLAMING_CRESCENDO",
+          "tag": "FLAMING_CRESCENDO",
           "label": "Płomienny Finał",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FLAMING_TONGUES",
+          "tag": "FLAMING_TONGUES",
           "label": "Płomienne Języki",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FORTIFIED",
+          "tag": "FORTIFIED",
           "label": "Kamienny Pancerz",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FROST_AURA",
+          "tag": "FROST_AURA",
           "label": "Frost Aura",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/FROZEN",
+          "tag": "FROZEN",
           "label": "Zamrożenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/HASTED",
+          "tag": "HASTED",
           "label": "Przyspieszenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/HEALING",
+          "tag": "HEALING",
           "label": "Leczenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/HEALING_ELIXIR",
+          "tag": "HEALING_ELIXIR",
           "label": "Eliksir uzdrawiający",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/HEAL_SHARING",
+          "tag": "HEAL_SHARING",
           "label": "Bratnia Dusza",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/HORNS",
+          "tag": "HORNS",
           "label": "Bycze Rogi",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/INF_POWER",
+          "tag": "INF_POWER",
           "label": "Podsycenie Mocy",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/INF_RANGED",
+          "tag": "INF_RANGED",
           "label": "Ranged Infusion",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/INF_SHADOW",
+          "tag": "INF_SHADOW",
           "label": "Podsycenie Cienia",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/INF_WARP",
+          "tag": "INF_WARP",
           "label": "Podsycenie Zakrzywienia",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/INVISIBLE",
+          "tag": "INVISIBLE",
           "label": "Niewidzialność",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/KNOCKDOWN",
+          "tag": "KNOCKDOWN",
           "label": "Powalenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/KNOCKED_DOWN",
+          "tag": "KNOCKED_DOWN",
           "label": "Powalenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MADNESS",
+          "tag": "MADNESS",
           "label": "Szał",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MAGIC_SHELL",
+          "tag": "MAGIC_SHELL",
           "label": "Magiczna Skorupa",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MEDUSASPOOKY",
+          "tag": "MEDUSASPOOKY",
           "label": "Medusa ",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MEDUSA_HEAD",
+          "tag": "MEDUSA_HEAD",
           "label": "Głowa meduzy",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MEND_METAL",
+          "tag": "MEND_METAL",
           "label": "Mending Metal",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/MUTED",
+          "tag": "MUTED",
           "label": "Uciszenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/NECROFIRE",
+          "tag": "NECROFIRE",
           "label": "Nekroogień",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/NULL_RESISTANCE",
+          "tag": "NULL_RESISTANCE",
           "label": "Zneutralizowana odporność",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/PAINCASTERSPOOKY",
+          "tag": "PAINCASTERSPOOKY",
           "label": "Bólomiot",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/PAINDOGSPOOKY",
+          "tag": "PAINDOGSPOOKY",
           "label": "Pain Doggy",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/PERMAFROST",
+          "tag": "PERMAFROST",
           "label": "Zmarzlina",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/PETRIFIED",
+          "tag": "PETRIFIED",
           "label": "Skamienienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/POISONED",
+          "tag": "POISONED",
           "label": "Zatrucie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/REGENERATION",
+          "tag": "REGENERATION",
           "label": "Regeneracja",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/RESURRECT",
+          "tag": "RESURRECT",
           "label": "Wskrzeszenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SCARECROW",
+          "tag": "SCARECROW",
           "label": "Scarecrow Shape",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SHED_SKIN",
+          "tag": "SHED_SKIN",
           "label": "Linienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SHOCKED",
+          "tag": "SHOCKED",
           "label": "Porażenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SLOWED",
+          "tag": "SLOWED",
           "label": "Spowolnienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SPIDER_LEGS",
+          "tag": "SPIDER_LEGS",
           "label": "Pajęcze Nogi",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/STEAM_LANCE",
+          "tag": "STEAM_LANCE",
           "label": "Lanca Parowa",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/STEEL_SKIN",
+          "tag": "STEEL_SKIN",
           "label": "Steel Skin",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SUFFOCATING",
+          "tag": "SUFFOCATING",
           "label": "Duszenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/SUPERCHARGE",
+          "tag": "SUPERCHARGE",
           "label": "Doładowanie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/TONGUED",
+          "tag": "TONGUED",
           "label": "Diplomat Tongue",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/WARM",
+          "tag": "WARM",
           "label": "Rozgrzanie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/WEAK",
+          "tag": "WEAK",
           "label": "Osłabienie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/WEB",
+          "tag": "WEB",
           "label": "Omotanie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/WET",
+          "tag": "WET",
           "label": "Przemoczenie",
           "children": []
         },
         {
-          "tag": "Efekty/Statusy/WINGS",
+          "tag": "WINGS",
           "label": "Skrzydła",
           "children": []
         }
       ]
     },
     {
-      "tag": "Cechy-powierzchnie",
+      "tag": "Surfaces",
       "label": "Tworzone powierzchnie",
       "children": [
         {
-          "tag": "Efekty/Powierzchnie/Fire",
+          "tag": "Fire-Surface",
           "label": "Powierzchnia: Ogień",
           "children": []
         },
         {
-          "tag": "Efekty/Powierzchnie/Oil",
+          "tag": "Oil-Surface",
           "label": "Powierzchnia: Olej",
           "children": []
         },
         {
-          "tag": "Efekty/Powierzchnie/Poison",
+          "tag": "Poison-Surface",
           "label": "Powierzchnia: Trucizna",
           "children": []
         },
         {
-          "tag": "Efekty/Powierzchnie/Source",
+          "tag": "Source-Surface",
           "label": "Powierzchnia: Źródło",
           "children": []
         },
         {
-          "tag": "Efekty/Powierzchnie/Water",
+          "tag": "Water-Surface",
           "label": "Powierzchnia: Woda",
           "children": []
         },
         {
-          "tag": "Efekty/Powierzchnie/WaterFrozen",
+          "tag": "Ice-Surface",
           "label": "Powierzchnia: Lód",
           "children": []
         }

@@ -3,12 +3,12 @@ import type { RecipeItem, RecipeUpgrade } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { tagLabel, visibleRecipeTags } from "../domain/recipeView"
 import { tooltipItemKey } from "../domain/tooltipIdentity"
-import { pageHref } from "../routing"
+import { itemHref, type Game } from "../routing"
 
 type Props = {
   upgrades: RecipeUpgrade[]
   labels: Record<string, string>
-  game: string
+  game: Game
   showRequirements?: boolean
 }
 
@@ -23,7 +23,7 @@ function Bilingual({ en, pl }: { en: string; pl?: string }) {
   return <span class="item-lang">{en}</span>
 }
 
-function Item({ item, game }: { item: RecipeItem; game: string }) {
+function Item({ item, game }: { item: RecipeItem; game: Game }) {
   const name = item.selectorTag ? item.name.replace(/^#/, "").replaceAll("-", " ") : item.name
   const label = (
     <>
@@ -39,7 +39,7 @@ function Item({ item, game }: { item: RecipeItem; game: string }) {
           class="internal recipe-item"
           data-slug={item.slug}
           data-tooltip-key={tooltipItemKey(item)}
-          href={`${pageHref(item.slug)}?catalog=${game}`}
+          href={itemHref(game, item.slug)}
         >
           {label}
         </a>

@@ -1,3 +1,4 @@
+import { isCategoryTag, isTagWithin } from "./domain/tagTree"
 import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
 import { matchesUpgradeQuery } from "./domain/upgrades"
 import {
@@ -97,10 +98,9 @@ export function restoreFilters(game: Game, search = ""): Filters {
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
 }
 export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Record<string, string>): RecipeRow[] {
-  const tagMatch = (tags: string[], target: string) =>
-    tags.some((tag) => tag === target || tag.startsWith(target + "/"))
-  const categories = filters.include.filter((tag) => tag === "Typ" || tag.startsWith("Typ/"))
-  const traits = filters.include.filter((tag) => tag !== "Typ" && !tag.startsWith("Typ/"))
+  const tagMatch = (tags: string[], target: string) => tags.some((tag) => isTagWithin(tag, target))
+  const categories = filters.include.filter(isCategoryTag)
+  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
   return recipes.filter((recipe) => {
     const tags = recipeResultTags(recipe)
     const reqs = requirementTokens(recipe.requirements).map((value) => value.toLowerCase())
@@ -124,15 +124,15 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
   })
 }
 export function filterUpgrades(upgrades: RecipeUpgrade[], filters: Filters): RecipeUpgrade[] {
-  const related = (a: string, b: string) => a === b || a.startsWith(b + "/") || b.startsWith(a + "/")
-  const categories = filters.include.filter((tag) => tag === "Typ" || tag.startsWith("Typ/"))
-  const traits = filters.include.filter((tag) => tag !== "Typ" && !tag.startsWith("Typ/"))
+  const related = (a: string, b: string) => isTagWithin(a, b) || isTagWithin(b, a)
+  const categories = filters.include.filter(isCategoryTag)
+  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
   return upgrades.filter((upgrade) => {
     const tags = [...upgrade.targetTags, ...upgrade.tags]
     if (categories.length && !categories.some((tag) => upgrade.targetTags.some((target) => related(target, tag))))
       return false
-    if (!traits.every((tag) => upgrade.tags.some((own) => own === tag || own.startsWith(tag + "/")))) return false
-    if (filters.exclude.some((tag) => tags.some((own) => own === tag || own.startsWith(tag + "/")))) return false
+    if (!traits.every((tag) => upgrade.tags.some((own) => isTagWithin(own, tag)))) return false
+    if (filters.exclude.some((tag) => tags.some((own) => isTagWithin(own, tag)))) return false
     const reqs = requirementTokens(upgrade.requirements).map((value) => value.toLowerCase())
     if (filters.requirements.length && !filters.requirements.some((value) => reqs.includes(value.toLowerCase())))
       return false

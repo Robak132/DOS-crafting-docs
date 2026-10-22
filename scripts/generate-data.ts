@@ -6,7 +6,7 @@ import { resolveItemIcon, type ItemIconMap } from "../src/main/domain/itemIcons"
 import { buildCatalogs } from "../src/main/domain/recipeCatalog"
 import { getCatalogItemRoles } from "../src/main/domain/recipeItemRoles"
 import { catalogItems } from "../src/main/domain/recipeView"
-import { collectRecipeStats, getCechySidebarGroups, resetRecipeSources } from "../src/main/domain/recipes"
+import { collectRecipeStats, getCechySidebarGroups } from "../src/main/domain/recipes"
 import { resetLocalisationSources } from "../src/main/domain/itemLocalisation"
 import { localizeItemForCatalog } from "../src/main/domain/recipes"
 import { isPublicPage } from "../src/main/routing"
@@ -14,10 +14,9 @@ import type { PageSummary, CatalogManifest } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
 import { recipeResults } from "../src/main/domain/recipeResults"
 
-export const generatedDir = path.resolve(".generated", "build")
-export async function generateData(outputDirectory = generatedDir) {
+/** Writes `<outputDirectory>/data`; the build passes `dist`, so the catalog data lands next to the app. */
+export async function generateData(outputDirectory = "dist") {
   const started = performance.now()
-  resetRecipeSources()
   resetLocalisationSources()
   // Validate source JSON before replacing the previously generated output.
   const library = await loadLibrary()
@@ -27,8 +26,8 @@ export async function generateData(outputDirectory = generatedDir) {
   const tagLocalisation = JSON.parse(await fs.readFile("data/tagLocalisation.json", "utf8"))
   const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
   const icons: ItemIconMap = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
-  await fs.rm(outputDirectory, { recursive: true, force: true })
-  await fs.mkdir(path.join(outputDirectory, "data/pages"), { recursive: true })
+  await fs.rm(path.join(outputDirectory, "data"), { recursive: true, force: true })
+  await fs.mkdir(path.join(outputDirectory, "data"), { recursive: true })
   await fs.cp("assets/item-icons", path.join(outputDirectory, "data/icons"), { recursive: true })
   for (const game of Object.keys(catalogs) as (keyof typeof catalogs)[]) {
     const data = catalogs[game]
@@ -118,13 +117,6 @@ export async function generateData(outputDirectory = generatedDir) {
     itemPage,
     categoryPage,
   }))
-  await Promise.all(
-    pages.map(async (page) => {
-      const output = path.join(outputDirectory, "data/pages", `${page.slug}.json`)
-      await fs.mkdir(path.dirname(output), { recursive: true })
-      await fs.writeFile(output, JSON.stringify(page))
-    }),
-  )
   const manifest: CatalogManifest = {
     pages,
     itemRoles: getCatalogItemRoles(pages, catalogs),

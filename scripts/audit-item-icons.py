@@ -25,7 +25,7 @@ def main():
         'catalogs': {},
     }
     for game, mapping in icons.items():
-        catalog = json.loads((ROOT / '.generated/build/data' / f'catalog-{game}.json').read_text(encoding='utf-8'))
+        catalog = json.loads((ROOT / 'dist/data' / f'catalog-{game}.json').read_text(encoding='utf-8'))
         items, groups, upgrades = {}, set(), set()
         roles = defaultdict(set)
         for recipe in catalog['recipes']:
@@ -34,7 +34,7 @@ def main():
                 if item.get('selectorTag') or item.get('groupId'):
                     groups.add(name)
                     continue
-                if 'Typ/Ulepszenia' in item['tags']:
+                if 'Upgrades' in item['tags']:
                     upgrades.add(name)
                     continue
                 identity = key(item.get('statsId') or name)

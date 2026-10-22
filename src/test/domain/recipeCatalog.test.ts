@@ -17,9 +17,9 @@ const recipe = (name: string, category: string): RecipeRow => ({
 
 test("JSON Overhaul additions extend every base DOS2 recipe, item and tag without DOS1", () => {
   const sources = {
-    dos1: [recipe("DOS1 item", "Typ/Pancerz")],
-    dos2: [recipe("Base item", "Typ/Mikstury")],
-    "dos2-overhaul": [recipe("Mod item", "Typ/Bron")],
+    dos1: [recipe("DOS1 item", "Armour")],
+    dos2: [recipe("Base item", "Potions")],
+    "dos2-overhaul": [recipe("Mod item", "Weapons")],
   }
   const catalogs = buildCatalogs(sources, [], {})
   const base = catalogs.dos2
@@ -37,12 +37,12 @@ test("JSON Overhaul additions extend every base DOS2 recipe, item and tag withou
 })
 
 test("JSON recipe compilation refreshes translations and statistics without mutating sources", () => {
-  const source = recipe("Spirit", "Typ/Mikstury")
+  const source = recipe("Spirit", "Potions")
   source.result.namePl = "Spirytus"
   const catalogs = buildCatalogs({ dos1: [source], dos2: [source], "dos2-overhaul": [] }, [], {})
   assert.equal(catalogs.dos1.recipes[0].result.namePl, "Spirytus")
   assert.equal(catalogs.dos2.recipes[0].result.namePl, "Duch")
-  assert.equal(catalogs.dos2.tags.find((tag) => tag.tag === "Typ/Mikstury")?.count, 1)
+  assert.equal(catalogs.dos2.tags.find((tag) => tag.tag === "Potions")?.count, 1)
   assert.equal(source.result.namePl, "Spirytus")
 })
 
@@ -51,7 +51,7 @@ test("Overhaul upgrades extend the DOS2 ones and their items are localized per g
     id,
     effect: { en: "Wits" },
     target: { name: "Shield", tags: [] },
-    targetTags: ["Typ/Pancerz/Tarcze"],
+    targetTags: ["Shields"],
     tags: [],
     ingredients: [{ name: "Apple", tags: [] }],
     requirements: "",

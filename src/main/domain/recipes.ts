@@ -1,7 +1,6 @@
-import fs from "node:fs"
-import path from "node:path"
 import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
 import { isOrComboTag, requirementTokens } from "./recipeView"
+import { hierarchyLabel, tagDescendants, tagOrder, traitSections, withImpliedParents } from "./tagTree"
 
 export type RecipeItem = {
   /** Explicit game identity when inventory names are shared by distinct items. */
@@ -80,20 +79,6 @@ export type RecipeData = {
   selectors: TagStat[]
 }
 
-type TagHierarchyNode = {
-  tag: string
-  label?: string
-  children?: TagHierarchyNode[]
-}
-
-type TagHierarchyIndex = {
-  labelByTag: Map<string, string>
-  orderedTags: string[]
-}
-
-let cachedHierarchyIndex: TagHierarchyIndex | null = null
-
-/** Zgodne z historycznymi adresami i tagami — bez polskich znaków. */
 const POLISH_FOLD: Record<string, string> = {
   ą: "a",
   ć: "c",
@@ -117,65 +102,19 @@ function normalizeKey(value: string): string {
 
 export type RecipeCatalog = "dos1" | "dos2" | "dos2-overhaul"
 
-function getTagHierarchyIndex(): TagHierarchyIndex {
-  if (cachedHierarchyIndex) return cachedHierarchyIndex
-
-  const labelByTag = new Map<string, string>()
-  const orderedTags: string[] = []
-  const hierarchyPath = path.join(process.cwd(), "data", "recipeTagHierarchy.json")
-
-  try {
-    const raw = fs.readFileSync(hierarchyPath, "utf8")
-    const parsed = JSON.parse(raw) as { hierarchy?: TagHierarchyNode[] }
-    const roots = Array.isArray(parsed.hierarchy) ? parsed.hierarchy : []
-
-    const walk = (node: TagHierarchyNode) => {
-      const canonical = node.tag?.trim().replace(/^\/+|\/+$/g, "")
-      if (!canonical) return
-
-      if (node.label?.trim()) {
-        labelByTag.set(canonical, node.label.trim())
-      }
-      orderedTags.push(canonical)
-
-      const children = Array.isArray(node.children) ? node.children : []
-      children.forEach((child) => walk(child))
-    }
-
-    roots.forEach((root) => walk(root))
-  } catch {
-    // Static hierarchy file is optional during development; fallback keeps existing tags unchanged.
-  }
-
-  cachedHierarchyIndex = { labelByTag, orderedTags }
-  return cachedHierarchyIndex
-}
-
 export type CechySidebarGroup = {
   parentTag: string
   label: string
   childTags: string[]
 }
 
-/** Grupy Cechy-* z recipeTagHierarchy — do sidebara (osobne sekcje zamiast jednej listy). */
+/** Trait sections of the sidebar, in hierarchy order, with every tag below each of them. */
 export function getCechySidebarGroups(): CechySidebarGroup[] {
-  const hierarchyPath = path.join(process.cwd(), "data", "recipeTagHierarchy.json")
-  try {
-    const raw = fs.readFileSync(hierarchyPath, "utf8")
-    const parsed = JSON.parse(raw) as { hierarchy?: TagHierarchyNode[] }
-    const roots = Array.isArray(parsed.hierarchy) ? parsed.hierarchy : []
-    const descendants = (nodes: TagHierarchyNode[]): string[] =>
-      nodes.flatMap((node) => [node.tag.trim(), ...descendants(node.children ?? [])])
-    return roots
-      .filter((node) => node.tag?.startsWith("Cechy-"))
-      .map((node) => ({
-        parentTag: node.tag.trim(),
-        label: node.label?.trim() || node.tag.trim(),
-        childTags: descendants(node.children ?? []),
-      }))
-  } catch {
-    return []
-  }
+  return traitSections.map((section) => ({
+    parentTag: section.tag,
+    label: section.label?.trim() || section.tag,
+    childTags: tagDescendants(section.tag),
+  }))
 }
 
 export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog): RecipeItem {
@@ -236,10 +175,10 @@ export function collectRecipeStats(
   recipes.forEach((recipe) => {
     const itemKey = recipeResultKey(recipe)
     const resultTags = recipe.result.tags.length ? recipe.result.tags : recipe.tags
-    resultTags.forEach((tag) => addItemToStat(tagItems, tag, itemKey))
+    withImpliedParents(resultTags).forEach((tag) => addItemToStat(tagItems, tag, itemKey))
     for (const product of recipe.extraResults ?? []) {
       const productKey = `${product.slug ?? product.name}${product.quantity ? `@${product.quantity}` : ""}`
-      product.tags.forEach((tag) => addItemToStat(tagItems, tag, productKey))
+      withImpliedParents(product.tags).forEach((tag) => addItemToStat(tagItems, tag, productKey))
     }
     requirementTokens(recipe.requirements ?? "").forEach((token) => addItemToStat(requirementItems, token, itemKey))
     const seenSelectors = new Set<string>()
@@ -251,49 +190,13 @@ export function collectRecipeStats(
     })
   })
 
-  const hierarchyIndex = getTagHierarchyIndex()
-  const hierarchyOrder = hierarchyIndex.orderedTags
-  const hierarchyOrderIndex = new Map(hierarchyOrder.map((tag, index) => [tag, index]))
-  const impliedAncestorOrder = new Map<string, number>()
-  hierarchyOrder.forEach((tag, index) => {
-    const segments = tag.split("/").filter(Boolean)
-    for (let depth = 1; depth < segments.length; depth++) {
-      const ancestor = segments.slice(0, depth).join("/")
-      if (hierarchyOrderIndex.has(ancestor)) continue
-      const existing = impliedAncestorOrder.get(ancestor)
-      if (existing === undefined || index < existing) {
-        impliedAncestorOrder.set(ancestor, index)
-      }
-    }
-  })
-  const getSortOrder = (tag: string): number => {
-    const exact = hierarchyOrderIndex.get(tag)
-    if (exact !== undefined) return exact * 2
-    const implied = impliedAncestorOrder.get(tag)
-    if (implied !== undefined) return implied * 2 - 1
-    return Number.MAX_SAFE_INTEGER
-  }
-  const tagDepth = (tag: string): number => tag.split("/").filter(Boolean).length
-
   const tags: TagStat[] = [...tagItems.entries()]
-    .map(([tag, items]) => {
-      const leaf = tag.split("/").filter(Boolean).at(-1) ?? tag
-      const label =
-        hierarchyIndex.labelByTag.get(tag) ??
-        displayByNormalizedTag.get(normalizeKey(tag)) ??
-        displayByNormalizedTag.get(normalizeKey(leaf)) ??
-        leaf
-      return { tag, count: items.size, label }
-    })
-    .sort((a, b) => {
-      const orderA = getSortOrder(a.tag)
-      const orderB = getSortOrder(b.tag)
-      if (orderA !== orderB) return orderA - orderB
-      const depthA = tagDepth(a.tag)
-      const depthB = tagDepth(b.tag)
-      if (depthA !== depthB) return depthA - depthB
-      return a.tag.localeCompare(b.tag)
-    })
+    .map(([tag, items]) => ({
+      tag,
+      count: items.size,
+      label: hierarchyLabel(tag) ?? displayByNormalizedTag.get(normalizeKey(tag)) ?? tag,
+    }))
+    .sort((a, b) => tagOrder(a.tag) - tagOrder(b.tag) || a.tag.localeCompare(b.tag))
 
   const requirements: TagStat[] = [...requirementItems.entries()]
     .map(([tag, items]) => ({ tag, count: items.size }))
@@ -308,8 +211,4 @@ export function collectRecipeStats(
     .sort((a, b) => (a.label ?? a.tag).localeCompare(b.label ?? b.tag, "pl"))
 
   return { tags, requirements, selectors }
-}
-
-export function resetRecipeSources(): void {
-  cachedHierarchyIndex = null
 }

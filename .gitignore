@@ -9,5 +9,4 @@ replit.nix
 .idea/
 .pak-work
 dist/
-.generated/
 __pycache__/

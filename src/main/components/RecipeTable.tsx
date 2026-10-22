@@ -3,7 +3,7 @@ import { ItemIcon } from "./ItemIcon"
 import { tooltipItemKey } from "../domain/tooltipIdentity"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
-import { FullSlug, gameForSlug, pageHref } from "../routing"
+import { FullSlug, gameForSlug, itemHref, pageHref } from "../routing"
 import {
   groupRecipes,
   itemCraftRoleClass,
@@ -111,7 +111,7 @@ export function RecipeTable({
           class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
           data-slug={item.slug}
           data-tooltip-key={tooltipItemKey(item)}
-          href={`${pageHref(item.slug)}?catalog=${gameForSlug(catalogSlug) ?? "dos1"}`}
+          href={itemHref(gameForSlug(catalogSlug) ?? "dos1", item.slug)}
           title={title}
         >
           <ItemIcon icon={item.icon} />

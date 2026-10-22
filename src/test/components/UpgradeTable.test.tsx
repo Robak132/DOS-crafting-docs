@@ -8,8 +8,8 @@ const upgrade: RecipeUpgrade = {
   id: "air",
   effect: { en: "Air Resistance", pl: "Odporność na powietrze" },
   target: { name: "#Most-Weapons", selectorTag: "Most-Weapons", tags: [] },
-  targetTags: ["Typ/Bron"],
-  tags: ["DOS1", "Cechy/Odporność-na-powietrze"],
+  targetTags: ["Weapons"],
+  tags: ["DOS1", "Air-Resistance"],
   ingredients: [{ name: "Air Essence", namePl: "Esencja powietrza", slug: "air-essence", tags: [] }],
   requirements: "Crafting 5",
   notes: "",
@@ -25,12 +25,8 @@ test("upgrades show the effect, a plain target label and linked ingredients", ()
   )
   assert.match(html, /<span class="recipe-item">.*Most Weapons/)
   assert.ok(!html.includes("group="), "the target is not a group link")
-  assert.match(html, /href="\/air-essence\?catalog=dos1"/)
+  assert.match(html, /href="\/receptury\/air-essence"/)
   assert.ok(html.includes("Crafting 5") && html.includes("Excludes wands") && html.includes("Sheet A1"))
-  assert.match(html, /data-filter-tag="Cechy\/Odporność-na-powietrze"/)
+  assert.match(html, /data-filter-tag="Air-Resistance"/)
   assert.ok(!html.includes('data-filter-tag="DOS1"'))
-})
-
-test("an empty upgrade list says so", () => {
-  assert.match(renderToString(<UpgradeTable upgrades={[]} labels={{}} game="dos2" />), /Brak ulepszeń/)
 })

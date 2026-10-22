@@ -5,24 +5,24 @@ import { test } from "node:test"
 test("tag labels use game-localized terminology and preserve game boundaries", () => {
   const data = JSON.parse(fs.readFileSync("data/tagLocalisation.json", "utf8"))
   for (const [tag, label] of Object.entries({
-    "Cechy/Znawca": "Polihistor",
-    "Cechy/Szczęście": "Fart",
-    "Cechy/Umiejetnosci/Wojna": "Sztuka walki",
-    "Cechy/Umiejetnosci/Łowiectwo": "Myślistwo",
-    "Cechy/Umiejetnosci/Łobuz": "Szelmostwo",
-    "Cechy/Umiejetnosci/Pyrokinetyka": "Pirokineza",
-    "Typ/Pancerz/Spodnie": "Nogawice",
-    "Typ/Pancerz/Napiersniki": "Klatka piersiowa",
-    "Typ/Bron/Bulawy": "Buławy",
-    "Typ/Bron/Sztylety": "Sztylety",
+    Loremaster: "Polihistor",
+    "Lucky-Charm": "Fart",
+    Warfare: "Sztuka walki",
+    Huntsman: "Myślistwo",
+    Scoundrel: "Szelmostwo",
+    Pyrokinetic: "Pirokineza",
+    Leggings: "Nogawice",
+    "Chest-Armour": "Klatka piersiowa",
+    Maces: "Buławy",
+    Daggers: "Sztylety",
   })) {
     assert.equal(data.dos2[tag].pl, label, tag)
     assert.equal(data["dos2-overhaul"][tag].pl, label, tag)
   }
-  assert.equal(data.dos1["Cechy/Szybkość"].pl, "Prędkość")
-  assert.equal(data.dos1["Cechy/Zwinność"].pl, "Zwinność")
-  assert.equal(data.dos2["Cechy/Zręczność"].pl, "Zręczność")
-  assert.ok(!data.dos1["Cechy/Znawca"].pl, "no invented DOS1 translation")
+  assert.equal(data.dos1["Speed"].pl, "Prędkość")
+  assert.equal(data.dos1["Dexterity"].pl, "Zwinność")
+  assert.equal(data.dos2["Finesse"].pl, "Zręczność")
+  assert.ok(!data.dos1["Loremaster"].pl, "no invented DOS1 translation")
 })
 
 test("effect notes use the active game's official vocabulary", async () => {

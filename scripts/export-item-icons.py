@@ -14,7 +14,6 @@ import unicodedata
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
-from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -205,6 +204,8 @@ def combo_preview_index(directories, atlases, strings):
 def main():
     if len(sys.argv) != 2:
         raise SystemExit(__doc__)
+    from PIL import Image
+
     source = Path(sys.argv[1])
     base = {game: resources(source / game) for game in ['dos1', 'dos2', 'overhaul']}
     catalogs = ROOT / '.generated/build/data'

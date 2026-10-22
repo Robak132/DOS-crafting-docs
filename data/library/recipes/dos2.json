@@ -5318,8 +5318,9 @@
           ]
         },
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Typ",
             "Typ/Skladniki",
@@ -25650,8 +25651,9 @@
           ]
         },
         {
-          "name": "Pouch of Superior Stardust",
-          "slug": "pouch-of-superior-stardust",
+          "name": "Pouch Of Superior Star Dust",
+          "namePl": "Sakiewka znakomitego gwiezdnego pyłu",
+          "slug": "pouch-of-superior-star-dust",
           "tags": [
             "Typ",
             "Typ/Skladniki",

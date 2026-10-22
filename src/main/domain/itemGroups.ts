@@ -292,6 +292,30 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
     item.quantity ?? "",
     item.effect?.en ?? "",
   ]
+  // A localized catalog page outranks a bare alias. A slug without a numeric suffix breaks remaining ties.
+  const itemRank = (item: RecipeItem) => (item.namePl ? 2 : 0) + (item.slug && /-\d+$/.test(item.slug) ? 0 : 1)
+  const preferItem = (current: RecipeItem, incoming: RecipeItem): RecipeItem => {
+    const chosen = itemRank(incoming) > itemRank(current) ? incoming : current
+    const other = chosen === incoming ? current : incoming
+    const craftingCategories = [...new Set([...(chosen.craftingCategories ?? []), ...(other.craftingCategories ?? [])])]
+    const merged: RecipeItem = { ...chosen, tags: [...new Set([...chosen.tags, ...other.tags])] }
+    if (craftingCategories.length) merged.craftingCategories = craftingCategories
+    return merged
+  }
+  const mergeLocalizedItems = (previous: RecipeRow, row: RecipeRow) => {
+    const pool = [...row.ingredients]
+    return {
+      result: preferItem(previous.result, row.result),
+      ingredients: previous.ingredients.map((item) => {
+        const matchIndex = pool.findIndex(
+          (candidate) => JSON.stringify(itemKey(candidate)) === JSON.stringify(itemKey(item)),
+        )
+        if (matchIndex === -1) return item
+        const [match] = pool.splice(matchIndex, 1)
+        return preferItem(item, match)
+      }),
+    }
+  }
   const key = (row: RecipeRow, includeRemarks = true) =>
     JSON.stringify([
       itemKey(row.result),
@@ -318,6 +342,7 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
     if (previous) {
       const merged = {
         ...previous,
+        ...mergeLocalizedItems(previous, row),
         sourceRecipeIds: [...new Set([...(previous.sourceRecipeIds ?? [previous.id]), ...row.sourceRecipeIds])],
         source: [...new Set([previous.source, row.source].filter(Boolean))].join("; "),
         notes: [...new Set([previous.notes, row.notes].filter(Boolean))].join("\n"),
@@ -350,6 +375,7 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
     const previous = variants[index]
     variants[index] = {
       ...previous,
+      ...mergeLocalizedItems(previous, row),
       remarks: previous.remarks || row.remarks,
       tags: [...new Set([...previous.tags, ...row.tags])],
       sourceRecipeIds: [

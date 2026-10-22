@@ -4,6 +4,7 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import os from "node:os"
 import { loadLibrary } from "../../scripts/load-library"
+import { expandSmallGroups } from "../main/domain/itemGroups"
 
 async function fixture() {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-json-library-"))
@@ -223,6 +224,42 @@ test("Big Tongs Roped Together retain both DOS2 recipes and use the game recipe 
   for (const game of ["dos2", "dos2-overhaul"]) {
     assert.equal(sources[game].bigtongsropedtogether?.icon, "Item_WPN_Common_Mace_2H_B")
     assert.equal(sources[game].bigtongsropedtogether?.stats, "WPN_CraftedMace_2H_B")
+  }
+})
+
+test("source recipe files contain no duplicate ingredient combinations", async () => {
+  const { sources } = await loadLibrary()
+  for (const [game, recipes] of Object.entries(sources)) {
+    assert.equal(expandSmallGroups(recipes, {}).length, recipes.length, `${game}: deduplicate the source JSON`)
+  }
+})
+
+test("Elven Stew has one recipe preserving its effects and source", async () => {
+  const { sources } = await loadLibrary()
+  for (const recipes of [sources.dos2, [...sources.dos2, ...sources["dos2-overhaul"]]]) {
+    const stew = recipes.filter((row) => row.result.slug === "elven-stew")
+    assert.equal(stew.length, 1)
+    assert.deepEqual(
+      stew[0].ingredients.map((item) => item.name),
+      ["Dinner", "Tomato Sauce"],
+    )
+    assert.equal(stew[0].notes, "Add 10% Heal, 1 Dexterity")
+    assert.ok(stew[0].source.includes("main_sheet!A691:G691"))
+  }
+})
+
+test("Jar of Honey has one recipe using the localized Empty Honey Jar, not its Jar alias", async () => {
+  const { sources } = await loadLibrary()
+  for (const recipes of [sources.dos2, [...sources.dos2, ...sources["dos2-overhaul"]]]) {
+    const honey = recipes.filter((row) => row.result.slug === "jar-of-honey")
+    assert.equal(honey.length, 1)
+    assert.deepEqual(
+      honey[0].ingredients.map((item) => item.name),
+      ["Empty Honey Jar", "Beehive"],
+    )
+    assert.equal(honey[0].ingredients[0].namePl, "Słoik po miodzie")
+    assert.equal(honey[0].notes, "Add 5% Heal, 1 Intelligence, 15% Poison Resist")
+    assert.ok(honey[0].source.includes("main_sheet!A698:G698"))
   }
 })
 

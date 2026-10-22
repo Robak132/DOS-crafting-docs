@@ -1768,7 +1768,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "Crafting Overhaul"
+      "source": "Crafting Overhaul",
+      "sourceRecipeIds": [
+        "Stanowiska-i-pojemniki/ANVIL:Metal Scraps+Wood Chips+Sharp Rock",
+        "Stanowiska-i-pojemniki/CRAFTER'S-ANVIL:Metal Scraps+Wood Chips+Sharp Rock"
+      ]
     },
     {
       "id": "Stanowiska-i-pojemniki/ARMOR-BAG:Leather Scraps+#Glove-Armor+Crafter's Hammer",
@@ -12999,73 +13003,6 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Stanowiska-i-pojemniki/CRAFTER'S-ANVIL:Metal Scraps+Wood Chips+Sharp Rock",
-      "ingredients": [
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ]
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Crafter's Anvil",
-        "slug": "crafters-anvil",
-        "tags": [
-          "Typ",
-          "Typ/Stanowiska-i-pojemniki",
-          "DOS2-CO"
-        ],
-        "craftingCategories": [
-          "Anvil"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Stanowiska-i-pojemniki",
-        "DOS2-CO"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Crafting Overhaul"
-    },
-    {
       "id": "Stanowiska-i-pojemniki/CRAFTER'S-CAMPFIRE:Long Branch+Long Branch+Sharp Rock",
       "ingredients": [
         {
@@ -13551,86 +13488,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "Not Wood Chips!",
-      "source": "Crafting Overhaul"
-    },
-    {
-      "id": "Stanowiska-i-pojemniki/CRAFTERS'-WORKBENCH:Crafter's Hammer+Wood Pile+Nails+Nails",
-      "ingredients": [
-        {
-          "name": "Crafter's Hammer",
-          "slug": "crafters-hammer",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Bron",
-            "Typ/Bron/Bulawy",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Club",
-            "Hammer",
-            "Junk",
-            "Weapon"
-          ]
-        },
-        {
-          "name": "Wood Pile",
-          "namePl": "Stos drewna",
-          "slug": "wood-pile",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ]
-        },
-        {
-          "name": "Nails",
-          "namePl": "Gwoździe",
-          "slug": "nails",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Nails",
-          "namePl": "Gwoździe",
-          "slug": "nails",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Crafters' Workbench",
-        "slug": "crafters-workbench-2",
-        "tags": [
-          "Typ",
-          "Typ/Stanowiska-i-pojemniki",
-          "DOS2-CO"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Stanowiska-i-pojemniki",
-        "DOS2-CO"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Crafting Overhaul"
+      "source": "Crafting Overhaul",
+      "sourceRecipeIds": [
+        "Stanowiska-i-pojemniki/CRAFTER'S-WORKBENCH:Crafter's Hammer+Wood Pile+Nails+Nails",
+        "Stanowiska-i-pojemniki/CRAFTERS'-WORKBENCH:Crafter's Hammer+Wood Pile+Nails+Nails"
+      ]
     },
     {
       "id": "Barwniki/CRIMSON-DYE:Empty Vial+Guepinia Mushroom+Dye Making Machine",
@@ -16204,81 +16066,10 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "Crafting Overhaul"
-    },
-    {
-      "id": "Stanowiska-i-pojemniki/DEMON-ALTAR:Human Face+Lizard Face+Dwarven Face+Elven Face+Huge Rock",
-      "ingredients": [
-        {
-          "name": "Human Face",
-          "slug": "human-face",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Lizard Face",
-          "slug": "lizard-face",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Dwarven Face",
-          "slug": "dwarven-face",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Elven Face",
-          "slug": "elven-face",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Huge Rock",
-          "slug": "huge-rock",
-          "tags": [
-            "Typ",
-            "Typ/Stanowiska-i-pojemniki",
-            "Typ/Magia",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Rock"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Demon Altar",
-        "slug": "demon-altar",
-        "tags": [
-          "Typ",
-          "Typ/Stanowiska-i-pojemniki",
-          "Typ/Magia",
-          "DOS2-CO"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Stanowiska-i-pojemniki",
-        "Typ/Magia",
-        "DOS2-CO"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Crafting Overhaul"
+      "source": "Crafting Overhaul",
+      "sourceRecipeIds": [
+        "Stanowiska-i-pojemniki/DEMON-ALTAR:Human Face+Lizard Face+Dwarven Face+Elven Face+Huge Rock"
+      ]
     },
     {
       "id": "Skladniki/DEMON-HEART:Demon Corpse",

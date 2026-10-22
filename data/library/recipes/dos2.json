@@ -589,74 +589,13 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A664:G664"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/APPLE-PIE-DOUGH:Dough+Apple",
-      "ingredients": [
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Apple",
-          "namePl": "Jabłko",
-          "slug": "apple",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy/Odporność-na-truciznę",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Apple Pie Dough",
-        "namePl": "Ciasto na jabłecznik",
-        "slug": "apple-pie-dough",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 10% Heal -1 Speed",
       "remarks": "",
-      "source": "Patty Cake, Patty Cake III"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A664:G664; Patty Cake, Patty Cake III",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/APPLE-PIE-DOUGH:Apple+Dough",
+        "Mikstury-i-jedzenie/APPLE-PIE-DOUGH:Dough+Apple"
+      ]
     },
     {
       "id": "Skladniki/APPORTATION-SCROLL:Sheet of Paper+Alien Air Essence+Rope",
@@ -1224,68 +1163,12 @@
       ],
       "requirements": "",
       "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A144:G144"
-    },
-    {
-      "id": "Strzaly-i-granaty/ARROW:Arrowhead+Arrow Shaft",
-      "ingredients": [
-        {
-          "name": "Arrowhead",
-          "namePl": "Grot",
-          "slug": "arrowhead",
-          "tags": [
-            "Typ",
-            "Typ/Strzaly-i-granaty",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "IngredientEarly",
-            "Metal",
-            "Weapon"
-          ]
-        },
-        {
-          "name": "Arrow Shaft",
-          "namePl": "Promień strzały",
-          "slug": "arrow-shaft",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Typ/Strzaly-i-granaty",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArrowShaft",
-            "Weapon",
-            "Wood"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Arrow",
-        "namePl": "Strzała",
-        "slug": "arrow",
-        "tags": [
-          "Typ",
-          "Typ/Strzaly-i-granaty",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "ArrowShaft",
-          "Weapon"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Strzaly-i-granaty",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
       "remarks": "Serves No Function",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A144:G144",
+      "sourceRecipeIds": [
+        "Strzaly-i-granaty/ARROW:Arrow Shaft+Arrowhead",
+        "Strzaly-i-granaty/ARROW:Arrowhead+Arrow Shaft"
+      ]
     },
     {
       "id": "Skladniki/ARROWHEAD:CuttingTool+Bone@x2",
@@ -3305,63 +3188,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A99:G99"
-    },
-    {
-      "id": "Skladniki/BONEDUST:Bone+Mortar & Pestle",
-      "ingredients": [
-        {
-          "name": "Bone",
-          "namePl": "Kość",
-          "slug": "bone",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Pancerz-fizyczny",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Bone",
-            "IngredientMid"
-          ]
-        },
-        {
-          "name": "Mortar And Pestle",
-          "slug": "mortar-and-pestle",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Bonedust",
-        "namePl": "Sproszkowana kość",
-        "slug": "bonedust",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "IngredientSwamps"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Secrets of the Scroll I"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A99:G99; Secrets of the Scroll I",
+      "sourceRecipeIds": [
+        "Skladniki/BONEDUST:Bone+Mortar and Pestle",
+        "Skladniki/BONEDUST:Bone+Mortar & Pestle"
+      ]
     },
     {
       "id": "Skladniki/BONEDUST:Magic Skull+Mortar & Pestle",
@@ -3687,7 +3518,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A21:G21; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A178:G178"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A21:G21; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A178:G178",
+      "sourceRecipeIds": [
+        "Skladniki/BROKEN-BOTTLE:Hammer+Empty Bottle",
+        "Skladniki/BROKEN-BOTTLE:Empty Bottle+Hammer"
+      ]
     },
     {
       "id": "Skladniki/BROKEN-BOTTLE:Bottle of Beer+Hammer",
@@ -3868,57 +3703,6 @@
           ],
           "craftingCategories": [
             "Drink"
-          ]
-        },
-        {
-          "name": "Hammer",
-          "namePl": "Młotek",
-          "slug": "hammer",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Broken Bottle",
-        "namePl": "Stłuczona butelka",
-        "slug": "broken-bottle",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Skladniki/BROKEN-BOTTLE:Empty Bottle+Hammer",
-      "ingredients": [
-        {
-          "name": "Empty Bottle",
-          "namePl": "Pusta butelka",
-          "slug": "empty-bottle",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
           ]
         },
         {
@@ -5171,75 +4955,13 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A671:G671"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/CHEESE-BREAD-DOUGH:Dough+Cheese",
-      "ingredients": [
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Cheese",
-          "namePl": "Ser",
-          "slug": "cheese",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Kondycja",
-            "Cechy/Leczenie",
-            "Cechy/Zręczność",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cheese Bread Dough",
-        "namePl": "Ciasto na pieczywo serowe",
-        "slug": "cheese-bread-dough",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 10% Heal -1 Speed",
       "remarks": "",
-      "source": "Crafting & Cooking with Maradino; Patty Cake, Patty Cake III"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A671:G671; Crafting & Cooking with Maradino; Patty Cake, Patty Cake III",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/CHEESE-BREAD-DOUGH:Cheese+Dough",
+        "Mikstury-i-jedzenie/CHEESE-BREAD-DOUGH:Dough+Cheese"
+      ]
     },
     {
       "id": "Strzaly-i-granaty/CHEMICAL-WARFARE-GRENADE:Empty Canister+Intestines",
@@ -5626,101 +5348,12 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A23:G23"
-    },
-    {
-      "id": "Skladniki/CLOTH-SCRAPS:Bed Linen+<Cutting Tool>",
-      "ingredients": [
-        {
-          "name": "Bed Linen",
-          "namePl": "Pościel",
-          "slug": "bed-linen",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool-2",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cloth Scraps",
-        "namePl": "Skrawki materiału",
-        "slug": "cloth-scraps",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A54:G54"
-    },
-    {
-      "id": "Skladniki/CLOTH-SCRAPS:Bed Linen+Cutting Tool",
-      "ingredients": [
-        {
-          "name": "Bed Linen",
-          "namePl": "Pościel",
-          "slug": "bed-linen",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cloth Scraps",
-        "namePl": "Skrawki materiału",
-        "slug": "cloth-scraps",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A76:G76"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A23:G23; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A54:G54; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A76:G76",
+      "sourceRecipeIds": [
+        "Skladniki/CLOTH-SCRAPS:Bed Linen+CuttingTool",
+        "Skladniki/CLOTH-SCRAPS:Bed Linen+<Cutting Tool>",
+        "Skladniki/CLOTH-SCRAPS:Bed Linen+Cutting Tool"
+      ]
     },
     {
       "id": "Strzaly-i-granaty/CLUSTER-GRENADE:Empty Grenade+#Fire-Essence",
@@ -5897,68 +5530,12 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A675:G675"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/COLD-MASHED-POTATOES:Potato+Hammer",
-      "ingredients": [
-        {
-          "name": "Potato",
-          "namePl": "Ziemniak",
-          "slug": "potato",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Kondycja",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Hammer",
-          "namePl": "Młotek",
-          "slug": "hammer",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cold Mashed Potatoes",
-        "namePl": "Zimne tłuczone ziemniaki",
-        "slug": "cold-mashed-potatoes",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 5% Heal",
       "remarks": "",
-      "source": "Patty Cake, Patty Cake IV"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A675:G675; Patty Cake, Patty Cake IV",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/COLD-MASHED-POTATOES:Potato+Hammer"
+      ]
     },
     {
       "id": "Ksiegi-umiejetnosci/CONJURE-INCARNATE-SKILLBOOK:Blank Skillbook Summoning+Conjure Incarnate Scroll",
@@ -8904,75 +8481,9 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A691:G691"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/ELVEN-STEW:Dinner+Tomato Sauce",
-      "ingredients": [
-        {
-          "name": "Dinner",
-          "namePl": "Obiad",
-          "slug": "dinner",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Cechy/Leczenie",
-            "Cechy/Siła",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Tomato Sauce",
-          "namePl": "Sos pomidorowy",
-          "slug": "tomato-sauce",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy/Odporność-na-truciznę",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Elven Stew",
-        "namePl": "Elfi gulasz",
-        "slug": "elven-stew",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Zręczność",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Zręczność",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 10% Heal, 1 Dexterity",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A691:G691"
     },
     {
       "id": "Skladniki/EPIDEMIC-OF-FIRE-SCROLL:Sheet of Paper+Source Orb+Large Tusk",
@@ -11113,63 +10624,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A694:G694"
-    },
-    {
-      "id": "Skladniki/FLOUR:Wheat+Mortar & Pestle",
-      "ingredients": [
-        {
-          "name": "Wheat",
-          "namePl": "Pszenica",
-          "slug": "wheat",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food",
-            "Junk"
-          ]
-        },
-        {
-          "name": "Mortar And Pestle",
-          "slug": "mortar-and-pestle",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Flour",
-        "namePl": "Mąka",
-        "slug": "flour",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Patty Cake, Patty Cake II"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A694:G694; Patty Cake, Patty Cake II",
+      "sourceRecipeIds": [
+        "Skladniki/FLOUR:Wheat+Mortar and Pestle",
+        "Skladniki/FLOUR:Wheat+Mortar & Pestle"
+      ]
     },
     {
       "id": "Ksiegi-umiejetnosci/FORCED-EXCHANGE-SKILLBOOK:High Tier Blank Polymorph Skillbook+Forced Exchange Scroll",
@@ -16778,63 +16237,9 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A698:G698"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/JAR-OF-HONEY:Jar+Beehive",
-      "ingredients": [
-        {
-          "name": "Jar",
-          "slug": "jar",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Beehive",
-          "namePl": "Ul",
-          "slug": "beehive",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Jar of Honey",
-        "namePl": "Słój miodu",
-        "slug": "jar-of-honey",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Inteligencja",
-          "Cechy/Leczenie",
-          "Cechy/Odporność-na-truciznę",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Inteligencja",
-        "Cechy/Leczenie",
-        "Cechy/Odporność-na-truciznę",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 5% Heal, 1 Intelligence, 15% Poison Resist",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A698:G698"
     },
     {
       "id": "Bron/KNIFE-ON-A-STICK:Short Stick+Dagger+Rope",
@@ -22844,77 +22249,13 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A703:G703"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/MILK-AND-HONEY:Milk+Jar of Honey",
-      "ingredients": [
-        {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
-          ]
-        },
-        {
-          "name": "Jar of Honey",
-          "namePl": "Słój miodu",
-          "slug": "jar-of-honey",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Cechy/Inteligencja",
-            "Cechy/Leczenie",
-            "Cechy/Odporność-na-truciznę",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Milk and Honey",
-        "namePl": "Mleko i miód",
-        "slug": "milk-and-honey",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Odporność-na-truciznę",
-          "Efekty/Statusy/WARM",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Drink"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Odporność-na-truciznę",
-        "Efekty/Statusy/WARM",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 15% Heal, 20% Poison Resist 100% Warm chance",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A703:G703",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/MILK-AND-HONEY:Jar of Honey+Milk",
+        "Mikstury-i-jedzenie/MILK-AND-HONEY:Milk+Jar of Honey"
+      ]
     },
     {
       "id": "Strzaly-i-granaty/MINDMAGGOTS-GRENADE:Empty Grenade+Jar of MindMaggots",
@@ -23579,72 +22920,13 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A707:G707"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/MUG-OF-TEA:Mug of Water+Tea Herbs",
-      "ingredients": [
-        {
-          "name": "Mug of Water",
-          "namePl": "Kubek wody",
-          "slug": "mug-of-water",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
-          ]
-        },
-        {
-          "name": "Tea Herbs",
-          "namePl": "Liście herbaty",
-          "slug": "tea-herbs",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food",
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mug of Tea",
-        "namePl": "Kubek herbaty",
-        "slug": "mug-of-tea",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Drink"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add Heal 5%",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A707:G707",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/MUG-OF-TEA:Tea Herbs+Mug of Water",
+        "Mikstury-i-jedzenie/MUG-OF-TEA:Mug of Water+Tea Herbs"
+      ]
     },
     {
       "id": "Skladniki/MUG-OF-WATER:Empty Mug+Water",
@@ -24934,74 +24216,13 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A712:G712"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/PIZZA-DOUGH:Dough+Tomato Sauce",
-      "ingredients": [
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Tomato Sauce",
-          "namePl": "Sos pomidorowy",
-          "slug": "tomato-sauce",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy/Odporność-na-truciznę",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Pizza Dough",
-        "namePl": "Ciasto na pizzę",
-        "slug": "pizza-dough",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 10% Heal -1 Speed",
       "remarks": "",
-      "source": "Crafting & Cooking with Maradino; Patty Cake, Patty Cake III"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A712:G712; Crafting & Cooking with Maradino; Patty Cake, Patty Cake III",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/PIZZA-DOUGH:Tomato Sauce+Dough",
+        "Mikstury-i-jedzenie/PIZZA-DOUGH:Dough+Tomato Sauce"
+      ]
     },
     {
       "id": "Skladniki/PLANAR-GATEWAY-SCROLL:Sheet of Paper+Source Orb+Grapes",
@@ -26057,75 +25278,12 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A715:G715"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/POTATO-PORRIDGE:Potato+Milk",
-      "ingredients": [
-        {
-          "name": "Potato",
-          "namePl": "Ziemniak",
-          "slug": "potato",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Kondycja",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
-          "tags": [
-            "Typ",
-            "Typ/Mikstury-i-jedzenie",
-            "Typ/Skladniki",
-            "Cechy/Leczenie",
-            "Cechy",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Potato Porridge",
-        "namePl": "Kleik ziemniaczany",
-        "slug": "potato-porridge",
-        "tags": [
-          "Typ",
-          "Typ/Mikstury-i-jedzenie",
-          "Cechy/Leczenie",
-          "Cechy/Siła",
-          "Cechy",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Mikstury-i-jedzenie",
-        "Cechy/Leczenie",
-        "Cechy/Siła",
-        "Cechy",
-        "DOS2"
-      ],
-      "requirements": "",
       "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A715:G715",
+      "sourceRecipeIds": [
+        "Mikstury-i-jedzenie/POTATO-PORRIDGE:Potato+Milk"
+      ]
     },
     {
       "id": "Mikstury-i-jedzenie/POTION-OF-JELLYFISH-SKIN:Empty Potion Bottle+#Air-Essence",
@@ -26520,55 +25678,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A20:G20"
-    },
-    {
-      "id": "Skladniki/POUCH-OF-SUPERIOR-PIXIE-DUST:Bonedust+Pouch Of Superior Star Dust",
-      "ingredients": [
-        {
-          "name": "Bonedust",
-          "namePl": "Sproszkowana kość",
-          "slug": "bonedust",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "IngredientSwamps"
-          ]
-        },
-        {
-          "name": "Pouch Of Superior Star Dust",
-          "namePl": "Sakiewka znakomitego gwiezdnego pyłu",
-          "slug": "pouch-of-superior-star-dust",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "Typ/Magia",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Pouch of Superior Pixie Dust",
-        "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
-        "slug": "pouch-of-superior-pixie-dust",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A103:G103"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A20:G20; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A103:G103",
+      "sourceRecipeIds": [
+        "Skladniki/POUCH-OF-SUPERIOR-PIXIE-DUST:Bonedust+Pouch of Superior Stardust",
+        "Skladniki/POUCH-OF-SUPERIOR-PIXIE-DUST:Bonedust+Pouch Of Superior Star Dust"
+      ]
     },
     {
       "id": "Magia/POUCH-OF-SUPERIOR-STAR-DUST:Superior Stardust Herb+Mortar and Pestle",
@@ -26618,56 +25732,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A102:G102"
-    },
-    {
-      "id": "Skladniki/POUCH-OF-SUPERIOR-STARDUST:Superior Stardust Herb+Mortar and Pestle",
-      "ingredients": [
-        {
-          "name": "Superior Stardust Herb",
-          "namePl": "Znakomite gwiezdne ziele",
-          "slug": "superior-stardust-herb",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Mortar and Pestle",
-          "namePl": "Moździerz i tłuczek",
-          "slug": "mortar-and-pestle-2",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Pouch of Superior Stardust",
-        "slug": "pouch-of-superior-stardust",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "Typ/Magia",
-          "DOS2"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "Typ/Magia",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A18:G18"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A102:G102; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A18:G18",
+      "sourceRecipeIds": [
+        "Magia/POUCH-OF-SUPERIOR-STAR-DUST:Superior Stardust Herb+Mortar and Pestle",
+        "Skladniki/POUCH-OF-SUPERIOR-STARDUST:Superior Stardust Herb+Mortar and Pestle"
+      ]
     },
     {
       "id": "Ksiegi-umiejetnosci/POWER-INFUSION-SKILLBOOK:Blank Skillbook Summoning+Power Infusion Scroll",
@@ -28751,58 +27820,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A33:G33"
-    },
-    {
-      "id": "Skladniki/ROPE:Yarn Wool+Yarn Wool",
-      "ingredients": [
-        {
-          "name": "Yarn",
-          "slug": "yarn",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Yarn",
-          "slug": "yarn",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Rope",
-        "namePl": "Lina",
-        "slug": "rope",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A75:G75"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A33:G33; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A75:G75",
+      "sourceRecipeIds": [
+        "Skladniki/ROPE:Yarn+Yarn",
+        "Skladniki/ROPE:Yarn Wool+Yarn Wool"
+      ]
     },
     {
       "id": "Skladniki/SEARING-DAGGERS-SCROLL:Sheet of Paper+#Fire-Essence+Tooth",
@@ -32049,61 +31071,11 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A17:G17; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A100:G100"
-    },
-    {
-      "id": "Skladniki/STARDUST:Stardust Herb+Mortar & Pestle",
-      "ingredients": [
-        {
-          "name": "Stardust Herb",
-          "namePl": "Gwiezdne ziele",
-          "slug": "stardust-herb",
-          "tags": [
-            "Typ",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Herbs",
-            "IngredientSwamps"
-          ]
-        },
-        {
-          "name": "Mortar And Pestle",
-          "slug": "mortar-and-pestle",
-          "tags": [
-            "Typ",
-            "Typ/Narzedzia",
-            "Typ/Skladniki",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Stardust",
-        "namePl": "Gwiezdny pył",
-        "slug": "stardust",
-        "tags": [
-          "Typ",
-          "Typ/Skladniki",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "IngredientSwamps"
-        ]
-      },
-      "tags": [
-        "Typ",
-        "Typ/Skladniki",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Secrets of the Scroll II"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A17:G17; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A100:G100; Secrets of the Scroll II",
+      "sourceRecipeIds": [
+        "Skladniki/STARDUST:Stardust Herb+Mortar and Pestle",
+        "Skladniki/STARDUST:Stardust Herb+Mortar & Pestle"
+      ]
     },
     {
       "id": "Strzaly-i-granaty/STATIC-CLOUD-ARROW:Arrow Shaft+Static Cloud Arrowhead",

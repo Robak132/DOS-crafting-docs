@@ -166,6 +166,88 @@ test("expanded alternatives reuse an existing concrete recipe without duplicate 
   }
 })
 
+test("ingredient order does not duplicate concrete recipes or lose quantities, effects and sources", () => {
+  const first = {
+    ...row(item("Pizza Dough"), [item("Dough", { quantity: "x2" }), item("Tomato Sauce")]),
+    id: "first",
+    source: "First source",
+  }
+  const second = {
+    ...first,
+    id: "second",
+    ingredients: [...first.ingredients].reverse(),
+    source: "Second source",
+    notes: "Heal",
+    tags: ["Food"],
+  }
+  const before = structuredClone([first, second])
+  const result = expandSmallGroups([first, second], {})
+  assert.equal(result.length, 1)
+  assert.deepEqual(result[0].ingredients, first.ingredients)
+  assert.deepEqual(result[0].sourceRecipeIds, ["first", "second"])
+  assert.equal(result[0].source, "First source; Second source")
+  assert.equal(result[0].notes, "Heal")
+  assert.ok(result[0].tags.includes("Food"))
+  assert.deepEqual(expandSmallGroups(result, {}), result)
+  assert.deepEqual([first, second], before)
+})
+
+test("deduplication preserves distinct identities, effects, quantities, selectors and instructions", () => {
+  const base = row(item("Potion"), [item("Water"), item("Herb")])
+  const variants = [
+    base,
+    { ...base, result: { ...base.result, statsId: "Poison" } },
+    { ...base, result: { ...base.result, effect: { en: "Poisoned" } } },
+    { ...base, result: { ...base.result, quantity: "x2" } },
+    { ...base, ingredients: [item("Water", { quantity: "x2" }), item("Herb")] },
+    { ...base, ingredients: [item("Water"), item("Herb", { statsId: "OtherHerb" })] },
+    { ...base, ingredients: [item("Water"), item("Herb", { selectorTag: "Herb" })] },
+    { ...base, ingredients: [item("Water"), item("Herb"), item("Herb")] },
+    { ...base, requirements: "Crafting 2" },
+    { ...base, transformsIngredient: 0, notes: "Heal" },
+    { ...base, transformsIngredient: 1, notes: "Heal" },
+  ]
+  assert.equal(expandSmallGroups(variants, {}).length, variants.length)
+})
+
+test("a missing remark does not duplicate a recipe but conflicting instructions remain separate", () => {
+  const base = { ...row(item("Arrow"), [item("Arrowhead"), item("Arrow Shaft")]), id: "base" }
+  const annotated = {
+    ...base,
+    id: "annotated",
+    ingredients: [...base.ingredients].reverse(),
+    remarks: "Serves No Function",
+  }
+  for (const recipes of [
+    [base, annotated],
+    [annotated, base],
+  ]) {
+    const result = expandSmallGroups(recipes, {})
+    assert.equal(result.length, 1)
+    assert.equal(result[0].remarks, annotated.remarks)
+    assert.deepEqual(new Set(result[0].sourceRecipeIds), new Set(["base", "annotated"]))
+    assert.deepEqual(expandSmallGroups(result, {}), result)
+  }
+  const conflicting = { ...annotated, id: "conflicting", remarks: "Use a furnace" }
+  const result = expandSmallGroups([base, annotated, conflicting], {})
+  assert.equal(result.length, 2)
+  assert.deepEqual(
+    result.map((row) => row.remarks),
+    ["Serves No Function", "Use a furnace"],
+  )
+  assert.equal(base.remarks, "")
+})
+
+test("ingredient reordering preserves the identity of an ingredient modified in place", () => {
+  const first = {
+    ...row(item("Sword"), [item("Sword"), item("Oil")]),
+    transformsIngredient: 0,
+    notes: "Fire damage",
+  }
+  const reversed = { ...first, ingredients: [...first.ingredients].reverse(), transformsIngredient: 1 }
+  assert.equal(expandSmallGroups([first, reversed], {}).length, 1)
+})
+
 test("approved material categories keep the correct slot and material", () => {
   const match = groupMatcher(item("Light Boots", { selectorTag: "BootsLeather" }))!
   assert.equal(match(item("Leather Boots")), true)

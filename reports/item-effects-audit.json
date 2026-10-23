@@ -20070,8 +20070,7 @@
               },
               "effect_tags": [
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -20136,8 +20135,7 @@
               },
               "effect_tags": [
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -34922,7 +34920,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Persuasion",
                 "Wits",
                 "Skill-Schools",
@@ -37216,8 +37214,7 @@
               "effect_tags": [
                 "Piercing-Resistance",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -37347,8 +37344,7 @@
                 "Initiative",
                 "Piercing-Resistance",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -37390,8 +37386,7 @@
               "effect_tags": [
                 "Physical-Resistance",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -37430,8 +37425,7 @@
                 "Rune-Slots",
                 "Piercing-Resistance",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "tag_labels": {
                 "Rune-Slots": "Gniazda run"
@@ -37808,7 +37802,7 @@
                 "Water-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Dodge"
               ],
@@ -39230,7 +39224,7 @@
                 "Memory",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Telekinesis"
               ],
               "tag_labels": {
@@ -45777,7 +45771,7 @@
                 "Memory",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits",
                 "Telekinesis"
               ],
@@ -48597,7 +48591,7 @@
                 "Earth-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Skill-Schools",
                 "Summoning",
@@ -49267,8 +49261,7 @@
               },
               "effect_tags": [
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -49333,8 +49326,7 @@
               },
               "effect_tags": [
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -53555,7 +53547,7 @@
                 "Earth-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits"
               ],
               "tag_labels": {
@@ -56236,7 +56228,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Wits",
                 "Loremaster"
@@ -56614,7 +56606,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Wits",
                 "Skill-Schools",
@@ -57904,7 +57896,7 @@
                 "Fire-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Dodge"
               ],
               "type_tags": [
@@ -66960,7 +66952,7 @@
                 "Critical-Chance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits",
                 "Grants-Skill"
               ],
@@ -67077,7 +67069,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits",
                 "Dodge",
                 "Loremaster"
@@ -70193,7 +70185,7 @@
                 "Poison-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Wits",
                 "Skill-Schools",
@@ -70976,7 +70968,7 @@
                 "Piercing-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Wits",
                 "Skill-Schools",
@@ -71551,7 +71543,7 @@
                 "Piercing-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Dodge"
               ],
@@ -71646,7 +71638,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits",
                 "Thievery"
               ],
@@ -71689,7 +71681,7 @@
                 "Critical-Chance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Persuasion",
                 "Wits",
                 "Skill-Schools",
@@ -71741,8 +71733,7 @@
               "effect_tags": [
                 "Accuracy",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -71784,7 +71775,7 @@
                 "Piercing-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Skill-Schools",
                 "Huntsman",
                 "Finesse"
@@ -71940,7 +71931,7 @@
                 "Piercing-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Sneaking",
                 "Dodge"
               ],
@@ -72033,7 +72024,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits",
                 "Thievery"
               ],
@@ -72074,7 +72065,7 @@
                 "Critical-Chance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Persuasion",
                 "Wits",
                 "Skill-Schools",
@@ -72122,8 +72113,7 @@
               "effect_tags": [
                 "Accuracy",
                 "Physical-Armour",
-                "Magic-Armour",
-                "Balanced-Armour"
+                "Magic-Armour"
               ],
               "type_tags": [
                 "Armour",
@@ -72165,7 +72155,7 @@
                 "Piercing-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Skill-Schools",
                 "Scoundrel",
                 "Finesse"
@@ -75326,7 +75316,7 @@
                 "Initiative",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Wits"
               ],
               "tag_labels": {
@@ -75440,7 +75430,7 @@
                 "Earth-Resistance",
                 "Physical-Armour",
                 "Magic-Armour",
-                "Balanced-Armour",
+
                 "Dodge",
                 "Grants-Skill",
                 "Loremaster",

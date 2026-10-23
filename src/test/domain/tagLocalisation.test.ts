@@ -12,7 +12,7 @@ test("tag labels use game-localized terminology and preserve game boundaries", (
     Scoundrel: "Szelmostwo",
     Pyrokinetic: "Pirokineza",
     Leggings: "Nogawice",
-    "Chest-Armour": "Klatka piersiowa",
+    "Chest-Armour": "Napierśnik",
     Maces: "Buławy",
     Daggers: "Sztylety",
   })) {

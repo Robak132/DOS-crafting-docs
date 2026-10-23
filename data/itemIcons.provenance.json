@@ -4871,6 +4871,17 @@
         1152
       ]
     },
+    "beerbarrel": {
+      "name": "Beer Barrel",
+      "icon": "Item_FUR_Bar_Barrel_A_Beer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        768,
+        960,
+        832
+      ]
+    },
     "belt": {
       "name": "Belt",
       "icon": "Item_ARM_Leather_Belt_A",
@@ -5928,6 +5939,17 @@
         768
       ]
     },
+    "cupofoil": {
+      "name": "Cup of Oil",
+      "icon": "Item_CON_Drink_Cup_A_Black",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1856,
+        448,
+        1920,
+        512
+      ]
+    },
     "cupoftea": {
       "name": "Cup of Tea",
       "icon": "Itemt_CON_Drink_Cup_A_Tea",
@@ -6623,6 +6645,19 @@
         896
       ]
     },
+    "expensivewine": {
+      "name": "Expensive Wine",
+      "icon": "Item_CON_Drink_Bottle_Wine_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1600,
+        832,
+        1664,
+        896
+      ],
+      "stats": "CON_Drink_Bottle_Wine_A_Expensive",
+      "localizationKey": "CON_Drink_Bottle_Wine_A_Expensive"
+    },
     "explosivearrow": {
       "name": "Explosive Arrow",
       "icon": "Item_WPN_Arrow_Explosive_A",
@@ -6655,6 +6690,19 @@
         448,
         1024
       ]
+    },
+    "fancybottleofbeer": {
+      "name": "Fancy Bottle of Beer",
+      "icon": "Item_CON_Drink_Bottle_Beer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "stats": "CON_Drink_Bottle_Beer_A_Fancy",
+      "localizationKey": "CON_Drink_Bottle_Beer_A_Fancy"
     },
     "fancyfeather": {
       "name": "Fancy Feather",
@@ -7132,6 +7180,50 @@
         576
       ]
     },
+    "giantflamerune": {
+      "name": "Giant Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        320,
+        768,
+        384
+      ]
+    },
+    "giantflameruneofpower": {
+      "name": "Giant Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        192,
+        960,
+        256
+      ]
+    },
+    "giantfrostrune": {
+      "name": "Giant Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        320,
+        64,
+        384
+      ]
+    },
+    "giantfrostruneofpower": {
+      "name": "Giant Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        192,
+        192,
+        256
+      ]
+    },
     "gianthealingpotion": {
       "name": "Giant Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Giant",
@@ -7143,6 +7235,28 @@
         1088
       ]
     },
+    "giantmasterworkrune": {
+      "name": "Giant Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        256,
+        576,
+        320
+      ]
+    },
+    "giantmasterworkruneofpower": {
+      "name": "Giant Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        0,
+        192,
+        64
+      ]
+    },
     "giantpoisonvial": {
       "name": "Giant Poison Vial",
       "icon": "Item_CON_PotionII_A_Green_Giant",
@@ -7152,6 +7266,72 @@
         1024,
         1280,
         1088
+      ]
+    },
+    "giantrockrune": {
+      "name": "Giant Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ]
+    },
+    "giantrockruneofpower": {
+      "name": "Giant Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        64,
+        768,
+        128
+      ]
+    },
+    "giantthunderrune": {
+      "name": "Giant Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        320,
+        512,
+        384
+      ]
+    },
+    "giantthunderruneofpower": {
+      "name": "Giant Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        128,
+        448,
+        192
+      ]
+    },
+    "giantvenomrune": {
+      "name": "Giant Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        256,
+        768,
+        320
+      ]
+    },
+    "giantvenomruneofpower": {
+      "name": "Giant Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        0,
+        960,
+        64
       ]
     },
     "giblets": {
@@ -8122,6 +8302,50 @@
         512
       ]
     },
+    "largeflamerune": {
+      "name": "Large Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        320,
+        832,
+        384
+      ]
+    },
+    "largeflameruneofpower": {
+      "name": "Large Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        256,
+        128,
+        320
+      ]
+    },
+    "largefrostrune": {
+      "name": "Large Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ]
+    },
+    "largefrostruneofpower": {
+      "name": "Large Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        192,
+        384,
+        256
+      ]
+    },
     "largemagicarmourpotion": {
       "name": "Large Magic Armour Potion",
       "icon": "Item_CON_PotionII_A_Blue_Huge",
@@ -8131,6 +8355,28 @@
         576,
         640,
         640
+      ]
+    },
+    "largemasterworkrune": {
+      "name": "Large Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        256,
+        640,
+        320
+      ]
+    },
+    "largemasterworkruneofpower": {
+      "name": "Large Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        0,
+        384,
+        64
       ]
     },
     "largephysicalarmourpotion": {
@@ -8168,6 +8414,50 @@
       "stats": "POTION_Large_ResistAll_Potion",
       "localizationKey": "POTION_Large_ResistAll_Potion"
     },
+    "largerockrune": {
+      "name": "Large Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        320,
+        448,
+        384
+      ]
+    },
+    "largerockruneofpower": {
+      "name": "Large Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        64,
+        896,
+        128
+      ]
+    },
+    "largethunderrune": {
+      "name": "Large Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        320,
+        576,
+        384
+      ]
+    },
+    "largethunderruneofpower": {
+      "name": "Large Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        128,
+        640,
+        192
+      ]
+    },
     "largetusk": {
       "name": "Large Tusk",
       "icon": "Item_LOOT_Tusk_A",
@@ -8180,6 +8470,28 @@
       ],
       "stats": "LOOT_Tusk_A_Large",
       "localizationKey": "LOOT_Tusk_A_Large"
+    },
+    "largevenomrune": {
+      "name": "Large Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        256,
+        832,
+        320
+      ]
+    },
+    "largevenomruneofpower": {
+      "name": "Large Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        64,
+        128,
+        128
+      ]
     },
     "largewaterresistancepotion": {
       "name": "Large Water Resistance Potion",
@@ -8475,6 +8787,50 @@
         512
       ]
     },
+    "mediumflamerune": {
+      "name": "Medium Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        320,
+        896,
+        384
+      ]
+    },
+    "mediumflameruneofpower": {
+      "name": "Medium Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        256,
+        320,
+        320
+      ]
+    },
+    "mediumfrostrune": {
+      "name": "Medium Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        320,
+        704,
+        384
+      ]
+    },
+    "mediumfrostruneofpower": {
+      "name": "Medium Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        192,
+        576,
+        256
+      ]
+    },
     "mediumhealingpotion": {
       "name": "Medium Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Medium",
@@ -8495,6 +8851,28 @@
         448,
         320,
         512
+      ]
+    },
+    "mediummasterworkrune": {
+      "name": "Medium Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        256,
+        704,
+        320
+      ]
+    },
+    "mediummasterworkruneofpower": {
+      "name": "Medium Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        0,
+        576,
+        64
       ]
     },
     "mediumphysicalarmourpotion": {
@@ -8531,6 +8909,72 @@
       ],
       "stats": "POTION_Medium_ResistAll_Potion",
       "localizationKey": "POTION_Medium_ResistAll_Potion"
+    },
+    "mediumrockrune": {
+      "name": "Medium Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        320,
+        320,
+        384
+      ]
+    },
+    "mediumrockruneofpower": {
+      "name": "Medium Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        128,
+        64,
+        192
+      ]
+    },
+    "mediumthunderrune": {
+      "name": "Medium Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        320,
+        256,
+        384
+      ]
+    },
+    "mediumthunderruneofpower": {
+      "name": "Medium Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        128,
+        832,
+        192
+      ]
+    },
+    "mediumvenomrune": {
+      "name": "Medium Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        256,
+        896,
+        320
+      ]
+    },
+    "mediumvenomruneofpower": {
+      "name": "Medium Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        64,
+        320,
+        128
+      ]
     },
     "mediumwaterresistancepotion": {
       "name": "Medium Water Resistance Potion",
@@ -8835,6 +9279,215 @@
         576
       ]
     },
+    "mugofwine": {
+      "name": "Mug of Wine",
+      "icon": "Item_CON_Drink_Mug_A_Red",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        640,
+        512,
+        704,
+        576
+      ]
+    },
+    "mysticalgiantflamerune": {
+      "name": "Mystical Giant Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        192,
+        832,
+        256
+      ]
+    },
+    "mysticalgiantfrostrune": {
+      "name": "Mystical Giant Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        192,
+        64,
+        256
+      ]
+    },
+    "mysticalgiantmasterworkrune": {
+      "name": "Mystical Giant Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    "mysticalgiantrockrune": {
+      "name": "Mystical Giant Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        64,
+        704,
+        128
+      ]
+    },
+    "mysticalgiantthunderrune": {
+      "name": "Mystical Giant Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        128,
+        320,
+        192
+      ]
+    },
+    "mysticalgiantvenomrune": {
+      "name": "Mystical Giant Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        0,
+        832,
+        64
+      ]
+    },
+    "mysticallargeflamerune": {
+      "name": "Mystical Large Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        192,
+        1024,
+        256
+      ]
+    },
+    "mysticallargefrostrune": {
+      "name": "Mystical Large Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ]
+    },
+    "mysticallargemasterworkrune": {
+      "name": "Mystical Large Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        0,
+        256,
+        64
+      ]
+    },
+    "mysticallargerockrune": {
+      "name": "Mystical Large Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        64,
+        832,
+        128
+      ]
+    },
+    "mysticallargethunderrune": {
+      "name": "Mystical Large Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        128,
+        512,
+        192
+      ]
+    },
+    "mysticallargevenomrune": {
+      "name": "Mystical Large Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        0,
+        1024,
+        64
+      ]
+    },
+    "mysticalmediumflamerune": {
+      "name": "Mystical Medium Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        256,
+        192,
+        320
+      ]
+    },
+    "mysticalmediumfrostrune": {
+      "name": "Mystical Medium Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        192,
+        448,
+        256
+      ]
+    },
+    "mysticalmediummasterworkrune": {
+      "name": "Mystical Medium Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        0,
+        448,
+        64
+      ]
+    },
+    "mysticalmediumrockrune": {
+      "name": "Mystical Medium Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        64,
+        960,
+        128
+      ]
+    },
+    "mysticalmediumthunderrune": {
+      "name": "Mystical Medium Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        128,
+        704,
+        192
+      ]
+    },
+    "mysticalmediumvenomrune": {
+      "name": "Mystical Medium Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        64,
+        192,
+        128
+      ]
+    },
     "mysticalruneframe": {
       "name": "Mystical Rune Frame",
       "icon": "Item_LOOT_Rune_Frame_Mystic",
@@ -8844,6 +9497,72 @@
         384,
         64,
         448
+      ]
+    },
+    "mysticalsmallflamerune": {
+      "name": "Mystical Small Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        256,
+        384,
+        320
+      ]
+    },
+    "mysticalsmallfrostrune": {
+      "name": "Mystical Small Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        192,
+        640,
+        256
+      ]
+    },
+    "mysticalsmallmasterworkrune": {
+      "name": "Mystical Small Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        0,
+        768,
+        64
+      ]
+    },
+    "mysticalsmallrockrune": {
+      "name": "Mystical Small Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        128,
+        128,
+        192
+      ]
+    },
+    "mysticalsmallthunderrune": {
+      "name": "Mystical Small Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        128,
+        896,
+        192
+      ]
+    },
+    "mysticalsmallvenomrune": {
+      "name": "Mystical Small Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        64,
+        384,
+        128
       ]
     },
     "nailbombgrenade": {
@@ -10242,6 +10961,17 @@
         384
       ]
     },
+    "smallflameruneofpower": {
+      "name": "Small Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        256,
+        512,
+        320
+      ]
+    },
     "smallfrostrune": {
       "name": "Small Frost Rune",
       "icon": "Item_LOOT_Rune_Frost_Small",
@@ -10251,6 +10981,17 @@
         320,
         1024,
         384
+      ]
+    },
+    "smallfrostruneofpower": {
+      "name": "Small Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        192,
+        768,
+        256
       ]
     },
     "smallmagicarmourpotion": {
@@ -10275,6 +11016,17 @@
         320
       ]
     },
+    "smallmasterworkruneofpower": {
+      "name": "Small Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        0,
+        704,
+        64
+      ]
+    },
     "smallpoisonbottle": {
       "name": "Small Poison Bottle",
       "icon": "Item_CON_PotionII_A_Green_Small",
@@ -10297,6 +11049,17 @@
         384
       ]
     },
+    "smallrockruneofpower": {
+      "name": "Small Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        128,
+        256,
+        192
+      ]
+    },
     "smallthunderrune": {
       "name": "Small Thunder Rune",
       "icon": "Item_LOOT_Rune_Thunder_Small",
@@ -10308,6 +11071,17 @@
         384
       ]
     },
+    "smallthunderruneofpower": {
+      "name": "Small Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        128,
+        1024,
+        192
+      ]
+    },
     "smallvenomrune": {
       "name": "Small Venom Rune",
       "icon": "Item_LOOT_Rune_Venom_Small",
@@ -10317,6 +11091,17 @@
         256,
         1024,
         320
+      ]
+    },
+    "smallvenomruneofpower": {
+      "name": "Small Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        64,
+        512,
+        128
       ]
     },
     "smokescreenarrow": {
@@ -12429,6 +13214,28 @@
         896
       ]
     },
+    "backlashscroll": {
+      "name": "Backlash Scroll",
+      "icon": "Scroll_Rogue_Backlash",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1792,
+        384,
+        1856,
+        448
+      ]
+    },
+    "backlashskillbook": {
+      "name": "Backlash Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
+    },
     "baconoflife": {
       "name": "Bacon of Life",
       "icon": "Item_CON_Food_RoastedPork_B",
@@ -12438,6 +13245,28 @@
         1600,
         768,
         1664
+      ]
+    },
+    "barragescroll": {
+      "name": "Barrage Scroll",
+      "icon": "Item_SCROLL_Hunting_Barrage",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        128,
+        320,
+        192,
+        384
+      ]
+    },
+    "barrageskillbook": {
+      "name": "Barrage Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
       ]
     },
     "barrel": {
@@ -12473,6 +13302,50 @@
         832,
         1024,
         896
+      ]
+    },
+    "batteringramscroll": {
+      "name": "Battering Ram Scroll",
+      "icon": "Item_SCROLL_Warrior_BatteringRam",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        128,
+        448,
+        192,
+        512
+      ]
+    },
+    "batteringramskillbook": {
+      "name": "Battering Ram Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
+    "battlestompscroll": {
+      "name": "Battle Stomp Scroll",
+      "icon": "Item_SCROLL_Warrior_GroundSmash",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        448,
+        448,
+        512,
+        512
+      ]
+    },
+    "battlestompskillbook": {
+      "name": "Battle Stomp Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
       ]
     },
     "bead": {
@@ -12580,6 +13453,17 @@
       ],
       "stats": "FARM_Beehive_A",
       "localizationKey": "FARM_Beehive_A"
+    },
+    "beerbarrel": {
+      "name": "Beer Barrel",
+      "icon": "Item_FUR_Bar_Barrel_A_Beer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        768,
+        960,
+        832
+      ]
     },
     "beetlewings": {
       "name": "Beetle Wings",
@@ -13212,6 +14096,28 @@
         768
       ]
     },
+    "blitzattackscroll": {
+      "name": "Blitz Attack Scroll",
+      "icon": "Item_SCROLL_Warrior_BlinkStrike",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        960,
+        384,
+        1024,
+        448
+      ]
+    },
+    "blitzattackskillbook": {
+      "name": "Blitz Attack Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "bloodrainskillbook": {
       "name": "Blood Rain Skillbook",
       "icon": "Item_BOOK_Spellbook_SkillCrafting_A",
@@ -13471,6 +14377,294 @@
       "stats": "FUR_Container_Bookcase",
       "template": "4ae8707c-991b-46f1-b9a5-933ae072b479"
     },
+    "boostedamuletleadership1": {
+      "name": "Boosted Amulet (Leadership +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletleadership2": {
+      "name": "Boosted Amulet (Leadership +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletloremaster1": {
+      "name": "Boosted Amulet (Loremaster +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletloremaster2": {
+      "name": "Boosted Amulet (Loremaster +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletperseverance1": {
+      "name": "Boosted Amulet (Perseverance +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletperseverance2": {
+      "name": "Boosted Amulet (Perseverance +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletpersuasion1": {
+      "name": "Boosted Amulet (Persuasion +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletpersuasion2": {
+      "name": "Boosted Amulet (Persuasion +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletreflection1": {
+      "name": "Boosted Amulet (Reflection +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletreflection2": {
+      "name": "Boosted Amulet (Reflection +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletthievery1": {
+      "name": "Boosted Amulet (Thievery +1)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedamuletthievery2": {
+      "name": "Boosted Amulet (Thievery +2)",
+      "icon": "Item_LOOT_Amulet_B_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        704,
+        832,
+        768
+      ],
+      "stats": "ITEM_BoostedAmulet"
+    },
+    "boostedringbartering1": {
+      "name": "Boosted Ring (Bartering +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringbartering2": {
+      "name": "Boosted Ring (Bartering +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringleadership1": {
+      "name": "Boosted Ring (Leadership +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringleadership2": {
+      "name": "Boosted Ring (Leadership +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringluck1": {
+      "name": "Boosted Ring (Luck +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringluck2": {
+      "name": "Boosted Ring (Luck +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringreflection1": {
+      "name": "Boosted Ring (Reflection +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringreflection2": {
+      "name": "Boosted Ring (Reflection +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringsneaking1": {
+      "name": "Boosted Ring (Sneaking +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringsneaking2": {
+      "name": "Boosted Ring (Sneaking +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringtelekinesis1": {
+      "name": "Boosted Ring (Telekinesis +1)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
+    "boostedringtelekinesis2": {
+      "name": "Boosted Ring (Telekinesis +2)",
+      "icon": "Item_LOOT_Gold_Ring_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "ITEM_BoostedRing"
+    },
     "bottlefilledwithoil": {
       "name": "Bottle Filled With Oil",
       "icon": "Item_GRN_Bottle",
@@ -13515,6 +14709,28 @@
         832,
         1664,
         896
+      ]
+    },
+    "bouncingshieldscroll": {
+      "name": "Bouncing Shield Scroll",
+      "icon": "Item_SCROLL_Warrior_BouncingShield",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        768,
+        384,
+        832,
+        448
+      ]
+    },
+    "bouncingshieldskillbook": {
+      "name": "Bouncing Shield Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
       ]
     },
     "bowl": {
@@ -14079,6 +15295,28 @@
       "stats": "ARM_CorpseHarvester_11_ChickenTalon",
       "localizationKey": "Craft_CorpseHarvester_11_ChickenAmulet_1"
     },
+    "chloroformskillbook": {
+      "name": "Chloroform Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
+    },
+    "choloroformscroll": {
+      "name": "Choloroform Scroll",
+      "icon": "Scroll_Rogue_Chloroform",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1856,
+        384,
+        1920,
+        448
+      ]
+    },
     "chubfish": {
       "name": "Chub Fish",
       "icon": "Item_CON_Food_Fish_C",
@@ -14144,6 +15382,28 @@
         1024,
         1920,
         1088
+      ]
+    },
+    "cloakanddaggerscroll": {
+      "name": "Cloak and Dagger Scroll",
+      "icon": "Scroll_Rogue_CloakandDagger",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1920,
+        384,
+        1984,
+        448
+      ]
+    },
+    "cloakanddaggerskillbook": {
+      "name": "Cloak And Dagger Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
       ]
     },
     "closedcircuitscroll": {
@@ -14424,6 +15684,28 @@
         832,
         1344,
         896
+      ]
+    },
+    "corruptedbladescroll": {
+      "name": "Corrupted Blade Scroll",
+      "icon": "Scroll_Rogue_Corruptedblade",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1984,
+        384,
+        2048,
+        448
+      ]
+    },
+    "corruptedbladeskillbook": {
+      "name": "Corrupted Blade Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
       ]
     },
     "courageherbmix": {
@@ -14758,6 +16040,28 @@
         256
       ]
     },
+    "cripplingblowscroll": {
+      "name": "Crippling Blow Scroll",
+      "icon": "Item_SCROLL_Warrior_CripplingBlow",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        384,
+        448,
+        448,
+        512
+      ]
+    },
+    "cripplingblowskillbook": {
+      "name": "Crippling Blow Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "crocodilegloves": {
       "name": "Crocodile Gloves",
       "icon": "Corpse_Gloves_Croc",
@@ -14848,6 +16152,17 @@
         960,
         832,
         1024
+      ]
+    },
+    "cupofoil": {
+      "name": "Cup of Oil",
+      "icon": "Item_CON_Drink_Cup_A_Black",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1856,
+        448,
+        1920,
+        512
       ]
     },
     "cupoftea": {
@@ -15412,6 +16727,28 @@
         768
       ]
     },
+    "deflectivebarrierscroll": {
+      "name": "Deflective Barrier Scroll",
+      "icon": "Item_SCROLL_Warrior_Challenge",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        704,
+        384,
+        768,
+        448
+      ]
+    },
+    "deflectivebarrierskillbook": {
+      "name": "Deflective Barrier Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "demonaltar": {
       "name": "Demon Altar",
       "icon": "Portrait_PUZ_BloodStoup_A",
@@ -15912,6 +17249,28 @@
         768
       ]
     },
+    "elementalarrowheadsscroll": {
+      "name": "Elemental Arrowheads Scroll",
+      "icon": "Item_SCROLL_Hunting_ElementalArrowheads",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        960,
+        256,
+        1024,
+        320
+      ]
+    },
+    "elementalarrowheadsskillbook": {
+      "name": "Elemental Arrowheads Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "elementaltotemscroll": {
       "name": "Elemental Totem Scroll",
       "icon": "Item_SCROLL_Summoning_TotemFromSurface",
@@ -16190,6 +17549,28 @@
         896
       ]
     },
+    "enragescroll": {
+      "name": "Enrage Scroll",
+      "icon": "Item_SCROLL_Warrior_Enrage",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        256,
+        448,
+        320,
+        512
+      ]
+    },
+    "enrageskillbook": {
+      "name": "Enrage Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "epidemicoffirescroll": {
       "name": "Epidemic Of Fire Scroll",
       "icon": "Item_SCROLL_Fire_InfectiousFlame",
@@ -16304,6 +17685,19 @@
       "stats": "FUR_Spooky_CraftingStation_2",
       "template": "374b2e07-0d3e-443a-87df-b39cdc6c3c9e"
     },
+    "expensivewine": {
+      "name": "Expensive Wine",
+      "icon": "Item_CON_Drink_Bottle_Wine_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1600,
+        832,
+        1664,
+        896
+      ],
+      "stats": "CON_Drink_Bottle_Wine_A_Expensive",
+      "localizationKey": "CON_Drink_Bottle_Wine_A_Expensive"
+    },
     "explosivearrow": {
       "name": "Explosive Arrow",
       "icon": "Item_WPN_Arrow_Explosive_A",
@@ -16397,6 +17791,19 @@
         1408,
         448
       ]
+    },
+    "fancybottleofbeer": {
+      "name": "Fancy Bottle of Beer",
+      "icon": "Item_CON_Drink_Bottle_Beer_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "stats": "CON_Drink_Bottle_Beer_A_Fancy",
+      "localizationKey": "CON_Drink_Bottle_Beer_A_Fancy"
     },
     "fancycape": {
       "name": "Fancy Cape",
@@ -16774,6 +18181,28 @@
         768
       ]
     },
+    "firstaidscroll": {
+      "name": "First Aid Scroll",
+      "icon": "Item_SCROLL_Hunting_FirstAid",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        832,
+        0,
+        896,
+        64
+      ]
+    },
+    "firstaidskillbook": {
+      "name": "First Aid Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "fishbone": {
       "name": "Fish Bone",
       "icon": "Item_JUNK_FishSkeleton_A",
@@ -17118,6 +18547,28 @@
         1920
       ]
     },
+    "gagorderscroll": {
+      "name": "Gag Order Scroll",
+      "icon": "Scroll_Rogue_Gagorder",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        0,
+        448,
+        64,
+        512
+      ]
+    },
+    "gagorderskillbook": {
+      "name": "Gag Order Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
+    },
     "garlic": {
       "name": "Garlic",
       "icon": "Item_CON_Food_Garlic_A",
@@ -17190,6 +18641,50 @@
       "stats": "WPN_Unique_ShieldGhost",
       "localizationKey": "Craft_Unique_ShieldGhost_1"
     },
+    "giantflamerune": {
+      "name": "Giant Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        320,
+        768,
+        384
+      ]
+    },
+    "giantflameruneofpower": {
+      "name": "Giant Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        192,
+        960,
+        256
+      ]
+    },
+    "giantfrostrune": {
+      "name": "Giant Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        320,
+        64,
+        384
+      ]
+    },
+    "giantfrostruneofpower": {
+      "name": "Giant Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        192,
+        192,
+        256
+      ]
+    },
     "gianthealingpotion": {
       "name": "Giant Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Giant",
@@ -17213,6 +18708,28 @@
       ],
       "stats": "CON_Potion_MagicArmor_Boost_Giant_A",
       "template": "0bf05d83-6637-4ce7-b1da-c4ff91044502"
+    },
+    "giantmasterworkrune": {
+      "name": "Giant Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        256,
+        576,
+        320
+      ]
+    },
+    "giantmasterworkruneofpower": {
+      "name": "Giant Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        0,
+        192,
+        64
+      ]
     },
     "giantphysicalarmor": {
       "name": "Giant Physical Armor",
@@ -17238,6 +18755,72 @@
         1088
       ]
     },
+    "giantrockrune": {
+      "name": "Giant Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ]
+    },
+    "giantrockruneofpower": {
+      "name": "Giant Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        64,
+        768,
+        128
+      ]
+    },
+    "giantthunderrune": {
+      "name": "Giant Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        320,
+        512,
+        384
+      ]
+    },
+    "giantthunderruneofpower": {
+      "name": "Giant Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        128,
+        448,
+        192
+      ]
+    },
+    "giantvenomrune": {
+      "name": "Giant Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Giant",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        256,
+        768,
+        320
+      ]
+    },
+    "giantvenomruneofpower": {
+      "name": "Giant Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Giant_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        0,
+        960,
+        64
+      ]
+    },
     "giblets": {
       "name": "Giblets",
       "icon": "Item_CON_Food_Meat_Goose_A",
@@ -17258,6 +18841,28 @@
         512,
         768,
         576
+      ]
+    },
+    "glitterdustscroll": {
+      "name": "Glitter Dust Scroll",
+      "icon": "Item_SCROLL_Hunting_Mark",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        256,
+        320,
+        320,
+        384
+      ]
+    },
+    "glitterdustskillbook": {
+      "name": "Glitter Dust Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
       ]
     },
     "globalcoolingscroll": {
@@ -18674,6 +20279,50 @@
         512
       ]
     },
+    "largeflamerune": {
+      "name": "Large Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        320,
+        832,
+        384
+      ]
+    },
+    "largeflameruneofpower": {
+      "name": "Large Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        256,
+        128,
+        320
+      ]
+    },
+    "largefrostrune": {
+      "name": "Large Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ]
+    },
+    "largefrostruneofpower": {
+      "name": "Large Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        192,
+        384,
+        256
+      ]
+    },
     "largehealingpotion": {
       "name": "Large Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Large",
@@ -18708,6 +20357,28 @@
       ],
       "stats": "CON_Potion_MagicArmor_Boost_Large_A",
       "localizationKey": "CON_Potion_MagicArmor_Boost_Large_A"
+    },
+    "largemasterworkrune": {
+      "name": "Large Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        256,
+        640,
+        320
+      ]
+    },
+    "largemasterworkruneofpower": {
+      "name": "Large Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        0,
+        384,
+        64
+      ]
     },
     "largeperceptionpotion": {
       "name": "Large Perception Potion",
@@ -18770,6 +20441,28 @@
       "stats": "POTION_Large_ResistAll_Potion",
       "localizationKey": "POTION_Large_ResistAll_Potion"
     },
+    "largerockrune": {
+      "name": "Large Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        320,
+        448,
+        384
+      ]
+    },
+    "largerockruneofpower": {
+      "name": "Large Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        64,
+        896,
+        128
+      ]
+    },
     "largespeedpotion": {
       "name": "Large Speed Potion",
       "icon": "Item_CON_PotionII_C_Purple_Large",
@@ -18792,6 +20485,28 @@
         576
       ]
     },
+    "largethunderrune": {
+      "name": "Large Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        320,
+        576,
+        384
+      ]
+    },
+    "largethunderruneofpower": {
+      "name": "Large Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        128,
+        640,
+        192
+      ]
+    },
     "largetusk": {
       "name": "Large Tusk",
       "icon": "Item_LOOT_Tusk_A",
@@ -18804,6 +20519,28 @@
       ],
       "stats": "LOOT_Tusk_A_Large",
       "localizationKey": "LOOT_Tusk_A_Large"
+    },
+    "largevenomrune": {
+      "name": "Large Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        256,
+        832,
+        320
+      ]
+    },
+    "largevenomruneofpower": {
+      "name": "Large Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Large_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        64,
+        128,
+        128
+      ]
     },
     "largewaterresistancepotion": {
       "name": "Large Water Resistance Potion",
@@ -19244,6 +20981,28 @@
         1024
       ]
     },
+    "marksmansfangscroll": {
+      "name": "Marksman's Fang Scroll",
+      "icon": "Item_SCROLL_Hunting_PiercingShot",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        448,
+        320,
+        512,
+        384
+      ]
+    },
+    "marksmansfangskillbook": {
+      "name": "Marksman's Fang Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "mashedpotatoes": {
       "name": "Mashed Potatoes",
       "icon": "Item_CON_Food_Potato_Mash_A",
@@ -19345,6 +21104,50 @@
         512
       ]
     },
+    "mediumflamerune": {
+      "name": "Medium Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        320,
+        896,
+        384
+      ]
+    },
+    "mediumflameruneofpower": {
+      "name": "Medium Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        256,
+        320,
+        320
+      ]
+    },
+    "mediumfrostrune": {
+      "name": "Medium Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        320,
+        704,
+        384
+      ]
+    },
+    "mediumfrostruneofpower": {
+      "name": "Medium Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        192,
+        576,
+        256
+      ]
+    },
     "mediumhealingpotion": {
       "name": "Medium Healing Potion",
       "icon": "Item_CON_PotionII_A_Red_Medium",
@@ -19376,6 +21179,28 @@
         448,
         320,
         512
+      ]
+    },
+    "mediummasterworkrune": {
+      "name": "Medium Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        256,
+        704,
+        320
+      ]
+    },
+    "mediummasterworkruneofpower": {
+      "name": "Medium Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        512,
+        0,
+        576,
+        64
       ]
     },
     "mediumperceptionpotion": {
@@ -19437,6 +21262,28 @@
       "stats": "POTION_Medium_ResistAll_Potion",
       "localizationKey": "POTION_Medium_ResistAll_Potion"
     },
+    "mediumrockrune": {
+      "name": "Medium Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        320,
+        320,
+        384
+      ]
+    },
+    "mediumrockruneofpower": {
+      "name": "Medium Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        128,
+        64,
+        192
+      ]
+    },
     "mediumspeedpotion": {
       "name": "Medium Speed Potion",
       "icon": "Item_CON_PotionII_C_Purple_Medium",
@@ -19457,6 +21304,50 @@
         512,
         576,
         576
+      ]
+    },
+    "mediumthunderrune": {
+      "name": "Medium Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        320,
+        256,
+        384
+      ]
+    },
+    "mediumthunderruneofpower": {
+      "name": "Medium Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        128,
+        832,
+        192
+      ]
+    },
+    "mediumvenomrune": {
+      "name": "Medium Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        256,
+        896,
+        320
+      ]
+    },
+    "mediumvenomruneofpower": {
+      "name": "Medium Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Medium_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        64,
+        320,
+        128
       ]
     },
     "mediumwaterresistancepotion": {
@@ -19943,6 +21834,17 @@
         576
       ]
     },
+    "mugofwine": {
+      "name": "Mug of Wine",
+      "icon": "Item_CON_Drink_Mug_A_Red",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        640,
+        512,
+        704,
+        576
+      ]
+    },
     "mushofwood": {
       "name": "Mush of Wood",
       "icon": "Item_LOOT_Scraps_Wood_A_Mush",
@@ -20009,6 +21911,204 @@
         704
       ]
     },
+    "mysticalgiantflamerune": {
+      "name": "Mystical Giant Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        192,
+        832,
+        256
+      ]
+    },
+    "mysticalgiantfrostrune": {
+      "name": "Mystical Giant Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        192,
+        64,
+        256
+      ]
+    },
+    "mysticalgiantmasterworkrune": {
+      "name": "Mystical Giant Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    "mysticalgiantrockrune": {
+      "name": "Mystical Giant Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        64,
+        704,
+        128
+      ]
+    },
+    "mysticalgiantthunderrune": {
+      "name": "Mystical Giant Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        256,
+        128,
+        320,
+        192
+      ]
+    },
+    "mysticalgiantvenomrune": {
+      "name": "Mystical Giant Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Giant_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        0,
+        832,
+        64
+      ]
+    },
+    "mysticallargeflamerune": {
+      "name": "Mystical Large Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        192,
+        1024,
+        256
+      ]
+    },
+    "mysticallargefrostrune": {
+      "name": "Mystical Large Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        192,
+        256,
+        256
+      ]
+    },
+    "mysticallargemasterworkrune": {
+      "name": "Mystical Large Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        0,
+        256,
+        64
+      ]
+    },
+    "mysticallargerockrune": {
+      "name": "Mystical Large Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        768,
+        64,
+        832,
+        128
+      ]
+    },
+    "mysticallargethunderrune": {
+      "name": "Mystical Large Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        128,
+        512,
+        192
+      ]
+    },
+    "mysticallargevenomrune": {
+      "name": "Mystical Large Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Large_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        0,
+        1024,
+        64
+      ]
+    },
+    "mysticalmediumflamerune": {
+      "name": "Mystical Medium Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        256,
+        192,
+        320
+      ]
+    },
+    "mysticalmediumfrostrune": {
+      "name": "Mystical Medium Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        192,
+        448,
+        256
+      ]
+    },
+    "mysticalmediummasterworkrune": {
+      "name": "Mystical Medium Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        384,
+        0,
+        448,
+        64
+      ]
+    },
+    "mysticalmediumrockrune": {
+      "name": "Mystical Medium Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        896,
+        64,
+        960,
+        128
+      ]
+    },
+    "mysticalmediumthunderrune": {
+      "name": "Mystical Medium Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        128,
+        704,
+        192
+      ]
+    },
+    "mysticalmediumvenomrune": {
+      "name": "Mystical Medium Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Medium_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        128,
+        64,
+        192,
+        128
+      ]
+    },
     "mysticalruneframe": {
       "name": "Mystical Rune Frame",
       "icon": "Item_LOOT_Rune_Frame_Mystic",
@@ -20018,6 +22118,72 @@
         384,
         64,
         448
+      ]
+    },
+    "mysticalsmallflamerune": {
+      "name": "Mystical Small Flame Rune",
+      "icon": "Item_LOOT_Rune_Flame_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        256,
+        384,
+        320
+      ]
+    },
+    "mysticalsmallfrostrune": {
+      "name": "Mystical Small Frost Rune",
+      "icon": "Item_LOOT_Rune_Frost_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        576,
+        192,
+        640,
+        256
+      ]
+    },
+    "mysticalsmallmasterworkrune": {
+      "name": "Mystical Small Masterwork Rune",
+      "icon": "Item_LOOT_Rune_Masterwork_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        0,
+        768,
+        64
+      ]
+    },
+    "mysticalsmallrockrune": {
+      "name": "Mystical Small Rock Rune",
+      "icon": "Item_LOOT_Rune_Rock_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        64,
+        128,
+        128,
+        192
+      ]
+    },
+    "mysticalsmallthunderrune": {
+      "name": "Mystical Small Thunder Rune",
+      "icon": "Item_LOOT_Rune_Thunder_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        832,
+        128,
+        896,
+        192
+      ]
+    },
+    "mysticalsmallvenomrune": {
+      "name": "Mystical Small Venom Rune",
+      "icon": "Item_LOOT_Rune_Venom_Small_Framed_Transforming",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        320,
+        64,
+        384,
+        128
       ]
     },
     "mythicalangelwings": {
@@ -20646,6 +22812,28 @@
         640
       ]
     },
+    "phoenixdivescroll": {
+      "name": "Phoenix Dive Scroll",
+      "icon": "Item_SCROLL_Warrior_PhoenixDive",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        448,
+        384,
+        512
+      ]
+    },
+    "phoenixdiveskillbook": {
+      "name": "Phoenix Dive Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "phoenixtalon": {
       "name": "Phoenix Talon",
       "icon": "Pendants_Phoenix_Talon",
@@ -20736,6 +22924,28 @@
         832,
         1216,
         896
+      ]
+    },
+    "pindownscroll": {
+      "name": "Pindown Scroll",
+      "icon": "Item_SCROLL_Hunting_PinDown",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        0,
+        320,
+        64,
+        384
+      ]
+    },
+    "pindownskillbook": {
+      "name": "Pin Down Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
       ]
     },
     "pinkdye": {
@@ -21330,6 +23540,28 @@
       "stats": "WPN_PrimitiveHarpoon",
       "localizationKey": "LOOT_WoodenBranch_A_LOOT_MetalShard_A_1"
     },
+    "provokescroll": {
+      "name": "Provoke Scroll",
+      "icon": "Item_BOOK_Scroll_Warrior_Rage",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        576,
+        512,
+        640
+      ]
+    },
+    "provokeskillbook": {
+      "name": "Provoke Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
+      ]
+    },
     "puffball": {
       "name": "Puffball",
       "icon": "Item_CON_Nature_Mushroom_Puffball_A",
@@ -21710,6 +23942,28 @@
         768
       ]
     },
+    "reactiveshotscroll": {
+      "name": "Reactive Shot Scroll",
+      "icon": "Item_SCROLL_Hunting_ReactionShot",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        768,
+        256,
+        832,
+        320
+      ]
+    },
+    "reactiveshotskillbook": {
+      "name": "Reactive Shot Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "realhealthpotion": {
       "name": "Real Health Potion",
       "icon": "Spooky_Posionpotion",
@@ -21844,6 +24098,28 @@
         768,
         64,
         832
+      ]
+    },
+    "ricochetscroll": {
+      "name": "Ricochet Scroll",
+      "icon": "Item_SCROLL_Hunting_Ricochet",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ]
+    },
+    "ricochetskillbook": {
+      "name": "Ricochet Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
       ]
     },
     "ring": {
@@ -22061,6 +24337,28 @@
         256
       ]
     },
+    "rupturetendonsscroll": {
+      "name": "Rupture Tendons Scroll",
+      "icon": "Scroll_Rogue_RuptureTendons",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        64,
+        448,
+        128,
+        512
+      ]
+    },
+    "rupturetendonsskillbook": {
+      "name": "Rupture Tendons Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
+    },
     "rykersrenegade": {
       "name": "Ryker's Renegade",
       "icon": "Essence_Air",
@@ -22102,6 +24400,28 @@
         448,
         448,
         512,
+        512
+      ]
+    },
+    "sawtoothknifeskillbook": {
+      "name": "Sawtooth Knife Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
+    },
+    "sawtoothscroll": {
+      "name": "Sawtooth Scroll",
+      "icon": "Scroll_Rogue_Sawtoothknife",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        128,
+        448,
+        192,
         512
       ]
     },
@@ -22773,6 +25093,28 @@
       "stats": "LOOT_Skull_Human_A",
       "template": "04de9db3-fae1-40f3-90d2-7e1fdb2f4f65"
     },
+    "skyshotscroll": {
+      "name": "Sky Shot Scroll",
+      "icon": "Item_SCROLL_Hunting_SkyShot",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        832,
+        256,
+        896,
+        320
+      ]
+    },
+    "skyshotskillbook": {
+      "name": "Sky Shot Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "slaydendye": {
       "name": "Slayden Dye",
       "icon": "DyeNexus",
@@ -22784,6 +25126,28 @@
         448
       ],
       "stats": "TOOL_Dye_Slayden"
+    },
+    "sleepingarmsscroll": {
+      "name": "Sleeping Arms Scroll",
+      "icon": "Scroll_Rogue_Sleepingarms",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        192,
+        448,
+        256,
+        512
+      ]
+    },
+    "sleepingarmsskillbook": {
+      "name": "Sleeping Arms Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
+      ]
     },
     "slime": {
       "name": "Slime",
@@ -22851,6 +25215,17 @@
         384
       ]
     },
+    "smallflameruneofpower": {
+      "name": "Small Flame Rune Of Power",
+      "icon": "Item_LOOT_Rune_Flame_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        256,
+        512,
+        320
+      ]
+    },
     "smallfrostrune": {
       "name": "Small Frost Rune",
       "icon": "Item_LOOT_Rune_Frost_Small",
@@ -22860,6 +25235,17 @@
         320,
         1024,
         384
+      ]
+    },
+    "smallfrostruneofpower": {
+      "name": "Small Frost Rune Of Power",
+      "icon": "Item_LOOT_Rune_Frost_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        704,
+        192,
+        768,
+        256
       ]
     },
     "smallmagicarmourpotion": {
@@ -22884,6 +25270,17 @@
         320
       ]
     },
+    "smallmasterworkruneofpower": {
+      "name": "Small Masterwork Rune Of Power",
+      "icon": "Item_LOOT_Rune_Masterwork_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        640,
+        0,
+        704,
+        64
+      ]
+    },
     "smallpoisonbottle": {
       "name": "Small Poison Bottle",
       "icon": "Item_CON_PotionII_A_Green_Small",
@@ -22906,6 +25303,17 @@
         384
       ]
     },
+    "smallrockruneofpower": {
+      "name": "Small Rock Rune Of Power",
+      "icon": "Item_LOOT_Rune_Rock_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        192,
+        128,
+        256,
+        192
+      ]
+    },
     "smallthunderrune": {
       "name": "Small Thunder Rune",
       "icon": "Item_LOOT_Rune_Thunder_Small",
@@ -22917,6 +25325,17 @@
         384
       ]
     },
+    "smallthunderruneofpower": {
+      "name": "Small Thunder Rune Of Power",
+      "icon": "Item_LOOT_Rune_Thunder_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        960,
+        128,
+        1024,
+        192
+      ]
+    },
     "smallvenomrune": {
       "name": "Small Venom Rune",
       "icon": "Item_LOOT_Rune_Venom_Small",
@@ -22926,6 +25345,17 @@
         256,
         1024,
         320
+      ]
+    },
+    "smallvenomruneofpower": {
+      "name": "Small Venom Rune Of Power",
+      "icon": "Item_LOOT_Rune_Venom_Small_Framed_Power",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Runes.dds",
+      "box": [
+        448,
+        64,
+        512,
+        128
       ]
     },
     "smokegrenade": {
@@ -23573,6 +26003,28 @@
         1024
       ]
     },
+    "tacticalretreatscroll": {
+      "name": "Tactical Retreat Scroll",
+      "icon": "Item_SCROLL_Hunting_TacticalRetreat",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        896,
+        0,
+        960,
+        64
+      ]
+    },
+    "tacticalretreatskillbook": {
+      "name": "Tactical Retreat Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ]
+    },
     "taintedstew": {
       "name": "Tainted Stew",
       "icon": "Item_CON_Food_Stew_A",
@@ -23727,6 +26179,28 @@
         1088,
         960,
         1152
+      ]
+    },
+    "throwingknifescroll": {
+      "name": "Throwing Knife Scroll",
+      "icon": "Scroll_Rogue_Thworingknife",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        256,
+        448,
+        320,
+        512
+      ]
+    },
+    "throwingknifeskillbook": {
+      "name": "Throwing Knife Skillbook",
+      "icon": "Item_BOOK_Spellbook_Rogue_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        704,
+        576,
+        768
       ]
     },
     "thunderboltgrenade": {
@@ -26236,6 +28710,28 @@
         448,
         704,
         512
+      ]
+    },
+    "whirlwindscroll": {
+      "name": "Whirlwind Scroll",
+      "icon": "Item_SCROLL_Warrior_WhirlWind",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Books.dds",
+      "box": [
+        192,
+        448,
+        256,
+        512
+      ]
+    },
+    "whirlwindskillbook": {
+      "name": "Whirlwind Skillbook",
+      "icon": "Item_BOOK_Spellbook_Warrior_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        704,
+        704,
+        768
       ]
     },
     "whisperwood": {

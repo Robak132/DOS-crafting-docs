@@ -32,7 +32,10 @@ def main():
         candidates.update(value for value in [page.get("title"), page.get("titlePl")] if value)
         candidates.update(page.get("tags", []))
     for path in (ROOT / "data/library/recipes").glob("*.json"):
-        for recipe in json.loads(path.read_text(encoding='utf-8'))["recipes"]:
+        source = json.loads(path.read_text(encoding='utf-8'))
+        for item in source.get("items", []):
+            candidates.add(item["name"])
+        for recipe in source["recipes"]:
             for item in [recipe["result"], *recipe["ingredients"]]:
                 candidates.add(item["name"].lstrip("#"))
                 if item.get("namePl"):
@@ -49,6 +52,11 @@ def main():
         if translation and (name.casefold() in normalized or translation.casefold() in normalized):
             pairs[name].add(translation)
     names = {name: next(iter(values)) for name, values in pairs.items() if len(values) == 1}
+    # Ambiguous names resolved by hand; the choice must be one of the game's own translations.
+    chosen = {"Water Barrel": "Beczka wody"}
+    for name, translation in chosen.items():
+        assert translation in pairs.get(name, set()), name
+        names[name] = translation
     # A person and the magic school share an English label, but not a Polish one.
     contexts = {
         "names": ("hc31d0294g1668g4d16g9222g07537f41e87d", "Nekromanta"),
@@ -58,6 +66,26 @@ def main():
     for context, (uid, expected) in contexts.items():
         assert english[uid] == "Necromancer" and polish[uid] == expected
         (names if context == "names" else selectors)["Necromancer"] = polish[uid]
+    # Liquid source groups (data/itemComboProperties.json). The game labels Wine and Milk
+    # without "Source", so their group labels follow the Polish pattern of the others.
+    by_english = defaultdict(set)
+    for uid, name in english.items():
+        if polish.get(uid):
+            by_english[name].add(polish[uid])
+    manual = {"Wine Source": "Źródło wina", "Milk Source": "Źródło mleka"}
+    liquids = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))["properties"]
+    for liquid in liquids.values():
+        values = by_english.get(liquid["label"], set())
+        label = next(iter(values)) if len(values) == 1 else manual.get(liquid["label"])
+        if label:
+            selectors[liquid["group"]] = label
+    # Selectors are written with dashes ("Cutting-Tool"); reuse the item name's translation.
+    for path in (ROOT / "data/library/recipes").glob("*.json"):
+        for recipe in json.loads(path.read_text(encoding="utf-8"))["recipes"]:
+            for item in recipe["ingredients"]:
+                tag = item.get("selectorTag")
+                if tag and tag not in selectors and names.get(tag.replace("-", " ")):
+                    selectors[tag] = names[tag.replace("-", " ")]
     output = {
         "source": {
             "edition": "Divinity Original Sin 2 Definitive Edition",

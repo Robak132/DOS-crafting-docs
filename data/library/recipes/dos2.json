@@ -101,7 +101,7 @@
         "slug": "acid-spores-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -112,7 +112,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -221,7 +221,7 @@
         "slug": "apotheosis-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -232,7 +232,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -632,7 +632,7 @@
         "slug": "apportation-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -643,7 +643,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -687,7 +687,7 @@
         "slug": "arcane-stitch-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -698,7 +698,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -890,7 +890,7 @@
         "slug": "armour-of-frost-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -901,7 +901,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -974,12 +974,10 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Bone@x2",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -1027,12 +1025,10 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Sharp Piece of Metal@x2",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -1079,12 +1075,10 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Sharp Rock@x2",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -1537,7 +1531,7 @@
         "slug": "black-shroud-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -1547,7 +1541,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -1591,14 +1585,14 @@
         "slug": "bleed-fire-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ]
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -2041,7 +2035,7 @@
         "slug": "blinding-radiance-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -2052,7 +2046,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -2095,13 +2089,13 @@
         "slug": "blood-rain-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ]
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -2275,7 +2269,7 @@
         "slug": "blood-sucker-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -2285,7 +2279,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -2596,7 +2590,7 @@
         "slug": "bone-cage-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -2606,7 +2600,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -2824,12 +2818,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         }
       ],
@@ -3287,6 +3279,7 @@
         },
         {
           "name": "Water Barrel",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",
@@ -3313,56 +3306,7 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A22:G22"
-    },
-    {
-      "id": "Stanowiska-i-pojemniki/BUCKET-WITH-WATER:Bucket+Water Barrel+Bucket of water",
-      "ingredients": [
-        {
-          "name": "Bucket",
-          "namePl": "Wiadro",
-          "slug": "bucket",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Water Barrel",
-          "slug": "water-barrel",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Bucket of water",
-          "tags": [
-            "Category",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Bucket with Water",
-        "namePl": "Wiadro wody",
-        "slug": "bucket-with-water",
-        "tags": [
-          "Stations-And-Containers",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Stations-And-Containers",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A4:G4"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A22:G22; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A4:G4"
     },
     {
       "id": "Skladniki/BULL-HORNS-SCROLL:Sheet of Paper+#Life-Essence+Adult Antler",
@@ -3531,7 +3475,7 @@
         "slug": "bull-horns-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -3542,7 +3486,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -3583,7 +3527,7 @@
         "slug": "cannibalise-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -3594,7 +3538,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -3770,7 +3714,7 @@
         "slug": "chain-lightning-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -3781,7 +3725,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -3889,7 +3833,7 @@
         "slug": "chameleon-cloak-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -3900,7 +3844,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -3938,12 +3882,10 @@
           ]
         },
         {
-          "name": "Honey",
-          "namePl": "Miód",
-          "slug": "honey",
+          "name": "#Honey-Source",
+          "selectorTag": "Honey-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Honey-Source"
           ]
         }
       ],
@@ -4035,12 +3977,10 @@
       "id": "Strzaly-i-granaty/CHARMING-ARROW:Honey+Arrow",
       "ingredients": [
         {
-          "name": "Honey",
-          "namePl": "Miód",
-          "slug": "honey",
+          "name": "#Honey-Source",
+          "selectorTag": "Honey-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Honey-Source"
           ]
         },
         {
@@ -4087,12 +4027,10 @@
       "id": "Strzaly-i-granaty/CHARMING-ARROWHEAD:Honey+Arrowhead",
       "ingredients": [
         {
-          "name": "Honey",
-          "namePl": "Miód",
-          "slug": "honey",
+          "name": "#Honey-Source",
+          "selectorTag": "Honey-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Honey-Source"
           ]
         },
         {
@@ -4404,7 +4342,7 @@
         "slug": "chicken-claw-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -4415,7 +4353,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -4521,7 +4459,7 @@
         "slug": "closed-circuit-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -4532,7 +4470,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -4554,12 +4492,10 @@
           ]
         },
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         }
       ],
@@ -4784,7 +4720,7 @@
         "slug": "conjure-incarnate-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -4795,7 +4731,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -4907,7 +4843,7 @@
         "slug": "contamination-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -4918,7 +4854,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -5054,7 +4990,7 @@
         "slug": "cryogenic-stasis-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -5065,7 +5001,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -5250,12 +5186,10 @@
           ]
         },
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         }
       ],
@@ -5777,7 +5711,7 @@
         "slug": "dazing-bolt-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -5788,7 +5722,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -5831,7 +5765,7 @@
         "slug": "death-wish-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -5841,7 +5775,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -5955,7 +5889,7 @@
         "slug": "decaying-touch-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -5965,7 +5899,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -6079,7 +6013,7 @@
         "slug": "deep-freeze-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -6090,7 +6024,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -6200,7 +6134,7 @@
         "slug": "dimensional-bolt-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -6211,7 +6145,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -6255,7 +6189,7 @@
         "slug": "dominate-mind-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -6266,7 +6200,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -6308,7 +6242,7 @@
         "slug": "door-to-eternity-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -6319,7 +6253,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -6344,17 +6278,10 @@
           ]
         },
         {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
+          "name": "#Milk-Source",
+          "selectorTag": "Milk-Source",
           "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
+            "Milk-Source"
           ]
         }
       ],
@@ -6397,17 +6324,10 @@
           ]
         },
         {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
+          "name": "#Milk-Source",
+          "selectorTag": "Milk-Source",
           "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
+            "Milk-Source"
           ]
         },
         {
@@ -6460,12 +6380,10 @@
           ]
         },
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         }
       ],
@@ -6560,69 +6478,10 @@
           ]
         },
         {
-          "name": "Beer",
-          "slug": "beer",
+          "name": "#Beer-Source",
+          "selectorTag": "Beer-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dwarven Stew",
-        "namePl": "Krasnoludzki gulasz",
-        "slug": "dwarven-stew",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A690:G690"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DWARVEN-STEW:Dinner+Mug of Beer",
-      "ingredients": [
-        {
-          "name": "Dinner",
-          "namePl": "Obiad",
-          "slug": "dinner",
-          "tags": [
-            "Food-And-Drink",
-            "Healing",
-            "Strength",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Mug of Beer",
-          "namePl": "Kufel piwa",
-          "slug": "mug-of-beer",
-          "tags": [
-            "Food-And-Drink",
-            "Intelligence",
-            "Healing",
-            "DRUNK",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
+            "Beer-Source"
           ]
         }
       ],
@@ -6649,7 +6508,7 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A690:G690"
     },
     {
       "id": "Skladniki/EARTH-RESISTANCE-POTION:Empty Potion Bottle+Earth Tongue Mushroom",
@@ -6884,7 +6743,7 @@
         "slug": "earthquake-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -6895,7 +6754,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -7012,7 +6871,7 @@
         "slug": "electric-discharge-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -7023,7 +6882,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -7194,7 +7053,7 @@
         "slug": "elemental-totem-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -7205,7 +7064,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -7419,7 +7278,7 @@
         "slug": "epidemic-of-fire-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -7430,7 +7289,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -7537,7 +7396,7 @@
         "slug": "equalise-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -7548,7 +7407,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -7657,7 +7516,7 @@
         "slug": "ethereal-storm-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -7668,7 +7527,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -7772,7 +7631,7 @@
         "slug": "farsight-infusion-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -7783,7 +7642,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -7894,7 +7753,7 @@
         "slug": "favourable-wind-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -7905,7 +7764,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -7930,12 +7789,10 @@
           ]
         },
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         }
       ],
@@ -8298,7 +8155,7 @@
         "slug": "fire-whip-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -8309,7 +8166,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -8426,7 +8283,7 @@
         "slug": "fireball-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -8437,7 +8294,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -8547,7 +8404,7 @@
         "slug": "firebrand-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -8558,7 +8415,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -8830,7 +8687,7 @@
         "slug": "flaming-crescendo-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -8841,7 +8698,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -9015,7 +8872,7 @@
         "slug": "flaming-tongues-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -9026,7 +8883,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -9071,7 +8928,7 @@
         "slug": "flay-skin-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -9082,7 +8939,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -9179,7 +9036,7 @@
         "slug": "forced-exchange-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -9190,7 +9047,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -9309,7 +9166,7 @@
         "slug": "fortify-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -9320,7 +9177,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -9438,7 +9295,7 @@
         "slug": "fossil-strike-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -9449,7 +9306,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -9624,7 +9481,7 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A175:G175; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A192:G192"
     },
     {
-      "id": "Magia/GIANT--percent-RUNE:Pouch of Superior Pixie Dust+Large % Rune+Large % Rune",
+      "id": "Magia/GIANT-FLAME-RUNE:Pouch of Superior Pixie Dust+Large Flame Rune@x2",
       "ingredients": [
         {
           "name": "Pouch of Superior Pixie Dust",
@@ -9636,32 +9493,42 @@
           ]
         },
         {
-          "name": "Large % Rune",
-          "slug": "large-rune",
+          "name": "Large Flame Rune",
+          "namePl": "Duża runa płomienia",
+          "slug": "large-flame-rune",
           "tags": [
             "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
             "DOS2"
-          ]
-        },
-        {
-          "name": "Large % Rune",
-          "slug": "large-rune",
-          "tags": [
-            "Ingredients",
-            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
           ]
         }
       ],
       "result": {
-        "name": "Giant % Rune",
-        "slug": "giant-rune",
+        "name": "Giant Flame Rune",
+        "namePl": "Ogromna runa płomienia",
+        "slug": "giant-flame-rune",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -9670,14 +9537,298 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
     },
     {
-      "id": "Magia/GIANT--percent-RUNE-OF-POWER:Giant % Rune+Rune Frame of Power",
+      "id": "Magia/GIANT-FROST-RUNE:Pouch of Superior Pixie Dust+Large Frost Rune@x2",
       "ingredients": [
         {
-          "name": "Giant % Rune",
-          "slug": "giant-rune",
+          "name": "Pouch of Superior Pixie Dust",
+          "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
+          "slug": "pouch-of-superior-pixie-dust",
           "tags": [
             "Ingredients",
             "DOS2"
+          ]
+        },
+        {
+          "name": "Large Frost Rune",
+          "namePl": "Duża runa mrozu",
+          "slug": "large-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Frost Rune",
+        "namePl": "Ogromna runa mrozu",
+        "slug": "giant-frost-rune",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
+    },
+    {
+      "id": "Magia/GIANT-MASTERWORK-RUNE:Pouch of Superior Pixie Dust+Large Masterwork Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pouch of Superior Pixie Dust",
+          "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
+          "slug": "pouch-of-superior-pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ]
+        },
+        {
+          "name": "Large Masterwork Rune",
+          "namePl": "Duża runa kunsztu",
+          "slug": "large-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Masterwork Rune",
+        "namePl": "Ogromna runa kunsztu",
+        "slug": "giant-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
+    },
+    {
+      "id": "Magia/GIANT-ROCK-RUNE:Pouch of Superior Pixie Dust+Large Rock Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pouch of Superior Pixie Dust",
+          "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
+          "slug": "pouch-of-superior-pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ]
+        },
+        {
+          "name": "Large Rock Rune",
+          "namePl": "Duża runa kamienia",
+          "slug": "large-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Rock Rune",
+        "namePl": "Ogromna runa kamienia",
+        "slug": "giant-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
+    },
+    {
+      "id": "Magia/GIANT-THUNDER-RUNE:Pouch of Superior Pixie Dust+Large Thunder Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pouch of Superior Pixie Dust",
+          "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
+          "slug": "pouch-of-superior-pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ]
+        },
+        {
+          "name": "Large Thunder Rune",
+          "namePl": "Duża runa grzmotu",
+          "slug": "large-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Thunder Rune",
+        "namePl": "Ogromna runa grzmotu",
+        "slug": "giant-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
+    },
+    {
+      "id": "Magia/GIANT-VENOM-RUNE:Pouch of Superior Pixie Dust+Large Venom Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pouch of Superior Pixie Dust",
+          "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
+          "slug": "pouch-of-superior-pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ]
+        },
+        {
+          "name": "Large Venom Rune",
+          "namePl": "Duża runa jadu",
+          "slug": "large-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Venom Rune",
+        "namePl": "Ogromna runa jadu",
+        "slug": "giant-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A104:G104"
+    },
+    {
+      "id": "Magia/GIANT-FLAME-RUNE-OF-POWER:Giant Flame Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Flame Rune",
+          "namePl": "Ogromna runa płomienia",
+          "slug": "giant-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -9694,15 +9845,312 @@
         }
       ],
       "result": {
-        "name": "Giant % Rune of Power",
-        "slug": "giant-rune-of-power",
+        "name": "Giant Flame Rune Of Power",
+        "namePl": "Potężna ogromna runa płomienia",
+        "slug": "giant-flame-rune-of-power",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A113:G113"
+    },
+    {
+      "id": "Magia/GIANT-FROST-RUNE-OF-POWER:Giant Frost Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Frost Rune",
+          "namePl": "Ogromna runa mrozu",
+          "slug": "giant-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Frost Rune Of Power",
+        "namePl": "Potężna ogromna runa mrozu",
+        "slug": "giant-frost-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A113:G113"
+    },
+    {
+      "id": "Magia/GIANT-MASTERWORK-RUNE-OF-POWER:Giant Masterwork Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Masterwork Rune",
+          "namePl": "Ogromna runa kunsztu",
+          "slug": "giant-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Masterwork Rune Of Power",
+        "namePl": "Potężna ogromna runa kunsztu",
+        "slug": "giant-masterwork-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A113:G113"
+    },
+    {
+      "id": "Magia/GIANT-ROCK-RUNE-OF-POWER:Giant Rock Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Rock Rune",
+          "namePl": "Ogromna runa kamienia",
+          "slug": "giant-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Rock Rune Of Power",
+        "namePl": "Potężna ogromna runa kamienia",
+        "slug": "giant-rock-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A113:G113"
+    },
+    {
+      "id": "Magia/GIANT-THUNDER-RUNE-OF-POWER:Giant Thunder Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Thunder Rune",
+          "namePl": "Ogromna runa grzmotu",
+          "slug": "giant-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Thunder Rune Of Power",
+        "namePl": "Potężna ogromna runa grzmotu",
+        "slug": "giant-thunder-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A113:G113"
+    },
+    {
+      "id": "Magia/GIANT-VENOM-RUNE-OF-POWER:Giant Venom Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Giant Venom Rune",
+          "namePl": "Ogromna runa jadu",
+          "slug": "giant-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Giant Venom Rune Of Power",
+        "namePl": "Potężna ogromna runa jadu",
+        "slug": "giant-venom-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -10069,11 +10517,10 @@
           ]
         },
         {
-          "name": "Wine",
-          "slug": "wine",
+          "name": "#Wine-Source",
+          "selectorTag": "Wine-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Wine-Source"
           ]
         }
       ],
@@ -10098,115 +10545,9 @@
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
+      "notes": "Add 5% Heal -1 Speed 20% Drunk chance",
       "remarks": "",
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A697:G697"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/GLASS-OF-WINE:Empty Mug+Bottle of Wine",
-      "ingredients": [
-        {
-          "name": "Empty Cup",
-          "slug": "empty-cup",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "CupEmpty",
-            "Junk"
-          ]
-        },
-        {
-          "name": "Bottle of Wine",
-          "namePl": "Butelka wina",
-          "slug": "bottle-of-wine",
-          "tags": [
-            "Food-And-Drink",
-            "Healing",
-            "DRUNK",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Glass of Wine",
-        "namePl": "Kielich wina",
-        "slug": "glass-of-wine",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "DRUNK",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Drink"
-        ]
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "DRUNK",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "Add 5% Heal -1 Speed 20% Drunk chance",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/GLASS-OF-WINE:Empty Mug+Wine barrel",
-      "ingredients": [
-        {
-          "name": "Empty Cup",
-          "slug": "empty-cup",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "CupEmpty",
-            "Junk"
-          ]
-        },
-        {
-          "name": "Wine barrel",
-          "namePl": "Beczka wina",
-          "slug": "wine-barrel",
-          "tags": [
-            "Stations-And-Containers",
-            "Ingredients",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Glass of Wine",
-        "namePl": "Kielich wina",
-        "slug": "glass-of-wine",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "DRUNK",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Drink"
-        ]
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "DRUNK",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "Add 5% Heal -1 Speed 20% Drunk chance",
-      "remarks": "",
-      "source": ""
     },
     {
       "id": "Ksiegi-umiejetnosci/GLOBAL-COOLING-SKILLBOOK:High Tier Blank Water Skillbook+Global Cooling Scroll",
@@ -10241,7 +10582,7 @@
         "slug": "global-cooling-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -10252,7 +10593,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -10418,7 +10759,7 @@
         "slug": "grasp-of-the-starved-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -10428,7 +10769,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -10631,7 +10972,7 @@
         "slug": "hail-strike-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -10642,7 +10983,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -11301,7 +11642,7 @@
         "slug": "haste-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -11312,7 +11653,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -11844,7 +12185,7 @@
         "slug": "healing-ritual-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -11855,7 +12196,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -11963,7 +12304,7 @@
         "slug": "heart-of-steel-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -11974,7 +12315,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -13449,7 +13790,7 @@
         "slug": "ice-breaker-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -13460,7 +13801,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -13508,7 +13849,7 @@
         "slug": "ice-fan-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -13519,7 +13860,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -13630,7 +13971,7 @@
         "slug": "ignition-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -13641,7 +13982,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -13762,7 +14103,7 @@
         "slug": "impalement-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -13773,7 +14114,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -13977,7 +14318,7 @@
         "slug": "infect-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -13987,7 +14328,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -14218,12 +14559,10 @@
       "id": "Strzaly-i-granaty/KNOCKDOWN-ARROWHEAD:CuttingTool+Adult Antler",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -14262,12 +14601,10 @@
       "id": "Strzaly-i-granaty/KNOCKDOWN-ARROWHEAD:CuttingTool+Antler",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -14307,7 +14644,7 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A132:G132"
     },
     {
-      "id": "Skladniki/LARGE--percent-RUNE:Pixie Dust+Medium % Rune+Medium % Rune",
+      "id": "Skladniki/LARGE-FLAME-RUNE:Pixie Dust+Medium Flame Rune@x2",
       "ingredients": [
         {
           "name": "Pixie Dust",
@@ -14322,32 +14659,42 @@
           ]
         },
         {
-          "name": "Medium % Rune",
-          "slug": "medium-rune",
+          "name": "Medium Flame Rune",
+          "namePl": "Średnia runa płomienia",
+          "slug": "medium-flame-rune",
           "tags": [
             "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
             "DOS2"
-          ]
-        },
-        {
-          "name": "Medium % Rune",
-          "slug": "medium-rune",
-          "tags": [
-            "Ingredients",
-            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
           ]
         }
       ],
       "result": {
-        "name": "Large % Rune",
-        "slug": "large-rune",
+        "name": "Large Flame Rune",
+        "namePl": "Duża runa płomienia",
+        "slug": "large-flame-rune",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -14356,14 +14703,313 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
     },
     {
-      "id": "Magia/LARGE--percent-RUNE-OF-POWER:Large % Rune+Rune Frame of Power",
+      "id": "Skladniki/LARGE-FROST-RUNE:Pixie Dust+Medium Frost Rune@x2",
       "ingredients": [
         {
-          "name": "Large % Rune",
-          "slug": "large-rune",
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
           "tags": [
             "Ingredients",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Medium Frost Rune",
+          "namePl": "Średnia runa mrozu",
+          "slug": "medium-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Frost Rune",
+        "namePl": "Duża runa mrozu",
+        "slug": "large-frost-rune",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
+    },
+    {
+      "id": "Skladniki/LARGE-MASTERWORK-RUNE:Pixie Dust+Medium Masterwork Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Medium Masterwork Rune",
+          "namePl": "Średnia runa kunsztu",
+          "slug": "medium-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Masterwork Rune",
+        "namePl": "Duża runa kunsztu",
+        "slug": "large-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
+    },
+    {
+      "id": "Skladniki/LARGE-ROCK-RUNE:Pixie Dust+Medium Rock Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Medium Rock Rune",
+          "namePl": "Średnia runa kamienia",
+          "slug": "medium-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Rock Rune",
+        "namePl": "Duża runa kamienia",
+        "slug": "large-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
+    },
+    {
+      "id": "Skladniki/LARGE-THUNDER-RUNE:Pixie Dust+Medium Thunder Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Medium Thunder Rune",
+          "namePl": "Średnia runa grzmotu",
+          "slug": "medium-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Thunder Rune",
+        "namePl": "Duża runa grzmotu",
+        "slug": "large-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
+    },
+    {
+      "id": "Skladniki/LARGE-VENOM-RUNE:Pixie Dust+Medium Venom Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Medium Venom Rune",
+          "namePl": "Średnia runa jadu",
+          "slug": "medium-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Venom Rune",
+        "namePl": "Duża runa jadu",
+        "slug": "large-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A105:G105"
+    },
+    {
+      "id": "Magia/LARGE-FLAME-RUNE-OF-POWER:Large Flame Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Flame Rune",
+          "namePl": "Duża runa płomienia",
+          "slug": "large-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -14380,15 +15026,312 @@
         }
       ],
       "result": {
-        "name": "Large % Rune of Power",
-        "slug": "large-rune-of-power",
+        "name": "Large Flame Rune Of Power",
+        "namePl": "Potężna duża runa płomienia",
+        "slug": "large-flame-rune-of-power",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A114:G114"
+    },
+    {
+      "id": "Magia/LARGE-FROST-RUNE-OF-POWER:Large Frost Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Frost Rune",
+          "namePl": "Duża runa mrozu",
+          "slug": "large-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Frost Rune Of Power",
+        "namePl": "Potężna duża runa mrozu",
+        "slug": "large-frost-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A114:G114"
+    },
+    {
+      "id": "Magia/LARGE-MASTERWORK-RUNE-OF-POWER:Large Masterwork Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Masterwork Rune",
+          "namePl": "Duża runa kunsztu",
+          "slug": "large-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Masterwork Rune Of Power",
+        "namePl": "Potężna duża runa kunsztu",
+        "slug": "large-masterwork-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A114:G114"
+    },
+    {
+      "id": "Magia/LARGE-ROCK-RUNE-OF-POWER:Large Rock Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Rock Rune",
+          "namePl": "Duża runa kamienia",
+          "slug": "large-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Rock Rune Of Power",
+        "namePl": "Potężna duża runa kamienia",
+        "slug": "large-rock-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A114:G114"
+    },
+    {
+      "id": "Magia/LARGE-THUNDER-RUNE-OF-POWER:Large Thunder Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Thunder Rune",
+          "namePl": "Duża runa grzmotu",
+          "slug": "large-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Thunder Rune Of Power",
+        "namePl": "Potężna duża runa grzmotu",
+        "slug": "large-thunder-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A114:G114"
+    },
+    {
+      "id": "Magia/LARGE-VENOM-RUNE-OF-POWER:Large Venom Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Large Venom Rune",
+          "namePl": "Duża runa jadu",
+          "slug": "large-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Large Venom Rune Of Power",
+        "namePl": "Potężna duża runa jadu",
+        "slug": "large-venom-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -15963,7 +16906,7 @@
         "slug": "laser-ray-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -15974,7 +16917,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -15987,12 +16930,10 @@
       "id": "Skladniki/LEATHER-SCRAPS:Cutting Tool+Animal Hide",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -16027,53 +16968,7 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A55:G55"
-    },
-    {
-      "id": "Skladniki/LEATHER-SCRAPS:Dagger+Animal Hide",
-      "ingredients": [
-        {
-          "name": "Knife or Dagger",
-          "slug": "knife-or-dagger",
-          "tags": [
-            "Weapons",
-            "Ingredients",
-            "DOS2"
-          ]
-        },
-        {
-          "name": "Animal Hide",
-          "namePl": "Skóra zwierzęca",
-          "slug": "animal-hide",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Leather Scraps",
-        "namePl": "Skrawki skóry",
-        "slug": "leather-scraps",
-        "tags": [
-          "Ingredients",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Ingredients",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A56:G56; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A57:G57"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A55:G55; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A56:G56; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A57:G57"
     },
     {
       "id": "Skladniki/LIVING-ON-THE-EDGE-SCROLL:Sheet of Paper+Alien Shadow Essence+Giblets",
@@ -16317,7 +17212,7 @@
         "slug": "living-on-the-edge-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -16327,7 +17222,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -16436,7 +17331,7 @@
         "slug": "living-wall-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -16447,7 +17342,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -16660,12 +17555,10 @@
           ]
         },
         {
-          "name": "Honey",
-          "namePl": "Miód",
-          "slug": "honey",
+          "name": "#Honey-Source",
+          "selectorTag": "Honey-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Honey-Source"
           ]
         }
       ],
@@ -16972,17 +17865,10 @@
           ]
         },
         {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
+          "name": "#Milk-Source",
+          "selectorTag": "Milk-Source",
           "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
+            "Milk-Source"
           ]
         }
       ],
@@ -17114,7 +18000,7 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A701:G701"
     },
     {
-      "id": "Skladniki/MEDIUM--percent-RUNE:Pixie Dust+Small % Rune+Small % Rune",
+      "id": "Skladniki/MEDIUM-FLAME-RUNE:Pixie Dust+Small Flame Rune@x2",
       "ingredients": [
         {
           "name": "Pixie Dust",
@@ -17129,32 +18015,42 @@
           ]
         },
         {
-          "name": "Small % Rune",
-          "slug": "small-rune",
+          "name": "Small Flame Rune",
+          "namePl": "Mała runa płomienia",
+          "slug": "small-flame-rune",
           "tags": [
             "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
             "DOS2"
-          ]
-        },
-        {
-          "name": "Small % Rune",
-          "slug": "small-rune",
-          "tags": [
-            "Ingredients",
-            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
           ]
         }
       ],
       "result": {
-        "name": "Medium % Rune",
-        "slug": "medium-rune",
+        "name": "Medium Flame Rune",
+        "namePl": "Średnia runa płomienia",
+        "slug": "medium-flame-rune",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -17163,14 +18059,313 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
     },
     {
-      "id": "Magia/MEDIUM--percent-RUNE-OF-POWER:Medium % Rune+Rune Frame of Power",
+      "id": "Skladniki/MEDIUM-FROST-RUNE:Pixie Dust+Small Frost Rune@x2",
       "ingredients": [
         {
-          "name": "Medium % Rune",
-          "slug": "medium-rune",
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
           "tags": [
             "Ingredients",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Small Frost Rune",
+          "namePl": "Mała runa mrozu",
+          "slug": "small-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Frost Rune",
+        "namePl": "Średnia runa mrozu",
+        "slug": "medium-frost-rune",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
+    },
+    {
+      "id": "Skladniki/MEDIUM-MASTERWORK-RUNE:Pixie Dust+Small Masterwork Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Small Masterwork Rune",
+          "namePl": "Mała runa kunsztu",
+          "slug": "small-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Masterwork Rune",
+        "namePl": "Średnia runa kunsztu",
+        "slug": "medium-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
+    },
+    {
+      "id": "Skladniki/MEDIUM-ROCK-RUNE:Pixie Dust+Small Rock Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Small Rock Rune",
+          "namePl": "Mała runa kamienia",
+          "slug": "small-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Rock Rune",
+        "namePl": "Średnia runa kamienia",
+        "slug": "medium-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
+    },
+    {
+      "id": "Skladniki/MEDIUM-THUNDER-RUNE:Pixie Dust+Small Thunder Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Small Thunder Rune",
+          "namePl": "Mała runa grzmotu",
+          "slug": "small-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Thunder Rune",
+        "namePl": "Średnia runa grzmotu",
+        "slug": "medium-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
+    },
+    {
+      "id": "Skladniki/MEDIUM-VENOM-RUNE:Pixie Dust+Small Venom Rune@x2",
+      "ingredients": [
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "IngredientSwamps"
+          ]
+        },
+        {
+          "name": "Small Venom Rune",
+          "namePl": "Mała runa jadu",
+          "slug": "small-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "quantity": "x2",
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Venom Rune",
+        "namePl": "Średnia runa jadu",
+        "slug": "medium-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A106:G106"
+    },
+    {
+      "id": "Magia/MEDIUM-FLAME-RUNE-OF-POWER:Medium Flame Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Flame Rune",
+          "namePl": "Średnia runa płomienia",
+          "slug": "medium-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -17187,15 +18382,312 @@
         }
       ],
       "result": {
-        "name": "Medium % Rune of Power",
-        "slug": "medium-rune-of-power",
+        "name": "Medium Flame Rune Of Power",
+        "namePl": "Potężna średnia runa płomienia",
+        "slug": "medium-flame-rune-of-power",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A115:G115"
+    },
+    {
+      "id": "Magia/MEDIUM-FROST-RUNE-OF-POWER:Medium Frost Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Frost Rune",
+          "namePl": "Średnia runa mrozu",
+          "slug": "medium-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Frost Rune Of Power",
+        "namePl": "Potężna średnia runa mrozu",
+        "slug": "medium-frost-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A115:G115"
+    },
+    {
+      "id": "Magia/MEDIUM-MASTERWORK-RUNE-OF-POWER:Medium Masterwork Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Masterwork Rune",
+          "namePl": "Średnia runa kunsztu",
+          "slug": "medium-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Masterwork Rune Of Power",
+        "namePl": "Potężna średnia runa kunsztu",
+        "slug": "medium-masterwork-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A115:G115"
+    },
+    {
+      "id": "Magia/MEDIUM-ROCK-RUNE-OF-POWER:Medium Rock Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Rock Rune",
+          "namePl": "Średnia runa kamienia",
+          "slug": "medium-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Rock Rune Of Power",
+        "namePl": "Potężna średnia runa kamienia",
+        "slug": "medium-rock-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A115:G115"
+    },
+    {
+      "id": "Magia/MEDIUM-THUNDER-RUNE-OF-POWER:Medium Thunder Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Thunder Rune",
+          "namePl": "Średnia runa grzmotu",
+          "slug": "medium-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Thunder Rune Of Power",
+        "namePl": "Potężna średnia runa grzmotu",
+        "slug": "medium-thunder-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A115:G115"
+    },
+    {
+      "id": "Magia/MEDIUM-VENOM-RUNE-OF-POWER:Medium Venom Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Medium Venom Rune",
+          "namePl": "Średnia runa jadu",
+          "slug": "medium-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Medium Venom Rune Of Power",
+        "namePl": "Potężna średnia runa jadu",
+        "slug": "medium-venom-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -18936,7 +20428,7 @@
         "slug": "medusa-head-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -18947,7 +20439,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -19123,7 +20615,7 @@
         "slug": "mend-metal-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -19134,7 +20626,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -19176,7 +20668,7 @@
         "slug": "meteor-shower-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -19187,7 +20679,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -19836,7 +21328,7 @@
         "slug": "mosquito-swarm-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -19846,7 +21338,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -19930,12 +21422,10 @@
           ]
         },
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         }
       ],
@@ -19965,14 +21455,21 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A708:G708"
     },
     {
-      "id": "Magia/MYSTICAL-GIANT--percent-RUNE:Giant % Rune+Mystical Rune Frame",
+      "id": "Magia/MYSTICAL-GIANT-FLAME-RUNE:Giant Flame Rune+Mystical Rune Frame",
       "ingredients": [
         {
-          "name": "Giant % Rune",
-          "slug": "giant-rune",
+          "name": "Giant Flame Rune",
+          "namePl": "Ogromna runa płomienia",
+          "slug": "giant-flame-rune",
           "tags": [
             "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -19989,15 +21486,25 @@
         }
       ],
       "result": {
-        "name": "Mystical Giant % Rune",
-        "slug": "mystical-giant-rune",
+        "name": "Mystical Giant Flame Rune",
+        "namePl": "Mistyczna ogromna runa płomienia",
+        "slug": "mystical-giant-flame-rune",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -20006,14 +21513,20 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
     },
     {
-      "id": "Magia/MYSTICAL-LARGE--percent-RUNE:Large % Rune+Mystical Rune Frame",
+      "id": "Magia/MYSTICAL-GIANT-FROST-RUNE:Giant Frost Rune+Mystical Rune Frame",
       "ingredients": [
         {
-          "name": "Large % Rune",
-          "slug": "large-rune",
+          "name": "Giant Frost Rune",
+          "namePl": "Ogromna runa mrozu",
+          "slug": "giant-frost-rune",
           "tags": [
             "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -20030,15 +21543,313 @@
         }
       ],
       "result": {
-        "name": "Mystical Large % Rune",
-        "slug": "mystical-large-rune",
+        "name": "Mystical Giant Frost Rune",
+        "namePl": "Mistyczna ogromna runa mrozu",
+        "slug": "mystical-giant-frost-rune",
         "tags": [
           "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
+    },
+    {
+      "id": "Magia/MYSTICAL-GIANT-MASTERWORK-RUNE:Giant Masterwork Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Giant Masterwork Rune",
+          "namePl": "Ogromna runa kunsztu",
+          "slug": "giant-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Giant Masterwork Rune",
+        "namePl": "Mistyczna ogromna runa kunsztu",
+        "slug": "mystical-giant-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
+    },
+    {
+      "id": "Magia/MYSTICAL-GIANT-ROCK-RUNE:Giant Rock Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Giant Rock Rune",
+          "namePl": "Ogromna runa kamienia",
+          "slug": "giant-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Giant Rock Rune",
+        "namePl": "Mistyczna ogromna runa kamienia",
+        "slug": "mystical-giant-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
+    },
+    {
+      "id": "Magia/MYSTICAL-GIANT-THUNDER-RUNE:Giant Thunder Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Giant Thunder Rune",
+          "namePl": "Ogromna runa grzmotu",
+          "slug": "giant-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Giant Thunder Rune",
+        "namePl": "Mistyczna ogromna runa grzmotu",
+        "slug": "mystical-giant-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
+    },
+    {
+      "id": "Magia/MYSTICAL-GIANT-VENOM-RUNE:Giant Venom Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Giant Venom Rune",
+          "namePl": "Ogromna runa jadu",
+          "slug": "giant-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Giant Venom Rune",
+        "namePl": "Mistyczna ogromna runa jadu",
+        "slug": "mystical-giant-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A117:G117"
+    },
+    {
+      "id": "Magia/MYSTICAL-LARGE-FLAME-RUNE:Large Flame Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Large Flame Rune",
+          "namePl": "Duża runa płomienia",
+          "slug": "large-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Large Flame Rune",
+        "namePl": "Mistyczna duża runa płomienia",
+        "slug": "mystical-large-flame-rune",
+        "tags": [
+          "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -20047,14 +21858,20 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
     },
     {
-      "id": "Magia/MYSTICAL-MEDIUM--percent-RUNE:Medium % Rune+Mystical Rune Frame",
+      "id": "Magia/MYSTICAL-LARGE-FROST-RUNE:Large Frost Rune+Mystical Rune Frame",
       "ingredients": [
         {
-          "name": "Medium % Rune",
-          "slug": "medium-rune",
+          "name": "Large Frost Rune",
+          "namePl": "Duża runa mrozu",
+          "slug": "large-frost-rune",
           "tags": [
             "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -20071,15 +21888,313 @@
         }
       ],
       "result": {
-        "name": "Mystical Medium % Rune",
-        "slug": "mystical-medium-rune",
+        "name": "Mystical Large Frost Rune",
+        "namePl": "Mistyczna duża runa mrozu",
+        "slug": "mystical-large-frost-rune",
         "tags": [
           "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
+    },
+    {
+      "id": "Magia/MYSTICAL-LARGE-MASTERWORK-RUNE:Large Masterwork Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Large Masterwork Rune",
+          "namePl": "Duża runa kunsztu",
+          "slug": "large-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Large Masterwork Rune",
+        "namePl": "Mistyczna duża runa kunsztu",
+        "slug": "mystical-large-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
+    },
+    {
+      "id": "Magia/MYSTICAL-LARGE-ROCK-RUNE:Large Rock Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Large Rock Rune",
+          "namePl": "Duża runa kamienia",
+          "slug": "large-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Large Rock Rune",
+        "namePl": "Mistyczna duża runa kamienia",
+        "slug": "mystical-large-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
+    },
+    {
+      "id": "Magia/MYSTICAL-LARGE-THUNDER-RUNE:Large Thunder Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Large Thunder Rune",
+          "namePl": "Duża runa grzmotu",
+          "slug": "large-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Large Thunder Rune",
+        "namePl": "Mistyczna duża runa grzmotu",
+        "slug": "mystical-large-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
+    },
+    {
+      "id": "Magia/MYSTICAL-LARGE-VENOM-RUNE:Large Venom Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Large Venom Rune",
+          "namePl": "Duża runa jadu",
+          "slug": "large-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Large Venom Rune",
+        "namePl": "Mistyczna duża runa jadu",
+        "slug": "mystical-large-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A118:G118"
+    },
+    {
+      "id": "Magia/MYSTICAL-MEDIUM-FLAME-RUNE:Medium Flame Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Medium Flame Rune",
+          "namePl": "Średnia runa płomienia",
+          "slug": "medium-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Medium Flame Rune",
+        "namePl": "Mistyczna średnia runa płomienia",
+        "slug": "mystical-medium-flame-rune",
+        "tags": [
+          "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -20088,14 +22203,20 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
     },
     {
-      "id": "Magia/MYSTICAL-SMALL--percent-RUNE:Small % Rune+Mystical Rune Frame",
+      "id": "Magia/MYSTICAL-MEDIUM-FROST-RUNE:Medium Frost Rune+Mystical Rune Frame",
       "ingredients": [
         {
-          "name": "Small % Rune",
-          "slug": "small-rune",
+          "name": "Medium Frost Rune",
+          "namePl": "Średnia runa mrozu",
+          "slug": "medium-frost-rune",
           "tags": [
             "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -20112,15 +22233,600 @@
         }
       ],
       "result": {
-        "name": "Mystical Small % Rune",
-        "slug": "mystical-small-rune",
+        "name": "Mystical Medium Frost Rune",
+        "namePl": "Mistyczna średnia runa mrozu",
+        "slug": "mystical-medium-frost-rune",
         "tags": [
           "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
+    },
+    {
+      "id": "Magia/MYSTICAL-MEDIUM-MASTERWORK-RUNE:Medium Masterwork Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Medium Masterwork Rune",
+          "namePl": "Średnia runa kunsztu",
+          "slug": "medium-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Medium Masterwork Rune",
+        "namePl": "Mistyczna średnia runa kunsztu",
+        "slug": "mystical-medium-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
+    },
+    {
+      "id": "Magia/MYSTICAL-MEDIUM-ROCK-RUNE:Medium Rock Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Medium Rock Rune",
+          "namePl": "Średnia runa kamienia",
+          "slug": "medium-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Medium Rock Rune",
+        "namePl": "Mistyczna średnia runa kamienia",
+        "slug": "mystical-medium-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
+    },
+    {
+      "id": "Magia/MYSTICAL-MEDIUM-THUNDER-RUNE:Medium Thunder Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Medium Thunder Rune",
+          "namePl": "Średnia runa grzmotu",
+          "slug": "medium-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Medium Thunder Rune",
+        "namePl": "Mistyczna średnia runa grzmotu",
+        "slug": "mystical-medium-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
+    },
+    {
+      "id": "Magia/MYSTICAL-MEDIUM-VENOM-RUNE:Medium Venom Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Medium Venom Rune",
+          "namePl": "Średnia runa jadu",
+          "slug": "medium-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Medium Venom Rune",
+        "namePl": "Mistyczna średnia runa jadu",
+        "slug": "mystical-medium-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A119:G119"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-FLAME-RUNE:Small Flame Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Flame Rune",
+          "namePl": "Mała runa płomienia",
+          "slug": "small-flame-rune",
+          "tags": [
+            "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Flame Rune",
+        "namePl": "Mistyczna mała runa płomienia",
+        "slug": "mystical-small-flame-rune",
+        "tags": [
+          "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A120:G120"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-FROST-RUNE:Small Frost Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Frost Rune",
+          "namePl": "Mała runa mrozu",
+          "slug": "small-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Frost Rune",
+        "namePl": "Mistyczna mała runa mrozu",
+        "slug": "mystical-small-frost-rune",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A120:G120"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-MASTERWORK-RUNE:Small Masterwork Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Masterwork Rune",
+          "namePl": "Mała runa kunsztu",
+          "slug": "small-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Masterwork Rune",
+        "namePl": "Mistyczna mała runa kunsztu",
+        "slug": "mystical-small-masterwork-rune",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A120:G120"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-ROCK-RUNE:Small Rock Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Rock Rune",
+          "namePl": "Mała runa kamienia",
+          "slug": "small-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Rock Rune",
+        "namePl": "Mistyczna mała runa kamienia",
+        "slug": "mystical-small-rock-rune",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A120:G120"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-THUNDER-RUNE:Small Thunder Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Thunder Rune",
+          "namePl": "Mała runa grzmotu",
+          "slug": "small-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Thunder Rune",
+        "namePl": "Mistyczna mała runa grzmotu",
+        "slug": "mystical-small-thunder-rune",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A120:G120"
+    },
+    {
+      "id": "Magia/MYSTICAL-SMALL-VENOM-RUNE:Small Venom Rune+Mystical Rune Frame",
+      "ingredients": [
+        {
+          "name": "Small Venom Rune",
+          "namePl": "Mała runa jadu",
+          "slug": "small-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Mystical Rune Frame",
+          "namePl": "Mistyczna rama runy",
+          "slug": "mystical-rune-frame",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Mystical Small Venom Rune",
+        "namePl": "Mistyczna mała runa jadu",
+        "slug": "mystical-small-venom-rune",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -20450,7 +23156,7 @@
         "slug": "nether-swap-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -20461,7 +23167,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -20565,12 +23271,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         }
       ],
@@ -20820,7 +23524,7 @@
         "slug": "peace-of-mind-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -20831,7 +23535,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -21162,7 +23866,7 @@
         "slug": "planar-gateway-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -21173,7 +23877,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -21246,12 +23950,10 @@
       "id": "Strzaly-i-granaty/POISON-ARROW:Poison+Arrow",
       "ingredients": [
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         },
         {
@@ -21312,12 +24014,10 @@
           ]
         },
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         }
       ],
@@ -21515,7 +24215,7 @@
         "slug": "poison-dart-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -21526,7 +24226,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -21601,12 +24301,10 @@
           ]
         },
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         }
       ],
@@ -21812,7 +24510,7 @@
         "slug": "poison-wave-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -21823,7 +24521,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -21894,12 +24592,10 @@
       "id": "Strzaly-i-granaty/POISONED-ARROWHEAD:Poison+Arrowhead",
       "ingredients": [
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         },
         {
@@ -21959,17 +24655,10 @@
           ]
         },
         {
-          "name": "Milk",
-          "namePl": "Mleko",
-          "slug": "milk",
+          "name": "#Milk-Source",
+          "selectorTag": "Milk-Source",
           "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Drink"
+            "Milk-Source"
           ]
         }
       ],
@@ -22450,7 +25139,7 @@
         "slug": "power-infusion-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -22461,7 +25150,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -22636,7 +25325,7 @@
         "slug": "pressure-spike-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -22647,7 +25336,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -22960,7 +25649,7 @@
         "slug": "pyroclastic-eruption-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -22971,7 +25660,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -23093,7 +25782,7 @@
         "slug": "rain-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -23104,7 +25793,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -23214,7 +25903,7 @@
         "slug": "raise-bloated-corpse-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -23224,7 +25913,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -23395,7 +26084,7 @@
         "slug": "raise-bone-widow-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -23405,7 +26094,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -23515,7 +26204,7 @@
         "slug": "rallying-cry-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -23526,7 +26215,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -23825,7 +26514,7 @@
         "slug": "reactive-armour-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -23836,7 +26525,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -23956,7 +26645,7 @@
         "slug": "restoration-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -23967,7 +26656,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -24305,7 +26994,7 @@
         "slug": "searing-daggers-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -24316,7 +27005,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -24423,7 +27112,7 @@
         "slug": "shackles-of-pain-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -24433,7 +27122,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -24476,7 +27165,7 @@
         "slug": "shadow-infusion-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -24487,7 +27176,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -24910,12 +27599,10 @@
       "id": "Skladniki/SHOCKING-ARROWHEAD:CuttingTool+Tooth",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -25058,7 +27745,7 @@
         "slug": "shocking-touch-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -25069,7 +27756,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -25082,12 +27769,10 @@
       "id": "Strzaly-i-granaty/SHORT-STICK-AND-WOOD-CHIPS:CuttingTool+Long Branch",
       "ingredients": [
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         },
         {
@@ -25239,7 +27924,7 @@
         "slug": "silencing-stare-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -25249,7 +27934,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -25289,7 +27974,7 @@
         "slug": "siphon-poison-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -25300,7 +27985,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -25411,7 +28096,7 @@
         "slug": "skin-graft-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -25422,7 +28107,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -25491,12 +28176,10 @@
       "id": "Strzaly-i-granaty/SLOWDOWN-ARROW:Oil+Arrow",
       "ingredients": [
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         },
         {
@@ -25542,12 +28225,10 @@
       "id": "Strzaly-i-granaty/SLOWDOWN-ARROWHEAD:Oil+Arrowhead",
       "ingredients": [
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         },
         {
@@ -25588,14 +28269,21 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A138:G138"
     },
     {
-      "id": "Magia/SMALL--percent-RUNE-OF-POWER:Small % Rune+Rune Frame of Power",
+      "id": "Magia/SMALL-FLAME-RUNE-OF-POWER:Small Flame Rune+Rune Frame of Power",
       "ingredients": [
         {
-          "name": "Small % Rune",
-          "slug": "small-rune",
+          "name": "Small Flame Rune",
+          "namePl": "Mała runa płomienia",
+          "slug": "small-flame-rune",
           "tags": [
             "Ingredients",
+            "Critical-Chance",
+            "Fire-Damage",
+            "Fire-Resistance",
             "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
           ]
         },
         {
@@ -25612,15 +28300,312 @@
         }
       ],
       "result": {
-        "name": "Small % Rune of Power",
-        "slug": "small-rune-of-power",
+        "name": "Small Flame Rune Of Power",
+        "namePl": "Potężna mała runa płomienia",
+        "slug": "small-flame-rune-of-power",
         "tags": [
           "Ingredients",
+          "Critical-Chance",
+          "Fire-Damage",
+          "Fire-Resistance",
           "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
         ]
       },
       "tags": [
         "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A116:G116"
+    },
+    {
+      "id": "Magia/SMALL-FROST-RUNE-OF-POWER:Small Frost Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Small Frost Rune",
+          "namePl": "Mała runa mrozu",
+          "slug": "small-frost-rune",
+          "tags": [
+            "Ingredients",
+            "Water-Damage",
+            "Water-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Small Frost Rune Of Power",
+        "namePl": "Potężna mała runa mrozu",
+        "slug": "small-frost-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Water-Damage",
+          "Water-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A116:G116"
+    },
+    {
+      "id": "Magia/SMALL-MASTERWORK-RUNE-OF-POWER:Small Masterwork Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Small Masterwork Rune",
+          "namePl": "Mała runa kunsztu",
+          "slug": "small-masterwork-rune",
+          "tags": [
+            "Ingredients",
+            "Physical-Damage",
+            "Physical-Armour",
+            "Magic-Armour",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Small Masterwork Rune Of Power",
+        "namePl": "Potężna mała runa kunsztu",
+        "slug": "small-masterwork-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Physical-Damage",
+          "Physical-Armour",
+          "Magic-Armour",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A116:G116"
+    },
+    {
+      "id": "Magia/SMALL-ROCK-RUNE-OF-POWER:Small Rock Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Small Rock Rune",
+          "namePl": "Mała runa kamienia",
+          "slug": "small-rock-rune",
+          "tags": [
+            "Ingredients",
+            "Vitality",
+            "Earth-Damage",
+            "Earth-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Small Rock Rune Of Power",
+        "namePl": "Potężna mała runa kamienia",
+        "slug": "small-rock-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Vitality",
+          "Earth-Damage",
+          "Earth-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A116:G116"
+    },
+    {
+      "id": "Magia/SMALL-THUNDER-RUNE-OF-POWER:Small Thunder Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Small Thunder Rune",
+          "namePl": "Mała runa grzmotu",
+          "slug": "small-thunder-rune",
+          "tags": [
+            "Ingredients",
+            "Air-Damage",
+            "Air-Resistance",
+            "Dodge",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Small Thunder Rune Of Power",
+        "namePl": "Potężna mała runa grzmotu",
+        "slug": "small-thunder-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Air-Damage",
+          "Air-Resistance",
+          "Dodge",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge",
+        "DOS2"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A116:G116"
+    },
+    {
+      "id": "Magia/SMALL-VENOM-RUNE-OF-POWER:Small Venom Rune+Rune Frame of Power",
+      "ingredients": [
+        {
+          "name": "Small Venom Rune",
+          "namePl": "Mała runa jadu",
+          "slug": "small-venom-rune",
+          "tags": [
+            "Ingredients",
+            "Accuracy",
+            "Poison-Damage",
+            "Poison-Resistance",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        },
+        {
+          "name": "Rune Frame of Power",
+          "namePl": "Potężna rama runy",
+          "slug": "rune-frame-of-power",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Rune"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Small Venom Rune Of Power",
+        "namePl": "Potężna mała runa jadu",
+        "slug": "small-venom-rune-of-power",
+        "tags": [
+          "Ingredients",
+          "Accuracy",
+          "Poison-Damage",
+          "Poison-Resistance",
+          "DOS2"
+        ],
+        "craftingCategories": [
+          "Rune"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance",
         "DOS2"
       ],
       "requirements": "",
@@ -25693,12 +28678,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         },
         {
@@ -25745,12 +28728,10 @@
       "id": "Magia/SMALL-FROST-RUNE:Water+Metal+Pixie Dust",
       "ingredients": [
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         },
         {
@@ -25870,11 +28851,10 @@
           ]
         },
         {
-          "name": "Wine",
-          "slug": "wine",
+          "name": "#Wine-Source",
+          "selectorTag": "Wine-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Wine-Source"
           ]
         },
         {
@@ -26091,11 +29071,10 @@
           ]
         },
         {
-          "name": "Beer",
-          "slug": "beer",
+          "name": "#Beer-Source",
+          "selectorTag": "Beer-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Beer-Source"
           ]
         },
         {
@@ -26142,12 +29121,10 @@
       "id": "Magia/SMALL-THUNDER-RUNE:Water+Gold+Pixie Dust",
       "ingredients": [
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         },
         {
@@ -26220,12 +29197,10 @@
           ]
         },
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         },
         {
@@ -26431,7 +29406,7 @@
         "slug": "soothing-cold-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -26442,7 +29417,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -26624,7 +29599,7 @@
         "slug": "soul-mate-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -26635,7 +29610,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -26815,7 +29790,7 @@
         "slug": "spider-legs-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -26826,7 +29801,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -26869,7 +29844,7 @@
         "slug": "spontaneous-combustion-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -26880,7 +29855,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -26992,7 +29967,7 @@
         "slug": "spread-your-wings-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -27003,7 +29978,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -27227,7 +30202,7 @@
         "slug": "steam-lance-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -27238,7 +30213,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -27308,12 +30283,10 @@
       "id": "Strzaly-i-granaty/STEAMCLOUD-ARROWHEAD:Water+Fire Arrowhead",
       "ingredients": [
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         },
         {
@@ -27446,7 +30419,7 @@
         "slug": "summon-fire-slug-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -27457,7 +30430,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -27496,12 +30469,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         }
       ],
@@ -27562,12 +30533,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Oil-Source"
           ]
         }
       ],
@@ -27635,7 +30604,7 @@
         "slug": "summon-oily-blob-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -27646,7 +30615,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -27690,7 +30659,7 @@
         "slug": "supercharger-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -27701,7 +30670,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -27814,7 +30783,7 @@
         "slug": "superconductor-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -27825,7 +30794,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -27999,7 +30968,7 @@
         "slug": "supernova-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Pyrokinetic",
           "DOS2"
         ],
@@ -28010,7 +30979,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2"
       ],
@@ -28172,7 +31141,7 @@
         "slug": "teleportation-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -28183,7 +31152,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -28294,7 +31263,7 @@
         "slug": "tentacle-lash-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -28305,7 +31274,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -28348,7 +31317,7 @@
         "slug": "terrain-transmutation-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Polymorph",
           "DOS2"
         ],
@@ -28359,7 +31328,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2"
       ],
@@ -28657,7 +31626,7 @@
         "slug": "thunderstorm-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -28668,7 +31637,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -28959,7 +31928,7 @@
         "slug": "tornado-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Aerotheurge",
           "DOS2"
         ],
@@ -28970,7 +31939,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2"
       ],
@@ -29010,7 +31979,7 @@
         "slug": "totems-of-the-necromancer-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2"
         ],
         "craftingCategories": [
@@ -29020,7 +31989,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2"
       ],
       "requirements": "",
@@ -29264,7 +32233,7 @@
         "slug": "warp-infusion-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2"
         ],
@@ -29275,7 +32244,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2"
       ],
@@ -29351,12 +32320,10 @@
       "id": "Skladniki/WATER-ARROW:Water+Arrow",
       "ingredients": [
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         },
         {
@@ -29407,12 +32374,10 @@
       "id": "Skladniki/WATER-ARROWHEAD:Water+Arrowhead",
       "ingredients": [
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         },
         {
@@ -29472,12 +32437,10 @@
           ]
         },
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         }
       ],
@@ -29668,7 +32631,7 @@
         "slug": "winter-blast-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Hydrosophist",
           "DOS2"
         ],
@@ -29679,7 +32642,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2"
       ],
@@ -29895,12 +32858,10 @@
           ]
         },
         {
-          "name": "Cutting Tool",
-          "namePl": "Narzędzie do krojenia",
-          "slug": "cutting-tool",
+          "name": "#Cutting-Tool",
+          "selectorTag": "Cutting-Tool",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Cutting-Tool"
           ]
         }
       ],
@@ -30020,12 +32981,10 @@
           ]
         },
         {
-          "name": "Water",
-          "namePl": "Woda",
-          "slug": "water",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Water-Source"
           ]
         }
       ],
@@ -30045,135 +33004,7 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A49:G49"
-    },
-    {
-      "id": "Skladniki/WOOD-PULP:Wood Chips+#Water-Source",
-      "ingredients": [
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ]
-        },
-        {
-          "name": "Water Source",
-          "namePl": "Źródło wody",
-          "slug": "water-source",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Wood Pulp",
-        "namePl": "Sterta drewna",
-        "slug": "wood-pulp",
-        "tags": [
-          "Ingredients",
-          "DOS2"
-        ]
-      },
-      "tags": [
-        "Ingredients",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A559:G559; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A573:G573; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A585:G585; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A601:G601; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A615:G615; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A629:G629; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A638:G638"
-    },
-    {
-      "id": "Skladniki/WOOD-PULP:Wood Chips+WIADRO Z WODĄ",
-      "ingredients": [
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ]
-        },
-        {
-          "name": "Bucket with Water",
-          "namePl": "Wiadro wody",
-          "slug": "bucket-with-water",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Wood Pulp",
-        "namePl": "Sterta drewna",
-        "slug": "wood-pulp",
-        "tags": [
-          "Ingredients",
-          "DOS2"
-        ]
-      },
-      "tags": [
-        "Ingredients",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Secrets of the Scroll VI"
-    },
-    {
-      "id": "Skladniki/WOOD-PULP:Wood Chips+Water Barrel",
-      "ingredients": [
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ]
-        },
-        {
-          "name": "Water Barrel",
-          "slug": "water-barrel",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Wood Pulp",
-        "namePl": "Sterta drewna",
-        "slug": "wood-pulp",
-        "tags": [
-          "Ingredients",
-          "DOS2"
-        ]
-      },
-      "tags": [
-        "Ingredients",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Secrets of the Scroll VI"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A49:G49; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A559:G559; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A573:G573; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A585:G585; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A601:G601; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A615:G615; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A629:G629; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A638:G638; Secrets of the Scroll VI"
     },
     {
       "id": "Ksiegi-umiejetnosci/WORM-TREMOR-SKILLBOOK:Blank Skillbook Earth+Worm Tremor Scroll",
@@ -30210,7 +33041,7 @@
         "slug": "worm-tremor-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Geomancer",
           "DOS2"
         ],
@@ -30221,7 +33052,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2"
       ],
@@ -30721,7 +33552,7 @@
         "Dodge",
         "Magic-Armour",
         "Strength",
-        "Dexterity",
+        "Finesse",
         "Intelligence",
         "DOS2"
       ],
@@ -30762,7 +33593,7 @@
         "Dodge",
         "Magic-Armour",
         "Strength",
-        "Dexterity",
+        "Finesse",
         "Intelligence",
         "DOS2"
       ],
@@ -30882,12 +33713,10 @@
       ],
       "ingredients": [
         {
-          "name": "Poison",
-          "namePl": "Trucizna",
-          "slug": "poison",
+          "name": "#Poison-Source",
+          "selectorTag": "Poison-Source",
           "tags": [
-            "Ingredients",
-            "DOS2"
+            "Poison-Source"
           ]
         }
       ],
@@ -31074,6 +33903,69 @@
       ],
       "craftingCategories": [
         "Knife"
+      ]
+    },
+    {
+      "name": "Cup of Oil",
+      "namePl": "Puchar oleju",
+      "slug": "cup-of-oil",
+      "tags": [
+        "Ingredients",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Fancy Bottle of Beer",
+      "namePl": "Butelka wybornego piwa",
+      "slug": "fancy-bottle-of-beer",
+      "tags": [
+        "Food-And-Drink",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Mug of Beer",
+      "namePl": "Kufel piwa",
+      "slug": "mug-of-beer",
+      "tags": [
+        "Food-And-Drink",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Beer Barrel",
+      "namePl": "Beczka piwa",
+      "slug": "beer-barrel",
+      "tags": [
+        "Stations-And-Containers",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Expensive Wine",
+      "namePl": "Drogie wino",
+      "slug": "expensive-wine",
+      "tags": [
+        "Food-And-Drink",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Mug of Wine",
+      "namePl": "Kubek wina",
+      "slug": "mug-of-wine",
+      "tags": [
+        "Food-And-Drink",
+        "DOS2"
+      ]
+    },
+    {
+      "name": "Wine barrel",
+      "namePl": "Beczka wina",
+      "slug": "wine-barrel",
+      "tags": [
+        "Stations-And-Containers",
+        "DOS2"
       ]
     }
   ]

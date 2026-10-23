@@ -3,7 +3,7 @@ import type { RecipeItem, RecipeUpgrade } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { tagLabel, visibleRecipeTags } from "../domain/recipeView"
 import { tooltipItemKey } from "../domain/tooltipIdentity"
-import { itemHref, type Game } from "../routing"
+import { games, itemHref, pageHref, type Game } from "../routing"
 
 type Props = {
   upgrades: RecipeUpgrade[]
@@ -32,6 +32,19 @@ function Item({ item, game }: { item: RecipeItem; game: Game }) {
     </>
   )
   const quantity = formatItemQuantity(item.quantity)
+  if (item.groupId) {
+    const slug = games.find((entry) => entry.id === game)!.slug
+    return (
+      <a
+        class="internal recipe-item recipe-item-group"
+        data-no-popover="true"
+        href={`${pageHref(slug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
+      >
+        {label}
+        <span class="group-count">{item.groupSize}</span>
+      </a>
+    )
+  }
   return (
     <>
       {item.slug && !item.selectorTag ? (

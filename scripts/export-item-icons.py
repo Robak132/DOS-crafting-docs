@@ -118,6 +118,17 @@ def stat_entries(directory):
                 'fields': dict(re.findall(r'^data "([^"]+)" "([^"\r\n]*)"', body, re.M)),
                 'parent': parent[1] if parent else None,
             }
+    # Generated equipment takes its look from an item group's root template.
+    roots = {}
+    for file in sorted(directory.rglob('ItemProgressionVisuals.txt')):
+        for group, body in re.findall(r'^new itemgroup "([^"]+)"\s*\n(.*?)(?=^new itemgroup |\Z)', file.read_text(encoding='utf-8-sig'), re.M | re.S):
+            templates = re.findall(r'^add rootgroup "([^"]+)"', body, re.M)
+            if len(set(templates)) == 1:
+                roots[group] = templates[0]
+    for entry in entries.values():
+        group = entry['fields'].get('ItemGroup')
+        if group in roots:
+            entry['fields'].setdefault('RootTemplate', roots[group])
     # DOS1 keeps the stats-to-root-template links outside the stat entries.
     for file in sorted(directory.rglob('Stats/Generated/Links/*.txt')):
         for stats, template in re.findall(r'^object itemstat "([^"]+)","([^"]+)"', file.read_text(encoding='utf-8-sig'), re.M):
@@ -247,7 +258,11 @@ def main():
                 names[label] = match['icon']
                 evidence[label] = match
         catalog = json.loads((catalogs / f'catalog-{game}.json').read_text(encoding='utf-8'))
-        items = {key(item.get('statsId') or item['name']): item for row in catalog['recipes'] for item in [row['result'], *row['ingredients']] if not item.get('selectorTag')}
+        items = {key(item.get('statsId') or item['name']): item for row in catalog['recipes'] for item in [row['result'], *row.get('extraResults', []), *row['ingredients']] if not item.get('selectorTag')}
+        # Group members that no recipe names (e.g. liquid sources) still show an icon.
+        for group in catalog.get('groups', {}).values():
+            for member in group['members']:
+                items.setdefault(key(member.get('statsId') or member['name']), member)
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
         catalog_names = set(items)
         if game == 'dos2-overhaul':

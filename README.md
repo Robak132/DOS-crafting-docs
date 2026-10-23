@@ -161,6 +161,7 @@ część szablonów dziedziczy ikonę po szablonie nadrzędnym.
 ```sh
 npm run generate:data
 python3 scripts/export-item-icons.py /sciezka/do/wyodrebnionych-zasobow
+python3 scripts/export-combo-properties.py /sciezka/do/Public/Shared/Stats/Generated/ItemComboProperties.txt
 npm run build
 npm run verify:dist
 ```

@@ -27,7 +27,7 @@
       "title": "Acid Spores Skillbook",
       "titlePl": "Księga umiejętności „Kwaśne Zarodniki”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -242,7 +242,7 @@
       "title": "Apotheosis Skillbook",
       "titlePl": "Księga umiejętności „Apoteoza”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -311,7 +311,7 @@
       "title": "Apportation Skillbook",
       "titlePl": "Księga umiejętności „Przyciągnięcie”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -335,7 +335,7 @@
       "title": "Arcane Stitch Skillbook",
       "titlePl": "Księga umiejętności „Magiczny Szew”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -359,7 +359,7 @@
       "title": "Armour of Frost Skillbook",
       "titlePl": "Księga umiejętności „Pancerz Mrozu”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -503,12 +503,14 @@
       ]
     },
     {
-      "slug": "beer",
-      "title": "Beer",
+      "slug": "beer-barrel",
+      "title": "Beer Barrel",
+      "titlePl": "Beczka piwa",
       "tags": [
         "DOS1",
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Stations-And-Containers"
       ]
     },
     {
@@ -566,7 +568,7 @@
       "title": "Black Shroud Skillbook",
       "titlePl": "Księga umiejętności „Czarny Całun”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -670,7 +672,7 @@
       "title": "Bleed Fire Skillbook",
       "titlePl": "Księga umiejętności „Ognisty Krwotok”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -744,7 +746,7 @@
       "title": "Blinding Radiance Skillbook",
       "titlePl": "Księga umiejętności „Oślepiający Blask”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -755,7 +757,7 @@
       "title": "Blood Rain Skillbook",
       "titlePl": "Księga umiejętności „Deszcz Krwi”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -807,7 +809,7 @@
       "title": "Blood Sucker Skillbook",
       "titlePl": "Księga umiejętności „Krwiopijca”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -895,7 +897,7 @@
       "title": "Bone Cage Skillbook",
       "titlePl": "Księga umiejętności „Kościana Klatka”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -1069,7 +1071,7 @@
       "title": "Bull Horns Skillbook",
       "titlePl": "Księga umiejętności „Bycze Rogi”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -1114,7 +1116,7 @@
       "title": "Cannibalise Skillbook",
       "titlePl": "Księga umiejętności „Kanibalizm”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -1151,7 +1153,7 @@
       "title": "Chain Lightning Skillbook",
       "titlePl": "Księga umiejętności „Łańcuch Piorunów”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -1175,7 +1177,7 @@
       "title": "Chameleon Cloak Skillbook",
       "titlePl": "Księga umiejętności „Płaszcz Kameleona”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -1295,7 +1297,7 @@
       "title": "Chicken Claw Skillbook",
       "titlePl": "Księga umiejętności „Kurzy Pazur”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -1352,7 +1354,7 @@
       "title": "Closed Circuit Skillbook",
       "titlePl": "Księga umiejętności „Obwód Zamknięty”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -1419,7 +1421,7 @@
       "title": "Conjure Incarnate Skillbook",
       "titlePl": "Księga umiejętności „Przyzwanie Przyzwańca”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -1443,7 +1445,7 @@
       "title": "Contamination Skillbook",
       "titlePl": "Księga umiejętności „Skażenie”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -1551,10 +1553,24 @@
       "title": "Cryogenic Stasis Skillbook",
       "titlePl": "Księga umiejętności „Kriostaza”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
+      ]
+    },
+    {
+      "slug": "cup-of-oil",
+      "title": "Cup of Oil",
+      "titlePl": "Kubek oleju",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Intelligence",
+        "Constitution",
+        "Fire-Resistance",
+        "POISONED",
+        "Ingredients"
       ]
     },
     {
@@ -1659,15 +1675,6 @@
       ]
     },
     {
-      "slug": "cutting-tool",
-      "title": "Cutting Tool",
-      "titlePl": "Narzędzie do krojenia",
-      "tags": [
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "dagger",
       "title": "Dagger",
       "titlePl": "Sztylet",
@@ -1695,7 +1702,7 @@
       "title": "Dazing Bolt Skillbook",
       "titlePl": "Księga umiejętności „Rażenie Piorunem”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -1718,7 +1725,7 @@
       "title": "Death Wish Skillbook",
       "titlePl": "Księga umiejętności „Życzenie Śmierci”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -1740,7 +1747,7 @@
       "title": "Decaying Touch Skillbook",
       "titlePl": "Księga umiejętności „Dotyk Rozkładu”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -1763,7 +1770,7 @@
       "title": "Deep Freeze Skillbook",
       "titlePl": "Księga umiejętności „Głębokie Zmrożenie”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -1786,7 +1793,7 @@
       "title": "Dimensional Bolt Skillbook",
       "titlePl": "Księga umiejętności „Wielowymiarowy Pocisk”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -1836,7 +1843,7 @@
       "title": "Dominate Mind Skillbook",
       "titlePl": "Księga umiejętności „Dominacja Umysłu”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -1860,7 +1867,7 @@
       "title": "Door to Eternity Skillbook",
       "titlePl": "Księga umiejętności „Drzwi do Wieczności”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -1980,7 +1987,7 @@
       "title": "Earthquake Skillbook",
       "titlePl": "Księga umiejętności „Trzęsienie Ziemi”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -2016,7 +2023,7 @@
       "title": "Electric Discharge Skillbook",
       "titlePl": "Księga umiejętności „Wyładowanie Elektryczne”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -2039,7 +2046,7 @@
       "title": "Elemental Totem Skillbook",
       "titlePl": "Księga umiejętności „Totem Żywiołów”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -2192,7 +2199,7 @@
       "title": "Epidemic Of Fire Skillbook",
       "titlePl": "Księga umiejętności „Epidemia Ognia”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2215,7 +2222,7 @@
       "title": "Equalise Skillbook",
       "titlePl": "Księga umiejętności „Wyrównanie”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -2265,10 +2272,19 @@
       "title": "Ethereal Storm Skillbook",
       "titlePl": "Księga umiejętności „Eteryczna Burza”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
+      ]
+    },
+    {
+      "slug": "expensive-wine",
+      "title": "Expensive Wine",
+      "titlePl": "Drogie wino",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink"
       ]
     },
     {
@@ -2304,6 +2320,15 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "fancy-bottle-of-beer",
+      "title": "Fancy Bottle of Beer",
+      "titlePl": "Butelka wybornego piwa",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink"
       ]
     },
     {
@@ -2356,7 +2381,7 @@
       "title": "Farsight Infusion Skillbook",
       "titlePl": "Księga umiejętności „Podsycenie Dalekowidzenia”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -2380,7 +2405,7 @@
       "title": "Favourable Wind Skillbook",
       "titlePl": "Księga umiejętności „Korzystny Wiatr”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -2473,7 +2498,7 @@
       "title": "Fire Whip Skillbook",
       "titlePl": "Księga umiejętności „Ognisty Bicz”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2498,7 +2523,7 @@
       "title": "Fireball Skillbook",
       "titlePl": "Księga umiejętności „Kula Ognia”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2522,7 +2547,7 @@
       "title": "Firebrand Skillbook",
       "titlePl": "Księga umiejętności „Żagiew”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2601,7 +2626,7 @@
       "title": "Flaming Crescendo Skillbook",
       "titlePl": "Księga umiejętności „Płomienny Finał”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2625,7 +2650,7 @@
       "title": "Flaming Tongues Skillbook",
       "titlePl": "Księga umiejętności „Płomienne Języki”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -2649,7 +2674,7 @@
       "title": "Flay Skin Skillbook",
       "titlePl": "Księga umiejętności „Obdarcie ze Skóry”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -2695,7 +2720,7 @@
       "title": "Forced Exchange Skillbook",
       "titlePl": "Księga umiejętności „Wymuszona Wymiana”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -2719,7 +2744,7 @@
       "title": "Fortify Skillbook",
       "titlePl": "Księga umiejętności „Kamienny Pancerz”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -2743,7 +2768,7 @@
       "title": "Fossil Strike Skillbook",
       "titlePl": "Księga umiejętności „Kamienny Cios”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -2815,6 +2840,52 @@
       ]
     },
     {
+      "slug": "giant-flame-rune",
+      "title": "Giant Flame Rune",
+      "titlePl": "Ogromna runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "giant-flame-rune-of-power",
+      "title": "Giant Flame Rune Of Power",
+      "titlePl": "Potężna ogromna runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "giant-frost-rune",
+      "title": "Giant Frost Rune",
+      "titlePl": "Ogromna runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "giant-frost-rune-of-power",
+      "title": "Giant Frost Rune Of Power",
+      "titlePl": "Potężna ogromna runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
       "slug": "giant-healing-potion",
       "title": "Giant Healing Potion",
       "titlePl": "Ogromna mikstura uzdrawiająca",
@@ -2822,6 +2893,30 @@
         "Healing",
         "DOS2",
         "Potions"
+      ]
+    },
+    {
+      "slug": "giant-masterwork-rune",
+      "title": "Giant Masterwork Rune",
+      "titlePl": "Ogromna runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "giant-masterwork-rune-of-power",
+      "title": "Giant Masterwork Rune Of Power",
+      "titlePl": "Potężna ogromna runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
       ]
     },
     {
@@ -2835,19 +2930,75 @@
       ]
     },
     {
-      "slug": "giant-rune",
-      "title": "Giant % Rune",
+      "slug": "giant-rock-rune",
+      "title": "Giant Rock Rune",
+      "titlePl": "Ogromna runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
       ]
     },
     {
-      "slug": "giant-rune-of-power",
-      "title": "Giant % Rune of Power",
+      "slug": "giant-rock-rune-of-power",
+      "title": "Giant Rock Rune Of Power",
+      "titlePl": "Potężna ogromna runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "giant-thunder-rune",
+      "title": "Giant Thunder Rune",
+      "titlePl": "Ogromna runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "giant-thunder-rune-of-power",
+      "title": "Giant Thunder Rune Of Power",
+      "titlePl": "Potężna ogromna runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "giant-venom-rune",
+      "title": "Giant Venom Rune",
+      "titlePl": "Ogromna runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
+      ]
+    },
+    {
+      "slug": "giant-venom-rune-of-power",
+      "title": "Giant Venom Rune Of Power",
+      "titlePl": "Potężna ogromna runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -2892,7 +3043,7 @@
       "title": "Global Cooling Skillbook",
       "titlePl": "Księga umiejętności „Globalne Ochłodzenie”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -2964,7 +3115,7 @@
       "title": "Grasp of the Starved Skillbook",
       "titlePl": "Księga umiejętności „Uchwyt Wygłodniałych”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -3008,7 +3159,7 @@
       "title": "Hail Strike Skillbook",
       "titlePl": "Księga umiejętności „Gradobicie”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -3145,7 +3296,7 @@
       "title": "Haste Skillbook",
       "titlePl": "Księga umiejętności „Przyspieszenie”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -3199,7 +3350,7 @@
       "title": "Healing Ritual Skillbook",
       "titlePl": "Księga umiejętności „Rytuał Uzdrawiający”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -3223,7 +3374,7 @@
       "title": "Heart of Steel Skillbook",
       "titlePl": "Księga umiejętności „Serce ze Stali”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -3407,15 +3558,6 @@
       ]
     },
     {
-      "slug": "honey",
-      "title": "Honey",
-      "titlePl": "Miód",
-      "tags": [
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "huge-air-resistance-potion",
       "title": "Huge Air Resistance Potion",
       "titlePl": "Wielka mikstura odporności na powietrze",
@@ -3525,7 +3667,7 @@
       "title": "Ice Breaker Skillbook",
       "titlePl": "Księga umiejętności „Lodołamacz”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -3550,7 +3692,7 @@
       "title": "Ice Fan Skillbook",
       "titlePl": "Księga umiejętności „Lodowy Wachlarz”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -3574,7 +3716,7 @@
       "title": "Ignition Skillbook",
       "titlePl": "Księga umiejętności „Zapłon”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -3599,7 +3741,7 @@
       "title": "Impalement Skillbook",
       "titlePl": "Księga umiejętności „Nadzianie”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -3641,7 +3783,7 @@
       "title": "Infect Skillbook",
       "titlePl": "Księga umiejętności „Zakażenie”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -3808,6 +3950,52 @@
       ]
     },
     {
+      "slug": "large-flame-rune",
+      "title": "Large Flame Rune",
+      "titlePl": "Duża runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "large-flame-rune-of-power",
+      "title": "Large Flame Rune Of Power",
+      "titlePl": "Potężna duża runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "large-frost-rune",
+      "title": "Large Frost Rune",
+      "titlePl": "Duża runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "large-frost-rune-of-power",
+      "title": "Large Frost Rune Of Power",
+      "titlePl": "Potężna duża runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
       "slug": "large-healing-potion-2",
       "title": "Large healing potion",
       "tags": [
@@ -3827,6 +4015,30 @@
         "DOS2-CO",
         "Potions",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "large-masterwork-rune",
+      "title": "Large Masterwork Rune",
+      "titlePl": "Duża runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "large-masterwork-rune-of-power",
+      "title": "Large Masterwork Rune Of Power",
+      "titlePl": "Potężna duża runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
       ]
     },
     {
@@ -3871,19 +4083,51 @@
       ]
     },
     {
-      "slug": "large-rune",
-      "title": "Large % Rune",
+      "slug": "large-rock-rune",
+      "title": "Large Rock Rune",
+      "titlePl": "Duża runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
       ]
     },
     {
-      "slug": "large-rune-of-power",
-      "title": "Large % Rune of Power",
+      "slug": "large-rock-rune-of-power",
+      "title": "Large Rock Rune Of Power",
+      "titlePl": "Potężna duża runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "large-thunder-rune",
+      "title": "Large Thunder Rune",
+      "titlePl": "Duża runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "large-thunder-rune-of-power",
+      "title": "Large Thunder Rune Of Power",
+      "titlePl": "Potężna duża runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
       ]
     },
     {
@@ -3894,6 +4138,30 @@
         "DOS1",
         "DOS2",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "large-venom-rune",
+      "title": "Large Venom Rune",
+      "titlePl": "Duża runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
+      ]
+    },
+    {
+      "slug": "large-venom-rune-of-power",
+      "title": "Large Venom Rune Of Power",
+      "titlePl": "Potężna duża runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -3927,7 +4195,7 @@
       "title": "Laser Ray Skillbook",
       "titlePl": "Księga umiejętności „Laserowy Promień”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -4012,7 +4280,7 @@
       "title": "Living on the Edge Skillbook",
       "titlePl": "Księga umiejętności „Życie na Krawędzi”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -4034,7 +4302,7 @@
       "title": "Living Wall Skillbook",
       "titlePl": "Księga umiejętności „Żywa Ściana”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -4229,6 +4497,52 @@
       ]
     },
     {
+      "slug": "medium-flame-rune",
+      "title": "Medium Flame Rune",
+      "titlePl": "Średnia runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "medium-flame-rune-of-power",
+      "title": "Medium Flame Rune Of Power",
+      "titlePl": "Potężna średnia runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "medium-frost-rune",
+      "title": "Medium Frost Rune",
+      "titlePl": "Średnia runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "medium-frost-rune-of-power",
+      "title": "Medium Frost Rune Of Power",
+      "titlePl": "Potężna średnia runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
       "slug": "medium-healing-potion",
       "title": "Medium Healing Potion",
       "titlePl": "Średnia mikstura uzdrawiająca",
@@ -4250,6 +4564,30 @@
         "DOS2",
         "Potions",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "medium-masterwork-rune",
+      "title": "Medium Masterwork Rune",
+      "titlePl": "Średnia runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "medium-masterwork-rune-of-power",
+      "title": "Medium Masterwork Rune Of Power",
+      "titlePl": "Potężna średnia runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
       ]
     },
     {
@@ -4292,19 +4630,75 @@
       ]
     },
     {
-      "slug": "medium-rune",
-      "title": "Medium % Rune",
+      "slug": "medium-rock-rune",
+      "title": "Medium Rock Rune",
+      "titlePl": "Średnia runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
       ]
     },
     {
-      "slug": "medium-rune-of-power",
-      "title": "Medium % Rune of Power",
+      "slug": "medium-rock-rune-of-power",
+      "title": "Medium Rock Rune Of Power",
+      "titlePl": "Potężna średnia runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "medium-thunder-rune",
+      "title": "Medium Thunder Rune",
+      "titlePl": "Średnia runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "medium-thunder-rune-of-power",
+      "title": "Medium Thunder Rune Of Power",
+      "titlePl": "Potężna średnia runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "medium-venom-rune",
+      "title": "Medium Venom Rune",
+      "titlePl": "Średnia runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
+      ]
+    },
+    {
+      "slug": "medium-venom-rune-of-power",
+      "title": "Medium Venom Rune Of Power",
+      "titlePl": "Potężna średnia runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -4338,7 +4732,7 @@
       "title": "Medusa Head Skillbook",
       "titlePl": "Księga umiejętności „Głowa Meduzy”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -4362,7 +4756,7 @@
       "title": "Mend Metal Skillbook",
       "titlePl": "Księga umiejętności „Naprawa Metalu”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -4406,7 +4800,7 @@
       "title": "Meteor Shower Skillbook",
       "titlePl": "Księga umiejętności „Deszcz Meteorów”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -4593,7 +4987,7 @@
       "title": "Mosquito Swarm Skillbook",
       "titlePl": "Księga umiejętności „Rój Komarów”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -4634,27 +5028,229 @@
       ]
     },
     {
-      "slug": "mystical-giant-rune",
-      "title": "Mystical Giant % Rune",
+      "slug": "mug-of-wine",
+      "title": "Mug of Wine",
+      "titlePl": "Kubek wina",
       "tags": [
+        "DOS1",
         "DOS2",
-        "Ingredients"
+        "Healing",
+        "Speed",
+        "DRUNK",
+        "Food-And-Drink"
       ]
     },
     {
-      "slug": "mystical-large-rune",
-      "title": "Mystical Large % Rune",
+      "slug": "mystical-giant-flame-rune",
+      "title": "Mystical Giant Flame Rune",
+      "titlePl": "Mistyczna ogromna runa płomienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
       ]
     },
     {
-      "slug": "mystical-medium-rune",
-      "title": "Mystical Medium % Rune",
+      "slug": "mystical-giant-frost-rune",
+      "title": "Mystical Giant Frost Rune",
+      "titlePl": "Mistyczna ogromna runa mrozu",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-giant-masterwork-rune",
+      "title": "Mystical Giant Masterwork Rune",
+      "titlePl": "Mistyczna ogromna runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "mystical-giant-rock-rune",
+      "title": "Mystical Giant Rock Rune",
+      "titlePl": "Mistyczna ogromna runa kamienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-giant-thunder-rune",
+      "title": "Mystical Giant Thunder Rune",
+      "titlePl": "Mistyczna ogromna runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "mystical-giant-venom-rune",
+      "title": "Mystical Giant Venom Rune",
+      "titlePl": "Mistyczna ogromna runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-large-flame-rune",
+      "title": "Mystical Large Flame Rune",
+      "titlePl": "Mistyczna duża runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-large-frost-rune",
+      "title": "Mystical Large Frost Rune",
+      "titlePl": "Mistyczna duża runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-large-masterwork-rune",
+      "title": "Mystical Large Masterwork Rune",
+      "titlePl": "Mistyczna duża runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "mystical-large-rock-rune",
+      "title": "Mystical Large Rock Rune",
+      "titlePl": "Mistyczna duża runa kamienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-large-thunder-rune",
+      "title": "Mystical Large Thunder Rune",
+      "titlePl": "Mistyczna duża runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "mystical-large-venom-rune",
+      "title": "Mystical Large Venom Rune",
+      "titlePl": "Mistyczna duża runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-medium-flame-rune",
+      "title": "Mystical Medium Flame Rune",
+      "titlePl": "Mistyczna średnia runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-medium-frost-rune",
+      "title": "Mystical Medium Frost Rune",
+      "titlePl": "Mistyczna średnia runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-medium-masterwork-rune",
+      "title": "Mystical Medium Masterwork Rune",
+      "titlePl": "Mistyczna średnia runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "mystical-medium-rock-rune",
+      "title": "Mystical Medium Rock Rune",
+      "titlePl": "Mistyczna średnia runa kamienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-medium-thunder-rune",
+      "title": "Mystical Medium Thunder Rune",
+      "titlePl": "Mistyczna średnia runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "mystical-medium-venom-rune",
+      "title": "Mystical Medium Venom Rune",
+      "titlePl": "Mistyczna średnia runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -4667,11 +5263,74 @@
       ]
     },
     {
-      "slug": "mystical-small-rune",
-      "title": "Mystical Small % Rune",
+      "slug": "mystical-small-flame-rune",
+      "title": "Mystical Small Flame Rune",
+      "titlePl": "Mistyczna mała runa płomienia",
       "tags": [
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-small-frost-rune",
+      "title": "Mystical Small Frost Rune",
+      "titlePl": "Mistyczna mała runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-small-masterwork-rune",
+      "title": "Mystical Small Masterwork Rune",
+      "titlePl": "Mistyczna mała runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
+      "slug": "mystical-small-rock-rune",
+      "title": "Mystical Small Rock Rune",
+      "titlePl": "Mistyczna mała runa kamienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
+      ]
+    },
+    {
+      "slug": "mystical-small-thunder-rune",
+      "title": "Mystical Small Thunder Rune",
+      "titlePl": "Mistyczna mała runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
+      "slug": "mystical-small-venom-rune",
+      "title": "Mystical Small Venom Rune",
+      "titlePl": "Mistyczna mała runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -4736,21 +5395,10 @@
       "title": "Nether Swap Skillbook",
       "titlePl": "Księga umiejętności „Podmiana”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "oil",
-      "title": "Oil",
-      "titlePl": "Olej",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "DOS2-CO",
-        "Ingredients"
       ]
     },
     {
@@ -4876,7 +5524,7 @@
       "title": "Peace of Mind Skillbook",
       "titlePl": "Księga umiejętności „Spokój Sumienia”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -5003,7 +5651,7 @@
       "title": "Planar Gateway Skillbook",
       "titlePl": "Księga umiejętności „Brama Sfer”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -5017,15 +5665,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "poison",
-      "title": "Poison",
-      "titlePl": "Trucizna",
-      "tags": [
-        "DOS2",
         "Ingredients"
       ]
     },
@@ -5075,7 +5714,7 @@
       "title": "Poison Dart Skillbook",
       "titlePl": "Księga umiejętności „Zatruta Rzutka”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -5122,7 +5761,7 @@
       "title": "Poison Wave Skillbook",
       "titlePl": "Księga umiejętności „Trująca Fala”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -5292,7 +5931,7 @@
       "title": "Power Infusion Skillbook",
       "titlePl": "Księga umiejętności „Podsycenie Mocy”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -5315,7 +5954,7 @@
       "title": "Pressure Spike Skillbook",
       "titlePl": "Księga umiejętności „Skok Ciśnienia”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -5361,7 +6000,7 @@
       "title": "Pyroclastic Eruption Skillbook",
       "titlePl": "Księga umiejętności „Erupcja Piroklastyczna”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -5395,7 +6034,7 @@
       "title": "Rain Skillbook",
       "titlePl": "Księga umiejętności „Deszcz”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -5429,7 +6068,7 @@
       "title": "Raise Bloated Corpse Skillbook",
       "titlePl": "Księga umiejętności „Ożywienie Opuchniętych Zwłok”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -5450,7 +6089,7 @@
       "title": "Raise Bone Widow Skillbook",
       "titlePl": "Księga umiejętności „Ożywienie Kościanej Wdowy”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -5472,7 +6111,7 @@
       "title": "Rallying Cry Skillbook",
       "titlePl": "Księga umiejętności „Pokrzepiający Okrzyk”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -5530,7 +6169,7 @@
       "title": "Reactive Armour Skillbook",
       "titlePl": "Księga umiejętności „Pancerz Reaktywny”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -5578,7 +6217,7 @@
       "title": "Restoration Skillbook",
       "titlePl": "Księga umiejętności „Przywrócenie”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -5726,7 +6365,7 @@
       "title": "Searing Daggers Skillbook",
       "titlePl": "Księga umiejętności „Palące Sztylety”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -5748,7 +6387,7 @@
       "title": "Shackles of Pain Skillbook",
       "titlePl": "Księga umiejętności „Okowy Bólu”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -5782,7 +6421,7 @@
       "title": "Shadow Infusion Skillbook",
       "titlePl": "Księga umiejętności „Podsycenie Cienia”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -5930,7 +6569,7 @@
       "title": "Shocking Touch Skillbook",
       "titlePl": "Księga umiejętności „Porażający Dotyk”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -5963,7 +6602,7 @@
       "title": "Silencing Stare Skillbook",
       "titlePl": "Księga umiejętności „Uciszające Spojrzenie”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -5996,7 +6635,7 @@
       "title": "Siphon Poison Skillbook",
       "titlePl": "Księga umiejętności „Wysysanie Trucizny”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"
@@ -6020,7 +6659,7 @@
       "title": "Skin Graft Skillbook",
       "titlePl": "Księga umiejętności „Przeszczep Skóry”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6095,6 +6734,18 @@
       ]
     },
     {
+      "slug": "small-flame-rune-of-power",
+      "title": "Small Flame Rune Of Power",
+      "titlePl": "Potężna mała runa płomienia",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Critical-Chance",
+        "Fire-Damage",
+        "Fire-Resistance"
+      ]
+    },
+    {
       "slug": "small-frost-rune",
       "title": "Small Frost Rune",
       "titlePl": "Mała runa mrozu",
@@ -6103,6 +6754,17 @@
         "Water-Resistance",
         "DOS2",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "small-frost-rune-of-power",
+      "title": "Small Frost Rune Of Power",
+      "titlePl": "Potężna mała runa mrozu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Water-Damage",
+        "Water-Resistance"
       ]
     },
     {
@@ -6129,6 +6791,18 @@
       ]
     },
     {
+      "slug": "small-masterwork-rune-of-power",
+      "title": "Small Masterwork Rune Of Power",
+      "titlePl": "Potężna mała runa kunsztu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Physical-Damage",
+        "Physical-Armour",
+        "Magic-Armour"
+      ]
+    },
+    {
       "slug": "small-poison-bottle",
       "title": "Small Poison Bottle",
       "titlePl": "Mała butelka trucizny",
@@ -6152,19 +6826,15 @@
       ]
     },
     {
-      "slug": "small-rune",
-      "title": "Small % Rune",
+      "slug": "small-rock-rune-of-power",
+      "title": "Small Rock Rune Of Power",
+      "titlePl": "Potężna mała runa kamienia",
       "tags": [
         "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "small-rune-of-power",
-      "title": "Small % Rune of Power",
-      "tags": [
-        "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "Vitality",
+        "Earth-Damage",
+        "Earth-Resistance"
       ]
     },
     {
@@ -6180,6 +6850,18 @@
       ]
     },
     {
+      "slug": "small-thunder-rune-of-power",
+      "title": "Small Thunder Rune Of Power",
+      "titlePl": "Potężna mała runa grzmotu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Air-Damage",
+        "Air-Resistance",
+        "Dodge"
+      ]
+    },
+    {
       "slug": "small-venom-rune",
       "title": "Small Venom Rune",
       "titlePl": "Mała runa jadu",
@@ -6189,6 +6871,18 @@
         "Poison-Resistance",
         "DOS2",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "small-venom-rune-of-power",
+      "title": "Small Venom Rune Of Power",
+      "titlePl": "Potężna mała runa jadu",
+      "tags": [
+        "DOS2",
+        "Ingredients",
+        "Accuracy",
+        "Poison-Damage",
+        "Poison-Resistance"
       ]
     },
     {
@@ -6244,7 +6938,7 @@
       "title": "Soothing Cold Skillbook",
       "titlePl": "Księga umiejętności „Kojące Zimno”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -6268,7 +6962,7 @@
       "title": "Soul Mate Skillbook",
       "titlePl": "Księga umiejętności „Bratnia Dusza”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -6314,7 +7008,7 @@
       "title": "Spider Legs Skillbook",
       "titlePl": "Księga umiejętności „Pajęcze Nogi”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6347,7 +7041,7 @@
       "title": "Spontaneous Combustion Skillbook",
       "titlePl": "Księga umiejętności „Samozapłon”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -6371,7 +7065,7 @@
       "title": "Spread Your Wings Skillbook",
       "titlePl": "Księga umiejętności „Rozwiń Skrzydła”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6446,7 +7140,7 @@
       "title": "Steam Lance Skillbook",
       "titlePl": "Księga umiejętności „Lanca Parowa”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -6504,7 +7198,7 @@
       "title": "Summon Fire Slug Skillbook",
       "titlePl": "Księga umiejętności „Przyzwanie Ognistego Ślimaka”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -6527,7 +7221,7 @@
       "title": "Summon Oily Blob Skillbook",
       "titlePl": "Księga umiejętności „Przyzwanie Oleistej Plamy”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6551,7 +7245,7 @@
       "title": "Supercharger Skillbook",
       "titlePl": "Księga umiejętności „Doładowanie”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
@@ -6575,7 +7269,7 @@
       "title": "Superconductor Skillbook",
       "titlePl": "Księga umiejętności „Nadprzewodnik”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -6608,7 +7302,7 @@
       "title": "Supernova Skillbook",
       "titlePl": "Księga umiejętności „Supernowa”",
       "tags": [
-        "Teaches-Skill",
+
         "Pyrokinetic",
         "DOS2",
         "Skillbooks"
@@ -6661,7 +7355,7 @@
       "title": "Teleportation Skillbook",
       "titlePl": "Księga umiejętności „Teleportacja”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -6685,7 +7379,7 @@
       "title": "Tentacle Lash Skillbook",
       "titlePl": "Księga umiejętności „Uderzenie Macką”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6708,7 +7402,7 @@
       "title": "Terrain Transmutation Skillbook",
       "titlePl": "Księga umiejętności „Przemiana Terenu”",
       "tags": [
-        "Teaches-Skill",
+
         "Polymorph",
         "DOS2",
         "Skillbooks"
@@ -6783,7 +7477,7 @@
       "title": "Thunderstorm Skillbook",
       "titlePl": "Księga umiejętności „Burza z Piorunami”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -6866,7 +7560,7 @@
       "title": "Tornado Skillbook",
       "titlePl": "Księga umiejętności „Tornado”",
       "tags": [
-        "Teaches-Skill",
+
         "Aerotheurge",
         "DOS2",
         "Skillbooks"
@@ -6888,7 +7582,7 @@
       "title": "Totems of the Necromancer Skillbook",
       "titlePl": "Księga umiejętności „Totemy Nekromanty”",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2",
         "Skillbooks"
       ]
@@ -7055,19 +7749,10 @@
       "title": "Warp Infusion Skillbook",
       "titlePl": "Księga umiejętności „Podsycenie Zakrzywienia”",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "water",
-      "title": "Water",
-      "titlePl": "Woda",
-      "tags": [
-        "DOS2",
-        "Ingredients"
       ]
     },
     {
@@ -7112,7 +7797,7 @@
     {
       "slug": "water-barrel",
       "title": "Water Barrel",
-      "titlePl": "Beczka z wodą",
+      "titlePl": "Beczka wody",
       "tags": [
         "DOS1",
         "DOS2",
@@ -7141,16 +7826,6 @@
         "DOS1",
         "DOS2",
         "Potions",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "water-source",
-      "title": "Water Source",
-      "titlePl": "Źródło wody",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -7197,16 +7872,6 @@
       ]
     },
     {
-      "slug": "wine",
-      "title": "Wine",
-      "titlePl": "Wino",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "wine-barrel",
       "title": "Wine barrel",
       "titlePl": "Beczka wina",
@@ -7235,7 +7900,7 @@
       "title": "Winter Blast Skillbook",
       "titlePl": "Księga umiejętności „Zimowy Podmuch”",
       "tags": [
-        "Teaches-Skill",
+
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
@@ -7328,7 +7993,7 @@
       "title": "Worm Tremor Skillbook",
       "titlePl": "Księga umiejętności „Robaczywy Wstrząs”",
       "tags": [
-        "Teaches-Skill",
+
         "Geomancer",
         "DOS2",
         "Skillbooks"

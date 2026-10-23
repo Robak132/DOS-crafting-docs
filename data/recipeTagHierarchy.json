@@ -5,65 +5,117 @@
       "label": "Typ",
       "children": [
         {
-          "tag": "Amulets",
-          "label": "Amulety",
-          "children": []
+          "tag": "Equipment",
+          "label": "Wyposażenie",
+          "children": [
+            {
+              "tag": "Amulets",
+              "label": "Amulety",
+              "children": []
+            },
+            {
+              "tag": "Weapons",
+              "label": "Broń",
+              "children": [
+                {
+                  "tag": "Maces",
+                  "label": "Buławy i młoty",
+                  "children": []
+                },
+                {
+                  "tag": "Staves",
+                  "label": "Kostury",
+                  "children": []
+                },
+                {
+                  "tag": "Daggers",
+                  "label": "Sztylety",
+                  "children": []
+                },
+                {
+                  "tag": "Swords",
+                  "label": "Miecze",
+                  "children": []
+                },
+                {
+                  "tag": "Wands",
+                  "label": "Różdżki",
+                  "children": []
+                },
+                {
+                  "tag": "Bows",
+                  "label": "Łuki",
+                  "children": []
+                },
+                {
+                  "tag": "Crossbows",
+                  "label": "Kusze",
+                  "children": []
+                },
+                {
+                  "tag": "Axes",
+                  "label": "Topory",
+                  "children": []
+                },
+                {
+                  "tag": "Spears",
+                  "label": "Włócznie",
+                  "children": []
+                },
+                {
+                  "tag": "Shields",
+                  "label": "Tarcze",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "Armour",
+              "label": "Pancerze",
+              "children": [
+                {
+                  "tag": "Helmets",
+                  "label": "Hełmy",
+                  "children": []
+                },
+                {
+                  "tag": "Chest-Armour",
+                  "label": "Napierśniki",
+                  "children": []
+                },
+                {
+                  "tag": "Gloves",
+                  "label": "Rękawice",
+                  "children": []
+                },
+                {
+                  "tag": "Boots",
+                  "label": "Buty",
+                  "children": []
+                },
+                {
+                  "tag": "Leggings",
+                  "label": "Spodnie",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "tag": "Belts",
+              "label": "Pasy",
+              "children": []
+            },
+            {
+              "tag": "Rings",
+              "label": "Pierścienie",
+              "children": []
+            }
+          ]
         },
         {
           "tag": "Dyes",
           "label": "Barwniki",
           "children": []
-        },
-        {
-          "tag": "Weapons",
-          "label": "Broń",
-          "children": [
-            {
-              "tag": "Maces",
-              "label": "Buławy i młoty",
-              "children": []
-            },
-            {
-              "tag": "Staves",
-              "label": "Kostury",
-              "children": []
-            },
-            {
-              "tag": "Daggers",
-              "label": "Sztylety",
-              "children": []
-            },
-            {
-              "tag": "Swords",
-              "label": "Miecze",
-              "children": []
-            },
-            {
-              "tag": "Wands",
-              "label": "Różdżki",
-              "children": []
-            },
-            {
-              "tag": "Bows",
-              "label": "Łuki",
-              "children": []
-            },
-            {
-              "tag": "Crossbows",
-              "label": "Kusze",
-              "children": []
-            },
-            {
-              "tag": "Axes",
-              "label": "Topory",
-              "children": []
-            },
-            {
-              "tag": "Spears",
-              "label": "Włócznie",
-              "children": []
-            }
-          ]
         },
         {
           "tag": "Grenades",
@@ -83,52 +135,6 @@
         {
           "tag": "Potions",
           "label": "Mikstury",
-          "children": []
-        },
-        {
-          "tag": "Armour",
-          "label": "Pancerze",
-          "children": [
-            {
-              "tag": "Helmets",
-              "label": "Hełmy",
-              "children": []
-            },
-            {
-              "tag": "Chest-Armour",
-              "label": "Napierśniki",
-              "children": []
-            },
-            {
-              "tag": "Gloves",
-              "label": "Rękawice",
-              "children": []
-            },
-            {
-              "tag": "Boots",
-              "label": "Buty",
-              "children": []
-            },
-            {
-              "tag": "Leggings",
-              "label": "Spodnie",
-              "children": []
-            },
-            {
-              "tag": "Shields",
-              "label": "Tarcze",
-              "children": []
-            }
-          ]
-        },
-        {
-          "tag": "Belts",
-          "label": "Pasy",
-          "children": []
-        },
-        {
-          "tag": "Rings",
-          "label": "Pierścienie",
           "children": []
         },
         {
@@ -240,11 +246,6 @@
         {
           "tag": "Magic-Armour",
           "label": "Pancerz magiczny",
-          "children": []
-        },
-        {
-          "tag": "Balanced-Armour",
-          "label": "Pancerz zbalansowany",
           "children": []
         },
         {
@@ -679,11 +680,6 @@
         {
           "tag": "Casts-Spell",
           "label": "Rzuca zaklęcie",
-          "children": []
-        },
-        {
-          "tag": "Teaches-Skill",
-          "label": "Uczy umiejętności",
           "children": []
         },
         {

@@ -1,0 +1,87 @@
+{
+  "source": "DefEd/Data/Shared.pak → Public/Shared/Stats/Generated/ItemComboProperties.txt",
+  "properties": {
+    "Oil": {
+      "group": "Oil-Source",
+      "label": "Oil Source",
+      "members": [
+        "Oil Barrel",
+        "Cup of Oil",
+        "Bottle Filled With Oil"
+      ],
+      "categories": []
+    },
+    "Water": {
+      "group": "Water-Source",
+      "label": "Water Source",
+      "members": [
+        "Water Barrel",
+        "Bottle of Water",
+        "Mug of Water",
+        "Cup of Water",
+        "Bucket with Water"
+      ],
+      "categories": []
+    },
+    "Poison": {
+      "group": "Poison-Source",
+      "label": "Poison Source",
+      "members": [
+        "Small Poison Bottle",
+        "Poison Elixir",
+        "Giant Poison Vial",
+        "Huge Poison Vial",
+        "Large Poison Bottle",
+        "Medium Poison Bottle",
+        "Egg Cluster",
+        "Ooze Barrel",
+        "Rotten Egg Cluster"
+      ],
+      "categories": [
+        "PotionPoison"
+      ]
+    },
+    "Beer": {
+      "group": "Beer-Source",
+      "label": "Beer Source",
+      "members": [
+        "Bottle of Beer",
+        "Fancy Bottle of Beer",
+        "Mug of Beer",
+        "Beer Barrel"
+      ],
+      "categories": []
+    },
+    "Honey": {
+      "group": "Honey-Source",
+      "label": "Honey Source",
+      "members": [
+        "Jar of Honey",
+        "Milk and Honey"
+      ],
+      "categories": []
+    },
+    "Wine": {
+      "group": "Wine-Source",
+      "label": "Wine Source",
+      "members": [
+        "Bottle of Wine",
+        "Expensive Wine",
+        "Mug of Wine",
+        "Glass of Wine",
+        "Wine Barrel"
+      ],
+      "categories": []
+    },
+    "Milk": {
+      "group": "Milk-Source",
+      "label": "Milk Source",
+      "members": [
+        "Milk",
+        "Milk and Honey",
+        "Bucket with Milk"
+      ],
+      "categories": []
+    }
+  }
+}

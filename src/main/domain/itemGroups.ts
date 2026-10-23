@@ -1,7 +1,8 @@
-import type { RecipeItem, RecipeRow } from "./recipes"
+import type { RecipeItem, RecipeRow, RecipeUpgrade } from "./recipes"
 import { itemDataKey, itemIconKey } from "./itemIcons"
 import { recipeResults } from "./recipeResults"
 import { isTagWithin } from "./tagTree"
+import comboProperties from "../../../data/itemComboProperties.json"
 
 export type ItemGroup = { id: string; name: string; members: RecipeItem[] }
 export type ItemGroups = Record<string, ItemGroup>
@@ -76,8 +77,22 @@ const weaponCategories: Record<string, RegExp> = {
   armorbelt: /\bbelt\b/,
 }
 
+// A "Property" recipe slot (e.g. Water) accepts any of the game's sources of that liquid.
+const liquidSources = new Map(
+  Object.values(comboProperties.properties).map((property) => [
+    property.group,
+    new Set(property.members.map(itemIconKey)),
+  ]),
+)
+
+/** Liquid sources stay one group even with few members: the game accepts any source. */
+export const isLiquidSource = (selector: string | undefined): boolean =>
+  selector !== undefined && liquidSources.has(selector.replace(/^#/, ""))
+
 /** Resolve only recognizable groups; ordinary item names never become groups. */
 export function groupMatcher(item: RecipeItem): ((candidate: RecipeItem) => boolean) | undefined {
+  const liquid = item.selectorTag ? liquidSources.get(item.selectorTag) : undefined
+  if (liquid) return (candidate) => !candidate.selectorTag && liquid.has(itemIconKey(candidate.name))
   const raw = item.selectorTag ?? item.name
   const normalized = words(raw.replace(/^#/, ""))
   const explicit = /,|\bOr\b|-Or-/i.test(raw)
@@ -127,6 +142,11 @@ export function groupMatcher(item: RecipeItem): ((candidate: RecipeItem) => bool
     )
       return false
     const categories = words((candidate.craftingCategories ?? []).join(" "))
+    // The game's CuttingTool category covers every dagger, knife, sword and axe plus a few tools.
+    if (term === "cutting tool")
+      return candidate.craftingCategories?.length
+        ? hasWord(categories, "cutting")
+        : candidate.tags.some((tag) => ["Daggers", "Swords", "Axes"].some((type) => isTagWithin(tag, type)))
     const categoryTokens = term.split(" ")
     if (categoryTokens.every((token) => hasWord(categories, token))) return true
     if (term.includes("skillbook") && candidate.craftingCategories?.length) return false
@@ -206,6 +226,53 @@ export function isItemGroup(item: RecipeItem): boolean {
 }
 
 export function buildItemGroups(recipes: RecipeRow[], minimumSize = 4, inventory: RecipeItem[] = []): ItemGroups {
+  const { all, definitions } = collectItems(recipes, inventory)
+  const groups: ItemGroups = {}
+  for (const [id, definition] of definitions) {
+    const match = groupMatcher(definition)!
+    const members = [...all.values()].filter(match).sort((a, b) => a.name.localeCompare(b.name, "en"))
+    if (members.length >= minimumSize) groups[id] = { id, name: definition.name, members }
+  }
+  return groups
+}
+
+/**
+ * The items each upgrade can be applied to, as a group: the target's own group when it names one
+ * (e.g. "#Mage-Gloves"), otherwise every item within the upgrade's target categories.
+ */
+export function upgradeTargetGroups(
+  upgrades: RecipeUpgrade[],
+  recipes: RecipeRow[],
+  inventory: RecipeItem[] = [],
+): Record<string, ItemGroup> {
+  const { all } = collectItems(recipes, inventory)
+  const candidates = [...all.values()].filter(
+    (item) => !/,|\bor\b|%|\(|^(boosted|colored|elemental boosted) /i.test(item.name),
+  )
+  const byUpgrade: Record<string, ItemGroup> = {}
+  for (const upgrade of upgrades) {
+    const inCategory = (item: RecipeItem) =>
+      item.tags.some((tag) => upgrade.targetTags.some((target) => isTagWithin(tag, target)))
+    // Only a qualified target ("Mage Gloves", "Bladed Melee Weapon") narrows its category; a plain slot
+    // ("Glove-Armor", "Boots") means every item of it, even ones without game category data.
+    const qualified =
+      /\b(mage|light|warrior|leather|cloth|plate|metal|wooden|finesse|intelligence|strength|unique|vanilla|bladed|scale|robe|cape|two handed|knife|club|staff|bow|crossbow|axe|mace|sword|spear|dagger|wand)\b/i.test(
+        words(upgrade.target.selectorTag ?? upgrade.target.name),
+      )
+    const matcher = qualified ? groupMatcher(upgrade.target) : undefined
+    let members = matcher ? candidates.filter((item) => matcher(item) && inCategory(item)) : []
+    if (members.length === 0) members = candidates.filter(inCategory)
+    const id = itemIconKey(upgrade.target.name)
+    byUpgrade[upgrade.id] = {
+      id,
+      name: upgrade.target.name,
+      members: members.sort((a, b) => a.name.localeCompare(b.name, "en")),
+    }
+  }
+  return byUpgrade
+}
+
+function collectItems(recipes: RecipeRow[], inventory: RecipeItem[]) {
   const all = new Map<string, RecipeItem>()
   const definitions = new Map<string, RecipeItem>()
   for (const item of [...recipes.flatMap((row) => [...recipeResults(row), ...row.ingredients]), ...inventory]) {
@@ -222,14 +289,8 @@ export function buildItemGroups(recipes: RecipeRow[], minimumSize = 4, inventory
       })
     }
   }
-  const groups: ItemGroups = {}
   for (const id of definitions.keys()) if (!all.get(id)?.craftingCategories?.length) all.delete(id)
-  for (const [id, definition] of definitions) {
-    const match = groupMatcher(definition)!
-    const members = [...all.values()].filter(match).sort((a, b) => a.name.localeCompare(b.name, "en"))
-    if (members.length >= minimumSize) groups[id] = { id, name: definition.name, members }
-  }
-  return groups
+  return { all, definitions }
 }
 
 /** Include ingredients without a crafting recipe when searching a group. */
@@ -261,7 +322,8 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
     const alternatives = (item: RecipeItem): RecipeItem[] => {
       if (!isItemGroup(item)) return [item]
       const group = groups[itemIconKey(item.name)]
-      if (!group || group.members.length === 0 || group.members.length >= 4) return [item]
+      if (!group || group.members.length === 0 || group.members.length >= 4 || isLiquidSource(item.selectorTag))
+        return [item]
       return group.members.map((member) => ({ ...member, quantity: item.quantity }))
     }
     const slots = [row.result, ...row.ingredients]

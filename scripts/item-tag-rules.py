@@ -76,7 +76,6 @@ def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=()):
             profile=armour_profile(fields)
             if profile=='magical':tags.discard('Physical-Armour')
             elif profile=='physical':tags.discard('Magic-Armour')
-            elif profile=='balanced':add('Balanced-Armour','Pancerz zbalansowany')
         for element,(resist,damage) in ELEMENTS.items():
             field=element+'Resistance' if kind=='Potion' else element
             try:active=float(fields.get(field,'0'))!=0

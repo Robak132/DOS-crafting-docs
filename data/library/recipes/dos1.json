@@ -1200,7 +1200,7 @@
         },
         {
           "name": "Water Barrel",
-          "namePl": "Beczka z wodą",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",
@@ -1589,7 +1589,7 @@
         },
         {
           "name": "Water Barrel",
-          "namePl": "Beczka z wodą",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",
@@ -9644,7 +9644,7 @@
         },
         {
           "name": "Water Barrel",
-          "namePl": "Beczka z wodą",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",
@@ -14362,7 +14362,7 @@
         },
         {
           "name": "Water Barrel",
-          "namePl": "Beczka z wodą",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",

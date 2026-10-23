@@ -2778,14 +2778,14 @@
         "tags": [
           "Skillbooks",
           "Ingredients",
-          "Teaches-Skill",
+
           "DOS2-CO"
         ]
       },
       "tags": [
         "Skillbooks",
         "Ingredients",
-        "Teaches-Skill",
+
         "DOS2-CO"
       ],
       "requirements": "",
@@ -5863,6 +5863,7 @@
       "ingredients": [
         {
           "name": "Water Barrel",
+          "namePl": "Beczka wody",
           "slug": "water-barrel",
           "tags": [
             "Stations-And-Containers",
@@ -10121,56 +10122,6 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Skladniki/CLOTH-SCRAPS:Scrapper's Pickaxe+Bed Linen",
-      "ingredients": [
-        {
-          "name": "Scrapper's Pickaxe",
-          "slug": "scrappers-pickaxe",
-          "tags": [
-            "Ingredients",
-            "Axes",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "2HAxe_Intelligence",
-            "CuttingTool",
-            "Junk",
-            "TwoHandedAxe",
-            "Weapon"
-          ]
-        },
-        {
-          "name": "Bed Linen",
-          "namePl": "Pościel",
-          "slug": "bed-linen",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Cloth Scraps",
-        "namePl": "Skrawki materiału",
-        "slug": "cloth-scraps",
-        "tags": [
-          "Ingredients",
-          "DOS2-CO"
-        ],
-        "craftingCategories": [
-          "Junk"
-        ]
-      },
-      "tags": [
-        "Ingredients",
-        "DOS2-CO"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Crafting Overhaul"
-    },
-    {
       "id": "Skladniki/CLOTH-SCRAPS:Scrapper's Pickaxe+Bedroll",
       "ingredients": [
         {
@@ -10379,7 +10330,7 @@
         "slug": "companion-air-robot-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10390,7 +10341,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10448,7 +10399,7 @@
         "slug": "companion-bear-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10459,7 +10410,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10520,7 +10471,7 @@
         "slug": "companion-bull-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10531,7 +10482,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10592,7 +10543,7 @@
         "slug": "companion-crocodile-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10603,7 +10554,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10662,7 +10613,7 @@
         "slug": "companion-deer-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10673,7 +10624,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10734,7 +10685,7 @@
         "slug": "companion-ghost-boar-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10745,7 +10696,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10807,7 +10758,7 @@
         "slug": "companion-tiger-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10818,7 +10769,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -10877,7 +10828,7 @@
         "slug": "companion-wolf-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "Summoning",
           "DOS2-CO"
         ],
@@ -10888,7 +10839,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO"
       ],
@@ -16681,14 +16632,14 @@
         "tags": [
           "Skillbooks",
           "Ingredients",
-          "Teaches-Skill",
+
           "DOS2-CO"
         ]
       },
       "tags": [
         "Skillbooks",
         "Ingredients",
-        "Teaches-Skill",
+
         "DOS2-CO"
       ],
       "requirements": "",
@@ -20505,14 +20456,14 @@
         "tags": [
           "Skillbooks",
           "Ingredients",
-          "Teaches-Skill",
+
           "DOS2-CO"
         ]
       },
       "tags": [
         "Skillbooks",
         "Ingredients",
-        "Teaches-Skill",
+
         "DOS2-CO"
       ],
       "requirements": "",
@@ -22139,7 +22090,7 @@
           "slug": "medium-dexterity-potion",
           "tags": [
             "Potions",
-            "Dexterity",
+            "Finesse",
             "DOS2-CO"
           ]
         },
@@ -22148,7 +22099,7 @@
           "slug": "medium-dexterity-potion",
           "tags": [
             "Potions",
-            "Dexterity",
+            "Finesse",
             "DOS2-CO"
           ]
         }
@@ -22158,13 +22109,13 @@
         "slug": "large-dexterity-potion",
         "tags": [
           "Potions",
-          "Dexterity",
+          "Finesse",
           "DOS2-CO"
         ]
       },
       "tags": [
         "Potions",
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -24586,13 +24537,13 @@
         "slug": "medium-dexterity-potion",
         "tags": [
           "Potions",
-          "Dexterity",
+          "Finesse",
           "DOS2-CO"
         ]
       },
       "tags": [
         "Potions",
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -24609,7 +24560,7 @@
           "tags": [
             "Potions",
             "Ingredients",
-            "Dexterity",
+            "Finesse",
             "DOS2-CO"
           ]
         },
@@ -24619,7 +24570,7 @@
           "tags": [
             "Potions",
             "Ingredients",
-            "Dexterity",
+            "Finesse",
             "DOS2-CO"
           ]
         }
@@ -24629,13 +24580,13 @@
         "slug": "medium-dexterity-potion",
         "tags": [
           "Potions",
-          "Dexterity",
+          "Finesse",
           "DOS2-CO"
         ]
       },
       "tags": [
         "Potions",
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -26558,12 +26509,10 @@
           ]
         },
         {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
+          "name": "#Oil-Source",
+          "selectorTag": "Oil-Source",
           "tags": [
-            "Ingredients",
-            "DOS2-CO"
+            "Oil-Source"
           ]
         },
         {
@@ -29437,12 +29386,10 @@
           ]
         },
         {
-          "name": "Water Source",
-          "namePl": "Źródło wody",
-          "slug": "water-source",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2-CO"
+            "Water-Source"
           ]
         }
       ],
@@ -31896,6 +31843,7 @@
         "pool": [
           {
             "name": "Barrage Scroll",
+            "slug": "barrage-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31903,6 +31851,7 @@
           },
           {
             "name": "Elemental Arrowheads Scroll",
+            "slug": "elemental-arrowheads-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31910,6 +31859,7 @@
           },
           {
             "name": "First Aid Scroll",
+            "slug": "first-aid-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31917,6 +31867,7 @@
           },
           {
             "name": "Glitter Dust Scroll",
+            "slug": "glitter-dust-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31924,6 +31875,7 @@
           },
           {
             "name": "Marksman's Fang Scroll",
+            "slug": "marksman-s-fang-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31931,6 +31883,7 @@
           },
           {
             "name": "Pindown Scroll",
+            "slug": "pindown-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31938,6 +31891,7 @@
           },
           {
             "name": "Reactive Shot Scroll",
+            "slug": "reactive-shot-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31945,6 +31899,7 @@
           },
           {
             "name": "Ricochet Scroll",
+            "slug": "ricochet-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31952,6 +31907,7 @@
           },
           {
             "name": "Sky Shot Scroll",
+            "slug": "sky-shot-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -31959,6 +31915,8 @@
           },
           {
             "name": "Tactical Retreat Scroll",
+            "namePl": "Zwój Odwrotu Taktycznego",
+            "slug": "tactical-retreat-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32013,6 +31971,7 @@
         "pool": [
           {
             "name": "Backlash Scroll",
+            "slug": "backlash-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32020,6 +31979,7 @@
           },
           {
             "name": "Choloroform Scroll",
+            "slug": "choloroform-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32027,6 +31987,7 @@
           },
           {
             "name": "Cloak and Dagger Scroll",
+            "slug": "cloak-and-dagger-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32034,6 +31995,7 @@
           },
           {
             "name": "Corrupted Blade Scroll",
+            "slug": "corrupted-blade-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32041,6 +32003,7 @@
           },
           {
             "name": "Gag Order Scroll",
+            "slug": "gag-order-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32048,6 +32011,7 @@
           },
           {
             "name": "Rupture Tendons Scroll",
+            "slug": "rupture-tendons-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32055,6 +32019,7 @@
           },
           {
             "name": "Sawtooth Scroll",
+            "slug": "sawtooth-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32062,6 +32027,7 @@
           },
           {
             "name": "Sleeping Arms Scroll",
+            "slug": "sleeping-arms-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32069,6 +32035,7 @@
           },
           {
             "name": "Throwing Knife Scroll",
+            "slug": "throwing-knife-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32299,6 +32266,7 @@
         "pool": [
           {
             "name": "Battering Ram Scroll",
+            "slug": "battering-ram-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32306,6 +32274,7 @@
           },
           {
             "name": "Battle Stomp Scroll",
+            "slug": "battle-stomp-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32313,6 +32282,7 @@
           },
           {
             "name": "Blitz Attack Scroll",
+            "slug": "blitz-attack-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32320,6 +32290,7 @@
           },
           {
             "name": "Bouncing Shield Scroll",
+            "slug": "bouncing-shield-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32327,6 +32298,7 @@
           },
           {
             "name": "Crippling Blow Scroll",
+            "slug": "crippling-blow-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32334,6 +32306,7 @@
           },
           {
             "name": "Deflective Barrier Scroll",
+            "slug": "deflective-barrier-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32341,6 +32314,7 @@
           },
           {
             "name": "Enrage Scroll",
+            "slug": "enrage-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32348,6 +32322,7 @@
           },
           {
             "name": "Phoenix Dive Scroll",
+            "slug": "phoenix-dive-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32355,6 +32330,7 @@
           },
           {
             "name": "Provoke Scroll",
+            "slug": "provoke-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -32362,6 +32338,7 @@
           },
           {
             "name": "Whirlwind Scroll",
+            "slug": "whirlwind-scroll",
             "tags": [
               "Scrolls",
               "DOS2-CO"
@@ -33458,7 +33435,7 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/RELATED-RANGER-SKILLBOOK:Ranger Empty Skillbook+#Ranger-Scroll",
+      "id": "Magia/ELEMENTAL-ARROWHEADS-SKILLBOOK:Blank Skillbook Ranger+Elemental Arrowheads Scroll",
       "ingredients": [
         {
           "name": "Blank Skillbook Ranger",
@@ -33469,16 +33446,18 @@
           ]
         },
         {
-          "name": "#Ranger-Scroll",
-          "selectorTag": "Ranger-Scroll",
+          "name": "Elemental Arrowheads Scroll",
+          "slug": "elemental-arrowheads-scroll",
           "tags": [
-            "Ranger-Scroll"
+            "Scrolls",
+            "DOS2-CO"
           ]
         }
       ],
       "result": {
-        "name": "Related Ranger Skillbook",
-        "slug": "related-ranger-skillbook",
+        "name": "Elemental Arrowheads Skillbook",
+        "namePl": "Księga umiejętności „Groty Żywiołów”",
+        "slug": "elemental-arrowheads-skillbook",
         "tags": [
           "Skillbooks",
           "DOS2-CO"
@@ -33494,7 +33473,350 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/RELATED-ROGUE-SKILLBOOK:Rogue Empty Skillbook+#Rogue-Scroll",
+      "id": "Magia/FIRST-AID-SKILLBOOK:Blank Skillbook Ranger+First Aid Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "First Aid Scroll",
+          "slug": "first-aid-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "First Aid Skillbook",
+        "namePl": "Księga umiejętności „Pierwsza Pomoc”",
+        "slug": "first-aid-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/RICOCHET-SKILLBOOK:Blank Skillbook Ranger+Ricochet Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Ricochet Scroll",
+          "slug": "ricochet-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Ricochet Skillbook",
+        "namePl": "Księga umiejętności „Rykoszet”",
+        "slug": "ricochet-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/SKY-SHOT-SKILLBOOK:Blank Skillbook Ranger+Sky Shot Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Sky Shot Scroll",
+          "slug": "sky-shot-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Sky Shot Skillbook",
+        "namePl": "Księga umiejętności „Strzał z nieba”",
+        "slug": "sky-shot-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/PIN-DOWN-SKILLBOOK:Blank Skillbook Ranger+Pindown Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Pindown Scroll",
+          "slug": "pindown-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Pin Down Skillbook",
+        "namePl": "Księga umiejętności „Przygwożdżenie”",
+        "slug": "pin-down-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/REACTIVE-SHOT-SKILLBOOK:Blank Skillbook Ranger+Reactive Shot Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Reactive Shot Scroll",
+          "slug": "reactive-shot-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Reactive Shot Skillbook",
+        "namePl": "Księga umiejętności „Strzał Odruchowy”",
+        "slug": "reactive-shot-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/MARKSMAN-S-FANG-SKILLBOOK:Blank Skillbook Ranger+Marksman's Fang Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Marksman's Fang Scroll",
+          "slug": "marksman-s-fang-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Marksman's Fang Skillbook",
+        "namePl": "Księga umiejętności „Kieł Strzelca”",
+        "slug": "marksman-s-fang-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BARRAGE-SKILLBOOK:Blank Skillbook Ranger+Barrage Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Barrage Scroll",
+          "slug": "barrage-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Barrage Skillbook",
+        "namePl": "Księga umiejętności „Skoncentrowany Ostrzał”",
+        "slug": "barrage-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/GLITTER-DUST-SKILLBOOK:Blank Skillbook Ranger+Glitter Dust Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Glitter Dust Scroll",
+          "slug": "glitter-dust-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Glitter Dust Skillbook",
+        "namePl": "Księga umiejętności „Brokat”",
+        "slug": "glitter-dust-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/TACTICAL-RETREAT-SKILLBOOK:Blank Skillbook Ranger+Tactical Retreat Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Ranger",
+          "slug": "blank-skillbook-ranger",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Tactical Retreat Scroll",
+          "namePl": "Zwój Odwrotu Taktycznego",
+          "slug": "tactical-retreat-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Tactical Retreat Skillbook",
+        "namePl": "Księga umiejętności „Odwrót Taktyczny”",
+        "slug": "tactical-retreat-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BACKLASH-SKILLBOOK:Blank Skillbook Rogue+Backlash Scroll",
       "ingredients": [
         {
           "name": "Blank Skillbook Rogue",
@@ -33505,16 +33827,18 @@
           ]
         },
         {
-          "name": "#Rogue-Scroll",
-          "selectorTag": "Rogue-Scroll",
+          "name": "Backlash Scroll",
+          "slug": "backlash-scroll",
           "tags": [
-            "Rogue-Scroll"
+            "Scrolls",
+            "DOS2-CO"
           ]
         }
       ],
       "result": {
-        "name": "Related Rogue Skillbook",
-        "slug": "related-rogue-skillbook",
+        "name": "Backlash Skillbook",
+        "namePl": "Księga umiejętności „Skok za Plecy”",
+        "slug": "backlash-skillbook",
         "tags": [
           "Skillbooks",
           "DOS2-CO"
@@ -33530,7 +33854,311 @@
       "source": "Crafting Overhaul"
     },
     {
-      "id": "Magia/RELATED-WARRIOR-SKILLBOOK:Warrior Empty Skillbook+#Warrior-Scroll",
+      "id": "Magia/CHLOROFORM-SKILLBOOK:Blank Skillbook Rogue+Choloroform Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Choloroform Scroll",
+          "slug": "choloroform-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Chloroform Skillbook",
+        "namePl": "Księga umiejętności „Chloroform”",
+        "slug": "chloroform-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/THROWING-KNIFE-SKILLBOOK:Blank Skillbook Rogue+Throwing Knife Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Throwing Knife Scroll",
+          "slug": "throwing-knife-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Throwing Knife Skillbook",
+        "namePl": "Księga umiejętności „Rzut Nożem”",
+        "slug": "throwing-knife-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/CLOAK-AND-DAGGER-SKILLBOOK:Blank Skillbook Rogue+Cloak and Dagger Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Cloak and Dagger Scroll",
+          "slug": "cloak-and-dagger-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Cloak And Dagger Skillbook",
+        "namePl": "Księga umiejętności „Płaszcz i Sztylet”",
+        "slug": "cloak-and-dagger-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/CORRUPTED-BLADE-SKILLBOOK:Blank Skillbook Rogue+Corrupted Blade Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Corrupted Blade Scroll",
+          "slug": "corrupted-blade-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Corrupted Blade Skillbook",
+        "namePl": "Księga umiejętności „Spaczone Ostrze”",
+        "slug": "corrupted-blade-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/GAG-ORDER-SKILLBOOK:Blank Skillbook Rogue+Gag Order Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Gag Order Scroll",
+          "slug": "gag-order-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Gag Order Skillbook",
+        "namePl": "Księga umiejętności „Knebel”",
+        "slug": "gag-order-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/RUPTURE-TENDONS-SKILLBOOK:Blank Skillbook Rogue+Rupture Tendons Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Rupture Tendons Scroll",
+          "slug": "rupture-tendons-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Rupture Tendons Skillbook",
+        "namePl": "Księga umiejętności „Zerwane Ścięgna”",
+        "slug": "rupture-tendons-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/SAWTOOTH-KNIFE-SKILLBOOK:Blank Skillbook Rogue+Sawtooth Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Sawtooth Scroll",
+          "slug": "sawtooth-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Sawtooth Knife Skillbook",
+        "namePl": "Księga umiejętności „Zębate Ostrze”",
+        "slug": "sawtooth-knife-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/SLEEPING-ARMS-SKILLBOOK:Blank Skillbook Rogue+Sleeping Arms Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Rogue",
+          "slug": "blank-skillbook-rogue",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Sleeping Arms Scroll",
+          "slug": "sleeping-arms-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Sleeping Arms Skillbook",
+        "namePl": "Księga umiejętności „Senne Ramiona”",
+        "slug": "sleeping-arms-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BATTERING-RAM-SKILLBOOK:Blank Skillbook Warrior+Battering Ram Scroll",
       "ingredients": [
         {
           "name": "Blank Skillbook Warrior",
@@ -33541,16 +34169,360 @@
           ]
         },
         {
-          "name": "#Warrior-Scroll",
-          "selectorTag": "Warrior-Scroll",
+          "name": "Battering Ram Scroll",
+          "slug": "battering-ram-scroll",
           "tags": [
-            "Warrior-Scroll"
+            "Scrolls",
+            "DOS2-CO"
           ]
         }
       ],
       "result": {
-        "name": "Related Warrior Skillbook",
-        "slug": "related-warrior-skillbook",
+        "name": "Battering Ram Skillbook",
+        "namePl": "Księga umiejętności „Taran”",
+        "slug": "battering-ram-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BATTLE-STOMP-SKILLBOOK:Blank Skillbook Warrior+Battle Stomp Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Battle Stomp Scroll",
+          "slug": "battle-stomp-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Battle Stomp Skillbook",
+        "namePl": "Księga umiejętności „Bojowe Łupnięcie”",
+        "slug": "battle-stomp-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/CRIPPLING-BLOW-SKILLBOOK:Blank Skillbook Warrior+Crippling Blow Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Crippling Blow Scroll",
+          "slug": "crippling-blow-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Crippling Blow Skillbook",
+        "namePl": "Księga umiejętności „Okaleczający Cios”",
+        "slug": "crippling-blow-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/WHIRLWIND-SKILLBOOK:Blank Skillbook Warrior+Whirlwind Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Whirlwind Scroll",
+          "slug": "whirlwind-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Whirlwind Skillbook",
+        "namePl": "Księga umiejętności „Wir”",
+        "slug": "whirlwind-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BOUNCING-SHIELD-SKILLBOOK:Blank Skillbook Warrior+Bouncing Shield Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Bouncing Shield Scroll",
+          "slug": "bouncing-shield-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Bouncing Shield Skillbook",
+        "namePl": "Księga umiejętności „Rzut Tarczą”",
+        "slug": "bouncing-shield-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/ENRAGE-SKILLBOOK:Blank Skillbook Warrior+Enrage Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Enrage Scroll",
+          "slug": "enrage-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Enrage Skillbook",
+        "namePl": "Księga umiejętności „Wściekłość”",
+        "slug": "enrage-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/BLITZ-ATTACK-SKILLBOOK:Blank Skillbook Warrior+Blitz Attack Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Blitz Attack Scroll",
+          "slug": "blitz-attack-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Blitz Attack Skillbook",
+        "namePl": "Księga umiejętności „Błyskawiczny Atak”",
+        "slug": "blitz-attack-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/PROVOKE-SKILLBOOK:Blank Skillbook Warrior+Provoke Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Provoke Scroll",
+          "slug": "provoke-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Provoke Skillbook",
+        "namePl": "Księga umiejętności „Prowokacja”",
+        "slug": "provoke-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/PHOENIX-DIVE-SKILLBOOK:Blank Skillbook Warrior+Phoenix Dive Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Phoenix Dive Scroll",
+          "slug": "phoenix-dive-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Phoenix Dive Skillbook",
+        "namePl": "Księga umiejętności „Lot Feniksa”",
+        "slug": "phoenix-dive-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS2-CO"
+        ]
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS2-CO"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting Overhaul"
+    },
+    {
+      "id": "Magia/DEFLECTIVE-BARRIER-SKILLBOOK:Blank Skillbook Warrior+Deflective Barrier Scroll",
+      "ingredients": [
+        {
+          "name": "Blank Skillbook Warrior",
+          "slug": "blank-skillbook-warrior",
+          "tags": [
+            "Skillbooks",
+            "DOS2-CO"
+          ]
+        },
+        {
+          "name": "Deflective Barrier Scroll",
+          "slug": "deflective-barrier-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS2-CO"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Deflective Barrier Skillbook",
+        "namePl": "Księga umiejętności „Odbijająca Bariera”",
+        "slug": "deflective-barrier-skillbook",
         "tags": [
           "Skillbooks",
           "DOS2-CO"
@@ -33678,7 +34650,7 @@
         "slug": "resurrection-skillbook",
         "tags": [
           "Skillbooks",
-          "Teaches-Skill",
+
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -33688,7 +34660,7 @@
       },
       "tags": [
         "Skillbooks",
-        "Teaches-Skill",
+
         "DOS2-CO"
       ],
       "requirements": "",
@@ -37712,12 +38684,10 @@
           ]
         },
         {
-          "name": "Water Source",
-          "namePl": "Źródło wody",
-          "slug": "water-source",
+          "name": "#Water-Source",
+          "selectorTag": "Water-Source",
           "tags": [
-            "Ingredients",
-            "DOS2-CO"
+            "Water-Source"
           ]
         }
       ],
@@ -38732,14 +39702,14 @@
         "tags": [
           "Skillbooks",
           "Ingredients",
-          "Teaches-Skill",
+
           "DOS2-CO"
         ]
       },
       "tags": [
         "Skillbooks",
         "Ingredients",
-        "Teaches-Skill",
+
         "DOS2-CO"
       ],
       "requirements": "",
@@ -52383,6 +53353,7 @@
       ],
       "result": {
         "name": "Water Barrel",
+        "namePl": "Beczka wody",
         "slug": "water-barrel",
         "tags": [
           "Stations-And-Containers",
@@ -55688,7 +56659,7 @@
         "tags": [
           "Armour",
           "Ingredients",
-          "Dexterity",
+          "Finesse",
           "DOS2-CO"
         ],
         "selectorTag": "ArmorLeather"
@@ -55697,7 +56668,7 @@
         "Chest-Armour"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [
@@ -56475,7 +57446,7 @@
         "Bows"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [
@@ -56663,7 +57634,7 @@
         "Crossbows"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [
@@ -56915,7 +57886,7 @@
         "Daggers"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [
@@ -57437,7 +58408,7 @@
         "Daggers"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [
@@ -58180,7 +59151,7 @@
         "Spears"
       ],
       "tags": [
-        "Dexterity",
+        "Finesse",
         "DOS2-CO"
       ],
       "ingredients": [

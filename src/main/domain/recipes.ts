@@ -3,8 +3,10 @@ import { isOrComboTag, requirementTokens } from "./recipeView"
 import { hierarchyLabel, tagDescendants, tagOrder, traitSections, withImpliedParents } from "./tagTree"
 
 export type RecipeItem = {
-  /** Explicit game identity when inventory names are shared by distinct items. */
+  /** Game identity (Stats ID); links the item to game data. Never shown. */
   statsId?: string
+  /** Key of the item's icon, effect and description data, set during static generation. */
+  dataKey?: string
   /** Catalog clarification for distinct items sharing their official game name. */
   nameQualifier?: { en: string; pl?: string }
   /** Confirmed game effects, embedded during static generation. */
@@ -54,6 +56,8 @@ export type RecipeUpgrade = {
   id: string
   effect: { en: string; pl?: string }
   target: RecipeItem
+  /** The groups of items the upgrade applies to, resolved during data generation. */
+  targets?: RecipeItem[]
   targetTags: string[]
   tags: string[]
   ingredients: RecipeItem[]

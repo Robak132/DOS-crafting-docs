@@ -77,22 +77,29 @@ const weaponCategories: Record<string, RegExp> = {
   armorbelt: /\bbelt\b/,
 }
 
-// A "Property" recipe slot (e.g. Water) accepts any of the game's sources of that liquid.
-const liquidSources = new Map(
-  Object.values(comboProperties.properties).map((property) => [
-    property.group,
-    new Set(property.members.map(itemIconKey)),
+const gameGroups = new Map(
+  [...Object.values(comboProperties.properties), ...Object.values(comboProperties.objectGroups)].map((group) => [
+    group.group,
+    {
+      stats: new Set(group.stats),
+      names: new Set(group.members.map(itemIconKey)),
+      fixed: new Set(("fixed" in group ? group.fixed : []).map(itemIconKey)),
+    },
   ]),
 )
 
-/** Liquid sources stay one group even with few members: the game accepts any source. */
-export const isLiquidSource = (selector: string | undefined): boolean =>
-  selector !== undefined && liquidSources.has(selector.replace(/^#/, ""))
+/** Game-defined groups stay one group even with few members: the game accepts any member. */
+export const isGameGroup = (selector: string | undefined): boolean =>
+  selector !== undefined && gameGroups.has(selector.replace(/^#/, ""))
 
 /** Resolve only recognizable groups; ordinary item names never become groups. */
 export function groupMatcher(item: RecipeItem): ((candidate: RecipeItem) => boolean) | undefined {
-  const liquid = item.selectorTag ? liquidSources.get(item.selectorTag) : undefined
-  if (liquid) return (candidate) => !candidate.selectorTag && liquid.has(itemIconKey(candidate.name))
+  const listed = item.selectorTag ? gameGroups.get(item.selectorTag) : undefined
+  if (listed)
+    return (candidate) =>
+      !candidate.selectorTag &&
+      !listed.fixed.has(itemIconKey(candidate.name)) &&
+      (candidate.statsId ? listed.stats.has(candidate.statsId) : listed.names.has(itemIconKey(candidate.name)))
   const raw = item.selectorTag ?? item.name
   const normalized = words(raw.replace(/^#/, ""))
   const explicit = /,|\bOr\b|-Or-/i.test(raw)
@@ -236,38 +243,91 @@ export function buildItemGroups(recipes: RecipeRow[], minimumSize = 4, inventory
   return groups
 }
 
+const slotWords: [RegExp, string][] = [
+  [/\b(upperbody|chest|torso|body|robe|shirt)\b/, "Chest-Armour"],
+  [/\b(gloves?|bracers|gauntlets)\b/, "Gloves"],
+  [/\b(boots?|shoes)\b/, "Boots"],
+  [/\b(helmet|helm|hat)\b/, "Helmets"],
+  [/\b(pants|lowerbody|leggings|sarong)\b/, "Leggings"],
+  [/\bbelts?\b/, "Belts"],
+  [/\bshields?\b/, "Shields"],
+]
+// Material words of a target list ("Leather Upperbody, Gloves, …") and the items they cover.
+const targetMaterials: [RegExp, RegExp][] = [
+  [/^leather\b/, /\b(leather|light|ranger|rogue|shadow|hide)\b/],
+  [
+    /^(mage|cloth)\b/,
+    /\b(mage|cloth|robe|aerotheurge|aerotheruge|geomancer|hydrosophist|necromancer|polymorph|pyrokinetic|pyromancer|summoning|summoner)\b/,
+  ],
+  [/^(warrior|plate|metal)\b/, /\b(warrior|metal|plate|scale|scalemail|chain)\b/],
+  [/^(vanilla )?unique\b/, /\bunique\b/],
+  [/^wooden\b/, /\bwood(en)?\b/],
+]
+
 /**
- * The items each upgrade can be applied to, as a group: the target's own group when it names one
- * (e.g. "#Mage-Gloves"), otherwise every item within the upgrade's target categories.
+ * The items each upgrade can be applied to, as one group per equipment slot it names: a target such as
+ * "Leather Upperbody, Gloves, Boots" becomes "Leather Upperbody", "Leather Gloves" and "Leather Boots".
+ * A qualified single target ("Mage Gloves", "#Two-Handed-Axe") uses its own group; a plain slot
+ * ("Boots", "#Glove-Armor") means every item of that slot, even ones without game category data.
  */
 export function upgradeTargetGroups(
   upgrades: RecipeUpgrade[],
   recipes: RecipeRow[],
   inventory: RecipeItem[] = [],
-): Record<string, ItemGroup> {
+): Record<string, ItemGroup[]> {
   const { all } = collectItems(recipes, inventory)
   const candidates = [...all.values()].filter(
     (item) => !/,|\bor\b|%|\(|^(boosted|colored|elemental boosted) /i.test(item.name),
   )
-  const byUpgrade: Record<string, ItemGroup> = {}
+  const within = (item: RecipeItem, tags: string[]) =>
+    item.tags.some((tag) => tags.some((target) => isTagWithin(tag, target)))
+  const sorted = (items: RecipeItem[]) => items.sort((a, b) => a.name.localeCompare(b.name, "en"))
+  const byUpgrade: Record<string, ItemGroup[]> = {}
   for (const upgrade of upgrades) {
-    const inCategory = (item: RecipeItem) =>
-      item.tags.some((tag) => upgrade.targetTags.some((target) => isTagWithin(tag, target)))
-    // Only a qualified target ("Mage Gloves", "Bladed Melee Weapon") narrows its category; a plain slot
-    // ("Glove-Armor", "Boots") means every item of it, even ones without game category data.
+    const raw = upgrade.target.name.replace(/^#/, "")
+    const text = words(raw)
+    const material = targetMaterials.find(([prefix]) => prefix.test(text))
+    const prefix = material
+      ? raw
+          .split(/[\s,-]+/)
+          .slice(0, material[0].exec(text)![0].split(" ").length)
+          .join(" ")
+      : ""
+    // Selectors join their words with dashes ("Chest-Gloves-Or-Sarong"); names list them with commas.
+    const parts = (upgrade.target.selectorTag ? text.slice(words(prefix).length).split(" ") : raw.split(","))
+      .map((part) => part.trim())
+      .filter((part) => part && part.toLowerCase() !== "or")
+    const bySlot = new Map<string, string[]>()
+    for (const part of parts) {
+      const tag = slotWords.find(([pattern]) => pattern.test(words(part)))?.[1]
+      if (tag && upgrade.targetTags.includes(tag)) bySlot.set(tag, [...(bySlot.get(tag) ?? []), part])
+    }
+    if (upgrade.targetTags.length > 1 && bySlot.size > 1) {
+      byUpgrade[upgrade.id] = [...bySlot].map(([tag, slotParts]) => {
+        const slot = slotParts
+          .map((part) => part.replace(new RegExp(`^${prefix}\\s+`, "i"), ""))
+          .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+          .join(" or ")
+        const name = prefix ? `${prefix} ${slot}` : slot
+        const members = candidates.filter(
+          (item) =>
+            within(item, [tag]) &&
+            (!material || material[1].test(`${words(item.name)} ${words((item.craftingCategories ?? []).join(" "))}`)),
+        )
+        return { id: itemIconKey(name), name, members: sorted(members) }
+      })
+      continue
+    }
     const qualified =
       /\b(mage|light|warrior|leather|cloth|plate|metal|wooden|finesse|intelligence|strength|unique|vanilla|bladed|scale|robe|cape|two handed|knife|club|staff|bow|crossbow|axe|mace|sword|spear|dagger|wand)\b/i.test(
         words(upgrade.target.selectorTag ?? upgrade.target.name),
       )
     const matcher = qualified ? groupMatcher(upgrade.target) : undefined
-    let members = matcher ? candidates.filter((item) => matcher(item) && inCategory(item)) : []
-    if (members.length === 0) members = candidates.filter(inCategory)
-    const id = itemIconKey(upgrade.target.name)
-    byUpgrade[upgrade.id] = {
-      id,
-      name: upgrade.target.name,
-      members: members.sort((a, b) => a.name.localeCompare(b.name, "en")),
-    }
+    let members = matcher ? candidates.filter((item) => matcher(item) && within(item, upgrade.targetTags)) : []
+    if (members.length === 0) members = candidates.filter((item) => within(item, upgrade.targetTags))
+    byUpgrade[upgrade.id] = [
+      { id: itemIconKey(upgrade.target.name), name: upgrade.target.name, members: sorted(members) },
+    ]
   }
   return byUpgrade
 }
@@ -322,7 +382,7 @@ export function expandSmallGroups(recipes: RecipeRow[], groups: ItemGroups): Rec
     const alternatives = (item: RecipeItem): RecipeItem[] => {
       if (!isItemGroup(item)) return [item]
       const group = groups[itemIconKey(item.name)]
-      if (!group || group.members.length === 0 || group.members.length >= 4 || isLiquidSource(item.selectorTag))
+      if (!group || group.members.length === 0 || group.members.length >= 4 || isGameGroup(item.selectorTag))
         return [item]
       return group.members.map((member) => ({ ...member, quantity: item.quantity }))
     }

@@ -37,7 +37,7 @@ def main():
                 if 'Upgrades' in item['tags']:
                     upgrades.add(name)
                     continue
-                identity = key(item.get('statsId') or name)
+                identity = item.get('dataKey') or key(item.get('statsId') or name)
                 items[identity] = item
                 roles[identity].add(role)
         missing = [{'name': item['name'], 'roles': sorted(roles[identity])} for identity, item in sorted(items.items(), key=lambda pair: pair[1]['name']) if identity not in mapping]

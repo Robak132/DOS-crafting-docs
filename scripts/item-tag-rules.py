@@ -22,8 +22,9 @@ ATTRIBUTES = {
 ELEMENTS={'Fire':('Fire-Resistance','Fire-Damage'),'Water':('Water-Resistance','Water-Damage'),'Air':('Air-Resistance','Air-Damage'),'Earth':('Earth-Resistance','Earth-Damage'),'Poison':('Poison-Resistance','Poison-Damage'),'Physical':('Physical-Resistance','Physical-Damage'),'Piercing':('Piercing-Resistance','Piercing-Damage'),'Shadow':('Shadow-Resistance','Shadow-Damage')}
 WEAPONS={'Sword':('Swords','Miecze'),'Axe':('Axes','Topory'),'Club':('Maces','Buławy i młoty'),'Mace':('Maces','Buławy i młoty'),'Dagger':('Daggers','Sztylety'),'Knife':('Daggers','Sztylety'),'Spear':('Spears','Włócznie'),'Spears':('Spears','Włócznie'),'Bow':('Bows','Łuki'),'Crossbow':('Crossbows','Kusze'),'Staff':('Staves','Kostury'),'Wand':('Wands','Różdżki')}
 SLOTS={'Helmet':('Helmets','Hełmy'),'Breast':('Chest-Armour','Napierśniki'),'Chest':('Chest-Armour','Napierśniki'),'Gloves':('Gloves','Rękawice'),'Boots':('Boots','Buty'),'Leggings':('Leggings','Spodnie'),'Shield':('Shields','Tarcze'),'Amulet':('Amulets','Amulety'),'Ring':('Rings','Pierścienie'),'Belt':('Belts','Pasy')}
+HANDED={'Swords':('One-Handed-Swords','Two-Handed-Swords'),'Axes':('One-Handed-Axes','Two-Handed-Axes'),'Maces':('One-Handed-Maces','Two-Handed-Maces')}
 CATEGORY_TYPES={
- 'Sword':'Swords','TwoHandedSword':'Swords','Axe':'Axes','TwoHandedAxe':'Axes','Club':'Maces','Hammer':'Maces','TwoHandedMaces':'Maces','Dagger':'Daggers','Knife':'Daggers','Spear':'Spears','Spears':'Spears','Bow':'Bows','Bows':'Bows','Crossbow':'Crossbows','Crossbows':'Crossbows','Wand':'Wands','Wands':'Wands','Staff':'Staves','Staves':'Staves',
+ 'Sword':'One-Handed-Swords','TwoHandedSword':'Two-Handed-Swords','Axe':'One-Handed-Axes','TwoHandedAxe':'Two-Handed-Axes','Club':'One-Handed-Maces','TwoHandedMaces':'Two-Handed-Maces','Dagger':'Daggers','Knife':'Daggers','Spear':'Spears','Spears':'Spears','Bow':'Bows','Bows':'Bows','Crossbow':'Crossbows','Crossbows':'Crossbows','Wand':'Wands','Wands':'Wands','Staff':'Staves','Staves':'Staves',
  'Helmet':'Helmets','Boots':'Boots','Gloves':'Gloves','Leggings':'Leggings','Pants':'Leggings','Lowerbody':'Leggings','Upperbody':'Chest-Armour','UpperBody':'Chest-Armour','Breast':'Chest-Armour','Shield':'Shields','Shields':'Shields','Amulet':'Amulets','Ring':'Rings','Belt':'Belts',
 }
 
@@ -33,7 +34,11 @@ def type_tags(fields,kind):
     if slot=='Shield' or weapon=='Shield':return ['Shields']
     if kind=='Armor' and slot in ['Amulet','Ring','Belt']:return [{'Amulet':'Amulets','Ring':'Rings','Belt':'Belts'}[slot]]
     if kind=='Armor' and slot in SLOTS:return [SLOTS[slot][0]]
-    if kind=='Weapon' and weapon in WEAPONS:return [WEAPONS[weapon][0]]
+    if kind=='Weapon' and weapon in WEAPONS:
+        tag=WEAPONS[weapon][0]
+        # Swords, axes and maces come in both hands; the game's IsTwoHanded flag decides which.
+        if tag in HANDED and fields.get('IsTwoHanded') in ('Yes','No'):return [HANDED[tag][fields['IsTwoHanded']=='Yes']]
+        return [tag]
     return []
 
 

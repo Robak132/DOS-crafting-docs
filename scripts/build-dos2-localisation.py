@@ -66,15 +66,16 @@ def main():
     for context, (uid, expected) in contexts.items():
         assert english[uid] == "Necromancer" and polish[uid] == expected
         (names if context == "names" else selectors)["Necromancer"] = polish[uid]
-    # Liquid source groups (data/itemComboProperties.json). The game labels Wine and Milk
-    # without "Source", so their group labels follow the Polish pattern of the others.
+    # Game-defined groups (data/itemComboProperties.json). The game labels Wine and Milk
+    # without "Source", so their group labels follow the Polish pattern of the others;
+    # object groups have no in-game label at all.
     by_english = defaultdict(set)
     for uid, name in english.items():
         if polish.get(uid):
             by_english[name].add(polish[uid])
-    manual = {"Wine Source": "Źródło wina", "Milk Source": "Źródło mleka"}
-    liquids = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))["properties"]
-    for liquid in liquids.values():
+    manual = {"Wine Source": "Źródło wina", "Milk Source": "Źródło mleka", "Gold Object": "Złoty przedmiot"}
+    combo_groups = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))
+    for liquid in [*combo_groups["properties"].values(), *combo_groups["objectGroups"].values()]:
         values = by_english.get(liquid["label"], set())
         label = next(iter(values)) if len(values) == 1 else manual.get(liquid["label"])
         if label:

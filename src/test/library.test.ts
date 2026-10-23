@@ -6,6 +6,7 @@ import os from "node:os"
 import { loadLibrary } from "../../scripts/load-library"
 import { expandSmallGroups } from "../main/domain/itemGroups"
 import { recipeResults } from "../main/domain/recipeResults"
+import { assignDataKeys } from "../main/domain/itemIcons"
 
 async function fixture() {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-json-library-"))
@@ -159,11 +160,15 @@ test("every recipe item link resolves to an item page", async () => {
       }
     }
   }
+  for (const items of Object.values(library.items))
+    for (const item of items) if (item.slug) assert.ok(known.has(item.slug), `Missing item page: ${item.slug}`)
 })
 
 test("source recipes are unique and name real items, not lists or placeholders", async () => {
   const { sources } = await loadLibrary()
   for (const [game, recipes] of Object.entries(sources)) {
+    // Same item identity as the generated catalog (pages on a generic Stats entry stay apart).
+    assignDataKeys(recipes.flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]))
     assert.equal(expandSmallGroups(recipes, {}).length, recipes.length, `${game}: deduplicate the source JSON`)
     for (const row of recipes)
       for (const item of recipeResults(row))

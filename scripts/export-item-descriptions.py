@@ -21,7 +21,7 @@ def plain(value):
     return re.sub(r'<[^>]+>', '', value).strip()
 
 
-def collect_descriptions(templates, strings, translations, provenance=None, stats=None):
+def collect_descriptions(templates, strings, translations, provenance=None, stats=None, catalog_stats=None):
     """Use inventory names first, after removing game rich-text markup."""
     def inherit(template, seen=None):
         seen = set() if seen is None else seen
@@ -99,7 +99,38 @@ def collect_descriptions(templates, strings, translations, provenance=None, stat
         polish = {candidate[1] for candidate in candidates if candidate[1]}
         if len(english) == 1:
             output[name] = {'en': next(iter(english)), **({'pl': next(iter(polish))} if len(polish) == 1 else {})}
-    return output
+    # Catalog items with a game Stats ID are described by that entry, preferring its root template.
+    for stat, name in (catalog_stats or {}).items():
+        pool = identities['stats'].get(stat, set())
+        root = root_for(stat)
+        pool = {candidate for candidate in pool if candidate[2] == root} or pool
+        english = {candidate[0] for candidate in pool}
+        polish = {candidate[1] for candidate in pool if candidate[1]}
+        if len(english) == 1:
+            output[helpers['key'](stat)] = {'en': next(iter(english)), **({'pl': next(iter(polish))} if len(polish) == 1 else {})}
+        elif name and helpers["key"](name) in output:
+            # The entry alone is not conclusive: use its name's, which no other catalog item shares.
+            output[helpers['key'](stat)] = output[helpers['key'](name)]
+    return dict(sorted(output.items()))
+
+
+def catalog_stats(game):
+    """Stats IDs that key catalog items (see assignDataKeys), each with its name key when no
+    other catalog item carries that name. Reads the generated catalog (npm run generate:data)."""
+    catalog = json.loads((ROOT / 'dist/data' / f'catalog-{game}.json').read_text(encoding='utf-8'))
+    items = [item for row in catalog['recipes'] for item in [row['result'], *row.get('extraResults', []), *row['result'].get('pool', []), *row['ingredients']]]
+    items += [member for group in catalog.get('groups', {}).values() for member in group['members']]
+    keys_by_name = defaultdict(set)
+    for item in items:
+        if not item.get('selectorTag'):
+            keys_by_name[helpers['key'](item['name'])].add(item.get('dataKey') or helpers['key'](item['name']))
+    found = {}
+    for item in items:
+        stats = item.get('statsId')
+        if stats and item.get('dataKey') == helpers['key'](stats):
+            name_key = helpers['key'](item['name'])
+            found[stats] = name_key if keys_by_name[name_key] == {item['dataKey']} else None
+    return dict(sorted(found.items()))
 
 
 def main():
@@ -124,7 +155,7 @@ def main():
                 for directory in [current / 'dos2', *sorted(current.glob('dos2-Patch*'), key=lambda p: int(re.search(r'Patch(\d+)', p.name)[1]))]:
                     for module in sorted((directory / 'Public').glob('*'), key=lambda p: p.name != 'Shared'):
                         stats.update(helpers['stat_entries'](module))
-        output[game] = collect_descriptions(templates, strings, translations['dos1' if game == 'dos1' else 'dos2'], provenance.get(game, {}), stats)
+        output[game] = collect_descriptions(templates, strings, translations['dos1' if game == 'dos1' else 'dos2'], provenance.get(game, {}), stats, catalog_stats(game))
         print(game, len(output[game]), 'descriptions')
     (ROOT / 'data/itemDescriptions.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 

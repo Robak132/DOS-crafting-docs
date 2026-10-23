@@ -9,6 +9,11 @@
         "Cup of Oil",
         "Bottle Filled With Oil"
       ],
+      "stats": [
+        "CONT_Barrel_Oil_A",
+        "CON_Drink_Cup_A_Oil",
+        "ITEM_BottleWithOil"
+      ],
       "categories": []
     },
     "Water": {
@@ -20,6 +25,13 @@
         "Mug of Water",
         "Cup of Water",
         "Bucket with Water"
+      ],
+      "stats": [
+        "CONT_Barrel_A_Water",
+        "CON_Drink_Bottle_Water_A",
+        "CON_Drink_Cup_A_Water",
+        "CON_Drink_Mug_Water_A",
+        "FUR_Bucket_A_Water"
       ],
       "categories": []
     },
@@ -37,6 +49,19 @@
         "Ooze Barrel",
         "Rotten Egg Cluster"
       ],
+      "stats": [
+        "CONT_Barrel_Ooze_A",
+        "CON_Potion_Poison_A",
+        "CON_Potion_Poison_Elixir",
+        "CON_Potion_Poison_Giant_A",
+        "CON_Potion_Poison_Huge_A",
+        "CON_Potion_Poison_Large_A",
+        "CON_Potion_Poison_Medium_A",
+        "POTION_Healing_Poisoned_Masked_Huge_A",
+        "POTION_Healing_Poisoned_Masked_Large_A",
+        "POTION_Healing_Poisoned_Masked_Medium_A",
+        "POTION_Healing_Poisoned_Masked_Minor_A"
+      ],
       "categories": [
         "PotionPoison"
       ]
@@ -50,6 +75,12 @@
         "Mug of Beer",
         "Beer Barrel"
       ],
+      "stats": [
+        "CON_Drink_Bottle_Beer_A",
+        "CON_Drink_Bottle_Beer_A_Fancy",
+        "CON_Drink_Mug_Beer_A",
+        "FUR_Bar_Barrel_A_Beer_A"
+      ],
       "categories": []
     },
     "Honey": {
@@ -58,6 +89,10 @@
       "members": [
         "Jar of Honey",
         "Milk and Honey"
+      ],
+      "stats": [
+        "CON_Drink_Cup_A_MilkHoney",
+        "CON_Food_Honey_Jar_A"
       ],
       "categories": []
     },
@@ -71,6 +106,13 @@
         "Glass of Wine",
         "Wine Barrel"
       ],
+      "stats": [
+        "CON_Drink_Bottle_Wine_A",
+        "CON_Drink_Bottle_Wine_A_Expensive",
+        "CON_Drink_Glass_A_Wine",
+        "CON_Drink_Mug_Wine_A",
+        "FUR_Bar_Barrel_A_Wine_A"
+      ],
       "categories": []
     },
     "Milk": {
@@ -81,7 +123,52 @@
         "Milk and Honey",
         "Bucket with Milk"
       ],
+      "stats": [
+        "CON_Drink_Cup_A_Milk",
+        "CON_Drink_Cup_A_MilkHoney",
+        "FUR_Bucket_A_Milk"
+      ],
       "categories": []
+    }
+  },
+  "objectGroups": {
+    "Gold-Object": {
+      "group": "Gold-Object",
+      "label": "Gold Object",
+      "members": [
+        "Light Golden Teaspoon",
+        "Fork",
+        "Gold Cup",
+        "Plate",
+        "Pitcher",
+        "Glass"
+      ],
+      "stats": [
+        "ITEM_SpoonGold",
+        "FUR_Rich_Fork_A",
+        "FUR_Rich_Knife_A",
+        "ITEM_EmptyCupGold",
+        "ITEM_Rich_Plate_B",
+        "ITEM_Rich_Pitcher_A",
+        "ITEM_Rich_Plate_A",
+        "ITEM_Rich_Glass_A"
+      ],
+      "unnamed": [
+        "FUR_Rich_Knife_A"
+      ],
+      "fixed": [
+        "Source Fountain"
+      ],
+      "combos": [
+        "HammerAnvil_Craft_Goldbar_1",
+        "HammerAnvil_Craft_Goldbar_2",
+        "HammerAnvil_Craft_Goldbar_3",
+        "HammerAnvil_Craft_Goldbar_4",
+        "HammerAnvil_Craft_Goldbar_5",
+        "HammerAnvil_Craft_Goldbar_6",
+        "HammerAnvil_Craft_Goldbar_7",
+        "HammerAnvil_Craft_Goldbar_8"
+      ]
     }
   }
 }

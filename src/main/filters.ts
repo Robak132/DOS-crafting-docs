@@ -2,6 +2,7 @@ import { isCategoryTag, isTagWithin } from "./domain/tagTree"
 import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
 import { matchesUpgradeQuery } from "./domain/upgrades"
 import {
+  type RecipeSearchScope,
   matchesCraftingMax,
   matchesRecipeQuery,
   recipeResultTags,
@@ -15,7 +16,7 @@ export type Filters = {
   requirements: string[]
   requirementsExclude: string[]
   craftingMax: number | null
-  scope: "result" | "ingredient"
+  scope: RecipeSearchScope
   selectors: string[]
   query: string
   group: string | null
@@ -26,7 +27,7 @@ export const emptyFilters = (): Filters => ({
   requirements: [],
   requirementsExclude: [],
   craftingMax: null,
-  scope: "result",
+  scope: "all",
   selectors: [],
   query: "",
   group: null,
@@ -47,6 +48,8 @@ const stringList = (value: unknown): string[] =>
 const validCraftingMax = (value: unknown): number | null =>
   typeof value === "number" && Number.isInteger(value) && value >= 1 && value <= 5 ? value : null
 
+const parseScope = (value: unknown): RecipeSearchScope => (value === "result" || value === "ingredient" ? value : "all")
+
 function storedFilters(raw: unknown): Filters {
   const value = raw && typeof raw === "object" ? (raw as Record<string, unknown>) : {}
   return {
@@ -55,7 +58,7 @@ function storedFilters(raw: unknown): Filters {
     requirements: stringList(value.requirements),
     requirementsExclude: stringList(value.requirementsExclude),
     craftingMax: validCraftingMax(value.craftingMax),
-    scope: value.scope === "ingredient" ? "ingredient" : "result",
+    scope: parseScope(value.scope),
     selectors: stringList(value.selectors),
     query: typeof value.query === "string" ? value.query : "",
     group: typeof value.group === "string" && value.group ? value.group : null,
@@ -92,7 +95,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     stored.selectors = (params.get("selector") ?? "").split(",").filter(Boolean)
     stored.query = params.get("q") ?? ""
     stored.group = params.get("group")
-    stored.scope = params.get("as") === "ingredient" ? "ingredient" : "result"
+    stored.scope = parseScope(params.get("as"))
     stored.craftingMax = validCraftingMax(Number(params.get("craftingMax")))
   }
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
@@ -115,7 +118,7 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
     if (filters.requirementsExclude.some((value) => reqs.includes(value.toLowerCase()))) return false
     if (filters.craftingMax !== null && !matchesCraftingMax(recipe.requirements, filters.craftingMax)) return false
     if (
-      filters.scope === "ingredient" &&
+      filters.scope !== "result" &&
       filters.selectors.length &&
       !filters.selectors.some((value) => recipeUsesSelector(recipe, value))
     )
@@ -148,7 +151,7 @@ export function filtersToSearch(filters: Filters, view: string): string {
   }
   if (filters.group) params.set("group", filters.group)
   if (filters.query) params.set("q", filters.query)
-  if (filters.scope !== "result") params.set("as", filters.scope)
+  if (filters.scope !== "all") params.set("as", filters.scope)
   if (filters.selectors.length) params.set("selector", filters.selectors.join(","))
   if (filters.craftingMax !== null) params.set("craftingMax", String(filters.craftingMax))
   return params.toString()

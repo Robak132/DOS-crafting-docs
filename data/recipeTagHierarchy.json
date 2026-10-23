@@ -20,7 +20,18 @@
                 {
                   "tag": "Maces",
                   "label": "Buławy i młoty",
-                  "children": []
+                  "children": [
+                    {
+                      "tag": "One-Handed-Maces",
+                      "label": "Buławy i młoty jednoręczne",
+                      "children": []
+                    },
+                    {
+                      "tag": "Two-Handed-Maces",
+                      "label": "Buławy i młoty dwuręczne",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "tag": "Staves",
@@ -35,7 +46,18 @@
                 {
                   "tag": "Swords",
                   "label": "Miecze",
-                  "children": []
+                  "children": [
+                    {
+                      "tag": "One-Handed-Swords",
+                      "label": "Miecze jednoręczne",
+                      "children": []
+                    },
+                    {
+                      "tag": "Two-Handed-Swords",
+                      "label": "Miecze dwuręczne",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "tag": "Wands",
@@ -55,7 +77,18 @@
                 {
                   "tag": "Axes",
                   "label": "Topory",
-                  "children": []
+                  "children": [
+                    {
+                      "tag": "One-Handed-Axes",
+                      "label": "Topory jednoręczne",
+                      "children": []
+                    },
+                    {
+                      "tag": "Two-Handed-Axes",
+                      "label": "Topory dwuręczne",
+                      "children": []
+                    }
+                  ]
                 },
                 {
                   "tag": "Spears",

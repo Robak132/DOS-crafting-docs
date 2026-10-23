@@ -241,7 +241,7 @@ def main():
         entries = {}
         for layer in layers:
             entries.update(stat_entries(source / layer))
-        extra, _ = stats_icon_index(atlases, templates, entries, strings)
+        extra, stats_icons = stats_icon_index(atlases, templates, entries, strings)
         # A localized recipe label must not override an ambiguous item label.
         direct = defaultdict(set)
         for template in templates.values():
@@ -258,25 +258,32 @@ def main():
                 names[label] = match['icon']
                 evidence[label] = match
         catalog = json.loads((catalogs / f'catalog-{game}.json').read_text(encoding='utf-8'))
-        items = {key(item.get('statsId') or item['name']): item for row in catalog['recipes'] for item in [row['result'], *row.get('extraResults', []), *row['ingredients']] if not item.get('selectorTag')}
+        items = {(item.get('dataKey') or key(item.get('statsId') or item['name'])): item for row in catalog['recipes'] for item in [row['result'], *row.get('extraResults', []), *row['ingredients']] if not item.get('selectorTag')}
         # Group members that no recipe names (e.g. liquid sources) still show an icon.
         for group in catalog.get('groups', {}).values():
             for member in group['members']:
-                items.setdefault(key(member.get('statsId') or member['name']), member)
+                items.setdefault((member.get('dataKey') or key(member.get('statsId') or member['name'])), member)
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
         catalog_names = set(items)
         if game == 'dos2-overhaul':
+            known = {item.get('statsId') for item in items.values()}
             for template in templates.values():
                 label = plain_name(template.get('DisplayName', ''))
-                if template.get('Stats', '').startswith('TOOL_Dye_') and key(label) in names:
+                stats = template.get('Stats', '')
+                if stats.startswith('TOOL_Dye_') and key(label) in names and stats not in known:
                     items.setdefault(key(label), {'name': label})
         mapping[game], provenance[game], missing = {}, {}, []
-        results = {key(r['result'].get('statsId') or r['result']['name']) for r in catalog['recipes']}
+        results = {(r['result'].get('dataKey') or key(r['result'].get('statsId') or r['result']['name'])) for r in catalog['recipes']}
         for item_key in sorted(items):
             name = items[item_key]['name']
             icon = names.get(key(name))
             # Preserve verified assignments in the exported data: several templates
             # may reuse a label for a different item or potion size.
+            # An item with a game Stats ID shows that entry's own icon, not one found by its name.
+            by_stats = stats_icons(items[item_key]['statsId']) if items[item_key].get('statsId') else set()
+            if len(by_stats) == 1:
+                icon = next(iter(by_stats))
+                evidence[item_key] = {'stats': items[item_key]['statsId']}
             previous = existing.get(game, {}).get(item_key, {})
             if previous.get('icon') in atlases:
                 icon = previous['icon']
@@ -292,7 +299,9 @@ def main():
             box = tuple(round(v * (image.width if i % 2 == 0 else image.height) + (-0.5 if i < 2 else 0.5)) for i, v in enumerate(uv))
             crop = image.crop(box)
             layer = dds.relative_to(source).parts[0]
-            asset_name = name + ('-' + items[item_key]['statsId'] if items[item_key].get('statsId') else '')
+            # Only items that share a name need the Stats ID in the file name.
+            shared = sum(1 for other in items.values() if key(other['name']) == key(name)) > 1
+            asset_name = name + ('-' + items[item_key]['statsId'] if shared and items[item_key].get('statsId') else '')
             slug = re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', asset_name.lower()).replace('ł', 'l')).strip('-')
             filename = f'{layer}/{slug}.webp'
             (destination / layer).mkdir(exist_ok=True)

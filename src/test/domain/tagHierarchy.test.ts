@@ -124,11 +124,35 @@ test("weapon ability filters describe granted bonuses rather than weapon handedn
     Dystansowa: "Ranged",
   }
   for (const catalog of Object.values(audit.catalogs) as Array<{
-    items: Array<{ identities: Array<{ stats: string; effect_tags: string[]; fields: Record<string, string> }> }>
+    items: Array<{ identities: Array<{ stats: string; effect_tags?: string[]; fields: Record<string, string> }> }>
   }>)
     for (const item of catalog.items)
       for (const identity of item.identities)
         for (const [tag, field] of Object.entries(fields))
-          if (identity.effect_tags.includes(tag))
+          if ((identity.effect_tags ?? []).includes(tag))
             assert.ok(Number(identity.fields[field]) > 0, `${identity.stats}: ${field}`)
+})
+
+test("sidebar tags are ordered by entry count at every level", () => {
+  const rows = [
+    row("bow", ["Bows"]),
+    row("staff-1", ["Staves"]),
+    row("staff-2", ["Staves"]),
+    row("staff-3", ["Staves"]),
+    row("boots", ["Boots"]),
+  ]
+  const tree = nestTagStats(collectRecipeStats(rows).tags)
+  const weapons = find(tree, "Weapons")!
+  assert.deepEqual(
+    weapons.children?.map((node) => node.tag),
+    ["Staves", "Bows"],
+  )
+  const counts = (nodes: TagFilterNode[]): void => {
+    for (const [index, node] of nodes.entries()) {
+      if (index > 0) assert.ok(nodes[index - 1].count >= node.count, node.tag)
+      counts(node.children ?? [])
+    }
+  }
+  counts(tree)
+  for (const group of groupRecipeTags(collectRecipeStats(rows).tags, getCechySidebarGroups())) counts(group.tags)
 })

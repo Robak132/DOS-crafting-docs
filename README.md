@@ -159,12 +159,21 @@ w podkatalogu `localization/`. Wymagane są wszystkie RootTemplates, ponieważ
 część szablonów dziedziczy ikonę po szablonie nadrzędnym.
 
 ```sh
+python3 scripts/assign-stats-ids.py
 npm run generate:data
 python3 scripts/export-item-icons.py /sciezka/do/wyodrebnionych-zasobow
 python3 scripts/export-combo-properties.py /sciezka/do/Public/Shared/Stats/Generated/ItemComboProperties.txt
 npm run build
 npm run verify:dist
 ```
+
+Przedmioty są łączone z danymi gry po identyfikatorze Stats (`statsId`, niewidoczny
+w interfejsie), a nie po nazwie. `assign-stats-ids.py` uzupełnia go z dopasowanych
+receptur gry (z `.pak-work/audit-current`), a `--check` tylko sprawdza, czy czegoś
+nie brakuje. Ikony i opisy są przypisane do `statsId`; gdy kilka stron przedmiotów
+korzysta z jednego ogólnego wpisu Stats (np. `WPN_Sword_1H`), kluczem zostaje nazwa
+strony. Efekty zawsze wynikają z wpisu Stats. Skrypt wypisuje też strony, które są
+tym samym przedmiotem gry.
 
 Skrypt eksportu wymaga lokalnego Pythona z Pillow. Odczytuje katalog wygenerowany
 w `dist/data` (przez `npm run generate:data` lub `npm run build`), zapisuje tylko używane ikony i usuwa nieużywane pliki

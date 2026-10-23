@@ -48,101 +48,101 @@ export function RecipeItemView({ item, catalogSlug, ingredient = false, searchab
     )
   }
   const roleClass = (item: RecipeItem) => itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
-    const title = itemAltTitle(item)
-    const searchText = item.name.replace(/^#/, "").replace(/^<|>$/g, "")
-    const craftClass = roleClass(item)
-    if (item.groupId && (item.groupSize ?? 0) >= 4) {
-      return withQuantity(
-        <a
-          class="internal recipe-item recipe-item-group"
-          data-no-popover="true"
-          href={`${pageHref(catalogSlug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
-        >
-          <ItemLabel item={item} />
-          <span class="group-count">{item.groupSize}</span>
-        </a>,
-        item,
-      )
-    }
-    if (item.selectorTag) {
-      return withQuantity(
-        searchable ? (
-          <button
-            type="button"
-            class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-            data-search-text={searchText}
-            title={title}
-          >
-            <ItemIcon icon={item.icon} />
-            <ItemLabel item={item} />
-          </button>
-        ) : (
-          <a
-            class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-            data-no-popover="true"
-            href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(searchText)}`}
-            title={title}
-          >
-            <ItemIcon icon={item.icon} />
-            <ItemLabel item={item} />
-          </a>
-        ),
-        item,
-      )
-    }
-    if (item.slug) {
-      return withQuantity(
-        <a
-          class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
-          data-slug={item.slug}
-          data-tooltip-key={tooltipItemKey(item)}
-          href={itemHref(gameForSlug(catalogSlug) ?? "dos1", item.slug)}
-          title={title}
-        >
-          <ItemIcon icon={item.icon} />
-          <ItemLabel item={item} />
-        </a>,
-        item,
-      )
-    }
-    if (ingredient && searchable) {
-      return withQuantity(
+  const title = itemAltTitle(item)
+  const searchText = item.name.replace(/^#/, "").replaceAll(/^<|>$/g, "")
+  const craftClass = roleClass(item)
+  if (item.groupId) {
+    return withQuantity(
+      <a
+        class="internal recipe-item recipe-item-group"
+        data-no-popover="true"
+        href={`${pageHref(catalogSlug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
+      >
+        <ItemLabel item={item} />
+        <span class="group-count">{item.groupSize}</span>
+      </a>,
+      item,
+    )
+  }
+  if (item.selectorTag) {
+    return withQuantity(
+      searchable ? (
         <button
           type="button"
           class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-          data-search-text={item.name}
-          data-tooltip-key={tooltipItemKey(item)}
+          data-search-text={searchText}
           title={title}
         >
           <ItemIcon icon={item.icon} />
           <ItemLabel item={item} />
-        </button>,
-        item,
-      )
-    }
-    if (ingredient) {
-      return withQuantity(
+        </button>
+      ) : (
         <a
           class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
           data-no-popover="true"
-          href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(item.name)}`}
+          href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(searchText)}`}
           title={title}
         >
           <ItemIcon icon={item.icon} />
           <ItemLabel item={item} />
-        </a>,
-        item,
-      )
-    }
+        </a>
+      ),
+      item,
+    )
+  }
+  if (item.slug) {
     return withQuantity(
-      <span
-        class={["recipe-item", craftClass].filter(Boolean).join(" ")}
-        title={title}
+      <a
+        class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
+        data-slug={item.slug}
         data-tooltip-key={tooltipItemKey(item)}
+        href={itemHref(gameForSlug(catalogSlug) ?? "dos1", item.slug)}
+        title={title}
       >
         <ItemIcon icon={item.icon} />
         <ItemLabel item={item} />
-      </span>,
+      </a>,
       item,
     )
+  }
+  if (ingredient && searchable) {
+    return withQuantity(
+      <button
+        type="button"
+        class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
+        data-search-text={item.name}
+        data-tooltip-key={tooltipItemKey(item)}
+        title={title}
+      >
+        <ItemIcon icon={item.icon} />
+        <ItemLabel item={item} />
+      </button>,
+      item,
+    )
+  }
+  if (ingredient) {
+    return withQuantity(
+      <a
+        class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
+        data-no-popover="true"
+        href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(item.name)}`}
+        title={title}
+      >
+        <ItemIcon icon={item.icon} />
+        <ItemLabel item={item} />
+      </a>,
+      item,
+    )
+  }
+  return withQuantity(
+    <span
+      class={["recipe-item", craftClass].filter(Boolean).join(" ")}
+      title={title}
+      data-tooltip-key={tooltipItemKey(item)}
+    >
+      <ItemIcon icon={item.icon} />
+      <ItemLabel item={item} />
+    </span>,
+    item,
+  )
 }

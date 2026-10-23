@@ -4,6 +4,7 @@ import { formatItemQuantity } from "../domain/recipeQuantity"
 import { uniqueItemEffects } from "../domain/recipeView"
 import { recipeResults } from "../domain/recipeResults"
 import { ItemIcon } from "./ItemIcon"
+import { displayItemName } from "../domain/itemName"
 
 export type ItemDescription = { en: string; pl?: string }
 
@@ -12,10 +13,11 @@ export function itemDescriptionText(description: ItemDescription | undefined, la
 }
 
 export function tooltipItemName(item: RecipeItem, lang: "pl" | "en"): string {
-  const polish = item.namePl?.trim()
-  return lang === "pl" && polish && polish.toLocaleLowerCase() !== item.name.trim().toLocaleLowerCase()
-    ? `${polish} (${item.name})`
-    : item.name
+  const name = displayItemName(item.name.trim())
+  const polish = item.namePl ? displayItemName(item.namePl.trim()) : undefined
+  return lang === "pl" && polish && polish.toLocaleLowerCase() !== name.toLocaleLowerCase()
+    ? `${polish} (${name})`
+    : name
 }
 
 function ingredientName(item: RecipeItem, lang: "pl" | "en"): string {

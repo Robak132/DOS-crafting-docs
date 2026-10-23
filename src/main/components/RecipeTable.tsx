@@ -1,4 +1,3 @@
-
 import { RecipeItemView } from "./RecipeItem"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { FullSlug } from "../routing"

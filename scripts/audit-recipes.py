@@ -81,6 +81,8 @@ class GameIndex:
         return {**(self.template(self.templates[parent], chain + (parent,)) if parent in self.templates and parent not in chain else {}), **{k: v for k, v in template.items() if v}}
 
     def item_ids(self, item, provenance):
+        # An item that names its game Stats ID is exactly that item.
+        if item.get('statsId'): return {item['statsId']}
         name_key = key(item['name'])
         if name_key in self.resolved: return self.resolved[name_key]
         ids = set(self.names[name_key])

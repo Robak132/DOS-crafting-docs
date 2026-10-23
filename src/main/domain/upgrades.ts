@@ -18,8 +18,9 @@ export function upgradesForItem(
   groups?: ItemGroups,
 ): RecipeUpgrade[] {
   return upgrades.filter((upgrade) => {
-    const group = upgrade.target.groupId ? groups?.[upgrade.target.groupId] : undefined
-    if (group) return group.members.some((member) => member.slug === itemSlug)
+    const resolved = (upgrade.targets ?? []).flatMap((target) => (target.groupId ? [groups?.[target.groupId]] : []))
+    if (resolved.length && resolved.every(Boolean))
+      return resolved.some((group) => group!.members.some((member) => member.slug === itemSlug))
     return upgrade.targetTags.some((target) => itemTags.some((tag) => isTagWithin(tag, target)))
   })
 }

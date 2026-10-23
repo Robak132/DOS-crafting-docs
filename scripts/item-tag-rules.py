@@ -86,8 +86,8 @@ def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=()):
             try:active=float(fields.get(field,'0'))!=0
             except ValueError:active=False
             if active:add(resist)
-        if kind=='Weapon':
-            if fields.get('Damage Type') in ELEMENTS:add(ELEMENTS[fields['Damage Type']][1])
+        if kind == 'Weapon' and fields.get('Damage Type') in ELEMENTS:
+            add(ELEMENTS[fields['Damage Type']][1])
         for flag in fields.get('Flags','').split(';'):
             if flag.endswith('Immunity') and flag[:-8] in IMMUNITIES:
                 tag,what=IMMUNITIES[flag[:-8]];add(tag,'Niewrażliwość na '+what)

@@ -9,6 +9,15 @@ collect = module['collect_descriptions']
 
 
 class ItemDescriptionTest(unittest.TestCase):
+    def test_an_item_with_a_stats_id_is_described_by_that_entrys_root_template(self):
+        templates = {'gold': {'MapKey': 'gold', 'Stats': 'ITEM_Gold_Plate', 'Description': 'Pretty. Sell it.'},
+                     'fountain': {'MapKey': 'fountain', 'DisplayName': 'Fountain', 'Stats': 'ITEM_Gold_Plate', 'Description': 'Source bubbles.'},
+                     'ceramic': {'MapKey': 'ceramic', 'DisplayName': 'Plate', 'Stats': 'ITEM_Ceramic_Plate', 'Description': 'Plain.'}}
+        stats = {'ITEM_Gold_Plate': {'fields': {'RootTemplate': 'gold'}}}
+        result = collect(templates, {}, {}, {}, stats, {'ITEM_Gold_Plate': None, 'ITEM_Ceramic_Plate': 'plate'})
+        self.assertEqual(result['itemgoldplate'], {'en': 'Pretty. Sell it.'})
+        self.assertEqual(result['itemceramicplate'], {'en': 'Plain.'})
+
     def test_mod_color_markup_does_not_become_part_of_the_lookup_key(self):
         result = collect({'red': {'DisplayName': '<font color="#de5d5d">Pastel Red Dye</font>', 'Description': 'A kiss of red pepper, the brightest burnishing for your equipment.'}}, {}, {})
         self.assertEqual(result['pastelreddye']['en'], 'A kiss of red pepper, the brightest burnishing for your equipment.')

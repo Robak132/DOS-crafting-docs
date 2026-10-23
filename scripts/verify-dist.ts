@@ -4,6 +4,7 @@ import path from "node:path"
 import type { CatalogManifest, CatalogData } from "../src/main/domain/types"
 import { games, isPublicPage, itemPath, pageGames } from "../src/main/routing"
 import { loadLibrary } from "./load-library"
+import { isGameGroup } from "../src/main/domain/itemGroups"
 const manifest: CatalogManifest = JSON.parse(await fs.readFile("dist/data/manifest.json", "utf8"))
 assert.ok(manifest.pages.every(isPublicPage), "Category and tag pages must not be published")
 const library = await loadLibrary()
@@ -20,8 +21,12 @@ for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
   const catalog: CatalogData = JSON.parse(await fs.readFile(`dist/data/catalog-${game}.json`, "utf8"))
   const descriptions = JSON.parse(await fs.readFile(`dist/data/descriptions-${game}.json`, "utf8"))
   assert.ok(Object.keys(descriptions).length > 0, `Missing descriptions for ${game}`)
-  for (const group of Object.values(catalog.groups ?? {})) {
-    assert.ok(group.members.length >= 4)
+  // Small groups stay only when the game defines them or an upgrade applies to them.
+  const upgradeGroups = new Set(
+    (catalog.upgrades ?? []).flatMap((upgrade) => (upgrade.targets ?? []).map((t) => t.groupId)),
+  )
+  for (const [id, group] of Object.entries(catalog.groups ?? {})) {
+    assert.ok(group.members.length >= 4 || isGameGroup(group.name) || upgradeGroups.has(id), `Small group: ${id}`)
   }
   const icons = new Set(
     catalog.recipes

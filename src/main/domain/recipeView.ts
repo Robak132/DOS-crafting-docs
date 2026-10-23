@@ -61,6 +61,13 @@ export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean
 
 export type TagFilterNode = TagStat & { children?: TagFilterNode[] }
 
+const statLabel = (stat: TagStat) => tagLabel(stat.tag, { [stat.tag]: stat.label ?? stat.tag })
+
+/** Most entries first; equal counts alphabetically. */
+export function sortTagStats<T extends TagStat>(tags: T[]): T[] {
+  return [...tags].sort((a, b) => b.count - a.count || statLabel(a).localeCompare(statLabel(b), "pl"))
+}
+
 export function nestTagStats(tags: TagStat[]): TagFilterNode[] {
   const nodes = new Map(tags.map((tag) => [tag.tag, { ...tag, children: [] as TagFilterNode[] }]))
   const roots: TagFilterNode[] = []
@@ -69,7 +76,8 @@ export function nestTagStats(tags: TagStat[]): TagFilterNode[] {
     if (parent) nodes.get(parent)!.children.push(node)
     else roots.push(node)
   }
-  return roots
+  for (const node of nodes.values()) node.children = sortTagStats(node.children)
+  return sortTagStats(roots)
 }
 
 export type RecipeTagGroup = {
@@ -179,12 +187,7 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
   let cechyInserted = false
   for (const [label, groupTags] of groups) {
     if (groupTags.length === 0) continue
-    const sortedTags = groupTags.sort((a, b) =>
-      tagLabel(a.tag, { [a.tag]: a.label ?? a.tag }).localeCompare(
-        tagLabel(b.tag, { [b.tag]: b.label ?? b.tag }),
-        "pl",
-      ),
-    )
+    const sortedTags = sortTagStats(groupTags)
     result.push({ label, tags: label === "Kategorie" ? nestTagStats(sortedTags) : sortedTags })
     // Cechy zaraz po Kategorie.
     if (label === "Kategorie" && cechySections.length > 0) {
@@ -236,7 +239,8 @@ export function normalizeSearch(value: string): string {
     .replaceAll("-", " ")
 }
 
-export type RecipeSearchScope = "result" | "ingredient"
+/** Where a query must match: the products, the ingredients, or either ("all"). */
+export type RecipeSearchScope = "result" | "ingredient" | "all"
 
 export function matchesRecipeQuery(
   recipe: RecipeRow,
@@ -244,6 +248,10 @@ export function matchesRecipeQuery(
   labels: Record<string, string>,
   scope: RecipeSearchScope = "result",
 ): boolean {
+  if (scope === "all")
+    return (
+      matchesRecipeQuery(recipe, query, labels, "result") || matchesRecipeQuery(recipe, query, labels, "ingredient")
+    )
   const terms = query.trim().split(/\s+/).filter(Boolean).map(normalizeSearch)
   if (terms.length === 0) return true
 

@@ -376,8 +376,6 @@
       "titlePl": "Garnek",
       "tags": [
         "DOS1",
-        "DOS2",
-        "DOS2-CO",
         "Stations-And-Containers",
         "Ingredients"
       ]
@@ -389,7 +387,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -483,7 +482,7 @@
       "titlePl": "Gałąź",
       "tags": [
         "DOS1",
-        "Maces",
+        "One-Handed-Maces",
         "Ingredients"
       ]
     },
@@ -493,7 +492,7 @@
       "titlePl": "Gałąź z gwoździami",
       "tags": [
         "DOS1",
-        "Maces"
+        "One-Handed-Maces"
       ]
     },
     {
@@ -571,7 +570,7 @@
       "tags": [
         "Strength",
         "DOS1",
-        "Swords",
+        "One-Handed-Swords",
         "Special"
       ]
     },
@@ -787,7 +786,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Stations-And-Containers"
+        "Stations-And-Containers",
+        "DOS2-CO"
       ]
     },
     {
@@ -807,7 +807,7 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Axes"
+        "Two-Handed-Axes"
       ]
     },
     {
@@ -818,7 +818,7 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Swords"
+        "Two-Handed-Swords"
       ]
     },
     {
@@ -878,7 +878,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -1135,11 +1136,7 @@
       "slug": "eggs",
       "title": "Eggs",
       "tags": [
-        "Constitution",
         "DOS1",
-        "DOS2",
-        "DOS2-CO",
-        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -1201,7 +1198,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -1231,7 +1229,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -1494,7 +1493,8 @@
         "DOS2",
         "Fire-Surface",
         "BURNING",
-        "Grenades"
+        "Grenades",
+        "DOS2-CO"
       ]
     },
     {
@@ -1686,7 +1686,7 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Maces",
+        "One-Handed-Maces",
         "Ingredients"
       ]
     },
@@ -2026,10 +2026,7 @@
       "tags": [
         "Healing",
         "DOS1",
-        "DOS2-CO",
-        "POISONED",
-        "Potions",
-        "Ingredients"
+        "Potions"
       ]
     },
     {
@@ -2564,15 +2561,6 @@
       ]
     },
     {
-      "slug": "magical-starfish",
-      "title": "Magical Starfish",
-      "titlePl": "Magiczna rozgwiazda",
-      "tags": [
-        "DOS1",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "magical-starfish-amulet",
       "title": "Magical Starfish Amulet",
       "titlePl": "Magiczny amulet z rozgwiazdą",
@@ -2701,7 +2689,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "POISONED",
         "Potions"
       ]
     },
@@ -2755,7 +2742,8 @@
         "DOS2",
         "POISONED",
         "Potions",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -2901,7 +2889,6 @@
         "Healing",
         "DOS1",
         "DOS2",
-        "POISONED",
         "Potions",
         "Ingredients"
       ]
@@ -3040,6 +3027,7 @@
     {
       "slug": "mortar-and-pestle",
       "title": "Mortar And Pestle",
+      "titlePl": "Moździerz i tłuczek",
       "tags": [
         "DOS1",
         "DOS2",
@@ -3238,7 +3226,7 @@
       "titlePl": "Stara szabla",
       "tags": [
         "DOS1",
-        "Swords"
+        "One-Handed-Swords"
       ]
     },
     {
@@ -3411,7 +3399,6 @@
       "tags": [
         "Casts-Spell",
         "DOS1",
-        "DOS2-CO",
         "POISONED",
         "Arrows"
       ]
@@ -3459,7 +3446,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Arrows"
+        "Arrows",
+        "DOS2-CO"
       ]
     },
     {
@@ -4015,7 +4003,8 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "Arrows"
+        "Arrows",
+        "DOS2-CO"
       ]
     },
     {
@@ -4024,9 +4013,7 @@
       "tags": [
         "Casts-Spell",
         "DOS1",
-        "DOS2-CO",
         "BLIND",
-        "WET",
         "Arrows"
       ]
     },
@@ -4115,7 +4102,7 @@
       "titlePl": "Miecz Planet",
       "tags": [
         "DOS1",
-        "Swords",
+        "One-Handed-Swords",
         "Special"
       ]
     },

@@ -1,5 +1,4 @@
 import { TagFilterTree } from "./components/TagFilterTree"
-import { searchCatalogPages } from "./domain/pageSearch"
 import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
 import { groupItemRows } from "./domain/itemGroups"
@@ -10,6 +9,7 @@ import { ItemTable } from "./components/ItemTable"
 import { RecipeTable } from "./components/RecipeTable"
 import { UpgradeTable } from "./components/UpgradeTable"
 import { upgradesForItem } from "./domain/upgrades"
+import { displayItemName } from "./domain/itemName"
 import type { CatalogManifest, CatalogData, PageSummary } from "./domain/types"
 import {
   catalogItems,
@@ -56,6 +56,18 @@ const stored = (key: string, fallback: string) => {
     return fallback
   }
 }
+const searchScopes: Filters["scope"][] = ["result", "ingredient", "all"]
+const scopeLabels: Record<Filters["scope"], { option: string; title: string; filter: string; placeholder: string }> = {
+  result: { option: "Produkt", title: "Szukaj w produktach", filter: "produkt", placeholder: "Nazwa lub efekt" },
+  ingredient: {
+    option: "Składnik",
+    title: "Szukaj w składnikach",
+    filter: "składnik",
+    placeholder: "Nazwa składnika lub grupy",
+  },
+  all: { option: "Wszystko", title: "Bez zawężenia", filter: "szukaj", placeholder: "Nazwa, efekt lub składnik" },
+}
+
 const currentRoute = () => ({ slug: routeSlug(window.location.pathname), search: window.location.search })
 function routeGame(route: ReturnType<typeof currentRoute>): Game {
   const candidate = stored("dos_active_catalog", "dos1")
@@ -87,7 +99,6 @@ export function App() {
       return "en"
     }
   })
-  const [pageQuery, setPageQuery] = useState("")
   const root = useRef<HTMLDivElement>(null)
   const manifest = useJson<CatalogManifest>("manifest.json")
   const catalog = useJson<CatalogData>(`catalog-${game}.json`)
@@ -121,23 +132,6 @@ export function App() {
     () => groupRecipeTags(catalog.data?.tags ?? [], manifest.data?.traitGroups ?? []),
     [catalog.data, manifest.data],
   )
-  const itemNames = useMemo(() => {
-    const index = new Map<string, { name: string; namePl?: string; icon?: string }>()
-    for (const row of catalog.data?.recipes ?? []) {
-      for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
-        if (item.slug && !index.has(item.slug)) index.set(item.slug, item)
-      }
-    }
-    return index
-  }, [catalog.data])
-  const localizedPage = (page: { slug: string; title: string; titlePl?: string }) => {
-    const name = itemNames.get(page.slug)
-    return { title: name?.name ?? page.title, titlePl: name?.namePl ?? (game === "dos1" ? page.titlePl : undefined) }
-  }
-  const pageMatches = useMemo(
-    () => searchCatalogPages(manifest.data?.pages ?? [], itemNames, pageQuery),
-    [manifest.data, itemNames, pageQuery],
-  )
   const currentFilters = query === filters.query ? filters : { ...filters, query }
   const applyLocation = () => {
     const next = currentRoute()
@@ -157,7 +151,6 @@ export function App() {
     }
     window.history.pushState({}, "", url)
     applyLocation()
-    setPageQuery("")
     window.scrollTo(0, 0)
   }
   useEffect(() => {
@@ -203,9 +196,7 @@ export function App() {
     setQuery(value)
     setFilters((state) => ({ ...state, query: value, scope }))
     if (!isCatalog)
-      navigate(
-        new URL(`${catalogHref(game, "recipes")}&q=${encodeURIComponent(value)}&as=${scope}`, window.location.origin),
-      )
+      navigate(new URL(rememberedCatalogHref(game, view, { ...filters, query: value, scope }), window.location.origin))
   }
   const onClick = (event: MouseEvent) => {
     if (!(event.target instanceof Element)) return
@@ -254,8 +245,8 @@ export function App() {
     ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
     filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
     filters.selectors.length ? `grupa: ${filters.selectors.map((value) => `#${value}`).join(", ")}` : "",
-    filters.group ? `grupa: ${catalog.data?.groups?.[filters.group]?.name ?? filters.group}` : "",
-    filters.query ? `${filters.scope === "ingredient" ? "składnik" : "szukaj"}: ${filters.query}` : "",
+    filters.group ? `grupa: ${displayItemName(catalog.data?.groups?.[filters.group]?.name ?? filters.group)}` : "",
+    filters.query ? `${scopeLabels[filters.scope].filter}: ${filters.query}` : "",
   ]
     .filter(Boolean)
     .join(" · ")
@@ -298,23 +289,55 @@ export function App() {
   const detailEffects = uniqueItemEffects(itemRecipes.craft, lang, detailName)
   const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
 
+  // One search bar for the whole site: it filters the catalog, and on an item page it opens the catalog.
+  const search = (
+    <form
+      class="catalog-search"
+      role="search"
+      onSubmit={(event) => {
+        event.preventDefault()
+        if (!isCatalog) changeQuery(query, filters.scope)
+      }}
+    >
+      <label for="recipe-search-input">Szukaj</label>
+      <div class="search-row">
+        <input
+          id="recipe-search-input"
+          type="search"
+          value={query}
+          onInput={(event) => setQuery(event.currentTarget.value)}
+          placeholder={
+            isCatalog && view === "upgrades" ? "Efekt, przedmiot lub składnik" : scopeLabels[filters.scope].placeholder
+          }
+        />
+        <select
+          class="search-scope"
+          aria-label="Zakres wyszukiwania"
+          title="Zakres wyszukiwania"
+          value={filters.scope}
+          hidden={isCatalog && view === "upgrades"}
+          onChange={(event) => {
+            const scope = event.currentTarget.value as Filters["scope"]
+            setFilters((state) => ({ ...state, scope }))
+          }}
+        >
+          {searchScopes.map((scope) => (
+            <option key={scope} value={scope} title={scopeLabels[scope].title}>
+              {scopeLabels[scope].option}
+            </option>
+          ))}
+        </select>
+      </div>
+    </form>
+  )
+
   return (
     <div ref={root} class="app-shell" onClick={onClick}>
       <aside class="sidebar">
-        <a class="brand" href={rememberedCatalogHref(game, view, currentFilters)}>
-          Divinity<span>Katalog craftingu</span>
-        </a>
-        <div class="sidebar-tools">
-          <label class="sr-only" for="page-search">
-            Szukaj strony
-          </label>
-          <input
-            id="page-search"
-            type="search"
-            placeholder="Szukaj strony…"
-            value={pageQuery}
-            onInput={(event) => setPageQuery(event.currentTarget.value)}
-          />
+        <div class="sidebar-head">
+          <a class="brand" href={rememberedCatalogHref(game, view, currentFilters)}>
+            Divinity<span>Katalog craftingu</span>
+          </a>
           <button
             class="language-toggle"
             onClick={() => setLang(lang === "pl" ? "en" : "pl")}
@@ -323,17 +346,7 @@ export function App() {
             {lang.toUpperCase()}
           </button>
         </div>
-        {pageMatches.length > 0 && (
-          <ul class="page-search-results">
-            {pageMatches.map((page) => (
-              <li key={page.slug}>
-                <a href={itemHref(page.slug)}>
-                  <LanguageName page={localizedPage(page)} lang={lang} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
+        {search}
         <nav class="game-nav" aria-label="Tryb gry">
           {games.map((entry) => (
             <a
@@ -467,36 +480,6 @@ export function App() {
                     ? `Ulepszenia: ${upgrades.length}`
                     : `Receptury: ${filtered.length}`}
               </span>
-              <div class="catalog-search">
-                <div class="search-scope" role="group" aria-label="Zakres wyszukiwania" hidden={view === "upgrades"}>
-                  <button
-                    aria-pressed={filters.scope === "result"}
-                    onClick={() => setFilters((state) => ({ ...state, scope: "result" }))}
-                  >
-                    Wynik
-                  </button>
-                  <button
-                    aria-pressed={filters.scope === "ingredient"}
-                    onClick={() => setFilters((state) => ({ ...state, scope: "ingredient" }))}
-                  >
-                    Składnik
-                  </button>
-                </div>
-                <label for="recipe-search-input">Szukaj</label>
-                <input
-                  id="recipe-search-input"
-                  type="search"
-                  value={query}
-                  onInput={(event) => setQuery(event.currentTarget.value)}
-                  placeholder={
-                    view === "upgrades"
-                      ? "Efekt, przedmiot lub składnik"
-                      : filters.scope === "ingredient"
-                        ? "Nazwa składnika lub grupy"
-                        : "Nazwa lub efekt"
-                  }
-                />
-              </div>
             </div>
             {game === "dos2-overhaul" && (
               <p class="catalog-note">Przedmioty i receptury z DOS2 Definitive Edition oraz Crafting Overhaul.</p>

@@ -36,7 +36,7 @@ test("an item page lists the upgrades whose target covers its category", () => {
 test("an upgrade with a resolved target group applies only to that group's members", () => {
   const gloves = {
     ...upgrade("Crit", ["Gloves"], "#Mage-Gloves"),
-    target: { name: "#Mage-Gloves", tags: [], groupId: "magegloves" },
+    targets: [{ name: "#Mage-Gloves", tags: [], groupId: "magegloves" }],
   }
   const groups = {
     magegloves: {

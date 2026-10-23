@@ -50,7 +50,7 @@ class ItemTagRulesTest(unittest.TestCase):
             tags,_=m['effect_tags'](fields,'Armor')
             self.assertEqual('Physical-Armour' in tags,physical>0 and expected!='magical')
             self.assertEqual('Magic-Armour' in tags,magical>0 and expected!='physical')
-            self.assertEqual('Balanced-Armour' in tags,expected=='balanced')
+            self.assertNotIn('Balanced-Armour',tags)
 
     def test_armour_profile_does_not_hide_potion_or_rune_effects(self):
         tags,_=m['effect_tags']({'Armor':'50','MagicArmor':'50'},'Potion')

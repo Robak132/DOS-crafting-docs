@@ -1,9 +1,8 @@
 import { ItemIcon } from "./ItemIcon"
 import type { RecipeItem, RecipeUpgrade } from "../domain/recipes"
-import { formatItemQuantity } from "../domain/recipeQuantity"
 import { tagLabel, visibleRecipeTags } from "../domain/recipeView"
-import { tooltipItemKey } from "../domain/tooltipIdentity"
-import { games, itemHref, pageHref, type Game } from "../routing"
+import { games, type Game } from "../routing"
+import { ItemLabel, RecipeItemView } from "./RecipeItem"
 
 type Props = {
   upgrades: RecipeUpgrade[]
@@ -12,7 +11,7 @@ type Props = {
   showRequirements?: boolean
 }
 
-function Bilingual({ en, pl }: { en: string; pl?: string }) {
+function Bilingual({ en, pl }: Readonly<{ en: string; pl?: string }>) {
   if (pl && pl !== en)
     return (
       <span class="item-lang">
@@ -23,48 +22,17 @@ function Bilingual({ en, pl }: { en: string; pl?: string }) {
   return <span class="item-lang">{en}</span>
 }
 
-function Item({ item, game }: { item: RecipeItem; game: Game }) {
-  const name = item.selectorTag ? item.name.replace(/^#/, "").replaceAll("-", " ") : item.name
-  const label = (
-    <>
-      <ItemIcon icon={item.icon} />
-      <Bilingual en={name} pl={item.namePl?.replace(/^#/, "")} />
-    </>
-  )
-  const quantity = formatItemQuantity(item.quantity)
-  if (item.groupId) {
-    const slug = games.find((entry) => entry.id === game)!.slug
-    return (
-      <a
-        class="internal recipe-item recipe-item-group"
-        data-no-popover="true"
-        href={`${pageHref(slug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
-      >
-        {label}
-        <span class="group-count">{item.groupSize}</span>
-      </a>
-    )
-  }
+function PlainTarget({ item }: Readonly<{ item: RecipeItem }>) {
   return (
-    <>
-      {item.slug && !item.selectorTag ? (
-        <a
-          class="internal recipe-item"
-          data-slug={item.slug}
-          data-tooltip-key={tooltipItemKey(item)}
-          href={itemHref(game, item.slug)}
-        >
-          {label}
-        </a>
-      ) : (
-        <span class="recipe-item">{label}</span>
-      )}
-      {quantity && <span class="recipe-item-qty"> {quantity}</span>}
-    </>
+    <span class="recipe-item">
+      <ItemIcon icon={item.icon} />
+      <ItemLabel item={item} />
+    </span>
   )
 }
 
 export function UpgradeTable({ upgrades, labels, game, showRequirements = false }: Props) {
+  const catalogSlug = games.find((entry) => entry.id === game)!.slug
   if (upgrades.length === 0) return <p class="recipe-empty">Brak ulepszeń pasujących do filtrów.</p>
   return (
     <div class="recipe-table-wrap" role="region" aria-label="Lista ulepszeń przedmiotów" tabIndex={0}>
@@ -88,14 +56,24 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
                 </strong>
                 {upgrade.notes.trim() && <p class="recipe-remarks">{upgrade.notes}</p>}
               </td>
-              <td class="recipe-cell">
-                <Item item={upgrade.target} game={game} />
+              <td class="recipe-cell ingredients">
+                {upgrade.targets?.length ? (
+                  <ul class="recipe-ingredients">
+                    {upgrade.targets.map((target, position) => (
+                      <li key={position}>
+                        <RecipeItemView item={target} catalogSlug={catalogSlug} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <PlainTarget item={upgrade.target} />
+                )}
               </td>
               <td class="recipe-cell ingredients">
                 <ul class="recipe-ingredients">
                   {upgrade.ingredients.map((item, position) => (
                     <li key={position}>
-                      <Item item={item} game={game} />
+                      <RecipeItemView item={item} catalogSlug={catalogSlug} ingredient />
                     </li>
                   ))}
                 </ul>

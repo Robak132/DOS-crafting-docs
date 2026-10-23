@@ -182,9 +182,10 @@ test("upgrade view filters by target category, granted traits, requirements and 
   const ids = (filters: Partial<ReturnType<typeof emptyFilters>>) =>
     filterUpgrades(all, { ...emptyFilters(), ...filters }).map((entry) => entry.id)
   assert.deepEqual(ids({ include: ["Bows"] }), ["weapons fire", "bow finesse"])
-  assert.deepEqual(ids({ include: ["Weapons"] }), ["weapons fire", "bow finesse"])
+  // Shields sit under Weapons in the tag tree.
+  assert.deepEqual(ids({ include: ["Weapons"] }), ["weapons fire", "bow finesse", "shield air"])
   assert.deepEqual(ids({ include: ["Finesse"] }), ["bow finesse"])
-  assert.deepEqual(ids({ exclude: ["Armour"] }), ["weapons fire", "bow finesse"])
+  assert.deepEqual(ids({ exclude: ["Shields"] }), ["weapons fire", "bow finesse"])
   assert.deepEqual(ids({ craftingMax: 4 }), ["bow finesse", "shield air"])
   assert.deepEqual(ids({ query: "AIR" }), ["shield air"])
 })

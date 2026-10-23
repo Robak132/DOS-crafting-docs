@@ -351,3 +351,16 @@ test("reusing an existing group preserves tools with no remaining individual rec
   )
   assert.deepEqual(buildItemGroups([row(item("Food"), [item("Potato")])], 1, tools), {})
 })
+
+test("game-defined groups take members by Stats ID, not by a shared name", () => {
+  const gold = groupMatcher(item("#Gold-Object", { selectorTag: "Gold-Object" }))!
+  assert.equal(gold(item("Plate", { statsId: "ITEM_Rich_Plate_A" })), true)
+  assert.equal(gold(item("Plate", { statsId: "ITEM_Ceramic_Plate_A" })), false)
+  // Scenery that shares the gold glass's Stats entry cannot be carried to an anvil.
+  assert.equal(gold(item("Source Fountain", { statsId: "ITEM_Rich_Glass_A" })), false)
+  const water = groupMatcher(item("#Water-Source", { selectorTag: "Water-Source" }))!
+  assert.equal(water(item("Cup of Water", { statsId: "CON_Drink_Cup_A_Water" })), true)
+  assert.equal(water(item("Cup of Water", { statsId: "CON_Drink_Cup_A_Oil" })), false)
+  // Items without a game ID still match by the game's names.
+  assert.equal(water(item("Cup of Water")), true)
+})

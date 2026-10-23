@@ -2,11 +2,11 @@ import {
   buildItemGroups,
   expandSmallGroups,
   isItemGroup,
-  isLiquidSource,
+  isGameGroup,
   upgradeTargetGroups,
   type ItemGroups,
 } from "../src/main/domain/itemGroups"
-import { itemIconKey, itemDataKey } from "../src/main/domain/itemIcons"
+import { assignDataKeys, itemEffectKey, itemIconKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
 import { resolveItemIcon, type ItemIconMap } from "../src/main/domain/itemIcons"
@@ -47,12 +47,25 @@ export async function generateData(outputDirectory = "dist") {
       ...(row.extraResults && { extraResults: row.extraResults.map((item) => ({ ...item })) }),
       ingredients: row.ingredients.map((item) => ({ ...item })),
     }))
+    const inventorySource =
+      game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
+    const inventory = inventorySource.map((sourceItem) => localizeItemForCatalog(sourceItem, game))
+    data.upgrades = (data.upgrades ?? []).map((upgrade) => ({
+      ...upgrade,
+      target: { ...upgrade.target },
+      ingredients: upgrade.ingredients.map((item) => ({ ...item })),
+    }))
+    assignDataKeys([
+      ...data.recipes.flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]),
+      ...data.upgrades.flatMap((upgrade) => [upgrade.target, ...upgrade.ingredients]),
+      ...inventory,
+    ])
     await fs.writeFile(path.join(outputDirectory, `data/descriptions-${game}.json`), JSON.stringify(descriptions[game]))
     for (const row of data.recipes) {
       for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
         item.icon = resolveItemIcon(icons, game, item)
         if (!item.selectorTag) {
-          const entry = effects[game]?.[itemDataKey(item)]
+          const entry = effects[game]?.[itemEffectKey(item)]
           item.effect =
             (recipeResults(row).includes(item) && entry?.recipes?.[row.id]) ||
             (entry?.en ? { en: entry.en, pl: entry.pl } : undefined)
@@ -61,25 +74,12 @@ export async function generateData(outputDirectory = "dist") {
         delete item.groupSize
       }
     }
-    data.upgrades = (data.upgrades ?? []).map((upgrade) => {
-      const copy = {
-        ...upgrade,
-        target: { ...upgrade.target },
-        ingredients: upgrade.ingredients.map((item) => ({ ...item })),
-      }
-      for (const item of [copy.target, ...copy.ingredients]) item.icon = resolveItemIcon(icons, game, item)
-      return copy
-    })
-    const inventory = (
-      game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
-    ).map((sourceItem) => {
-      const item = localizeItemForCatalog(sourceItem, game)
-      return {
-        ...item,
-        icon: resolveItemIcon(icons, game, item),
-        effect: effects[game]?.[itemDataKey(item)]?.en ? effects[game][itemDataKey(item)] : undefined,
-      }
-    })
+    for (const upgrade of data.upgrades)
+      for (const item of [upgrade.target, ...upgrade.ingredients]) item.icon = resolveItemIcon(icons, game, item)
+    for (const item of inventory) {
+      item.icon = resolveItemIcon(icons, game, item)
+      item.effect = effects[game]?.[itemEffectKey(item)]?.en ? effects[game][itemEffectKey(item)] : undefined
+    }
     const resolvedGroups = buildItemGroups(data.recipes, 1, inventory)
     data.recipes = expandSmallGroups(data.recipes, resolvedGroups)
     const statLabels = new Map(
@@ -96,21 +96,24 @@ export async function generateData(outputDirectory = "dist") {
     }
     Object.assign(data, stats)
     const groups: ItemGroups = Object.fromEntries(
-      Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4 || isLiquidSource(group.name)),
+      Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4 || isGameGroup(group.name)),
     )
     data.groups = groups
-    // Upgrade targets link to the group of items they apply to.
+    // Upgrade targets link to the groups of items they apply to.
     const targets = upgradeTargetGroups(data.upgrades, data.recipes, inventory)
     for (const upgrade of data.upgrades) {
-      const group = targets[upgrade.id]
-      if (!group || group.members.length === 0) continue
-      const sameMembers = (id: string) =>
-        JSON.stringify(groups[id].members.map((m) => m.name)) === JSON.stringify(group.members.map((m) => m.name))
-      let key = group.id
-      for (let n = 1; groups[key] && !sameMembers(key); n++) key = `${group.id}-${n}`
-      groups[key] = { ...group, id: key }
-      upgrade.target.groupId = key
-      upgrade.target.groupSize = group.members.length
+      const resolved = targets[upgrade.id] ?? []
+      if (!resolved.some((group) => group.members.length > 0)) continue
+      upgrade.targets = resolved.map((group) => {
+        // A slot without catalog items stays a plain label.
+        if (group.members.length === 0) return { name: group.name, tags: upgrade.target.tags }
+        const sameMembers = (id: string) =>
+          JSON.stringify(groups[id].members.map((m) => m.name)) === JSON.stringify(group.members.map((m) => m.name))
+        let key = group.id
+        for (let n = 1; groups[key] && !sameMembers(key); n++) key = `${group.id}-${n}`
+        groups[key] = { ...group, id: key }
+        return { name: group.name, tags: upgrade.target.tags, groupId: key, groupSize: group.members.length }
+      })
     }
     for (const row of data.recipes) {
       const vocabulary = Object.values(tagLocalisation[game] ?? {}) as { en: string; pl?: string }[]

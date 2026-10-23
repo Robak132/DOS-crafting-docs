@@ -7,7 +7,7 @@ import { parseItemQuantity } from "../../main/domain/recipeQuantity"
 import type { RecipeRow } from "../../main/domain/recipes"
 import { buildCatalogs } from "../../main/domain/recipeCatalog"
 import { tooltipItemKey } from "../../main/domain/tooltipIdentity"
-import { uniqueItemEffects } from "../../main/domain/recipeView"
+import { itemEffectKey } from "../../main/domain/itemIcons"
 
 const sources = Object.fromEntries(
   ["dos1", "dos2", "dos2-overhaul"].map((game) => [
@@ -64,35 +64,21 @@ test("tooltip lookups support names and slugs without treating ingredient groups
   assert.deepEqual(index.recipesFor(recipes[0].ingredients[0]), [])
 })
 
-test("healing and disguised poison variants retain their own tooltip effects and recipes", () => {
+test("healing potions and their disguised poison variants are separate game items with their own effects", () => {
   const effects = JSON.parse(fs.readFileSync("data/itemEffects.json", "utf8"))
   for (const game of ["dos2", "dos2-overhaul"] as const) {
     const catalog = buildCatalogs(sources, [], {})[game]
-    const variants = catalog.recipes
-      .filter((row) => row.result.slug === "minor-healing-potion")
-      .map((row) => ({
-        ...row,
-        result: { ...row.result, effect: effects[game].minorhealingpotion.recipes[row.id] },
-      }))
-    assert.equal(variants.length, 2)
-    assert.notEqual(tooltipItemKey(variants[0].result), tooltipItemKey(variants[1].result))
-    for (const recipes of [variants, [...variants].reverse()]) {
-      const index = buildTooltipIndex(recipes)
-      const aggregate = index.find(variants[0].result.slug!, variants[0].result.name)!
-      assert.equal(aggregate.effect, undefined)
-      assert.deepEqual(index.recipesFor(aggregate), recipes)
-      assert.deepEqual(
-        new Set(uniqueItemEffects(index.recipesFor(aggregate), "en", aggregate)),
-        new Set(variants.map((row) => row.result.effect.en)),
-      )
-      for (const row of variants) {
-        // ItemTable removes quantity when collecting items.
-        const key = tooltipItemKey({ ...row.result, quantity: undefined })
-        const item = index.find(row.result.slug!, row.result.name, key)!
-        assert.equal(item, row.result)
-        assert.deepEqual(index.recipesFor(item), [row])
-        assert.deepEqual(uniqueItemEffects(index.recipesFor(item), "en", item), [row.result.effect.en])
-      }
-    }
+    const result = (slug: string) => catalog.recipes.find((row) => row.result.slug === slug)!.result
+    const healing = result("minor-healing-potion")
+    const poisoned = result("minor-healing-potion-2")
+    assert.equal(healing.statsId, "POTION_Minor_Healing_Potion")
+    assert.equal(poisoned.statsId, "POTION_Healing_Poisoned_Masked_Minor_A")
+    assert.notEqual(tooltipItemKey(healing), tooltipItemKey(poisoned))
+    assert.match(effects[game][itemEffectKey(healing)].en, /Restores vitality/)
+    assert.match(effects[game][itemEffectKey(poisoned)].en, /Poisoned/)
+    const index = buildTooltipIndex(catalog.recipes)
+    assert.ok(
+      index.recipesFor(index.find(poisoned.slug!, poisoned.name)!).every((row) => row.result.slug === poisoned.slug),
+    )
   }
 })

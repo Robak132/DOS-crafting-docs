@@ -305,7 +305,7 @@ export function upgradeTargetGroups(
     if (upgrade.targetTags.length > 1 && bySlot.size > 1) {
       byUpgrade[upgrade.id] = [...bySlot].map(([tag, slotParts]) => {
         const slot = slotParts
-          .map((part) => part.replace(new RegExp(`^${prefix}\\s+`, "i"), ""))
+          .map((part) => part.replace(new RegExp(String.raw`^${prefix}\s+`, "i"), ""))
           .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
           .join(" or ")
         const name = prefix ? `${prefix} ${slot}` : slot

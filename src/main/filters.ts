@@ -106,16 +106,16 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
   const traits = filters.include.filter((tag) => !isCategoryTag(tag))
   return recipes.filter((recipe) => {
     const tags = recipeResultTags(recipe)
-    const reqs = requirementTokens(recipe.requirements).map((value) => value.toLowerCase())
+    const reqs = new Set(requirementTokens(recipe.requirements).map((value) => value.toLowerCase()))
     if (
       (categories.length > 0 && !categories.some((tag) => tagMatch(tags, tag))) ||
       !traits.every((tag) => tagMatch(tags, tag)) ||
       filters.exclude.some((tag) => tagMatch(tags, tag))
     )
       return false
-    if (filters.requirements.length && !filters.requirements.some((value) => reqs.includes(value.toLowerCase())))
+    if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
       return false
-    if (filters.requirementsExclude.some((value) => reqs.includes(value.toLowerCase()))) return false
+    if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
     if (filters.craftingMax !== null && !matchesCraftingMax(recipe.requirements, filters.craftingMax)) return false
     if (
       filters.scope !== "result" &&
@@ -136,10 +136,10 @@ export function filterUpgrades(upgrades: RecipeUpgrade[], filters: Filters): Rec
       return false
     if (!traits.every((tag) => upgrade.tags.some((own) => isTagWithin(own, tag)))) return false
     if (filters.exclude.some((tag) => tags.some((own) => isTagWithin(own, tag)))) return false
-    const reqs = requirementTokens(upgrade.requirements).map((value) => value.toLowerCase())
-    if (filters.requirements.length && !filters.requirements.some((value) => reqs.includes(value.toLowerCase())))
+    const reqs = new Set(requirementTokens(upgrade.requirements).map((value) => value.toLowerCase()))
+    if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
       return false
-    if (filters.requirementsExclude.some((value) => reqs.includes(value.toLowerCase()))) return false
+    if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
     if (filters.craftingMax !== null && !matchesCraftingMax(upgrade.requirements, filters.craftingMax)) return false
     return matchesUpgradeQuery(upgrade, filters.query)
   })

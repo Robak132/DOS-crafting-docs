@@ -71,8 +71,8 @@ assert.deepEqual(
 assert.equal(await fs.readFile("dist/404.html", "utf8"), html)
 const folders = (await fs.readdir("dist", { withFileTypes: true })).filter((entry) => entry.isDirectory())
 assert.deepEqual(
-  folders.map((entry) => entry.name).sort(),
-  ["assets", "data", ...games.map((game) => game.slug)].sort(),
+  folders.map((entry) => entry.name).sort((a, b) => a.localeCompare(b)),
+  ["assets", "data", ...games.map((game) => game.slug)].sort((a, b) => a.localeCompare(b)),
 )
 await assert.rejects(fs.access("dist/data/pages"), /ENOENT/)
 for (const page of manifest.pages)

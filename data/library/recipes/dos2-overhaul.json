@@ -2649,7 +2649,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Persuasion",
           "Wits",
           "Polymorph",
@@ -2662,7 +2662,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Persuasion",
         "Wits",
         "Polymorph",
@@ -6115,7 +6114,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Boots",
           "DOS2-CO"
         ]
@@ -6124,7 +6123,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Boots",
         "DOS2-CO"
       ],
@@ -6269,7 +6267,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Gloves",
           "DOS2-CO"
         ]
@@ -6279,7 +6277,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Gloves",
         "DOS2-CO"
       ],
@@ -6433,7 +6430,7 @@
           "Physical-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Leggings",
           "DOS2-CO"
         ]
@@ -6442,7 +6439,6 @@
         "Physical-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Leggings",
         "DOS2-CO"
       ],
@@ -6529,7 +6525,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Chest-Armour",
           "DOS2-CO"
         ]
@@ -6538,7 +6534,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Chest-Armour",
         "DOS2-CO"
       ],
@@ -8624,7 +8619,7 @@
           "Water-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Dodge",
           "Boots",
@@ -8640,7 +8635,6 @@
         "Water-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Dodge",
         "Boots",
@@ -9819,7 +9813,7 @@
           "Memory",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Telekinesis",
           "Amulets",
           "DOS2-CO"
@@ -9832,7 +9826,6 @@
         "Memory",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Telekinesis",
         "Amulets",
         "DOS2-CO"
@@ -16888,7 +16881,7 @@
           "Memory",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Telekinesis",
           "Helmets",
@@ -16899,7 +16892,6 @@
         "Memory",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Telekinesis",
         "Helmets",
@@ -16965,7 +16957,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Wits",
           "Loremaster",
@@ -16977,7 +16969,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Wits",
         "Loremaster",
@@ -19757,7 +19748,7 @@
           "Earth-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Summoning",
           "Thievery",
@@ -19771,7 +19762,6 @@
         "Earth-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Summoning",
         "Thievery",
@@ -23591,7 +23581,7 @@
           "Earth-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Amulets",
           "DOS2-CO"
@@ -23603,7 +23593,6 @@
         "Earth-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Amulets",
         "DOS2-CO"
@@ -27580,7 +27569,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Wits",
           "Aerotheurge",
@@ -27594,7 +27583,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Wits",
         "Aerotheurge",
@@ -28800,7 +28788,7 @@
           "Fire-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Dodge",
           "Amulets",
           "DOS2-CO"
@@ -28816,7 +28804,6 @@
         "Fire-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Dodge",
         "Amulets",
         "DOS2-CO"
@@ -39481,7 +39468,7 @@
           "Critical-Chance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Grants-Skill",
           "Amulets",
@@ -39494,7 +39481,6 @@
         "Critical-Chance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Grants-Skill",
         "Amulets",
@@ -39548,7 +39534,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Dodge",
           "Loremaster",
@@ -39561,7 +39547,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Dodge",
         "Loremaster",
@@ -45301,7 +45286,7 @@
           "Poison-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Wits",
           "Necromancer",
@@ -45316,7 +45301,6 @@
         "Poison-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Wits",
         "Necromancer",
@@ -46991,7 +46975,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Wits",
           "Polymorph",
@@ -47006,7 +46990,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Wits",
         "Polymorph",
@@ -47806,7 +47789,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Dodge",
           "Boots",
@@ -47817,7 +47800,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Dodge",
         "Boots",
@@ -47916,7 +47898,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Thievery",
           "Gloves",
@@ -47928,7 +47910,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Thievery",
         "Gloves",
@@ -48026,7 +48007,7 @@
           "Critical-Chance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Persuasion",
           "Wits",
           "Huntsman",
@@ -48041,7 +48022,6 @@
         "Critical-Chance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Persuasion",
         "Wits",
         "Huntsman",
@@ -48141,7 +48121,7 @@
           "Accuracy",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Leggings",
           "DOS2-CO"
         ]
@@ -48150,7 +48130,6 @@
         "Accuracy",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Leggings",
         "DOS2-CO"
       ],
@@ -48247,7 +48226,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Huntsman",
           "Finesse",
           "Chest-Armour",
@@ -48259,7 +48238,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Huntsman",
         "Finesse",
         "Chest-Armour",
@@ -49466,7 +49444,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Sneaking",
           "Dodge",
           "Boots",
@@ -49477,7 +49455,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Sneaking",
         "Dodge",
         "Boots",
@@ -49576,7 +49553,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Thievery",
           "Gloves",
@@ -49588,7 +49565,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Thievery",
         "Gloves",
@@ -49686,7 +49662,7 @@
           "Critical-Chance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Persuasion",
           "Wits",
           "Scoundrel",
@@ -49701,7 +49677,6 @@
         "Critical-Chance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Persuasion",
         "Wits",
         "Scoundrel",
@@ -49801,7 +49776,7 @@
           "Accuracy",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Leggings",
           "DOS2-CO"
         ]
@@ -49810,7 +49785,6 @@
         "Accuracy",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Leggings",
         "DOS2-CO"
       ],
@@ -49907,7 +49881,7 @@
           "Piercing-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Scoundrel",
           "Finesse",
           "Chest-Armour",
@@ -49919,7 +49893,6 @@
         "Piercing-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Scoundrel",
         "Finesse",
         "Chest-Armour",
@@ -52406,7 +52379,7 @@
               "Earth-Resistance",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Sneaking",
               "Summoning",
               "Thievery",
@@ -52498,7 +52471,7 @@
               "Initiative",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Sneaking",
               "Wits",
               "Aerotheurge",
@@ -52619,7 +52592,7 @@
               "Piercing-Resistance",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Sneaking",
               "Dodge",
               "Boots",
@@ -52634,7 +52607,7 @@
               "Initiative",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Wits",
               "Thievery",
               "Gloves",
@@ -52649,7 +52622,7 @@
               "Critical-Chance",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Persuasion",
               "Wits",
               "Huntsman",
@@ -52666,7 +52639,7 @@
               "Accuracy",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Leggings",
               "DOS2-CO"
             ]
@@ -52679,7 +52652,7 @@
               "Piercing-Resistance",
               "Physical-Armour",
               "Magic-Armour",
-              "Balanced-Armour",
+
               "Huntsman",
               "Finesse",
               "Chest-Armour",
@@ -54914,7 +54887,7 @@
           "Initiative",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Wits",
           "Amulets",
           "DOS2-CO"
@@ -54925,7 +54898,6 @@
         "Initiative",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Wits",
         "Amulets",
         "DOS2-CO"
@@ -54999,7 +54971,7 @@
           "Earth-Resistance",
           "Physical-Armour",
           "Magic-Armour",
-          "Balanced-Armour",
+
           "Dodge",
           "Grants-Skill",
           "Loremaster",
@@ -55015,7 +54987,6 @@
         "Earth-Resistance",
         "Physical-Armour",
         "Magic-Armour",
-        "Balanced-Armour",
         "Dodge",
         "Grants-Skill",
         "Loremaster",

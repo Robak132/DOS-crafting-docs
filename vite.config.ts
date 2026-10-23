@@ -22,12 +22,15 @@ export default defineConfig(({ command }) => {
       generatedDir = await fs.mkdtemp(path.join(os.tmpdir(), "dos-crafting-dev-"))
       manifest = await generateData(generatedDir)
       server.middlewares.use(async (request, response, next) => {
+        let url: URL
         let pathname: string
         try {
-          pathname = decodeURIComponent(new URL(request.url ?? "/", "http://localhost").pathname)
+          url = new URL(request.url ?? "/", "http://localhost")
+          pathname = decodeURIComponent(url.pathname)
         } catch {
           return next() // malformed %-escape: let Vite answer instead of an unhandled rejection
         }
+        if (url.searchParams.has("import")) return next()
         const local = pathname.startsWith(base) ? pathname.slice(base.length) : pathname.replace(/^\//, "")
         if (!local.startsWith("data/")) return next()
         const filename = path.resolve(generatedDir, local)

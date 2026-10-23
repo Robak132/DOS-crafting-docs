@@ -21,7 +21,8 @@ def category_for_identity(stats, fields):
         return 'Ingredients'
     if stats.startswith(('SKILLBOOK_', 'BOOK_Skill')): return 'Skillbooks'
     if stats.startswith(('SCROLL_', 'BOOK_Scroll')) or category == 'scroll': return 'Scrolls'
-    if stats.startswith(('GRN_', 'Stats_Arrow', 'WPN_Arrow')): return 'Arrows-And-Grenades'
+    if stats.startswith('GRN_'): return 'Grenades'
+    if stats.startswith(('Stats_Arrow', 'WPN_Arrow')): return 'Arrows'
     if 'amulet' in stats.lower(): return 'Amulets'
     if 'magicbelt' in stats.lower(): return 'Belts'
     if slot == 'amulet': return 'Amulets'
@@ -31,12 +32,13 @@ def category_for_identity(stats, fields):
     if stats.startswith('WPN_'): return 'Weapons'
     if stats.startswith('ARM_'): return 'Armour'
     if stats.startswith('TOOL_Dye'): return 'Dyes'
-    if stats.startswith(('LOOT_Rune', 'LOOT_Frame')): return 'Magic'
-    if stats.startswith(('CON_Potion', 'POTION_', 'CON_Food', 'FOOD_', 'CON_Drink')): return 'Potions-And-Food'
+    if stats.startswith(('LOOT_Rune', 'LOOT_Frame')): return 'Ingredients'
+    if stats.startswith(('CON_Potion', 'POTION_')): return 'Potions'
+    if stats.startswith(('CON_Food', 'FOOD_', 'CON_Drink')): return 'Food-And-Drink'
     if stats.startswith('LTS_'): return 'Stations-And-Containers'
-    if stats.startswith('CONT_Backpack'): return 'Equipment'
+    if stats.startswith('CONT_Backpack'): return 'Ingredients'
     if stats.startswith('CONT_'): return None
-    if stats.startswith('TOOL_') and re.search(r'Hammer|Pickaxe|Tongs|Whetstone|Scissors|Shovel|TrapDisarm|IdentifyGlass|Spyglass', stats, re.I): return 'Tools'
+    if stats.startswith('TOOL_') and re.search(r'Hammer|Pickaxe|Tongs|Whetstone|Scissors|Shovel|TrapDisarm|IdentifyGlass|Spyglass', stats, re.I): return 'Ingredients'
     if stats.startswith(('LOOT_', 'HAR_', 'ITEM_', 'CON_Ingred', 'Corpse_Part_')): return 'Ingredients'
     return None
 
@@ -50,15 +52,15 @@ def classify(name, old_tags, identities=()):
     if text.startswith('colored '): return 'Dyes', 'dye transformation result'
     if text in ['battered cooking pot']: return 'Armour', 'wearable cooking-pot helmet'
     if text in ['wood pile', 'huge rock', 'cooking station', 'mobile kitchen', 'well']: return 'Stations-And-Containers', 'existing environmental crafting object'
-    if text in ['mortar and pestle']: return 'Tools', 'crafting tool'
-    if re.search(r'\b(ink ?pot|needle and thread)\b', text): return 'Equipment', 'writing or sewing equipment'
+    if text in ['mortar and pestle']: return 'Ingredients', 'crafting tool'
+    if re.search(r'\b(ink ?pot|needle and thread)\b', text): return 'Ingredients', 'writing or sewing equipment'
     if text in ['branch','short stick','long branch','wood chips','bonedust','bone dust','moondust','moon dust','intestines']:
         return 'Ingredients', 'crafting resource'
     if re.search(r'^(small|minor|medium|large|huge|giant) (magic|physical) armou?r$', text):
-        return 'Potions-And-Food', 'abbreviated armor-potion name'
+        return 'Potions', 'abbreviated armor-potion name'
     if re.search(r'\b(bag|backpack|chest|crate|barrel|bookcase|workbench|altar|anvil|campfire|oven|furnace|wheel|machine|pump)\b', text):
         if text == 'barrel armor': return 'Armour', 'wearable barrel armor'
-        if text == 'backpack': return 'Equipment', 'portable inventory container'
+        if text == 'backpack': return 'Ingredients', 'portable inventory container'
         if text.startswith(('leather chest','metal chest')): return 'Armour', 'chest armor category'
         return 'Stations-And-Containers', 'station or storage container'
 
@@ -67,21 +69,21 @@ def classify(name, old_tags, identities=()):
     if re.search(r'\b(skillbook|skill book)\b', text): return 'Skillbooks', 'explicit skillbook name'
     if re.search(r'\bscroll\b', text): return 'Scrolls', 'explicit scroll name'
     if re.search(r'\b(scraps|sinew|bowstring|arrow shaft|arrowhead)\b', text):
-        return ('Arrows-And-Grenades' if 'arrowhead' in text else 'Ingredients'), 'crafting material, not wearable equipment'
+        return ('Arrows' if 'arrowhead' in text else 'Ingredients'), 'crafting material, not wearable equipment'
     if re.search(r'\b(essence|pixie dust|star dust|stardust|tormented soul)\b', text):
         return 'Ingredients', 'crafting resource'
-    if re.search(r'\b(hammer|pickaxe|scissors|whetstone)\b', text): return 'Tools', 'crafting tool'
+    if re.search(r'\b(hammer|pickaxe|scissors|whetstone)\b', text): return 'Ingredients', 'crafting tool'
     if re.search(r'\bdye\b', text): return 'Dyes', 'dye item'
-    if re.search(r'\bpotion\b', text): return 'Potions-And-Food', 'consumable potion'
-    if re.search(r'\b(grenade|arrow|balloon)\b', text): return 'Arrows-And-Grenades', 'ammunition or grenade'
-    if re.search(r'\brune\b', text): return 'Magic', 'rune'
+    if re.search(r'\bpotion\b', text): return 'Potions', 'consumable potion'
+    if re.search(r'\b(grenade|balloon)\b', text): return 'Grenades', 'grenade'
+    if re.search(r'\barrow\b', text): return 'Arrows', 'ammunition'
+    if re.search(r'\brune\b', text): return 'Ingredients', 'rune'
     if re.search(r'\b(amulet|amulets)\b', text): return 'Amulets', 'explicit amulet name'
     if re.search(r'\bring\b', text): return 'Rings', 'explicit ring name'
     if re.search(r'\bbelt\b', text): return 'Belts', 'explicit belt name'
     families = {category_for_identity(stat, fields) for stat, fields in identities} - {None}
     if len(families) == 1:
         result = next(iter(families))
-        if result == 'Tools' and 'Equipment' in old: result = 'Equipment'
         return result, 'consistent game Stats inventory family'
     # Explicit equipment names also cover custom entries without localized Stats labels.
     if re.search(r'\b(shield|boots|gloves|helmet|helm|pants|lowerbody|upperbody|torso|robe|cape|armour|armor)\b', text):
@@ -92,7 +94,6 @@ def classify(name, old_tags, identities=()):
     old -= {'Seasonal-Items', 'Special'}
     if len(old) == 1:
         result = next(iter(old))
-        result = {'Potions':'Potions-And-Food','Food-And-Drink':'Potions-And-Food','Arrows':'Arrows-And-Grenades','Grenades':'Arrows-And-Grenades'}.get(result,result)
         return result, 'existing unambiguous category retained'
     return None, 'requires manual classification'
 
@@ -104,15 +105,15 @@ def invalid_type_tags(name):
     if re.search(r'\b(scraps|sinew|bowstring)\b', text):
         invalid.update(['Weapons', 'Armour'])
     if re.search(r'\b(empty|blank)\b', text) and re.search(r'\b(bottle|vial|flask|canister|grenade|cylinder)\b', text):
-        invalid.update(['Potions-And-Food', 'Dyes', 'Arrows-And-Grenades'])
+        invalid.update(['Potions', 'Food-And-Drink', 'Dyes', 'Arrows', 'Grenades'])
     if 'shield' in text:
         invalid.add('Weapons')
     if re.search(r'\b(hammer|pickaxe|whetstone)\b', text):
         invalid.update(['Armour', 'Stations-And-Containers'])
     if text == 'mortar and pestle':
-        invalid.add('Potions-And-Food')
+        invalid.update(['Potions', 'Food-And-Drink'])
     if text == 'silver ore':
-        invalid.add('Arrows-And-Grenades')
+        invalid.update(['Arrows', 'Grenades'])
     return invalid
 
 
@@ -120,9 +121,7 @@ def normalized_tags(tags, category, game_tag, removed=()):
     tags = list(dict.fromkeys(t.strip() for t in tags if t.strip()))
     # Category tags come from the hierarchy; the game marker is re-added for the catalog being cleaned.
     other = [t for t in tags if not (tree['is_category'](t) or t in tree['MARKERS'] or t in tree['ROOTS'])]
-    types = [t for t in tags if tree['is_category'](t) and not any(tree['within'](t, r) for r in removed) and t != 'Food-And-Drink']
-    if 'Food-And-Drink' in tags:
-        types.append('Potions-And-Food')
+    types = [t for t in tags if tree['is_category'](t) and not any(tree['within'](t, r) for r in removed)]
     if category is not None and category not in removed:
         types.append(category)
     return tree['most_specific']([*types, *other, game_tag])

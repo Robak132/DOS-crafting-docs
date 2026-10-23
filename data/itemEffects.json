@@ -862,10 +862,6 @@
       "en": "Teaches skill: Armour of Frost",
       "pl": "Uczy umiejętności: Pancerz Mrozu"
     },
-    "ataraxianscythe": {
-      "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
-      "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
-    },
     "augmentor": {
       "en": "+1 Strength; Duration: 2 turns",
       "pl": "+1 Siła; Czas trwania: 2 tur"
@@ -2378,6 +2374,10 @@
       "en": "Use: Terror Grenade; Fear (100%), turns: 1",
       "pl": "Użycie: Granat grozy; Strach (100%), tury: 1"
     },
+    "theswornbreaker": {
+      "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
+      "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
+    },
     "thunderboltgrenade": {
       "en": "Use: Taser Grenade; Shocked (100%), turns: 2; Deals air damage (scales with level)",
       "pl": "Użycie: Taser Grenade; Porażenie (100%), tury: 2; Obrażenia od powietrza (wartość zależy od poziomu)"
@@ -2703,10 +2703,6 @@
     "armourpiercinggrenade": {
       "en": "Use: Armor-Piercing Grenade; Deals piercing damage (scales with level)",
       "pl": "Użycie: Armor-Piercing Grenade; Obrażenia przeszywające (wartość zależy od poziomu)"
-    },
-    "ataraxianscythe": {
-      "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
-      "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
     },
     "augmentor": {
       "en": "+1 Strength; Duration: 2 turns",
@@ -5207,6 +5203,10 @@
     "terrorgrenade": {
       "en": "Use: Terror Grenade; Fear (100%), turns: 1",
       "pl": "Użycie: Granat grozy; Strach (100%), tury: 1"
+    },
+    "theswornbreaker": {
+      "en": "+2 Strength; +2 Intelligence; +2 Necromancer; +20% Accuracy; +20% Critical chance; +20% Damage; Deals physical damage (scales with item level); Grants skill: Swornbreaker",
+      "pl": "+2 Siła; +2 Inteligencja; +2 Nekromancja; +20% Szansa na trafienie; +20% Szansa na trafienie krytyczne; +20% Obrażenia; Obrażenia fizyczne (~poziom); Zapewnia umiejętność: Wiarołom"
     },
     "thunderboltgrenade": {
       "en": "Use: Taser Grenade; Shocked (100%), turns: 2; Deals air damage (scales with level)",

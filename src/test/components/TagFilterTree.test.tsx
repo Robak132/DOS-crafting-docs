@@ -41,7 +41,7 @@ test("include and exclude states are exposed to assistive technology, not only b
       entries={[
         { tag: "Weapons", count: 2, label: "Broń" },
         { tag: "Armour", count: 1, label: "Pancerze" },
-        { tag: "Magic", count: 1, label: "Magia" },
+        { tag: "Scrolls", count: 1, label: "Zwoje" },
       ]}
       include={["Weapons"]}
       exclude={["Armour"]}
@@ -51,5 +51,5 @@ test("include and exclude states are exposed to assistive technology, not only b
   )
   assert.match(html, /aria-pressed="true"[^>]*><span>Broń<\/span>/)
   assert.match(html, /<span>Pancerze<\/span><span class="sr-only"> \(wykluczone\)<\/span>/)
-  assert.match(html, /aria-pressed="false"[^>]*><span>Magia<\/span>/)
+  assert.match(html, /aria-pressed="false"[^>]*><span>Zwoje<\/span>/)
 })

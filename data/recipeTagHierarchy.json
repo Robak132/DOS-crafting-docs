@@ -72,7 +72,7 @@
         },
         {
           "tag": "Food-And-Drink",
-          "label": "Jedzenie-i-picie",
+          "label": "Jedzenie i picie",
           "children": []
         },
         {
@@ -81,23 +81,8 @@
           "children": []
         },
         {
-          "tag": "Magic",
-          "label": "Magia",
-          "children": []
-        },
-        {
           "tag": "Potions",
           "label": "Mikstury",
-          "children": []
-        },
-        {
-          "tag": "Potions-And-Food",
-          "label": "Mikstury i jedzenie",
-          "children": []
-        },
-        {
-          "tag": "Tools",
-          "label": "Narzędzia",
           "children": []
         },
         {
@@ -168,22 +153,12 @@
         },
         {
           "tag": "Arrows",
-          "label": "Strzaly",
-          "children": []
-        },
-        {
-          "tag": "Arrows-And-Grenades",
-          "label": "Strzały i granaty",
+          "label": "Strzały",
           "children": []
         },
         {
           "tag": "Upgrades",
           "label": "Ulepszenia",
-          "children": []
-        },
-        {
-          "tag": "Equipment",
-          "label": "Wyposażenie",
           "children": []
         },
         {

@@ -67,7 +67,7 @@ test("missing effects and categories remain readable; labels are escaped", () =>
 })
 
 test("items with multiple type tags occur once alongside uncategorized items", () => {
-  const multi = { ...first, result: { ...first.result, tags: ["Weapons", "Magic", "Ingredients"] } }
+  const multi = { ...first, result: { ...first.result, tags: ["Weapons", "Scrolls", "Ingredients"] } }
   const other = { ...first, id: "other", result: { name: "Other item", slug: "other", tags: [] }, tags: [] }
   const html = renderToString(
     <ItemTable recipes={[multi, { ...multi, id: "variant" }, other]} labels={{}} itemHref={(slug) => slug} />,

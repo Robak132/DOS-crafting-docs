@@ -52,7 +52,7 @@ test("recipe tables omit effects but preserve crafting instructions and align op
 })
 
 test("multiple categories do not duplicate recipes or their crafting variants", () => {
-  const multi = { ...recipe, result: { ...recipe.result, tags: ["Weapons", "Magic", "Ingredients"] } }
+  const multi = { ...recipe, result: { ...recipe.result, tags: ["Weapons", "Scrolls", "Ingredients"] } }
   const variant = { ...multi, id: "variant", ingredients: [{ name: "Another ingredient", tags: [] }] }
   const other = { ...recipe, id: "other", result: { name: "Uncategorized", tags: [] } }
   const html = renderToString(<RecipeTable recipes={[multi, variant, other]} catalogSlug="DOS2" labels={{}} />)

@@ -118,6 +118,11 @@ def stat_entries(directory):
                 'fields': dict(re.findall(r'^data "([^"]+)" "([^"\r\n]*)"', body, re.M)),
                 'parent': parent[1] if parent else None,
             }
+    # DOS1 keeps the stats-to-root-template links outside the stat entries.
+    for file in sorted(directory.rglob('Stats/Generated/Links/*.txt')):
+        for stats, template in re.findall(r'^object itemstat "([^"]+)","([^"]+)"', file.read_text(encoding='utf-8-sig'), re.M):
+            if stats in entries:
+                entries[stats]['fields'].setdefault('RootTemplate', template)
     return entries
 
 

@@ -9,7 +9,6 @@
   "Seasonal-Items": "Przedmioty sezonowe",
   "Special": "Specjalne",
   "Upgrades": "Ulepszenia",
-  "Equipment": "Wyposażenie",
   "Scrolls": "Zwoje",
   "Attributes": "Cechy",
   "Strength": "Siła",
@@ -31,10 +30,7 @@
   "Other-Traits": "Inne",
   "Healing": "Leczenie",
   "DOS1": "DOS1",
-  "Magic": "Magia",
-  "Potions-And-Food": "Mikstury i jedzenie",
   "Stations-And-Containers": "Stanowiska i pojemniki",
-  "Arrows-And-Grenades": "Strzały i granaty",
   "Wits": "Bystrość",
   "Accuracy": "Celność",
   "Critical-Chance": "Szansa na trafienie krytyczne",
@@ -90,7 +86,6 @@
   "Thievery": "Złodziejstwo",
   "DOS2-CO": "DOS2-CO",
   "Dyes": "Barwniki",
-  "Tools": "Narzędzia",
   "Finesse": "Zręczność",
   "Perception": "Percepcja",
   "Charisma": "Charyzma",
@@ -219,5 +214,9 @@
   "Defence-Abilities": "Biegłości obrony",
   "Skill-Schools": "Umiejętności",
   "Shadow-Resistance": "Odporność na cień",
-  "Balanced-Armour": "Pancerz zbalansowany"
+  "Balanced-Armour": "Pancerz zbalansowany",
+  "Potions": "Mikstury",
+  "Food-And-Drink": "Jedzenie i picie",
+  "Arrows": "Strzały",
+  "Grenades": "Granaty"
 }

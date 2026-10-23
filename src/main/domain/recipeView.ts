@@ -48,13 +48,6 @@ export { recipeResults }
 
 export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
 
-const mergedCategoryTags: Record<string, string> = {
-  Potions: "Potions-And-Food",
-  "Food-And-Drink": "Potions-And-Food",
-  Arrows: "Arrows-And-Grenades",
-  Grenades: "Arrows-And-Grenades",
-}
-
 /** Czy receptura używa grupy craftingowej (#selector) jako składnika. */
 export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean {
   const target = selector.replace(/^#/, "").toLowerCase()
@@ -93,7 +86,6 @@ export type CechyGroupMeta = {
 }
 
 export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] = []): RecipeTagGroup[] {
-  const names = new Set(tags.map((tag) => tag.tag))
   const byTag = new Map(tags.map((stat) => [stat.tag, stat]))
   const weapons = new Set([
     "Weapon",
@@ -161,8 +153,7 @@ export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] =
       claimedCechy.has(tag) ||
       cechyParentTags.has(tag) ||
       cechyChildToParent.has(tag) ||
-      isTraitTag(tag) ||
-      names.has(mergedCategoryTags[tag])
+      isTraitTag(tag)
     )
       continue
     const label = isCategoryTag(tag)
@@ -227,7 +218,6 @@ export function visibleRecipeTags(tags: string[]): string[] {
       tag.trim().length > 0 &&
       !isOrComboTag(tag) &&
       !isGameTag(tag) &&
-      !tags.includes(mergedCategoryTags[tag]) &&
       !tags.some((other) => other !== tag && isTagWithin(other, tag)),
   )
 }

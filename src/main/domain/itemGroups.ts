@@ -130,6 +130,8 @@ export function groupMatcher(item: RecipeItem): ((candidate: RecipeItem) => bool
     const categoryTokens = term.split(" ")
     if (categoryTokens.every((token) => hasWord(categories, token))) return true
     if (term.includes("skillbook") && candidate.craftingCategories?.length) return false
+    // A blank skillbook teaches nothing, so it never counts as a school's skillbook.
+    if (term.includes("skillbook") && /\bblank\b/.test(name)) return false
     if (tags.some((tag) => tag === term || tag.endsWith(` ${term}`))) return true
     if (term === "fish")
       return (

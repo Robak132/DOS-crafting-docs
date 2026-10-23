@@ -7,7 +7,7 @@ import { isCategoryTag } from "../../main/domain/tagTree"
 test("sidebar statistics count product tags rather than stale recipe or ingredient categories", () => {
   const recipe: RecipeRow = {
     id: "scroll",
-    result: { name: "Scroll", tags: ["Scrolls", "Magic"] },
+    result: { name: "Scroll", tags: ["Scrolls", "Ingredients"] },
     ingredients: [{ name: "Knife", tags: ["Weapons"] }],
     tags: ["Ingredients"],
     requirements: "",
@@ -17,7 +17,7 @@ test("sidebar statistics count product tags rather than stale recipe or ingredie
   }
   assert.deepEqual(
     collectRecipeStats([recipe]).tags.map((tag) => tag.tag),
-    ["Category", "Magic", "Scrolls"],
+    ["Category", "Ingredients", "Scrolls"],
   )
 })
 

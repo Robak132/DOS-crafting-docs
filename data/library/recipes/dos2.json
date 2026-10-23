@@ -261,7 +261,7 @@
           "namePl": "Jabłko",
           "slug": "apple",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -277,7 +277,7 @@
         "namePl": "Sok jabłkowy",
         "slug": "apple-juice",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Poison-Resistance",
           "DOS2"
@@ -287,7 +287,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Poison-Resistance",
         "DOS2"
@@ -318,7 +318,7 @@
           "namePl": "Jabłko",
           "slug": "apple",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -334,7 +334,7 @@
         "namePl": "Sok jabłkowy",
         "slug": "apple-juice",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Poison-Resistance",
           "DOS2"
@@ -344,7 +344,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Poison-Resistance",
         "DOS2"
@@ -363,7 +363,7 @@
           "slug": "apple-pie-dough",
           "tags": [
             "Ingredients",
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -385,7 +385,7 @@
         "namePl": "Jabłecznik",
         "slug": "apple-pie",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Poison-Resistance",
           "DOS2"
@@ -395,7 +395,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Poison-Resistance",
         "DOS2"
@@ -413,7 +413,7 @@
           "namePl": "Jabłko",
           "slug": "apple",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -443,7 +443,7 @@
         "slug": "apple-pie-dough",
         "tags": [
           "Ingredients",
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -453,7 +453,7 @@
       },
       "tags": [
         "Ingredients",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -763,8 +763,8 @@
         }
       ],
       "result": {
-        "name": "Armour of Eternals",
-        "slug": "armour-of-eternals",
+        "name": "Armour of the Eternals",
+        "slug": "armour-of-the-eternals",
         "tags": [
           "Armour",
           "DOS2"
@@ -919,7 +919,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -933,7 +933,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -949,7 +949,7 @@
         "namePl": "Strzała",
         "slug": "arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -958,7 +958,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -974,8 +974,9 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Bone@x2",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -1001,7 +1002,7 @@
         "namePl": "Grot",
         "slug": "arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "DOS2"
         ],
@@ -1013,7 +1014,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "DOS2"
       ],
@@ -1026,8 +1027,9 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Sharp Piece of Metal@x2",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -1052,7 +1054,7 @@
         "namePl": "Grot",
         "slug": "arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "DOS2"
         ],
@@ -1064,7 +1066,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "DOS2"
       ],
@@ -1077,8 +1079,9 @@
       "id": "Skladniki/ARROWHEAD:CuttingTool+Sharp Rock@x2",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -1103,7 +1106,7 @@
         "namePl": "Grot",
         "slug": "arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "DOS2"
         ],
@@ -1115,7 +1118,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "DOS2"
       ],
@@ -1258,8 +1261,9 @@
         }
       ],
       "result": {
-        "name": "AtaraxianScythe",
-        "slug": "ataraxianscythe",
+        "name": "The Swornbreaker",
+        "namePl": "Wiarołom",
+        "slug": "the-swornbreaker",
         "tags": [
           "Special",
           "Accuracy",
@@ -1323,7 +1327,7 @@
         "namePl": "Plecak",
         "slug": "backpack",
         "tags": [
-          "Equipment",
+          "Ingredients",
           "DOS2"
         ],
         "craftingCategories": [
@@ -1332,7 +1336,7 @@
         "statsId": "CONT_Backpack_A"
       },
       "tags": [
-        "Equipment",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -1624,7 +1628,7 @@
           "namePl": "Granat mrozu",
           "slug": "frost-grenade",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Ice-Surface",
             "CHILLED",
@@ -1640,7 +1644,7 @@
         "namePl": "Pobłogosławiony granat lodowy",
         "slug": "blessed-ice-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "DOS2"
         ],
@@ -1649,7 +1653,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "DOS2"
       ],
@@ -1679,7 +1683,7 @@
           "namePl": "Flakon oleju",
           "slug": "oil-flask",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Oil-Surface",
             "DOS2"
@@ -1694,7 +1698,7 @@
         "namePl": "Pobłogosławiony flakon oleju",
         "slug": "blessed-oil-flask",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "DOS2"
         ],
@@ -1703,7 +1707,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "DOS2"
       ],
@@ -1721,7 +1725,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1735,7 +1739,7 @@
           "namePl": "Pobłogosławiony grot wodny",
           "slug": "blessed-water-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1749,7 +1753,7 @@
         "namePl": "Pobłogosławiona strzała wodna",
         "slug": "blessed-water-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "HEALING",
           "DOS2"
@@ -1760,7 +1764,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "HEALING",
         "DOS2"
@@ -1791,7 +1795,7 @@
           "namePl": "Strzała wodna",
           "slug": "water-arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "Casts-Spell",
             "Water-Surface",
@@ -1809,7 +1813,7 @@
         "namePl": "Pobłogosławiona strzała wodna",
         "slug": "blessed-water-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "HEALING",
           "DOS2"
@@ -1820,7 +1824,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "HEALING",
         "DOS2"
@@ -1851,7 +1855,7 @@
           "namePl": "Grot wodny",
           "slug": "water-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -1866,7 +1870,7 @@
         "namePl": "Pobłogosławiony grot wodny",
         "slug": "blessed-water-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -1875,7 +1879,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -1904,7 +1908,7 @@
           "namePl": "Balon z wodą",
           "slug": "water-balloon",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Water-Surface",
             "WET",
@@ -1920,7 +1924,7 @@
         "namePl": "Pobłogosławiony balon z wodą",
         "slug": "blessed-water-balloon",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "WET",
           "DOS2"
@@ -1930,7 +1934,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "WET",
         "DOS2"
@@ -2144,7 +2148,7 @@
         "namePl": "Eliksir z krwawej róży",
         "slug": "blood-rose-elixir",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Intelligence",
           "Constitution",
           "Memory",
@@ -2155,7 +2159,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Intelligence",
         "Constitution",
         "Memory",
@@ -2189,7 +2193,6 @@
           "slug": "shadow-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -2298,7 +2301,7 @@
           "namePl": "Ziemniak",
           "slug": "potato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -2323,7 +2326,7 @@
         "namePl": "Gotowany ziemniak",
         "slug": "boiled-potato",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Constitution",
           "Healing",
           "DOS2"
@@ -2333,59 +2336,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
-        "Constitution",
-        "Healing",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A666:G666"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/BOILED-POTATO:Potato+Oven, Furnace, or Mobile Kitchen",
-      "ingredients": [
-        {
-          "name": "Potato",
-          "namePl": "Ziemniak",
-          "slug": "potato",
-          "tags": [
-            "Potions-And-Food",
-            "Ingredients",
-            "Constitution",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "slug": "oven-furnace-or-mobile-kitchen",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Boiled Potato",
-        "namePl": "Gotowany ziemniak",
-        "slug": "boiled-potato",
-        "tags": [
-          "Potions-And-Food",
-          "Constitution",
-          "Healing",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Constitution",
         "Healing",
         "DOS2"
@@ -2393,7 +2344,7 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Constitution",
       "remarks": "",
-      "source": "Patty Cake, Patty Cake IV"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A666:G666; Patty Cake, Patty Cake IV"
     },
     {
       "id": "Specjalne/BOILED-STARDUST-POTION:Stardust Herb+Mobile Kitchen",
@@ -2416,7 +2367,7 @@
           "slug": "mobile-kitchen",
           "tags": [
             "Stations-And-Containers",
-            "Equipment",
+            "Ingredients",
             "DOS2"
           ]
         }
@@ -2685,7 +2636,6 @@
           "namePl": "Moździerz i tłuczek",
           "slug": "mortar-and-pestle-2",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -2737,7 +2687,6 @@
           "namePl": "Moździerz i tłuczek",
           "slug": "mortar-and-pestle-2",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -2786,7 +2735,6 @@
           "name": "Mortar And Pestle",
           "slug": "mortar-and-pestle",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -2831,7 +2779,6 @@
           "name": "Mortar And Pestle",
           "slug": "mortar-and-pestle",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -2892,7 +2839,7 @@
         "slug": "bottle-filled-with-oil",
         "tags": [
           "Ingredients",
-          "Arrows-And-Grenades",
+          "Grenades",
           "Intelligence",
           "Constitution",
           "Fire-Resistance",
@@ -2902,7 +2849,7 @@
       },
       "tags": [
         "Ingredients",
-        "Arrows-And-Grenades",
+        "Grenades",
         "Intelligence",
         "Constitution",
         "Fire-Resistance",
@@ -2999,7 +2946,7 @@
         "namePl": "Chleb",
         "slug": "bread",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Ingredients",
           "Healing",
           "Strength",
@@ -3010,7 +2957,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients",
         "Healing",
         "Strength",
@@ -3029,7 +2976,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -3080,7 +3026,7 @@
           "namePl": "Butelka piwa",
           "slug": "bottle-of-beer",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Intelligence",
             "Healing",
             "DRUNK",
@@ -3095,7 +3041,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -3131,7 +3076,7 @@
           "slug": "bottle-filled-with-oil",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Grenades",
             "Intelligence",
             "Constitution",
             "Fire-Resistance",
@@ -3144,7 +3089,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -3179,7 +3123,7 @@
           "namePl": "Butelka wody",
           "slug": "bottle-of-water",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -3192,7 +3136,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -3227,7 +3170,7 @@
           "namePl": "Butelka wina",
           "slug": "bottle-of-wine",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DRUNK",
             "DOS2"
@@ -3241,7 +3184,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -3298,15 +3240,32 @@
         }
       ],
       "result": {
-        "name": "Bucket and Cup of Milk",
-        "slug": "bucket-and-cup-of-milk",
+        "name": "Bucket",
+        "namePl": "Wiadro",
+        "slug": "bucket",
         "tags": [
-          "Potions-And-Food",
+          "Ingredients",
           "DOS2"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Milk",
+          "namePl": "Mleko",
+          "slug": "milk",
+          "tags": [
+            "Food-And-Drink",
+            "Ingredients",
+            "Healing",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Drink"
+          ]
+        }
+      ],
       "tags": [
-        "Potions-And-Food",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -3425,7 +3384,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -3490,7 +3448,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -3853,7 +3810,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4026,7 +3982,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4040,7 +3996,7 @@
           "namePl": "Grot oczarowujący",
           "slug": "charming-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4054,7 +4010,7 @@
         "namePl": "Strzała oczarowująca",
         "slug": "charming-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "CHARMED",
           "DOS2"
@@ -4065,7 +4021,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "CHARMED",
         "DOS2"
@@ -4092,7 +4048,7 @@
           "namePl": "Strzała",
           "slug": "arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4106,7 +4062,7 @@
         "namePl": "Strzała oczarowująca",
         "slug": "charming-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "CHARMED",
           "DOS2"
@@ -4117,7 +4073,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "CHARMED",
         "DOS2"
@@ -4144,7 +4100,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -4160,7 +4116,7 @@
         "namePl": "Grot oczarowujący",
         "slug": "charming-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -4169,7 +4125,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -4186,7 +4142,7 @@
           "slug": "cheese-bread-dough",
           "tags": [
             "Ingredients",
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -4208,7 +4164,7 @@
         "namePl": "Pieczywo serowe",
         "slug": "cheese-bread",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Constitution",
           "Healing",
           "DOS2"
@@ -4218,7 +4174,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Constitution",
         "Healing",
         "DOS2"
@@ -4236,7 +4192,7 @@
           "namePl": "Ser",
           "slug": "cheese",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -4267,7 +4223,7 @@
         "slug": "cheese-bread-dough",
         "tags": [
           "Ingredients",
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -4277,7 +4233,7 @@
       },
       "tags": [
         "Ingredients",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -4324,7 +4280,7 @@
         "namePl": "Granat chemiczny",
         "slug": "chemical-warfare-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "DISEASED",
           "DOS2"
@@ -4334,7 +4290,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "DISEASED",
         "DOS2"
@@ -4364,7 +4320,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4668,7 +4623,7 @@
         "namePl": "Granat kasetowy",
         "slug": "cluster-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Fire-Surface",
           "BURNING",
@@ -4679,7 +4634,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Fire-Surface",
         "BURNING",
@@ -4698,7 +4653,7 @@
           "slug": "knife-or-dagger",
           "tags": [
             "Weapons",
-            "Tools",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -4707,7 +4662,7 @@
           "namePl": "Ziemniak",
           "slug": "potato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -4723,7 +4678,7 @@
         "namePl": "Zimne frytki",
         "slug": "cold-fries",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -4732,7 +4687,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -4749,7 +4704,7 @@
           "namePl": "Ziemniak",
           "slug": "potato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -4764,7 +4719,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -4775,7 +4729,7 @@
         "namePl": "Zimne tłuczone ziemniaki",
         "slug": "cold-mashed-potatoes",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -4784,7 +4738,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -5141,7 +5095,7 @@
           "namePl": "Cytryna",
           "slug": "lemon",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Wits",
             "DOS2"
@@ -5155,14 +5109,14 @@
         "name": "Lemonade",
         "slug": "lemonade",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Wits",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Wits",
         "DOS2"
@@ -5193,7 +5147,7 @@
           "namePl": "Cytryna",
           "slug": "lemon",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Wits",
             "DOS2"
@@ -5207,14 +5161,14 @@
         "name": "Lemonade",
         "slug": "lemonade",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Wits",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Wits",
         "DOS2"
@@ -5246,7 +5200,7 @@
           "namePl": "Puchar wody",
           "slug": "cup-of-water",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -5261,7 +5215,7 @@
         "namePl": "Puchar herbaty",
         "slug": "cup-of-tea",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -5270,7 +5224,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -5310,7 +5264,7 @@
         "namePl": "Puchar wody",
         "slug": "cup-of-water",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -5320,7 +5274,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -5469,7 +5423,7 @@
           "namePl": "Granat kasetowy",
           "slug": "cluster-grenade",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Fire-Surface",
             "BURNING",
@@ -5485,7 +5439,7 @@
         "namePl": "Przeklęty granat kasetowy",
         "slug": "cursed-cluster-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BURNING",
           "DOS2"
@@ -5495,7 +5449,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BURNING",
         "DOS2"
@@ -5514,7 +5468,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5528,7 +5482,7 @@
           "namePl": "Przeklęty grot ognisty",
           "slug": "cursed-fire-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5542,7 +5496,7 @@
         "namePl": "Przeklęta ognista strzała",
         "slug": "cursed-fire-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "BURNING",
           "DOS2"
@@ -5553,7 +5507,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "BURNING",
         "DOS2"
@@ -5584,7 +5538,7 @@
           "namePl": "Ognista strzała",
           "slug": "fire-arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Casts-Spell",
             "Fire-Surface",
             "BURNING",
@@ -5601,7 +5555,7 @@
         "namePl": "Przeklęta ognista strzała",
         "slug": "cursed-fire-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "BURNING",
           "DOS2"
@@ -5612,7 +5566,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "BURNING",
         "DOS2"
@@ -5643,7 +5597,7 @@
           "namePl": "Grot ognisty",
           "slug": "fire-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5657,7 +5611,7 @@
         "namePl": "Przeklęty grot ognisty",
         "slug": "cursed-fire-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -5666,7 +5620,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -5695,7 +5649,7 @@
           "namePl": "Granat burzy ognistej",
           "slug": "firestorm-grenade",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Fire-Surface",
             "BURNING",
@@ -5711,7 +5665,7 @@
         "namePl": "Przeklęty granat burzy ognistej",
         "slug": "cursed-firestorm-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BURNING",
           "DOS2"
@@ -5721,7 +5675,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BURNING",
         "DOS2"
@@ -5752,7 +5706,7 @@
           "namePl": "Fiolka trucizny",
           "slug": "poison-flask",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Casts-Spell",
             "Poison-Surface",
             "POISONED",
@@ -5768,7 +5722,7 @@
         "namePl": "Przeklęta fiolka trucizny",
         "slug": "cursed-poison-flask",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "POISONED",
           "DOS2"
@@ -5778,7 +5732,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "POISONED",
         "DOS2"
@@ -5915,7 +5869,6 @@
           "slug": "shadow-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -6054,7 +6007,7 @@
           "namePl": "Makrela",
           "slug": "mackerel",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -6167,7 +6120,6 @@
           "slug": "tormented-soul",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -6180,7 +6132,7 @@
           "namePl": "Papryka",
           "slug": "pepper",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -6396,7 +6348,7 @@
           "namePl": "Mleko",
           "slug": "milk",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -6449,7 +6401,7 @@
           "namePl": "Mleko",
           "slug": "milk",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -6462,7 +6414,7 @@
           "name": "Eggs",
           "slug": "eggs",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "DOS2"
@@ -6598,7 +6550,7 @@
           "namePl": "Obiad",
           "slug": "dinner",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "Strength",
             "DOS2"
@@ -6621,7 +6573,7 @@
         "namePl": "Krasnoludzki gulasz",
         "slug": "dwarven-stew",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -6631,7 +6583,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
@@ -6649,7 +6601,7 @@
           "namePl": "Obiad",
           "slug": "dinner",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "Strength",
             "DOS2"
@@ -6663,7 +6615,7 @@
           "namePl": "Kufel piwa",
           "slug": "mug-of-beer",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Intelligence",
             "Healing",
             "DRUNK",
@@ -6679,7 +6631,7 @@
         "namePl": "Krasnoludzki gulasz",
         "slug": "dwarven-stew",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -6689,7 +6641,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
@@ -6735,14 +6687,14 @@
         "namePl": "Mikstura odporności na ziemię",
         "slug": "earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -7101,7 +7053,6 @@
           "slug": "tormented-soul",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7168,7 +7119,6 @@
           "slug": "tormented-soul",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7322,7 +7272,7 @@
           "namePl": "Obiad",
           "slug": "dinner",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "Strength",
             "DOS2"
@@ -7336,7 +7286,7 @@
           "namePl": "Sos pomidorowy",
           "slug": "tomato-sauce",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -7352,7 +7302,7 @@
         "namePl": "Elfi gulasz",
         "slug": "elven-stew",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Finesse",
           "DOS2"
@@ -7362,7 +7312,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Finesse",
         "DOS2"
@@ -7640,7 +7590,7 @@
           "namePl": "Marchewka",
           "slug": "carrot",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Wits",
@@ -7736,7 +7686,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7750,7 +7700,7 @@
           "namePl": "Wybuchowy grot",
           "slug": "explosive-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7764,7 +7714,7 @@
         "namePl": "Wybuchowa strzała",
         "slug": "explosive-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "Fire-Surface",
           "BURNING",
@@ -7776,7 +7726,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "Fire-Surface",
         "BURNING",
@@ -7980,8 +7930,9 @@
           ]
         },
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -8019,7 +7970,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -8033,7 +7984,7 @@
           "namePl": "Grot ognisty",
           "slug": "fire-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -8047,7 +7998,7 @@
         "namePl": "Ognista strzała",
         "slug": "fire-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "Fire-Surface",
           "BURNING",
@@ -8059,7 +8010,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "Fire-Surface",
         "BURNING",
@@ -8078,7 +8029,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -8107,7 +8058,7 @@
         "namePl": "Grot ognisty",
         "slug": "fire-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -8116,7 +8067,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -8160,14 +8111,14 @@
         "namePl": "Mikstura odporności na ogień",
         "slug": "fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -8625,7 +8576,7 @@
           "slug": "bottle-filled-with-oil",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Grenades",
             "Intelligence",
             "Constitution",
             "Fire-Resistance",
@@ -8638,7 +8589,7 @@
           "namePl": "Lont",
           "slug": "fuse",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "DOS2"
           ],
           "craftingCategories": [
@@ -8651,7 +8602,7 @@
         "namePl": "Granat burzy ognistej",
         "slug": "firestorm-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Fire-Surface",
           "BURNING",
@@ -8662,7 +8613,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Fire-Surface",
         "BURNING",
@@ -8682,7 +8633,7 @@
           "slug": "fish-pie-dough",
           "tags": [
             "Ingredients",
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -8708,7 +8659,7 @@
         "namePl": "Placek rybny",
         "slug": "fish-pie",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Intelligence",
           "Healing",
           "DOS2"
@@ -8718,7 +8669,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Intelligence",
         "Healing",
         "DOS2"
@@ -8759,7 +8710,7 @@
         "slug": "fish-pie-dough",
         "tags": [
           "Ingredients",
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -8769,7 +8720,7 @@
       },
       "tags": [
         "Ingredients",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -9162,7 +9113,6 @@
           "namePl": "Moździerz i tłuczek",
           "slug": "mortar-and-pestle-2",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -9517,7 +9467,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -9531,7 +9481,7 @@
           "namePl": "Grot zamrażający",
           "slug": "freezing-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -9545,7 +9495,7 @@
         "namePl": "Zamrażająca strzała",
         "slug": "freezing-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "Ice-Surface",
           "CHILLED",
@@ -9557,7 +9507,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "Ice-Surface",
         "CHILLED",
@@ -9602,7 +9552,7 @@
         "namePl": "Granat mrozu",
         "slug": "frost-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Ice-Surface",
           "CHILLED",
@@ -9613,7 +9563,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Ice-Surface",
         "CHILLED",
@@ -9657,7 +9607,7 @@
         "namePl": "Lont",
         "slug": "fuse",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "DOS2"
         ],
         "craftingCategories": [
@@ -9665,7 +9615,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "DOS2"
       ],
       "requirements": "",
@@ -9689,7 +9639,6 @@
           "name": "Large % Rune",
           "slug": "large-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -9698,7 +9647,6 @@
           "name": "Large % Rune",
           "slug": "large-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -9708,12 +9656,12 @@
         "name": "Giant % Rune",
         "slug": "giant-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -9728,7 +9676,7 @@
           "name": "Giant % Rune",
           "slug": "giant-rune",
           "tags": [
-            "Magic",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -9737,7 +9685,6 @@
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -9750,12 +9697,12 @@
         "name": "Giant % Rune of Power",
         "slug": "giant-rune-of-power",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -9771,7 +9718,7 @@
           "namePl": "Wielka mikstura uzdrawiająca",
           "slug": "huge-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -9787,7 +9734,7 @@
           "namePl": "Wielka mikstura uzdrawiająca",
           "slug": "huge-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -9804,7 +9751,7 @@
         "namePl": "Ogromna mikstura uzdrawiająca",
         "slug": "giant-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -9814,7 +9761,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -9831,7 +9778,7 @@
           "namePl": "Wielka mikstura uzdrawiająca",
           "slug": "huge-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -9863,7 +9810,7 @@
         "namePl": "Ogromna mikstura uzdrawiająca",
         "slug": "giant-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -9873,7 +9820,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -9890,7 +9837,7 @@
           "namePl": "Ogromna mikstura uzdrawiająca",
           "slug": "giant-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Healing",
             "DOS2"
           ],
@@ -9914,7 +9861,7 @@
         "namePl": "Ogromna fiolka trucizny",
         "slug": "giant-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -9924,7 +9871,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -9941,7 +9888,7 @@
           "namePl": "Wielka fiolka trucizny",
           "slug": "huge-poison-vial",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -9956,7 +9903,7 @@
           "namePl": "Wielka fiolka trucizny",
           "slug": "huge-poison-vial",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -9972,7 +9919,7 @@
         "namePl": "Ogromna fiolka trucizny",
         "slug": "giant-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -9982,7 +9929,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -9999,7 +9946,7 @@
           "namePl": "Wielka fiolka trucizny",
           "slug": "huge-poison-vial",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -10030,7 +9977,7 @@
         "namePl": "Ogromna fiolka trucizny",
         "slug": "giant-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -10040,7 +9987,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -10070,7 +10017,7 @@
           "namePl": "Winogrona",
           "slug": "grapes",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -10085,7 +10032,7 @@
         "namePl": "Kielich wina",
         "slug": "glass-of-wine",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DRUNK",
           "DOS2"
@@ -10095,7 +10042,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DRUNK",
         "DOS2"
@@ -10135,7 +10082,7 @@
         "namePl": "Kielich wina",
         "slug": "glass-of-wine",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DRUNK",
           "DOS2"
@@ -10145,7 +10092,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DRUNK",
         "DOS2"
@@ -10175,7 +10122,7 @@
           "namePl": "Butelka wina",
           "slug": "bottle-of-wine",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DRUNK",
             "DOS2"
@@ -10190,7 +10137,7 @@
         "namePl": "Kielich wina",
         "slug": "glass-of-wine",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DRUNK",
           "DOS2"
@@ -10200,7 +10147,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DRUNK",
         "DOS2"
@@ -10241,7 +10188,7 @@
         "namePl": "Kielich wina",
         "slug": "glass-of-wine",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DRUNK",
           "DOS2"
@@ -10251,7 +10198,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DRUNK",
         "DOS2"
@@ -10523,7 +10470,7 @@
           "namePl": "Kleń",
           "slug": "chub-fish",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -10601,7 +10548,7 @@
           "namePl": "Kleń",
           "slug": "chub-fish",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -10712,7 +10659,7 @@
           "namePl": "Igła z nitką",
           "slug": "needle-and-thread",
           "tags": [
-            "Equipment",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -10762,7 +10709,7 @@
           "namePl": "Igła z nitką",
           "slug": "needle-and-thread",
           "tags": [
-            "Equipment",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -10807,7 +10754,7 @@
           "namePl": "Igła z nitką",
           "slug": "needle-and-thread",
           "tags": [
-            "Equipment",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -10856,7 +10803,7 @@
           "namePl": "Igła z nitką",
           "slug": "needle-and-thread",
           "tags": [
-            "Equipment",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -10878,7 +10825,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -10976,7 +10922,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -11035,7 +10980,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -11141,7 +11085,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -11414,7 +11357,7 @@
         "namePl": "Eliksir uzdrawiający",
         "slug": "healing-elixir",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "HEALING_ELIXIR",
           "DOS2"
@@ -11424,7 +11367,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "HEALING_ELIXIR",
         "DOS2"
@@ -11442,7 +11385,7 @@
           "namePl": "Duża butelka trucizny",
           "slug": "large-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -11472,7 +11415,7 @@
         "namePl": "Mikstura uzdrawiająca",
         "slug": "healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -11483,7 +11426,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -11500,7 +11443,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -11530,7 +11473,7 @@
         "namePl": "Mikstura uzdrawiająca",
         "slug": "healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -11541,7 +11484,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -11558,7 +11501,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -11588,7 +11531,7 @@
         "namePl": "Mikstura uzdrawiająca",
         "slug": "healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -11599,7 +11542,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -11616,7 +11559,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -11630,7 +11573,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -11645,7 +11588,7 @@
         "namePl": "Mikstura uzdrawiająca",
         "slug": "healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -11656,7 +11599,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -11673,7 +11616,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -11703,7 +11646,7 @@
         "namePl": "Mikstura uzdrawiająca",
         "slug": "healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -11714,7 +11657,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -11941,7 +11884,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12112,7 +12054,7 @@
           "namePl": "Skażona Pustką grzbietówka",
           "slug": "void-tainted-yellow-ridgeback",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "DISEASED",
             "DOS2"
@@ -12265,7 +12207,7 @@
           "namePl": "Skażona Pustką żabnica brunatna",
           "slug": "void-tainted-umber-monkfish",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "DISEASED",
             "DOS2"
@@ -12364,7 +12306,7 @@
           "namePl": "Skażona Pustką dorada szkarłatna",
           "slug": "void-tainted-crimson-bream",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "DISEASED",
             "DOS2"
@@ -12400,7 +12342,7 @@
           "namePl": "Kula suwerena",
           "slug": "sovereigns-orb",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Ingredients",
             "DOS2"
           ],
@@ -12414,7 +12356,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12427,7 +12368,7 @@
         "namePl": "Święty granat ręczny",
         "slug": "holy-hand-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "DOS2"
         ],
@@ -12436,7 +12377,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "DOS2"
       ],
@@ -12453,7 +12394,7 @@
           "namePl": "Kula suwerena",
           "slug": "sovereigns-orb",
           "tags": [
-            "Arrows-And-Grenades",
+            "Grenades",
             "Ingredients",
             "DOS2"
           ],
@@ -12479,7 +12420,7 @@
         "namePl": "Święty granat ręczny",
         "slug": "holy-hand-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "DOS2"
         ],
@@ -12488,7 +12429,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "DOS2"
       ],
@@ -12505,7 +12446,7 @@
           "namePl": "Duża mikstura odporności na powietrze",
           "slug": "large-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -12520,7 +12461,7 @@
           "namePl": "Duża mikstura odporności na powietrze",
           "slug": "large-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -12536,7 +12477,7 @@
         "namePl": "Wielka mikstura odporności na powietrze",
         "slug": "huge-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Air-Resistance",
           "DOS2"
         ],
@@ -12546,7 +12487,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Air-Resistance",
         "DOS2"
       ],
@@ -12563,7 +12504,7 @@
           "namePl": "Duża mikstura odporności na powietrze",
           "slug": "large-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -12594,7 +12535,7 @@
         "namePl": "Wielka mikstura odporności na powietrze",
         "slug": "huge-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Air-Resistance",
           "DOS2"
         ],
@@ -12604,7 +12545,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Air-Resistance",
         "DOS2"
       ],
@@ -12621,7 +12562,7 @@
           "namePl": "Duża mikstura odporności na ziemię",
           "slug": "large-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -12635,7 +12576,7 @@
           "namePl": "Duża mikstura odporności na ziemię",
           "slug": "large-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -12650,7 +12591,7 @@
         "namePl": "Wielka mikstura odporności na ziemię",
         "slug": "huge-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Earth-Resistance",
           "DOS2"
         ],
@@ -12659,7 +12600,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Earth-Resistance",
         "DOS2"
       ],
@@ -12676,7 +12617,7 @@
           "namePl": "Duża mikstura odporności na ziemię",
           "slug": "large-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -12706,7 +12647,7 @@
         "namePl": "Wielka mikstura odporności na ziemię",
         "slug": "huge-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Earth-Resistance",
           "DOS2"
         ],
@@ -12715,7 +12656,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Earth-Resistance",
         "DOS2"
       ],
@@ -12732,7 +12673,7 @@
           "namePl": "Duża mikstura odporności na ogień",
           "slug": "large-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -12746,7 +12687,7 @@
           "namePl": "Duża mikstura odporności na ogień",
           "slug": "large-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -12761,7 +12702,7 @@
         "namePl": "Wielka mikstura odporności na ogień",
         "slug": "huge-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "DOS2"
         ],
@@ -12770,7 +12711,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "DOS2"
       ],
@@ -12787,7 +12728,7 @@
           "namePl": "Duża mikstura odporności na ogień",
           "slug": "large-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -12817,7 +12758,7 @@
         "namePl": "Wielka mikstura odporności na ogień",
         "slug": "huge-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "DOS2"
         ],
@@ -12826,7 +12767,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "DOS2"
       ],
@@ -12843,7 +12784,7 @@
           "namePl": "Mikstura uzdrawiająca",
           "slug": "healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12857,7 +12798,7 @@
           "namePl": "Mikstura uzdrawiająca",
           "slug": "healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12872,7 +12813,7 @@
         "namePl": "Wielka mikstura uzdrawiająca",
         "slug": "huge-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -12884,7 +12825,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -12902,7 +12843,7 @@
           "namePl": "Mikstura uzdrawiająca",
           "slug": "healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12932,7 +12873,7 @@
         "namePl": "Wielka mikstura uzdrawiająca",
         "slug": "huge-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -12944,7 +12885,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -12962,7 +12903,7 @@
           "namePl": "Mikstura uzdrawiająca",
           "slug": "healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -12992,7 +12933,7 @@
         "namePl": "Wielka mikstura uzdrawiająca",
         "slug": "huge-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -13004,7 +12945,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -13022,7 +12963,7 @@
           "namePl": "Wielka mikstura uzdrawiająca",
           "slug": "huge-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -13048,7 +12989,7 @@
         "namePl": "Wielka fiolka trucizny",
         "slug": "huge-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -13059,7 +13000,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -13077,7 +13018,7 @@
           "namePl": "Duża butelka trucizny",
           "slug": "large-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -13108,7 +13049,7 @@
         "namePl": "Wielka fiolka trucizny",
         "slug": "huge-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -13119,7 +13060,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -13137,7 +13078,7 @@
           "namePl": "Duża butelka trucizny",
           "slug": "large-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -13152,7 +13093,7 @@
           "namePl": "Duża butelka trucizny",
           "slug": "large-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -13168,7 +13109,7 @@
         "namePl": "Wielka fiolka trucizny",
         "slug": "huge-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -13179,7 +13120,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -13197,7 +13138,7 @@
           "namePl": "Duża butelka trucizny",
           "slug": "large-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -13228,7 +13169,7 @@
         "namePl": "Wielka fiolka trucizny",
         "slug": "huge-poison-vial",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -13239,7 +13180,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -13257,7 +13198,7 @@
           "namePl": "Duża mikstura odporności na wodę",
           "slug": "large-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -13271,7 +13212,7 @@
           "namePl": "Duża mikstura odporności na wodę",
           "slug": "large-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -13286,7 +13227,7 @@
         "namePl": "Wielka mikstura odporności na wodę",
         "slug": "huge-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Water-Resistance",
           "DOS2"
         ],
@@ -13295,7 +13236,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Water-Resistance",
         "DOS2"
       ],
@@ -13312,7 +13253,7 @@
           "namePl": "Duża mikstura odporności na wodę",
           "slug": "large-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -13342,7 +13283,7 @@
         "namePl": "Wielka mikstura odporności na wodę",
         "slug": "huge-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Water-Resistance",
           "DOS2"
         ],
@@ -13351,7 +13292,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Water-Resistance",
         "DOS2"
       ],
@@ -13875,13 +13816,11 @@
         "namePl": "Prowizoryczna łopata",
         "slug": "improvised-shovel",
         "tags": [
-          "Tools",
           "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Tools",
         "Ingredients",
         "DOS2"
       ],
@@ -13961,7 +13900,6 @@
           "slug": "shadow-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -14093,13 +14031,13 @@
         "namePl": "Mikstura niewidzialności",
         "slug": "invisibility-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "INVISIBLE",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "INVISIBLE",
         "DOS2"
       ],
@@ -14138,7 +14076,7 @@
         "namePl": "Słój miodu",
         "slug": "jar-of-honey",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Intelligence",
           "Healing",
           "Poison-Resistance",
@@ -14149,7 +14087,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Intelligence",
         "Healing",
         "Poison-Resistance",
@@ -14181,7 +14119,7 @@
           "slug": "knife-or-dagger",
           "tags": [
             "Weapons",
-            "Tools",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -14227,7 +14165,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -14241,7 +14179,7 @@
           "namePl": "Powalający grot",
           "slug": "knockdown-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -14255,7 +14193,7 @@
         "namePl": "Strzała powalająca",
         "slug": "knockdown-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2"
@@ -14266,7 +14204,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2"
@@ -14280,8 +14218,9 @@
       "id": "Strzaly-i-granaty/KNOCKDOWN-ARROWHEAD:CuttingTool+Adult Antler",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -14302,7 +14241,7 @@
         "namePl": "Powalający grot",
         "slug": "knockdown-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -14311,7 +14250,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -14323,8 +14262,9 @@
       "id": "Strzaly-i-granaty/KNOCKDOWN-ARROWHEAD:CuttingTool+Antler",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -14349,7 +14289,7 @@
         "namePl": "Powalający grot",
         "slug": "knockdown-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -14358,7 +14298,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -14375,7 +14315,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -14386,7 +14325,6 @@
           "name": "Medium % Rune",
           "slug": "medium-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -14395,7 +14333,6 @@
           "name": "Medium % Rune",
           "slug": "medium-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -14405,13 +14342,11 @@
         "name": "Large % Rune",
         "slug": "large-rune",
         "tags": [
-          "Magic",
           "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
         "Ingredients",
         "DOS2"
       ],
@@ -14427,7 +14362,6 @@
           "name": "Large % Rune",
           "slug": "large-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -14437,7 +14371,6 @@
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -14450,12 +14383,12 @@
         "name": "Large % Rune of Power",
         "slug": "large-rune-of-power",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -14471,7 +14404,7 @@
           "namePl": "Średnia mikstura odporności na powietrze",
           "slug": "medium-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -14502,7 +14435,7 @@
         "namePl": "Duża mikstura odporności na powietrze",
         "slug": "large-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -14513,7 +14446,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -14531,7 +14464,7 @@
           "namePl": "Średnia mikstura odporności na powietrze",
           "slug": "medium-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -14546,7 +14479,7 @@
           "namePl": "Średnia mikstura odporności na powietrze",
           "slug": "medium-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -14562,7 +14495,7 @@
         "namePl": "Duża mikstura odporności na powietrze",
         "slug": "large-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -14573,7 +14506,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -14591,7 +14524,7 @@
           "namePl": "Średnia mikstura odporności na powietrze",
           "slug": "medium-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -14622,7 +14555,7 @@
         "namePl": "Duża mikstura odporności na powietrze",
         "slug": "large-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -14633,7 +14566,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -14651,7 +14584,7 @@
           "namePl": "Średnia mikstura odporności na ziemię",
           "slug": "medium-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -14681,7 +14614,7 @@
         "namePl": "Duża mikstura odporności na ziemię",
         "slug": "large-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -14691,7 +14624,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -14709,7 +14642,7 @@
           "namePl": "Średnia mikstura odporności na ziemię",
           "slug": "medium-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -14723,7 +14656,7 @@
           "namePl": "Średnia mikstura odporności na ziemię",
           "slug": "medium-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -14738,7 +14671,7 @@
         "namePl": "Duża mikstura odporności na ziemię",
         "slug": "large-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -14748,7 +14681,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -14766,7 +14699,7 @@
           "namePl": "Średnia mikstura odporności na ziemię",
           "slug": "medium-earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -14796,7 +14729,7 @@
         "namePl": "Duża mikstura odporności na ziemię",
         "slug": "large-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -14806,7 +14739,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -14824,7 +14757,7 @@
           "namePl": "Średnia mikstura odporności na ogień",
           "slug": "medium-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -14854,7 +14787,7 @@
         "namePl": "Duża mikstura odporności na ogień",
         "slug": "large-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -14864,7 +14797,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -14882,7 +14815,7 @@
           "namePl": "Średnia mikstura odporności na ogień",
           "slug": "medium-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -14896,7 +14829,7 @@
           "namePl": "Średnia mikstura odporności na ogień",
           "slug": "medium-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -14911,7 +14844,7 @@
         "namePl": "Duża mikstura odporności na ogień",
         "slug": "large-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -14921,7 +14854,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -14939,7 +14872,7 @@
           "namePl": "Średnia mikstura odporności na ogień",
           "slug": "medium-fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -14969,7 +14902,7 @@
         "namePl": "Duża mikstura odporności na ogień",
         "slug": "large-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -14979,7 +14912,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -14997,7 +14930,7 @@
           "namePl": "Średnia mikstura Pancerza Magicznego",
           "slug": "medium-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -15027,7 +14960,7 @@
         "namePl": "Duża mikstura Pancerza Magicznego",
         "slug": "large-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Magic-Armour",
           "DOS2"
         ],
@@ -15036,7 +14969,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Magic-Armour",
         "DOS2"
       ],
@@ -15053,7 +14986,7 @@
           "namePl": "Średnia mikstura Pancerza Magicznego",
           "slug": "medium-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -15067,7 +15000,7 @@
           "namePl": "Średnia mikstura Pancerza Magicznego",
           "slug": "medium-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -15082,7 +15015,7 @@
         "namePl": "Duża mikstura Pancerza Magicznego",
         "slug": "large-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Magic-Armour",
           "DOS2"
         ],
@@ -15091,7 +15024,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Magic-Armour",
         "DOS2"
       ],
@@ -15108,7 +15041,7 @@
           "namePl": "Średnia mikstura Pancerza Magicznego",
           "slug": "medium-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -15138,7 +15071,7 @@
         "namePl": "Duża mikstura Pancerza Magicznego",
         "slug": "large-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Magic-Armour",
           "DOS2"
         ],
@@ -15147,7 +15080,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Magic-Armour",
         "DOS2"
       ],
@@ -15164,7 +15097,7 @@
           "namePl": "Średnia mikstura Pancerza Fizycznego",
           "slug": "medium-physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -15194,7 +15127,7 @@
         "namePl": "Duża mikstura Pancerza Fizycznego",
         "slug": "large-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Physical-Armour",
           "DOS2"
         ],
@@ -15203,7 +15136,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Physical-Armour",
         "DOS2"
       ],
@@ -15220,7 +15153,7 @@
           "namePl": "Średnia mikstura Pancerza Fizycznego",
           "slug": "medium-physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -15234,7 +15167,7 @@
           "namePl": "Średnia mikstura Pancerza Fizycznego",
           "slug": "medium-physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -15249,7 +15182,7 @@
         "namePl": "Duża mikstura Pancerza Fizycznego",
         "slug": "large-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Physical-Armour",
           "DOS2"
         ],
@@ -15258,7 +15191,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Physical-Armour",
         "DOS2"
       ],
@@ -15275,7 +15208,7 @@
           "namePl": "Średnia mikstura Pancerza Fizycznego",
           "slug": "medium-physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -15305,7 +15238,7 @@
         "namePl": "Duża mikstura Pancerza Fizycznego",
         "slug": "large-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Physical-Armour",
           "DOS2"
         ],
@@ -15314,7 +15247,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Physical-Armour",
         "DOS2"
       ],
@@ -15331,7 +15264,7 @@
           "namePl": "Mikstura uzdrawiająca",
           "slug": "healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -15355,7 +15288,7 @@
         "namePl": "Duża butelka trucizny",
         "slug": "large-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -15366,7 +15299,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -15384,7 +15317,7 @@
           "namePl": "Średnia butelka trucizny",
           "slug": "medium-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -15415,7 +15348,7 @@
         "namePl": "Duża butelka trucizny",
         "slug": "large-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -15426,7 +15359,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -15444,7 +15377,7 @@
           "namePl": "Średnia butelka trucizny",
           "slug": "medium-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -15475,7 +15408,7 @@
         "namePl": "Duża butelka trucizny",
         "slug": "large-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -15486,7 +15419,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -15504,7 +15437,7 @@
           "namePl": "Średnia butelka trucizny",
           "slug": "medium-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -15519,7 +15452,7 @@
           "namePl": "Średnia butelka trucizny",
           "slug": "medium-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -15535,7 +15468,7 @@
         "namePl": "Duża butelka trucizny",
         "slug": "large-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -15546,7 +15479,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -15564,7 +15497,7 @@
           "namePl": "Średnia mikstura wszelkiej odporności",
           "slug": "medium-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -15578,7 +15511,7 @@
           "namePl": "Średnia mikstura wszelkiej odporności",
           "slug": "medium-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -15593,7 +15526,7 @@
         "namePl": "Duża mikstura wszelkiej odporności",
         "slug": "large-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -15603,7 +15536,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -15624,7 +15557,7 @@
           "namePl": "Średnia mikstura wszelkiej odporności",
           "slug": "medium-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -15654,7 +15587,7 @@
         "namePl": "Duża mikstura wszelkiej odporności",
         "slug": "large-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -15664,7 +15597,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -15685,7 +15618,7 @@
           "namePl": "Średnia mikstura odporności na wodę",
           "slug": "medium-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -15715,7 +15648,7 @@
         "namePl": "Duża mikstura odporności na wodę",
         "slug": "large-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -15725,7 +15658,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -15743,7 +15676,7 @@
           "namePl": "Średnia mikstura odporności na wodę",
           "slug": "medium-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -15757,7 +15690,7 @@
           "namePl": "Średnia mikstura odporności na wodę",
           "slug": "medium-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -15772,7 +15705,7 @@
         "namePl": "Duża mikstura odporności na wodę",
         "slug": "large-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -15782,7 +15715,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -15800,7 +15733,7 @@
           "namePl": "Średnia mikstura odporności na wodę",
           "slug": "medium-water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -15830,7 +15763,7 @@
         "namePl": "Duża mikstura odporności na wodę",
         "slug": "large-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -15840,7 +15773,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -16104,7 +16037,7 @@
           "slug": "knife-or-dagger",
           "tags": [
             "Weapons",
-            "Tools",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -16176,7 +16109,7 @@
           "namePl": "Podroby",
           "slug": "giblets",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -16247,7 +16180,7 @@
           "namePl": "Podroby",
           "slug": "giblets",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -16581,7 +16514,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -16603,7 +16535,7 @@
         "name": "Lockpicks",
         "slug": "lockpicks",
         "tags": [
-          "Equipment",
+          "Ingredients",
           "DOS2"
         ],
         "craftingCategories": [
@@ -16611,7 +16543,7 @@
         ]
       },
       "tags": [
-        "Equipment",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -16648,7 +16580,7 @@
         "name": "Lockpicks",
         "slug": "lockpicks",
         "tags": [
-          "Equipment",
+          "Ingredients",
           "DOS2"
         ],
         "craftingCategories": [
@@ -16656,7 +16588,7 @@
         ]
       },
       "tags": [
-        "Equipment",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -16696,7 +16628,7 @@
         "name": "Lockpicks",
         "slug": "lockpicks",
         "tags": [
-          "Equipment",
+          "Ingredients",
           "DOS2"
         ],
         "craftingCategories": [
@@ -16704,7 +16636,7 @@
         ]
       },
       "tags": [
-        "Equipment",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -16742,7 +16674,7 @@
         "namePl": "Granat miłości",
         "slug": "love-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "CHARMED",
           "DOS2"
@@ -16753,7 +16685,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "CHARMED",
         "DOS2"
@@ -16784,7 +16716,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -16797,7 +16728,7 @@
         "namePl": "Granat miłości",
         "slug": "love-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "CHARMED",
           "DOS2"
@@ -16808,7 +16739,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "CHARMED",
         "DOS2"
@@ -17031,7 +16962,7 @@
           "namePl": "Gotowany ziemniak",
           "slug": "boiled-potato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Constitution",
             "Healing",
             "DOS2"
@@ -17045,7 +16976,7 @@
           "namePl": "Mleko",
           "slug": "milk",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -17060,7 +16991,7 @@
         "namePl": "Tłuczone ziemniaki",
         "slug": "mashed-potatoes",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -17070,7 +17001,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
@@ -17088,7 +17019,7 @@
           "namePl": "Zimne tłuczone ziemniaki",
           "slug": "cold-mashed-potatoes",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -17111,7 +17042,7 @@
         "namePl": "Tłuczone ziemniaki",
         "slug": "mashed-potatoes",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -17121,15 +17052,15 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
       ],
       "requirements": "",
-      "notes": "",
+      "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A700:G700"
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A700:G700; [ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A702:G702"
     },
     {
       "id": "Mikstury-i-jedzenie/MASHED-POTATOES:Cold Mashed Potatoes+Boiling Pot",
@@ -17139,7 +17070,7 @@
           "namePl": "Zimne tłuczone ziemniaki",
           "slug": "cold-mashed-potatoes",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -17162,7 +17093,7 @@
         "namePl": "Tłuczone ziemniaki",
         "slug": "mashed-potatoes",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -17172,7 +17103,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
@@ -17183,56 +17114,6 @@
       "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A701:G701"
     },
     {
-      "id": "Mikstury-i-jedzenie/MASHED-POTATOES:Cold Mashed Potatoes+Oven, Furnace, or Mobile Kitchen",
-      "ingredients": [
-        {
-          "name": "Cold Mashed Potatoes",
-          "namePl": "Zimne tłuczone ziemniaki",
-          "slug": "cold-mashed-potatoes",
-          "tags": [
-            "Potions-And-Food",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "slug": "oven-furnace-or-mobile-kitchen",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mashed Potatoes",
-        "namePl": "Tłuczone ziemniaki",
-        "slug": "mashed-potatoes",
-        "tags": [
-          "Potions-And-Food",
-          "Healing",
-          "Strength",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Potions-And-Food",
-        "Healing",
-        "Strength",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "Add 10% Heal, 1 Strength",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A702:G702"
-    },
-    {
       "id": "Skladniki/MEDIUM--percent-RUNE:Pixie Dust+Small % Rune+Small % Rune",
       "ingredients": [
         {
@@ -17241,7 +17122,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -17252,7 +17132,6 @@
           "name": "Small % Rune",
           "slug": "small-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -17261,7 +17140,6 @@
           "name": "Small % Rune",
           "slug": "small-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -17271,13 +17149,11 @@
         "name": "Medium % Rune",
         "slug": "medium-rune",
         "tags": [
-          "Magic",
           "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
         "Ingredients",
         "DOS2"
       ],
@@ -17293,7 +17169,6 @@
           "name": "Medium % Rune",
           "slug": "medium-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -17303,7 +17178,6 @@
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -17316,12 +17190,12 @@
         "name": "Medium % Rune of Power",
         "slug": "medium-rune-of-power",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -17336,7 +17210,7 @@
           "name": "Small Air Resistance Potion",
           "slug": "small-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -17363,7 +17237,7 @@
         "namePl": "Średnia mikstura odporności na powietrze",
         "slug": "medium-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -17374,7 +17248,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -17391,7 +17265,7 @@
           "name": "Small Air Resistance Potion",
           "slug": "small-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -17401,7 +17275,7 @@
           "name": "Small Air Resistance Potion",
           "slug": "small-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -17413,7 +17287,7 @@
         "namePl": "Średnia mikstura odporności na powietrze",
         "slug": "medium-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -17424,7 +17298,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -17441,7 +17315,7 @@
           "name": "Small Air Resistance Potion",
           "slug": "small-air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -17468,7 +17342,7 @@
         "namePl": "Średnia mikstura odporności na powietrze",
         "slug": "medium-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
@@ -17479,7 +17353,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -17497,7 +17371,7 @@
           "namePl": "Mikstura odporności na ziemię",
           "slug": "earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -17508,7 +17382,7 @@
           "namePl": "Mikstura odporności na ziemię",
           "slug": "earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -17520,7 +17394,7 @@
         "namePl": "Średnia mikstura odporności na ziemię",
         "slug": "medium-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -17530,7 +17404,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -17548,7 +17422,7 @@
           "namePl": "Mikstura odporności na ziemię",
           "slug": "earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -17575,7 +17449,7 @@
         "namePl": "Średnia mikstura odporności na ziemię",
         "slug": "medium-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -17585,7 +17459,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -17603,7 +17477,7 @@
           "namePl": "Mikstura odporności na ziemię",
           "slug": "earth-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Earth-Resistance",
             "DOS2"
@@ -17630,7 +17504,7 @@
         "namePl": "Średnia mikstura odporności na ziemię",
         "slug": "medium-earth-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Earth-Resistance",
           "DOS2"
@@ -17640,7 +17514,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Earth-Resistance",
         "DOS2"
@@ -17658,7 +17532,7 @@
           "namePl": "Mikstura odporności na ogień",
           "slug": "fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -17669,7 +17543,7 @@
           "namePl": "Mikstura odporności na ogień",
           "slug": "fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -17681,7 +17555,7 @@
         "namePl": "Średnia mikstura odporności na ogień",
         "slug": "medium-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -17691,7 +17565,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -17709,7 +17583,7 @@
           "namePl": "Mikstura odporności na ogień",
           "slug": "fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -17736,7 +17610,7 @@
         "namePl": "Średnia mikstura odporności na ogień",
         "slug": "medium-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -17746,7 +17620,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -17764,7 +17638,7 @@
           "namePl": "Mikstura odporności na ogień",
           "slug": "fire-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Fire-Resistance",
             "DOS2"
@@ -17791,7 +17665,7 @@
         "namePl": "Średnia mikstura odporności na ogień",
         "slug": "medium-fire-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Fire-Resistance",
           "DOS2"
@@ -17801,7 +17675,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Fire-Resistance",
         "DOS2"
@@ -17819,7 +17693,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -17850,7 +17724,7 @@
         "namePl": "Średnia mikstura uzdrawiająca",
         "slug": "medium-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -17861,7 +17735,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -17878,7 +17752,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -17909,7 +17783,7 @@
         "namePl": "Średnia mikstura uzdrawiająca",
         "slug": "medium-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -17920,7 +17794,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -17937,7 +17811,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -17952,7 +17826,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -17968,7 +17842,7 @@
         "namePl": "Średnia mikstura uzdrawiająca",
         "slug": "medium-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -17979,7 +17853,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -17996,7 +17870,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -18027,7 +17901,7 @@
         "namePl": "Średnia mikstura uzdrawiająca",
         "slug": "medium-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Healing",
           "DOS2"
         ],
@@ -18038,7 +17912,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Healing",
         "DOS2"
       ],
@@ -18055,7 +17929,7 @@
           "namePl": "Średnia butelka trucizny",
           "slug": "medium-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -18085,7 +17959,7 @@
         "namePl": "Średnia mikstura uzdrawiająca",
         "slug": "medium-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -18096,7 +17970,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -18113,7 +17987,7 @@
           "namePl": "Mała mikstura Pancerza Magicznego",
           "slug": "small-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -18143,7 +18017,7 @@
         "namePl": "Średnia mikstura Pancerza Magicznego",
         "slug": "medium-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Magic-Armour",
           "DOS2"
@@ -18153,7 +18027,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Magic-Armour",
         "DOS2"
@@ -18171,7 +18045,7 @@
           "namePl": "Mała mikstura Pancerza Magicznego",
           "slug": "small-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -18201,7 +18075,7 @@
         "namePl": "Średnia mikstura Pancerza Magicznego",
         "slug": "medium-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Magic-Armour",
           "DOS2"
@@ -18211,7 +18085,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Magic-Armour",
         "DOS2"
@@ -18229,7 +18103,7 @@
           "namePl": "Mała mikstura Pancerza Magicznego",
           "slug": "small-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -18243,7 +18117,7 @@
           "namePl": "Mała mikstura Pancerza Magicznego",
           "slug": "small-magic-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Magic-Armour",
             "DOS2"
@@ -18258,7 +18132,7 @@
         "namePl": "Średnia mikstura Pancerza Magicznego",
         "slug": "medium-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Magic-Armour",
           "DOS2"
@@ -18268,7 +18142,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Magic-Armour",
         "DOS2"
@@ -18286,7 +18160,7 @@
           "namePl": "Mikstura Pancerza Fizycznego",
           "slug": "physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -18316,7 +18190,7 @@
         "namePl": "Średnia mikstura Pancerza Fizycznego",
         "slug": "medium-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Physical-Armour",
           "DOS2"
@@ -18326,7 +18200,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Physical-Armour",
         "DOS2"
@@ -18344,7 +18218,7 @@
           "namePl": "Mikstura Pancerza Fizycznego",
           "slug": "physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -18374,7 +18248,7 @@
         "namePl": "Średnia mikstura Pancerza Fizycznego",
         "slug": "medium-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Physical-Armour",
           "DOS2"
@@ -18384,7 +18258,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Physical-Armour",
         "DOS2"
@@ -18402,7 +18276,7 @@
           "namePl": "Mikstura Pancerza Fizycznego",
           "slug": "physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -18416,7 +18290,7 @@
           "namePl": "Mikstura Pancerza Fizycznego",
           "slug": "physical-armour-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Physical-Armour",
             "DOS2"
@@ -18431,7 +18305,7 @@
         "namePl": "Średnia mikstura Pancerza Fizycznego",
         "slug": "medium-physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Physical-Armour",
           "DOS2"
@@ -18441,7 +18315,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Physical-Armour",
         "DOS2"
@@ -18459,7 +18333,7 @@
           "namePl": "Średnia mikstura uzdrawiająca",
           "slug": "medium-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "DOS2"
           ],
           "craftingCategories": [
@@ -18483,7 +18357,7 @@
         "namePl": "Średnia butelka trucizny",
         "slug": "medium-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -18494,7 +18368,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -18512,7 +18386,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -18543,7 +18417,7 @@
         "namePl": "Średnia butelka trucizny",
         "slug": "medium-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -18554,7 +18428,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -18572,7 +18446,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -18603,7 +18477,7 @@
         "namePl": "Średnia butelka trucizny",
         "slug": "medium-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -18614,7 +18488,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -18632,7 +18506,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -18647,7 +18521,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -18663,7 +18537,7 @@
         "namePl": "Średnia butelka trucizny",
         "slug": "medium-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -18674,7 +18548,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -18692,7 +18566,7 @@
           "namePl": "Mała mikstura wszelkiej odporności",
           "slug": "minor-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -18722,7 +18596,7 @@
         "namePl": "Średnia mikstura wszelkiej odporności",
         "slug": "medium-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -18732,7 +18606,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -18753,7 +18627,7 @@
           "namePl": "Mała mikstura wszelkiej odporności",
           "slug": "minor-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -18767,7 +18641,7 @@
           "namePl": "Mała mikstura wszelkiej odporności",
           "slug": "minor-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -18782,7 +18656,7 @@
         "namePl": "Średnia mikstura wszelkiej odporności",
         "slug": "medium-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -18792,7 +18666,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -18813,7 +18687,7 @@
           "namePl": "Mała mikstura wszelkiej odporności",
           "slug": "minor-resist-all-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Fire-Resistance",
             "Air-Resistance",
             "Poison-Resistance",
@@ -18843,7 +18717,7 @@
         "namePl": "Średnia mikstura wszelkiej odporności",
         "slug": "medium-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -18853,7 +18727,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -18874,7 +18748,7 @@
           "namePl": "Mikstura odporności na wodę",
           "slug": "water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -18901,7 +18775,7 @@
         "namePl": "Średnia mikstura odporności na wodę",
         "slug": "medium-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -18911,7 +18785,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -18929,7 +18803,7 @@
           "namePl": "Mikstura odporności na wodę",
           "slug": "water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -18956,7 +18830,7 @@
         "namePl": "Średnia mikstura odporności na wodę",
         "slug": "medium-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -18966,7 +18840,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -18984,7 +18858,7 @@
           "namePl": "Mikstura odporności na wodę",
           "slug": "water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -18995,7 +18869,7 @@
           "namePl": "Mikstura odporności na wodę",
           "slug": "water-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Water-Resistance",
             "DOS2"
@@ -19007,7 +18881,7 @@
         "namePl": "Średnia mikstura odporności na wodę",
         "slug": "medium-water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
@@ -19017,7 +18891,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -19330,7 +19204,7 @@
           "namePl": "Dzbanek mleka",
           "slug": "milk-jug",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -19358,7 +19232,7 @@
         "namePl": "Mleko",
         "slug": "milk",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -19368,7 +19242,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -19386,7 +19260,7 @@
           "namePl": "Słój miodu",
           "slug": "jar-of-honey",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Intelligence",
             "Healing",
             "Poison-Resistance",
@@ -19401,7 +19275,7 @@
           "namePl": "Mleko",
           "slug": "milk",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -19416,7 +19290,7 @@
         "namePl": "Mleko i miód",
         "slug": "milk-and-honey",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Poison-Resistance",
           "WARM",
@@ -19427,7 +19301,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Poison-Resistance",
         "WARM",
@@ -19470,14 +19344,14 @@
         "name": "Mind Maggot Grenade",
         "slug": "mind-maggot-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "CHARMED",
           "DOS2"
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "CHARMED",
         "DOS2"
@@ -19522,14 +19396,14 @@
         "namePl": "Mała mikstura Kondycji",
         "slug": "minor-constitution-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Constitution",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Constitution",
         "DOS2"
@@ -19575,13 +19449,13 @@
         "namePl": "Mała mikstura Zręczności",
         "slug": "minor-finesse-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Finesse",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Finesse",
         "DOS2"
       ],
@@ -19626,7 +19500,7 @@
         "namePl": "Mała mikstura uzdrawiająca",
         "slug": "minor-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -19638,7 +19512,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -19656,7 +19530,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -19686,7 +19560,7 @@
         "namePl": "Mała mikstura uzdrawiająca",
         "slug": "minor-healing-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -19698,7 +19572,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -19744,14 +19618,14 @@
         "namePl": "Mała mikstura Inteligencji",
         "slug": "minor-intelligence-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Intelligence",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Intelligence",
         "DOS2"
@@ -19801,7 +19675,7 @@
         "namePl": "Mała mikstura wszelkiej odporności",
         "slug": "minor-resist-all-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Fire-Resistance",
           "Air-Resistance",
           "Poison-Resistance",
@@ -19811,7 +19685,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Fire-Resistance",
         "Air-Resistance",
         "Poison-Resistance",
@@ -19860,14 +19734,14 @@
         "namePl": "Mała mikstura Siły",
         "slug": "minor-strength-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Strength",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Strength",
         "DOS2"
@@ -19913,13 +19787,13 @@
         "namePl": "Mała mikstura Bystrości",
         "slug": "minor-wits-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Wits",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Wits",
         "DOS2"
       ],
@@ -20002,7 +19876,7 @@
           "namePl": "Kubek wody",
           "slug": "mug-of-water",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -20017,7 +19891,7 @@
         "namePl": "Kubek herbaty",
         "slug": "mug-of-tea",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -20026,7 +19900,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -20070,7 +19944,7 @@
         "namePl": "Kubek wody",
         "slug": "mug-of-water",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Ingredients",
           "Healing",
           "DOS2"
@@ -20080,7 +19954,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients",
         "Healing",
         "DOS2"
@@ -20097,7 +19971,7 @@
           "name": "Giant % Rune",
           "slug": "giant-rune",
           "tags": [
-            "Magic",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -20106,7 +19980,6 @@
           "namePl": "Mistyczna rama runy",
           "slug": "mystical-rune-frame",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -20119,12 +19992,12 @@
         "name": "Mystical Giant % Rune",
         "slug": "mystical-giant-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -20139,7 +20012,6 @@
           "name": "Large % Rune",
           "slug": "large-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -20149,7 +20021,6 @@
           "namePl": "Mistyczna rama runy",
           "slug": "mystical-rune-frame",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -20162,12 +20033,12 @@
         "name": "Mystical Large % Rune",
         "slug": "mystical-large-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -20182,7 +20053,6 @@
           "name": "Medium % Rune",
           "slug": "medium-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -20192,7 +20062,6 @@
           "namePl": "Mistyczna rama runy",
           "slug": "mystical-rune-frame",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -20205,12 +20074,12 @@
         "name": "Mystical Medium % Rune",
         "slug": "mystical-medium-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -20225,7 +20094,6 @@
           "name": "Small % Rune",
           "slug": "small-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -20235,7 +20103,6 @@
           "namePl": "Mistyczna rama runy",
           "slug": "mystical-rune-frame",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -20248,12 +20115,12 @@
         "name": "Mystical Small % Rune",
         "slug": "mystical-small-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -20294,7 +20161,7 @@
         "namePl": "Granat z gwoździami",
         "slug": "nailbomb-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BLEEDING",
           "DOS2"
@@ -20304,7 +20171,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BLEEDING",
         "DOS2"
@@ -20347,7 +20214,7 @@
         "namePl": "Granat z gwoździami",
         "slug": "nailbomb-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BLEEDING",
           "DOS2"
@@ -20357,7 +20224,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BLEEDING",
         "DOS2"
@@ -20400,12 +20267,12 @@
         "namePl": "Igła z nitką",
         "slug": "needle-and-thread",
         "tags": [
-          "Equipment",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Equipment",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -20712,7 +20579,7 @@
         "namePl": "Flakon oleju",
         "slug": "oil-flask",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Oil-Surface",
           "DOS2"
@@ -20722,7 +20589,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Oil-Surface",
         "DOS2"
@@ -20752,7 +20619,7 @@
           "namePl": "Pomarańcza",
           "slug": "orange",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -20768,7 +20635,7 @@
         "namePl": "Sok pomarańczowy",
         "slug": "orange-juice",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Finesse",
           "DOS2"
@@ -20778,7 +20645,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Finesse",
         "DOS2"
@@ -20809,7 +20676,7 @@
           "namePl": "Pomarańcza",
           "slug": "orange",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -20825,7 +20692,7 @@
         "namePl": "Sok pomarańczowy",
         "slug": "orange-juice",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Finesse",
           "DOS2"
@@ -20835,7 +20702,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Finesse",
         "DOS2"
@@ -21009,7 +20876,7 @@
         "namePl": "Mikstura Pancerza Fizycznego",
         "slug": "physical-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Physical-Armour",
           "DOS2"
@@ -21019,7 +20886,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Physical-Armour",
         "DOS2"
@@ -21063,7 +20930,6 @@
         "slug": "pixie-dust",
         "tags": [
           "Ingredients",
-          "Magic",
           "DOS2"
         ],
         "craftingCategories": [
@@ -21072,7 +20938,6 @@
       },
       "tags": [
         "Ingredients",
-        "Magic",
         "DOS2"
       ],
       "requirements": "",
@@ -21089,7 +20954,7 @@
           "slug": "pizza-dough",
           "tags": [
             "Ingredients",
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -21115,7 +20980,7 @@
         "namePl": "Pizza",
         "slug": "pizza",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Constitution",
           "Healing",
           "DOS2"
@@ -21125,7 +20990,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Constitution",
         "Healing",
         "DOS2"
@@ -21143,7 +21008,7 @@
           "namePl": "Sos pomidorowy",
           "slug": "tomato-sauce",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -21173,7 +21038,7 @@
         "slug": "pizza-dough",
         "tags": [
           "Ingredients",
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "DOS2"
         ],
@@ -21183,7 +21048,7 @@
       },
       "tags": [
         "Ingredients",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "DOS2"
       ],
@@ -21229,7 +21094,7 @@
           "namePl": "Winogrona",
           "slug": "grapes",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -21326,7 +21191,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -21340,7 +21205,7 @@
           "namePl": "Zatruty grot",
           "slug": "poisoned-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -21354,7 +21219,7 @@
         "namePl": "Zatruta strzała",
         "slug": "poison-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "Poison-Surface",
           "POISONED",
@@ -21366,7 +21231,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "Poison-Surface",
         "POISONED",
@@ -21394,7 +21259,7 @@
           "namePl": "Strzała",
           "slug": "arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -21408,7 +21273,7 @@
         "namePl": "Zatruta strzała",
         "slug": "poison-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "Poison-Surface",
           "POISONED",
@@ -21420,7 +21285,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "Poison-Surface",
         "POISONED",
@@ -21461,7 +21326,7 @@
         "namePl": "Granat trującej chmury",
         "slug": "poison-cloud-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "POISONED",
           "DOS2"
@@ -21471,7 +21336,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "POISONED",
         "DOS2"
@@ -21501,7 +21366,7 @@
           "namePl": "Zgniłe jajka",
           "slug": "rotten-eggs",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "DISEASED",
             "DOS2"
@@ -21516,7 +21381,7 @@
         "namePl": "Granat trującej chmury",
         "slug": "poison-cloud-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "POISONED",
           "DOS2"
@@ -21526,7 +21391,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "POISONED",
         "DOS2"
@@ -21678,7 +21543,7 @@
           "namePl": "Eliksir uzdrawiający",
           "slug": "healing-elixir",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Healing",
             "HEALING_ELIXIR",
             "DOS2"
@@ -21702,7 +21567,7 @@
         "namePl": "Trujący eliksir",
         "slug": "poison-elixir",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "HEALING_ELIXIR",
           "DOS2"
         ],
@@ -21711,7 +21576,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "HEALING_ELIXIR",
         "DOS2"
       ],
@@ -21750,7 +21615,7 @@
         "namePl": "Fiolka trucizny",
         "slug": "poison-flask",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Poison-Surface",
           "POISONED",
@@ -21761,7 +21626,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Poison-Surface",
         "POISONED",
@@ -21976,7 +21841,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -21990,7 +21855,7 @@
           "namePl": "Grot trującej chmury",
           "slug": "poisoncloud-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -22004,7 +21869,7 @@
         "namePl": "Strzała trującej chmury",
         "slug": "poisoncloud-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "POISONED",
           "DOS2"
@@ -22015,7 +21880,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "POISONED",
         "DOS2"
@@ -22042,7 +21907,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -22058,7 +21923,7 @@
         "namePl": "Zatruty grot",
         "slug": "poisoned-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -22067,7 +21932,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -22083,7 +21948,7 @@
           "namePl": "Ziemniak",
           "slug": "potato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -22098,7 +21963,7 @@
           "namePl": "Mleko",
           "slug": "milk",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "DOS2"
@@ -22113,7 +21978,7 @@
         "namePl": "Kleik ziemniaczany",
         "slug": "potato-porridge",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Healing",
           "Strength",
           "DOS2"
@@ -22123,7 +21988,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Healing",
         "Strength",
         "DOS2"
@@ -22170,7 +22035,7 @@
         "namePl": "Mikstura ze Skóry Meduzy",
         "slug": "potion-of-jellyfish-skin",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "DOS2"
         ],
         "craftingCategories": [
@@ -22178,7 +22043,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "DOS2"
       ],
       "requirements": "",
@@ -22220,7 +22085,7 @@
         "namePl": "Mikstura zwinnej przewrotki",
         "slug": "potion-of-nimble-tumble",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Dodge",
           "DOS2"
         ],
@@ -22229,7 +22094,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Dodge",
         "DOS2"
       ],
@@ -22272,7 +22137,7 @@
         "namePl": "Mikstura siły woli",
         "slug": "potion-of-strong-will",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Blind-Immunity",
           "Sleep-Immunity",
           "Fear-Immunity",
@@ -22284,7 +22149,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Blind-Immunity",
         "Sleep-Immunity",
         "Fear-Immunity",
@@ -22328,7 +22193,7 @@
         "slug": "large-healing-potion-2",
         "tags": [
           "Special",
-          "Potions-And-Food",
+          "Potions",
           "POISONED",
           "DOS2"
         ],
@@ -22343,7 +22208,7 @@
       },
       "tags": [
         "Special",
-        "Potions-And-Food",
+        "Potions",
         "POISONED",
         "DOS2"
       ],
@@ -22360,7 +22225,7 @@
           "namePl": "Mikstura uwarzona przez wiedźmę",
           "slug": "witchs-brewed-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Special",
             "COW",
             "DOS2"
@@ -22386,7 +22251,7 @@
         "slug": "huge-healing-potion-2",
         "tags": [
           "Special",
-          "Potions-And-Food",
+          "Potions",
           "COW",
           "DOS2"
         ],
@@ -22401,7 +22266,7 @@
       },
       "tags": [
         "Special",
-        "Potions-And-Food",
+        "Potions",
         "COW",
         "DOS2"
       ],
@@ -22426,7 +22291,7 @@
           "namePl": "Mała butelka trucizny",
           "slug": "small-poison-bottle",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "POISONED",
             "DOS2"
@@ -22477,7 +22342,6 @@
           "slug": "pouch-of-superior-star-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ]
         }
@@ -22521,7 +22385,6 @@
           "namePl": "Moździerz i tłuczek",
           "slug": "mortar-and-pestle-2",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -22536,13 +22399,11 @@
         "slug": "pouch-of-superior-star-dust",
         "tags": [
           "Ingredients",
-          "Magic",
           "DOS2"
         ]
       },
       "tags": [
         "Ingredients",
-        "Magic",
         "DOS2"
       ],
       "requirements": "",
@@ -22816,7 +22677,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -22870,7 +22731,7 @@
           "slug": "knife-or-dagger",
           "tags": [
             "Weapons",
-            "Tools",
+            "Ingredients",
             "DOS2"
           ]
         },
@@ -23152,7 +23013,7 @@
           "namePl": "Śledź",
           "slug": "herring",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -23272,7 +23133,6 @@
           "slug": "shadow-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -23286,7 +23146,7 @@
           "namePl": "Surowe czerwone mięso",
           "slug": "raw-red-meat",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Healing",
@@ -23574,7 +23434,6 @@
           "slug": "tormented-soul",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -23587,7 +23446,7 @@
           "namePl": "Czosnek",
           "slug": "garlic",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Constitution",
             "Persuasion",
@@ -23695,7 +23554,7 @@
           "name": "Air Resistance Potion",
           "slug": "air-resistance-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "Air-Resistance",
             "DOS2"
@@ -23710,7 +23569,7 @@
         "namePl": "Granat Wrzawy",
         "slug": "razzle-dazzle-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BLIND",
           "DOS2"
@@ -23720,7 +23579,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BLIND",
         "DOS2"
@@ -23766,7 +23625,7 @@
         "namePl": "Granat Wrzawy",
         "slug": "razzle-dazzle-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "BLIND",
           "DOS2"
@@ -23776,7 +23635,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "BLIND",
         "DOS2"
@@ -24150,7 +24009,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -24239,7 +24097,7 @@
           "namePl": "Zimne frytki",
           "slug": "cold-fries",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Healing",
             "DOS2"
           ],
@@ -24262,7 +24120,7 @@
         "namePl": "Rivellońskie frytki",
         "slug": "rivellon-fries",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Constitution",
           "Healing",
           "DOS2"
@@ -24272,57 +24130,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
-        "Constitution",
-        "Healing",
-        "DOS2"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A719:G719"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/RIVELLON-FRIES:Cold Fries+Oven, Furnace, or Mobile Kitchen",
-      "ingredients": [
-        {
-          "name": "Cold Fries",
-          "namePl": "Zimne frytki",
-          "slug": "cold-fries",
-          "tags": [
-            "Potions-And-Food",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Food"
-          ]
-        },
-        {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "slug": "oven-furnace-or-mobile-kitchen",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Rivellon Fries",
-        "namePl": "Rivellońskie frytki",
-        "slug": "rivellon-fries",
-        "tags": [
-          "Potions-And-Food",
-          "Constitution",
-          "Healing",
-          "DOS2"
-        ],
-        "craftingCategories": [
-          "Food"
-        ]
-      },
-      "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Constitution",
         "Healing",
         "DOS2"
@@ -24330,7 +24138,7 @@
       "requirements": "",
       "notes": "Add 15% Heal, 1 Constitution -1 Dexterity",
       "remarks": "",
-      "source": ""
+      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A719:G719"
     },
     {
       "id": "Skladniki/ROPE:Yarn+Yarn",
@@ -24537,7 +24345,6 @@
           "slug": "shadow-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -24905,7 +24712,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -25050,7 +24856,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25064,7 +24870,7 @@
           "namePl": "Porażający grot",
           "slug": "shocking-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -25079,7 +24885,7 @@
         "namePl": "Porażająca strzała",
         "slug": "shocking-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "SHOCKED",
           "DOS2"
@@ -25090,7 +24896,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "SHOCKED",
         "DOS2"
@@ -25104,8 +24910,9 @@
       "id": "Skladniki/SHOCKING-ARROWHEAD:CuttingTool+Tooth",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -25130,7 +24937,7 @@
         "namePl": "Porażający grot",
         "slug": "shocking-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "DOS2"
         ],
@@ -25140,7 +24947,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "DOS2"
       ],
@@ -25275,8 +25082,9 @@
       "id": "Strzaly-i-granaty/SHORT-STICK-AND-WOOD-CHIPS:CuttingTool+Long Branch",
       "ingredients": [
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -25297,15 +25105,35 @@
         }
       ],
       "result": {
-        "name": "Short Stick and Wood Chips",
-        "slug": "short-stick-and-wood-chips",
+        "name": "Short Stick",
+        "namePl": "Krótki kij",
+        "slug": "short-stick",
         "tags": [
-          "Arrows-And-Grenades",
+          "Ingredients",
           "DOS2"
+        ],
+        "quantity": "x2",
+        "craftingCategories": [
+          "Junk",
+          "Wood"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "namePl": "Drzazgi",
+          "slug": "wood-chips",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Wood"
+          ]
+        }
+      ],
       "tags": [
-        "Arrows-And-Grenades",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -25612,7 +25440,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25626,7 +25454,7 @@
           "namePl": "Grot spowalniający",
           "slug": "slowdown-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25639,7 +25467,7 @@
         "namePl": "Strzała spowalniająca",
         "slug": "slowdown-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "SLOWED",
           "DOS2"
@@ -25649,7 +25477,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "SLOWED",
         "DOS2"
@@ -25676,7 +25504,7 @@
           "namePl": "Strzała",
           "slug": "arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25690,7 +25518,7 @@
         "namePl": "Strzała spowalniająca",
         "slug": "slowdown-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "SLOWED",
           "DOS2"
@@ -25700,7 +25528,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "SLOWED",
         "DOS2"
@@ -25727,7 +25555,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -25743,7 +25571,7 @@
         "namePl": "Grot spowalniający",
         "slug": "slowdown-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -25751,7 +25579,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -25766,7 +25594,6 @@
           "name": "Small % Rune",
           "slug": "small-rune",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ]
@@ -25776,7 +25603,6 @@
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
-            "Magic",
             "Ingredients",
             "DOS2"
           ],
@@ -25789,12 +25615,12 @@
         "name": "Small % Rune of Power",
         "slug": "small-rune-of-power",
         "tags": [
-          "Magic",
+          "Ingredients",
           "DOS2"
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "DOS2"
       ],
       "requirements": "",
@@ -25837,14 +25663,14 @@
         "name": "Small Air Resistance Potion",
         "slug": "small-air-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Air-Resistance",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Air-Resistance",
         "DOS2"
@@ -25881,7 +25707,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25894,7 +25719,7 @@
         "namePl": "Mała runa płomienia",
         "slug": "small-flame-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Critical-Chance",
           "Fire-Damage",
           "Fire-Resistance",
@@ -25905,7 +25730,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Critical-Chance",
         "Fire-Damage",
         "Fire-Resistance",
@@ -25943,7 +25768,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25956,7 +25780,7 @@
         "namePl": "Mała runa mrozu",
         "slug": "small-frost-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Water-Damage",
           "Water-Resistance",
           "DOS2"
@@ -25966,7 +25790,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Water-Damage",
         "Water-Resistance",
         "DOS2"
@@ -26011,7 +25835,7 @@
         "namePl": "Mała mikstura Pancerza Magicznego",
         "slug": "small-magic-armour-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Magic-Armour",
           "DOS2"
@@ -26021,7 +25845,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Magic-Armour",
         "DOS2"
@@ -26059,7 +25883,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -26072,7 +25895,7 @@
         "namePl": "Mała runa kunsztu",
         "slug": "small-masterwork-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Physical-Damage",
           "Physical-Armour",
           "Magic-Armour",
@@ -26083,7 +25906,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Physical-Damage",
         "Physical-Armour",
         "Magic-Armour",
@@ -26130,7 +25953,7 @@
         "namePl": "Mała butelka trucizny",
         "slug": "small-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -26141,7 +25964,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -26181,7 +26004,7 @@
         "namePl": "Mała butelka trucizny",
         "slug": "small-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -26192,7 +26015,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -26210,7 +26033,7 @@
           "namePl": "Mała mikstura uzdrawiająca",
           "slug": "minor-healing-potion",
           "tags": [
-            "Potions-And-Food",
+            "Potions",
             "Ingredients",
             "DOS2"
           ],
@@ -26235,7 +26058,7 @@
         "namePl": "Mała butelka trucizny",
         "slug": "small-poison-bottle",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "POISONED",
           "DOS2"
@@ -26246,7 +26069,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "POISONED",
         "DOS2"
@@ -26281,7 +26104,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -26294,7 +26116,7 @@
         "namePl": "Mała runa kamienia",
         "slug": "small-rock-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Vitality",
           "Earth-Damage",
           "Earth-Resistance",
@@ -26305,7 +26127,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Vitality",
         "Earth-Damage",
         "Earth-Resistance",
@@ -26346,7 +26168,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -26359,7 +26180,7 @@
         "namePl": "Mała runa grzmotu",
         "slug": "small-thunder-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Air-Damage",
           "Air-Resistance",
           "Dodge",
@@ -26370,7 +26191,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Air-Damage",
         "Air-Resistance",
         "Dodge",
@@ -26413,7 +26234,6 @@
           "slug": "pixie-dust",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -26426,7 +26246,7 @@
         "namePl": "Mała runa jadu",
         "slug": "small-venom-rune",
         "tags": [
-          "Magic",
+          "Ingredients",
           "Accuracy",
           "Poison-Damage",
           "Poison-Resistance",
@@ -26437,7 +26257,7 @@
         ]
       },
       "tags": [
-        "Magic",
+        "Ingredients",
         "Accuracy",
         "Poison-Damage",
         "Poison-Resistance",
@@ -26457,7 +26277,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -26471,7 +26291,7 @@
           "namePl": "Grot zasłony dymnej",
           "slug": "smokescreen-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -26486,7 +26306,7 @@
         "namePl": "Strzała zasłony dymnej",
         "slug": "smokescreen-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "DOS2"
         ],
@@ -26495,7 +26315,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "DOS2"
       ],
@@ -26537,7 +26357,7 @@
           "namePl": "Lucjan czerwony",
           "slug": "red-snapper",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -27089,7 +26909,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27214,7 +27033,6 @@
           "namePl": "Moździerz i tłuczek",
           "slug": "mortar-and-pestle-2",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ],
@@ -27257,7 +27075,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27271,7 +27089,7 @@
           "namePl": "Grot naelektryzowanej chmury",
           "slug": "static-cloud-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27285,7 +27103,7 @@
         "namePl": "Strzała naelektryzowanej chmury",
         "slug": "static-cloud-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "DOS2"
         ],
@@ -27295,7 +27113,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "DOS2"
       ],
@@ -27337,7 +27155,7 @@
           "namePl": "Kleń",
           "slug": "chub-fish",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -27438,7 +27256,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27452,7 +27270,7 @@
           "namePl": "Grot obłoku pary",
           "slug": "steamcloud-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27466,7 +27284,7 @@
         "namePl": "Strzała obłoku pary",
         "slug": "steamcloud-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Casts-Spell",
           "WET",
           "DOS2"
@@ -27476,7 +27294,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Casts-Spell",
         "WET",
         "DOS2"
@@ -27503,7 +27321,7 @@
           "namePl": "Grot ognisty",
           "slug": "fire-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27517,7 +27335,7 @@
         "namePl": "Grot obłoku pary",
         "slug": "steamcloud-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "DOS2"
         ],
         "craftingCategories": [
@@ -27526,7 +27344,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -27568,7 +27386,7 @@
         "namePl": "Mikstura kamiennej skóry",
         "slug": "stoneskin-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Bleeding-Immunity",
           "Burning-Immunity",
           "Stun-Immunity",
@@ -27581,7 +27399,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Bleeding-Immunity",
         "Burning-Immunity",
         "Stun-Immunity",
@@ -28231,14 +28049,14 @@
         "name": "Tainted Stew",
         "slug": "tainted-stew",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Strength",
           "DISEASED",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Strength",
         "DISEASED",
         "DOS2"
@@ -28394,7 +28212,6 @@
           "slug": "life-essence",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -28572,7 +28389,6 @@
           "slug": "tormented-soul",
           "tags": [
             "Ingredients",
-            "Magic",
             "DOS2"
           ],
           "craftingCategories": [
@@ -28586,7 +28402,7 @@
         "namePl": "Granat grozy",
         "slug": "terror-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "FEAR",
           "DOS2"
@@ -28596,7 +28412,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "FEAR",
         "DOS2"
@@ -28640,7 +28456,7 @@
         "namePl": "Granat grozy",
         "slug": "terror-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "FEAR",
           "DOS2"
@@ -28650,7 +28466,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "FEAR",
         "DOS2"
@@ -28789,7 +28605,7 @@
         "namePl": "Granat piorunów",
         "slug": "thunderbolt-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "SHOCKED",
           "DOS2"
@@ -28799,7 +28615,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "SHOCKED",
         "DOS2"
@@ -28869,7 +28685,7 @@
           "namePl": "Pomidor",
           "slug": "tomato",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Healing",
             "Poison-Resistance",
@@ -28884,7 +28700,6 @@
           "namePl": "Młotek",
           "slug": "hammer",
           "tags": [
-            "Tools",
             "Ingredients",
             "DOS2"
           ]
@@ -28895,7 +28710,7 @@
         "namePl": "Sos pomidorowy",
         "slug": "tomato-sauce",
         "tags": [
-          "Potions-And-Food",
+          "Food-And-Drink",
           "Ingredients",
           "Healing",
           "Poison-Resistance",
@@ -28906,7 +28721,7 @@
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients",
         "Healing",
         "Poison-Resistance",
@@ -29347,7 +29162,7 @@
         "namePl": "Granat wstrząsowy",
         "slug": "tremor-grenade",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2"
@@ -29357,7 +29172,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2"
@@ -29478,7 +29293,7 @@
           "slug": "arrow-shaft",
           "tags": [
             "Ingredients",
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -29492,7 +29307,7 @@
           "namePl": "Grot wodny",
           "slug": "water-arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -29507,7 +29322,7 @@
         "namePl": "Strzała wodna",
         "slug": "water-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "Casts-Spell",
           "Water-Surface",
@@ -29520,7 +29335,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "Casts-Spell",
         "Water-Surface",
@@ -29549,7 +29364,7 @@
           "namePl": "Strzała",
           "slug": "arrow",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "DOS2"
           ],
           "craftingCategories": [
@@ -29563,7 +29378,7 @@
         "namePl": "Strzała wodna",
         "slug": "water-arrow",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "Casts-Spell",
           "Water-Surface",
@@ -29576,7 +29391,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "Casts-Spell",
         "Water-Surface",
@@ -29605,7 +29420,7 @@
           "namePl": "Grot",
           "slug": "arrowhead",
           "tags": [
-            "Arrows-And-Grenades",
+            "Arrows",
             "Ingredients",
             "DOS2"
           ],
@@ -29621,7 +29436,7 @@
         "namePl": "Grot wodny",
         "slug": "water-arrowhead",
         "tags": [
-          "Arrows-And-Grenades",
+          "Arrows",
           "Ingredients",
           "DOS2"
         ],
@@ -29631,7 +29446,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Arrows",
         "Ingredients",
         "DOS2"
       ],
@@ -29671,7 +29486,7 @@
         "namePl": "Balon z wodą",
         "slug": "water-balloon",
         "tags": [
-          "Arrows-And-Grenades",
+          "Grenades",
           "Casts-Spell",
           "Water-Surface",
           "WET",
@@ -29682,7 +29497,7 @@
         ]
       },
       "tags": [
-        "Arrows-And-Grenades",
+        "Grenades",
         "Casts-Spell",
         "Water-Surface",
         "WET",
@@ -29729,14 +29544,14 @@
         "namePl": "Mikstura odporności na wodę",
         "slug": "water-resistance-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Ingredients",
           "Water-Resistance",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Ingredients",
         "Water-Resistance",
         "DOS2"
@@ -29779,7 +29594,7 @@
           "namePl": "Flądra",
           "slug": "plaice",
           "tags": [
-            "Potions-And-Food",
+            "Food-And-Drink",
             "Ingredients",
             "Intelligence",
             "Healing",
@@ -29921,14 +29736,14 @@
         "namePl": "Mikstura uwarzona przez wiedźmę",
         "slug": "witchs-brewed-potion",
         "tags": [
-          "Potions-And-Food",
+          "Potions",
           "Special",
           "COW",
           "DOS2"
         ]
       },
       "tags": [
-        "Potions-And-Food",
+        "Potions",
         "Special",
         "COW",
         "DOS2"
@@ -29965,15 +29780,38 @@
         }
       ],
       "result": {
-        "name": "Wood Chips and Arrow Shaft",
-        "slug": "wood-chips-and-arrow-shaft",
+        "name": "Arrow Shaft",
+        "namePl": "Promień strzały",
+        "slug": "arrow-shaft",
         "tags": [
           "Ingredients",
+          "Arrows",
           "DOS2"
+        ],
+        "quantity": "x4",
+        "craftingCategories": [
+          "ArrowShaft",
+          "Weapon",
+          "Wood"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "namePl": "Drzazgi",
+          "slug": "wood-chips",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Wood"
+          ]
+        }
+      ],
       "tags": [
         "Ingredients",
+        "Arrows",
         "DOS2"
       ],
       "requirements": "",
@@ -30006,13 +29844,33 @@
         }
       ],
       "result": {
-        "name": "Wood Chips and Long Branch",
-        "slug": "wood-chips-and-long-branch",
+        "name": "Long Branch",
+        "namePl": "Długa gałąź",
+        "slug": "long-branch",
         "tags": [
           "Ingredients",
           "DOS2"
+        ],
+        "quantity": "x2",
+        "craftingCategories": [
+          "Junk",
+          "Wood"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "namePl": "Drzazgi",
+          "slug": "wood-chips",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Wood"
+          ]
+        }
+      ],
       "tags": [
         "Ingredients",
         "DOS2"
@@ -30037,8 +29895,9 @@
           ]
         },
         {
-          "name": "CuttingTool",
-          "slug": "cuttingtool",
+          "name": "Cutting Tool",
+          "namePl": "Narzędzie do krojenia",
+          "slug": "cutting-tool",
           "tags": [
             "Ingredients",
             "DOS2"
@@ -30046,13 +29905,33 @@
         }
       ],
       "result": {
-        "name": "Wood Chips and Long Branch",
-        "slug": "wood-chips-and-long-branch",
+        "name": "Long Branch",
+        "namePl": "Długa gałąź",
+        "slug": "long-branch",
         "tags": [
           "Ingredients",
           "DOS2"
+        ],
+        "quantity": "x2",
+        "craftingCategories": [
+          "Junk",
+          "Wood"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "namePl": "Drzazgi",
+          "slug": "wood-chips",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Wood"
+          ]
+        }
+      ],
       "tags": [
         "Ingredients",
         "DOS2"
@@ -30089,13 +29968,33 @@
         }
       ],
       "result": {
-        "name": "Wood Chips and Short Stick",
-        "slug": "wood-chips-and-short-stick",
+        "name": "Short Stick",
+        "namePl": "Krótki kij",
+        "slug": "short-stick",
         "tags": [
           "Ingredients",
           "DOS2"
+        ],
+        "quantity": "x2",
+        "craftingCategories": [
+          "Junk",
+          "Wood"
         ]
       },
+      "extraResults": [
+        {
+          "name": "Wood Chips",
+          "namePl": "Drzazgi",
+          "slug": "wood-chips",
+          "tags": [
+            "Ingredients",
+            "DOS2"
+          ],
+          "craftingCategories": [
+            "Wood"
+          ]
+        }
+      ],
       "tags": [
         "Ingredients",
         "DOS2"
@@ -31156,7 +31055,7 @@
       "namePl": "Sztylet",
       "slug": "crafted-dagger",
       "tags": [
-        "Tools",
+        "Ingredients",
         "Daggers",
         "DOS2"
       ],

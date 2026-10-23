@@ -9,8 +9,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -21,8 +20,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -33,8 +31,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -44,8 +41,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -55,8 +51,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -67,8 +62,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -79,8 +73,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -91,8 +84,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -103,8 +95,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -115,8 +106,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -127,8 +117,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -140,8 +129,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -153,8 +141,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -166,8 +153,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -179,8 +165,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -192,8 +177,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -205,8 +189,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -218,8 +201,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -231,8 +213,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -244,8 +225,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -262,7 +242,7 @@
       "tags": [
         "DOS2-CO",
         "SCARECROW",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -283,8 +263,8 @@
       ]
     },
     {
-      "slug": "advocate-vacuum",
-      "title": "Advocate' Vacuum",
+      "slug": "advocate-s-vacuum",
+      "title": "Advocate's Vacuum",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -297,8 +277,7 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -308,8 +287,7 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -320,8 +298,7 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -331,8 +308,7 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -353,8 +329,20 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Maces",
-        "Magic"
+        "Maces"
+      ]
+    },
+    {
+      "slug": "air-resistance-potion",
+      "title": "Air Resistance Potion",
+      "titlePl": "Mikstura odporności na powietrze",
+      "tags": [
+        "DOS2-CO",
+        "Air-Resistance",
+        "DOS1",
+        "DOS2",
+        "Potions",
+        "Ingredients"
       ]
     },
     {
@@ -365,8 +353,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -376,8 +363,7 @@
         "Air-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -387,8 +373,7 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -397,8 +382,7 @@
       "tags": [
         "Air-Damage",
         "DOS2-CO",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -473,14 +457,6 @@
       ]
     },
     {
-      "slug": "anthropod-leg",
-      "title": "Anthropod Leg",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "antler",
       "title": "Antler",
       "titlePl": "Poroże",
@@ -511,7 +487,7 @@
         "Poison-Resistance",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -544,7 +520,7 @@
       "title": "Armor Piercing Grenade",
       "tags": [
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -555,7 +531,7 @@
         "Casts-Spell",
         "DOS1",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -575,7 +551,7 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -587,7 +563,17 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
+      ]
+    },
+    {
+      "slug": "arthropod-leg",
+      "title": "Arthropod Leg",
+      "titlePl": "Odnóże stawonoga",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Ingredients"
       ]
     },
     {
@@ -607,15 +593,6 @@
         "DOS2-CO",
         "Ingredients",
         "Scrolls"
-      ]
-    },
-    {
-      "slug": "axe",
-      "title": "Axe",
-      "titlePl": "Topór",
-      "tags": [
-        "DOS2-CO",
-        "Axes"
       ]
     },
     {
@@ -647,7 +624,7 @@
         "Constitution",
         "Physical-Resistance",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -684,7 +661,7 @@
       "tags": [
         "Intelligence",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -818,7 +795,7 @@
       "title": "Black Diamond",
       "tags": [
         "DOS2-CO",
-        "Magic"
+        "Ingredients"
       ]
     },
     {
@@ -886,8 +863,7 @@
       "title": "Blank Air Skillbook",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -908,7 +884,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -930,7 +905,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -941,7 +915,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -950,7 +923,6 @@
       "title": "Blank Polymorph Scroll",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients",
         "Scrolls"
       ]
@@ -962,7 +934,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -971,7 +942,6 @@
       "title": "Blank Ranger Scroll",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients",
         "Scrolls"
       ]
@@ -981,7 +951,6 @@
       "title": "Blank Rogue Scroll",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients",
         "Scrolls"
       ]
@@ -991,8 +960,7 @@
       "title": "Blank Skillbook Ranger",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -1000,8 +968,7 @@
       "title": "Blank Skillbook Rogue",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -1009,8 +976,7 @@
       "title": "Blank Skillbook Warrior",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -1018,7 +984,6 @@
       "title": "Blank Summoning Scroll",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients",
         "Scrolls"
       ]
@@ -1030,7 +995,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -1039,7 +1003,6 @@
       "title": "Blank Warrior Scroll",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients",
         "Scrolls"
       ]
@@ -1062,7 +1025,6 @@
         "DOS2",
         "DOS2-CO",
         "Skillbooks",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -1084,7 +1046,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1094,7 +1056,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "HEALING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1104,7 +1066,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CHARMED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1112,7 +1074,6 @@
       "title": "Blessed Cleanser",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -1123,7 +1084,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "HEALING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1133,7 +1094,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CHARMED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -1143,7 +1104,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "POISONED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -1152,7 +1113,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -1161,7 +1122,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1171,7 +1132,7 @@
       "tags": [
         "DOS2-CO",
         "Stations-And-Containers",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -1228,7 +1189,7 @@
         "DOS2",
         "DOS2-CO",
         "Stations-And-Containers",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -1237,7 +1198,6 @@
       "titlePl": "Borowik",
       "tags": [
         "Finesse",
-        "DOS1",
         "DOS2",
         "DOS2-CO",
         "Ingredients"
@@ -1545,6 +1505,20 @@
       ]
     },
     {
+      "slug": "bottle-of-wine",
+      "title": "Bottle of Wine",
+      "titlePl": "Butelka wina",
+      "tags": [
+        "DOS2-CO",
+        "Healing",
+        "Speed",
+        "DOS1",
+        "DOS2",
+        "DRUNK",
+        "Food-And-Drink"
+      ]
+    },
+    {
       "slug": "bowl",
       "title": "Bowl",
       "titlePl": "Miska",
@@ -1584,7 +1558,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -1661,7 +1635,7 @@
       "tags": [
         "DOS2-CO",
         "SCARECROW",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -1723,7 +1697,7 @@
         "Wits",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -1760,8 +1734,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -1770,8 +1743,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -1781,8 +1753,7 @@
         "Accuracy",
         "DOS2-CO",
         "SUFFOCATING",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -1791,8 +1762,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -1801,8 +1771,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -1812,8 +1781,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -1823,8 +1791,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -1833,8 +1800,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -1844,8 +1810,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -1854,8 +1819,7 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -1868,7 +1832,7 @@
         "DOS2",
         "DOS2-CO",
         "CHARMED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -1881,7 +1845,7 @@
         "Finesse",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -1895,7 +1859,7 @@
         "DOS2",
         "DOS2-CO",
         "DISEASED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -1934,13 +1898,21 @@
       ]
     },
     {
+      "slug": "chunk-of-flesh",
+      "title": "Chunk Of Flesh",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "cinnamon",
       "title": "Cinnamon",
       "titlePl": "Cynamon",
       "tags": [
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -1950,7 +1922,7 @@
         "Poison-Resistance",
         "Persuasion",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -2011,68 +1983,13 @@
       ]
     },
     {
-      "slug": "colored-body-armor",
-      "title": "Colored Body Armor",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
-      "slug": "colored-boots",
-      "title": "Colored Boots",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
-      "slug": "colored-cape",
-      "title": "Colored Cape",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
-      "slug": "colored-gloves",
-      "title": "Colored Gloves",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
-      "slug": "colored-helmet",
-      "title": "Colored Helmet",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
-      "slug": "colored-pants",
-      "title": "Colored Pants",
-      "tags": [
-        "Dyes",
-        "DOS2-CO",
-        "Dye"
-      ]
-    },
-    {
       "slug": "companion-air-robot-skillbook",
       "title": "Companion Air Robot Skillbook",
       "tags": [
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2082,8 +1999,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2093,8 +2009,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2104,8 +2019,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2115,8 +2029,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2126,8 +2039,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2137,8 +2049,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2148,8 +2059,7 @@
         "Teaches-Skill",
         "Summoning",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -2160,7 +2070,7 @@
         "Wits",
         "Polymorph",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -2226,7 +2136,7 @@
         "Wits",
         "Polymorph",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -2280,6 +2190,14 @@
       ]
     },
     {
+      "slug": "crafted-axe",
+      "title": "Crafted Axe",
+      "tags": [
+        "DOS2-CO",
+        "Axes"
+      ]
+    },
+    {
       "slug": "crafted-barricade",
       "title": "Crafted Barricade",
       "tags": [
@@ -2306,6 +2224,14 @@
       ]
     },
     {
+      "slug": "crafted-cloth-gloves",
+      "title": "Crafted Cloth Gloves",
+      "tags": [
+        "DOS2-CO",
+        "Gloves"
+      ]
+    },
+    {
       "slug": "crafted-dagger",
       "title": "Crafted Dagger",
       "tags": [
@@ -2315,8 +2241,65 @@
         "DOS2",
         "DOS2-CO",
         "Daggers",
-        "Tools",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "crafted-leather-gloves",
+      "title": "Crafted Leather Gloves",
+      "tags": [
+        "DOS2-CO",
+        "Armour"
+      ]
+    },
+    {
+      "slug": "crafted-leather-pants",
+      "title": "Crafted Leather Pants",
+      "tags": [
+        "DOS2-CO",
+        "Armour"
+      ]
+    },
+    {
+      "slug": "crafted-mace",
+      "title": "Crafted Mace",
+      "tags": [
+        "DOS2-CO",
+        "Maces"
+      ]
+    },
+    {
+      "slug": "crafted-metal-gauntlets",
+      "title": "Crafted Metal Gauntlets",
+      "tags": [
+        "DOS2-CO",
+        "Armour"
+      ]
+    },
+    {
+      "slug": "crafted-metal-greaves",
+      "title": "Crafted Metal Greaves",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Armour"
+      ]
+    },
+    {
+      "slug": "crafted-metal-helmet",
+      "title": "Crafted Metal Helmet",
+      "tags": [
+        "DOS2-CO",
+        "Armour"
+      ]
+    },
+    {
+      "slug": "crafted-shield",
+      "title": "Crafted Shield",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Shields"
       ]
     },
     {
@@ -2360,7 +2343,7 @@
       "tags": [
         "DOS2-CO",
         "Maces",
-        "Tools"
+        "Ingredients"
       ]
     },
     {
@@ -2400,7 +2383,7 @@
       "title": "Crafter's Whetstone",
       "tags": [
         "DOS2-CO",
-        "Tools"
+        "Ingredients"
       ]
     },
     {
@@ -2492,7 +2475,6 @@
       "titlePl": "Kryształ",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -2502,7 +2484,7 @@
       "tags": [
         "Poison-Resistance",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -2511,7 +2493,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2521,7 +2503,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2531,7 +2513,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "DISEASED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2540,7 +2522,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2548,7 +2530,7 @@
       "title": "Cursed Electric Cloud Arrow",
       "tags": [
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2558,7 +2540,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "NECROFIRE",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2568,7 +2550,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "BLIND",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2578,7 +2560,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2588,7 +2570,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2598,7 +2580,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "KNOCKED_DOWN",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2608,7 +2590,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2618,7 +2600,7 @@
       "tags": [
         "DOS2-CO",
         "Stations-And-Containers",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2627,7 +2609,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2637,7 +2619,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "ACID",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2647,7 +2629,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "POISONED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2657,7 +2639,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "SUFFOCATING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2667,7 +2649,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CURSED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2677,7 +2659,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "SLOWED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2687,7 +2669,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "WET",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2697,7 +2679,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "SHOCKED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2707,7 +2689,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "SHOCKED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2717,7 +2699,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "FEAR",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2727,7 +2709,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "KNOCKED_DOWN",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2737,7 +2719,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "WET",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2747,7 +2729,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "WET",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -2756,7 +2738,7 @@
       "tags": [
         "DOS2-CO",
         "SCARECROW",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -2803,7 +2785,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -2827,7 +2809,6 @@
       "title": "Demon Altar",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Stations-And-Containers"
       ]
     },
@@ -2868,13 +2849,12 @@
       "titlePl": "Diament",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
     {
-      "slug": "dirty-sapphire",
-      "title": "Dirty Sapphire",
+      "slug": "dirty-emerald",
+      "title": "Dirty Emerald",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -2955,21 +2935,20 @@
       "title": "Downgraded Item",
       "tags": [
         "DOS2-CO",
-        "Magic"
-      ]
-    },
-    {
-      "slug": "dragon-breath",
-      "title": "Dragon Breath",
-      "titlePl": "Smoczy oddech",
-      "tags": [
-        "DOS2-CO",
         "Ingredients"
       ]
     },
     {
       "slug": "dragon-corpse",
       "title": "Dragon Corpse",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "dragon-soul",
+      "title": "Dragon Soul",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -3018,14 +2997,6 @@
       ]
     },
     {
-      "slug": "dwarven-face",
-      "title": "Dwarven Face",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "dye-making-machine",
       "title": "Dye Making Machine",
       "tags": [
@@ -3040,8 +3011,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -3051,8 +3021,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -3063,8 +3032,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -3074,8 +3042,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -3096,8 +3063,20 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Maces",
-        "Magic"
+        "Maces"
+      ]
+    },
+    {
+      "slug": "earth-resistance-potion",
+      "title": "Earth Resistance Potion",
+      "titlePl": "Mikstura odporności na ziemię",
+      "tags": [
+        "DOS2-CO",
+        "Earth-Resistance",
+        "DOS1",
+        "DOS2",
+        "Potions",
+        "Ingredients"
       ]
     },
     {
@@ -3108,8 +3087,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -3119,8 +3097,7 @@
         "Earth-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -3130,8 +3107,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -3153,8 +3129,7 @@
         "Earth-Damage",
         "DOS2-CO",
         "Oil-Surface",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -3172,7 +3147,7 @@
       "tags": [
         "Constitution",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -3184,7 +3159,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -3194,7 +3169,7 @@
       "tags": [
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3206,19 +3181,10 @@
       ]
     },
     {
-      "slug": "elven-face",
-      "title": "Elven Face",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "emerald",
       "title": "Emerald",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -3370,7 +3336,7 @@
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3425,7 +3391,16 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Magic"
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "fake-zeus-potion",
+      "title": "Fake Zeus Potion",
+      "tags": [
+        "DOS2-CO",
+        "Potions",
+        "Seasonal-Items"
       ]
     },
     {
@@ -3515,7 +3490,7 @@
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3526,7 +3501,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3536,8 +3511,7 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -3547,8 +3521,7 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -3559,8 +3532,7 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -3570,8 +3542,7 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -3610,8 +3581,20 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Maces",
-        "Magic"
+        "Maces"
+      ]
+    },
+    {
+      "slug": "fire-resistance-potion",
+      "title": "Fire Resistance Potion",
+      "titlePl": "Mikstura odporności na ogień",
+      "tags": [
+        "DOS2-CO",
+        "Fire-Resistance",
+        "DOS1",
+        "DOS2",
+        "Potions",
+        "Ingredients"
       ]
     },
     {
@@ -3622,8 +3605,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -3633,8 +3615,7 @@
         "Fire-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -3644,8 +3625,7 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -3654,8 +3634,7 @@
       "tags": [
         "Fire-Damage",
         "DOS2-CO",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -3708,7 +3687,7 @@
         "DOS1",
         "DOS2-CO",
         "BLIND",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -3760,7 +3739,6 @@
       "title": "Framed Rune",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -3776,7 +3754,7 @@
         "Ice-Surface",
         "CHILLED",
         "FROZEN",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3787,7 +3765,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3813,7 +3791,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -3828,7 +3806,7 @@
         "Ice-Surface",
         "CHILLED",
         "FROZEN",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -3869,7 +3847,7 @@
         "Water-Resistance",
         "Earth-Resistance",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -3880,7 +3858,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -3892,7 +3870,7 @@
         "Persuasion",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -3903,7 +3881,7 @@
         "Constitution",
         "Strength",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -3963,7 +3941,7 @@
       "tags": [
         "Magic-Armour",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -3972,7 +3950,7 @@
       "tags": [
         "Physical-Armour",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4036,14 +4014,6 @@
       ]
     },
     {
-      "slug": "golem-flesh",
-      "title": "Golem Flesh",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "golem-flesh-sword",
       "title": "Golem Flesh Sword",
       "tags": [
@@ -4068,7 +4038,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -4090,12 +4060,20 @@
         "Wits",
         "Necromancer",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
       "slug": "griff-boss-corpse",
       "title": "Griff Boss Corpse",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "griff-s-overpriced-drudanae",
+      "title": "Griff's Overpriced Drudanae",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -4176,7 +4154,7 @@
       "title": "Health/Poison Potion",
       "tags": [
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -4253,17 +4231,19 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
-      "slug": "holy-grenade",
-      "title": "Holy Grenade",
-      "titlePl": "Święty granat",
+      "slug": "holy-hand-grenade",
+      "title": "Holy Hand Grenade",
+      "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Ingredients",
-        "Arrows-And-Grenades"
+        "Casts-Spell",
+        "DOS1",
+        "DOS2",
+        "Grenades"
       ]
     },
     {
@@ -4286,29 +4266,12 @@
       "title": "Huge Rock",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Stations-And-Containers"
       ]
     },
     {
       "slug": "human-corpse",
       "title": "Human Corpse",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "human-face",
-      "title": "Human Face",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "human-skull",
-      "title": "Human Skull",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -4323,7 +4286,7 @@
         "Poison-Resistance",
         "Dodge",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -4407,8 +4370,7 @@
       "tags": [
         "DOS1",
         "DOS2-CO",
-        "Magic",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -4417,8 +4379,7 @@
       "tags": [
         "DOS2-CO",
         "POISONED",
-        "Ingredients",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -4466,7 +4427,7 @@
         "Dodge",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4494,7 +4455,7 @@
         "Sneaking",
         "Thievery",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -4511,7 +4472,7 @@
       "tags": [
         "Poison-Resistance",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -4520,7 +4481,6 @@
       "tags": [
         "DOS2-CO",
         "Weapons",
-        "Tools",
         "Ingredients"
       ]
     },
@@ -4533,7 +4493,7 @@
         "DOS2",
         "DOS2-CO",
         "Weapons",
-        "Tools"
+        "Ingredients"
       ]
     },
     {
@@ -4545,7 +4505,7 @@
         "Poison-Resistance",
         "Strength",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -4567,7 +4527,7 @@
         "DOS2-CO",
         "KNOCKDOWN",
         "KNOCKED_DOWN",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -4578,7 +4538,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -4606,7 +4566,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4621,7 +4581,7 @@
         "Wits",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4632,7 +4592,7 @@
         "Constitution",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4642,7 +4602,7 @@
         "Dexterity",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4654,7 +4614,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4667,7 +4627,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4680,7 +4640,7 @@
         "DOS1",
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4692,7 +4652,7 @@
         "Intelligence",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4703,7 +4663,7 @@
         "Magic-Armour",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4714,7 +4674,7 @@
         "Perception",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4725,7 +4685,7 @@
         "Physical-Armour",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4738,7 +4698,7 @@
         "DOS2",
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4749,7 +4709,7 @@
       "tags": [
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4759,7 +4719,7 @@
       "tags": [
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4775,7 +4735,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4785,7 +4745,7 @@
         "Speed",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4796,7 +4756,7 @@
         "Strength",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -4808,7 +4768,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -4831,27 +4791,9 @@
       ]
     },
     {
-      "slug": "leather-gloves",
-      "title": "Leather Gloves",
-      "titlePl": "Skórzane rękawiczki",
-      "tags": [
-        "DOS2-CO",
-        "Armour"
-      ]
-    },
-    {
       "slug": "leather-helmet",
       "title": "Leather Helmet",
       "titlePl": "Skórzany hełm",
-      "tags": [
-        "DOS2-CO",
-        "Armour"
-      ]
-    },
-    {
-      "slug": "leather-pants",
-      "title": "Leather Pants",
-      "titlePl": "Skórzane portki",
       "tags": [
         "DOS2-CO",
         "Armour"
@@ -4885,7 +4827,7 @@
         "Wits",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -4905,7 +4847,6 @@
       "tags": [
         "DOS2",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -4969,14 +4910,6 @@
       ]
     },
     {
-      "slug": "lizard-face",
-      "title": "Lizard Face",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "lockbox",
       "title": "Lockbox",
       "tags": [
@@ -4992,12 +4925,20 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
       "slug": "lohar-boss-corpse",
       "title": "Lohar Boss Corpse",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "lohar-source-bottle",
+      "title": "Lohar Source Bottle",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -5039,7 +4980,7 @@
         "DOS2",
         "DOS2-CO",
         "CHARMED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -5067,15 +5008,6 @@
       ]
     },
     {
-      "slug": "mace",
-      "title": "Mace",
-      "titlePl": "Buława",
-      "tags": [
-        "DOS2-CO",
-        "Maces"
-      ]
-    },
-    {
       "slug": "mage-body-armor",
       "title": "Mage Body Armor",
       "tags": [
@@ -5090,14 +5022,6 @@
       "tags": [
         "DOS2-CO",
         "Armour"
-      ]
-    },
-    {
-      "slug": "mage-gloves",
-      "title": "Mage Gloves",
-      "tags": [
-        "DOS2-CO",
-        "Gloves"
       ]
     },
     {
@@ -5139,7 +5063,6 @@
       "title": "Magic Altar",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Stations-And-Containers"
       ]
     },
@@ -5148,9 +5071,7 @@
       "title": "Magic Inkpot & Quill",
       "tags": [
         "DOS2-CO",
-        "Magic",
-        "Ingredients",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -5160,8 +5081,7 @@
       "tags": [
         "DOS1",
         "DOS2-CO",
-        "Ingredients",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -5169,7 +5089,6 @@
       "title": "Magical Cleanser",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -5195,7 +5114,6 @@
       "titlePl": "Malachit",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -5216,7 +5134,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5231,7 +5149,7 @@
         "Wits",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5242,7 +5160,7 @@
         "Constitution",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5252,7 +5170,7 @@
         "Dexterity",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5264,7 +5182,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5277,7 +5195,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5291,7 +5209,7 @@
         "DOS2",
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5302,7 +5220,7 @@
         "Intelligence",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5312,7 +5230,7 @@
         "Perception",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5321,7 +5239,7 @@
       "tags": [
         "DOS2-CO",
         "POISONED",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5337,7 +5255,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5347,7 +5265,7 @@
         "Speed",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5358,7 +5276,7 @@
         "Strength",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5370,7 +5288,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5380,7 +5298,7 @@
       "tags": [
         "DOS2-CO",
         "MEDUSASPOOKY",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -5391,7 +5309,7 @@
         "Poison-Resistance",
         "Memory",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -5419,28 +5337,11 @@
       ]
     },
     {
-      "slug": "merman-scales",
-      "title": "Merman Scales",
+      "slug": "merman-skin",
+      "title": "Merman Skin",
       "tags": [
         "DOS2-CO",
         "Ingredients"
-      ]
-    },
-    {
-      "slug": "metal-arms",
-      "title": "Metal Arms",
-      "tags": [
-        "DOS2-CO",
-        "Armour"
-      ]
-    },
-    {
-      "slug": "metal-boots",
-      "title": "Metal Boots",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Armour"
       ]
     },
     {
@@ -5451,14 +5352,6 @@
         "DOS2-CO",
         "Ingredients",
         "Stations-And-Containers"
-      ]
-    },
-    {
-      "slug": "metal-helmet",
-      "title": "Metal Helmet",
-      "tags": [
-        "DOS2-CO",
-        "Armour"
       ]
     },
     {
@@ -5489,20 +5382,15 @@
       ]
     },
     {
-      "slug": "milk-cup",
-      "title": "Milk Cup",
+      "slug": "milk",
+      "title": "Milk",
+      "titlePl": "Mleko",
       "tags": [
         "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "minor-air-resistance-potion",
-      "title": "Minor Air Resistance Potion",
-      "tags": [
-        "Air-Resistance",
-        "DOS2-CO",
-        "Potions-And-Food",
+        "Healing",
+        "DOS1",
+        "DOS2",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -5517,7 +5405,7 @@
         "Wits",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5530,7 +5418,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5542,27 +5430,7 @@
         "Dexterity",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "minor-earth-resistance-potion",
-      "title": "Minor Earth Resistance Potion",
-      "tags": [
-        "Earth-Resistance",
-        "DOS2-CO",
-        "Potions-And-Food",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "minor-fire-resistance-potion",
-      "title": "Minor Fire Resistance Potion",
-      "tags": [
-        "Fire-Resistance",
-        "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5575,7 +5443,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5587,7 +5455,7 @@
         "Perception",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5604,7 +5472,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Potions"
       ]
     },
     {
@@ -5615,7 +5483,7 @@
         "Speed",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5628,31 +5496,21 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
     {
-      "slug": "minor-water-resistance-potion",
-      "title": "Minor Water Resistance Potion",
+      "slug": "mist-of-mistake",
+      "title": "Mist of Mistake",
       "tags": [
-        "Water-Resistance",
         "DOS2-CO",
-        "Potions-And-Food",
         "Ingredients"
       ]
     },
     {
       "slug": "mistake-boss-corpse",
       "title": "Mistake Boss Corpse",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "mistake-of-the-mistake",
-      "title": "Mistake of the Mistake",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -5692,7 +5550,7 @@
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -5702,7 +5560,7 @@
         "Critical-Chance",
         "Loremaster",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Ingredients"
       ]
     },
@@ -5713,7 +5571,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Tools",
         "Ingredients"
       ]
     },
@@ -5731,6 +5588,7 @@
       "title": "Mush of Wood",
       "titlePl": "Sterta drewna",
       "tags": [
+        "DOS1",
         "DOS2-CO",
         "Ingredients"
       ]
@@ -5852,7 +5710,7 @@
         "DOS2",
         "DOS2-CO",
         "BLEEDING",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -5866,8 +5724,8 @@
       ]
     },
     {
-      "slug": "nasty-emerald",
-      "title": "Nasty Emerald",
+      "slug": "nasty-sapphire",
+      "title": "Nasty Sapphire",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -5910,8 +5768,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Ingredients",
-        "Equipment"
+        "Ingredients"
       ]
     },
     {
@@ -6025,7 +5882,7 @@
         "DOS2",
         "DOS2-CO",
         "Oil-Surface",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6052,7 +5909,7 @@
       "title": "One of the ten Blank Scrolls",
       "tags": [
         "DOS2-CO",
-        "Magic"
+        "Ingredients"
       ]
     },
     {
@@ -6075,7 +5932,7 @@
         "Poison-Resistance",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6123,7 +5980,7 @@
         "Leadership",
         "Poison-Resistance",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -6132,7 +5989,7 @@
       "tags": [
         "DOS2-CO",
         "PAINDOGSPOOKY",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -6142,7 +5999,7 @@
       "tags": [
         "DOS2-CO",
         "PAINCASTERSPOOKY",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -6253,6 +6110,14 @@
       ]
     },
     {
+      "slug": "patience-of-the-doctor",
+      "title": "Patience of the Doctor",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "pawed-boots",
       "title": "Pawed Boots",
       "tags": [
@@ -6288,7 +6153,7 @@
         "Healing",
         "Poison-Resistance",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6299,7 +6164,6 @@
       "tags": [
         "DOS1",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -6308,6 +6172,7 @@
       "title": "Penny Bun Mushroom",
       "titlePl": "Borowik szlachetny",
       "tags": [
+        "DOS1",
         "Healing",
         "DOS2",
         "DOS2-CO",
@@ -6322,7 +6187,7 @@
         "Fire-Resistance",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6333,7 +6198,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "BURNING",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Seasonal-Items"
       ]
     },
@@ -6359,8 +6224,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -6370,8 +6234,7 @@
         "Physical-Damage",
         "DOS2-CO",
         "BLEEDING",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -6383,7 +6246,6 @@
         "Grants-Skill",
         "DOS2-CO",
         "Axes",
-        "Tools",
         "Ingredients"
       ]
     },
@@ -6431,7 +6293,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -6475,17 +6336,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Arrows-And-Grenades"
-      ]
-    },
-    {
-      "slug": "poison-arrowhead",
-      "title": "Poison Arrowhead",
-      "titlePl": "Zatruty grot",
-      "tags": [
-        "DOS1",
-        "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -6496,8 +6347,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -6508,8 +6358,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -6521,7 +6370,7 @@
         "DOS1",
         "DOS2-CO",
         "POISONED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -6538,7 +6387,7 @@
       "title": "Poison Cloud Arrowhead",
       "tags": [
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -6551,7 +6400,7 @@
         "DOS2",
         "DOS2-CO",
         "POISONED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6563,8 +6412,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -6575,8 +6423,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -6590,7 +6437,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6598,7 +6445,7 @@
       "title": "Poison/Health Potion",
       "tags": [
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -6610,8 +6457,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -6623,8 +6469,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -6635,8 +6480,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -6646,8 +6490,17 @@
         "Poison-Damage",
         "DOS2-CO",
         "Poison-Surface",
-        "Wands",
-        "Magic"
+        "Wands"
+      ]
+    },
+    {
+      "slug": "poisoned-arrowhead",
+      "title": "Poisoned Arrowhead",
+      "titlePl": "Zatruty grot",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Arrows"
       ]
     },
     {
@@ -6657,8 +6510,7 @@
         "Poison-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -6668,7 +6520,7 @@
         "Poison-Resistance",
         "Loremaster",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -6680,7 +6532,7 @@
         "Healing",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6714,7 +6566,7 @@
       "tags": [
         "DOS2-CO",
         "Seasonal-Items",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6736,7 +6588,7 @@
         "Healing",
         "DOS1",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6851,7 +6703,7 @@
         "Poison-Resistance",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -6862,7 +6714,7 @@
         "Poison-Resistance",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -6903,7 +6755,7 @@
         "Healing",
         "DOS2-CO",
         "DISEASED",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6916,7 +6768,7 @@
         "Healing",
         "DOS2-CO",
         "DISEASED",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6930,7 +6782,7 @@
         "DOS2",
         "DOS2-CO",
         "DISEASED",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6943,7 +6795,7 @@
         "Healing",
         "DOS2-CO",
         "DISEASED",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -6956,7 +6808,15 @@
         "Healing",
         "DOS2-CO",
         "DISEASED",
-        "Potions-And-Food",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "real-health-potion",
+      "title": "Real Health Potion",
+      "tags": [
+        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -6966,7 +6826,7 @@
       "tags": [
         "DOS2-CO",
         "Seasonal-Items",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6975,7 +6835,7 @@
       "tags": [
         "DOS2-CO",
         "Seasonal-Items",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -6996,7 +6856,7 @@
         "Healing",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -7015,20 +6875,11 @@
       ]
     },
     {
-      "slug": "red-wine",
-      "title": "Red Wine",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "related-ranger-skillbook",
       "title": "Related Ranger Skillbook",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -7036,8 +6887,7 @@
       "title": "Related Rogue Skillbook",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -7045,8 +6895,7 @@
       "title": "Related Warrior Skillbook",
       "tags": [
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -7064,16 +6913,6 @@
         "DOS2-CO",
         "Belts",
         "Ingredients"
-      ]
-    },
-    {
-      "slug": "resurrect-scroll",
-      "title": "Resurrect Scroll",
-      "titlePl": "Zwój z zaklęciem „wskrzeszenie”",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients",
-        "Scrolls"
       ]
     },
     {
@@ -7095,8 +6934,7 @@
       "tags": [
         "Teaches-Skill",
         "DOS2-CO",
-        "Skillbooks",
-        "Magic"
+        "Skillbooks"
       ]
     },
     {
@@ -7136,6 +6974,42 @@
       ]
     },
     {
+      "slug": "ripped-off-dwarven-face",
+      "title": "Ripped-Off Dwarven Face",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "ripped-off-elven-face",
+      "title": "Ripped-Off Elven Face",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "ripped-off-human-face",
+      "title": "Ripped-Off Human Face",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "ripped-off-lizard-face",
+      "title": "Ripped-Off Lizard Face",
+      "tags": [
+        "DOS2-CO",
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "roasted-pork-dish",
       "title": "Roasted Pork Dish",
       "titlePl": "Pieczeń wieprzowa",
@@ -7144,7 +7018,7 @@
         "Strength",
         "DOS2-CO",
         "SLOWED",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -7174,7 +7048,6 @@
       "tags": [
         "DOS1",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7199,7 +7072,6 @@
       "title": "Rune of Boon & Banes",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7208,7 +7080,6 @@
       "title": "Rune of Skills",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7217,7 +7088,6 @@
       "title": "Rune of Stats",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7226,7 +7096,6 @@
       "title": "Rune Of Uniqueness",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7252,7 +7121,7 @@
       "tags": [
         "Strength",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -7276,7 +7145,6 @@
       "title": "Sapphire",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7305,7 +7173,7 @@
       "tags": [
         "DOS2-CO",
         "SCARECROW",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -7331,7 +7199,6 @@
       "tags": [
         "DOS2-CO",
         "Axes",
-        "Tools",
         "Ingredients"
       ]
     },
@@ -7357,8 +7224,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -7369,8 +7235,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -7381,8 +7246,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -7393,8 +7257,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -7405,7 +7268,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -7417,8 +7279,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Maces",
-        "Magic"
+        "Maces"
       ]
     },
     {
@@ -7430,8 +7291,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -7443,8 +7303,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -7455,8 +7314,7 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -7467,16 +7325,15 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
-      "slug": "shambling-potion",
-      "title": "Shambling Potion",
+      "slug": "shambling-mount-potion",
+      "title": "Shambling Mount Potion",
       "tags": [
         "DOS2-CO",
-        "Potions-And-Food",
+        "Potions",
         "Seasonal-Items"
       ]
     },
@@ -7573,7 +7430,7 @@
       "title": "Sheet Of Paper (Vanilla Recipe)",
       "tags": [
         "DOS2-CO",
-        "Magic"
+        "Ingredients"
       ]
     },
     {
@@ -7592,7 +7449,6 @@
       "title": "Shield",
       "titlePl": "Tarcza",
       "tags": [
-        "DOS1",
         "DOS2-CO",
         "Shields"
       ]
@@ -7605,7 +7461,7 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7684,7 +7540,7 @@
         "Casts-Spell",
         "DOS1",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7694,7 +7550,7 @@
       "tags": [
         "DOS1",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7743,6 +7599,17 @@
       ]
     },
     {
+      "slug": "skull",
+      "title": "Skull",
+      "titlePl": "Czaszka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "slayden-dye",
       "title": "Slayden Dye",
       "tags": [
@@ -7771,7 +7638,7 @@
         "DOS2",
         "DOS2-CO",
         "SLOWED",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7782,7 +7649,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7808,7 +7675,7 @@
       "tags": [
         "Casts-Spell",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -7820,7 +7687,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7832,7 +7699,7 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -7842,6 +7709,14 @@
       "tags": [
         "DOS1",
         "DOS2",
+        "DOS2-CO",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "soul-of-the-witch",
+      "title": "Soul of the Witch",
+      "tags": [
         "DOS2-CO",
         "Ingredients"
       ]
@@ -7910,7 +7785,7 @@
         "DOS2-CO",
         "FEAR",
         "Seasonal-Items",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -7997,7 +7872,7 @@
         "DOS2-CO",
         "BLIND",
         "WET",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -8015,7 +7890,7 @@
       "tags": [
         "DOS2",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -8028,7 +7903,7 @@
         "Wits",
         "Finesse",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -8040,7 +7915,7 @@
         "Finesse",
         "DOS2-CO",
         "SLOWED",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -8066,7 +7941,7 @@
       "title": "Stun Cloud Arrowhead",
       "tags": [
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -8077,7 +7952,7 @@
         "Casts-Spell",
         "DOS1",
         "DOS2-CO",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -8089,7 +7964,7 @@
         "Wits",
         "Summoning",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -8097,7 +7972,6 @@
       "title": "Superior Pixie Dust",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -8108,7 +7982,7 @@
       "tags": [
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -8151,7 +8025,7 @@
         "DOS2",
         "DOS2-CO",
         "FEAR",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -8189,7 +8063,7 @@
       "tags": [
         "Constitution",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -8250,7 +8124,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -8264,7 +8138,7 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -8323,7 +8197,6 @@
       "title": "Topaz",
       "tags": [
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -8345,7 +8218,6 @@
         "DOS1",
         "DOS2",
         "DOS2-CO",
-        "Magic",
         "Ingredients"
       ]
     },
@@ -8354,7 +8226,7 @@
       "title": "Transmuter",
       "tags": [
         "DOS2-CO",
-        "Magic"
+        "Stations-And-Containers"
       ]
     },
     {
@@ -8368,7 +8240,7 @@
         "DOS2-CO",
         "KNOCKDOWN",
         "KNOCKED_DOWN",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -8467,8 +8339,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8484,8 +8355,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8501,8 +8371,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8519,8 +8388,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8536,8 +8404,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8554,8 +8421,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8664,8 +8530,7 @@
         "Loremaster",
         "DOS2-CO",
         "SHOCKED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -8684,8 +8549,7 @@
         "Finesse",
         "DOS2-CO",
         "SHOCKED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -8700,8 +8564,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -8716,8 +8579,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8733,8 +8595,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -8753,8 +8614,7 @@
         "Loremaster",
         "DOS2-CO",
         "PETRIFIED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -8773,8 +8633,7 @@
         "Finesse",
         "DOS2-CO",
         "PETRIFIED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -8789,8 +8648,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -8805,8 +8663,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8822,8 +8679,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -8842,8 +8698,7 @@
         "Loremaster",
         "DOS2-CO",
         "BURNING",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -8862,8 +8717,7 @@
         "Finesse",
         "DOS2-CO",
         "BURNING",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -8878,8 +8732,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -8894,8 +8747,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -8912,8 +8764,7 @@
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -9218,8 +9069,7 @@
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -9237,8 +9087,7 @@
         "Finesse",
         "DOS2-CO",
         "BLEEDING",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -9253,8 +9102,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -9270,8 +9118,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -9290,8 +9137,7 @@
         "Loremaster",
         "DOS2-CO",
         "POISONED",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -9311,8 +9157,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -9328,8 +9173,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -9346,8 +9190,7 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -9461,8 +9304,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "POISONED",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -9876,8 +9718,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -10266,8 +10107,7 @@
         "Loremaster",
         "DOS2-CO",
         "WET",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -10287,8 +10127,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -10303,8 +10142,7 @@
         "Grants-Skill",
         "DOS2-CO",
         "WET",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -10320,8 +10158,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -10338,8 +10175,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -10375,7 +10211,7 @@
         "Poison-Resistance",
         "Wits",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -10441,7 +10277,6 @@
         "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
-        "Magic",
         "Scrolls"
       ]
     },
@@ -10486,7 +10321,7 @@
         "Water-Resistance",
         "Earth-Resistance",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -10549,7 +10384,7 @@
         "Water-Surface",
         "WET",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -10560,7 +10395,7 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -10571,8 +10406,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Axes",
-        "Magic"
+        "Axes"
       ]
     },
     {
@@ -10586,7 +10420,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Arrows-And-Grenades"
+        "Grenades"
       ]
     },
     {
@@ -10608,8 +10442,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Bows",
-        "Magic"
+        "Bows"
       ]
     },
     {
@@ -10621,8 +10454,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Crossbows",
-        "Magic"
+        "Crossbows"
       ]
     },
     {
@@ -10633,8 +10465,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Daggers",
-        "Magic"
+        "Daggers"
       ]
     },
     {
@@ -10656,8 +10487,20 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Maces",
-        "Magic"
+        "Maces"
+      ]
+    },
+    {
+      "slug": "water-resistance-potion",
+      "title": "Water Resistance Potion",
+      "titlePl": "Mikstura odporności na wodę",
+      "tags": [
+        "DOS2-CO",
+        "Water-Resistance",
+        "DOS1",
+        "DOS2",
+        "Potions",
+        "Ingredients"
       ]
     },
     {
@@ -10679,8 +10522,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Spears",
-        "Magic"
+        "Spears"
       ]
     },
     {
@@ -10690,8 +10532,7 @@
         "Water-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves",
-        "Magic"
+        "Staves"
       ]
     },
     {
@@ -10702,8 +10543,7 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Swords",
-        "Magic"
+        "Swords"
       ]
     },
     {
@@ -10713,8 +10553,7 @@
         "Water-Damage",
         "DOS2-CO",
         "Water-Surface",
-        "Wands",
-        "Magic"
+        "Wands"
       ]
     },
     {
@@ -10725,7 +10564,7 @@
         "Healing",
         "Fire-Resistance",
         "DOS2-CO",
-        "Potions-And-Food",
+        "Food-And-Drink",
         "Ingredients"
       ]
     },
@@ -10771,7 +10610,7 @@
         "Casts-Spell",
         "DOS2-CO",
         "WEB",
-        "Arrows-And-Grenades"
+        "Arrows"
       ]
     },
     {
@@ -10785,8 +10624,8 @@
       ]
     },
     {
-      "slug": "wheel-from-wheelbarrow",
-      "title": "Wheel from Wheelbarrow",
+      "slug": "wheel",
+      "title": "Wheel",
       "tags": [
         "DOS2-CO",
         "Stations-And-Containers"
@@ -10885,8 +10724,8 @@
       ]
     },
     {
-      "slug": "winter-egg",
-      "title": "Winter Egg",
+      "slug": "winter-dragon-egg",
+      "title": "Winter Dragon Egg",
       "tags": [
         "DOS2-CO",
         "Seasonal-Items"
@@ -10935,14 +10774,6 @@
       ]
     },
     {
-      "slug": "witch-soul",
-      "title": "Witch Soul",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "wizards-cheese-ravioli-with-basil",
       "title": "Wizard's Cheese Ravioli with Basil",
       "tags": [
@@ -10955,7 +10786,7 @@
         "Hydrosophist",
         "Pyrokinetic",
         "DOS2-CO",
-        "Potions-And-Food"
+        "Food-And-Drink"
       ]
     },
     {
@@ -11020,7 +10851,7 @@
       "title": "Wood Mush (Vanilla Recipe)",
       "tags": [
         "DOS2-CO",
-        "Magic"
+        "Ingredients"
       ]
     },
     {
@@ -11132,15 +10963,6 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
-      ]
-    },
-    {
-      "slug": "zeus-potion",
-      "title": "Zeus Potion",
-      "tags": [
-        "DOS2-CO",
-        "Potions-And-Food",
-        "Seasonal-Items"
       ]
     }
   ]

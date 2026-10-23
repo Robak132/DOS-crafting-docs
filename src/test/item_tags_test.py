@@ -22,20 +22,20 @@ class ItemTagsTest(unittest.TestCase):
             self.assertEqual(classify(name, ['Stations-And-Containers'])[0], 'Stations-And-Containers', name)
 
     def test_equipment_potions_and_wearable_containers_are_distinguished(self):
-        self.assertEqual(classify('Giant Magic Armor', ['Potions-And-Food'])[0], 'Potions-And-Food')
+        self.assertEqual(classify('Giant Magic Armor', ['Potions'])[0], 'Potions')
         self.assertEqual(classify('Battered Cooking Pot', ['Armour'])[0], 'Armour')
         self.assertEqual(classify('Barrel Armor', ['Seasonal-Items'])[0], 'Armour')
 
     def test_markers_and_sidebar_headings_are_normalized_without_losing_properties(self):
-        tags = normalize(['Category', 'Weapons', 'Ingredients', 'Attributes', 'Healing', 'DOS1', 'DOS2', 'Seasonal-Items'], 'Potions-And-Food', 'DOS2-CO')
-        self.assertEqual(tags, ['Weapons', 'Ingredients', 'Seasonal-Items', 'Potions-And-Food', 'Healing', 'DOS2-CO'])
+        tags = normalize(['Category', 'Weapons', 'Ingredients', 'Attributes', 'Healing', 'DOS1', 'DOS2', 'Seasonal-Items'], 'Potions', 'DOS2-CO')
+        self.assertEqual(tags, ['Weapons', 'Ingredients', 'Seasonal-Items', 'Potions', 'Healing', 'DOS2-CO'])
 
-    def test_magic_weapon_keeps_multiple_types_and_only_the_most_specific_tags(self):
-        self.assertEqual(normalize(['Magic', 'Ingredients', 'Bows'], 'Weapons', 'DOS2-CO'), ['Magic', 'Ingredients', 'Bows', 'DOS2-CO'])
+    def test_weapon_keeps_multiple_types_and_only_the_most_specific_tags(self):
+        self.assertEqual(normalize(['Scrolls', 'Ingredients', 'Bows'], 'Weapons', 'DOS2-CO'), ['Scrolls', 'Ingredients', 'Bows', 'DOS2-CO'])
 
     def test_only_explicit_wrong_tags_are_removed(self):
-        tags = normalize(['Armour', 'Ingredients', 'Magic'], 'Ingredients', 'DOS2', module['invalid_type_tags']('Plate Scraps'))
-        self.assertEqual(tags, ['Ingredients', 'Magic', 'DOS2'])
+        tags = normalize(['Armour', 'Ingredients', 'Scrolls'], 'Ingredients', 'DOS2', module['invalid_type_tags']('Plate Scraps'))
+        self.assertEqual(tags, ['Ingredients', 'Scrolls', 'DOS2'])
 
 
 if __name__ == '__main__': unittest.main()

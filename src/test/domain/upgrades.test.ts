@@ -33,6 +33,22 @@ test("an item page lists the upgrades whose target covers its category", () => {
   assert.deepEqual(upgradesForItem(upgrades, ["Ingredients"]), [])
 })
 
+test("an upgrade with a resolved target group applies only to that group's members", () => {
+  const gloves = {
+    ...upgrade("Crit", ["Gloves"], "#Mage-Gloves"),
+    target: { name: "#Mage-Gloves", tags: [], groupId: "magegloves" },
+  }
+  const groups = {
+    magegloves: {
+      id: "magegloves",
+      name: "#Mage-Gloves",
+      members: [{ name: "Mage Gloves", slug: "mage-gloves", tags: ["Gloves"] }],
+    },
+  }
+  assert.deepEqual(upgradesForItem([gloves], ["Gloves"], "mage-gloves", groups), [gloves])
+  assert.deepEqual(upgradesForItem([gloves], ["Gloves"], "bone-gloves", groups), [])
+})
+
 test("upgrade search covers effect, target and ingredients in both languages", () => {
   const entry = upgrade("Air Resistance", ["Shields"])
   for (const query of ["air", "odpornosc", "shield", "esencja", "AIR essence"])

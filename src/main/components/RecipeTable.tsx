@@ -1,12 +1,9 @@
-import type { ComponentChild } from "preact"
-import { ItemIcon } from "./ItemIcon"
-import { tooltipItemKey } from "../domain/tooltipIdentity"
+
+import { RecipeItemView } from "./RecipeItem"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
-import { formatItemQuantity } from "../domain/recipeQuantity"
-import { FullSlug, gameForSlug, itemHref, pageHref } from "../routing"
+import { FullSlug } from "../routing"
 import {
   groupRecipes,
-  itemCraftRoleClass,
   recipeColumnsForCatalog,
   recipeResultTags,
   tagLabel,
@@ -25,23 +22,6 @@ type Props = {
   itemRoles?: Record<string, ItemCraftRole>
 }
 
-function itemAltTitle(item: RecipeItem): string | undefined {
-  if (item.namePl && item.namePl !== item.name) return item.namePl
-  return undefined
-}
-
-function ItemLabel({ item }: { item: RecipeItem }) {
-  if (item.namePl && item.namePl !== item.name) {
-    return (
-      <span class="item-lang">
-        <span class="item-lang-en">{item.name}</span>
-        <span class="item-lang-pl">{item.namePl}</span>
-      </span>
-    )
-  }
-  return <span class="item-lang">{item.name}</span>
-}
-
 export function RecipeTable({
   recipes,
   labels,
@@ -51,116 +31,15 @@ export function RecipeTable({
   itemRoles = {},
 }: Props) {
   const columns = recipeColumnsForCatalog(showRequirements)
-  const withQuantity = (node: ComponentChild, item: RecipeItem) => {
-    const qty = formatItemQuantity(item.quantity)
-    if (!qty) return node
-    return (
-      <span class="recipe-item-wrap">
-        {node}
-        <span class="recipe-item-qty"> {qty}</span>
-      </span>
-    )
-  }
-  const roleClass = (item: RecipeItem) => itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
-  const renderItem = (item: RecipeItem, opts?: { ingredient?: boolean }) => {
-    const title = itemAltTitle(item)
-    const searchText = item.name.replace(/^#/, "").replace(/^<|>$/g, "")
-    const craftClass = roleClass(item)
-    if (item.groupId && (item.groupSize ?? 0) >= 4) {
-      return withQuantity(
-        <a
-          class="internal recipe-item recipe-item-group"
-          data-no-popover="true"
-          href={`${pageHref(catalogSlug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
-        >
-          <ItemLabel item={item} />
-          <span class="group-count">{item.groupSize}</span>
-        </a>,
-        item,
-      )
-    }
-    if (item.selectorTag) {
-      return withQuantity(
-        searchable ? (
-          <button
-            type="button"
-            class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-            data-search-text={searchText}
-            title={title}
-          >
-            <ItemIcon icon={item.icon} />
-            <ItemLabel item={item} />
-          </button>
-        ) : (
-          <a
-            class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-            data-no-popover="true"
-            href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(searchText)}`}
-            title={title}
-          >
-            <ItemIcon icon={item.icon} />
-            <ItemLabel item={item} />
-          </a>
-        ),
-        item,
-      )
-    }
-    if (item.slug) {
-      return withQuantity(
-        <a
-          class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
-          data-slug={item.slug}
-          data-tooltip-key={tooltipItemKey(item)}
-          href={itemHref(gameForSlug(catalogSlug) ?? "dos1", item.slug)}
-          title={title}
-        >
-          <ItemIcon icon={item.icon} />
-          <ItemLabel item={item} />
-        </a>,
-        item,
-      )
-    }
-    if (opts?.ingredient && searchable) {
-      return withQuantity(
-        <button
-          type="button"
-          class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-          data-search-text={item.name}
-          data-tooltip-key={tooltipItemKey(item)}
-          title={title}
-        >
-          <ItemIcon icon={item.icon} />
-          <ItemLabel item={item} />
-        </button>,
-        item,
-      )
-    }
-    if (opts?.ingredient) {
-      return withQuantity(
-        <a
-          class={["internal", "recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
-          data-no-popover="true"
-          href={`${pageHref(catalogSlug)}?as=ingredient&q=${encodeURIComponent(item.name)}`}
-          title={title}
-        >
-          <ItemIcon icon={item.icon} />
-          <ItemLabel item={item} />
-        </a>,
-        item,
-      )
-    }
-    return withQuantity(
-      <span
-        class={["recipe-item", craftClass].filter(Boolean).join(" ")}
-        title={title}
-        data-tooltip-key={tooltipItemKey(item)}
-      >
-        <ItemIcon icon={item.icon} />
-        <ItemLabel item={item} />
-      </span>,
-      item,
-    )
-  }
+  const renderItem = (item: RecipeItem, opts?: { ingredient?: boolean }) => (
+    <RecipeItemView
+      item={item}
+      catalogSlug={catalogSlug}
+      ingredient={opts?.ingredient}
+      searchable={searchable}
+      itemRoles={itemRoles}
+    />
+  )
   const empty = <span class="recipe-empty">—</span>
   return (
     <div class="recipe-table-wrap" role="region" aria-label="Lista przedmiotów do craftingu" tabIndex={0}>

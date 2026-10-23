@@ -605,6 +605,23 @@
       ]
     },
     {
+      "slug": "backlash-scroll",
+      "title": "Backlash Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "backlash-skillbook",
+      "title": "Backlash Skillbook",
+      "titlePl": "Księga umiejętności „Skok za Plecy”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "backpack-2",
       "title": "Backpack",
       "titlePl": "Plecak",
@@ -626,6 +643,23 @@
         "DOS2-CO",
         "Food-And-Drink",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "barrage-scroll",
+      "title": "Barrage Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "barrage-skillbook",
+      "title": "Barrage Skillbook",
+      "titlePl": "Księga umiejętności „Skoncentrowany Ostrzał”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -662,6 +696,40 @@
         "Intelligence",
         "DOS2-CO",
         "Food-And-Drink"
+      ]
+    },
+    {
+      "slug": "battering-ram-scroll",
+      "title": "Battering Ram Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "battering-ram-skillbook",
+      "title": "Battering Ram Skillbook",
+      "titlePl": "Księga umiejętności „Taran”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "battle-stomp-scroll",
+      "title": "Battle Stomp Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "battle-stomp-skillbook",
+      "title": "Battle Stomp Skillbook",
+      "titlePl": "Księga umiejętności „Bojowe Łupnięcie”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -716,7 +784,7 @@
       "slug": "beard-of-the-divine-skillbook",
       "title": "Beard of the Divine Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2-CO",
         "Skillbooks",
         "Ingredients"
@@ -1136,6 +1204,23 @@
       ]
     },
     {
+      "slug": "blitz-attack-scroll",
+      "title": "Blitz Attack Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "blitz-attack-skillbook",
+      "title": "Blitz Attack Skillbook",
+      "titlePl": "Księga umiejętności „Błyskawiczny Atak”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "blue-dye",
       "title": "Blue Dye",
       "tags": [
@@ -1519,6 +1604,23 @@
       ]
     },
     {
+      "slug": "bouncing-shield-scroll",
+      "title": "Bouncing Shield Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "bouncing-shield-skillbook",
+      "title": "Bouncing Shield Skillbook",
+      "titlePl": "Księga umiejętności „Rzut Tarczą”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "bowl",
       "title": "Bowl",
       "titlePl": "Miska",
@@ -1898,6 +2000,23 @@
       ]
     },
     {
+      "slug": "chloroform-skillbook",
+      "title": "Chloroform Skillbook",
+      "titlePl": "Księga umiejętności „Chloroform”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "choloroform-scroll",
+      "title": "Choloroform Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
       "slug": "chunk-of-flesh",
       "title": "Chunk Of Flesh",
       "tags": [
@@ -1947,6 +2066,23 @@
       ]
     },
     {
+      "slug": "cloak-and-dagger-scroll",
+      "title": "Cloak and Dagger Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "cloak-and-dagger-skillbook",
+      "title": "Cloak And Dagger Skillbook",
+      "titlePl": "Księga umiejętności „Płaszcz i Sztylet”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "cloth-junk",
       "title": "Cloth Junk",
       "tags": [
@@ -1986,7 +2122,7 @@
       "slug": "companion-air-robot-skillbook",
       "title": "Companion Air Robot Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -1996,7 +2132,7 @@
       "slug": "companion-bear-skillbook",
       "title": "Companion Bear Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2006,7 +2142,7 @@
       "slug": "companion-bull-skillbook",
       "title": "Companion Bull Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2016,7 +2152,7 @@
       "slug": "companion-crocodile-skillbook",
       "title": "Companion Crocodile Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2026,7 +2162,7 @@
       "slug": "companion-deer-skillbook",
       "title": "Companion Deer Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2036,7 +2172,7 @@
       "slug": "companion-ghost-boar-skillbook",
       "title": "Companion Ghost Boar Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2046,7 +2182,7 @@
       "slug": "companion-tiger-skillbook",
       "title": "Companion Tiger Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2056,7 +2192,7 @@
       "slug": "companion-wolf-skillbook",
       "title": "Companion Wolf Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "Summoning",
         "DOS2-CO",
         "Skillbooks"
@@ -2100,6 +2236,23 @@
         "Casts-Spell",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "corrupted-blade-scroll",
+      "title": "Corrupted Blade Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "corrupted-blade-skillbook",
+      "title": "Corrupted Blade Skillbook",
+      "titlePl": "Księga umiejętności „Spaczone Ostrze”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -2417,6 +2570,23 @@
         "DOS2-CO",
         "POISONED",
         "Dyes"
+      ]
+    },
+    {
+      "slug": "crippling-blow-scroll",
+      "title": "Crippling Blow Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "crippling-blow-skillbook",
+      "title": "Crippling Blow Skillbook",
+      "titlePl": "Księga umiejętności „Okaleczający Cios”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -2805,6 +2975,23 @@
       ]
     },
     {
+      "slug": "deflective-barrier-scroll",
+      "title": "Deflective Barrier Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "deflective-barrier-skillbook",
+      "title": "Deflective Barrier Skillbook",
+      "titlePl": "Księga umiejętności „Odbijająca Bariera”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "demon-altar",
       "title": "Demon Altar",
       "tags": [
@@ -3173,6 +3360,23 @@
       ]
     },
     {
+      "slug": "elemental-arrowheads-scroll",
+      "title": "Elemental Arrowheads Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "elemental-arrowheads-skillbook",
+      "title": "Elemental Arrowheads Skillbook",
+      "titlePl": "Księga umiejętności „Groty Żywiołów”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "elven-corpse",
       "title": "Elven Corpse",
       "tags": [
@@ -3304,6 +3508,23 @@
       ]
     },
     {
+      "slug": "enrage-scroll",
+      "title": "Enrage Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "enrage-skillbook",
+      "title": "Enrage Skillbook",
+      "titlePl": "Księga umiejętności „Wściekłość”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "estoc",
       "title": "Estoc",
       "titlePl": "Estok",
@@ -3370,7 +3591,7 @@
       "slug": "eye-of-the-divine-skillbook",
       "title": "Eye of the Divine Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2-CO",
         "Skillbooks",
         "Ingredients"
@@ -3476,7 +3697,7 @@
       "tags": [
         "Ingredients",
         "DOS2-CO",
-        "Dexterity"
+        "Finesse"
       ]
     },
     {
@@ -3635,6 +3856,23 @@
         "Fire-Damage",
         "DOS2-CO",
         "Wands"
+      ]
+    },
+    {
+      "slug": "first-aid-scroll",
+      "title": "First Aid Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "first-aid-skillbook",
+      "title": "First Aid Skillbook",
+      "titlePl": "Księga umiejętności „Pierwsza Pomoc”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -3862,6 +4100,23 @@
       ]
     },
     {
+      "slug": "gag-order-scroll",
+      "title": "Gag Order Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "gag-order-skillbook",
+      "title": "Gag Order Skillbook",
+      "titlePl": "Księga umiejętności „Knebel”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "garlic",
       "title": "Garlic",
       "titlePl": "Czosnek",
@@ -3951,6 +4206,23 @@
         "Physical-Armour",
         "DOS2-CO",
         "Potions"
+      ]
+    },
+    {
+      "slug": "glitter-dust-scroll",
+      "title": "Glitter Dust Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "glitter-dust-skillbook",
+      "title": "Glitter Dust Skillbook",
+      "titlePl": "Księga umiejętności „Brokat”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -4170,7 +4442,7 @@
       "slug": "heart-of-the-divine-skillbook",
       "title": "Heart of the Divine Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2-CO",
         "Skillbooks",
         "Ingredients"
@@ -4600,6 +4872,7 @@
       "title": "Large Dexterity Potion",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions"
@@ -5118,6 +5391,23 @@
       ]
     },
     {
+      "slug": "marksman-s-fang-scroll",
+      "title": "Marksman's Fang Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "marksman-s-fang-skillbook",
+      "title": "Marksman's Fang Skillbook",
+      "titlePl": "Księga umiejętności „Kieł Strzelca”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "mechanical-parts",
       "title": "Mechanical Parts",
       "tags": [
@@ -5168,6 +5458,7 @@
       "title": "Medium Dexterity Potion",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions"
@@ -5428,6 +5719,7 @@
       "titlePl": "Mała mikstura zwinności",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions",
@@ -5851,17 +6143,6 @@
       ]
     },
     {
-      "slug": "oil",
-      "title": "Oil",
-      "titlePl": "Olej",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "oil-barrel",
       "title": "Oil Barrel",
       "titlePl": "Beczka oleju",
@@ -6203,6 +6484,23 @@
       ]
     },
     {
+      "slug": "phoenix-dive-scroll",
+      "title": "Phoenix Dive Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "phoenix-dive-skillbook",
+      "title": "Phoenix Dive Skillbook",
+      "titlePl": "Księga umiejętności „Lot Feniksa”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "phoenix-talon",
       "title": "Phoenix Talon",
       "tags": [
@@ -6274,6 +6572,23 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "pin-down-skillbook",
+      "title": "Pin Down Skillbook",
+      "titlePl": "Księga umiejętności „Przygwożdżenie”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "pindown-scroll",
+      "title": "Pindown Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
       ]
     },
     {
@@ -6570,6 +6885,23 @@
       ]
     },
     {
+      "slug": "provoke-scroll",
+      "title": "Provoke Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "provoke-skillbook",
+      "title": "Provoke Skillbook",
+      "titlePl": "Księga umiejętności „Prowokacja”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "puffball",
       "title": "Puffball",
       "titlePl": "Purchawka",
@@ -6813,6 +7145,23 @@
       ]
     },
     {
+      "slug": "reactive-shot-scroll",
+      "title": "Reactive Shot Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "reactive-shot-skillbook",
+      "title": "Reactive Shot Skillbook",
+      "titlePl": "Księga umiejętności „Strzał Odruchowy”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "real-health-potion",
       "title": "Real Health Potion",
       "tags": [
@@ -6875,30 +7224,6 @@
       ]
     },
     {
-      "slug": "related-ranger-skillbook",
-      "title": "Related Ranger Skillbook",
-      "tags": [
-        "DOS2-CO",
-        "Skillbooks"
-      ]
-    },
-    {
-      "slug": "related-rogue-skillbook",
-      "title": "Related Rogue Skillbook",
-      "tags": [
-        "DOS2-CO",
-        "Skillbooks"
-      ]
-    },
-    {
-      "slug": "related-warrior-skillbook",
-      "title": "Related Warrior Skillbook",
-      "tags": [
-        "DOS2-CO",
-        "Skillbooks"
-      ]
-    },
-    {
       "slug": "renegade-belt-of-ryker",
       "title": "Renegade Belt of Ryker",
       "tags": [
@@ -6932,7 +7257,24 @@
       "slug": "resurrection-skillbook",
       "title": "Resurrection Skillbook",
       "tags": [
-        "Teaches-Skill",
+
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "ricochet-scroll",
+      "title": "Ricochet Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "ricochet-skillbook",
+      "title": "Ricochet Skillbook",
+      "titlePl": "Księga umiejętności „Rykoszet”",
+      "tags": [
         "DOS2-CO",
         "Skillbooks"
       ]
@@ -7100,6 +7442,23 @@
       ]
     },
     {
+      "slug": "rupture-tendons-scroll",
+      "title": "Rupture Tendons Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "rupture-tendons-skillbook",
+      "title": "Rupture Tendons Skillbook",
+      "titlePl": "Księga umiejętności „Zerwane Ścięgna”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "ryker-boss-corpse",
       "title": "Ryker Boss Corpse",
       "tags": [
@@ -7146,6 +7505,23 @@
       "tags": [
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "sawtooth-knife-skillbook",
+      "title": "Sawtooth Knife Skillbook",
+      "titlePl": "Księga umiejętności „Zębate Ostrze”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "sawtooth-scroll",
+      "title": "Sawtooth Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
       ]
     },
     {
@@ -7610,12 +7986,46 @@
       ]
     },
     {
+      "slug": "sky-shot-scroll",
+      "title": "Sky Shot Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "sky-shot-skillbook",
+      "title": "Sky Shot Skillbook",
+      "titlePl": "Księga umiejętności „Strzał z nieba”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "slayden-dye",
       "title": "Slayden Dye",
       "tags": [
         "DOS2-CO",
         "POISONED",
         "Dyes"
+      ]
+    },
+    {
+      "slug": "sleeping-arms-scroll",
+      "title": "Sleeping Arms Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "sleeping-arms-skillbook",
+      "title": "Sleeping Arms Skillbook",
+      "titlePl": "Księga umiejętności „Senne Ramiona”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -7976,6 +8386,24 @@
       ]
     },
     {
+      "slug": "tactical-retreat-scroll",
+      "title": "Tactical Retreat Scroll",
+      "titlePl": "Zwój Odwrotu Taktycznego",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "tactical-retreat-skillbook",
+      "title": "Tactical Retreat Skillbook",
+      "titlePl": "Księga umiejętności „Odwrót Taktyczny”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "taser-grenade",
       "title": "Taser Grenade",
       "titlePl": "Granat piorunów",
@@ -8055,6 +8483,23 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "throwing-knife-scroll",
+      "title": "Throwing Knife Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "throwing-knife-skillbook",
+      "title": "Throwing Knife Skillbook",
+      "titlePl": "Księga umiejętności „Rzut Nożem”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {
@@ -8175,7 +8620,7 @@
       "slug": "tongue-of-the-divine-skillbook",
       "title": "Tongue of the Divine Skillbook",
       "tags": [
-        "Teaches-Skill",
+
         "DOS2-CO",
         "Skillbooks",
         "Ingredients"
@@ -10426,7 +10871,7 @@
     {
       "slug": "water-barrel",
       "title": "Water Barrel",
-      "titlePl": "Beczka z wodą",
+      "titlePl": "Beczka wody",
       "tags": [
         "DOS1",
         "DOS2",
@@ -10500,16 +10945,6 @@
         "DOS1",
         "DOS2",
         "Potions",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "water-source",
-      "title": "Water Source",
-      "titlePl": "Źródło wody",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -10638,6 +11073,23 @@
       "tags": [
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "whirlwind-scroll",
+      "title": "Whirlwind Scroll",
+      "tags": [
+        "DOS2-CO",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "whirlwind-skillbook",
+      "title": "Whirlwind Skillbook",
+      "titlePl": "Księga umiejętności „Wir”",
+      "tags": [
+        "DOS2-CO",
+        "Skillbooks"
       ]
     },
     {

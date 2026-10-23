@@ -1,4 +1,11 @@
-import { buildItemGroups, expandSmallGroups, isItemGroup } from "../src/main/domain/itemGroups"
+import {
+  buildItemGroups,
+  expandSmallGroups,
+  isItemGroup,
+  isLiquidSource,
+  upgradeTargetGroups,
+  type ItemGroups,
+} from "../src/main/domain/itemGroups"
 import { itemIconKey, itemDataKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
@@ -88,7 +95,23 @@ export async function generateData(outputDirectory = "dist") {
       if (localized) stat.label = localized.pl || stat.label || localized.en
     }
     Object.assign(data, stats)
-    data.groups = Object.fromEntries(Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4))
+    const groups: ItemGroups = Object.fromEntries(
+      Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4 || isLiquidSource(group.name)),
+    )
+    data.groups = groups
+    // Upgrade targets link to the group of items they apply to.
+    const targets = upgradeTargetGroups(data.upgrades, data.recipes, inventory)
+    for (const upgrade of data.upgrades) {
+      const group = targets[upgrade.id]
+      if (!group || group.members.length === 0) continue
+      const sameMembers = (id: string) =>
+        JSON.stringify(groups[id].members.map((m) => m.name)) === JSON.stringify(group.members.map((m) => m.name))
+      let key = group.id
+      for (let n = 1; groups[key] && !sameMembers(key); n++) key = `${group.id}-${n}`
+      groups[key] = { ...group, id: key }
+      upgrade.target.groupId = key
+      upgrade.target.groupSize = group.members.length
+    }
     for (const row of data.recipes) {
       const vocabulary = Object.values(tagLocalisation[game] ?? {}) as { en: string; pl?: string }[]
       const effectLabels = Object.fromEntries(

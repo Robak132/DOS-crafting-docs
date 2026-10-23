@@ -278,8 +278,11 @@ export function App() {
     }
   }, [detail.data, catalog.data, itemSlug])
   const itemUpgrades = useMemo(
-    () => (detail.data ? upgradesForItem(catalog.data?.upgrades ?? [], detail.data.tags) : []),
-    [detail.data, catalog.data],
+    () =>
+      detail.data
+        ? upgradesForItem(catalog.data?.upgrades ?? [], detail.data.tags, itemSlug, catalog.data?.groups)
+        : [],
+    [detail.data, catalog.data, itemSlug],
   )
   const detailName =
     itemRecipes.craft.flatMap(recipeResults).find((item) => item.slug === itemSlug) ??

@@ -224,7 +224,6 @@
       "title": "Beer",
       "tags": [
         "DOS1",
-        "DOS2",
         "Ingredients"
       ]
     },
@@ -234,6 +233,7 @@
       "titlePl": "Beczka piwa",
       "tags": [
         "DOS1",
+        "DOS2",
         "Ingredients",
         "Stations-And-Containers"
       ]
@@ -886,10 +886,11 @@
       "title": "Cup of Oil",
       "titlePl": "Kubek oleju",
       "tags": [
+        "DOS1",
+        "DOS2",
         "Intelligence",
         "Constitution",
         "Fire-Resistance",
-        "DOS1",
         "POISONED",
         "Ingredients"
       ]
@@ -1986,6 +1987,7 @@
       "title": "Large Dexterity Potion",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions"
@@ -2658,6 +2660,7 @@
       "title": "Medium Dexterity Potion",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions"
@@ -2883,6 +2886,7 @@
       "titlePl": "Mała mikstura zwinności",
       "tags": [
         "Dexterity",
+        "Finesse",
         "DOS1",
         "DOS2-CO",
         "Potions",
@@ -3082,9 +3086,10 @@
       "title": "Mug of Wine",
       "titlePl": "Kubek wina",
       "tags": [
+        "DOS1",
+        "DOS2",
         "Healing",
         "Speed",
-        "DOS1",
         "DRUNK",
         "Food-And-Drink"
       ]
@@ -3200,8 +3205,6 @@
       "titlePl": "Olej",
       "tags": [
         "DOS1",
-        "DOS2",
-        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -4336,7 +4339,7 @@
     {
       "slug": "water-barrel",
       "title": "Water Barrel",
-      "titlePl": "Beczka z wodą",
+      "titlePl": "Beczka wody",
       "tags": [
         "DOS1",
         "DOS2",
@@ -4426,7 +4429,6 @@
       "titlePl": "Wino",
       "tags": [
         "DOS1",
-        "DOS2",
         "Ingredients"
       ]
     },

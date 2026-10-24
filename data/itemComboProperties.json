@@ -169,6 +169,1259 @@
         "HammerAnvil_Craft_Goldbar_7",
         "HammerAnvil_Craft_Goldbar_8"
       ]
+    },
+    "DOS1-Oven": {
+      "group": "DOS1-Oven",
+      "label": "Oven",
+      "category": "Oven",
+      "members": [
+        "Mobile Kitchen",
+        "Oven",
+        "Oven",
+        "Furnace"
+      ],
+      "stats": [
+        "FUR_BoilingPot_A",
+        "FUR_Poor_Oven_A",
+        "FUR_Poor_Oven_B",
+        "LTS_Smith_Fireplace_A"
+      ]
+    },
+    "DOS1-Fish": {
+      "group": "DOS1-Fish",
+      "label": "Fish",
+      "category": "FoodFish",
+      "members": [
+        "Herring",
+        "Red Snapper",
+        "Chub Fish",
+        "Plaice",
+        "Mackerel",
+        "Swordfish"
+      ],
+      "stats": [
+        "FOOD_FishA",
+        "FOOD_FishB",
+        "FOOD_FishC",
+        "FOOD_FishD",
+        "FOOD_FishE",
+        "FOOD_FishF"
+      ]
+    },
+    "DOS1-Pumpkin": {
+      "group": "DOS1-Pumpkin",
+      "label": "Pumpkin",
+      "category": "Pumpkin",
+      "members": [
+        "Pumpkin",
+        "Pumpkin Part",
+        "Pumpkin Part"
+      ],
+      "stats": [
+        "FOOD_Pumpkin",
+        "FOOD_PumpkinPart",
+        "FOOD_Pumpkin_C"
+      ]
+    },
+    "DOS1-Poison-Potion": {
+      "group": "DOS1-Poison-Potion",
+      "label": "Poison Potion",
+      "category": "PotionPoison",
+      "members": [
+        "Small Poison Bottle",
+        "Large Poison Bottle",
+        "Medium Poison Bottle"
+      ],
+      "stats": [
+        "CON_Potion_Poison_A",
+        "CON_Potion_Poison_Large_A",
+        "CON_Potion_Poison_Medium_A"
+      ]
+    },
+    "DOS1-Knife": {
+      "group": "DOS1-Knife",
+      "label": "Knife",
+      "category": "Knife",
+      "members": [
+        "Butter Knife",
+        "Paper Knife",
+        "Golden Kitchen Knife",
+        "Golden Butter Knife",
+        "Golden Combat Knife",
+        "Golden Dagger",
+        "Heavy Golden Dagger",
+        "Embellished Golden Dagger",
+        "Studded Golden Dagger",
+        "Nice Golden Dagger",
+        "Elegant Golden Dagger",
+        "Delicate Golden Dagger",
+        "Shiny Golden Dagger",
+        "Ornate Golden Dagger",
+        "King's Golden Dagger",
+        "Light Golden Dirk",
+        "Fine Golden Dirk",
+        "Nice Golden Dirk",
+        "Heavy Golden Dirk",
+        "Studded Golden Dirk",
+        "Embellished Golden Dirk",
+        "Knight's Golden Dirk",
+        "Bloody Knife",
+        "Homemade Dagger",
+        "Sharp Fighting Knife",
+        "Fighting Knife",
+        "Pocket Knife"
+      ],
+      "stats": [
+        "FUR_Cutlery_Knife_A",
+        "FUR_PaperKnife",
+        "FUR_Rich_Knife_A",
+        "FUR_Rich_Knife_B",
+        "FUR_Rich_Knife_C",
+        "FUR_Rich_Knife_D",
+        "FUR_Rich_Knife_E",
+        "FUR_Rich_Knife_F",
+        "FUR_Rich_Knife_G",
+        "FUR_Rich_Knife_H",
+        "FUR_Rich_Knife_I",
+        "FUR_Rich_Knife_J",
+        "FUR_Rich_Knife_K",
+        "FUR_Rich_Knife_L",
+        "FUR_Rich_Knife_M",
+        "FUR_Rich_Knife_N",
+        "FUR_Rich_Knife_O",
+        "FUR_Rich_Knife_P",
+        "FUR_Rich_Knife_Q",
+        "FUR_Rich_Knife_R",
+        "FUR_Rich_Knife_S",
+        "FUR_Rich_Knife_T",
+        "QUEST_Jakes_Knife",
+        "WPN_CraftedDagger_01",
+        "WPN_FightingKnife",
+        "WPN_FightingKnife_B",
+        "WPN_PocketKnife"
+      ]
+    },
+    "DOS1-Dagger": {
+      "group": "DOS1-Dagger",
+      "label": "Dagger",
+      "category": "Dagger",
+      "members": [
+        "Handcrafted Dagger",
+        "Custom Made Dagger",
+        "Polished Dagger",
+        "Superior Dagger",
+        "Dagger",
+        "Outdated Estoc",
+        "Estoc",
+        "Sharp Long Dagger",
+        "Balanced Long Dagger",
+        "Baselard",
+        "Outdated Mercygiver",
+        "Sharp Mercygiver",
+        "Knight's Mercygiver",
+        "Poniard",
+        "Old Push Dagger",
+        "Sharp Push Dagger",
+        "Noble Push Dagger",
+        "Rapier",
+        "Sharp Rapier",
+        "Military Rapier",
+        "Rondel Dagger",
+        "Sharp Rondel Dagger",
+        "Sea Spider's Claw",
+        "Snakebite",
+        "Wolgraff's Dagger",
+        "Wolgraff's Other Dagger"
+      ],
+      "stats": [
+        "WPN_CraftedDagger_02",
+        "WPN_CraftedDagger_03",
+        "WPN_CraftedDagger_04",
+        "WPN_CraftedDagger_05",
+        "WPN_Dagger_A_Dagger",
+        "WPN_Estoc",
+        "WPN_Estoc_B",
+        "WPN_LongDagger_A",
+        "WPN_LongDagger_B",
+        "WPN_LongDagger_C",
+        "WPN_Mercygiver",
+        "WPN_Mercygiver_B",
+        "WPN_Mercygiver_C",
+        "WPN_Poniard_B",
+        "WPN_PushDagger",
+        "WPN_PushDagger_B",
+        "WPN_PushDagger_C",
+        "WPN_Rapier_A",
+        "WPN_Rapier_B",
+        "WPN_Rapier_C",
+        "WPN_Rondel",
+        "WPN_Rondel_B",
+        "WPN_UNIQUE_SeaSpiderClaw",
+        "WPN_UNIQUE_Snakebite",
+        "WPN_UNIQUE_WolgraffsDagger",
+        "WPN_UNIQUE_WolgraffsOtherDagger"
+      ]
+    },
+    "DOS1-Axe": {
+      "group": "DOS1-Axe",
+      "label": "Axe",
+      "category": "Axe",
+      "members": [
+        "Outdated Double Headed Axe",
+        "Double Headed Axe",
+        "Sharp Double Headed Axe",
+        "Old Cleaver",
+        "Sharp Cleaver",
+        "Heavy Cleaver",
+        "Antique Battle Axe",
+        "Battle Axe",
+        "Sharp Battle Axe",
+        "Heavy Battle Axe",
+        "Outdated Bearded Axe",
+        "Bearded Axe",
+        "Homemade Axe",
+        "Handcrafted Axe",
+        "Custom Made Axe",
+        "Polished Axe",
+        "Superior Axe",
+        "Dark Double Headed Axe",
+        "Dark Double Headed Axe",
+        "Dark Bearded Axe",
+        "Dark Bearded Axe",
+        "Hatchet",
+        "Shepherd's Axe",
+        "Hand Axe",
+        "Stout Hand Axe",
+        "Hacksaw Decapitator",
+        "Hanneman's Axe",
+        "Pickaxe",
+        "Splitting Maul"
+      ],
+      "stats": [
+        "WPN_Axe_A_1_Axe",
+        "WPN_Axe_A_1_Axe_B",
+        "WPN_Axe_A_1_Axe_C",
+        "WPN_Axe_B_1_Cleaver_B",
+        "WPN_Axe_B_1_Cleaver_C",
+        "WPN_Axe_B_1_Cleaver_D",
+        "WPN_BattleAxe_1H",
+        "WPN_BattleAxe_1H_E",
+        "WPN_BattleAxe_1H_F",
+        "WPN_BattleAxe_1H_G",
+        "WPN_BeardedAxe_1H",
+        "WPN_BeardedAxe_1H_B",
+        "WPN_CraftedAxe_01",
+        "WPN_CraftedAxe_02",
+        "WPN_CraftedAxe_03",
+        "WPN_CraftedAxe_04",
+        "WPN_CraftedAxe_05",
+        "WPN_DarkMinions_DoubleAxe",
+        "WPN_DarkMinions_DoubleAxe_B",
+        "WPN_DarkMinions_SingleAxe",
+        "WPN_DarkMinions_SingleAxe_B",
+        "WPN_HatchetTool_1H",
+        "WPN_ShepherdsAxe_1H",
+        "WPN_SmallHandAxeTool_1H",
+        "WPN_SmallHandAxeTool_1H_B",
+        "WPN_UNIQUE_HacksawDecapitator",
+        "WPN_UNIQUE_Hanneman",
+        "WPN_Undead_Pickaxe_A",
+        "WPN_WoodMaulTool_1H"
+      ]
+    },
+    "Bones": {
+      "group": "Bones",
+      "label": "Bones",
+      "category": "Bone",
+      "members": [
+        "Skull",
+        "Ancient Human Skull"
+      ],
+      "stats": [
+        "LOOT_Bone_A",
+        "LOOT_Skull_Bird_A",
+        "LOOT_Skull_Human_A",
+        "LOOT_Skull_Human_A_Ancient"
+      ]
+    },
+    "Eternal-Artefact": {
+      "group": "Eternal-Artefact",
+      "label": "Eternal Artefact",
+      "category": "AtaraxianArtifact",
+      "members": [
+        "Eternal Artefact",
+        "Phase Capacitor"
+      ],
+      "stats": [
+        "LOOT_AtaraxianArtifacts_A",
+        "LOOT_AtaraxianArtifacts_B",
+        "LOOT_AtaraxianArtifacts_C"
+      ]
+    },
+    "Voidwoken-Fish": {
+      "group": "Voidwoken-Fish",
+      "label": "Voidwoken Fish",
+      "category": "FoodVoidwokenFish",
+      "members": [
+        "Void-Tainted Yellow Ridgeback",
+        "Void-Tainted Crimson Bream",
+        "Void-Tainted Umber Monkfish",
+        "Void-tainted Plaice",
+        "Void-Tainted Mackerel",
+        "Void-tainted Sailfish"
+      ],
+      "stats": [
+        "FOOD_FishA_Voidwoken",
+        "FOOD_FishB_Voidwoken",
+        "FOOD_FishC_Voidwoken",
+        "FOOD_FishD_Voidwoken",
+        "FOOD_FishE_Voidwoken",
+        "FOOD_FishF_Voidwoken"
+      ]
+    },
+    "ArmorAmulet": {
+      "group": "ArmorAmulet",
+      "label": "Amulet",
+      "category": "ArmorAmulet",
+      "members": [
+        "War Owl Whistle",
+        "Mordus' Amulet",
+        "The Watcher's Amulet"
+      ],
+      "stats": [
+        "ARM_Amulet",
+        "ARM_UNIQUE_ARX_Amulet_RootedSebille",
+        "ARM_UNIQUE_CaptainsCompass",
+        "ARM_UNIQUE_LoneWolfMark",
+        "ARM_UNIQUE_MordusAmulet",
+        "ARM_UNIQUE_SaheilaSignet",
+        "ARM_UNIQUE_SimplePendant",
+        "ARM_UNIQUE_WatcherAmulet",
+        "FTJ_SW_ShelterBackSalamander_Amulet",
+        "FTJ_SW_VWBoss_VoidWoken_Amulet",
+        "QUEST_FTJ_SW_GarethAmulet",
+        "RC_FL_Lowlands_RainAmulet",
+        "RC_WH_BottledWish_DjinnsGift"
+      ]
+    },
+    "ArmorRing": {
+      "group": "ArmorRing",
+      "label": "Ring",
+      "category": "ArmorRing",
+      "members": [],
+      "stats": [
+        "ARM_RC_FL_UNIQUE_GarethParentsRewardRing",
+        "ARM_Ring",
+        "ARM_Ring_UNIQUE_RC_DW_FishermanRing",
+        "ARM_UNIQUE_ARX_BurnerPaladinGift",
+        "ARM_UNIQUE_AlmiraRing",
+        "ARM_UNIQUE_AntiqueSpecialRing",
+        "ARM_UNIQUE_ArxRingOfHealing",
+        "ARM_UNIQUE_Astartes_Tears_Ring",
+        "ARM_UNIQUE_BraccusCursedRing",
+        "ARM_UNIQUE_MothersRing",
+        "ARM_UNIQUE_RC_DW_Barracks_Evidence",
+        "ARM_UNIQUE_RedPrincessRing",
+        "ARM_UNIQUE_SalamanderRing_Int",
+        "ARM_UNIQUE_SpymasterSignet",
+        "RC_DW_Tavern_Baran_Leveres_Ring"
+      ]
+    },
+    "ArmorScale": {
+      "group": "ArmorScale",
+      "label": "Metal Armour",
+      "category": "ArmorScale",
+      "members": [
+        "Handmade Plate Armour",
+        "Handmade Scale Armour",
+        "Unique Polymorph Torso",
+        "Unique Warrior Torso"
+      ],
+      "stats": [
+        "ARM_Heavy_UpperBody",
+        "ARM_Heavy_UpperBody_Plate_Crafted",
+        "ARM_Heavy_UpperBody_Scale_Crafted",
+        "ARM_Plate_UpperBody_Arena",
+        "ARM_PolymorphUnique_UpperBody",
+        "ARM_REFERENCE_Heavy_UpperBody",
+        "ARM_WarriorUnique_UpperBody"
+      ]
+    },
+    "BootsMage": {
+      "group": "BootsMage",
+      "label": "Mage Boots",
+      "category": "BootsMage",
+      "members": [
+        "Unique Aerotheruge Boots",
+        "Unique Geomancer Boots",
+        "Unique Hydrosophist Boots",
+        "Crafted Cloth Boots",
+        "Unique Necromancer Boots",
+        "Unique Pyromancer Boots",
+        "Unique Summoner  Boots"
+      ],
+      "stats": [
+        "ARM_AeroUnique_Boots",
+        "ARM_GeoUnique_Boots",
+        "ARM_HydroUnique_Boots",
+        "ARM_Mage_Boots",
+        "ARM_Mage_Boots_Arena",
+        "ARM_NecroUnique_Boots",
+        "ARM_PyroUnique_Boots",
+        "ARM_REFERENCE_Mage_Boots",
+        "ARM_SummonUnique_Boots"
+      ]
+    },
+    "BootsPlate": {
+      "group": "BootsPlate",
+      "label": "Plate Boots",
+      "category": "BootsPlate",
+      "members": [],
+      "stats": [
+        "ARM_Plate_Boots_Arena"
+      ]
+    },
+    "BootsScale": {
+      "group": "BootsScale",
+      "label": "Scale Boots",
+      "category": "BootsScale",
+      "members": [
+        "Bearpaw Boots",
+        "Crafted Metal Greaves",
+        "Unique Polymorph Boots",
+        "Unique Warrior Boots"
+      ],
+      "stats": [
+        "ARM_CorpseHarvester_5_BearBoots",
+        "ARM_Heavy_Boots",
+        "ARM_PolymorphUnique_Boots",
+        "ARM_REFERENCE_Heavy_Boots",
+        "ARM_WarriorUnique_Boots"
+      ]
+    },
+    "ClothArmor": {
+      "group": "ClothArmor",
+      "label": "Cloth Armour",
+      "category": "ClothArmor",
+      "members": [
+        "Handmade Cloth Shirt"
+      ],
+      "stats": [
+        "ARM_Civilian_UpperBody",
+        "ARM_Cloth_UpperBody_Crafted"
+      ]
+    },
+    "ClothBoots": {
+      "group": "ClothBoots",
+      "label": "Cloth Boots",
+      "category": "ClothBoots",
+      "members": [],
+      "stats": [
+        "ARM_Civilian_Boots",
+        "ARM_Purge_Boots"
+      ]
+    },
+    "ClothGloves": {
+      "group": "ClothGloves",
+      "label": "Cloth Bracers",
+      "category": "ClothGloves",
+      "members": [],
+      "stats": [
+        "ARM_Civilian_Gloves",
+        "ARM_Purge_Gloves"
+      ]
+    },
+    "ClothHelmet": {
+      "group": "ClothHelmet",
+      "label": "Cloth Helmet",
+      "category": "ClothHelmet",
+      "members": [
+        "Pumpkin Helmet",
+        "Burning Helmet",
+        "Crafted Fez",
+        "Winter Cap",
+        "Mask of the Shapeshifter",
+        "Barrel Armor",
+        "Ghost Helm",
+        "Halloween Mask",
+        "Halloween Pumpkin Helmet",
+        "Halloween Fire Head Helmet"
+      ],
+      "stats": [
+        "ARM_Civilian_Helmet",
+        "ARM_CorpseHarvester_21_PumpkinHelm",
+        "ARM_CorpseHarvester_34_BurningHelmet",
+        "ARM_Fez_Helmet",
+        "ARM_Helmet_Winter_Santa",
+        "ARM_Purge_Helmet",
+        "ARM_ShapeshifterMask",
+        "ARM_Spooky_Barrel_Upperbody",
+        "ARM_Spooky_Ghost_Helm",
+        "ARM_Spooky_Mask_Helmet",
+        "ARM_Spooky_Pumpkin_Helmet",
+        "ARM_Spooky_Skeleton_Fire_Head"
+      ]
+    },
+    "ClothPants": {
+      "group": "ClothPants",
+      "label": "Cloth Leggings",
+      "category": "ClothPants",
+      "members": [],
+      "stats": [
+        "ARM_Civilian_LowerBody"
+      ]
+    },
+    "Dagger": {
+      "group": "Dagger",
+      "label": "Dagger",
+      "category": "Dagger",
+      "members": [
+        "Fork",
+        "Unique Tenebrium Dagger",
+        "Shiv",
+        "Air Dagger",
+        "Chaos Dagger",
+        "Earth Dagger",
+        "Fire Dagger",
+        "Poison Dagger",
+        "Shadow Dagger",
+        "Unique Air Dagger",
+        "Unique Earth Dagger",
+        "Unique Fire Dagger",
+        "Unique Silver Dagger",
+        "Unique Poison Dagger",
+        "Unique Water Dagger",
+        "Water Dagger"
+      ],
+      "stats": [
+        "ARX_UNIQUE_DaggerOfCruelty",
+        "ARX_UNIQUE_Dagger_ElvenRelic",
+        "FTJ_Magister_Boss_Dallis_Dragon",
+        "FUR_Rich_Fork_A",
+        "WPN_Blackrock_Unique_Dagger",
+        "WPN_CraftedDagger",
+        "WPN_Dagger",
+        "WPN_Dagger_Air",
+        "WPN_Dagger_Arena_A",
+        "WPN_Dagger_Arena_B",
+        "WPN_Dagger_Chaos",
+        "WPN_Dagger_Earth",
+        "WPN_Dagger_Fire",
+        "WPN_Dagger_Poison",
+        "WPN_Dagger_Shadow",
+        "WPN_Dagger_Unique_Air",
+        "WPN_Dagger_Unique_Earth",
+        "WPN_Dagger_Unique_Fire",
+        "WPN_Dagger_Unique_Physical",
+        "WPN_Dagger_Unique_Poison",
+        "WPN_Dagger_Unique_Water",
+        "WPN_Dagger_Water",
+        "WPN_ReferenceRapier",
+        "WPN_Rogue_Dagger_Dwarves",
+        "WPN_Rogue_Dagger_Elves",
+        "WPN_Rogue_Dagger_Humans",
+        "WPN_Rogue_Dagger_Lizards",
+        "WPN_Shadowblade_Dagger_Dwarves",
+        "WPN_Shadowblade_Dagger_Elves",
+        "WPN_Shadowblade_Dagger_Humans",
+        "WPN_Shadowblade_Dagger_Lizards",
+        "WPN_Toy_WoodenSword",
+        "WPN_Witch_Dagger_Dwarves",
+        "WPN_Witch_Dagger_Elves",
+        "WPN_Witch_Dagger_Humans",
+        "WPN_Witch_Dagger_Lizards",
+        "WPN_Wooden_Stake",
+        "_ARX_BlackRing_Melee_Dagger",
+        "_ARX_Demons_Fence_Daggers",
+        "_ARX_Dragon_Newt",
+        "_ARX_Dwarves_Melee_Dagger",
+        "_ARX_Dwarves_Melee_Dagger_Poison",
+        "_ARX_Elves_Melee_Dagger",
+        "_ARX_Horrorsleep_RedPrince_Dagger",
+        "_ARX_Humans_Melee_Dagger",
+        "_ARX_KemmAssassins_Rogue_Aero",
+        "_ARX_KemmAssassins_Rogue_Water",
+        "_ARX_Lizards_Melee_Dagger",
+        "_ARX_Magister_Melee_Dagger",
+        "_ARX_Paladin_Melee_Dagger",
+        "_ARX_PossessedKid_Boss",
+        "_ARX_RuinsCombat_Wolf",
+        "_ARX_ShadowPrince",
+        "_ARX_Toy_WoodenSword",
+        "_ARX_Voidwoken_Frozen_Caster",
+        "_ARX_Voidwoken_Frozen_Melee",
+        "_Animals_Cat_Skeleton_A",
+        "_Animals_Chicken_A",
+        "_Animals_Crab_A",
+        "_Animals_Dog_A",
+        "_Animals_Dog_A_Zombie_A",
+        "_Animals_Dog_A_Zombie_A_Strong",
+        "_Animals_Dog_Labrador_A",
+        "_Animals_Dragon_A",
+        "_Animals_Rabbit_A",
+        "_Animals_RatMechanic_Beta",
+        "_Animals_Rat_A",
+        "_Animals_Rat_A_Strong",
+        "_Animals_Rat_King_A",
+        "_Animals_Rat_King_A_Strong",
+        "_Animals_RoosterMechanic_A",
+        "_Animals_RoosterMechanic_B",
+        "_Animals_Rooster_A",
+        "_Animals_Tiger_A",
+        "_Animals_Tiger_A_Blood_A",
+        "_Animals_Tiger_A_Enhanced_A",
+        "_Animals_VampireBat",
+        "_Animals_VampireBat_Boss",
+        "_Animals_VampireBat_Strong",
+        "_Animals_Wolf_A",
+        "_Animals_Wolf_A_Black",
+        "_Animals_Wolf_A_Black_Strong",
+        "_Animals_Wolf_A_Black_StrongBoss",
+        "_Animals_Wolf_A_Strong",
+        "_Animals_Wolf_A_White",
+        "_Animals_Wolf_A_White_Strong",
+        "_Animals_Wolf_A_Zombie_A",
+        "_Animals_Wolf_A_Zombie_A_Strong",
+        "_Animals_Wolf_Blind",
+        "_Animals_Wolf_Disease",
+        "_Animals_Wolf_Fear",
+        "_Animals_Wolf_Freeze",
+        "_Crab",
+        "_Daggers",
+        "_Demon_Grunt_A_Dagger_1H",
+        "_Demon_Hound_A",
+        "_ElementalDevil_A",
+        "_FTJ_Brutes_Knife",
+        "_FTJ_Griff_Knife",
+        "_FTJ_Magister_Boss_Kniles_Dagger_Abstinence",
+        "_FTJ_Magister_Boss_Kniles_Dagger_Chastity",
+        "_FTJ_Magister_Melee_Dagger",
+        "_FTJ_Paladin_Melee_Dagger",
+        "_FTJ_Seeker_Melee_Dagger",
+        "_GEN_Brutes_Knife",
+        "_GEN_Gheist",
+        "_GEN_Magister_Melee_Dagger",
+        "_GEN_SilentMonk",
+        "_Ghoul_A_Dagger_1H",
+        "_Jumperdog_A",
+        "_NpcDaggers",
+        "_Placeholder_SmallWeapon",
+        "_Placeholder_Unarmed",
+        "_Purged_Paincaster_A",
+        "_RC_ArenaChampion_Dagger_01",
+        "_RC_ArenaChampion_Dagger_02",
+        "_RC_BloodDemons_Hound",
+        "_RC_BloodDemons_Tiger",
+        "_RC_Daggers",
+        "_RC_Dwarves_Melee_Dagger",
+        "_RC_Elves_Melee_Dagger",
+        "_RC_GY_PurgedDaughter_Dagger",
+        "_RC_HomelessDwarf_Dagger_01",
+        "_RC_HomelessDwarf_Dagger_02",
+        "_RC_Humans_Melee_Dagger",
+        "_RC_Lizards_Assassin_Melee_Dagger",
+        "_RC_Lizards_Melee_Dagger",
+        "_RC_Lohar_Guard_Cade",
+        "_RC_Magister_Melee_Dagger",
+        "_RC_NecromancerDog",
+        "_RC_Paladin_Melee_Dagger",
+        "_RC_Pdaughter_Reflection_Anguish",
+        "_RC_Pdaughter_Reflection_Despair",
+        "_RC_Pdaughter_Reflection_Fear",
+        "_RC_Pdaughter_Reflection_Fury",
+        "_RC_RichMerchant_Dagger_01",
+        "_RC_RichMerchant_Dagger_02",
+        "_RC_VoidWolf_Wolf",
+        "_RC_VoidWolf_Wolf_Strong",
+        "_RC_WC_Mordus",
+        "_Raanaar_Hound_A",
+        "_ShamblingMound_Flower_A",
+        "_Summon_Cat",
+        "_Summon_Condor",
+        "_Summon_Incarnate",
+        "_Summon_Incarnate_Acid_Infused",
+        "_Summon_Incarnate_Acid_Infused_Giant",
+        "_Summon_Incarnate_BlessedIce_Infused",
+        "_Summon_Incarnate_BlessedIce_Infused_Giant",
+        "_Summon_Incarnate_Blood_Infused",
+        "_Summon_Incarnate_Blood_Infused_Giant",
+        "_Summon_Incarnate_CursedElectric_Infused",
+        "_Summon_Incarnate_CursedElectric_Infused_Giant",
+        "_Summon_Incarnate_Earth_Infused",
+        "_Summon_Incarnate_Earth_Infused_Giant",
+        "_Summon_Incarnate_Electric_Infused",
+        "_Summon_Incarnate_Electric_Infused_Giant",
+        "_Summon_Incarnate_Fire_Infused",
+        "_Summon_Incarnate_Fire_Infused_Giant",
+        "_Summon_Incarnate_Giant",
+        "_Summon_Incarnate_NecroFire_Infused",
+        "_Summon_Incarnate_NecroFire_Infused_Giant",
+        "_Summon_Incarnate_Poison_Infused",
+        "_Summon_Incarnate_Poison_Infused_Giant",
+        "_Summon_Incarnate_Water_Infused",
+        "_Summon_Incarnate_Water_Infused_Giant",
+        "_Summon_Voidwoken_A",
+        "_Undead_Bonepile_Hand_A",
+        "_Undead_FrostSkeleton_Dagger",
+        "_Undead_Skeleton_Dagger_1H",
+        "_Undead_Skeleton_Fire_Dagger",
+        "_Voidwoken_Grunt_Melee",
+        "_Voidwoken_Grunt_Ranged",
+        "_WPN_RC_UNIQUE_AutumnHero1",
+        "_WPN_RC_UNIQUE_AutumnHero2"
+      ]
+    },
+    "EmptyWand": {
+      "group": "EmptyWand",
+      "label": "Empty Wand",
+      "category": "EmptyWand",
+      "members": [
+        "Inert Wooden Wand",
+        "Inert Clawed Wand",
+        "Inert Elven Wand",
+        "Inert Draconic Wand"
+      ],
+      "stats": [
+        "LOOT_Wand_A",
+        "LOOT_Wand_B",
+        "LOOT_Wand_C",
+        "LOOT_Wand_D"
+      ]
+    },
+    "FishingRod": {
+      "group": "FishingRod",
+      "label": "Fishing Rod",
+      "category": "FishingRod",
+      "members": [],
+      "stats": [
+        "TOOL_FishingRod_A"
+      ]
+    },
+    "GlovesPlate": {
+      "group": "GlovesPlate",
+      "label": "Plate Bracers",
+      "category": "GlovesPlate",
+      "members": [],
+      "stats": [
+        "ARM_Plate_Gloves_Arena"
+      ]
+    },
+    "GlovesScale": {
+      "group": "GlovesScale",
+      "label": "Scale Bracers",
+      "category": "GlovesScale",
+      "members": [
+        "Troll Gloves",
+        "Crocodile Gloves",
+        "Crafted Metal Gauntlets",
+        "Unique Polymorph Gloves",
+        "Unique Warrior Gloves"
+      ],
+      "stats": [
+        "ARM_CorpseHarvester_24_TrollGloves",
+        "ARM_CorpseHarvester_8_CrocArms",
+        "ARM_Heavy_Gloves",
+        "ARM_PolymorphUnique_Gloves",
+        "ARM_REFERENCE_Heavy_Gloves",
+        "ARM_WarriorUnique_Gloves"
+      ]
+    },
+    "HelmetMage": {
+      "group": "HelmetMage",
+      "label": "Mage Helmet",
+      "category": "HelmetMage",
+      "members": [
+        "Unique Aerotheruge Helmet",
+        "Cow Helmet",
+        "Tiara of the Empress",
+        "Unique Geomancer Helmet",
+        "Unique Hydrosophist Helmet",
+        "Crafted Cloth Helmet",
+        "Unique Necromancer Helmet",
+        "Unique Pyromancer Helmet",
+        "Unique Summoner  Helmet"
+      ],
+      "stats": [
+        "ARM_AeroUnique_Helmet",
+        "ARM_CorpseHarvester_13_CowHelmet",
+        "ARM_CorpseHarvester_54_EmpressTiara",
+        "ARM_GeoUnique_Helmet",
+        "ARM_HydroUnique_Helmet",
+        "ARM_Mage_Helmet",
+        "ARM_Mage_Helmet_Arena",
+        "ARM_NecroUnique_Helmet",
+        "ARM_PyroUnique_Helmet",
+        "ARM_REFERENCE_Mage_Helmet",
+        "ARM_SummonUnique_Helmet"
+      ]
+    },
+    "HelmetPlate": {
+      "group": "HelmetPlate",
+      "label": "Plate Helmet",
+      "category": "HelmetPlate",
+      "members": [],
+      "stats": [
+        "ARM_Plate_Helmet_Arena"
+      ]
+    },
+    "HelmetScale": {
+      "group": "HelmetScale",
+      "label": "Scale Helmet",
+      "category": "HelmetScale",
+      "members": [
+        "Grunt Helmet",
+        "Crafted Metal Helmet",
+        "Unique Polymorph Helmet",
+        "Unique Warrior Helmet"
+      ],
+      "stats": [
+        "ARM_CorpseHarvester_30_HelmetGrunt",
+        "ARM_Heavy_Helmet",
+        "ARM_PolymorphUnique_Helmet",
+        "ARM_REFERENCE_Heavy_Helmet",
+        "ARM_WarriorUnique_Helmet"
+      ]
+    },
+    "PantsPlate": {
+      "group": "PantsPlate",
+      "label": "Plate Leggings",
+      "category": "PantsPlate",
+      "members": [],
+      "stats": [
+        "ARM_Plate_LowerBody_Arena"
+      ]
+    },
+    "PantsScale": {
+      "group": "PantsScale",
+      "label": "Scale Leggings",
+      "category": "PantsScale",
+      "members": [
+        "Crafted Leather Pants",
+        "Unique Polymorph Pants",
+        "Unique Warrior Pants"
+      ],
+      "stats": [
+        "ARM_Heavy_LowerBody",
+        "ARM_PolymorphUnique_LowerBody",
+        "ARM_REFERENCE_Heavy_LowerBody",
+        "ARM_WarriorUnique_LowerBody"
+      ]
+    },
+    "ShieldMetal": {
+      "group": "ShieldMetal",
+      "label": "Metal Shield",
+      "category": "ShieldMetal",
+      "members": [
+        "Handmade Shield",
+        "Turtle Shield",
+        "Unique Tenebrium Magical Shield",
+        "Unique Tenebrium Shield",
+        "Divine Shield",
+        "Ghost Shield",
+        "Paladin Shield",
+        "Winter Shield",
+        "Blackring Shield",
+        "Blackring Magical Shield",
+        "Teardrop Shield"
+      ],
+      "stats": [
+        "FTJ_Knaap_Shield",
+        "FTJ_MagisterCarin_Shield",
+        "NoShield",
+        "RC_DW_Unique_Shield",
+        "RC_GY_Shield",
+        "RC_MIL_UNIQUE_LogRewardShield",
+        "UNI_Dallis_Stage2_Shield",
+        "WPN_Arena_Shield_A",
+        "WPN_Cleric_Shield_Dwarves",
+        "WPN_Cleric_Shield_Elves",
+        "WPN_Cleric_Shield_Humans",
+        "WPN_Cleric_Shield_Lizards",
+        "WPN_Conjurer_Shield_Dwarves",
+        "WPN_Conjurer_Shield_Elves",
+        "WPN_Conjurer_Shield_Humans",
+        "WPN_Conjurer_Shield_Lizards",
+        "WPN_CraftedShield",
+        "WPN_Fighter_Shield_Dwarves",
+        "WPN_Fighter_Shield_Elves",
+        "WPN_Fighter_Shield_Humans",
+        "WPN_Fighter_Shield_Lizards",
+        "WPN_Magister_Shield",
+        "WPN_Shield",
+        "WPN_Shield_CorpseHarvester_15_Turtle",
+        "WPN_Toy_WoodenShield",
+        "WPN_UNIQUE_ARX_KemmsShield",
+        "WPN_UNIQUE_ARX_TheOneShield",
+        "WPN_UNIQUE_ARX_WarriorsShield",
+        "WPN_UNIQUE_CrabShield",
+        "WPN_UNIQUE_WithermooreShield",
+        "WPN_Unique_Blackrock_Shield_1",
+        "WPN_Unique_Blackrock_Shield_2",
+        "WPN_Unique_ShieldDivineOrder",
+        "WPN_Unique_ShieldGhost",
+        "WPN_Unique_ShieldPaladin",
+        "WPN_Unique_ShieldWinter",
+        "WPN_Unique_Shield_Blackringrect",
+        "WPN_Unique_Shield_Blackringround",
+        "WPN_Unique_Shield_Braccustear",
+        "_ARX_BlackRingShield_A",
+        "_ARX_BlackRingShield_B",
+        "_ARX_Dwarves_Shield",
+        "_ARX_Magister_Shield",
+        "_ARX_Paladin_Shield",
+        "_ARX_Toy_WoodenShield",
+        "_EG_Braccus_Shield",
+        "_FTJ_Magister_Shield",
+        "_FTJ_Magister_Shield_Gold",
+        "_FTJ_Paladin_Shield",
+        "_FTJ_Seeker_Shield",
+        "_GEN_Magister_Shield",
+        "_RC_Dwarves_Shield",
+        "_RC_Elves_Shield",
+        "_RC_Lizards_Shield",
+        "_RC_Magister_Shield",
+        "_RC_Paladin_Shield",
+        "_Shield_GEN_Bodyguard",
+        "_Shield_GEN_Dwarven_A",
+        "_Shield_GEN_Dwarven_B",
+        "_Shield_GEN_Human_A",
+        "_Shield_GEN_Human_B",
+        "_Shields",
+        "_UNI_Dallis_Stage2_Shield"
+      ]
+    },
+    "ShieldWood": {
+      "group": "ShieldWood",
+      "label": "Wooden Shield",
+      "category": "ShieldWood",
+      "members": [],
+      "stats": [
+        "WPN_ReferenceShield",
+        "WPN_Wood_Shield_A_Round_Shield_CHEAT"
+      ]
+    },
+    "Spear": {
+      "group": "Spear",
+      "label": "Spear",
+      "category": "Spear",
+      "members": [
+        "Unique Tenebrium Spear",
+        "Primitive Harpoon",
+        "Spear of Braccus Rex",
+        "Air Spear",
+        "Chaos Spear",
+        "Earth Spear",
+        "Fire Spear",
+        "Poison Spear",
+        "Shadow Spear",
+        "Water Spear",
+        "Bifurcated Spear"
+      ],
+      "stats": [
+        "ARX_UNIQUE_Spear_Sparks",
+        "GLO_Malady_Spear",
+        "UNI_WPN_ARX_Spear_Horrorsleep",
+        "WPN_Blackrock_Unique_Spear",
+        "WPN_Cheat_Staffs_1H_Air",
+        "WPN_Cheat_Staffs_1H_Damage",
+        "WPN_Cheat_Staffs_1H_Earth",
+        "WPN_Cheat_Staffs_1H_Fire",
+        "WPN_Cheat_Staffs_1H_Poison",
+        "WPN_Cheat_Staffs_1H_Water",
+        "WPN_Cheat_TwoHandedSpear_1H_Air",
+        "WPN_Cheat_TwoHandedSpear_1H_Damage",
+        "WPN_Cheat_TwoHandedSpear_1H_Earth",
+        "WPN_Cheat_TwoHandedSpear_1H_Fire",
+        "WPN_Cheat_TwoHandedSpear_1H_Poison",
+        "WPN_Cheat_TwoHandedSpear_1H_Water",
+        "WPN_Metamorph_Spear_Dwarves",
+        "WPN_Metamorph_Spear_Elves",
+        "WPN_Metamorph_Spear_Humans",
+        "WPN_Metamorph_Spear_Lizards",
+        "WPN_Pitchfork",
+        "WPN_PrimitiveHarpoon",
+        "WPN_RC_GY_UNIQUE_BrittleSpear",
+        "WPN_RC_MIL_SaheilaRewardSpear",
+        "WPN_RC_Weapon_WithermooreSpear",
+        "WPN_ReferenceSpear",
+        "WPN_Spear",
+        "WPN_Spear_Air",
+        "WPN_Spear_Chaos",
+        "WPN_Spear_Earth",
+        "WPN_Spear_Fire",
+        "WPN_Spear_Poison",
+        "WPN_Spear_Shadow",
+        "WPN_Spear_Water",
+        "WPN_Unique_BifurcateSpear",
+        "_ARX_Dwarves_Melee_Spear_2H",
+        "_ARX_Dwarves_Melee_Spear_2H_Fire",
+        "_ARX_Elves_Melee_Spear_2H",
+        "_ARX_Humans_Melee_Spear_2H",
+        "_ARX_Lizards_Melee_Spear_2H",
+        "_ARX_Magister_Melee_Spear_2H",
+        "_ARX_Paladin_Melee_Spear_2H",
+        "_GEN_Brutes_Pitchfork",
+        "_GEN_SilentMonk_Spear",
+        "_GLO_Malady_Spear",
+        "_GLO_Malady_Spear_HorrorSleep",
+        "_NpcSpears",
+        "_Placeholder_PoleArms",
+        "_RC_ClayArmy",
+        "_RC_Dwarves_Melee_Spear_2H",
+        "_RC_Dwarves_Melee_Spear_2H_Strong",
+        "_RC_Elves_Melee_Spear_2H",
+        "_RC_Humans_Melee_Spear_2H",
+        "_RC_Humans_Melee_Spear_2H_Strong",
+        "_RC_Lizards_Melee_Spear_2H",
+        "_RC_Magister_Melee_Spear_2H",
+        "_RC_Paladin_Melee_Spear_2H",
+        "_RC_Spears",
+        "_Spears",
+        "_Statue_A_Voidwoken",
+        "_Statue_A_Voidwoken_GameMaster",
+        "_Undead_FireSkeleton_Pikeman",
+        "_WPN_CoS_SourceTitan_Spear"
+      ]
+    },
+    "Small-Rune": {
+      "group": "Small-Rune",
+      "label": "Small Rune",
+      "members": [
+        "Small Flame Rune",
+        "Small Frost Rune",
+        "Small Masterwork Rune",
+        "Small Rock Rune",
+        "Small Thunder Rune",
+        "Small Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Small",
+        "LOOT_Rune_Frost_Small",
+        "LOOT_Rune_Masterwork_Small",
+        "LOOT_Rune_Rock_Small",
+        "LOOT_Rune_Thunder_Small",
+        "LOOT_Rune_Venom_Small"
+      ]
+    },
+    "Medium-Rune": {
+      "group": "Medium-Rune",
+      "label": "Medium Rune",
+      "members": [
+        "Medium Flame Rune",
+        "Medium Frost Rune",
+        "Medium Masterwork Rune",
+        "Medium Rock Rune",
+        "Medium Thunder Rune",
+        "Medium Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Medium",
+        "LOOT_Rune_Frost_Medium",
+        "LOOT_Rune_Masterwork_Medium",
+        "LOOT_Rune_Rock_Medium",
+        "LOOT_Rune_Thunder_Medium",
+        "LOOT_Rune_Venom_Medium"
+      ]
+    },
+    "Large-Rune": {
+      "group": "Large-Rune",
+      "label": "Large Rune",
+      "members": [
+        "Large Flame Rune",
+        "Large Frost Rune",
+        "Large Masterwork Rune",
+        "Large Rock Rune",
+        "Large Thunder Rune",
+        "Large Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Large",
+        "LOOT_Rune_Frost_Large",
+        "LOOT_Rune_Masterwork_Large",
+        "LOOT_Rune_Rock_Large",
+        "LOOT_Rune_Thunder_Large",
+        "LOOT_Rune_Venom_Large"
+      ]
+    },
+    "Giant-Rune": {
+      "group": "Giant-Rune",
+      "label": "Giant Rune",
+      "members": [
+        "Giant Flame Rune",
+        "Giant Frost Rune",
+        "Giant Masterwork Rune",
+        "Giant Rock Rune",
+        "Giant Thunder Rune",
+        "Giant Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Giant",
+        "LOOT_Rune_Frost_Giant",
+        "LOOT_Rune_Masterwork_Giant",
+        "LOOT_Rune_Rock_Giant",
+        "LOOT_Rune_Thunder_Giant",
+        "LOOT_Rune_Venom_Giant"
+      ]
+    },
+    "Mystical-Small-Rune": {
+      "group": "Mystical-Small-Rune",
+      "label": "Mystical Small Rune",
+      "members": [
+        "Mystical Small Flame Rune",
+        "Mystical Small Frost Rune",
+        "Mystical Small Masterwork Rune",
+        "Mystical Small Rock Rune",
+        "Mystical Small Thunder Rune",
+        "Mystical Small Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Small_Framed_Transforming",
+        "LOOT_Rune_Frost_Small_Framed_Transforming",
+        "LOOT_Rune_Masterwork_Small_Framed_Transforming",
+        "LOOT_Rune_Rock_Small_Framed_Transforming",
+        "LOOT_Rune_Thunder_Small_Framed_Transforming",
+        "LOOT_Rune_Venom_Small_Framed_Transforming"
+      ]
+    },
+    "Mystical-Medium-Rune": {
+      "group": "Mystical-Medium-Rune",
+      "label": "Mystical Medium Rune",
+      "members": [
+        "Mystical Medium Flame Rune",
+        "Mystical Medium Frost Rune",
+        "Mystical Medium Masterwork Rune",
+        "Mystical Medium Rock Rune",
+        "Mystical Medium Thunder Rune",
+        "Mystical Medium Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Medium_Framed_Transforming",
+        "LOOT_Rune_Frost_Medium_Framed_Transforming",
+        "LOOT_Rune_Masterwork_Medium_Framed_Transforming",
+        "LOOT_Rune_Rock_Medium_Framed_Transforming",
+        "LOOT_Rune_Thunder_Medium_Framed_Transforming",
+        "LOOT_Rune_Venom_Medium_Framed_Transforming"
+      ]
+    },
+    "Mystical-Large-Rune": {
+      "group": "Mystical-Large-Rune",
+      "label": "Mystical Large Rune",
+      "members": [
+        "Mystical Large Flame Rune",
+        "Mystical Large Frost Rune",
+        "Mystical Large Masterwork Rune",
+        "Mystical Large Rock Rune",
+        "Mystical Large Thunder Rune",
+        "Mystical Large Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Large_Framed_Transforming",
+        "LOOT_Rune_Frost_Large_Framed_Transforming",
+        "LOOT_Rune_Masterwork_Large_Framed_Transforming",
+        "LOOT_Rune_Rock_Large_Framed_Transforming",
+        "LOOT_Rune_Thunder_Large_Framed_Transforming",
+        "LOOT_Rune_Venom_Large_Framed_Transforming"
+      ]
+    },
+    "Mystical-Giant-Rune": {
+      "group": "Mystical-Giant-Rune",
+      "label": "Mystical Giant Rune",
+      "members": [
+        "Mystical Giant Flame Rune",
+        "Mystical Giant Frost Rune",
+        "Mystical Giant Masterwork Rune",
+        "Mystical Giant Rock Rune",
+        "Mystical Giant Thunder Rune",
+        "Mystical Giant Venom Rune"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Giant_Framed_Transforming",
+        "LOOT_Rune_Frost_Giant_Framed_Transforming",
+        "LOOT_Rune_Masterwork_Giant_Framed_Transforming",
+        "LOOT_Rune_Rock_Giant_Framed_Transforming",
+        "LOOT_Rune_Thunder_Giant_Framed_Transforming",
+        "LOOT_Rune_Venom_Giant_Framed_Transforming"
+      ]
+    },
+    "Small-Rune-Of-Power": {
+      "group": "Small-Rune-Of-Power",
+      "label": "Small Rune Of Power",
+      "members": [
+        "Small Flame Rune Of Power",
+        "Small Frost Rune Of Power",
+        "Small Masterwork Rune Of Power",
+        "Small Rock Rune Of Power",
+        "Small Thunder Rune Of Power",
+        "Small Venom Rune Of Power"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Small_Framed_Power",
+        "LOOT_Rune_Frost_Small_Framed_Power",
+        "LOOT_Rune_Masterwork_Small_Framed_Power",
+        "LOOT_Rune_Rock_Small_Framed_Power",
+        "LOOT_Rune_Thunder_Small_Framed_Power",
+        "LOOT_Rune_Venom_Small_Framed_Power"
+      ]
+    },
+    "Medium-Rune-Of-Power": {
+      "group": "Medium-Rune-Of-Power",
+      "label": "Medium Rune Of Power",
+      "members": [
+        "Medium Flame Rune Of Power",
+        "Medium Frost Rune Of Power",
+        "Medium Masterwork Rune Of Power",
+        "Medium Rock Rune Of Power",
+        "Medium Thunder Rune Of Power",
+        "Medium Venom Rune Of Power"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Medium_Framed_Power",
+        "LOOT_Rune_Frost_Medium_Framed_Power",
+        "LOOT_Rune_Masterwork_Medium_Framed_Power",
+        "LOOT_Rune_Rock_Medium_Framed_Power",
+        "LOOT_Rune_Thunder_Medium_Framed_Power",
+        "LOOT_Rune_Venom_Medium_Framed_Power"
+      ]
+    },
+    "Large-Rune-Of-Power": {
+      "group": "Large-Rune-Of-Power",
+      "label": "Large Rune Of Power",
+      "members": [
+        "Large Flame Rune Of Power",
+        "Large Frost Rune Of Power",
+        "Large Masterwork Rune Of Power",
+        "Large Rock Rune Of Power",
+        "Large Thunder Rune Of Power",
+        "Large Venom Rune Of Power"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Large_Framed_Power",
+        "LOOT_Rune_Frost_Large_Framed_Power",
+        "LOOT_Rune_Masterwork_Large_Framed_Power",
+        "LOOT_Rune_Rock_Large_Framed_Power",
+        "LOOT_Rune_Thunder_Large_Framed_Power",
+        "LOOT_Rune_Venom_Large_Framed_Power"
+      ]
+    },
+    "Giant-Rune-Of-Power": {
+      "group": "Giant-Rune-Of-Power",
+      "label": "Giant Rune Of Power",
+      "members": [
+        "Giant Flame Rune Of Power",
+        "Giant Frost Rune Of Power",
+        "Giant Masterwork Rune Of Power",
+        "Giant Rock Rune Of Power",
+        "Giant Thunder Rune Of Power",
+        "Giant Venom Rune Of Power"
+      ],
+      "stats": [
+        "LOOT_Rune_Flame_Giant_Framed_Power",
+        "LOOT_Rune_Frost_Giant_Framed_Power",
+        "LOOT_Rune_Masterwork_Giant_Framed_Power",
+        "LOOT_Rune_Rock_Giant_Framed_Power",
+        "LOOT_Rune_Thunder_Giant_Framed_Power",
+        "LOOT_Rune_Venom_Giant_Framed_Power"
+      ]
     }
   }
 }

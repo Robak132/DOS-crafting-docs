@@ -2,7 +2,7 @@
   "game": "dos1",
   "recipes": [
     {
-      "id": "Ksiegi-umiejetnosci/ADEPT-AIR-SKILL-BOOK:BLANK AIR SKILL BOOK+#Adept-Air-Skill-Scroll",
+      "id": "Ksiegi-umiejetnosci/BLITZ-BOLT-SKILLBOOK:BLANK AIR SKILL BOOK+Blitz Bolt Scroll",
       "ingredients": [
         {
           "name": "BLANK AIR SKILL BOOK",
@@ -14,20 +14,223 @@
           "statsId": "BOOK_Skill_Air_Blank_A"
         },
         {
-          "name": "#Adept-Air-Skill-Scroll",
-          "selectorTag": "Adept-Air-Skill-Scroll",
+          "name": "Blitz Bolt Scroll",
+          "slug": "blitz-bolt-scroll",
           "tags": [
-            "Adept-Air-Skill-Scroll"
-          ]
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_BlitzBoltStart"
         }
       ],
       "result": {
-        "name": "ADEPT AIR SKILL BOOK",
-        "slug": "adept-air-skill-book",
+        "name": "Blitz Bolt Skillbook",
+        "slug": "blitz-bolt-skillbook",
         "tags": [
           "Skillbooks",
           "DOS1"
-        ]
+        ],
+        "statsId": "SKILLBOOK_BlitzBoltStart"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/BITTER-COLD-SKILLBOOK:BLANK AIR SKILL BOOK+Bitter Cold Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Bitter Cold Scroll",
+          "slug": "bitter-cold-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ChillyWind"
+        }
+      ],
+      "result": {
+        "name": "Bitter Cold Skillbook",
+        "slug": "bitter-cold-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ChillyWind"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FARSEER-SKILLBOOK:BLANK AIR SKILL BOOK+Farseer Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Farseer Scroll",
+          "slug": "farseer-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FarSight"
+        }
+      ],
+      "result": {
+        "name": "Farseer Skillbook",
+        "slug": "farseer-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_FarSight"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/HEADVICE-SKILLBOOK:BLANK AIR SKILL BOOK+Headvice Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Headvice Scroll",
+          "slug": "headvice-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_InstantPressure"
+        }
+      ],
+      "result": {
+        "name": "Headvice Skillbook",
+        "slug": "headvice-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_InstantPressure"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/TELEPORTATION-SKILLBOOK:BLANK AIR SKILL BOOK+Teleportation Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Teleportation Scroll",
+          "slug": "teleportation-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TeleportationFreeFall_1"
+        }
+      ],
+      "result": {
+        "name": "Teleportation Skillbook",
+        "slug": "teleportation-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Teleportation_FreeFall"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/LIGHTNING-STRIKE-SKILLBOOK:BLANK AIR SKILL BOOK+Lightning Strike Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Lightning Strike Scroll",
+          "slug": "lightning-strike-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_LightningStrike_1"
+        }
+      ],
+      "result": {
+        "name": "Lightning Strike Skillbook",
+        "slug": "lightning-strike-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_MultiStrike_LightningStrike"
       },
       "tags": [
         "Skillbooks",
@@ -39,7 +242,407 @@
       "source": "Secrets of the Scroll X"
     },
     {
-      "id": "Ksiegi-umiejetnosci/ADEPT-EARTH-SKILL-BOOK:BLANK EARTH SKILL BOOK+#Adept-Earth-Skill-Scroll",
+      "id": "Ksiegi-umiejetnosci/SHOCKING-TOUCH-SKILLBOOK:BLANK AIR SKILL BOOK+Shocking Touch Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Shocking Touch Scroll",
+          "slug": "shocking-touch-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ShockingHands"
+        }
+      ],
+      "result": {
+        "name": "Shocking Touch Skillbook",
+        "slug": "shocking-touch-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ShockingHands"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/IMMUNE-TO-ELECTRIFIED-SKILLBOOK:BLANK AIR SKILL BOOK+Immune to Electrified Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Immune to Electrified Scroll",
+          "slug": "immune-to-electrified-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ImmuneToElectrify"
+        }
+      ],
+      "result": {
+        "name": "Immune to Electrified Skillbook",
+        "slug": "immune-to-electrified-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ImmuneToElectrify"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/INVISIBLE-SKILLBOOK:BLANK AIR SKILL BOOK+Invisible Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Invisible Scroll",
+          "slug": "invisible-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_InvisibilitySelf"
+        }
+      ],
+      "result": {
+        "name": "Invisible Skillbook",
+        "slug": "invisible-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_InvisibilitySelf"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/REMOVE-PETRIFICATION-SKILLBOOK:BLANK AIR SKILL BOOK+Remove Petrification Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Remove Petrification Scroll",
+          "slug": "remove-petrification-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_RemovePetrification"
+        }
+      ],
+      "result": {
+        "name": "Remove Petrification Skillbook",
+        "slug": "remove-petrification-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_RemovePetrification"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/AIR-SHIELD-SKILLBOOK:BLANK AIR SKILL BOOK+Airshield Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Airshield Scroll",
+          "slug": "airshield-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_AirShield_1"
+        }
+      ],
+      "result": {
+        "name": "Air Shield Skillbook",
+        "slug": "air-shield-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Shield_Air"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-AIR-ELEMENTAL-SKILLBOOK:BLANK AIR SKILL BOOK+Summon Air Elemental Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Summon Air Elemental Scroll",
+          "slug": "summon-air-elemental-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_AirSummon_1"
+        }
+      ],
+      "result": {
+        "name": "Summon Air Elemental Skillbook",
+        "slug": "summon-air-elemental-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Summon_Air"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/TORNADO-SKILLBOOK:BLANK AIR SKILL BOOK+Tornado Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Tornado Scroll",
+          "slug": "tornado-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Tornado_1"
+        }
+      ],
+      "result": {
+        "name": "Tornado Skillbook",
+        "slug": "tornado-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Tornado_Air"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/CHAIN-LIGHTNING-SKILLBOOK:BLANK AIR SKILL BOOK+Chain Lightning Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Chain Lightning Scroll",
+          "slug": "chain-lightning-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ChainLightning"
+        }
+      ],
+      "result": {
+        "name": "Chain Lightning Skillbook",
+        "slug": "chain-lightning-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ChainLightning"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MAKE-INVISIBLE-SKILLBOOK:BLANK AIR SKILL BOOK+Make Invisible Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Make Invisible Scroll",
+          "slug": "make-invisible-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_InvisibilityTarget"
+        }
+      ],
+      "result": {
+        "name": "Make Invisible Skillbook",
+        "slug": "make-invisible-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_InvisibilityTarget"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/STORM-SKILLBOOK:BLANK AIR SKILL BOOK+Lightning Storm Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK AIR SKILL BOOK",
+          "slug": "blank-air-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Air_Blank_A"
+        },
+        {
+          "name": "Lightning Storm Scroll",
+          "slug": "lightning-storm-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_LightningStorm_1"
+        }
+      ],
+      "result": {
+        "name": "Storm Skillbook",
+        "slug": "storm-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Storm_Lightning"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FORTIFY-SKILLBOOK:BLANK EARTH SKILL BOOK+Fortify Scroll",
       "ingredients": [
         {
           "name": "BLANK EARTH SKILL BOOK",
@@ -51,20 +654,223 @@
           "statsId": "BOOK_Skill_Earth_Blank_A"
         },
         {
-          "name": "#Adept-Earth-Skill-Scroll",
-          "selectorTag": "Adept-Earth-Skill-Scroll",
+          "name": "Fortify Scroll",
+          "slug": "fortify-scroll",
           "tags": [
-            "Adept-Earth-Skill-Scroll"
-          ]
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Fortify"
         }
       ],
       "result": {
-        "name": "ADEPT EARTH SKILL BOOK",
-        "slug": "adept-earth-skill-book",
+        "name": "Fortify Skillbook",
+        "slug": "fortify-skillbook",
         "tags": [
           "Skillbooks",
           "DOS1"
-        ]
+        ],
+        "statsId": "SKILLBOOK_Fortify"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MAGICAL-POISON-DART-SKILLBOOK:BLANK EARTH SKILL BOOK+Magical Poison Dart Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Magical Poison Dart Scroll",
+          "slug": "magical-poison-dart-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_PoisonDartStart"
+        }
+      ],
+      "result": {
+        "name": "Magical Poison Dart Skillbook",
+        "slug": "magical-poison-dart-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_PoisonDartStart"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-SPIDER-SKILLBOOK:BLANK EARTH SKILL BOOK+Summon Spider Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Summon Spider Scroll",
+          "slug": "summon-spider-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_SummonSpider"
+        }
+      ],
+      "result": {
+        "name": "Summon Spider Skillbook",
+        "slug": "summon-spider-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_SummonSpider"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/BLESS-SKILLBOOK:BLANK EARTH SKILL BOOK+Bless Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Bless Scroll",
+          "slug": "bless-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TargetedBless"
+        }
+      ],
+      "result": {
+        "name": "Bless Skillbook",
+        "slug": "bless-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_TargetedBless"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MIDNIGHT-OIL-SKILLBOOK:BLANK EARTH SKILL BOOK+Midnight Oil Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Midnight Oil Scroll",
+          "slug": "midnight-oil-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TargetedOilSurface"
+        }
+      ],
+      "result": {
+        "name": "Midnight Oil Skillbook",
+        "slug": "midnight-oil-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_TargetedOilSurface"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/IMMUNE-TO-POISONING-SKILLBOOK:BLANK EARTH SKILL BOOK+Immune to Poisoning Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Immune to Poisoning Scroll",
+          "slug": "immune-to-poisoning-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ImmuneToPoisoning"
+        }
+      ],
+      "result": {
+        "name": "Immune to Poisoning Skillbook",
+        "slug": "immune-to-poisoning-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ImmuneToPoisoning"
       },
       "tags": [
         "Skillbooks",
@@ -76,7 +882,327 @@
       "source": "Secrets of the Scroll X"
     },
     {
-      "id": "Ksiegi-umiejetnosci/ADEPT-FIRE-SKILL-BOOK:BLANK FIRE SKILL BOOK+#Adept-Fire-Skill-Scroll",
+      "id": "Ksiegi-umiejetnosci/EARTH-SHIELD-SKILLBOOK:BLANK EARTH SKILL BOOK+Earth Shield Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Earth Shield Scroll",
+          "slug": "earth-shield-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_EarthShield_1"
+        }
+      ],
+      "result": {
+        "name": "Earth Shield Skillbook",
+        "slug": "earth-shield-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Shield_Earth"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/BLESSED-EARTH-SKILLBOOK:BLANK EARTH SKILL BOOK+Blessed Earth Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Blessed Earth Scroll",
+          "slug": "blessed-earth-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_BlessedEarth"
+        }
+      ],
+      "result": {
+        "name": "Blessed Earth Skillbook",
+        "slug": "blessed-earth-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_BlessedEarth"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/TECTONIC-SPRAY-SKILLBOOK:BLANK EARTH SKILL BOOK+Tectonic Spray Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Tectonic Spray Scroll",
+          "slug": "tectonic-spray-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_EarthSpray_1"
+        }
+      ],
+      "result": {
+        "name": "Tectonic Spray Skillbook",
+        "slug": "tectonic-spray-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Cone_EarthSpray"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/DEADLY-SPORES-SKILLBOOK:BLANK EARTH SKILL BOOK+Deadly Spores Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Deadly Spores Scroll",
+          "slug": "deadly-spores-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_DeadlySpores"
+        }
+      ],
+      "result": {
+        "name": "Deadly Spores Skillbook",
+        "slug": "deadly-spores-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_DeadlySpores"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/PETRIFYING-TOUCH-SKILLBOOK:BLANK EARTH SKILL BOOK+Petrifying Touch Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Petrifying Touch Scroll",
+          "slug": "petrifying-touch-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_PetrifyingTouch"
+        }
+      ],
+      "result": {
+        "name": "Petrifying Touch Skillbook",
+        "slug": "petrifying-touch-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_PetrifyingTouch"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-WOLF-SKILLBOOK:BLANK EARTH SKILL BOOK+Summon Wolf Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Summon Wolf Scroll",
+          "slug": "summon-wolf-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_SummonWolf"
+        }
+      ],
+      "result": {
+        "name": "Summon Wolf Skillbook",
+        "slug": "summon-wolf-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_SummonWolf"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/EARTHQUAKE-SKILLBOOK:BLANK EARTH SKILL BOOK+Earthquake Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Earthquake Scroll",
+          "slug": "earthquake-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Earthquake_1"
+        }
+      ],
+      "result": {
+        "name": "Earthquake Skillbook",
+        "slug": "earthquake-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Quake_Earthquake"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-EARTH-ELEMENTAL-SKILLBOOK:BLANK EARTH SKILL BOOK+Summon Earth Elemental Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK EARTH SKILL BOOK",
+          "slug": "blank-earth-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Earth_Blank_A"
+        },
+        {
+          "name": "Summon Earth Elemental Scroll",
+          "slug": "summon-earth-elemental-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_EarthSummon_1"
+        }
+      ],
+      "result": {
+        "name": "Summon Earth Elemental Skillbook",
+        "slug": "summon-earth-elemental-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Summon_Earth"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/BURNING-TOUCH-SKILLBOOK:BLANK FIRE SKILL BOOK+Burning Touch Scroll",
       "ingredients": [
         {
           "name": "BLANK FIRE SKILL BOOK",
@@ -88,20 +1214,223 @@
           "statsId": "BOOK_Skill_Fire_Blank_A"
         },
         {
-          "name": "#Adept-Fire-Skill-Scroll",
-          "selectorTag": "Adept-Fire-Skill-Scroll",
+          "name": "Burning Touch Scroll",
+          "slug": "burning-touch-scroll",
           "tags": [
-            "Adept-Fire-Skill-Scroll"
-          ]
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_BurningTouch"
         }
       ],
       "result": {
-        "name": "ADEPT FIRE SKILL BOOK",
-        "slug": "adept-fire-skill-book",
+        "name": "Burning Touch Skillbook",
+        "slug": "burning-touch-skillbook",
         "tags": [
           "Skillbooks",
           "DOS1"
-        ]
+        ],
+        "statsId": "SKILLBOOK_BurningTouch"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FLARE-SKILLBOOK:BLANK FIRE SKILL BOOK+Flare Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Flare Scroll",
+          "slug": "flare-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FlareStart"
+        }
+      ],
+      "result": {
+        "name": "Flare Skillbook",
+        "slug": "flare-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_FlareStart"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/WILDFIRE-SKILLBOOK:BLANK FIRE SKILL BOOK+Wildfire Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Wildfire Scroll",
+          "slug": "wildfire-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Haste"
+        }
+      ],
+      "result": {
+        "name": "Wildfire Skillbook",
+        "slug": "wildfire-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Haste"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/IMMUNE-TO-FREEZING-SKILLBOOK:BLANK FIRE SKILL BOOK+Immune to Freezing Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Immune to Freezing Scroll",
+          "slug": "immune-to-freezing-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ImmuneToFreeze"
+        }
+      ],
+      "result": {
+        "name": "Immune to Freezing Skillbook",
+        "slug": "immune-to-freezing-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ImmuneToFreeze"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FIREFLY-SKILLBOOK:BLANK FIRE SKILL BOOK+Firefly Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Firefly Scroll",
+          "slug": "firefly-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FireFly_1"
+        }
+      ],
+      "result": {
+        "name": "Firefly Skillbook",
+        "slug": "firefly-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Path_FireFly"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SMALL-FIREBALL-SKILLBOOK:BLANK FIRE SKILL BOOK+Fireball Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Fireball Scroll",
+          "slug": "fireball-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Fireball_1"
+        }
+      ],
+      "result": {
+        "name": "Small Fireball Skillbook",
+        "slug": "small-fireball-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Projectile_Fireball"
       },
       "tags": [
         "Skillbooks",
@@ -113,7 +1442,407 @@
       "source": "Secrets of the Scroll X"
     },
     {
-      "id": "Ksiegi-umiejetnosci/ADEPT-WATER-SKILL-BOOK:BLANK WATER SKILL BOOK+#Adept-Water-Skill-Scroll",
+      "id": "Ksiegi-umiejetnosci/SUMMON-FIRE-ELEMENTAL-SKILLBOOK:BLANK FIRE SKILL BOOK+Summon Fire Elemental Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Summon Fire Elemental Scroll",
+          "slug": "summon-fire-elemental-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FireSummon_1"
+        }
+      ],
+      "result": {
+        "name": "Summon Fire Elemental Skillbook",
+        "slug": "summon-fire-elemental-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Summon_Fire"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/BURN-MY-EYES-SKILLBOOK:BLANK FIRE SKILL BOOK+Burn My Eyes Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Burn My Eyes Scroll",
+          "slug": "burn-my-eyes-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TargetedPerceptionBoost"
+        }
+      ],
+      "result": {
+        "name": "Burn My Eyes Skillbook",
+        "slug": "burn-my-eyes-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_TargetedPerceptionBoost"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/PURIFYING-FIRE-SKILLBOOK:BLANK FIRE SKILL BOOK+Purifying Fire Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Purifying Fire Scroll",
+          "slug": "purifying-fire-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_PurifyingFire_1"
+        }
+      ],
+      "result": {
+        "name": "Purifying Fire Skillbook",
+        "slug": "purifying-fire-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Cleanse_PurifyingFire"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SMOKESCREEN-SKILLBOOK:BLANK FIRE SKILL BOOK+Smokescreen Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Smokescreen Scroll",
+          "slug": "smokescreen-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_CreateSmokescreen"
+        }
+      ],
+      "result": {
+        "name": "Smokescreen Skillbook",
+        "slug": "smokescreen-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_CreateSmokescreen"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/EXPLODE-SKILLBOOK:BLANK FIRE SKILL BOOK+Explode Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Explode Scroll",
+          "slug": "explode-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ExplodeSelf"
+        }
+      ],
+      "result": {
+        "name": "Explode Skillbook",
+        "slug": "explode-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ExplodeSelf"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SELF-IMMOLATION-SKILLBOOK:BLANK FIRE SKILL BOOK+Self Immolation Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Self Immolation Scroll",
+          "slug": "self-immolation-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FireSurfaceSelf"
+        }
+      ],
+      "result": {
+        "name": "Self Immolation Skillbook",
+        "slug": "self-immolation-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_FireSurfaceSelf"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/IMMOLATION-SKILLBOOK:BLANK FIRE SKILL BOOK+Immolate Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Immolate Scroll",
+          "slug": "immolate-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Immolate"
+        }
+      ],
+      "result": {
+        "name": "Immolation Skillbook",
+        "slug": "immolation-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Immolate"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FIRE-SHIELD-SKILLBOOK:BLANK FIRE SKILL BOOK+Fire Shield Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Fire Shield Scroll",
+          "slug": "fire-shield-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FireShield_1"
+        }
+      ],
+      "result": {
+        "name": "Fire Shield Skillbook",
+        "slug": "fire-shield-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Shield_Fire"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/INFECTIOUS-FLAME-SKILLBOOK:BLANK FIRE SKILL BOOK+Infectious Flame Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Infectious Flame Scroll",
+          "slug": "infectious-flame-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_InfectiousFlame"
+        }
+      ],
+      "result": {
+        "name": "Infectious Flame Skillbook",
+        "slug": "infectious-flame-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_InfectiousFlame"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/METEORSTRIKE-SKILLBOOK:BLANK FIRE SKILL BOOK+Meteorstrike Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK FIRE SKILL BOOK",
+          "slug": "blank-fire-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Fire_Blank_A"
+        },
+        {
+          "name": "Meteorstrike Scroll",
+          "slug": "meteorstrike-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_MeteorStrike"
+        }
+      ],
+      "result": {
+        "name": "Meteorstrike Skillbook",
+        "slug": "meteorstrike-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_MeteorStrike"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/ICE-SHARD-SKILLBOOK:BLANK WATER SKILL BOOK+Ice Shard Scroll",
       "ingredients": [
         {
           "name": "BLANK WATER SKILL BOOK",
@@ -125,20 +1854,223 @@
           "statsId": "BOOK_Skill_Water_Blank_A"
         },
         {
-          "name": "#Adept-Water-Skill-Scroll",
-          "selectorTag": "Adept-Water-Skill-Scroll",
+          "name": "Ice Shard Scroll",
+          "slug": "ice-shard-scroll",
           "tags": [
-            "Adept-Water-Skill-Scroll"
-          ]
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_IceShardStart"
         }
       ],
       "result": {
-        "name": "ADEPT WATER SKILL BOOK",
-        "slug": "adept-water-skill-book",
+        "name": "Ice Shard Skillbook",
+        "slug": "ice-shard-skillbook",
         "tags": [
           "Skillbooks",
           "DOS1"
-        ]
+        ],
+        "statsId": "SKILLBOOK_IceShardStart"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/RAIN-SKILLBOOK:BLANK WATER SKILL BOOK+Rain Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Rain Scroll",
+          "slug": "rain-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Rain_1"
+        }
+      ],
+      "result": {
+        "name": "Rain Skillbook",
+        "slug": "rain-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Rain_Water"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MINOR-HEAL-SKILLBOOK:BLANK WATER SKILL BOOK+Minor Heal Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Minor Heal Scroll",
+          "slug": "minor-heal-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_RegenerateStart"
+        }
+      ],
+      "result": {
+        "name": "Minor Heal Skillbook",
+        "slug": "minor-heal-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_RegenerateStart"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SLOW-CURRENT-SKILLBOOK:BLANK WATER SKILL BOOK+Slow Current Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Slow Current Scroll",
+          "slug": "slow-current-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Slow"
+        }
+      ],
+      "result": {
+        "name": "Slow Current Skillbook",
+        "slug": "slow-current-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Slow"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/WATER-OF-LIFE-SKILLBOOK:BLANK WATER SKILL BOOK+Water of Life Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Water of Life Scroll",
+          "slug": "water-of-life-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_WaterOfLife"
+        }
+      ],
+      "result": {
+        "name": "Water of Life Skillbook",
+        "slug": "water-of-life-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_WaterOfLife"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/FREEZING-TOUCH-SKILLBOOK:BLANK WATER SKILL BOOK+Freezing Touch Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Freezing Touch Scroll",
+          "slug": "freezing-touch-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ChillingTouch"
+        }
+      ],
+      "result": {
+        "name": "Freezing Touch Skillbook",
+        "slug": "freezing-touch-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ChillingTouch"
       },
       "tags": [
         "Skillbooks",
@@ -150,7 +2082,367 @@
       "source": "Secrets of the Scroll X"
     },
     {
-      "id": "Ksiegi-umiejetnosci/ADEPT-WITCHCRAFT-SKILL-BOOK:BLANK WITCHCRAFT SKILL BOOK+#Adept-Witchcraft-Skill-Scroll",
+      "id": "Ksiegi-umiejetnosci/WATER-SHIELD-SKILLBOOK:BLANK WATER SKILL BOOK+Water Shield Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Water Shield Scroll",
+          "slug": "water-shield-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_WaterShield_1"
+        }
+      ],
+      "result": {
+        "name": "Water Shield Skillbook",
+        "slug": "water-shield-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Shield_Water"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/CLEANSING-WATER-SKILLBOOK:BLANK WATER SKILL BOOK+Cleansing Water Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Cleansing Water Scroll",
+          "slug": "cleansing-water-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_CleansingWater"
+        }
+      ],
+      "result": {
+        "name": "Cleansing Water Skillbook",
+        "slug": "cleansing-water-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_CleansingWater"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/IMMUNE-TO-BURNING-SKILLBOOK:BLANK WATER SKILL BOOK+Immune to Burning Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Immune to Burning Scroll",
+          "slug": "immune-to-burning-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_ImmuneToBurning"
+        }
+      ],
+      "result": {
+        "name": "Immune to Burning Skillbook",
+        "slug": "immune-to-burning-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_ImmuneToBurning"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MASS-DISEASE-SKILLBOOK:BLANK WATER SKILL BOOK+Mass Disease Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Mass Disease Scroll",
+          "slug": "mass-disease-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_MassDisease"
+        }
+      ],
+      "result": {
+        "name": "Mass Disease Skillbook",
+        "slug": "mass-disease-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_MassDisease"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-ICE-ELEMENTAL-SKILLBOOK:BLANK WATER SKILL BOOK+Summon Ice Elemental Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Summon Ice Elemental Scroll",
+          "slug": "summon-ice-elemental-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_IceSummon_1"
+        }
+      ],
+      "result": {
+        "name": "Summon Ice Elemental Skillbook",
+        "slug": "summon-ice-elemental-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Summon_Ice"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/ICE-WALL-SKILLBOOK:BLANK WATER SKILL BOOK+Ice Wall Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Ice Wall Scroll",
+          "slug": "ice-wall-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_IceWall_1"
+        }
+      ],
+      "result": {
+        "name": "Ice Wall Skillbook",
+        "slug": "ice-wall-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Wall_Ice"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/WINTERBLAST-SKILLBOOK:BLANK WATER SKILL BOOK+Winterblast Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Winterblast Scroll",
+          "slug": "winterblast-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_WinterbreathMedium"
+        }
+      ],
+      "result": {
+        "name": "Winterblast Skillbook",
+        "slug": "winterblast-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_WinterbreathMedium"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/HAIL-ATTACK-SKILLBOOK:BLANK WATER SKILL BOOK+Hail Attack Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Hail Attack Scroll",
+          "slug": "hail-attack-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_HailAttack"
+        }
+      ],
+      "result": {
+        "name": "Hail Attack Skillbook",
+        "slug": "hail-attack-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_HailAttack"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MASS-SLOW-SKILLBOOK:BLANK WATER SKILL BOOK+Mass Slow Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WATER SKILL BOOK",
+          "slug": "blank-water-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Water_Blank_A"
+        },
+        {
+          "name": "Mass Slow Scroll",
+          "slug": "mass-slow-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_SlowMass"
+        }
+      ],
+      "result": {
+        "name": "Mass Slow Skillbook",
+        "slug": "mass-slow-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_SlowMass"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/MALEDICTION-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Malediction Scroll",
       "ingredients": [
         {
           "name": "BLANK WITCHCRAFT SKILL BOOK",
@@ -162,26 +2454,389 @@
           "statsId": "BOOK_Skill_Witchcraft_Blank_A"
         },
         {
-          "name": "#Adept-Witchcraft-Skill-Scroll",
-          "selectorTag": "Adept-Witchcraft-Skill-Scroll",
+          "name": "Malediction Scroll",
+          "slug": "malediction-scroll",
           "tags": [
-            "Adept-Witchcraft-Skill-Scroll"
-          ]
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TargetedCurse"
         }
       ],
       "result": {
-        "name": "ADEPT WITCHCRAFT SKILL BOOK",
-        "slug": "adept-witchcraft-skill-book",
+        "name": "Malediction Skillbook",
+        "slug": "malediction-skillbook",
         "tags": [
           "Skillbooks",
           "DOS1"
-        ]
+        ],
+        "statsId": "SKILLBOOK_TargetedCurse"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/OATH-OF-DESECRATION-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Oath of Desecration Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Oath of Desecration Scroll",
+          "slug": "oath-of-desecration-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_TargetedDamageBoost"
+        }
+      ],
+      "result": {
+        "name": "Oath of Desecration Skillbook",
+        "slug": "oath-of-desecration-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_TargetedDamageBoost"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-UNDEAD-WARRIOR-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Summon Undead Warrior Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Summon Undead Warrior Scroll",
+          "slug": "summon-undead-warrior-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_CreateUndead"
+        }
+      ],
+      "result": {
+        "name": "Summon Undead Warrior Skillbook",
+        "slug": "summon-undead-warrior-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_CreateUndead"
       },
       "tags": [
         "Skillbooks",
         "DOS1"
       ],
       "requirements": "Crafting 3",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/DESTROY-SUMMON-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Destroy Summon Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Destroy Summon Scroll",
+          "slug": "destroy-summon-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_BanishSummon"
+        }
+      ],
+      "result": {
+        "name": "Destroy Summon Skillbook",
+        "slug": "destroy-summon-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_BanishSummon"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/HORRIFIC-SCREAM-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Horrific Scream Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Horrific Scream Scroll",
+          "slug": "horrific-scream-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_CauseFear"
+        }
+      ],
+      "result": {
+        "name": "Horrific Scream Skillbook",
+        "slug": "horrific-scream-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_CauseFear"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/SUMMON-ARMOURED-UNDEAD-DECAPITATOR-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Summon Armoured Undead Decapitator Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Summon Armoured Undead Decapitator Scroll",
+          "slug": "summon-armoured-undead-decapitator-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_CreateGreaterUndead"
+        }
+      ],
+      "result": {
+        "name": "Summon Armoured Undead Decapitator Skillbook",
+        "slug": "summon-armoured-undead-decapitator-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_CreateGreaterUndead"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/DRAIN-WILLPOWER-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Drain Willpower Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Drain Willpower Scroll",
+          "slug": "drain-willpower-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_DrainWillpower"
+        }
+      ],
+      "result": {
+        "name": "Drain Willpower Skillbook",
+        "slug": "drain-willpower-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_DrainWillpower"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/ENFEEBLE-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Enfeeble Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Enfeeble Scroll",
+          "slug": "enfeeble-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Enervation"
+        }
+      ],
+      "result": {
+        "name": "Enfeeble Skillbook",
+        "slug": "enfeeble-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Enervation"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/DEATH-PUNCH-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Death Punch Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Death Punch Scroll",
+          "slug": "death-punch-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_FingerOfDeath"
+        }
+      ],
+      "result": {
+        "name": "Death Punch Skillbook",
+        "slug": "death-punch-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_FingerOfDeath"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
+      "notes": "",
+      "remarks": "Skill Book spell same as Skill Scroll used",
+      "source": "Secrets of the Scroll X"
+    },
+    {
+      "id": "Ksiegi-umiejetnosci/INVULNERABILITY-SKILLBOOK:BLANK WITCHCRAFT SKILL BOOK+Invulnerability Scroll",
+      "ingredients": [
+        {
+          "name": "BLANK WITCHCRAFT SKILL BOOK",
+          "slug": "blank-witchcraft-skill-book",
+          "tags": [
+            "Skillbooks",
+            "DOS1"
+          ],
+          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
+        },
+        {
+          "name": "Invulnerability Scroll",
+          "slug": "invulnerability-scroll",
+          "tags": [
+            "Scrolls",
+            "DOS1"
+          ],
+          "statsId": "SCROLL_Invulnerability"
+        }
+      ],
+      "result": {
+        "name": "Invulnerability Skillbook",
+        "slug": "invulnerability-skillbook",
+        "tags": [
+          "Skillbooks",
+          "DOS1"
+        ],
+        "statsId": "SKILLBOOK_Invulnerability"
+      },
+      "tags": [
+        "Skillbooks",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Skill Book spell same as Skill Scroll used",
       "source": "Secrets of the Scroll X"
@@ -422,59 +3077,6 @@
       "notes": "",
       "remarks": "Pierce Dmg Explosion 75% -20 AR chance 5m radius",
       "source": ""
-    },
-    {
-      "id": "Strzaly-i-granaty/ARROW-SHAFT:Branch+Knife@x3",
-      "ingredients": [
-        {
-          "name": "Branch",
-          "namePl": "Gałąź",
-          "slug": "branch",
-          "tags": [
-            "Ingredients",
-            "One-Handed-Maces",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Weapon"
-          ],
-          "statsId": "WPN_Branch_A"
-        },
-        {
-          "name": "Knife",
-          "namePl": "Nóż",
-          "slug": "knife",
-          "tags": [
-            "Weapons",
-            "Ingredients",
-            "DOS1"
-          ],
-          "quantity": "x3"
-        }
-      ],
-      "result": {
-        "name": "Arrow Shaft",
-        "namePl": "Promień strzały",
-        "slug": "arrow-shaft",
-        "tags": [
-          "Ingredients",
-          "Arrows",
-          "DOS1"
-        ],
-        "craftingCategories": [
-          "Weapon"
-        ],
-        "statsId": "WPN_ArrowShaft_A"
-      },
-      "tags": [
-        "Ingredients",
-        "Arrows",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "Crafting & Cooking with Maradino"
     },
     {
       "id": "Wyposazenie/BACKPACK:Leather Scraps+Rope",
@@ -1150,7 +3752,7 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": "ItemCombos (`ITEM_CookingPot` + `LTS_Campfire_A` → `FUR_BoilingPot_A`)"
+      "source": ""
     },
     {
       "id": "Strzaly-i-granaty/BOTTLE-FILLED-WITH-OIL:Empty Bottle+Oil Barrel",
@@ -1253,7 +3855,7 @@
       "requirements": "",
       "notes": "Add 5% Heal -1 Intelligence 60% Drunk chance",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A667:G667",
+      "source": "",
       "sourceRecipeIds": [
         "Mikstury-i-jedzenie/BOTTLE-OF-BEER:Empty Bottle+Beer Barrel",
         "Mikstury-i-jedzenie/BOTTLE-OF-BEER:Beer Barrel+Empty Bottle"
@@ -1302,7 +3904,7 @@
       "requirements": "",
       "notes": "Add 5% Heal",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A668:G668",
+      "source": "",
       "sourceRecipeIds": [
         "Mikstury-i-jedzenie/BOTTLE-OF-WATER:Empty Bottle+Water Barrel"
       ]
@@ -1399,7 +4001,7 @@
       "requirements": "",
       "notes": "Add 5% Heal -1 Speed 60% Drunk chance",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A669:G669",
+      "source": "",
       "sourceRecipeIds": [
         "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Empty Bottle+Wine barrel",
         "Mikstury-i-jedzenie/BOTTLE-OF-WINE:Wine barrel+Empty Bottle"
@@ -1455,7 +4057,7 @@
       "source": "The String Enthusiast I"
     },
     {
-      "id": "Skladniki/WOOD-CHIPS,-BRANCH:Log+ONE HANDED AXE",
+      "id": "Skladniki/WOOD-CHIPS,-BRANCH:Log+Axe",
       "ingredients": [
         {
           "name": "Log",
@@ -1467,15 +4069,17 @@
           ],
           "craftingCategories": [
             "Weapon"
-          ]
+          ],
+          "statsId": "ITEM_Log"
         },
         {
-          "name": "ONE HANDED AXE",
-          "slug": "one-handed-axe",
+          "name": "Axe",
+          "namePl": "#Topór",
+          "slug": "axe",
           "tags": [
-            "Weapons",
-            "DOS1"
-          ]
+            "DOS1-Axe"
+          ],
+          "selectorTag": "DOS1-Axe"
         }
       ],
       "result": {
@@ -1565,7 +4169,7 @@
       "source": "The Adventurer's Field Guide I"
     },
     {
-      "id": "Skladniki/BREAD:Dough+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/BREAD:Dough+#Oven",
       "ingredients": [
         {
           "name": "Dough",
@@ -1580,13 +4184,12 @@
           "statsId": "CON_Ingred_Dough_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -2440,19 +5043,187 @@
         }
       ],
       "result": {
-        "name": "Cloth Armour",
-        "namePl": "Płócienna zbroja",
-        "slug": "cloth-armour",
+        "name": "Homemade Cloth Armour",
+        "slug": "homemade-cloth-armour",
         "tags": [
           "Armour",
           "DOS1"
-        ]
+        ],
+        "statsId": "ARM_CraftedClothTorso_01"
       },
       "tags": [
         "Armour",
         "DOS1"
       ],
       "requirements": "Crafting 1",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide XVI"
+    },
+    {
+      "id": "Pancerze/HANDCRAFTED-CLOTH-ARMOUR:Cloth Scraps+Needle and Thread:Crafting 2",
+      "ingredients": [
+        {
+          "name": "Cloth Scraps",
+          "namePl": "Skrawki materiału",
+          "slug": "cloth-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Cloth_A"
+        },
+        {
+          "name": "Needle and Thread",
+          "namePl": "Igła z nitką",
+          "slug": "needle-and-thread",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Needle_Thread_A"
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Cloth Armour",
+        "slug": "handcrafted-cloth-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedClothTorso_02"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide XVI"
+    },
+    {
+      "id": "Pancerze/CUSTOM-MADE-CLOTH-ARMOUR:Cloth Scraps+Needle and Thread:Crafting 3",
+      "ingredients": [
+        {
+          "name": "Cloth Scraps",
+          "namePl": "Skrawki materiału",
+          "slug": "cloth-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Cloth_A"
+        },
+        {
+          "name": "Needle and Thread",
+          "namePl": "Igła z nitką",
+          "slug": "needle-and-thread",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Needle_Thread_A"
+        }
+      ],
+      "result": {
+        "name": "Custom Made Cloth Armour",
+        "slug": "custom-made-cloth-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedClothTorso_03"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide XVI"
+    },
+    {
+      "id": "Pancerze/POLISHED-CLOTH-ARMOUR:Cloth Scraps+Needle and Thread:Crafting 4",
+      "ingredients": [
+        {
+          "name": "Cloth Scraps",
+          "namePl": "Skrawki materiału",
+          "slug": "cloth-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Cloth_A"
+        },
+        {
+          "name": "Needle and Thread",
+          "namePl": "Igła z nitką",
+          "slug": "needle-and-thread",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Needle_Thread_A"
+        }
+      ],
+      "result": {
+        "name": "Polished Cloth Armour",
+        "slug": "polished-cloth-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedClothTorso_04"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide XVI"
+    },
+    {
+      "id": "Pancerze/SUPERIOR-CLOTH-ARMOUR:Cloth Scraps+Needle and Thread:Crafting 5",
+      "ingredients": [
+        {
+          "name": "Cloth Scraps",
+          "namePl": "Skrawki materiału",
+          "slug": "cloth-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Cloth_A"
+        },
+        {
+          "name": "Needle and Thread",
+          "namePl": "Igła z nitką",
+          "slug": "needle-and-thread",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Needle_Thread_A"
+        }
+      ],
+      "result": {
+        "name": "Superior Cloth Armour",
+        "slug": "superior-cloth-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedClothTorso_05"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
       "notes": "Stats Increase with Crafting Level",
       "remarks": "",
       "source": "The Adventurer's Field Guide XVI"
@@ -2884,7 +5655,7 @@
       "source": ""
     },
     {
-      "id": "Mikstury-i-jedzenie/CYSEAL-FISH-PIE:Fish Pie Dough+Oven, Furnace, or Mobile Kitchen",
+      "id": "Mikstury-i-jedzenie/CYSEAL-FISH-PIE:Fish Pie Dough+#Oven",
       "ingredients": [
         {
           "name": "Fish Pie Dough",
@@ -2900,13 +5671,12 @@
           "statsId": "CON_Ingred_Dough_Cyseal_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -2933,606 +5703,6 @@
       "notes": "Add 10% Heal, 1 Intelligence -1 Speed",
       "remarks": "",
       "source": "Crafting & Cooking with Maradino"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-CONSTITUTION-POTION:BUTELKA TRUCIZNY+Bonedust",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Bonedust",
-          "namePl": "Sproszkowana kość",
-          "slug": "bonedust",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "TOOL_Pouch_Dust_Bone_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Constitution Potion",
-        "namePl": "Mikstura zmniejszenia kondycji",
-        "slug": "debuff-constitution-potion",
-        "tags": [
-          "Potions",
-          "Constitution",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Constitution_A"
-      },
-      "tags": [
-        "Potions",
-        "Constitution",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "-2 Constitution Serves No Function",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-DEXTERITY-POTION:BUTELKA TRUCIZNY+Sinew",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Sinew",
-          "namePl": "Ścięgno",
-          "slug": "sinew",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Sinew"
-          ],
-          "statsId": "LOOT_Sinew_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Dexterity Potion",
-        "namePl": "Mikstura zmniejszenia zwinności",
-        "slug": "debuff-dexterity-potion",
-        "tags": [
-          "Potions",
-          "Dexterity",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Dexterity_A"
-      },
-      "tags": [
-        "Potions",
-        "Dexterity",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "-2 Dexterity Serves No Function",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-INTELLIGENCE-POTION:BUTELKA TRUCIZNY+Tormented Soul",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Tormented Soul",
-          "namePl": "Udręczona dusza",
-          "slug": "tormented-soul",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Soul_Tormented_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Intelligence Potion",
-        "namePl": "Mikstura zmniejszenia inteligencji",
-        "slug": "debuff-intelligence-potion",
-        "tags": [
-          "Potions",
-          "Intelligence",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Intelligence_A"
-      },
-      "tags": [
-        "Potions",
-        "Intelligence",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "-2 Intelligence Serves No Function",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-PERCEPTION-POTION:BUTELKA TRUCIZNY+#Eye",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Eye",
-          "namePl": "Oko",
-          "slug": "eye",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Eye"
-          ],
-          "statsId": "LOOT_Eye_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Perception Potion",
-        "namePl": "Mikstura zmniejszenia spostrzegawczości",
-        "slug": "debuff-perception-potion",
-        "tags": [
-          "Potions",
-          "Perception",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Perception_A"
-      },
-      "tags": [
-        "Potions",
-        "Perception",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "-2 Perception Serves No Function",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-SPEED-POTION:BUTELKA TRUCIZNY+Shadow Essence",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Shadow Essence",
-          "namePl": "Esencja cienia",
-          "slug": "shadow-essence",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Essence"
-          ],
-          "statsId": "LOOT_Essence_Shadow_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Speed Potion",
-        "namePl": "Mikstura zmniejszenia prędkości",
-        "slug": "debuff-speed-potion",
-        "tags": [
-          "Potions",
-          "Speed",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Speed_A"
-      },
-      "tags": [
-        "Potions",
-        "Speed",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "-2 Speed Serves No Function",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DEBUFF-STRENGTH-POTION:BUTELKA TRUCIZNY+#Tooth",
-      "ingredients": [
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Tooth",
-          "namePl": "Ząb",
-          "slug": "tooth",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Tooth"
-          ],
-          "statsId": "LOOT_Tooth_A"
-        }
-      ],
-      "result": {
-        "name": "Debuff Strength Potion",
-        "namePl": "Mikstura zmniejszenia siły",
-        "slug": "debuff-strength-potion",
-        "tags": [
-          "Potions",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Potion_Debuf_Strength_A"
-      },
-      "tags": [
-        "Potions",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "-2 Strength Serves No Function",
-      "remarks": "",
-      "source": "The String Enthusiast III"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:Raw Meat+Oven, Furnace, or Mobile Kitchen",
-      "ingredients": [
-        {
-          "name": "Raw Meat",
-          "namePl": "Surowe mięso",
-          "slug": "raw-meat",
-          "tags": [
-            "Food-And-Drink",
-            "Constitution",
-            "Healing",
-            "DISEASED",
-            "DOS1"
-          ],
-          "statsId": "CON_Food_Meat_Raw_A"
-        },
-        {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "Add 15% Heal, 1 Strength",
-      "remarks": "",
-      "source": ""
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:Eggs+Cooking station",
-      "ingredients": [
-        {
-          "name": "Eggs",
-          "slug": "eggs",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A681:G681"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:Eggs+Oven",
-      "ingredients": [
-        {
-          "name": "Eggs",
-          "slug": "eggs",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A682:G682"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:FoodFish+Cooking station",
-      "ingredients": [
-        {
-          "name": "FoodFish",
-          "slug": "foodfish",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A683:G683"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:FoodFish+Oven",
-      "ingredients": [
-        {
-          "name": "FoodFish",
-          "slug": "foodfish",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A684:G684"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:Meat+Cooking station",
-      "ingredients": [
-        {
-          "name": "Meat",
-          "namePl": "Mięso",
-          "slug": "meat",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A685:G685"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/DINNER:Meat+Oven",
-      "ingredients": [
-        {
-          "name": "Meat",
-          "namePl": "Mięso",
-          "slug": "meat",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Oven",
-          "namePl": "Piecyk",
-          "slug": "oven",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Oven"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Dinner",
-        "namePl": "Obiad",
-        "slug": "dinner",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Strength",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Dinner_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Strength",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A686:G686"
     },
     {
       "id": "Skladniki/DOUGH:Flour+Bottle of Water",
@@ -4432,54 +6602,6 @@
       "source": "The String Enthusiast II"
     },
     {
-      "id": "Strzaly-i-granaty/EXPLOSIVE-ARROWHEAD:Oil+Fire Arrowhead",
-      "ingredients": [
-        {
-          "name": "Oil",
-          "namePl": "Olej",
-          "slug": "oil",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Fire Arrowhead",
-          "namePl": "Grot ognisty",
-          "slug": "fire-arrowhead",
-          "tags": [
-            "Arrows",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Weapon"
-          ],
-          "statsId": "WPN_ArrowHead_Fire_A"
-        }
-      ],
-      "result": {
-        "name": "Explosive Arrowhead",
-        "namePl": "Wybuchowy grot",
-        "slug": "explosive-arrowhead",
-        "tags": [
-          "Arrows",
-          "DOS1"
-        ],
-        "craftingCategories": [
-          "Weapon"
-        ],
-        "statsId": "WPN_ArrowHead_Explosive_A"
-      },
-      "tags": [
-        "Arrows",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A128:G128"
-    },
-    {
       "id": "Amulety/FANCY-FEATHER-AMULET:Thread+Magical Fancy Feather",
       "ingredients": [
         {
@@ -5316,7 +7438,7 @@
       "source": "Secrets of the Scroll IV"
     },
     {
-      "id": "Skladniki/IRON-BAR:Iron Ore+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/IRON-BAR:Iron Ore+#Oven",
       "ingredients": [
         {
           "name": "Iron Ore",
@@ -5329,13 +7451,12 @@
           "statsId": "LOOT_Ore_A_Iron_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -6260,7 +8381,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/LARGE-STEEL-BAR:Large Iron Bar+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/LARGE-STEEL-BAR:Large Iron Bar+#Oven",
       "ingredients": [
         {
           "name": "Large Iron Bar",
@@ -6273,13 +8394,12 @@
           "statsId": "LOOT_OreBar_A_Iron_A_Large"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -6633,7 +8753,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/LEATHER-SCRAPS:Animal Hide+Knife or Dagger",
+      "id": "Skladniki/LEATHER-SCRAPS:Animal Hide+Knife",
       "ingredients": [
         {
           "name": "Animal Hide",
@@ -6646,14 +8766,55 @@
           "statsId": "LOOT_Hide_Animal_A"
         },
         {
-          "name": "Knife or Dagger",
-          "namePl": "Nóż lub sztylet",
-          "slug": "knife-or-dagger",
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
           "tags": [
-            "Weapons",
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        }
+      ],
+      "result": {
+        "name": "Leather Scraps",
+        "namePl": "Skrawki skóry",
+        "slug": "leather-scraps",
+        "tags": [
+          "Ingredients",
+          "DOS1"
+        ],
+        "statsId": "LOOT_Scraps_Leather_A"
+      },
+      "tags": [
+        "Ingredients",
+        "DOS1"
+      ],
+      "requirements": "Crafting 1",
+      "notes": "",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide XX"
+    },
+    {
+      "id": "Skladniki/LEATHER-SCRAPS:Animal Hide+Dagger",
+      "ingredients": [
+        {
+          "name": "Animal Hide",
+          "namePl": "Skóra zwierzęca",
+          "slug": "animal-hide",
+          "tags": [
             "Ingredients",
             "DOS1"
-          ]
+          ],
+          "statsId": "LOOT_Hide_Animal_A"
+        },
+        {
+          "name": "Dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
+          "tags": [
+            "DOS1-Dagger"
+          ],
+          "selectorTag": "DOS1-Dagger"
         }
       ],
       "result": {
@@ -8179,191 +10340,6 @@
       "source": "The Adventurer's Field Guide XIX"
     },
     {
-      "id": "Ksiegi-umiejetnosci/MASTER-AIR-SKILL-BOOK:BLANK AIR SKILL BOOK+#Master-Air-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK AIR SKILL BOOK",
-          "slug": "blank-air-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Air_Blank_A"
-        },
-        {
-          "name": "#Master-Air-Skill-Scroll",
-          "selectorTag": "Master-Air-Skill-Scroll",
-          "tags": [
-            "Master-Air-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER AIR SKILL BOOK",
-        "slug": "master-air-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Chain Lightning, Make Invisible, Lightning Storm",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-EARTH-SKILL-BOOK:BLANK EARTH SKILL BOOK+#Master-Earth-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK EARTH SKILL BOOK",
-          "slug": "blank-earth-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Earth_Blank_A"
-        },
-        {
-          "name": "#Master-Earth-Skill-Scroll",
-          "selectorTag": "Master-Earth-Skill-Scroll",
-          "tags": [
-            "Master-Earth-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER EARTH SKILL BOOK",
-        "slug": "master-earth-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Summon Earth Elemental, Earthquake",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-FIRE-SKILL-BOOK:BLANK FIRE SKILL BOOK+#Master-Fire-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK FIRE SKILL BOOK",
-          "slug": "blank-fire-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Fire_Blank_A"
-        },
-        {
-          "name": "#Master-Fire-Skill-Scroll",
-          "selectorTag": "Master-Fire-Skill-Scroll",
-          "tags": [
-            "Master-Fire-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER FIRE SKILL BOOK",
-        "slug": "master-fire-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Infectious Flame, Meteorstrike",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-WATER-SKILL-BOOK:BLANK WATER SKILL BOOK+#Master-Water-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WATER SKILL BOOK",
-          "slug": "blank-water-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Water_Blank_A"
-        },
-        {
-          "name": "#Master-Water-Skill-Scroll",
-          "selectorTag": "Master-Water-Skill-Scroll",
-          "tags": [
-            "Master-Water-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER WATER SKILL BOOK",
-        "slug": "master-water-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Hail Attack, Mass Slow",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/MASTER-WITCHCRAFT-SKILL-BOOK:BLANK WITCHCRAFT SKILL BOOK+#Master-Witchcraft-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WITCHCRAFT SKILL BOOK",
-          "slug": "blank-witchcraft-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
-        },
-        {
-          "name": "#Master-Witchcraft-Skill-Scroll",
-          "selectorTag": "Master-Witchcraft-Skill-Scroll",
-          "tags": [
-            "Master-Witchcraft-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "MASTER WITCHCRAFT SKILL BOOK",
-        "slug": "master-witchcraft-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 4",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used. Crafting 5: Death Punch, Invulnerability",
-      "source": "Secrets of the Scroll X"
-    },
-    {
       "id": "Mikstury-i-jedzenie/MEDIUM-AIR-RESIST-POTION:MIKSTURA ODPORNOŚCI NA POWIETRZE+Augmentor",
       "ingredients": [
         {
@@ -8910,18 +10886,107 @@
         }
       ],
       "result": {
-        "name": "Metal Boots",
-        "slug": "metal-boots",
+        "name": "Handcrafted Metal Boots",
+        "slug": "handcrafted-metal-boots",
         "tags": [
           "Armour",
           "DOS1"
-        ]
+        ],
+        "statsId": "ARM_CraftedMetalBoots_01"
       },
       "tags": [
         "Armour",
         "DOS1"
       ],
       "requirements": "Crafting 3",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Pancerze/POLISHED-METAL-BOOTS:Metal Scraps+Anvil:Crafting 4",
+      "ingredients": [
+        {
+          "name": "Metal Scraps",
+          "namePl": "Kawałki metalu",
+          "slug": "metal-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Metal_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Metal Boots",
+        "slug": "polished-metal-boots",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedMetalBoots_02"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Pancerze/SUPERIOR-METAL-BOOTS:Metal Scraps+Anvil:Crafting 5",
+      "ingredients": [
+        {
+          "name": "Metal Scraps",
+          "namePl": "Kawałki metalu",
+          "slug": "metal-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Metal_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Metal Boots",
+        "slug": "superior-metal-boots",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedMetalBoots_03"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
       "notes": "Stats Increase with Crafting Level",
       "remarks": "",
       "source": ""
@@ -8955,18 +11020,111 @@
         }
       ],
       "result": {
-        "name": "METAL CHEST",
-        "slug": "metal-chest",
+        "name": "Homemade Plate Armour",
+        "slug": "homemade-plate-armour",
         "tags": [
           "Armour",
           "DOS1"
-        ]
+        ],
+        "statsId": "ARM_CraftedMetalTorso_01"
       },
       "tags": [
         "Armour",
         "DOS1"
       ],
       "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It VI"
+    },
+    {
+      "id": "Pancerze/HANDCRAFTED-PLATE-ARMOUR:Metal Scraps+Hammer:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Metal Scraps",
+          "namePl": "Kawałki metalu",
+          "slug": "metal-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Metal_A"
+        },
+        {
+          "name": "Hammer",
+          "namePl": "Młotek",
+          "slug": "hammer",
+          "tags": [
+            "Ingredients",
+            "One-Handed-Maces",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Weapon"
+          ],
+          "statsId": "TOOL_Hammer"
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Plate Armour",
+        "slug": "handcrafted-plate-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedMetalTorso_02"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It VI"
+    },
+    {
+      "id": "Pancerze/SUPERIOR-PLATE-ARMOUR:Metal Scraps+Hammer:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Metal Scraps",
+          "namePl": "Kawałki metalu",
+          "slug": "metal-scraps",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Scraps_Metal_A"
+        },
+        {
+          "name": "Hammer",
+          "namePl": "Młotek",
+          "slug": "hammer",
+          "tags": [
+            "Ingredients",
+            "One-Handed-Maces",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Weapon"
+          ],
+          "statsId": "TOOL_Hammer"
+        }
+      ],
+      "result": {
+        "name": "Superior Plate Armour",
+        "slug": "superior-plate-armour",
+        "tags": [
+          "Armour",
+          "DOS1"
+        ],
+        "statsId": "ARM_CraftedMetalTorso_03"
+      },
+      "tags": [
+        "Armour",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "He Who Smelts It VI"
@@ -10043,106 +12201,6 @@
       "source": ""
     },
     {
-      "id": "Mikstury-i-jedzenie/MUG-OF-BEER:Empty Cup+Beer",
-      "ingredients": [
-        {
-          "name": "Empty Cup",
-          "namePl": "Pusty puchar",
-          "slug": "empty-cup",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "CupEmpty"
-          ],
-          "statsId": "CON_Drink_Cup_A_Empty"
-        },
-        {
-          "name": "Beer",
-          "slug": "beer",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mug of Beer",
-        "namePl": "Kufel piwa",
-        "slug": "mug-of-beer",
-        "tags": [
-          "Food-And-Drink",
-          "Intelligence",
-          "Healing",
-          "DRUNK",
-          "DOS1"
-        ],
-        "statsId": "CON_Drink_Mug_Beer_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Intelligence",
-        "Healing",
-        "DRUNK",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A705:G705"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/MUG-OF-BEER:Empty Mug+Beer",
-      "ingredients": [
-        {
-          "name": "Empty Mug",
-          "namePl": "Pusty kubek",
-          "slug": "empty-mug",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "CupEmpty"
-          ],
-          "statsId": "CON_Drink_Mug_A_Empty"
-        },
-        {
-          "name": "Beer",
-          "slug": "beer",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mug of Beer",
-        "namePl": "Kufel piwa",
-        "slug": "mug-of-beer",
-        "tags": [
-          "Food-And-Drink",
-          "Intelligence",
-          "Healing",
-          "DRUNK",
-          "DOS1"
-        ],
-        "statsId": "CON_Drink_Mug_Beer_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Intelligence",
-        "Healing",
-        "DRUNK",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A706:G706"
-    },
-    {
       "id": "Skladniki/MUG-OF-WATER:Empty Mug+Bottle of Water",
       "ingredients": [
         {
@@ -10413,108 +12471,6 @@
       "source": ""
     },
     {
-      "id": "Mikstury-i-jedzenie/MUG-OF-WINE:Empty Mug+Grapes",
-      "ingredients": [
-        {
-          "name": "Empty Mug",
-          "namePl": "Pusty kubek",
-          "slug": "empty-mug",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "CupEmpty"
-          ],
-          "statsId": "CON_Drink_Mug_A_Empty"
-        },
-        {
-          "name": "Grapes",
-          "namePl": "Winogrona",
-          "slug": "grapes",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mug of Wine",
-        "namePl": "Kubek wina",
-        "slug": "mug-of-wine",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Speed",
-          "DRUNK",
-          "DOS1"
-        ],
-        "statsId": "CON_Drink_Mug_Wine_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Speed",
-        "DRUNK",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A709:G709"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/MUG-OF-WINE:Empty Mug+Wine",
-      "ingredients": [
-        {
-          "name": "Empty Mug",
-          "namePl": "Pusty kubek",
-          "slug": "empty-mug",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "CupEmpty"
-          ],
-          "statsId": "CON_Drink_Mug_A_Empty"
-        },
-        {
-          "name": "Wine",
-          "namePl": "Wino",
-          "slug": "wine",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Mug of Wine",
-        "namePl": "Kubek wina",
-        "slug": "mug-of-wine",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Speed",
-          "DRUNK",
-          "DOS1"
-        ],
-        "statsId": "CON_Drink_Mug_Wine_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Speed",
-        "DRUNK",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A710:G710"
-    },
-    {
       "id": "Strzaly-i-granaty/NAILBOMB-GRENADE:Empty Grenade+Nine Inch Nails",
       "ingredients": [
         {
@@ -10603,191 +12559,6 @@
       "notes": "",
       "remarks": "",
       "source": ""
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/NOVICE-AIR-SKILL-BOOK:BLANK AIR SKILL BOOK+#Novice-Air-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK AIR SKILL BOOK",
-          "slug": "blank-air-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Air_Blank_A"
-        },
-        {
-          "name": "#Novice-Air-Skill-Scroll",
-          "selectorTag": "Novice-Air-Skill-Scroll",
-          "tags": [
-            "Novice-Air-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "NOVICE AIR SKILL BOOK",
-        "slug": "novice-air-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/NOVICE-EARTH-SKILL-BOOK:BLANK EARTH SKILL BOOK+#Novice-Earth-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK EARTH SKILL BOOK",
-          "slug": "blank-earth-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Earth_Blank_A"
-        },
-        {
-          "name": "#Novice-Earth-Skill-Scroll",
-          "selectorTag": "Novice-Earth-Skill-Scroll",
-          "tags": [
-            "Novice-Earth-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "NOVICE EARTH SKILL BOOK",
-        "slug": "novice-earth-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/NOVICE-FIRE-SKILL-BOOK:BLANK FIRE SKILL BOOK+#Novice-Fire-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK FIRE SKILL BOOK",
-          "slug": "blank-fire-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Fire_Blank_A"
-        },
-        {
-          "name": "#Novice-Fire-Skill-Scroll",
-          "selectorTag": "Novice-Fire-Skill-Scroll",
-          "tags": [
-            "Novice-Fire-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "NOVICE FIRE SKILL BOOK",
-        "slug": "novice-fire-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/NOVICE-WATER-SKILL-BOOK:BLANK WATER SKILL BOOK+#Novice-Water-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WATER SKILL BOOK",
-          "slug": "blank-water-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Water_Blank_A"
-        },
-        {
-          "name": "#Novice-Water-Skill-Scroll",
-          "selectorTag": "Novice-Water-Skill-Scroll",
-          "tags": [
-            "Novice-Water-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "NOVICE WATER SKILL BOOK",
-        "slug": "novice-water-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
-    },
-    {
-      "id": "Ksiegi-umiejetnosci/NOVICE-WITCHCRAFT-SKILL-BOOK:BLANK WITCHCRAFT SKILL BOOK+#Novice-Witchcraft-Skill-Scroll",
-      "ingredients": [
-        {
-          "name": "BLANK WITCHCRAFT SKILL BOOK",
-          "slug": "blank-witchcraft-skill-book",
-          "tags": [
-            "Skillbooks",
-            "DOS1"
-          ],
-          "statsId": "BOOK_Skill_Witchcraft_Blank_A"
-        },
-        {
-          "name": "#Novice-Witchcraft-Skill-Scroll",
-          "selectorTag": "Novice-Witchcraft-Skill-Scroll",
-          "tags": [
-            "Novice-Witchcraft-Skill-Scroll"
-          ]
-        }
-      ],
-      "result": {
-        "name": "NOVICE WITCHCRAFT SKILL BOOK",
-        "slug": "novice-witchcraft-skill-book",
-        "tags": [
-          "Skillbooks",
-          "DOS1"
-        ]
-      },
-      "tags": [
-        "Skillbooks",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Skill Book spell same as Skill Scroll used",
-      "source": "Secrets of the Scroll X"
     },
     {
       "id": "Strzaly-i-granaty/OIL-FLASK:Empty Bottle+Bottle Filled With Oil",
@@ -10990,18 +12761,195 @@
         }
       ],
       "result": {
-        "name": "ONE HANDED AXE",
-        "slug": "one-handed-axe",
+        "name": "Homemade Axe",
+        "slug": "homemade-axe",
         "tags": [
           "Weapons",
           "DOS1"
-        ]
+        ],
+        "statsId": "WPN_CraftedAxe_01"
       },
       "tags": [
         "Weapons",
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It II"
+    },
+    {
+      "id": "Bron/HANDCRAFTED-AXE:Steel Bar+Anvil:Blacksmithing 2",
+      "ingredients": [
+        {
+          "name": "Steel Bar",
+          "namePl": "Sztabka stali",
+          "slug": "steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Axe",
+        "slug": "handcrafted-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedAxe_02"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 2",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It II"
+    },
+    {
+      "id": "Bron/CUSTOM-MADE-AXE:Steel Bar+Anvil:Blacksmithing 3",
+      "ingredients": [
+        {
+          "name": "Steel Bar",
+          "namePl": "Sztabka stali",
+          "slug": "steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Custom Made Axe",
+        "slug": "custom-made-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedAxe_03"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It II"
+    },
+    {
+      "id": "Bron/POLISHED-AXE:Steel Bar+Anvil:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Steel Bar",
+          "namePl": "Sztabka stali",
+          "slug": "steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Axe",
+        "slug": "polished-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedAxe_04"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It II"
+    },
+    {
+      "id": "Bron/SUPERIOR-AXE:Steel Bar+Anvil:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Steel Bar",
+          "namePl": "Sztabka stali",
+          "slug": "steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Axe",
+        "slug": "superior-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedAxe_05"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "He Who Smelts It II"
@@ -11033,13 +12981,14 @@
         }
       ],
       "result": {
-        "name": "One Handed Sword",
-        "slug": "one-handed-sword",
+        "name": "Homemade Sword",
+        "slug": "homemade-sword",
         "tags": [
           "Weapons",
           "Ingredients",
           "DOS1"
-        ]
+        ],
+        "statsId": "WPN_CraftedSword_01"
       },
       "tags": [
         "Weapons",
@@ -11047,6 +12996,190 @@
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It I"
+    },
+    {
+      "id": "Skladniki/HANDCRAFTED-SWORD:Iron Bar+Anvil:Blacksmithing 2",
+      "ingredients": [
+        {
+          "name": "Iron Bar",
+          "namePl": "Sztabka żelaza",
+          "slug": "iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Sword",
+        "slug": "handcrafted-sword",
+        "tags": [
+          "Weapons",
+          "Ingredients",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedSword_02"
+      },
+      "tags": [
+        "Weapons",
+        "Ingredients",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 2",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It I"
+    },
+    {
+      "id": "Skladniki/CUSTOM-MADE-SWORD:Iron Bar+Anvil:Blacksmithing 3",
+      "ingredients": [
+        {
+          "name": "Iron Bar",
+          "namePl": "Sztabka żelaza",
+          "slug": "iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Custom Made Sword",
+        "slug": "custom-made-sword",
+        "tags": [
+          "Weapons",
+          "Ingredients",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedSword_03"
+      },
+      "tags": [
+        "Weapons",
+        "Ingredients",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It I"
+    },
+    {
+      "id": "Skladniki/POLISHED-SWORD:Iron Bar+Anvil:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Iron Bar",
+          "namePl": "Sztabka żelaza",
+          "slug": "iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Sword",
+        "slug": "polished-sword",
+        "tags": [
+          "Weapons",
+          "Ingredients",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedSword_04"
+      },
+      "tags": [
+        "Weapons",
+        "Ingredients",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It I"
+    },
+    {
+      "id": "Skladniki/SUPERIOR-SWORD:Iron Bar+Anvil:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Iron Bar",
+          "namePl": "Sztabka żelaza",
+          "slug": "iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Sword",
+        "slug": "superior-sword",
+        "tags": [
+          "Weapons",
+          "Ingredients",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedSword_05"
+      },
+      "tags": [
+        "Weapons",
+        "Ingredients",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "He Who Smelts It I"
@@ -11138,7 +13271,7 @@
       "source": "Secrets of the Scroll II"
     },
     {
-      "id": "Mikstury-i-jedzenie/PIZZA:Pizza Dough+Oven, Furnace, or Mobile Kitchen",
+      "id": "Mikstury-i-jedzenie/PIZZA:Pizza Dough+#Oven",
       "ingredients": [
         {
           "name": "Pizza Dough",
@@ -11154,13 +13287,12 @@
           "statsId": "CON_Ingred_Dough_Pizza_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -11241,52 +13373,6 @@
       "notes": "Poison Dmg 100% Poison chance",
       "remarks": "",
       "source": ""
-    },
-    {
-      "id": "Strzaly-i-granaty/POISON-ARROWHEAD:Arrowhead+BUTELKA TRUCIZNY",
-      "ingredients": [
-        {
-          "name": "Arrowhead",
-          "namePl": "Grot",
-          "slug": "arrowhead",
-          "tags": [
-            "Arrows",
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Weapon"
-          ],
-          "statsId": "WPN_ArrowHead_A"
-        },
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Poison Arrowhead",
-        "namePl": "Zatruty grot",
-        "slug": "poison-arrowhead",
-        "tags": [
-          "Arrows",
-          "DOS1"
-        ],
-        "statsId": "WPN_ArrowHead_Poison_A"
-      },
-      "tags": [
-        "Arrows",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "",
-      "source": "The String Enthusiast III"
     },
     {
       "id": "Strzaly-i-granaty/POISON-ARROWHEAD:Arrowhead+Intestines",
@@ -11490,118 +13576,6 @@
       "source": ""
     },
     {
-      "id": "Strzaly-i-granaty/POISON-CLOUD-GRENADE:Empty Grenade+BUTELKA TRUCIZNY",
-      "ingredients": [
-        {
-          "name": "Empty Grenade",
-          "namePl": "Pusty granat",
-          "slug": "empty-grenade",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "GRN_Ingredient_Round_Empty_A"
-        },
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Poison Cloud Grenade",
-        "namePl": "Granat trującej chmury",
-        "slug": "poison-cloud-grenade",
-        "tags": [
-          "Grenades",
-          "Casts-Spell",
-          "DOS1"
-        ],
-        "statsId": "GRN_Grenade_MustardGas_A"
-      },
-      "extraResults": [
-        {
-          "name": "Empty Potion Bottle",
-          "namePl": "Pusta butelka na miksturę",
-          "slug": "empty-potion-bottle",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "CON_Potion_Empty_A"
-        }
-      ],
-      "tags": [
-        "Grenades",
-        "Casts-Spell",
-        "DOS1"
-      ],
-      "requirements": "Crafting 2",
-      "notes": "",
-      "remarks": "Poison Cloud 4m radius",
-      "source": ""
-    },
-    {
-      "id": "Strzaly-i-granaty/POISON-FLASK:Empty Bottle+BUTELKA TRUCIZNY",
-      "ingredients": [
-        {
-          "name": "Empty Flask",
-          "slug": "empty-flask",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "namePl": "Pusta butelka",
-          "statsId": "GRN_Ingredient_Flask_Empty_A"
-        },
-        {
-          "name": "Poison Bottle",
-          "namePl": "Butelka trucizny",
-          "slug": "poison-bottle",
-          "tags": [
-            "Potions",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Poison Flask",
-        "namePl": "Fiolka trucizny",
-        "slug": "poison-flask",
-        "tags": [
-          "Grenades",
-          "Casts-Spell",
-          "DOS1"
-        ],
-        "statsId": "GRN_Grenade_PoisonFlask_A"
-      },
-      "extraResults": [
-        {
-          "name": "Empty Potion Bottle",
-          "namePl": "Pusta butelka na miksturę",
-          "slug": "empty-potion-bottle",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "CON_Potion_Empty_A"
-        }
-      ],
-      "tags": [
-        "Grenades",
-        "Casts-Spell",
-        "DOS1"
-      ],
-      "requirements": "Crafting 1",
-      "notes": "",
-      "remarks": "Ooze Puddle 1m radius",
-      "source": ""
-    },
-    {
       "id": "Strzaly-i-granaty/POISON-FLASK:Empty Bottle+Ooze Barrel",
       "ingredients": [
         {
@@ -11800,13 +13774,13 @@
       "requirements": "",
       "notes": "Add 10% Heal, 1 Strength",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A714:G714",
+      "source": "",
       "sourceRecipeIds": [
         "Mikstury-i-jedzenie/PORRIDGE:Wheat+Milk"
       ]
     },
     {
-      "id": "Skladniki/PUMPKIN-HELMET:Pumpkin+NÓŻ LUB SZTYLET",
+      "id": "Skladniki/PUMPKIN-HELMET:Pumpkin+Knife",
       "ingredients": [
         {
           "name": "Pumpkin",
@@ -11824,14 +13798,13 @@
           "statsId": "FOOD_Pumpkin"
         },
         {
-          "name": "Knife or Dagger",
-          "namePl": "Nóż lub sztylet",
-          "slug": "knife-or-dagger",
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
           "tags": [
-            "Weapons",
-            "Ingredients",
-            "DOS1"
-          ]
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
         }
       ],
       "result": {
@@ -11867,102 +13840,7 @@
       "source": ""
     },
     {
-      "id": "Mikstury-i-jedzenie/PUMPKIN-SOUP:Pumpkin Part+Cooking station",
-      "ingredients": [
-        {
-          "name": "Pumpkin Part",
-          "namePl": "Kawałek dyni",
-          "slug": "pumpkin-part",
-          "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Healing",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Pumpkin"
-          ]
-        },
-        {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Pumpkin Soup",
-        "namePl": "Zupa z dyni",
-        "slug": "pumpkin-soup",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Perception",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Soup_Pumpkin_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Perception",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A716:G716"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/PUMPKIN-SOUP:Pumpkin Peel+Cooking station",
-      "ingredients": [
-        {
-          "name": "Pumpkin Peel",
-          "namePl": "Obierki z dyni",
-          "slug": "pumpkin-peel",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ]
-        },
-        {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
-        }
-      ],
-      "result": {
-        "name": "Pumpkin Soup",
-        "namePl": "Zupa z dyni",
-        "slug": "pumpkin-soup",
-        "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Perception",
-          "DOS1"
-        ],
-        "statsId": "CON_Food_Soup_Pumpkin_A"
-      },
-      "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Perception",
-        "DOS1"
-      ],
-      "requirements": "",
-      "notes": "",
-      "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A717:G717"
-    },
-    {
-      "id": "Mikstury-i-jedzenie/PUMPKIN-SOUP:Pumpkin+Cooking station",
+      "id": "Skladniki/PUMPKIN-HELMET:Pumpkin+Dagger",
       "ingredients": [
         {
           "name": "Pumpkin",
@@ -11980,37 +13858,46 @@
           "statsId": "FOOD_Pumpkin"
         },
         {
-          "name": "Cooking station",
-          "namePl": "Kuchnia polowa",
-          "slug": "cooking-station",
+          "name": "Dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Dagger"
+          ],
+          "selectorTag": "DOS1-Dagger"
         }
       ],
       "result": {
-        "name": "Pumpkin Soup",
-        "namePl": "Zupa z dyni",
-        "slug": "pumpkin-soup",
+        "name": "Pumpkin Helmet",
+        "namePl": "Dyniowy hełm",
+        "slug": "pumpkin-helmet",
         "tags": [
-          "Food-And-Drink",
-          "Healing",
-          "Perception",
+          "Seasonal-Items",
+          "Ingredients",
+          "Fire-Resistance",
+          "Physical-Armour",
+          "FEAR",
+          "Helmets",
           "DOS1"
         ],
-        "statsId": "CON_Food_Soup_Pumpkin_A"
+        "craftingCategories": [
+          "Helmet"
+        ],
+        "statsId": "UNI_Halloween_Pumpkin_A"
       },
       "tags": [
-        "Food-And-Drink",
-        "Healing",
-        "Perception",
+        "Seasonal-Items",
+        "Ingredients",
+        "Fire-Resistance",
+        "Physical-Armour",
+        "FEAR",
+        "Helmets",
         "DOS1"
       ],
       "requirements": "",
-      "notes": "Add 10% Heal, 1 Perception",
+      "notes": "Add Fire Resist Fear chance (enemy)",
       "remarks": "",
-      "source": "[ENG] Divinity Original Sin 2 Crafting list by Mellarius (last update 2025.07.28).xlsx — main_sheet!A718:G718; Patty Cake, Patty Cake V"
+      "source": ""
     },
     {
       "id": "Amulety/RABBIT'S-PAW-AMULET:Thread+Magic Rabbit's Paw",
@@ -12056,7 +13943,7 @@
       "requirements": "Crafting 1",
       "notes": "Add Speed",
       "remarks": "",
-      "source": "Secrets of the Scroll III, The Adventurer's Field Guide XIX"
+      "source": "Secrets of the Scroll III; The Adventurer's Field Guide XIX"
     },
     {
       "id": "Pasy/RABBIT'S-PAW-BELT:Rope+Magic Rabbit's Paw",
@@ -13347,7 +15234,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/SHEET-OF-PAPER:Wood Pulp+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/SHEET-OF-PAPER:Mush of Wood+#Oven",
       "ingredients": [
         {
           "name": "Mush of Wood",
@@ -13360,13 +15247,12 @@
           "statsId": "LOOT_Scraps_Wood_A_Mush"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -13493,7 +15379,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/SILVER-BAR:Silver Ore+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/SILVER-BAR:Silver Ore+#Oven",
       "ingredients": [
         {
           "name": "Silver Ore",
@@ -13506,13 +15392,12 @@
           "statsId": "LOOT_Ore_A_Silver_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -14342,7 +16227,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/STEEL-BAR:Iron Bar+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/STEEL-BAR:Iron Bar+#Oven",
       "ingredients": [
         {
           "name": "Iron Bar",
@@ -14355,13 +16240,12 @@
           "statsId": "LOOT_OreBar_A_Iron_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -14492,7 +16376,7 @@
       "source": ""
     },
     {
-      "id": "Skladniki/TENEBRIUM-BAR:Tenebrium Ore+Oven, Furnace, or Mobile Kitchen",
+      "id": "Skladniki/TENEBRIUM-BAR:Tenebrium Ore+#Oven",
       "ingredients": [
         {
           "name": "Tenebrium Ore",
@@ -14505,13 +16389,12 @@
           "statsId": "LOOT_Ore_A_BlackRock_A"
         },
         {
-          "name": "Oven, Furnace, or Mobile Kitchen",
-          "namePl": "Piecyk, piec lub kuchnia przenośna",
-          "slug": "oven-furnace-or-mobile-kitchen",
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
           "tags": [
-            "Stations-And-Containers",
-            "DOS1"
-          ]
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
         }
       ],
       "result": {
@@ -15069,19 +16952,151 @@
         }
       ],
       "result": {
-        "name": "Two Handed Axe",
-        "namePl": "Dwuręczny topór",
-        "slug": "crafted-2h-axe",
+        "name": "Homemade Two Handed Axe",
+        "slug": "homemade-two-handed-axe",
         "tags": [
           "Weapons",
           "DOS1"
-        ]
+        ],
+        "statsId": "WPN_Crafted2HAxe_02"
       },
       "tags": [
         "Weapons",
         "DOS1"
       ],
       "requirements": "Blacksmithing 2",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/HANDCRAFTED-TWO-HANDED-AXE:Large Steel Bar+Anvil:Blacksmithing 3",
+      "ingredients": [
+        {
+          "name": "Large Steel Bar",
+          "namePl": "Duża sztabka stali",
+          "slug": "large-steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Two Handed Axe",
+        "slug": "handcrafted-two-handed-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HAxe_03"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/POLISHED-TWO-HANDED-AXE:Large Steel Bar+Anvil:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Large Steel Bar",
+          "namePl": "Duża sztabka stali",
+          "slug": "large-steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Two Handed Axe",
+        "slug": "polished-two-handed-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HAxe_04"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/SUPERIOR-TWO-HANDED-AXE:Large Steel Bar+Anvil:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Large Steel Bar",
+          "namePl": "Duża sztabka stali",
+          "slug": "large-steel-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Steel_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Two Handed Axe",
+        "slug": "superior-two-handed-axe",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HAxe_05"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "He Who Smelts It III"
@@ -15113,19 +17128,195 @@
         }
       ],
       "result": {
-        "name": "Two Handed Sword",
-        "namePl": "Dwuręczny miecz",
-        "slug": "crafted-2h-sword",
+        "name": "Homemade Two Handed Sword",
+        "slug": "homemade-two-handed-sword",
         "tags": [
           "Weapons",
           "DOS1"
-        ]
+        ],
+        "statsId": "WPN_Crafted2HSword_01"
       },
       "tags": [
         "Weapons",
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/HANDCRAFTED-TWO-HANDED-SWORD:Large Iron Bar+Anvil:Blacksmithing 2",
+      "ingredients": [
+        {
+          "name": "Large Iron Bar",
+          "namePl": "Duża sztabka żelaza",
+          "slug": "large-iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Two Handed Sword",
+        "slug": "handcrafted-two-handed-sword",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HSword_02"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 2",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/CUSTOM-MADE-TWO-HANDED-SWORD:Large Iron Bar+Anvil:Blacksmithing 3",
+      "ingredients": [
+        {
+          "name": "Large Iron Bar",
+          "namePl": "Duża sztabka żelaza",
+          "slug": "large-iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Custom Made Two Handed Sword",
+        "slug": "custom-made-two-handed-sword",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HSword_03"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/POLISHED-TWO-HANDED-SWORD:Large Iron Bar+Anvil:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Large Iron Bar",
+          "namePl": "Duża sztabka żelaza",
+          "slug": "large-iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Two Handed Sword",
+        "slug": "polished-two-handed-sword",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HSword_04"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "He Who Smelts It III"
+    },
+    {
+      "id": "Bron/SUPERIOR-TWO-HANDED-SWORD:Large Iron Bar+Anvil:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Large Iron Bar",
+          "namePl": "Duża sztabka żelaza",
+          "slug": "large-iron-bar",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_OreBar_A_Iron_A_Large"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Two Handed Sword",
+        "slug": "superior-two-handed-sword",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "WPN_Crafted2HSword_05"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "He Who Smelts It III"
@@ -15155,19 +17346,187 @@
         }
       ],
       "result": {
-        "name": "Voodoo Doll",
-        "namePl": "Lalka voodoo",
-        "slug": "voodoo-doll",
+        "name": "Poorly Made Voodoo Doll",
+        "slug": "poorly-made-voodoo-doll",
         "tags": [
           "Weapons",
           "DOS1"
-        ]
+        ],
+        "statsId": "TOOL_VoodooDoll1"
       },
       "tags": [
         "Weapons",
         "DOS1"
       ],
       "requirements": "Crafting 1",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Bron/REGULAR-VOODOO-DOLL:Inert Voodoo Doll+Pixie Dust:Crafting 2",
+      "ingredients": [
+        {
+          "name": "Inert Voodoo Doll",
+          "namePl": "Nieaktywna laleczka voodoo",
+          "slug": "inert-voodoo-doll",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_VoodooDoll"
+        },
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_Pouch_Dust_Pixie_A"
+        }
+      ],
+      "result": {
+        "name": "Regular Voodoo Doll",
+        "slug": "regular-voodoo-doll",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "TOOL_VoodooDoll2"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Bron/WELL-MADE-VOODOO-DOLL:Inert Voodoo Doll+Pixie Dust:Crafting 3",
+      "ingredients": [
+        {
+          "name": "Inert Voodoo Doll",
+          "namePl": "Nieaktywna laleczka voodoo",
+          "slug": "inert-voodoo-doll",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_VoodooDoll"
+        },
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_Pouch_Dust_Pixie_A"
+        }
+      ],
+      "result": {
+        "name": "Well Made Voodoo Doll",
+        "slug": "well-made-voodoo-doll",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "TOOL_VoodooDoll3"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Crafting 3",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Bron/SUPERIOR-VOODOO-DOLL:Inert Voodoo Doll+Pixie Dust:Crafting 4",
+      "ingredients": [
+        {
+          "name": "Inert Voodoo Doll",
+          "namePl": "Nieaktywna laleczka voodoo",
+          "slug": "inert-voodoo-doll",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_VoodooDoll"
+        },
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_Pouch_Dust_Pixie_A"
+        }
+      ],
+      "result": {
+        "name": "Superior Voodoo Doll",
+        "slug": "superior-voodoo-doll",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "TOOL_VoodooDoll4"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Crafting 4",
+      "notes": "Stats Increase with Crafting Level",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Bron/PERFECT-VOODOO-DOLL:Inert Voodoo Doll+Pixie Dust:Crafting 5",
+      "ingredients": [
+        {
+          "name": "Inert Voodoo Doll",
+          "namePl": "Nieaktywna laleczka voodoo",
+          "slug": "inert-voodoo-doll",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_VoodooDoll"
+        },
+        {
+          "name": "Pixie Dust",
+          "namePl": "Czarodziejski pył",
+          "slug": "pixie-dust",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_Pouch_Dust_Pixie_A"
+        }
+      ],
+      "result": {
+        "name": "Perfect Voodoo Doll",
+        "slug": "perfect-voodoo-doll",
+        "tags": [
+          "Weapons",
+          "DOS1"
+        ],
+        "statsId": "TOOL_VoodooDoll5"
+      },
+      "tags": [
+        "Weapons",
+        "DOS1"
+      ],
+      "requirements": "Crafting 5",
       "notes": "Stats Increase with Crafting Level",
       "remarks": "",
       "source": ""
@@ -15546,7 +17905,7 @@
       "source": ""
     },
     {
-      "id": "Bron/WOODEN-STAKE:Log+NÓŻ LUB SZTYLET",
+      "id": "Bron/WOODEN-STAKE:Log+Knife",
       "ingredients": [
         {
           "name": "Log",
@@ -15558,17 +17917,67 @@
           ],
           "craftingCategories": [
             "Weapon"
-          ]
+          ],
+          "statsId": "ITEM_Log"
         },
         {
-          "name": "Knife or Dagger",
-          "namePl": "Nóż lub sztylet",
-          "slug": "knife-or-dagger",
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
           "tags": [
-            "Weapons",
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        }
+      ],
+      "result": {
+        "name": "Wooden Stake",
+        "namePl": "Drewniany kołek",
+        "slug": "wooden-stake",
+        "tags": [
+          "Piercing-Damage",
+          "Daggers",
+          "DOS1"
+        ],
+        "craftingCategories": [
+          "Weapon"
+        ],
+        "statsId": "WPN_Wooden_Stake"
+      },
+      "tags": [
+        "Piercing-Damage",
+        "Daggers",
+        "DOS1"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting & Cooking with Maradino"
+    },
+    {
+      "id": "Bron/WOODEN-STAKE:Log+Dagger",
+      "ingredients": [
+        {
+          "name": "Log",
+          "namePl": "Kłoda",
+          "slug": "log",
+          "tags": [
             "Ingredients",
             "DOS1"
-          ]
+          ],
+          "craftingCategories": [
+            "Weapon"
+          ],
+          "statsId": "ITEM_Log"
+        },
+        {
+          "name": "Dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
+          "tags": [
+            "DOS1-Dagger"
+          ],
+          "selectorTag": "DOS1-Dagger"
         }
       ],
       "result": {
@@ -15980,18 +18389,12 @@
       "ingredients": [
         {
           "name": "Dagger",
-          "namePl": "Sztylet",
-          "slug": "crafted-dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Ingredients",
-            "Piercing-Damage",
-            "Daggers",
-            "DOS1"
+            "DOS1-Dagger"
           ],
-          "craftingCategories": [
-            "Dagger",
-            "Weapon"
-          ]
+          "selectorTag": "DOS1-Dagger"
         },
         {
           "name": "Branch",
@@ -16033,18 +18436,12 @@
       "ingredients": [
         {
           "name": "Dagger",
-          "namePl": "Sztylet",
-          "slug": "crafted-dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Ingredients",
-            "Piercing-Damage",
-            "Daggers",
-            "DOS1"
+            "DOS1-Dagger"
           ],
-          "craftingCategories": [
-            "Dagger",
-            "Weapon"
-          ]
+          "selectorTag": "DOS1-Dagger"
         },
         {
           "name": "Branch",
@@ -16086,18 +18483,12 @@
       "ingredients": [
         {
           "name": "Dagger",
-          "namePl": "Sztylet",
-          "slug": "crafted-dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Ingredients",
-            "Piercing-Damage",
-            "Daggers",
-            "DOS1"
+            "DOS1-Dagger"
           ],
-          "craftingCategories": [
-            "Dagger",
-            "Weapon"
-          ]
+          "selectorTag": "DOS1-Dagger"
         },
         {
           "name": "Branch",
@@ -16139,18 +18530,12 @@
       "ingredients": [
         {
           "name": "Dagger",
-          "namePl": "Sztylet",
-          "slug": "crafted-dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Ingredients",
-            "Piercing-Damage",
-            "Daggers",
-            "DOS1"
+            "DOS1-Dagger"
           ],
-          "craftingCategories": [
-            "Dagger",
-            "Weapon"
-          ]
+          "selectorTag": "DOS1-Dagger"
         },
         {
           "name": "Branch",
@@ -16192,18 +18577,12 @@
       "ingredients": [
         {
           "name": "Dagger",
-          "namePl": "Sztylet",
-          "slug": "crafted-dagger",
+          "namePl": "#Sztylet",
+          "slug": "dagger",
           "tags": [
-            "Ingredients",
-            "Piercing-Damage",
-            "Daggers",
-            "DOS1"
+            "DOS1-Dagger"
           ],
-          "craftingCategories": [
-            "Dagger",
-            "Weapon"
-          ]
+          "selectorTag": "DOS1-Dagger"
         },
         {
           "name": "Branch",
@@ -16245,14 +18624,12 @@
       "ingredients": [
         {
           "name": "Knife",
-          "namePl": "Nóż",
+          "namePl": "#Nóż",
           "slug": "knife",
           "tags": [
-            "Ingredients",
-            "Daggers",
-            "DOS1"
+            "DOS1-Knife"
           ],
-          "selectorTag": "Knife"
+          "selectorTag": "DOS1-Knife"
         },
         {
           "name": "Anvil",
@@ -16268,15 +18645,15 @@
         }
       ],
       "result": {
-        "name": "Dagger",
-        "namePl": "Sztylet",
-        "slug": "crafted-dagger",
+        "name": "Homemade Dagger",
+        "slug": "homemade-dagger",
         "tags": [
           "Ingredients",
           "Piercing-Damage",
           "Daggers",
           "DOS1"
         ],
+        "statsId": "WPN_CraftedDagger_01",
         "craftingCategories": [
           "Dagger",
           "Weapon"
@@ -16289,6 +18666,210 @@
         "DOS1"
       ],
       "requirements": "Blacksmithing 1",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide IV"
+    },
+    {
+      "id": "Narzedzia/HANDCRAFTED-DAGGER:Knife+Anvil:Blacksmithing 2",
+      "ingredients": [
+        {
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
+          "tags": [
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Handcrafted Dagger",
+        "slug": "handcrafted-dagger",
+        "tags": [
+          "Ingredients",
+          "Piercing-Damage",
+          "Daggers",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedDagger_02",
+        "craftingCategories": [
+          "Dagger",
+          "Weapon"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Piercing-Damage",
+        "Daggers",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 2",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide IV"
+    },
+    {
+      "id": "Narzedzia/CUSTOM-MADE-DAGGER:Knife+Anvil:Blacksmithing 3",
+      "ingredients": [
+        {
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
+          "tags": [
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Custom Made Dagger",
+        "slug": "custom-made-dagger",
+        "tags": [
+          "Ingredients",
+          "Piercing-Damage",
+          "Daggers",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedDagger_03",
+        "craftingCategories": [
+          "Dagger",
+          "Weapon"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Piercing-Damage",
+        "Daggers",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 3",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide IV"
+    },
+    {
+      "id": "Narzedzia/POLISHED-DAGGER:Knife+Anvil:Blacksmithing 4",
+      "ingredients": [
+        {
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
+          "tags": [
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Polished Dagger",
+        "slug": "polished-dagger",
+        "tags": [
+          "Ingredients",
+          "Piercing-Damage",
+          "Daggers",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedDagger_04",
+        "craftingCategories": [
+          "Dagger",
+          "Weapon"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Piercing-Damage",
+        "Daggers",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 4",
+      "notes": "Stats Increase with Blacksmithing Level",
+      "remarks": "",
+      "source": "The Adventurer's Field Guide IV"
+    },
+    {
+      "id": "Narzedzia/SUPERIOR-DAGGER:Knife+Anvil:Blacksmithing 5",
+      "ingredients": [
+        {
+          "name": "Knife",
+          "namePl": "#Nóż",
+          "slug": "knife",
+          "tags": [
+            "DOS1-Knife"
+          ],
+          "selectorTag": "DOS1-Knife"
+        },
+        {
+          "name": "Anvil",
+          "namePl": "Kowadło",
+          "slug": "anvil",
+          "tags": [
+            "Stations-And-Containers",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Anvil"
+          ]
+        }
+      ],
+      "result": {
+        "name": "Superior Dagger",
+        "slug": "superior-dagger",
+        "tags": [
+          "Ingredients",
+          "Piercing-Damage",
+          "Daggers",
+          "DOS1"
+        ],
+        "statsId": "WPN_CraftedDagger_05",
+        "craftingCategories": [
+          "Dagger",
+          "Weapon"
+        ]
+      },
+      "tags": [
+        "Ingredients",
+        "Piercing-Damage",
+        "Daggers",
+        "DOS1"
+      ],
+      "requirements": "Blacksmithing 5",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
       "source": "The Adventurer's Field Guide IV"
@@ -17722,8 +20303,8 @@
       ],
       "requirements": "Crafting 5",
       "notes": "",
-      "remarks": "Fire Dmg Explosion 100% Burn chance 3m radius",
-      "source": "6 projectiles when used"
+      "remarks": "Fire Dmg Explosion 100% Burn chance 3m radius 6 projectiles when used",
+      "source": ""
     },
     {
       "id": "Strzaly-i-granaty/HOLY-HAND-GRENADE:Sovereign's Orb+Glowing Star Fish Amulet",
@@ -18111,6 +20692,615 @@
       "notes": "",
       "remarks": "Air Dmg Explosion 60% Stun chance 4m radius",
       "source": ""
+    },
+    {
+      "id": "Strzaly-i-granaty/ARROW-SHAFT:Branch+#Knife",
+      "ingredients": [
+        {
+          "name": "Branch",
+          "namePl": "Gałąź",
+          "slug": "branch",
+          "tags": [
+            "Ingredients",
+            "One-Handed-Maces",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Weapon"
+          ],
+          "statsId": "WPN_Branch_A"
+        },
+        {
+          "name": "#Knife",
+          "selectorTag": "DOS1-Knife",
+          "tags": [
+            "DOS1-Knife"
+          ],
+          "namePl": "#Nóż"
+        }
+      ],
+      "result": {
+        "name": "Arrow Shaft",
+        "namePl": "Promień strzały",
+        "slug": "arrow-shaft",
+        "tags": [
+          "Ingredients",
+          "Arrows",
+          "DOS1"
+        ],
+        "craftingCategories": [
+          "Weapon"
+        ],
+        "statsId": "WPN_ArrowShaft_A"
+      },
+      "tags": [
+        "Ingredients",
+        "Arrows",
+        "DOS1"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Crafting & Cooking with Maradino"
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-CONSTITUTION-POTION:#Poison-Potion+Bonedust",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Bonedust",
+          "namePl": "Sproszkowana kość",
+          "slug": "bonedust",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "TOOL_Pouch_Dust_Bone_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Constitution Potion",
+        "namePl": "Mikstura zmniejszenia kondycji",
+        "slug": "debuff-constitution-potion",
+        "tags": [
+          "Potions",
+          "Constitution",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Constitution_A"
+      },
+      "tags": [
+        "Potions",
+        "Constitution",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "-2 Constitution Serves No Function",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-DEXTERITY-POTION:#Poison-Potion+Sinew",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Sinew",
+          "namePl": "Ścięgno",
+          "slug": "sinew",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Sinew"
+          ],
+          "statsId": "LOOT_Sinew_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Dexterity Potion",
+        "namePl": "Mikstura zmniejszenia zwinności",
+        "slug": "debuff-dexterity-potion",
+        "tags": [
+          "Potions",
+          "Dexterity",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Dexterity_A"
+      },
+      "tags": [
+        "Potions",
+        "Dexterity",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "-2 Dexterity Serves No Function",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-INTELLIGENCE-POTION:#Poison-Potion+Tormented Soul",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Tormented Soul",
+          "namePl": "Udręczona dusza",
+          "slug": "tormented-soul",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "LOOT_Soul_Tormented_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Intelligence Potion",
+        "namePl": "Mikstura zmniejszenia inteligencji",
+        "slug": "debuff-intelligence-potion",
+        "tags": [
+          "Potions",
+          "Intelligence",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Intelligence_A"
+      },
+      "tags": [
+        "Potions",
+        "Intelligence",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "-2 Intelligence Serves No Function",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-PERCEPTION-POTION:#Poison-Potion+Eye",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Eye",
+          "namePl": "Oko",
+          "slug": "eye",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Eye"
+          ],
+          "statsId": "LOOT_Eye_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Perception Potion",
+        "namePl": "Mikstura zmniejszenia spostrzegawczości",
+        "slug": "debuff-perception-potion",
+        "tags": [
+          "Potions",
+          "Perception",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Perception_A"
+      },
+      "tags": [
+        "Potions",
+        "Perception",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "-2 Perception Serves No Function",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-SPEED-POTION:#Poison-Potion+Shadow Essence",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Shadow Essence",
+          "namePl": "Esencja cienia",
+          "slug": "shadow-essence",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Essence"
+          ],
+          "statsId": "LOOT_Essence_Shadow_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Speed Potion",
+        "namePl": "Mikstura zmniejszenia prędkości",
+        "slug": "debuff-speed-potion",
+        "tags": [
+          "Potions",
+          "Speed",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Speed_A"
+      },
+      "tags": [
+        "Potions",
+        "Speed",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "-2 Speed Serves No Function",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DEBUFF-STRENGTH-POTION:#Poison-Potion+Tooth",
+      "ingredients": [
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        },
+        {
+          "name": "Tooth",
+          "namePl": "Ząb",
+          "slug": "tooth",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Tooth"
+          ],
+          "statsId": "LOOT_Tooth_A"
+        }
+      ],
+      "result": {
+        "name": "Debuff Strength Potion",
+        "namePl": "Mikstura zmniejszenia siły",
+        "slug": "debuff-strength-potion",
+        "tags": [
+          "Potions",
+          "Strength",
+          "DOS1"
+        ],
+        "statsId": "CON_Potion_Debuf_Strength_A"
+      },
+      "tags": [
+        "Potions",
+        "Strength",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "-2 Strength Serves No Function",
+      "remarks": "",
+      "source": "The String Enthusiast III"
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DINNER:#Oven+#Fish",
+      "ingredients": [
+        {
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
+          "tags": [
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
+        },
+        {
+          "name": "#Fish",
+          "selectorTag": "DOS1-Fish",
+          "tags": [
+            "DOS1-Fish"
+          ],
+          "namePl": "#Ryba"
+        }
+      ],
+      "result": {
+        "name": "Dinner",
+        "namePl": "Obiad",
+        "slug": "dinner",
+        "tags": [
+          "Food-And-Drink",
+          "Healing",
+          "Strength",
+          "DOS1"
+        ],
+        "statsId": "CON_Food_Dinner_A"
+      },
+      "tags": [
+        "Food-And-Drink",
+        "Healing",
+        "Strength",
+        "DOS1"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/DINNER:Raw Meat+#Oven",
+      "ingredients": [
+        {
+          "name": "Raw Meat",
+          "namePl": "Surowe mięso",
+          "slug": "raw-meat",
+          "tags": [
+            "Food-And-Drink",
+            "Constitution",
+            "Healing",
+            "DISEASED",
+            "DOS1"
+          ],
+          "statsId": "CON_Food_Meat_Raw_A"
+        },
+        {
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
+          "tags": [
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
+        }
+      ],
+      "result": {
+        "name": "Dinner",
+        "namePl": "Obiad",
+        "slug": "dinner",
+        "tags": [
+          "Food-And-Drink",
+          "Healing",
+          "Strength",
+          "DOS1"
+        ],
+        "statsId": "CON_Food_Dinner_A"
+      },
+      "tags": [
+        "Food-And-Drink",
+        "Healing",
+        "Strength",
+        "DOS1"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": ""
+    },
+    {
+      "id": "Strzaly-i-granaty/POISON-ARROWHEAD:Arrowhead+#Poison-Potion",
+      "ingredients": [
+        {
+          "name": "Arrowhead",
+          "namePl": "Grot",
+          "slug": "arrowhead",
+          "tags": [
+            "Arrows",
+            "Ingredients",
+            "DOS1"
+          ],
+          "craftingCategories": [
+            "Weapon"
+          ],
+          "statsId": "WPN_ArrowHead_A"
+        },
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        }
+      ],
+      "result": {
+        "name": "Poison Arrowhead",
+        "namePl": "Zatruty grot",
+        "slug": "poison-arrowhead",
+        "tags": [
+          "Arrows",
+          "DOS1"
+        ],
+        "statsId": "WPN_ArrowHead_Poison_A"
+      },
+      "tags": [
+        "Arrows",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "",
+      "source": "The String Enthusiast III"
+    },
+    {
+      "id": "Strzaly-i-granaty/POISON-CLOUD-GRENADE:Empty Grenade+#Poison-Potion",
+      "ingredients": [
+        {
+          "name": "Empty Grenade",
+          "namePl": "Pusty granat",
+          "slug": "empty-grenade",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "GRN_Ingredient_Round_Empty_A"
+        },
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        }
+      ],
+      "result": {
+        "name": "Poison Cloud Grenade",
+        "namePl": "Granat trującej chmury",
+        "slug": "poison-cloud-grenade",
+        "tags": [
+          "Grenades",
+          "Casts-Spell",
+          "DOS1"
+        ],
+        "statsId": "GRN_Grenade_MustardGas_A"
+      },
+      "extraResults": [
+        {
+          "name": "Empty Potion Bottle",
+          "namePl": "Pusta butelka na miksturę",
+          "slug": "empty-potion-bottle",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "CON_Potion_Empty_A"
+        }
+      ],
+      "tags": [
+        "Grenades",
+        "Casts-Spell",
+        "DOS1"
+      ],
+      "requirements": "Crafting 2",
+      "notes": "",
+      "remarks": "Poison Cloud 4m radius",
+      "source": ""
+    },
+    {
+      "id": "Strzaly-i-granaty/POISON-FLASK:Empty Flask+#Poison-Potion",
+      "ingredients": [
+        {
+          "name": "Empty Flask",
+          "slug": "empty-flask",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "namePl": "Pusta butelka",
+          "statsId": "GRN_Ingredient_Flask_Empty_A"
+        },
+        {
+          "name": "#Poison-Potion",
+          "selectorTag": "DOS1-Poison-Potion",
+          "tags": [
+            "DOS1-Poison-Potion"
+          ],
+          "namePl": "#Trucizna"
+        }
+      ],
+      "result": {
+        "name": "Poison Flask",
+        "namePl": "Fiolka trucizny",
+        "slug": "poison-flask",
+        "tags": [
+          "Grenades",
+          "Casts-Spell",
+          "DOS1"
+        ],
+        "statsId": "GRN_Grenade_PoisonFlask_A"
+      },
+      "extraResults": [
+        {
+          "name": "Empty Potion Bottle",
+          "namePl": "Pusta butelka na miksturę",
+          "slug": "empty-potion-bottle",
+          "tags": [
+            "Ingredients",
+            "DOS1"
+          ],
+          "statsId": "CON_Potion_Empty_A"
+        }
+      ],
+      "tags": [
+        "Grenades",
+        "Casts-Spell",
+        "DOS1"
+      ],
+      "requirements": "Crafting 1",
+      "notes": "",
+      "remarks": "Ooze Puddle 1m radius",
+      "source": ""
+    },
+    {
+      "id": "Mikstury-i-jedzenie/PUMPKIN-SOUP:#Oven+#Pumpkin",
+      "ingredients": [
+        {
+          "name": "#Oven",
+          "selectorTag": "DOS1-Oven",
+          "tags": [
+            "DOS1-Oven"
+          ],
+          "namePl": "#Piec"
+        },
+        {
+          "name": "#Pumpkin",
+          "selectorTag": "DOS1-Pumpkin",
+          "tags": [
+            "DOS1-Pumpkin"
+          ],
+          "namePl": "#Dynia"
+        }
+      ],
+      "result": {
+        "name": "Pumpkin Soup",
+        "namePl": "Zupa z dyni",
+        "slug": "pumpkin-soup",
+        "tags": [
+          "Food-And-Drink",
+          "Healing",
+          "Perception",
+          "DOS1"
+        ],
+        "statsId": "CON_Food_Soup_Pumpkin_A"
+      },
+      "tags": [
+        "Food-And-Drink",
+        "Healing",
+        "Perception",
+        "DOS1"
+      ],
+      "requirements": "",
+      "notes": "",
+      "remarks": "",
+      "source": "Patty Cake, Patty Cake V"
     }
   ],
   "upgrades": [
@@ -20216,5 +23406,6 @@
       "remarks": "DLC Item Reusable",
       "source": ""
     }
-  ]
+  ],
+  "items": []
 }

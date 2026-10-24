@@ -4,6 +4,7 @@ import { tooltipItemKey } from "../domain/tooltipIdentity"
 import type { RecipeItem } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { displayItemName } from "../domain/itemName"
+import { groupSearchToken } from "../domain/groupSearch"
 import { FullSlug, gameForSlug, itemHref, pageHref } from "../routing"
 import { itemCraftRoleClass, type ItemCraftRole } from "../domain/recipeView"
 
@@ -56,7 +57,7 @@ export function RecipeItemView({ item, catalogSlug, ingredient = false, searchab
       <a
         class="internal recipe-item recipe-item-group"
         data-no-popover="true"
-        href={`${pageHref(catalogSlug)}?view=items&group=${encodeURIComponent(item.groupId)}`}
+        href={`${pageHref(catalogSlug)}?view=items&q=${encodeURIComponent(groupSearchToken(item))}&as=result`}
       >
         <ItemLabel item={item} />
         <span class="group-count">{item.groupSize}</span>

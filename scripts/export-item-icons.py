@@ -248,6 +248,11 @@ def main():
             label, icon = strings.get(template.get('DisplayNameHandle'), template.get('DisplayName')), template.get('Icon')
             if label and icon in atlases:
                 direct[key(plain_name(label))].add(icon)
+        labelled = defaultdict(set)
+        for template in templates.values():
+            label, icon = strings.get(template.get('DisplayNameHandle'), template.get('DisplayName')), template.get('Icon')
+            if label and icon in atlases and template.get('Stats'):
+                labelled[(template['Stats'], key(plain_name(label)))].add(icon)
         for label, match in extra.items():
             if label not in names and len(direct[label]) <= 1:
                 names[label] = match['icon']
@@ -263,6 +268,8 @@ def main():
         for group in catalog.get('groups', {}).values():
             for member in group['members']:
                 items.setdefault((member.get('dataKey') or key(member.get('statsId') or member['name'])), member)
+        # Corpses are creatures harvested with the Corpse Harvester, not inventory items: no icon to find.
+        items = {k: item for k, item in items.items() if item.get('statsId') or not key(item['name']).endswith('corpse')}
         # Preserve all mod dye variants, including colors absent from the recipe catalog.
         catalog_names = set(items)
         if game == 'dos2-overhaul':
@@ -281,6 +288,9 @@ def main():
             # may reuse a label for a different item or potion size.
             # An item with a game Stats ID shows that entry's own icon, not one found by its name.
             by_stats = stats_icons(items[item_key]['statsId']) if items[item_key].get('statsId') else set()
+            if len(by_stats) > 1:
+                # A Stats entry shared by several objects (a generic Gen_Wood_Weak) shows the icon of the one named like the item.
+                by_stats = by_stats & labelled.get((items[item_key]['statsId'], key(name)), set())
             if len(by_stats) == 1:
                 icon = next(iter(by_stats))
                 evidence[item_key] = {'stats': items[item_key]['statsId']}

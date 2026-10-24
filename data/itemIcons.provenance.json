@@ -48,6 +48,66 @@
       "stats": "ARM_CraftedClothBoots_02",
       "localizationKey": "ARM_CraftedClothBoots_02"
     },
+    "armcraftedclothtorso01": {
+      "name": "Homemade Cloth Armour",
+      "icon": "Item_ARM_Cloth_B_Torso_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1856,
+        0,
+        1920,
+        64
+      ],
+      "stats": "ARM_CraftedClothTorso_01"
+    },
+    "armcraftedclothtorso02": {
+      "name": "Handcrafted Cloth Armour",
+      "icon": "Item_ARM_Cloth_B_Torso",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        0,
+        1856,
+        64
+      ],
+      "stats": "ARM_CraftedClothTorso_02"
+    },
+    "armcraftedclothtorso03": {
+      "name": "Custom Made Cloth Armour",
+      "icon": "Item_ARM_Cloth_B_Torso",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        0,
+        1856,
+        64
+      ],
+      "stats": "ARM_CraftedClothTorso_03"
+    },
+    "armcraftedclothtorso04": {
+      "name": "Polished Cloth Armour",
+      "icon": "Item_ARM_Cloth_A_Torso_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1536,
+        0,
+        1600,
+        64
+      ],
+      "stats": "ARM_CraftedClothTorso_04"
+    },
+    "armcraftedclothtorso05": {
+      "name": "Superior Cloth Armour",
+      "icon": "Item_ARM_Cloth_A_Torso",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        0,
+        1536,
+        64
+      ],
+      "stats": "ARM_CraftedClothTorso_05"
+    },
     "armcraftedleatherboots01": {
       "name": "Custom Made Leather Boots",
       "icon": "Item_ARM_Leather_B_Boots",
@@ -98,6 +158,78 @@
         128
       ],
       "stats": "ARM_CraftedLeatherTorso_04"
+    },
+    "armcraftedmetalboots01": {
+      "name": "Handcrafted Metal Boots",
+      "icon": "Item_ARM_Metal_A_Boots",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1216,
+        64,
+        1280,
+        128
+      ],
+      "stats": "ARM_CraftedMetalBoots_01"
+    },
+    "armcraftedmetalboots02": {
+      "name": "Polished Metal Boots",
+      "icon": "Item_ARM_Metal_A_Boots",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1216,
+        64,
+        1280,
+        128
+      ],
+      "stats": "ARM_CraftedMetalBoots_02"
+    },
+    "armcraftedmetalboots03": {
+      "name": "Superior Metal Boots",
+      "icon": "Item_ARM_Metal_A_Boots",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1216,
+        64,
+        1280,
+        128
+      ],
+      "stats": "ARM_CraftedMetalBoots_03"
+    },
+    "armcraftedmetaltorso01": {
+      "name": "Homemade Plate Armour",
+      "icon": "Item_ARM_Metal_B_Torso_C",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1920,
+        64,
+        1984,
+        128
+      ],
+      "stats": "ARM_CraftedMetalTorso_01"
+    },
+    "armcraftedmetaltorso02": {
+      "name": "Handcrafted Plate Armour",
+      "icon": "Item_ARM_Metal_B_Torso_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1856,
+        64,
+        1920,
+        128
+      ],
+      "stats": "ARM_CraftedMetalTorso_02"
+    },
+    "armcraftedmetaltorso03": {
+      "name": "Superior Plate Armour",
+      "icon": "Item_ARM_Metal_B_Torso",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        64,
+        1856,
+        128
+      ],
+      "stats": "ARM_CraftedMetalTorso_03"
     },
     "armcraftedrobe01": {
       "name": "Robe",
@@ -1610,6 +1742,18 @@
       "stats": "ITEM_Key",
       "CombinationID": "Public:796"
     },
+    "itemlog": {
+      "name": "Log",
+      "icon": "Item_TOOL_Log_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1984,
+        1216,
+        2048,
+        1280
+      ],
+      "stats": "ITEM_Log"
+    },
     "itemnails": {
       "name": "Nine Inch Nails",
       "icon": "Item_TOOL_Nails_A",
@@ -1653,19 +1797,6 @@
         1792,
         1088
       ]
-    },
-    "log": {
-      "name": "Log",
-      "icon": "Item_TOOL_Log_A",
-      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
-      "box": [
-        1984,
-        1216,
-        2048,
-        1280
-      ],
-      "stats": "ITEM_Log",
-      "CombinationID": "Public:210"
     },
     "lootantlera": {
       "name": "Antler",
@@ -3478,6 +3609,690 @@
         1344
       ]
     },
+    "scrollairshield1": {
+      "name": "Airshield Scroll",
+      "icon": "Item_BOOK_Scroll_Air_Shield",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        128,
+        832,
+        192
+      ],
+      "stats": "SCROLL_AirShield_1"
+    },
+    "scrollairsummon1": {
+      "name": "Summon Air Elemental Scroll",
+      "icon": "Item_BOOK_Scroll_Air_SummonAirElemental",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        128,
+        1024,
+        192
+      ],
+      "stats": "SCROLL_AirSummon_1"
+    },
+    "scrollbanishsummon": {
+      "name": "Destroy Summon Scroll",
+      "icon": "Item_BOOK_Scroll_Source_BanishSummon",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        448,
+        64,
+        512
+      ],
+      "stats": "SCROLL_BanishSummon"
+    },
+    "scrollblessedearth": {
+      "name": "Blessed Earth Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_BlessedEarth",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        192,
+        384,
+        256
+      ],
+      "stats": "SCROLL_BlessedEarth"
+    },
+    "scrollblitzboltstart": {
+      "name": "Blitz Bolt Scroll",
+      "icon": "Item_BOOK_Scroll_Air_BlitzBolt",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        128,
+        64,
+        192
+      ],
+      "stats": "SCROLL_BlitzBoltStart"
+    },
+    "scrollburningtouch": {
+      "name": "Burning Touch Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_BurningTouch",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        256,
+        832,
+        320
+      ],
+      "stats": "SCROLL_BurningTouch"
+    },
+    "scrollcausefear": {
+      "name": "Horrific Scream Scroll",
+      "icon": "Item_BOOK_Scroll_Source_Fear",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        448,
+        768,
+        512
+      ],
+      "stats": "SCROLL_CauseFear"
+    },
+    "scrollchainlightning": {
+      "name": "Chain Lightning Scroll",
+      "icon": "Item_BOOK_Scroll_Air_ChainLightning",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        64,
+        128,
+        128,
+        192
+      ],
+      "stats": "SCROLL_ChainLightning"
+    },
+    "scrollchillingtouch": {
+      "name": "Freezing Touch Scroll",
+      "icon": "Item_BOOK_Scroll_Water_FreezingTouch",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        576,
+        960,
+        640
+      ],
+      "stats": "SCROLL_ChillingTouch"
+    },
+    "scrollchillywind": {
+      "name": "Bitter Cold Scroll",
+      "icon": "Item_BOOK_Scroll_Air_ChillyWind",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        128,
+        128,
+        192,
+        192
+      ],
+      "stats": "SCROLL_ChillyWind"
+    },
+    "scrollcleansingwater": {
+      "name": "Cleansing Water Scroll",
+      "icon": "Item_BOOK_Scroll_Water_CleansingWater",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        576,
+        832,
+        640
+      ],
+      "stats": "SCROLL_CleansingWater"
+    },
+    "scrollcreategreaterundead": {
+      "name": "Summon Armoured Undead Decapitator Scroll",
+      "icon": "Item_BOOK_Scroll_Source_CreateUndeadGreater",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        448,
+        448,
+        512
+      ],
+      "stats": "SCROLL_CreateGreaterUndead"
+    },
+    "scrollcreatesmokescreen": {
+      "name": "Smokescreen Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Smokescreen",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        320,
+        832,
+        384
+      ],
+      "stats": "SCROLL_CreateSmokescreen"
+    },
+    "scrollcreateundead": {
+      "name": "Summon Undead Warrior Scroll",
+      "icon": "Item_BOOK_Scroll_Source_CreateUndead",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        448,
+        384,
+        512
+      ],
+      "stats": "SCROLL_CreateUndead"
+    },
+    "scrolldeadlyspores": {
+      "name": "Deadly Spores Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_DeadlySpores",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        192,
+        576,
+        256
+      ],
+      "stats": "SCROLL_DeadlySpores"
+    },
+    "scrolldrainwillpower": {
+      "name": "Drain Willpower Scroll",
+      "icon": "Item_BOOK_Scroll_Source_DrainWillpower",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        448,
+        576,
+        512
+      ],
+      "stats": "SCROLL_DrainWillpower"
+    },
+    "scrollearthquake1": {
+      "name": "Earthquake Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_Earthquake",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        192,
+        640,
+        256
+      ],
+      "stats": "SCROLL_Earthquake_1"
+    },
+    "scrollearthshield1": {
+      "name": "Earth Shield Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_Shield",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        192,
+        256,
+        256,
+        320
+      ],
+      "stats": "SCROLL_EarthShield_1"
+    },
+    "scrollearthspray1": {
+      "name": "Tectonic Spray Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_EarthSpray",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        192,
+        704,
+        256
+      ],
+      "stats": "SCROLL_EarthSpray_1"
+    },
+    "scrollearthsummon1": {
+      "name": "Summon Earth Elemental Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_SummonEarthElemental",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        256,
+        320,
+        320
+      ],
+      "stats": "SCROLL_EarthSummon_1"
+    },
+    "scrollenervation": {
+      "name": "Enfeeble Scroll",
+      "icon": "Item_BOOK_Scroll_Source_Enervation",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        448,
+        704,
+        512
+      ],
+      "stats": "SCROLL_Enervation"
+    },
+    "scrollexplodeself": {
+      "name": "Explode Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_ExplodeSelf",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        256,
+        960,
+        320
+      ],
+      "stats": "SCROLL_ExplodeSelf"
+    },
+    "scrollfarsight": {
+      "name": "Farseer Scroll",
+      "icon": "Item_BOOK_Scroll_Air_Farseer",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        192,
+        128,
+        256,
+        192
+      ],
+      "stats": "SCROLL_FarSight"
+    },
+    "scrollfingerofdeath": {
+      "name": "Death Punch Scroll",
+      "icon": "Item_BOOK_Scroll_Source_FingerOfDeath",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        448,
+        832,
+        512
+      ],
+      "stats": "SCROLL_FingerOfDeath"
+    },
+    "scrollfireball1": {
+      "name": "Fireball Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_FireBall",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        256,
+        1024,
+        320
+      ],
+      "stats": "SCROLL_Fireball_1"
+    },
+    "scrollfirefly1": {
+      "name": "Firefly Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Firefly",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        64,
+        320,
+        128,
+        384
+      ],
+      "stats": "SCROLL_FireFly_1"
+    },
+    "scrollfireshield1": {
+      "name": "Fire Shield Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Shield",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        320,
+        768,
+        384
+      ],
+      "stats": "SCROLL_FireShield_1"
+    },
+    "scrollfiresummon1": {
+      "name": "Summon Fire Elemental Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_SummonFireElemental",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        832,
+        320,
+        896,
+        384
+      ],
+      "stats": "SCROLL_FireSummon_1"
+    },
+    "scrollfiresurfaceself": {
+      "name": "Self Immolation Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_FireSurfaceSelf",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        128,
+        320,
+        192,
+        384
+      ],
+      "stats": "SCROLL_FireSurfaceSelf"
+    },
+    "scrollflarestart": {
+      "name": "Flare Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_FlareStart",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        320,
+        320,
+        384
+      ],
+      "stats": "SCROLL_FlareStart"
+    },
+    "scrollfortify": {
+      "name": "Fortify Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_Fortify",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        192,
+        768,
+        256
+      ],
+      "stats": "SCROLL_Fortify"
+    },
+    "scrollhailattack": {
+      "name": "Hail Attack Scroll",
+      "icon": "Item_BOOK_Scroll_Water_HailAttack",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        576,
+        1024,
+        640
+      ],
+      "stats": "SCROLL_HailAttack"
+    },
+    "scrollhaste": {
+      "name": "Wildfire Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Haste",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        320,
+        384,
+        384
+      ],
+      "stats": "SCROLL_Haste"
+    },
+    "scrolliceshardstart": {
+      "name": "Ice Shard Scroll",
+      "icon": "Item_BOOK_Scroll_Water_IceShardStart",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        128,
+        640,
+        192,
+        704
+      ],
+      "stats": "SCROLL_IceShardStart"
+    },
+    "scrollicesummon1": {
+      "name": "Summon Ice Elemental Scroll",
+      "icon": "Item_BOOK_Scroll_Water_SummonIceElemental",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        960,
+        640,
+        1024,
+        704
+      ],
+      "stats": "SCROLL_IceSummon_1"
+    },
+    "scrollicewall1": {
+      "name": "Ice Wall Scroll",
+      "icon": "Item_BOOK_Scroll_Water_IceWall",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        192,
+        640,
+        256,
+        704
+      ],
+      "stats": "SCROLL_IceWall_1"
+    },
+    "scrollimmolate": {
+      "name": "Immolate Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_Immolate",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        320,
+        448,
+        384
+      ],
+      "stats": "SCROLL_Immolate"
+    },
+    "scrollimmunetoburning": {
+      "name": "Immune to Burning Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_ImmuneToFreezing",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        320,
+        512,
+        384
+      ],
+      "stats": "SCROLL_ImmuneToBurning"
+    },
+    "scrollimmunetoelectrify": {
+      "name": "Immune to Electrified Scroll",
+      "icon": "Item_BOOK_Scroll_Air_ImmuneToElectrified",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        128,
+        384,
+        192
+      ],
+      "stats": "SCROLL_ImmuneToElectrify"
+    },
+    "scrollimmunetofreeze": {
+      "name": "Immune to Freezing Scroll",
+      "icon": "Item_BOOK_Scroll_Water_ImmuneToBurning",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        640,
+        320,
+        704
+      ],
+      "stats": "SCROLL_ImmuneToFreeze"
+    },
+    "scrollimmunetopoisoning": {
+      "name": "Immune to Poisoning Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_ImmuneToPoisoned",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        768,
+        192,
+        832,
+        256
+      ],
+      "stats": "SCROLL_ImmuneToPoisoning"
+    },
+    "scrollinfectiousflame": {
+      "name": "Infectious Flame Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_InfectiousFlame",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        320,
+        576,
+        384
+      ],
+      "stats": "SCROLL_InfectiousFlame"
+    },
+    "scrollinstantpressure": {
+      "name": "Headvice Scroll",
+      "icon": "Item_BOOK_Scroll_Air_InstantPressure",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        128,
+        448,
+        192
+      ],
+      "stats": "SCROLL_InstantPressure"
+    },
+    "scrollinvisibilityself": {
+      "name": "Invisible Scroll",
+      "icon": "Item_BOOK_Scroll_Air_InvisibleSelf",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        128,
+        512,
+        192
+      ],
+      "stats": "SCROLL_InvisibilitySelf"
+    },
+    "scrollinvisibilitytarget": {
+      "name": "Make Invisible Scroll",
+      "icon": "Item_BOOK_Scroll_Air_InvisibleTarget",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        128,
+        576,
+        192
+      ],
+      "stats": "SCROLL_InvisibilityTarget"
+    },
+    "scrollinvulnerability": {
+      "name": "Invulnerability Scroll",
+      "icon": "Item_BOOK_Scroll_Source_Invulnerability",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        832,
+        448,
+        896,
+        512
+      ],
+      "stats": "SCROLL_Invulnerability"
+    },
+    "scrolllightningstorm1": {
+      "name": "Lightning Storm Scroll",
+      "icon": "Item_BOOK_Scroll_Air_Storm",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        128,
+        960,
+        192
+      ],
+      "stats": "SCROLL_LightningStorm_1"
+    },
+    "scrolllightningstrike1": {
+      "name": "Lightning Strike Scroll",
+      "icon": "Item_BOOK_Scroll_Air_LightningStrike",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        128,
+        640,
+        192
+      ],
+      "stats": "SCROLL_LightningStrike_1"
+    },
+    "scrollmassdisease": {
+      "name": "Mass Disease Scroll",
+      "icon": "Item_BOOK_Scroll_Water_MassDisease",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        640,
+        384,
+        704
+      ],
+      "stats": "SCROLL_MassDisease"
+    },
+    "scrollmeteorstrike": {
+      "name": "Meteorstrike Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_MeteorStrike",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        320,
+        640,
+        384
+      ],
+      "stats": "SCROLL_MeteorStrike"
+    },
+    "scrollpetrifyingtouch": {
+      "name": "Petrifying Touch Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_PetrifyingTouch",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        256,
+        64,
+        320
+      ],
+      "stats": "SCROLL_PetrifyingTouch"
+    },
+    "scrollpoisondartstart": {
+      "name": "Magical Poison Dart Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_PoisonDart",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        128,
+        256,
+        192,
+        320
+      ],
+      "stats": "SCROLL_PoisonDartStart"
+    },
+    "scrollpurifyingfire1": {
+      "name": "Purifying Fire Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_PurifyingFire",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        320,
+        704,
+        384
+      ],
+      "stats": "SCROLL_PurifyingFire_1"
+    },
+    "scrollrain1": {
+      "name": "Rain Scroll",
+      "icon": "Item_BOOK_Scroll_Water_Rain",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        640,
+        576,
+        704
+      ],
+      "stats": "SCROLL_Rain_1"
+    },
+    "scrollregeneratestart": {
+      "name": "Minor Heal Scroll",
+      "icon": "Item_BOOK_Scroll_Water_Regenerate_Minor",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        640,
+        640,
+        704,
+        704
+      ],
+      "stats": "SCROLL_RegenerateStart"
+    },
+    "scrollremovepetrification": {
+      "name": "Remove Petrification Scroll",
+      "icon": "Item_BOOK_Scroll_Air_RemovePetrified",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        128,
+        768,
+        192
+      ],
+      "stats": "SCROLL_RemovePetrification"
+    },
+    "scrollshockinghands": {
+      "name": "Shocking Touch Scroll",
+      "icon": "Item_BOOK_Scroll_Air_ShockingTouch",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        832,
+        128,
+        896,
+        192
+      ],
+      "stats": "SCROLL_ShockingHands"
+    },
     "scrollskillairblanka": {
       "name": "Blank Air Scroll",
       "icon": "Item_BOOK_Scroll_Air_A",
@@ -3533,6 +4348,174 @@
         512
       ]
     },
+    "scrollslow": {
+      "name": "Slow Current Scroll",
+      "icon": "Item_BOOK_Scroll_Water_Slow",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        640,
+        960,
+        704
+      ],
+      "stats": "SCROLL_Slow"
+    },
+    "scrollslowmass": {
+      "name": "Mass Slow Scroll",
+      "icon": "Item_BOOK_Scroll_Water_MassSlow",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        640,
+        512,
+        704
+      ],
+      "stats": "SCROLL_SlowMass"
+    },
+    "scrollsummonspider": {
+      "name": "Summon Spider Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_SummonSpider",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        256,
+        448,
+        320
+      ],
+      "stats": "SCROLL_SummonSpider"
+    },
+    "scrollsummonwolf": {
+      "name": "Summon Wolf Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_SummonWolf",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        512,
+        256,
+        576,
+        320
+      ],
+      "stats": "SCROLL_SummonWolf"
+    },
+    "scrolltargetedbless": {
+      "name": "Bless Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_BlessTarget",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        192,
+        448,
+        256
+      ],
+      "stats": "SCROLL_TargetedBless"
+    },
+    "scrolltargetedcurse": {
+      "name": "Malediction Scroll",
+      "icon": "Item_BOOK_Scroll_Source_TargetedCurse",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        64,
+        512,
+        128,
+        576
+      ],
+      "stats": "SCROLL_TargetedCurse"
+    },
+    "scrolltargeteddamageboost": {
+      "name": "Oath of Desecration Scroll",
+      "icon": "Item_BOOK_Scroll_Source_BoostDamage",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        192,
+        448,
+        256,
+        512
+      ],
+      "stats": "SCROLL_TargetedDamageBoost"
+    },
+    "scrolltargetedoilsurface": {
+      "name": "Midnight Oil Scroll",
+      "icon": "Item_BOOK_Scroll_Earth_OilSurface",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        896,
+        192,
+        960,
+        256
+      ],
+      "stats": "SCROLL_TargetedOilSurface"
+    },
+    "scrolltargetedperceptionboost": {
+      "name": "Burn My Eyes Scroll",
+      "icon": "Item_BOOK_Scroll_Fire_BoostPerception",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        256,
+        768,
+        320
+      ],
+      "stats": "SCROLL_TargetedPerceptionBoost"
+    },
+    "scrollteleportationfreefall1": {
+      "name": "Teleportation Scroll",
+      "icon": "Item_BOOK_Scroll_Air_Teleportation",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        192,
+        64,
+        256
+      ],
+      "stats": "SCROLL_TeleportationFreeFall_1"
+    },
+    "scrolltornado1": {
+      "name": "Tornado Scroll",
+      "icon": "Item_BOOK_Scroll_Air_Tornado",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        128,
+        192,
+        192,
+        256
+      ],
+      "stats": "SCROLL_Tornado_1"
+    },
+    "scrollwateroflife": {
+      "name": "Water of Life Scroll",
+      "icon": "Item_BOOK_Scroll_Water_FalseLife",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        832,
+        576,
+        896,
+        640
+      ],
+      "stats": "SCROLL_WaterOfLife"
+    },
+    "scrollwatershield1": {
+      "name": "Water Shield Scroll",
+      "icon": "Item_BOOK_Scroll_Water_Shield",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        832,
+        640,
+        896,
+        704
+      ],
+      "stats": "SCROLL_WaterShield_1"
+    },
+    "scrollwinterbreathmedium": {
+      "name": "Winterblast Scroll",
+      "icon": "Item_BOOK_Scroll_Water_WinterBreath",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        0,
+        704,
+        64,
+        768
+      ],
+      "stats": "SCROLL_WinterbreathMedium"
+    },
     "shadowessence": {
       "name": "Shadow Essence",
       "icon": "Item_Quest_Orb_A_Black",
@@ -3554,6 +4537,858 @@
         2048,
         1600
       ]
+    },
+    "skillbookbanishsummon": {
+      "name": "Destroy Summon Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_BanishSummon"
+    },
+    "skillbookblessedearth": {
+      "name": "Blessed Earth Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_BlessedEarth"
+    },
+    "skillbookblitzboltstart": {
+      "name": "Blitz Bolt Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_BlitzBoltStart"
+    },
+    "skillbookburningtouch": {
+      "name": "Burning Touch Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_BurningTouch"
+    },
+    "skillbookcausefear": {
+      "name": "Horrific Scream Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_CauseFear"
+    },
+    "skillbookchainlightning": {
+      "name": "Chain Lightning Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_ChainLightning"
+    },
+    "skillbookchillingtouch": {
+      "name": "Freezing Touch Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_ChillingTouch"
+    },
+    "skillbookchillywind": {
+      "name": "Bitter Cold Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_ChillyWind"
+    },
+    "skillbookcleansepurifyingfire": {
+      "name": "Purifying Fire Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Cleanse_PurifyingFire"
+    },
+    "skillbookcleansingwater": {
+      "name": "Cleansing Water Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_CleansingWater"
+    },
+    "skillbookconeearthspray": {
+      "name": "Tectonic Spray Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_Cone_EarthSpray"
+    },
+    "skillbookcreategreaterundead": {
+      "name": "Summon Armoured Undead Decapitator Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_CreateGreaterUndead"
+    },
+    "skillbookcreatesmokescreen": {
+      "name": "Smokescreen Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_CreateSmokescreen"
+    },
+    "skillbookcreateundead": {
+      "name": "Summon Undead Warrior Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_CreateUndead"
+    },
+    "skillbookdeadlyspores": {
+      "name": "Deadly Spores Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_DeadlySpores"
+    },
+    "skillbookdrainwillpower": {
+      "name": "Drain Willpower Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_DrainWillpower"
+    },
+    "skillbookenervation": {
+      "name": "Enfeeble Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_Enervation"
+    },
+    "skillbookexplodeself": {
+      "name": "Explode Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_ExplodeSelf"
+    },
+    "skillbookfarsight": {
+      "name": "Farseer Skillbook",
+      "icon": "Item_BOOK_Spellbook_Ranger_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        448,
+        704,
+        512,
+        768
+      ],
+      "stats": "SKILLBOOK_FarSight"
+    },
+    "skillbookfingerofdeath": {
+      "name": "Death Punch Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_FingerOfDeath"
+    },
+    "skillbookfiresurfaceself": {
+      "name": "Self Immolation Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_FireSurfaceSelf"
+    },
+    "skillbookflarestart": {
+      "name": "Flare Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_FlareStart"
+    },
+    "skillbookfortify": {
+      "name": "Fortify Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_Fortify"
+    },
+    "skillbookhailattack": {
+      "name": "Hail Attack Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_HailAttack"
+    },
+    "skillbookhaste": {
+      "name": "Wildfire Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Haste"
+    },
+    "skillbookiceshardstart": {
+      "name": "Ice Shard Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_IceShardStart"
+    },
+    "skillbookimmolate": {
+      "name": "Immolation Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Immolate"
+    },
+    "skillbookimmunetoburning": {
+      "name": "Immune to Burning Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_ImmuneToBurning"
+    },
+    "skillbookimmunetoelectrify": {
+      "name": "Immune to Electrified Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_ImmuneToElectrify"
+    },
+    "skillbookimmunetofreeze": {
+      "name": "Immune to Freezing Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_ImmuneToFreeze"
+    },
+    "skillbookimmunetopoisoning": {
+      "name": "Immune to Poisoning Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_ImmuneToPoisoning"
+    },
+    "skillbookinfectiousflame": {
+      "name": "Infectious Flame Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_InfectiousFlame"
+    },
+    "skillbookinstantpressure": {
+      "name": "Headvice Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_InstantPressure"
+    },
+    "skillbookinvisibilityself": {
+      "name": "Invisible Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_InvisibilitySelf"
+    },
+    "skillbookinvisibilitytarget": {
+      "name": "Make Invisible Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_InvisibilityTarget"
+    },
+    "skillbookinvulnerability": {
+      "name": "Invulnerability Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_Invulnerability"
+    },
+    "skillbookmassdisease": {
+      "name": "Mass Disease Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_MassDisease"
+    },
+    "skillbookmeteorstrike": {
+      "name": "Meteorstrike Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_MeteorStrike"
+    },
+    "skillbookmultistrikelightningstrike": {
+      "name": "Lightning Strike Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_MultiStrike_LightningStrike"
+    },
+    "skillbookpathfirefly": {
+      "name": "Firefly Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Path_FireFly"
+    },
+    "skillbookpetrifyingtouch": {
+      "name": "Petrifying Touch Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_PetrifyingTouch"
+    },
+    "skillbookpoisondartstart": {
+      "name": "Magical Poison Dart Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_PoisonDartStart"
+    },
+    "skillbookprojectilefireball": {
+      "name": "Small Fireball Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Projectile_Fireball"
+    },
+    "skillbookquakeearthquake": {
+      "name": "Earthquake Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_Quake_Earthquake"
+    },
+    "skillbookrainwater": {
+      "name": "Rain Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_Rain_Water"
+    },
+    "skillbookregeneratestart": {
+      "name": "Minor Heal Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_RegenerateStart"
+    },
+    "skillbookremovepetrification": {
+      "name": "Remove Petrification Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_RemovePetrification"
+    },
+    "skillbookshieldair": {
+      "name": "Air Shield Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_Shield_Air"
+    },
+    "skillbookshieldearth": {
+      "name": "Earth Shield Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_Shield_Earth"
+    },
+    "skillbookshieldfire": {
+      "name": "Fire Shield Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Shield_Fire"
+    },
+    "skillbookshieldwater": {
+      "name": "Water Shield Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_Shield_Water"
+    },
+    "skillbookshockinghands": {
+      "name": "Shocking Touch Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_ShockingHands"
+    },
+    "skillbookslow": {
+      "name": "Slow Current Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_Slow"
+    },
+    "skillbookslowmass": {
+      "name": "Mass Slow Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_SlowMass"
+    },
+    "skillbookstormlightning": {
+      "name": "Storm Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_Storm_Lightning"
+    },
+    "skillbooksummonair": {
+      "name": "Summon Air Elemental Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_Summon_Air"
+    },
+    "skillbooksummonearth": {
+      "name": "Summon Earth Elemental Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_Summon_Earth"
+    },
+    "skillbooksummonfire": {
+      "name": "Summon Fire Elemental Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_Summon_Fire"
+    },
+    "skillbooksummonice": {
+      "name": "Summon Ice Elemental Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_Summon_Ice"
+    },
+    "skillbooksummonspider": {
+      "name": "Summon Spider Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_SummonSpider"
+    },
+    "skillbooksummonwolf": {
+      "name": "Summon Wolf Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_SummonWolf"
+    },
+    "skillbooktargetedbless": {
+      "name": "Bless Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_TargetedBless"
+    },
+    "skillbooktargetedcurse": {
+      "name": "Malediction Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_TargetedCurse"
+    },
+    "skillbooktargeteddamageboost": {
+      "name": "Oath of Desecration Skillbook",
+      "icon": "Item_BOOK_Spellbook_Source_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        576,
+        704,
+        640,
+        768
+      ],
+      "stats": "SKILLBOOK_TargetedDamageBoost"
+    },
+    "skillbooktargetedoilsurface": {
+      "name": "Midnight Oil Skillbook",
+      "icon": "Item_BOOK_Spellbook_Earth_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        320,
+        704,
+        384,
+        768
+      ],
+      "stats": "SKILLBOOK_TargetedOilSurface"
+    },
+    "skillbooktargetedperceptionboost": {
+      "name": "Burn My Eyes Skillbook",
+      "icon": "Item_BOOK_Spellbook_Fire_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        384,
+        704,
+        448,
+        768
+      ],
+      "stats": "SKILLBOOK_TargetedPerceptionBoost"
+    },
+    "skillbookteleportationfreefall": {
+      "name": "Teleportation Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_Teleportation_FreeFall"
+    },
+    "skillbooktornadoair": {
+      "name": "Tornado Skillbook",
+      "icon": "Item_BOOK_Spellbook_Air_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        256,
+        704,
+        320,
+        768
+      ],
+      "stats": "SKILLBOOK_Tornado_Air"
+    },
+    "skillbookwallice": {
+      "name": "Ice Wall Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_Wall_Ice"
+    },
+    "skillbookwateroflife": {
+      "name": "Water of Life Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_WaterOfLife"
+    },
+    "skillbookwinterbreathmedium": {
+      "name": "Winterblast Skillbook",
+      "icon": "Item_BOOK_Spellbook_Water_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Books.dds",
+      "box": [
+        704,
+        704,
+        768,
+        768
+      ],
+      "stats": "SKILLBOOK_WinterbreathMedium"
     },
     "tenebriumbar": {
       "name": "Tenebrium Bar",
@@ -3675,6 +5510,66 @@
         832,
         1344
       ]
+    },
+    "toolvoodoodoll1": {
+      "name": "Poorly Made Voodoo Doll",
+      "icon": "Item_TOOL_Voodoodoll_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        1280,
+        832,
+        1344
+      ],
+      "stats": "TOOL_VoodooDoll1"
+    },
+    "toolvoodoodoll2": {
+      "name": "Regular Voodoo Doll",
+      "icon": "Item_TOOL_Voodoodoll_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1344,
+        1792,
+        1408,
+        1856
+      ],
+      "stats": "TOOL_VoodooDoll2"
+    },
+    "toolvoodoodoll3": {
+      "name": "Well Made Voodoo Doll",
+      "icon": "Item_TOOL_Voodoodoll_C",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        1792,
+        1472,
+        1856
+      ],
+      "stats": "TOOL_VoodooDoll3"
+    },
+    "toolvoodoodoll4": {
+      "name": "Superior Voodoo Doll",
+      "icon": "Item_TOOL_Voodoodoll_D",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        1792,
+        1536,
+        1856
+      ],
+      "stats": "TOOL_VoodooDoll4"
+    },
+    "toolvoodoodoll5": {
+      "name": "Perfect Voodoo Doll",
+      "icon": "Item_TOOL_Voodoodoll_E",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1536,
+        1792,
+        1600,
+        1856
+      ],
+      "stats": "TOOL_VoodooDoll5"
     },
     "tormentedsoul": {
       "name": "Tormented Soul",
@@ -3877,7 +5772,7 @@
       ]
     },
     "wpnarrowheadpoisona": {
-      "name": "Poisoned Arrowhead",
+      "name": "Poison Arrowhead",
       "icon": "Item_WPN_ArrowHead_Poison_A",
       "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
       "box": [
@@ -4078,6 +5973,174 @@
         1472
       ]
     },
+    "wpncrafted2haxe02": {
+      "name": "Homemade Two Handed Axe",
+      "icon": "Item_TOOL_2H_WoodAxe_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        640,
+        1216,
+        704,
+        1280
+      ],
+      "stats": "WPN_Crafted2HAxe_02"
+    },
+    "wpncrafted2haxe03": {
+      "name": "Handcrafted Two Handed Axe",
+      "icon": "Item_WPN_2H_Axe_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1280,
+        1344,
+        1344
+      ],
+      "stats": "WPN_Crafted2HAxe_03"
+    },
+    "wpncrafted2haxe04": {
+      "name": "Polished Two Handed Axe",
+      "icon": "Item_WPN_Human_Normal_2H_Axe_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1984,
+        1408,
+        2048,
+        1472
+      ],
+      "stats": "WPN_Crafted2HAxe_04"
+    },
+    "wpncrafted2haxe05": {
+      "name": "Superior Two Handed Axe",
+      "icon": "Item_WPN_Human_Normal_2H_Axe_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1472,
+        64,
+        1536
+      ],
+      "stats": "WPN_Crafted2HAxe_05"
+    },
+    "wpncrafted2hsword01": {
+      "name": "Homemade Two Handed Sword",
+      "icon": "Item_WPN_Human_Normal_2H_Sword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1472,
+        768,
+        1536
+      ],
+      "stats": "WPN_Crafted2HSword_01"
+    },
+    "wpncrafted2hsword02": {
+      "name": "Handcrafted Two Handed Sword",
+      "icon": "Item_WPN_Human_Normal_2H_Sword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        704,
+        1472,
+        768,
+        1536
+      ],
+      "stats": "WPN_Crafted2HSword_02"
+    },
+    "wpncrafted2hsword03": {
+      "name": "Custom Made Two Handed Sword",
+      "icon": "Item_WPN_Human_Normal_2H_FlameBladedSword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        1472,
+        192,
+        1536
+      ],
+      "stats": "WPN_Crafted2HSword_03"
+    },
+    "wpncrafted2hsword04": {
+      "name": "Polished Two Handed Sword",
+      "icon": "Item_WPN_Human_Normal_2H_FlameBladedSword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        128,
+        1472,
+        192,
+        1536
+      ],
+      "stats": "WPN_Crafted2HSword_04"
+    },
+    "wpncrafted2hsword05": {
+      "name": "Superior Two Handed Sword",
+      "icon": "Item_WPN_Human_Normal_2H_Sword_Claymore_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        768,
+        1472,
+        832,
+        1536
+      ],
+      "stats": "WPN_Crafted2HSword_05"
+    },
+    "wpncraftedaxe01": {
+      "name": "Homemade Axe",
+      "icon": "Item_TOOL_WoodAxe_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        960,
+        1280,
+        1024,
+        1344
+      ],
+      "stats": "WPN_CraftedAxe_01"
+    },
+    "wpncraftedaxe02": {
+      "name": "Handcrafted Axe",
+      "icon": "Item_WPN_Human_Normal_Axe_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        832,
+        1472,
+        896,
+        1536
+      ],
+      "stats": "WPN_CraftedAxe_02"
+    },
+    "wpncraftedaxe03": {
+      "name": "Custom Made Axe",
+      "icon": "Item_WPN_Human_Normal_Axe_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        896,
+        1472,
+        960,
+        1536
+      ],
+      "stats": "WPN_CraftedAxe_03"
+    },
+    "wpncraftedaxe04": {
+      "name": "Polished Axe",
+      "icon": "Item_WPN_Human_Normal_Axe_C",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        960,
+        1472,
+        1024,
+        1536
+      ],
+      "stats": "WPN_CraftedAxe_04"
+    },
+    "wpncraftedaxe05": {
+      "name": "Superior Axe",
+      "icon": "Item_WPN_Human_Normal_Axe_C",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        960,
+        1472,
+        1024,
+        1536
+      ],
+      "stats": "WPN_CraftedAxe_05"
+    },
     "wpncraftedbow01": {
       "name": "Homemade Shortbow",
       "icon": "Item_WPN_Human_Normal_Bow_Short_A_C",
@@ -4195,6 +6258,66 @@
       "stats": "WPN_CraftedCrossbow_05",
       "localizationKey": "WPN_CraftedCrossbow_05"
     },
+    "wpncrafteddagger01": {
+      "name": "Homemade Dagger",
+      "icon": "Item_WPN_Human_Normal_Dagger_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1472,
+        1472,
+        1536,
+        1536
+      ],
+      "stats": "WPN_CraftedDagger_01"
+    },
+    "wpncrafteddagger02": {
+      "name": "Handcrafted Dagger",
+      "icon": "Item_WPN_Dagger_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        1408,
+        1344,
+        1472
+      ],
+      "stats": "WPN_CraftedDagger_02"
+    },
+    "wpncrafteddagger03": {
+      "name": "Custom Made Dagger",
+      "icon": "Item_WPN_Human_Normal_Estoc_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1600,
+        1472,
+        1664,
+        1536
+      ],
+      "stats": "WPN_CraftedDagger_03"
+    },
+    "wpncrafteddagger04": {
+      "name": "Polished Dagger",
+      "icon": "Item_WPN_Human_Normal_DaggerPush_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1536,
+        1472,
+        1600,
+        1536
+      ],
+      "stats": "WPN_CraftedDagger_04"
+    },
+    "wpncrafteddagger05": {
+      "name": "Superior Dagger",
+      "icon": "Item_WPN_Human_Normal_Rapier_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        256,
+        1536,
+        320,
+        1600
+      ],
+      "stats": "WPN_CraftedDagger_05"
+    },
     "wpncraftedshield01": {
       "name": "Homemade Shield",
       "icon": "Item_WPN_Wood_Shield_A",
@@ -4272,6 +6395,66 @@
       ],
       "stats": "WPN_CraftedSpear_05",
       "localizationKey": "WPN_CraftedSpear_05"
+    },
+    "wpncraftedsword01": {
+      "name": "Homemade Sword",
+      "icon": "Item_WPN_Human_Normal_Sword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        576,
+        1536,
+        640,
+        1600
+      ],
+      "stats": "WPN_CraftedSword_01"
+    },
+    "wpncraftedsword02": {
+      "name": "Handcrafted Sword",
+      "icon": "Item_WPN_Human_Normal_LongSword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        1472,
+        1856,
+        1536
+      ],
+      "stats": "WPN_CraftedSword_02"
+    },
+    "wpncraftedsword03": {
+      "name": "Custom Made Sword",
+      "icon": "Item_WPN_Human_Normal_BastardSword_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1024,
+        1472,
+        1088,
+        1536
+      ],
+      "stats": "WPN_CraftedSword_03"
+    },
+    "wpncraftedsword04": {
+      "name": "Polished Sword",
+      "icon": "Item_WPN_Human_Normal_Scimitar_A",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        384,
+        1536,
+        448,
+        1600
+      ],
+      "stats": "WPN_CraftedSword_04"
+    },
+    "wpncraftedsword05": {
+      "name": "Superior Sword",
+      "icon": "Item_WPN_Goblins_Sword_B",
+      "atlas": "dos1/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1920,
+        1408,
+        1984,
+        1472
+      ],
+      "stats": "WPN_CraftedSword_05"
     },
     "wpncraftedswordswordofplanets": {
       "name": "Sword of Planets",
@@ -6493,6 +8676,18 @@
         704
       ]
     },
+    "foodfishdvoidwoken": {
+      "name": "Void-tainted Plaice",
+      "icon": "Item_CON_Food_Fish_D",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1664,
+        640,
+        1728,
+        704
+      ],
+      "stats": "FOOD_FishD_Voidwoken"
+    },
     "foodfishe": {
       "name": "Mackerel",
       "icon": "Item_CON_Food_Fish_E",
@@ -6503,6 +8698,30 @@
         1920,
         704
       ]
+    },
+    "foodfishevoidwoken": {
+      "name": "Void-Tainted Mackerel",
+      "icon": "Item_CON_Food_Fish_E",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        640,
+        1920,
+        704
+      ],
+      "stats": "FOOD_FishE_Voidwoken"
+    },
+    "foodfishfvoidwoken": {
+      "name": "Void-tainted Sailfish",
+      "icon": "Item_CON_Food_Fish_E",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        640,
+        1920,
+        704
+      ],
+      "stats": "FOOD_FishF_Voidwoken"
     },
     "foodorange": {
       "name": "Orange",
@@ -7170,6 +9389,42 @@
       ],
       "stats": "LOOT_Antler_A_Adult",
       "localizationKey": "LOOT_Antler_A_Adult"
+    },
+    "lootataraxianartifactsa": {
+      "name": "Eternal Artefact (variant 1)",
+      "icon": "Item_LOOT_AtaraxianArtifacts_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        0,
+        1152,
+        64,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_A"
+    },
+    "lootataraxianartifactsb": {
+      "name": "Phase Capacitor",
+      "icon": "Item_LOOT_AtaraxianArtifacts_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        1152,
+        192,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_B"
+    },
+    "lootataraxianartifactsc": {
+      "name": "Eternal Artefact (variant 2)",
+      "icon": "Item_LOOT_AtaraxianArtifacts_C",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        1152,
+        128,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_C"
     },
     "lootbedlinenfoldeda": {
       "name": "Bed Linen",
@@ -8659,6 +10914,18 @@
         768,
         1152
       ]
+    },
+    "lootskullbirda": {
+      "name": "Tiny Bird Skull",
+      "icon": "Item_LOOT_BirdSkull_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1792,
+        1024,
+        1856,
+        1088
+      ],
+      "stats": "LOOT_Skull_Bird_A"
     },
     "lootskullhumana": {
       "name": "Skull",
@@ -15885,6 +18152,18 @@
         640
       ]
     },
+    "confoodspookypumpkin": {
+      "name": "Halloween Edible Pumpkin",
+      "icon": "Item_CON_Food_Vegetable_Pumpkin_C",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        768,
+        1280,
+        832,
+        1344
+      ],
+      "stats": "CON_Food_Spooky_Pumpkin"
+    },
     "confoodstewdwarvena": {
       "name": "Dwarven Stew",
       "icon": "Item_CON_Food_Stew_A",
@@ -16844,6 +19123,18 @@
       "stats": "CONT_Backpack_A",
       "template": "6c70c298-aa29-418f-a659-f8e0b5f5fa60"
     },
+    "contbackpackjunk": {
+      "name": "Old Backpack",
+      "icon": "Item_LOOT_BackPack_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1408,
+        896,
+        1472,
+        960
+      ],
+      "stats": "CONT_Backpack_Junk"
+    },
     "contbarrela": {
       "name": "Barrel",
       "icon": "Item_CONT_Humans_Citz_Barrel_A",
@@ -16855,6 +19146,18 @@
         64
       ],
       "stats": "CONT_Barrel_A"
+    },
+    "contbarrelalida": {
+      "name": "Lid of a Barrel",
+      "icon": "Item_CONT_Barrel_A_Lid_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1792,
+        704,
+        1856,
+        768
+      ],
+      "stats": "CONT_Barrel_A_Lid_A"
     },
     "contbarrelawater": {
       "name": "Water Barrel",
@@ -16913,6 +19216,17 @@
       ],
       "stats": "CONT_Barrel_Ooze_A",
       "localizationKey": "CONT_Barrel_Ooze_A"
+    },
+    "contcrate": {
+      "name": "Crate",
+      "icon": "Item_Cont_Crate_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        192,
+        768,
+        256,
+        832
+      ]
     },
     "contcratemetal": {
       "name": "Metal Crate",
@@ -17719,20 +20033,6 @@
         1024
       ]
     },
-    "crafted2haxe": {
-      "name": "Crafted 2H Axe",
-      "icon": "Item_WPN_Human_Normal_2H_Axe_B",
-      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
-      "box": [
-        0,
-        1472,
-        64,
-        1536
-      ],
-      "stats": "WPN_Axe_2H",
-      "template": "2f544f23-2c81-43de-a9a8-fe0efc03c1de",
-      "localizationKey": "Craft_Weapon_TwoHandedAxe_1_1"
-    },
     "craftedcampfire": {
       "name": "Crafted Campfire",
       "icon": "Portrait_Gen_Fireplace_A",
@@ -18085,6 +20385,18 @@
         704
       ]
     },
+    "foodfishdvoidwoken": {
+      "name": "Void-tainted Plaice",
+      "icon": "Item_CON_Food_Fish_D",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1664,
+        640,
+        1728,
+        704
+      ],
+      "stats": "FOOD_FishD_Voidwoken"
+    },
     "foodfishe": {
       "name": "Mackerel",
       "icon": "Item_CON_Food_Fish_E",
@@ -18095,6 +20407,30 @@
         1920,
         704
       ]
+    },
+    "foodfishevoidwoken": {
+      "name": "Void-Tainted Mackerel",
+      "icon": "Item_CON_Food_Fish_E",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        640,
+        1920,
+        704
+      ],
+      "stats": "FOOD_FishE_Voidwoken"
+    },
+    "foodfishfvoidwoken": {
+      "name": "Void-tainted Sailfish",
+      "icon": "Item_CON_Food_Fish_E",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1856,
+        640,
+        1920,
+        704
+      ],
+      "stats": "FOOD_FishF_Voidwoken"
     },
     "foodorange": {
       "name": "Orange",
@@ -18142,6 +20478,18 @@
         1664
       ]
     },
+    "furblacksmithcrate": {
+      "name": "Box",
+      "icon": "Portrait_Gen_Bed_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        1024,
+        256,
+        1088,
+        320
+      ],
+      "stats": "FUR_Blacksmith_Crate"
+    },
     "furboilingpota": {
       "name": "Cooking station",
       "icon": "Item_FUR_CookingPot_A",
@@ -18164,6 +20512,18 @@
         384,
         64
       ]
+    },
+    "furbucketa": {
+      "name": "Bucket (wearable)",
+      "icon": "Item_FUR_Bucket_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1280,
+        768,
+        1344,
+        832
+      ],
+      "stats": "FUR_Bucket_A"
     },
     "furbucketamilk": {
       "name": "Bucket with Milk",
@@ -18367,6 +20727,18 @@
         640
       ]
     },
+    "furcutleryforka": {
+      "name": "Fork",
+      "icon": "Item_FUR_Cutlery_Fork_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1856,
+        768,
+        1920,
+        832
+      ],
+      "stats": "FUR_Cutlery_Fork_A"
+    },
     "furdemoncraftingstation2": {
       "name": "Demon Altar",
       "icon": "Portrait_PUZ_BloodStoup_A",
@@ -18434,7 +20806,7 @@
       ]
     },
     "furrichforka": {
-      "name": "Fork",
+      "name": "Fork (gold)",
       "icon": "Item_FUR_Rich_Fork_A",
       "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
       "box": [
@@ -18514,6 +20886,18 @@
         192
       ]
     },
+    "gencloth": {
+      "name": "Blanket",
+      "icon": "Portrait_Gen_Bed_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        1024,
+        256,
+        1088,
+        320
+      ],
+      "stats": "Gen_Cloth"
+    },
     "gencraftballistaa": {
       "name": "Mysterious Item",
       "icon": "Portrait_BLD_Lizards_Siege_Ballista_A",
@@ -18549,6 +20933,28 @@
         192
       ],
       "stats": "Gen_Craft_Ballista_A_Fire"
+    },
+    "genglass": {
+      "name": "Big Drudanae Pipe",
+      "icon": "Item_FUR_Lizards_Drudanae_Pipe_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        192,
+        704,
+        256,
+        768
+      ]
+    },
+    "genmetal": {
+      "name": "Iron Bars",
+      "icon": "GP_Keyhole_Door_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        1088,
+        0,
+        1152,
+        64
+      ]
     },
     "genmysteriouspart1": {
       "name": "Mysterious Part A",
@@ -18608,6 +21014,18 @@
         576,
         384
       ]
+    },
+    "genwoodweak": {
+      "name": "Bed",
+      "icon": "Portrait_Gen_Bed_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        1024,
+        256,
+        1088,
+        320
+      ],
+      "stats": "Gen_Wood_Weak"
     },
     "gold": {
       "name": "Gold",
@@ -19194,6 +21612,18 @@
         960
       ]
     },
+    "harfishstarglowing": {
+      "name": "Glowing Starfish",
+      "icon": "Item_HAR_Starfish_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        448,
+        896,
+        512,
+        960
+      ],
+      "stats": "HAR_Fish_Star_Glowing"
+    },
     "harpearla": {
       "name": "Pearl",
       "icon": "Item_HAR_Pearl_A",
@@ -19310,6 +21740,18 @@
         832
       ]
     },
+    "itemcuttingboard": {
+      "name": "Cutting Board",
+      "icon": "Item_FUR_Humans_Citz_Kitchen_CuttingBoard_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1280,
+        64,
+        1344,
+        128
+      ],
+      "stats": "ITEM_CuttingBoard"
+    },
     "itememptybottle": {
       "name": "Empty Bottle",
       "icon": "Item_GRN_Bottle",
@@ -19401,6 +21843,18 @@
         896
       ]
     },
+    "itemrichcupasilver": {
+      "name": "Silver Cup",
+      "icon": "Item_FUR_Rich_Cup_A_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        448,
+        1152,
+        512,
+        1216
+      ],
+      "stats": "ITEM_Rich_Cup_A_Silver"
+    },
     "itemrichglassa": {
       "name": "Glass",
       "icon": "Item_FUR_Rich_Glass_A",
@@ -19412,6 +21866,18 @@
         1344
       ],
       "stats": "ITEM_Rich_Glass_A"
+    },
+    "itemrichglassasilver": {
+      "name": "Silver Glass",
+      "icon": "Item_FUR_Rich_Glass_A_Silver",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        640,
+        1280,
+        704,
+        1344
+      ],
+      "stats": "ITEM_Rich_Glass_A_Silver"
     },
     "itemrichpitchera": {
       "name": "Pitcher",
@@ -19435,6 +21901,18 @@
         896
       ],
       "stats": "ITEM_Rich_Plate_A"
+    },
+    "itemrichplateb": {
+      "name": "Plate (gold)",
+      "icon": "Item_FUR_Rich_Plate_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        1088,
+        192,
+        1152
+      ],
+      "stats": "ITEM_Rich_Plate_B"
     },
     "itemringairvilia": {
       "name": "Unique Ring of Aerothrouge",
@@ -19728,6 +22206,42 @@
       ],
       "stats": "LOOT_Antler_A_Adult",
       "localizationKey": "LOOT_Antler_A_Adult"
+    },
+    "lootataraxianartifactsa": {
+      "name": "Eternal Artefact (variant 1)",
+      "icon": "Item_LOOT_AtaraxianArtifacts_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        0,
+        1152,
+        64,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_A"
+    },
+    "lootataraxianartifactsb": {
+      "name": "Phase Capacitor",
+      "icon": "Item_LOOT_AtaraxianArtifacts_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        128,
+        1152,
+        192,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_B"
+    },
+    "lootataraxianartifactsc": {
+      "name": "Eternal Artefact (variant 2)",
+      "icon": "Item_LOOT_AtaraxianArtifacts_C",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        64,
+        1152,
+        128,
+        1216
+      ],
+      "stats": "LOOT_AtaraxianArtifacts_C"
     },
     "lootbedlinenfoldeda": {
       "name": "Bed Linen",
@@ -20393,6 +22907,18 @@
         1344
       ]
     },
+    "lootlabjar": {
+      "name": "Grotesque Jar",
+      "icon": "Item_LAB_Jar_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        960,
+        896,
+        1024,
+        960
+      ],
+      "stats": "LOOT_Lab_Jar"
+    },
     "lootleganthropoda": {
       "name": "Arthropod Leg",
       "icon": "Item_LOOT_AnthropodLeg_A",
@@ -20403,6 +22929,42 @@
         1344,
         960
       ]
+    },
+    "lootlootboxdeffensiveglobal": {
+      "name": "Deffensive Global Lootbox",
+      "icon": "Lootbox_DeffensiveGlobal",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1152,
+        576,
+        1216,
+        640
+      ],
+      "stats": "LOOT_Lootbox_DeffensiveGlobal"
+    },
+    "lootlootboxfrontbattle": {
+      "name": "Front Battle Lootbox",
+      "icon": "Lootbox_Watchover",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        896,
+        576,
+        960,
+        640
+      ],
+      "stats": "LOOT_Lootbox_FrontBattle"
+    },
+    "lootlootboxwatchover": {
+      "name": "Watch Over Lootbox",
+      "icon": "Lootbox_FrontBattle",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1024,
+        576,
+        1088,
+        640
+      ],
+      "stats": "LOOT_Lootbox_WatchOver"
     },
     "lootmetalsharda": {
       "name": "Sharp Piece of Metal",
@@ -20448,6 +23010,18 @@
         64,
         1088
       ]
+    },
+    "lootopenlootboxicon": {
+      "name": "Random Lootbox Item",
+      "icon": "Lootbox_ScrapFrontBattle",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1088,
+        576,
+        1152,
+        640
+      ],
+      "stats": "LOOT_OpenLootbox_Icon"
     },
     "lootoreablackrocka2": {
       "name": "Huge Rock",
@@ -21545,6 +24119,18 @@
       "stats": "LOOT_Sinew_A_Strong",
       "localizationKey": "LOOT_Sinew_A_Strong"
     },
+    "lootskullbirda": {
+      "name": "Tiny Bird Skull",
+      "icon": "Item_LOOT_BirdSkull_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1792,
+        1024,
+        1856,
+        1088
+      ],
+      "stats": "LOOT_Skull_Bird_A"
+    },
     "lootskullhumana": {
       "name": "Skull",
       "icon": "Item_LOOT_Skull_A",
@@ -21737,6 +24323,18 @@
         1664,
         1280
       ]
+    },
+    "loottoywoodenblocksa": {
+      "name": "Toy Wooden Block",
+      "icon": "Item_LOOT_Toy_WoodenBlocks_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1920,
+        704,
+        1984,
+        768
+      ],
+      "stats": "LOOT_Toy_WoodenBlocks_A"
     },
     "loottuska": {
       "name": "Tusk",
@@ -22281,6 +24879,18 @@
       "stats": "POTION_Large_ResistAll_Potion",
       "localizationKey": "POTION_Large_ResistAll_Potion"
     },
+    "potionlargespeedpotion": {
+      "name": "Large Memory Potion",
+      "icon": "Item_CON_PotionII_C_Purple_Large",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1792,
+        448,
+        1856,
+        512
+      ],
+      "stats": "POTION_Large_Speed_Potion"
+    },
     "potionlargespeedpotionreal": {
       "name": "Large Speed Potion",
       "icon": "Item_CON_PotionII_C_Purple_Large",
@@ -22387,6 +24997,18 @@
       "stats": "POTION_Medium_ResistAll_Potion",
       "localizationKey": "POTION_Medium_ResistAll_Potion"
     },
+    "potionmediumspeedpotion": {
+      "name": "Medium Memory Potion",
+      "icon": "Item_CON_PotionII_C_Purple_Medium",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1728,
+        448,
+        1792,
+        512
+      ],
+      "stats": "POTION_Medium_Speed_Potion"
+    },
     "potionmediumspeedpotionreal": {
       "name": "Medium Speed Potion",
       "icon": "Item_CON_PotionII_C_Purple_Medium",
@@ -22490,6 +25112,18 @@
       ],
       "stats": "POTION_Minor_ResistAll_Potion",
       "localizationKey": "POTION_Minor_ResistAll_Potion"
+    },
+    "potionminorspeedpotion": {
+      "name": "Minor Memory Potion",
+      "icon": "Item_CON_PotionII_C_Purple_Small",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        1664,
+        448,
+        1728,
+        512
+      ],
+      "stats": "POTION_Minor_Speed_Potion"
     },
     "potionminorstrengthpotion": {
       "name": "Minor Strength Potion",
@@ -23897,6 +26531,18 @@
         128,
         128
       ]
+    },
+    "scrollskillblankrandomall": {
+      "name": "Random Witchcraft Scroll",
+      "icon": "Blankrandom",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        384,
+        64,
+        448,
+        128
+      ],
+      "stats": "Scroll_Skill_Blank_RandomAll"
     },
     "scrollskillblankranger": {
       "name": "Blank Ranger Scroll",
@@ -26967,6 +29613,18 @@
         768
       ]
     },
+    "toolsmithanvila": {
+      "name": "Anvil",
+      "icon": "Portrait_TOOL_Smith_Anvil_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Portraits_Animals_Exceptions_Icons.dds",
+      "box": [
+        704,
+        448,
+        768,
+        512
+      ],
+      "stats": "TOOL_Smith_Anvil_A"
+    },
     "toolsmithanvila2": {
       "name": "Crafter's Anvil",
       "icon": "Portrait_TOOL_Smith_Anvil_A",
@@ -27327,6 +29985,18 @@
         1600,
         640
       ]
+    },
+    "wpnarrowcursedcloudstatica": {
+      "name": "Cursed Static Cloud Arrow",
+      "icon": "Arrow_CursedElectricCloud",
+      "atlas": "overhaul/Public/Crafting_Overhaul_6aaa43a9-3a72-e82e-a6f6-8c367fd82117/Assets/Textures/Icons/Crafting6.dds",
+      "box": [
+        1728,
+        576,
+        1792,
+        640
+      ],
+      "stats": "WPN_Arrow_CursedCloud_Static_A"
     },
     "wpnarrowcursedcloudsteama": {
       "name": "Cursed Steam Cloud Arrow",
@@ -27924,6 +30594,19 @@
       ],
       "stats": "WPN_Axe_1H_Water",
       "localizationKey": "Craft_Axe_Water_1"
+    },
+    "wpnaxe2h": {
+      "name": "Crafted 2H Axe",
+      "icon": "Item_WPN_Human_Normal_2H_Axe_B",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Items_Icons.dds",
+      "box": [
+        0,
+        1472,
+        64,
+        1536
+      ],
+      "stats": "WPN_Axe_2H",
+      "localizationKey": "Craft_Weapon_TwoHandedAxe_1_1"
     },
     "wpnaxe2hair": {
       "name": "2H Air Axe",
@@ -28572,6 +31255,18 @@
       ],
       "stats": "WPN_CraftedSword_1H",
       "localizationKey": "LOOT_WoodenStick_A_Dagger_1"
+    },
+    "wpncraftedwandfire": {
+      "name": "Improv Wand",
+      "icon": "Item_WPN_Common_Wand_1H_A",
+      "atlas": "dos2/Public/Shared/Assets/Textures/Icons/Icons_DOS2_Items.dds",
+      "box": [
+        640,
+        192,
+        704,
+        256
+      ],
+      "stats": "WPN_CraftedWand_Fire"
     },
     "wpncrossbow": {
       "name": "Crossbow",

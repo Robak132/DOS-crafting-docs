@@ -427,11 +427,13 @@
       ]
     },
     {
-      "slug": "amulets-or-rings",
-      "title": "Amulets or Rings",
+      "slug": "ancient-human-skull",
+      "title": "Ancient Human Skull",
+      "titlePl": "Prastara ludzka czaszka",
       "tags": [
+        "DOS1",
+        "DOS2",
         "DOS2-CO",
-        "Amulets",
         "Ingredients"
       ]
     },
@@ -588,12 +590,14 @@
       ]
     },
     {
-      "slug": "axe-mace-fishing-rod-wand",
-      "title": "Axe, Mace, Fishing rod, Wand",
+      "slug": "axe",
+      "title": "Axe",
+      "titlePl": "Topór",
       "tags": [
+        "DOS1",
+        "DOS1-Axe",
         "DOS2-CO",
-        "Weapons",
-        "Ingredients"
+        "One-Handed-Axes"
       ]
     },
     {
@@ -691,6 +695,15 @@
       ]
     },
     {
+      "slug": "basket",
+      "title": "Basket",
+      "titlePl": "Kosz",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "battering-ram-scroll",
       "title": "Battering Ram Scroll",
       "tags": [
@@ -781,6 +794,15 @@
       ]
     },
     {
+      "slug": "bed",
+      "title": "Bed",
+      "titlePl": "Łóżko",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "bed-linen",
       "title": "Bed Linen",
       "titlePl": "Pościel",
@@ -841,6 +863,15 @@
       ]
     },
     {
+      "slug": "big-drudanae-pipe",
+      "title": "Big Drudanae Pipe",
+      "titlePl": "Duża fajka do druadanu",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "black-chaos",
       "title": "Black Chaos",
       "tags": [
@@ -895,15 +926,6 @@
       "tags": [
         "DOS2-CO",
         "Shields"
-      ]
-    },
-    {
-      "slug": "blacksmith-crate",
-      "title": "Blacksmith Crate",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients",
-        "Stations-And-Containers"
       ]
     },
     {
@@ -1097,6 +1119,15 @@
         "DOS1",
         "DOS2-CO",
         "Scrolls"
+      ]
+    },
+    {
+      "slug": "blanket",
+      "title": "Blanket",
+      "titlePl": "Koc",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -1622,6 +1653,14 @@
       ]
     },
     {
+      "slug": "box",
+      "title": "Box",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "braccus-teardrop-shield",
       "title": "Braccus Teardrop Shield",
       "tags": [
@@ -1693,6 +1732,15 @@
         "DOS2-CO",
         "Helmets",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "bucket-2",
+      "title": "Bucket",
+      "titlePl": "Wiadro",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -2058,14 +2106,6 @@
       "tags": [
         "DOS2-CO",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "cloth-junk",
-      "title": "Cloth Junk",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
       ]
     },
     {
@@ -2528,11 +2568,12 @@
       ]
     },
     {
-      "slug": "crates-basket-bucket-wooden-box",
-      "title": "Crates,  Basket, Bucket, Wooden Box",
+      "slug": "crate",
+      "title": "Crate",
+      "titlePl": "Skrzynia",
       "tags": [
-        "DOS2-CO",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -2670,14 +2711,6 @@
       ]
     },
     {
-      "slug": "cursed-electric-cloud-arrow",
-      "title": "Cursed Electric Cloud Arrow",
-      "tags": [
-        "DOS2-CO",
-        "Arrows"
-      ]
-    },
-    {
       "slug": "cursed-explosion-arrow",
       "title": "Cursed Explosion Arrow",
       "tags": [
@@ -2807,6 +2840,14 @@
       ]
     },
     {
+      "slug": "cursed-static-cloud-arrow",
+      "title": "Cursed Static Cloud Arrow",
+      "tags": [
+        "Arrows",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "cursed-steam-cloud-arrow",
       "title": "Cursed Steam Cloud Arrow",
       "tags": [
@@ -2887,6 +2928,15 @@
       ]
     },
     {
+      "slug": "cutting-board",
+      "title": "Cutting Board",
+      "titlePl": "Deska do krojenia",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "cyan-dye",
       "title": "Cyan Dye",
       "tags": [
@@ -2946,6 +2996,14 @@
       "tags": [
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "deffensive-global-lootbox",
+      "title": "Deffensive Global Lootbox",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
       ]
     },
     {
@@ -3087,14 +3145,6 @@
         "Speed",
         "DOS1",
         "DOS2",
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "downgraded-item",
-      "title": "Downgraded Item",
-      "tags": [
         "DOS2-CO",
         "Ingredients"
       ]
@@ -3294,14 +3344,6 @@
       ]
     },
     {
-      "slug": "edible-pumpkin",
-      "title": "Edible Pumpkin",
-      "tags": [
-        "DOS2-CO",
-        "Seasonal-Items"
-      ]
-    },
-    {
       "slug": "egg",
       "title": "Egg",
       "titlePl": "Jajo",
@@ -3311,15 +3353,6 @@
         "Food-And-Drink",
         "Ingredients",
         "DOS2"
-      ]
-    },
-    {
-      "slug": "electric-cloud-arrow",
-      "title": "Electric Cloud Arrow",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients",
-        "Arrows"
       ]
     },
     {
@@ -3858,38 +3891,6 @@
       ]
     },
     {
-      "slug": "fish-type-1",
-      "title": "Fish Type 1",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "fish-type-2",
-      "title": "Fish Type 2",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "fish-type-3",
-      "title": "Fish Type 3",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "fish-type-4",
-      "title": "Fish Type 4",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "flashbang-grenade",
       "title": "Flashbang Grenade",
       "titlePl": "Granat błysków",
@@ -3922,6 +3923,15 @@
       ]
     },
     {
+      "slug": "folded-shirts",
+      "title": "Folded Shirts",
+      "titlePl": "Złożone koszule",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "food-bag",
       "title": "Food  Bag",
       "tags": [
@@ -3950,13 +3960,14 @@
       "title": "Fork",
       "titlePl": "Widelec",
       "tags": [
-        "DOS2-CO",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
-      "slug": "framed-rune",
-      "title": "Framed Rune",
+      "slug": "fork-2",
+      "title": "Fork",
+      "titlePl": "Widelec",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -4002,6 +4013,14 @@
       "tags": [
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "front-battle-lootbox",
+      "title": "Front Battle Lootbox",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
       ]
     },
     {
@@ -4368,6 +4387,15 @@
       ]
     },
     {
+      "slug": "grotesque-jar",
+      "title": "Grotesque Jar",
+      "titlePl": "Groteskowy słój",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "growl-of-grunt",
       "title": "Growl of Grunt",
       "tags": [
@@ -4385,6 +4413,14 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "halloween-edible-pumpkin",
+      "title": "Halloween Edible Pumpkin",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
       ]
     },
     {
@@ -4529,14 +4565,6 @@
       ]
     },
     {
-      "slug": "high-grade-item",
-      "title": "High Grade Item",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "holy-blessed-grenade",
       "title": "Holy Blessed Grenade",
       "tags": [
@@ -4632,6 +4660,14 @@
       ]
     },
     {
+      "slug": "improv-wand",
+      "title": "Improv Wand",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "indigo-dye",
       "title": "Indigo Dye",
       "tags": [
@@ -4700,6 +4736,15 @@
         "Ingredients",
         "DOS2-CO",
         "Intelligence"
+      ]
+    },
+    {
+      "slug": "iron-bars",
+      "title": "Iron Bars",
+      "titlePl": "Żelazne kraty",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -4787,15 +4832,6 @@
       ]
     },
     {
-      "slug": "knife-dagger",
-      "title": "Knife/Dagger",
-      "tags": [
-        "DOS2-CO",
-        "Weapons",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "knife-or-dagger",
       "title": "Knife or Dagger",
       "titlePl": "Nóż lub sztylet",
@@ -4850,22 +4886,6 @@
         "DOS2",
         "DOS2-CO",
         "Arrows"
-      ]
-    },
-    {
-      "slug": "lab-jar-glass-junks-plates",
-      "title": "Lab Jar, Glass Junks, Plates",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "lab-jar-glass-junks-silver-plate",
-      "title": "Lab Jar, Glass Junks, Silver Plate",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
       ]
     },
     {
@@ -4964,6 +4984,15 @@
         "DOS2-CO",
         "Potions",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "large-memory-potion",
+      "title": "Large Memory Potion",
+      "titlePl": "Duża mikstura Pamięci",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -5251,14 +5280,6 @@
       ]
     },
     {
-      "slug": "lootbox",
-      "title": "Lootbox",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "love-grenade",
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
@@ -5295,6 +5316,15 @@
       ]
     },
     {
+      "slug": "mace",
+      "title": "Mace",
+      "titlePl": "Buława",
+      "tags": [
+        "DOS2-CO",
+        "One-Handed-Maces"
+      ]
+    },
+    {
       "slug": "mage-body-armor",
       "title": "Mage Body Armor",
       "tags": [
@@ -5309,6 +5339,14 @@
       "tags": [
         "DOS2-CO",
         "Armour"
+      ]
+    },
+    {
+      "slug": "mage-gloves",
+      "title": "Mage Gloves",
+      "tags": [
+        "Armour",
+        "DOS2-CO"
       ]
     },
     {
@@ -5528,6 +5566,15 @@
       ]
     },
     {
+      "slug": "medium-memory-potion",
+      "title": "Medium Memory Potion",
+      "titlePl": "Średnia mikstura Pamięci",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "medium-perception-potion",
       "title": "Medium Perception Potion",
       "tags": [
@@ -5663,14 +5710,6 @@
       ]
     },
     {
-      "slug": "metal-junk",
-      "title": "Metal Junk",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "metal-lowerbody",
       "title": "Metal Lowerbody",
       "tags": [
@@ -5754,6 +5793,15 @@
         "DOS2-CO",
         "Potions",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "minor-memory-potion",
+      "title": "Minor Memory Potion",
+      "titlePl": "Mała mikstura Pamięci",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -6179,6 +6227,15 @@
       ]
     },
     {
+      "slug": "old-backpack",
+      "title": "Old Backpack",
+      "titlePl": "Stary plecak",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
       "slug": "olive-dye",
       "title": "Olive Dye",
       "tags": [
@@ -6194,14 +6251,6 @@
         "DOS1",
         "DOS2-CO",
         "Weapons",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "one-of-the-ten-blank-scrolls",
-      "title": "One of the ten Blank Scrolls",
-      "tags": [
-        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -6544,18 +6593,6 @@
         "DOS2-CO",
         "BLEEDING",
         "Wands"
-      ]
-    },
-    {
-      "slug": "pickaxe",
-      "title": "Pickaxe",
-      "titlePl": "Kilof",
-      "tags": [
-        "Physical-Damage",
-        "Grants-Skill",
-        "DOS2-CO",
-        "Two-Handed-Axes",
-        "Ingredients"
       ]
     },
     {
@@ -7791,14 +7828,6 @@
       ]
     },
     {
-      "slug": "sharp-rock-simple-recipe",
-      "title": "Sharp Rock (Simple Recipe)",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "sheep-corpse",
       "title": "Sheep Corpse",
       "tags": [
@@ -7821,14 +7850,6 @@
       "tags": [
         "DOS1",
         "DOS2",
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "sheet-of-paper-vanilla-recipe",
-      "title": "Sheet Of Paper (Vanilla Recipe)",
-      "tags": [
         "DOS2-CO",
         "Ingredients"
       ]
@@ -7954,11 +7975,21 @@
       ]
     },
     {
-      "slug": "silver-cup-plate-glass",
-      "title": "Silver Cup, Plate, Glass",
+      "slug": "silver-cup",
+      "title": "Silver Cup",
+      "titlePl": "Srebrny puchar",
       "tags": [
-        "DOS2-CO",
-        "Ingredients"
+        "Ingredients",
+        "DOS2-CO"
+      ]
+    },
+    {
+      "slug": "silver-glass",
+      "title": "Silver Glass",
+      "titlePl": "Srebrny kielich",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -8176,15 +8207,6 @@
       ]
     },
     {
-      "slug": "spear-staff",
-      "title": "Spear, Staff",
-      "tags": [
-        "DOS2-CO",
-        "Weapons",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "spider-corpse",
       "title": "Spider Corpse",
       "tags": [
@@ -8226,14 +8248,6 @@
       "slug": "spoon",
       "title": "Spoon",
       "titlePl": "Łyżka",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "spoon-or-fork",
-      "title": "Spoon or Fork",
       "tags": [
         "DOS2-CO",
         "Ingredients"
@@ -8562,6 +8576,16 @@
       ]
     },
     {
+      "slug": "tiny-bird-skull",
+      "title": "Tiny Bird Skull",
+      "titlePl": "Malutka ptasia czaszka",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients",
+        "DOS2"
+      ]
+    },
+    {
       "slug": "tom-talon",
       "title": "Tom Talon",
       "tags": [
@@ -8680,6 +8704,15 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "toy-wooden-block",
+      "title": "Toy Wooden Block",
+      "titlePl": "Drewniany klocek",
+      "tags": [
+        "Ingredients",
+        "DOS2-CO"
       ]
     },
     {
@@ -10823,6 +10856,14 @@
       ]
     },
     {
+      "slug": "watch-over-lootbox",
+      "title": "Watch Over Lootbox",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
+      ]
+    },
+    {
       "slug": "water-arrow",
       "title": "Water Arrow",
       "titlePl": "Strzała wodna",
@@ -11293,14 +11334,6 @@
       ]
     },
     {
-      "slug": "wood-junk",
-      "title": "Wood Junk",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "wood-pile",
       "title": "Wood Pile",
       "titlePl": "Stos drewna",
@@ -11317,16 +11350,6 @@
         "DOS2",
         "Ingredients",
         "DOS2-CO"
-      ]
-    },
-    {
-      "slug": "wooden-crate",
-      "title": "Wooden Crate",
-      "titlePl": "Drewniana skrzynia",
-      "tags": [
-        "DOS2-CO",
-        "Ingredients",
-        "Stations-And-Containers"
       ]
     },
     {

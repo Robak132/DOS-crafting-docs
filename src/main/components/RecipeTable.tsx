@@ -1,6 +1,8 @@
 import { RecipeItemView } from "./RecipeItem"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
 import { FullSlug } from "../routing"
+import { useIncremental } from "./useIncremental"
+import { useMemo } from "preact/hooks"
 import {
   groupRecipes,
   recipeColumnsForCatalog,
@@ -19,6 +21,8 @@ type Props = {
   showRequirements?: boolean
   /** Rola craftingu → lekki tint linku (dead/mid/end). */
   itemRoles?: Record<string, ItemCraftRole>
+  /** Render this many result groups first and add more on scroll. */
+  pageSize?: number
 }
 
 export function RecipeTable({
@@ -28,8 +32,11 @@ export function RecipeTable({
   searchable = false,
   showRequirements = true,
   itemRoles = {},
+  pageSize,
 }: Props) {
   const columns = recipeColumnsForCatalog(showRequirements)
+  const grouped = useMemo(() => groupRecipes(recipes), [recipes])
+  const groups = useIncremental(grouped, pageSize)
   const renderItem = (item: RecipeItem, opts?: { ingredient?: boolean }) => (
     <RecipeItemView
       item={item}
@@ -58,7 +65,7 @@ export function RecipeTable({
           </tr>
         </thead>
         <tbody class="recipe-table-body">
-          {groupRecipes(recipes).map((group) =>
+          {groups.visible.map((group) =>
             group.variants.map((recipe, index) => (
               <tr
                 key={`${group.key}|${recipe.id}#${index}`}
@@ -108,9 +115,11 @@ export function RecipeTable({
                   {recipe.remarks?.trim() && <p class="recipe-remarks">{recipe.remarks}</p>}
                 </td>
                 {showRequirements && (
-                  <td class="recipe-cell meta">{recipe.requirements?.trim() ? recipe.requirements : empty}</td>
+                  <td class="recipe-cell meta" data-label="Wymagania">
+                    {recipe.requirements?.trim() ? recipe.requirements : empty}
+                  </td>
                 )}
-                <td class="recipe-cell tags">
+                <td class="recipe-cell tags" data-label="Tagi">
                   <div class="recipe-row-tags">
                     {visibleRecipeTags(recipeResultTags(recipe)).map((tag) => (
                       <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
@@ -119,12 +128,21 @@ export function RecipeTable({
                     ))}
                   </div>
                 </td>
-                <td class="recipe-cell meta">{recipe.source?.trim() ? recipe.source : empty}</td>
+                <td class="recipe-cell meta" data-label="Źródło">
+                  {recipe.source?.trim() ? recipe.source : empty}
+                </td>
               </tr>
             )),
           )}
         </tbody>
       </table>
+      {groups.hidden > 0 && (
+        <div ref={groups.sentinel} class="load-more">
+          <button type="button" onClick={groups.showAll}>
+            Pokaż wszystkie (jeszcze {groups.hidden})
+          </button>
+        </div>
+      )}
     </div>
   )
 }

@@ -44,6 +44,30 @@ npm run verify:dist
 VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 ```
 
+## Analiza SonarQube
+
+Konfiguracja analizy jest w `sonar-project.properties`: kod z `src/main` i `scripts`, testy z `src/test`, bez danych, `dist/` i plików gry.
+
+**SonarQube Cloud (w CI).** Workflow `.github/workflows/sonar.yml` skanuje `main` i pull requesty:
+
+1. Zaloguj się na [sonarcloud.io](https://sonarcloud.io) kontem GitHub i zaimportuj to repozytorium (_+ → Analyze new project_). Dla publicznego repozytorium plan Free wystarcza.
+2. W projekcie wyłącz _Administration → Analysis Method → Automatic Analysis_; analizę wykonuje workflow.
+3. Wygeneruj token (_My Account → Security_) i zapisz go w repozytorium jako sekret `SONAR_TOKEN` (_Settings → Secrets and variables → Actions_).
+4. Jeśli SonarQube Cloud nada inny klucz projektu lub organizację, popraw `sonar.projectKey` i `sonar.organization`.
+
+Bez sekretu `SONAR_TOKEN` krok skanowania jest pomijany.
+
+**SonarQube Server lokalnie (Docker).**
+
+```sh
+docker run -d --name sonarqube -p 9000:9000 sonarqube:community
+# http://localhost:9000 (admin/admin) → utwórz projekt lokalny i token
+docker run --rm --network host -v "$PWD:/usr/src" -e SONAR_HOST_URL=http://localhost:9000 \
+  -e SONAR_TOKEN=<token> sonarsource/sonar-scanner-cli -Dsonar.organization=
+```
+
+Pusty `-Dsonar.organization=` wyłącza ustawienie przeznaczone dla SonarQube Cloud.
+
 ## Dane i architektura
 
 - `data/library/pages/` — metadane stron przedmiotów: `dos1.json`, `dos2.json`, `dos2-co.json`.

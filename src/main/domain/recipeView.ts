@@ -1,6 +1,7 @@
 import type { RecipeItem, RecipeRow, TagStat } from "./recipes"
 import { isItemGroup } from "./itemGroups"
 import { tooltipItemKey } from "./tooltipIdentity"
+import { displayItemName } from "./itemName"
 import { recipeResults } from "./recipeResults"
 import { isCategoryTag, isTagWithin, tagAncestors, traitSections } from "./tagTree"
 
@@ -465,6 +466,28 @@ export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
   return [...items.values()].sort((a, b) => a.name.localeCompare(b.name, "pl"))
 }
 
+/** The name a reader sees for an item in the chosen language. */
+export function shownItemName(item: RecipeItem, lang: "pl" | "en"): string {
+  return displayItemName(lang === "pl" ? (item.namePl ?? item.name) : item.name)
+}
+
+export type RecipeSort = "default" | "name" | "level" | "ingredients"
+export const RECIPE_SORTS: readonly RecipeSort[] = ["default", "name", "level", "ingredients"]
+
+/** Highest skill level a recipe asks for ("Crafting 3; Blacksmithing 4" → 4); none → 0. */
+export function requirementLevel(requirements: string | undefined): number {
+  return Math.max(0, ...requirementTokens(requirements ?? "").map((token) => Number(/(\d+)$/.exec(token)?.[1] ?? 0)))
+}
+
+/** Orders recipes for display; ties fall back to the result name. "default" keeps the catalog order. */
+export function sortRecipes(recipes: RecipeRow[], sort: RecipeSort, lang: "pl" | "en" = "pl"): RecipeRow[] {
+  if (sort === "default") return recipes
+  const name = (recipe: RecipeRow) => shownItemName(recipe.result, lang)
+  const key = (recipe: RecipeRow) =>
+    sort === "level" ? requirementLevel(recipe.requirements) : sort === "ingredients" ? recipe.ingredients.length : 0
+  return [...recipes].sort((a, b) => key(a) - key(b) || name(a).localeCompare(name(b), lang))
+}
+
 /** Jeden wiersz przedmiotu zbiera efekty i tagi ze wszystkich jego receptur. */
 export function catalogItemRows(recipes: RecipeRow[], lang: "pl" | "en" = "pl") {
   const variants = new Map<string, RecipeRow[]>()
@@ -476,7 +499,10 @@ export function catalogItemRows(recipes: RecipeRow[], lang: "pl" | "en" = "pl") 
       variants.set(key, rows)
     }
   }
-  return catalogItems(recipes).map((item) => {
+  const items = catalogItems(recipes)
+  // The list reads alphabetically in the language it is shown in.
+  if (lang === "pl") items.sort((a, b) => shownItemName(a, lang).localeCompare(shownItemName(b, lang), "pl"))
+  return items.map((item) => {
     const rows = variants.get(item.slug ?? item.name) ?? []
     return {
       item,

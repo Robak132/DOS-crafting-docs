@@ -35124,7 +35124,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-X-К-COMBAT-ABILITY---CONSTITUTION:#Armor-With-Empty-Rune-Socket+#Mystical-Small-Rune",
       "effect": {
-        "en": "Constitution"
+        "en": "Constitution",
+        "pl": "Kondycja"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -35158,7 +35159,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-X-К-COMBAT-ABILITY---CONSTITUTION:#Armor-With-Empty-Rune-Socket+#Mystical-Medium-Rune",
       "effect": {
-        "en": "Constitution"
+        "en": "Constitution",
+        "pl": "Kondycja"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -35192,7 +35194,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-X-К-COMBAT-ABILITY---CONSTITUTION:#Armor-With-Empty-Rune-Socket+#Mystical-Large-Rune",
       "effect": {
-        "en": "Constitution"
+        "en": "Constitution",
+        "pl": "Kondycja"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -35226,7 +35229,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR-AND-ADD-X-К-COMBAT-ABILITY---CONSTITUTION:#Armor-With-Empty-Rune-Socket+#Mystical-Giant-Rune",
       "effect": {
-        "en": "Constitution"
+        "en": "Constitution",
+        "pl": "Kondycja"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",

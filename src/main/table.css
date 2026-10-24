@@ -421,6 +421,7 @@ a.recipe-effect-chip {
 }
 
 .recipe-table-wrap {
+  container-type: inline-size;
   border: 1px solid var(--lightgray);
   border-radius: 16px;
   background: color-mix(in srgb, var(--light) 94%, white);
@@ -450,7 +451,7 @@ a.recipe-effect-chip {
 
 .recipe-table td,
 .recipe-table th {
-  padding: 0.85rem 1rem;
+  padding: 0.55rem 0.9rem;
   vertical-align: middle;
 }
 
@@ -639,4 +640,91 @@ a.recipe-effect-chip {
 .recipe-cell.result .recipe-products {
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* Ingredients read as a sum: A + B + C. */
+.recipe-cell.ingredients > .recipe-ingredients > li {
+  display: inline-flex;
+  align-items: center;
+}
+.recipe-cell.ingredients > .recipe-ingredients > li + li::before {
+  content: "+";
+  margin-inline-end: 0.35rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.recipe-items-table.no-effects {
+  .item-col-result {
+    width: 60%;
+  }
+  .item-col-tags {
+    width: 40%;
+  }
+}
+
+/*
+ * Where the columns do not fit (a phone, a narrow window, an item page beside the sidebar), every
+ * recipe becomes a card: the result on top, its ingredients and the rest of the row beneath, each labelled.
+ */
+@container (max-width: 879px) {
+  .recipe-table,
+  .recipe-items-table {
+    min-width: 0;
+  }
+  .recipe-table colgroup,
+  .recipe-table thead {
+    display: none;
+  }
+  .recipe-table,
+  .recipe-table tbody,
+  .recipe-table tr,
+  .recipe-table td {
+    display: block;
+    width: auto;
+  }
+  .recipe-table td,
+  .recipe-group-start td,
+  .recipe-group-end td,
+  .recipe-group-inner td {
+    border: none;
+    padding: 0.3rem 0.9rem;
+  }
+  .recipe-table tr.recipe-group-start {
+    border-top: 1px solid var(--lightgray);
+    padding-top: 0.5rem;
+  }
+  .recipe-table tbody tr:first-child {
+    border-top: none;
+  }
+  .recipe-table tr.recipe-group-end {
+    padding-bottom: 0.6rem;
+  }
+  /* Another recipe for the same result. */
+  .recipe-group-inner td.ingredients::before {
+    content: "lub";
+    display: block;
+    color: var(--gray);
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .recipe-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    color: var(--gray);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  /* Tags belong to the result: shown once, after its last recipe. */
+  .recipe-table tr:not(.recipe-group-end) td.tags {
+    display: none;
+  }
+  /* An empty field ("—") says nothing on a card. */
+  .recipe-table td.meta:has(> .recipe-empty:only-child),
+  .recipe-table td.tags:has(> .recipe-empty:only-child) {
+    display: none;
+  }
 }

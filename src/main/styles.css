@@ -186,8 +186,56 @@ details .recipe-tag-list {
 .eyebrow {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
   color: var(--gray);
   margin: 0;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+.sort-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.sort-select select,
+.filters-toggle {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--darkgray);
+  background: #202023;
+  border: 1px solid var(--lightgray);
+  border-radius: 7px;
+  padding: 0.35rem 0.5rem;
+}
+/* On a wide screen the filters always show; on a narrow one they open from this button. */
+.filters-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  font-weight: 600;
+}
+.filters-toggle-count {
+  min-width: 1.4rem;
+  padding: 0 0.35rem;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--light);
+  font-size: 0.75rem;
+}
+.load-more {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 .catalog-toolbar {
   display: flex;
@@ -207,6 +255,22 @@ details .recipe-tag-list {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--gray);
+}
+.shortcut {
+  float: right;
+  font-family: inherit;
+  font-size: 0.65rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--gray);
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  padding: 0 0.3rem;
+}
+@media (hover: none) {
+  .shortcut {
+    display: none;
+  }
 }
 .search-row {
   display: flex;
@@ -388,7 +452,8 @@ footer {
 }
 @media (max-width: 850px) {
   .app-shell {
-    grid-template-columns: 1fr;
+    /* minmax(0, …): a wide recipe table scrolls inside its own box instead of widening the page. */
+    grid-template-columns: minmax(0, 1fr);
     padding: 1.5rem 1rem;
     gap: 2rem;
   }
@@ -396,6 +461,15 @@ footer {
     position: static;
     max-height: none;
     padding-right: 0;
+  }
+  .filters-toggle {
+    display: flex;
+  }
+  .sidebar-filters:not([data-open="true"]) {
+    display: none;
+  }
+  .filter-summary {
+    margin: 0.75rem 0;
   }
   .game-nav {
     flex-direction: row;

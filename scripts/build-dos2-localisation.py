@@ -51,7 +51,15 @@ def main():
         translation = polish.get(uid)
         if translation and (name.casefold() in normalized or translation.casefold() in normalized):
             pairs[name].add(translation)
-    names = {name: next(iter(values)) for name, values in pairs.items() if len(values) == 1}
+    # The game spells some names twice, differing only in capitals ("Esencja Ziemi" / "Esencja ziemi"):
+    # that is one translation, written as Polish item names are, with a capital first letter only.
+    def single(values):
+        if len(values) == 1:
+            return next(iter(values))
+        if len({value.casefold() for value in values}) == 1:
+            return min(values, key=lambda value: sum(letter.isupper() for letter in value))
+        return None
+    names = {name: single(values) for name, values in pairs.items() if single(values)}
     # Ambiguous names resolved by hand; the choice must be one of the game's own translations.
     chosen = {"Water Barrel": "Beczka wody"}
     for name, translation in chosen.items():
@@ -92,7 +100,7 @@ def main():
         if liquid["group"] in selectors or liquid["group"].startswith("DOS1-"):
             continue
         values = by_english.get(liquid["label"], set())
-        label = next(iter(values)) if len(values) == 1 else manual.get(liquid["label"])
+        label = single(values) if values and single(values) else manual.get(liquid["label"])
         if label:
             selectors[liquid["group"]] = label
     output = {

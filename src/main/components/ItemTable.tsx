@@ -3,6 +3,8 @@ import { itemDescriptionText, type ItemDescription } from "./ItemTooltip"
 import { ItemIcon } from "./ItemIcon"
 import type { RecipeRow } from "../domain/recipes"
 import { catalogItemRows, itemCraftRoleClass, tagLabel, type ItemCraftRole } from "../domain/recipeView"
+import { useIncremental } from "./useIncremental"
+import { useMemo } from "preact/hooks"
 
 type Props = {
   recipes: RecipeRow[]
@@ -11,31 +13,44 @@ type Props = {
   itemRoles?: Record<string, ItemCraftRole>
   descriptions?: Record<string, ItemDescription>
   lang?: "pl" | "en"
+  /** Render this many rows first and add more on scroll. */
+  pageSize?: number
 }
 
 /** Shared by the generated page and the filtered browser view. */
-export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descriptions = {}, lang = "en" }: Props) {
-  const rows = catalogItemRows(recipes, lang)
+export function ItemTable({
+  recipes,
+  labels,
+  itemHref,
+  itemRoles = {},
+  descriptions = {},
+  lang = "en",
+  pageSize,
+}: Props) {
+  const rows = useMemo(() => catalogItemRows(recipes, lang), [recipes, lang])
+  const shown = useIncremental(rows, pageSize)
+  // A column with no effect in any row would only repeat "—".
+  const showEffects = rows.some((row) => row.effects.length > 0)
   if (rows.length === 0) {
     return <p class="recipe-empty">Brak przedmiotów pasujących do filtrów.</p>
   }
   return (
     <div class="recipe-table-wrap" role="region" aria-label="Lista przedmiotów" tabIndex={0}>
-      <table class="recipe-table recipe-items-table">
+      <table class={`recipe-table recipe-items-table${showEffects ? "" : " no-effects"}`}>
         <colgroup>
           <col class="item-col-result" />
-          <col class="item-col-effects" />
+          {showEffects && <col class="item-col-effects" />}
           <col class="item-col-tags" />
         </colgroup>
         <thead>
           <tr>
             <th scope="col">Przedmiot</th>
-            <th scope="col">Efekt</th>
+            {showEffects && <th scope="col">Efekt</th>}
             <th scope="col">Tagi</th>
           </tr>
         </thead>
         <tbody class="recipe-table-body">
-          {rows.map(({ item, effects, tags }) => {
+          {shown.visible.map(({ item, effects, tags }) => {
             const description = itemDescriptionText(descriptions[itemDataKey(item)], lang)
             const label = (
               <>
@@ -59,20 +74,22 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
                   )}
                   {description && <p class="item-list-description">{description}</p>}
                 </td>
-                <td class="recipe-cell meta effects">
-                  {effects.length > 0 ? (
-                    <div class="recipe-effect-stack">
-                      {effects.map((effect) => (
-                        <button key={effect} type="button" class="recipe-effect-chip" data-search-effect={effect}>
-                          {effect}
-                        </button>
-                      ))}
-                    </div>
-                  ) : (
-                    <span class="recipe-empty">—</span>
-                  )}
-                </td>
-                <td class="recipe-cell tags">
+                {showEffects && (
+                  <td class="recipe-cell meta effects" data-label="Efekt">
+                    {effects.length > 0 ? (
+                      <div class="recipe-effect-stack">
+                        {effects.map((effect) => (
+                          <button key={effect} type="button" class="recipe-effect-chip" data-search-effect={effect}>
+                            {effect}
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <span class="recipe-empty">—</span>
+                    )}
+                  </td>
+                )}
+                <td class="recipe-cell tags" data-label="Tagi">
                   {tags.length > 0 ? (
                     <div class="recipe-row-tags">
                       {tags.map((tag) => (
@@ -90,6 +107,13 @@ export function ItemTable({ recipes, labels, itemHref, itemRoles = {}, descripti
           })}
         </tbody>
       </table>
+      {shown.hidden > 0 && (
+        <div ref={shown.sentinel} class="load-more">
+          <button type="button" onClick={shown.showAll}>
+            Pokaż wszystkie (jeszcze {shown.hidden})
+          </button>
+        </div>
+      )}
     </div>
   )
 }

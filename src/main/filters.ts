@@ -3,6 +3,8 @@ import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
 import { matchesUpgradeQuery } from "./domain/upgrades"
 import {
   type RecipeSearchScope,
+  type RecipeSort,
+  RECIPE_SORTS,
   matchesCraftingMax,
   matchesRecipeQuery,
   recipeResultTags,
@@ -20,6 +22,7 @@ export type Filters = {
   selectors: string[]
   query: string
   group: string | null
+  sort: RecipeSort
 }
 export const emptyFilters = (): Filters => ({
   include: [],
@@ -31,6 +34,7 @@ export const emptyFilters = (): Filters => ({
   selectors: [],
   query: "",
   group: null,
+  sort: "default",
 })
 export function cycleFilter(filters: Filters, tag: string, kind: "tag" | "requirement" = "tag"): Filters {
   const yes = kind === "tag" ? "include" : "requirements"
@@ -49,6 +53,8 @@ const validCraftingMax = (value: unknown): number | null =>
   typeof value === "number" && Number.isInteger(value) && value >= 1 && value <= 5 ? value : null
 
 const parseScope = (value: unknown): RecipeSearchScope => (value === "result" || value === "ingredient" ? value : "all")
+const parseSort = (value: unknown): RecipeSort =>
+  RECIPE_SORTS.includes(value as RecipeSort) ? (value as RecipeSort) : "default"
 
 function storedFilters(raw: unknown): Filters {
   const value = raw && typeof raw === "object" ? (raw as Record<string, unknown>) : {}
@@ -62,6 +68,7 @@ function storedFilters(raw: unknown): Filters {
     selectors: stringList(value.selectors),
     query: typeof value.query === "string" ? value.query : "",
     group: typeof value.group === "string" && value.group ? value.group : null,
+    sort: parseSort(value.sort),
   }
 }
 export function restoreFilters(game: Game, search = ""): Filters {
@@ -85,6 +92,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     "selector",
     "as",
     "group",
+    "sort",
   ]
   if (fields.some((key) => params.has(key))) {
     stored = emptyFilters()
@@ -97,6 +105,7 @@ export function restoreFilters(game: Game, search = ""): Filters {
     stored.group = params.get("group")
     stored.scope = parseScope(params.get("as"))
     stored.craftingMax = validCraftingMax(Number(params.get("craftingMax")))
+    stored.sort = parseSort(params.get("sort"))
   }
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
 }
@@ -154,6 +163,7 @@ export function filtersToSearch(filters: Filters, view: string): string {
   if (filters.scope !== "all") params.set("as", filters.scope)
   if (filters.selectors.length) params.set("selector", filters.selectors.join(","))
   if (filters.craftingMax !== null) params.set("craftingMax", String(filters.craftingMax))
+  if (filters.sort !== "default") params.set("sort", filters.sort)
   return params.toString()
 }
 

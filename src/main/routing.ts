@@ -1,11 +1,20 @@
 export type FullSlug = string
 export type Game = "dos1" | "dos2" | "dos2-overhaul"
 export type View = "items" | "recipes" | "upgrades"
-export const games: { id: Game; slug: string; label: string }[] = [
-  { id: "dos1", slug: "receptury", label: "DOS1" },
-  { id: "dos2", slug: "DOS2", label: "DOS2" },
-  { id: "dos2-overhaul", slug: "dos2-crafting-overhaul", label: "DOS2 – Crafting Overhaul" },
+export const games: { id: Game; slug: string; label: string; title: string }[] = [
+  { id: "dos1", slug: "receptury", label: "DOS1", title: "Divinity: Original Sin – Enhanced Edition" },
+  { id: "dos2", slug: "DOS2", label: "DOS2", title: "Divinity: Original Sin 2 – Definitive Edition" },
+  {
+    id: "dos2-overhaul",
+    slug: "dos2-crafting-overhaul",
+    label: "DOS2 – Crafting Overhaul",
+    title: "Divinity: Original Sin 2 – mod Crafting Overhaul",
+  },
 ]
+/** Whether the address names a game: its catalog or an item page under it. */
+export function routeNamesGame(slug: string): boolean {
+  return Boolean(gameForSlug(slug) || parseItemRoute(slug))
+}
 
 const appBase = import.meta.env?.BASE_URL ?? "/"
 export function pageHref(slug: string): string {

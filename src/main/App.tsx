@@ -20,13 +20,17 @@ import {
   recipeResults,
   recipeRollsItem,
   recipeUsesItem,
+  sortRecipes,
   tagLabel,
+  type RecipeSort,
   uniqueItemEffects,
   uniqueItemRemarks,
   visibleRecipeTags,
   CRAFTING_MAX_LEVELS,
 } from "./domain/recipeView"
 import { parseItemQuantity } from "./domain/recipeQuantity"
+import { collectRecipeStats } from "./domain/recipes"
+import { isCategoryTag } from "./domain/tagTree"
 import {
   emptyFilters,
   cycleFilter,
@@ -44,6 +48,7 @@ import {
   itemHref as gameItemHref,
   pageGames,
   parseItemRoute,
+  routeNamesGame,
   routeSlug,
   type Game,
   type View,
@@ -69,6 +74,15 @@ const scopeLabels: Record<Filters["scope"], { option: string; title: string; fil
   all: { option: "Wszystko", title: "Bez zawężenia", filter: "szukaj", placeholder: "Nazwa, efekt lub składnik" },
 }
 
+const catalogHrefWith = (game: Game, view: View, filters: Filters) =>
+  `${catalogHref(game, view).split("?")[0]}?${filtersToSearch(filters, view)}`
+const sortLabels: Record<RecipeSort, string> = {
+  default: "Domyślnie",
+  name: "Nazwa A–Z",
+  level: "Wymagany poziom",
+  ingredients: "Liczba składników",
+}
+
 const currentRoute = () => ({ slug: routeSlug(window.location.pathname), search: window.location.search })
 function routeGame(route: ReturnType<typeof currentRoute>): Game {
   const candidate = stored("dos_active_catalog", "dos1")
@@ -77,6 +91,11 @@ function routeGame(route: ReturnType<typeof currentRoute>): Game {
     parseItemRoute(route.slug)?.game ??
     (games.some((entry) => entry.id === candidate) ? (candidate as Game) : "dos1")
   )
+}
+/** The address of a game's catalog or item; elsewhere (a broken link) the URL holds no filters of any game. */
+const routeOwnsFilters = (slug: string) => !slug || slug === "index" || routeNamesGame(slug)
+function routeFilters(route: ReturnType<typeof currentRoute>): Filters {
+  return restoreFilters(routeGame(route), routeOwnsFilters(route.slug) ? route.search : "")
 }
 function routeView(search: string): View {
   const view = new URLSearchParams(search).get("view") ?? stored("crafting_catalog_view", "items")
@@ -89,9 +108,8 @@ export function App() {
   const [route, setRoute] = useState(currentRoute)
   const [game, setGame] = useState<Game>(() => routeGame(currentRoute()))
   const [view, setView] = useState<View>(() => routeView(window.location.search))
-  const [filters, setFilters] = useState<Filters>(() =>
-    restoreFilters(routeGame(currentRoute()), window.location.search),
-  )
+  const [filters, setFilters] = useState<Filters>(() => routeFilters(currentRoute()))
+  const [filtersOpen, setFiltersOpen] = useState(false)
   const [query, setQuery] = useState(filters.query)
   const [lang, setLang] = useState<"pl" | "en">(() => {
     try {
@@ -127,20 +145,39 @@ export function App() {
         ? []
         : (catalog.data?.recipes ?? [])
   }, [catalog.data, filters.group])
-  const filtered = useMemo(() => {
-    const grouped = applyGroupQuery(sourceRows, catalog.data?.groups ?? {}, filters.query, filters.scope)
-    return filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels)
-  }, [sourceRows, catalog.data, filters, labels])
+  const grouped = useMemo(
+    () => applyGroupQuery(sourceRows, catalog.data?.groups ?? {}, filters.query, filters.scope),
+    [sourceRows, catalog.data, filters.query, filters.scope],
+  )
+  const filtered = useMemo(
+    () => sortRecipes(filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels), filters.sort, lang),
+    [grouped, filters, labels, lang],
+  )
+  // Tag counts follow the search and other narrowing, but not the tags themselves: each count says how many
+  // items picking that tag would add to what is shown.
+  const narrowed =
+    Boolean(filters.query.trim() || filters.group || filters.selectors.length || filters.craftingMax !== null) ||
+    filters.requirements.length > 0 ||
+    filters.requirementsExclude.length > 0
+  const liveTags = useMemo(() => {
+    const tags = catalog.data?.tags ?? []
+    if (!narrowed || view === "upgrades") return tags
+    const rows = filterRecipes(grouped.rows, { ...filters, query: grouped.query, include: [], exclude: [] }, labels)
+    const counts = new Map(collectRecipeStats(rows).tags.map((stat) => [stat.tag, stat.count]))
+    return tags
+      .map((stat) => ({ ...stat, count: counts.get(stat.tag) ?? 0 }))
+      .filter((stat) => stat.count > 0 || filters.include.includes(stat.tag) || filters.exclude.includes(stat.tag))
+  }, [catalog.data, grouped, filters, labels, narrowed, view])
   const upgrades = useMemo(() => filterUpgrades(catalog.data?.upgrades ?? [], filters), [catalog.data, filters])
   const tagGroups = useMemo(
-    () => groupRecipeTags(catalog.data?.tags ?? [], manifest.data?.traitGroups ?? []),
-    [catalog.data, manifest.data],
+    () => groupRecipeTags(liveTags, manifest.data?.traitGroups ?? []),
+    [liveTags, manifest.data],
   )
   const currentFilters = query === filters.query ? filters : { ...filters, query }
   const applyLocation = () => {
     const next = currentRoute()
     const nextGame = routeGame(next)
-    const nextFilters = restoreFilters(nextGame, next.search)
+    const nextFilters = routeFilters(next)
     setRoute(next)
     setGame(nextGame)
     setView(routeView(next.search))
@@ -157,6 +194,19 @@ export function App() {
     applyLocation()
     window.scrollTo(0, 0)
   }
+  // Ctrl+Space jumps to the search box from anywhere on the page.
+  useEffect(() => {
+    const focusSearch = (event: KeyboardEvent) => {
+      if (!event.ctrlKey || event.altKey || event.metaKey || event.code !== "Space") return
+      const input = document.getElementById("recipe-search-input")
+      if (!(input instanceof HTMLInputElement)) return
+      event.preventDefault()
+      input.focus()
+      input.select()
+    }
+    window.addEventListener("keydown", focusSearch)
+    return () => window.removeEventListener("keydown", focusSearch)
+  }, [])
   useEffect(() => {
     const pop = () => applyLocation()
     window.addEventListener("popstate", pop)
@@ -171,6 +221,8 @@ export function App() {
     }
   }, [lang])
   useEffect(() => {
+    // A broken link belongs to no game: it must not overwrite what a game remembers.
+    if (!routeOwnsFilters(route.slug)) return
     try {
       sessionStorage.setItem("dos_active_catalog", game)
       sessionStorage.setItem("crafting_catalog_view", view)
@@ -183,7 +235,7 @@ export function App() {
       url.search = filtersToSearch(filters, view)
       window.history.replaceState({}, "", url)
     }
-  }, [filters, game, view, isCatalog])
+  }, [filters, game, view, isCatalog, route.slug])
   useEffect(() => {
     const timer = setTimeout(() => setFilters((value) => (value.query === query ? value : { ...value, query })), 150)
     return () => clearTimeout(timer)
@@ -254,6 +306,12 @@ export function App() {
   ]
     .filter(Boolean)
     .join(" · ")
+  const activeFilterCount =
+    filters.include.length +
+    filters.exclude.length +
+    filters.requirements.length +
+    filters.requirementsExclude.length +
+    (filters.craftingMax === null ? 0 : 1)
   const itemHref = (slug: string) => gameItemHref(game, slug)
   const itemRecipes = useMemo(() => {
     if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
@@ -290,6 +348,8 @@ export function App() {
     ]
 
   const detailDescriptionText = itemDescriptionText(detailDescription, lang)
+  // The most specific category of the item, for the breadcrumb.
+  const detailCategory = detail.data ? visibleRecipeTags(detail.data.tags).find(isCategoryTag) : undefined
   const detailEffects = uniqueItemEffects(itemRecipes.craft, lang, detailName)
   const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
 
@@ -303,12 +363,15 @@ export function App() {
         if (!isCatalog) changeQuery(query, filters.scope)
       }}
     >
-      <label for="recipe-search-input">Szukaj</label>
+      <label for="recipe-search-input">
+        Szukaj <kbd class="shortcut">Ctrl+Spacja</kbd>
+      </label>
       <div class="search-row">
         <input
           id="recipe-search-input"
           type="search"
-          title='Grupy: #NazwaGrupy albo #"Nazwa grupy"'
+          title='Ctrl+Spacja: przejdź do wyszukiwarki. Grupy: #NazwaGrupy albo #"Nazwa grupy"'
+          aria-keyshortcuts="Control+Space"
           value={query}
           onInput={(event) => setQuery(event.currentTarget.value)}
           placeholder={
@@ -357,7 +420,7 @@ export function App() {
             <a
               key={entry.id}
               href={rememberedCatalogHref(entry.id, view, entry.id === game ? currentFilters : undefined)}
-              aria-current={entry.id === game ? "page" : undefined}
+              aria-current={entry.id === game && routeOwnsFilters(route.slug) ? "page" : undefined}
             >
               {entry.label}
             </a>
@@ -369,72 +432,98 @@ export function App() {
           </p>
           {filterText && <button onClick={reset}>Resetuj</button>}
         </div>
-        {game === "dos1" && catalog.data && (
-          <section>
-            <h3>Mój crafting</h3>
-            <div class="crafting-levels">
-              {CRAFTING_MAX_LEVELS.map((level) => (
-                <button
-                  key={level}
-                  aria-pressed={filters.craftingMax === level}
-                  onClick={() =>
-                    setFilters((state) => ({ ...state, craftingMax: state.craftingMax === level ? null : level }))
-                  }
-                >
-                  ≤ {level}
-                </button>
+        <button
+          type="button"
+          class="filters-toggle"
+          aria-expanded={filtersOpen}
+          aria-controls="sidebar-filters"
+          onClick={() => setFiltersOpen((open) => !open)}
+        >
+          {filtersOpen ? "Ukryj filtry" : "Filtry"}
+          {activeFilterCount > 0 && <span class="filters-toggle-count">{activeFilterCount}</span>}
+        </button>
+        <div id="sidebar-filters" class="sidebar-filters" data-open={filtersOpen}>
+          {game === "dos1" && catalog.data && (
+            <section>
+              <h3>Mój crafting</h3>
+              <div class="crafting-levels">
+                {CRAFTING_MAX_LEVELS.map((level) => (
+                  <button
+                    key={level}
+                    aria-pressed={filters.craftingMax === level}
+                    onClick={() =>
+                      setFilters((state) => ({ ...state, craftingMax: state.craftingMax === level ? null : level }))
+                    }
+                  >
+                    ≤ {level}
+                  </button>
+                ))}
+              </div>
+              {groupRequirementStats(catalog.data.requirements).map((group) => (
+                <details key={group.label}>
+                  <summary>{group.label}</summary>
+                  <div class="recipe-tag-list">
+                    {group.items.map((entry) => (
+                      <button
+                        key={entry.tag}
+                        class="recipe-tag-button"
+                        data-state={
+                          filters.requirements.includes(entry.tag)
+                            ? "include"
+                            : filters.requirementsExclude.includes(entry.tag)
+                              ? "exclude"
+                              : "neutral"
+                        }
+                        onClick={() => cycle(entry.tag, "requirement")}
+                        aria-pressed={filters.requirements.includes(entry.tag)}
+                      >
+                        {entry.tag === "-" ? "Brak wymagań" : entry.tag}
+                        {filters.requirementsExclude.includes(entry.tag) && <span class="sr-only"> (wykluczone)</span>}
+                        <span>({entry.count})</span>
+                      </button>
+                    ))}
+                  </div>
+                </details>
               ))}
-            </div>
-            {groupRequirementStats(catalog.data.requirements).map((group) => (
-              <details key={group.label}>
-                <summary>{group.label}</summary>
-                <div class="recipe-tag-list">
-                  {group.items.map((entry) => (
-                    <button
-                      key={entry.tag}
-                      class="recipe-tag-button"
-                      data-state={
-                        filters.requirements.includes(entry.tag)
-                          ? "include"
-                          : filters.requirementsExclude.includes(entry.tag)
-                            ? "exclude"
-                            : "neutral"
-                      }
-                      onClick={() => cycle(entry.tag, "requirement")}
-                      aria-pressed={filters.requirements.includes(entry.tag)}
-                    >
-                      {entry.tag === "-" ? "Brak wymagań" : entry.tag}
-                      {filters.requirementsExclude.includes(entry.tag) && <span class="sr-only"> (wykluczone)</span>}
-                      <span>({entry.count})</span>
-                    </button>
-                  ))}
-                </div>
-              </details>
-            ))}
-          </section>
-        )}
-        <h3>Tagi</h3>
-        {tagGroups.map((group) => (
-          <details key={group.label} open={group.label === "Kategorie"}>
-            <summary>{group.label}</summary>
-            <TagFilterTree
-              entries={group.tags}
-              include={filters.include}
-              exclude={filters.exclude}
-              labels={labels}
-              onCycle={(tag) => cycle(tag)}
-            />
-          </details>
-        ))}
-        <p class="filter-hint">
-          Kliknij tag, aby uwzględnić. Kliknij ponownie, aby wykluczyć. Wybrane kategorie łączą się — wystarczy
-          dopasowanie do jednej z nich. Pozostałe wybrane cechy muszą być spełnione jednocześnie.
-        </p>
+            </section>
+          )}
+          <h3>Tagi</h3>
+          {tagGroups.map((group) => (
+            <details key={group.label} open={group.label === "Kategorie"}>
+              <summary>{group.label}</summary>
+              <TagFilterTree
+                entries={group.tags}
+                include={filters.include}
+                exclude={filters.exclude}
+                labels={labels}
+                onCycle={(tag) => cycle(tag)}
+              />
+            </details>
+          ))}
+          <p class="filter-hint">
+            Kliknij tag, aby uwzględnić. Kliknij ponownie, aby wykluczyć. Wybrane kategorie łączą się — wystarczy
+            dopasowanie do jednej z nich. Pozostałe wybrane cechy muszą być spełnione jednocześnie.
+          </p>
+        </div>
       </aside>
       <main>
         <header class="main-header">
           <div>
-            <p class="eyebrow">DIVINITY: ORIGINAL SIN</p>
+            {isCatalog ? (
+              <p class="eyebrow">{activeGame.title}</p>
+            ) : isItemRoute ? (
+              <nav class="breadcrumb" aria-label="Ścieżka">
+                <a href={rememberedCatalogHref(game, view, currentFilters)}>{activeGame.label}</a>
+                {detailCategory && (
+                  <>
+                    <span aria-hidden="true">›</span>
+                    <a href={catalogHrefWith(game, view, { ...emptyFilters(), include: [detailCategory] })}>
+                      {tagLabel(detailCategory, labels)}
+                    </a>
+                  </>
+                )}
+              </nav>
+            ) : null}
             <h1>
               {isCatalog ? (
                 activeGame.label
@@ -478,6 +567,26 @@ export function App() {
                   Ulepszenia
                 </button>
               </div>
+              {view === "recipes" && (
+                <label class="sort-select">
+                  <span>Sortuj</span>
+                  <select
+                    value={filters.sort}
+                    onChange={(event) => {
+                      const sort = event.currentTarget.value as RecipeSort
+                      setFilters((state) => ({ ...state, sort }))
+                    }}
+                  >
+                    {(Object.keys(sortLabels) as RecipeSort[])
+                      .filter((sort) => sort !== "level" || game === "dos1")
+                      .map((sort) => (
+                        <option key={sort} value={sort}>
+                          {sortLabels[sort]}
+                        </option>
+                      ))}
+                  </select>
+                </label>
+              )}
               <span role="status" aria-live="polite" class="result-count">
                 {view === "items"
                   ? `Przedmioty: ${catalogItems(filtered).length}`
@@ -499,6 +608,7 @@ export function App() {
                 itemRoles={manifest.data?.itemRoles?.[game]}
                 descriptions={descriptions.data ?? undefined}
                 lang={lang}
+                pageSize={80}
               />
             ) : filtered.length ? (
               <RecipeTable
@@ -508,6 +618,7 @@ export function App() {
                 showRequirements={game === "dos1"}
                 searchable
                 itemRoles={manifest.data?.itemRoles?.[game]}
+                pageSize={60}
               />
             ) : (
               <p class="empty-message">Brak receptur pasujących do filtrów.</p>

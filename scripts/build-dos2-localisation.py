@@ -73,20 +73,28 @@ def main():
     for uid, name in english.items():
         if polish.get(uid):
             by_english[name].add(polish[uid])
-    manual = {"Wine Source": "Źródło wina", "Milk Source": "Źródło mleka", "Gold Object": "Złoty przedmiot"}
-    combo_groups = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))
-    for liquid in [*combo_groups["properties"].values(), *combo_groups["objectGroups"].values()]:
-        values = by_english.get(liquid["label"], set())
-        label = next(iter(values)) if len(values) == 1 else manual.get(liquid["label"])
-        if label:
-            selectors[liquid["group"]] = label
+    manual = {"Wine Source": "Źródło wina", "Milk Source": "Źródło mleka", "Gold Object": "Złoty przedmiot", "Bones": "Kości",
+              "Voidwoken Fish": "Skażona Pustką ryba", "Eternal Artefact": "Artefakt Odwiecznych",
+              # Rune sizes follow the game's rune names ("Mała runa płomienia", "Potężna mała runa…").
+              **{f"{kind}{size} Rune{power}": f"{prefix}{pl} runa".capitalize() for size, pl in
+                 [("Small", "mała"), ("Medium", "średnia"), ("Large", "duża"), ("Giant", "ogromna")]
+                 for kind, power, prefix in [("", "", ""), ("Mystical ", "", "Mistyczna "), ("", " Of Power", "Potężna ")]}}
     # Selectors are written with dashes ("Cutting-Tool"); reuse the item name's translation.
     for path in (ROOT / "data/library/recipes").glob("*.json"):
         for recipe in json.loads(path.read_text(encoding="utf-8"))["recipes"]:
             for item in recipe["ingredients"]:
                 tag = item.get("selectorTag")
-                if tag and tag not in selectors and names.get(tag.replace("-", " ")):
-                    selectors[tag] = names[tag.replace("-", " ")]
+                name = item["name"].lstrip("#").replace("-", " ")
+                if tag and tag not in selectors and names.get(name):
+                    selectors[tag] = names[name]
+    combo_groups = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))
+    for liquid in [*combo_groups["properties"].values(), *combo_groups["objectGroups"].values()]:
+        if liquid["group"] in selectors or liquid["group"].startswith("DOS1-"):
+            continue
+        values = by_english.get(liquid["label"], set())
+        label = next(iter(values)) if len(values) == 1 else manual.get(liquid["label"])
+        if label:
+            selectors[liquid["group"]] = label
     output = {
         "source": {
             "edition": "Divinity Original Sin 2 Definitive Edition",

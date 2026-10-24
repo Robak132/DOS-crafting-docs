@@ -79,7 +79,9 @@ export async function generateData(outputDirectory = "dist") {
       item.icon = resolveItemIcon(icons, game, item)
       item.effect = effects[game]?.[itemEffectKey(item)]?.en ? effects[game][itemEffectKey(item)] : undefined
     }
-    const resolvedGroups = buildItemGroups(data.recipes, 1, inventory)
+    // Upgrade ingredients such as "#Mystical-Small-Rune" are groups too.
+    const upgradeSelectors = data.upgrades.flatMap((upgrade) => upgrade.ingredients.filter(isItemGroup))
+    const resolvedGroups = buildItemGroups(data.recipes, 1, [...inventory, ...upgradeSelectors])
     data.recipes = expandSmallGroups(data.recipes, resolvedGroups)
     const statLabels = new Map(
       [...data.tags, ...data.requirements, ...data.selectors]
@@ -129,6 +131,14 @@ export async function generateData(outputDirectory = "dist") {
           item.groupSize = group.members.length
           delete item.icon
         }
+      }
+    }
+    for (const item of data.upgrades.flatMap((upgrade) => upgrade.ingredients)) {
+      const group = data.groups[itemIconKey(item.name)]
+      if (group && isItemGroup(item)) {
+        item.groupId = group.id
+        item.groupSize = group.members.length
+        delete item.icon
       }
     }
     await fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data))

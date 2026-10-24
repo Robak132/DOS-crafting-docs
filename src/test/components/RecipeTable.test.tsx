@@ -86,7 +86,7 @@ test("group chips omit icons and link to matching items instead of an item page"
     />,
   )
   assert.ok(html.includes("recipe-item-group"))
-  assert.ok(html.includes("?view=items&amp;group=fish"))
+  assert.ok(html.includes("?view=items&amp;q=%23Fish&amp;as=result"))
   assert.ok(!html.includes("data/icons/groups/fish.svg"))
   assert.ok(html.includes('class="group-count">4'))
 })

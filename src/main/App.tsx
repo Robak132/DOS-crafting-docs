@@ -1,4 +1,5 @@
 import { TagFilterTree } from "./components/TagFilterTree"
+import { applyGroupQuery } from "./domain/groupSearch"
 import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
 import { groupItemRows } from "./domain/itemGroups"
@@ -126,7 +127,10 @@ export function App() {
         ? []
         : (catalog.data?.recipes ?? [])
   }, [catalog.data, filters.group])
-  const filtered = useMemo(() => filterRecipes(sourceRows, filters, labels), [sourceRows, filters, labels])
+  const filtered = useMemo(() => {
+    const grouped = applyGroupQuery(sourceRows, catalog.data?.groups ?? {}, filters.query, filters.scope)
+    return filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels)
+  }, [sourceRows, catalog.data, filters, labels])
   const upgrades = useMemo(() => filterUpgrades(catalog.data?.upgrades ?? [], filters), [catalog.data, filters])
   const tagGroups = useMemo(
     () => groupRecipeTags(catalog.data?.tags ?? [], manifest.data?.traitGroups ?? []),
@@ -304,6 +308,7 @@ export function App() {
         <input
           id="recipe-search-input"
           type="search"
+          title='Grupy: #NazwaGrupy albo #"Nazwa grupy"'
           value={query}
           onInput={(event) => setQuery(event.currentTarget.value)}
           placeholder={

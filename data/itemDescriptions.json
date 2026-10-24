@@ -164,6 +164,26 @@
       "en": "Simple, lightweight boots made of rough but hardy cloth. Most such fabrics in Rivellon come from the cloisters of Caltry, whose nuns are famous for their expertise in pigments.",
       "pl": "Proste, lekkie buty wykonane z szorstkiego, lecz trwałego materiału. Większość takich tkanin w Rivellonie pochodzi z klasztorów w Caltry – tamtejsze siostry zakonne słyną z wiedzy o barwnikach."
     },
+    "armcraftedclothtorso01": {
+      "en": "This minimal belt-and-pouch set grants is wearer especial freedom from cumbersome accoutrements.",
+      "pl": "Ta minimalistyczna zbroja daje noszącej go osobie swobodę, jakiej nie zapewni nieporęczne wyposażenie."
+    },
+    "armcraftedclothtorso02": {
+      "en": "This uniquely-designed belt set is made of carefully-tanned cowhide and affords even distribution of pack weight.",
+      "pl": "Ta unikatowa zbroja, wykonana ze starannie wygarbowanej krowiej skóry, zapewnia równomierne rozłożenie ciężaru niesionych przedmiotów."
+    },
+    "armcraftedclothtorso03": {
+      "en": "This uniquely-designed belt set is made of carefully-tanned cowhide and affords even distribution of pack weight.",
+      "pl": "Ta unikatowa zbroja, wykonana ze starannie wygarbowanej krowiej skóry, zapewnia równomierne rozłożenie ciężaru niesionych przedmiotów."
+    },
+    "armcraftedclothtorso04": {
+      "en": "A chic and functional belt likely fashioned by the innovative designers of the Elven garment district.",
+      "pl": "Szykowna i funkcjonalna zbroja wykonana prawdopodobnie przez innowacyjnych elfickich projektantów."
+    },
+    "armcraftedclothtorso05": {
+      "en": "A chic and functional belt likely fashioned by the innovative designers of the Elven garment district.",
+      "pl": "Szykowna i funkcjonalna zbroja wykonana prawdopodobnie przez innowacyjnych elfickich projektantów."
+    },
     "armcraftedleatherboots01": {
       "en": "Light leather boots inlaid with metal decorations balance mobility and protection.",
       "pl": "Lekkie skórzane buty ozdobione metalowymi elementami łączą w sobie lekkość z wytrzymałością."
@@ -179,6 +199,30 @@
     "armcraftedleathertorso04": {
       "en": "A set of fortified leather braces enhanced by protective touches of metal steels the wearer from thieves and assailants.",
       "pl": "Ta solidna zbroja, wzmocniona kawałkami metalu, chroni swojego właściciela przed złodziejami i napastnikami."
+    },
+    "armcraftedmetalboots01": {
+      "en": "These boots are made for marching.",
+      "pl": "Te buty zostały stworzone do marszu."
+    },
+    "armcraftedmetalboots02": {
+      "en": "These boots are made for marching.",
+      "pl": "Te buty zostały stworzone do marszu."
+    },
+    "armcraftedmetalboots03": {
+      "en": "Fortified by steel on each surface, these sturdy, highly armoured boots are the ultimate in protection.",
+      "pl": "Te solidne buty, z każdej strony wzmocnione kawałkami stali, to najwyższa forma ochrony."
+    },
+    "armcraftedmetaltorso01": {
+      "en": "Thin yet tough, this chest plate is inlaid with a winged motif meant to hearken to the gods associated with the swiftness and unpredictability of the wind.",
+      "pl": "Ten cienki, lecz wytrzymały pancerz został ozdobiony symbolem skrzydeł na cześć bóstw związanych z szybkością i nieprzewidywalnością wiatru."
+    },
+    "armcraftedmetaltorso02": {
+      "en": "As beautiful as it is strong, this thick, heavily decorated armour is meant to intimidate as it protects.",
+      "pl": "Ta ciężka, bogato zdobiona zbroja, równie piękna co wytrzymała, ma za zadanie chronić i onieśmielać."
+    },
+    "armcraftedmetaltorso03": {
+      "en": "As beautiful as it is strong, this thick, heavily decorated armour is meant to intimidate as it protects.",
+      "pl": "Ta ciężka, bogato zdobiona zbroja, równie piękna co wytrzymała, ma za zadanie chronić i onieśmielać."
     },
     "armcraftedrobe01": {
       "en": "A loose-fitting, beautifully dyed robe allows for maximum freedom of movement and comfort; its wearer can focus on mindful strategising.",
@@ -2231,6 +2275,10 @@
     "itemkey": {
       "en": "An old key. Now to find what it can unlock...",
       "pl": "Stary klucz. Ciekawe, co otwiera…"
+    },
+    "itemlog": {
+      "en": "A sturdy and unremarkable log, ready to be whittled into something more remarkable in your hands.",
+      "pl": "Kawał solidnej, przeciętnej kłody, z której wyciosać możesz coś bardziej godnego uwagi."
     },
     "itemnails": {
       "en": "A handful of sharp iron nails. Closer examination reveals it would be a sin to waste them.",
@@ -4380,6 +4428,10 @@
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. By je rzucić, musisz go użyć."
     },
+    "scrollearthspray1": {
+      "en": "A scroll is a one time use spell. Use to start casting!",
+      "pl": "Zwój zawiera zaklęcie jednorazowego użytku. By je rzucić, musisz go użyć."
+    },
     "scrollearthsummon1": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. By je rzucić, musisz go użyć."
@@ -4855,6 +4907,290 @@
     "sinew": {
       "en": "Supple, stretchy, and made from the finest beast-gut, this sinew is sure to serve you well.",
       "pl": "Ta wykonana z najwyższej jakości jelita cięciwa jest miękka i elastyczna. Z pewnością długo ci posłuży."
+    },
+    "skillbookbanishsummon": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookblessedearth": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookblitzboltstart": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookburningtouch": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookcausefear": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookchainlightning": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookchillingtouch": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookchillywind": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookcleansepurifyingfire": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookcleansingwater": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookconeearthspray": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookcreategreaterundead": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookcreatesmokescreen": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookcreateundead": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookdeadlyspores": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookdrainwillpower": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookenervation": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookexplodeself": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookfarsight": {
+      "en": "Expert Marksman skills are skills for archers and rangers. High Dexterity improves these skills. Read this book to learn the skill.",
+      "pl": "Umiejętności strzelca wyborowego są przeznaczone dla łuczników i tropicieli. Udoskonala je wysoka zwinność. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfingerofdeath": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookfiresurfaceself": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookflarestart": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookfortify": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookhailattack": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookhaste": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookiceshardstart": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookimmolate": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookimmunetoburning": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High Intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinetyczne wykorzystują moc żywiołu ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookimmunetoelectrify": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookimmunetofreeze": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High Intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne wykorzystują moc żywiołu wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookimmunetopoisoning": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookinfectiousflame": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookinstantpressure": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookinvisibilityself": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookinvisibilitytarget": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookinvulnerability": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbookmassdisease": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookmeteorstrike": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookmultistrikelightningstrike": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookpathfirefly": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookpetrifyingtouch": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookpoisondartstart": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookprojectilefireball": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookquakeearthquake": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookrainwater": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookregeneratestart": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookremovepetrification": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookshieldair": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookshieldearth": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbookshieldfire": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookshieldwater": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookshockinghands": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookslow": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookslowmass": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookstormlightning": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbooksummonair": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbooksummonearth": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbooksummonfire": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbooksummonice": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbooksummonspider": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbooksummonwolf": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbooktargetedbless": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbooktargetedcurse": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbooktargeteddamageboost": {
+      "en": "Witchcraft Spell. High intelligence improves this spell. Read this book to learn it.",
+      "pl": "Zaklęcie czarnej magii. Wysoka inteligencja udoskonala to zaklęcie. Przeczytaj tę książkę, by się go nauczyć."
+    },
+    "skillbooktargetedoilsurface": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia geomantyczne to zaklęcia czerpiące z magii ziemi. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się zaklęcia."
+    },
+    "skillbooktargetedperceptionboost": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia pirokinektyczne to zaklęcia wykorzystujące magię ognia. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookteleportationfreefall": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbooktornadoair": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookwallice": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookwateroflife": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
+    },
+    "skillbookwinterbreathmedium": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Zaklęcia hydrozoficzne to zaklęcia wykorzystujące magię wody. Wysoka inteligencja udoskonala te zaklęcia. Przeczytaj tę książkę, by nauczyć się tego zaklęcia."
     },
     "skull": {
       "en": "Alas! Poor soul. Better that you didn't know him.",
@@ -5500,6 +5836,26 @@
       "en": "A stuffed, woven doll that looks like it could be dangerous to your enemies … if you knew what to do with it.",
       "pl": "Wypchana, pleciona lalka. Wygląda, jakby mogła być bardzo niebezpieczna dla twoich wrogów – jeśli wiesz, jak się nią posłużyć."
     },
+    "toolvoodoodoll1": {
+      "en": "A basic woven voodoo doll that you can use to harm your enemies. Believe!",
+      "pl": "Prosta, pleciona lalka voodoo, z pomocą której możesz zrobić krzywdę swoim wrogom. Na serio!"
+    },
+    "toolvoodoodoll2": {
+      "en": "A woven voodoo doll that you can use to injure your enemies. More pins, more pain!",
+      "pl": "Pleciona lalka voodoo, z pomocą której możesz ranić swoich wrogów. Więcej szpilek, więcej bólu!"
+    },
+    "toolvoodoodoll3": {
+      "en": "A superior voodoo doll that you can use to mutilate your enemies. Just look at that craftsmanship!",
+      "pl": "Lepszej jakości lalka voodoo, za pomocą której możesz kaleczyć swoich wrogów. Spójrz tylko, z jakim kunsztem ją wykonano!"
+    },
+    "toolvoodoodoll4": {
+      "en": "An exemplary voodoo doll that you can use to destroy your enemies. It took a lot of campfire time to whittle in those facial features; the effort was clearly worth it.",
+      "pl": "Wyjątkowa lalka voodoo, za pomocą której możesz niszczyć swoich wrogów. Trzeba było poświęcić sporo czasu przy ognisku, by wystrugać te rysy twarzy, ale wysiłek zdecydowanie się opłacił."
+    },
+    "toolvoodoodoll5": {
+      "en": "A living voodoo doll that you can use to thoroughly annihilate your enemies. It doesn't get any better than this.",
+      "pl": "Żywa lalka voodoo, z pomocą której możesz całkowicie ukatrupić swoich wrogów. Lepszej lalki voodoo nie znajdziesz."
+    },
     "tooth": {
       "en": "The product of a very conscientious tooth-brusher, this tooth makes a fine trophy of war.",
       "pl": "Ten ząb – pozostałość po skrupulatnie dbającej o higienę jamy ustnej osobie – stanowi wspaniałe trofeum."
@@ -5956,6 +6312,58 @@
       "en": "You've seen people wielding this kind of weapon before. Sure, they were marauding bandits, but a precedent is a precedent!",
       "pl": "Już kiedyś dane ci było widzieć ludzi dzierżących broń tego typu. Jasne, byli plądrującymi bandytami, ale precedens to precedens!"
     },
+    "wpncrafted2haxe03": {
+      "en": "The hefty metal head of this axe would look right at home in a forge. Or a skull.",
+      "pl": "Ciężka metalowa głownia tego topora doskonale wyglądałaby w kuźni. Albo w czyjejś czaszce."
+    },
+    "wpncrafted2haxe04": {
+      "en": "An immense axe that appears to have been crafted solely from hardened spite and malice. It suits you perfectly!",
+      "pl": "Zdaje się, że ten olbrzymi topór wykonano ze skamieniałych żółci i jadu. Doskonale do ciebie pasuje!"
+    },
+    "wpncrafted2haxe05": {
+      "en": "Spirits of stone and metal combined to create this formidable axe; in return it asks for the power of both your hands to wield it.",
+      "pl": "W procesie tworzenia tego potężnego topora udział brały duchy kamienia i metalu; w zamian za ich łaskę musisz użyć obu rąk, by go dzierżyć."
+    },
+    "wpncrafted2hsword01": {
+      "en": "An enormous two-handed sword that clangs aggressively against other weapons and hums contentedly against the whetstone.",
+      "pl": "Olbrzymi miecz dwuręczny szczękający z wściekłością o broń przeciwników i mruczący z przyjemności na kamieniu do ostrzenia."
+    },
+    "wpncrafted2hsword02": {
+      "en": "An enormous two-handed sword that clangs aggressively against other weapons and hums contentedly against the whetstone.",
+      "pl": "Olbrzymi miecz dwuręczny szczękający z wściekłością o broń przeciwników i mruczący z przyjemności na kamieniu do ostrzenia."
+    },
+    "wpncrafted2hsword03": {
+      "en": "An ornate sword with a curving blade; it flickers like a flame in battle, seeking fiery blood to complement it.",
+      "pl": "Zdobiony miecz z falistym ostrzem; w czasie bitwy skrzy się niczym płomień, łaknąc gorącej krwi."
+    },
+    "wpncrafted2hsword04": {
+      "en": "An ornate sword with a curving blade; it flickers like a flame in battle, seeking fiery blood to complement it.",
+      "pl": "Zdobiony miecz z falistym ostrzem; w czasie bitwy skrzy się niczym płomień, łaknąc gorącej krwi."
+    },
+    "wpncrafted2hsword05": {
+      "en": "A sword made in the signature style of Vernivian warriors, nicknamed 'Soldier's Paramour' by those left behind by war.",
+      "pl": "Miecz wykuty w charakterystycznym stylu verniviańskich wojowników, zwany Kochanką Żołnierza przez tych, którzy przeżyli bitwy."
+    },
+    "wpncraftedaxe01": {
+      "en": "A timberman's faithful friend, this wood axe will chop whatever needs chopping in your neck of the woods.",
+      "pl": "Ten topór, będący wiernym przyjacielem drwala, zetnie wszystko, co tylko trzeba ściąć w tej okolicy."
+    },
+    "wpncraftedaxe02": {
+      "en": "Equally useful for felling trees and foes, this axe is the soldierly timberman's best companion.",
+      "pl": "Ten topór, przydatny zarówno do ścinania drzew, jak i głów wrogów, to najlepszy przyjaciel wojowniczego drwala."
+    },
+    "wpncraftedaxe03": {
+      "en": "A vicious weapon in the style of the renowned warriors of Firen Tirel. Crave their reputation? Keep practicing, pigeon.",
+      "pl": "Okrutna broń w stylu słynnych wojowników Firen Tirel. Marzysz o ich sławie? Ćwicz dalej, młokosie."
+    },
+    "wpncraftedaxe04": {
+      "en": "Don't like conversations? This intimidating axe can provide the final answer to any questions.",
+      "pl": "Nie lubisz rozmawiać? Ten imponujący topór zapewni ci ostatnie słowo w każdej dyskusji."
+    },
+    "wpncraftedaxe05": {
+      "en": "Don't like conversations? This intimidating axe can provide the final answer to any questions.",
+      "pl": "Nie lubisz rozmawiać? Ten imponujący topór zapewni ci ostatnie słowo w każdej dyskusji."
+    },
     "wpncraftedbow01": {
       "en": "An Elven bow of antique design yet modern construction; the nock is a deep V-shaped groove in tribute to the famed archers of Verdistis.",
       "pl": "Elficki łuk o zabytkowym wyglądzie i nowoczesnej konstrukcji; karb w kształcie litery „V” stanowi hołd złożony słynnym łucznikom z Verdistis."
@@ -5992,6 +6400,26 @@
       "en": "A crossbow framed with more metal than wood and boasting more than a little (No Suggestions) in its construction. This is one heavy hitter.",
       "pl": "Kusza skonstruowana z większej ilości metalu niż drewna i wyraźnie wskazująca na zastosowanie farhangory. To śmiercionośna broń."
     },
+    "wpncrafteddagger01": {
+      "en": "Short and shadowy, this dagger is capable of piercing to the very heart of an argument. Twice.",
+      "pl": "Ten krótki i podejrzany sztylet zakończy nawet najbardziej zaciekłą kłótnię. Dwukrotnie."
+    },
+    "wpncrafteddagger02": {
+      "en": "Perfect for backstabbing your foes in the kidneys. Or peeling an apple.",
+      "pl": "Idealne narzędzie do zadawania wrogom ciosów w plecy. Albo obierania jabłek."
+    },
+    "wpncrafteddagger03": {
+      "en": "An aristocratic weapon, this estoc, like a noble's tongue, is most customarily used for backstabbing.",
+      "pl": "Ten estok – broń arystokratów – jest zazwyczaj używany do zadawania ciosów w plecy."
+    },
+    "wpncrafteddagger04": {
+      "en": "A dagger hand-hewn in a unique artisanal style, engraved with the title 'Cat Claws'.",
+      "pl": "Sztylet wykuty ręcznie w niepowtarzalnym rzemieślniczym stylu z wygrawerowaną nazwą Koci Pazur."
+    },
+    "wpncrafteddagger05": {
+      "en": "A stately blade, this! Just the sort a true gentleman removes from his before his supper. He might not even make it to dessert before a scoundrel stabs him in the back with it.",
+      "pl": "Prawdziwie majestatyczny oręż! To ten typ broni, którą urodzony dżentelmen odpina od pasa przed posiłkiem. Jegomość może jednak nie dożyć deseru, gdy jego miecz zostanie mu wbity w plecy przez jakiegoś łotra."
+    },
     "wpncraftedshield01": {
       "en": "A trusty shield of iron-bound wood. This simple yet functional defensive item won't turn any heads, but it might crack a few skulls.",
       "pl": "Niezawodna tarcza z oprawionego żelazem drewna. Ten prosty, lecz przydatny element pancerza nie zrobi furory na polu bitwy, ale może roztrzaskać kilka czaszek."
@@ -6015,6 +6443,26 @@
     "wpncraftedspear05": {
       "en": "A standard-issue military lance; no surprises here, from its sturdy wood to its gleaming spike.",
       "pl": "Typowa wojskowa lanca; tutaj nie spotkają cię żadne niespodzianki – od solidnego drzewca po błyszczący grot."
+    },
+    "wpncraftedsword01": {
+      "en": "Forged with passion and tempered with precision, what happens to this sword next is up to you.",
+      "pl": "Ten miecz został wykuty z pasją i zahartowany z precyzją; tylko od ciebie zależy, co się z nim stanie."
+    },
+    "wpncraftedsword02": {
+      "en": "A long sword that exudes command from its gilt-edged hilt to the tip of the tapered blade.",
+      "pl": "Ten długi miecz wzbudza grozę całą swoją postacią – od pozłacanej rękojeści aż po czubek zwężonego ostrza."
+    },
+    "wpncraftedsword03": {
+      "en": "Its blade patterned with nicks and scratches, this hefty gut-piercer is an excellent sidekick for bartering, threatening or general intimidation.",
+      "pl": "Ta ciężka broń o wyszczerbionym i porysowanym ostrzu to idealne narzędzie do targowania się, grożenia i wszelkich form zastraszania."
+    },
+    "wpncraftedsword04": {
+      "en": "The emerald satin ribbon that binds the hilt of this silver scimitar tells the tale of its origin amongst the mercenaries  of the Azul Coast.",
+      "pl": "Szmaragdowa atłasowa wstążka zawiązana na rękojeści tego srebrnego bułatu świadczy o jego pochodzeniu z Wybrzeża Azul, na którym dzierżyli go najemnicy."
+    },
+    "wpncraftedsword05": {
+      "en": "Whoever crafted this rudimentary sword was a little too intimately familiar with the phrase 'hatchet job'.",
+      "pl": "Ktokolwiek stworzył ten prymitywny miecz najwyraźniej za bardzo upodobał sobie termin „prowizorka”."
     },
     "wpncraftedswordswordofplanets": {
       "en": "A unique weapon forged from mud and blood. Look closely at the burnished blade, can you see the stars winking at you from within?",
@@ -8482,9 +8930,21 @@
       "en": "Hopefully it tastes better than it looks.",
       "pl": "Miejmy nadzieję, że smakuje lepiej, niż wygląda."
     },
+    "foodfishdvoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
+    },
     "foodfishe": {
       "en": "It seems to cry out to be made into Cyseal pie.",
       "pl": "Wydaje się krzyczeć, że pragnie zostać plackiem rybnym."
+    },
+    "foodfishevoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
+    },
+    "foodfishfvoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
     },
     "foodorange": {
       "en": "Cultivated and exported from the equator by expert Lizard horticulturists.",
@@ -9582,6 +10042,18 @@
       "en": "Mystics say the spirit of a stag remains in its antlers until they are burnt to ash. This spirit may be turned to magical purposes.",
       "pl": "Mistycy twierdzą, że duch jelenia zamieszkuje w rogach, póki nie zostaną spalone na popiół. Można go wykorzystać do celów związanych z magią."
     },
+    "lootataraxianartifactsa": {
+      "en": "It's hard to say whether this is magical or mechanical. Or both. You can probably put this thing to good use somehow...",
+      "pl": "Ciężko powiedzieć, czy to wytwór magiczny, czy mechaniczny. Może jedno i drugie. Pewnie da się jakoś wykorzystać."
+    },
+    "lootataraxianartifactsb": {
+      "en": "| An ancient artifact, seemingly able to hold a charge indefinately |",
+      "pl": "Starożytny artefakt, który wydaje się utrzymywać ładunek w nieskończoność."
+    },
+    "lootataraxianartifactsc": {
+      "en": "It's hard to say whether this is magical or mechanical. Or both. You can probably put this thing to good use somehow...",
+      "pl": "Ciężko powiedzieć, czy to wytwór magiczny, czy mechaniczny. Może jedno i drugie. Pewnie da się jakoś wykorzystać."
+    },
     "lootbedlinenfoldeda": {
       "en": "Useless.",
       "pl": "Bezużyteczne."
@@ -10117,6 +10589,10 @@
     "lootsinewa": {
       "en": "Supple, stretchy, and made from the finest beast-gut, this sinew is sure to serve you well.",
       "pl": "Ta wykonana z najwyższej jakości jelita cięciwa jest miękka i elastyczna. Z pewnością długo ci posłuży."
+    },
+    "lootskullbirda": {
+      "en": "For a skull this small, it still oozes sadness. And magical potential.",
+      "pl": "Malutka czaszka, która wciąż ocieka smutkiem. I magicznym potencjałem."
     },
     "lootskullhumana": {
       "en": "Alas! Poor soul. Better that you weren't acquainted.",
@@ -14487,6 +14963,9 @@
     "armcorpseharvester41goblinpants": {
       "en": "The worksmanship on these supple goblin trousers is particularly fastidious - every stitch perfectly spaced, every edge carefully reinforced."
     },
+    "armcorpseharvester49mordusskullring": {
+      "en": "Kept close, this skull ring of Mordus will lend you the magic bestowed upon it."
+    },
     "armcorpseharvester50rykerrenegadebelt": {
       "en": "Made of simple leather, boosted with Ryker's renegade, this unremarkable belt will at least keep your pants where they ought to be."
     },
@@ -14712,6 +15191,10 @@
     "armwarrioruniqueupperbody": {
       "en": "If you polish it up a little, this platemail armour could double as a mirror.",
       "pl": "Ta zbroja płytowa, jeśli by ją nieco wypolerować, mogłaby służyć za lustro."
+    },
+    "armwingsphoenix": {
+      "en": "You have to love that cheery jingle-jangle as you walk...",
+      "pl": "Ciężko nie cieszyć się na dźwięk podzwaniania przy każdym kroku…"
     },
     "arrow": {
       "en": "Are you sure? Normal arrows are limitless but special arrows are not. Try a better combination with the arrowhead before creating an arrow.",
@@ -15986,6 +16469,10 @@
     "confoodspookypeppercandy": {
       "en": "Don't Eet the peppa. It is not sweeet. 'ou should not eet it."
     },
+    "confoodspookypumpkin": {
+      "en": "Useless.",
+      "pl": "Bezużyteczne."
+    },
     "confoodstewdwarvena": {
       "en": "This simple, gristly dish is considered a fine dessert among Dwarven circles.",
       "pl": "To proste, chrząstkowate danie uchodzi wśród krasnoludów za jedno z najpyszniejszych."
@@ -16342,6 +16829,10 @@
       "en": "Just a barrel.",
       "pl": "Po prostu beczka."
     },
+    "contbarrelalida": {
+      "en": "Looks like someone blew their lid.",
+      "pl": "Wygląda na to, że wieko komuś wystrzeliło."
+    },
     "contbarrelawater": {
       "en": "Water sloshes inside...",
       "pl": "W środku chlupie woda…"
@@ -16361,6 +16852,10 @@
     "contbarreloozea": {
       "en": "The skull truly says it all.",
       "pl": "Ta czaszka naprawdę mówi wszystko."
+    },
+    "contbasket": {
+      "en": "Fits one small to medium pet.",
+      "pl": "Dla małego lub średniej wielkości zwierzaka."
     },
     "contcratemetal": {
       "en": "| Protected by the Spy Master's Magic, this crate contain's an incredible amount of Death Fog and explosives. It can only be detonated on the Spy Master's Command |",
@@ -16676,10 +17171,6 @@
     },
     "craftarmouryhowtobeclassy": {
       "en": "Use to read and learn about crafting armor."
-    },
-    "crafted2haxe": {
-      "en": "This immense axe appears to have been crafted solely from hardened spite and malice. It suits you perfectly!",
-      "pl": "Ten potężny topór wykonano, jak się zdaje, wyłącznie z utwardzonej żółci i jadu. Pasuje do ciebie doskonale!"
     },
     "craftedsword": {
       "en": "Shiny enough to attract a magpie, sharp enough to kill it.",
@@ -17684,9 +18175,21 @@
       "en": "Hopefully it tastes better than it looks.",
       "pl": "Miejmy nadzieję, że smakuje lepiej, niż wygląda."
     },
+    "foodfishdvoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
+    },
     "foodfishe": {
       "en": "It seems to cry out to be made into Cyseal pie.",
       "pl": "Wydaje się krzyczeć, że pragnie zostać plackiem rybnym."
+    },
+    "foodfishevoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
+    },
+    "foodfishfvoidwoken": {
+      "en": "And you thought it smelled bad before...",
+      "pl": "I niby wcześniej brzydko pachniało…"
     },
     "foodorange": {
       "en": "Cultivated and exported from the equator by expert Lizard horticulturists.",
@@ -17775,6 +18278,10 @@
     "furboilingpota2": {
       "en": "Use this boiling pot to make delicious food."
     },
+    "furbucketa": {
+      "en": "Can hold fluids. Or heads.",
+      "pl": "Można tu trzymać różne płyny… lub głowy."
+    },
     "furbucketamilk": {
       "en": "Ingredient",
       "pl": "Składnik"
@@ -17810,6 +18317,10 @@
     "furcraftdistillery": {
       "en": "This machine has a complex system which consists of air pollution control, filtration, dye synthesis, drying, grindling-blendng, standardization and packging. At the end of his process it wll separate end product from solid waste."
     },
+    "furcutleryforka": {
+      "en": "Useless.",
+      "pl": "Bezużyteczne."
+    },
     "furhumanscampingsleepingbagb": {
       "en": "Use this to rest your party when there are no enemies nearby.",
       "pl": "Użyj, by odpocząć, kiedy w okolicy nie ma nieprzyjaciół."
@@ -17823,10 +18334,6 @@
     "furraanaartableta": {
       "en": "Use to read.",
       "pl": "Otwórz, by przeczytać."
-    },
-    "furrichforka": {
-      "en": "Useless.",
-      "pl": "Bezużyteczne."
     },
     "furspinningwheel2": {
       "en": "Crafters use this wheel for making threads."
@@ -17876,6 +18383,14 @@
     "gencraftballistaafire": {
       "en": "Blackring agents dropped care packages all around the world. Assembled siege ballista is indeed a powerful weapon for experienced war strategists. This Ballista is capable of fire attacks and creates a fire cloud surfaces on exploding area."
     },
+    "genglass": {
+      "en": "| A pipe that allows smoking of herbmixes. |",
+      "pl": "Fajka, która umożliwia palenie mieszanek ziołowych."
+    },
+    "genmetal": {
+      "en": "Put a lid on it!",
+      "pl": "Zamknij wieko!"
+    },
     "genmysteriouspart1": {
       "en": "Mysterious part of the some strange mechanism. It looks like a huge wheel."
     },
@@ -17887,6 +18402,10 @@
     },
     "genmysteriouspart4": {
       "en": "Mysterious part of the some strange mechanism. It looks like a huge bowstring."
+    },
+    "genwoodweak": {
+      "en": "A broken lute that won't play any more sweet songs to sing along to.",
+      "pl": "Złamana lutnia, na której nie da się już zagrać słodkich piosenek i przyśpiewek."
     },
     "ghosthelm": {
       "en": "This robe will turn you into a ghost!"
@@ -18158,6 +18677,10 @@
       "pl": "Dostatecznie błyszczący, żeby zwabić srokę i dostatecznie ostry, by ją zabić."
     },
     "harfishstar": {
+      "en": "A little bit of the heavens from the depths of the ocean. Makes you think, eh?",
+      "pl": "Odrobina niebios w głębinach oceanu. Skłania do myślenia, prawda?"
+    },
+    "harfishstarglowing": {
       "en": "A little bit of the heavens from the depths of the ocean. Makes you think, eh?",
       "pl": "Odrobina niebios w głębinach oceanu. Skłania do myślenia, prawda?"
     },
@@ -18632,6 +19155,10 @@
       "en": "It's a cooking pot! For cooking!",
       "pl": "To garnek – użyj go, jeśli akurat potrzebujesz garnka."
     },
+    "itemcuttingboard": {
+      "en": "Chop, chop!",
+      "pl": "Rach-ciach!"
+    },
     "itememptybottle": {
       "en": "An empty bottle reeking of some rotten liquid that used to be inside.",
       "pl": "Pusta butelka cuchnąca jakimś ohydnym płynem niegdyś w niej przechowywanym."
@@ -18659,7 +19186,15 @@
       "en": "There are feathers inside...",
       "pl": "Wewnątrz znajduje się pierze…"
     },
+    "itemrichcupasilver": {
+      "en": "Useless but pretty. Sell it.",
+      "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
+    },
     "itemrichglassa": {
+      "en": "Useless but pretty. Sell it.",
+      "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
+    },
+    "itemrichglassasilver": {
       "en": "Useless but pretty. Sell it.",
       "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
     },
@@ -18668,6 +19203,10 @@
       "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
     },
     "itemrichplatea": {
+      "en": "Useless but pretty. Sell it.",
+      "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
+    },
+    "itemrichplateb": {
       "en": "Useless but pretty. Sell it.",
       "pl": "Bezużyteczne, ale ładne. Sprzedaj to."
     },
@@ -19108,6 +19647,18 @@
       "en": "Mystics say the spirit of a stag remains in its antlers until they are burnt to ash. This spirit may be turned to magical purposes.",
       "pl": "Mistycy twierdzą, że duch jelenia zamieszkuje w rogach, póki nie zostaną spalone na popiół. Można go wykorzystać do celów związanych z magią."
     },
+    "lootataraxianartifactsa": {
+      "en": "It's hard to say whether this is magical or mechanical. Or both. You can probably put this thing to good use somehow...",
+      "pl": "Ciężko powiedzieć, czy to wytwór magiczny, czy mechaniczny. Może jedno i drugie. Pewnie da się jakoś wykorzystać."
+    },
+    "lootataraxianartifactsb": {
+      "en": "| An ancient artifact, seemingly able to hold a charge indefinately |",
+      "pl": "Starożytny artefakt, który wydaje się utrzymywać ładunek w nieskończoność."
+    },
+    "lootataraxianartifactsc": {
+      "en": "It's hard to say whether this is magical or mechanical. Or both. You can probably put this thing to good use somehow...",
+      "pl": "Ciężko powiedzieć, czy to wytwór magiczny, czy mechaniczny. Może jedno i drugie. Pewnie da się jakoś wykorzystać."
+    },
     "lootbedlinenfoldeda": {
       "en": "Useless.",
       "pl": "Bezużyteczne."
@@ -19339,9 +19890,22 @@
       "en": "You're happy these mind maggots are trapped inside the jar...",
       "pl": "Cieszysz się, że te mózgojady uwięzione są w słoju…"
     },
+    "lootlabjar": {
+      "en": "Is that... oh gods... on second thoughts, best not gaze too long into this particular abyss.",
+      "pl": "Czy to… o bogowie… po namyśle dochodzę do wniosku, że w tę konkretną otchłań lepiej nie wpatrywać się zbyt długo."
+    },
     "lootleganthropoda": {
       "en": "Could be any invertebrate's leg, really. Ack.",
       "pl": "Może to być kończyna dowolnego bezkręgowca. Fuj."
+    },
+    "lootlootboxdeffensiveglobal": {
+      "en": "Scrap it with your favorite pickaxe."
+    },
+    "lootlootboxfrontbattle": {
+      "en": "Scrap it with your favorite pickaxe."
+    },
+    "lootlootboxwatchover": {
+      "en": "Scrap it with your favorite pickaxe."
     },
     "lootmetalsharda": {
       "en": "A pretty sharp piece of metal. If you could make sure you didn't cut yourself handling it, it would make for a nifty weapon.",
@@ -19357,6 +19921,9 @@
     },
     "lootneedlethreadamagic22": {
       "en": "A humble but handy magical pair, this needle and thread may require a bit of harrumph before they're able to aid you against the forces of evil."
+    },
+    "lootopenlootboxicon": {
+      "en": "Open Lootbox."
     },
     "lootoreablackrocka2": {
       "en": "Huge rock for crafting stations. Craft it with combining multiple rocks."
@@ -19746,6 +20313,10 @@
       "en": "Supple, stretchy, and made from the finest beast-gut, this sinew is sure to serve you well.",
       "pl": "Ta wykonana z najwyższej jakości jelita cięciwa jest miękka i elastyczna. Z pewnością długo ci posłuży."
     },
+    "lootskullbirda": {
+      "en": "For a skull this small, it still oozes sadness. And magical potential.",
+      "pl": "Malutka czaszka, która wciąż ocieka smutkiem. I magicznym potencjałem."
+    },
     "lootskullhumana": {
       "en": "Alas! Poor soul. Better that you weren't acquainted.",
       "pl": "Niestety! Biedaczysko! Dobrze, że się nie znaliście."
@@ -19811,6 +20382,10 @@
     "loottoydollwooda": {
       "en": "| Every kids dream gift... maybe |",
       "pl": "Wymarzony prezent każdego dziecka… prawdopodobnie."
+    },
+    "loottoywoodenblocksa": {
+      "en": "A child's wooden block, scuffed and worn from happy hours of play.",
+      "pl": "Dziecięcy klocek, odrapany od wielu godzin zabawy."
     },
     "loottuska": {
       "en": "A fine trophy to commemorate the slaughter of an innocent beast.",
@@ -21199,6 +21774,10 @@
       "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor resistance to all types of elemental magic.",
       "pl": "Ten wzmacniający napój może i cuchnie skwaśniałym mlekiem, ale już jeden łyk zapewni ci niewielką odporność na wszelkie rodzaje magii żywiołów."
     },
+    "potionlargespeedpotion": {
+      "en": "Infused with falcons' tears, this large-sized elixir infuses its drinker with superior speed.",
+      "pl": "Ten duży eliksir z dodatkiem łez sokoła zapewnia dużą prędkość temu, kto go wypije."
+    },
     "potionlargespeedpotionreal": {
       "en": "Infused with falcons' tears, this large-sized elixir infuses its drinker with superior speed.",
       "pl": "Ten duży eliksir z dodatkiem łez sokoła zapewnia dużą prędkość temu, kto go wypije."
@@ -21234,6 +21813,10 @@
       "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor resistance to all types of elemental magic.",
       "pl": "Ten wzmacniający napój może i cuchnie skwaśniałym mlekiem, ale już jeden łyk zapewni ci niewielką odporność na wszelkie rodzaje magii żywiołów."
     },
+    "potionmediumspeedpotion": {
+      "en": "Infused with falcons' tears, this medium-sized elixir infuses its drinker with superior speed.",
+      "pl": "Ten średniej wielkości eliksir z dodatkiem łez sokoła zapewnia dużą prędkość temu, kto go wypije."
+    },
     "potionmediumspeedpotionreal": {
       "en": "Infused with falcons' tears, this medium-sized elixir infuses its drinker with superior speed.",
       "pl": "Ten średniej wielkości eliksir z dodatkiem łez sokoła zapewnia dużą prędkość temu, kto go wypije."
@@ -21268,6 +21851,10 @@
     "potionminorresistallpotion": {
       "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor resistance to all types of elemental magic.",
       "pl": "Ten wzmacniający napój może i cuchnie skwaśniałym mlekiem, ale już jeden łyk zapewni ci niewielką odporność na wszelkie rodzaje magii żywiołów."
+    },
+    "potionminorspeedpotion": {
+      "en": "Infused with falcons' tears, this elixir infuses its drinker with superior speed.",
+      "pl": "Ten eliksir z dodatkiem łez sokoła zapewnia dużą prędkość temu, kto go wypije."
     },
     "potionminorstrengthpotion": {
       "en": "This small-sized, strength-enhancing brew still smells of the troll whose sweat grants it its magical properties.",
@@ -22227,6 +22814,9 @@
     },
     "scrollskillblankpolymorph": {
       "en": "Can be used to create a random Polymorph Spell scroll..."
+    },
+    "scrollskillblankrandomall": {
+      "en": "Can be used to create a random Spell scroll..."
     },
     "scrollskillblankranger": {
       "en": "Can be used to create a random Ranger Spell scroll..."
@@ -24082,6 +24672,9 @@
       "en": "Use to start digging on the spot. Who knows what you might find?",
       "pl": "Użyj, by zacząć kopać. Kto wie, co uda ci się znaleźć?"
     },
+    "toolsmithanvila": {
+      "en": "Crafter's favorite anvil. You don't need other's anvils when you can make your own. Use it with your favorite hammer to craft items."
+    },
     "toolsmithanvila2": {
       "en": "Crafter's favorite anvil. You don't need other's anvils when you can make your own. Use it with your favorite hammer to craft items."
     },
@@ -24681,6 +25274,9 @@
     "wpnarrowcursedbleedinga": {
       "en": "Known as 'Arrow of the Body Tears' to the renowned Lapiterran archers, this fierce projectile will just as soon blow up in your face as at your enemy's feet."
     },
+    "wpnarrowcursedcloudstatica": {
+      "en": "Wreathed in sparking energy, this cursed arrow can unleash a tempest upon its unlucky target."
+    },
     "wpnarrowcursedcloudsteama": {
       "en": "A hissing cursed arrow packed tight with steam. This baby is ready to explode; shield your eyes as you nock and load."
     },
@@ -25043,6 +25639,10 @@
     "wpncraftedsword1h": {
       "en": "Nobody can deny that a knife on a stick is better than nothing.",
       "pl": "Nikt nie zaprzeczy, że nóż przywiązany do kija to lepsza broń niż żadna."
+    },
+    "wpncraftedwandfire": {
+      "en": "The important thing is the magic in your soul, not the wand itself. Just keep telling yourself that.",
+      "pl": "Najważniejsza jest magia zawarta w twojej duszy, nie w różdżce. Powtarzaj to sobie."
     },
     "wpncrossbowair": {
       "en": "A crossbow framed with more metal than wood and boasting more than a little farhangite in its construction. This is one heavy hitter.",

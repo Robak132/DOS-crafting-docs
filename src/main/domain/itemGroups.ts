@@ -77,13 +77,17 @@ const weaponCategories: Record<string, RegExp> = {
   armorbelt: /\bbelt\b/,
 }
 
+type GameGroup = { group: string; members: string[]; stats: string[]; fixed?: string[] }
 const gameGroups = new Map(
-  [...Object.values(comboProperties.properties), ...Object.values(comboProperties.objectGroups)].map((group) => [
+  [
+    ...Object.values(comboProperties.properties as Record<string, GameGroup>),
+    ...Object.values(comboProperties.objectGroups as Record<string, GameGroup>),
+  ].map((group) => [
     group.group,
     {
       stats: new Set(group.stats),
       names: new Set(group.members.map(itemIconKey)),
-      fixed: new Set(("fixed" in group ? group.fixed : []).map(itemIconKey)),
+      fixed: new Set((group.fixed ?? []).map(itemIconKey)),
     },
   ]),
 )

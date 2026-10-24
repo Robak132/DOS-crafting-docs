@@ -177,6 +177,7 @@
       "tags": [
         "DOS1",
         "DOS2",
+        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -2027,14 +2028,6 @@
       ]
     },
     {
-      "slug": "empty-barrel",
-      "title": "Empty Barrel",
-      "tags": [
-        "DOS2",
-        "Stations-And-Containers"
-      ]
-    },
-    {
       "slug": "empty-bottle",
       "title": "Empty Bottle",
       "titlePl": "Pusta butelka",
@@ -2187,6 +2180,15 @@
       "tags": [
         "DOS2",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "eternal-artefact-2",
+      "title": "Eternal Artefact",
+      "titlePl": "Artefakt Odwiecznych",
+      "tags": [
+        "Ingredients",
+        "DOS2"
       ]
     },
     {
@@ -4322,26 +4324,6 @@
       ]
     },
     {
-      "slug": "magic-skull",
-      "title": "Magic Skull",
-      "titlePl": "Magiczna czaszka",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "magical-ancient-human-skull",
-      "title": "Magical Ancient Human Skull",
-      "titlePl": "Magiczna prastara ludzka czaszka",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "makeshift-club",
       "title": "Makeshift Club",
       "titlePl": "Prowizoryczna maczuga",
@@ -5415,16 +5397,6 @@
       ]
     },
     {
-      "slug": "oven-furnace-or-mobile-kitchen",
-      "title": "Oven, Furnace, or Mobile Kitchen",
-      "titlePl": "Piecyk, piec lub kuchnia przenośna",
-      "tags": [
-        "DOS1",
-        "DOS2",
-        "Stations-And-Containers"
-      ]
-    },
-    {
       "slug": "panties",
       "title": "Panties",
       "titlePl": "Majtki",
@@ -5486,6 +5458,14 @@
         "DOS2-CO",
         "Food-And-Drink",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "phase-capacitor",
+      "title": "Phase Capacitor",
+      "tags": [
+        "Ingredients",
+        "DOS2"
       ]
     },
     {
@@ -7369,6 +7349,16 @@
       ]
     },
     {
+      "slug": "tiny-bird-skull",
+      "title": "Tiny Bird Skull",
+      "titlePl": "Malutka ptasia czaszka",
+      "tags": [
+        "DOS2-CO",
+        "Ingredients",
+        "DOS2"
+      ]
+    },
+    {
       "slug": "tomato",
       "title": "Tomato",
       "titlePl": "Pomidor",
@@ -7568,6 +7558,36 @@
       ]
     },
     {
+      "slug": "void-tainted-mackerel",
+      "title": "Void-Tainted Mackerel",
+      "titlePl": "Skażona Pustką makrela",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "void-tainted-plaice",
+      "title": "Void-tainted Plaice",
+      "titlePl": "Skażona Pustką flądra",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "void-tainted-sailfish",
+      "title": "Void-tainted Sailfish",
+      "titlePl": "Skażony Pustką miecznik",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "void-tainted-umber-monkfish",
       "title": "Void-Tainted Umber Monkfish",
       "titlePl": "Skażona Pustką żabnica brunatna",
@@ -7592,14 +7612,6 @@
     {
       "slug": "void-touched-livewood-fragments",
       "title": "Void-Touched Livewood Fragments",
-      "tags": [
-        "DOS2",
-        "Ingredients"
-      ]
-    },
-    {
-      "slug": "voidwoken-fish",
-      "title": "Voidwoken Fish",
       "tags": [
         "DOS2",
         "Ingredients"

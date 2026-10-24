@@ -421,7 +421,7 @@ export function groupRequirementStats(requirements: TagStat[]): { label: string;
     { label: "Inne", items: [] as TagStat[], test: () => true },
   ]
   for (const req of requirements) {
-    const group = groups.find((entry) => entry.test(req.tag)) ?? groups.at(-1)
+    const group = groups.find((entry) => entry.test(req.tag)) ?? groups[groups.length - 1]
     group.items.push(req)
   }
   return groups.filter((group) => group.items.length > 0)

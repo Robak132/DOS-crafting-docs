@@ -24,7 +24,7 @@ test("upgrades show the effect, a plain target label and linked ingredients", ()
     /<span class="item-lang-en">Air Resistance<\/span><span class="item-lang-pl">Odporność na powietrze<\/span>/,
   )
   assert.match(html, /<span class="recipe-item">.*Most Weapons/)
-  assert.ok(!html.includes("group="), "the target is not a group link")
+  assert.ok(!html.includes("recipe-item-group"), "the target is not a group link")
   assert.match(html, /href="\/receptury\/air-essence"/)
   assert.ok(html.includes("Crafting 5") && html.includes("Excludes wands") && html.includes("Sheet A1"))
   assert.match(html, /data-filter-tag="Air-Resistance"/)

@@ -12,9 +12,10 @@ const counts = { app: 0, tables: 0, layer: 0 }
 const previous = options.diffed
 options.diffed = (vnode) => {
   previous?.(vnode)
-  if (vnode.type === App) counts.app++
-  if (vnode.type === ItemTable || vnode.type === RecipeTable) counts.tables++
-  if (vnode.type === TooltipLayer) counts.layer++
+  const type: unknown = vnode.type
+  if (type === App) counts.app++
+  if (type === ItemTable || type === RecipeTable) counts.tables++
+  if (type === TooltipLayer) counts.layer++
 }
 window.history.replaceState({}, "", import.meta.env.BASE_URL + "dos2-crafting-overhaul?view=recipes")
 render(<App />, document.getElementById("app")!)

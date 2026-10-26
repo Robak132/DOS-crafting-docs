@@ -31,8 +31,7 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
     rows.add(row)
     map.set(key, rows)
   }
-  recipes.forEach((row, position) => {
-    order.set(row, position)
+  const indexResults = (row: RecipeRow) => {
     if (row.result.statsId) add(resultsByStats, row.result.statsId, row)
     if (row.result.slug) add(resultsBySlug, row.result.slug, row)
     if (!row.result.statsId) for (const key of itemNameKeys(row.result.name)) add(resultsByName, key, row)
@@ -41,6 +40,8 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
       if (item.slug) add(resultsBySlug, item.slug, row)
       for (const key of itemNameKeys(item.name)) add(resultsByName, key, row)
     }
+  }
+  const indexItems = (row: RecipeRow) => {
     for (const item of [row.result, ...(row.extraResults ?? []), ...(row.result.pool ?? []), ...row.ingredients]) {
       if (item.selectorTag) continue
       const key = tooltipItemKey(item)
@@ -49,6 +50,11 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
         itemsBySlug.set(item.slug, item)
       itemsByName.set(itemIconKey(item.name), item)
     }
+  }
+  recipes.forEach((row, position) => {
+    order.set(row, position)
+    indexResults(row)
+    indexItems(row)
   })
   // Aggregate item lists have no selected recipe variant. Keep all of their effects
   // attached to the recipes instead of presenting the last result as the item.
@@ -74,9 +80,10 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
     recipesFor(item: RecipeItem) {
       const cached = cache.get(item)
       if (cached) return cached
-      const rows = new Set(
-        item.statsId ? resultsByStats.get(item.statsId) : item.slug ? resultsBySlug.get(item.slug) : undefined,
-      )
+      let direct: Set<RecipeRow> | undefined
+      if (item.statsId) direct = resultsByStats.get(item.statsId)
+      else if (item.slug) direct = resultsBySlug.get(item.slug)
+      const rows = new Set(direct)
       for (const key of item.statsId ? [] : itemNameKeys(item.name, parseItemQuantity(item.name).base)) {
         for (const row of resultsByName.get(key) ?? []) rows.add(row)
       }

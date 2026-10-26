@@ -9,7 +9,7 @@ import type { RecipeItem } from "../main/domain/recipes"
 import type { CatalogData } from "../main/domain/types"
 
 const key = (item: RecipeItem) => `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
-const keys = (items: RecipeItem[]) => JSON.stringify(items.map(key).sort())
+const keys = (items: RecipeItem[]) => JSON.stringify(items.map(key).sort((a, b) => a.localeCompare(b, "en")))
 
 test("built catalogs have Polish labels and list every recipe once", async () => {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-generated-"))

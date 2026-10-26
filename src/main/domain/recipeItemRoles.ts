@@ -1,5 +1,5 @@
 import type { PageSummary } from "./types"
-import type { RecipeCatalog, RecipeRow } from "./recipes"
+import type { RecipeCatalog, RecipeItem, RecipeRow } from "./recipes"
 import type { ItemCraftRole } from "./recipeView"
 import { recipeResults } from "./recipeResults"
 
@@ -13,27 +13,21 @@ export type { ItemCraftRole }
  * (składniki bazowe — tylko użycia, bez craftu — bez klasy)
  */
 export function getItemCraftRoles(pages: PageSummary[], recipes: RecipeRow[]): Record<string, ItemCraftRole> {
-  const craftable = new Set<string>()
-  const usable = new Set<string>()
-  for (const recipe of recipes) {
-    for (const item of recipe.result.pool ?? recipeResults(recipe)) if (item.slug) craftable.add(item.slug)
-    for (const ingredient of recipe.ingredients) {
-      if (ingredient.slug) usable.add(ingredient.slug)
-    }
-  }
+  const slugs = (items: RecipeItem[]) => new Set(items.flatMap((item) => (item.slug ? [item.slug] : [])))
+  const craftable = slugs(recipes.flatMap((recipe) => recipe.result.pool ?? recipeResults(recipe)))
+  const usable = slugs(recipes.flatMap((recipe) => recipe.ingredients))
 
   const roles: Record<string, ItemCraftRole> = {}
   for (const page of pages) {
-    if (!page.itemPage) continue
-    const slug = page.slug
-    const canCraft = craftable.has(slug)
-    const canUse = usable.has(slug)
-    if (canCraft && canUse) roles[slug] = "mid"
-    else if (canCraft) roles[slug] = "end"
-    else if (!canUse) roles[slug] = "dead"
+    const role = page.itemPage ? craftRole(craftable.has(page.slug), usable.has(page.slug)) : undefined
+    if (role) roles[page.slug] = role
   }
-
   return roles
+}
+
+function craftRole(canCraft: boolean, canUse: boolean): ItemCraftRole | undefined {
+  if (canCraft) return canUse ? "mid" : "end"
+  return canUse ? undefined : "dead"
 }
 
 export function getCatalogItemRoles(

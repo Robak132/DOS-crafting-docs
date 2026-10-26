@@ -1,13 +1,13 @@
-/** (x2) / (2x) / (x2 or x3) / (2x or 3x) */
-const QUANTITY_OR_RE = /\s*\(\s*((?:X\d+|\d+X))\s+OR\s+((?:X\d+|\d+X))\s*\)\s*$/i
-const QUANTITY_SINGLE_RE = /\s*\(\s*((?:X\d+|\d+X))\s*\)\s*$/i
+/** (x2) / (2x) / (x2 or x3) / (2x or 3x), at the end of a trimmed name */
+const QUANTITY_OR_RE = /\(\s*(x\d+|\d+x)\s+or\s+(x\d+|\d+x)\s*\)$/i
+const QUANTITY_SINGLE_RE = /\(\s*(x\d+|\d+x)\s*\)$/i
 /** „Arrowhead x3” / „Arrowhead ×4” (bez nawiasów) */
-const QUANTITY_TRAILING_RE = /\s+[x×](\d+)\s*$/i
+const QUANTITY_TRAILING_RE = /\s[x×](\d+)$/i
 /** „Arrowhead and Arrowhead” → ta sama nazwa dwukrotnie = x2 */
-const QUANTITY_AND_SAME_RE = /^(.+?)\s+and\s+(.+)$/i
+const AND_RE = /\sand\s/i
 
 function normalizeQtyToken(raw: string): string {
-  const match = raw.trim().match(/^x?(\d+)x?$/i)
+  const match = /^x?(\d+)x?$/i.exec(raw.trim())
   return match ? `x${match[1]}` : raw.trim().toLowerCase()
 }
 
@@ -20,33 +20,22 @@ export function parseItemQuantity(raw: string): { base: string; quantities: stri
   const slash = raw.lastIndexOf("/")
   const prefix = slash >= 0 ? raw.slice(0, slash + 1) : ""
   const leaf = slash >= 0 ? raw.slice(slash + 1) : raw
-  const orMatch = leaf.match(QUANTITY_OR_RE)
-  if (orMatch) {
-    return {
-      base: `${prefix}${leaf.replace(QUANTITY_OR_RE, "").trim()}`,
-      quantities: [normalizeQtyToken(orMatch[1]), normalizeQtyToken(orMatch[2])],
-    }
-  }
-  const single = leaf.match(QUANTITY_SINGLE_RE)
-  if (single) {
-    return {
-      base: `${prefix}${leaf.replace(QUANTITY_SINGLE_RE, "").trim()}`,
-      quantities: [normalizeQtyToken(single[1])],
-    }
-  }
-  const trailing = leaf.match(QUANTITY_TRAILING_RE)
-  if (trailing) {
-    return {
-      base: `${prefix}${leaf.replace(QUANTITY_TRAILING_RE, "").trim()}`,
-      quantities: [normalizeQtyToken(`x${trailing[1]}`)],
-    }
-  }
-  const andSame = leaf.match(QUANTITY_AND_SAME_RE)
-  if (andSame && normalizeNameKey(andSame[1]) === normalizeNameKey(andSame[2])) {
-    return {
-      base: `${prefix}${andSame[1].trim()}`,
-      quantities: ["x2"],
-    }
+  // The patterns anchor at the end of the trimmed name, so they never backtrack over its spaces.
+  const text = leaf.trimEnd()
+  const before = (match: RegExpExecArray) => `${prefix}${text.slice(0, match.index).trim()}`
+  const orMatch = QUANTITY_OR_RE.exec(text)
+  if (orMatch)
+    return { base: before(orMatch), quantities: [normalizeQtyToken(orMatch[1]), normalizeQtyToken(orMatch[2])] }
+  const single = QUANTITY_SINGLE_RE.exec(text)
+  if (single) return { base: before(single), quantities: [normalizeQtyToken(single[1])] }
+  const trailing = QUANTITY_TRAILING_RE.exec(text)
+  if (trailing) return { base: before(trailing), quantities: [normalizeQtyToken(`x${trailing[1]}`)] }
+  const and = AND_RE.exec(leaf)
+  if (and && and.index > 0) {
+    const first = leaf.slice(0, and.index)
+    const second = leaf.slice(and.index + and[0].length)
+    if (second && normalizeNameKey(first) === normalizeNameKey(second))
+      return { base: `${prefix}${first.trim()}`, quantities: ["x2"] }
   }
   return { base: raw, quantities: [] }
 }
@@ -60,7 +49,7 @@ export function isRandomQuantity(quantity: string | undefined): boolean {
 
 export function formatItemQuantity(quantity: string | undefined): string {
   if (!quantity) return ""
-  const random = quantity.trim().match(RANDOM_QUANTITY_RE)
+  const random = RANDOM_QUANTITY_RE.exec(quantity.trim())
   if (random) return random[1] ? `×(${random[1]}–${random[2]})` : "×(?)"
   const normalized = normalizeQtyToken(quantity)
   const digits = normalized.replace(/^x/i, "")

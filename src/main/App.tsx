@@ -97,12 +97,100 @@ const routeOwnsFilters = (slug: string) => !slug || slug === "index" || routeNam
 function routeFilters(route: ReturnType<typeof currentRoute>): Filters {
   return restoreFilters(routeGame(route), routeOwnsFilters(route.slug) ? route.search : "")
 }
+function storedLang(): "pl" | "en" {
+  try {
+    return localStorage.getItem("item-lang") === "pl" ? "pl" : "en"
+  } catch {
+    return "en"
+  }
+}
 function routeView(search: string): View {
   const view = new URLSearchParams(search).get("view") ?? stored("crafting_catalog_view", "items")
   return view === "recipes" || view === "upgrades" ? view : "items"
 }
-function LanguageName({ page, lang }: { page: { title: string; titlePl?: string }; lang: string }) {
+function LanguageName({ page, lang }: Readonly<{ page: { title: string; titlePl?: string }; lang: string }>) {
   return <>{lang === "pl" ? (page.titlePl ?? page.title) : page.title}</>
+}
+function ItemHeading({
+  unavailable,
+  item,
+  title,
+  lang,
+}: Readonly<{
+  unavailable: boolean
+  item?: { name: string; namePl?: string; icon?: string }
+  title?: string
+  lang: string
+}>) {
+  if (unavailable) return <>Nie znaleziono strony</>
+  return (
+    <>
+      <ItemIcon icon={item?.icon} />
+      <LanguageName page={{ title: item?.name ?? title ?? "Przedmiot", titlePl: item?.namePl }} lang={lang} />
+    </>
+  )
+}
+/** The rows a group filter shows: none when the group is unknown in this game. */
+function groupRows(data: CatalogData | undefined, groupKey: string | null) {
+  if (!groupKey) return data?.recipes ?? []
+  const group = data?.groups?.[groupKey]
+  return group ? groupItemRows(data?.recipes ?? [], group) : []
+}
+function pageTitle(gameLabel: string, isCatalog: boolean, unavailable: boolean, itemTitle?: string) {
+  if (isCatalog) return `${gameLabel} — katalog craftingu`
+  if (unavailable) return "Nie znaleziono strony — Divinity"
+  return `${itemTitle ?? "Przedmiot"} — Divinity`
+}
+/** The same-site address a plain left click on a link opens, or undefined when the browser should handle it. */
+function internalLink(event: MouseEvent, target: Element): URL | undefined {
+  const link = target.closest<HTMLAnchorElement>("a[href]")
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.button !== 0) return undefined
+  if (link.target === "_blank" || link.getAttribute("href")?.startsWith("#")) return undefined
+  const url = new URL(link.href)
+  const sameSite = url.origin === window.location.origin && url.pathname.startsWith(import.meta.env.BASE_URL)
+  return sameSite ? url : undefined
+}
+/** The active filters as one line of text for the sidebar. */
+function filterSummary(filters: Filters, labels: Record<string, string>, groups: CatalogData["groups"]) {
+  const groupName = (filters.group && groups?.[filters.group]?.name) || (filters.group ?? "")
+  return [
+    ...filters.include.map((tag) => tagLabel(tag, labels)),
+    ...filters.exclude.map((tag) => `bez: ${tagLabel(tag, labels)}`),
+    ...filters.requirements.map((value) => `wym: ${value}`),
+    ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
+    filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
+    filters.selectors.length ? "grupa: " + filters.selectors.map((value) => `#${value}`).join(", ") : "",
+    filters.group ? `grupa: ${displayItemName(groupName)}` : "",
+    filters.query ? `${scopeLabels[filters.scope].filter}: ${filters.query}` : "",
+  ]
+    .filter(Boolean)
+    .join(" · ")
+}
+/** Whether anything but the tags narrows the catalog. */
+function isNarrowed(filters: Filters) {
+  return (
+    Boolean(filters.query.trim() || filters.group || filters.selectors.length || filters.craftingMax !== null) ||
+    filters.requirements.length > 0 ||
+    filters.requirementsExclude.length > 0
+  )
+}
+function countFilters(filters: Filters) {
+  const level = filters.craftingMax === null ? 0 : 1
+  return (
+    filters.include.length +
+    filters.exclude.length +
+    filters.requirements.length +
+    filters.requirementsExclude.length +
+    level
+  )
+}
+function requirementState(filters: Filters, tag: string) {
+  if (filters.requirements.includes(tag)) return "include"
+  return filters.requirementsExclude.includes(tag) ? "exclude" : "neutral"
+}
+function resultCount(view: View, items: number, upgrades: number, recipes: number) {
+  if (view === "items") return `Przedmioty: ${items}`
+  return view === "upgrades" ? `Ulepszenia: ${upgrades}` : `Receptury: ${recipes}`
 }
 export function App() {
   const [route, setRoute] = useState(currentRoute)
@@ -111,13 +199,7 @@ export function App() {
   const [filters, setFilters] = useState<Filters>(() => routeFilters(currentRoute()))
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [query, setQuery] = useState(filters.query)
-  const [lang, setLang] = useState<"pl" | "en">(() => {
-    try {
-      return localStorage.getItem("item-lang") === "pl" ? "pl" : "en"
-    } catch {
-      return "en"
-    }
-  })
+  const [lang, setLang] = useState(storedLang)
   const root = useRef<HTMLDivElement>(null)
   const manifest = useJson<CatalogManifest>("manifest.json")
   const catalog = useJson<CatalogData>(`catalog-${game}.json`)
@@ -137,14 +219,7 @@ export function App() {
     () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
     [catalog.data],
   )
-  const sourceRows = useMemo(() => {
-    const group = filters.group ? catalog.data?.groups?.[filters.group] : undefined
-    return group
-      ? groupItemRows(catalog.data?.recipes ?? [], group)
-      : filters.group
-        ? []
-        : (catalog.data?.recipes ?? [])
-  }, [catalog.data, filters.group])
+  const sourceRows = useMemo(() => groupRows(catalog.data, filters.group), [catalog.data, filters.group])
   const grouped = useMemo(
     () => applyGroupQuery(sourceRows, catalog.data?.groups ?? {}, filters.query, filters.scope),
     [sourceRows, catalog.data, filters.query, filters.scope],
@@ -155,10 +230,7 @@ export function App() {
   )
   // Tag counts follow the search and other narrowing, but not the tags themselves: each count says how many
   // items picking that tag would add to what is shown.
-  const narrowed =
-    Boolean(filters.query.trim() || filters.group || filters.selectors.length || filters.craftingMax !== null) ||
-    filters.requirements.length > 0 ||
-    filters.requirementsExclude.length > 0
+  const narrowed = isNarrowed(filters)
   const liveTags = useMemo(() => {
     const tags = catalog.data?.tags ?? []
     if (!narrowed || view === "upgrades") return tags
@@ -241,11 +313,7 @@ export function App() {
     return () => clearTimeout(timer)
   }, [query])
   useEffect(() => {
-    document.title = isCatalog
-      ? `${activeGame.label} — katalog craftingu`
-      : unavailablePage
-        ? "Nie znaleziono strony — Divinity"
-        : `${detail.data?.title ?? "Przedmiot"} — Divinity`
+    document.title = pageTitle(activeGame.label, isCatalog, unavailablePage, detail.data?.title)
   }, [activeGame.label, detail.data, isCatalog, unavailablePage])
 
   const changeQuery = (value: string, scope: Filters["scope"] = "result") => {
@@ -265,53 +333,22 @@ export function App() {
       else if (chip.dataset.searchText) changeQuery(chip.dataset.searchText, "ingredient")
       return
     }
-    const link = event.target.closest<HTMLAnchorElement>("a[href]")
-    if (
-      !link ||
-      event.ctrlKey ||
-      event.metaKey ||
-      event.shiftKey ||
-      event.altKey ||
-      event.button !== 0 ||
-      link.target === "_blank" ||
-      link.getAttribute("href")?.startsWith("#")
-    )
-      return
-    const url = new URL(link.href)
-    if (url.origin !== window.location.origin || !url.pathname.startsWith(import.meta.env.BASE_URL)) return
+    const url = internalLink(event, event.target)
+    if (!url) return
     event.preventDefault()
     navigate(url)
   }
   const cycle = (tag: string, kind: "tag" | "requirement" = "tag") => {
     const next = cycleFilter(currentFilters, tag, kind)
     if (isCatalog) setFilters(next)
-    else
-      navigate(
-        new URL(`${catalogHref(game, view).split("?")[0]}?${filtersToSearch(next, view)}`, window.location.origin),
-      )
+    else navigate(new URL(catalogHrefWith(game, view, next), window.location.origin))
   }
   const reset = () => {
     setFilters(emptyFilters())
     setQuery("")
   }
-  const filterText = [
-    ...filters.include.map((tag) => tagLabel(tag, labels)),
-    ...filters.exclude.map((tag) => `bez: ${tagLabel(tag, labels)}`),
-    ...filters.requirements.map((value) => `wym: ${value}`),
-    ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
-    filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
-    filters.selectors.length ? `grupa: ${filters.selectors.map((value) => `#${value}`).join(", ")}` : "",
-    filters.group ? `grupa: ${displayItemName(catalog.data?.groups?.[filters.group]?.name ?? filters.group)}` : "",
-    filters.query ? `${scopeLabels[filters.scope].filter}: ${filters.query}` : "",
-  ]
-    .filter(Boolean)
-    .join(" · ")
-  const activeFilterCount =
-    filters.include.length +
-    filters.exclude.length +
-    filters.requirements.length +
-    filters.requirementsExclude.length +
-    (filters.craftingMax === null ? 0 : 1)
+  const filterText = filterSummary(filters, labels, catalog.data?.groups)
+  const activeFilterCount = countFilters(filters)
   const itemHref = (slug: string) => gameItemHref(game, slug)
   const itemRecipes = useMemo(() => {
     if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
@@ -353,6 +390,7 @@ export function App() {
   const detailEffects = uniqueItemEffects(itemRecipes.craft, lang, detailName)
   const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
 
+  const searchingUpgrades = isCatalog && view === "upgrades"
   // One search bar for the whole site: it filters the catalog, and on an item page it opens the catalog.
   const search = (
     <form
@@ -374,16 +412,14 @@ export function App() {
           aria-keyshortcuts="Control+Space"
           value={query}
           onInput={(event) => setQuery(event.currentTarget.value)}
-          placeholder={
-            isCatalog && view === "upgrades" ? "Efekt, przedmiot lub składnik" : scopeLabels[filters.scope].placeholder
-          }
+          placeholder={searchingUpgrades ? "Efekt, przedmiot lub składnik" : scopeLabels[filters.scope].placeholder}
         />
         <select
           class="search-scope"
           aria-label="Zakres wyszukiwania"
           title="Zakres wyszukiwania"
           value={filters.scope}
-          hidden={isCatalog && view === "upgrades"}
+          hidden={searchingUpgrades}
           onChange={(event) => {
             const scope = event.currentTarget.value as Filters["scope"]
             setFilters((state) => ({ ...state, scope }))
@@ -467,13 +503,7 @@ export function App() {
                       <button
                         key={entry.tag}
                         class="recipe-tag-button"
-                        data-state={
-                          filters.requirements.includes(entry.tag)
-                            ? "include"
-                            : filters.requirementsExclude.includes(entry.tag)
-                              ? "exclude"
-                              : "neutral"
-                        }
+                        data-state={requirementState(filters, entry.tag)}
                         onClick={() => cycle(entry.tag, "requirement")}
                         aria-pressed={filters.requirements.includes(entry.tag)}
                       >
@@ -509,9 +539,8 @@ export function App() {
       <main>
         <header class="main-header">
           <div>
-            {isCatalog ? (
-              <p class="eyebrow">{activeGame.title}</p>
-            ) : isItemRoute ? (
+            {isCatalog && <p class="eyebrow">{activeGame.title}</p>}
+            {!isCatalog && isItemRoute && (
               <nav class="breadcrumb" aria-label="Ścieżka">
                 <a href={rememberedCatalogHref(game, view, currentFilters)}>{activeGame.label}</a>
                 {detailCategory && (
@@ -523,20 +552,12 @@ export function App() {
                   </>
                 )}
               </nav>
-            ) : null}
+            )}
             <h1>
               {isCatalog ? (
                 activeGame.label
-              ) : unavailablePage ? (
-                "Nie znaleziono strony"
               ) : (
-                <>
-                  <ItemIcon icon={detailName?.icon} />
-                  <LanguageName
-                    page={{ title: detailName?.name ?? detail.data?.title ?? "Przedmiot", titlePl: detailName?.namePl }}
-                    lang={lang}
-                  />
-                </>
+                <ItemHeading unavailable={unavailablePage} item={detailName} title={detail.data?.title} lang={lang} />
               )}
             </h1>
           </div>
@@ -588,19 +609,16 @@ export function App() {
                 </label>
               )}
               <span role="status" aria-live="polite" class="result-count">
-                {view === "items"
-                  ? `Przedmioty: ${catalogItems(filtered).length}`
-                  : view === "upgrades"
-                    ? `Ulepszenia: ${upgrades.length}`
-                    : `Receptury: ${filtered.length}`}
+                {resultCount(view, catalogItems(filtered).length, upgrades.length, filtered.length)}
               </span>
             </div>
             {game === "dos2-overhaul" && (
               <p class="catalog-note">Przedmioty i receptury z DOS2 Definitive Edition oraz Crafting Overhaul.</p>
             )}
-            {view === "upgrades" ? (
+            {view === "upgrades" && (
               <UpgradeTable upgrades={upgrades} labels={labels} game={game} showRequirements={game === "dos1"} />
-            ) : view === "items" ? (
+            )}
+            {view === "items" && (
               <ItemTable
                 recipes={filtered}
                 labels={labels}
@@ -610,7 +628,8 @@ export function App() {
                 lang={lang}
                 pageSize={80}
               />
-            ) : filtered.length ? (
+            )}
+            {view === "recipes" && filtered.length > 0 && (
               <RecipeTable
                 recipes={filtered}
                 catalogSlug={activeGame.slug}
@@ -620,7 +639,8 @@ export function App() {
                 itemRoles={manifest.data?.itemRoles?.[game]}
                 pageSize={60}
               />
-            ) : (
+            )}
+            {view === "recipes" && filtered.length === 0 && (
               <p class="empty-message">Brak receptur pasujących do filtrów.</p>
             )}
           </div>

@@ -1,4 +1,3 @@
-export type FullSlug = string
 export type Game = "dos1" | "dos2" | "dos2-overhaul"
 export type View = "items" | "recipes" | "upgrades"
 export const games: { id: Game; slug: string; label: string; title: string }[] = [
@@ -56,16 +55,9 @@ export function parseItemRoute(slug: string): { game: Game; item: string } | und
   return game && item && rest.length === 0 ? { game, item } : undefined
 }
 /** Games whose catalog lists a page; Overhaul also contains every base DOS2 item. */
+const gameMarkers: Record<Game, string[]> = { dos1: ["DOS1"], dos2: ["DOS2"], "dos2-overhaul": ["DOS2", "DOS2-CO"] }
 export function pageGames(tags: string[]): Game[] {
-  return games
-    .filter(({ id }) =>
-      id === "dos1"
-        ? tags.includes("DOS1")
-        : id === "dos2"
-          ? tags.includes("DOS2")
-          : tags.some((tag) => tag === "DOS2" || tag === "DOS2-CO"),
-    )
-    .map(({ id }) => id)
+  return games.filter(({ id }) => gameMarkers[id].some((marker) => tags.includes(marker))).map(({ id }) => id)
 }
 export function gameForSlug(slug: string): Game | undefined {
   return games.find((game) => game.slug === slug)?.id

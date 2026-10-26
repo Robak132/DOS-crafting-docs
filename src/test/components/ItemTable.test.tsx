@@ -137,7 +137,7 @@ test("displayed effect search text finds its source with game vocabulary in both
   for (const lang of ["pl", "en"] as const) {
     for (const row of recipes) {
       const html = renderToString(<ItemTable recipes={[row]} labels={{}} itemHref={(slug) => slug} lang={lang} />)
-      const clickedEffect = html.match(/data-search-effect="([^"]+)"/)![1]
+      const clickedEffect = /data-search-effect="([^"]+)"/.exec(html)![1]
       assert.deepEqual(filterRecipes(recipes, { ...emptyFilters(), query: clickedEffect }, {}), [row])
     }
   }

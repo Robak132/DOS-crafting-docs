@@ -11,9 +11,10 @@
     "preview": "vite preview",
     "generate:data": "tsx scripts/generate-data.ts",
     "test": "tsx --test src/test/domain/*.test.ts src/test/components/*.test.tsx src/test/*.test.ts",
-    "check": "tsc --noEmit && prettier src scripts/*.ts vite.config.ts index.html package.json tsconfig.json .github/workflows/*.yml --check",
-    "format": "prettier src scripts/*.ts vite.config.ts index.html package.json tsconfig.json .github/workflows/*.yml --write",
-    "verify:dist": "tsx scripts/verify-dist.ts"
+    "check": "tsc --noEmit && prettier src scripts/*.ts vite.config.ts eslint.config.js index.html package.json tsconfig.json .github/workflows/*.yml --check",
+    "format": "prettier src scripts/*.ts vite.config.ts eslint.config.js index.html package.json tsconfig.json .github/workflows/*.yml --write",
+    "verify:dist": "tsx scripts/verify-dist.ts",
+    "lint:sonar": "npm --prefix tools/sonar install --no-audit --no-fund && tools/sonar/node_modules/.bin/eslint src scripts vite.config.ts"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0",

@@ -5,7 +5,7 @@ import type { RecipeItem } from "../domain/recipes"
 import { formatItemQuantity } from "../domain/recipeQuantity"
 import { displayItemName } from "../domain/itemName"
 import { groupSearchToken } from "../domain/groupSearch"
-import { FullSlug, gameForSlug, itemHref, pageHref } from "../routing"
+import { gameForSlug, itemHref, pageHref } from "../routing"
 import { itemCraftRoleClass, type ItemCraftRole } from "../domain/recipeView"
 
 function itemAltTitle(item: RecipeItem): string | undefined {
@@ -14,7 +14,7 @@ function itemAltTitle(item: RecipeItem): string | undefined {
 }
 
 /** English name with the Polish one below; group names ("#Water-Source") read as plain words. */
-export function ItemLabel({ item }: { item: RecipeItem }) {
+export function ItemLabel({ item }: Readonly<{ item: RecipeItem }>) {
   const name = displayItemName(item.name)
   const namePl = item.namePl ? displayItemName(item.namePl) : undefined
   if (namePl && namePl !== name) {
@@ -30,17 +30,23 @@ export function ItemLabel({ item }: { item: RecipeItem }) {
 
 type Props = {
   item: RecipeItem
-  catalogSlug: FullSlug
+  catalogSlug: string
   ingredient?: boolean
   searchable?: boolean
   itemRoles?: Record<string, ItemCraftRole>
 }
 
 /** One item of a recipe or upgrade: a group link, an item page link, or a search for a selector. */
-export function RecipeItemView({ item, catalogSlug, ingredient = false, searchable = false, itemRoles = {} }: Props) {
+export function RecipeItemView({
+  item,
+  catalogSlug,
+  ingredient = false,
+  searchable = false,
+  itemRoles = {},
+}: Readonly<Props>) {
   const withQuantity = (node: ComponentChild, item: RecipeItem) => {
     const qty = formatItemQuantity(item.quantity)
-    if (!qty) return node
+    if (!qty) return <>{node}</>
     return (
       <span class="recipe-item-wrap">
         {node}

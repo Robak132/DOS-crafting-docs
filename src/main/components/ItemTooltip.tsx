@@ -31,13 +31,13 @@ export function ItemTooltip({
   recipes,
   description,
   elementRef,
-}: {
+}: Readonly<{
   item: RecipeItem
   lang: "pl" | "en"
   recipes: RecipeRow[]
   description?: ItemDescription
   elementRef?: RefObject<HTMLDivElement | null>
-}) {
+}>) {
   const effects = uniqueItemEffects(recipes, lang, item)
   const descriptionText = itemDescriptionText(description, lang)
   return (

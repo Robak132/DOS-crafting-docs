@@ -9,7 +9,6 @@ export type PageSummary = {
   itemPage: boolean
   categoryPage: boolean
 }
-export type LibraryPage = PageSummary
 export type CatalogManifest = {
   catalogs: Record<RecipeCatalog, { recipes: number; items: number }>
   pages: PageSummary[]

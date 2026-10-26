@@ -3,6 +3,7 @@ import { test } from "node:test"
 import { buildItemGroups, expandSmallGroups, groupItemRows, groupMatcher } from "../../main/domain/itemGroups"
 import type { RecipeItem, RecipeRow } from "../../main/domain/recipes"
 
+const compareNames = (a: string, b: string) => a.localeCompare(b, "en")
 const item = (name: string, extra: Partial<RecipeItem> = {}): RecipeItem => ({ name, tags: [], ...extra })
 const row = (result: RecipeItem, ingredients: RecipeItem[] = []): RecipeRow => ({
   id: result.name,
@@ -81,7 +82,7 @@ test("equipment category ingredients and dyed results group the same slot withou
     const input = groups.find((group) => group.name === ingredient)!
     const output = groups.find((group) => group.name === result)!
     assert.ok(input && output, `${ingredient} and ${result} must both be groups`)
-    assert.deepEqual(input.members.map((member) => member.name).sort(), [...names].sort())
+    assert.deepEqual(input.members.map((member) => member.name).sort(compareNames), [...names].sort(compareNames))
     assert.deepEqual(output.members, input.members)
     assert.equal(groupItemRows(recipes, output).length, 4)
   }

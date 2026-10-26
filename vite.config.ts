@@ -8,7 +8,8 @@ import type { CatalogManifest } from "./src/main/domain/types"
 import { games, itemPath, pageGames } from "./src/main/routing"
 
 export default defineConfig(({ command }) => {
-  const base = `/${(process.env.VITE_BASE_PATH ?? "").replace(/^\/+|\/+$/g, "")}/`.replace(/^\/\/$/, "/")
+  const basePath = (process.env.VITE_BASE_PATH ?? "").split("/").filter(Boolean).join("/")
+  const base = basePath ? `/${basePath}/` : "/"
   // The dev server keeps generated data in a temporary folder outside the repository.
   let generatedDir = ""
   let manifest: CatalogManifest

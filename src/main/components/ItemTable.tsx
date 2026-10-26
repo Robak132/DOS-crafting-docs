@@ -26,7 +26,7 @@ export function ItemTable({
   descriptions = {},
   lang = "en",
   pageSize,
-}: Props) {
+}: Readonly<Props>) {
   const rows = useMemo(() => catalogItemRows(recipes, lang), [recipes, lang])
   const shown = useIncremental(rows, pageSize)
   // A column with no effect in any row would only repeat "—".

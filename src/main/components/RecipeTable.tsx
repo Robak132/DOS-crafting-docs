@@ -1,6 +1,5 @@
 import { RecipeItemView } from "./RecipeItem"
 import type { RecipeItem, RecipeRow } from "../domain/recipes"
-import { FullSlug } from "../routing"
 import { useIncremental } from "./useIncremental"
 import { useMemo } from "preact/hooks"
 import {
@@ -15,7 +14,7 @@ import {
 type Props = {
   recipes: RecipeRow[]
   labels: Record<string, string>
-  catalogSlug: FullSlug
+  catalogSlug: string
   searchable?: boolean
   /** false dla DOS2 / Overhaul — brak wymagań craftingu. */
   showRequirements?: boolean
@@ -33,7 +32,7 @@ export function RecipeTable({
   showRequirements = true,
   itemRoles = {},
   pageSize,
-}: Props) {
+}: Readonly<Props>) {
   const columns = recipeColumnsForCatalog(showRequirements)
   const grouped = useMemo(() => groupRecipes(recipes), [recipes])
   const groups = useIncremental(grouped, pageSize)

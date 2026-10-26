@@ -48,6 +48,16 @@ VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 
 Konfiguracja analizy jest w `sonar-project.properties`: kod z `src/main` i `scripts`, testy z `src/test`, bez danych, `dist/` i plików gry.
 
+**Reguły SonarJS lokalnie (bez serwera).** `eslint.config.js` uruchamia reguły SonarQube dla JavaScript/TypeScript (`eslint-plugin-sonarjs`) przez ESLint:
+
+```sh
+npm run lint:sonar
+```
+
+Narzędzia mają osobny `tools/sonar/package.json` (instaluje je pierwsze uruchomienie): wtyczka i parser `@typescript-eslint/parser` wymagają TypeScriptu 5, a projekt używa TypeScriptu 7, więc nie mogą dzielić `node_modules`. Parser czyta `tsconfig.json`, więc reguły korzystające z typów działają; sprawdzane są pliki objęte `tsconfig.json`.
+
+Obejmuje tylko kod JS/TS; skrypty Pythona i panel z historią daje dopiero SonarQube Server lub Cloud (poniżej).
+
 **SonarQube Cloud (w CI).** Workflow `.github/workflows/sonar.yml` skanuje `main` i pull requesty:
 
 1. Zaloguj się na [sonarcloud.io](https://sonarcloud.io) kontem GitHub i zaimportuj to repozytorium (_+ → Analyze new project_). Dla publicznego repozytorium plan Free wystarcza.

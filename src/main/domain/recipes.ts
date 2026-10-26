@@ -144,12 +144,11 @@ export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog)
   }
   const resolved = resolveItemNames(item.name, catalog)
   const { nameQualifier, ...base } = item
+  const qualifierPl = nameQualifier ? ` (${nameQualifier.pl ?? nameQualifier.en})` : ""
   return {
     ...base,
     name: resolved.name + (nameQualifier ? ` (${nameQualifier.en})` : ""),
-    namePl: resolved.namePl
-      ? resolved.namePl + (nameQualifier ? ` (${nameQualifier.pl ?? nameQualifier.en})` : "")
-      : undefined,
+    namePl: resolved.namePl ? resolved.namePl + qualifierPl : undefined,
   }
 }
 
@@ -181,7 +180,7 @@ export function collectRecipeStats(
     const resultTags = recipe.result.tags.length ? recipe.result.tags : recipe.tags
     withImpliedParents(resultTags).forEach((tag) => addItemToStat(tagItems, tag, itemKey))
     for (const product of recipe.extraResults ?? []) {
-      const productKey = `${product.slug ?? product.name}${product.quantity ? `@${product.quantity}` : ""}`
+      const productKey = (product.slug ?? product.name) + (product.quantity ? "@" + product.quantity : "")
       withImpliedParents(product.tags).forEach((tag) => addItemToStat(tagItems, tag, productKey))
     }
     requirementTokens(recipe.requirements ?? "").forEach((token) => addItemToStat(requirementItems, token, itemKey))

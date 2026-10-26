@@ -1,4 +1,4 @@
-export function ItemIcon({ icon }: { icon?: string }) {
+export function ItemIcon({ icon }: Readonly<{ icon?: string }>) {
   if (!icon) return null
   return (
     <img

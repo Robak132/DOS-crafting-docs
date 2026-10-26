@@ -33,7 +33,7 @@ export type RecipeColumnKey = (typeof recipeColumns)[number]["key"]
 
 /** DOS2 / Overhaul nie mają wymagań craftingu — bez kolumny Wymagania. */
 export function recipeColumnsForCatalog(showRequirements: boolean) {
-  return showRequirements ? [...recipeColumns] : recipeColumns.filter((col) => col.key !== "requirements")
+  return recipeColumns.filter((col) => showRequirements || col.key !== "requirements")
 }
 
 export type RecipeGroup = { key: string; result: RecipeItem; results: RecipeItem[]; variants: RecipeRow[] }
@@ -94,109 +94,76 @@ export type CechyGroupMeta = {
   childTags: string[]
 }
 
-export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] = []): RecipeTagGroup[] {
-  const byTag = new Map(tags.map((stat) => [stat.tag, stat]))
-  const weapons = new Set([
-    "Weapon",
-    "Axe",
-    "Bow",
-    "Crossbow",
-    "Dagger",
-    "Knife",
-    "Mace",
-    "One-Handed-Sword",
-    "Spear",
-    "Sword",
-    "Two-Handed-Axe",
-    "Two-Handed-Mace",
-    "Two-Handed-Sword",
-  ])
-  const armor = new Set(["Armor", "Boot-Armor", "Glove-Armor", "Helmet-Armor", "Lowerbody-Armor", "Upperbody-Armor"])
-  const groups = new Map<string, TagStat[]>([
-    ["Kategorie", []],
-    ["Broń i narzędzia", []],
-    ["Pancerze", []],
-    ["Biżuteria", []],
-    ["Księgi i zwoje", []],
-    ["Materiały i wytwarzanie", []],
-    ["Jedzenie", []],
-    ["Pozostałe", []],
-  ])
+const WEAPON_TAGS = new Set([
+  "Weapon",
+  "Axe",
+  "Bow",
+  "Crossbow",
+  "Dagger",
+  "Knife",
+  "Mace",
+  "One-Handed-Sword",
+  "Spear",
+  "Sword",
+  "Two-Handed-Axe",
+  "Two-Handed-Mace",
+  "Two-Handed-Sword",
+])
+const ARMOR_TAGS = new Set(["Armor", "Boot-Armor", "Glove-Armor", "Helmet-Armor", "Lowerbody-Armor", "Upperbody-Armor"])
+const MATERIAL_PATTERN = /Essence|Rune|Soul|Source|Bone|Skull|Bottle|Nails|Dust|Wool|Yarn|Antler|Claw|Doll/i
 
-  const cechyParentTags = new Set(cechyGroups.map((group) => group.parentTag))
-  const cechyChildToParent = new Map<string, string>()
-  cechyGroups.forEach((group) => {
-    group.childTags.forEach((child) => cechyChildToParent.set(child, group.parentTag))
-  })
-  const claimedCechy = new Set<string>()
-  cechyGroups.forEach((group) => {
-    claimedCechy.add(group.parentTag)
-    group.childTags.forEach((child) => claimedCechy.add(child))
-  })
+/** Sidebar groups in display order, each with the test that puts a tag into it; the last takes the rest. */
+const TAG_GROUPS: [string, (tag: string) => boolean][] = [
+  ["Kategorie", isCategoryTag],
+  ["Broń i narzędzia", (tag) => WEAPON_TAGS.has(tag) || /Weapon|Cutting-Tool/i.test(tag)],
+  ["Pancerze", (tag) => ARMOR_TAGS.has(tag) || /Armor|Shoes|Boots/i.test(tag)],
+  ["Biżuteria", (tag) => ["Amulet", "Ring"].includes(tag) || /Trinket/i.test(tag)],
+  ["Księgi i zwoje", (tag) => /(?:Skillbook|Scroll)(?:-|$)/i.test(tag)],
+  [
+    "Materiały i wytwarzanie",
+    (tag) => ["Dye", "Gold-Object", "Poison-Source", "Skull"].includes(tag) || MATERIAL_PATTERN.test(tag),
+  ],
+  ["Jedzenie", (tag) => /Fish|Honey|Poison-or-Rotten-Eggs|Jellyroom/i.test(tag)],
+  ["Pozostałe", () => true],
+]
 
-  const cechySections: RecipeTagGroup[] = []
-  // Cechy → osobne sekcje w kolejności hierarchy (nie jedna alfabetyczna lista).
+/** Cechy → osobne sekcje w kolejności hierarchy (nie jedna alfabetyczna lista). */
+function cechySectionsFor(byTag: Map<string, TagStat>, cechyGroups: CechyGroupMeta[]): RecipeTagGroup[] {
+  const sections: RecipeTagGroup[] = []
   for (const group of cechyGroups) {
-    const sectionTags: TagStat[] = []
     const parent = byTag.get(group.parentTag)
-    if (parent) {
-      sectionTags.push({ ...parent, label: "Wszystkie" })
-    }
+    const sectionTags: TagStat[] = parent ? [{ ...parent, label: "Wszystkie" }] : []
     for (const childTag of group.childTags) {
       const child = byTag.get(childTag)
-      if (!child) continue
-      sectionTags.push(child)
+      if (child) sectionTags.push(child)
     }
-    if (sectionTags.length > 0) {
-      cechySections.push({ label: group.label, tags: nestTagStats(sectionTags), flat: true })
-    }
+    if (sectionTags.length > 0) sections.push({ label: group.label, tags: nestTagStats(sectionTags), flat: true })
   }
+  return sections
+}
 
+export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] = []): RecipeTagGroup[] {
+  const claimedCechy = new Set(cechyGroups.flatMap((group) => [group.parentTag, ...group.childTags]))
+  const cechySections = cechySectionsFor(new Map(tags.map((stat) => [stat.tag, stat])), cechyGroups)
+  // A-Or-B to rozwinięcie receptur, nie osobna kategoria w sidebarze.
+  const hidden = (tag: string) =>
+    isOrComboTag(tag) || isGameTag(tag) || tag === "Category" || claimedCechy.has(tag) || isTraitTag(tag)
+  const groups = new Map<string, TagStat[]>(TAG_GROUPS.map(([label]) => [label, []]))
   for (const stat of tags) {
-    const tag = stat.tag
-    // A-Or-B to rozwinięcie receptur, nie osobna kategoria w sidebarze.
-    if (
-      isOrComboTag(tag) ||
-      isGameTag(tag) ||
-      tag === "Category" ||
-      claimedCechy.has(tag) ||
-      cechyParentTags.has(tag) ||
-      cechyChildToParent.has(tag) ||
-      isTraitTag(tag)
-    )
-      continue
-    const label = isCategoryTag(tag)
-      ? "Kategorie"
-      : weapons.has(tag) || /(?:Weapon|Cutting-Tool)/i.test(tag)
-        ? "Broń i narzędzia"
-        : armor.has(tag) || /(?:Armor|Shoes|Boots)/i.test(tag)
-          ? "Pancerze"
-          : ["Amulet", "Ring"].includes(tag) || /Trinket/i.test(tag)
-            ? "Biżuteria"
-            : /(?:Skillbook|Scroll)(?:-|$)/i.test(tag)
-              ? "Księgi i zwoje"
-              : ["Dye", "Gold-Object", "Poison-Source", "Skull"].includes(tag) ||
-                  /Essence|Rune|Soul|Source|Bone|Skull|Bottle|Nails|Dust|Wool|Yarn|Antler|Claw|Doll/i.test(tag)
-                ? "Materiały i wytwarzanie"
-                : /Fish|Honey|Poison-or-Rotten-Eggs|Jellyroom/i.test(tag)
-                  ? "Jedzenie"
-                  : "Pozostałe"
+    if (hidden(stat.tag)) continue
+    const [label] = TAG_GROUPS.find(([, test]) => test(stat.tag))!
     groups.get(label)!.push(stat)
   }
 
   const result: RecipeTagGroup[] = []
-  let cechyInserted = false
   for (const [label, groupTags] of groups) {
     if (groupTags.length === 0) continue
     const sortedTags = sortTagStats(groupTags)
     result.push({ label, tags: label === "Kategorie" ? nestTagStats(sortedTags) : sortedTags })
-    // Cechy zaraz po Kategorie.
-    if (label === "Kategorie" && cechySections.length > 0) {
-      result.push(...cechySections)
-      cechyInserted = true
-    }
   }
-  if (!cechyInserted) result.push(...cechySections)
+  // Cechy zaraz po Kategorie.
+  const categories = result.findIndex((group) => group.label === "Kategorie")
+  result.splice(categories < 0 ? result.length : categories + 1, 0, ...cechySections)
   return result
 }
 
@@ -207,7 +174,7 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
     // Recipes with the same products share one result cell.
     const key =
       recipeResults(recipe)
-        .map((item) => `${tooltipItemKey(item)}${item.quantity ? `@${item.quantity}` : ""}`)
+        .map((item) => tooltipItemKey(item) + (item.quantity ? "@" + item.quantity : ""))
         .join("+") + modification
     const group = groups.get(key)
     if (group) group.variants.push(recipe)
@@ -460,8 +427,11 @@ export function catalogItems(recipes: RecipeRow[]): RecipeItem[] {
   for (const item of recipes.flatMap((recipe) => recipe.result.pool ?? recipeResults(recipe))) {
     if (isItemGroup(item)) continue
     const key = item.slug ?? item.name
-    const { requirements: _level, ...entry } = item
-    if (!items.has(key)) items.set(key, { ...entry, quantity: undefined })
+    if (items.has(key)) continue
+    // A pool level belongs to the roll, not to the item.
+    const entry: RecipeItem = { ...item, quantity: undefined }
+    delete entry.requirements
+    items.set(key, entry)
   }
   return [...items.values()].sort((a, b) => a.name.localeCompare(b.name, "pl"))
 }
@@ -476,15 +446,25 @@ export const RECIPE_SORTS: readonly RecipeSort[] = ["default", "name", "level", 
 
 /** Highest skill level a recipe asks for ("Crafting 3; Blacksmithing 4" → 4); none → 0. */
 export function requirementLevel(requirements: string | undefined): number {
-  return Math.max(0, ...requirementTokens(requirements ?? "").map((token) => Number(/(\d+)$/.exec(token)?.[1] ?? 0)))
+  return Math.max(0, ...requirementTokens(requirements ?? "").map(trailingNumber))
+}
+
+/** The number a text ends with ("Crafting 3" → 3); none → 0. */
+function trailingNumber(text: string): number {
+  let start = text.length
+  while (start > 0 && text[start - 1] >= "0" && text[start - 1] <= "9") start--
+  return start < text.length ? Number(text.slice(start)) : 0
 }
 
 /** Orders recipes for display; ties fall back to the result name. "default" keeps the catalog order. */
 export function sortRecipes(recipes: RecipeRow[], sort: RecipeSort, lang: "pl" | "en" = "pl"): RecipeRow[] {
   if (sort === "default") return recipes
   const name = (recipe: RecipeRow) => shownItemName(recipe.result, lang)
-  const key = (recipe: RecipeRow) =>
-    sort === "level" ? requirementLevel(recipe.requirements) : sort === "ingredients" ? recipe.ingredients.length : 0
+  const key = (recipe: RecipeRow) => {
+    if (sort === "level") return requirementLevel(recipe.requirements)
+    if (sort === "ingredients") return recipe.ingredients.length
+    return 0
+  }
   return [...recipes].sort((a, b) => key(a) - key(b) || name(a).localeCompare(name(b), lang))
 }
 

@@ -31,7 +31,7 @@ function PlainTarget({ item }: Readonly<{ item: RecipeItem }>) {
   )
 }
 
-export function UpgradeTable({ upgrades, labels, game, showRequirements = false }: Props) {
+export function UpgradeTable({ upgrades, labels, game, showRequirements = false }: Readonly<Props>) {
   const catalogSlug = games.find((entry) => entry.id === game)!.slug
   if (upgrades.length === 0) return <p class="recipe-empty">Brak ulepszeń pasujących do filtrów.</p>
   return (

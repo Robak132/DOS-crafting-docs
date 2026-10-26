@@ -11,8 +11,13 @@ type Props = {
   onCycle: (tag: string) => void
 }
 
+function filterState(tag: string, include: string[], exclude: string[]) {
+  if (include.includes(tag)) return "include"
+  return exclude.includes(tag) ? "exclude" : "neutral"
+}
+
 /** Selecting a parent filters all its descendants; expanding never changes filters. */
-export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Props) {
+export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Readonly<Props>) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
   return (
     <div class="recipe-tag-list">
@@ -28,9 +33,7 @@ export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Pr
               <button
                 type="button"
                 class="recipe-tag-button"
-                data-state={
-                  include.includes(entry.tag) ? "include" : exclude.includes(entry.tag) ? "exclude" : "neutral"
-                }
+                data-state={filterState(entry.tag, include, exclude)}
                 onClick={() => onCycle(entry.tag)}
                 aria-pressed={include.includes(entry.tag)}
               >

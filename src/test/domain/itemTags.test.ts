@@ -31,7 +31,7 @@ test("recipe rows carry their result's tags and every item reference is tagged f
       ...source.upgrades.flatMap((row) => [row.target, ...row.ingredients]),
     ]
     for (const row of source.recipes) assert.deepEqual(row.tags, row.result.tags, row.id)
-    const modeTag = game === "dos1" ? "DOS1" : game === "dos2" ? "DOS2" : "DOS2-CO"
+    const modeTag = ({ dos1: "DOS1", dos2: "DOS2" } as Record<string, string>)[game] ?? "DOS2-CO"
     for (const item of refs) {
       if (item.tags.some(isCategoryTag)) {
         assert.deepEqual(

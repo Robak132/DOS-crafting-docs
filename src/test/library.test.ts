@@ -153,15 +153,13 @@ test("JSON source rejects malformed recipes and wrong game files", async () => {
 test("every recipe item link resolves to an item page", async () => {
   const library = await loadLibrary()
   const known = new Set(library.pages.map((page) => page.slug))
-  for (const rows of Object.values(library.sources)) {
-    for (const row of rows) {
-      for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
-        if (item.slug) assert.ok(known.has(item.slug), `Missing recipe page: ${item.slug}`)
-      }
-    }
-  }
-  for (const items of Object.values(library.items))
-    for (const item of items) if (item.slug) assert.ok(known.has(item.slug), `Missing item page: ${item.slug}`)
+  const recipeItems = Object.values(library.sources)
+    .flat()
+    .flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients])
+  const missing = (items: { slug?: string }[]) =>
+    items.flatMap((item) => (item.slug && !known.has(item.slug) ? [item.slug] : []))
+  assert.deepEqual(missing(recipeItems), [], "Missing recipe pages")
+  assert.deepEqual(missing(Object.values(library.items).flat()), [], "Missing item pages")
 })
 
 test("source recipes are unique and name real items, not lists or placeholders", async () => {

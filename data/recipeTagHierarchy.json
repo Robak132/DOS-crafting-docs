@@ -421,6 +421,26 @@
           "tag": "Shadow-Resistance",
           "label": "Odporność na cień",
           "children": []
+        },
+        {
+          "tag": "Sleep-Immunity",
+          "label": "Niewrażliwość na sen",
+          "children": []
+        },
+        {
+          "tag": "Poison-Immunity",
+          "label": "Niewrażliwość na truciznę",
+          "children": []
+        },
+        {
+          "tag": "Physical-Resistance",
+          "label": "Odporność na obrażenia fizyczne",
+          "children": []
+        },
+        {
+          "tag": "Piercing-Resistance",
+          "label": "Odporność na obrażenia przeszywające",
+          "children": []
         }
       ]
     },
@@ -661,16 +681,6 @@
           "children": []
         },
         {
-          "tag": "Sleep-Immunity",
-          "label": "Niewrażliwość na sen",
-          "children": []
-        },
-        {
-          "tag": "Poison-Immunity",
-          "label": "Niewrażliwość na truciznę",
-          "children": []
-        },
-        {
           "tag": "Blacksmithing",
           "label": "Kowalstwo",
           "children": []
@@ -688,16 +698,6 @@
         {
           "tag": "AP-Recovery",
           "label": "Odnawianie PA",
-          "children": []
-        },
-        {
-          "tag": "Physical-Resistance",
-          "label": "Odporność na obrażenia fizyczne",
-          "children": []
-        },
-        {
-          "tag": "Piercing-Resistance",
-          "label": "Odporność na obrażenia przeszywające",
           "children": []
         },
         {

@@ -493,17 +493,8 @@
             "Scrolls",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Air_Blank_A"
-        },
-        {
-          "name": "Blank Air Scroll",
-          "namePl": "Niezapisany zwój powietrza",
-          "slug": "blank-air-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Air_Blank_A"
+          "statsId": "Scroll_Skill_Air_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -3794,33 +3785,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
+          "statsId": "LOOT_Scraps_Leather_A",
+          "quantity": "x3"
         },
         {
           "name": "Rope",
@@ -4016,21 +3982,8 @@
             "Junk",
             "Wood"
           ],
-          "statsId": "LOOT_WoodenBranch_A"
-        },
-        {
-          "name": "Long Branch",
-          "namePl": "Długa gałąź",
-          "slug": "long-branch",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Wood"
-          ],
-          "statsId": "LOOT_WoodenBranch_A"
+          "statsId": "LOOT_WoodenBranch_A",
+          "quantity": "x2"
         },
         {
           "name": "Wood Pile",
@@ -8552,21 +8505,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_MetalShard_A"
-        },
-        {
-          "name": "Sharp Piece Of Metal",
-          "namePl": "Ostry kawałek metalu",
-          "slug": "sharp-piece-of-metal",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_MetalShard_A"
+          "statsId": "LOOT_MetalShard_A",
+          "quantity": "x2"
         },
         {
           "name": "Long Branch",
@@ -8865,21 +8805,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         },
         {
           "name": "Rope",
@@ -12017,33 +11944,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "JUNK_FishSkeleton_A"
-        },
-        {
-          "name": "Fish Bone",
-          "namePl": "Ości",
-          "slug": "fish-bone",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "JUNK_FishSkeleton_A"
-        },
-        {
-          "name": "Fish Bone",
-          "namePl": "Ości",
-          "slug": "fish-bone",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "JUNK_FishSkeleton_A"
+          "statsId": "JUNK_FishSkeleton_A",
+          "quantity": "x3"
         }
       ],
       "result": {
@@ -12343,22 +12245,8 @@
             "Bone",
             "IngredientMid"
           ],
-          "statsId": "LOOT_Bone_A"
-        },
-        {
-          "name": "Bone",
-          "namePl": "Kość",
-          "slug": "bone",
-          "tags": [
-            "Ingredients",
-            "Physical-Armour",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Bone",
-            "IngredientMid"
-          ],
-          "statsId": "LOOT_Bone_A"
+          "statsId": "LOOT_Bone_A",
+          "quantity": "x2"
         },
         {
           "name": "Leather Scraps",
@@ -12595,19 +12483,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Topaz"
-        },
-        {
-          "name": "Topaz",
-          "slug": "topaz",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Topaz"
+          "statsId": "LOOT_Gems_Topaz",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -12751,21 +12628,8 @@
             "Pearl",
             "Precious"
           ],
-          "statsId": "HAR_Pearl_A"
-        },
-        {
-          "name": "Pearl",
-          "namePl": "Perła",
-          "slug": "pearl",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Pearl",
-            "Precious"
-          ],
-          "statsId": "HAR_Pearl_A"
+          "statsId": "HAR_Pearl_A",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -12905,19 +12769,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Emerald"
-        },
-        {
-          "name": "Emerald",
-          "slug": "emerald",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Emerald"
+          "statsId": "LOOT_Gems_Emerald",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13061,21 +12914,8 @@
             "Precious",
             "Ruby"
           ],
-          "statsId": "LOOT_Ruby_A"
-        },
-        {
-          "name": "Ruby",
-          "namePl": "Rubin",
-          "slug": "ruby",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious",
-            "Ruby"
-          ],
-          "statsId": "LOOT_Ruby_A"
+          "statsId": "LOOT_Ruby_A",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13217,20 +13057,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Crystal"
-        },
-        {
-          "name": "Crystal",
-          "namePl": "Kryształ",
-          "slug": "crystal",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Crystal"
+          "statsId": "LOOT_Gems_Crystal",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13372,20 +13200,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Malachite"
-        },
-        {
-          "name": "Malachite",
-          "namePl": "Malachit",
-          "slug": "malachite",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Malachite"
+          "statsId": "LOOT_Gems_Malachite",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13531,21 +13347,8 @@
             "Pearl",
             "Precious"
           ],
-          "statsId": "HAR_Pearl_A"
-        },
-        {
-          "name": "Pearl",
-          "namePl": "Perła",
-          "slug": "pearl",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Pearl",
-            "Precious"
-          ],
-          "statsId": "HAR_Pearl_A"
+          "statsId": "HAR_Pearl_A",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13687,19 +13490,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Topaz"
-        },
-        {
-          "name": "Topaz",
-          "slug": "topaz",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Topaz"
+          "statsId": "LOOT_Gems_Topaz",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13841,19 +13633,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Emerald"
-        },
-        {
-          "name": "Emerald",
-          "slug": "emerald",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Emerald"
+          "statsId": "LOOT_Gems_Emerald",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -13997,20 +13778,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Crystal"
-        },
-        {
-          "name": "Crystal",
-          "namePl": "Kryształ",
-          "slug": "crystal",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Crystal"
+          "statsId": "LOOT_Gems_Crystal",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -14154,20 +13923,8 @@
           "craftingCategories": [
             "Precious"
           ],
-          "statsId": "LOOT_Gems_Malachite"
-        },
-        {
-          "name": "Malachite",
-          "namePl": "Malachit",
-          "slug": "malachite",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious"
-          ],
-          "statsId": "LOOT_Gems_Malachite"
+          "statsId": "LOOT_Gems_Malachite",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -14313,21 +14070,8 @@
             "Precious",
             "Ruby"
           ],
-          "statsId": "LOOT_Ruby_A"
-        },
-        {
-          "name": "Ruby",
-          "namePl": "Rubin",
-          "slug": "ruby",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Precious",
-            "Ruby"
-          ],
-          "statsId": "LOOT_Ruby_A"
+          "statsId": "LOOT_Ruby_A",
+          "quantity": "x2"
         },
         {
           "name": "Accessory Kit",
@@ -16922,20 +16666,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Thread_A"
-        },
-        {
-          "name": "Thread",
-          "namePl": "Nić",
-          "slug": "thread",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Thread_A"
+          "statsId": "LOOT_Thread_A",
+          "quantity": "x2"
         },
         {
           "name": "Spinning Wheel",
@@ -17904,21 +17636,8 @@
             "Junk",
             "Wood"
           ],
-          "statsId": "LOOT_WoodenBranch_A"
-        },
-        {
-          "name": "Long Branch",
-          "namePl": "Długa gałąź",
-          "slug": "long-branch",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Wood"
-          ],
-          "statsId": "LOOT_WoodenBranch_A"
+          "statsId": "LOOT_WoodenBranch_A",
+          "quantity": "x2"
         },
         {
           "name": "Sharp Rock",
@@ -18328,20 +18047,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "ITEM_Nails"
-        },
-        {
-          "name": "Nails",
-          "namePl": "Gwoździe",
-          "slug": "nails",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "ITEM_Nails"
+          "statsId": "ITEM_Nails",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -21212,20 +20919,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Cloth_A"
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Cloth_A"
+          "statsId": "LOOT_Scraps_Cloth_A",
+          "quantity": "x2"
         },
         {
           "name": "Event Craft Station",
@@ -22350,17 +22045,8 @@
             "Scrolls",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Earth_Blank_A"
-        },
-        {
-          "name": "Blank Earth Scroll",
-          "namePl": "Niezapisany zwój ziemi",
-          "slug": "blank-earth-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Earth_Blank_A"
+          "statsId": "Scroll_Skill_Earth_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -23546,20 +23232,8 @@
           "craftingCategories": [
             "Wood"
           ],
-          "statsId": "LOOT_Scraps_WoodPile_A_2"
-        },
-        {
-          "name": "Wood Pile",
-          "namePl": "Stos drewna",
-          "slug": "wood-pile",
-          "tags": [
-            "Stations-And-Containers",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_WoodPile_A_2"
+          "statsId": "LOOT_Scraps_WoodPile_A_2",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -23651,20 +23325,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "ITEM_BrokenBottle"
-        },
-        {
-          "name": "Broken Bottle",
-          "namePl": "Stłuczona butelka",
-          "slug": "broken-bottle",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "ITEM_BrokenBottle"
+          "statsId": "ITEM_BrokenBottle",
+          "quantity": "x2"
         },
         {
           "name": "Oven",
@@ -25095,20 +24757,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Cloth_A"
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Cloth_A"
+          "statsId": "LOOT_Scraps_Cloth_A",
+          "quantity": "x2"
         },
         {
           "name": "Rope",
@@ -25173,20 +24823,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
+          "statsId": "LOOT_Scraps_Leather_A",
+          "quantity": "x2"
         },
         {
           "name": "Rope",
@@ -25809,17 +25447,8 @@
             "Scrolls",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Fire_Blank_A"
-        },
-        {
-          "name": "Blank Fire Scroll",
-          "namePl": "Niezapisany zwój ognia",
-          "slug": "blank-fire-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Fire_Blank_A"
+          "statsId": "Scroll_Skill_Fire_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -27748,20 +27377,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Cloth_A"
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Cloth_A"
+          "statsId": "LOOT_Scraps_Cloth_A",
+          "quantity": "x2"
         },
         {
           "name": "Rope",
@@ -28106,21 +27723,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_MagicArmor_Boost_Large_A"
-        },
-        {
-          "name": "Large Magic Armour Potion",
-          "slug": "large-magic-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Magic-Armour",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_MagicArmor_Boost_Large_A"
+          "statsId": "CON_Potion_MagicArmor_Boost_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -28158,21 +27762,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_Large_A"
-        },
-        {
-          "name": "Large Physical Armour Potion",
-          "slug": "large-physical-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Physical-Armour",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_Large_A"
+          "statsId": "CON_Potion_PhysicalArmor_Boost_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -29359,49 +28950,8 @@
             "Junk",
             "Rock"
           ],
-          "statsId": "LOOT_PieceOfRock_A"
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ],
-          "statsId": "LOOT_PieceOfRock_A"
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ],
-          "statsId": "LOOT_PieceOfRock_A"
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ],
-          "statsId": "LOOT_PieceOfRock_A"
+          "statsId": "LOOT_PieceOfRock_A",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -30536,7 +30086,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Ingred_Dough_A"
+          "statsId": "CON_Ingred_Dough_A",
+          "quantity": "x2"
         },
         {
           "name": "Safran",
@@ -30549,34 +30100,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Food_Safran"
-        },
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Ingred_Dough_A"
-        },
-        {
-          "name": "Safran",
-          "slug": "safran",
-          "tags": [
-            "Food-And-Drink",
-            "Strength",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Food_Safran"
+          "statsId": "CON_Food_Safran",
+          "quantity": "x2"
         },
         {
           "name": "Oven",
@@ -30663,20 +30188,8 @@
           "craftingCategories": [
             "Wood"
           ],
-          "statsId": "LOOT_Scraps_Wood_A"
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_Wood_A"
+          "statsId": "LOOT_Scraps_Wood_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -30721,25 +30234,8 @@
           "craftingCategories": [
             "StatPotionEarly"
           ],
-          "statsId": "POTION_Medium_AllStats_Potion"
-        },
-        {
-          "name": "Medium All Stats Potion",
-          "slug": "medium-all-stats-potion",
-          "tags": [
-            "Potions",
-            "Intelligence",
-            "Constitution",
-            "Memory",
-            "Strength",
-            "Wits",
-            "Finesse",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "StatPotionEarly"
-          ],
-          "statsId": "POTION_Medium_AllStats_Potion"
+          "statsId": "POTION_Medium_AllStats_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -30787,18 +30283,8 @@
             "Constitution",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Medium_Constitution_Potion"
-        },
-        {
-          "name": "Medium Constitution Potion",
-          "namePl": "Średnia mikstura Kondycji",
-          "slug": "medium-constitution-potion",
-          "tags": [
-            "Potions",
-            "Constitution",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Medium_Constitution_Potion"
+          "statsId": "POTION_Medium_Constitution_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -30833,17 +30319,8 @@
             "Finesse",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Medium_Dexterity_Potion"
-        },
-        {
-          "name": "Medium Dexterity Potion",
-          "slug": "medium-dexterity-potion",
-          "tags": [
-            "Potions",
-            "Finesse",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Medium_Dexterity_Potion"
+          "statsId": "POTION_Medium_Dexterity_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -30896,55 +30373,8 @@
             "IngredientEarly",
             "Mushrooms"
           ],
-          "statsId": "CON_Herb_Mushroom_A"
-        },
-        {
-          "name": "Penny Bun Mushroom",
-          "namePl": "Borowik szlachetny",
-          "slug": "penny-bun-mushroom",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_A"
-        },
-        {
-          "name": "Penny Bun Mushroom",
-          "namePl": "Borowik szlachetny",
-          "slug": "penny-bun-mushroom",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_A"
-        },
-        {
-          "name": "Penny Bun Mushroom",
-          "namePl": "Borowik szlachetny",
-          "slug": "penny-bun-mushroom",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_A"
+          "statsId": "CON_Herb_Mushroom_A",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -30986,21 +30416,8 @@
           "craftingCategories": [
             "StatPotionEarly"
           ],
-          "statsId": "POTION_Medium_Intelligence_Potion"
-        },
-        {
-          "name": "Medium Intelligence Potion",
-          "namePl": "Średnia mikstura Inteligencji",
-          "slug": "medium-intelligence-potion",
-          "tags": [
-            "Potions",
-            "Intelligence",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "StatPotionEarly"
-          ],
-          "statsId": "POTION_Medium_Intelligence_Potion"
+          "statsId": "POTION_Medium_Intelligence_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -31037,16 +30454,8 @@
             "Potions",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Medium_Perception_Potion"
-        },
-        {
-          "name": "Medium Perception Potion",
-          "slug": "medium-perception-potion",
-          "tags": [
-            "Potions",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Medium_Perception_Potion"
+          "statsId": "POTION_Medium_Perception_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -31097,55 +30506,8 @@
             "IngredientEarly",
             "Mushrooms"
           ],
-          "statsId": "CON_Herb_Mushroom_C"
-        },
-        {
-          "name": "Fly Agaric Mushroom",
-          "namePl": "Muchomor czerwony",
-          "slug": "fly-agaric-mushroom",
-          "tags": [
-            "Ingredients",
-            "POISONED",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_C"
-        },
-        {
-          "name": "Fly Agaric Mushroom",
-          "namePl": "Muchomor czerwony",
-          "slug": "fly-agaric-mushroom",
-          "tags": [
-            "Ingredients",
-            "POISONED",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_C"
-        },
-        {
-          "name": "Fly Agaric Mushroom",
-          "namePl": "Muchomor czerwony",
-          "slug": "fly-agaric-mushroom",
-          "tags": [
-            "Ingredients",
-            "POISONED",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_C"
+          "statsId": "CON_Herb_Mushroom_C",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -31293,49 +30655,8 @@
             "Feather",
             "IngredientSwamps"
           ],
-          "statsId": "LOOT_Feather_A"
-        },
-        {
-          "name": "Feather",
-          "namePl": "Pióro",
-          "slug": "feather",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Feather",
-            "IngredientSwamps"
-          ],
-          "statsId": "LOOT_Feather_A"
-        },
-        {
-          "name": "Feather",
-          "namePl": "Pióro",
-          "slug": "feather",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Feather",
-            "IngredientSwamps"
-          ],
-          "statsId": "LOOT_Feather_A"
-        },
-        {
-          "name": "Feather",
-          "namePl": "Pióro",
-          "slug": "feather",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Feather",
-            "IngredientSwamps"
-          ],
-          "statsId": "LOOT_Feather_A"
+          "statsId": "LOOT_Feather_A",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -31369,17 +30690,8 @@
             "Speed",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Medium_Speed_Potion_Real"
-        },
-        {
-          "name": "Medium Speed Potion",
-          "slug": "medium-speed-potion",
-          "tags": [
-            "Potions",
-            "Speed",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Medium_Speed_Potion_Real"
+          "statsId": "POTION_Medium_Speed_Potion_Real",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -31417,21 +30729,8 @@
           "craftingCategories": [
             "StatPotionEarly"
           ],
-          "statsId": "POTION_Medium_Strength_Potion"
-        },
-        {
-          "name": "Medium Strength Potion",
-          "namePl": "Średnia mikstura Siły",
-          "slug": "medium-strength-potion",
-          "tags": [
-            "Potions",
-            "Strength",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "StatPotionEarly"
-          ],
-          "statsId": "POTION_Medium_Strength_Potion"
+          "statsId": "POTION_Medium_Strength_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -31691,20 +30990,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
+          "statsId": "LOOT_Scraps_Leather_A",
+          "quantity": "x2"
         },
         {
           "name": "Crafter's Hammer",
@@ -31769,33 +31056,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Leather_A"
+          "statsId": "LOOT_Scraps_Leather_A",
+          "quantity": "x3"
         },
         {
           "name": "Crafter's Hammer",
@@ -33133,20 +32395,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Cloth_A"
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Cloth_A"
+          "statsId": "LOOT_Scraps_Cloth_A",
+          "quantity": "x2"
         },
         {
           "name": "Crafter's Hammer",
@@ -33210,20 +32460,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Scraps_Cloth_A"
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Scraps_Cloth_A"
+          "statsId": "LOOT_Scraps_Cloth_A",
+          "quantity": "x2"
         },
         {
           "name": "Leather Scraps",
@@ -33645,23 +32883,8 @@
             "Finesse",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Minor_AllStats_Potion"
-        },
-        {
-          "name": "Minor All Stats Potion",
-          "slug": "minor-all-stats-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Intelligence",
-            "Constitution",
-            "Memory",
-            "Strength",
-            "Wits",
-            "Finesse",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Minor_AllStats_Potion"
+          "statsId": "POTION_Minor_AllStats_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -33726,22 +32949,8 @@
             "Food",
             "IngredientSwamps"
           ],
-          "statsId": "CON_Herb_Farhangite_A"
-        },
-        {
-          "name": "Farhangite",
-          "namePl": "Farhangora",
-          "slug": "farhangite",
-          "tags": [
-            "Ingredients",
-            "Constitution",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientSwamps"
-          ],
-          "statsId": "CON_Herb_Farhangite_A"
+          "statsId": "CON_Herb_Farhangite_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -33778,19 +32987,8 @@
             "Constitution",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Minor_Constitution_Potion"
-        },
-        {
-          "name": "Minor Constitution Potion",
-          "namePl": "Mała mikstura Kondycji",
-          "slug": "minor-constitution-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Constitution",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Minor_Constitution_Potion"
+          "statsId": "POTION_Minor_Constitution_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -33843,22 +33041,8 @@
             "IngredientSwamps",
             "Mushrooms"
           ],
-          "statsId": "CON_Nature_Mushroom_Boletus_A"
-        },
-        {
-          "name": "Boletus",
-          "slug": "boletus",
-          "tags": [
-            "Ingredients",
-            "Finesse",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientSwamps",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Nature_Mushroom_Boletus_A"
+          "statsId": "CON_Nature_Mushroom_Boletus_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -33892,17 +33076,8 @@
             "Ingredients",
             "Finesse",
             "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Minor Dexterity Potion",
-          "slug": "minor-dexterity-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Finesse",
-            "DOS2-CO"
-          ]
+          ],
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -33955,23 +33130,8 @@
             "IngredientEarly",
             "Mushrooms"
           ],
-          "statsId": "CON_Herb_Mushroom_A"
-        },
-        {
-          "name": "Penny Bun Mushroom",
-          "namePl": "Borowik szlachetny",
-          "slug": "penny-bun-mushroom",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_A"
+          "statsId": "CON_Herb_Mushroom_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34029,22 +33189,8 @@
             "IngredientSwamps",
             "Mushrooms"
           ],
-          "statsId": "CON_Nature_Mushroom_Calocera_A"
-        },
-        {
-          "name": "Calocera",
-          "slug": "calocera",
-          "tags": [
-            "Ingredients",
-            "Intelligence",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientSwamps",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Nature_Mushroom_Calocera_A"
+          "statsId": "CON_Nature_Mushroom_Calocera_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34084,19 +33230,8 @@
             "Intelligence",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Minor_Intelligence_Potion"
-        },
-        {
-          "name": "Minor Intelligence Potion",
-          "namePl": "Mała mikstura Inteligencji",
-          "slug": "minor-intelligence-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Intelligence",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Minor_Intelligence_Potion"
+          "statsId": "POTION_Minor_Intelligence_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34153,23 +33288,8 @@
             "IngredientSwamps",
             "Mushrooms"
           ],
-          "statsId": "CON_Nature_Mushroom_Puffball_A"
-        },
-        {
-          "name": "Puffball",
-          "namePl": "Purchawka",
-          "slug": "puffball",
-          "tags": [
-            "Ingredients",
-            "Wits",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientSwamps",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Nature_Mushroom_Puffball_A"
+          "statsId": "CON_Nature_Mushroom_Puffball_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34200,16 +33320,8 @@
             "Potions",
             "Ingredients",
             "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Minor Perception Potion",
-          "slug": "minor-perception-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "DOS2-CO"
-          ]
+          ],
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34260,23 +33372,8 @@
             "IngredientEarly",
             "Mushrooms"
           ],
-          "statsId": "CON_Herb_Mushroom_C"
-        },
-        {
-          "name": "Fly Agaric Mushroom",
-          "namePl": "Muchomor czerwony",
-          "slug": "fly-agaric-mushroom",
-          "tags": [
-            "Ingredients",
-            "POISONED",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientEarly",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Herb_Mushroom_C"
+          "statsId": "CON_Herb_Mushroom_C",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34424,21 +33521,8 @@
             "Feather",
             "IngredientSwamps"
           ],
-          "statsId": "LOOT_Feather_A"
-        },
-        {
-          "name": "Feather",
-          "namePl": "Pióro",
-          "slug": "feather",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Feather",
-            "IngredientSwamps"
-          ],
-          "statsId": "LOOT_Feather_A"
+          "statsId": "LOOT_Feather_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34472,17 +33556,8 @@
             "Ingredients",
             "Speed",
             "DOS2-CO"
-          ]
-        },
-        {
-          "name": "Minor Speed Potion",
-          "slug": "minor-speed-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Speed",
-            "DOS2-CO"
-          ]
+          ],
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34534,22 +33609,8 @@
             "IngredientSwamps",
             "Mushrooms"
           ],
-          "statsId": "CON_Nature_Mushroom_AmethystDeceiver_A"
-        },
-        {
-          "name": "Amethyst Deceiver",
-          "slug": "amethyst-deceiver",
-          "tags": [
-            "Ingredients",
-            "Strength",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food",
-            "IngredientSwamps",
-            "Mushrooms"
-          ],
-          "statsId": "CON_Nature_Mushroom_AmethystDeceiver_A"
+          "statsId": "CON_Nature_Mushroom_AmethystDeceiver_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34589,19 +33650,8 @@
             "Strength",
             "DOS2-CO"
           ],
-          "statsId": "POTION_Minor_Strength_Potion"
-        },
-        {
-          "name": "Minor Strength Potion",
-          "namePl": "Mała mikstura Siły",
-          "slug": "minor-strength-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Strength",
-            "DOS2-CO"
-          ],
-          "statsId": "POTION_Minor_Strength_Potion"
+          "statsId": "POTION_Minor_Strength_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -35149,21 +34199,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         },
         {
           "name": "Scale Scraps",
@@ -35311,22 +34348,8 @@
             "Spoon",
             "Wood"
           ],
-          "statsId": "ITEM_Spoon"
-        },
-        {
-          "name": "Spoon",
-          "namePl": "Łyżka",
-          "slug": "spoon",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Spoon",
-            "Wood"
-          ],
-          "statsId": "ITEM_Spoon"
+          "statsId": "ITEM_Spoon",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -35453,19 +34476,8 @@
           "statsId": "FUR_Cutlery_Fork_A",
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Fork",
-          "slug": "fork",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "statsId": "FUR_Cutlery_Fork_A",
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -37488,16 +36500,8 @@
             "Scrolls",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Witchcraft_Blank_A"
-        },
-        {
-          "name": "Blank Witchcraft Scroll",
-          "slug": "blank-witchcraft-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Witchcraft_Blank_A"
+          "statsId": "Scroll_Skill_Witchcraft_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -38123,46 +37127,8 @@
           "craftingCategories": [
             "IngredientEarly"
           ],
-          "statsId": "BOOK_Paper_Sheet_A"
-        },
-        {
-          "name": "Sheet of Paper",
-          "namePl": "Kartka papieru",
-          "slug": "sheet-of-paper",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "IngredientEarly"
-          ],
-          "statsId": "BOOK_Paper_Sheet_A"
-        },
-        {
-          "name": "Sheet of Paper",
-          "namePl": "Kartka papieru",
-          "slug": "sheet-of-paper",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "IngredientEarly"
-          ],
-          "statsId": "BOOK_Paper_Sheet_A"
-        },
-        {
-          "name": "Sheet of Paper",
-          "namePl": "Kartka papieru",
-          "slug": "sheet-of-paper",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "IngredientEarly"
-          ],
-          "statsId": "BOOK_Paper_Sheet_A"
+          "statsId": "BOOK_Paper_Sheet_A",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -39638,21 +38604,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         },
         {
           "name": "Crafter's Hammer",
@@ -40848,17 +39801,8 @@
             "Ingredients",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Blank_Polymorph"
-        },
-        {
-          "name": "Blank Polymorph Scroll",
-          "slug": "blank-polymorph-scroll",
-          "tags": [
-            "Scrolls",
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Blank_Polymorph"
+          "statsId": "Scroll_Skill_Blank_Polymorph",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -43364,17 +42308,8 @@
             "Ingredients",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Blank_Ranger"
-        },
-        {
-          "name": "Blank Ranger Scroll",
-          "slug": "blank-ranger-scroll",
-          "tags": [
-            "Scrolls",
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Blank_Ranger"
+          "statsId": "Scroll_Skill_Blank_Ranger",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -43560,7 +42495,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Ingred_Dough_A"
+          "statsId": "CON_Ingred_Dough_A",
+          "quantity": "x2"
         },
         {
           "name": "Cinnamon",
@@ -43574,35 +42510,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Food_Cinnamon"
-        },
-        {
-          "name": "Dough",
-          "namePl": "Ciasto",
-          "slug": "dough",
-          "tags": [
-            "Ingredients",
-            "Healing",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Ingred_Dough_A"
-        },
-        {
-          "name": "Cinnamon",
-          "namePl": "Cynamon",
-          "slug": "cinnamon",
-          "tags": [
-            "Food-And-Drink",
-            "Finesse",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Food_Cinnamon"
+          "statsId": "CON_Food_Cinnamon",
+          "quantity": "x2"
         },
         {
           "name": "Oven",
@@ -45656,17 +44565,8 @@
             "Ingredients",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Blank_Rogue"
-        },
-        {
-          "name": "Blank Rogue Scroll",
-          "slug": "blank-rogue-scroll",
-          "tags": [
-            "Scrolls",
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Blank_Rogue"
+          "statsId": "Scroll_Skill_Blank_Rogue",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -48172,21 +47072,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         },
         {
           "name": "Rope",
@@ -49854,20 +48741,8 @@
           "craftingCategories": [
             "Wood"
           ],
-          "statsId": "LOOT_Scraps_Wood_A"
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_Wood_A"
+          "statsId": "LOOT_Scraps_Wood_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -50868,17 +49743,8 @@
             "Ingredients",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Blank_Summoning"
-        },
-        {
-          "name": "Blank Summoning Scroll",
-          "slug": "blank-summoning-scroll",
-          "tags": [
-            "Scrolls",
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Blank_Summoning"
+          "statsId": "Scroll_Skill_Blank_Summoning",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -50975,20 +49841,8 @@
           "craftingCategories": [
             "IngredientSwamps"
           ],
-          "statsId": "TOOL_Pouch_Dust_Pixie_A"
-        },
-        {
-          "name": "Pixie Dust",
-          "namePl": "Czarodziejski pył",
-          "slug": "pixie-dust",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "IngredientSwamps"
-          ],
-          "statsId": "TOOL_Pouch_Dust_Pixie_A"
+          "statsId": "TOOL_Pouch_Dust_Pixie_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -51247,20 +50101,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Wool_A"
-        },
-        {
-          "name": "Wool",
-          "namePl": "Wełna",
-          "slug": "wool",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Wool_A"
+          "statsId": "LOOT_Wool_A",
+          "quantity": "x2"
         },
         {
           "name": "Needle and Thread",
@@ -51319,20 +50161,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
-        },
-        {
-          "name": "Yarn",
-          "namePl": "Przędza",
-          "slug": "yarn",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
+          "statsId": "LOOT_Yarn_A_Wool_A",
+          "quantity": "x2"
         },
         {
           "name": "Needle and Thread",
@@ -52216,21 +51046,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -52844,21 +51661,8 @@
             "Junk",
             "Metal"
           ],
-          "statsId": "LOOT_Scraps_Metal_A"
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ],
-          "statsId": "LOOT_Scraps_Metal_A"
+          "statsId": "LOOT_Scraps_Metal_A",
+          "quantity": "x2"
         },
         {
           "name": "Long Branch",
@@ -66895,17 +65699,8 @@
             "Ingredients",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Blank_Warfare"
-        },
-        {
-          "name": "Blank Warrior Scroll",
-          "slug": "blank-warrior-scroll",
-          "tags": [
-            "Scrolls",
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Blank_Warfare"
+          "statsId": "Scroll_Skill_Blank_Warfare",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -67361,17 +66156,8 @@
             "Scrolls",
             "DOS2-CO"
           ],
-          "statsId": "Scroll_Skill_Water_Blank_A"
-        },
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS2-CO"
-          ],
-          "statsId": "Scroll_Skill_Water_Blank_A"
+          "statsId": "Scroll_Skill_Water_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -69165,7 +67951,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Food_Lemon_A"
+          "statsId": "CON_Food_Lemon_A",
+          "quantity": "x2"
         },
         {
           "name": "Basil",
@@ -69178,35 +67965,8 @@
           "craftingCategories": [
             "Food"
           ],
-          "statsId": "CON_Food_Basil"
-        },
-        {
-          "name": "Lemon",
-          "namePl": "Cytryna",
-          "slug": "lemon",
-          "tags": [
-            "Food-And-Drink",
-            "Ingredients",
-            "Wits",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Food_Lemon_A"
-        },
-        {
-          "name": "Basil",
-          "slug": "basil",
-          "tags": [
-            "Food-And-Drink",
-            "Intelligence",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Food"
-          ],
-          "statsId": "CON_Food_Basil"
+          "statsId": "CON_Food_Basil",
+          "quantity": "x2"
         },
         {
           "name": "Cooking Station",
@@ -70308,46 +69068,8 @@
           "craftingCategories": [
             "Wood"
           ],
-          "statsId": "LOOT_Scraps_Wood_A"
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_Wood_A"
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_Wood_A"
-        },
-        {
-          "name": "Wood Chips",
-          "namePl": "Drzazgi",
-          "slug": "wood-chips",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Wood"
-          ],
-          "statsId": "LOOT_Scraps_Wood_A"
+          "statsId": "LOOT_Scraps_Wood_A",
+          "quantity": "x4"
         }
       ],
       "result": {
@@ -70718,7 +69440,8 @@
     {
       "id": "Ulepszenia/-percent10-AIR-RESISTANCE:Magic Altar+Essence Air+Gold Bar+Shield",
       "effect": {
-        "en": "%10 Air Resistance"
+        "en": "+10% Air Resistance",
+        "pl": "+10% odporności na powietrze"
       },
       "target": {
         "name": "Shield",
@@ -70780,7 +69503,8 @@
     {
       "id": "Ulepszenia/-percent10-EARTH-RESISTANCE:Magic Altar+Essence Earth+Gold Bar+Shield",
       "effect": {
-        "en": "%10 Earth Resistance"
+        "en": "+10% Earth Resistance",
+        "pl": "+10% odporności na ziemię"
       },
       "target": {
         "name": "Shield",
@@ -70842,7 +69566,8 @@
     {
       "id": "Ulepszenia/-percent10-FIRE-RESISTANCE:Magic Altar+Essence Fire+Gold Bar+Shield",
       "effect": {
-        "en": "%10 Fire Resistance"
+        "en": "+10% Fire Resistance",
+        "pl": "+10% odporności na ogień"
       },
       "target": {
         "name": "Shield",
@@ -70904,7 +69629,8 @@
     {
       "id": "Ulepszenia/-percent10-WATER-RESISTANCE:Magic Altar+Essence Water+Gold Bar+Shield",
       "effect": {
-        "en": "%10 Water Resistance"
+        "en": "+10% Water Resistance",
+        "pl": "+10% odporności na wodę"
       },
       "target": {
         "name": "Shield",
@@ -70966,7 +69692,8 @@
     {
       "id": "Ulepszenia/ACID-IMMUNITY:Magic Altar+Mage Gloves+Rune of Stats",
       "effect": {
-        "en": "Acid Immunity"
+        "en": "Acid Immunity",
+        "pl": "Niewrażliwość na kwas"
       },
       "target": {
         "name": "Mage Gloves",
@@ -71013,7 +69740,8 @@
     {
       "id": "Ulepszenia/BLEEDING-IMMUNITY:Magic Altar+Warrior Pants+Rune of Stats",
       "effect": {
-        "en": "Bleeding Immunity"
+        "en": "Bleeding Immunity",
+        "pl": "Niewrażliwość na krwawienie"
       },
       "target": {
         "name": "Warrior Pants",
@@ -71061,7 +69789,8 @@
     {
       "id": "Ulepszenia/BLIND-IMMUNITY:Magic Altar+Mage Helmet+Rune of Stats",
       "effect": {
-        "en": "Blind Immunity"
+        "en": "Blind Immunity",
+        "pl": "Niewrażliwość na oślepienie"
       },
       "target": {
         "name": "Mage Helmet",
@@ -71107,7 +69836,8 @@
     {
       "id": "Ulepszenia/BOOST-(+POISON-RESISTANCE):Voidling Guts+#Armor",
       "effect": {
-        "en": "Boost (+Poison Resistance)"
+        "en": "Boost (+Poison Resistance)",
+        "pl": "Wzmocnienie (+odporność na truciznę)"
       },
       "target": {
         "name": "#Armor",
@@ -71144,7 +69874,8 @@
     {
       "id": "Ulepszenia/BOOSTED-ARMOR-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Finesse Based Armor",
       "effect": {
-        "en": "Boosted Armor (+1) Finesse"
+        "en": "Boosted Armor (+1) Finesse",
+        "pl": "Wzmocnienie: pancerz (+1 Zręczność)"
       },
       "target": {
         "name": "Finesse Based Armor",
@@ -71208,7 +69939,8 @@
     {
       "id": "Ulepszenia/BOOSTED-ARMOR-(+1)-INTELLIGENCE:Magic Altar+Sheet of Paper+Gold Bar+Intelligence Based Armor",
       "effect": {
-        "en": "Boosted Armor (+1) Intelligence"
+        "en": "Boosted Armor (+1) Intelligence",
+        "pl": "Wzmocnienie: pancerz (+1 Inteligencja)"
       },
       "target": {
         "name": "Intelligence Based Armor",
@@ -71271,7 +70003,8 @@
     {
       "id": "Ulepszenia/BOOSTED-ARMOR-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Strength Based Armor",
       "effect": {
-        "en": "Boosted Armor (+1) Strength"
+        "en": "Boosted Armor (+1) Strength",
+        "pl": "Wzmocnienie: pancerz (+1 Siła)"
       },
       "target": {
         "name": "Strength Based Armor",
@@ -71335,7 +70068,8 @@
     {
       "id": "Ulepszenia/BOOSTED-AXE-(+-BLITZ-ATTACK-SKILL):Magic Altar+Tooth+Gold Bar+Axe",
       "effect": {
-        "en": "Boosted Axe (+ Blitz Attack Skill)"
+        "en": "Boosted Axe (+ Blitz Attack Skill)",
+        "pl": "Wzmocnienie: topór (+ umiejętność Blitz Attack)"
       },
       "target": {
         "name": "Axe",
@@ -71397,7 +70131,8 @@
     {
       "id": "Ulepszenia/BOOSTED-AXE-(+1)-ONE-HANDED:Magic Altar+Tormented Soul+Gold Bar+Sword",
       "effect": {
-        "en": "Boosted Axe (+1) One Handed"
+        "en": "Boosted Axe (+1) One Handed",
+        "pl": "Wzmocnienie: topór (+1 Jednoręczna)"
       },
       "target": {
         "name": "Sword",
@@ -71459,7 +70194,8 @@
     {
       "id": "Ulepszenia/BOOSTED-AXE-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Axe",
       "effect": {
-        "en": "Boosted Axe (+1) Strength"
+        "en": "Boosted Axe (+1) Strength",
+        "pl": "Wzmocnienie: topór (+1 Siła)"
       },
       "target": {
         "name": "Axe",
@@ -71522,7 +70258,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BODY-ARMOR-(+-ARMOUR-OF-FROST-SKILL):Magic Altar+Mage Body Armor+Rune of Skills",
       "effect": {
-        "en": "Boosted Body Armor (+ Armour of Frost Skill)"
+        "en": "Boosted Body Armor (+ Armour of Frost Skill)",
+        "pl": "Wzmocnienie: napierśnik (+ umiejętność Armour of Frost)"
       },
       "target": {
         "name": "Mage Body Armor",
@@ -71569,7 +70306,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BODY-ARMOR-(+-CHAMELEON-CLOAK-SKILL):Magic Altar+Light Body Armor+Rune of Skills",
       "effect": {
-        "en": "Boosted Body Armor (+ Chameleon Cloak Skill)"
+        "en": "Boosted Body Armor (+ Chameleon Cloak Skill)",
+        "pl": "Wzmocnienie: napierśnik (+ umiejętność Chameleon Cloak)"
       },
       "target": {
         "name": "Light Body Armor",
@@ -71616,7 +70354,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BODY-ARMOR-(+-REACTIVE-ARMOR-SKILL):Magic Altar+Warrior Body Armor+Rune of Skills",
       "effect": {
-        "en": "Boosted Body Armor (+ Reactive Armor Skill)"
+        "en": "Boosted Body Armor (+ Reactive Armor Skill)",
+        "pl": "Wzmocnienie: napierśnik (+ umiejętność Reactive Armor)"
       },
       "target": {
         "name": "Warrior Body Armor",
@@ -71663,7 +70402,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOOTS-(+-HASTE-SKILL):Magic Altar+Mage Boots+Rune of Skills",
       "effect": {
-        "en": "Boosted Boots (+ Haste Skill)"
+        "en": "Boosted Boots (+ Haste Skill)",
+        "pl": "Wzmocnienie: buty (+ umiejętność Haste)"
       },
       "target": {
         "name": "Mage Boots",
@@ -71710,7 +70450,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOOTS-(+-PHOENIX-DIVE-SKILL):Magic Altar+Warrior Boots+Rune of Skills",
       "effect": {
-        "en": "Boosted Boots (+ Phoenix Dive Skill)"
+        "en": "Boosted Boots (+ Phoenix Dive Skill)",
+        "pl": "Wzmocnienie: buty (+ umiejętność Phoenix Dive)"
       },
       "target": {
         "name": "Warrior Boots",
@@ -71757,7 +70498,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOOTS-(+-TACTICAL-RETREAT-SKILL):Magic Altar+Light Boots+Rune of Skills",
       "effect": {
-        "en": "Boosted Boots (+ Tactical Retreat Skill)"
+        "en": "Boosted Boots (+ Tactical Retreat Skill)",
+        "pl": "Wzmocnienie: buty (+ umiejętność Tactical Retreat)"
       },
       "target": {
         "name": "Light Boots",
@@ -71804,7 +70546,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOOTS-(+-percent5)-DODGE-CHANCE:Magic Altar+Soap+Gold Bar+#Boot-Armor",
       "effect": {
-        "en": "Boosted Boots (+%5) Dodge Chance"
+        "en": "Boosted Boots (+5%) Dodge Chance",
+        "pl": "Wzmocnienie: buty (+5% unik)"
       },
       "target": {
         "name": "#Boot-Armor",
@@ -71863,7 +70606,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOW-(+-ASSASSINATE-SKILL):Magic Altar+Scope Lens+Gold Bar+Bow",
       "effect": {
-        "en": "Boosted Bow (+ Assassinate Skill)"
+        "en": "Boosted Bow (+ Assassinate Skill)",
+        "pl": "Wzmocnienie: łuk (+ umiejętność Assassinate)"
       },
       "target": {
         "name": "Bow",
@@ -71923,7 +70667,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOW-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Bow",
       "effect": {
-        "en": "Boosted Bow (+1) Finesse"
+        "en": "Boosted Bow (+1) Finesse",
+        "pl": "Wzmocnienie: łuk (+1 Zręczność)"
       },
       "target": {
         "name": "Bow",
@@ -71986,7 +70731,8 @@
     {
       "id": "Ulepszenia/BOOSTED-BOW-(+1)-RANGED:Magic Altar+Tormented Soul+Gold Bar+Bow",
       "effect": {
-        "en": "Boosted Bow (+1) Ranged"
+        "en": "Boosted Bow (+1) Ranged",
+        "pl": "Wzmocnienie: łuk (+1 Dystansowa)"
       },
       "target": {
         "name": "Bow",
@@ -72049,7 +70795,8 @@
     {
       "id": "Ulepszenia/BOOSTED-CROSSBOW-(+-ASSASSINATE-SKILL):Magic Altar+Scope Lens+Gold Bar+Crossbow",
       "effect": {
-        "en": "Boosted Crossbow (+ Assassinate Skill)"
+        "en": "Boosted Crossbow (+ Assassinate Skill)",
+        "pl": "Wzmocnienie: kusza (+ umiejętność Assassinate)"
       },
       "target": {
         "name": "Crossbow",
@@ -72110,7 +70857,8 @@
     {
       "id": "Ulepszenia/BOOSTED-CROSSBOW-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Crossbow",
       "effect": {
-        "en": "Boosted Crossbow (+1) Finesse"
+        "en": "Boosted Crossbow (+1) Finesse",
+        "pl": "Wzmocnienie: kusza (+1 Zręczność)"
       },
       "target": {
         "name": "Crossbow",
@@ -72174,7 +70922,8 @@
     {
       "id": "Ulepszenia/BOOSTED-CROSSBOW-(+1)-RANGED:Magic Altar+Tormented Soul+Gold Bar+Crossbow",
       "effect": {
-        "en": "Boosted Crossbow (+1) Ranged"
+        "en": "Boosted Crossbow (+1) Ranged",
+        "pl": "Wzmocnienie: kusza (+1 Dystansowa)"
       },
       "target": {
         "name": "Crossbow",
@@ -72238,7 +70987,8 @@
     {
       "id": "Ulepszenia/BOOSTED-DAGGER-(+-SAWTOOTH-KNIFE-SKILL):Magic Altar+Sharp Piece of Metal+Gold Bar+Dagger",
       "effect": {
-        "en": "Boosted Dagger (+ Sawtooth Knife Skill)"
+        "en": "Boosted Dagger (+ Sawtooth Knife Skill)",
+        "pl": "Wzmocnienie: sztylet (+ umiejętność Sawtooth Knife)"
       },
       "target": {
         "name": "Dagger",
@@ -72300,7 +71050,8 @@
     {
       "id": "Ulepszenia/BOOSTED-DAGGER-(+1)-DUAL-WIELDING:Magic Altar+Tormented Soul+Gold Bar+Dagger",
       "effect": {
-        "en": "Boosted Dagger (+1) Dual Wielding"
+        "en": "Boosted Dagger (+1) Dual Wielding",
+        "pl": "Wzmocnienie: sztylet (+1 Dwie bronie)"
       },
       "target": {
         "name": "Dagger",
@@ -72363,7 +71114,8 @@
     {
       "id": "Ulepszenia/BOOSTED-DAGGER-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Dagger",
       "effect": {
-        "en": "Boosted Dagger (+1) Finesse"
+        "en": "Boosted Dagger (+1) Finesse",
+        "pl": "Wzmocnienie: sztylet (+1 Zręczność)"
       },
       "target": {
         "name": "Dagger",
@@ -72426,7 +71178,8 @@
     {
       "id": "Ulepszenia/BOOSTED-GLOVES-(+-FIRST-AID-SKILL):Magic Altar+Light Gloves+Rune of Skills",
       "effect": {
-        "en": "Boosted Gloves (+ First Aid Skill)"
+        "en": "Boosted Gloves (+ First Aid Skill)",
+        "pl": "Wzmocnienie: rękawice (+ umiejętność First Aid)"
       },
       "target": {
         "name": "Light Gloves",
@@ -72473,7 +71226,8 @@
     {
       "id": "Ulepszenia/BOOSTED-GLOVES-(+-PROVOKE-SKILL):Magic Altar+Warrior Gloves+Rune of Skills",
       "effect": {
-        "en": "Boosted Gloves (+ Provoke Skill)"
+        "en": "Boosted Gloves (+ Provoke Skill)",
+        "pl": "Wzmocnienie: rękawice (+ umiejętność Provoke)"
       },
       "target": {
         "name": "Warrior Gloves",
@@ -72520,7 +71274,8 @@
     {
       "id": "Ulepszenia/BOOSTED-GLOVES-(+-TELEPORTATION-SKILL):Magic Altar+Mage Gloves+Rune of Skills",
       "effect": {
-        "en": "Boosted Gloves (+ Teleportation Skill)"
+        "en": "Boosted Gloves (+ Teleportation Skill)",
+        "pl": "Wzmocnienie: rękawice (+ umiejętność Teleportation)"
       },
       "target": {
         "name": "Mage Gloves",
@@ -72566,7 +71321,8 @@
     {
       "id": "Ulepszenia/BOOSTED-GLOVES-(+-percent5)-CRITICAL-CHANCE:Magic Altar+Broken Bottle+Gold Bar+#Glove-Armor",
       "effect": {
-        "en": "Boosted Gloves (+%5) Critical Chance"
+        "en": "Boosted Gloves (+5%) Critical Chance",
+        "pl": "Wzmocnienie: rękawice (+5% szansa na trafienie krytyczne)"
       },
       "target": {
         "name": "#Glove-Armor",
@@ -72625,7 +71381,8 @@
     {
       "id": "Ulepszenia/BOOSTED-HELMET-(+-BREATHING-BUBBLE-SKILL):Magic Altar+Mage Helmet+Rune of Skills",
       "effect": {
-        "en": "Boosted Helmet (+ Breathing Bubble Skill)"
+        "en": "Boosted Helmet (+ Breathing Bubble Skill)",
+        "pl": "Wzmocnienie: hełm (+ umiejętność Breathing Bubble)"
       },
       "target": {
         "name": "Mage Helmet",
@@ -72670,7 +71427,8 @@
     {
       "id": "Ulepszenia/BOOSTED-HELMET-(+-MEND-METAL-SKILL):Magic Altar+Warrior Helmet+Rune of Skills",
       "effect": {
-        "en": "Boosted Helmet (+ Mend Metal Skill)"
+        "en": "Boosted Helmet (+ Mend Metal Skill)",
+        "pl": "Wzmocnienie: hełm (+ umiejętność Mend Metal)"
       },
       "target": {
         "name": "Warrior Helmet",
@@ -72717,7 +71475,8 @@
     {
       "id": "Ulepszenia/BOOSTED-HELMET-(+-PEACE-OF-MIND-SKILL):Magic Altar+Light Helmet+Rune of Skills",
       "effect": {
-        "en": "Boosted Helmet (+ Peace of Mind Skill)"
+        "en": "Boosted Helmet (+ Peace of Mind Skill)",
+        "pl": "Wzmocnienie: hełm (+ umiejętność Peace of Mind)"
       },
       "target": {
         "name": "Light Helmet",
@@ -72765,7 +71524,8 @@
     {
       "id": "Ulepszenia/BOOSTED-HELMET-(+-percent5)-ACCURACY-CHANCE:Magic Altar+Fangs+Gold Bar+#Helmet-Armor",
       "effect": {
-        "en": "Boosted Helmet (+%5) Accuracy Chance"
+        "en": "Boosted Helmet (+5%) Accuracy Chance",
+        "pl": "Wzmocnienie: hełm (+5% szansa na trafienie)"
       },
       "target": {
         "name": "#Helmet-Armor",
@@ -72820,7 +71580,8 @@
     {
       "id": "Ulepszenia/BOOSTED-KNIFE-(+1)-DUAL-WIELDING:Magic Altar+Tormented Soul+Gold Bar+Knife",
       "effect": {
-        "en": "Boosted Knife (+1) Dual Wielding"
+        "en": "Boosted Knife (+1) Dual Wielding",
+        "pl": "Wzmocnienie: nóż (+1 Dwie bronie)"
       },
       "target": {
         "name": "Knife",
@@ -72884,7 +71645,8 @@
     {
       "id": "Ulepszenia/BOOSTED-KNIFE-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Knife",
       "effect": {
-        "en": "Boosted Knife (+1) Finesse"
+        "en": "Boosted Knife (+1) Finesse",
+        "pl": "Wzmocnienie: nóż (+1 Zręczność)"
       },
       "target": {
         "name": "Knife",
@@ -72948,7 +71710,8 @@
     {
       "id": "Ulepszenia/BOOSTED-MACE-(+-BATTLE-STOMP-SKILL)-):Magic Altar+Antler+Gold Bar+Mace",
       "effect": {
-        "en": "Boosted Mace (+ Battle Stomp Skill))"
+        "en": "Boosted Mace (+ Battle Stomp Skill)",
+        "pl": "Wzmocnienie: buława (+ umiejętność Battle Stomp)"
       },
       "target": {
         "name": "Mace",
@@ -73010,7 +71773,8 @@
     {
       "id": "Ulepszenia/BOOSTED-MACE-(+1)-ONE-HANDED:Magic Altar+Tormented Soul+Gold Bar+Axe",
       "effect": {
-        "en": "Boosted Mace (+1) One Handed"
+        "en": "Boosted Mace (+1) One Handed",
+        "pl": "Wzmocnienie: buława (+1 Jednoręczna)"
       },
       "target": {
         "name": "Axe",
@@ -73073,7 +71837,8 @@
     {
       "id": "Ulepszenia/BOOSTED-MACE-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Mace",
       "effect": {
-        "en": "Boosted Mace (+1) Strength"
+        "en": "Boosted Mace (+1) Strength",
+        "pl": "Wzmocnienie: buława (+1 Siła)"
       },
       "target": {
         "name": "Mace",
@@ -73136,7 +71901,8 @@
     {
       "id": "Ulepszenia/BOOSTED-PANTS-(+-ADRENALINE-SKILL):Magic Altar+Light Pants+Rune of Skills",
       "effect": {
-        "en": "Boosted Pants (+ Adrenaline Skill)"
+        "en": "Boosted Pants (+ Adrenaline Skill)",
+        "pl": "Wzmocnienie: nogawice (+ umiejętność Adrenaline)"
       },
       "target": {
         "name": "Light Pants",
@@ -73183,7 +71949,8 @@
     {
       "id": "Ulepszenia/BOOSTED-PANTS-(+-FORTIFY-SKILL):Magic Altar+Warrior Pants+Rune of Skills",
       "effect": {
-        "en": "Boosted Pants (+ Fortify Skill)"
+        "en": "Boosted Pants (+ Fortify Skill)",
+        "pl": "Wzmocnienie: nogawice (+ umiejętność Fortify)"
       },
       "target": {
         "name": "Warrior Pants",
@@ -73230,7 +71997,8 @@
     {
       "id": "Ulepszenia/BOOSTED-PANTS-(+-SOOTHING-COLD-SKILL):Magic Altar+Mage Pants+Rune of Skills",
       "effect": {
-        "en": "Boosted Pants (+ Soothing Cold Skill)"
+        "en": "Boosted Pants (+ Soothing Cold Skill)",
+        "pl": "Wzmocnienie: nogawice (+ umiejętność Soothing Cold)"
       },
       "target": {
         "name": "Mage Pants",
@@ -73276,7 +72044,8 @@
     {
       "id": "Ulepszenia/BOOSTED-PANTS-(+1)-INITATIVE:Magic Altar+Clay+Gold Bar+#Lowerbody-Armor",
       "effect": {
-        "en": "Boosted Pants (+1) Initative"
+        "en": "Boosted Pants (+1) Initiative",
+        "pl": "Wzmocnienie: nogawice (+1 Inicjatywa)"
       },
       "target": {
         "name": "Lowerbody Armor",
@@ -73338,7 +72107,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SHIELD-(+-BOUNCING-SHIELD-SKILL):Magic Altar+Rune of Skills+Shield",
       "effect": {
-        "en": "Boosted Shield (+ Bouncing Shield Skill)"
+        "en": "Boosted Shield (+ Bouncing Shield Skill)",
+        "pl": "Wzmocnienie: tarcza (+ umiejętność Bouncing Shield)"
       },
       "target": {
         "name": "Shield",
@@ -73384,7 +72154,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SHIELD-(+-percent5)-BLOCK-CHANCE:Magic Altar+Bone+Gold Bar+Shield",
       "effect": {
-        "en": "Boosted Shield (+%5) Block Chance"
+        "en": "Boosted Shield (+5%) Block Chance",
+        "pl": "Wzmocnienie: tarcza (+5% szansa na blok)"
       },
       "target": {
         "name": "Shield",
@@ -73447,7 +72218,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SHIELD-(+1)-PAIN-REFLECTION:Magic Altar+Tusk+Gold Bar+Shield",
       "effect": {
-        "en": "Boosted Shield (+1) Pain Reflection"
+        "en": "Boosted Shield (+1) Pain Reflection",
+        "pl": "Wzmocnienie: tarcza (+1 Odbicie bólu)"
       },
       "target": {
         "name": "Shield",
@@ -73508,7 +72280,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SHIELD-(+1)-PRESEVERANCE:Magic Altar+Rat Tail+Gold Bar+Shield",
       "effect": {
-        "en": "Boosted Shield (+1) Preseverance"
+        "en": "Boosted Shield (+1) Perseverance",
+        "pl": "Wzmocnienie: tarcza (+1 Wytrwałość)"
       },
       "target": {
         "name": "Shield",
@@ -73568,7 +72341,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SPEAR-(+-WHIRLWIND-SKILL):Magic Altar+Chicken Foot+Gold Bar+Spear",
       "effect": {
-        "en": "Boosted Spear (+ Whirlwind Skill)"
+        "en": "Boosted Spear (+ Whirlwind Skill)",
+        "pl": "Wzmocnienie: włócznia (+ umiejętność Whirlwind)"
       },
       "target": {
         "name": "Spear",
@@ -73629,7 +72403,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SPEAR-(+1)-FINESSE:Magic Altar+Feather+Gold Bar+Spear",
       "effect": {
-        "en": "Boosted Spear (+1) Finesse"
+        "en": "Boosted Spear (+1) Finesse",
+        "pl": "Wzmocnienie: włócznia (+1 Zręczność)"
       },
       "target": {
         "name": "Spear",
@@ -73691,7 +72466,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SPEAR-(+1)-TWO-HANDED:Magic Altar+Tormented Soul+Gold Bar+Spear",
       "effect": {
-        "en": "Boosted Spear (+1) Two Handed"
+        "en": "Boosted Spear (+1) Two Handed",
+        "pl": "Wzmocnienie: włócznia (+1 Dwuręczna)"
       },
       "target": {
         "name": "Spear",
@@ -73753,7 +72529,8 @@
     {
       "id": "Ulepszenia/BOOSTED-STAFF-(+-DIMENSIONAL-BOLT-SKILL):Magic Altar+Rabid Paw+Gold Bar+Staff",
       "effect": {
-        "en": "Boosted Staff (+ Dimensional Bolt Skill)"
+        "en": "Boosted Staff (+ Dimensional Bolt Skill)",
+        "pl": "Wzmocnienie: kostur (+ umiejętność Dimensional Bolt)"
       },
       "target": {
         "name": "Staff",
@@ -73810,7 +72587,8 @@
     {
       "id": "Ulepszenia/BOOSTED-STAFF-(+1)-INTELLIGENCE:Magic Altar+Sheet of Paper+Gold Bar+Staff",
       "effect": {
-        "en": "Boosted Staff (+1) Intelligence"
+        "en": "Boosted Staff (+1) Intelligence",
+        "pl": "Wzmocnienie: kostur (+1 Inteligencja)"
       },
       "target": {
         "name": "Staff",
@@ -73873,7 +72651,8 @@
     {
       "id": "Ulepszenia/BOOSTED-STAFF-(+1)-TWO-HANDED:Magic Altar+Tormented Soul+Gold Bar+Staff",
       "effect": {
-        "en": "Boosted Staff (+1) Two Handed"
+        "en": "Boosted Staff (+1) Two Handed",
+        "pl": "Wzmocnienie: kostur (+1 Dwuręczna)"
       },
       "target": {
         "name": "Staff",
@@ -73937,7 +72716,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SWORD-(+-CRIPPLING-BLOW-SKILL):Magic Altar+Claw+Gold Bar+Two Handed Sword",
       "effect": {
-        "en": "Boosted Sword (+ Crippling Blow Skill)"
+        "en": "Boosted Sword (+ Crippling Blow Skill)",
+        "pl": "Wzmocnienie: miecz (+ umiejętność Crippling Blow)"
       },
       "target": {
         "name": "Two Handed Sword",
@@ -73996,7 +72776,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SWORD-(+1)-ONE-HANDED:Magic Altar+Tormented Soul+Gold Bar+Mace",
       "effect": {
-        "en": "Boosted Sword (+1) One Handed"
+        "en": "Boosted Sword (+1) One Handed",
+        "pl": "Wzmocnienie: miecz (+1 Jednoręczna)"
       },
       "target": {
         "name": "Mace",
@@ -74059,7 +72840,8 @@
     {
       "id": "Ulepszenia/BOOSTED-SWORD-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Sword",
       "effect": {
-        "en": "Boosted Sword (+1) Strength"
+        "en": "Boosted Sword (+1) Strength",
+        "pl": "Wzmocnienie: miecz (+1 Siła)"
       },
       "target": {
         "name": "Sword",
@@ -74121,7 +72903,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-AXE-(+-BLITZ-ATTACK-SKILL):Magic Altar+Tooth+Gold Bar+Two Handed Axe",
       "effect": {
-        "en": "Boosted Two Handed Axe (+ Blitz Attack Skill)"
+        "en": "Boosted Two Handed Axe (+ Blitz Attack Skill)",
+        "pl": "Wzmocnienie: topór dwuręczny (+ umiejętność Blitz Attack)"
       },
       "target": {
         "name": "Two Handed Axe",
@@ -74182,7 +72965,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-AXE-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Two Handed Axe",
       "effect": {
-        "en": "Boosted Two Handed Axe (+1) Strength"
+        "en": "Boosted Two Handed Axe (+1) Strength",
+        "pl": "Wzmocnienie: topór dwuręczny (+1 Siła)"
       },
       "target": {
         "name": "Two Handed Axe",
@@ -74244,7 +73028,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-AXE-(+1)-TWO-HANDED:Magic Altar+Tormented Soul+Gold Bar+Two Handed Axe",
       "effect": {
-        "en": "Boosted Two Handed Axe (+1) Two Handed"
+        "en": "Boosted Two Handed Axe (+1) Two Handed",
+        "pl": "Wzmocnienie: topór dwuręczny (+1 Dwuręczna)"
       },
       "target": {
         "name": "Two Handed Axe",
@@ -74306,7 +73091,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-MACE-(+-BATTLE-STOMP-SKILL):Magic Altar+Antler+Gold Bar+Two Handed Mace",
       "effect": {
-        "en": "Boosted Two Handed Mace (+ Battle Stomp Skill)"
+        "en": "Boosted Two Handed Mace (+ Battle Stomp Skill)",
+        "pl": "Wzmocnienie: buława dwuręczna (+ umiejętność Battle Stomp)"
       },
       "target": {
         "name": "Two Handed Mace",
@@ -74367,7 +73153,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-MACE-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Two Handed Mace",
       "effect": {
-        "en": "Boosted Two Handed Mace (+1) Strength"
+        "en": "Boosted Two Handed Mace (+1) Strength",
+        "pl": "Wzmocnienie: buława dwuręczna (+1 Siła)"
       },
       "target": {
         "name": "Two Handed Mace",
@@ -74429,7 +73216,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-MACE-(+1)-TWO-HANDED:Magic Altar+Tormented Soul+Gold Bar+Two Handed Mace",
       "effect": {
-        "en": "Boosted Two Handed Mace (+1) Two Handed"
+        "en": "Boosted Two Handed Mace (+1) Two Handed",
+        "pl": "Wzmocnienie: buława dwuręczna (+1 Dwuręczna)"
       },
       "target": {
         "name": "Two Handed Mace",
@@ -74491,7 +73279,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-SWORD-(+-WHIRLWIND-SKILL):Magic Altar+Chicken Foot+Gold Bar+Two Handed Sword",
       "effect": {
-        "en": "Boosted Two Handed Sword (+ Whirlwind Skill)"
+        "en": "Boosted Two Handed Sword (+ Whirlwind Skill)",
+        "pl": "Wzmocnienie: miecz dwuręczny (+ umiejętność Whirlwind)"
       },
       "target": {
         "name": "Two Handed Sword",
@@ -74552,7 +73341,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-SWORD-(+1)-STRENGTH:Magic Altar+Sharp Rock+Gold Bar+Two Handed Sword",
       "effect": {
-        "en": "Boosted Two Handed Sword (+1) Strength"
+        "en": "Boosted Two Handed Sword (+1) Strength",
+        "pl": "Wzmocnienie: miecz dwuręczny (+1 Siła)"
       },
       "target": {
         "name": "Two Handed Sword",
@@ -74614,7 +73404,8 @@
     {
       "id": "Ulepszenia/BOOSTED-TWO-HANDED-SWORD-(+1)-TWO-HANDED:Magic Altar+Tormented Soul+Gold Bar+Two Handed Sword",
       "effect": {
-        "en": "Boosted Two Handed Sword (+1) Two Handed"
+        "en": "Boosted Two Handed Sword (+1) Two Handed",
+        "pl": "Wzmocnienie: miecz dwuręczny (+1 Dwuręczna)"
       },
       "target": {
         "name": "Two Handed Sword",
@@ -74676,7 +73467,8 @@
     {
       "id": "Ulepszenia/BOOSTED-UPPERBODY-(+-percent5)-VITALITY:Magic Altar+Slime+Gold Bar+#Upperbody-Armor",
       "effect": {
-        "en": "Boosted Upperbody (+%5) Vitality"
+        "en": "Boosted Upperbody (+5%) Vitality",
+        "pl": "Wzmocnienie: napierśnik (+5% Zdrowie)"
       },
       "target": {
         "name": "Upperbody armor",
@@ -74738,7 +73530,8 @@
     {
       "id": "Ulepszenia/BOOSTED-WAND-(+-SILENCING-STARE-SKILL):Magic Altar+Eye+Gold Bar+Wand",
       "effect": {
-        "en": "Boosted Wand (+ Silencing Stare Skill)"
+        "en": "Boosted Wand (+ Silencing Stare Skill)",
+        "pl": "Wzmocnienie: różdżka (+ umiejętność Silencing Stare)"
       },
       "target": {
         "name": "Wand",
@@ -74800,7 +73593,8 @@
     {
       "id": "Ulepszenia/BOOSTED-WAND-(+1)-DUAL-WIELDING:Magic Altar+Tormented Soul+Gold Bar+Wand",
       "effect": {
-        "en": "Boosted Wand (+1) Dual Wielding"
+        "en": "Boosted Wand (+1) Dual Wielding",
+        "pl": "Wzmocnienie: różdżka (+1 Dwie bronie)"
       },
       "target": {
         "name": "Wand",
@@ -74863,7 +73657,8 @@
     {
       "id": "Ulepszenia/BOOSTED-WAND-(+1)-INTELLIGENCE:Magic Altar+Sheet of Paper+Gold Bar+Wand",
       "effect": {
-        "en": "Boosted Wand (+1) Intelligence"
+        "en": "Boosted Wand (+1) Intelligence",
+        "pl": "Wzmocnienie: różdżka (+1 Inteligencja)"
       },
       "target": {
         "name": "Wand",
@@ -74925,7 +73720,8 @@
     {
       "id": "Ulepszenia/BURN-IMMUNITY:Magic Altar+Light Pants+Rune of Stats",
       "effect": {
-        "en": "Burn Immunity"
+        "en": "Burn Immunity",
+        "pl": "Niewrażliwość na ogień"
       },
       "target": {
         "name": "Light Pants",
@@ -74973,7 +73769,8 @@
     {
       "id": "Ulepszenia/CHARM-IMMUNITY:Magic Altar+Warrior Helmet+Rune of Stats",
       "effect": {
-        "en": "Charm Immunity"
+        "en": "Charm Immunity",
+        "pl": "Niewrażliwość na urok"
       },
       "target": {
         "name": "Warrior Helmet",
@@ -75021,7 +73818,8 @@
     {
       "id": "Ulepszenia/COURAGE-SKILL-BOOST:Magic Altar+Paladin Courage+#Armor",
       "effect": {
-        "en": "Courage Skill Boost"
+        "en": "Courage Skill Boost",
+        "pl": "Wzmocnienie umiejętności Courage"
       },
       "target": {
         "name": "#Armor",
@@ -75065,7 +73863,8 @@
     {
       "id": "Ulepszenia/CRIPPLED-IMMUNITY:Magic Altar+Warrior Boots+Rune of Stats",
       "effect": {
-        "en": "Crippled Immunity"
+        "en": "Crippled Immunity",
+        "pl": "Niewrażliwość na okaleczenie"
       },
       "target": {
         "name": "Warrior Boots",
@@ -75113,7 +73912,8 @@
     {
       "id": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-AIR-DAMAGE):Magic Altar+Essence Air+Gold Bar+#Weapon",
       "effect": {
-        "en": "Elemental Boosted Weapon (+ Air Damage)"
+        "en": "Elemental Boosted Weapon (+ Air Damage)",
+        "pl": "Wzmocnienie: broń (+ obrażenia od powietrza)"
       },
       "target": {
         "name": "Weapon",
@@ -75175,7 +73975,8 @@
     {
       "id": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-EARTH-DAMAGE):Magic Altar+Essence Earth+Gold Bar+#Weapon",
       "effect": {
-        "en": "Elemental Boosted Weapon (+ Earth Damage)"
+        "en": "Elemental Boosted Weapon (+ Earth Damage)",
+        "pl": "Wzmocnienie: broń (+ obrażenia od ziemi)"
       },
       "target": {
         "name": "Weapon",
@@ -75237,7 +74038,8 @@
     {
       "id": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-FIRE-DAMAGE):Magic Altar+Essence Fire+Gold Bar+#Weapon",
       "effect": {
-        "en": "Elemental Boosted Weapon (+ Fire Damage)"
+        "en": "Elemental Boosted Weapon (+ Fire Damage)",
+        "pl": "Wzmocnienie: broń (+ obrażenia od ognia)"
       },
       "target": {
         "name": "Weapon",
@@ -75299,7 +74101,8 @@
     {
       "id": "Ulepszenia/ELEMENTAL-BOOSTED-WEAPON-(+-WATER-DAMAGE):Magic Altar+Essence Water+Gold Bar+#Weapon",
       "effect": {
-        "en": "Elemental Boosted Weapon (+ Water Damage)"
+        "en": "Elemental Boosted Weapon (+ Water Damage)",
+        "pl": "Wzmocnienie: broń (+ obrażenia od wody)"
       },
       "target": {
         "name": "Weapon",
@@ -75361,7 +74164,8 @@
     {
       "id": "Ulepszenia/FEAR-IMMUNITY:Magic Altar+Light Helmet+Rune of Stats",
       "effect": {
-        "en": "Fear Immunity"
+        "en": "Fear Immunity",
+        "pl": "Niewrażliwość na strach"
       },
       "target": {
         "name": "Light Helmet",
@@ -75410,7 +74214,8 @@
     {
       "id": "Ulepszenia/FREEZE-IMMUNITY:Magic Altar+Mage Body Armor+Rune of Stats",
       "effect": {
-        "en": "Freeze Immunity"
+        "en": "Freeze Immunity",
+        "pl": "Niewrażliwość na zamrożenie"
       },
       "target": {
         "name": "Mage Body Armor",
@@ -75458,7 +74263,8 @@
     {
       "id": "Ulepszenia/KNOCKDOWN-IMMUNITY:Magic Altar+Light Body Armor+Rune of Stats",
       "effect": {
-        "en": "Knockdown Immunity"
+        "en": "Knockdown Immunity",
+        "pl": "Niewrażliwość na potrącenie"
       },
       "target": {
         "name": "Light Body Armor",
@@ -75506,7 +74312,8 @@
     {
       "id": "Ulepszenia/MADNESS-IMMUNITY:Magic Altar+Warrior Gloves+Rune of Stats",
       "effect": {
-        "en": "Madness Immunity"
+        "en": "Madness Immunity",
+        "pl": "Niewrażliwość na szaleństwo"
       },
       "target": {
         "name": "Warrior Gloves",
@@ -75554,7 +74361,8 @@
     {
       "id": "Ulepszenia/MAGIC-DAMAGE-BOOST:Magic Altar+Void Essence+#Weapon+Gold Bar",
       "effect": {
-        "en": "Magic Damage Boost"
+        "en": "Magic Damage Boost",
+        "pl": "Wzmocnienie obrażeń magicznych"
       },
       "target": {
         "name": "Weapon",
@@ -75614,7 +74422,8 @@
     {
       "id": "Ulepszenia/OBEDIENCE-SKILL-BOOST:Magic Altar+Magister Obedience+#Armor",
       "effect": {
-        "en": "Obedience Skill Boost"
+        "en": "Obedience Skill Boost",
+        "pl": "Wzmocnienie umiejętności Obedience"
       },
       "target": {
         "name": "#Armor",
@@ -75658,7 +74467,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Armor Belt+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Armor Belt",
@@ -75700,7 +74510,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Leather Upperbody, Gloves, Boots, Helmet, Pants+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Leather Upperbody, Gloves, Boots, Helmet, Pants",
@@ -75745,7 +74556,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Mage Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Mage Upperbody, Gloves, Boots, Helmet, Pants",
@@ -75790,7 +74602,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Cloth Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Cloth Upperbody, Gloves, Boots, Helmet, Pants",
@@ -75835,7 +74648,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Warrior Upperbody, Gloves, Boots, Helmet, Pants+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Warrior Upperbody, Gloves, Boots, Helmet, Pants",
@@ -75881,7 +74695,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Plate Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Plate Upperbody, Gloves, Boots, Helmet, Pants",
@@ -75927,7 +74742,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Shield+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Shield",
@@ -75969,7 +74785,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-10):Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 10)"
+        "en": "Physical Armour Boost (Up to 10)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 10)"
       },
       "target": {
         "name": "Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76015,7 +74832,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Armor Belt+Leather Scraps+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Armor Belt",
@@ -76046,19 +74864,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76069,7 +74876,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Leather Upperbody, Gloves, Boots, Helmet, Pants+Leather Scraps+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Leather Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76103,19 +74911,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76126,7 +74923,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Mage Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Mage Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76160,19 +74958,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76183,7 +74970,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Cloth Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Cloth Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76217,19 +75005,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76240,7 +75017,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Warrior Upperbody, Gloves, Boots, Helmet, Pants+Metal Scraps+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Warrior Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76275,20 +75053,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76299,7 +75065,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Plate Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Plate Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76334,20 +75101,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76358,7 +75113,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Shield+Metal Scraps+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Shield",
@@ -76389,20 +75145,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76413,7 +75157,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-20):Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 20)"
+        "en": "Physical Armour Boost (Up to 20)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 20)"
       },
       "target": {
         "name": "Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76448,20 +75193,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x2"
         }
       ],
       "requirements": "",
@@ -76472,7 +75205,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Armor Belt+Leather Scraps+Leather Scraps+Leather Scraps+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Armor Belt",
@@ -76503,43 +75237,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76550,7 +75249,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Leather Upperbody, Gloves, Boots, Helmet, Pants+Leather Scraps+Leather Scraps+Leather Scraps+Leather Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Leather Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76584,43 +75284,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Leather Scraps",
-          "namePl": "Skrawki skóry",
-          "slug": "leather-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76631,7 +75296,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Mage Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps+Cloth Scraps+Cloth Scraps+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Mage Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76665,43 +75331,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76712,7 +75343,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Cloth Upperbody, Gloves, Boots, Helmet, Pants+Cloth Scraps+Cloth Scraps+Cloth Scraps+Cloth Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Cloth Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76746,43 +75378,8 @@
           ],
           "craftingCategories": [
             "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
-        },
-        {
-          "name": "Cloth Scraps",
-          "namePl": "Skrawki materiału",
-          "slug": "cloth-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76793,7 +75390,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Warrior Upperbody, Gloves, Boots, Helmet, Pants+Metal Scraps+Metal Scraps+Metal Scraps+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Warrior Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76828,46 +75426,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76878,7 +75438,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Plate Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps+Plate Scraps+Plate Scraps+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Plate Upperbody, Gloves, Boots, Helmet, Pants",
@@ -76913,46 +75474,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -76963,7 +75486,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Shield+Metal Scraps+Metal Scraps+Metal Scraps+Metal Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Shield",
@@ -76994,46 +75518,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Metal Scraps",
-          "namePl": "Kawałki metalu",
-          "slug": "metal-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -77044,7 +75530,8 @@
     {
       "id": "Ulepszenia/PHYSICAL-ARMOUR-BOOST-(UP-TO-30):Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants+Plate Scraps+Plate Scraps+Plate Scraps+Plate Scraps",
       "effect": {
-        "en": "Physical Armour Boost (Up to 30)"
+        "en": "Physical Armour Boost (Up to 30)",
+        "pl": "Wzmocnienie pancerza fizycznego (do 30)"
       },
       "target": {
         "name": "Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants",
@@ -77079,46 +75566,8 @@
           "craftingCategories": [
             "Junk",
             "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
           ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
-        },
-        {
-          "name": "Plate Scraps",
-          "namePl": "Kawałki płyt",
-          "slug": "plate-scraps",
-          "tags": [
-            "Ingredients",
-            "DOS2-CO"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Metal"
-          ]
+          "quantity": "x4"
         }
       ],
       "requirements": "",
@@ -77129,7 +75578,8 @@
     {
       "id": "Ulepszenia/SHOCKED-IMMUNITY:Magic Altar+Mage Pants+Rune of Stats",
       "effect": {
-        "en": "Shocked Immunity"
+        "en": "Shocked Immunity",
+        "pl": "Niewrażliwość na szok"
       },
       "target": {
         "name": "Mage Pants",
@@ -77176,7 +75626,8 @@
     {
       "id": "Ulepszenia/SLOWED-IMMUNITY:Magic Altar+Light Boots+Rune of Stats",
       "effect": {
-        "en": "Slowed Immunity"
+        "en": "Slowed Immunity",
+        "pl": "Niewrażliwość na spowolnienie"
       },
       "target": {
         "name": "Light Boots",
@@ -77273,7 +75724,8 @@
     {
       "id": "Ulepszenia/SUFFOCATING-IMMUNITY:Magic Altar+Light Gloves+Rune of Stats",
       "effect": {
-        "en": "Suffocating Immunity"
+        "en": "Suffocating Immunity",
+        "pl": "Niewrażliwość na uduszenie"
       },
       "target": {
         "name": "Light Gloves",
@@ -77321,7 +75773,8 @@
     {
       "id": "Ulepszenia/TELEPORT-IMMUNITY:Magic Altar+Mage Boots+Rune of Stats",
       "effect": {
-        "en": "Teleport Immunity"
+        "en": "Teleport Immunity",
+        "pl": "Niewrażliwość na teleport"
       },
       "target": {
         "name": "Mage Boots",
@@ -77368,7 +75821,8 @@
     {
       "id": "Ulepszenia/COLORED-BODY-ARMOR:Body Armor+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Body Armor",
@@ -77403,7 +75857,8 @@
     {
       "id": "Ulepszenia/COLORED-BOOTS:Boots+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Boots",
@@ -77438,7 +75893,8 @@
     {
       "id": "Ulepszenia/COLORED-CAPE:Cape+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Cape",
@@ -77473,7 +75929,8 @@
     {
       "id": "Ulepszenia/COLORED-GLOVES:Gloves+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Gloves",
@@ -77509,7 +75966,8 @@
     {
       "id": "Ulepszenia/COLORED-HELMET:Helmet+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Helmet",
@@ -77545,7 +76003,8 @@
     {
       "id": "Ulepszenia/COLORED-PANTS:Lowerbody Armor+#Dye",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "Lowerbody Armor",

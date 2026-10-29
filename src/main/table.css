@@ -654,6 +654,41 @@ a.recipe-effect-chip {
   font-weight: 500;
 }
 
+/* Upgrade targets are alternatives, not a sum: no "+", and long names wrap instead of running into the next column. */
+.upgrade-table .recipe-cell.ingredients > .recipe-ingredients {
+  min-width: 0;
+
+  > li {
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 1 auto;
+    white-space: normal;
+  }
+
+  .recipe-item,
+  .recipe-item-wrap {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+.upgrade-table .recipe-cell.targets > .recipe-ingredients > li + li::before {
+  content: none;
+}
+
+/* Group and plain items share one box: same height, font and spacing, only the border colour differs. */
+.recipe-table .recipe-item.recipe-item-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+.recipe-table .recipe-item-group .group-count {
+  margin-inline-start: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .recipe-items-table.no-effects {
   .item-col-result {
     width: 60%;

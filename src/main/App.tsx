@@ -686,6 +686,7 @@ export function App() {
                       labels={labels}
                       game={game}
                       showRequirements={game === "dos1"}
+                      showTargets={false}
                     />
                   </section>
                 )}

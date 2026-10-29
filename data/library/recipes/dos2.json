@@ -2801,21 +2801,8 @@
             "IngredientSwamps",
             "Sinew"
           ],
-          "statsId": "LOOT_Sinew_A"
-        },
-        {
-          "name": "Sinew",
-          "namePl": "Ścięgno",
-          "slug": "sinew",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "IngredientSwamps",
-            "Sinew"
-          ],
-          "statsId": "LOOT_Sinew_A"
+          "statsId": "LOOT_Sinew_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -9545,20 +9532,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Rope_A"
-        },
-        {
-          "name": "Rope",
-          "namePl": "Lina",
-          "slug": "rope",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Rope_A"
+          "statsId": "LOOT_Rope_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -10315,24 +10290,8 @@
             "PotionHealing",
             "PotionPoison"
           ],
-          "statsId": "POTION_Huge_Healing_Potion"
-        },
-        {
-          "name": "Huge Healing Potion",
-          "namePl": "Wielka mikstura uzdrawiająca",
-          "slug": "huge-healing-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Healing",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "HealingPotion",
-            "PotionHealing",
-            "PotionPoison"
-          ],
-          "statsId": "POTION_Huge_Healing_Potion"
+          "statsId": "POTION_Huge_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -10493,23 +10452,8 @@
             "ArmourPotion",
             "PotionPoison"
           ],
-          "statsId": "CON_Potion_Poison_Huge_A"
-        },
-        {
-          "name": "Huge Poison Vial",
-          "namePl": "Wielka fiolka trucizny",
-          "slug": "huge-poison-vial",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "POISONED",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion",
-            "PotionPoison"
-          ],
-          "statsId": "CON_Potion_Poison_Huge_A"
+          "statsId": "CON_Potion_Poison_Huge_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -12115,22 +12059,8 @@
             "PotionHealing",
             "PotionPoison"
           ],
-          "statsId": "POTION_Medium_Healing_Potion"
-        },
-        {
-          "name": "Medium Healing Potion",
-          "namePl": "Średnia mikstura uzdrawiająca",
-          "slug": "medium-healing-potion",
-          "tags": [
-            "Potions",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "HealingPotion",
-            "PotionHealing",
-            "PotionPoison"
-          ],
-          "statsId": "POTION_Medium_Healing_Potion"
+          "statsId": "POTION_Medium_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13037,23 +12967,8 @@
             "AirResistancePotion",
             "ResPotionLate"
           ],
-          "statsId": "CON_Potion_Air_Res_Large_A"
-        },
-        {
-          "name": "Large Air Resistance Potion",
-          "namePl": "Duża mikstura odporności na powietrze",
-          "slug": "large-air-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Air-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "AirResistancePotion",
-            "ResPotionLate"
-          ],
-          "statsId": "CON_Potion_Air_Res_Large_A"
+          "statsId": "CON_Potion_Air_Res_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13158,22 +13073,8 @@
           "craftingCategories": [
             "ResPotionLate"
           ],
-          "statsId": "CON_Potion_Earth_Res_Large_A"
-        },
-        {
-          "name": "Large Earth Resistance Potion",
-          "namePl": "Duża mikstura odporności na ziemię",
-          "slug": "large-earth-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Earth-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionLate"
-          ],
-          "statsId": "CON_Potion_Earth_Res_Large_A"
+          "statsId": "CON_Potion_Earth_Res_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13275,22 +13176,8 @@
           "craftingCategories": [
             "ResPotionLate"
           ],
-          "statsId": "CON_Potion_Fire_Res_Large_A"
-        },
-        {
-          "name": "Large Fire Resistance Potion",
-          "namePl": "Duża mikstura odporności na ogień",
-          "slug": "large-fire-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Fire-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionLate"
-          ],
-          "statsId": "CON_Potion_Fire_Res_Large_A"
+          "statsId": "CON_Potion_Fire_Res_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13392,22 +13279,8 @@
             "PotionHealing",
             "PotionPoison"
           ],
-          "statsId": "POTION_Large_Healing_Potion"
-        },
-        {
-          "name": "Healing Potion",
-          "namePl": "Mikstura uzdrawiająca",
-          "slug": "healing-potion",
-          "tags": [
-            "Potions",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "HealingPotion",
-            "PotionHealing",
-            "PotionPoison"
-          ],
-          "statsId": "POTION_Large_Healing_Potion"
+          "statsId": "POTION_Large_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13702,23 +13575,8 @@
             "ArmourPotion",
             "PotionPoison"
           ],
-          "statsId": "CON_Potion_Poison_Large_A"
-        },
-        {
-          "name": "Large Poison Bottle",
-          "namePl": "Duża butelka trucizny",
-          "slug": "large-poison-bottle",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "POISONED",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion",
-            "PotionPoison"
-          ],
-          "statsId": "CON_Potion_Poison_Large_A"
+          "statsId": "CON_Potion_Poison_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -13827,22 +13685,8 @@
           "craftingCategories": [
             "ResPotionLate"
           ],
-          "statsId": "CON_Potion_Water_Res_Large_A"
-        },
-        {
-          "name": "Large Water Resistance Potion",
-          "namePl": "Duża mikstura odporności na wodę",
-          "slug": "large-water-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Water-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionLate"
-          ],
-          "statsId": "CON_Potion_Water_Res_Large_A"
+          "statsId": "CON_Potion_Water_Res_Large_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -15760,23 +15604,8 @@
             "AirResistancePotion",
             "ResPotionEarly"
           ],
-          "statsId": "CON_Potion_Air_Res_Medium_A"
-        },
-        {
-          "name": "Medium Air Resistance Potion",
-          "namePl": "Średnia mikstura odporności na powietrze",
-          "slug": "medium-air-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Air-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "AirResistancePotion",
-            "ResPotionEarly"
-          ],
-          "statsId": "CON_Potion_Air_Res_Medium_A"
+          "statsId": "CON_Potion_Air_Res_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -15946,22 +15775,8 @@
           "craftingCategories": [
             "ResPotionEarly"
           ],
-          "statsId": "CON_Potion_Earth_Res_Medium_A"
-        },
-        {
-          "name": "Medium Earth Resistance Potion",
-          "namePl": "Średnia mikstura odporności na ziemię",
-          "slug": "medium-earth-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Earth-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionEarly"
-          ],
-          "statsId": "CON_Potion_Earth_Res_Medium_A"
+          "statsId": "CON_Potion_Earth_Res_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16128,22 +15943,8 @@
           "craftingCategories": [
             "ResPotionEarly"
           ],
-          "statsId": "CON_Potion_Fire_Res_Medium_A"
-        },
-        {
-          "name": "Medium Fire Resistance Potion",
-          "namePl": "Średnia mikstura odporności na ogień",
-          "slug": "medium-fire-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Fire-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionEarly"
-          ],
-          "statsId": "CON_Potion_Fire_Res_Medium_A"
+          "statsId": "CON_Potion_Fire_Res_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16308,22 +16109,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_MagicArmor_Boost_Medium_A"
-        },
-        {
-          "name": "Medium Magic Armour Potion",
-          "namePl": "Średnia mikstura Pancerza Magicznego",
-          "slug": "medium-magic-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Magic-Armour",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_MagicArmor_Boost_Medium_A"
+          "statsId": "CON_Potion_MagicArmor_Boost_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16484,22 +16271,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_Medium_A"
-        },
-        {
-          "name": "Medium Physical Armour Potion",
-          "namePl": "Średnia mikstura Pancerza Fizycznego",
-          "slug": "medium-physical-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Physical-Armour",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_Medium_A"
+          "statsId": "CON_Potion_PhysicalArmor_Boost_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16784,23 +16557,8 @@
             "ArmourPotion",
             "PotionPoison"
           ],
-          "statsId": "CON_Potion_Poison_Medium_A"
-        },
-        {
-          "name": "Medium Poison Bottle",
-          "namePl": "Średnia butelka trucizny",
-          "slug": "medium-poison-bottle",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "POISONED",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion",
-            "PotionPoison"
-          ],
-          "statsId": "CON_Potion_Poison_Medium_A"
+          "statsId": "CON_Potion_Poison_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16846,22 +16604,8 @@
             "Earth-Resistance",
             "DOS2"
           ],
-          "statsId": "POTION_Medium_ResistAll_Potion"
-        },
-        {
-          "name": "Medium Resist All Potion",
-          "namePl": "Średnia mikstura wszelkiej odporności",
-          "slug": "medium-resist-all-potion",
-          "tags": [
-            "Potions",
-            "Fire-Resistance",
-            "Air-Resistance",
-            "Poison-Resistance",
-            "Water-Resistance",
-            "Earth-Resistance",
-            "DOS2"
-          ],
-          "statsId": "POTION_Medium_ResistAll_Potion"
+          "statsId": "POTION_Medium_ResistAll_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -17034,22 +16778,8 @@
           "craftingCategories": [
             "ResPotionEarly"
           ],
-          "statsId": "CON_Potion_Water_Res_Medium_A"
-        },
-        {
-          "name": "Medium Water Resistance Potion",
-          "namePl": "Średnia mikstura odporności na wodę",
-          "slug": "medium-water-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Water-Resistance",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ResPotionEarly"
-          ],
-          "statsId": "CON_Potion_Water_Res_Medium_A"
+          "statsId": "CON_Potion_Water_Res_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -17940,20 +17670,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Needle_A"
-        },
-        {
-          "name": "Needle",
-          "namePl": "Igła",
-          "slug": "needle",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Needle_A"
+          "statsId": "LOOT_Needle_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -18234,35 +17952,8 @@
             "Junk",
             "Rock"
           ],
-          "statsId": "LOOT_PieceOfRock_A"
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ],
-          "statsId": "LOOT_PieceOfRock_A"
-        },
-        {
-          "name": "Sharp Rock",
-          "namePl": "Ostry kamień",
-          "slug": "sharp-rock",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk",
-            "Rock"
-          ],
-          "statsId": "LOOT_PieceOfRock_A"
+          "statsId": "LOOT_PieceOfRock_A",
+          "quantity": "x3"
         }
       ],
       "result": {
@@ -19204,19 +18895,8 @@
             "DOS2"
           ],
           "statsId": "CON_Potion_Air_Res_A",
-          "namePl": "Mikstura odporności na powietrze"
-        },
-        {
-          "name": "Air Resistance Potion",
-          "slug": "air-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Air-Resistance",
-            "DOS2"
-          ],
-          "statsId": "CON_Potion_Air_Res_A",
-          "namePl": "Mikstura odporności na powietrze"
+          "namePl": "Mikstura odporności na powietrze",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -19318,19 +18998,8 @@
             "Earth-Resistance",
             "DOS2"
           ],
-          "statsId": "CON_Potion_Earth_Res_A"
-        },
-        {
-          "name": "Earth Resistance Potion",
-          "namePl": "Mikstura odporności na ziemię",
-          "slug": "earth-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Earth-Resistance",
-            "DOS2"
-          ],
-          "statsId": "CON_Potion_Earth_Res_A"
+          "statsId": "CON_Potion_Earth_Res_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -19488,19 +19157,8 @@
             "Fire-Resistance",
             "DOS2"
           ],
-          "statsId": "CON_Potion_Fire_Res_A"
-        },
-        {
-          "name": "Fire Resistance Potion",
-          "namePl": "Mikstura odporności na ogień",
-          "slug": "fire-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Fire-Resistance",
-            "DOS2"
-          ],
-          "statsId": "CON_Potion_Fire_Res_A"
+          "statsId": "CON_Potion_Fire_Res_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -19786,23 +19444,8 @@
             "PotionHealing",
             "PotionPoison"
           ],
-          "statsId": "POTION_Minor_Healing_Potion"
-        },
-        {
-          "name": "Minor Healing Potion",
-          "namePl": "Mała mikstura uzdrawiająca",
-          "slug": "minor-healing-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "HealingPotion",
-            "PotionHealing",
-            "PotionPoison"
-          ],
-          "statsId": "POTION_Minor_Healing_Potion"
+          "statsId": "POTION_Minor_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20096,22 +19739,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_MagicArmor_Boost_A"
-        },
-        {
-          "name": "Small Magic Armour Potion",
-          "namePl": "Mała mikstura Pancerza Magicznego",
-          "slug": "small-magic-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Magic-Armour",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_MagicArmor_Boost_A"
+          "statsId": "CON_Potion_MagicArmor_Boost_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20278,22 +19907,8 @@
           "craftingCategories": [
             "ArmourPotion"
           ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_A"
-        },
-        {
-          "name": "Physical Armour Potion",
-          "namePl": "Mikstura Pancerza Fizycznego",
-          "slug": "physical-armour-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Physical-Armour",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion"
-          ],
-          "statsId": "CON_Potion_PhysicalArmor_Boost_A"
+          "statsId": "CON_Potion_PhysicalArmor_Boost_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20521,23 +20136,8 @@
             "ArmourPotion",
             "PotionPoison"
           ],
-          "statsId": "CON_Potion_Poison_A"
-        },
-        {
-          "name": "Small Poison Bottle",
-          "namePl": "Mała butelka trucizny",
-          "slug": "small-poison-bottle",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "POISONED",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "ArmourPotion",
-            "PotionPoison"
-          ],
-          "statsId": "CON_Potion_Poison_A"
+          "statsId": "CON_Potion_Poison_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20647,22 +20247,8 @@
             "Earth-Resistance",
             "DOS2"
           ],
-          "statsId": "POTION_Minor_ResistAll_Potion"
-        },
-        {
-          "name": "Minor Resist All Potion",
-          "namePl": "Mała mikstura wszelkiej odporności",
-          "slug": "minor-resist-all-potion",
-          "tags": [
-            "Potions",
-            "Fire-Resistance",
-            "Air-Resistance",
-            "Poison-Resistance",
-            "Water-Resistance",
-            "Earth-Resistance",
-            "DOS2"
-          ],
-          "statsId": "POTION_Minor_ResistAll_Potion"
+          "statsId": "POTION_Minor_ResistAll_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20887,19 +20473,8 @@
             "Water-Resistance",
             "DOS2"
           ],
-          "statsId": "CON_Potion_Water_Res_A"
-        },
-        {
-          "name": "Water Resistance Potion",
-          "namePl": "Mikstura odporności na wodę",
-          "slug": "water-resistance-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Water-Resistance",
-            "DOS2"
-          ],
-          "statsId": "CON_Potion_Water_Res_A"
+          "statsId": "CON_Potion_Water_Res_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -27628,20 +27203,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
-        },
-        {
-          "name": "Yarn",
-          "namePl": "Przędza",
-          "slug": "yarn",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
+          "statsId": "LOOT_Yarn_A_Wool_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -32423,20 +31986,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Hair_A"
-        },
-        {
-          "name": "Hair",
-          "namePl": "Włosy",
-          "slug": "hair",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Hair_A"
+          "statsId": "LOOT_Hair_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34045,20 +33596,8 @@
           "craftingCategories": [
             "Junk"
           ],
-          "statsId": "LOOT_Wool_A"
-        },
-        {
-          "name": "Wool",
-          "namePl": "Wełna",
-          "slug": "wool",
-          "tags": [
-            "Ingredients",
-            "DOS2"
-          ],
-          "craftingCategories": [
-            "Junk"
-          ],
-          "statsId": "LOOT_Wool_A"
+          "statsId": "LOOT_Wool_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -34088,7 +33627,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR:#Armor-With-Empty-Rune-Socket+#Small-Rune",
       "effect": {
-        "en": "+XX% max physical armour"
+        "en": "+XX% max physical armour",
+        "pl": "+XX% maks. pancerza fizycznego"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -34121,7 +33661,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR:#Armor-With-Empty-Rune-Socket+#Medium-Rune",
       "effect": {
-        "en": "+XX% max physical armour"
+        "en": "+XX% max physical armour",
+        "pl": "+XX% maks. pancerza fizycznego"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -34154,7 +33695,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR:#Armor-With-Empty-Rune-Socket+#Large-Rune",
       "effect": {
-        "en": "+XX% max physical armour"
+        "en": "+XX% max physical armour",
+        "pl": "+XX% maks. pancerza fizycznego"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -34187,7 +33729,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENTAL-RESISTANCE---+XX-percent-MAX-PHYSICAL-ARMOUR:#Armor-With-Empty-Rune-Socket+#Giant-Rune",
       "effect": {
-        "en": "+XX% max physical armour"
+        "en": "+XX% max physical armour",
+        "pl": "+XX% maks. pancerza fizycznego"
       },
       "target": {
         "name": "#Armor-With-Empty-Rune-Socket",
@@ -34380,7 +33923,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE:#Weapon-With-Empty-Rune-Socket+#Small-Rune",
       "effect": {
-        "en": "add XX% element damage"
+        "en": "Add XX% elemental damage",
+        "pl": "Dodaje XX% obrażeń żywiołowych"
       },
       "target": {
         "name": "#Weapon-With-Empty-Rune-Socket",
@@ -34412,7 +33956,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE:#Weapon-With-Empty-Rune-Socket+#Medium-Rune",
       "effect": {
-        "en": "add XX% element damage"
+        "en": "Add XX% elemental damage",
+        "pl": "Dodaje XX% obrażeń żywiołowych"
       },
       "target": {
         "name": "#Weapon-With-Empty-Rune-Socket",
@@ -34444,7 +33989,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE:#Weapon-With-Empty-Rune-Socket+#Large-Rune",
       "effect": {
-        "en": "add XX% element damage"
+        "en": "Add XX% elemental damage",
+        "pl": "Dodaje XX% obrażeń żywiołowych"
       },
       "target": {
         "name": "#Weapon-With-Empty-Rune-Socket",
@@ -34476,7 +34022,8 @@
     {
       "id": "Ulepszenia/ADD-XX-percent-ELEMENT-DAMAGE:#Weapon-With-Empty-Rune-Socket+#Giant-Rune",
       "effect": {
-        "en": "add XX% element damage"
+        "en": "Add XX% elemental damage",
+        "pl": "Dodaje XX% obrażeń żywiołowych"
       },
       "target": {
         "name": "#Weapon-With-Empty-Rune-Socket",
@@ -34508,7 +34055,8 @@
     {
       "id": "Ulepszenia/AMULET-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Amulet",
       "effect": {
-        "en": "Amulet Crafting Special Ataraxian"
+        "en": "Ataraxian (amulet)",
+        "pl": "Ataraksja (amulet)"
       },
       "target": {
         "name": "Amulet",
@@ -34548,7 +34096,8 @@
     {
       "id": "Ulepszenia/BELT-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Belt",
       "effect": {
-        "en": "Belt Crafting Special Ataraxian"
+        "en": "Ataraxian (belt)",
+        "pl": "Ataraksja (pas)"
       },
       "target": {
         "name": "Belt",
@@ -34588,7 +34137,8 @@
     {
       "id": "Ulepszenia/BOOTS-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+#Shoes-Or-Boots",
       "effect": {
-        "en": "Boots Crafting Special Ataraxian"
+        "en": "Ataraxian (boots)",
+        "pl": "Ataraksja (buty)"
       },
       "target": {
         "name": "#Shoes-Or-Boots",
@@ -34625,7 +34175,8 @@
     {
       "id": "Ulepszenia/BOOTS-CRAFTING-SPECIAL-SLIPPING-IMMUNITY:Nails+Boots",
       "effect": {
-        "en": "Boots Crafting Special Slipping immunity"
+        "en": "Slipping immunity (boots)",
+        "pl": "Niewrażliwość na poślizg (buty)"
       },
       "target": {
         "name": "Boots",
@@ -34665,7 +34216,8 @@
     {
       "id": "Ulepszenia/BUFFED-WEAPON:Eternal Artefact+weapon (except of wands and staves)",
       "effect": {
-        "en": "Buffed weapon"
+        "en": "Buffed weapon",
+        "pl": "Wzmocniona broń"
       },
       "target": {
         "name": "weapon (except of wands and staves)",
@@ -34843,7 +34395,8 @@
     {
       "id": "Ulepszenia/GLOVES-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Gloves",
       "effect": {
-        "en": "Gloves Crafting Special Ataraxian"
+        "en": "Ataraxian (gloves)",
+        "pl": "Ataraksja (rękawice)"
       },
       "target": {
         "name": "Gloves",
@@ -34884,7 +34437,8 @@
     {
       "id": "Ulepszenia/HELMET-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Helmet",
       "effect": {
-        "en": "Helmet Crafting Special Ataraxian"
+        "en": "Ataraxian (helmet)",
+        "pl": "Ataraksja (hełm)"
       },
       "target": {
         "name": "Helmet",
@@ -35413,7 +34967,8 @@
     {
       "id": "Ulepszenia/PANTS-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Pants",
       "effect": {
-        "en": "Pants Crafting Special Ataraxian"
+        "en": "Ataraxian (pants)",
+        "pl": "Ataraksja (nogawice)"
       },
       "target": {
         "name": "Pants",
@@ -35453,7 +35008,8 @@
     {
       "id": "Ulepszenia/POISONED-WEAPON:Poison+weapon",
       "effect": {
-        "en": "Poisoned weapon"
+        "en": "Poisoned weapon",
+        "pl": "Zatruta broń"
       },
       "target": {
         "name": "Weapon",
@@ -35488,7 +35044,8 @@
     {
       "id": "Ulepszenia/RING-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Ring",
       "effect": {
-        "en": "Ring Crafting Special Ataraxian"
+        "en": "Ataraxian (ring)",
+        "pl": "Ataraksja (pierścień)"
       },
       "target": {
         "name": "Ring",
@@ -35528,7 +35085,8 @@
     {
       "id": "Ulepszenia/UPPERBODY-CRAFTING-SPECIAL-ATARAXIAN:Eternal Artefact+Upperbody armor",
       "effect": {
-        "en": "Upperbody Crafting Special Ataraxian"
+        "en": "Ataraxian (upperbody)",
+        "pl": "Ataraksja (napierśnik)"
       },
       "target": {
         "name": "Upperbody armor",

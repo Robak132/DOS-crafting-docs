@@ -3324,17 +3324,8 @@
             "Scrolls",
             "DOS1"
           ],
-          "statsId": "Scroll_Skill_Air_Blank_A"
-        },
-        {
-          "name": "Blank Air Scroll",
-          "namePl": "Niezapisany zwój powietrza",
-          "slug": "blank-air-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS1"
-          ],
-          "statsId": "Scroll_Skill_Air_Blank_A"
+          "statsId": "Scroll_Skill_Air_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -3412,17 +3403,8 @@
             "Scrolls",
             "DOS1"
           ],
-          "statsId": "Scroll_Skill_Earth_Blank_A"
-        },
-        {
-          "name": "Blank Earth Scroll",
-          "namePl": "Niezapisany zwój ziemi",
-          "slug": "blank-earth-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS1"
-          ],
-          "statsId": "Scroll_Skill_Earth_Blank_A"
+          "statsId": "Scroll_Skill_Earth_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -3500,17 +3482,8 @@
             "Scrolls",
             "DOS1"
           ],
-          "statsId": "Scroll_Skill_Fire_Blank_A"
-        },
-        {
-          "name": "Blank Fire Scroll",
-          "namePl": "Niezapisany zwój ognia",
-          "slug": "blank-fire-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS1"
-          ],
-          "statsId": "Scroll_Skill_Fire_Blank_A"
+          "statsId": "Scroll_Skill_Fire_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -3588,17 +3561,8 @@
             "Scrolls",
             "DOS1"
           ],
-          "statsId": "Scroll_Skill_Water_Blank_A"
-        },
-        {
-          "name": "Blank Water Scroll",
-          "namePl": "Niezapisany zwój wody",
-          "slug": "blank-water-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS1"
-          ],
-          "statsId": "Scroll_Skill_Water_Blank_A"
+          "statsId": "Scroll_Skill_Water_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -3673,17 +3637,8 @@
             "Scrolls",
             "DOS1"
           ],
-          "statsId": "Scroll_Skill_Witchcraft_Blank_A"
-        },
-        {
-          "name": "Blank Witchcraft Scroll",
-          "namePl": "Niezapisany zwój czarnej magii",
-          "slug": "blank-witchcraft-scroll",
-          "tags": [
-            "Scrolls",
-            "DOS1"
-          ],
-          "statsId": "Scroll_Skill_Witchcraft_Blank_A"
+          "statsId": "Scroll_Skill_Witchcraft_Blank_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -4019,20 +3974,8 @@
           "craftingCategories": [
             "Sinew"
           ],
-          "statsId": "LOOT_Sinew_A"
-        },
-        {
-          "name": "Sinew",
-          "namePl": "Ścięgno",
-          "slug": "sinew",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Sinew"
-          ],
-          "statsId": "LOOT_Sinew_A"
+          "statsId": "LOOT_Sinew_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -7181,17 +7124,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_Rope_A"
-        },
-        {
-          "name": "Rope",
-          "namePl": "Lina",
-          "slug": "rope",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Rope_A"
+          "statsId": "LOOT_Rope_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -7813,21 +7747,8 @@
           "craftingCategories": [
             "PotionHealing"
           ],
-          "statsId": "POTION_Medium_Healing_Potion"
-        },
-        {
-          "name": "Medium Healing Potion",
-          "namePl": "Średnia mikstura uzdrawiająca",
-          "slug": "medium-healing-potion",
-          "tags": [
-            "Potions",
-            "Healing",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "PotionHealing"
-          ],
-          "statsId": "POTION_Medium_Healing_Potion"
+          "statsId": "POTION_Medium_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -8019,17 +7940,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_OreBar_A_Iron_A"
-        },
-        {
-          "name": "Iron Bar",
-          "namePl": "Sztabka żelaza",
-          "slug": "iron-bar",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_OreBar_A_Iron_A"
+          "statsId": "LOOT_OreBar_A_Iron_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -8174,22 +8086,8 @@
           "craftingCategories": [
             "PotionPoison"
           ],
-          "statsId": "CON_Potion_Poison_Medium_A"
-        },
-        {
-          "name": "Medium Poison Bottle",
-          "namePl": "Średnia butelka trucizny",
-          "slug": "medium-poison-bottle",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "POISONED",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "PotionPoison"
-          ],
-          "statsId": "CON_Potion_Poison_Medium_A"
+          "statsId": "CON_Potion_Poison_Medium_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -8842,17 +8740,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_Needle_A"
-        },
-        {
-          "name": "Needle",
-          "namePl": "Igła",
-          "slug": "needle",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Needle_A"
+          "statsId": "LOOT_Needle_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -10617,17 +10506,8 @@
             "POISONED",
             "DOS1"
           ],
-          "statsId": "CON_Potion_Poison_A"
-        },
-        {
-          "name": "MINOR POISON BOTTLE",
-          "slug": "minor-poison-bottle",
-          "tags": [
-            "Potions",
-            "POISONED",
-            "DOS1"
-          ],
-          "statsId": "CON_Potion_Poison_A"
+          "statsId": "CON_Potion_Poison_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -15015,17 +14895,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
-        },
-        {
-          "name": "Yarn",
-          "namePl": "Przędza",
-          "slug": "yarn",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Yarn_A_Wool_A"
+          "statsId": "LOOT_Yarn_A_Wool_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -15826,21 +15697,8 @@
           "craftingCategories": [
             "Weapon"
           ],
-          "statsId": "WPN_Branch_A"
-        },
-        {
-          "name": "Branch",
-          "namePl": "Gałąź",
-          "slug": "branch",
-          "tags": [
-            "Ingredients",
-            "One-Handed-Maces",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Weapon"
-          ],
-          "statsId": "WPN_Branch_A"
+          "statsId": "WPN_Branch_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -16509,17 +16367,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_Hair_A"
-        },
-        {
-          "name": "Hair",
-          "namePl": "Włosy",
-          "slug": "hair",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Hair_A"
+          "statsId": "LOOT_Hair_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -18082,17 +17931,8 @@
             "Ingredients",
             "DOS1"
           ],
-          "statsId": "LOOT_Wool_A"
-        },
-        {
-          "name": "Wool",
-          "namePl": "Wełna",
-          "slug": "wool",
-          "tags": [
-            "Ingredients",
-            "DOS1"
-          ],
-          "statsId": "LOOT_Wool_A"
+          "statsId": "LOOT_Wool_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -19683,22 +19523,8 @@
           "craftingCategories": [
             "PotionHealing"
           ],
-          "statsId": "POTION_Minor_Healing_Potion"
-        },
-        {
-          "name": "Minor Healing Potion",
-          "namePl": "Mała mikstura uzdrawiająca",
-          "slug": "minor-healing-potion",
-          "tags": [
-            "Potions",
-            "Ingredients",
-            "Healing",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "PotionHealing"
-          ],
-          "statsId": "POTION_Minor_Healing_Potion"
+          "statsId": "POTION_Minor_Healing_Potion",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -20468,19 +20294,8 @@
           "craftingCategories": [
             "Weapon"
           ],
-          "statsId": "WPN_ArrowHead_Poison_A"
-        },
-        {
-          "name": "Poisoned Arrowhead",
-          "slug": "poison-arrowhead",
-          "tags": [
-            "Arrows",
-            "DOS1"
-          ],
-          "craftingCategories": [
-            "Weapon"
-          ],
-          "statsId": "WPN_ArrowHead_Poison_A"
+          "statsId": "WPN_ArrowHead_Poison_A",
+          "quantity": "x2"
         }
       ],
       "result": {
@@ -21261,7 +21076,8 @@
     {
       "id": "Ulepszenia/ADD-AIR-DAMAGE-ON-ITEM:Air Essence+Most Weapons",
       "effect": {
-        "en": "Add air damage on item"
+        "en": "Add air damage on item",
+        "pl": "Dodaje obrażenia od powietrza"
       },
       "target": {
         "name": "Most Weapons",
@@ -21300,7 +21116,8 @@
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Shield",
       "effect": {
-        "en": "Add air resist on item"
+        "en": "Add air resist on item",
+        "pl": "Dodaje odporność na powietrze"
       },
       "target": {
         "name": "Shield",
@@ -21344,7 +21161,8 @@
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
       "effect": {
-        "en": "Add air resist on item"
+        "en": "Add air resist on item",
+        "pl": "Dodaje odporność na powietrze"
       },
       "target": {
         "name": "#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -21384,7 +21202,8 @@
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Metal-Chest",
       "effect": {
-        "en": "Add air resist on item"
+        "en": "Add air resist on item",
+        "pl": "Dodaje odporność na powietrze"
       },
       "target": {
         "name": "METAL CHEST",
@@ -21422,7 +21241,8 @@
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Cloth-Chest-Robe-Or-Sarong",
       "effect": {
-        "en": "Add air resist on item"
+        "en": "Add air resist on item",
+        "pl": "Dodaje odporność na powietrze"
       },
       "target": {
         "name": "#Cloth-Chest-Robe-Or-Sarong",
@@ -21460,7 +21280,8 @@
     {
       "id": "Ulepszenia/ADD-AIR,-EARTH,-FIRE,-WATER-RESIST-ON-ITEM:Ruby+#Chest-Gloves-Helmet-Belt-Or-Sarong",
       "effect": {
-        "en": "Add air, earth, fire, water resist on item"
+        "en": "Add air, earth, fire, water resist on item",
+        "pl": "Dodaje odporność na powietrze, ziemię, ogień i wodę"
       },
       "target": {
         "name": "#Chest-Gloves-Helmet-Belt-Or-Sarong",
@@ -21498,7 +21319,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Mobile Kitchen+#Leather-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "LEATHER CHEST",
@@ -21537,7 +21359,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Leather Scraps+#Cloth-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "#Cloth-Chest",
@@ -21571,7 +21394,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Metal Scraps+#Cloth-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "#Cloth-Chest",
@@ -21605,7 +21429,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Metal Scraps+#Leather-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "LEATHER CHEST",
@@ -21640,7 +21465,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Plate Scraps+#Metal-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "METAL CHEST",
@@ -21675,7 +21501,8 @@
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Scale Scraps+#Metal-Chest",
       "effect": {
-        "en": "Add armor on item"
+        "en": "Add armor on item",
+        "pl": "Dodaje pancerz"
       },
       "target": {
         "name": "METAL CHEST",
@@ -21710,7 +21537,8 @@
     {
       "id": "Ulepszenia/ADD-BLOCKING-CHANCE-ON-ITEM:Anvil+#Metal-Shield",
       "effect": {
-        "en": "Add blocking chance on item"
+        "en": "Add blocking chance on item",
+        "pl": "Dodaje szansę na blok"
       },
       "target": {
         "name": "#Metal-Shield",
@@ -21747,7 +21575,8 @@
     {
       "id": "Ulepszenia/ADD-BLOCKING-CHANCE-ON-ITEM:Metal Scraps+#Wooden-Shield",
       "effect": {
-        "en": "Add blocking chance on item"
+        "en": "Add blocking chance on item",
+        "pl": "Dodaje szansę na blok"
       },
       "target": {
         "name": "#Wooden-Shield",
@@ -21781,7 +21610,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Whetstone+#Bladed-Melee-Weapon",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "#Bladed-Melee-Weapon",
@@ -21815,7 +21645,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Whetstone Wheel+#Bladed-Melee-Weapon",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "#Bladed-Melee-Weapon",
@@ -21849,7 +21680,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Bowstring+#Bow",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "Bow",
@@ -21890,7 +21722,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Bowstring+#Crossbow",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "Crossbow",
@@ -21928,7 +21761,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Moonstone+#Club",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "#Club",
@@ -21964,7 +21798,8 @@
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Moonstone+#Staff",
       "effect": {
-        "en": "Add damage on item"
+        "en": "Add damage on item",
+        "pl": "Dodaje obrażenia"
       },
       "target": {
         "name": "Staff",
@@ -22002,7 +21837,8 @@
     {
       "id": "Ulepszenia/ADD-DEXTERITY,-PERCEPTION-ON-ITEM:Scope+#Bow",
       "effect": {
-        "en": "Add dexterity, perception on item"
+        "en": "Add dexterity, perception on item",
+        "pl": "Dodaje zręczność, percepcję"
       },
       "target": {
         "name": "Bow",
@@ -22043,7 +21879,8 @@
     {
       "id": "Ulepszenia/ADD-DEXTERITY,-PERCEPTION-ON-ITEM:Scope+#Crossbow",
       "effect": {
-        "en": "Add dexterity, perception on item"
+        "en": "Add dexterity, perception on item",
+        "pl": "Dodaje zręczność, percepcję"
       },
       "target": {
         "name": "Crossbow",
@@ -22081,7 +21918,8 @@
     {
       "id": "Ulepszenia/ADD-DURABILITY-ON-ITEM:Anvil+#Metal-Shield",
       "effect": {
-        "en": "Add durability on item"
+        "en": "Add durability on item",
+        "pl": "Dodaje wytrzymałość"
       },
       "target": {
         "name": "#Metal-Shield",
@@ -22118,7 +21956,8 @@
     {
       "id": "Ulepszenia/ADD-DURABILITY-ON-ITEM:Metal Scraps+#Wooden-Shield",
       "effect": {
-        "en": "Add durability on item"
+        "en": "Add durability on item",
+        "pl": "Dodaje wytrzymałość"
       },
       "target": {
         "name": "#Wooden-Shield",
@@ -22152,7 +21991,8 @@
     {
       "id": "Ulepszenia/ADD-EARTH-DAMAGE-ON-ITEM:Earth Essence+Most Weapons",
       "effect": {
-        "en": "Add earth damage on item"
+        "en": "Add earth damage on item",
+        "pl": "Dodaje obrażenia od ziemi"
       },
       "target": {
         "name": "Most Weapons",
@@ -22191,7 +22031,8 @@
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Shield",
       "effect": {
-        "en": "Add earth resist on item"
+        "en": "Add earth resist on item",
+        "pl": "Dodaje odporność na ziemię"
       },
       "target": {
         "name": "Shield",
@@ -22235,7 +22076,8 @@
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Cloth-Chest-Robe-Or-Sarong",
       "effect": {
-        "en": "Add earth resist on item"
+        "en": "Add earth resist on item",
+        "pl": "Dodaje odporność na ziemię"
       },
       "target": {
         "name": "#Cloth-Chest-Robe-Or-Sarong",
@@ -22273,7 +22115,8 @@
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
       "effect": {
-        "en": "Add earth resist on item"
+        "en": "Add earth resist on item",
+        "pl": "Dodaje odporność na ziemię"
       },
       "target": {
         "name": "#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -22313,7 +22156,8 @@
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Metal-Chest",
       "effect": {
-        "en": "Add earth resist on item"
+        "en": "Add earth resist on item",
+        "pl": "Dodaje odporność na ziemię"
       },
       "target": {
         "name": "METAL CHEST",
@@ -22351,7 +22195,8 @@
     {
       "id": "Ulepszenia/ADD-FIRE-DAMAGE-ON-ITEM:Fire Essence+Most Weapons",
       "effect": {
-        "en": "Add fire damage on item"
+        "en": "Add fire damage on item",
+        "pl": "Dodaje obrażenia od ognia"
       },
       "target": {
         "name": "Most Weapons",
@@ -22390,7 +22235,8 @@
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Shield",
       "effect": {
-        "en": "Add fire resist on item"
+        "en": "Add fire resist on item",
+        "pl": "Dodaje odporność na ogień"
       },
       "target": {
         "name": "Shield",
@@ -22434,7 +22280,8 @@
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Cloth-Chest-Robe-Or-Sarong",
       "effect": {
-        "en": "Add fire resist on item"
+        "en": "Add fire resist on item",
+        "pl": "Dodaje odporność na ogień"
       },
       "target": {
         "name": "#Cloth-Chest-Robe-Or-Sarong",
@@ -22472,7 +22319,8 @@
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
       "effect": {
-        "en": "Add fire resist on item"
+        "en": "Add fire resist on item",
+        "pl": "Dodaje odporność na ogień"
       },
       "target": {
         "name": "#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -22512,7 +22360,8 @@
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Metal-Chest",
       "effect": {
-        "en": "Add fire resist on item"
+        "en": "Add fire resist on item",
+        "pl": "Dodaje odporność na ogień"
       },
       "target": {
         "name": "METAL CHEST",
@@ -22550,7 +22399,8 @@
     {
       "id": "Ulepszenia/ADD-IMMUNITY-TO-SLIPPING-ON-ITEM:Nine Inch Nails+#Boots",
       "effect": {
-        "en": "Add immunity to slipping on item"
+        "en": "Add immunity to slipping on item",
+        "pl": "Dodaje niewrażliwość na poślizg"
       },
       "target": {
         "name": "Boots",
@@ -22587,7 +22437,8 @@
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Anvil+#Metal-Chest",
       "effect": {
-        "en": "Add movement on item"
+        "en": "Add movement on item",
+        "pl": "Dodaje szybkość ruchu"
       },
       "target": {
         "name": "METAL CHEST",
@@ -22625,7 +22476,8 @@
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Bottle Filled With Oil+#Metal-Chest",
       "effect": {
-        "en": "Add movement on item"
+        "en": "Add movement on item",
+        "pl": "Dodaje szybkość ruchu"
       },
       "target": {
         "name": "METAL CHEST",
@@ -22665,7 +22517,8 @@
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Cup of Oil+#Metal-Chest",
       "effect": {
-        "en": "Add movement on item"
+        "en": "Add movement on item",
+        "pl": "Dodaje szybkość ruchu"
       },
       "target": {
         "name": "METAL CHEST",
@@ -22704,7 +22557,8 @@
     {
       "id": "Ulepszenia/ADD-POISON-DAMAGE-ON-ITEM:BUTELKA TRUCIZNY+Most Weapons",
       "effect": {
-        "en": "Add poison damage on item"
+        "en": "Add poison damage on item",
+        "pl": "Dodaje obrażenia od trucizny"
       },
       "target": {
         "name": "Most Weapons",
@@ -22740,7 +22594,8 @@
     {
       "id": "Ulepszenia/ADD-SNEAKING-ON-ITEM:Shadow Essence+#Chest-Gloves-Helmet-Belt-Or-Sarong",
       "effect": {
-        "en": "Add sneaking on item"
+        "en": "Add sneaking on item",
+        "pl": "Dodaje skradanie się"
       },
       "target": {
         "name": "#Chest-Gloves-Helmet-Belt-Or-Sarong",
@@ -22781,7 +22636,8 @@
     {
       "id": "Ulepszenia/ADD-STRENGTH,,-DEXTERITY-ON-ITEM:Tormented Soul+Most Weapons",
       "effect": {
-        "en": "Add strength,, dexterity on item"
+        "en": "Add strength, dexterity on item",
+        "pl": "Dodaje siłę, zręczność"
       },
       "target": {
         "name": "Most Weapons",
@@ -22817,7 +22673,8 @@
     {
       "id": "Ulepszenia/ADD-TENEBRIUM-DAMAGE-ON-ITEM:Tenebrium Bar+Most Weapons",
       "effect": {
-        "en": "Add tenebrium damage on item"
+        "en": "Add tenebrium damage on item",
+        "pl": "Dodaje obrażenia od tenebrium"
       },
       "target": {
         "name": "Most Weapons",
@@ -22853,7 +22710,8 @@
     {
       "id": "Ulepszenia/ADD-TENEBRIUM-RESIST-ON-ITEM:Shadow Essence+#Shield",
       "effect": {
-        "en": "Add tenebrium resist on item"
+        "en": "Add tenebrium resist on item",
+        "pl": "Dodaje odporność na tenebrium"
       },
       "target": {
         "name": "Shield",
@@ -22897,7 +22755,8 @@
     {
       "id": "Ulepszenia/ADD-WATER-DAMAGE-ON-ITEM:Water Essence+Most Weapons",
       "effect": {
-        "en": "Add water damage on item"
+        "en": "Add water damage on item",
+        "pl": "Dodaje obrażenia od wody"
       },
       "target": {
         "name": "Most Weapons",
@@ -22936,7 +22795,8 @@
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Shield",
       "effect": {
-        "en": "Add water resist on item"
+        "en": "Add water resist on item",
+        "pl": "Dodaje odporność na wodę"
       },
       "target": {
         "name": "Shield",
@@ -22980,7 +22840,8 @@
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Cloth-Chest-Robe-Or-Sarong",
       "effect": {
-        "en": "Add water resist on item"
+        "en": "Add water resist on item",
+        "pl": "Dodaje odporność na wodę"
       },
       "target": {
         "name": "#Cloth-Chest-Robe-Or-Sarong",
@@ -23018,7 +22879,8 @@
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
       "effect": {
-        "en": "Add water resist on item"
+        "en": "Add water resist on item",
+        "pl": "Dodaje odporność na wodę"
       },
       "target": {
         "name": "#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -23058,7 +22920,8 @@
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Metal-Chest",
       "effect": {
-        "en": "Add water resist on item"
+        "en": "Add water resist on item",
+        "pl": "Dodaje odporność na wodę"
       },
       "target": {
         "name": "METAL CHEST",
@@ -23096,7 +22959,8 @@
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Purple, Green)+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",
@@ -23134,7 +22998,8 @@
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (White, Yellow, Red)+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",
@@ -23172,7 +23037,8 @@
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Black)+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",
@@ -23210,7 +23076,8 @@
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Blue)+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item dyed to (color)"
+        "en": "Item dyed to (color)",
+        "pl": "Przedmiot zafarbowany na (kolor)"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",
@@ -23248,7 +23115,8 @@
     {
       "id": "Ulepszenia/ITEM-DYED-TO-PINK:Grumio's Cotton Candy Dye+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item dyed to pink"
+        "en": "Item dyed to pink",
+        "pl": "Przedmiot zafarbowany na różowo"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",
@@ -23286,7 +23154,8 @@
     {
       "id": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED:Pearl+#Chest-Gloves-Helmet-Belt-Sarong-Or-Shield",
       "effect": {
-        "en": "Item gold value increased"
+        "en": "Item gold value increased",
+        "pl": "Zwiększona wartość przedmiotu w złocie"
       },
       "target": {
         "name": "#Chest-Gloves-Helmet-Belt-Sarong-Or-Shield",
@@ -23325,7 +23194,8 @@
     {
       "id": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED-ITEM-DYED-TO-YELLOW:Golden Grail+#Chest-Gloves-Boots-Or-Sarong",
       "effect": {
-        "en": "Item gold value increased item dyed to yellow"
+        "en": "Item gold value increased, item dyed to yellow",
+        "pl": "Zwiększona wartość przedmiotu w złocie, zafarbowany na żółto"
       },
       "target": {
         "name": "#Chest-Gloves-Boots-Or-Sarong",

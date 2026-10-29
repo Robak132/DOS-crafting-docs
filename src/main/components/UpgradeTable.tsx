@@ -11,6 +11,8 @@ type Props = {
   labels: TagLabels
   game: Game
   showRequirements?: boolean
+  /** The "Na co" column; an item page lists only upgrades of that item, so it hides it. */
+  showTargets?: boolean
 }
 
 function Bilingual({ en, pl }: Readonly<{ en: string; pl?: string }>) {
@@ -33,7 +35,13 @@ function PlainTarget({ item }: Readonly<{ item: Item }>) {
   )
 }
 
-export function UpgradeTable({ upgrades, labels, game, showRequirements = false }: Readonly<Props>) {
+export function UpgradeTable({
+  upgrades,
+  labels,
+  game,
+  showRequirements = false,
+  showTargets = true,
+}: Readonly<Props>) {
   const catalogSlug = games.find((entry) => entry.id === game)!.slug
   if (upgrades.length === 0) return <p class="recipe-empty">Brak ulepszeń pasujących do filtrów.</p>
   return (
@@ -42,7 +50,7 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
         <thead>
           <tr>
             <th scope="col">Efekt</th>
-            <th scope="col">Na co</th>
+            {showTargets && <th scope="col">Na co</th>}
             <th scope="col">Składniki</th>
             {showRequirements && <th scope="col">Wymagania</th>}
             <th scope="col">Tagi</th>
@@ -58,19 +66,21 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
                 </strong>
                 {upgrade.notes.trim() && <p class="recipe-remarks">{upgrade.notes}</p>}
               </td>
-              <td class="recipe-cell ingredients">
-                {upgrade.targets?.length ? (
-                  <ul class="recipe-ingredients">
-                    {upgrade.targets.map((target, position) => (
-                      <li key={position}>
-                        <RecipeItemView item={target} catalogSlug={catalogSlug} />
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <PlainTarget item={upgrade.target} />
-                )}
-              </td>
+              {showTargets && (
+                <td class="recipe-cell ingredients targets">
+                  {upgrade.targets?.length ? (
+                    <ul class="recipe-ingredients">
+                      {upgrade.targets.map((target, position) => (
+                        <li key={position}>
+                          <RecipeItemView item={target} catalogSlug={catalogSlug} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <PlainTarget item={upgrade.target} />
+                  )}
+                </td>
+              )}
               <td class="recipe-cell ingredients">
                 <ul class="recipe-ingredients">
                   {upgrade.ingredients.map((item, position) => (

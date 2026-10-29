@@ -4,7 +4,7 @@ Statyczna aplikacja **Vite + Preact + TypeScript** z katalogami DOS1, DOS2 Defin
 
 ## Uruchomienie
 
-Wymagany Node.js 22 (lokalnie obsługiwany również Node.js 20.19+) i npm 10+.
+Wymagany Node.js 26 (LTS) i npm 10+.
 
 ```sh
 npm ci

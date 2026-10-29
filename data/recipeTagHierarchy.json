@@ -711,11 +711,6 @@
           "children": []
         },
         {
-          "tag": "Casts-Spell",
-          "label": "Rzuca zaklęcie",
-          "children": []
-        },
-        {
           "tag": "Crafting",
           "label": "Wytwarzanie",
           "children": []

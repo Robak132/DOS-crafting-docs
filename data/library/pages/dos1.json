@@ -123,7 +123,6 @@
       "title": "Armour-Piercing Grenade",
       "titlePl": "Granat przeszywający",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Grenades"
@@ -666,7 +665,6 @@
       "title": "Charming Arrow",
       "titlePl": "Strzała oczarowująca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -689,7 +687,6 @@
       "title": "Chemical Warfare Grenade",
       "titlePl": "Granat chemiczny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -765,7 +762,6 @@
       "title": "CLAWED AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -775,7 +771,6 @@
       "title": "CLAWED EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "POISONED",
         "Wands"
@@ -786,7 +781,6 @@
       "title": "CLAWED FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "BURNING",
         "Wands"
@@ -797,7 +791,6 @@
       "title": "CLAWED WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -843,7 +836,6 @@
       "title": "Cluster Grenade",
       "titlePl": "Granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -1213,7 +1205,6 @@
       "title": "DRACONIC AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1223,7 +1214,6 @@
       "title": "DRACONIC EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "PETRIFIED",
         "Wands"
@@ -1234,7 +1224,6 @@
       "title": "DRACONIC FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Fire-Surface",
         "BURNING",
@@ -1246,7 +1235,6 @@
       "title": "DRACONIC WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "FROZEN",
         "Wands"
@@ -1343,7 +1331,6 @@
       "title": "ELVEN AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1353,7 +1340,6 @@
       "title": "ELVEN EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1363,7 +1349,6 @@
       "title": "ELVEN FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1373,7 +1358,6 @@
       "title": "ELVEN WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1499,7 +1483,6 @@
       "title": "Explosive Arrow",
       "titlePl": "Wybuchowa strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1685,7 +1668,6 @@
       "title": "Fire Arrow",
       "titlePl": "Ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1766,7 +1748,6 @@
       "title": "Firestorm Grenade",
       "titlePl": "Granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -1809,7 +1790,6 @@
       "title": "Flashbang Grenade",
       "titlePl": "Granat błysków",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "BLIND",
@@ -1843,7 +1823,6 @@
       "title": "Freezing Arrow",
       "titlePl": "Zamrażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1885,7 +1864,6 @@
       "title": "Frost Grenade",
       "titlePl": "Granat mrozu",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2138,7 +2116,6 @@
       "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Grenades"
@@ -2574,7 +2551,6 @@
       "title": "Knockdown Arrow",
       "titlePl": "Strzała powalająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2938,7 +2914,6 @@
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3837,7 +3812,6 @@
       "title": "Nailbomb Grenade",
       "titlePl": "Granat z gwoździami",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3908,7 +3882,6 @@
       "title": "Oil Flask",
       "titlePl": "Flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4067,7 +4040,6 @@
       "title": "Poison Arrow",
       "titlePl": "Zatruta strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4099,7 +4071,6 @@
       "title": "Poison Cloud Arrow",
       "titlePl": "Strzała trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "POISONED",
         "Arrows"
@@ -4110,7 +4081,6 @@
       "title": "Poison Cloud Grenade",
       "titlePl": "Granat trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4123,7 +4093,6 @@
       "title": "Poison Flask",
       "titlePl": "Fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4621,7 +4590,6 @@
       "title": "Silver Arrow",
       "titlePl": "Srebrna strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -4720,7 +4688,6 @@
       "title": "Slowdown Arrow",
       "titlePl": "Strzała spowalniająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4752,7 +4719,6 @@
       "title": "Smokescreen Arrow",
       "titlePl": "Strzała zasłony dymnej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4834,7 +4800,6 @@
       "title": "Static Cloud Arrow",
       "titlePl": "Strzała naelektryzowanej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "BLIND",
@@ -4856,7 +4821,6 @@
       "slug": "steam-cloud-arrow",
       "title": "STEAM CLOUD ARROW",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "BLIND",
         "Arrows"
@@ -4892,7 +4856,6 @@
       "title": "Stunning Arrow",
       "titlePl": "Strzała ogłuszająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -5166,7 +5129,6 @@
       "slug": "taser-grenade-2",
       "title": "Taser Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "Grenades"
       ]
@@ -5211,7 +5173,6 @@
       "title": "Terror Grenade",
       "titlePl": "Granat grozy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5313,7 +5274,6 @@
       "title": "Tremor Grenade",
       "titlePl": "Granat wstrząsowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5377,7 +5337,6 @@
       "title": "Water Balloon",
       "titlePl": "Balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5572,7 +5531,6 @@
       "title": "WOODEN AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "BLIND",
         "Wands"
@@ -5583,7 +5541,6 @@
       "title": "WOODEN EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -5603,7 +5560,6 @@
       "title": "WOODEN FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Fire-Surface",
         "BURNING",
@@ -5625,7 +5581,6 @@
       "title": "WOODEN WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "FROZEN",
         "Wands"

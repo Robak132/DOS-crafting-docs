@@ -52,7 +52,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "POISONED",
           "DOS2"
@@ -62,7 +61,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "POISONED",
         "DOS2"
@@ -93,7 +91,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "POISONED",
             "DOS2"
@@ -177,7 +174,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "APOTHEOSIS",
           "DOS2"
@@ -187,7 +183,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "APOTHEOSIS",
         "DOS2"
@@ -218,7 +213,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "APOTHEOSIS",
             "DOS2"
@@ -543,7 +537,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -552,7 +545,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -613,7 +605,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -622,7 +613,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -654,7 +644,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -709,7 +698,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "ARCANE_STITCH",
             "DOS2"
@@ -867,7 +855,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "MAGIC_SHELL",
           "DOS2"
@@ -880,7 +867,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "MAGIC_SHELL",
         "DOS2"
@@ -913,7 +899,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "MAGIC_SHELL",
             "DOS2"
@@ -1222,7 +1207,6 @@
         "slug": "hungry-flower-scroll",
         "tags": [
           "Scrolls",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -1230,7 +1214,6 @@
       },
       "tags": [
         "Scrolls",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -1260,7 +1243,6 @@
           "slug": "hungry-flower-scroll",
           "tags": [
             "Scrolls",
-            "Casts-Spell",
             "Geomancer",
             "DOS2"
           ],
@@ -1558,7 +1540,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Target_BlackShroud"
@@ -1566,7 +1547,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -1597,7 +1577,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Target_BlackShroud"
@@ -1650,7 +1629,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "FIREBLOOD",
             "DOS2"
@@ -1702,7 +1680,6 @@
           "slug": "frost-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Ice-Surface",
             "CHILLED",
             "DOS2"
@@ -1719,7 +1696,6 @@
         "slug": "blessed-ice-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -1729,7 +1705,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -1760,7 +1735,6 @@
           "slug": "oil-flask",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Oil-Surface",
             "DOS2"
           ],
@@ -1776,7 +1750,6 @@
         "slug": "blessed-oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -1786,7 +1759,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -1834,7 +1806,6 @@
         "slug": "blessed-water-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "HEALING",
           "DOS2"
         ],
@@ -1846,7 +1817,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "HEALING",
         "DOS2"
       ],
@@ -1879,7 +1849,6 @@
           "tags": [
             "Arrows",
             "Ingredients",
-            "Casts-Spell",
             "Water-Surface",
             "WET",
             "DOS2"
@@ -1897,7 +1866,6 @@
         "slug": "blessed-water-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "HEALING",
           "DOS2"
         ],
@@ -1909,7 +1877,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "HEALING",
         "DOS2"
       ],
@@ -1997,7 +1964,6 @@
           "slug": "water-balloon",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Water-Surface",
             "WET",
             "DOS2"
@@ -2014,7 +1980,6 @@
         "slug": "blessed-water-balloon",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "WET",
           "DOS2"
         ],
@@ -2025,7 +1990,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "WET",
         "DOS2"
       ],
@@ -2085,7 +2049,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -2094,7 +2057,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -2124,7 +2086,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -2179,7 +2140,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "BLEEDING",
             "DOS2"
           ],
@@ -2326,7 +2286,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "BLOOD_BUBBLE",
           "DOS2"
         ],
@@ -2335,7 +2294,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "BLOOD_BUBBLE",
         "DOS2"
       ],
@@ -2367,7 +2325,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "BLOOD_BUBBLE",
             "DOS2"
           ],
@@ -2599,7 +2556,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Shout_BoneCage"
@@ -2607,7 +2563,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -2667,7 +2622,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Shout_BoneCage"
@@ -2675,7 +2629,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -2706,7 +2659,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Shout_BoneCage"
@@ -3359,7 +3311,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "HORNS",
           "DOS2"
@@ -3369,7 +3320,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "HORNS",
         "DOS2"
@@ -3431,7 +3381,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "HORNS",
           "DOS2"
@@ -3441,7 +3390,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "HORNS",
         "DOS2"
@@ -3474,7 +3422,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "HORNS",
             "DOS2"
@@ -3528,7 +3475,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -3611,7 +3557,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -3621,7 +3566,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -3682,7 +3626,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -3692,7 +3635,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -3723,7 +3665,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -3804,7 +3745,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "INVISIBLE",
           "DOS2"
@@ -3814,7 +3754,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "INVISIBLE",
         "DOS2"
@@ -3847,7 +3786,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "INVISIBLE",
             "DOS2"
@@ -3925,7 +3863,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "CHARMED",
           "DOS2"
@@ -3935,7 +3872,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "CHARMED",
         "DOS2"
@@ -3985,7 +3921,6 @@
         "slug": "charming-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CHARMED",
           "DOS2"
         ],
@@ -3997,7 +3932,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CHARMED",
         "DOS2"
       ],
@@ -4037,7 +3971,6 @@
         "slug": "charming-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CHARMED",
           "DOS2"
         ],
@@ -4049,7 +3982,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CHARMED",
         "DOS2"
       ],
@@ -4267,7 +4199,6 @@
         "slug": "chemical-warfare-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DISEASED",
           "DOS2"
         ],
@@ -4278,7 +4209,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DISEASED",
         "DOS2"
       ],
@@ -4334,7 +4264,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "CHICKEN",
           "DOS2"
@@ -4347,7 +4276,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "CHICKEN",
         "DOS2"
@@ -4380,7 +4308,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "CHICKEN",
             "DOS2"
@@ -4464,7 +4391,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -4474,7 +4400,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -4505,7 +4430,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -4623,7 +4547,6 @@
         "slug": "cluster-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS2"
@@ -4635,7 +4558,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS2"
@@ -4826,7 +4748,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -4910,7 +4831,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "POISONED",
           "DOS2"
@@ -4920,7 +4840,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "POISONED",
         "DOS2"
@@ -4953,7 +4872,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "POISONED",
             "DOS2"
@@ -5061,7 +4979,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "PERMAFROST",
             "DOS2"
@@ -5357,7 +5274,6 @@
         "slug": "curse-scroll",
         "tags": [
           "Scrolls",
-          "Casts-Spell",
           "CURSED",
           "DOS2"
         ],
@@ -5365,7 +5281,6 @@
       },
       "tags": [
         "Scrolls",
-        "Casts-Spell",
         "CURSED",
         "DOS2"
       ],
@@ -5418,7 +5333,6 @@
         "slug": "curse-scroll",
         "tags": [
           "Scrolls",
-          "Casts-Spell",
           "CURSED",
           "DOS2"
         ],
@@ -5426,7 +5340,6 @@
       },
       "tags": [
         "Scrolls",
-        "Casts-Spell",
         "CURSED",
         "DOS2"
       ],
@@ -5458,7 +5371,6 @@
           "slug": "cluster-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Fire-Surface",
             "BURNING",
             "DOS2"
@@ -5475,7 +5387,6 @@
         "slug": "cursed-cluster-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BURNING",
           "DOS2"
         ],
@@ -5486,7 +5397,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BURNING",
         "DOS2"
       ],
@@ -5535,7 +5445,6 @@
         "slug": "cursed-fire-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BURNING",
           "DOS2"
         ],
@@ -5547,7 +5456,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BURNING",
         "DOS2"
       ],
@@ -5579,7 +5487,6 @@
           "slug": "fire-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Fire-Surface",
             "BURNING",
             "DOS2"
@@ -5597,7 +5504,6 @@
         "slug": "cursed-fire-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BURNING",
           "DOS2"
         ],
@@ -5609,7 +5515,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BURNING",
         "DOS2"
       ],
@@ -5696,7 +5601,6 @@
           "slug": "firestorm-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Fire-Surface",
             "BURNING",
             "DOS2"
@@ -5713,7 +5617,6 @@
         "slug": "cursed-firestorm-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BURNING",
           "DOS2"
         ],
@@ -5724,7 +5627,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BURNING",
         "DOS2"
       ],
@@ -5756,7 +5658,6 @@
           "slug": "poison-flask",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Poison-Surface",
             "POISONED",
             "DOS2"
@@ -5773,7 +5674,6 @@
         "slug": "cursed-poison-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "POISONED",
           "DOS2"
         ],
@@ -5784,7 +5684,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "POISONED",
         "DOS2"
       ],
@@ -5816,7 +5715,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -5872,7 +5770,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DEATH_WISH",
             "DOS2"
           ],
@@ -5954,7 +5851,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DECAYING_TOUCH",
           "DOS2"
         ],
@@ -5966,7 +5862,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DECAYING_TOUCH",
         "DOS2"
       ],
@@ -5998,7 +5893,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DECAYING_TOUCH",
             "DOS2"
           ],
@@ -6088,7 +5982,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "FROZEN",
           "DOS2"
@@ -6098,7 +5991,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "FROZEN",
         "DOS2"
@@ -6129,7 +6021,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "FROZEN",
             "DOS2"
@@ -6215,7 +6106,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -6224,7 +6114,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -6256,7 +6145,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -6311,7 +6199,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "CHARMED",
             "DOS2"
@@ -6365,7 +6252,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "ETERNITY_DOOR",
             "DOS2"
@@ -6767,7 +6653,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "KNOCKED_DOWN",
           "DOS2"
@@ -6780,7 +6665,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "KNOCKED_DOWN",
         "DOS2"
@@ -6842,7 +6726,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "KNOCKED_DOWN",
           "DOS2"
@@ -6855,7 +6738,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "KNOCKED_DOWN",
         "DOS2"
@@ -6888,7 +6770,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "KNOCKED_DOWN",
             "DOS2"
@@ -6975,7 +6856,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -6988,7 +6868,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -7021,7 +6900,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -7109,7 +6987,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -7118,7 +6995,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -7175,7 +7051,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -7184,7 +7059,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -7216,7 +7090,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -7410,7 +7283,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "NECROFIRE",
           "DOS2"
@@ -7420,7 +7292,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "NECROFIRE",
         "DOS2"
@@ -7451,7 +7322,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "NECROFIRE",
             "DOS2"
@@ -7536,7 +7406,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "DOS2"
         ],
@@ -7545,7 +7414,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "DOS2"
       ],
@@ -7575,7 +7443,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "DOS2"
           ],
@@ -7661,7 +7528,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -7670,7 +7536,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -7700,7 +7565,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -7772,7 +7636,6 @@
         "slug": "explosive-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS2"
@@ -7785,7 +7648,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS2"
@@ -7818,7 +7680,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "INF_RANGED",
             "DOS2"
@@ -7902,7 +7763,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "FAVOURABLE_WIND_AURA",
           "DOS2"
@@ -7912,7 +7772,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "FAVOURABLE_WIND_AURA",
         "DOS2"
@@ -7945,7 +7804,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "FAVOURABLE_WIND_AURA",
             "DOS2"
@@ -8065,7 +7923,6 @@
         "slug": "fire-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS2"
@@ -8078,7 +7935,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS2"
@@ -8250,7 +8106,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "BLIND",
           "BURNING",
@@ -8261,7 +8116,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "BLIND",
         "BURNING",
@@ -8321,7 +8175,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "BLIND",
           "BURNING",
@@ -8332,7 +8185,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "BLIND",
         "BURNING",
@@ -8366,7 +8218,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "BLIND",
             "BURNING",
@@ -8448,7 +8299,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "Fire-Surface",
           "BURNING",
@@ -8462,7 +8312,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "Fire-Surface",
         "BURNING",
@@ -8496,7 +8345,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "Fire-Surface",
             "BURNING",
@@ -8585,7 +8433,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "FIRE_BRAND_AURA",
           "DOS2"
@@ -8595,7 +8442,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "FIRE_BRAND_AURA",
         "DOS2"
@@ -8626,7 +8472,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "FIRE_BRAND_AURA",
             "DOS2"
@@ -8697,7 +8542,6 @@
         "slug": "firestorm-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS2"
@@ -8709,7 +8553,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS2"
@@ -8880,7 +8723,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "FLAMING_CRESCENDO",
           "DOS2"
@@ -8890,7 +8732,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "FLAMING_CRESCENDO",
         "DOS2"
@@ -8921,7 +8762,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "FLAMING_CRESCENDO",
             "DOS2"
@@ -9003,7 +8843,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "FLAMING_TONGUES",
           "DOS2"
@@ -9013,7 +8852,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "FLAMING_TONGUES",
         "DOS2"
@@ -9072,7 +8910,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "FLAMING_TONGUES",
           "DOS2"
@@ -9082,7 +8919,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "FLAMING_TONGUES",
         "DOS2"
@@ -9115,7 +8951,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "FLAMING_TONGUES",
             "DOS2"
@@ -9169,7 +9004,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "NULL_RESISTANCE",
             "DOS2"
@@ -9284,7 +9118,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "DEMONIC_BARGAIN",
             "DOS2"
@@ -9370,7 +9203,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "FORTIFIED",
           "DOS2"
@@ -9383,7 +9215,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "FORTIFIED",
         "DOS2"
@@ -9416,7 +9247,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "FORTIFIED",
             "DOS2"
@@ -9504,7 +9334,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "Oil-Surface",
           "DOS2"
@@ -9517,7 +9346,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "Oil-Surface",
         "DOS2"
@@ -9550,7 +9378,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "Oil-Surface",
             "DOS2"
@@ -9626,7 +9453,6 @@
         "slug": "freezing-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Ice-Surface",
           "CHILLED",
           "DOS2"
@@ -9639,7 +9465,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Ice-Surface",
         "CHILLED",
         "DOS2"
@@ -9686,7 +9511,6 @@
         "slug": "frost-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Ice-Surface",
           "CHILLED",
           "DOS2"
@@ -9698,7 +9522,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Ice-Surface",
         "CHILLED",
         "DOS2"
@@ -10906,7 +10729,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "CHILLED",
             "DOS2"
@@ -10988,7 +10810,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "CRIPPLED",
           "DOS2"
         ],
@@ -10997,7 +10818,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "CRIPPLED",
         "DOS2"
       ],
@@ -11054,7 +10874,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "CRIPPLED",
           "DOS2"
         ],
@@ -11063,7 +10882,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "CRIPPLED",
         "DOS2"
       ],
@@ -11093,7 +10911,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "CRIPPLED",
             "DOS2"
           ],
@@ -11180,7 +10997,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "Ice-Surface",
           "CHILLED",
@@ -11194,7 +11010,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "Ice-Surface",
         "CHILLED",
@@ -11262,7 +11077,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "Ice-Surface",
           "CHILLED",
@@ -11276,7 +11090,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "Ice-Surface",
         "CHILLED",
@@ -11310,7 +11123,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "Ice-Surface",
             "CHILLED",
@@ -11890,7 +11702,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "HASTED",
           "DOS2"
@@ -11903,7 +11714,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "HASTED",
         "DOS2"
@@ -11964,7 +11774,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "HASTED",
           "DOS2"
@@ -11977,7 +11786,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "HASTED",
         "DOS2"
@@ -12010,7 +11818,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "HASTED",
             "DOS2"
@@ -12465,7 +12272,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "CHAIN_HEAL",
           "DOS2"
@@ -12478,7 +12284,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "CHAIN_HEAL",
         "DOS2"
@@ -12540,7 +12345,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "CHAIN_HEAL",
           "DOS2"
@@ -12553,7 +12357,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "CHAIN_HEAL",
         "DOS2"
@@ -12584,7 +12387,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "CHAIN_HEAL",
             "DOS2"
@@ -12667,7 +12469,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "STEEL_SKIN",
           "DOS2"
@@ -12677,7 +12478,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "STEEL_SKIN",
         "DOS2"
@@ -12710,7 +12510,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "STEEL_SKIN",
             "DOS2"
@@ -13152,7 +12951,6 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -13162,7 +12960,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -13207,7 +13004,6 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -13217,7 +13013,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -14207,7 +14002,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "DOS2"
           ],
@@ -14262,7 +14056,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "Ice-Surface",
             "CHILLED",
@@ -14350,7 +14143,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "BURNING",
           "DOS2"
@@ -14360,7 +14152,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "BURNING",
         "DOS2"
@@ -14393,7 +14184,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "BURNING",
             "DOS2"
@@ -14478,7 +14268,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "Oil-Surface",
           "CRIPPLED",
@@ -14492,7 +14281,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "Oil-Surface",
         "CRIPPLED",
@@ -14526,7 +14314,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "Oil-Surface",
             "CRIPPLED",
@@ -14718,7 +14505,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Target_Infect"
@@ -14726,7 +14512,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -14757,7 +14542,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Target_Infect"
@@ -15053,7 +14837,6 @@
         "slug": "knockdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2"
         ],
@@ -15065,7 +14848,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2"
       ],
@@ -17409,7 +17191,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "BURNING",
           "DOS2"
@@ -17422,7 +17203,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "BURNING",
         "DOS2"
@@ -17484,7 +17264,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "BURNING",
           "DOS2"
@@ -17497,7 +17276,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "BURNING",
         "DOS2"
@@ -17530,7 +17308,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "BURNING",
             "DOS2"
@@ -17669,7 +17446,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DEATH_RESIST",
           "DOS2"
         ],
@@ -17678,7 +17454,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DEATH_RESIST",
         "DOS2"
       ],
@@ -17744,7 +17519,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DEATH_RESIST",
           "DOS2"
         ],
@@ -17753,7 +17527,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DEATH_RESIST",
         "DOS2"
       ],
@@ -17814,7 +17587,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DEATH_RESIST",
           "DOS2"
         ],
@@ -17823,7 +17595,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DEATH_RESIST",
         "DOS2"
       ],
@@ -17855,7 +17626,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DEATH_RESIST",
             "DOS2"
           ],
@@ -17940,7 +17710,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -17949,7 +17718,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -17979,7 +17747,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "DOS2"
           ],
@@ -18240,7 +18007,6 @@
         "slug": "love-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "CHARMED",
           "DOS2"
         ],
@@ -18252,7 +18018,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "CHARMED",
         "DOS2"
       ],
@@ -18297,7 +18062,6 @@
         "slug": "love-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "CHARMED",
           "DOS2"
         ],
@@ -18309,7 +18073,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "CHARMED",
         "DOS2"
       ],
@@ -21188,7 +20951,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "MEDUSA_HEAD",
             "DOS2"
@@ -21273,7 +21035,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "MEND_METAL",
           "DOS2"
@@ -21283,7 +21044,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "MEND_METAL",
         "DOS2"
@@ -21341,7 +21101,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "MEND_METAL",
           "DOS2"
@@ -21351,7 +21110,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "MEND_METAL",
         "DOS2"
@@ -21384,7 +21142,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "MEND_METAL",
             "DOS2"
@@ -21438,7 +21195,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "Fire-Surface",
             "DOS2"
@@ -21628,7 +21384,6 @@
         "slug": "mind-maggot-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "CHARMED",
           "DOS2"
         ],
@@ -21636,7 +21391,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "CHARMED",
         "DOS2"
       ],
@@ -22137,7 +21891,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "BLEEDING",
             "DOS2"
           ],
@@ -23768,7 +23521,6 @@
         "slug": "nailbomb-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2"
         ],
@@ -23779,7 +23531,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2"
       ],
@@ -23824,7 +23575,6 @@
         "slug": "nailbomb-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2"
         ],
@@ -23835,7 +23585,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2"
       ],
@@ -23948,7 +23697,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -23957,7 +23705,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -24021,7 +23768,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -24030,7 +23776,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -24060,7 +23805,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -24166,7 +23910,6 @@
         "slug": "oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Oil-Surface",
           "DOS2"
         ],
@@ -24177,7 +23920,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Oil-Surface",
         "DOS2"
       ],
@@ -24356,7 +24098,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "CLEAR_MINDED",
           "DOS2"
@@ -24369,7 +24110,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "CLEAR_MINDED",
         "DOS2"
@@ -24402,7 +24142,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "CLEAR_MINDED",
             "DOS2"
@@ -24723,7 +24462,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -24732,7 +24470,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -24764,7 +24501,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -24836,7 +24572,6 @@
         "slug": "poison-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Poison-Surface",
           "POISONED",
           "DOS2"
@@ -24849,7 +24584,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Poison-Surface",
         "POISONED",
         "DOS2"
@@ -24890,7 +24624,6 @@
         "slug": "poison-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Poison-Surface",
           "POISONED",
           "DOS2"
@@ -24903,7 +24636,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Poison-Surface",
         "POISONED",
         "DOS2"
@@ -24943,7 +24675,6 @@
         "slug": "poison-cloud-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "POISONED",
           "DOS2"
         ],
@@ -24954,7 +24685,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "POISONED",
         "DOS2"
       ],
@@ -25001,7 +24731,6 @@
         "slug": "poison-cloud-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "POISONED",
           "DOS2"
         ],
@@ -25012,7 +24741,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "POISONED",
         "DOS2"
       ],
@@ -25075,7 +24803,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "Poison-Surface",
           "POISONED",
@@ -25089,7 +24816,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "Poison-Surface",
         "POISONED",
@@ -25123,7 +24849,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "Poison-Surface",
             "POISONED",
@@ -25243,7 +24968,6 @@
         "slug": "poison-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Poison-Surface",
           "POISONED",
           "DOS2"
@@ -25255,7 +24979,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Poison-Surface",
         "POISONED",
         "DOS2"
@@ -25317,7 +25040,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -25329,7 +25051,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -25390,7 +25111,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -25402,7 +25122,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -25434,7 +25153,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "DOS2"
           ],
@@ -25509,7 +25227,6 @@
         "slug": "poisoncloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "POISONED",
           "DOS2"
         ],
@@ -25521,7 +25238,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "POISONED",
         "DOS2"
       ],
@@ -26095,7 +25811,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "INF_POWER",
             "DOS2"
@@ -26180,7 +25895,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -26189,7 +25903,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -26250,7 +25963,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -26259,7 +25971,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -26291,7 +26002,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -26648,7 +26358,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "Oil-Surface",
           "DOS2"
@@ -26658,7 +26367,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "Oil-Surface",
         "DOS2"
@@ -26689,7 +26397,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "Oil-Surface",
             "DOS2"
@@ -26778,7 +26485,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "WET",
           "DOS2"
@@ -26791,7 +26497,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "WET",
         "DOS2"
@@ -26824,7 +26529,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "WET",
             "DOS2"
@@ -26916,7 +26620,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Summon_BloatedCorpse"
@@ -26924,7 +26627,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -26955,7 +26657,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Summon_BloatedCorpse"
@@ -27037,7 +26738,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Summon_BonePile"
@@ -27045,7 +26745,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -27106,7 +26805,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Summon_BonePile"
@@ -27114,7 +26812,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -27145,7 +26842,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Summon_BonePile"
@@ -27228,7 +26924,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2"
         ],
@@ -27237,7 +26932,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2"
       ],
@@ -27269,7 +26963,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "DOS2"
           ],
@@ -27338,7 +27031,6 @@
         "slug": "razzle-dazzle-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLIND",
           "DOS2"
         ],
@@ -27349,7 +27041,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLIND",
         "DOS2"
       ],
@@ -27397,7 +27088,6 @@
         "slug": "razzle-dazzle-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLIND",
           "DOS2"
         ],
@@ -27408,7 +27098,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLIND",
         "DOS2"
       ],
@@ -27476,7 +27165,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -27485,7 +27173,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -27553,7 +27240,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Geomancer",
           "DOS2"
         ],
@@ -27562,7 +27248,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Geomancer",
         "DOS2"
       ],
@@ -27594,7 +27279,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "DOS2"
           ],
@@ -27680,7 +27364,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "REGENERATION",
           "DOS2"
@@ -27693,7 +27376,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "REGENERATION",
         "DOS2"
@@ -27726,7 +27408,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "REGENERATION",
             "DOS2"
@@ -27814,7 +27495,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "RESURRECT",
           "DOS2"
         ],
@@ -27826,7 +27506,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "RESURRECT",
         "DOS2"
       ],
@@ -27845,7 +27524,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "RESURRECT",
             "DOS2"
           ],
@@ -28044,7 +27722,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "Fire-Surface",
           "BURNING",
@@ -28058,7 +27735,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "Fire-Surface",
         "BURNING",
@@ -28092,7 +27768,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "Fire-Surface",
             "BURNING",
@@ -28182,7 +27857,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "DOS2"
         ],
         "statsId": "SCROLL_Target_ShacklesOfPain"
@@ -28190,7 +27864,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -28221,7 +27894,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Target_ShacklesOfPain"
@@ -28273,7 +27945,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "INF_SHADOW",
             "DOS2"
@@ -28717,7 +28388,6 @@
         "slug": "shocking-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SHOCKED",
           "DOS2"
         ],
@@ -28729,7 +28399,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SHOCKED",
         "DOS2"
       ],
@@ -28832,7 +28501,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -28845,7 +28513,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -28878,7 +28545,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -29030,7 +28696,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "MUTED",
           "DOS2"
         ],
@@ -29039,7 +28704,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "MUTED",
         "DOS2"
       ],
@@ -29069,7 +28733,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "MUTED",
             "DOS2"
           ],
@@ -29120,7 +28783,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "DOS2"
           ],
@@ -29203,7 +28865,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "SHED_SKIN",
           "DOS2"
@@ -29213,7 +28874,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "SHED_SKIN",
         "DOS2"
@@ -29246,7 +28906,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "SHED_SKIN",
             "DOS2"
@@ -29318,7 +28977,6 @@
         "slug": "slowdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SLOWED",
           "DOS2"
         ],
@@ -29329,7 +28987,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SLOWED",
         "DOS2"
       ],
@@ -29369,7 +29026,6 @@
         "slug": "slowdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SLOWED",
           "DOS2"
         ],
@@ -29380,7 +29036,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SLOWED",
         "DOS2"
       ],
@@ -30503,7 +30158,6 @@
         "slug": "smokescreen-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -30513,7 +30167,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -30577,7 +30230,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "FROST_AURA",
           "DOS2"
@@ -30587,7 +30239,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "FROST_AURA",
         "DOS2"
@@ -30620,7 +30271,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "FROST_AURA",
             "DOS2"
@@ -30706,7 +30356,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "HEAL_SHARING",
           "DOS2"
@@ -30716,7 +30365,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "HEAL_SHARING",
         "DOS2"
@@ -30779,7 +30427,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "HEAL_SHARING",
           "DOS2"
@@ -30789,7 +30436,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "HEAL_SHARING",
         "DOS2"
@@ -30822,7 +30468,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "HEAL_SHARING",
             "DOS2"
@@ -30907,7 +30552,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "SPIDER_LEGS",
           "DOS2"
@@ -30917,7 +30561,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "SPIDER_LEGS",
         "DOS2"
@@ -30979,7 +30622,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "SPIDER_LEGS",
           "DOS2"
@@ -30989,7 +30631,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "SPIDER_LEGS",
         "DOS2"
@@ -31022,7 +30663,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "SPIDER_LEGS",
             "DOS2"
@@ -31078,7 +30718,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "DOS2"
           ],
@@ -31162,7 +30801,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "WINGS",
           "DOS2"
@@ -31172,7 +30810,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "WINGS",
         "DOS2"
@@ -31205,7 +30842,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "WINGS",
             "DOS2"
@@ -31335,7 +30971,6 @@
         "slug": "static-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2"
         ],
         "craftingCategories": [
@@ -31346,7 +30981,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2"
       ],
       "requirements": "",
@@ -31410,7 +31044,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "STEAM_LANCE",
           "DOS2"
@@ -31420,7 +31053,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "STEAM_LANCE",
         "DOS2"
@@ -31451,7 +31083,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "STEAM_LANCE",
             "DOS2"
@@ -31524,7 +31155,6 @@
         "slug": "steamcloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "WET",
           "DOS2"
         ],
@@ -31535,7 +31165,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "WET",
         "DOS2"
       ],
@@ -31678,7 +31307,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "DOS2"
           ],
@@ -31756,7 +31384,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "DOS2"
         ],
@@ -31768,7 +31395,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "DOS2"
       ],
@@ -31823,7 +31449,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "DOS2"
         ],
@@ -31835,7 +31460,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "DOS2"
       ],
@@ -31867,7 +31491,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "DOS2"
           ],
@@ -31925,7 +31548,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "SUPERCHARGE",
             "DOS2"
@@ -32013,7 +31635,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "SHOCKED",
           "DOS2"
@@ -32023,7 +31644,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "SHOCKED",
         "DOS2"
@@ -32054,7 +31674,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "SHOCKED",
             "DOS2"
@@ -32136,7 +31755,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "Fire-Surface",
           "DOS2"
@@ -32146,7 +31764,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "Fire-Surface",
         "DOS2"
@@ -32205,7 +31822,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Pyrokinetic",
           "Fire-Surface",
           "DOS2"
@@ -32215,7 +31831,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Pyrokinetic",
         "Fire-Surface",
         "DOS2"
@@ -32248,7 +31863,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Pyrokinetic",
             "Fire-Surface",
             "DOS2"
@@ -32382,7 +31996,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -32394,7 +32007,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -32426,7 +32038,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -32512,7 +32123,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Polymorph",
           "DISARMED",
           "DOS2"
@@ -32522,7 +32132,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Polymorph",
         "DISARMED",
         "DOS2"
@@ -32555,7 +32164,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "DISARMED",
             "DOS2"
@@ -32611,7 +32219,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Polymorph",
             "DOS2"
           ],
@@ -32680,7 +32287,6 @@
         "slug": "terror-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "FEAR",
           "DOS2"
         ],
@@ -32691,7 +32297,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "FEAR",
         "DOS2"
       ],
@@ -32737,7 +32342,6 @@
         "slug": "terror-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "FEAR",
           "DOS2"
         ],
@@ -32748,7 +32352,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "FEAR",
         "DOS2"
       ],
@@ -32895,7 +32498,6 @@
         "slug": "thunderbolt-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "SHOCKED",
           "DOS2"
         ],
@@ -32906,7 +32508,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "SHOCKED",
         "DOS2"
       ],
@@ -32936,7 +32537,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -33074,7 +32674,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -33083,7 +32682,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -33144,7 +32742,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -33153,7 +32750,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -33214,7 +32810,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Aerotheurge",
           "DOS2"
         ],
@@ -33223,7 +32818,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2"
       ],
@@ -33253,7 +32847,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Aerotheurge",
             "DOS2"
           ],
@@ -33306,7 +32899,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "DOS2"
           ],
           "statsId": "SCROLL_Shout_NecromancerTotems"
@@ -33479,7 +33071,6 @@
         "slug": "tremor-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2"
         ],
@@ -33490,7 +33081,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2"
       ],
@@ -33572,7 +33162,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Summoning",
             "INF_WARP",
             "DOS2"
@@ -33647,7 +33236,6 @@
         "tags": [
           "Arrows",
           "Ingredients",
-          "Casts-Spell",
           "Water-Surface",
           "WET",
           "DOS2"
@@ -33661,7 +33249,6 @@
       "tags": [
         "Arrows",
         "Ingredients",
-        "Casts-Spell",
         "Water-Surface",
         "WET",
         "DOS2"
@@ -33703,7 +33290,6 @@
         "tags": [
           "Arrows",
           "Ingredients",
-          "Casts-Spell",
           "Water-Surface",
           "WET",
           "DOS2"
@@ -33717,7 +33303,6 @@
       "tags": [
         "Arrows",
         "Ingredients",
-        "Casts-Spell",
         "Water-Surface",
         "WET",
         "DOS2"
@@ -33810,7 +33395,6 @@
         "slug": "water-balloon",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Water-Surface",
           "WET",
           "DOS2"
@@ -33822,7 +33406,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Water-Surface",
         "WET",
         "DOS2"
@@ -33944,7 +33527,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Hydrosophist",
           "CHILLED",
           "DOS2"
@@ -33954,7 +33536,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Hydrosophist",
         "CHILLED",
         "DOS2"
@@ -33987,7 +33568,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Hydrosophist",
             "CHILLED",
             "DOS2"
@@ -34419,7 +33999,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "Geomancer",
             "ENTANGLED",
             "DOS2"

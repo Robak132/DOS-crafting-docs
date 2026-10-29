@@ -251,8 +251,8 @@ def main():
                 for action in on_use:
                     skill=action.get('SkillID')
                     if not skill:continue
-                    field='Teaches-Skill' if action.get('ActionType')=='13' else 'Casts-Spell'
-                    tags.append(field);tag_labels[field]='Uczy umiejętności' if action.get('ActionType')=='13' else 'Rzuca zaklęcie'
+                    if action.get('ActionType')=='13':
+                        tags.append('Teaches-Skill');tag_labels['Teaches-Skill']='Uczy umiejętności'
                     schools={'Fire':'Pyrokinetic','Water':'Hydrosophist','Air':'Aerotheurge','Earth':'Geomancer','Necromancy':'Necromancer','Summoning':'Summoning','Polymorph':'Polymorph','Warrior':'Warfare','Ranger':'Huntsman','Rogue':'Scoundrel'}
                     ability=index.fields(skill).get('Ability')
                     if ability in schools:tags.append(schools[ability])

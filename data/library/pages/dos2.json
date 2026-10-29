@@ -14,7 +14,6 @@
       "title": "Acid Spores Scroll",
       "titlePl": "Zwój Kwaśnych Zarodników",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "POISONED",
@@ -229,7 +228,6 @@
       "title": "Apotheosis Scroll",
       "titlePl": "Zwój Apoteozy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "APOTHEOSIS",
@@ -298,7 +296,6 @@
       "title": "Apportation Scroll",
       "titlePl": "Zwój Przyciągnięcia",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -320,7 +317,6 @@
       "title": "Arcane Stitch Scroll",
       "titlePl": "Zwój Magicznego Szwu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "ARCANE_STITCH",
@@ -343,7 +339,6 @@
       "title": "Armour of Frost Scroll",
       "titlePl": "Zwój Pancerza Mrozu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "MAGIC_SHELL",
@@ -544,7 +539,6 @@
       "title": "Black Shroud Scroll",
       "titlePl": "Zwój Czarnego Całunu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -646,7 +640,6 @@
       "title": "Bleed Fire Scroll",
       "titlePl": "Zwój Ognistego Krwotoku",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FIREBLOOD",
@@ -669,7 +662,6 @@
       "title": "Blessed Ice Grenade",
       "titlePl": "Pobłogosławiony granat lodowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Grenades"
       ]
@@ -679,7 +671,6 @@
       "title": "Blessed Oil Flask",
       "titlePl": "Pobłogosławiony flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Grenades"
       ]
@@ -689,7 +680,6 @@
       "title": "Blessed Water Arrow",
       "titlePl": "Pobłogosławiona strzała wodna",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "HEALING",
         "Arrows"
@@ -709,7 +699,6 @@
       "title": "Blessed Water Balloon",
       "titlePl": "Pobłogosławiony balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "WET",
         "Grenades"
@@ -720,7 +709,6 @@
       "title": "Blinding Radiance Scroll",
       "titlePl": "Zwój Oślepiającego Blasku",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -781,7 +769,6 @@
       "title": "Blood Sucker Scroll",
       "titlePl": "Zwój Krwiopijcy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLOOD_BUBBLE",
         "Ingredients",
@@ -857,7 +844,6 @@
       "title": "Bone Cage Scroll",
       "titlePl": "Zwój Kościanej Klatki",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -1029,7 +1015,6 @@
       "title": "Bull Horns Scroll",
       "titlePl": "Zwój Byczych Rogów",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "HORNS",
@@ -1074,7 +1059,6 @@
       "title": "Cannibalise Scroll",
       "titlePl": "Zwój Kanibalizmu",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1109,7 +1093,6 @@
       "title": "Chain Lightning Scroll",
       "titlePl": "Zwój Łańcucha Piorunów",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1132,7 +1115,6 @@
       "title": "Chameleon Cloak Scroll",
       "titlePl": "Zwój Płaszcza Kameleona",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "INVISIBLE",
@@ -1166,7 +1148,6 @@
       "title": "Charm Scroll",
       "titlePl": "Zwój Oczarowania",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "CHARMED",
@@ -1179,7 +1160,6 @@
       "title": "Charming Arrow",
       "titlePl": "Strzała oczarowująca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1238,7 +1218,6 @@
       "title": "Chemical Warfare Grenade",
       "titlePl": "Granat chemiczny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1251,7 +1230,6 @@
       "title": "Chicken Claw Scroll",
       "titlePl": "Zwój Kurzego Pazura",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "CHICKEN",
@@ -1307,7 +1285,6 @@
       "title": "Closed Circuit Scroll",
       "titlePl": "Zwój Obwodu Zamkniętego",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1341,7 +1318,6 @@
       "title": "Cluster Grenade",
       "titlePl": "Granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -1374,7 +1350,6 @@
       "title": "Conjure Incarnate Scroll",
       "titlePl": "Zwój Przyzwania Przyzwańca",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1396,7 +1371,6 @@
       "title": "Contamination Scroll",
       "titlePl": "Zwój Skażenia",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "POISONED",
@@ -1505,7 +1479,6 @@
       "title": "Cryogenic Stasis Scroll",
       "titlePl": "Zwój Kriostazy",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "PERMAFROST",
@@ -1571,7 +1544,6 @@
       "title": "Curse Scroll",
       "titlePl": "Zwój Przekleństwa",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CURSED",
         "Scrolls"
@@ -1582,7 +1554,6 @@
       "title": "Cursed Cluster Grenade",
       "titlePl": "Przeklęty granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Grenades"
@@ -1593,7 +1564,6 @@
       "title": "Cursed Fire Arrow",
       "titlePl": "Przeklęta ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Arrows"
@@ -1613,7 +1583,6 @@
       "title": "Cursed Firestorm Grenade",
       "titlePl": "Przeklęty granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Grenades"
@@ -1624,7 +1593,6 @@
       "title": "Cursed Poison Flask",
       "titlePl": "Przeklęta fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "POISONED",
         "Grenades"
@@ -1653,7 +1621,6 @@
       "title": "Dazing Bolt Scroll",
       "titlePl": "Zwój Rażenia Piorunem",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1676,7 +1643,6 @@
       "title": "Death Wish Scroll",
       "titlePl": "Zwój Życzenia Śmierci",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DEATH_WISH",
         "Ingredients",
@@ -1697,7 +1663,6 @@
       "title": "Decaying Touch Scroll",
       "titlePl": "Zwój Dotyku Rozkładu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DECAYING_TOUCH",
         "Ingredients",
@@ -1718,7 +1683,6 @@
       "title": "Deep Freeze Scroll",
       "titlePl": "Zwój Głębokiego Zmrożenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "FROZEN",
@@ -1741,7 +1705,6 @@
       "title": "Dimensional Bolt Scroll",
       "titlePl": "Zwój Wielowymiarowego Pocisku",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1812,7 +1775,6 @@
       "title": "Door to Eternity Scroll",
       "titlePl": "Zwój Drzwi do Wieczności",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "ETERNITY_DOOR",
@@ -1931,7 +1893,6 @@
       "title": "Earthquake Scroll",
       "titlePl": "Zwój Trzęsienia Ziemi",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "KNOCKED_DOWN",
@@ -1966,7 +1927,6 @@
       "title": "Electric Discharge Scroll",
       "titlePl": "Zwój Wyładowania Elektrycznego",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1989,7 +1949,6 @@
       "title": "Elemental Totem Scroll",
       "titlePl": "Zwój Totemu Żywiołów",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -2133,7 +2092,6 @@
       "title": "Epidemic Of Fire Scroll",
       "titlePl": "Zwój Epidemii Ognia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "NECROFIRE",
@@ -2156,7 +2114,6 @@
       "title": "Equalise Scroll",
       "titlePl": "Zwój Wyrównania",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -2214,7 +2171,6 @@
       "title": "Ethereal Storm Scroll",
       "titlePl": "Zwój Eterycznej Burzy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -2245,7 +2201,6 @@
       "title": "Explosive Arrow",
       "titlePl": "Wybuchowa strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2321,7 +2276,6 @@
       "title": "Farsight Infusion Scroll",
       "titlePl": "Zwój Podsycenia Dalekowidzenia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_RANGED",
@@ -2344,7 +2298,6 @@
       "title": "Favourable Wind Scroll",
       "titlePl": "Zwój Korzystnego Wiatru",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "FAVOURABLE_WIND_AURA",
@@ -2386,7 +2339,6 @@
       "title": "Fire Arrow",
       "titlePl": "Ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2435,7 +2387,6 @@
       "title": "Fire Whip Scroll",
       "titlePl": "Zwój Ognistego Bicza",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BLIND",
@@ -2459,7 +2410,6 @@
       "title": "Fireball Scroll",
       "titlePl": "Zwój Kuli Ognia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -2483,7 +2433,6 @@
       "title": "Firebrand Scroll",
       "titlePl": "Zwój Żagwi",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FIRE_BRAND_AURA",
@@ -2506,7 +2455,6 @@
       "title": "Firestorm Grenade",
       "titlePl": "Granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -2554,7 +2502,6 @@
       "title": "Flaming Crescendo Scroll",
       "titlePl": "Zwój Płomiennego Finału",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FLAMING_CRESCENDO",
@@ -2577,7 +2524,6 @@
       "title": "Flaming Tongues Scroll",
       "titlePl": "Zwój Płomiennych Języków",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FLAMING_TONGUES",
@@ -2600,7 +2546,6 @@
       "title": "Flay Skin Scroll",
       "titlePl": "Zwój Obdarcia ze Skóry",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "NULL_RESISTANCE",
@@ -2645,7 +2590,6 @@
       "title": "Forced Exchange Scroll",
       "titlePl": "Zwój Wymuszonej Wymiany",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "DEMONIC_BARGAIN",
@@ -2668,7 +2612,6 @@
       "title": "Fortify Scroll",
       "titlePl": "Zwój Kamiennego Pancerza",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "FORTIFIED",
@@ -2691,7 +2634,6 @@
       "title": "Fossil Strike Scroll",
       "titlePl": "Zwój Kamiennego Ciosu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -2714,7 +2656,6 @@
       "title": "Freezing Arrow",
       "titlePl": "Zamrażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2740,7 +2681,6 @@
       "title": "Frost Grenade",
       "titlePl": "Granat mrozu",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2965,7 +2905,6 @@
       "title": "Global Cooling Scroll",
       "titlePl": "Zwój Globalnego Ochłodzenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHILLED",
@@ -3037,7 +2976,6 @@
       "title": "Grasp of the Starved Scroll",
       "titlePl": "Zwój Uchwytu Wygłodniałych",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CRIPPLED",
         "Ingredients",
@@ -3078,7 +3016,6 @@
       "title": "Hail Strike Scroll",
       "titlePl": "Zwój Gradobicia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ice-Surface",
@@ -3213,7 +3150,6 @@
       "title": "Haste Scroll",
       "titlePl": "Zwój Przyspieszenia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "HASTED",
@@ -3276,7 +3212,6 @@
       "title": "Healing Ritual Scroll",
       "titlePl": "Zwój Rytuału Uzdrawiającego",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHAIN_HEAL",
@@ -3299,7 +3234,6 @@
       "title": "Heart of Steel Scroll",
       "titlePl": "Zwój Serca ze Stali",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "STEEL_SKIN",
@@ -3488,7 +3422,6 @@
       "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Grenades"
@@ -3581,7 +3514,6 @@
       "title": "Hungry Flower Scroll",
       "titlePl": "Zwój Wygłodniałego Kwiatu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Scrolls"
@@ -3592,7 +3524,6 @@
       "title": "Ice Breaker Scroll",
       "titlePl": "Zwój Lodołamacza",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ingredients",
@@ -3614,7 +3545,6 @@
       "title": "Ice Fan Scroll",
       "titlePl": "Zwój Lodowego Wachlarza",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ice-Surface",
@@ -3638,7 +3568,6 @@
       "title": "Ignition Scroll",
       "titlePl": "Zwój Zapłonu",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BURNING",
@@ -3661,7 +3590,6 @@
       "title": "Impalement Scroll",
       "titlePl": "Zwój Nadziania",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -3705,7 +3633,6 @@
       "title": "Infect Scroll",
       "titlePl": "Zwój Zakażenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -3822,7 +3749,6 @@
       "title": "Knockdown Arrow",
       "titlePl": "Strzała powalająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4114,7 +4040,6 @@
       "title": "Laser Ray Scroll",
       "titlePl": "Zwój Laserowego Promienia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BURNING",
@@ -4199,7 +4124,6 @@
       "title": "Living on the Edge Scroll",
       "titlePl": "Zwój Życia na Krawędzi",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DEATH_RESIST",
         "Ingredients",
@@ -4220,7 +4144,6 @@
       "title": "Living Wall Scroll",
       "titlePl": "Zwój Żywej Ściany",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -4293,7 +4216,6 @@
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4638,7 +4560,6 @@
       "title": "Medusa Head Scroll",
       "titlePl": "Zwój Głowy Meduzy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "MEDUSA_HEAD",
@@ -4661,7 +4582,6 @@
       "title": "Mend Metal Scroll",
       "titlePl": "Zwój Naprawy Metalu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "MEND_METAL",
@@ -4704,7 +4624,6 @@
       "title": "Meteor Shower Scroll",
       "titlePl": "Zwój Deszczu Meteorów",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -4762,7 +4681,6 @@
       "slug": "mind-maggot-grenade",
       "title": "Mind Maggot Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CHARMED",
         "Grenades"
@@ -4893,7 +4811,6 @@
       "title": "Mosquito Swarm Scroll",
       "titlePl": "Zwój Roju Komarów",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLEEDING",
         "Ingredients",
@@ -5255,7 +5172,6 @@
       "title": "Nailbomb Grenade",
       "titlePl": "Granat z gwoździami",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5300,7 +5216,6 @@
       "title": "Nether Swap Scroll",
       "titlePl": "Zwój Podmiany",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -5333,7 +5248,6 @@
       "title": "Oil Flask",
       "titlePl": "Flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5418,7 +5332,6 @@
       "title": "Peace of Mind Scroll",
       "titlePl": "Zwój Spokoju Sumienia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "CLEAR_MINDED",
@@ -5553,7 +5466,6 @@
       "title": "Planar Gateway Scroll",
       "titlePl": "Zwój Bramy Sfer",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -5586,7 +5498,6 @@
       "title": "Poison Arrow",
       "titlePl": "Zatruta strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5600,7 +5511,6 @@
       "title": "Poison Cloud Grenade",
       "titlePl": "Granat trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5613,7 +5523,6 @@
       "title": "Poison Dart Scroll",
       "titlePl": "Zwój Zatrutej Rzutki",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Poison-Surface",
@@ -5647,7 +5556,6 @@
       "title": "Poison Flask",
       "titlePl": "Fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5661,7 +5569,6 @@
       "title": "Poison Wave Scroll",
       "titlePl": "Zwój Trującej Fali",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -5683,7 +5590,6 @@
       "title": "Poisoncloud Arrow",
       "titlePl": "Strzała trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "POISONED",
         "Arrows",
@@ -5832,7 +5738,6 @@
       "title": "Power Infusion Scroll",
       "titlePl": "Zwój Podsycenia Mocy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_POWER",
@@ -5855,7 +5760,6 @@
       "title": "Pressure Spike Scroll",
       "titlePl": "Zwój Skoku Ciśnienia",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -5899,7 +5803,6 @@
       "title": "Pyroclastic Eruption Scroll",
       "titlePl": "Zwój Erupcji Piroklastycznej",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -5932,7 +5835,6 @@
       "title": "Rain Scroll",
       "titlePl": "Zwój Deszczu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "WET",
@@ -5955,7 +5857,6 @@
       "title": "Raining Blood Scroll",
       "titlePl": "Zwój Deszczu Krwi",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLEEDING",
         "Ingredients",
@@ -5967,7 +5868,6 @@
       "title": "Raise Bloated Corpse Scroll",
       "titlePl": "Zwój Ożywienia Opuchniętych Zwłok",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -5987,7 +5887,6 @@
       "title": "Raise Bone Widow Scroll",
       "titlePl": "Zwój Ożywienia Kościanej Wdowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -6007,7 +5906,6 @@
       "title": "Rallying Cry Scroll",
       "titlePl": "Zwój Pokrzepiającego Okrzyku",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -6053,7 +5951,6 @@
       "title": "Razzle Dazzle Grenade",
       "titlePl": "Granat Wrzawy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLIND",
         "Grenades"
@@ -6064,7 +5961,6 @@
       "title": "Reactive Armour Scroll",
       "titlePl": "Zwój Pancerza Reaktywnego",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -6110,7 +6006,6 @@
       "title": "Restoration Scroll",
       "titlePl": "Zwój Przywrócenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "REGENERATION",
@@ -6133,7 +6028,6 @@
       "title": "Resurrection Scroll",
       "titlePl": "Zwój Wskrzeszenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "RESURRECT",
@@ -6256,7 +6150,6 @@
       "title": "Searing Daggers Scroll",
       "titlePl": "Zwój Palących Sztyletów",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -6280,7 +6173,6 @@
       "title": "Shackles of Pain Scroll",
       "titlePl": "Zwój Oków Bólu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -6311,7 +6203,6 @@
       "title": "Shadow Infusion Scroll",
       "titlePl": "Zwój Podsycenia Cienia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_SHADOW",
@@ -6427,7 +6318,6 @@
       "title": "Shocking Arrow",
       "titlePl": "Porażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "SHOCKED",
         "Arrows"
@@ -6449,7 +6339,6 @@
       "title": "Shocking Touch Scroll",
       "titlePl": "Zwój Porażającego Dotyku",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -6482,7 +6371,6 @@
       "title": "Silencing Stare Scroll",
       "titlePl": "Zwój Uciszającego Spojrzenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "MUTED",
         "Ingredients",
@@ -6514,7 +6402,6 @@
       "title": "Siphon Poison Scroll",
       "titlePl": "Zwój Wysysania Trucizny",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -6536,7 +6423,6 @@
       "title": "Skin Graft Scroll",
       "titlePl": "Zwój Przeszczepu Skóry",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "SHED_SKIN",
@@ -6580,7 +6466,6 @@
       "title": "Slowdown Arrow",
       "titlePl": "Strzała spowalniająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6768,7 +6653,6 @@
       "title": "Smokescreen Arrow",
       "titlePl": "Strzała zasłony dymnej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6803,7 +6687,6 @@
       "title": "Soothing Cold Scroll",
       "titlePl": "Zwój Kojącego Zimna",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "FROST_AURA",
@@ -6826,7 +6709,6 @@
       "title": "Soul Mate Scroll",
       "titlePl": "Zwój Bratniej Duszy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "HEAL_SHARING",
@@ -6871,7 +6753,6 @@
       "title": "Spider Legs Scroll",
       "titlePl": "Zwój Pajęczych Nóg",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "SPIDER_LEGS",
@@ -6904,7 +6785,6 @@
       "title": "Spontaneous Combustion Scroll",
       "titlePl": "Zwój Samozapłonu",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Ingredients",
@@ -6926,7 +6806,6 @@
       "title": "Spread Your Wings Scroll",
       "titlePl": "Zwój Rozwinięcia Skrzydeł",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "WINGS",
@@ -6978,7 +6857,6 @@
       "title": "Static Cloud Arrow",
       "titlePl": "Strzała naelektryzowanej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "BLIND",
@@ -7001,7 +6879,6 @@
       "title": "Steam Lance Scroll",
       "titlePl": "Zwój Lancy Parowej",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "STEAM_LANCE",
@@ -7024,7 +6901,6 @@
       "title": "Steamcloud Arrow",
       "titlePl": "Strzała obłoku pary",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "WET",
         "Arrows",
@@ -7060,7 +6936,6 @@
       "title": "Summon Fire Slug Scroll",
       "titlePl": "Zwój Przyzwania Ognistego Ślimaka",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Ingredients",
@@ -7082,7 +6957,6 @@
       "title": "Summon Oily Blob Scroll",
       "titlePl": "Zwój Przyzwania Oleistej Plamy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -7104,7 +6978,6 @@
       "title": "Supercharger Scroll",
       "titlePl": "Zwój Doładowania",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "SUPERCHARGE",
@@ -7127,7 +7000,6 @@
       "title": "Superconductor Scroll",
       "titlePl": "Zwój Nadprzewodnika",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -7159,7 +7031,6 @@
       "title": "Supernova Scroll",
       "titlePl": "Zwój Supernowej",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -7212,7 +7083,6 @@
       "title": "Teleportation Scroll",
       "titlePl": "Zwój Teleportacji",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -7234,7 +7104,6 @@
       "title": "Tentacle Lash Scroll",
       "titlePl": "Zwój Uderzenia Macką",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "DISARMED",
@@ -7257,7 +7126,6 @@
       "title": "Terrain Transmutation Scroll",
       "titlePl": "Zwój Przemiany Terenu",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -7279,7 +7147,6 @@
       "title": "Terror Grenade",
       "titlePl": "Granat grozy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7320,7 +7187,6 @@
       "title": "Thunderbolt Grenade",
       "titlePl": "Granat piorunów",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "SHOCKED",
         "Grenades"
@@ -7331,7 +7197,6 @@
       "title": "Thunderstorm Scroll",
       "titlePl": "Zwój Burzy z Piorunami",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -7423,7 +7288,6 @@
       "title": "Tornado Scroll",
       "titlePl": "Zwój Tornada",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -7445,7 +7309,6 @@
       "title": "Totems of the Necromancer Scroll",
       "titlePl": "Zwój Totemów Nekromanty",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -7484,7 +7347,6 @@
       "title": "Tremor Grenade",
       "titlePl": "Granat wstrząsowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7631,7 +7493,6 @@
       "title": "Warp Infusion Scroll",
       "titlePl": "Zwój Podsycenia Zakrzywienia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_WARP",
@@ -7654,7 +7515,6 @@
       "title": "Water Arrow",
       "titlePl": "Strzała wodna",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "Water-Surface",
@@ -7679,7 +7539,6 @@
       "title": "Water Balloon",
       "titlePl": "Balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7781,7 +7640,6 @@
       "title": "Winter Blast Scroll",
       "titlePl": "Zwój Zimowego Podmuchu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHILLED",
@@ -7874,7 +7732,6 @@
       "title": "Worm Tremor Scroll",
       "titlePl": "Zwój Robaczywego Wstrząsu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "ENTANGLED",

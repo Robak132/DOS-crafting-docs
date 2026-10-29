@@ -3063,14 +3063,12 @@
         "slug": "armour-piercing-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_ArmorPiercing_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4452,7 +4450,6 @@
         "slug": "charming-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS1"
         ],
         "craftingCategories": [
@@ -4462,7 +4459,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -4501,7 +4497,6 @@
         "slug": "chemical-warfare-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DISEASED",
           "DOS1"
         ],
@@ -4509,7 +4504,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DISEASED",
         "DOS1"
       ],
@@ -4550,7 +4544,6 @@
         "slug": "chemical-warfare-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DISEASED",
           "DOS1"
         ],
@@ -4558,7 +4551,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DISEASED",
         "DOS1"
       ],
@@ -4841,7 +4833,6 @@
         "slug": "clawed-air-wand",
         "tags": [
           "Air-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -4849,7 +4840,6 @@
       },
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -4893,7 +4883,6 @@
         "slug": "clawed-earth-wand",
         "tags": [
           "Earth-Damage",
-          "Casts-Spell",
           "POISONED",
           "Wands",
           "DOS1"
@@ -4902,7 +4891,6 @@
       },
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "POISONED",
         "Wands",
         "DOS1"
@@ -4947,7 +4935,6 @@
         "slug": "clawed-fire-wand",
         "tags": [
           "Fire-Damage",
-          "Casts-Spell",
           "BURNING",
           "Wands",
           "DOS1"
@@ -4956,7 +4943,6 @@
       },
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "BURNING",
         "Wands",
         "DOS1"
@@ -5001,7 +4987,6 @@
         "slug": "clawed-water-wand",
         "tags": [
           "Water-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -5009,7 +4994,6 @@
       },
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -5921,7 +5905,6 @@
         "slug": "draconic-air-wand",
         "tags": [
           "Air-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -5929,7 +5912,6 @@
       },
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -5973,7 +5955,6 @@
         "slug": "draconic-earth-wand",
         "tags": [
           "Earth-Damage",
-          "Casts-Spell",
           "PETRIFIED",
           "Wands",
           "DOS1"
@@ -5982,7 +5963,6 @@
       },
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "PETRIFIED",
         "Wands",
         "DOS1"
@@ -6027,7 +6007,6 @@
         "slug": "draconic-fire-wand",
         "tags": [
           "Fire-Damage",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "Wands",
@@ -6037,7 +6016,6 @@
       },
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "Wands",
@@ -6083,7 +6061,6 @@
         "slug": "draconic-water-wand",
         "tags": [
           "Water-Damage",
-          "Casts-Spell",
           "FROZEN",
           "Wands",
           "DOS1"
@@ -6092,7 +6069,6 @@
       },
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "FROZEN",
         "Wands",
         "DOS1"
@@ -6191,7 +6167,6 @@
         "slug": "elven-air-wand",
         "tags": [
           "Air-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -6199,7 +6174,6 @@
       },
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -6243,7 +6217,6 @@
         "slug": "elven-earth-wand",
         "tags": [
           "Earth-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -6251,7 +6224,6 @@
       },
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -6295,7 +6267,6 @@
         "slug": "elven-fire-wand",
         "tags": [
           "Fire-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -6303,7 +6274,6 @@
       },
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -6347,7 +6317,6 @@
         "slug": "elven-water-wand",
         "tags": [
           "Water-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -6355,7 +6324,6 @@
       },
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -6401,7 +6369,6 @@
         "slug": "explosive-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS1"
@@ -6413,7 +6380,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS1"
@@ -6873,7 +6839,6 @@
         "slug": "fire-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS1"
@@ -6885,7 +6850,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS1"
@@ -6984,7 +6948,6 @@
         "slug": "firestorm-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS1"
@@ -6993,7 +6956,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS1"
@@ -7030,7 +6992,6 @@
         "slug": "flashbang-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLIND",
           "DOS1"
         ],
@@ -7050,7 +7011,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLIND",
         "DOS1"
       ],
@@ -7092,7 +7052,6 @@
         "slug": "flashbang-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLIND",
           "DOS1"
         ],
@@ -7100,7 +7059,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLIND",
         "DOS1"
       ],
@@ -7146,7 +7104,6 @@
         "slug": "freezing-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "FROZEN",
           "DOS1"
         ],
@@ -7157,7 +7114,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "FROZEN",
         "DOS1"
       ],
@@ -7199,7 +7155,6 @@
         "slug": "frost-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "FROZEN",
           "DOS1"
         ],
@@ -7207,7 +7162,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "FROZEN",
         "DOS1"
       ],
@@ -7515,7 +7469,6 @@
         "slug": "knockdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "KNOCKDOWN",
           "DOS1"
         ],
@@ -7526,7 +7479,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "KNOCKDOWN",
         "DOS1"
       ],
@@ -9092,14 +9044,12 @@
         "slug": "love-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Love_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -12500,7 +12450,6 @@
         "slug": "nailbomb-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLEEDING",
           "DOS1"
         ],
@@ -12508,7 +12457,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLEEDING",
         "DOS1"
       ],
@@ -12595,7 +12543,6 @@
         "slug": "oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Oil-Surface",
           "DOS1"
         ],
@@ -12615,7 +12562,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Oil-Surface",
         "DOS1"
       ],
@@ -12658,7 +12604,6 @@
         "slug": "oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Oil-Surface",
           "DOS1"
         ],
@@ -12678,7 +12623,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Oil-Surface",
         "DOS1"
       ],
@@ -12717,7 +12661,6 @@
         "slug": "oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Oil-Surface",
           "DOS1"
         ],
@@ -12725,7 +12668,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Oil-Surface",
         "DOS1"
       ],
@@ -13354,7 +13296,6 @@
         "slug": "poison-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "POISONED",
           "DOS1"
         ],
@@ -13365,7 +13306,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "POISONED",
         "DOS1"
       ],
@@ -13555,7 +13495,6 @@
         "slug": "poison-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "POISONED",
           "DOS1"
         ],
@@ -13566,7 +13505,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "POISONED",
         "DOS1"
       ],
@@ -13605,14 +13543,12 @@
         "slug": "poison-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_PoisonFlask_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "",
@@ -15373,7 +15309,6 @@
         "slug": "silver-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS1"
         ],
         "craftingCategories": [
@@ -15383,7 +15318,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -15622,7 +15556,6 @@
         "slug": "slowdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SLOWED",
           "DOS1"
         ],
@@ -15633,7 +15566,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SLOWED",
         "DOS1"
       ],
@@ -15863,7 +15795,6 @@
         "slug": "smokescreen-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS1"
         ],
         "craftingCategories": [
@@ -15873,7 +15804,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16111,7 +16041,6 @@
         "slug": "steam-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BLIND",
           "DOS1"
         ],
@@ -16122,7 +16051,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BLIND",
         "DOS1"
       ],
@@ -16366,7 +16294,6 @@
         "slug": "stunning-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS1"
         ],
         "craftingCategories": [
@@ -16376,7 +16303,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 1",
@@ -16508,7 +16434,6 @@
         "slug": "terror-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "FEAR",
           "DOS1"
         ],
@@ -16516,7 +16441,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "FEAR",
         "DOS1"
       ],
@@ -16806,7 +16730,6 @@
         "slug": "tremor-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "KNOCKDOWN",
           "DOS1"
         ],
@@ -16814,7 +16737,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "KNOCKDOWN",
         "DOS1"
       ],
@@ -17624,7 +17546,6 @@
         "slug": "water-balloon",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Water-Surface",
           "WET",
           "DOS1"
@@ -17647,7 +17568,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Water-Surface",
         "WET",
         "DOS1"
@@ -17688,7 +17608,6 @@
         "slug": "water-balloon",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Water-Surface",
           "WET",
           "DOS1"
@@ -17697,7 +17616,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Water-Surface",
         "WET",
         "DOS1"
@@ -17796,7 +17714,6 @@
         "slug": "wooden-air-wand",
         "tags": [
           "Air-Damage",
-          "Casts-Spell",
           "BLIND",
           "Wands",
           "DOS1"
@@ -17805,7 +17722,6 @@
       },
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "BLIND",
         "Wands",
         "DOS1"
@@ -17850,7 +17766,6 @@
         "slug": "wooden-earth-wand",
         "tags": [
           "Earth-Damage",
-          "Casts-Spell",
           "Wands",
           "DOS1"
         ],
@@ -17858,7 +17773,6 @@
       },
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "Wands",
         "DOS1"
       ],
@@ -17945,7 +17859,6 @@
         "slug": "wooden-fire-wand",
         "tags": [
           "Fire-Damage",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "Wands",
@@ -17955,7 +17868,6 @@
       },
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "Wands",
@@ -18101,7 +18013,6 @@
         "slug": "wooden-water-wand",
         "tags": [
           "Water-Damage",
-          "Casts-Spell",
           "FROZEN",
           "Wands",
           "DOS1"
@@ -18110,7 +18021,6 @@
       },
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "FROZEN",
         "Wands",
         "DOS1"
@@ -20349,7 +20259,6 @@
         "slug": "cluster-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS1"
@@ -20358,7 +20267,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS1"
@@ -20400,14 +20308,12 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Holy_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20445,14 +20351,12 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Holy_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20491,14 +20395,12 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Holy_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20540,14 +20442,12 @@
         "slug": "holy-hand-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Holy_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 3",
@@ -20642,7 +20542,6 @@
         "slug": "static-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BLIND",
           "DOS1"
         ],
@@ -20653,7 +20552,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BLIND",
         "DOS1"
       ],
@@ -20740,14 +20638,12 @@
         "slug": "taser-grenade-2",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_Taser_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 4",
@@ -21239,7 +21135,6 @@
         "slug": "poison-cloud-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_MustardGas_A"
@@ -21258,7 +21153,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 2",
@@ -21294,7 +21188,6 @@
         "slug": "poison-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS1"
         ],
         "statsId": "GRN_Grenade_PoisonFlask_A"
@@ -21313,7 +21206,6 @@
       ],
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS1"
       ],
       "requirements": "Crafting 1",

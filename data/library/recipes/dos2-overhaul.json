@@ -131,6 +131,15 @@
       "id": "Skladniki/ADVOCATE'-VACUUM:Advocate Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Advocate Boss Corpse",
           "slug": "advocate-boss-corpse",
           "tags": [
@@ -3356,7 +3365,6 @@
         "slug": "armour-piercing-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "statsId": "GRN_Grenade_ArmorPiercing_A",
@@ -3364,7 +3372,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -3664,7 +3671,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "Summoning",
           "DOS2-CO"
         ],
@@ -3673,7 +3679,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "Summoning",
         "DOS2-CO"
       ],
@@ -8172,6 +8177,15 @@
       "id": "Skladniki/BEAK-OF-ROOST:Roost Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Roost Boss Corpse",
           "slug": "roost-boss-corpse",
           "tags": [
@@ -8275,6 +8289,15 @@
       "id": "Skladniki/BEAR-PAW:Bear Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Bear Corpse",
           "slug": "bear-corpse",
           "tags": [
@@ -8307,6 +8330,15 @@
     {
       "id": "Skladniki/BEARD-OF-THE-DIVINE:Dwarven Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Dwarven Corpse",
           "slug": "dwarven-corpse",
@@ -8397,6 +8429,15 @@
     {
       "id": "Skladniki/BEETLE-WINGS:Beetle Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Beetle Corpse",
           "slug": "beetle-corpse",
@@ -8600,6 +8641,15 @@
     {
       "id": "Skladniki/BLACK-CHAOS:Blackring Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Blackring Corpse",
           "slug": "blackring-corpse",
@@ -11070,7 +11120,6 @@
           "tags": [
             "Arrows",
             "Ingredients",
-            "Casts-Spell",
             "Water-Surface",
             "WET",
             "DOS2-CO"
@@ -11088,7 +11137,6 @@
         "slug": "bleeding-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2-CO"
         ],
@@ -11100,7 +11148,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2-CO"
       ],
@@ -11129,7 +11176,6 @@
           "slug": "bleeding-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "BLEEDING",
             "DOS2-CO"
           ],
@@ -11154,7 +11200,6 @@
         "slug": "blessed-blood-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "HEALING",
           "DOS2-CO"
         ],
@@ -11166,7 +11211,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "HEALING",
         "DOS2-CO"
       ],
@@ -11195,7 +11239,6 @@
           "slug": "charming-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "CHARMED",
             "DOS2-CO"
           ],
@@ -11220,7 +11263,6 @@
         "slug": "blessed-charming-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CHARMED",
           "DOS2-CO"
         ],
@@ -11232,7 +11274,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CHARMED",
         "DOS2-CO"
       ],
@@ -11310,7 +11351,6 @@
           "slug": "fire-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Fire-Surface",
             "BURNING",
             "DOS2-CO"
@@ -11336,7 +11376,6 @@
         "slug": "blessed-fire-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "HEALING",
           "DOS2-CO"
         ],
@@ -11348,7 +11387,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "HEALING",
         "DOS2-CO"
       ],
@@ -11397,7 +11435,6 @@
         "slug": "holy-blessed-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -11407,7 +11444,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -11435,7 +11471,6 @@
           "slug": "love-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "CHARMED",
             "DOS2-CO"
           ],
@@ -11460,7 +11495,6 @@
         "slug": "blessed-love-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "CHARMED",
           "DOS2-CO"
         ],
@@ -11471,7 +11505,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "CHARMED",
         "DOS2-CO"
       ],
@@ -11500,7 +11533,6 @@
           "slug": "poison-flask",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Poison-Surface",
             "POISONED",
             "DOS2-CO"
@@ -11525,7 +11557,6 @@
         "slug": "blessed-poison-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "POISONED",
           "DOS2-CO"
         ],
@@ -11536,7 +11567,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "POISONED",
         "DOS2-CO"
       ],
@@ -11565,7 +11595,6 @@
           "slug": "smoke-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -11588,7 +11617,6 @@
         "slug": "blessed-smoke-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -11598,7 +11626,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -11626,7 +11653,6 @@
           "slug": "smokescreen-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -11649,7 +11675,6 @@
         "slug": "blessed-smokescreen-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -11660,7 +11685,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -11843,6 +11867,15 @@
     {
       "id": "Skladniki/BOAR-TUSKS:Boar Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Boar Corpse",
           "slug": "boar-corpse",
@@ -14895,6 +14928,15 @@
       "id": "Skladniki/CAT-FUR:Cat Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Cat Corpse",
           "slug": "cat-corpse",
           "tags": [
@@ -17646,14 +17688,12 @@
         "slug": "corpse-harvester",
         "tags": [
           "Ingredients",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "statsId": "Craft_Script_CorpseHarvester"
       },
       "tags": [
         "Ingredients",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -17664,6 +17704,15 @@
     {
       "id": "Skladniki/COW-HIDE:Cow Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Cow Corpse",
           "slug": "cow-corpse",
@@ -17697,6 +17746,15 @@
     {
       "id": "Skladniki/CRAB-PINCH:Crab Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Crab Corpse",
           "slug": "crab-corpse",
@@ -18467,6 +18525,15 @@
       "id": "Skladniki/CROC-SCALES:Crocodile Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Crocodile Corpse",
           "slug": "crocodile-corpse",
           "tags": [
@@ -18561,6 +18628,15 @@
     {
       "id": "Skladniki/CRUELTY-OF-EMPRESS:Empress Boss Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Empress Boss Corpse",
           "slug": "empress-boss-corpse",
@@ -18769,7 +18845,6 @@
           "slug": "armour-piercing-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "statsId": "GRN_Grenade_ArmorPiercing_A"
@@ -18789,14 +18864,12 @@
         "slug": "cursed-armour-piercing-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "statsId": "GRN_Grenade_CursedArmorPiercing_A"
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -18824,7 +18897,6 @@
           "slug": "bleeding-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "BLEEDING",
             "DOS2-CO"
           ],
@@ -18849,7 +18921,6 @@
         "slug": "cursed-bleeding-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2-CO"
         ],
@@ -18861,7 +18932,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2-CO"
       ],
@@ -18890,7 +18960,6 @@
           "slug": "chemical-warfare-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "DISEASED",
             "DOS2-CO"
           ],
@@ -18914,7 +18983,6 @@
         "slug": "cursed-chemical-warfare-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DISEASED",
           "DOS2-CO"
         ],
@@ -18925,7 +18993,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DISEASED",
         "DOS2-CO"
       ],
@@ -18953,7 +19020,6 @@
           "slug": "debuff-all-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -18977,7 +19043,6 @@
         "slug": "cursed-debuff-all-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -18988,7 +19053,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -19016,7 +19080,6 @@
           "slug": "static-cloud-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -19073,7 +19136,6 @@
           "slug": "explosive-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Fire-Surface",
             "BURNING",
             "DOS2-CO"
@@ -19099,7 +19161,6 @@
         "slug": "cursed-explosion-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "NECROFIRE",
           "DOS2-CO"
         ],
@@ -19107,7 +19168,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "NECROFIRE",
         "DOS2-CO"
       ],
@@ -19153,7 +19213,6 @@
         "slug": "cursed-flashbang-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLIND",
           "DOS2-CO"
         ],
@@ -19164,7 +19223,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLIND",
         "DOS2-CO"
       ],
@@ -19193,7 +19251,6 @@
           "slug": "freezing-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Ice-Surface",
             "CHILLED",
             "DOS2-CO"
@@ -19219,7 +19276,6 @@
         "slug": "cursed-freezing-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CHILLED",
           "DOS2-CO"
         ],
@@ -19231,7 +19287,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CHILLED",
         "DOS2-CO"
       ],
@@ -19260,7 +19315,6 @@
           "slug": "frost-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Ice-Surface",
             "CHILLED",
             "DOS2-CO"
@@ -19285,7 +19339,6 @@
         "slug": "cursed-frost-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "CHILLED",
           "DOS2-CO"
         ],
@@ -19296,7 +19349,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "CHILLED",
         "DOS2-CO"
       ],
@@ -19325,7 +19377,6 @@
           "slug": "knockdown-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "KNOCKED_DOWN",
             "DOS2-CO"
           ],
@@ -19350,7 +19401,6 @@
         "slug": "cursed-knocked-out-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2-CO"
         ],
@@ -19358,7 +19408,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2-CO"
       ],
@@ -19387,7 +19436,6 @@
           "slug": "nailbomb-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "BLEEDING",
             "DOS2-CO"
           ],
@@ -19411,7 +19459,6 @@
         "slug": "cursed-nailbomb-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2-CO"
         ],
@@ -19422,7 +19469,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2-CO"
       ],
@@ -19500,7 +19546,6 @@
           "slug": "oil-flask",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Oil-Surface",
             "DOS2-CO"
           ],
@@ -19524,7 +19569,6 @@
         "slug": "cursed-oil-flask",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -19534,7 +19578,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -19562,7 +19605,6 @@
           "slug": "poison-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Poison-Surface",
             "POISONED",
             "DOS2-CO"
@@ -19588,7 +19630,6 @@
         "slug": "cursed-poison-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "ACID",
           "DOS2-CO"
         ],
@@ -19600,7 +19641,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "ACID",
         "DOS2-CO"
       ],
@@ -19629,7 +19669,6 @@
           "slug": "poisoncloud-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "POISONED",
             "DOS2-CO"
           ],
@@ -19654,7 +19693,6 @@
         "slug": "cursed-poisoned-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SUFFOCATING",
           "DOS2-CO"
         ],
@@ -19662,7 +19700,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SUFFOCATING",
         "DOS2-CO"
       ],
@@ -19691,7 +19728,6 @@
           "slug": "poison-cloud-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "POISONED",
             "DOS2-CO"
           ],
@@ -19715,7 +19751,6 @@
         "slug": "cursed-poison-cloud-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "POISONED",
           "DOS2-CO"
         ],
@@ -19726,7 +19761,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "POISONED",
         "DOS2-CO"
       ],
@@ -19755,7 +19789,6 @@
           "slug": "silver-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -19779,7 +19812,6 @@
         "slug": "cursed-silver-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CURSED",
           "DOS2-CO"
         ],
@@ -19791,7 +19823,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CURSED",
         "DOS2-CO"
       ],
@@ -19820,7 +19851,6 @@
           "slug": "slowdown-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "SLOWED",
             "DOS2-CO"
           ],
@@ -19844,7 +19874,6 @@
         "slug": "cursed-slowdown-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SLOWED",
           "DOS2-CO"
         ],
@@ -19856,7 +19885,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SLOWED",
         "DOS2-CO"
       ],
@@ -19884,7 +19912,6 @@
           "slug": "steamcloud-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "WET",
             "DOS2-CO"
           ],
@@ -19909,7 +19936,6 @@
         "slug": "cursed-steam-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "WET",
           "DOS2-CO"
         ],
@@ -19921,7 +19947,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "WET",
         "DOS2-CO"
       ],
@@ -19967,7 +19992,6 @@
         "slug": "cursed-stunning-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "SHOCKED",
           "DOS2-CO"
         ],
@@ -19979,7 +20003,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "SHOCKED",
         "DOS2-CO"
       ],
@@ -20026,7 +20049,6 @@
         "slug": "cursed-taser-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "SHOCKED",
           "DOS2-CO"
         ],
@@ -20037,7 +20059,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "SHOCKED",
         "DOS2-CO"
       ],
@@ -20066,7 +20087,6 @@
           "slug": "terror-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "FEAR",
             "DOS2-CO"
           ],
@@ -20090,7 +20110,6 @@
         "slug": "cursed-terror-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "FEAR",
           "DOS2-CO"
         ],
@@ -20101,7 +20120,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "FEAR",
         "DOS2-CO"
       ],
@@ -20130,7 +20148,6 @@
           "slug": "tremor-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "KNOCKED_DOWN",
             "DOS2-CO"
           ],
@@ -20154,7 +20171,6 @@
         "slug": "cursed-tremor-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "KNOCKED_DOWN",
           "DOS2-CO"
         ],
@@ -20165,7 +20181,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "KNOCKED_DOWN",
         "DOS2-CO"
       ],
@@ -20195,7 +20210,6 @@
           "tags": [
             "Arrows",
             "Ingredients",
-            "Casts-Spell",
             "Water-Surface",
             "WET",
             "DOS2-CO"
@@ -20221,7 +20235,6 @@
         "slug": "cursed-water-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "WET",
           "DOS2-CO"
         ],
@@ -20233,7 +20246,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "WET",
         "DOS2-CO"
       ],
@@ -20262,7 +20274,6 @@
           "slug": "water-balloon",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Water-Surface",
             "WET",
             "DOS2-CO"
@@ -20287,7 +20298,6 @@
         "slug": "cursed-water-balloon",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "WET",
           "DOS2-CO"
         ],
@@ -20298,7 +20308,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "WET",
         "DOS2-CO"
       ],
@@ -20589,7 +20598,6 @@
           "slug": "charming-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "CHARMED",
             "DOS2-CO"
           ],
@@ -20605,7 +20613,6 @@
         "slug": "debuff-all-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -20616,7 +20623,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -20627,6 +20633,15 @@
     {
       "id": "Skladniki/DEER-HIDE:Deer Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Deer Corpse",
           "slug": "deer-corpse",
@@ -20877,6 +20892,15 @@
     {
       "id": "Skladniki/DEMON-HEART:Demon Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Demon Corpse",
           "slug": "demon-corpse",
@@ -21237,6 +21261,15 @@
       "id": "Skladniki/DOCTOR'S-PATIENCE:Doctor Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Doctor Boss Corpse",
           "slug": "doctor-boss-corpse",
           "tags": [
@@ -21266,6 +21299,15 @@
     {
       "id": "Skladniki/DOG-TAIL:Dog Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Dog Corpse",
           "slug": "dog-corpse",
@@ -21843,6 +21885,15 @@
       "id": "Skladniki/DRAGON-BREATH:Dragon Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Dragon Corpse",
           "slug": "dragon-corpse",
           "tags": [
@@ -21872,6 +21923,15 @@
     {
       "id": "Skladniki/DRILLWORM-PARASITES:Drillworm Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Drillworm Corpse",
           "slug": "drillworm-corpse",
@@ -24759,6 +24819,15 @@
       "id": "Skladniki/EYE-OF-KNILES:Kniles Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Kniles Boss Corpse",
           "slug": "kniles-boss-corpse",
           "tags": [
@@ -24788,6 +24857,15 @@
     {
       "id": "Skladniki/EYE-OF-THE-DIVINE:Elven Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Elven Corpse",
           "slug": "elven-corpse",
@@ -24981,14 +25059,12 @@
         "slug": "face-ripper",
         "tags": [
           "Ingredients",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "statsId": "QUEST_FaceRipper"
       },
       "tags": [
         "Ingredients",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -27093,6 +27169,15 @@
       "id": "Skladniki/FROG-LEG:Frog Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Frog Corpse",
           "slug": "frog-corpse",
           "tags": [
@@ -27224,7 +27309,6 @@
           "slug": "freezing-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "Ice-Surface",
             "CHILLED",
             "DOS2-CO"
@@ -27241,7 +27325,6 @@
         "slug": "frost-cloud-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "CHILLED",
           "DOS2-CO"
         ],
@@ -27253,7 +27336,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "CHILLED",
         "DOS2-CO"
       ],
@@ -28209,6 +28291,15 @@
       "id": "Skladniki/GOBLIN-SKIN:Goblin Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Goblin Corpse",
           "slug": "goblin-corpse",
           "tags": [
@@ -28466,6 +28557,15 @@
       "id": "Skladniki/GOLEM-FLESH:Flesh Golem Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Flesh Golem Corpse",
           "slug": "flesh-golem-corpse",
           "tags": [
@@ -28721,6 +28821,15 @@
       "id": "Skladniki/GRIFF'S-BROKEN-HORN:Griff Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Griff Boss Corpse",
           "slug": "griff-boss-corpse",
           "tags": [
@@ -28753,6 +28862,15 @@
     {
       "id": "Skladniki/GROWL-OF-GRUNT:Voidling Grunt Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Voidling Grunt Corpse",
           "slug": "voidling-grunt-corpse",
@@ -28892,6 +29010,15 @@
     {
       "id": "Skladniki/HEART-OF-THE-DIVINE:Human Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Human Corpse",
           "slug": "human-corpse",
@@ -29908,6 +30035,15 @@
     {
       "id": "Skladniki/JAILOR'S-DETERMINATION:Jailor Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Jailor Corpse",
           "slug": "jailor-corpse",
@@ -32412,6 +32548,15 @@
       "id": "Skladniki/LOHAR'S-BOTTLE:Lohar Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Lohar Boss Corpse",
           "slug": "lohar-boss-corpse",
           "tags": [
@@ -33346,6 +33491,15 @@
       "id": "Skladniki/MAGISTER-OBEDIENCE:Magister Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Magister Corpse",
           "slug": "magister-corpse",
           "tags": [
@@ -33435,6 +33589,15 @@
     {
       "id": "Skladniki/MECHANICAL-PARTS:Automaton Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Automaton Corpse",
           "slug": "automaton-corpse",
@@ -34700,6 +34863,15 @@
     {
       "id": "Skladniki/MERMAN-SCALES:Merman Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Merman Corpse",
           "slug": "merman-corpse",
@@ -36434,6 +36606,15 @@
       "id": "Skladniki/MISTAKE-OF-THE-MISTAKE:Mistake Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Mistake Boss Corpse",
           "slug": "mistake-boss-corpse",
           "tags": [
@@ -36463,6 +36644,15 @@
     {
       "id": "Skladniki/MOLE-SHELL:Molespitter Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Molespitter Corpse",
           "slug": "molespitter-corpse",
@@ -36535,7 +36725,6 @@
         "slug": "firestorm-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "Fire-Surface",
           "BURNING",
           "DOS2-CO"
@@ -36545,7 +36734,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "Fire-Surface",
         "BURNING",
         "DOS2-CO"
@@ -37551,6 +37739,15 @@
       "id": "Skladniki/NIGHT-WINGS:Nightfang Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Nightfang Corpse",
           "slug": "nightfang-corpse",
           "tags": [
@@ -37669,6 +37866,15 @@
     {
       "id": "Skladniki/NIGHTMARE-ESSENCE:Nightmare Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Nightmare Corpse",
           "slug": "nightmare-corpse",
@@ -37807,7 +38013,6 @@
           "slug": "oil-flask",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "Oil-Surface",
             "DOS2-CO"
           ],
@@ -38489,6 +38694,15 @@
       "id": "Skladniki/PALADIN-COURAGE:Paladin Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Paladin Corpse",
           "slug": "paladin-corpse",
           "tags": [
@@ -38985,7 +39199,6 @@
         "tags": [
           "Food-And-Drink",
           "Seasonal-Items",
-          "Casts-Spell",
           "BURNING",
           "DOS2-CO"
         ],
@@ -38994,7 +39207,6 @@
       "tags": [
         "Food-And-Drink",
         "Seasonal-Items",
-        "Casts-Spell",
         "BURNING",
         "DOS2-CO"
       ],
@@ -39194,6 +39406,15 @@
     {
       "id": "Skladniki/PIG-GLUTTON:Pig Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Pig Corpse",
           "slug": "pig-corpse",
@@ -41027,7 +41248,6 @@
         "tags": [
           "Grenades",
           "Seasonal-Items",
-          "Casts-Spell",
           "FEAR",
           "DOS2-CO"
         ],
@@ -41036,7 +41256,6 @@
       "tags": [
         "Grenades",
         "Seasonal-Items",
-        "Casts-Spell",
         "FEAR",
         "DOS2-CO"
       ],
@@ -41258,6 +41477,15 @@
     {
       "id": "Skladniki/QUEEN'S-FAILURE:Queen Boss Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Queen Boss Corpse",
           "slug": "queen-boss-corpse",
@@ -41498,6 +41726,15 @@
       "id": "Skladniki/RABBIT-PAW:Rabbit Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Rabbit Corpse",
           "slug": "rabbit-corpse",
           "tags": [
@@ -41570,7 +41807,6 @@
             "name": "Apportation Scroll",
             "slug": "apportation-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "Ingredients",
               "Scrolls",
@@ -41582,7 +41818,6 @@
             "name": "Blinding Radiance Scroll",
             "slug": "blinding-radiance-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "Ingredients",
               "Scrolls",
@@ -41594,7 +41829,6 @@
             "name": "Dazing Bolt Scroll",
             "slug": "dazing-bolt-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "SHOCKED",
               "Ingredients",
@@ -41607,7 +41841,6 @@
             "name": "Electric Discharge Scroll",
             "slug": "electric-discharge-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "SHOCKED",
               "Ingredients",
@@ -41620,7 +41853,6 @@
             "name": "Favourable Wind Scroll",
             "slug": "favourable-wind-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "FAVOURABLE_WIND_AURA",
               "Ingredients",
@@ -41633,7 +41865,6 @@
             "name": "Nether Swap Scroll",
             "slug": "nether-swap-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "Ingredients",
               "Scrolls",
@@ -41645,7 +41876,6 @@
             "name": "Pressure Spike Scroll",
             "slug": "pressure-spike-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "Ingredients",
               "Scrolls",
@@ -41657,7 +41887,6 @@
             "name": "Shocking Touch Scroll",
             "slug": "shocking-touch-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "SHOCKED",
               "Ingredients",
@@ -41670,7 +41899,6 @@
             "name": "Teleportation Scroll",
             "slug": "teleportation-scroll",
             "tags": [
-              "Casts-Spell",
               "Aerotheurge",
               "Ingredients",
               "Scrolls",
@@ -41733,7 +41961,6 @@
             "name": "Contamination Scroll",
             "slug": "contamination-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "POISONED",
               "Ingredients",
@@ -41746,7 +41973,6 @@
             "name": "Earthquake Scroll",
             "slug": "earthquake-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "KNOCKED_DOWN",
               "Ingredients",
@@ -41759,7 +41985,6 @@
             "name": "Fortify Scroll",
             "slug": "fortify-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "FORTIFIED",
               "Ingredients",
@@ -41772,7 +41997,6 @@
             "name": "Fossil Strike Scroll",
             "slug": "fossil-strike-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "Oil-Surface",
               "Ingredients",
@@ -41785,7 +42009,6 @@
             "name": "Impalement Scroll",
             "slug": "impalement-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "Oil-Surface",
               "CRIPPLED",
@@ -41799,7 +42022,6 @@
             "name": "Mend Metal Scroll",
             "slug": "mend-metal-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "MEND_METAL",
               "Ingredients",
@@ -41812,7 +42034,6 @@
             "name": "Poison Dart Scroll",
             "slug": "poison-dart-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "Poison-Surface",
               "POISONED",
@@ -41826,7 +42047,6 @@
             "name": "Poison Wave Scroll",
             "slug": "poison-wave-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "Ingredients",
               "Scrolls",
@@ -41838,7 +42058,6 @@
             "name": "Reactive Armour Scroll",
             "slug": "reactive-armour-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "Ingredients",
               "Scrolls",
@@ -41850,7 +42069,6 @@
             "name": "Worm Tremor Scroll",
             "slug": "worm-tremor-scroll",
             "tags": [
-              "Casts-Spell",
               "Geomancer",
               "ENTANGLED",
               "Ingredients",
@@ -41914,7 +42132,6 @@
             "name": "Fire Whip Scroll",
             "slug": "fire-whip-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "BLIND",
               "BURNING",
@@ -41928,7 +42145,6 @@
             "name": "Fireball Scroll",
             "slug": "fireball-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "Fire-Surface",
               "BURNING",
@@ -41942,7 +42158,6 @@
             "name": "Flaming Tongues Scroll",
             "slug": "flaming-tongues-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "FLAMING_TONGUES",
               "Ingredients",
@@ -41955,7 +42170,6 @@
             "name": "Haste Scroll",
             "slug": "haste-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "HASTED",
               "Ingredients",
@@ -41968,7 +42182,6 @@
             "name": "Ignition Scroll",
             "slug": "ignition-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "BURNING",
               "Ingredients",
@@ -41981,7 +42194,6 @@
             "name": "Laser Ray Scroll",
             "slug": "laser-ray-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "BURNING",
               "Ingredients",
@@ -41994,7 +42206,6 @@
             "name": "Peace of Mind Scroll",
             "slug": "peace-of-mind-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "CLEAR_MINDED",
               "Ingredients",
@@ -42007,7 +42218,6 @@
             "name": "Searing Daggers Scroll",
             "slug": "searing-daggers-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "Fire-Surface",
               "BURNING",
@@ -42021,7 +42231,6 @@
             "name": "Spontaneous Combustion Scroll",
             "slug": "spontaneous-combustion-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "Ingredients",
               "Scrolls",
@@ -42033,7 +42242,6 @@
             "name": "Supernova Scroll",
             "slug": "supernova-scroll",
             "tags": [
-              "Casts-Spell",
               "Pyrokinetic",
               "Fire-Surface",
               "Ingredients",
@@ -42098,7 +42306,6 @@
             "name": "Bull Horns Scroll",
             "slug": "bull-horns-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "HORNS",
               "Ingredients",
@@ -42111,7 +42318,6 @@
             "name": "Chameleon Cloak Scroll",
             "slug": "chameleon-cloak-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "INVISIBLE",
               "Ingredients",
@@ -42124,7 +42330,6 @@
             "name": "Chicken Claw Scroll",
             "slug": "chicken-claw-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "CHICKEN",
               "Ingredients",
@@ -42137,7 +42342,6 @@
             "name": "Heart of Steel Scroll",
             "slug": "heart-of-steel-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "STEEL_SKIN",
               "Ingredients",
@@ -42150,7 +42354,6 @@
             "name": "Medusa Head Scroll",
             "slug": "medusa-head-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "MEDUSA_HEAD",
               "Ingredients",
@@ -42163,7 +42366,6 @@
             "name": "Skin Graft Scroll",
             "slug": "skin-graft-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "SHED_SKIN",
               "Ingredients",
@@ -42176,7 +42378,6 @@
             "name": "Spider Legs Scroll",
             "slug": "spider-legs-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "SPIDER_LEGS",
               "Ingredients",
@@ -42189,7 +42390,6 @@
             "name": "Spread Your Wings Scroll",
             "slug": "spread-your-wings-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "WINGS",
               "Ingredients",
@@ -42202,7 +42402,6 @@
             "name": "Summon Oily Blob Scroll",
             "slug": "summon-oily-blob-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "Ingredients",
               "Scrolls",
@@ -42214,7 +42413,6 @@
             "name": "Tentacle Lash Scroll",
             "slug": "tentacle-lash-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "DISARMED",
               "Ingredients",
@@ -42227,7 +42425,6 @@
             "name": "Terrain Transmutation Scroll",
             "slug": "terrain-transmutation-scroll",
             "tags": [
-              "Casts-Spell",
               "Polymorph",
               "Ingredients",
               "Scrolls",
@@ -42566,7 +42763,6 @@
             "name": "Charm Scroll",
             "slug": "charm-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "CHARMED",
               "Ingredients",
@@ -42579,7 +42775,6 @@
             "name": "Conjure Incarnate Scroll",
             "slug": "conjure-incarnate-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "Ingredients",
               "Scrolls",
@@ -42591,7 +42786,6 @@
             "name": "Dimensional Bolt Scroll",
             "slug": "dimensional-bolt-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "Ingredients",
               "Scrolls",
@@ -42603,7 +42797,6 @@
             "name": "Elemental Totem Scroll",
             "slug": "elemental-totem-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "Ingredients",
               "Scrolls",
@@ -42615,7 +42808,6 @@
             "name": "Farsight Infusion Scroll",
             "slug": "farsight-infusion-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "INF_RANGED",
               "Ingredients",
@@ -42628,7 +42820,6 @@
             "name": "Planar Gateway Scroll",
             "slug": "planar-gateway-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "Ingredients",
               "Scrolls",
@@ -42640,7 +42831,6 @@
             "name": "Power Infusion Scroll",
             "slug": "power-infusion-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "INF_POWER",
               "Ingredients",
@@ -42653,7 +42843,6 @@
             "name": "Rallying Cry Scroll",
             "slug": "rallying-cry-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "Ingredients",
               "Scrolls",
@@ -42665,7 +42854,6 @@
             "name": "Shadow Infusion Scroll",
             "slug": "shadow-infusion-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "INF_SHADOW",
               "Ingredients",
@@ -42678,7 +42866,6 @@
             "name": "Soul Mate Scroll",
             "slug": "soul-mate-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "HEAL_SHARING",
               "Ingredients",
@@ -42691,7 +42878,6 @@
             "name": "Supercharger Scroll",
             "slug": "supercharger-scroll",
             "tags": [
-              "Casts-Spell",
               "Summoning",
               "SUPERCHARGE",
               "Ingredients",
@@ -42897,7 +43083,6 @@
             "name": "Armour of Frost Scroll",
             "slug": "armour-of-frost-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "MAGIC_SHELL",
               "Ingredients",
@@ -42910,7 +43095,6 @@
             "name": "Cryogenic Stasis Scroll",
             "slug": "cryogenic-stasis-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "PERMAFROST",
               "Ingredients",
@@ -42923,7 +43107,6 @@
             "name": "Hail Strike Scroll",
             "slug": "hail-strike-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "Ice-Surface",
               "CHILLED",
@@ -42937,7 +43120,6 @@
             "name": "Ice Fan Scroll",
             "slug": "ice-fan-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "Ice-Surface",
               "CHILLED",
@@ -42951,7 +43133,6 @@
             "name": "Rain Scroll",
             "slug": "rain-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "WET",
               "Ingredients",
@@ -42964,7 +43145,6 @@
             "name": "Restoration Scroll",
             "slug": "restoration-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "REGENERATION",
               "Ingredients",
@@ -42977,7 +43157,6 @@
             "name": "Soothing Cold Scroll",
             "slug": "soothing-cold-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "FROST_AURA",
               "Ingredients",
@@ -42990,7 +43169,6 @@
             "name": "Winter Blast Scroll",
             "slug": "winter-blast-scroll",
             "tags": [
-              "Casts-Spell",
               "Hydrosophist",
               "CHILLED",
               "Ingredients",
@@ -43053,7 +43231,6 @@
             "name": "Blood Sucker Scroll",
             "slug": "blood-sucker-scroll",
             "tags": [
-              "Casts-Spell",
               "BLOOD_BUBBLE",
               "Ingredients",
               "Scrolls",
@@ -43065,7 +43242,6 @@
             "name": "Bone Cage Scroll",
             "slug": "bone-cage-scroll",
             "tags": [
-              "Casts-Spell",
               "Ingredients",
               "Scrolls",
               "DOS2-CO"
@@ -43076,7 +43252,6 @@
             "name": "Death Wish Scroll",
             "slug": "death-wish-scroll",
             "tags": [
-              "Casts-Spell",
               "DEATH_WISH",
               "Ingredients",
               "Scrolls",
@@ -43088,7 +43263,6 @@
             "name": "Decaying Touch Scroll",
             "slug": "decaying-touch-scroll",
             "tags": [
-              "Casts-Spell",
               "DECAYING_TOUCH",
               "Ingredients",
               "Scrolls",
@@ -43100,7 +43274,6 @@
             "name": "Infect Scroll",
             "slug": "infect-scroll",
             "tags": [
-              "Casts-Spell",
               "Ingredients",
               "Scrolls",
               "DOS2-CO"
@@ -43111,7 +43284,6 @@
             "name": "Living on the Edge Scroll",
             "slug": "living-on-the-edge-scroll",
             "tags": [
-              "Casts-Spell",
               "DEATH_RESIST",
               "Ingredients",
               "Scrolls",
@@ -43123,7 +43295,6 @@
             "name": "Mosquito Swarm Scroll",
             "slug": "mosquito-swarm-scroll",
             "tags": [
-              "Casts-Spell",
               "BLEEDING",
               "Ingredients",
               "Scrolls",
@@ -43135,7 +43306,6 @@
             "name": "Raise Bloated Corpse Scroll",
             "slug": "raise-bloated-corpse-scroll",
             "tags": [
-              "Casts-Spell",
               "Ingredients",
               "Scrolls",
               "DOS2-CO"
@@ -43146,7 +43316,6 @@
             "name": "Raise Bone Widow Scroll",
             "slug": "raise-bone-widow-scroll",
             "tags": [
-              "Casts-Spell",
               "Ingredients",
               "Scrolls",
               "DOS2-CO"
@@ -43157,7 +43326,6 @@
             "name": "Shackles of Pain Scroll",
             "slug": "shackles-of-pain-scroll",
             "tags": [
-              "Casts-Spell",
               "Ingredients",
               "Scrolls",
               "DOS2-CO"
@@ -43583,6 +43751,15 @@
       "id": "Skladniki/RAT-TAIL:Rat Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Rat Corpse",
           "slug": "rat-corpse",
           "tags": [
@@ -43621,7 +43798,6 @@
           "slug": "smoke-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "DOS2-CO"
           ],
           "craftingCategories": [
@@ -43668,7 +43844,6 @@
           "slug": "tremor-grenade",
           "tags": [
             "Grenades",
-            "Casts-Spell",
             "KNOCKED_DOWN",
             "DOS2-CO"
           ],
@@ -45301,7 +45476,6 @@
           "tags": [
             "Scrolls",
             "Ingredients",
-            "Casts-Spell",
             "RESURRECT",
             "DOS2-CO"
           ],
@@ -45935,6 +46109,15 @@
       "id": "Skladniki/RYKER'S-RENEGADE:Ryker Boss Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Ryker Boss Corpse",
           "slug": "ryker-boss-corpse",
           "tags": [
@@ -46022,6 +46205,15 @@
     {
       "id": "Skladniki/SALAMANDER-TONGUE:Salamander Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Salamander Corpse",
           "slug": "salamander-corpse",
@@ -46170,6 +46362,15 @@
     {
       "id": "Skladniki/SCARY-PUMPKIN:Scarecrow Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Scarecrow Corpse",
           "slug": "scarecrow-corpse",
@@ -47632,6 +47833,15 @@
       "id": "Skladniki/SHARK-FIN:Shark Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Shark Corpse",
           "slug": "shark-corpse",
           "tags": [
@@ -47861,6 +48071,15 @@
     {
       "id": "Skladniki/SHEEP-WOOL:Sheep Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Sheep Corpse",
           "slug": "sheep-corpse",
@@ -48919,6 +49138,15 @@
       "id": "Skladniki/SHRIEKER-SOUL:Shrieker Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Shrieker Corpse",
           "slug": "shrieker-corpse",
           "tags": [
@@ -49082,7 +49310,6 @@
         "slug": "silver-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -49093,7 +49320,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -49503,6 +49729,15 @@
       "id": "Skladniki/SLUG-OOZE:Slug Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Slug Corpse",
           "slug": "slug-corpse",
           "tags": [
@@ -49641,7 +49876,6 @@
         "slug": "smoke-grenade",
         "tags": [
           "Grenades",
-          "Casts-Spell",
           "DOS2-CO"
         ],
         "craftingCategories": [
@@ -49651,7 +49885,6 @@
       },
       "tags": [
         "Grenades",
-        "Casts-Spell",
         "DOS2-CO"
       ],
       "requirements": "",
@@ -49915,6 +50148,15 @@
       "id": "Skladniki/SPIDER-LEGS:Spider Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Spider Corpse",
           "slug": "spider-corpse",
           "tags": [
@@ -50027,6 +50269,15 @@
     {
       "id": "Skladniki/SQUIRREL-TAIL:Squirrel Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Squirrel Corpse",
           "slug": "squirrel-corpse",
@@ -51184,6 +51435,15 @@
       "id": "Skladniki/TIGER-CLAW:Tiger Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Tiger Corpse",
           "slug": "tiger-corpse",
           "tags": [
@@ -51396,7 +51656,6 @@
         "tags": [
           "Scrolls",
           "Ingredients",
-          "Casts-Spell",
           "TONGUED",
           "DOS2-CO"
         ],
@@ -51405,7 +51664,6 @@
       "tags": [
         "Scrolls",
         "Ingredients",
-        "Casts-Spell",
         "TONGUED",
         "DOS2-CO"
       ],
@@ -51417,6 +51675,15 @@
     {
       "id": "Skladniki/TONGUE-OF-THE-DIVINE:Lizard Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Lizard Corpse",
           "slug": "lizard-corpse",
@@ -51991,6 +52258,15 @@
       "id": "Skladniki/TROLL-HIDE:Troll Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Troll Corpse",
           "slug": "troll-corpse",
           "tags": [
@@ -52233,6 +52509,15 @@
     {
       "id": "Skladniki/TURTLE-SHELL:Turtle Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Turtle Corpse",
           "slug": "turtle-corpse",
@@ -65644,6 +65929,15 @@
       "id": "Skladniki/VOID-ESSENCE:Voidwoken Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Voidwoken Corpse",
           "slug": "voidwoken-corpse",
           "tags": [
@@ -65678,6 +65972,15 @@
       "id": "Skladniki/VOID-WINGS:Voidling Insect Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Voidling Insect Corpse",
           "slug": "voidling-insect-corpse",
           "tags": [
@@ -65710,6 +66013,15 @@
     {
       "id": "Skladniki/VOIDLING-GUTS:Voidling Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Voidling Corpse",
           "slug": "voidling-corpse",
@@ -65790,7 +66102,6 @@
         "slug": "voodoo-doll-scroll",
         "tags": [
           "Scrolls",
-          "Casts-Spell",
           "BLEEDING",
           "DOS2-CO"
         ],
@@ -65798,7 +66109,6 @@
       },
       "tags": [
         "Scrolls",
-        "Casts-Spell",
         "BLEEDING",
         "DOS2-CO"
       ],
@@ -68148,7 +68458,6 @@
           "slug": "slowdown-arrow",
           "tags": [
             "Arrows",
-            "Casts-Spell",
             "SLOWED",
             "DOS2-CO"
           ],
@@ -68163,7 +68472,6 @@
         "slug": "webbed-arrow",
         "tags": [
           "Arrows",
-          "Casts-Spell",
           "WEB",
           "DOS2-CO"
         ],
@@ -68175,7 +68483,6 @@
       },
       "tags": [
         "Arrows",
-        "Casts-Spell",
         "WEB",
         "DOS2-CO"
       ],
@@ -68790,6 +69097,15 @@
       "id": "Skladniki/WITCH-SOUL:Burning Witch Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Burning Witch Corpse",
           "slug": "burning-witch-corpse",
           "tags": [
@@ -69012,6 +69328,15 @@
       "id": "Skladniki/WOLF-HIDE:Abomination Corpse",
       "ingredients": [
         {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
           "name": "Abomination Corpse",
           "slug": "abomination-corpse",
           "tags": [
@@ -69044,6 +69369,15 @@
     {
       "id": "Skladniki/WOLF-TOOTH:Wolf Corpse",
       "ingredients": [
+        {
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
         {
           "name": "Wolf Corpse",
           "slug": "wolf-corpse",

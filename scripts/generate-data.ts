@@ -1,33 +1,34 @@
-import {
-  buildItemGroups,
-  expandSmallGroups,
-  isItemGroup,
-  isGameGroup,
-  upgradeTargetGroups,
-  type ItemGroups,
-} from "../src/main/domain/itemGroups"
-import { assignDataKeys, itemEffectKey, itemIconKey } from "../src/main/domain/itemIcons"
 import fs from "node:fs/promises"
 import path from "node:path"
-import { resolveItemIcon, type ItemIconMap } from "../src/main/domain/itemIcons"
-import { buildCatalogs } from "../src/main/domain/recipeCatalog"
-import type { RecipeCatalog, RecipeItem, RecipeRow } from "../src/main/domain/recipes"
-import { getCatalogItemRoles } from "../src/main/domain/recipeItemRoles"
-import { catalogItems } from "../src/main/domain/recipeView"
-import { collectRecipeStats, getCechySidebarGroups, localizeItemForCatalog } from "../src/main/domain/recipes"
-import { resetLocalisationSources } from "../src/main/domain/itemLocalisation"
+import type { Catalog } from "../src/main/domain/catalog"
+import { CatalogBuilder } from "../src/main/domain/catalogBuilder"
+import { CraftRoles } from "../src/main/domain/craftRoles"
+import type { Game } from "../src/main/domain/game"
+import { GroupMatcher } from "../src/main/domain/groupMatcher"
+import { IconAtlas, type ItemIconMap } from "../src/main/domain/iconAtlas"
+import { Item } from "../src/main/domain/item"
+import { ItemGroup, type ItemGroups } from "../src/main/domain/itemGroup"
+import { ItemGroupResolver } from "../src/main/domain/itemGroupResolver"
+import { ItemList } from "../src/main/domain/itemList"
+import { CatalogLocalizer, NameDictionary } from "../src/main/domain/localisation"
+import type { Recipe } from "../src/main/domain/recipe"
+import { RecipeStats } from "../src/main/domain/recipeStats"
+import { SmallGroupExpander } from "../src/main/domain/smallGroupExpander"
+import { TagSidebar } from "../src/main/domain/tagSidebar"
 import type { CatalogManifest } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
-import { recipeResults } from "../src/main/domain/recipeResults"
+
+type Localised = Record<string, { en: string; pl?: string }> | undefined
+type Effects = Record<string, { en?: string; pl?: string; recipes?: Record<string, { en: string; pl?: string }> }>
 
 /** Writes `<outputDirectory>/data`; the build passes `dist`, so the catalog data lands next to the app. */
 export async function generateData(outputDirectory = "dist") {
   const started = performance.now()
-  resetLocalisationSources()
+  NameDictionary.reset()
   // Validate source JSON before replacing the previously generated output.
   const library = await loadLibrary()
   const labels: Record<string, string> = JSON.parse(await fs.readFile("data/tagLabels.json", "utf8"))
-  const catalogs = buildCatalogs(library.sources, labels, library.upgrades)
+  const catalogs = new CatalogBuilder(library.sources, labels, library.upgrades).build()
   const descriptions = JSON.parse(await fs.readFile("data/itemDescriptions.json", "utf8"))
   const tagLocalisation = JSON.parse(await fs.readFile("data/tagLocalisation.json", "utf8"))
   const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
@@ -35,27 +36,30 @@ export async function generateData(outputDirectory = "dist") {
   await fs.rm(path.join(outputDirectory, "data"), { recursive: true, force: true })
   await fs.mkdir(path.join(outputDirectory, "data"), { recursive: true })
   await fs.cp("assets/item-icons", path.join(outputDirectory, "data/icons"), { recursive: true })
-  for (const game of Object.keys(catalogs) as (keyof typeof catalogs)[]) {
+  for (const game of Object.keys(catalogs) as Game[]) {
     const data = catalogs[game]
     // Catalogs share base recipes; each mode resolves its own group membership.
     copyCatalogItems(data)
     const inventorySource =
       game === "dos2-overhaul" ? [...library.items.dos2, ...library.items[game]] : library.items[game]
-    const inventory = inventorySource.map((sourceItem) => localizeItemForCatalog(sourceItem, game))
-    assignDataKeys([
-      ...data.recipes.flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]),
+    const localizer = new CatalogLocalizer(game)
+    const inventory = inventorySource.map((sourceItem) => localizer.item(sourceItem))
+    Item.assignDataKeys([
+      ...data.recipes.flatMap((row) => [...row.results(), ...(row.result.pool ?? []), ...row.ingredients]),
       ...data.upgrades!.flatMap((upgrade) => [upgrade.target, ...upgrade.ingredients]),
       ...inventory,
     ])
     await fs.writeFile(path.join(outputDirectory, `data/descriptions-${game}.json`), JSON.stringify(descriptions[game]))
-    attachItemData(data, inventory, { icons, effects: effects[game] ?? {}, game })
+    attachItemData(data, inventory, new IconAtlas(icons, game), effects[game] ?? {})
     // Upgrade ingredients such as "#Mystical-Small-Rune" are groups too.
-    const upgradeSelectors = data.upgrades!.flatMap((upgrade) => upgrade.ingredients.filter(isItemGroup))
-    const resolvedGroups = buildItemGroups(data.recipes, 1, [...inventory, ...upgradeSelectors])
-    data.recipes = expandSmallGroups(data.recipes, resolvedGroups)
+    const upgradeSelectors = data.upgrades!.flatMap((upgrade) => upgrade.ingredients.filter((item) => item.isGroup()))
+    const resolvedGroups = new ItemGroupResolver(data.recipes, [...inventory, ...upgradeSelectors]).groups(1)
+    data.recipes = new SmallGroupExpander(resolvedGroups).expand(data.recipes)
     Object.assign(data, recipeStats(data, tagLocalisation[game]))
     const groups: ItemGroups = Object.fromEntries(
-      Object.entries(resolvedGroups).filter(([, group]) => group.members.length >= 4 || isGameGroup(group.name)),
+      Object.entries(resolvedGroups).filter(
+        ([, group]) => group.members.length >= 4 || GroupMatcher.isGameGroup(group.name),
+      ),
     )
     data.groups = groups
     linkUpgradeTargets(data, groups, inventory)
@@ -70,12 +74,12 @@ export async function generateData(outputDirectory = "dist") {
   const pages = library.pages
   const manifest: CatalogManifest = {
     pages,
-    itemRoles: getCatalogItemRoles(pages, catalogs),
-    traitGroups: getCechySidebarGroups(),
+    itemRoles: CraftRoles.ofCatalogs(pages, catalogs),
+    traitGroups: TagSidebar.traitGroups(),
     catalogs: Object.fromEntries(
       Object.entries(catalogs).map(([game, data]) => [
         game,
-        { recipes: data.recipes.length, items: catalogItems(data.recipes).length },
+        { recipes: data.recipes.length, items: new ItemList(data.recipes).items().length },
       ]),
     ) as CatalogManifest["catalogs"],
   }
@@ -85,61 +89,55 @@ export async function generateData(outputDirectory = "dist") {
   )
   return manifest
 }
-type Catalog = ReturnType<typeof buildCatalogs>[keyof ReturnType<typeof buildCatalogs>]
-type Localised = Record<string, { en: string; pl?: string }> | undefined
-type Effects = Record<string, { en?: string; pl?: string; recipes?: Record<string, { en: string; pl?: string }> }>
 
 /** Each catalog gets its own copies of the shared items, since it fills them in differently. */
 function copyCatalogItems(data: Catalog) {
-  data.recipes = data.recipes.map((row) => ({
-    ...row,
-    result: row.result.pool ? { ...row.result, pool: row.result.pool.map((item) => ({ ...item })) } : { ...row.result },
-    ...(row.extraResults && { extraResults: row.extraResults.map((item) => ({ ...item })) }),
-    ingredients: row.ingredients.map((item) => ({ ...item })),
-  }))
-  data.upgrades = (data.upgrades ?? []).map((upgrade) => ({
-    ...upgrade,
-    target: { ...upgrade.target },
-    ingredients: upgrade.ingredients.map((item) => ({ ...item })),
-  }))
+  const copy = (item: Item) => item.with({})
+  data.recipes = data.recipes.map((row) =>
+    row.with({
+      result: row.result.pool ? row.result.with({ pool: row.result.pool.map(copy) }) : copy(row.result),
+      ...(row.extraResults && { extraResults: row.extraResults.map(copy) }),
+      ingredients: row.ingredients.map(copy),
+    }),
+  )
+  data.upgrades = (data.upgrades ?? []).map((upgrade) =>
+    upgrade.with({ target: copy(upgrade.target), ingredients: upgrade.ingredients.map(copy) }),
+  )
 }
 
 /** A recipe-specific effect of a result, else the item's own effect. */
-function recipeItemEffect(row: RecipeRow, item: RecipeItem, effects: Effects): RecipeItem["effect"] {
-  const entry = effects[itemEffectKey(item)]
-  const own = recipeResults(row).includes(item) ? entry?.recipes?.[row.id] : undefined
+function recipeItemEffect(row: Recipe, item: Item, effects: Effects): Item["effect"] {
+  const entry = effects[item.effectKey]
+  const own = row.results().includes(item) ? entry?.recipes?.[row.id] : undefined
   return own || (entry?.en ? { en: entry.en, pl: entry.pl } : undefined)
 }
 
 /** Icons and confirmed game effects of every item a catalog shows. */
-function attachItemData(
-  data: Catalog,
-  inventory: RecipeItem[],
-  { icons, effects, game }: { icons: ItemIconMap; effects: Effects; game: RecipeCatalog },
-) {
+function attachItemData(data: Catalog, inventory: Item[], atlas: IconAtlas, effects: Effects) {
   for (const row of data.recipes) {
-    for (const item of [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]) {
-      item.icon = resolveItemIcon(icons, game, item)
+    for (const item of [...row.results(), ...(row.result.pool ?? []), ...row.ingredients]) {
+      item.icon = atlas.iconOf(item)
       if (!item.selectorTag) item.effect = recipeItemEffect(row, item, effects)
       delete item.groupId
       delete item.groupSize
     }
   }
   for (const upgrade of data.upgrades ?? [])
-    for (const item of [upgrade.target, ...upgrade.ingredients]) item.icon = resolveItemIcon(icons, game, item)
+    for (const item of [upgrade.target, ...upgrade.ingredients]) item.icon = atlas.iconOf(item)
   for (const item of inventory) {
-    item.icon = resolveItemIcon(icons, game, item)
-    const entry = effects[itemEffectKey(item)]
-    item.effect = entry?.en ? (entry as RecipeItem["effect"]) : undefined
+    item.icon = atlas.iconOf(item)
+    const entry = effects[item.effectKey]
+    item.effect = entry?.en ? (entry as Item["effect"]) : undefined
   }
 }
 
-/** Tag, requirement and selector counts of the expanded recipes, keeping the labels already known. */
+/** Tag and requirement counts of the expanded recipes, keeping the labels already known. */
 function recipeStats(data: Catalog, tagLocalisation: Localised) {
   const statLabels = new Map(
     [...data.tags, ...data.requirements].filter((stat) => stat.label).map((stat) => [stat.tag, stat.label!]),
   )
-  const stats = collectRecipeStats(data.recipes)
+  const counted = new RecipeStats(data.recipes)
+  const stats = { tags: counted.tags(), requirements: counted.requirements() }
   for (const field of ["tags", "requirements"] as const)
     for (const stat of stats[field]) stat.label = statLabels.get(stat.tag) ?? stat.label
   for (const stat of stats.tags) {
@@ -150,28 +148,26 @@ function recipeStats(data: Catalog, tagLocalisation: Localised) {
 }
 
 /** Upgrade targets link to the groups of items they apply to. */
-function linkUpgradeTargets(data: Catalog, groups: ItemGroups, inventory: RecipeItem[]) {
-  const targets = upgradeTargetGroups(data.upgrades ?? [], data.recipes, inventory)
+function linkUpgradeTargets(data: Catalog, groups: ItemGroups, inventory: Item[]) {
+  const targets = new ItemGroupResolver(data.recipes, inventory).upgradeTargets(data.upgrades ?? [])
   for (const upgrade of data.upgrades ?? []) {
     const resolved = targets[upgrade.id] ?? []
     if (!resolved.some((group) => group.members.length > 0)) continue
     upgrade.targets = resolved.map((group) => {
       // A slot without catalog items stays a plain label.
-      if (group.members.length === 0) return { name: group.name, tags: upgrade.target.tags }
+      if (group.members.length === 0) return new Item({ name: group.name, tags: upgrade.target.tags })
       const key = freeGroupKey(groups, group)
-      groups[key] = { ...group, id: key }
-      return { name: group.name, tags: upgrade.target.tags, groupId: key, groupSize: group.members.length }
+      groups[key] = new ItemGroup({ ...group, id: key })
+      return new Item({ name: group.name, tags: upgrade.target.tags, groupId: key, groupSize: group.members.length })
     })
   }
 }
 
 /** The group's own id, or a numbered one when another group with different members holds it. */
-function freeGroupKey(groups: ItemGroups, group: ItemGroups[string]): string {
-  const names = JSON.stringify(group.members.map((member) => member.name))
-  const sameMembers = (id: string) => JSON.stringify(groups[id].members.map((member) => member.name)) === names
+function freeGroupKey(groups: ItemGroups, group: ItemGroup): string {
   let key = group.id
   let suffix = 1
-  while (groups[key] && !sameMembers(key)) {
+  while (groups[key] && groups[key].memberNames() !== group.memberNames()) {
     key = `${group.id}-${suffix}`
     suffix++
   }
@@ -189,9 +185,9 @@ function noteLabels(notes: string, tagLocalisation: Localised): Record<string, s
 }
 
 /** A group ingredient links to its group and shows no icon of its own. */
-function markGroup(item: RecipeItem, groups: ItemGroups) {
-  const group = groups[itemIconKey(item.name)]
-  if (!group || !isItemGroup(item)) return
+function markGroup(item: Item, groups: ItemGroups) {
+  const group = groups[item.nameKey]
+  if (!group || !item.isGroup()) return
   item.groupId = group.id
   item.groupSize = group.members.length
   delete item.icon

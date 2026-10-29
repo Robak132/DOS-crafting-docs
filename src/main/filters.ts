@@ -1,15 +1,9 @@
-import { isCategoryTag, isTagWithin } from "./domain/tagTree"
-import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
-import { matchesUpgradeQuery } from "./domain/upgrades"
-import {
-  type RecipeSearchScope,
-  type RecipeSort,
-  RECIPE_SORTS,
-  matchesCraftingMax,
-  matchesRecipeQuery,
-  recipeResultTags,
-  requirementTokens,
-} from "./domain/recipeView"
+import type { Recipe, RecipeSearchScope } from "./domain/recipe"
+import { RECIPE_SORTS, type RecipeSort } from "./domain/recipeOrder"
+import { SearchQuery } from "./domain/searchQuery"
+import { tagHierarchy } from "./domain/tagHierarchy"
+import type { TagLabels } from "./domain/tagLabels"
+import type { Upgrade } from "./domain/upgrade"
 import { catalogHref, type Game, type View } from "./routing"
 export type Filters = {
   include: string[]
@@ -86,13 +80,14 @@ export function restoreFilters(game: Game, search = ""): Filters {
   }
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
 }
-export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Record<string, string>): RecipeRow[] {
-  const tagMatch = (tags: string[], target: string) => tags.some((tag) => isTagWithin(tag, target))
-  const categories = filters.include.filter(isCategoryTag)
-  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
+export function filterRecipes(recipes: Recipe[], filters: Filters, labels: TagLabels): Recipe[] {
+  const tagMatch = (tags: string[], target: string) => tags.some((tag) => tagHierarchy.isWithin(tag, target))
+  const categories = filters.include.filter((tag) => tagHierarchy.isCategory(tag))
+  const traits = filters.include.filter((tag) => !tagHierarchy.isCategory(tag))
+  const query = new SearchQuery(filters.query)
   return recipes.filter((recipe) => {
-    const tags = recipeResultTags(recipe)
-    const reqs = new Set(requirementTokens(recipe.requirements).map((value) => value.toLowerCase()))
+    const tags = recipe.resultTags()
+    const reqs = new Set(recipe.requirementList.tokens().map((value) => value.toLowerCase()))
     if (
       (categories.length > 0 && !categories.some((tag) => tagMatch(tags, tag))) ||
       !traits.every((tag) => tagMatch(tags, tag)) ||
@@ -102,26 +97,28 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
     if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
       return false
     if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
-    if (filters.craftingMax !== null && !matchesCraftingMax(recipe.requirements, filters.craftingMax)) return false
-    return matchesRecipeQuery(recipe, filters.query, labels, filters.scope)
+    if (filters.craftingMax !== null && !recipe.requirementList.allowCraftingLevel(filters.craftingMax)) return false
+    return recipe.matches(query, labels, filters.scope)
   })
 }
-export function filterUpgrades(upgrades: RecipeUpgrade[], filters: Filters): RecipeUpgrade[] {
-  const related = (a: string, b: string) => isTagWithin(a, b) || isTagWithin(b, a)
-  const categories = filters.include.filter(isCategoryTag)
-  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
+export function filterUpgrades(upgrades: Upgrade[], filters: Filters): Upgrade[] {
+  const within = (tag: string, ancestor: string) => tagHierarchy.isWithin(tag, ancestor)
+  const related = (a: string, b: string) => within(a, b) || within(b, a)
+  const categories = filters.include.filter((tag) => tagHierarchy.isCategory(tag))
+  const traits = filters.include.filter((tag) => !tagHierarchy.isCategory(tag))
+  const query = new SearchQuery(filters.query)
   return upgrades.filter((upgrade) => {
     const tags = [...upgrade.targetTags, ...upgrade.tags]
     if (categories.length && !categories.some((tag) => upgrade.targetTags.some((target) => related(target, tag))))
       return false
-    if (!traits.every((tag) => upgrade.tags.some((own) => isTagWithin(own, tag)))) return false
-    if (filters.exclude.some((tag) => tags.some((own) => isTagWithin(own, tag)))) return false
-    const reqs = new Set(requirementTokens(upgrade.requirements).map((value) => value.toLowerCase()))
+    if (!traits.every((tag) => upgrade.tags.some((own) => within(own, tag)))) return false
+    if (filters.exclude.some((tag) => tags.some((own) => within(own, tag)))) return false
+    const reqs = new Set(upgrade.requirementList.tokens().map((value) => value.toLowerCase()))
     if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
       return false
     if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
-    if (filters.craftingMax !== null && !matchesCraftingMax(upgrade.requirements, filters.craftingMax)) return false
-    return matchesUpgradeQuery(upgrade, filters.query)
+    if (filters.craftingMax !== null && !upgrade.requirementList.allowCraftingLevel(filters.craftingMax)) return false
+    return upgrade.matches(query)
   })
 }
 export function filtersToSearch(filters: Filters, view: string): string {

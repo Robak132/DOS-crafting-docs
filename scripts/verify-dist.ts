@@ -3,7 +3,7 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import type { CatalogManifest, CatalogData } from "../src/main/domain/types"
 import { games, itemPath, pageGames } from "../src/main/routing"
-import { isGameGroup } from "../src/main/domain/itemGroups"
+import { GroupMatcher } from "../src/main/domain/groupMatcher"
 const manifest: CatalogManifest = JSON.parse(await fs.readFile("dist/data/manifest.json", "utf8"))
 const base: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2.json", "utf8"))
 const combined: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2-overhaul.json", "utf8"))
@@ -16,7 +16,10 @@ for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
     (catalog.upgrades ?? []).flatMap((upgrade) => (upgrade.targets ?? []).map((t) => t.groupId)),
   )
   for (const [id, group] of Object.entries(catalog.groups ?? {})) {
-    assert.ok(group.members.length >= 4 || isGameGroup(group.name) || upgradeGroups.has(id), `Small group: ${id}`)
+    assert.ok(
+      group.members.length >= 4 || GroupMatcher.isGameGroup(group.name) || upgradeGroups.has(id),
+      `Small group: ${id}`,
+    )
   }
   const icons = new Set(
     catalog.recipes

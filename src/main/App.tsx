@@ -1,33 +1,23 @@
 import { TagFilterTree } from "./components/TagFilterTree"
-import { applyGroupQuery } from "./domain/groupSearch"
 import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
-import { itemIconKey, itemDataKey } from "./domain/itemIcons"
 import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
 import { ItemTable } from "./components/ItemTable"
 import { RecipeTable } from "./components/RecipeTable"
 import { UpgradeTable } from "./components/UpgradeTable"
-import { upgradesForItem } from "./domain/upgrades"
+import { Catalog } from "./domain/catalog"
+import { GroupSearch } from "./domain/groupSearch"
+import type { Lang } from "./domain/item"
+import { ItemList, ItemRecipes } from "./domain/itemList"
+import { RecipeOrder, type RecipeSort } from "./domain/recipeOrder"
+import { RecipeStats } from "./domain/recipeStats"
+import { CRAFTING_MAX_LEVELS } from "./domain/requirements"
+import { tagHierarchy } from "./domain/tagHierarchy"
+import { TagLabels } from "./domain/tagLabels"
+import { TagSidebar } from "./domain/tagSidebar"
+import { TextKey } from "./domain/textKey"
 import type { CatalogData, CatalogManifest, PageSummary } from "./domain/types"
-import {
-  catalogItems,
-  groupRecipeTags,
-  groupRequirementStats,
-  itemNameKeys,
-  recipeResults,
-  recipeRollsItem,
-  recipeUsesItem,
-  sortRecipes,
-  tagLabel,
-  type RecipeSort,
-  uniqueItemEffects,
-  uniqueItemRemarks,
-  visibleRecipeTags,
-  CRAFTING_MAX_LEVELS,
-} from "./domain/recipeView"
-import { collectRecipeStats } from "./domain/recipes"
-import { isCategoryTag } from "./domain/tagTree"
 import {
   emptyFilters,
   cycleFilter,
@@ -94,7 +84,7 @@ const routeOwnsFilters = (slug: string) => !slug || slug === "index" || routeNam
 function routeFilters(route: ReturnType<typeof currentRoute>): Filters {
   return restoreFilters(routeGame(route), routeOwnsFilters(route.slug) ? route.search : "")
 }
-function storedLang(): "pl" | "en" {
+function storedLang(): Lang {
   try {
     return localStorage.getItem("item-lang") === "pl" ? "pl" : "en"
   } catch {
@@ -142,10 +132,10 @@ function internalLink(event: MouseEvent, target: Element): URL | undefined {
   return sameSite ? url : undefined
 }
 /** The active filters as one line of text for the sidebar. */
-function filterSummary(filters: Filters, labels: Record<string, string>) {
+function filterSummary(filters: Filters, labels: TagLabels) {
   return [
-    ...filters.include.map((tag) => tagLabel(tag, labels)),
-    ...filters.exclude.map((tag) => `bez: ${tagLabel(tag, labels)}`),
+    ...filters.include.map((tag) => labels.label(tag)),
+    ...filters.exclude.map((tag) => `bez: ${labels.label(tag)}`),
     ...filters.requirements.map((value) => `wym: ${value}`),
     ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
     filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
@@ -190,7 +180,8 @@ export function App() {
   const [lang, setLang] = useState(storedLang)
   const root = useRef<HTMLDivElement>(null)
   const manifest = useJson<CatalogManifest>("manifest.json")
-  const catalog = useJson<CatalogData>(`catalog-${game}.json`)
+  const catalogFile = useJson<CatalogData>(`catalog-${game}.json`)
+  const catalog = useMemo(() => (catalogFile.data ? new Catalog(catalogFile.data) : undefined), [catalogFile.data])
   const isCatalog = !route.slug || route.slug === "index" || Boolean(gameForSlug(route.slug))
   const itemSlug = parseItemRoute(route.slug)?.item
   const page = itemSlug
@@ -203,33 +194,33 @@ export function App() {
   )
   const detail: { data?: PageSummary } = { data: page }
   const activeGame = games.find((entry) => entry.id === game)!
-  const labels = useMemo(
-    () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
-    [catalog.data],
-  )
+  const labels = useMemo(() => catalog?.tagLabels() ?? new TagLabels(), [catalog])
   const grouped = useMemo(
-    () => applyGroupQuery(catalog.data?.recipes ?? [], catalog.data?.groups ?? {}, filters.query, filters.scope),
-    [catalog.data, filters.query, filters.scope],
+    () => new GroupSearch(catalog?.groups ?? {}, catalog?.recipes ?? []).apply(filters.query, filters.scope),
+    [catalog, filters.query, filters.scope],
   )
   const filtered = useMemo(
-    () => sortRecipes(filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels), filters.sort, lang),
+    () =>
+      new RecipeOrder(filters.sort, lang).apply(
+        filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels),
+      ),
     [grouped, filters, labels, lang],
   )
   // Tag counts follow the search and other narrowing, but not the tags themselves: each count says how many
   // items picking that tag would add to what is shown.
   const narrowed = isNarrowed(filters)
   const liveTags = useMemo(() => {
-    const tags = catalog.data?.tags ?? []
+    const tags = catalog?.tags ?? []
     if (!narrowed || view === "upgrades") return tags
     const rows = filterRecipes(grouped.rows, { ...filters, query: grouped.query, include: [], exclude: [] }, labels)
-    const counts = new Map(collectRecipeStats(rows).tags.map((stat) => [stat.tag, stat.count]))
+    const counts = new Map(new RecipeStats(rows).tags().map((stat) => [stat.tag, stat.count]))
     return tags
       .map((stat) => ({ ...stat, count: counts.get(stat.tag) ?? 0 }))
       .filter((stat) => stat.count > 0 || filters.include.includes(stat.tag) || filters.exclude.includes(stat.tag))
-  }, [catalog.data, grouped, filters, labels, narrowed, view])
-  const upgrades = useMemo(() => filterUpgrades(catalog.data?.upgrades ?? [], filters), [catalog.data, filters])
+  }, [catalog, grouped, filters, labels, narrowed, view])
+  const upgrades = useMemo(() => filterUpgrades(catalog?.upgrades ?? [], filters), [catalog, filters])
   const tagGroups = useMemo(
-    () => groupRecipeTags(liveTags, manifest.data?.traitGroups ?? []),
+    () => new TagSidebar(manifest.data?.traitGroups).sections(liveTags),
     [liveTags, manifest.data],
   )
   const currentFilters = query === filters.query ? filters : { ...filters, query }
@@ -338,34 +329,29 @@ export function App() {
   const activeFilterCount = countFilters(filters)
   const itemHref = (slug: string) => gameItemHref(game, slug)
   const itemRecipes = useMemo(() => {
-    if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
-    const keys = itemNameKeys(detail.data.title, detail.data.slug.split("/").at(-1))
+    if (!detail.data || !catalog) return { craft: [], rolled: [], used: [] }
+    const { slug, title } = detail.data
     return {
-      craft: catalog.data.recipes.filter((row) => recipeResults(row).some((product) => product.slug === itemSlug)),
-      rolled: catalog.data.recipes.filter((row) => recipeRollsItem(row, itemSlug, keys)),
-      used: catalog.data.recipes.filter((row) => recipeUsesItem(row, itemSlug, keys)),
+      craft: catalog.recipesMaking(slug),
+      rolled: catalog.recipesRolling(slug, title),
+      used: catalog.recipesUsing(slug, title),
     }
-  }, [detail.data, catalog.data, itemSlug])
+  }, [detail.data, catalog])
   const itemUpgrades = useMemo(
-    () =>
-      detail.data
-        ? upgradesForItem(catalog.data?.upgrades ?? [], detail.data.tags, itemSlug, catalog.data?.groups)
-        : [],
-    [detail.data, catalog.data, itemSlug],
+    () => (detail.data && catalog ? catalog.upgradesFor(detail.data.tags, detail.data.slug) : []),
+    [detail.data, catalog],
   )
-  const detailName =
-    itemRecipes.craft.flatMap(recipeResults).find((item) => item.slug === itemSlug) ??
-    itemRecipes.craft[0]?.result ??
-    catalog.data?.recipes.flatMap((row) => row.result.pool ?? []).find((item) => item.slug === itemSlug) ??
-    catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === itemSlug)
-  const detailDescription =
-    descriptions.data?.[detailName ? itemDataKey(detailName) : itemIconKey(detail.data?.title ?? "")]
+  const detailName = detail.data && catalog?.findItem(detail.data.slug)
+  const detailDescription = descriptions.data?.[detailName?.resourceKey ?? TextKey.item(detail.data?.title ?? "")]
 
   const detailDescriptionText = itemDescriptionText(detailDescription, lang)
   // The most specific category of the item, for the breadcrumb.
-  const detailCategory = detail.data ? visibleRecipeTags(detail.data.tags).find(isCategoryTag) : undefined
-  const detailEffects = uniqueItemEffects(itemRecipes.craft, lang, detailName)
-  const detailRemarks = uniqueItemRemarks(itemRecipes.craft)
+  const detailCategory = detail.data
+    ? TagSidebar.visibleTags(detail.data.tags).find((tag) => tagHierarchy.isCategory(tag))
+    : undefined
+  const craftNotes = new ItemRecipes(itemRecipes.craft, detailName)
+  const detailEffects = craftNotes.effects(lang)
+  const detailRemarks = craftNotes.remarks()
 
   const searchingUpgrades = isCatalog && view === "upgrades"
   // One search bar for the whole site: it filters the catalog, and on an item page it opens the catalog.
@@ -456,7 +442,7 @@ export function App() {
           {activeFilterCount > 0 && <span class="filters-toggle-count">{activeFilterCount}</span>}
         </button>
         <div id="sidebar-filters" class="sidebar-filters" data-open={filtersOpen}>
-          {game === "dos1" && catalog.data && (
+          {game === "dos1" && catalog && (
             <section>
               <h3>Mój crafting</h3>
               <div class="crafting-levels">
@@ -472,7 +458,7 @@ export function App() {
                   </button>
                 ))}
               </div>
-              {groupRequirementStats(catalog.data.requirements).map((group) => (
+              {TagSidebar.requirementGroups(catalog.requirements).map((group) => (
                 <details key={group.label}>
                   <summary>{group.label}</summary>
                   <div class="recipe-tag-list">
@@ -524,7 +510,7 @@ export function App() {
                   <>
                     <span aria-hidden="true">›</span>
                     <a href={catalogHrefWith(game, view, { ...emptyFilters(), include: [detailCategory] })}>
-                      {tagLabel(detailCategory, labels)}
+                      {labels.label(detailCategory)}
                     </a>
                   </>
                 )}
@@ -544,14 +530,14 @@ export function App() {
             </a>
           )}
         </header>
-        {(manifest.error || catalog.error) && (
+        {(manifest.error || catalogFile.error) && (
           <div class="error-message" role="alert">
-            {manifest.error ?? catalog.error}
+            {manifest.error ?? catalogFile.error}
             <button onClick={() => window.location.reload()}>Spróbuj ponownie</button>
           </div>
         )}
-        {!catalog.data && !catalog.error && <p role="status">Wczytywanie katalogu…</p>}
-        {isCatalog && catalog.data && (
+        {!catalog && !catalogFile.error && <p role="status">Wczytywanie katalogu…</p>}
+        {isCatalog && catalog && (
           <div class="recipe-app">
             <div class="catalog-toolbar">
               <div class="recipe-view-switch" role="group" aria-label="Tryb prezentacji">
@@ -586,7 +572,7 @@ export function App() {
                 </label>
               )}
               <span role="status" aria-live="polite" class="result-count">
-                {resultCount(view, catalogItems(filtered).length, upgrades.length, filtered.length)}
+                {resultCount(view, new ItemList(filtered).items().length, upgrades.length, filtered.length)}
               </span>
             </div>
             {game === "dos2-overhaul" && (
@@ -622,7 +608,7 @@ export function App() {
             )}
           </div>
         )}
-        {!isCatalog && catalog.data && (
+        {!isCatalog && catalog && (
           <div class="item-detail">
             {unavailablePage && (
               <div role="alert">
@@ -640,9 +626,9 @@ export function App() {
                   </section>
                 )}
                 <div class="detail-tags">
-                  {visibleRecipeTags(detail.data.tags).map((tag) => (
+                  {TagSidebar.visibleTags(detail.data.tags).map((tag) => (
                     <button key={tag} class="recipe-search-tag" data-filter-tag={tag}>
-                      {tagLabel(tag, labels)}
+                      {labels.label(tag)}
                     </button>
                   ))}
                 </div>
@@ -724,7 +710,7 @@ export function App() {
       </main>
       <TooltipLayer
         root={root}
-        recipes={catalog.data?.recipes}
+        recipes={catalog?.recipes}
         game={game}
         lang={lang}
         routeKey={`${game}:${route.slug}:${view}`}

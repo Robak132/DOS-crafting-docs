@@ -2,12 +2,13 @@ import assert from "node:assert/strict"
 import { test } from "node:test"
 import { renderToString } from "preact-render-to-string"
 import { ItemTooltip, tooltipItemName } from "../../main/components/ItemTooltip"
-import type { RecipeRow } from "../../main/domain/recipes"
+import { Item } from "../../main/domain/item"
+import { Recipe } from "../../main/domain/recipe"
 
-const item = { name: "Leather Scraps", namePl: "Skrawki skóry", tags: [] }
-const recipe: RecipeRow = {
+const item = new Item({ name: "Leather Scraps", namePl: "Skrawki skóry", tags: [] })
+const recipe = new Recipe({
   id: "leather",
-  result: { ...item, quantity: "x2" },
+  result: item.with({ quantity: "x2" }),
   ingredients: [
     { name: "Knife", tags: [] },
     { name: "Animal Hide", namePl: "Skóra zwierzęca", quantity: "x3", tags: [] },
@@ -17,13 +18,13 @@ const recipe: RecipeRow = {
   remarks: "",
   requirements: "Crafting 1",
   source: "",
-}
+})
 
 test("tooltip titles show PL (EN), with English fallback and no duplicate translation", () => {
   assert.equal(tooltipItemName(item, "pl"), "Skrawki skóry (Leather Scraps)")
-  assert.equal(tooltipItemName({ ...item, namePl: undefined }, "pl"), "Leather Scraps")
-  assert.equal(tooltipItemName({ ...item, namePl: "  " }, "pl"), "Leather Scraps")
-  assert.equal(tooltipItemName({ ...item, namePl: "leather scraps" }, "pl"), "Leather Scraps")
+  assert.equal(tooltipItemName(item.with({ namePl: undefined }), "pl"), "Leather Scraps")
+  assert.equal(tooltipItemName(item.with({ namePl: "  " }), "pl"), "Leather Scraps")
+  assert.equal(tooltipItemName(item.with({ namePl: "leather scraps" }), "pl"), "Leather Scraps")
 })
 
 test("tooltip includes translated description, every crafting variant, quantities and requirements", () => {
@@ -31,7 +32,7 @@ test("tooltip includes translated description, every crafting variant, quantitie
     <ItemTooltip
       item={item}
       lang="pl"
-      recipes={[recipe, { ...recipe, id: "alternate", ingredients: [{ name: "Scissors", tags: [] }] }]}
+      recipes={[recipe, recipe.with({ id: "alternate", ingredients: [{ name: "Scissors", tags: [] }] })]}
       description={{ en: "Leather description", pl: "Opis skóry" }}
     />,
   )
@@ -61,8 +62,8 @@ test("tooltip shows distinct item effects and omits empty descriptions", () => {
       item={item}
       lang="pl"
       recipes={[
-        { ...recipe, notes: "Efekt testowy +10%" },
-        { ...recipe, id: "alternate", notes: "Efekt testowy +10%" },
+        recipe.with({ notes: "Efekt testowy +10%" }),
+        recipe.with({ id: "alternate", notes: "Efekt testowy +10%" }),
       ]}
     />,
   )
@@ -70,7 +71,7 @@ test("tooltip shows distinct item effects and omits empty descriptions", () => {
   assert.equal(html.split("Efekt testowy +10%").length - 1, 1)
   assert.ok(html.includes("<h3>Wytwarzanie</h3>"))
   assert.ok(!html.includes("<h3>Opis</h3>"))
-  const emptyEffect = renderToString(<ItemTooltip item={item} lang="pl" recipes={[{ ...recipe, notes: " - " }]} />)
+  const emptyEffect = renderToString(<ItemTooltip item={item} lang="pl" recipes={[recipe.with({ notes: " - " })]} />)
   assert.ok(!emptyEffect.includes("<h3>Efekt</h3>"))
 })
 
@@ -94,7 +95,7 @@ test("English mode shows only English names and description throughout the toolt
 })
 
 test("ingredients without crafting recipes show exported effects in the selected language", () => {
-  const ingredient = { ...item, effect: { en: "+5% air resistance", pl: "+5% odporności na powietrze" } }
+  const ingredient = item.with({ effect: { en: "+5% air resistance", pl: "+5% odporności na powietrze" } })
   const pl = renderToString(<ItemTooltip item={ingredient} lang="pl" recipes={[]} />)
   const en = renderToString(<ItemTooltip item={ingredient} lang="en" recipes={[]} />)
   assert.ok(pl.includes("<h3>Efekt</h3>"))

@@ -2,9 +2,12 @@ import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import path from "node:path"
 import type { PageSummary } from "../src/main/domain/types"
-import type { RecipeCatalog, RecipeItem, RecipeRow, RecipeUpgrade } from "../src/main/domain/recipes"
-import type { RecipeSources } from "../src/main/domain/recipeCatalog"
-import { isCategoryTag, isKnownTag, tagAncestors } from "../src/main/domain/tagTree"
+import type { GameRecords } from "../src/main/domain/catalogBuilder"
+import type { Game } from "../src/main/domain/game"
+import { Item, type ItemData } from "../src/main/domain/item"
+import { Recipe, type RecipeData } from "../src/main/domain/recipe"
+import { tagHierarchy } from "../src/main/domain/tagHierarchy"
+import { Upgrade, type UpgradeData } from "../src/main/domain/upgrade"
 
 const reservedSlugs = new Set(["index", "receptury", "dos2", "dos2-crafting-overhaul", "data", "assets", "404"])
 const pageFiles = { DOS1: "dos1.json", DOS2: "dos2.json", "DOS2-CO": "dos2-co.json" } as const
@@ -13,10 +16,10 @@ function strings(value: unknown): value is string[] {
 }
 const gameTags = new Set(["DOS1", "DOS2", "DOS2-CO"])
 /** Most specific tags only, none a parent of another; an item's own tags are hierarchy leaf names. */
-function validItemTags(item: RecipeItem): boolean {
-  const implied = new Set(item.tags.flatMap(tagAncestors))
+function validItemTags(item: ItemData): boolean {
+  const implied = new Set(item.tags.flatMap((tag) => tagHierarchy.ancestors(tag)))
   return item.tags.every(
-    (tag) => !implied.has(tag) && (item.selectorTag !== undefined || isKnownTag(tag) || gameTags.has(tag)),
+    (tag) => !implied.has(tag) && (item.selectorTag !== undefined || tagHierarchy.isKnown(tag) || gameTags.has(tag)),
   )
 }
 const quantityPattern = /^x(?:\d+|\((?:\d+-\d+|\?)\))$/
@@ -27,7 +30,7 @@ function validQualifier(value: unknown): boolean {
   const text = (entry: unknown) => typeof entry === "string" && entry.trim().length > 0
   return text(en) && (pl === undefined || text(pl))
 }
-function validItem(item: RecipeItem, inPool = false): boolean {
+function validItem(item: ItemData, inPool = false): boolean {
   return Boolean(
     item &&
     (item.pool === undefined ||
@@ -88,7 +91,7 @@ async function loadPages(directory: string): Promise<PageSummary[]> {
 }
 
 /** Checks one source recipe's shape. */
-function checkRecipe(row: RecipeRow, filename: string) {
+function checkRecipe(row: RecipeData, filename: string) {
   assert.ok(typeof row.id === "string" && row.id.trim() && validItem(row.result), `Invalid result: ${filename}`)
   assert.ok(
     Array.isArray(row.ingredients) &&
@@ -118,7 +121,7 @@ function checkRecipe(row: RecipeRow, filename: string) {
 }
 
 /** Checks one upgrade's shape. */
-function checkUpgrade(upgrade: RecipeUpgrade, filename: string) {
+function checkUpgrade(upgrade: UpgradeData, filename: string) {
   assert.ok(typeof upgrade.id === "string" && upgrade.id.trim(), `Invalid upgrade id: ${filename}`)
   assert.ok(
     typeof upgrade.effect?.en === "string" &&
@@ -131,7 +134,7 @@ function checkUpgrade(upgrade: RecipeUpgrade, filename: string) {
       !upgrade.target.pool &&
       strings(upgrade.targetTags) &&
       upgrade.targetTags.length > 0 &&
-      upgrade.targetTags.every((tag) => tag !== "Category" && isCategoryTag(tag)),
+      upgrade.targetTags.every((tag) => tag !== "Category" && tagHierarchy.isCategory(tag)),
     `Invalid upgrade target: ${upgrade.id}`,
   )
   assert.ok(strings(upgrade.tags), `Invalid upgrade tags: ${upgrade.id}`)
@@ -143,15 +146,17 @@ function checkUpgrade(upgrade: RecipeUpgrade, filename: string) {
     assert.equal(typeof upgrade[field], "string", `Missing ${field}: ${upgrade.id}`)
 }
 
+/** The validated recipe library: item pages, and each game's recipes, upgrades and inventory items. */
 export async function loadLibrary(directory = "data/library") {
   const pages = await loadPages(directory)
-  const sources = {} as RecipeSources
-  const items = {} as Record<RecipeCatalog, RecipeItem[]>
-  const upgrades = {} as Record<RecipeCatalog, RecipeUpgrade[]>
-  for (const game of ["dos1", "dos2", "dos2-overhaul"] as RecipeCatalog[]) {
+  const sources = {} as GameRecords<Recipe>
+  const items = {} as GameRecords<Item>
+  const upgrades = {} as GameRecords<Upgrade>
+  for (const game of ["dos1", "dos2", "dos2-overhaul"] as Game[]) {
     const filename = path.join(directory, "recipes", `${game}.json`)
-    const source: { game: RecipeCatalog; recipes: RecipeRow[]; upgrades: RecipeUpgrade[]; items: RecipeItem[] } =
-      JSON.parse(await fs.readFile(filename, "utf8"))
+    const source: { game: Game; recipes: RecipeData[]; upgrades: UpgradeData[]; items: ItemData[] } = JSON.parse(
+      await fs.readFile(filename, "utf8"),
+    )
     assert.equal(source.game, game, `Wrong game: ${filename}`)
     assert.ok(Array.isArray(source.recipes), `Missing recipes: ${filename}`)
     assert.ok(
@@ -161,9 +166,9 @@ export async function loadLibrary(directory = "data/library") {
     assert.ok(Array.isArray(source.upgrades), `Invalid upgrades: ${filename}`)
     for (const row of source.recipes) checkRecipe(row, filename)
     for (const upgrade of source.upgrades) checkUpgrade(upgrade, filename)
-    sources[game] = source.recipes
-    items[game] = source.items
-    upgrades[game] = source.upgrades
+    sources[game] = source.recipes.map(Recipe.from)
+    items[game] = source.items.map(Item.from)
+    upgrades[game] = source.upgrades.map(Upgrade.from)
   }
   return { pages, sources, items, upgrades }
 }

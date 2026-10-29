@@ -1,19 +1,16 @@
 import { RecipeItemView } from "./RecipeItem"
-import type { RecipeItem, RecipeRow } from "../domain/recipes"
+import type { ItemCraftRole } from "../domain/craftRoles"
+import type { Item } from "../domain/item"
+import type { Recipe } from "../domain/recipe"
+import { recipeColumns, ResultGroup } from "../domain/resultGroup"
+import type { TagLabels } from "../domain/tagLabels"
+import { TagSidebar } from "../domain/tagSidebar"
 import { useIncremental } from "./useIncremental"
 import { useMemo } from "preact/hooks"
-import {
-  groupRecipes,
-  recipeColumnsForCatalog,
-  recipeResultTags,
-  tagLabel,
-  visibleRecipeTags,
-  type ItemCraftRole,
-} from "../domain/recipeView"
 
 type Props = {
-  recipes: RecipeRow[]
-  labels: Record<string, string>
+  recipes: Recipe[]
+  labels: TagLabels
   catalogSlug: string
   searchable?: boolean
   /** false dla DOS2 / Overhaul — brak wymagań craftingu. */
@@ -33,10 +30,10 @@ export function RecipeTable({
   itemRoles = {},
   pageSize,
 }: Readonly<Props>) {
-  const columns = recipeColumnsForCatalog(showRequirements)
-  const grouped = useMemo(() => groupRecipes(recipes), [recipes])
+  const columns = recipeColumns(showRequirements)
+  const grouped = useMemo(() => ResultGroup.of(recipes), [recipes])
   const groups = useIncremental(grouped, pageSize)
-  const renderItem = (item: RecipeItem, opts?: { ingredient?: boolean }) => (
+  const renderItem = (item: Item, opts?: { ingredient?: boolean }) => (
     <RecipeItemView
       item={item}
       catalogSlug={catalogSlug}
@@ -120,9 +117,9 @@ export function RecipeTable({
                 )}
                 <td class="recipe-cell tags" data-label="Tagi">
                   <div class="recipe-row-tags">
-                    {visibleRecipeTags(recipeResultTags(recipe)).map((tag) => (
+                    {TagSidebar.visibleTags(recipe.resultTags()).map((tag) => (
                       <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
-                        {tagLabel(tag, labels)}
+                        {labels.label(tag)}
                       </button>
                     ))}
                   </div>

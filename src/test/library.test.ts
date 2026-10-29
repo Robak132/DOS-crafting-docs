@@ -4,9 +4,10 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import os from "node:os"
 import { loadLibrary } from "../../scripts/load-library"
-import { expandSmallGroups } from "../main/domain/itemGroups"
-import { recipeResults } from "../main/domain/recipeResults"
-import { assignDataKeys } from "../main/domain/itemIcons"
+import { Item } from "../main/domain/item"
+import { Recipe } from "../main/domain/recipe"
+import { SmallGroupExpander } from "../main/domain/smallGroupExpander"
+import { Upgrade } from "../main/domain/upgrade"
 
 async function fixture() {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-json-library-"))
@@ -51,7 +52,7 @@ test("JSON library reads structured recipes and item pages from one file per gam
   try {
     const library = await loadLibrary(directory)
     assert.deepEqual(library.pages, [page])
-    assert.deepEqual(library.sources.dos2, [recipe])
+    assert.deepEqual(library.sources.dos2, [new Recipe(recipe)])
     assert.deepEqual(library.sources["dos2-overhaul"], [])
     await writePages({ DOS2: [{ ...page, title: "Renamed" }] })
     assert.equal((await loadLibrary(directory)).pages[0].title, "Renamed")
@@ -159,7 +160,7 @@ test("every recipe item link resolves to an item page", async () => {
   const known = new Set(library.pages.map((page) => page.slug))
   const recipeItems = Object.values(library.sources)
     .flat()
-    .flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients])
+    .flatMap((row) => [...row.results(), ...(row.result.pool ?? []), ...row.ingredients])
   const missing = (items: { slug?: string }[]) =>
     items.flatMap((item) => (item.slug && !known.has(item.slug) ? [item.slug] : []))
   assert.deepEqual(missing(recipeItems), [], "Missing recipe pages")
@@ -170,10 +171,14 @@ test("source recipes are unique and name real items, not lists or placeholders",
   const { sources } = await loadLibrary()
   for (const [game, recipes] of Object.entries(sources)) {
     // Same item identity as the generated catalog (pages on a generic Stats entry stay apart).
-    assignDataKeys(recipes.flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]))
-    assert.equal(expandSmallGroups(recipes, {}).length, recipes.length, `${game}: deduplicate the source JSON`)
+    Item.assignDataKeys(recipes.flatMap((row) => [...row.results(), ...(row.result.pool ?? []), ...row.ingredients]))
+    assert.equal(
+      new SmallGroupExpander({}).expand(recipes).length,
+      recipes.length,
+      `${game}: deduplicate the source JSON`,
+    )
     for (const row of recipes)
-      for (const item of recipeResults(row))
+      for (const item of row.results())
         assert.ok(!/,|\(various|\(min,|element random/i.test(item.name), `${game}: ${row.id}`)
   }
 })
@@ -196,7 +201,7 @@ test("recipe files carry upgrades separately and reject malformed ones", async (
   try {
     await fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [upgrade], items: [] }))
     const library = await loadLibrary(directory)
-    assert.deepEqual(library.upgrades.dos2, [upgrade])
+    assert.deepEqual(library.upgrades.dos2, [new Upgrade(upgrade)])
     assert.deepEqual(library.upgrades.dos1, [])
     await fs.writeFile(
       filename,

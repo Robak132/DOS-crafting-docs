@@ -1,12 +1,14 @@
 import { ItemIcon } from "./ItemIcon"
-import type { RecipeItem, RecipeUpgrade } from "../domain/recipes"
-import { tagLabel, visibleRecipeTags } from "../domain/recipeView"
+import type { Item } from "../domain/item"
+import type { TagLabels } from "../domain/tagLabels"
+import { TagSidebar } from "../domain/tagSidebar"
+import type { Upgrade } from "../domain/upgrade"
 import { games, type Game } from "../routing"
 import { ItemLabel, RecipeItemView } from "./RecipeItem"
 
 type Props = {
-  upgrades: RecipeUpgrade[]
-  labels: Record<string, string>
+  upgrades: Upgrade[]
+  labels: TagLabels
   game: Game
   showRequirements?: boolean
 }
@@ -22,7 +24,7 @@ function Bilingual({ en, pl }: Readonly<{ en: string; pl?: string }>) {
   return <span class="item-lang">{en}</span>
 }
 
-function PlainTarget({ item }: Readonly<{ item: RecipeItem }>) {
+function PlainTarget({ item }: Readonly<{ item: Item }>) {
   return (
     <span class="recipe-item">
       <ItemIcon icon={item.icon} />
@@ -84,9 +86,9 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
               )}
               <td class="recipe-cell tags">
                 <div class="recipe-row-tags">
-                  {visibleRecipeTags(upgrade.tags).map((tag) => (
+                  {TagSidebar.visibleTags(upgrade.tags).map((tag) => (
                     <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
-                      {tagLabel(tag, labels)}
+                      {labels.label(tag)}
                     </button>
                   ))}
                 </div>

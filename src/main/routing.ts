@@ -1,4 +1,6 @@
-export type Game = "dos1" | "dos2" | "dos2-overhaul"
+import type { Game } from "./domain/game"
+
+export type { Game }
 export type View = "items" | "recipes" | "upgrades"
 export const games: { id: Game; slug: string; label: string; title: string }[] = [
   { id: "dos1", slug: "receptury", label: "DOS1", title: "Divinity: Original Sin – Enhanced Edition" },

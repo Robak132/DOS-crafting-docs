@@ -1,12 +1,13 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import { renderToString } from "preact-render-to-string"
+import { TagLabels } from "../../main/domain/tagLabels"
 import { ItemTable } from "../../main/components/ItemTable"
-import { catalogItemRows } from "../../main/domain/recipeView"
-import type { RecipeRow } from "../../main/domain/recipes"
+import { ItemList } from "../../main/domain/itemList"
+import { Recipe } from "../../main/domain/recipe"
 import { emptyFilters, filterRecipes } from "../../main/filters"
 
-const first: RecipeRow = {
+const first = new Recipe({
   id: "one",
   result: {
     name: "Potion",
@@ -21,12 +22,12 @@ const first: RecipeRow = {
   remarks: "Crafting instructions",
   requirements: "",
   source: "",
-}
+})
 
-const second = { ...first, id: "two", result: { ...first.result, quantity: "x3" }, notes: "+3 Intelligence" }
+const second = first.with({ id: "two", result: first.result.with({ quantity: "x3" }), notes: "+3 Intelligence" })
 
 test("one item row collects distinct effects across all recipe variants", () => {
-  const rows = catalogItemRows([first, second, { ...first, id: "three" }])
+  const rows = new ItemList([first, second, first.with({ id: "three" })]).rows()
   assert.equal(rows.length, 1)
   assert.deepEqual(rows[0].effects, ["+2 Bystrość", "+3 Inteligencja"])
   assert.equal(rows[0].item.quantity, undefined)
@@ -35,7 +36,12 @@ test("one item row collects distinct effects across all recipe variants", () => 
 
 test("table has three columns and one row per item without category sections", () => {
   const html = renderToString(
-    <ItemTable lang="pl" recipes={[first, second]} labels={{ Potions: "Mikstury" }} itemHref={(slug) => `./${slug}`} />,
+    <ItemTable
+      lang="pl"
+      recipes={[first, second]}
+      labels={new TagLabels({ Potions: "Mikstury" })}
+      itemHref={(slug) => `./${slug}`}
+    />,
   )
   assert.ok(html.includes('<th scope="col">Przedmiot</th><th scope="col">Efekt</th><th scope="col">Tagi</th>'))
   assert.equal(html.match(/<table /g)?.length, 1)
@@ -53,8 +59,8 @@ test("table has three columns and one row per item without category sections", (
 test("missing effects and categories remain readable; labels are escaped", () => {
   const html = renderToString(
     <ItemTable
-      recipes={[{ ...first, notes: "", result: { name: "<unsafe>", tags: [] }, tags: [] }]}
-      labels={{}}
+      recipes={[first.with({ notes: "", result: { name: "<unsafe>", tags: [] }, tags: [] })]}
+      labels={new TagLabels()}
       itemHref={(slug) => slug}
     />,
   )
@@ -63,15 +69,19 @@ test("missing effects and categories remain readable; labels are escaped", () =>
   assert.ok(!html.includes("<unsafe>"))
   assert.ok(!html.includes("Efekt"))
   assert.equal(html.match(/class="recipe-empty">—/g)?.length, 1)
-  const empty = renderToString(<ItemTable recipes={[]} labels={{}} itemHref={(slug) => slug} />)
+  const empty = renderToString(<ItemTable recipes={[]} labels={new TagLabels()} itemHref={(slug) => slug} />)
   assert.equal(empty, '<p class="recipe-empty">Brak przedmiotów pasujących do filtrów.</p>')
 })
 
 test("items with multiple type tags occur once alongside uncategorized items", () => {
-  const multi = { ...first, result: { ...first.result, tags: ["Weapons", "Scrolls", "Ingredients"] } }
-  const other = { ...first, id: "other", result: { name: "Other item", slug: "other", tags: [] }, tags: [] }
+  const multi = first.with({ result: first.result.with({ tags: ["Weapons", "Scrolls", "Ingredients"] }) })
+  const other = first.with({ id: "other", result: { name: "Other item", slug: "other", tags: [] }, tags: [] })
   const html = renderToString(
-    <ItemTable recipes={[multi, { ...multi, id: "variant" }, other]} labels={{}} itemHref={(slug) => slug} />,
+    <ItemTable
+      recipes={[multi, multi.with({ id: "variant" }), other]}
+      labels={new TagLabels()}
+      itemHref={(slug) => slug}
+    />,
   )
   assert.equal(html.match(/<table /g)?.length, 1)
   assert.equal(html.match(/data-slug="potion"/g)?.length, 1)
@@ -88,7 +98,13 @@ test("item list shows descriptions below names in the selected language and omit
     },
   ) =>
     renderToString(
-      <ItemTable recipes={[first]} labels={{}} itemHref={(slug) => slug} descriptions={descriptions} lang={lang} />,
+      <ItemTable
+        recipes={[first]}
+        labels={new TagLabels()}
+        itemHref={(slug) => slug}
+        descriptions={descriptions}
+        lang={lang}
+      />,
     )
   assert.ok(render("pl").includes('<p class="item-list-description">Polski opis</p>'))
   assert.ok(!render("pl").includes("English description"))
@@ -99,17 +115,16 @@ test("item list shows descriptions below names in the selected language and omit
 })
 
 test("item lists and counts omit groups, including unresolved selectors and explicit alternatives", () => {
-  const grouped = {
-    ...first,
-    result: { ...first.result, groupId: "fish", groupSize: 4, icon: "data/icons/should-not-render.webp" },
-  }
+  const grouped = first.with({
+    result: first.result.with({ groupId: "fish", groupSize: 4, icon: "data/icons/should-not-render.webp" }),
+  })
   const recipes = [
     grouped,
-    { ...first, result: { ...first.result, selectorTag: "Helmet" } },
-    { ...first, result: { ...first.result, name: "Cloth Gloves, Boots" } },
+    first.with({ result: first.result.with({ selectorTag: "Helmet" }) }),
+    first.with({ result: first.result.with({ name: "Cloth Gloves, Boots" }) }),
   ]
-  const html = renderToString(<ItemTable recipes={recipes} labels={{}} itemHref={(slug) => slug} />)
-  assert.equal(catalogItemRows(recipes).length, 0)
+  const html = renderToString(<ItemTable recipes={recipes} labels={new TagLabels()} itemHref={(slug) => slug} />)
+  assert.equal(new ItemList(recipes).rows().length, 0)
   assert.ok(!html.includes("recipe-item-group"))
   assert.ok(!html.includes("<table"))
   assert.ok(html.includes("Brak przedmiotów pasujących do filtrów."))
@@ -117,28 +132,28 @@ test("item lists and counts omit groups, including unresolved selectors and expl
 })
 
 test("displayed effect search text finds its source with game vocabulary in both languages", () => {
-  const recipes: RecipeRow[] = [
-    {
-      ...first,
+  const recipes = [
+    first.with({
       result: { name: "Apple Pie Dough", tags: [] },
       notes: "Add 10% Heal -1 Speed",
       effectLabels: { speed: "Speed" },
-    },
-    {
-      ...first,
+    }),
+    first.with({
       result: {
         name: "Blood Rose Elixir",
         tags: [],
         effect: { en: "+1 Finesse; +1 Loremaster", pl: "+1 Zręczność; +1 Loremaster" },
       },
       notes: "",
-    },
+    }),
   ]
   for (const lang of ["pl", "en"] as const) {
     for (const row of recipes) {
-      const html = renderToString(<ItemTable recipes={[row]} labels={{}} itemHref={(slug) => slug} lang={lang} />)
+      const html = renderToString(
+        <ItemTable recipes={[row]} labels={new TagLabels()} itemHref={(slug) => slug} lang={lang} />,
+      )
       const clickedEffect = /data-search-effect="([^"]+)"/.exec(html)![1]
-      assert.deepEqual(filterRecipes(recipes, { ...emptyFilters(), query: clickedEffect }, {}), [row])
+      assert.deepEqual(filterRecipes(recipes, { ...emptyFilters(), query: clickedEffect }, new TagLabels()), [row])
     }
   }
 })

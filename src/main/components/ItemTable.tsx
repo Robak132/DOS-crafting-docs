@@ -1,18 +1,20 @@
-import { itemDataKey } from "../domain/itemIcons"
+import { CraftRoles, type ItemCraftRole } from "../domain/craftRoles"
+import type { Lang } from "../domain/item"
+import { ItemList } from "../domain/itemList"
+import type { Recipe } from "../domain/recipe"
+import type { TagLabels } from "../domain/tagLabels"
 import { itemDescriptionText, type ItemDescription } from "./ItemTooltip"
 import { ItemIcon } from "./ItemIcon"
-import type { RecipeRow } from "../domain/recipes"
-import { catalogItemRows, itemCraftRoleClass, tagLabel, type ItemCraftRole } from "../domain/recipeView"
 import { useIncremental } from "./useIncremental"
 import { useMemo } from "preact/hooks"
 
 type Props = {
-  recipes: RecipeRow[]
-  labels: Record<string, string>
+  recipes: Recipe[]
+  labels: TagLabels
   itemHref: (slug: string) => string
   itemRoles?: Record<string, ItemCraftRole>
   descriptions?: Record<string, ItemDescription>
-  lang?: "pl" | "en"
+  lang?: Lang
   /** Render this many rows first and add more on scroll. */
   pageSize?: number
 }
@@ -27,7 +29,7 @@ export function ItemTable({
   lang = "en",
   pageSize,
 }: Readonly<Props>) {
-  const rows = useMemo(() => catalogItemRows(recipes, lang), [recipes, lang])
+  const rows = useMemo(() => new ItemList(recipes).rows(lang), [recipes, lang])
   const shown = useIncremental(rows, pageSize)
   // A column with no effect in any row would only repeat "—".
   const showEffects = rows.some((row) => row.effects.length > 0)
@@ -51,7 +53,7 @@ export function ItemTable({
         </thead>
         <tbody class="recipe-table-body">
           {shown.visible.map(({ item, effects, tags }) => {
-            const description = itemDescriptionText(descriptions[itemDataKey(item)], lang)
+            const description = itemDescriptionText(descriptions[item.resourceKey], lang)
             const label = (
               <>
                 <ItemIcon icon={item.icon} />
@@ -61,7 +63,7 @@ export function ItemTable({
                 </span>
               </>
             )
-            const role = itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
+            const role = CraftRoles.cssClass(item.slug ? itemRoles[item.slug] : undefined)
             return (
               <tr key={item.slug ?? item.name} class="recipe-group-start recipe-group-end">
                 <td class="recipe-cell result">
@@ -94,7 +96,7 @@ export function ItemTable({
                     <div class="recipe-row-tags">
                       {tags.map((tag) => (
                         <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
-                          {tagLabel(tag, labels)}
+                          {labels.label(tag)}
                         </button>
                       ))}
                     </div>

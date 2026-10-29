@@ -1,16 +1,12 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import fs from "node:fs"
-import {
-  assignDataKeys,
-  itemDataKey,
-  itemEffectKey,
-  resolveItemIcon,
-  type ItemIconMap,
-} from "../../main/domain/itemIcons"
-import type { RecipeItem } from "../../main/domain/recipes"
+import { IconAtlas, type ItemIconMap } from "../../main/domain/iconAtlas"
+import { Item, type ItemData } from "../../main/domain/item"
 
 const icons: ItemIconMap = JSON.parse(fs.readFileSync("data/itemIcons.json", "utf8"))
+const resolveItemIcon = (map: ItemIconMap, game: "dos1" | "dos2" | "dos2-overhaul", item: ItemData) =>
+  new IconAtlas(map, game).iconOf(new Item(item))
 
 test("inventory icons stay scoped to the game and ignore ingredient selectors", () => {
   const item = { name: "Minor Healing Potion", statsId: "POTION_Minor_Healing_Potion", tags: [] }
@@ -31,17 +27,17 @@ test("an item is linked to its data by game identity, not by its shared name", (
   assert.ok(resolveItemIcon(icons, "dos2-overhaul", gold))
   assert.notEqual(resolveItemIcon(icons, "dos2-overhaul", gold), resolveItemIcon(icons, "dos2-overhaul", ceramic))
   // Several pages on one generic Stats entry keep their own names as data keys.
-  const items: RecipeItem[] = [
+  const items = [
     { name: "Pickaxe", slug: "pickaxe", statsId: "WPN_Axe_2H", tags: [] },
     { name: "Crafted 2H Axe", slug: "crafted-2h-axe", statsId: "WPN_Axe_2H", tags: [] },
     { name: "Gold Cup", slug: "gold-cup", statsId: "ITEM_EmptyCupGold", tags: [] },
-  ]
-  assignDataKeys(items)
+  ].map(Item.from)
+  Item.assignDataKeys(items)
   assert.deepEqual(
-    items.map((entry) => itemDataKey(entry)),
+    items.map((entry) => entry.resourceKey),
     ["pickaxe", "crafted2haxe", "itememptycupgold"],
   )
-  assert.equal(itemEffectKey(items[0]), "wpnaxe2h")
+  assert.equal(items[0].effectKey, "wpnaxe2h")
 })
 
 test("DOS2 exports only use Definitive Edition atlases and Overhaul also includes mod atlases", () => {

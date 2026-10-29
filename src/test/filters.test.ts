@@ -9,8 +9,10 @@ import {
   rememberedCatalogHref,
   restoreFilters,
 } from "../main/filters"
-import type { RecipeRow, RecipeUpgrade } from "../main/domain/recipes"
-const recipe: RecipeRow = {
+import { Recipe } from "../main/domain/recipe"
+import { TagLabels } from "../main/domain/tagLabels"
+import { Upgrade } from "../main/domain/upgrade"
+const recipe = new Recipe({
   id: "one",
   result: { name: "Potion", namePl: "Mikstura", tags: ["Potions"] },
   ingredients: [{ name: "Herb", selectorTag: "Plants", tags: ["Materialy"] }],
@@ -19,7 +21,8 @@ const recipe: RecipeRow = {
   notes: "+2 Wits",
   remarks: "",
   source: "",
-}
+})
+const noLabels = new TagLabels()
 test("category selections coexist and cycle independently through include, exclude and neutral", () => {
   const bow = "Bows"
   const staff = "Staves"
@@ -36,11 +39,7 @@ test("category selections coexist and cycle independently through include, exclu
 })
 
 test("categories match any selection while traits and exclusions still narrow the results", () => {
-  const row = (name: string, tags: string[]): RecipeRow => ({
-    ...recipe,
-    id: name,
-    result: { name, tags },
-  })
+  const row = (name: string, tags: string[]) => recipe.with({ id: name, result: { name, tags } })
   const bow = row("Bow", ["Bows", "Ogien", "Strength"])
   const staff = row("Staff", ["Staves", "Ogien", "Strength"])
   const plainStaff = row("Plain Staff", ["Staves", "Strength"])
@@ -48,24 +47,24 @@ test("categories match any selection while traits and exclusions still narrow th
   const boots = row("Boots", ["Boots", "Ogien", "Strength"])
   const recipes = [bow, staff, plainStaff, weakStaff, boots]
   const filters = { ...emptyFilters(), include: ["Bows", "Staves"] }
-  assert.deepEqual(filterRecipes(recipes, filters, {}), [bow, staff, plainStaff, weakStaff])
-  assert.deepEqual(filterRecipes(recipes, { ...filters, include: [...filters.include, "Ogien", "Strength"] }, {}), [
-    bow,
-    staff,
-  ])
-  assert.deepEqual(filterRecipes(recipes, { ...filters, exclude: ["Staves"] }, {}), [bow])
-  assert.deepEqual(filterRecipes(recipes, { ...filters, include: ["Weapons"], exclude: ["Bows"] }, {}), [
+  assert.deepEqual(filterRecipes(recipes, filters, noLabels), [bow, staff, plainStaff, weakStaff])
+  assert.deepEqual(
+    filterRecipes(recipes, { ...filters, include: [...filters.include, "Ogien", "Strength"] }, noLabels),
+    [bow, staff],
+  )
+  assert.deepEqual(filterRecipes(recipes, { ...filters, exclude: ["Staves"] }, noLabels), [bow])
+  assert.deepEqual(filterRecipes(recipes, { ...filters, include: ["Weapons"], exclude: ["Bows"] }, noLabels), [
     staff,
     plainStaff,
     weakStaff,
   ])
 })
 test("filters apply to result tags, effects, ingredients and crafting level", () => {
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Potions"] }, {}).length, 1)
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Materialy"] }, {}).length, 0)
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Bystrość" }, {}).length, 1)
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Herb", scope: "ingredient" }, {}).length, 1)
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), craftingMax: 1 }, {}).length, 0)
+  assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Potions"] }, noLabels).length, 1)
+  assert.equal(filterRecipes([recipe], { ...emptyFilters(), include: ["Materialy"] }, noLabels).length, 0)
+  assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Bystrość" }, noLabels).length, 1)
+  assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Herb", scope: "ingredient" }, noLabels).length, 1)
+  assert.equal(filterRecipes([recipe], { ...emptyFilters(), craftingMax: 1 }, noLabels).length, 0)
 })
 test("shareable filters roundtrip, while DOS2 drops DOS1-only requirements", () => {
   const filters = {
@@ -81,10 +80,10 @@ test("shareable filters roundtrip, while DOS2 drops DOS1-only requirements", () 
 })
 
 test("tags are selected through filters, never through hashtag query syntax", () => {
-  const tagged = { ...recipe, result: { ...recipe.result, tags: ["Ingredients"] } }
-  assert.equal(filterRecipes([tagged], { ...emptyFilters(), include: ["Ingredients"] }, {}).length, 1)
+  const tagged = recipe.with({ result: recipe.result.with({ tags: ["Ingredients"] }) })
+  assert.equal(filterRecipes([tagged], { ...emptyFilters(), include: ["Ingredients"] }, noLabels).length, 1)
   for (const scope of ["result", "ingredient"] as const)
-    assert.equal(filterRecipes([tagged], { ...emptyFilters(), query: "#Typ/Skladniki", scope }, {}).length, 0)
+    assert.equal(filterRecipes([tagged], { ...emptyFilters(), query: "#Typ/Skladniki", scope }, noLabels).length, 0)
 })
 
 test("catalog navigation restores each game's filters while explicit empty views still reset them", () => {
@@ -130,7 +129,7 @@ test("hand-edited or corrupted stored filters fall back to safe values instead o
   try {
     const filters = restoreFilters("dos1")
     assert.deepEqual(filters, { ...emptyFilters(), requirements: ["Crafting 2"] })
-    assert.doesNotThrow(() => filterRecipes([recipe], filters, {}))
+    assert.doesNotThrow(() => filterRecipes([recipe], filters, noLabels))
   } finally {
     if (original) Object.defineProperty(globalThis, "sessionStorage", original)
     else Reflect.deleteProperty(globalThis, "sessionStorage")
@@ -138,18 +137,19 @@ test("hand-edited or corrupted stored filters fall back to safe values instead o
 })
 
 test("upgrade view filters by target category, granted traits, requirements and query", () => {
-  const upgrade = (id: string, targetTags: string[], tags: string[], requirements = ""): RecipeUpgrade => ({
-    id,
-    effect: { en: id },
-    target: { name: "Target", tags: [] },
-    targetTags,
-    tags,
-    ingredients: [],
-    requirements,
-    notes: "",
-    remarks: "",
-    source: "",
-  })
+  const upgrade = (id: string, targetTags: string[], tags: string[], requirements = "") =>
+    new Upgrade({
+      id,
+      effect: { en: id },
+      target: { name: "Target", tags: [] },
+      targetTags,
+      tags,
+      ingredients: [],
+      requirements,
+      notes: "",
+      remarks: "",
+      source: "",
+    })
   const all = [
     upgrade("weapons fire", ["Weapons"], ["Fire-Damage"], "Crafting 5"),
     upgrade("bow finesse", ["Bows"], ["Finesse"]),

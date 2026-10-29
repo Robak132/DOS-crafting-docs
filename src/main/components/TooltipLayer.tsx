@@ -1,14 +1,14 @@
 import type { RefObject } from "preact"
 import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "preact/hooks"
-import type { RecipeItem, RecipeRow } from "../domain/recipes"
-import { buildTooltipIndex } from "../domain/tooltipIndex"
-import { itemDataKey } from "../domain/itemIcons"
+import type { Item, Lang } from "../domain/item"
+import type { Recipe } from "../domain/recipe"
+import { TooltipIndex } from "../domain/tooltipIndex"
 import { tooltipPosition } from "../domain/tooltipPosition"
 import { useJson } from "../api"
 import { ItemTooltip, type ItemDescription } from "./ItemTooltip"
 
-const noRecipes: RecipeRow[] = []
-type ActiveTooltip = { item: RecipeItem; recipes: RecipeRow[] }
+const noRecipes: Recipe[] = []
+type ActiveTooltip = { item: Item; recipes: Recipe[] }
 
 /** Owns hover state independently of App; pointer updates only move this DOM element. */
 export function TooltipLayer({
@@ -19,18 +19,18 @@ export function TooltipLayer({
   routeKey,
 }: {
   root: RefObject<HTMLDivElement | null>
-  recipes?: RecipeRow[]
+  recipes?: Recipe[]
   game: string
-  lang: "pl" | "en"
+  lang: Lang
   routeKey: string
 }) {
-  const index = useMemo(() => buildTooltipIndex(recipes ?? noRecipes), [recipes])
+  const index = useMemo(() => new TooltipIndex(recipes ?? noRecipes), [recipes])
   // Fetch alongside the catalog, rather than waiting for the first hover.
   const descriptions = useJson<Record<string, ItemDescription>>(`descriptions-${game}.json`)
   const [active, setActive] = useState<ActiveTooltip | null>(null)
   const surface = useRef<HTMLDivElement>(null)
   const activeLink = useRef<HTMLElement | null>(null)
-  const activeItem = useRef<RecipeItem | null>(null)
+  const activeItem = useRef<Item | null>(null)
   const pointer = useRef<{ x: number; y: number; anchor?: HTMLElement }>({ x: 0, y: 0 })
   const size = useRef({ width: 0, height: 0 })
   const frame = useRef<number | null>(null)
@@ -155,7 +155,7 @@ export function TooltipLayer({
       item={active.item}
       recipes={active.recipes}
       lang={lang}
-      description={descriptions.data?.[itemDataKey(active.item)]}
+      description={descriptions.data?.[active.item.resourceKey]}
     />
   ) : null
 }

@@ -1,8 +1,12 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import fs from "node:fs"
-import { polishName } from "../../main/domain/itemLocalisation"
-import { localizeItemForCatalog } from "../../main/domain/recipes"
+import type { Game } from "../../main/domain/game"
+import { Item, type ItemData } from "../../main/domain/item"
+import { CatalogLocalizer, NameDictionary } from "../../main/domain/localisation"
+
+const polishName = (name: string, game: Game) => NameDictionary.of(game).polish(name)
+const localizeItemForCatalog = (item: ItemData, game: Game) => new CatalogLocalizer(game).item(new Item(item))
 
 test("DOS2 and Overhaul use the Definitive Edition dictionary", () => {
   for (const catalog of ["dos2", "dos2-overhaul"] as const) {

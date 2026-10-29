@@ -15694,7 +15694,16 @@
       "id": "Skladniki/CHICKEN-FOOT:Chicken Corpse",
       "ingredients": [
         {
-          "name": "Chicken corpse",
+          "name": "Corpse Harvester",
+          "slug": "corpse-harvester",
+          "tags": [
+            "Ingredients",
+            "DOS2-CO"
+          ],
+          "statsId": "Craft_Script_CorpseHarvester"
+        },
+        {
+          "name": "Chicken Corpse",
           "slug": "chicken-corpse",
           "tags": [
             "Ingredients",

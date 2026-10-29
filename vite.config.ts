@@ -78,16 +78,12 @@ export default defineConfig(({ command }) => {
       // One folder per game: <catalog>.html is the catalog, <catalog>/<item>.html its item pages.
       const slugs = new Set([
         ...games.map((game) => game.slug),
-        ...manifest.pages
-          .filter((page) => page.itemPage)
-          .flatMap((page) => pageGames(page.tags).map((game) => itemPath(game, page.slug))),
+        ...manifest.pages.flatMap((page) => pageGames(page.tags).map((game) => itemPath(game, page.slug))),
       ])
       await Promise.all(games.map((game) => fs.mkdir(path.join(outDir, game.slug), { recursive: true })))
       await Promise.all(
-        [...slugs]
-          .filter((slug) => slug !== "index")
-          // GitHub Pages serves /slug from slug.html; 404.html covers every other address.
-          .map((slug) => fs.writeFile(path.join(outDir, slug + ".html"), html)),
+        // GitHub Pages serves /slug from slug.html; 404.html covers every other address.
+        [...slugs].map((slug) => fs.writeFile(path.join(outDir, slug + ".html"), html)),
       )
       await fs.writeFile(path.join(outDir, "404.html"), html)
       await fs.writeFile(path.join(outDir, ".nojekyll"), "")

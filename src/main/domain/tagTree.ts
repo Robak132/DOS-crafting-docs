@@ -53,10 +53,6 @@ export function isCategoryTag(tag: string): boolean {
   return isTagWithin(tag, "Category")
 }
 
-export function tagParent(tag: string): string | undefined {
-  return parents.get(tag)
-}
-
 export function tagDescendants(tag: string): string[] {
   return (children.get(tag) ?? []).flatMap((child) => [child, ...tagDescendants(child)])
 }
@@ -68,10 +64,4 @@ export function hierarchyLabel(tag: string): string | undefined {
 /** Position in the hierarchy file; unknown tags sort last. */
 export function tagOrder(tag: string): number {
   return order.get(tag) ?? Number.MAX_SAFE_INTEGER
-}
-
-/** Only the most specific tags: a parent is dropped when one of its descendants is present. */
-export function mostSpecificTags(tags: string[]): string[] {
-  const implied = new Set(tags.flatMap(tagAncestors))
-  return [...new Set(tags)].filter((tag) => !implied.has(tag))
 }

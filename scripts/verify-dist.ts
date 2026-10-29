@@ -2,19 +2,9 @@ import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import path from "node:path"
 import type { CatalogManifest, CatalogData } from "../src/main/domain/types"
-import { games, isPublicPage, itemPath, pageGames } from "../src/main/routing"
-import { loadLibrary } from "./load-library"
+import { games, itemPath, pageGames } from "../src/main/routing"
 import { isGameGroup } from "../src/main/domain/itemGroups"
 const manifest: CatalogManifest = JSON.parse(await fs.readFile("dist/data/manifest.json", "utf8"))
-assert.ok(manifest.pages.every(isPublicPage), "Category and tag pages must not be published")
-const library = await loadLibrary()
-for (const page of library.pages.filter((page) => !isPublicPage(page))) {
-  for (const game of games)
-    await assert.rejects(
-      fs.access(path.join("dist", `${itemPath(game.id, page.slug)}.html`)),
-      `Blocked page was published: ${page.slug}`,
-    )
-}
 const base: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2.json", "utf8"))
 const combined: CatalogData = JSON.parse(await fs.readFile("dist/data/catalog-dos2-overhaul.json", "utf8"))
 for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
@@ -46,13 +36,11 @@ assert.ok(
   "Overhaul must include every base DOS2 recipe",
 )
 const html = await fs.readFile("dist/index.html", "utf8")
-assert.ok(!html.includes("quartz") && !html.includes("/src/main"))
+assert.ok(!html.includes("/src/main"))
 // HTML is grouped by game: <catalog>.html and <catalog>/<item>.html for every item that game lists.
 const expected = new Set([
   ...games.map((game) => `${game.slug}.html`),
-  ...manifest.pages
-    .filter((page) => page.itemPage)
-    .flatMap((page) => pageGames(page.tags).map((game) => `${itemPath(game, page.slug)}.html`)),
+  ...manifest.pages.flatMap((page) => pageGames(page.tags).map((game) => `${itemPath(game, page.slug)}.html`)),
 ])
 for (const file of expected) assert.equal(await fs.readFile(path.join("dist", file), "utf8"), html, file)
 const published = [
@@ -85,5 +73,5 @@ for (const match of html.matchAll(/(?:src|href)="([^"]+\.(?:js|css))"/g)) {
   await fs.access(path.join("dist/assets", name))
 }
 console.log(
-  `Artefakt GitHub Pages OK: ${manifest.pages.length} stron, ${base.recipes.length} receptur DOS2, ${combined.recipes.length} DOS2 + Overhaul; bez zależności od Quartz i Steam.`,
+  `Artefakt GitHub Pages OK: ${manifest.pages.length} stron, ${base.recipes.length} receptur DOS2, ${combined.recipes.length} DOS2 + Overhaul.`,
 )

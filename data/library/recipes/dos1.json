@@ -14027,6 +14027,7 @@
         "pool": [
           {
             "name": "Airshield Scroll",
+            "slug": "airshield-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14036,6 +14037,7 @@
           },
           {
             "name": "Bitter Cold Scroll",
+            "slug": "bitter-cold-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14045,6 +14047,7 @@
           },
           {
             "name": "Blitz Bolt Scroll",
+            "slug": "blitz-bolt-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14054,6 +14057,7 @@
           },
           {
             "name": "Farseer Scroll",
+            "slug": "farseer-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14063,6 +14067,7 @@
           },
           {
             "name": "Headvice Scroll",
+            "slug": "headvice-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14072,6 +14077,7 @@
           },
           {
             "name": "Remove Petrification Scroll",
+            "slug": "remove-petrification-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14081,6 +14087,7 @@
           },
           {
             "name": "Summon Air Elemental Scroll",
+            "slug": "summon-air-elemental-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14099,6 +14106,7 @@
           },
           {
             "name": "Immune to Electrified Scroll",
+            "slug": "immune-to-electrified-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14108,6 +14116,7 @@
           },
           {
             "name": "Invisible Scroll",
+            "slug": "invisible-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14117,6 +14126,7 @@
           },
           {
             "name": "Lightning Strike Scroll",
+            "slug": "lightning-strike-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14153,6 +14163,7 @@
           },
           {
             "name": "Lightning Storm Scroll",
+            "slug": "lightning-storm-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14162,6 +14173,7 @@
           },
           {
             "name": "Make Invisible Scroll",
+            "slug": "make-invisible-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14214,6 +14226,7 @@
         "pool": [
           {
             "name": "Bless Scroll",
+            "slug": "bless-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14223,6 +14236,7 @@
           },
           {
             "name": "Earth Shield Scroll",
+            "slug": "earth-shield-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14241,6 +14255,7 @@
           },
           {
             "name": "Immune to Poisoning Scroll",
+            "slug": "immune-to-poisoning-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14250,6 +14265,7 @@
           },
           {
             "name": "Magical Poison Dart Scroll",
+            "slug": "magical-poison-dart-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14259,6 +14275,7 @@
           },
           {
             "name": "Midnight Oil Scroll",
+            "slug": "midnight-oil-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14268,6 +14285,7 @@
           },
           {
             "name": "Summon Earth Elemental Scroll",
+            "slug": "summon-earth-elemental-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14277,6 +14295,7 @@
           },
           {
             "name": "Summon Wolf Scroll",
+            "slug": "summon-wolf-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14286,6 +14305,7 @@
           },
           {
             "name": "Petrifying Touch Scroll",
+            "slug": "petrifying-touch-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14295,6 +14315,7 @@
           },
           {
             "name": "Blessed Earth Scroll",
+            "slug": "blessed-earth-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14304,6 +14325,7 @@
           },
           {
             "name": "Deadly Spores Scroll",
+            "slug": "deadly-spores-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14313,6 +14335,7 @@
           },
           {
             "name": "Summon Spider Scroll",
+            "slug": "summon-spider-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14374,6 +14397,7 @@
         "pool": [
           {
             "name": "Burn My Eyes Scroll",
+            "slug": "burn-my-eyes-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14383,6 +14407,7 @@
           },
           {
             "name": "Burning Touch Scroll",
+            "slug": "burning-touch-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14392,6 +14417,7 @@
           },
           {
             "name": "Fire Shield Scroll",
+            "slug": "fire-shield-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14410,6 +14436,7 @@
           },
           {
             "name": "Firefly Scroll",
+            "slug": "firefly-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14419,6 +14446,7 @@
           },
           {
             "name": "Flare Scroll",
+            "slug": "flare-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14428,6 +14456,7 @@
           },
           {
             "name": "Immune to Freezing Scroll",
+            "slug": "immune-to-freezing-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14437,6 +14466,7 @@
           },
           {
             "name": "Smokescreen Scroll",
+            "slug": "smokescreen-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14446,6 +14476,7 @@
           },
           {
             "name": "Summon Fire Elemental Scroll",
+            "slug": "summon-fire-elemental-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14455,6 +14486,7 @@
           },
           {
             "name": "Wildfire Scroll",
+            "slug": "wildfire-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14464,6 +14496,7 @@
           },
           {
             "name": "Purifying Fire Scroll",
+            "slug": "purifying-fire-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14473,6 +14506,7 @@
           },
           {
             "name": "Self Immolation Scroll",
+            "slug": "self-immolation-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14482,6 +14516,7 @@
           },
           {
             "name": "Explode Scroll",
+            "slug": "explode-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14491,6 +14526,7 @@
           },
           {
             "name": "Immolate Scroll",
+            "slug": "immolate-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14500,6 +14536,7 @@
           },
           {
             "name": "Infectious Flame Scroll",
+            "slug": "infectious-flame-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14509,6 +14546,7 @@
           },
           {
             "name": "Meteorstrike Scroll",
+            "slug": "meteorstrike-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14561,6 +14599,7 @@
         "pool": [
           {
             "name": "Freezing Touch Scroll",
+            "slug": "freezing-touch-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14570,6 +14609,7 @@
           },
           {
             "name": "Ice Shard Scroll",
+            "slug": "ice-shard-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14579,6 +14619,7 @@
           },
           {
             "name": "Minor Heal Scroll",
+            "slug": "minor-heal-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14597,6 +14638,7 @@
           },
           {
             "name": "Slow Current Scroll",
+            "slug": "slow-current-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14606,6 +14648,7 @@
           },
           {
             "name": "Summon Ice Elemental Scroll",
+            "slug": "summon-ice-elemental-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14615,6 +14658,7 @@
           },
           {
             "name": "Water Shield Scroll",
+            "slug": "water-shield-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14624,6 +14668,7 @@
           },
           {
             "name": "Water of Life Scroll",
+            "slug": "water-of-life-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14633,6 +14678,7 @@
           },
           {
             "name": "Cleansing Water Scroll",
+            "slug": "cleansing-water-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14642,6 +14688,7 @@
           },
           {
             "name": "Ice Wall Scroll",
+            "slug": "ice-wall-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14651,6 +14698,7 @@
           },
           {
             "name": "Immune to Burning Scroll",
+            "slug": "immune-to-burning-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14660,6 +14708,7 @@
           },
           {
             "name": "Mass Disease Scroll",
+            "slug": "mass-disease-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14669,6 +14718,7 @@
           },
           {
             "name": "Winterblast Scroll",
+            "slug": "winterblast-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14678,6 +14728,7 @@
           },
           {
             "name": "Hail Attack Scroll",
+            "slug": "hail-attack-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14687,6 +14738,7 @@
           },
           {
             "name": "Mass Slow Scroll",
+            "slug": "mass-slow-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14748,6 +14800,7 @@
           },
           {
             "name": "Malediction Scroll",
+            "slug": "malediction-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14757,6 +14810,7 @@
           },
           {
             "name": "Oath of Desecration Scroll",
+            "slug": "oath-of-desecration-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14775,6 +14829,7 @@
           },
           {
             "name": "Destroy Summon Scroll",
+            "slug": "destroy-summon-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14784,6 +14839,7 @@
           },
           {
             "name": "Drain Willpower Scroll",
+            "slug": "drain-willpower-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14793,6 +14849,7 @@
           },
           {
             "name": "Summon Undead Warrior Scroll",
+            "slug": "summon-undead-warrior-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14811,6 +14868,7 @@
           },
           {
             "name": "Enfeeble Scroll",
+            "slug": "enfeeble-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14820,6 +14878,7 @@
           },
           {
             "name": "Horrific Scream Scroll",
+            "slug": "horrific-scream-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14829,6 +14888,7 @@
           },
           {
             "name": "Summon Armoured Undead Decapitator Scroll",
+            "slug": "summon-armoured-undead-decapitator-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14838,6 +14898,7 @@
           },
           {
             "name": "Death Punch Scroll",
+            "slug": "death-punch-scroll",
             "tags": [
               "Scrolls",
               "DOS1"
@@ -14847,6 +14908,7 @@
           },
           {
             "name": "Invulnerability Scroll",
+            "slug": "invulnerability-scroll",
             "tags": [
               "Scrolls",
               "DOS1"

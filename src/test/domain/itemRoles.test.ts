@@ -14,7 +14,7 @@ const row = (result: string, ...ingredients: string[]): RecipeRow => ({
   remarks: "",
   source: "",
 })
-const page = (slug: string) => ({ slug, title: slug, tags: [], itemPage: true, categoryPage: false })
+const page = (slug: string) => ({ slug, title: slug, tags: [] })
 
 test("craft roles are computed per catalog, so a DOS2 recipe does not tint a DOS1 base ingredient", () => {
   const pages = [page("scraps"), page("armor"), page("knife"), page("orphan")]

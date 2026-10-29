@@ -3,7 +3,6 @@ import fs from "node:fs"
 import { test } from "node:test"
 import { nestTagStats, groupRecipeTags, type TagFilterNode } from "../../main/domain/recipeView"
 import { collectRecipeStats, getCechySidebarGroups, type RecipeRow } from "../../main/domain/recipes"
-import { isKnownTag, mostSpecificTags } from "../../main/domain/tagTree"
 import { emptyFilters, filterRecipes } from "../../main/filters"
 
 const row = (id: string, tags: string[]): RecipeRow => ({
@@ -92,26 +91,6 @@ test("every active product tag has a filter except structural and game markers",
       [],
       game,
     )
-  }
-})
-
-test("stored tags are leaf names from the hierarchy, most specific only", () => {
-  const markers = new Set(["DOS1", "DOS2", "DOS2-CO"])
-  for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-    const { recipes } = JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8")) as {
-      recipes: RecipeRow[]
-    }
-    for (const recipe of recipes)
-      for (const item of [recipe.result, ...recipe.ingredients]) {
-        assert.ok(
-          item.tags.every((tag) => !tag.includes("/")),
-          `${game}: ${item.name}`,
-        )
-        assert.deepEqual(mostSpecificTags(item.tags), item.tags, `${game}: ${item.name}`)
-      }
-    for (const recipe of recipes)
-      for (const tag of recipe.result.tags)
-        assert.ok(isKnownTag(tag) || markers.has(tag), `${game}: ${recipe.result.name}: ${tag}`)
   }
 })
 

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
-import { matchesUpgradeQuery, upgradeEffect, upgradesForItem } from "../../main/domain/upgrades"
+import { matchesUpgradeQuery, upgradesForItem } from "../../main/domain/upgrades"
 import { isCategoryTag } from "../../main/domain/tagTree"
 import type { RecipeUpgrade } from "../../main/domain/recipes"
 
@@ -54,8 +54,6 @@ test("upgrade search covers effect, target and ingredients in both languages", (
   for (const query of ["air", "odpornosc", "shield", "esencja", "AIR essence"])
     assert.ok(matchesUpgradeQuery(entry, query), query)
   assert.ok(!matchesUpgradeQuery(entry, "fire"))
-  assert.equal(upgradeEffect(entry, "pl"), "Odporność na powietrze")
-  assert.equal(upgradeEffect(upgrade("Wits", []), "pl"), "Wits")
 })
 
 test("upgrades are stored as modifications, never as items", () => {

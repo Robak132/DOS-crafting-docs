@@ -56,7 +56,7 @@ export function RecipeItemView({
   }
   const roleClass = (item: RecipeItem) => itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
   const title = itemAltTitle(item)
-  const searchText = item.name.replace(/^#/, "").replaceAll(/^<|>$/g, "")
+  const searchText = item.name.replace(/^#/, "")
   const craftClass = roleClass(item)
   if (item.groupId) {
     return withQuantity(

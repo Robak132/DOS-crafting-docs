@@ -21,7 +21,7 @@ test("JSON Overhaul additions extend every base DOS2 recipe, item and tag withou
     dos2: [recipe("Base item", "Potions")],
     "dos2-overhaul": [recipe("Mod item", "Weapons")],
   }
-  const catalogs = buildCatalogs(sources, [], {})
+  const catalogs = buildCatalogs(sources, {})
   const base = catalogs.dos2
   const combined = catalogs["dos2-overhaul"]
   assert.equal(base.recipes.length, 1)
@@ -39,7 +39,7 @@ test("JSON Overhaul additions extend every base DOS2 recipe, item and tag withou
 test("JSON recipe compilation refreshes translations and statistics without mutating sources", () => {
   const source = recipe("Spirit", "Potions")
   source.result.namePl = "Spirytus"
-  const catalogs = buildCatalogs({ dos1: [source], dos2: [source], "dos2-overhaul": [] }, [], {})
+  const catalogs = buildCatalogs({ dos1: [source], dos2: [source], "dos2-overhaul": [] }, {})
   assert.equal(catalogs.dos1.recipes[0].result.namePl, "Spirytus")
   assert.equal(catalogs.dos2.recipes[0].result.namePl, "Duch")
   assert.equal(catalogs.dos2.tags.find((tag) => tag.tag === "Potions")?.count, 1)
@@ -60,12 +60,7 @@ test("Overhaul upgrades extend the DOS2 ones and their items are localized per g
     source: "",
   })
   const sources = { dos1: [], dos2: [], "dos2-overhaul": [] }
-  const catalogs = buildCatalogs(
-    sources,
-    [],
-    {},
-    { dos1: [], dos2: [upgrade("base")], "dos2-overhaul": [upgrade("mod")] },
-  )
+  const catalogs = buildCatalogs(sources, {}, { dos1: [], dos2: [upgrade("base")], "dos2-overhaul": [upgrade("mod")] })
   assert.deepEqual(
     catalogs["dos2-overhaul"].upgrades?.map((entry) => entry.id),
     ["base", "mod"],

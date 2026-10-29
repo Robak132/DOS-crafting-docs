@@ -11,7 +11,7 @@ test("container and wearable Backpacks retain separate game identities in the co
   const sources = Object.fromEntries(
     ["dos1", "dos2", "dos2-overhaul"].map((game) => [game, read(`data/library/recipes/${game}.json`).recipes]),
   ) as Parameters<typeof buildCatalogs>[0]
-  const catalog = buildCatalogs(sources, [], {})["dos2-overhaul"]
+  const catalog = buildCatalogs(sources, {})["dos2-overhaul"]
   const backpacks = catalog.recipes.filter((row) => row.result.name === "Backpack")
   assert.equal(backpacks.length, 2)
   const container = backpacks.find((row) => row.result.statsId === "CONT_Backpack_A")!

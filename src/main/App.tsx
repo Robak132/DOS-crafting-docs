@@ -2,7 +2,6 @@ import { TagFilterTree } from "./components/TagFilterTree"
 import { applyGroupQuery } from "./domain/groupSearch"
 import { itemDescriptionText, type ItemDescription } from "./components/ItemTooltip"
 import { TooltipLayer } from "./components/TooltipLayer"
-import { groupItemRows } from "./domain/itemGroups"
 import { itemIconKey, itemDataKey } from "./domain/itemIcons"
 import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
@@ -10,8 +9,7 @@ import { ItemTable } from "./components/ItemTable"
 import { RecipeTable } from "./components/RecipeTable"
 import { UpgradeTable } from "./components/UpgradeTable"
 import { upgradesForItem } from "./domain/upgrades"
-import { displayItemName } from "./domain/itemName"
-import type { CatalogManifest, CatalogData, PageSummary } from "./domain/types"
+import type { CatalogData, CatalogManifest, PageSummary } from "./domain/types"
 import {
   catalogItems,
   groupRecipeTags,
@@ -28,7 +26,6 @@ import {
   visibleRecipeTags,
   CRAFTING_MAX_LEVELS,
 } from "./domain/recipeView"
-import { parseItemQuantity } from "./domain/recipeQuantity"
 import { collectRecipeStats } from "./domain/recipes"
 import { isCategoryTag } from "./domain/tagTree"
 import {
@@ -130,12 +127,6 @@ function ItemHeading({
     </>
   )
 }
-/** The rows a group filter shows: none when the group is unknown in this game. */
-function groupRows(data: CatalogData | undefined, groupKey: string | null) {
-  if (!groupKey) return data?.recipes ?? []
-  const group = data?.groups?.[groupKey]
-  return group ? groupItemRows(data?.recipes ?? [], group) : []
-}
 function pageTitle(gameLabel: string, isCatalog: boolean, unavailable: boolean, itemTitle?: string) {
   if (isCatalog) return `${gameLabel} — katalog craftingu`
   if (unavailable) return "Nie znaleziono strony — Divinity"
@@ -151,16 +142,13 @@ function internalLink(event: MouseEvent, target: Element): URL | undefined {
   return sameSite ? url : undefined
 }
 /** The active filters as one line of text for the sidebar. */
-function filterSummary(filters: Filters, labels: Record<string, string>, groups: CatalogData["groups"]) {
-  const groupName = (filters.group && groups?.[filters.group]?.name) || (filters.group ?? "")
+function filterSummary(filters: Filters, labels: Record<string, string>) {
   return [
     ...filters.include.map((tag) => tagLabel(tag, labels)),
     ...filters.exclude.map((tag) => `bez: ${tagLabel(tag, labels)}`),
     ...filters.requirements.map((value) => `wym: ${value}`),
     ...filters.requirementsExclude.map((value) => `bez wym: ${value}`),
     filters.craftingMax ? `Crafting ≤ ${filters.craftingMax}` : "",
-    filters.selectors.length ? "grupa: " + filters.selectors.map((value) => `#${value}`).join(", ") : "",
-    filters.group ? `grupa: ${displayItemName(groupName)}` : "",
     filters.query ? `${scopeLabels[filters.scope].filter}: ${filters.query}` : "",
   ]
     .filter(Boolean)
@@ -169,7 +157,7 @@ function filterSummary(filters: Filters, labels: Record<string, string>, groups:
 /** Whether anything but the tags narrows the catalog. */
 function isNarrowed(filters: Filters) {
   return (
-    Boolean(filters.query.trim() || filters.group || filters.selectors.length || filters.craftingMax !== null) ||
+    Boolean(filters.query.trim() || filters.craftingMax !== null) ||
     filters.requirements.length > 0 ||
     filters.requirementsExclude.length > 0
   )
@@ -208,21 +196,20 @@ export function App() {
   const page = itemSlug
     ? manifest.data?.pages.find((entry) => entry.slug === itemSlug && pageGames(entry.tags).includes(game))
     : undefined
-  const isItemRoute = Boolean(page?.itemPage && !page.categoryPage)
+  const isItemRoute = Boolean(page)
   const unavailablePage = !isCatalog && Boolean(manifest.data) && !isItemRoute
   const descriptions = useJson<Record<string, ItemDescription>>(
     !isCatalog || view === "items" ? `descriptions-${game}.json` : null,
   )
-  const detail: { data?: PageSummary; error?: string } = { data: isItemRoute ? page : undefined }
+  const detail: { data?: PageSummary } = { data: page }
   const activeGame = games.find((entry) => entry.id === game)!
   const labels = useMemo(
     () => Object.fromEntries((catalog.data?.tags ?? []).map((entry) => [entry.tag, entry.label ?? entry.tag])),
     [catalog.data],
   )
-  const sourceRows = useMemo(() => groupRows(catalog.data, filters.group), [catalog.data, filters.group])
   const grouped = useMemo(
-    () => applyGroupQuery(sourceRows, catalog.data?.groups ?? {}, filters.query, filters.scope),
-    [sourceRows, catalog.data, filters.query, filters.scope],
+    () => applyGroupQuery(catalog.data?.recipes ?? [], catalog.data?.groups ?? {}, filters.query, filters.scope),
+    [catalog.data, filters.query, filters.scope],
   )
   const filtered = useMemo(
     () => sortRecipes(filterRecipes(grouped.rows, { ...filters, query: grouped.query }, labels), filters.sort, lang),
@@ -347,22 +334,14 @@ export function App() {
     setFilters(emptyFilters())
     setQuery("")
   }
-  const filterText = filterSummary(filters, labels, catalog.data?.groups)
+  const filterText = filterSummary(filters, labels)
   const activeFilterCount = countFilters(filters)
   const itemHref = (slug: string) => gameItemHref(game, slug)
   const itemRecipes = useMemo(() => {
     if (!detail.data || !catalog.data) return { craft: [], rolled: [], used: [] }
-    const parsed = parseItemQuantity(detail.data.title)
-    const keys = itemNameKeys(detail.data.title, parsed.base, detail.data.slug.split("/").at(-1))
-    const baseKeys = itemNameKeys(parsed.base)
+    const keys = itemNameKeys(detail.data.title, detail.data.slug.split("/").at(-1))
     return {
-      craft: catalog.data.recipes.filter(
-        (row) =>
-          recipeResults(row).some((product) => product.slug === itemSlug) ||
-          (parsed.quantities.length > 0 &&
-            Boolean(row.result.quantity) &&
-            [...itemNameKeys(row.result.name, row.result.namePl)].some((key) => baseKeys.has(key))),
-      ),
+      craft: catalog.data.recipes.filter((row) => recipeResults(row).some((product) => product.slug === itemSlug)),
       rolled: catalog.data.recipes.filter((row) => recipeRollsItem(row, itemSlug, keys)),
       used: catalog.data.recipes.filter((row) => recipeUsesItem(row, itemSlug, keys)),
     }
@@ -380,9 +359,7 @@ export function App() {
     catalog.data?.recipes.flatMap((row) => row.result.pool ?? []).find((item) => item.slug === itemSlug) ??
     catalog.data?.recipes.flatMap((row) => row.ingredients).find((item) => item.slug === itemSlug)
   const detailDescription =
-    descriptions.data?.[
-      detailName ? itemDataKey(detailName) : itemIconKey(parseItemQuantity(detail.data?.title ?? "").base)
-    ]
+    descriptions.data?.[detailName ? itemDataKey(detailName) : itemIconKey(detail.data?.title ?? "")]
 
   const detailDescriptionText = itemDescriptionText(detailDescription, lang)
   // The most specific category of the item, for the breadcrumb.
@@ -647,14 +624,14 @@ export function App() {
         )}
         {!isCatalog && catalog.data && (
           <div class="item-detail">
-            {(unavailablePage || detail.error) && (
+            {unavailablePage && (
               <div role="alert">
                 <h2>Nie znaleziono strony</h2>
                 <p>Sprawdź adres lub wyszukaj przedmiot w katalogu.</p>
               </div>
             )}
-            {!unavailablePage && !detail.data && !detail.error && <p role="status">Wczytywanie przedmiotu…</p>}
-            {isItemRoute && detail.data?.itemPage && !detail.data.categoryPage && (
+            {!unavailablePage && !detail.data && <p role="status">Wczytywanie przedmiotu…</p>}
+            {detail.data && (
               <>
                 {detailDescriptionText && (
                   <section class="item-description">

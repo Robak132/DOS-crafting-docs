@@ -1,5 +1,5 @@
-import { localisationLookupKey, resolveItemNames } from "./itemLocalisation"
-import { isOrComboTag, requirementTokens } from "./recipeView"
+import { polishName } from "./itemLocalisation"
+import { requirementTokens, type TraitGroup } from "./recipeView"
 import { hierarchyLabel, tagDescendants, tagOrder, traitSections, withImpliedParents } from "./tagTree"
 
 export type RecipeItem = {
@@ -79,41 +79,12 @@ export type RecipeData = {
   upgrades?: RecipeUpgrade[]
   tags: TagStat[]
   requirements: TagStat[]
-  /** Grupy craftingowe (#selector) używane jako składniki. */
-  selectors: TagStat[]
-}
-
-const POLISH_FOLD: Record<string, string> = {
-  ą: "a",
-  ć: "c",
-  ę: "e",
-  ł: "l",
-  ń: "n",
-  ó: "o",
-  ś: "s",
-  ź: "z",
-  ż: "z",
-}
-
-function normalizeKey(value: string): string {
-  return value
-    .replace(/[ąćęłńóśźżĄĆĘŁŃÓŚŹŻ]/gi, (ch) => POLISH_FOLD[ch.toLowerCase()] ?? ch)
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim()
-    .toLowerCase()
 }
 
 export type RecipeCatalog = "dos1" | "dos2" | "dos2-overhaul"
 
-export type CechySidebarGroup = {
-  parentTag: string
-  label: string
-  childTags: string[]
-}
-
 /** Trait sections of the sidebar, in hierarchy order, with every tag below each of them. */
-export function getCechySidebarGroups(): CechySidebarGroup[] {
+export function getCechySidebarGroups(): TraitGroup[] {
   return traitSections.map((section) => ({
     parentTag: section.tag,
     label: section.label?.trim() || section.tag,
@@ -130,25 +101,25 @@ export function localizeItemForCatalog(item: RecipeItem, catalog: RecipeCatalog)
     }
   }
   if (item.selectorTag) {
-    const label = localisationLookupKey(item.name)
-    const resolved = resolveItemNames(label, catalog, "selector")
+    const label = item.name.replace(/^#/, "")
+    const namePl = polishName(label, catalog, "selector")
     return {
       ...item,
-      name: `#${resolved.name}`,
-      namePl: (catalog === "dos1" ? item.namePl : undefined) ?? (resolved.namePl ? `#${resolved.namePl}` : undefined),
+      name: `#${label}`,
+      namePl: (catalog === "dos1" ? item.namePl : undefined) ?? (namePl ? `#${namePl}` : undefined),
     }
   }
   // DOS1 zachowuje titlePl; DOS2 i Overhaul używają wyłącznie słownika Definitive Edition.
   if (catalog === "dos1" && item.namePl && item.namePl !== item.name) {
     return { ...item, name: item.name, namePl: item.namePl }
   }
-  const resolved = resolveItemNames(item.name, catalog)
+  const namePl = polishName(item.name, catalog)
   const { nameQualifier, ...base } = item
   const qualifierPl = nameQualifier ? ` (${nameQualifier.pl ?? nameQualifier.en})` : ""
   return {
     ...base,
-    name: resolved.name + (nameQualifier ? ` (${nameQualifier.en})` : ""),
-    namePl: resolved.namePl ? resolved.namePl + qualifierPl : undefined,
+    name: item.name + (nameQualifier ? ` (${nameQualifier.en})` : ""),
+    namePl: namePl ? namePl + qualifierPl : undefined,
   }
 }
 
@@ -169,11 +140,10 @@ function addItemToStat(map: Map<string, Set<string>>, key: string, itemKey: stri
 /** Liczniki = liczba unikalnych przedmiotów (nie receptur). */
 export function collectRecipeStats(
   recipes: RecipeRow[],
-  displayByNormalizedTag: Map<string, string> = new Map(),
-): Pick<RecipeData, "tags" | "requirements" | "selectors"> {
+  tagLabels: Record<string, string> = {},
+): Pick<RecipeData, "tags" | "requirements"> {
   const tagItems = new Map<string, Set<string>>()
   const requirementItems = new Map<string, Set<string>>()
-  const selectorItems = new Map<string, Set<string>>()
 
   recipes.forEach((recipe) => {
     const itemKey = recipeResultKey(recipe)
@@ -183,21 +153,14 @@ export function collectRecipeStats(
       const productKey = (product.slug ?? product.name) + (product.quantity ? "@" + product.quantity : "")
       withImpliedParents(product.tags).forEach((tag) => addItemToStat(tagItems, tag, productKey))
     }
-    requirementTokens(recipe.requirements ?? "").forEach((token) => addItemToStat(requirementItems, token, itemKey))
-    const seenSelectors = new Set<string>()
-    recipe.ingredients.forEach((ingredient) => {
-      const selector = ingredient.selectorTag?.trim()
-      if (!selector || seenSelectors.has(selector) || isOrComboTag(selector)) return
-      seenSelectors.add(selector)
-      addItemToStat(selectorItems, selector, itemKey)
-    })
+    requirementTokens(recipe.requirements).forEach((token) => addItemToStat(requirementItems, token, itemKey))
   })
 
   const tags: TagStat[] = [...tagItems.entries()]
     .map(([tag, items]) => ({
       tag,
       count: items.size,
-      label: hierarchyLabel(tag) ?? displayByNormalizedTag.get(normalizeKey(tag)) ?? tag,
+      label: hierarchyLabel(tag) ?? tagLabels[tag] ?? tag,
     }))
     .sort((a, b) => tagOrder(a.tag) - tagOrder(b.tag) || a.tag.localeCompare(b.tag))
 
@@ -205,13 +168,5 @@ export function collectRecipeStats(
     .map(([tag, items]) => ({ tag, count: items.size }))
     .sort((a, b) => a.tag.localeCompare(b.tag))
 
-  const selectors: TagStat[] = [...selectorItems.entries()]
-    .map(([tag, items]) => ({
-      tag,
-      count: items.size,
-      label: tag.replaceAll("-", " "),
-    }))
-    .sort((a, b) => (a.label ?? a.tag).localeCompare(b.label ?? b.tag, "pl"))
-
-  return { tags, requirements, selectors }
+  return { tags, requirements }
 }

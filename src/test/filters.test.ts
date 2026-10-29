@@ -66,7 +66,6 @@ test("filters apply to result tags, effects, ingredients and crafting level", ()
   assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Bystrość" }, {}).length, 1)
   assert.equal(filterRecipes([recipe], { ...emptyFilters(), query: "Herb", scope: "ingredient" }, {}).length, 1)
   assert.equal(filterRecipes([recipe], { ...emptyFilters(), craftingMax: 1 }, {}).length, 0)
-  assert.equal(filterRecipes([recipe], { ...emptyFilters(), selectors: ["Plants"], scope: "ingredient" }, {}).length, 1)
 })
 test("shareable filters roundtrip, while DOS2 drops DOS1-only requirements", () => {
   const filters = {
@@ -79,27 +78,6 @@ test("shareable filters roundtrip, while DOS2 drops DOS1-only requirements", () 
   assert.deepEqual(restoreFilters("dos1", filtersToSearch(filters, "recipes")), filters)
   assert.equal(restoreFilters("dos2", filtersToSearch(filters, "items")).craftingMax, null)
   assert.deepEqual(restoreFilters("dos2", filtersToSearch(filters, "items")).requirements, [])
-  assert.deepEqual(restoreFilters("dos2", "?tag=Potions").include, ["Potions"])
-})
-
-test("group selection survives a shareable URL and clearing filters removes it", () => {
-  const filters = { ...emptyFilters(), group: "cloth-gloves" }
-  assert.deepEqual(restoreFilters("dos2-overhaul", filtersToSearch(filters, "items")), filters)
-  assert.equal(restoreFilters("dos2-overhaul", "?view=items").group, null)
-})
-
-test("browser back to an explicit unfiltered view does not restore the previous group from storage", () => {
-  const original = Object.getOwnPropertyDescriptor(globalThis, "sessionStorage")
-  Object.defineProperty(globalThis, "sessionStorage", {
-    configurable: true,
-    value: { getItem: () => JSON.stringify({ ...emptyFilters(), group: "fish" }) },
-  })
-  try {
-    assert.equal(restoreFilters("dos2", "?view=recipes").group, null)
-  } finally {
-    if (original) Object.defineProperty(globalThis, "sessionStorage", original)
-    else Reflect.deleteProperty(globalThis, "sessionStorage")
-  }
 })
 
 test("tags are selected through filters, never through hashtag query syntax", () => {
@@ -113,7 +91,7 @@ test("catalog navigation restores each game's filters while explicit empty views
   const original = Object.getOwnPropertyDescriptor(globalThis, "sessionStorage")
   const saved = {
     dos1: { ...emptyFilters(), query: "Apple", craftingMax: 2 },
-    dos2: { ...emptyFilters(), query: "Potion", include: ["Ingredients"], group: "fish" },
+    dos2: { ...emptyFilters(), query: "Potion", include: ["Ingredients"] },
   }
   Object.defineProperty(globalThis, "sessionStorage", {
     configurable: true,
@@ -143,9 +121,7 @@ test("hand-edited or corrupted stored filters fall back to safe values instead o
     requirementsExclude: {},
     craftingMax: 99,
     scope: "everything",
-    selectors: "Plants",
     query: 42,
-    group: ["x"],
   }
   Object.defineProperty(globalThis, "sessionStorage", {
     configurable: true,

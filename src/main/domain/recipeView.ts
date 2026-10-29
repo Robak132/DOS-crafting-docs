@@ -16,11 +16,6 @@ export function itemCraftRoleClass(role: ItemCraftRole | undefined): string {
   return `item-craft-${role}`
 }
 
-/** Legacy markery A-Or-B — nie filtrujemy po nich w UI. */
-export function isOrComboTag(tag: string): boolean {
-  return /-Or-/i.test(tag)
-}
-
 export const recipeColumns = [
   { key: "result", label: "Przedmiot" },
   { key: "ingredients", label: "Receptura" },
@@ -28,8 +23,6 @@ export const recipeColumns = [
   { key: "tags", label: "Tagi" },
   { key: "source", label: "Źródło" },
 ] as const
-
-export type RecipeColumnKey = (typeof recipeColumns)[number]["key"]
 
 /** DOS2 / Overhaul nie mają wymagań craftingu — bez kolumny Wymagania. */
 export function recipeColumnsForCatalog(showRequirements: boolean) {
@@ -48,17 +41,6 @@ export function recipeResultTags(recipe: RecipeRow): string[] {
 export { recipeResults }
 
 export const isGameTag = (tag: string): boolean => ["DOS1", "DOS2", "DOS2-CO"].includes(tag)
-
-/** Czy receptura używa grupy craftingowej (#selector) jako składnika. */
-export function recipeUsesSelector(recipe: RecipeRow, selector: string): boolean {
-  const target = selector.replace(/^#/, "").toLowerCase()
-  return recipe.ingredients.some((ingredient) => {
-    const tag = ingredient.selectorTag?.replace(/^#/, "").toLowerCase()
-    if (tag === target) return true
-    const name = (ingredient.namePl ?? ingredient.name).replace(/^#/, "").toLowerCase()
-    return name === target
-  })
-}
 
 export type TagFilterNode = TagStat & { children?: TagFilterNode[] }
 
@@ -88,7 +70,8 @@ export type RecipeTagGroup = {
   flat?: boolean
 }
 
-export type CechyGroupMeta = {
+/** A sidebar section of traits: a hierarchy root and every tag below it. */
+export type TraitGroup = {
   parentTag: string
   label: string
   childTags: string[]
@@ -128,7 +111,7 @@ const TAG_GROUPS: [string, (tag: string) => boolean][] = [
 ]
 
 /** Cechy → osobne sekcje w kolejności hierarchy (nie jedna alfabetyczna lista). */
-function cechySectionsFor(byTag: Map<string, TagStat>, cechyGroups: CechyGroupMeta[]): RecipeTagGroup[] {
+function cechySectionsFor(byTag: Map<string, TagStat>, cechyGroups: TraitGroup[]): RecipeTagGroup[] {
   const sections: RecipeTagGroup[] = []
   for (const group of cechyGroups) {
     const parent = byTag.get(group.parentTag)
@@ -142,12 +125,10 @@ function cechySectionsFor(byTag: Map<string, TagStat>, cechyGroups: CechyGroupMe
   return sections
 }
 
-export function groupRecipeTags(tags: TagStat[], cechyGroups: CechyGroupMeta[] = []): RecipeTagGroup[] {
+export function groupRecipeTags(tags: TagStat[], cechyGroups: TraitGroup[] = []): RecipeTagGroup[] {
   const claimedCechy = new Set(cechyGroups.flatMap((group) => [group.parentTag, ...group.childTags]))
   const cechySections = cechySectionsFor(new Map(tags.map((stat) => [stat.tag, stat])), cechyGroups)
-  // A-Or-B to rozwinięcie receptur, nie osobna kategoria w sidebarze.
-  const hidden = (tag: string) =>
-    isOrComboTag(tag) || isGameTag(tag) || tag === "Category" || claimedCechy.has(tag) || isTraitTag(tag)
+  const hidden = (tag: string) => isGameTag(tag) || tag === "Category" || claimedCechy.has(tag) || isTraitTag(tag)
   const groups = new Map<string, TagStat[]>(TAG_GROUPS.map(([label]) => [label, []]))
   for (const stat of tags) {
     if (hidden(stat.tag)) continue
@@ -184,13 +165,7 @@ export function groupRecipes(recipes: RecipeRow[]): RecipeGroup[] {
 }
 
 export function visibleRecipeTags(tags: string[]): string[] {
-  return tags.filter(
-    (tag) =>
-      tag.trim().length > 0 &&
-      !isOrComboTag(tag) &&
-      !isGameTag(tag) &&
-      !tags.some((other) => other !== tag && isTagWithin(other, tag)),
-  )
+  return tags.filter((tag) => !isGameTag(tag) && !tags.some((other) => other !== tag && isTagWithin(other, tag)))
 }
 
 export function tagLabel(tag: string, labels: Record<string, string>): string {
@@ -251,7 +226,6 @@ export function matchesRecipeQuery(
 
 const EFFECT_PHRASES: Array<[RegExp, string]> = [
   [/\bScales With Intelligence\b/gi, "Skaluje się z Inteligencją"],
-  [/\bScales With Constution\b/gi, "Skaluje się z Kondycją"],
   [/\bScales With Constitution\b/gi, "Skaluje się z Kondycją"],
   [/\bStats Increase with Crafting Level\b/gi, "Statystyki rosną z poziomem Craftingu"],
   [/\bStats Increase with Blacksmithing Level\b/gi, "Statystyki rosną z poziomem Blacksmithing"],

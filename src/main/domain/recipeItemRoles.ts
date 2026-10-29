@@ -6,7 +6,7 @@ import { recipeResults } from "./recipeResults"
 export type { ItemCraftRole }
 
 /**
- * Rola przedmiotu w craftingu (po slugach stron itemPage):
+ * Rola przedmiotu w craftingu (po slugach stron przedmiotów):
  * - mid: craftowalny i używany dalej jako składnik
  * - end: craftowalny, bez dalszych użyć
  * - dead: niecraftowalny i bez użyć
@@ -19,7 +19,7 @@ export function getItemCraftRoles(pages: PageSummary[], recipes: RecipeRow[]): R
 
   const roles: Record<string, ItemCraftRole> = {}
   for (const page of pages) {
-    const role = page.itemPage ? craftRole(craftable.has(page.slug), usable.has(page.slug)) : undefined
+    const role = craftRole(craftable.has(page.slug), usable.has(page.slug))
     if (role) roles[page.slug] = role
   }
   return roles

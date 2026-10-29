@@ -16,8 +16,7 @@ import { getCatalogItemRoles } from "../src/main/domain/recipeItemRoles"
 import { catalogItems } from "../src/main/domain/recipeView"
 import { collectRecipeStats, getCechySidebarGroups, localizeItemForCatalog } from "../src/main/domain/recipes"
 import { resetLocalisationSources } from "../src/main/domain/itemLocalisation"
-import { isPublicPage } from "../src/main/routing"
-import type { PageSummary, CatalogManifest } from "../src/main/domain/types"
+import type { CatalogManifest } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
 import { recipeResults } from "../src/main/domain/recipeResults"
 
@@ -28,7 +27,7 @@ export async function generateData(outputDirectory = "dist") {
   // Validate source JSON before replacing the previously generated output.
   const library = await loadLibrary()
   const labels: Record<string, string> = JSON.parse(await fs.readFile("data/tagLabels.json", "utf8"))
-  const catalogs = buildCatalogs(library.sources, library.pages, labels, library.upgrades)
+  const catalogs = buildCatalogs(library.sources, labels, library.upgrades)
   const descriptions = JSON.parse(await fs.readFile("data/itemDescriptions.json", "utf8"))
   const tagLocalisation = JSON.parse(await fs.readFile("data/tagLocalisation.json", "utf8"))
   const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
@@ -68,15 +67,7 @@ export async function generateData(outputDirectory = "dist") {
     for (const item of data.upgrades!.flatMap((upgrade) => upgrade.ingredients)) markGroup(item, groups)
     await fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data))
   }
-  const publishedPages = library.pages.filter(isPublicPage)
-  const pages: PageSummary[] = publishedPages.map(({ slug, title, titlePl, tags, itemPage, categoryPage }) => ({
-    slug,
-    title,
-    titlePl,
-    tags,
-    itemPage,
-    categoryPage,
-  }))
+  const pages = library.pages
   const manifest: CatalogManifest = {
     pages,
     itemRoles: getCatalogItemRoles(pages, catalogs),
@@ -146,12 +137,10 @@ function attachItemData(
 /** Tag, requirement and selector counts of the expanded recipes, keeping the labels already known. */
 function recipeStats(data: Catalog, tagLocalisation: Localised) {
   const statLabels = new Map(
-    [...data.tags, ...data.requirements, ...data.selectors]
-      .filter((stat) => stat.label)
-      .map((stat) => [stat.tag, stat.label!]),
+    [...data.tags, ...data.requirements].filter((stat) => stat.label).map((stat) => [stat.tag, stat.label!]),
   )
   const stats = collectRecipeStats(data.recipes)
-  for (const field of ["tags", "requirements", "selectors"] as const)
+  for (const field of ["tags", "requirements"] as const)
     for (const stat of stats[field]) stat.label = statLabels.get(stat.tag) ?? stat.label
   for (const stat of stats.tags) {
     const localized = tagLocalisation?.[stat.tag]

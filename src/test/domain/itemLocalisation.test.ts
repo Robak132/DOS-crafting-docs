@@ -1,18 +1,19 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import fs from "node:fs"
-import { resolveItemNames } from "../../main/domain/itemLocalisation"
+import { polishName } from "../../main/domain/itemLocalisation"
 import { localizeItemForCatalog } from "../../main/domain/recipes"
 
 test("DOS2 and Overhaul use the Definitive Edition dictionary", () => {
   for (const catalog of ["dos2", "dos2-overhaul"] as const) {
-    assert.equal(resolveItemNames("Accuracy", catalog).namePl, "Celność")
-    assert.equal(resolveItemNames("Wits", catalog).namePl, "Bystrość")
-    assert.equal(resolveItemNames("Poison Potion", catalog).namePl, "Trucizna")
-    assert.equal(resolveItemNames("Spirit", catalog).namePl, "Duch")
-    assert.equal(resolveItemNames("Bairdotr's Armor", catalog).namePl, undefined)
+    assert.equal(polishName("Accuracy", catalog), "Celność")
+    assert.equal(polishName("Wits", catalog), "Bystrość")
+    assert.equal(polishName("Poison Potion", catalog), "Trucizna")
+    assert.equal(polishName("Spirit", catalog), "Duch")
+    assert.equal(polishName("Bairdotr's Armor", catalog), undefined)
   }
-  assert.ok(resolveItemNames("Bairdotr's Armor", "dos1").namePl)
+  assert.ok(polishName("Bairdotr's Armor", "dos1"))
+  assert.equal(polishName("Spirit", "dos1"), "Spirytus")
 })
 
 test("official DOS2 names override old per-page translations", () => {
@@ -25,16 +26,9 @@ test("official DOS2 names override old per-page translations", () => {
 })
 
 test("Necromancer distinguishes the character from the ingredient selector", () => {
-  assert.equal(resolveItemNames("Necromancer", "dos2").namePl, "Nekromanta")
+  assert.equal(polishName("Necromancer", "dos2"), "Nekromanta")
   const item = localizeItemForCatalog({ name: "#Necromancer", selectorTag: "Necromancer", tags: [] }, "dos2")
   assert.equal(item.namePl, "#Nekromancja")
-})
-
-test("localized names can be resolved back to English and caches remain isolated", () => {
-  assert.deepEqual(resolveItemNames("Bystrość", "dos2"), { name: "Wits", namePl: "Bystrość" })
-  assert.equal(resolveItemNames("Spirit", "dos1").namePl, "Spirytus")
-  assert.equal(resolveItemNames("Spirit", "dos2-overhaul").namePl, "Duch")
-  assert.equal(resolveItemNames("AMULET", "dos2").namePl, "Amulet")
 })
 
 test("recipe item names are English; Polish appears only as a translation", () => {

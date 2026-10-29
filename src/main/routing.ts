@@ -62,9 +62,6 @@ export function pageGames(tags: string[]): Game[] {
 export function gameForSlug(slug: string): Game | undefined {
   return games.find((game) => game.slug === slug)?.id
 }
-export function isPublicPage(page: { slug: string; itemPage: boolean; categoryPage: boolean }): boolean {
-  return !page.categoryPage && (page.itemPage || page.slug === "index" || Boolean(gameForSlug(page.slug)))
-}
 export function catalogHref(game: Game, view: View): string {
   return `${pageHref(games.find((entry) => entry.id === game)!.slug)}?view=${view}`
 }

@@ -1,7 +1,6 @@
 import type { RecipeItem, RecipeRow } from "./recipes"
 import { itemIconKey } from "./itemIcons"
 import { itemNameKeys } from "./recipeView"
-import { parseItemQuantity } from "./recipeQuantity"
 import { tooltipItemKey } from "./tooltipIdentity"
 import { recipeResults } from "./recipeResults"
 
@@ -84,7 +83,7 @@ export function buildTooltipIndex(recipes: RecipeRow[]) {
       if (item.statsId) direct = resultsByStats.get(item.statsId)
       else if (item.slug) direct = resultsBySlug.get(item.slug)
       const rows = new Set(direct)
-      for (const key of item.statsId ? [] : itemNameKeys(item.name, parseItemQuantity(item.name).base)) {
+      for (const key of item.statsId ? [] : itemNameKeys(item.name)) {
         for (const row of resultsByName.get(key) ?? []) rows.add(row)
       }
       const result = [...rows]

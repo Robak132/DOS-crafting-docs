@@ -1076,7 +1076,7 @@
           ]
         },
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -2417,7 +2417,7 @@
           "statsId": "CON_Food_Potato_A"
         },
         {
-          "name": "Cooking station",
+          "name": "Cooking Station",
           "namePl": "Kuchnia polowa",
           "slug": "cooking-station",
           "tags": [
@@ -2529,7 +2529,7 @@
         }
       ],
       "result": {
-        "name": "Cooking station",
+        "name": "Cooking Station",
         "namePl": "Kuchnia polowa",
         "slug": "cooking-station",
         "tags": [
@@ -5391,7 +5391,7 @@
           "statsId": "BOOK_Paper_Sheet_A"
         },
         {
-          "name": "High quality Tormented Soul",
+          "name": "High Quality Tormented Soul",
           "namePl": "Udręczona dusza wysokiej jakości",
           "slug": "high-quality-tormented-soul",
           "tags": [
@@ -9764,7 +9764,7 @@
       "id": "Magia/GIANT-FLAME-RUNE:Pouch of Superior Pixie Dust+Large Flame Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -9823,7 +9823,7 @@
       "id": "Magia/GIANT-FROST-RUNE:Pouch of Superior Pixie Dust+Large Frost Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -9879,7 +9879,7 @@
       "id": "Magia/GIANT-MASTERWORK-RUNE:Pouch of Superior Pixie Dust+Large Masterwork Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -9938,7 +9938,7 @@
       "id": "Magia/GIANT-ROCK-RUNE:Pouch of Superior Pixie Dust+Large Rock Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -9997,7 +9997,7 @@
       "id": "Magia/GIANT-THUNDER-RUNE:Pouch of Superior Pixie Dust+Large Thunder Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -10056,7 +10056,7 @@
       "id": "Magia/GIANT-VENOM-RUNE:Pouch of Superior Pixie Dust+Large Venom Rune@x2",
       "ingredients": [
         {
-          "name": "Pouch of Superior Pixie Dust",
+          "name": "Pouch Of Superior Pixie Dust",
           "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
           "slug": "pouch-of-superior-pixie-dust",
           "tags": [
@@ -10131,7 +10131,7 @@
           "statsId": "LOOT_Rune_Flame_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -10191,7 +10191,7 @@
           "statsId": "LOOT_Rune_Frost_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -10250,7 +10250,7 @@
           "statsId": "LOOT_Rune_Masterwork_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -10311,7 +10311,7 @@
           "statsId": "LOOT_Rune_Rock_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -10372,7 +10372,7 @@
           "statsId": "LOOT_Rune_Thunder_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -10433,7 +10433,7 @@
           "statsId": "LOOT_Rune_Venom_Giant"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -14457,7 +14457,7 @@
           "statsId": "LOOT_Essence_Earth_A"
         },
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -15555,7 +15555,7 @@
           "statsId": "LOOT_Rune_Flame_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -15615,7 +15615,7 @@
           "statsId": "LOOT_Rune_Frost_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -15674,7 +15674,7 @@
           "statsId": "LOOT_Rune_Masterwork_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -15735,7 +15735,7 @@
           "statsId": "LOOT_Rune_Rock_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -15796,7 +15796,7 @@
           "statsId": "LOOT_Rune_Thunder_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -15857,7 +15857,7 @@
           "statsId": "LOOT_Rune_Venom_Large"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -18601,7 +18601,7 @@
           "statsId": "CON_Food_Potato_Mash_Cold_A"
         },
         {
-          "name": "Cooking station",
+          "name": "Cooking Station",
           "namePl": "Kuchnia polowa",
           "slug": "cooking-station",
           "tags": [
@@ -19026,7 +19026,7 @@
           "statsId": "LOOT_Rune_Flame_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -19086,7 +19086,7 @@
           "statsId": "LOOT_Rune_Frost_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -19145,7 +19145,7 @@
           "statsId": "LOOT_Rune_Masterwork_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -19206,7 +19206,7 @@
           "statsId": "LOOT_Rune_Rock_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -19267,7 +19267,7 @@
           "statsId": "LOOT_Rune_Thunder_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -19328,7 +19328,7 @@
           "statsId": "LOOT_Rune_Venom_Medium"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -24581,7 +24581,7 @@
         }
       ],
       "result": {
-        "name": "PIZZA",
+        "name": "Pizza",
         "namePl": "Pizza",
         "slug": "pizza",
         "tags": [
@@ -26000,7 +26000,7 @@
         }
       ],
       "result": {
-        "name": "Pouch of Superior Pixie Dust",
+        "name": "Pouch Of Superior Pixie Dust",
         "namePl": "Sakiewka znakomitego czarodziejskiego pyłu",
         "slug": "pouch-of-superior-pixie-dust",
         "tags": [
@@ -26520,7 +26520,7 @@
           "statsId": "LOOT_WoodenBranch_A"
         },
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -27900,7 +27900,7 @@
           "statsId": "CON_Food_Fries_Cold_A"
         },
         {
-          "name": "Cooking station",
+          "name": "Cooking Station",
           "namePl": "Kuchnia polowa",
           "slug": "cooking-station",
           "tags": [
@@ -28464,7 +28464,7 @@
       "id": "Bron/SHIV:Sharp Piece of Metal+Cloth Scraps",
       "ingredients": [
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -28516,7 +28516,7 @@
       "id": "Bron/SHIV:Sharp Piece of Metal+Hammer+Anvil",
       "ingredients": [
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -28576,7 +28576,7 @@
       "id": "Bron/SHIV:Sharp Piece of Metal+Handkerchief",
       "ingredients": [
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -28628,7 +28628,7 @@
       "id": "Bron/SHIV:Sharp Piece of Metal+Leather Scraps",
       "ingredients": [
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "namePl": "Ostry kawałek metalu",
           "slug": "sharp-piece-of-metal",
           "tags": [
@@ -29458,7 +29458,7 @@
           "statsId": "LOOT_Rune_Flame_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -29518,7 +29518,7 @@
           "statsId": "LOOT_Rune_Frost_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -29577,7 +29577,7 @@
           "statsId": "LOOT_Rune_Masterwork_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -29638,7 +29638,7 @@
           "statsId": "LOOT_Rune_Rock_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -29699,7 +29699,7 @@
           "statsId": "LOOT_Rune_Thunder_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -29760,7 +29760,7 @@
           "statsId": "LOOT_Rune_Venom_Small"
         },
         {
-          "name": "Rune Frame of Power",
+          "name": "Rune Frame Of Power",
           "namePl": "Potężna rama runy",
           "slug": "rune-frame-of-power",
           "tags": [
@@ -30743,7 +30743,7 @@
           "statsId": "BOOK_Paper_Sheet_A"
         },
         {
-          "name": "High quality Tormented Soul",
+          "name": "High Quality Tormented Soul",
           "namePl": "Udręczona dusza wysokiej jakości",
           "slug": "high-quality-tormented-soul",
           "tags": [
@@ -32717,7 +32717,7 @@
           "statsId": "GRN_Ingredient_Cylinder_Empty_A"
         },
         {
-          "name": "High quality Tormented Soul",
+          "name": "High Quality Tormented Soul",
           "namePl": "Udręczona dusza wysokiej jakości",
           "slug": "high-quality-tormented-soul",
           "tags": [
@@ -33407,7 +33407,7 @@
           "statsId": "TOOL_Tong_A"
         },
         {
-          "name": "Sharp Piece of Metal",
+          "name": "Sharp Piece Of Metal",
           "slug": "sharp-piece-of-metal",
           "tags": [
             "Ingredients",
@@ -35877,7 +35877,7 @@
         "en": "Poisoned weapon"
       },
       "target": {
-        "name": "weapon",
+        "name": "Weapon",
         "namePl": "Broń",
         "slug": "weapon",
         "tags": [

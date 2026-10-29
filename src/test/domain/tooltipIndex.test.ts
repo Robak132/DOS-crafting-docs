@@ -3,7 +3,6 @@ import { test } from "node:test"
 import fs from "node:fs"
 import { buildTooltipIndex } from "../../main/domain/tooltipIndex"
 import { itemNameKeys } from "../../main/domain/recipeView"
-import { parseItemQuantity } from "../../main/domain/recipeQuantity"
 import type { RecipeRow } from "../../main/domain/recipes"
 import { buildCatalogs } from "../../main/domain/recipeCatalog"
 import { tooltipItemKey } from "../../main/domain/tooltipIdentity"
@@ -17,11 +16,11 @@ const sources = Object.fromEntries(
 ) as Parameters<typeof buildCatalogs>[0]
 
 test("tooltip index preserves crafting variants and order for all three catalogs", () => {
-  for (const catalog of Object.values(buildCatalogs(sources, [], {}))) {
+  for (const catalog of Object.values(buildCatalogs(sources, {}))) {
     const index = buildTooltipIndex(catalog.recipes)
     const items = [...new Set(catalog.recipes.flatMap((row) => [row.result, ...row.ingredients]))]
     for (const item of items) {
-      const keys = itemNameKeys(item.name, parseItemQuantity(item.name).base)
+      const keys = itemNameKeys(item.name)
       const rolls = (row: RecipeRow) =>
         [...(row.extraResults ?? []), ...(row.result.pool ?? [])].some(
           (entry) =>
@@ -67,7 +66,7 @@ test("tooltip lookups support names and slugs without treating ingredient groups
 test("healing potions and their disguised poison variants are separate game items with their own effects", () => {
   const effects = JSON.parse(fs.readFileSync("data/itemEffects.json", "utf8"))
   for (const game of ["dos2", "dos2-overhaul"] as const) {
-    const catalog = buildCatalogs(sources, [], {})[game]
+    const catalog = buildCatalogs(sources, {})[game]
     const result = (slug: string) => catalog.recipes.find((row) => row.result.slug === slug)!.result
     const healing = result("minor-healing-potion")
     const poisoned = result("minor-healing-potion-2")

@@ -3,10 +3,6 @@ import type { RecipeUpgrade } from "./recipes"
 import { normalizeSearch } from "./recipeView"
 import { isTagWithin } from "./tagTree"
 
-export function upgradeEffect(upgrade: RecipeUpgrade, lang: "pl" | "en"): string {
-  return (lang === "pl" && upgrade.effect.pl) || upgrade.effect.en
-}
-
 /**
  * Upgrades that apply to the item: membership in the target's group when the catalog resolved one,
  * otherwise the target category (e.g. one for any weapon applies to a bow).

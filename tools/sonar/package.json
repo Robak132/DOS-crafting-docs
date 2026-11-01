@@ -3,7 +3,7 @@
   "private": true,
   "description": "SonarJS rules for npm run lint:sonar, kept apart from the project: the plugin and the TypeScript parser need TypeScript 5, the project uses TypeScript 7.",
   "devDependencies": {
-    "@typescript-eslint/parser": "^8.72.0",
+    "@typescript-eslint/parser": "^8.72.1",
     "eslint": "^10.13.0",
     "eslint-plugin-sonarjs": "^4.2.2",
     "typescript": "^5.9.0"

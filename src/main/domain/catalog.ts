@@ -49,9 +49,14 @@ export class Catalog {
     return TagLabels.of([...(this.itemTags ?? []), ...this.tags])
   }
 
-  /** The rows of the item list: every recipe, and a listing for each item only used as an ingredient. */
+  /** The recipes giving the upgrades as items of their own. */
+  upgradeRecipes(): Recipe[] {
+    return (this.upgrades ?? []).map((upgrade) => upgrade.recipe())
+  }
+
+  /** The rows of the item list: every recipe and upgrade, and a listing for each item only used as an ingredient. */
   itemRows(): Recipe[] {
-    return [...this.recipes, ...(this.stock ?? []).map(Recipe.listing)]
+    return [...this.recipes, ...this.upgradeRecipes(), ...(this.stock ?? []).map(Recipe.listing)]
   }
 
   /** The recipes making the item of this page. */

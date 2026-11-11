@@ -519,7 +519,6 @@
       "titlePl": "Wielkie szczypce związane sznurkiem",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2",
         "Two-Handed-Maces",
         "Scales-With-Strength"
@@ -1983,7 +1982,6 @@
       "title": "Dwarven Mask of the Shapeshifter",
       "titlePl": "Krasnoludzka Maska Zmiennokształtnego",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "Helmets"
       ]
@@ -2130,7 +2128,6 @@
       "title": "Elven Mask of the Shapeshifter",
       "titlePl": "Elfia Maska Zmiennokształtnego",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "Helmets"
       ]
@@ -3732,7 +3729,6 @@
       "title": "Human Mask of the Shapeshifter",
       "titlePl": "Ludzka Maska Zmiennokształtnego",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "Helmets"
       ]
@@ -3862,7 +3858,6 @@
       "titlePl": "Prowizoryczny kostur",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2",
         "Staves",
         "Scales-With-Intelligence"
@@ -4417,7 +4412,6 @@
       "title": "Lizard Mask of the Shapeshifter",
       "titlePl": "Jaszczurza Maska Zmiennokształtnego",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "Helmets"
       ]
@@ -4503,7 +4497,6 @@
       "titlePl": "Prowizoryczna maczuga",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2",
         "Two-Handed-Maces",
         "Scales-With-Strength"
@@ -4536,7 +4529,6 @@
       "title": "Mask of the Shapeshifter",
       "titlePl": "Maska Zmiennokształtnego",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "Helmets"
       ]
@@ -6171,7 +6163,6 @@
       "titlePl": "Prymitywny harpun",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2",
         "Spears",
         "Scales-With-Finesse"
@@ -6693,7 +6684,6 @@
       "titlePl": "Zaostrzony kamień na dużym kiju",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2",
         "Two-Handed-Axes",
         "Scales-With-Strength"
@@ -7184,7 +7174,6 @@
       "title": "Source Orb",
       "titlePl": "Kula Źródła",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "DOS2-CO",
         "Ingredients"
@@ -7640,7 +7629,6 @@
         "Physical-Damage",
         "Strength",
         "Necromancer",
-        "Grants-Skill",
         "DOS2",
         "Two-Handed-Axes",
         "Special"

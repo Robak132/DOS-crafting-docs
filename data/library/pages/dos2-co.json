@@ -6,7 +6,6 @@
       "title": "2H Air Axe",
       "tags": [
         "Air-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Two-Handed-Axes",
@@ -18,7 +17,6 @@
       "title": "2H Air Mace",
       "tags": [
         "Air-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Two-Handed-Maces",
@@ -30,7 +28,6 @@
       "title": "2H Air Sword",
       "tags": [
         "Air-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Two-Handed-Swords",
@@ -41,7 +38,6 @@
       "slug": "2h-chaos-axe",
       "title": "2H Chaos Axe",
       "tags": [
-        "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
         "Two-Handed-Axes",
@@ -52,7 +48,6 @@
       "slug": "2h-chaos-sword",
       "title": "2H Chaos Sword",
       "tags": [
-        "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
         "Two-Handed-Swords",
@@ -64,7 +59,6 @@
       "title": "2H Earth Axe",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Two-Handed-Axes",
@@ -76,7 +70,6 @@
       "title": "2H Earth Mace",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Two-Handed-Maces",
@@ -88,7 +81,6 @@
       "title": "2H Earth Sword",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Two-Handed-Swords",
@@ -100,7 +92,6 @@
       "title": "2H Fire Axe",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Axes",
@@ -112,7 +103,6 @@
       "title": "2H Fire Mace",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Maces",
@@ -124,7 +114,6 @@
       "title": "2H Fire Sword",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Swords",
@@ -136,7 +125,6 @@
       "title": "2H Poison Axe",
       "tags": [
         "Poison-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -149,7 +137,6 @@
       "title": "2H Poison Mace",
       "tags": [
         "Poison-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -162,7 +149,6 @@
       "title": "2H Poison Sword",
       "tags": [
         "Poison-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -176,7 +162,6 @@
       "tags": [
         "Accuracy",
         "Shadow-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
         "Two-Handed-Axes",
@@ -189,7 +174,6 @@
       "tags": [
         "Accuracy",
         "Shadow-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
         "Two-Handed-Maces",
@@ -202,7 +186,6 @@
       "tags": [
         "Accuracy",
         "Shadow-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
         "Two-Handed-Swords",
@@ -214,7 +197,6 @@
       "title": "2H Water Axe",
       "tags": [
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -227,7 +209,6 @@
       "title": "2H Water Mace",
       "tags": [
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -240,7 +221,6 @@
       "title": "2H Water Sword",
       "tags": [
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -375,7 +355,6 @@
       "title": "Air Spear",
       "tags": [
         "Air-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Spears",
@@ -387,7 +366,6 @@
       "title": "Air Staff",
       "tags": [
         "Air-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Staves",
         "Scales-With-Intelligence"
@@ -881,7 +859,6 @@
       "tags": [
         "Two-Handed",
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "CRIPPLED",
         "Spears",
@@ -1932,7 +1909,6 @@
       "slug": "chaos-spear",
       "title": "Chaos Spear",
       "tags": [
-        "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
         "Spears",
@@ -1943,7 +1919,6 @@
       "slug": "chaos-staff",
       "title": "Chaos Staff",
       "tags": [
-        "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
         "Staves",
@@ -1964,7 +1939,6 @@
       "slug": "chaos-two-handed-mace",
       "title": "Chaos Two Handed Mace",
       "tags": [
-        "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
         "Two-Handed-Maces",
@@ -2363,7 +2337,6 @@
       "title": "Crafted 2H Axe",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "Two-Handed-Axes",
@@ -2375,7 +2348,6 @@
       "title": "Crafted 2H Mace",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Two-Handed-Maces",
         "Scales-With-Strength"
@@ -2386,7 +2358,6 @@
       "title": "Crafted 2H Sword",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "Two-Handed-Swords",
@@ -2506,7 +2477,6 @@
       "title": "Crafted Spear",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Spears",
         "Scales-With-Finesse"
@@ -2664,7 +2634,6 @@
         "Piercing-Resistance",
         "Air-Resistance",
         "Physical-Armour",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "Gloves",
@@ -3067,7 +3036,6 @@
         "Constitution",
         "Physical-Damage",
         "Strength",
-        "Grants-Skill",
         "DOS2-CO",
         "DAZED",
         "Two-Handed-Maces",
@@ -3313,7 +3281,6 @@
       "title": "Earth Spear",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Spears",
@@ -3325,7 +3292,6 @@
       "title": "Earth Staff",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Staves",
         "Scales-With-Intelligence"
@@ -3546,7 +3512,6 @@
       "tags": [
         "Two-Handed",
         "Physical-Damage",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
@@ -3803,7 +3768,6 @@
         "Strength",
         "Pyrokinetic",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Axes",
@@ -3840,7 +3804,6 @@
       "title": "Fire Spear",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Spears",
@@ -3852,7 +3815,6 @@
       "title": "Fire Staff",
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Staves",
         "Scales-With-Intelligence"
@@ -4081,7 +4043,6 @@
         "Water-Resistance",
         "Telekinesis",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "Ice-Surface",
         "WET",
@@ -4177,7 +4138,6 @@
         "Wits",
         "Necromancer",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -4203,7 +4163,6 @@
         "Two-Handed",
         "Constitution",
         "Strength",
-        "Grants-Skill",
         "DOS2-CO",
         "DAZED",
         "Two-Handed-Maces",
@@ -4339,7 +4298,6 @@
         "Wits",
         "Geomancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "Two-Handed-Swords",
@@ -4487,7 +4445,6 @@
         "Memory",
         "Physical-Armour",
         "Persuasion",
-        "Grants-Skill",
         "Helmets",
         "DOS2-CO"
       ]
@@ -4497,7 +4454,6 @@
       "title": "Halloween Reaper's Scythe",
       "tags": [
         "Earth-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "FEAR",
         "Two-Handed-Axes",
@@ -4651,7 +4607,6 @@
         "Two-Handed",
         "Water-Damage",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "WET",
         "Two-Handed-Swords",
@@ -6031,7 +5986,6 @@
         "Initiative",
         "Intelligence",
         "Magic-Armour",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "Amulets",
@@ -6045,7 +5999,6 @@
         "Leadership",
         "Magic-Armour",
         "Strength",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "Amulets",
@@ -6072,7 +6025,6 @@
       "tags": [
         "Magic-Armour",
         "Dodge",
-        "Grants-Skill",
         "Loremaster",
         "Finesse",
         "DOS2-CO",
@@ -6158,7 +6110,6 @@
         "Accuracy",
         "Physical-Damage",
         "Huntsman",
-        "Grants-Skill",
         "DOS2-CO",
         "MADNESS",
         "Crossbows",
@@ -6197,7 +6148,6 @@
         "Intelligence",
         "Magic-Armour",
         "Aerotheurge",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "Amulets",
@@ -6414,7 +6364,6 @@
         "Poison-Damage",
         "Aerotheurge",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "ACID",
@@ -6505,7 +6454,6 @@
         "Strength",
         "Sneaking",
         "Dodge",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Boots",
@@ -6620,7 +6568,6 @@
       "title": "Physical Staff",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "Staves",
@@ -6871,7 +6818,6 @@
       "title": "Poison Spear",
       "tags": [
         "Poison-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -6939,7 +6885,6 @@
       "title": "Posion Staff",
       "tags": [
         "Poison-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Staves",
         "Scales-With-Intelligence"
@@ -7062,7 +7007,6 @@
         "Memory",
         "Physical-Armour",
         "Persuasion",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "FEAR",
@@ -7183,7 +7127,6 @@
       "tags": [
         "Single-Handed",
         "Physical-Damage",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
@@ -7346,7 +7289,6 @@
         "Critical-Chance",
         "Fire-Damage",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Staves",
@@ -7426,7 +7368,6 @@
         "Memory",
         "Magic-Armour",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "Rings",
         "Ingredients"
@@ -7703,7 +7644,6 @@
         "Two-Handed",
         "Physical-Damage",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "WEAK",
         "Two-Handed-Axes",
@@ -7787,7 +7727,6 @@
       "tags": [
         "Accuracy",
         "Shadow-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
         "Spears",
@@ -7800,7 +7739,6 @@
       "tags": [
         "Accuracy",
         "Shadow-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
         "Staves",
@@ -7957,7 +7895,6 @@
       "title": "Shrieker of the Shriekers",
       "tags": [
         "Necromancer",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "DAZED",
@@ -7983,7 +7920,6 @@
         "Constitution",
         "Physical-Damage",
         "Strength",
-        "Grants-Skill",
         "DOS2-CO",
         "WEAK",
         "Two-Handed-Axes",
@@ -7998,7 +7934,6 @@
         "Single-Handed",
         "Physical-Damage",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "One-Handed-Swords",
@@ -8248,7 +8183,6 @@
       "title": "Source Orb",
       "titlePl": "Kula Źródła",
       "tags": [
-        "Grants-Skill",
         "DOS2",
         "DOS2-CO",
         "Ingredients"
@@ -8318,7 +8252,6 @@
         "Memory",
         "Hydrosophist",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Staves",
@@ -8351,7 +8284,6 @@
         "Leadership",
         "Initiative",
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Ice-Surface",
         "WET",
@@ -8546,7 +8478,6 @@
         "Strength",
         "Necromancer",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Staves",
@@ -8616,7 +8547,6 @@
         "Physical-Armour",
         "Magic-Armour",
         "Wits",
-        "Grants-Skill",
         "DOS2-CO",
         "Amulets",
         "Ingredients"
@@ -8876,7 +8806,6 @@
         "Strength",
         "Aerotheurge",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Two-Handed-Swords",
@@ -8893,7 +8822,6 @@
         "Strength",
         "Geomancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Two-Handed-Swords",
@@ -8910,7 +8838,6 @@
         "Strength",
         "Pyrokinetic",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Swords",
@@ -8927,7 +8854,6 @@
         "Strength",
         "Geomancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -8945,7 +8871,6 @@
         "Strength",
         "Necromancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "Two-Handed-Swords",
@@ -8962,7 +8887,6 @@
         "Strength",
         "Hydrosophist",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -9007,7 +8931,6 @@
         "Persuasion",
         "Wits",
         "Aerotheurge",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -9054,7 +8977,6 @@
         "Wits",
         "Aerotheurge",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9072,7 +8994,6 @@
         "Strength",
         "Aerotheurge",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "SHOCKED",
@@ -9092,7 +9013,6 @@
         "Persuasion",
         "Aerotheurge",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "SHOCKED",
@@ -9109,7 +9029,6 @@
         "Air-Damage",
         "Air-Resistance",
         "Aerotheurge",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Staves",
@@ -9125,7 +9044,6 @@
         "Strength",
         "Aerotheurge",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "One-Handed-Swords",
@@ -9142,7 +9060,6 @@
         "Air-Damage",
         "Air-Resistance",
         "Aerotheurge",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Wands",
@@ -9161,7 +9078,6 @@
         "Strength",
         "Geomancer",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "PETRIFIED",
@@ -9181,7 +9097,6 @@
         "Persuasion",
         "Geomancer",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "PETRIFIED",
@@ -9198,7 +9113,6 @@
         "Earth-Damage",
         "Earth-Resistance",
         "Geomancer",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Staves",
@@ -9214,7 +9128,6 @@
         "Strength",
         "Geomancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "One-Handed-Swords",
@@ -9231,7 +9144,6 @@
         "Earth-Damage",
         "Earth-Resistance",
         "Geomancer",
-        "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
         "Wands",
@@ -9250,7 +9162,6 @@
         "Strength",
         "Pyrokinetic",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "BURNING",
@@ -9270,7 +9181,6 @@
         "Persuasion",
         "Pyrokinetic",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "BURNING",
@@ -9287,7 +9197,6 @@
         "Fire-Damage",
         "Fire-Resistance",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "Staves",
@@ -9303,7 +9212,6 @@
         "Strength",
         "Pyrokinetic",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BURNING",
         "One-Handed-Swords",
@@ -9320,7 +9228,6 @@
         "Fire-Damage",
         "Fire-Resistance",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
@@ -9363,7 +9270,6 @@
         "Wits",
         "Geomancer",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9395,7 +9301,6 @@
         "Persuasion",
         "Wits",
         "Geomancer",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -9458,7 +9363,6 @@
         "Wits",
         "Hydrosophist",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9490,7 +9394,6 @@
         "Persuasion",
         "Wits",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -9554,7 +9457,6 @@
         "Wits",
         "Necromancer",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9586,7 +9488,6 @@
         "Persuasion",
         "Wits",
         "Necromancer",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -9625,7 +9526,6 @@
         "Strength",
         "Huntsman",
         "Dodge",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
@@ -9644,7 +9544,6 @@
         "Persuasion",
         "Scoundrel",
         "Dodge",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "BLEEDING",
@@ -9661,7 +9560,6 @@
         "Physical-Damage",
         "Warfare",
         "Dodge",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "Staves",
@@ -9678,7 +9576,6 @@
         "Physical-Damage",
         "Warfare",
         "Dodge",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "Wands",
@@ -9697,7 +9594,6 @@
         "Strength",
         "Necromancer",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "POISONED",
@@ -9717,7 +9613,6 @@
         "Persuasion",
         "Necromancer",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Poison-Surface",
@@ -9735,7 +9630,6 @@
         "Strength",
         "Geomancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -9753,7 +9647,6 @@
         "Poison-Damage",
         "Poison-Resistance",
         "Necromancer",
-        "Grants-Skill",
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
@@ -9797,7 +9690,6 @@
         "Wits",
         "Polymorph",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9830,7 +9722,6 @@
         "Strength",
         "Wits",
         "Polymorph",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -9868,7 +9759,6 @@
         "Poison-Damage",
         "Poison-Resistance",
         "Necromancer",
-        "Grants-Skill",
         "DOS2-CO",
         "POISONED",
         "Staves",
@@ -9885,7 +9775,6 @@
         "Wits",
         "Pyrokinetic",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -9942,7 +9831,6 @@
         "Persuasion",
         "Wits",
         "Pyrokinetic",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -10007,7 +9895,6 @@
         "Wits",
         "Huntsman",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -10038,7 +9925,6 @@
         "Persuasion",
         "Wits",
         "Huntsman",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Helmets"
@@ -10095,7 +9981,6 @@
         "Magic-Armour",
         "Wits",
         "Huntsman",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Rings"
@@ -10202,7 +10087,6 @@
         "Wits",
         "Scoundrel",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -10233,7 +10117,6 @@
         "Persuasion",
         "Wits",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Helmets"
@@ -10273,7 +10156,6 @@
         "Strength",
         "Necromancer",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
         "One-Handed-Swords",
@@ -10316,7 +10198,6 @@
         "Wits",
         "Summoning",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -10348,7 +10229,6 @@
         "Persuasion",
         "Wits",
         "Summoning",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -10380,7 +10260,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Two-Handed-Axes",
         "Scales-With-Strength"
@@ -10395,7 +10274,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Two-Handed-Maces",
         "Scales-With-Strength"
@@ -10410,7 +10288,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Two-Handed-Swords",
         "Scales-With-Strength"
@@ -10426,7 +10303,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "One-Handed-Axes",
         "Scales-With-Strength"
@@ -10441,7 +10317,6 @@
         "Critical-Chance",
         "Physical-Damage",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "Finesse",
         "DOS2-CO",
@@ -10459,7 +10334,6 @@
         "Critical-Chance",
         "Physical-Damage",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "Finesse",
         "DOS2-CO",
@@ -10477,7 +10351,6 @@
         "Physical-Damage",
         "Persuasion",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Daggers",
@@ -10494,7 +10367,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "One-Handed-Maces",
         "Scales-With-Strength"
@@ -10518,7 +10390,6 @@
         "Strength",
         "Hydrosophist",
         "Warfare",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Two-Handed-Axes",
@@ -10542,7 +10413,6 @@
         "Physical-Damage",
         "Strength",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Spears",
@@ -10559,7 +10429,6 @@
         "Physical-Damage",
         "Strength",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "One-Handed-Swords",
         "Scales-With-Strength"
@@ -10599,7 +10468,6 @@
         "Wits",
         "Warfare",
         "Dodge",
-        "Grants-Skill",
         "Thievery",
         "DOS2-CO",
         "Amulets"
@@ -10632,7 +10500,6 @@
         "Strength",
         "Wits",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets"
       ]
@@ -10673,7 +10540,6 @@
         "Strength",
         "Hydrosophist",
         "Huntsman",
-        "Grants-Skill",
         "Loremaster",
         "DOS2-CO",
         "WET",
@@ -10693,7 +10559,6 @@
         "Persuasion",
         "Hydrosophist",
         "Scoundrel",
-        "Grants-Skill",
         "Finesse",
         "DOS2-CO",
         "Water-Surface",
@@ -10711,7 +10576,6 @@
         "Water-Damage",
         "Water-Resistance",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "WET",
         "Staves",
@@ -10727,7 +10591,6 @@
         "Strength",
         "Hydrosophist",
         "Warfare",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -10745,7 +10608,6 @@
         "Water-Damage",
         "Water-Resistance",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -11094,7 +10956,6 @@
       "title": "Water Spear",
       "tags": [
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Water-Surface",
         "WET",
@@ -11107,7 +10968,6 @@
       "title": "Water Staff",
       "tags": [
         "Water-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "Staves",
         "Scales-With-Intelligence"
@@ -11266,7 +11126,6 @@
         "Critical-Chance",
         "Air-Damage",
         "Aerotheurge",
-        "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
         "Staves",
@@ -11296,7 +11155,6 @@
         "Physical-Armour",
         "Magic-Armour",
         "Dodge",
-        "Grants-Skill",
         "Loremaster",
         "Finesse",
         "DOS2-CO",
@@ -11334,7 +11192,6 @@
         "Water-Damage",
         "Water-Resistance",
         "Hydrosophist",
-        "Grants-Skill",
         "DOS2-CO",
         "WET",
         "Staves",
@@ -11347,7 +11204,6 @@
       "title": "Witch Broom",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS2-CO",
         "FEAR",
         "Staves",
@@ -11365,7 +11221,6 @@
         "Magic-Armour",
         "Wits",
         "Polymorph",
-        "Grants-Skill",
         "DOS2-CO",
         "Helmets",
         "Ingredients"
@@ -11490,7 +11345,6 @@
         "Strength",
         "Polymorph",
         "Dodge",
-        "Grants-Skill",
         "DOS2-CO",
         "Chest-Armour",
         "Ingredients"

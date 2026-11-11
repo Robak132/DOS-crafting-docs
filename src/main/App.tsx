@@ -363,7 +363,7 @@ export function App() {
     if (!catalog) return undefined
     const items = [
       ...catalog.recipes.flatMap((row) => [...row.obtainableItems(), ...row.ingredients]),
-      ...(catalog.upgrades ?? []).flatMap((upgrade) => upgrade.ingredients),
+      ...(catalog.upgrades ?? []).flatMap((upgrade) => [upgrade.item(), ...upgrade.ingredients]),
     ]
     return new SuggestionIndex(items, catalog.groups)
   }, [catalog])
@@ -575,8 +575,6 @@ export function App() {
                 showRequirements={game === "dos1"}
                 itemRoles={manifest.data?.itemRoles?.[game]}
                 descriptions={descriptions.data ?? undefined}
-                upgrades={catalog.upgrades}
-                groups={catalog.groups}
                 pageSize={40}
               />
             )}

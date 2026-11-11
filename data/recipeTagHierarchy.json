@@ -729,11 +729,6 @@
           "tag": "Crafting",
           "label": "Wytwarzanie",
           "children": []
-        },
-        {
-          "tag": "Grants-Skill",
-          "label": "Zapewnia umiejętność",
-          "children": []
         }
       ]
     },

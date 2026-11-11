@@ -1,5 +1,6 @@
 import { Item, type ItemData } from "./item"
 import type { ItemGroups } from "./itemGroup"
+import { Recipe } from "./recipe"
 import { Requirements } from "./requirements"
 import type { SearchQuery } from "./searchQuery"
 import { tagHierarchy } from "./tagHierarchy"
@@ -20,7 +21,10 @@ export type UpgradeData = {
   source: string
 }
 
-/** A modification of existing items (an effect added to a weapon, say), never an item of its own. */
+/**
+ * A modification of existing items (an effect added to a weapon, say). The catalog lists it as an artificial
+ * item of its own ({@link item}), made by a recipe from the target and the ingredients ({@link recipe}).
+ */
 export class Upgrade {
   declare id: string
   declare effect: { en: string; pl?: string }
@@ -56,6 +60,32 @@ export class Upgrade {
     // Many effects already name themselves a boost ("Wzmocnienie: pancerz (+1 Siła)", "Boosted Armor").
     if (/^(wzmocni|boost)/i.test(effect)) return effect
     return `${lang === "pl" ? "Wzmocnienie" : "Boost"}: ${effect}`
+  }
+
+  /** The upgrade as an item: no game item, but listed, searched and filtered like one, under "Upgrades". */
+  item(): Item {
+    return new Item({
+      name: this.title("en"),
+      namePl: this.title("pl"),
+      effect: { ...this.effect },
+      tags: [...new Set([...this.tags, "Upgrades"])],
+    })
+  }
+
+  /** The craft giving {@link item}: the item to upgrade (its resolved group when there is one) and the ingredients. */
+  recipe(): Recipe {
+    const item = this.item()
+    const target = this.targets?.length === 1 ? this.targets[0] : this.target
+    return new Recipe({
+      id: `upgrade:${this.id}`,
+      ingredients: [target, ...this.ingredients],
+      result: item,
+      tags: item.tags,
+      requirements: this.requirements,
+      notes: "",
+      remarks: this.remarks,
+      source: this.source,
+    })
   }
 
   get requirementList(): Requirements {

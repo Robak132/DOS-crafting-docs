@@ -83,7 +83,7 @@ test("an item from a random result lists the roll; groups are never items", () =
   assert.ok(render([grouped]).includes("Brak przedmiotów pasujących do filtrów."))
 })
 
-test("a card lists the upgrades the item is an ingredient of, named as boosts, but not those it can take", () => {
+test("an upgrade is an item of its own, made from its target and ingredients", () => {
   const boost = new Upgrade({
     id: "air",
     effect: { en: "Air Resistance", pl: "Odporność na powietrze" },
@@ -96,8 +96,12 @@ test("a card lists the upgrades the item is an ingredient of, named as boosts, b
     remarks: "",
     source: "",
   })
-  assert.ok(!render([first], { upgrades: [boost] }).includes("Możliwe ulepszenia"))
-  const herb = render([Recipe.listing(first.ingredients[0])], { upgrades: [boost] })
-  assert.ok(herb.includes("Składnik ulepszeń"))
-  assert.ok(herb.includes("Wzmocnienie: Odporność na powietrze"))
+  const [row] = new ItemList([boost.recipe()]).rows()
+  assert.equal(row.item.shownName("pl"), "Wzmocnienie: Odporność na powietrze")
+  assert.deepEqual(row.tags, ["Upgrades"])
+  assert.deepEqual(
+    row.crafts[0].ingredients.map((item) => item.name),
+    ["Potion", "Herb"],
+  )
+  assert.ok(!render([Recipe.listing(first.ingredients[0])]).includes("Wzmocnienie"))
 })

@@ -73,7 +73,9 @@ export async function generateData(outputDirectory = "dist") {
       for (const item of [row.result, ...row.ingredients]) markGroup(item, groups)
     }
     for (const item of data.upgrades!.flatMap((upgrade) => upgrade.ingredients)) markGroup(item, groups)
-    data.stock = new ItemList(data.recipes).stock()
+    // Items only used in upgrades are ingredients too; the item an upgrade applies to is not.
+    const upgradeUses = data.upgradeRecipes().map((row) => row.with({ ingredients: row.ingredients.slice(1) }))
+    data.stock = new ItemList([...data.recipes, ...upgradeUses]).stock()
     data.itemTags = recipeStats({ ...data, recipes: data.itemRows() }, tagLocalisation[game]).tags
     writes.push(fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data)))
   }

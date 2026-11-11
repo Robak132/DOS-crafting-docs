@@ -1,9 +1,5 @@
 import type { ItemCraftRole } from "../domain/craftRoles"
 import { Item, type Lang } from "../domain/item"
-import { withKeys } from "../domain/listKeys"
-import type { ItemGroups } from "../domain/itemGroup"
-import type { Upgrade } from "../domain/upgrade"
-import { TextKey } from "../domain/textKey"
 import { effectBullets, type ItemRow } from "../domain/itemList"
 import type { Recipe } from "../domain/recipe"
 import type { TagLabels } from "../domain/tagLabels"
@@ -22,9 +18,6 @@ type Props = {
   showRequirements?: boolean
   itemRoles?: Record<string, ItemCraftRole>
   descriptions?: Record<string, ItemDescription>
-  /** The catalog's upgrades: each card lists those the item is an ingredient of. */
-  upgrades?: Upgrade[]
-  groups?: ItemGroups
   /** Render this many items first and add more on scroll. */
   pageSize?: number
 }
@@ -38,8 +31,6 @@ export function ItemCatalog({
   showRequirements = false,
   itemRoles = {},
   descriptions = {},
-  upgrades = [],
-  groups,
   pageSize,
 }: Readonly<Props>) {
   const shown = useIncremental(rows, pageSize)
@@ -58,9 +49,6 @@ export function ItemCatalog({
           lang={lang}
           showRequirements={showRequirements}
           description={itemDescriptionText(descriptions[row.item.resourceKey], lang)}
-          using={upgrades.filter((upgrade) =>
-            upgrade.uses(row.item.slug, TextKey.names(row.item.name, row.item.namePl), groups),
-          )}
           chip={chip}
         />
       ))}
@@ -82,11 +70,10 @@ type CardProps = {
   lang: Lang
   showRequirements: boolean
   description: string
-  using: Upgrade[]
   chip: (item: Item, ingredient?: boolean) => preact.JSX.Element
 }
 
-function ItemCard({ row, labels, catalogSlug, lang, showRequirements, description, using, chip }: Readonly<CardProps>) {
+function ItemCard({ row, labels, catalogSlug, lang, showRequirements, description, chip }: Readonly<CardProps>) {
   const { item, effects, tags, crafts, rolls } = row
   const game = gameForSlug(catalogSlug) ?? "dos1"
   const name = item.shownName(lang)
@@ -167,14 +154,6 @@ function ItemCard({ row, labels, catalogSlug, lang, showRequirements, descriptio
           </ul>
         </section>
       )}
-      {using.length > 0 && (
-        <UpgradeSection
-          title="Składnik ulepszeń"
-          upgrades={using}
-
-          {...{ item, lang, showRequirements, chip }}
-        />
-      )}
       {crafts.length === 0 && rolls.length === 0 && <p class="item-card-note">Nie da się go wytworzyć.</p>}
     </article>
   )
@@ -231,79 +210,5 @@ function RecipeLine({
       {recipe.transformsIngredient !== undefined && recipe.notes.trim() && <p class="recipe-remarks">{recipe.notes}</p>}
       {remarks && <p class="recipe-remarks">{remarks}</p>}
     </li>
-  )
-}
-
-type UpgradeSectionProps = {
-  title: string
-  upgrades: Upgrade[]
-  item: Item
-  lang: Lang
-  showRequirements: boolean
-  chip: (item: Item, ingredient?: boolean) => preact.JSX.Element
-}
-
-/** The upgrades an item goes into; a long list starts folded. */
-function UpgradeSection({ title, upgrades, item, lang, showRequirements, chip }: Readonly<UpgradeSectionProps>) {
-  const list = (
-    <ul class="item-card-recipes">
-      {withKeys(upgrades, (upgrade) => upgrade.id).map(([upgradeKey, upgrade]) => {
-        const key = item.slug ?? item.name
-        // An ingredient's own chip would only repeat the card it is on.
-        const others = upgrade.ingredients.filter((entry) => (entry.slug ?? entry.name) !== key)
-        const targets = upgrade.targets?.length ? upgrade.targets : [upgrade.target]
-        return (
-          <li key={upgradeKey} class="item-card-recipe">
-            <div class="item-card-recipe-line">
-              <strong class="item-card-upgrade-effect">{upgrade.title(lang)}</strong>
-              <span class="recipe-arrow">na</span>
-              {Item.keyed(targets).flatMap(([key, target], position) => [
-                position > 0 && (
-                  <span key={`or${key}`} class="recipe-plus">
-                    /
-                  </span>
-                ),
-                <span key={key}>{chip(target)}</span>,
-              ])}
-              {others.length > 0 && <span class="recipe-arrow">z</span>}
-              {Item.keyed(others).flatMap(([key, ingredient], position) => [
-                position > 0 && (
-                  <span key={`plus${key}`} class="recipe-plus">
-                    +
-                  </span>
-                ),
-                <span key={key}>{chip(ingredient, true)}</span>,
-              ])}
-            </div>
-            {(showRequirements && upgrade.requirements.trim()) || upgrade.source.trim() ? (
-              <p class="item-card-meta">
-                {showRequirements && upgrade.requirements.trim() && (
-                  <span>Wymagania: {upgrade.requirements.trim()}</span>
-                )}
-                {upgrade.source.trim() && <span>Źródło: {upgrade.source.trim()}</span>}
-              </p>
-            ) : null}
-            {upgrade.remarks.trim() && <p class="recipe-remarks">{upgrade.remarks.trim()}</p>}
-          </li>
-        )
-      })}
-    </ul>
-  )
-  if (upgrades.length <= 3)
-    return (
-      <section class="item-card-section">
-        <h3>{title}</h3>
-        {list}
-      </section>
-    )
-  return (
-    <details class="item-card-section item-card-fold">
-      <summary>
-        <h3>
-          {title} ({upgrades.length})
-        </h3>
-      </summary>
-      {list}
-    </details>
   )
 }

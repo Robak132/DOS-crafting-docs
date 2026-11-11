@@ -903,7 +903,6 @@
       "title": "Crafted 2H Axe",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "Two-Handed-Axes",
@@ -915,7 +914,6 @@
       "title": "Crafted 2H Sword",
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "Two-Handed-Swords",
@@ -4473,7 +4471,6 @@
         "Memory",
         "Physical-Armour",
         "Persuasion",
-        "Grants-Skill",
         "DOS1",
         "DOS2-CO",
         "FEAR",

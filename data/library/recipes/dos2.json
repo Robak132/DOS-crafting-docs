@@ -23,7 +23,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -145,7 +144,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -777,7 +775,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1180,7 +1177,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1315,7 +1311,6 @@
           "Physical-Damage",
           "Strength",
           "Necromancer",
-          "Grants-Skill",
           "Two-Handed-Axes",
           "DOS2"
         ],
@@ -1329,7 +1324,6 @@
         "Physical-Damage",
         "Strength",
         "Necromancer",
-        "Grants-Skill",
         "Two-Handed-Axes",
         "DOS2"
       ],
@@ -1427,7 +1421,6 @@
         "slug": "big-tongs-roped-together",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Two-Handed-Maces",
           "DOS2",
           "Scales-With-Strength"
@@ -1436,7 +1429,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Two-Handed-Maces",
         "DOS2",
         "Scales-With-Strength"
@@ -1483,7 +1475,6 @@
         "slug": "big-tongs-roped-together",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Two-Handed-Maces",
           "DOS2",
           "Scales-With-Strength"
@@ -1492,7 +1483,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Two-Handed-Maces",
         "DOS2",
         "Scales-With-Strength"
@@ -1525,7 +1515,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1677,7 +1666,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1732,7 +1720,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1845,7 +1832,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1905,7 +1891,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -1961,7 +1946,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -3536,7 +3520,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -3605,7 +3588,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -4376,7 +4358,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5377,7 +5358,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5493,7 +5473,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5552,7 +5531,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5607,7 +5585,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -5664,7 +5641,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -6484,7 +6460,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -6498,7 +6473,6 @@
         "namePl": "Krasnoludzka Maska Zmiennokształtnego",
         "slug": "dwarven-mask-of-the-shapeshifter",
         "tags": [
-          "Grants-Skill",
           "Helmets",
           "DOS2"
         ],
@@ -6510,7 +6484,6 @@
         "statsId": "ARM_ShapeshifterMask_Dwarf"
       },
       "tags": [
-        "Grants-Skill",
         "Helmets",
         "DOS2"
       ],
@@ -7169,7 +7142,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7183,7 +7155,6 @@
         "namePl": "Elfia Maska Zmiennokształtnego",
         "slug": "elven-mask-of-the-shapeshifter",
         "tags": [
-          "Grants-Skill",
           "Helmets",
           "DOS2"
         ],
@@ -7195,7 +7166,6 @@
         "statsId": "ARM_ShapeshifterMask_Elf"
       },
       "tags": [
-        "Grants-Skill",
         "Helmets",
         "DOS2"
       ],
@@ -7288,7 +7258,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -7527,7 +7496,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -10850,7 +10818,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -13855,7 +13822,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -13869,7 +13835,6 @@
         "namePl": "Ludzka Maska Zmiennokształtnego",
         "slug": "human-mask-of-the-shapeshifter",
         "tags": [
-          "Grants-Skill",
           "Helmets",
           "DOS2"
         ],
@@ -13881,7 +13846,6 @@
         "statsId": "ARM_ShapeshifterMask_Human"
       },
       "tags": [
-        "Grants-Skill",
         "Helmets",
         "DOS2"
       ],
@@ -14348,7 +14312,6 @@
         "slug": "improvised-staff",
         "tags": [
           "Fire-Damage",
-          "Grants-Skill",
           "Staves",
           "DOS2",
           "Scales-With-Intelligence"
@@ -14356,7 +14319,6 @@
       },
       "tags": [
         "Fire-Damage",
-        "Grants-Skill",
         "Staves",
         "DOS2",
         "Scales-With-Intelligence"
@@ -17605,7 +17567,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -17619,7 +17580,6 @@
         "namePl": "Jaszczurza Maska Zmiennokształtnego",
         "slug": "lizard-mask-of-the-shapeshifter",
         "tags": [
-          "Grants-Skill",
           "Helmets",
           "DOS2"
         ],
@@ -17631,7 +17591,6 @@
         "statsId": "ARM_ShapeshifterMask_Lizard"
       },
       "tags": [
-        "Grants-Skill",
         "Helmets",
         "DOS2"
       ],
@@ -17648,7 +17607,6 @@
           "namePl": "Ludzka Maska Zmiennokształtnego",
           "slug": "human-mask-of-the-shapeshifter",
           "tags": [
-            "Grants-Skill",
             "Helmets",
             "DOS2"
           ],
@@ -17664,7 +17622,6 @@
           "namePl": "Krasnoludzka Maska Zmiennokształtnego",
           "slug": "dwarven-mask-of-the-shapeshifter",
           "tags": [
-            "Grants-Skill",
             "Helmets",
             "DOS2"
           ],
@@ -17680,7 +17637,6 @@
           "namePl": "Elfia Maska Zmiennokształtnego",
           "slug": "elven-mask-of-the-shapeshifter",
           "tags": [
-            "Grants-Skill",
             "Helmets",
             "DOS2"
           ],
@@ -17696,7 +17652,6 @@
           "namePl": "Jaszczurza Maska Zmiennokształtnego",
           "slug": "lizard-mask-of-the-shapeshifter",
           "tags": [
-            "Grants-Skill",
             "Helmets",
             "DOS2"
           ],
@@ -17713,7 +17668,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -17727,7 +17681,6 @@
         "namePl": "Maska Zmiennokształtnego",
         "slug": "mask-of-the-shapeshifter",
         "tags": [
-          "Grants-Skill",
           "Helmets",
           "DOS2"
         ],
@@ -17738,7 +17691,6 @@
         "statsId": "ARM_ShapeshifterMask"
       },
       "tags": [
-        "Grants-Skill",
         "Helmets",
         "DOS2"
       ],
@@ -18022,7 +17974,6 @@
         "slug": "makeshift-club",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Two-Handed-Maces",
           "DOS2",
           "Scales-With-Strength"
@@ -18039,7 +17990,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Two-Handed-Maces",
         "DOS2",
         "Scales-With-Strength"
@@ -18087,7 +18037,6 @@
         "slug": "makeshift-club",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Two-Handed-Maces",
           "DOS2",
           "Scales-With-Strength"
@@ -18104,7 +18053,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Two-Handed-Maces",
         "DOS2",
         "Scales-With-Strength"
@@ -24237,7 +24185,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -25886,7 +25833,6 @@
         "slug": "primitive-harpoon",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Spears",
           "DOS2",
           "Scales-With-Finesse"
@@ -25895,7 +25841,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Spears",
         "DOS2",
         "Scales-With-Finesse"
@@ -25950,7 +25895,6 @@
         "slug": "primitive-harpoon",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Spears",
           "DOS2",
           "Scales-With-Finesse"
@@ -25959,7 +25903,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Spears",
         "DOS2",
         "Scales-With-Finesse"
@@ -26013,7 +25956,6 @@
         "slug": "primitive-harpoon",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Spears",
           "DOS2",
           "Scales-With-Finesse"
@@ -26022,7 +25964,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Spears",
         "DOS2",
         "Scales-With-Finesse"
@@ -26070,7 +26011,6 @@
         "slug": "primitive-harpoon",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Spears",
           "DOS2",
           "Scales-With-Finesse"
@@ -26079,7 +26019,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Spears",
         "DOS2",
         "Scales-With-Finesse"
@@ -26151,7 +26090,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -27835,7 +27773,6 @@
         "slug": "sharp-stone-on-a-big-branch",
         "tags": [
           "Physical-Damage",
-          "Grants-Skill",
           "Two-Handed-Axes",
           "DOS2",
           "Scales-With-Strength"
@@ -27844,7 +27781,6 @@
       },
       "tags": [
         "Physical-Damage",
-        "Grants-Skill",
         "Two-Handed-Axes",
         "DOS2",
         "Scales-With-Strength"
@@ -28679,7 +28615,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [
@@ -30865,7 +30800,6 @@
           "slug": "source-orb",
           "tags": [
             "Ingredients",
-            "Grants-Skill",
             "DOS2"
           ],
           "craftingCategories": [

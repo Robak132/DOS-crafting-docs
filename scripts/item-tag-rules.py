@@ -97,8 +97,6 @@ def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=(),scal
             if flag.endswith('Immunity') and flag[:-8] in IMMUNITIES:
                 tag,what=IMMUNITIES[flag[:-8]];add(tag,'Niewrażliwość na '+what)
         properties(fields.get('ExtraProperties',''),add,label)
-        if fields.get('Skills'):
-            add('Grants-Skill','Zapewnia umiejętność')
     for field in ['RuneEffectWeapon','RuneEffectUpperbody','RuneEffectAmulet']:
         stat=fields.get(field)
         if stat and stat not in seen:

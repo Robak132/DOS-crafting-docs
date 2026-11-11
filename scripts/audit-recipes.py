@@ -5,7 +5,6 @@ Requires the prepared .pak-work/icons resources and freshly extracted
 """
 import argparse
 from collections import Counter, defaultdict
-from functools import lru_cache
 import hashlib
 import itertools
 import json
@@ -69,12 +68,15 @@ class GameIndex:
         self.combos, self.stations = {}, {}
         self.resolved, self.fit_cache = {}, {}
 
-    @lru_cache(None)
     def fields(self, stat, chain=()):
-        if stat in chain: return {}
-        entry = self.stats.get(stat, {})
-        parent = entry.get('parent')
-        return {**(self.fields(parent, chain + (stat,)) if parent else {}), **entry.get('fields', {})}
+        """A Stats entry's fields with everything it inherits; cached per index."""
+        cache = self.__dict__.setdefault('_fields', {})
+        if (stat, chain) not in cache:
+            if stat in chain: return {}
+            entry = self.stats.get(stat, {})
+            parent = entry.get('parent')
+            cache[stat, chain] = {**(self.fields(parent, chain + (stat,)) if parent else {}), **entry.get('fields', {})}
+        return cache[stat, chain]
 
     def template(self, template, chain=()):
         parent = template.get('ParentTemplateId')
@@ -148,7 +150,8 @@ class GameIndex:
             if self.stations.get(target) in ids: return True
             return key(item['name']) == key(target)
         if kind == 'Property':
-            if key(item['name']) == key(target): return True
+            # Property groups are written as selectors named after the liquid: "#Water-Source" for Water.
+            if key(item['name']) == key(target) or key(item.get('selectorTag', '')) == key(target + 'Source'): return True
             return any(key(target) in {key(x.strip()) for x in re.split(r'[,;]', self.fields(stat).get('ComboProperties', '')) if x.strip()} for stat in ids)
         if kind == 'Category':
             if key(item.get('selectorTag', '')) == key(target): return True
@@ -163,7 +166,7 @@ class GameIndex:
         items = []
         for item in row['ingredients']:
             qty = item.get('quantity', '')
-            m = re.fullmatch(r'(?:x|×)?\s*(\d+)', qty)
+            m = re.fullmatch(r'[x×]?\s*(\d+)', qty)
             if qty and not m: return False
             items.extend([item] * (int(m[1]) if m else 1))
         if len(items) != len(slots): return False
@@ -193,8 +196,10 @@ def audit(game, rows, index, provenance):
                 else:
                     counts = [sum(quantities)] if all(q is not None for q in quantities) else []
                 raw = row['result'].get('quantity', '')
-                m = re.fullmatch(r'(?:x|×)?\s*(\d+)', raw)
-                expected = int(m[1]) if m else 1 if not raw else None
+                m = re.fullmatch(r'[x×]?\s*(\d+)', raw)
+                expected = None
+                if m: expected = int(m[1])
+                elif not raw: expected = 1
                 requirement = combo['fields'].get('Requires', '')
                 docs_req = set(re.findall(r'(Crafting|Blacksmithing)\s+(\d+)', row['requirements']))
                 game_req = set(re.findall(r'(Crafting|Blacksmithing)\s+(\d+)', requirement))
@@ -211,7 +216,7 @@ def audit(game, rows, index, provenance):
         result_candidates = [combo for combo in index.combos.values() if index.output_fit(row, combo, provenance)] if not ingredients else []
         if not ingredients and result_candidates and not unresolved: status = 'ingredients_not_confirmed'
         evidence = matches or ingredients or result_candidates[:6]
-        findings.append({'id': row['id'], 'result': row['result']['name'], 'ingredients': [dict(name=i['name'], quantity=i.get('quantity', ''), selector=i.get('selectorTag')) for i in row['ingredients']], 'status': status, 'details': sorted(set(details)), 'unresolved_names': unresolved, 'evidence': [{'id': c['id'], 'file': c['file'], 'line': c['line'], 'inputs': {k: v for k, v in c['fields'].items() if k.startswith(('Object ', 'Type ', 'CraftingStation', 'Requires', 'Code'))}, 'outputs': [{'stats': stat, 'names': sorted(index.stat_names.get(stat, [])), 'quantity': count} for stat, count in c['outputs']]} for c in evidence]})
+        findings.append({'id': row['id'], 'result': row['result']['name'], 'ingredients': [{'name': i['name'], 'quantity': i.get('quantity', ''), 'selector': i.get('selectorTag')} for i in row['ingredients']], 'status': status, 'details': sorted(set(details)), 'unresolved_names': unresolved, 'evidence': [{'id': c['id'], 'file': c['file'], 'line': c['line'], 'inputs': {k: v for k, v in c['fields'].items() if k.startswith(('Object ', 'Type ', 'CraftingStation', 'Requires', 'Code'))}, 'outputs': [{'stats': stat, 'names': sorted(index.stat_names.get(stat, [])), 'quantity': count} for stat, count in c['outputs']]} for c in evidence]})
     return {'catalog_recipes': len(rows), 'game_definitions': len(index.combos), 'summary': dict(Counter(f['status'] for f in findings)), 'findings': findings}
 
 

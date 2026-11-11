@@ -1,14 +1,18 @@
 import { ItemIcon } from "./ItemIcon"
-import type { RecipeItem, RecipeUpgrade } from "../domain/recipes"
-import { tagLabel, visibleRecipeTags } from "../domain/recipeView"
+import { Item } from "../domain/item"
+import type { TagLabels } from "../domain/tagLabels"
+import { TagSidebar } from "../domain/tagSidebar"
+import type { Upgrade } from "../domain/upgrade"
 import { games, type Game } from "../routing"
 import { ItemLabel, RecipeItemView } from "./RecipeItem"
 
 type Props = {
-  upgrades: RecipeUpgrade[]
-  labels: Record<string, string>
+  upgrades: Upgrade[]
+  labels: TagLabels
   game: Game
   showRequirements?: boolean
+  /** The "Na co" column; an item page lists only upgrades of that item, so it hides it. */
+  showTargets?: boolean
 }
 
 function Bilingual({ en, pl }: Readonly<{ en: string; pl?: string }>) {
@@ -22,7 +26,7 @@ function Bilingual({ en, pl }: Readonly<{ en: string; pl?: string }>) {
   return <span class="item-lang">{en}</span>
 }
 
-function PlainTarget({ item }: Readonly<{ item: RecipeItem }>) {
+function PlainTarget({ item }: Readonly<{ item: Item }>) {
   return (
     <span class="recipe-item">
       <ItemIcon icon={item.icon} />
@@ -31,16 +35,22 @@ function PlainTarget({ item }: Readonly<{ item: RecipeItem }>) {
   )
 }
 
-export function UpgradeTable({ upgrades, labels, game, showRequirements = false }: Readonly<Props>) {
+export function UpgradeTable({
+  upgrades,
+  labels,
+  game,
+  showRequirements = false,
+  showTargets = true,
+}: Readonly<Props>) {
   const catalogSlug = games.find((entry) => entry.id === game)!.slug
   if (upgrades.length === 0) return <p class="recipe-empty">Brak ulepszeń pasujących do filtrów.</p>
   return (
-    <div class="recipe-table-wrap" role="region" aria-label="Lista ulepszeń przedmiotów" tabIndex={0}>
+    <section class="recipe-table-wrap" aria-label="Lista ulepszeń przedmiotów">
       <table class="recipe-table upgrade-table">
         <thead>
           <tr>
             <th scope="col">Efekt</th>
-            <th scope="col">Na co</th>
+            {showTargets && <th scope="col">Na co</th>}
             <th scope="col">Składniki</th>
             {showRequirements && <th scope="col">Wymagania</th>}
             <th scope="col">Tagi</th>
@@ -52,27 +62,29 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
             <tr key={`${upgrade.id}#${index}`} class="recipe-group-start recipe-group-end">
               <td class="recipe-cell result">
                 <strong>
-                  <Bilingual en={upgrade.effect.en} pl={upgrade.effect.pl} />
+                  <Bilingual en={upgrade.title("en")} pl={upgrade.title("pl")} />
                 </strong>
                 {upgrade.notes.trim() && <p class="recipe-remarks">{upgrade.notes}</p>}
               </td>
-              <td class="recipe-cell ingredients">
-                {upgrade.targets?.length ? (
-                  <ul class="recipe-ingredients">
-                    {upgrade.targets.map((target, position) => (
-                      <li key={position}>
-                        <RecipeItemView item={target} catalogSlug={catalogSlug} />
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <PlainTarget item={upgrade.target} />
-                )}
-              </td>
+              {showTargets && (
+                <td class="recipe-cell ingredients targets">
+                  {upgrade.targets?.length ? (
+                    <ul class="recipe-ingredients">
+                      {Item.keyed(upgrade.targets).map(([key, target]) => (
+                        <li key={key}>
+                          <RecipeItemView item={target} catalogSlug={catalogSlug} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <PlainTarget item={upgrade.target} />
+                  )}
+                </td>
+              )}
               <td class="recipe-cell ingredients">
                 <ul class="recipe-ingredients">
-                  {upgrade.ingredients.map((item, position) => (
-                    <li key={position}>
+                  {Item.keyed(upgrade.ingredients).map(([key, item]) => (
+                    <li key={key}>
                       <RecipeItemView item={item} catalogSlug={catalogSlug} ingredient />
                     </li>
                   ))}
@@ -84,9 +96,9 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
               )}
               <td class="recipe-cell tags">
                 <div class="recipe-row-tags">
-                  {visibleRecipeTags(upgrade.tags).map((tag) => (
+                  {TagSidebar.visibleTags(upgrade.tags).map((tag) => (
                     <button key={tag} type="button" class="recipe-search-tag" data-filter-tag={tag}>
-                      {tagLabel(tag, labels)}
+                      {labels.label(tag)}
                     </button>
                   ))}
                 </div>
@@ -96,6 +108,6 @@ export function UpgradeTable({ upgrades, labels, game, showRequirements = false 
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   )
 }

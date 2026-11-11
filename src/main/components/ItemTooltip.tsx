@@ -1,28 +1,48 @@
 import type { RefObject } from "preact"
-import type { RecipeItem, RecipeRow } from "../domain/recipes"
-import { formatItemQuantity } from "../domain/recipeQuantity"
-import { uniqueItemEffects } from "../domain/recipeView"
-import { recipeResults } from "../domain/recipeResults"
+import { Item, type Lang } from "../domain/item"
+import { effectBullets, ItemRecipes } from "../domain/itemList"
+import type { Recipe } from "../domain/recipe"
 import { ItemIcon } from "./ItemIcon"
-import { displayItemName } from "../domain/itemName"
 
 export type ItemDescription = { en: string; pl?: string }
 
-export function itemDescriptionText(description: ItemDescription | undefined, lang: "pl" | "en"): string {
+export function itemDescriptionText(description: ItemDescription | undefined, lang: Lang): string {
   return (lang === "pl" && description?.pl?.trim()) || description?.en?.trim() || ""
 }
 
-export function tooltipItemName(item: RecipeItem, lang: "pl" | "en"): string {
-  const name = displayItemName(item.name.trim())
-  const polish = item.namePl ? displayItemName(item.namePl.trim()) : undefined
+export function tooltipItemName(item: Item, lang: Lang): string {
+  const name = Item.displayName(item.name.trim())
+  const polish = item.namePl ? Item.displayName(item.namePl.trim()) : undefined
   return lang === "pl" && polish && polish.toLocaleLowerCase() !== name.toLocaleLowerCase()
     ? `${polish} (${name})`
     : name
 }
 
-function ingredientName(item: RecipeItem, lang: "pl" | "en"): string {
-  const quantity = formatItemQuantity(item.quantity)
-  return `${quantity ? quantity + " " : ""}${tooltipItemName(item, lang)}`
+/** One item of a recipe as its icon and quantity; the name is on hover. An item without an icon shows its name. */
+function PreviewItem({ item, lang }: Readonly<{ item: Item; lang: Lang }>) {
+  const quantity = item.quantityLabel
+  const name = tooltipItemName(item, lang)
+  return (
+    <span class="preview-item" title={name} aria-label={quantity ? `${quantity} ${name}` : name}>
+      {item.icon ? <ItemIcon icon={item.icon} /> : <span class="preview-item-name">{item.shownName(lang)}</span>}
+      {quantity && <span class="preview-item-qty">{quantity}</span>}
+    </span>
+  )
+}
+
+function PreviewItems({ items, lang }: Readonly<{ items: Item[]; lang: Lang }>) {
+  return (
+    <>
+      {Item.keyed(items).flatMap(([key, item], index) => [
+        index > 0 && (
+          <span key={`plus${key}`} class="preview-plus">
+            +
+          </span>
+        ),
+        <PreviewItem key={key} item={item} lang={lang} />,
+      ])}
+    </>
+  )
 }
 
 export function ItemTooltip({
@@ -32,13 +52,13 @@ export function ItemTooltip({
   description,
   elementRef,
 }: Readonly<{
-  item: RecipeItem
-  lang: "pl" | "en"
-  recipes: RecipeRow[]
+  item: Item
+  lang: Lang
+  recipes: Recipe[]
   description?: ItemDescription
   elementRef?: RefObject<HTMLDivElement | null>
 }>) {
-  const effects = uniqueItemEffects(recipes, lang, item)
+  const effects = effectBullets(new ItemRecipes(recipes, item).effects(lang))
   const descriptionText = itemDescriptionText(description, lang)
   return (
     <div ref={elementRef} class="item-preview" role="tooltip">
@@ -55,7 +75,11 @@ export function ItemTooltip({
       {effects.length > 0 && (
         <section>
           <h3>Efekt</h3>
-          <p>{effects.join(" · ")}</p>
+          <ul class="preview-effects">
+            {effects.map((effect) => (
+              <li key={effect}>{effect}</li>
+            ))}
+          </ul>
         </section>
       )}
       {recipes.length > 0 && (
@@ -64,12 +88,12 @@ export function ItemTooltip({
           <ul class="preview-recipes">
             {recipes.map((recipe, index) => (
               <li key={`${recipe.id}#${index}`}>
-                <span>{recipe.ingredients.map((ingredient) => ingredientName(ingredient, lang)).join(" + ")}</span>
-                <span class="preview-recipe-result">
-                  →{" "}
-                  {recipeResults(recipe)
-                    .map((product) => ingredientName(product, lang))
-                    .join(" + ")}
+                <span class="preview-recipe-items">
+                  <PreviewItems items={recipe.ingredients} lang={lang} />
+                </span>
+                <span class="preview-recipe-items preview-recipe-result">
+                  <span class="preview-arrow">→</span>
+                  <PreviewItems items={recipe.results()} lang={lang} />
                 </span>
                 {recipe.requirements.trim() && <small>Wymagania: {recipe.requirements}</small>}
               </li>

@@ -1,22 +1,14 @@
 import type { ComponentChild } from "preact"
 import { ItemIcon } from "./ItemIcon"
-import { tooltipItemKey } from "../domain/tooltipIdentity"
-import type { RecipeItem } from "../domain/recipes"
-import { formatItemQuantity } from "../domain/recipeQuantity"
-import { displayItemName } from "../domain/itemName"
-import { groupSearchToken } from "../domain/groupSearch"
+import { CraftRoles, type ItemCraftRole } from "../domain/craftRoles"
+import { GroupQuery } from "../domain/groupSearch"
+import { Item } from "../domain/item"
 import { gameForSlug, itemHref, pageHref } from "../routing"
-import { itemCraftRoleClass, type ItemCraftRole } from "../domain/recipeView"
-
-function itemAltTitle(item: RecipeItem): string | undefined {
-  if (item.namePl && item.namePl !== item.name) return displayItemName(item.namePl)
-  return undefined
-}
 
 /** English name with the Polish one below; group names ("#Water-Source") read as plain words. */
-export function ItemLabel({ item }: Readonly<{ item: RecipeItem }>) {
-  const name = displayItemName(item.name)
-  const namePl = item.namePl ? displayItemName(item.namePl) : undefined
+export function ItemLabel({ item }: Readonly<{ item: Item }>) {
+  const name = Item.displayName(item.name)
+  const namePl = item.namePl ? Item.displayName(item.namePl) : undefined
   if (namePl && namePl !== name) {
     return (
       <span class="item-lang">
@@ -29,7 +21,7 @@ export function ItemLabel({ item }: Readonly<{ item: RecipeItem }>) {
 }
 
 type Props = {
-  item: RecipeItem
+  item: Item
   catalogSlug: string
   ingredient?: boolean
   searchable?: boolean
@@ -44,8 +36,8 @@ export function RecipeItemView({
   searchable = false,
   itemRoles = {},
 }: Readonly<Props>) {
-  const withQuantity = (node: ComponentChild, item: RecipeItem) => {
-    const qty = formatItemQuantity(item.quantity)
+  const withQuantity = (node: ComponentChild, item: Item) => {
+    const qty = item.quantityLabel
     if (!qty) return <>{node}</>
     return (
       <span class="recipe-item-wrap">
@@ -54,16 +46,18 @@ export function RecipeItemView({
       </span>
     )
   }
-  const roleClass = (item: RecipeItem) => itemCraftRoleClass(item.slug ? itemRoles[item.slug] : undefined)
-  const title = itemAltTitle(item)
-  const searchText = item.name.replace(/^#/, "").replaceAll(/^<|>$/g, "")
-  const craftClass = roleClass(item)
+  const title = item.polishTitle
+  const searchText = item.name.replace(/^#/, "")
+  // Unique items are framed in their rarity colour, as in the game's inventory.
+  const craftClass = [CraftRoles.cssClass(item.slug ? itemRoles[item.slug] : undefined), item.unique && "rarity-unique"]
+    .filter(Boolean)
+    .join(" ")
   if (item.groupId) {
     return withQuantity(
       <a
         class="internal recipe-item recipe-item-group"
         data-no-popover="true"
-        href={`${pageHref(catalogSlug)}?view=items&q=${encodeURIComponent(groupSearchToken(item))}&as=result`}
+        href={`${pageHref(catalogSlug)}?view=items&q=${encodeURIComponent(GroupQuery.token(item))}&as=result`}
       >
         <ItemLabel item={item} />
         <span class="group-count">{item.groupSize}</span>
@@ -102,7 +96,7 @@ export function RecipeItemView({
       <a
         class={["internal", "recipe-item", craftClass].filter(Boolean).join(" ")}
         data-slug={item.slug}
-        data-tooltip-key={tooltipItemKey(item)}
+        data-tooltip-key={item.tooltipKey}
         href={itemHref(gameForSlug(catalogSlug) ?? "dos1", item.slug)}
         title={title}
       >
@@ -118,7 +112,7 @@ export function RecipeItemView({
         type="button"
         class={["recipe-item", "recipe-ingredient-tag", craftClass].filter(Boolean).join(" ")}
         data-search-text={item.name}
-        data-tooltip-key={tooltipItemKey(item)}
+        data-tooltip-key={item.tooltipKey}
         title={title}
       >
         <ItemIcon icon={item.icon} />
@@ -145,7 +139,7 @@ export function RecipeItemView({
     <span
       class={["recipe-item", craftClass].filter(Boolean).join(" ")}
       title={title}
-      data-tooltip-key={tooltipItemKey(item)}
+      data-tooltip-key={item.tooltipKey}
     >
       <ItemIcon icon={item.icon} />
       <ItemLabel item={item} />

@@ -26,14 +26,14 @@ test("tag labels use game-localized terminology and preserve game boundaries", (
 })
 
 test("effect notes use the active game's official vocabulary", async () => {
-  const { formatEffectNote } = await import("../../main/domain/recipeView")
+  const { EffectNote } = await import("../../main/domain/effectNote")
   assert.equal(
-    formatEffectNote("+1 Loremaster; +1 Lucky Charm; +1 Finesse", {
+    new EffectNote("+1 Loremaster; +1 Lucky Charm; +1 Finesse", {
       loremaster: "Polihistor",
       "lucky charm": "Fart",
       finesse: "Zręczność",
-    }),
+    }).polish(),
     "+1 Polihistor; +1 Fart; +1 Zręczność",
   )
-  assert.equal(formatEffectNote("+1 Speed", { speed: "Prędkość" }), "+1 Prędkość")
+  assert.equal(new EffectNote("+1 Speed", { speed: "Prędkość" }).polish(), "+1 Prędkość")
 })

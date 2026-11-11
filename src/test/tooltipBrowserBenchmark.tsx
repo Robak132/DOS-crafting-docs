@@ -1,7 +1,7 @@
 /** Browser regression fixture: open /src/test/tooltip-benchmark.html with npm run dev. */
 import { options, render } from "preact"
 import { App } from "../main/App"
-import { ItemTable } from "../main/components/ItemTable"
+import { ItemCatalog } from "../main/components/ItemCatalog"
 import { RecipeTable } from "../main/components/RecipeTable"
 import { TooltipLayer } from "../main/components/TooltipLayer"
 import { requestJson } from "../main/api"
@@ -14,12 +14,25 @@ options.diffed = (vnode) => {
   previous?.(vnode)
   const type: unknown = vnode.type
   if (type === App) counts.app++
-  if (type === ItemTable || type === RecipeTable) counts.tables++
+  if (type === ItemCatalog || type === RecipeTable) counts.tables++
   if (type === TooltipLayer) counts.layer++
 }
-window.history.replaceState({}, "", import.meta.env.BASE_URL + "dos2-crafting-overhaul?view=recipes")
+window.history.replaceState({}, "", import.meta.env.BASE_URL + "dos2-crafting-overhaul?view=items")
 render(<App />, document.getElementById("app")!)
 const frame = () => new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+/** Waits frame by frame until `done` holds or the frames run out; each frame depends on the last. */
+const waitFor = async (done: () => boolean, frames: number): Promise<void> => {
+  if (done() || frames <= 0) return
+  await frame()
+  return waitFor(done, frames - 1)
+}
+/** Runs `step` once per frame, `count` times in order. */
+const eachFrame = async (count: number, step: (index: number) => void, index = 0): Promise<void> => {
+  if (index >= count) return
+  step(index)
+  await frame()
+  return eachFrame(count, step, index + 1)
+}
 const result = document.getElementById("benchmark-result")!
 const button = document.getElementById("run-benchmark") as HTMLButtonElement
 button.addEventListener("click", async () => {
@@ -31,8 +44,7 @@ button.addEventListener("click", async () => {
       requestJson("catalog-dos2-overhaul.json"),
       requestJson("descriptions-dos2-overhaul.json"),
     ])
-    for (let attempts = 0; attempts < 120 && !document.querySelector("a.recipe-item[data-slug]"); attempts++)
-      await frame()
+    await waitFor(() => !!document.querySelector("a.recipe-item[data-slug]"), 120)
     await frame()
     await frame()
     const links = [...document.querySelectorAll<HTMLAnchorElement>("a.recipe-item[data-slug]")]
@@ -52,22 +64,23 @@ button.addEventListener("click", async () => {
       )
     const started = performance.now()
     move(0)
-    for (let attempts = 0; attempts < 30 && !document.querySelector(".item-preview"); attempts++) await frame()
+    await waitFor(() => !!document.querySelector(".item-preview"), 30)
     const openingMs = performance.now() - started
     const tooltip = document.querySelector<HTMLElement>(".item-preview")
-    if (!tooltip || tooltip.style.visibility !== "visible") throw new Error("Tooltip did not become visible")
+    if (tooltip?.style.visibility !== "visible") throw new Error("Tooltip did not become visible")
     await frame()
     await frame()
     counts.app = counts.tables = counts.layer = 0
     const samples: number[] = []
     const positions = new Set<string>()
-    for (let index = 0; index < 120; index++) {
+    await eachFrame(120, (index) => {
+      // The previous move's position is in place once its frame has run.
+      if (index > 0) positions.add(tooltip.style.transform)
       const before = performance.now()
       move(index)
       samples.push(performance.now() - before)
-      await frame()
-      positions.add(tooltip.style.transform)
-    }
+    })
+    positions.add(tooltip.style.transform)
     const pointerCounts = { ...counts }
     samples.sort((a, b) => a - b)
     if (pointerCounts.app || pointerCounts.tables || pointerCounts.layer)

@@ -121,7 +121,6 @@
   "Physical-Damage": "Obrażenia fizyczne",
   "Piercing-Damage": "Obrażenia przeszywające",
   "POISONED": "Zatrucie",
-  "Casts-Spell": "Rzuca zaklęcie",
   "DRUNK": "Upojenie",
   "KNOCKDOWN": "Powalenie",
   "DISEASED": "Choroba",
@@ -222,5 +221,8 @@
   "One-Handed-Axes": "Topory jednoręczne",
   "Two-Handed-Axes": "Topory dwuręczne",
   "One-Handed-Maces": "Buławy i młoty jednoręczne",
-  "Two-Handed-Maces": "Buławy i młoty dwuręczne"
+  "Two-Handed-Maces": "Buławy i młoty dwuręczne",
+  "Scales-With-Finesse": "Skaluje się ze Zręcznością",
+  "Scales-With-Intelligence": "Skaluje się z Inteligencją",
+  "Scales-With-Strength": "Skaluje się z Siłą"
 }

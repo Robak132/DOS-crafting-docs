@@ -51,17 +51,17 @@ export default defineConfig(({ command }) => {
       server.watcher.add(["data", "assets/item-icons"])
       let timer: ReturnType<typeof setTimeout> | undefined
       let queue = Promise.resolve()
+      const rebuild = async () => {
+        manifest = await generateData(generatedDir)
+        server.ws.send({ type: "full-reload" })
+      }
+      const logError = (error: unknown) => server.config.logger.error(String(error))
       const regenerate = (filename: string) => {
         const local = path.relative(process.cwd(), filename)
         if (!local.startsWith("data/") && !local.startsWith("assets/item-icons/")) return
         clearTimeout(timer)
         timer = setTimeout(() => {
-          queue = queue
-            .then(async () => {
-              manifest = await generateData(generatedDir)
-              server.ws.send({ type: "full-reload" })
-            })
-            .catch((error) => server.config.logger.error(String(error)))
+          queue = queue.then(rebuild).catch(logError)
         }, 150)
       }
       server.watcher.on("add", regenerate).on("change", regenerate).on("unlink", regenerate)
@@ -78,16 +78,12 @@ export default defineConfig(({ command }) => {
       // One folder per game: <catalog>.html is the catalog, <catalog>/<item>.html its item pages.
       const slugs = new Set([
         ...games.map((game) => game.slug),
-        ...manifest.pages
-          .filter((page) => page.itemPage)
-          .flatMap((page) => pageGames(page.tags).map((game) => itemPath(game, page.slug))),
+        ...manifest.pages.flatMap((page) => pageGames(page.tags).map((game) => itemPath(game, page.slug))),
       ])
       await Promise.all(games.map((game) => fs.mkdir(path.join(outDir, game.slug), { recursive: true })))
       await Promise.all(
-        [...slugs]
-          .filter((slug) => slug !== "index")
-          // GitHub Pages serves /slug from slug.html; 404.html covers every other address.
-          .map((slug) => fs.writeFile(path.join(outDir, slug + ".html"), html)),
+        // GitHub Pages serves /slug from slug.html; 404.html covers every other address.
+        [...slugs].map((slug) => fs.writeFile(path.join(outDir, slug + ".html"), html)),
       )
       await fs.writeFile(path.join(outDir, "404.html"), html)
       await fs.writeFile(path.join(outDir, ".nojekyll"), "")

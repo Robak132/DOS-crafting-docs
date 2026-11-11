@@ -421,6 +421,26 @@
           "tag": "Shadow-Resistance",
           "label": "Odporność na cień",
           "children": []
+        },
+        {
+          "tag": "Sleep-Immunity",
+          "label": "Niewrażliwość na sen",
+          "children": []
+        },
+        {
+          "tag": "Poison-Immunity",
+          "label": "Niewrażliwość na truciznę",
+          "children": []
+        },
+        {
+          "tag": "Physical-Resistance",
+          "label": "Odporność na obrażenia fizyczne",
+          "children": []
+        },
+        {
+          "tag": "Piercing-Resistance",
+          "label": "Odporność na obrażenia przeszywające",
+          "children": []
         }
       ]
     },
@@ -477,6 +497,21 @@
         {
           "tag": "Piercing-Damage",
           "label": "Obrażenia przeszywające",
+          "children": []
+        },
+        {
+          "tag": "Scales-With-Finesse",
+          "label": "Skaluje się ze Zręcznością",
+          "children": []
+        },
+        {
+          "tag": "Scales-With-Intelligence",
+          "label": "Skaluje się z Inteligencją",
+          "children": []
+        },
+        {
+          "tag": "Scales-With-Strength",
+          "label": "Skaluje się z Siłą",
           "children": []
         }
       ]
@@ -661,16 +696,6 @@
           "children": []
         },
         {
-          "tag": "Sleep-Immunity",
-          "label": "Niewrażliwość na sen",
-          "children": []
-        },
-        {
-          "tag": "Poison-Immunity",
-          "label": "Niewrażliwość na truciznę",
-          "children": []
-        },
-        {
           "tag": "Blacksmithing",
           "label": "Kowalstwo",
           "children": []
@@ -691,16 +716,6 @@
           "children": []
         },
         {
-          "tag": "Physical-Resistance",
-          "label": "Odporność na obrażenia fizyczne",
-          "children": []
-        },
-        {
-          "tag": "Piercing-Resistance",
-          "label": "Odporność na obrażenia przeszywające",
-          "children": []
-        },
-        {
           "tag": "Lockpicking",
           "label": "Otwieranie zamków",
           "children": []
@@ -708,11 +723,6 @@
         {
           "tag": "Starting-AP",
           "label": "Początkowe PA",
-          "children": []
-        },
-        {
-          "tag": "Casts-Spell",
-          "label": "Rzuca zaklęcie",
           "children": []
         },
         {

@@ -1,5 +1,8 @@
-export type Game = "dos1" | "dos2" | "dos2-overhaul"
-export type View = "items" | "recipes" | "upgrades"
+import type { Game } from "./domain/game"
+
+export type { Game }
+/** The catalog has one view: items with their recipes and upgrades. */
+export type View = "items"
 export const games: { id: Game; slug: string; label: string; title: string }[] = [
   { id: "dos1", slug: "receptury", label: "DOS1", title: "Divinity: Original Sin – Enhanced Edition" },
   { id: "dos2", slug: "DOS2", label: "DOS2", title: "Divinity: Original Sin 2 – Definitive Edition" },
@@ -61,9 +64,6 @@ export function pageGames(tags: string[]): Game[] {
 }
 export function gameForSlug(slug: string): Game | undefined {
   return games.find((game) => game.slug === slug)?.id
-}
-export function isPublicPage(page: { slug: string; itemPage: boolean; categoryPage: boolean }): boolean {
-  return !page.categoryPage && (page.itemPage || page.slug === "index" || Boolean(gameForSlug(page.slug)))
 }
 export function catalogHref(game: Game, view: View): string {
   return `${pageHref(games.find((entry) => entry.id === game)!.slug)}?view=${view}`

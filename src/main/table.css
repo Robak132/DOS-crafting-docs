@@ -46,7 +46,7 @@
     border-radius: 6px;
     font: inherit;
     font-weight: 600;
-    color: var(--secondary);
+    color: var(--item-color, var(--secondary));
     background: var(--light);
   }
 
@@ -443,7 +443,6 @@ a.recipe-effect-chip {
 
 .recipe-table th {
   text-transform: uppercase;
-  font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: var(--gray);
   background: color-mix(in srgb, var(--light) 80%, var(--lightgray));
@@ -453,6 +452,7 @@ a.recipe-effect-chip {
 .recipe-table th {
   padding: 0.55rem 0.9rem;
   vertical-align: middle;
+  font-size: 0.85rem;
 }
 
 .recipe-group-inner td {
@@ -470,11 +470,6 @@ a.recipe-effect-chip {
 
 .recipe-table td {
   overflow-wrap: anywhere;
-}
-
-.recipe-table th,
-.recipe-table td {
-  font-size: 0.85rem;
 }
 
 .recipe-col.result {
@@ -524,7 +519,7 @@ a.recipe-effect-chip {
     border-radius: 6px;
     font: inherit;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--item-color, var(--secondary));
     background: var(--light);
   }
 }
@@ -581,12 +576,21 @@ a.recipe-effect-chip {
   line-height: 1.5;
 }
 
+/* Group and plain items share one box: same height, font and spacing, only the border colour differs. */
 .recipe-table .recipe-item.recipe-item-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
   border: 1px solid #b98ed8;
   background: color-mix(in srgb, #b98ed8 12%, var(--light));
   box-shadow: 0 0 0 1px color-mix(in srgb, #b98ed8 25%, transparent);
 }
 .group-count {
+  /* A count is one number: the chip's anywhere-wrapping must not split "98" over two lines. */
+  flex: none;
+  white-space: nowrap;
+  overflow-wrap: normal;
   margin-inline-start: 0.4rem;
   color: #b98ed8;
   font-size: 0.75rem;
@@ -652,6 +656,34 @@ a.recipe-effect-chip {
   margin-inline-end: 0.35rem;
   color: var(--gray);
   font-weight: 500;
+}
+
+/* Upgrade targets are alternatives, not a sum: no "+", and long names wrap instead of running into the next column. */
+.upgrade-table .recipe-cell.ingredients > .recipe-ingredients {
+  min-width: 0;
+
+  > li {
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 1 auto;
+    white-space: normal;
+  }
+
+  .recipe-item,
+  .recipe-item-wrap {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+.upgrade-table .recipe-cell.targets > .recipe-ingredients > li + li::before {
+  content: none;
+}
+
+.recipe-table .recipe-item-group .group-count {
+  margin-inline-start: 0;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .recipe-items-table.no-effects {
@@ -726,5 +758,190 @@ a.recipe-effect-chip {
   .recipe-table td.meta:has(> .recipe-empty:only-child),
   .recipe-table td.tags:has(> .recipe-empty:only-child) {
     display: none;
+  }
+}
+
+/* The catalog: one card per item with everything known about it. */
+.item-catalog {
+  display: grid;
+  gap: 0.9rem;
+}
+.item-card {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  background: #1c1c1f;
+}
+.item-card-head {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+}
+.item-card-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+  color: var(--secondary);
+  text-decoration: none;
+
+  .item-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+  }
+}
+a.item-card-title:hover strong {
+  text-decoration: underline;
+}
+.item-card-names {
+  display: grid;
+  line-height: 1.3;
+
+  strong {
+    font-size: 1.1rem;
+  }
+}
+.item-card-alt {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.item-card .recipe-row-tags {
+  justify-content: flex-start;
+}
+.item-card-description {
+  margin: 0.7rem 0 0;
+  color: var(--gray);
+  line-height: 1.5;
+}
+.item-card-section {
+  margin-top: 0.85rem;
+
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+}
+.item-card-effects {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.55;
+}
+.item-card-recipes {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item-card-recipe {
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  background: var(--light);
+}
+.item-card-recipe-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+
+  .recipe-item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.45rem;
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    font: inherit;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--item-color, var(--secondary));
+    background: #202023;
+    text-decoration: none;
+  }
+  .recipe-item .item-icon {
+    width: 26px;
+    height: 26px;
+    margin-inline-end: 0.35rem;
+  }
+  .recipe-item-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .recipe-item-qty {
+    font-weight: 700;
+    color: var(--dark);
+  }
+}
+.recipe-plus,
+.recipe-arrow {
+  color: var(--gray);
+}
+.item-card-yield {
+  font-weight: 700;
+  color: var(--dark);
+}
+.item-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.82rem;
+  color: var(--gray);
+}
+.item-card-recipe .recipe-remarks {
+  margin: 0.35rem 0 0;
+}
+.item-card-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.88rem;
+  color: var(--gray);
+}
+.item-card-recipe-line .recipe-item.recipe-item-group {
+  gap: 0.4rem;
+  border-color: #b98ed8;
+  background: color-mix(in srgb, #b98ed8 12%, var(--light));
+}
+
+/* Rarity frames: the game's unique colour around unique items, their icons and chips. */
+:root {
+  --rarity-unique: #c7a758;
+}
+.item-card.rarity-unique {
+  border-color: color-mix(in srgb, var(--rarity-unique) 70%, transparent);
+}
+.item-card.rarity-unique .item-card-title .item-icon {
+  border: 2px solid var(--rarity-unique);
+  border-radius: 6px;
+}
+.recipe-item.rarity-unique,
+.recipe-cell .recipe-item.rarity-unique,
+.recipe-ingredients .recipe-item.rarity-unique,
+.item-card-recipe-line .recipe-item.rarity-unique {
+  border-color: var(--rarity-unique);
+}
+.item-card-upgrade-effect {
+  color: var(--dark);
+}
+.item-card-fold > summary {
+  cursor: pointer;
+  list-style: none;
+
+  h3 {
+    display: inline;
+  }
+  &::before {
+    content: "▸ ";
+    color: var(--gray);
+  }
+}
+.item-card-fold[open] > summary {
+  margin-bottom: 0.35rem;
+
+  &::before {
+    content: "▾ ";
   }
 }

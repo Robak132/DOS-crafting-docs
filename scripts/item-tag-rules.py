@@ -18,6 +18,7 @@ ATTRIBUTES = {
  'APRecovery':'AP-Recovery','APStart':'Starting-AP','APMaximum':'Max-AP',
  'BodyBuilding':'Bodybuilding','Willpower':'Willpower','Defense':'Defence',
 }
+SCALING={'Strength':'Skaluje się z Siłą','Finesse':'Skaluje się ze Zręcznością','Intelligence':'Skaluje się z Inteligencją'}
 # Element -> (resistance tag, damage tag)
 ELEMENTS={'Fire':('Fire-Resistance','Fire-Damage'),'Water':('Water-Resistance','Water-Damage'),'Air':('Air-Resistance','Air-Damage'),'Earth':('Earth-Resistance','Earth-Damage'),'Poison':('Poison-Resistance','Poison-Damage'),'Physical':('Physical-Resistance','Physical-Damage'),'Piercing':('Piercing-Resistance','Piercing-Damage'),'Shadow':('Shadow-Resistance','Shadow-Damage')}
 WEAPONS={'Sword':('Swords','Miecze'),'Axe':('Axes','Topory'),'Club':('Maces','Buławy i młoty'),'Mace':('Maces','Buławy i młoty'),'Dagger':('Daggers','Sztylety'),'Knife':('Daggers','Sztylety'),'Spear':('Spears','Włócznie'),'Spears':('Spears','Włócznie'),'Bow':('Bows','Łuki'),'Crossbow':('Crossbows','Kusze'),'Staff':('Staves','Kostury'),'Wand':('Wands','Różdżki')}
@@ -64,7 +65,7 @@ def armour_profile(fields):
     return 'balanced'
 
 
-def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=()):
+def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=(),scales=False):
     tags=set();labels={}
     def add(tag,name=None):
         tags.add(tag)
@@ -88,6 +89,10 @@ def effect_tags(fields,kind,lookup=lambda _: {},label=lambda _:None,seen=()):
             if active:add(resist)
         if kind == 'Weapon' and fields.get('Damage Type') in ELEMENTS:
             add(ELEMENTS[fields['Damage Type']][1])
+        # DOS2 weapons deal damage by the attribute they require.
+        attribute=(fields.get('Requirements') or '').split(' ')[0]
+        if kind == 'Weapon' and scales and attribute in SCALING:
+            add('Scales-With-'+attribute,SCALING[attribute])
         for flag in fields.get('Flags','').split(';'):
             if flag.endswith('Immunity') and flag[:-8] in IMMUNITIES:
                 tag,what=IMMUNITIES[flag[:-8]];add(tag,'Niewrażliwość na '+what)

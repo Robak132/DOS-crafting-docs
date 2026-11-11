@@ -50,6 +50,8 @@ class RecipeAuditTest(unittest.TestCase):
         self.assertTrue(game.fits({'name': '#Fish', 'selectorTag': 'Fish'}, 'Category', 'FoodFish', {}))
         self.assertFalse(game.fits({'name': '#Fish', 'selectorTag': 'Fish'}, 'Category', 'FoodVoidwokenFish', {}))
         self.assertTrue(game.fits({'name': 'Water'}, 'Property', 'Water', {}))
+        self.assertTrue(game.fits({'name': '#Water-Source', 'selectorTag': 'Water-Source'}, 'Property', 'Water', {}))
+        self.assertFalse(game.fits({'name': '#Oil-Source', 'selectorTag': 'Oil-Source'}, 'Property', 'Water', {}))
         self.assertFalse(game.fits({'name': 'A'}, 'Property', 'Water', {}))
 
     def test_quantities_add_repeated_outputs_and_detect_mismatch(self):

@@ -4,9 +4,10 @@ import fs from "node:fs/promises"
 import path from "node:path"
 import os from "node:os"
 import { loadLibrary } from "../../scripts/load-library"
-import { expandSmallGroups } from "../main/domain/itemGroups"
-import { recipeResults } from "../main/domain/recipeResults"
-import { assignDataKeys } from "../main/domain/itemIcons"
+import { Item } from "../main/domain/item"
+import { Recipe } from "../main/domain/recipe"
+import { SmallGroupExpander } from "../main/domain/smallGroupExpander"
+import { Upgrade } from "../main/domain/upgrade"
 
 async function fixture() {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-json-library-"))
@@ -29,20 +30,25 @@ async function fixture() {
     source: "Spreadsheet A1",
   }
   const writePages = async (pages: Record<string, object[]>) => {
-    for (const [game, name] of [
-      ["DOS1", "dos1"],
-      ["DOS2", "dos2"],
-      ["DOS2-CO", "dos2-co"],
-    ])
-      await fs.writeFile(path.join(directory, `pages/${name}.json`), JSON.stringify({ game, pages: pages[game] ?? [] }))
-  }
-  await writePages({ DOS2: [page] })
-  for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-    await fs.writeFile(
-      path.join(directory, "recipes", `${game}.json`),
-      JSON.stringify({ game, recipes: game === "dos2" ? [recipe] : [] }),
+    await Promise.all(
+      [
+        ["DOS1", "dos1"],
+        ["DOS2", "dos2"],
+        ["DOS2-CO", "dos2-co"],
+      ].map(([game, name]) =>
+        fs.writeFile(path.join(directory, `pages/${name}.json`), JSON.stringify({ game, pages: pages[game] ?? [] })),
+      ),
     )
   }
+  await writePages({ DOS2: [page] })
+  await Promise.all(
+    ["dos1", "dos2", "dos2-overhaul"].map((game) =>
+      fs.writeFile(
+        path.join(directory, "recipes", `${game}.json`),
+        JSON.stringify({ game, recipes: game === "dos2" ? [recipe] : [], upgrades: [], items: [] }),
+      ),
+    ),
+  )
   return { directory, page, recipe, writePages }
 }
 
@@ -50,8 +56,8 @@ test("JSON library reads structured recipes and item pages from one file per gam
   const { directory, page, recipe, writePages } = await fixture()
   try {
     const library = await loadLibrary(directory)
-    assert.deepEqual(library.pages, [{ ...page, itemPage: true, categoryPage: false }])
-    assert.deepEqual(library.sources.dos2, [recipe])
+    assert.deepEqual(library.pages, [page])
+    assert.deepEqual(library.sources.dos2, [new Recipe(recipe)])
     assert.deepEqual(library.sources["dos2-overhaul"], [])
     await writePages({ DOS2: [{ ...page, title: "Renamed" }] })
     assert.equal((await loadLibrary(directory)).pages[0].title, "Renamed")
@@ -81,7 +87,7 @@ test("a page shared by several games is listed identically in each of their file
   try {
     await writePages({ DOS1: [shared], DOS2: [shared] })
     const library = await loadLibrary(directory)
-    assert.deepEqual(library.pages, [{ ...shared, itemPage: true, categoryPage: false }])
+    assert.deepEqual(library.pages, [shared])
     await writePages({ DOS1: [shared], DOS2: [{ ...shared, titlePl: "Inny" }] })
     await assert.rejects(loadLibrary(directory), /Copies of a shared page differ/)
     await writePages({ DOS2: [shared] })
@@ -92,39 +98,37 @@ test("a page shared by several games is listed identically in each of their file
 })
 
 test("page slugs are lowercase English words joined by hyphens and never shadow app routes", async () => {
-  const { directory, page, writePages } = await fixture()
-  try {
-    for (const slug of [
-      "Skladniki/apple",
-      "Apple",
-      "apple_pie",
-      "-apple",
-      "apple-",
-      "a--b",
-      "cutting-tool>",
-      "jabłko",
-    ]) {
+  // Each slug gets its own library folder, so the checks run side by side.
+  const rejects = async (slug: string, error: RegExp) => {
+    const { directory, page, writePages } = await fixture()
+    try {
       await writePages({ DOS2: [{ ...page, slug }] })
-      await assert.rejects(loadLibrary(directory), /Invalid slug/, slug)
+      await assert.rejects(loadLibrary(directory), error, slug)
+    } finally {
+      await fs.rm(directory, { recursive: true, force: true })
     }
-    for (const slug of ["receptury", "dos2", "data", "assets"]) {
-      await writePages({ DOS2: [{ ...page, slug }] })
-      await assert.rejects(loadLibrary(directory), /reserved/, slug)
-    }
-  } finally {
-    await fs.rm(directory, { recursive: true, force: true })
   }
+  await Promise.all([
+    ...["Skladniki/apple", "Apple", "apple_pie", "-apple", "apple-", "a--b", "cutting-tool>", "jabłko"].map((slug) =>
+      rejects(slug, /Invalid slug/),
+    ),
+    ...["receptury", "dos2", "data", "assets"].map((slug) => rejects(slug, /reserved/)),
+  ])
 })
 
 test("JSON source rejects malformed recipes and wrong game files", async () => {
   const { directory, recipe } = await fixture()
   try {
     const filename = path.join(directory, "recipes/dos2.json")
-    await fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [{ ...recipe, ingredients: [] }] }))
+    await fs.writeFile(
+      filename,
+      JSON.stringify({ game: "dos2", recipes: [{ ...recipe, ingredients: [] }], upgrades: [], items: [] }),
+    )
     await assert.rejects(loadLibrary(directory), /Invalid ingredients/)
-    await fs.writeFile(filename, JSON.stringify({ game: "dos1", recipes: [recipe] }))
+    await fs.writeFile(filename, JSON.stringify({ game: "dos1", recipes: [recipe], upgrades: [], items: [] }))
     await assert.rejects(loadLibrary(directory), /Wrong game/)
-    const write = (row: object) => fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [row] }))
+    const write = (row: object) =>
+      fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [row], upgrades: [], items: [] }))
     const item = (name: string, extra = {}) => ({ name, tags: [], ...extra })
     // Random pools, random amounts and several products at once are valid...
     await write({
@@ -155,7 +159,7 @@ test("every recipe item link resolves to an item page", async () => {
   const known = new Set(library.pages.map((page) => page.slug))
   const recipeItems = Object.values(library.sources)
     .flat()
-    .flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients])
+    .flatMap((row) => [...row.results(), ...(row.result.pool ?? []), ...row.ingredients])
   const missing = (items: { slug?: string }[]) =>
     items.flatMap((item) => (item.slug && !known.has(item.slug) ? [item.slug] : []))
   assert.deepEqual(missing(recipeItems), [], "Missing recipe pages")
@@ -166,10 +170,14 @@ test("source recipes are unique and name real items, not lists or placeholders",
   const { sources } = await loadLibrary()
   for (const [game, recipes] of Object.entries(sources)) {
     // Same item identity as the generated catalog (pages on a generic Stats entry stay apart).
-    assignDataKeys(recipes.flatMap((row) => [...recipeResults(row), ...(row.result.pool ?? []), ...row.ingredients]))
-    assert.equal(expandSmallGroups(recipes, {}).length, recipes.length, `${game}: deduplicate the source JSON`)
+    Item.assignDataKeys(recipes.flatMap((row) => [...row.results(), ...(row.result.pool ?? []), ...row.ingredients]))
+    assert.equal(
+      new SmallGroupExpander({}).expand(recipes).length,
+      recipes.length,
+      `${game}: deduplicate the source JSON`,
+    )
     for (const row of recipes)
-      for (const item of recipeResults(row))
+      for (const item of row.results())
         assert.ok(!/,|\(various|\(min,|element random/i.test(item.name), `${game}: ${row.id}`)
   }
 })
@@ -190,18 +198,18 @@ test("recipe files carry upgrades separately and reject malformed ones", async (
     source: "",
   }
   try {
-    await fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [upgrade] }))
+    await fs.writeFile(filename, JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [upgrade], items: [] }))
     const library = await loadLibrary(directory)
-    assert.deepEqual(library.upgrades.dos2, [upgrade])
+    assert.deepEqual(library.upgrades.dos2, [new Upgrade(upgrade)])
     assert.deepEqual(library.upgrades.dos1, [])
     await fs.writeFile(
       filename,
-      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, targetTags: [] }] }),
+      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, targetTags: [] }], items: [] }),
     )
     await assert.rejects(loadLibrary(directory), /Invalid upgrade target: shield:air/)
     await fs.writeFile(
       filename,
-      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, effect: { en: "" } }] }),
+      JSON.stringify({ game: "dos2", recipes: [recipe], upgrades: [{ ...upgrade, effect: { en: "" } }], items: [] }),
     )
     await assert.rejects(loadLibrary(directory), /Invalid upgrade effect: shield:air/)
   } finally {

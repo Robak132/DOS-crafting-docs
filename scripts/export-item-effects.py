@@ -1,6 +1,6 @@
 """Extract missing item effects from prepared DOS1 EE / DOS2 DE / Overhaul resources.
 Run after npm run generate:data: python3 scripts/export-item-effects.py
-Writes data/itemEffects.json and reports/item-effects-audit.json. Offline only;
+Writes data/itemEffects.json, data/itemRarity.json and reports/item-effects-audit.json. Offline only;
 Steam resources are not required for the application build or GitHub Actions.
 """
 from collections import Counter, defaultdict
@@ -42,8 +42,24 @@ BONUSES = {
  'DamageBoost':('Damage','Obrażenia'), 'VitalityBoost':('Vitality','Żywotność'),
  'APRecovery':('AP recovery','Odnawianie PA'), 'APStart':('Starting AP','Początkowe PA'),
  'APMaximum':('Maximum AP','Maksymalne PA'),
+ # Fields the game names differently per edition or that only some items carry.
+ 'Luck':('Lucky Charm','Szczęście'), 'Perseverance':('Perseverance','Wytrwałość'),
+ 'PainReflection':('Retribution','Odwet'), 'Barter':('Bartering','Handel'), 'Repair':('Repair','Naprawa'),
+ 'Charisma':('Charisma','Charyzma'), 'Reflection':('Reflection','Odbicie'), 'Blocking':('Blocking','Blokowanie'),
+ 'Sight':('Sight','Wzrok'), 'SightBoost':('Sight','Wzrok'), 'HearingBoost':('Hearing','Słuch'),
+ 'DexterityBoost':('Dexterity','Zwinność'), 'SpeedBoost':('Speed','Szybkość'), 'PerceptionBoost':('Perception','Percepcja'),
+ 'LifeSteal':('Life steal','Kradzież życia'), 'MovementSpeedBoost':('Movement speed','Szybkość ruchu'),
+ 'RangeBoost':('Range','Zasięg'), 'MaxSummons':('Maximum summons','Maksymalna liczba przywołańców'),
 }
-PERCENT = {'AccuracyBoost','ChanceToHitBoost','DodgeBoost','CriticalChance','DamageBoost','VitalityBoost','ArmorBoost','MagicArmorBoost'}
+# Resistances stored under other field names: DOS1 equipment ("FireResistanceBoost") and physical subtypes.
+EXTRA_RESISTANCES = {
+ 'FireResistanceBoost':('fire','ogień'), 'WaterResistanceBoost':('water','wodę'), 'AirResistanceBoost':('air','powietrze'),
+ 'EarthResistanceBoost':('earth','ziemię'), 'PoisonResistanceBoost':('poison','truciznę'),
+ 'CrushingResistance':('crushing','obrażenia obuchowe'), 'SlashingResistance':('slashing','obrażenia sieczne'),
+}
+
+PERCENT = {'AccuracyBoost','ChanceToHitBoost','DodgeBoost','CriticalChance','DamageBoost','VitalityBoost','ArmorBoost','MagicArmorBoost','LifeSteal','MovementSpeedBoost','RangeBoost'}
+DAMAGE_TYPE = 'Damage Type'
 ELEMENTS = {'Fire':('fire','ogień'),'Water':('water','wodę'),'Air':('air','powietrze'),'Earth':('earth','ziemię'),'Poison':('poison','truciznę'),'Physical':('physical','obrażenia fizyczne'),'Piercing':('piercing','obrażenia przeszywające'),'Shadow':('shadow','cień')}
 DAMAGE_PL = {'Fire':'Obrażenia od ognia','Water':'Obrażenia od wody','Air':'Obrażenia od powietrza','Earth':'Obrażenia od ziemi','Poison':'Obrażenia od trucizny','Physical':'Obrażenia fizyczne','Piercing':'Obrażenia przeszywające','Shadow':'Obrażenia od cienia'}
 STATUSES = {
@@ -63,6 +79,12 @@ STATUSES = {
 def number(value):
     try: return float(value)
     except (ValueError, TypeError): return 0
+
+
+def effect_status(effect, matches, effects):
+    if effect:return 'exported'
+    if not matches:return 'identity_unresolved'
+    return 'ambiguous_effects' if len(effects)>1 else 'no_supported_effect'
 
 
 def render_effect(fields, kind, skill_name=lambda name: None, on_use=(), status_name=lambda name: None, skill_fields=lambda name: {}):
@@ -88,7 +110,7 @@ def render_effect(fields, kind, skill_name=lambda name: None, on_use=(), status_
     for rune_field,en_slot,pl_slot in [('RuneEffectWeapon','Weapon','Broń'),('RuneEffectUpperbody','Armour','Pancerz'),('RuneEffectAmulet','Amulet','Amulet')]:
         if not fields.get(rune_field):continue
         nested=dict(skill_fields(fields[rune_field]))
-        damage=nested.pop('Damage Type',None)
+        damage=nested.pop(DAMAGE_TYPE,None)
         for field in ['RuneEffectWeapon','RuneEffectUpperbody','RuneEffectAmulet']:nested.pop(field,None)
         nested_effect,_,nested_unknown=render_effect(nested,'Weapon' if rune_field=='RuneEffectWeapon' else 'Armor',skill_name,status_name=status_name,skill_fields=skill_fields)
         if damage in ELEMENTS and number(nested.get('DamageFromBase')):
@@ -107,6 +129,9 @@ def render_effect(fields, kind, skill_name=lambda name: None, on_use=(), status_
             field = element + 'Resistance' if kind == 'Potion' else element
             value = number(fields.get(field))
             if value:add(f'{value:+g}% {labels[0]} resistance', f'{value:+g}% odporności na {labels[1]}', field)
+        for field, labels in EXTRA_RESISTANCES.items():
+            value = number(fields.get(field))
+            if value:add(f'{value:+g}% {labels[0]} resistance', f'{value:+g}% odporności na {labels[1]}', field)
         if kind == 'Potion':
             value = number(fields.get('VitalityPercentage'))
             if value:add(f'Restores {value:g}% vitality', f'Przywraca {value:g}% żywotności', 'VitalityPercentage')
@@ -114,9 +139,9 @@ def render_effect(fields, kind, skill_name=lambda name: None, on_use=(), status_
             # values shown by the game. Do not present 400 as 400 HP of healing.
             for field,en,pl in [('Vitality','Restores vitality','Przywraca żywotność'),('Armor','Grants physical armour','Zwiększa pancerz fizyczny'),('MagicArmor','Grants magic armour','Zwiększa pancerz magiczny')]:
                 if number(fields.get(field))>0:add(en+' (amount scales with item level)',pl+'',field)
-        if kind == 'Weapon' and fields.get('Damage Type') in ELEMENTS:
-            en,pl=ELEMENTS[fields['Damage Type']]
-            add(f'Deals {en} damage (scales with item level)',DAMAGE_PL[fields['Damage Type']]+'','Damage Type')
+        if kind == 'Weapon' and fields.get(DAMAGE_TYPE) in ELEMENTS:
+            en,pl=ELEMENTS[fields[DAMAGE_TYPE]]
+            add(f'Deals {en} damage (scales with item level)',DAMAGE_PL[fields[DAMAGE_TYPE]],DAMAGE_TYPE)
         if kind == 'Armor':
             for field,en,pl in [('Armor Defense Value','Physical armour','Pancerz fizyczny'),('Magic Armor Value','Magic armour','Pancerz magiczny')]:
                 if number(fields.get(field))>0:add(en+' (scales with item level)',pl+'',field)
@@ -173,7 +198,7 @@ def main():
     tag_rules=runpy.run_path(str(ROOT/'scripts/item-tag-rules.py'))
     tag_localisation=json.loads((ROOT/'data/tagLocalisation.json').read_text(encoding='utf-8'))
     base_statuses=dict(STATUSES)
-    output={}; report={'scope':'All concrete recipe results and ingredients, including items with existing recipe effects; Stats are also used as the base for property tags. DOS1 EE / DOS2 DE + patches / DOS2 DE + Crafting Overhaul. Known groups and upgrade labels excluded. Unknown identities and unsupported effects remain unresolved; stat scaling coefficients are never shown as final HP, damage or armour values.','catalogs':{}}
+    output={}; rarity={}; report={'scope':'All concrete recipe results and ingredients, including items with existing recipe effects; Stats are also used as the base for property tags. DOS1 EE / DOS2 DE + patches / DOS2 DE + Crafting Overhaul. Known groups and upgrade labels excluded. Unknown identities and unsupported effects remain unresolved; stat scaling coefficients are never shown as final HP, damage or armour values.','catalogs':{}}
     # Pair official localized skill names by string handle; no invented translations.
     translations={}
     for game,enfile,plfile in [('dos1','.pak-work/icons/dos1/Localization/Reference/DEFAULT.xml','.pak-work/extracted/dos1-ee/polish/Localization/Polish/polish.xml'),('dos2','.pak-work/icons/dos2/localization/English/english.xml','.pak-work/extracted/polish/Localization/Polish/polish.xml')]:
@@ -204,7 +229,7 @@ def main():
         def skill_name(stat):
             fields=index.fields(stat);raw=index.strings.get(fields.get('DisplayName')) or fields.get('DisplayNameRef','').strip('|')
             if not raw or raw==fields.get('DisplayName') and '_' in raw:return None
-            name=plain(raw);return name,translations['dos1' if game=='dos1' else 'dos2'].get(name,name)
+            name=plain(raw).strip();return name,translations['dos1' if game=='dos1' else 'dos2'].get(name,name)
         data=json.loads((ROOT/'dist/data'/f'catalog-{game}.json').read_text(encoding='utf-8'))
         existing={key(row['result']['name']) for row in data['recipes'] if row.get('notes','').strip() not in ['','-']}
         items={key(i.get('statsId') or i['name']):i for row in data['recipes'] for i in [row['result'],*row['ingredients']] if not i.get('selectorTag') and not i.get('groupId') and 'Upgrades' not in i['tags']}
@@ -217,10 +242,12 @@ def main():
                     if len(evidence['outputs'])==1:
                         verified_outputs[key(finding['result'])].add(evidence['outputs'][0]['stats'])
                         verified_recipes[key(finding['result'])][finding['id']]=evidence['outputs'][0]['stats']
-        output[game]={};audit=[]
+        output[game]={};rarity[game]=[];audit=[]
         for item_key,item in sorted(items.items()):
             ev=provenance.get(game,{}).get(item_key,{})
-            ids={item['statsId']} if item.get('statsId') else {ev['stats']} if ev.get('stats') else set(index.names.get(item_key,set()))
+            if item.get('statsId'):ids={item['statsId']}
+            elif ev.get('stats'):ids={ev['stats']}
+            else:ids=set(index.names.get(item_key,set()))
             if not item.get('statsId') and not ev.get('stats') and ev.get('template') in index.templates:ids={index.template(index.templates[ev['template']]).get('Stats')} - {None,''}
             if not item.get('statsId') and not ev.get('stats') and not ev.get('template') and len(verified_outputs[item_key])==1:
                 ids=set(verified_outputs[item_key])
@@ -246,13 +273,13 @@ def main():
                         localized=tag_localisation[game].get(suffix) if suffix else None
                         if localized:
                             new_label=localized.get('pl') or localized['en']
-                            effect['pl']=re.sub(r'([+-]\d+(?:\.\d+)?%? )'+re.escape(old_label)+r'(?!\w)',lambda m:m[1]+new_label,effect['pl'])
-                tags,tag_labels=tag_rules['effect_tags'](fields,kind,index.fields,lambda status: STATUSES.get(status) or skill_name(status))
+                            effect['pl']=re.sub(r'([+-]\d+(?:\.\d+)?%? )'+re.escape(old_label)+r'(?!\w)',lambda m,label=new_label:m[1]+label,effect['pl'])
+                tags,tag_labels=tag_rules['effect_tags'](fields,kind,index.fields,lambda status: STATUSES.get(status) or skill_name(status),scales=game!='dos1')
                 for action in on_use:
                     skill=action.get('SkillID')
                     if not skill:continue
-                    field='Teaches-Skill' if action.get('ActionType')=='13' else 'Casts-Spell'
-                    tags.append(field);tag_labels[field]='Uczy umiejętności' if action.get('ActionType')=='13' else 'Rzuca zaklęcie'
+                    if action.get('ActionType')=='13':
+                        tags.append('Teaches-Skill');tag_labels['Teaches-Skill']='Uczy umiejętności'
                     schools={'Fire':'Pyrokinetic','Water':'Hydrosophist','Air':'Aerotheurge','Earth':'Geomancer','Necromancy':'Necromancer','Summoning':'Summoning','Polymorph':'Polymorph','Warrior':'Warfare','Ranger':'Huntsman','Rogue':'Scoundrel'}
                     ability=index.fields(skill).get('Ability')
                     if ability in schools:tags.append(schools[ability])
@@ -264,7 +291,9 @@ def main():
                 matches.append({'stats':stat,'type':kind,'effect':effect,'effect_tags':sorted(set(tags)),'tag_labels':tag_labels,'type_tags':tag_rules['type_tags'](fields,kind),'fields':{k:fields[k] for k in used if k in fields},'on_use':on_use,'unhandled':unknown})
             effects={json.dumps(m['effect'],sort_keys=True,ensure_ascii=False) for m in matches}
             effect=matches[0]['effect'] if len(effects)==1 else None
-            status='exported' if effect else 'identity_unresolved' if not matches else 'ambiguous_effects' if len(effects)>1 else 'no_supported_effect'
+            status=effect_status(effect,matches,effects)
+            # The game marks unique items in their Stats; the catalog frames them in the unique colour.
+            if matches and all(index.fields(m['stats']).get('Unique')=='1' for m in matches):rarity[game].append(item_key)
             if effect:output[game][item_key]=effect
             elif len(effects)>1:
                 by_stat={m['stats']:m['effect'] for m in matches}
@@ -276,6 +305,7 @@ def main():
             audit.append({'data_key':item_key,'name':item['name'],'had_recipe_effect':item_key in existing,'recipe_stats':verified_recipes[item_key],'status':status,'identities':matches})
         counts=dict(Counter(r['status'] for r in audit));report['catalogs'][game]={'total_items':len(items),'already_has_recipe_effect':len(set(items)&existing),'audited_items':len(audit),'audited_without_effect':len(audit)-len(set(items)&existing),'summary':counts,'items':audit}
         print(game,counts,flush=True)
+    (ROOT/'data/itemRarity.json').write_text(json.dumps({game:{'unique':sorted(keys)} for game,keys in rarity.items()},ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
     (ROOT/'data/itemEffects.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
     (ROOT/'reports/item-effects-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n', encoding='utf-8')
 

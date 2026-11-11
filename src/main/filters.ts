@@ -1,16 +1,8 @@
-import { isCategoryTag, isTagWithin } from "./domain/tagTree"
-import type { RecipeRow, RecipeUpgrade } from "./domain/recipes"
-import { matchesUpgradeQuery } from "./domain/upgrades"
-import {
-  type RecipeSearchScope,
-  type RecipeSort,
-  RECIPE_SORTS,
-  matchesCraftingMax,
-  matchesRecipeQuery,
-  recipeResultTags,
-  recipeUsesSelector,
-  requirementTokens,
-} from "./domain/recipeView"
+import type { Recipe, RecipeSearchScope } from "./domain/recipe"
+import { RECIPE_SORTS, type RecipeSort } from "./domain/recipeOrder"
+import { SearchQuery } from "./domain/searchQuery"
+import { tagHierarchy } from "./domain/tagHierarchy"
+import type { TagLabels } from "./domain/tagLabels"
 import { catalogHref, type Game, type View } from "./routing"
 export type Filters = {
   include: string[]
@@ -19,9 +11,7 @@ export type Filters = {
   requirementsExclude: string[]
   craftingMax: number | null
   scope: RecipeSearchScope
-  selectors: string[]
   query: string
-  group: string | null
   sort: RecipeSort
 }
 export const emptyFilters = (): Filters => ({
@@ -31,9 +21,7 @@ export const emptyFilters = (): Filters => ({
   requirementsExclude: [],
   craftingMax: null,
   scope: "all",
-  selectors: [],
   query: "",
-  group: null,
   sort: "default",
 })
 export function cycleFilter(filters: Filters, tag: string, kind: "tag" | "requirement" = "tag"): Filters {
@@ -65,9 +53,7 @@ function storedFilters(raw: unknown): Filters {
     requirementsExclude: stringList(value.requirementsExclude),
     craftingMax: validCraftingMax(value.craftingMax),
     scope: parseScope(value.scope),
-    selectors: stringList(value.selectors),
     query: typeof value.query === "string" ? value.query : "",
-    group: typeof value.group === "string" && value.group ? value.group : null,
     sort: parseSort(value.sort),
   }
 }
@@ -79,43 +65,28 @@ export function restoreFilters(game: Game, search = ""): Filters {
     /* unavailable storage */
   }
   const params = new URLSearchParams(search)
-  const fields = [
-    "view",
-    "tag",
-    "include",
-    "exclude",
-    "q",
-    "requirement",
-    "requirements",
-    "requirementsExclude",
-    "craftingMax",
-    "selector",
-    "as",
-    "group",
-    "sort",
-  ]
+  const fields = ["view", "include", "exclude", "q", "requirements", "requirementsExclude", "craftingMax", "as", "sort"]
   if (fields.some((key) => params.has(key))) {
     stored = emptyFilters()
-    stored.include = (params.get("include") ?? params.get("tag") ?? "").split(",").filter(Boolean)
+    stored.include = (params.get("include") ?? "").split(",").filter(Boolean)
     stored.exclude = (params.get("exclude") ?? "").split(",").filter(Boolean)
-    stored.requirements = (params.get("requirements") ?? params.get("requirement") ?? "").split(",").filter(Boolean)
+    stored.requirements = (params.get("requirements") ?? "").split(",").filter(Boolean)
     stored.requirementsExclude = (params.get("requirementsExclude") ?? "").split(",").filter(Boolean)
-    stored.selectors = (params.get("selector") ?? "").split(",").filter(Boolean)
     stored.query = params.get("q") ?? ""
-    stored.group = params.get("group")
     stored.scope = parseScope(params.get("as"))
     stored.craftingMax = validCraftingMax(Number(params.get("craftingMax")))
     stored.sort = parseSort(params.get("sort"))
   }
   return game === "dos1" ? stored : { ...stored, requirements: [], requirementsExclude: [], craftingMax: null }
 }
-export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Record<string, string>): RecipeRow[] {
-  const tagMatch = (tags: string[], target: string) => tags.some((tag) => isTagWithin(tag, target))
-  const categories = filters.include.filter(isCategoryTag)
-  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
+export function filterRecipes(recipes: Recipe[], filters: Filters, labels: TagLabels): Recipe[] {
+  const tagMatch = (tags: string[], target: string) => tags.some((tag) => tagHierarchy.isWithin(tag, target))
+  const categories = filters.include.filter((tag) => tagHierarchy.isCategory(tag))
+  const traits = filters.include.filter((tag) => !tagHierarchy.isCategory(tag))
+  const query = new SearchQuery(filters.query)
   return recipes.filter((recipe) => {
-    const tags = recipeResultTags(recipe)
-    const reqs = new Set(requirementTokens(recipe.requirements).map((value) => value.toLowerCase()))
+    const tags = recipe.resultTags()
+    const reqs = new Set(recipe.requirementList.tokens().map((value) => value.toLowerCase()))
     if (
       (categories.length > 0 && !categories.some((tag) => tagMatch(tags, tag))) ||
       !traits.every((tag) => tagMatch(tags, tag)) ||
@@ -125,32 +96,8 @@ export function filterRecipes(recipes: RecipeRow[], filters: Filters, labels: Re
     if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
       return false
     if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
-    if (filters.craftingMax !== null && !matchesCraftingMax(recipe.requirements, filters.craftingMax)) return false
-    if (
-      filters.scope !== "result" &&
-      filters.selectors.length &&
-      !filters.selectors.some((value) => recipeUsesSelector(recipe, value))
-    )
-      return false
-    return matchesRecipeQuery(recipe, filters.query, labels, filters.scope)
-  })
-}
-export function filterUpgrades(upgrades: RecipeUpgrade[], filters: Filters): RecipeUpgrade[] {
-  const related = (a: string, b: string) => isTagWithin(a, b) || isTagWithin(b, a)
-  const categories = filters.include.filter(isCategoryTag)
-  const traits = filters.include.filter((tag) => !isCategoryTag(tag))
-  return upgrades.filter((upgrade) => {
-    const tags = [...upgrade.targetTags, ...upgrade.tags]
-    if (categories.length && !categories.some((tag) => upgrade.targetTags.some((target) => related(target, tag))))
-      return false
-    if (!traits.every((tag) => upgrade.tags.some((own) => isTagWithin(own, tag)))) return false
-    if (filters.exclude.some((tag) => tags.some((own) => isTagWithin(own, tag)))) return false
-    const reqs = new Set(requirementTokens(upgrade.requirements).map((value) => value.toLowerCase()))
-    if (filters.requirements.length && !filters.requirements.some((value) => reqs.has(value.toLowerCase())))
-      return false
-    if (filters.requirementsExclude.some((value) => reqs.has(value.toLowerCase()))) return false
-    if (filters.craftingMax !== null && !matchesCraftingMax(upgrade.requirements, filters.craftingMax)) return false
-    return matchesUpgradeQuery(upgrade, filters.query)
+    if (filters.craftingMax !== null && !recipe.requirementList.allowCraftingLevel(filters.craftingMax)) return false
+    return recipe.matches(query, labels, filters.scope)
   })
 }
 export function filtersToSearch(filters: Filters, view: string): string {
@@ -158,10 +105,8 @@ export function filtersToSearch(filters: Filters, view: string): string {
   for (const field of ["include", "exclude", "requirements", "requirementsExclude"] as const) {
     if (filters[field].length) params.set(field, filters[field].join(","))
   }
-  if (filters.group) params.set("group", filters.group)
   if (filters.query) params.set("q", filters.query)
   if (filters.scope !== "all") params.set("as", filters.scope)
-  if (filters.selectors.length) params.set("selector", filters.selectors.join(","))
   if (filters.craftingMax !== null) params.set("craftingMax", String(filters.craftingMax))
   if (filters.sort !== "default") params.set("sort", filters.sort)
   return params.toString()

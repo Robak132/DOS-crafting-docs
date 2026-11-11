@@ -1,19 +1,21 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { buildCatalogs } from "../../main/domain/recipeCatalog"
-import { catalogItems } from "../../main/domain/recipeView"
-import type { RecipeRow, RecipeUpgrade } from "../../main/domain/recipes"
+import { CatalogBuilder } from "../../main/domain/catalogBuilder"
+import { ItemList } from "../../main/domain/itemList"
+import { Recipe } from "../../main/domain/recipe"
+import { Upgrade } from "../../main/domain/upgrade"
 
-const recipe = (name: string, category: string): RecipeRow => ({
-  id: name,
-  result: { name, slug: name, tags: [category] },
-  ingredients: [{ name: "Ingredient", tags: [] }],
-  tags: [category],
-  notes: "",
-  remarks: "",
-  requirements: "",
-  source: "",
-})
+const recipe = (name: string, category: string) =>
+  new Recipe({
+    id: name,
+    result: { name, slug: name, tags: [category] },
+    ingredients: [{ name: "Ingredient", tags: [] }],
+    tags: [category],
+    notes: "",
+    remarks: "",
+    requirements: "",
+    source: "",
+  })
 
 test("JSON Overhaul additions extend every base DOS2 recipe, item and tag without DOS1", () => {
   const sources = {
@@ -21,14 +23,14 @@ test("JSON Overhaul additions extend every base DOS2 recipe, item and tag withou
     dos2: [recipe("Base item", "Potions")],
     "dos2-overhaul": [recipe("Mod item", "Weapons")],
   }
-  const catalogs = buildCatalogs(sources, [], {})
+  const catalogs = new CatalogBuilder(sources, {}).build()
   const base = catalogs.dos2
   const combined = catalogs["dos2-overhaul"]
   assert.equal(base.recipes.length, 1)
   assert.equal(combined.recipes.length, 2)
   assert.ok(base.recipes.every((recipe) => combined.recipes.some((row) => row.id === recipe.id)))
   assert.deepEqual(
-    catalogItems(combined.recipes).map((item) => item.name),
+    new ItemList(combined.recipes).items().map((item) => item.name),
     ["Base item", "Mod item"],
   )
   for (const tag of base.tags) assert.ok(combined.tags.some((entry) => entry.tag === tag.tag))
@@ -39,7 +41,7 @@ test("JSON Overhaul additions extend every base DOS2 recipe, item and tag withou
 test("JSON recipe compilation refreshes translations and statistics without mutating sources", () => {
   const source = recipe("Spirit", "Potions")
   source.result.namePl = "Spirytus"
-  const catalogs = buildCatalogs({ dos1: [source], dos2: [source], "dos2-overhaul": [] }, [], {})
+  const catalogs = new CatalogBuilder({ dos1: [source], dos2: [source], "dos2-overhaul": [] }, {}).build()
   assert.equal(catalogs.dos1.recipes[0].result.namePl, "Spirytus")
   assert.equal(catalogs.dos2.recipes[0].result.namePl, "Duch")
   assert.equal(catalogs.dos2.tags.find((tag) => tag.tag === "Potions")?.count, 1)
@@ -47,25 +49,22 @@ test("JSON recipe compilation refreshes translations and statistics without muta
 })
 
 test("Overhaul upgrades extend the DOS2 ones and their items are localized per game", () => {
-  const upgrade = (id: string): RecipeUpgrade => ({
-    id,
-    effect: { en: "Wits" },
-    target: { name: "Shield", tags: [] },
-    targetTags: ["Shields"],
-    tags: [],
-    ingredients: [{ name: "Apple", tags: [] }],
-    requirements: "",
-    notes: "",
-    remarks: "",
-    source: "",
-  })
+  const upgrade = (id: string) =>
+    new Upgrade({
+      id,
+      effect: { en: "Wits" },
+      target: { name: "Shield", tags: [] },
+      targetTags: ["Shields"],
+      tags: [],
+      ingredients: [{ name: "Apple", tags: [] }],
+      requirements: "",
+      notes: "",
+      remarks: "",
+      source: "",
+    })
   const sources = { dos1: [], dos2: [], "dos2-overhaul": [] }
-  const catalogs = buildCatalogs(
-    sources,
-    [],
-    {},
-    { dos1: [], dos2: [upgrade("base")], "dos2-overhaul": [upgrade("mod")] },
-  )
+  const upgrades = { dos1: [], dos2: [upgrade("base")], "dos2-overhaul": [upgrade("mod")] }
+  const catalogs = new CatalogBuilder(sources, {}, upgrades).build()
   assert.deepEqual(
     catalogs["dos2-overhaul"].upgrades?.map((entry) => entry.id),
     ["base", "mod"],

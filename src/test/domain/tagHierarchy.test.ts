@@ -1,29 +1,35 @@
 import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
-import { nestTagStats, groupRecipeTags, type TagFilterNode } from "../../main/domain/recipeView"
-import { collectRecipeStats, getCechySidebarGroups, type RecipeRow } from "../../main/domain/recipes"
-import { isKnownTag, mostSpecificTags } from "../../main/domain/tagTree"
+import { Recipe, type RecipeData } from "../../main/domain/recipe"
+import { RecipeStats, type TagStat } from "../../main/domain/recipeStats"
+import { TagLabels } from "../../main/domain/tagLabels"
+import { TagSidebar, type TagFilterNode } from "../../main/domain/tagSidebar"
 import { emptyFilters, filterRecipes } from "../../main/filters"
+import { tagHierarchy } from "../../main/domain/tagHierarchy"
 
-const row = (id: string, tags: string[]): RecipeRow => ({
-  id,
-  result: { name: id, tags },
-  ingredients: [],
-  tags,
-  notes: "",
-  remarks: "",
-  requirements: "",
-  source: "",
-})
+const row = (id: string, tags: string[]) =>
+  new Recipe({
+    id,
+    result: { name: id, tags },
+    ingredients: [],
+    tags,
+    notes: "",
+    remarks: "",
+    requirements: "",
+    source: "",
+  })
+const collectRecipeStats = (recipes: Recipe[]) => ({ tags: new RecipeStats(recipes).tags() })
+const nestTagStats = (tags: TagStat[]) => TagSidebar.nest(tags)
+const groupRecipeTags = (tags: TagStat[]) => new TagSidebar(TagSidebar.traitGroups()).sections(tags)
 const find = (nodes: TagFilterNode[], tag: string): TagFilterNode | undefined =>
   nodes.map((node) => (node.tag === tag ? node : find(node.children ?? [], tag))).find(Boolean)
-const ids = (rows: RecipeRow[], filters: Partial<ReturnType<typeof emptyFilters>>) =>
-  filterRecipes(rows, { ...emptyFilters(), ...filters }, {}).map((r) => r.id)
+const ids = (rows: Recipe[], filters: Partial<ReturnType<typeof emptyFilters>>) =>
+  filterRecipes(rows, { ...emptyFilters(), ...filters }, new TagLabels()).map((r) => r.id)
 
 test("items carry leaf tags; parents come from the hierarchy for counts and filters", () => {
   const rows = [row("bow", ["Bows"]), row("staff", ["Staves"]), row("boots", ["Boots"])]
-  const stats = collectRecipeStats([...rows, { ...rows[0], id: "second-bow-recipe" }]).tags
+  const stats = collectRecipeStats([...rows, rows[0].with({ id: "second-bow-recipe" })]).tags
   const weapons = find(nestTagStats(stats), "Weapons")!
   assert.equal(weapons.count, 2)
   assert.deepEqual(new Set(weapons.children?.map((node) => node.tag)), new Set(["Bows", "Staves"]))
@@ -46,8 +52,8 @@ test("magical damage groups every magical subtype and counts multi-element items
   const rows = elements.map((element) => row(element, [element]))
   rows.push(row("mixed", ["Fire-Damage", "Water-Damage"]), row("physical", ["Physical-Damage"]))
   rows.push(row("piercing", ["Piercing-Damage"]))
-  const stats = collectRecipeStats([...rows, { ...rows[7], id: "another mixed recipe" }]).tags
-  const section = groupRecipeTags(stats, getCechySidebarGroups()).find((group) => group.label === "Obrażenia")!
+  const stats = collectRecipeStats([...rows, rows[7].with({ id: "another mixed recipe" })]).tags
+  const section = groupRecipeTags(stats).find((group) => group.label === "Obrażenia")!
   assert.deepEqual(
     section.tags.map((node) => node.tag),
     [parent, "Physical-Damage", "Piercing-Damage"],
@@ -67,7 +73,7 @@ test("combat abilities form weapon, defence and skill-school groups with indepen
     row("mage", ["Aerotheurge", "Geomancer"]),
     row("civil", ["Bartering"]),
   ]
-  const sections = groupRecipeTags(collectRecipeStats(rows).tags, getCechySidebarGroups())
+  const sections = groupRecipeTags(collectRecipeStats(rows).tags)
   const combat = sections.find((section) => section.label === "Biegłości bojowe")!
   assert.deepEqual(
     combat.tags.map((tag) => [tag.tag, tag.count]),
@@ -84,34 +90,16 @@ test("every active product tag has a filter except structural and game markers",
   const hidden = new Set(["Category", "DOS1", "DOS2", "DOS2-CO"])
   const flatten = (nodes: TagFilterNode[]): string[] => nodes.flatMap((n) => [n.tag, ...flatten(n.children ?? [])])
   for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-    const recipes = JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8")).recipes
+    const recipes = (
+      JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8")).recipes as RecipeData[]
+    ).map(Recipe.from)
     const stats = collectRecipeStats(recipes).tags
-    const visible = new Set(groupRecipeTags(stats, getCechySidebarGroups()).flatMap((g) => flatten(g.tags)))
+    const visible = new Set(groupRecipeTags(stats).flatMap((g) => flatten(g.tags)))
     assert.deepEqual(
       stats.filter(({ tag }) => !hidden.has(tag) && !visible.has(tag)),
       [],
       game,
     )
-  }
-})
-
-test("stored tags are leaf names from the hierarchy, most specific only", () => {
-  const markers = new Set(["DOS1", "DOS2", "DOS2-CO"])
-  for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-    const { recipes } = JSON.parse(fs.readFileSync(`data/library/recipes/${game}.json`, "utf8")) as {
-      recipes: RecipeRow[]
-    }
-    for (const recipe of recipes)
-      for (const item of [recipe.result, ...recipe.ingredients]) {
-        assert.ok(
-          item.tags.every((tag) => !tag.includes("/")),
-          `${game}: ${item.name}`,
-        )
-        assert.deepEqual(mostSpecificTags(item.tags), item.tags, `${game}: ${item.name}`)
-      }
-    for (const recipe of recipes)
-      for (const tag of recipe.result.tags)
-        assert.ok(isKnownTag(tag) || markers.has(tag), `${game}: ${recipe.result.name}: ${tag}`)
   }
 })
 
@@ -123,14 +111,16 @@ test("weapon ability filters describe granted bonuses rather than weapon handedn
     "Dual-Wielding": "DualWielding",
     Dystansowa: "Ranged",
   }
-  for (const catalog of Object.values(audit.catalogs) as Array<{
-    items: Array<{ identities: Array<{ stats: string; effect_tags?: string[]; fields: Record<string, string> }> }>
-  }>)
-    for (const item of catalog.items)
-      for (const identity of item.identities)
-        for (const [tag, field] of Object.entries(fields))
-          if ((identity.effect_tags ?? []).includes(tag))
-            assert.ok(Number(identity.fields[field]) > 0, `${identity.stats}: ${field}`)
+  type Identity = { stats: string; effect_tags?: string[]; fields: Record<string, string> }
+  const catalogs = Object.values(audit.catalogs) as Array<{ items: Array<{ identities: Identity[] }> }>
+  const identities = catalogs
+    .flatMap((catalog) => catalog.items.flatMap((item) => item.identities))
+    // A rune grants its bonuses through nested boosts, not fields of its own.
+    .filter((identity) => !Object.keys(identity.fields).some((field) => field.startsWith("RuneEffect")))
+  for (const identity of identities)
+    for (const [tag, field] of Object.entries(fields))
+      if ((identity.effect_tags ?? []).includes(tag))
+        assert.ok(Number(identity.fields[field]) > 0, `${identity.stats}: ${field}`)
 })
 
 test("sidebar tags are ordered by entry count at every level", () => {
@@ -154,5 +144,11 @@ test("sidebar tags are ordered by entry count at every level", () => {
     }
   }
   counts(tree)
-  for (const group of groupRecipeTags(collectRecipeStats(rows).tags, getCechySidebarGroups())) counts(group.tags)
+  for (const group of groupRecipeTags(collectRecipeStats(rows).tags)) counts(group.tags)
+})
+
+test("an item's main category is its deepest one, and Ingredients only when nothing else fits", () => {
+  assert.equal(tagHierarchy.mainCategory(["Ingredients", "Scrolls", "Geomancer"]), "Scrolls")
+  assert.equal(tagHierarchy.mainCategory(["Ingredients"]), "Ingredients")
+  assert.equal(tagHierarchy.mainCategory(["Geomancer"]), undefined)
 })

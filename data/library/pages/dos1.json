@@ -123,7 +123,6 @@
       "title": "Armour-Piercing Grenade",
       "titlePl": "Granat przeszywający",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Grenades"
@@ -662,11 +661,34 @@
       ]
     },
     {
+      "slug": "chain-lightning-scroll",
+      "title": "Chain Lightning Scroll",
+      "titlePl": "Zwój Łańcucha Piorunów",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "SHOCKED",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "chain-lightning-skillbook",
+      "title": "Chain Lightning Skillbook",
+      "titlePl": "Księga umiejętności „Łańcuch Piorunów”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "charming-arrow",
       "title": "Charming Arrow",
       "titlePl": "Strzała oczarowująca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -689,7 +711,6 @@
       "title": "Chemical Warfare Grenade",
       "titlePl": "Granat chemiczny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -765,7 +786,6 @@
       "title": "CLAWED AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -775,7 +795,6 @@
       "title": "CLAWED EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "POISONED",
         "Wands"
@@ -786,7 +805,6 @@
       "title": "CLAWED FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "BURNING",
         "Wands"
@@ -797,7 +815,6 @@
       "title": "CLAWED WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -843,7 +860,6 @@
       "title": "Cluster Grenade",
       "titlePl": "Granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -890,7 +906,8 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -901,7 +918,8 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -914,7 +932,8 @@
         "DOS2",
         "DOS2-CO",
         "Daggers",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -1213,7 +1232,6 @@
       "title": "DRACONIC AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1223,7 +1241,6 @@
       "title": "DRACONIC EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "PETRIFIED",
         "Wands"
@@ -1234,7 +1251,6 @@
       "title": "DRACONIC FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Fire-Surface",
         "BURNING",
@@ -1246,7 +1262,6 @@
       "title": "DRACONIC WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "FROZEN",
         "Wands"
@@ -1339,11 +1354,34 @@
       ]
     },
     {
+      "slug": "earthquake-scroll",
+      "title": "Earthquake Scroll",
+      "titlePl": "Zwój Trzęsienia Ziemi",
+      "tags": [
+        "Geomancer",
+        "DOS2",
+        "DOS1",
+        "KNOCKED_DOWN",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "earthquake-skillbook",
+      "title": "Earthquake Skillbook",
+      "titlePl": "Księga umiejętności „Trzęsienie Ziemi”",
+      "tags": [
+        "Geomancer",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "elven-air-wand",
       "title": "ELVEN AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1353,7 +1391,6 @@
       "title": "ELVEN EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1363,7 +1400,6 @@
       "title": "ELVEN FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1373,7 +1409,6 @@
       "title": "ELVEN WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -1499,7 +1534,6 @@
       "title": "Explosive Arrow",
       "titlePl": "Wybuchowa strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1685,7 +1719,6 @@
       "title": "Fire Arrow",
       "titlePl": "Ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1746,6 +1779,20 @@
       ]
     },
     {
+      "slug": "fireball-scroll",
+      "title": "Fireball Scroll",
+      "titlePl": "Zwój Kuli Ognia",
+      "tags": [
+        "Pyrokinetic",
+        "DOS2",
+        "DOS1",
+        "Fire-Surface",
+        "BURNING",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
       "slug": "firefly-scroll",
       "title": "Firefly Scroll",
       "tags": [
@@ -1766,7 +1813,6 @@
       "title": "Firestorm Grenade",
       "titlePl": "Granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -1809,7 +1855,6 @@
       "title": "Flashbang Grenade",
       "titlePl": "Granat błysków",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "BLIND",
@@ -1839,11 +1884,34 @@
       ]
     },
     {
+      "slug": "fortify-scroll",
+      "title": "Fortify Scroll",
+      "titlePl": "Zwój Kamiennego Pancerza",
+      "tags": [
+        "Geomancer",
+        "DOS2",
+        "DOS1",
+        "FORTIFIED",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "fortify-skillbook",
+      "title": "Fortify Skillbook",
+      "titlePl": "Księga umiejętności „Kamienny Pancerz”",
+      "tags": [
+        "Geomancer",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "freezing-arrow",
       "title": "Freezing Arrow",
       "titlePl": "Zamrażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1885,7 +1953,6 @@
       "title": "Frost Grenade",
       "titlePl": "Granat mrozu",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1923,6 +1990,7 @@
       "titlePl": "Świetlista rozgwiazda",
       "tags": [
         "DOS1",
+        "DOS2-CO",
         "Ingredients"
       ]
     },
@@ -2009,6 +2077,15 @@
       ]
     },
     {
+      "slug": "handcrafted-air-staff",
+      "title": "Handcrafted Air Staff",
+      "titlePl": "Ręcznie wykonana laska powietrza",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "handcrafted-axe",
       "title": "Handcrafted Axe",
       "tags": [
@@ -2066,6 +2143,24 @@
       ]
     },
     {
+      "slug": "handcrafted-earth-staff",
+      "title": "Handcrafted Earth Staff",
+      "titlePl": "Ręcznie wykonana laska ziemi",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
+      "slug": "handcrafted-fire-staff",
+      "title": "Handcrafted Fire Staff",
+      "titlePl": "Ręcznie wykonana laska ognia",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "handcrafted-metal-boots",
       "title": "Handcrafted Metal Boots",
       "tags": [
@@ -2117,6 +2212,15 @@
       ]
     },
     {
+      "slug": "handcrafted-water-staff",
+      "title": "Handcrafted Water Staff",
+      "titlePl": "Domowej roboty laska wody",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "headvice-scroll",
       "title": "Headvice Scroll",
       "tags": [
@@ -2138,10 +2242,18 @@
       "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Grenades"
+      ]
+    },
+    {
+      "slug": "homemade-air-staff",
+      "title": "Homemade Air Staff",
+      "titlePl": "Domowej roboty laska powietrza",
+      "tags": [
+        "DOS1",
+        "Weapons"
       ]
     },
     {
@@ -2189,6 +2301,24 @@
         "Daggers",
         "Ingredients",
         "Piercing-Damage"
+      ]
+    },
+    {
+      "slug": "homemade-earth-staff",
+      "title": "Homemade Earth Staff",
+      "titlePl": "Domowej roboty laska ziemi",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
+      "slug": "homemade-fire-staff",
+      "title": "Homemade Fire Staff",
+      "titlePl": "Domowej roboty laska ognia",
+      "tags": [
+        "DOS1",
+        "Weapons"
       ]
     },
     {
@@ -2248,6 +2378,15 @@
     {
       "slug": "homemade-two-handed-sword",
       "title": "Homemade Two Handed Sword",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
+      "slug": "homemade-water-staff",
+      "title": "Homemade Water Staff",
+      "titlePl": "Domowej roboty laska wody",
       "tags": [
         "DOS1",
         "Weapons"
@@ -2574,7 +2713,6 @@
       "title": "Knockdown Arrow",
       "titlePl": "Strzała powalająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2853,6 +2991,7 @@
       "titlePl": "Pokrywa od beczki",
       "tags": [
         "DOS1",
+        "DOS2-CO",
         "Ingredients",
         "Stations-And-Containers"
       ]
@@ -2938,7 +3077,6 @@
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3242,6 +3380,15 @@
         "Vitality",
         "DOS1",
         "Amulets"
+      ]
+    },
+    {
+      "slug": "magical-unlock-scroll",
+      "title": "Magical Unlock Scroll",
+      "titlePl": "Zwój z zaklęciem „magiczny klucz”",
+      "tags": [
+        "DOS1",
+        "Scrolls"
       ]
     },
     {
@@ -3837,7 +3984,6 @@
       "title": "Nailbomb Grenade",
       "titlePl": "Granat z gwoździami",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3908,7 +4054,6 @@
       "title": "Oil Flask",
       "titlePl": "Flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4067,7 +4212,6 @@
       "title": "Poison Arrow",
       "titlePl": "Zatruta strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4099,7 +4243,6 @@
       "title": "Poison Cloud Arrow",
       "titlePl": "Strzała trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "POISONED",
         "Arrows"
@@ -4110,7 +4253,6 @@
       "title": "Poison Cloud Grenade",
       "titlePl": "Granat trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4123,7 +4265,6 @@
       "title": "Poison Flask",
       "titlePl": "Fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4153,6 +4294,15 @@
       ]
     },
     {
+      "slug": "polished-air-staff",
+      "title": "Polished Air Staff",
+      "titlePl": "Laska powietrza wysokiej jakości",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "polished-axe",
       "title": "Polished Axe",
       "tags": [
@@ -4176,6 +4326,24 @@
         "Daggers",
         "Ingredients",
         "Piercing-Damage"
+      ]
+    },
+    {
+      "slug": "polished-earth-staff",
+      "title": "Polished Earth Staff",
+      "titlePl": "Laska ziemi wysokiej jakości",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
+      "slug": "polished-fire-staff",
+      "title": "Polished Fire Staff",
+      "titlePl": "Laska ognia wysokiej jakości",
+      "tags": [
+        "DOS1",
+        "Weapons"
       ]
     },
     {
@@ -4242,6 +4410,15 @@
       ]
     },
     {
+      "slug": "polished-water-staff",
+      "title": "Polished Water Staff",
+      "titlePl": "Laska wody wysokiej jakości",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "poorly-made-voodoo-doll",
       "title": "Poorly Made Voodoo Doll",
       "tags": [
@@ -4266,10 +4443,11 @@
       "title": "Porridge",
       "titlePl": "Owsianka",
       "tags": [
-        "Healing",
-        "Strength",
         "DOS1",
-        "Food-And-Drink"
+        "DOS2",
+        "Food-And-Drink",
+        "Healing",
+        "Strength"
       ]
     },
     {
@@ -4277,10 +4455,11 @@
       "title": "Pumpkin",
       "titlePl": "Dynia",
       "tags": [
-        "Healing",
         "DOS1",
+        "DOS2",
         "DOS2-CO",
         "Food-And-Drink",
+        "Healing",
         "Ingredients"
       ]
     },
@@ -4308,10 +4487,11 @@
       "title": "Pumpkin Soup",
       "titlePl": "Zupa z dyni",
       "tags": [
-        "Healing",
-        "Perception",
         "DOS1",
-        "Food-And-Drink"
+        "DOS2",
+        "Food-And-Drink",
+        "Healing",
+        "Perception"
       ]
     },
     {
@@ -4367,6 +4547,30 @@
         "Physical-Armour",
         "DOS1",
         "Belts"
+      ]
+    },
+    {
+      "slug": "rain-scroll",
+      "title": "Rain Scroll",
+      "titlePl": "Zwój Deszczu",
+      "tags": [
+        "Hydrosophist",
+        "DOS2",
+        "DOS1",
+        "WET",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "rain-skillbook",
+      "title": "Rain Skillbook",
+      "titlePl": "Księga umiejętności „Deszcz”",
+      "tags": [
+        "Hydrosophist",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
       ]
     },
     {
@@ -4434,6 +4638,15 @@
       "tags": [
         "DOS1",
         "Skillbooks"
+      ]
+    },
+    {
+      "slug": "resurrect-scroll",
+      "title": "Resurrect Scroll",
+      "titlePl": "Zwój z zaklęciem „wskrzeszenie”",
+      "tags": [
+        "DOS1",
+        "Scrolls"
       ]
     },
     {
@@ -4617,11 +4830,34 @@
       ]
     },
     {
+      "slug": "shocking-touch-scroll",
+      "title": "Shocking Touch Scroll",
+      "titlePl": "Zwój Porażającego Dotyku",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "SHOCKED",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "shocking-touch-skillbook",
+      "title": "Shocking Touch Skillbook",
+      "titlePl": "Księga umiejętności „Porażający Dotyk”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "silver-arrow",
       "title": "Silver Arrow",
       "titlePl": "Srebrna strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -4720,7 +4956,6 @@
       "title": "Slowdown Arrow",
       "titlePl": "Strzała spowalniająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4752,7 +4987,6 @@
       "title": "Smokescreen Arrow",
       "titlePl": "Strzała zasłony dymnej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4834,7 +5068,6 @@
       "title": "Static Cloud Arrow",
       "titlePl": "Strzała naelektryzowanej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "BLIND",
@@ -4856,7 +5089,6 @@
       "slug": "steam-cloud-arrow",
       "title": "STEAM CLOUD ARROW",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "BLIND",
         "Arrows"
@@ -4892,7 +5124,6 @@
       "title": "Stunning Arrow",
       "titlePl": "Strzała ogłuszająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -5036,6 +5267,15 @@
       ]
     },
     {
+      "slug": "superior-air-staff",
+      "title": "Superior Air Staff",
+      "titlePl": "Doskonała laska powietrza",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "superior-arbalest",
       "title": "Superior Arbalest",
       "titlePl": "Doskonały arbalest",
@@ -5070,6 +5310,24 @@
         "Daggers",
         "Ingredients",
         "Piercing-Damage"
+      ]
+    },
+    {
+      "slug": "superior-earth-staff",
+      "title": "Superior Earth Staff",
+      "titlePl": "Doskonała laska ziemi",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
+      "slug": "superior-fire-staff",
+      "title": "Superior Fire Staff",
+      "titlePl": "Doskonała laska ognia",
+      "tags": [
+        "DOS1",
+        "Weapons"
       ]
     },
     {
@@ -5153,6 +5411,15 @@
       ]
     },
     {
+      "slug": "superior-water-staff",
+      "title": "Superior Water Staff",
+      "titlePl": "Doskonała laska wody",
+      "tags": [
+        "DOS1",
+        "Weapons"
+      ]
+    },
+    {
       "slug": "sword-of-planets",
       "title": "Sword of Planets",
       "titlePl": "Miecz Planet",
@@ -5166,7 +5433,6 @@
       "slug": "taser-grenade-2",
       "title": "Taser Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "Grenades"
       ]
@@ -5183,6 +5449,29 @@
       "slug": "tectonic-spray-skillbook",
       "title": "Tectonic Spray Skillbook",
       "tags": [
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "teleportation-scroll",
+      "title": "Teleportation Scroll",
+      "titlePl": "Zwój Teleportacji",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "teleportation-skillbook",
+      "title": "Teleportation Skillbook",
+      "titlePl": "Księga umiejętności „Teleportacja”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
         "DOS1",
         "Skillbooks"
       ]
@@ -5211,7 +5500,6 @@
       "title": "Terror Grenade",
       "titlePl": "Granat grozy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5309,11 +5597,33 @@
       ]
     },
     {
+      "slug": "tornado-scroll",
+      "title": "Tornado Scroll",
+      "titlePl": "Zwój Tornada",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "Ingredients",
+        "Scrolls"
+      ]
+    },
+    {
+      "slug": "tornado-skillbook",
+      "title": "Tornado Skillbook",
+      "titlePl": "Księga umiejętności „Tornado”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "DOS1",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "tremor-grenade",
       "title": "Tremor Grenade",
       "titlePl": "Granat wstrząsowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5373,11 +5683,19 @@
       ]
     },
     {
+      "slug": "vampiric-touch-scroll",
+      "title": "Vampiric Touch Scroll",
+      "titlePl": "Zwój z zaklęciem „dotyk wampira”",
+      "tags": [
+        "DOS1",
+        "Scrolls"
+      ]
+    },
+    {
       "slug": "water-balloon",
       "title": "Water Balloon",
       "titlePl": "Balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5459,6 +5777,7 @@
       "titlePl": "Studnia",
       "tags": [
         "DOS1",
+        "DOS2",
         "DOS2-CO",
         "Stations-And-Containers"
       ]
@@ -5572,7 +5891,6 @@
       "title": "WOODEN AIR WAND",
       "tags": [
         "Air-Damage",
-        "Casts-Spell",
         "DOS1",
         "BLIND",
         "Wands"
@@ -5583,7 +5901,6 @@
       "title": "WOODEN EARTH WAND",
       "tags": [
         "Earth-Damage",
-        "Casts-Spell",
         "DOS1",
         "Wands"
       ]
@@ -5603,7 +5920,6 @@
       "title": "WOODEN FIRE WAND",
       "tags": [
         "Fire-Damage",
-        "Casts-Spell",
         "DOS1",
         "Fire-Surface",
         "BURNING",
@@ -5625,7 +5941,6 @@
       "title": "WOODEN WATER WAND",
       "tags": [
         "Water-Damage",
-        "Casts-Spell",
         "DOS1",
         "FROZEN",
         "Wands"

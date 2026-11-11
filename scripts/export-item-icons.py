@@ -121,7 +121,9 @@ def stat_entries(directory):
     # Generated equipment takes its look from an item group's root template.
     roots = {}
     for file in sorted(directory.rglob('ItemProgressionVisuals.txt')):
-        for group, body in re.findall(r'^new itemgroup "([^"]+)"\s*\n(.*?)(?=^new itemgroup |\Z)', file.read_text(encoding='utf-8-sig'), re.M | re.S):
+        for section in re.split(r'^new itemgroup ', file.read_text(encoding='utf-8-sig'), flags=re.M)[1:]:
+            group, _, body = section.partition('\n')
+            group = group.strip().strip('"')
             templates = re.findall(r'^add rootgroup "([^"]+)"', body, re.M)
             if len(set(templates)) == 1:
                 roots[group] = templates[0]
@@ -231,7 +233,7 @@ def main():
     existing = json.loads(provenance_file.read_text(encoding='utf-8')) if provenance_file.exists() else {}
     mapping, provenance, report, images, written = {}, {}, {}, {}, set()
     for game in ['dos1', 'dos2', 'dos2-overhaul']:
-        layers = ['dos1'] if game == 'dos1' else ['dos2', 'overhaul'] if game == 'dos2-overhaul' else ['dos2']
+        layers = {'dos1': ['dos1'], 'dos2-overhaul': ['dos2', 'overhaul']}.get(game, ['dos2'])
         atlases, templates, strings = {}, {}, {}
         for layer in layers:
             aa, tt, ss = base[layer]

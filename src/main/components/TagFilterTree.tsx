@@ -1,13 +1,13 @@
-import { isTagWithin } from "../domain/tagTree"
+import { tagHierarchy } from "../domain/tagHierarchy"
+import type { TagLabels } from "../domain/tagLabels"
+import type { TagFilterNode } from "../domain/tagSidebar"
 import { useState } from "preact/hooks"
-import type { TagFilterNode } from "../domain/recipeView"
-import { tagLabel } from "../domain/recipeView"
 
 type Props = {
   entries: TagFilterNode[]
   include: string[]
   exclude: string[]
-  labels: Record<string, string>
+  labels: TagLabels
   onCycle: (tag: string) => void
 }
 
@@ -22,11 +22,11 @@ export function TagFilterTree({ entries, include, exclude, labels, onCycle }: Re
   return (
     <div class="recipe-tag-list">
       {entries.map((entry) => {
-        const label = entry.label?.replaceAll("-", " ") ?? tagLabel(entry.tag, labels)
+        const label = entry.label?.replaceAll("-", " ") ?? labels.label(entry.tag)
         const children = entry.children ?? []
         const open =
           expanded[entry.tag] ??
-          [...include, ...exclude].some((tag) => tag !== entry.tag && isTagWithin(tag, entry.tag))
+          [...include, ...exclude].some((tag) => tag !== entry.tag && tagHierarchy.isWithin(tag, entry.tag))
         return (
           <div key={entry.tag} class="tag-filter-node">
             <div class="tag-filter-row">

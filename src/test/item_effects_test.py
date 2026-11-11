@@ -20,6 +20,20 @@ class ItemEffectsTest(unittest.TestCase):
         self.assertIn('Duration: 3 turns', effect['en'])
         self.assertIn('+1 Siła', effect['pl'])
 
+    def test_equipment_bonuses_under_edition_specific_fields_are_shown(self):
+        effect, _, _ = render({'Charisma': '1', 'SightBoost': '1', 'Luck': '1', 'FireResistanceBoost': '2'}, 'Armor')
+        for part in ['+1 Charisma', '+1 Sight', '+1 Lucky Charm', '+2% fire resistance']:
+            self.assertIn(part, effect['en'])
+
+    def test_dos2_weapons_get_a_tag_for_the_attribute_they_scale_with(self):
+        tags = runpy.run_path(str(Path(__file__).resolve().parents[2] / 'scripts/item-tag-rules.py'))['effect_tags']
+        fields = {'Requirements': 'Intelligence 12', 'Damage Type': 'Air'}
+        found, labels = tags(fields, 'Weapon', scales=True)
+        self.assertIn('Scales-With-Intelligence', found)
+        self.assertEqual(labels['Scales-With-Intelligence'], 'Skaluje się z Inteligencją')
+        self.assertNotIn('Scales-With-Intelligence', tags(fields, 'Weapon')[0])
+        self.assertNotIn('Scales', render(fields, 'Weapon')[0]['en'])
+
     def test_object_durability_flags_are_not_player_immunities(self):
         effect, _, _ = render({'Constitution': '1', 'Flags': 'PoisonImmunity;SleepingImmunity', 'Weight': '1000'}, 'Object')
         self.assertIsNone(effect)

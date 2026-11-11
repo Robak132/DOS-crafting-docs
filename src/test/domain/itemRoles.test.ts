@@ -1,24 +1,25 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { getCatalogItemRoles } from "../../main/domain/recipeItemRoles"
-import type { RecipeItem, RecipeRow } from "../../main/domain/recipes"
+import { CraftRoles } from "../../main/domain/craftRoles"
+import { Recipe } from "../../main/domain/recipe"
 
-const item = (slug: string): RecipeItem => ({ name: slug, slug, tags: [] })
-const row = (result: string, ...ingredients: string[]): RecipeRow => ({
-  id: `${result}:${ingredients.join("+")}`,
-  result: item(result),
-  ingredients: ingredients.map(item),
-  tags: [],
-  requirements: "",
-  notes: "",
-  remarks: "",
-  source: "",
-})
-const page = (slug: string) => ({ slug, title: slug, tags: [], itemPage: true, categoryPage: false })
+const item = (slug: string) => ({ name: slug, slug, tags: [] })
+const row = (result: string, ...ingredients: string[]) =>
+  new Recipe({
+    id: `${result}:${ingredients.join("+")}`,
+    result: item(result),
+    ingredients: ingredients.map(item),
+    tags: [],
+    requirements: "",
+    notes: "",
+    remarks: "",
+    source: "",
+  })
+const page = (slug: string) => ({ slug, title: slug, tags: [] })
 
 test("craft roles are computed per catalog, so a DOS2 recipe does not tint a DOS1 base ingredient", () => {
   const pages = [page("scraps"), page("armor"), page("knife"), page("orphan")]
-  const roles = getCatalogItemRoles(pages, {
+  const roles = CraftRoles.ofCatalogs(pages, {
     dos1: { recipes: [row("armor", "scraps")] },
     dos2: { recipes: [row("scraps", "knife"), row("armor", "scraps")] },
     "dos2-overhaul": { recipes: [] },

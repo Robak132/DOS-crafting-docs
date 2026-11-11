@@ -61,6 +61,9 @@ GAME_CATEGORY_SELECTORS = {
     'ClothHelmet', 'ClothPants', 'Dagger', 'EmptyWand', 'FishingRod', 'GlovesPlate', 'HelmetMage',
     'HelmetPlate', 'PantsPlate', 'ShieldMetal', 'ShieldWood', 'Spear',
     'ArmorScale', 'BootsScale', 'GlovesScale', 'HelmetScale', 'PantsScale',
+    'FoodFish', 'Meat',
+    *(f'Skillbook{school}{source}' for school in ['Air', 'Earth', 'Fire', 'Water', 'Summoning', 'Necromancy',
+                                                  'Polymorph', 'Warrior', 'Rogue', 'Ranger'] for source in ['', 'Source']),
 }
 
 # DOS1 recipe slots that take a category; DOS1 has no category labels of its own.

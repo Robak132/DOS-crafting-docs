@@ -4,7 +4,7 @@ Statyczna aplikacja **Vite + Preact + TypeScript** z katalogami DOS1, DOS2 Defin
 
 ## Uruchomienie
 
-Wymagany Node.js 22 (lokalnie obsługiwany również Node.js 20.19+) i npm 10+.
+Wymagany Node.js 26 (LTS) i npm 10+.
 
 ```sh
 npm ci
@@ -44,40 +44,6 @@ npm run verify:dist
 VITE_BASE_PATH=/DOS-crafting-docs/ npm run preview
 ```
 
-## Analiza SonarQube
-
-Konfiguracja analizy jest w `sonar-project.properties`: kod z `src/main` i `scripts`, testy z `src/test`, bez danych, `dist/` i plików gry.
-
-**Reguły SonarJS lokalnie (bez serwera).** `eslint.config.js` uruchamia reguły SonarQube dla JavaScript/TypeScript (`eslint-plugin-sonarjs`) przez ESLint:
-
-```sh
-npm run lint:sonar
-```
-
-Narzędzia mają osobny `tools/sonar/package.json` (instaluje je pierwsze uruchomienie): wtyczka i parser `@typescript-eslint/parser` wymagają TypeScriptu 5, a projekt używa TypeScriptu 7, więc nie mogą dzielić `node_modules`. Parser czyta `tsconfig.json`, więc reguły korzystające z typów działają; sprawdzane są pliki objęte `tsconfig.json`.
-
-Obejmuje tylko kod JS/TS; skrypty Pythona i panel z historią daje dopiero SonarQube Server lub Cloud (poniżej).
-
-**SonarQube Cloud (w CI).** Workflow `.github/workflows/sonar.yml` skanuje `main` i pull requesty:
-
-1. Zaloguj się na [sonarcloud.io](https://sonarcloud.io) kontem GitHub i zaimportuj to repozytorium (_+ → Analyze new project_). Dla publicznego repozytorium plan Free wystarcza.
-2. W projekcie wyłącz _Administration → Analysis Method → Automatic Analysis_; analizę wykonuje workflow.
-3. Wygeneruj token (_My Account → Security_) i zapisz go w repozytorium jako sekret `SONAR_TOKEN` (_Settings → Secrets and variables → Actions_).
-4. Jeśli SonarQube Cloud nada inny klucz projektu lub organizację, popraw `sonar.projectKey` i `sonar.organization`.
-
-Bez sekretu `SONAR_TOKEN` krok skanowania jest pomijany.
-
-**SonarQube Server lokalnie (Docker).**
-
-```sh
-docker run -d --name sonarqube -p 9000:9000 sonarqube:community
-# http://localhost:9000 (admin/admin) → utwórz projekt lokalny i token
-docker run --rm --network host -v "$PWD:/usr/src" -e SONAR_HOST_URL=http://localhost:9000 \
-  -e SONAR_TOKEN=<token> sonarsource/sonar-scanner-cli -Dsonar.organization=
-```
-
-Pusty `-Dsonar.organization=` wyłącza ustawienie przeznaczone dla SonarQube Cloud.
-
 ## Dane i architektura
 
 - `data/library/pages/` — metadane stron przedmiotów: `dos1.json`, `dos2.json`, `dos2-co.json`.
@@ -85,7 +51,7 @@ Pusty `-Dsonar.organization=` wyłącza ustawienie przeznaczone dla SonarQube Cl
 - `data/recipeTagHierarchy.json` i `data/tagLabels.json` — hierarchia i nazwy tagów.
 - `data/` — zapisane słowniki lokalizacji, niezależne od lokalnej instalacji gry.
 - `src/main/domain/` — przetwarzanie receptur, ilości, efektów, tagów, tłumaczeń i indeksów.
-- `src/main/components/` — tabele przedmiotów i receptur.
+- `src/main/components/` — karty przedmiotów (z recepturami), tabele receptur na stronach przedmiotów i ulepszeń.
 - `src/main/App.tsx` — nawigacja, filtry, wyszukiwanie, strony przedmiotów i podglądy.
 - `src/test/` — testy jednostkowe logiki i komponentów, z układem odpowiadającym `src/main/`.
 - `scripts/load-library.ts` — odczyt i walidacja źródłowej biblioteki JSON.
@@ -197,6 +163,8 @@ python3 scripts/assign-stats-ids.py
 npm run generate:data
 python3 scripts/export-item-icons.py /sciezka/do/wyodrebnionych-zasobow
 python3 scripts/export-combo-properties.py /sciezka/do/Public/Shared/Stats/Generated/ItemComboProperties.txt
+python3 scripts/export-item-effects.py   # efekty i unikaty (data/itemEffects.json, data/itemRarity.json)
+python3 scripts/export-recipe-books.py   # książki z recepturami jako źródło (wymaga Story/Journal z gier, opis w skrypcie)
 npm run build
 npm run verify:dist
 ```

@@ -23,6 +23,12 @@ TERMS.update({'Vitality':'Vitality','Healing':'Healing','Physical-Armour':'Physi
 PREFERRED={'Armour':'Pancerze','Boots':'Buty','Necromancer':'Nekromancja','Huntsman':'Myślistwo','Magic Armour':'Pancerz Magiczny'}
 
 
+def pick(choices,preferred):
+ """The only game translation, else the first preferred label the game offers."""
+ if len(choices)==1:return next(iter(choices))
+ return next((label for label in preferred if label in choices),None)
+
+
 def main():
  labels=json.loads((ROOT/'data/tagLabels.json').read_text(encoding='utf-8'));data={};report={}
  for tag in labels:
@@ -40,7 +46,7 @@ def main():
    terms.update({'Dexterity':'Dexterity','Speed':'Speed','Perception':'Perception','Warfare':'Man-at-Arms','Huntsman':'Expert Marksman','Necromancer':'Witchcraft'})
   for tag,term in terms.items():
    matches=pairs.get(term.casefold(),[]);choices={name for name,_ in matches}
-   chosen=next(iter(choices)) if len(choices)==1 else PREFERRED.get(term) if PREFERRED.get(term) in choices else labels.get(tag) if labels.get(tag) in choices else None
+   chosen=pick(choices,[PREFERRED.get(term),labels.get(tag)])
    data[game][tag]={'en':term,**({'pl':chosen} if chosen else {})}
    report[game].append({'tag':tag,'en':term,'pl':chosen,'contentuid':[h for v,h in matches if v==chosen],'untranslated':chosen is None})
  data['dos2-overhaul']=dict(data['dos2'])

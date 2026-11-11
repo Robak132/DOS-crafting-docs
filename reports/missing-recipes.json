@@ -1,0 +1,1311 @@
+{
+ "missingResults": [
+  {
+   "statsId": "QUEST_AtaraxianBowl_With_Blackroot",
+   "name": "Ritual Bowl",
+   "combos": [
+    {
+     "id": "QUEST_Blackroot_QUEST_AtaraxianBowl",
+     "ingredients": [
+      "Blackroot",
+      "Ritual Bowl"
+     ]
+    }
+   ]
+  },
+  {
+   "statsId": "QUEST_Lancet",
+   "name": "Obsidian Lancet",
+   "combos": [
+    {
+     "id": "QUEST_Lancet_Bloody_QUEST_AtaraxianBowl_With_Blackroot",
+     "ingredients": [
+      "Bloody Obsidian Lancet",
+      "Ritual Bowl"
+     ]
+    },
+    {
+     "id": "QUEST_Lancet_Bloody_QUEST_AtaraxianBowl_QUEST_Blackroot",
+     "ingredients": [
+      "Bloody Obsidian Lancet",
+      "Ritual Bowl",
+      "Blackroot"
+     ]
+    }
+   ]
+  },
+  {
+   "statsId": "QUEST_RC_BI_LeverShaft",
+   "name": "Silver Lever Shaft",
+   "combos": [
+    {
+     "id": "QUEST_RC_BI_AncientForge_LOOT_OreBar_A_Silver_A",
+     "ingredients": [
+      "Ancient Forge",
+      "LOOT_OreBar_A_Silver_A"
+     ]
+    },
+    {
+     "id": "QUEST_RC_BI_AncientForge_ITEM_Rich_Cup_A_Silver",
+     "ingredients": [
+      "Ancient Forge",
+      "Silver Cup"
+     ]
+    },
+    {
+     "id": "QUEST_RC_BI_AncientForge_ITEM_Rich_Glass_A_Silver",
+     "ingredients": [
+      "Ancient Forge",
+      "ITEM_Rich_Glass_A_Silver"
+     ]
+    },
+    {
+     "id": "QUEST_RC_BI_AncientForge_LOOT_Ore_A_Silver_A",
+     "ingredients": [
+      "Ancient Forge",
+      "LOOT_Ore_A_Silver_A"
+     ]
+    }
+   ]
+  }
+ ],
+ "missingVariants": [
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Earth_Step2_A",
+   "statsId": "CON_Potion_Stoneskin",
+   "result": "CON_Potion_Stoneskin",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Earth_Step2_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Water_Step2_A",
+   "statsId": "CON_Potion_NimbleTumble",
+   "result": "CON_Potion_NimbleTumble",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Water_Step2_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Fire_Step2_A",
+   "statsId": "CON_Potion_Will",
+   "result": "CON_Potion_Will",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Fire_Step2_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Air_Step2_A",
+   "statsId": "CON_Potion_ElectricSkin",
+   "result": "CON_Potion_ElectricSkin",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Air_Step2_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Earth_Step3_A",
+   "statsId": "CON_Potion_Stoneskin",
+   "result": "CON_Potion_Stoneskin",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Earth_Step3_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Water_Step3_A",
+   "statsId": "CON_Potion_NimbleTumble",
+   "result": "CON_Potion_NimbleTumble",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Water_Step3_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Fire_Step3_A",
+   "statsId": "CON_Potion_Will",
+   "result": "CON_Potion_Will",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Fire_Step3_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Empty_A_LOOT_Essence_Air_Step3_A",
+   "statsId": "CON_Potion_ElectricSkin",
+   "result": "CON_Potion_ElectricSkin",
+   "ingredients": [
+    "CON_Potion_Empty_A",
+    "LOOT_Essence_Air_Step3_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Cylinder_Empty_A_LOOT_Soul_Tormented_A_Step3_A",
+   "statsId": "GRN_Grenade_Terror_A",
+   "result": "GRN_Grenade_Terror_A",
+   "ingredients": [
+    "GRN_Ingredient_Cylinder_Empty_A",
+    "LOOT_Soul_Tormented_Step3_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Cylinder_Empty_A_LOOT_Essence_Step2_Earth_A",
+   "statsId": "GRN_Grenade_Tremor_A",
+   "result": "GRN_Grenade_Tremor_A",
+   "ingredients": [
+    "GRN_Ingredient_Cylinder_Empty_A",
+    "LOOT_Essence_Earth_Step2_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Cylinder_Empty_A_LOOT_Essence_Step2_Air_A",
+   "statsId": "GRN_Grenade_Taser_A",
+   "result": "GRN_Grenade_Taser_A",
+   "ingredients": [
+    "GRN_Ingredient_Cylinder_Empty_A",
+    "LOOT_Essence_Air_Step2_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Round_Empty_A_LOOT_Essence_Step2_Water_A",
+   "statsId": "GRN_Grenade_Ice_A",
+   "result": "GRN_Grenade_Ice_A",
+   "ingredients": [
+    "GRN_Ingredient_Round_Empty_A",
+    "LOOT_Essence_Water_Step2_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Round_Empty_A_LOOT_Essence_Step2_Fire_A",
+   "statsId": "GRN_Grenade_ClusterBomb_A",
+   "result": "GRN_Grenade_ClusterBomb_A",
+   "ingredients": [
+    "GRN_Ingredient_Round_Empty_A",
+    "LOOT_Essence_Fire_Step2_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Cylinder_Empty_A_LOOT_Essence_Step3_Earth_A",
+   "statsId": "GRN_Grenade_Tremor_A",
+   "result": "GRN_Grenade_Tremor_A",
+   "ingredients": [
+    "GRN_Ingredient_Cylinder_Empty_A",
+    "LOOT_Essence_Earth_Step3_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Cylinder_Empty_A_LOOT_Essence_Step3_Air_A",
+   "statsId": "GRN_Grenade_Taser_A",
+   "result": "GRN_Grenade_Taser_A",
+   "ingredients": [
+    "GRN_Ingredient_Cylinder_Empty_A",
+    "LOOT_Essence_Air_Step3_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Round_Empty_A_LOOT_Essence_Step3_Water_A",
+   "statsId": "GRN_Grenade_Ice_A",
+   "result": "GRN_Grenade_Ice_A",
+   "ingredients": [
+    "GRN_Ingredient_Round_Empty_A",
+    "LOOT_Essence_Water_Step3_A"
+   ]
+  },
+  {
+   "id": "GRN_Ingredient_Round_Empty_A_LOOT_Essence_Step3_Fire_A",
+   "statsId": "GRN_Grenade_ClusterBomb_A",
+   "result": "GRN_Grenade_ClusterBomb_A",
+   "ingredients": [
+    "GRN_Ingredient_Round_Empty_A",
+    "LOOT_Essence_Fire_Step3_A"
+   ]
+  },
+  {
+   "id": "CuttingTool_LOOT_WoodenStick_A",
+   "statsId": "WPN_ArrowShaft_A",
+   "result": "WPN_ArrowShaft_A",
+   "ingredients": [
+    "CuttingTool",
+    "LOOT_WoodenStick_A"
+   ]
+  },
+  {
+   "id": "Sword_LOOT_WoodenStick_A",
+   "statsId": "WPN_ArrowShaft_A",
+   "result": "WPN_ArrowShaft_A",
+   "ingredients": [
+    "Sword",
+    "LOOT_WoodenStick_A"
+   ]
+  },
+  {
+   "id": "Axe_LOOT_WoodenStick_A",
+   "statsId": "WPN_ArrowShaft_A",
+   "result": "WPN_ArrowShaft_A",
+   "ingredients": [
+    "Axe",
+    "LOOT_WoodenStick_A"
+   ]
+  },
+  {
+   "id": "Sword2H_LOOT_WoodenStick_A",
+   "statsId": "WPN_ArrowShaft_A",
+   "result": "WPN_ArrowShaft_A",
+   "ingredients": [
+    "TwoHandedSword",
+    "LOOT_WoodenStick_A"
+   ]
+  },
+  {
+   "id": "Axe2H_LOOT_WoodenStick_A",
+   "statsId": "WPN_ArrowShaft_A",
+   "result": "WPN_ArrowShaft_A",
+   "ingredients": [
+    "TwoHandedAxe",
+    "LOOT_WoodenStick_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Step2_Fire_A_WPN_ArrowHead_A",
+   "statsId": "WPN_ArrowHead_Fire_A",
+   "result": "WPN_ArrowHead_Fire_A",
+   "ingredients": [
+    "LOOT_Essence_Fire_Step2_A",
+    "WPN_ArrowHead_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Step3_Fire_A_WPN_ArrowHead_A",
+   "statsId": "WPN_ArrowHead_Fire_A",
+   "result": "WPN_ArrowHead_Fire_A",
+   "ingredients": [
+    "LOOT_Essence_Fire_Step3_A",
+    "WPN_ArrowHead_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Fire_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Fire_A",
+   "result": "WPN_Arrow_Fire_A",
+   "ingredients": [
+    "EssenceFire",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Water_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Freezing_A",
+   "result": "WPN_Arrow_Freezing_A",
+   "ingredients": [
+    "EssenceWater",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Air_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Stunning_A",
+   "result": "WPN_Arrow_Stunning_A",
+   "ingredients": [
+    "EssenceAir",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Earth_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Poison_Cloud_A",
+   "result": "WPN_Arrow_Poison_Cloud_A",
+   "ingredients": [
+    "EssenceEarth",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Fire_Step2_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Fire_A",
+   "result": "WPN_Arrow_Fire_A",
+   "ingredients": [
+    "LOOT_Essence_Fire_Step2_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Water_Step2_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Freezing_A",
+   "result": "WPN_Arrow_Freezing_A",
+   "ingredients": [
+    "LOOT_Essence_Water_Step2_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Air_Step2_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Stunning_A",
+   "result": "WPN_Arrow_Stunning_A",
+   "ingredients": [
+    "LOOT_Essence_Air_Step2_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Earth_Step2_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Poison_Cloud_A",
+   "result": "WPN_Arrow_Poison_Cloud_A",
+   "ingredients": [
+    "LOOT_Essence_Earth_Step2_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Fire_Step3_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Fire_A",
+   "result": "WPN_Arrow_Fire_A",
+   "ingredients": [
+    "LOOT_Essence_Fire_Step3_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Water_Step3_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Freezing_A",
+   "result": "WPN_Arrow_Freezing_A",
+   "ingredients": [
+    "LOOT_Essence_Water_Step3_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Air_Step3_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Stunning_A",
+   "result": "WPN_Arrow_Stunning_A",
+   "ingredients": [
+    "LOOT_Essence_Air_Step3_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "LOOT_Essence_Earth_Step3_A_WPN_Arrow_A",
+   "statsId": "WPN_Arrow_Poison_Cloud_A",
+   "result": "WPN_Arrow_Poison_Cloud_A",
+   "ingredients": [
+    "LOOT_Essence_Earth_Step3_A",
+    "WPN_Arrow_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Tooth_A",
+   "statsId": "SCROLL_FlamingDaggers",
+   "result": "SCROLL_FlamingDaggers",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Tooth_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Claw_A",
+   "statsId": "SCROLL_Haste",
+   "result": "SCROLL_Haste",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Claw_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Claw_A_Sharp",
+   "statsId": "SCROLL_Fireball",
+   "result": "SCROLL_Fireball",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Claw_A_Sharp"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Claw_Crab_A",
+   "statsId": "SCROLL_Target_BurnMyEyes",
+   "result": "SCROLL_Target_BurnMyEyes",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Claw_Crab_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Tusk_A",
+   "statsId": "SCROLL_Shout_Ignition",
+   "result": "SCROLL_Shout_Ignition",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Tusk_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_LOOT_Antler_A",
+   "statsId": "SCROLL_Haste",
+   "result": "SCROLL_Haste",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "LOOT_Antler_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Tooth_A",
+   "statsId": "SCROLL_FlamingDaggers",
+   "result": "SCROLL_FlamingDaggers",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Tooth_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Claw_A",
+   "statsId": "SCROLL_Haste",
+   "result": "SCROLL_Haste",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Claw_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Claw_A_Sharp",
+   "statsId": "SCROLL_Fireball",
+   "result": "SCROLL_Fireball",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Claw_A_Sharp"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Claw_Crab_A",
+   "statsId": "SCROLL_Target_BurnMyEyes",
+   "result": "SCROLL_Target_BurnMyEyes",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Claw_Crab_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Tusk_A",
+   "statsId": "SCROLL_Shout_Ignition",
+   "result": "SCROLL_Shout_Ignition",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Tusk_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_LOOT_Antler_A",
+   "statsId": "SCROLL_Haste",
+   "result": "SCROLL_Haste",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "LOOT_Antler_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_A_LOOT_Essence_Life_Step2_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_A",
+    "LOOT_Essence_Life_Step2_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_A_LOOT_Essence_Life_Step3_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_A",
+    "LOOT_Essence_Life_Step3_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_FOOD_FishA",
+   "statsId": "SCROLL_Rain",
+   "result": "SCROLL_Rain",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "FOOD_FishA"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_FOOD_FishB",
+   "statsId": "SCROLL_Shout_FrostAura",
+   "result": "SCROLL_Shout_FrostAura",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "FOOD_FishB"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_FOOD_FishD",
+   "statsId": "SCROLL_Target_WinterBlast",
+   "result": "SCROLL_Target_WinterBlast",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "FOOD_FishD"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_CON_Herb_Mushroom_A",
+   "statsId": "SCROLL_RegenerateStart",
+   "result": "SCROLL_RegenerateStart",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "CON_Herb_Mushroom_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_CON_Herb_Mushroom_B",
+   "statsId": "SCROLL_Target_FrostyShell",
+   "result": "SCROLL_Target_FrostyShell",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "CON_Herb_Mushroom_B"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_LOOT_Essence_Life_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "LOOT_Essence_Life_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_LOOT_Essence_Life_Step2_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "LOOT_Essence_Life_Step2_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step2_A_LOOT_Essence_Life_Step3_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step2_A",
+    "LOOT_Essence_Life_Step3_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_FOOD_FishA",
+   "statsId": "SCROLL_Rain",
+   "result": "SCROLL_Rain",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "FOOD_FishA"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_FOOD_FishB",
+   "statsId": "SCROLL_Shout_FrostAura",
+   "result": "SCROLL_Shout_FrostAura",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "FOOD_FishB"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_FOOD_FishD",
+   "statsId": "SCROLL_Target_WinterBlast",
+   "result": "SCROLL_Target_WinterBlast",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "FOOD_FishD"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_CON_Herb_Mushroom_A",
+   "statsId": "SCROLL_RegenerateStart",
+   "result": "SCROLL_RegenerateStart",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "CON_Herb_Mushroom_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_CON_Herb_Mushroom_B",
+   "statsId": "SCROLL_Target_FrostyShell",
+   "result": "SCROLL_Target_FrostyShell",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "CON_Herb_Mushroom_B"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_LOOT_Essence_Life_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "LOOT_Essence_Life_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_LOOT_Essence_Life_Step2_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "LOOT_Essence_Life_Step2_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Water_Step3_A_LOOT_Essence_Life_Step3_A",
+   "statsId": "SCROLL_Resurrect",
+   "result": "SCROLL_Resurrect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Water_Step3_A",
+    "LOOT_Essence_Life_Step3_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_CON_Herb_Whisperwood_A",
+   "statsId": "SCROLL_Fortify",
+   "result": "SCROLL_Fortify",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "CON_Herb_Whisperwood_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_LOOT_PieceOfRock_A",
+   "statsId": "SCROLL_FossilStrike",
+   "result": "SCROLL_FossilStrike",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "LOOT_PieceOfRock_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_LOOT_MetalShard_A",
+   "statsId": "SCROLL_Target_RockSpikes",
+   "result": "SCROLL_Target_RockSpikes",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "LOOT_MetalShard_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_TOOL_Intestines_A",
+   "statsId": "SCROLL_Shout_Contamination",
+   "result": "SCROLL_Shout_Contamination",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "TOOL_Intestines_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_CON_Herb_Mushroom_C",
+   "statsId": "SCROLL_PoisonDart",
+   "result": "SCROLL_PoisonDart",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "CON_Herb_Mushroom_C"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_CON_Herb_Stardust_A",
+   "statsId": "SCROLL_Shout_MendMetal",
+   "result": "SCROLL_Shout_MendMetal",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "CON_Herb_Stardust_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step2_A_CON_Herb_Stardust_B",
+   "statsId": "SCROLL_Shout_MendMetal",
+   "result": "SCROLL_Shout_MendMetal",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step2_A",
+    "CON_Herb_Stardust_B"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_CON_Herb_Whisperwood_A",
+   "statsId": "SCROLL_Fortify",
+   "result": "SCROLL_Fortify",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "CON_Herb_Whisperwood_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_LOOT_PieceOfRock_A",
+   "statsId": "SCROLL_FossilStrike",
+   "result": "SCROLL_FossilStrike",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "LOOT_PieceOfRock_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_LOOT_MetalShard_A",
+   "statsId": "SCROLL_Target_RockSpikes",
+   "result": "SCROLL_Target_RockSpikes",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "LOOT_MetalShard_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_TOOL_Intestines_A",
+   "statsId": "SCROLL_Shout_Contamination",
+   "result": "SCROLL_Shout_Contamination",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "TOOL_Intestines_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_CON_Herb_Mushroom_C",
+   "statsId": "SCROLL_PoisonDart",
+   "result": "SCROLL_PoisonDart",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "CON_Herb_Mushroom_C"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_CON_Herb_Stardust_A",
+   "statsId": "SCROLL_Shout_MendMetal",
+   "result": "SCROLL_Shout_MendMetal",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "CON_Herb_Stardust_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Earth_Step3_A_CON_Herb_Stardust_B",
+   "statsId": "SCROLL_Shout_MendMetal",
+   "result": "SCROLL_Shout_MendMetal",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Earth_Step3_A",
+    "CON_Herb_Stardust_B"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step2_A_LOOT_Feather_A",
+   "statsId": "SCROLL_Teleportation",
+   "result": "SCROLL_Teleportation",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step2_A",
+    "LOOT_Feather_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step2_A_LOOT_Flour_A",
+   "statsId": "SCROLL_Target_ShockingTouch",
+   "result": "SCROLL_Target_ShockingTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step2_A",
+    "LOOT_Flour_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step2_A_LOOT_Panties_A",
+   "statsId": "SCROLL_Shout_FavourableWind",
+   "result": "SCROLL_Shout_FavourableWind",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step2_A",
+    "Panties"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step2_A_LOOT_Paw_A_Rabbit_A",
+   "statsId": "SCROLL_LighningBolt",
+   "result": "SCROLL_LighningBolt",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step2_A",
+    "LOOT_Paw_A_Rabbit_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step3_A_LOOT_Feather_A",
+   "statsId": "SCROLL_Teleportation",
+   "result": "SCROLL_Teleportation",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step3_A",
+    "LOOT_Feather_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step3_A_LOOT_Flour_A",
+   "statsId": "SCROLL_Target_ShockingTouch",
+   "result": "SCROLL_Target_ShockingTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step3_A",
+    "LOOT_Flour_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step3_A_LOOT_Panties_A",
+   "statsId": "SCROLL_Shout_FavourableWind",
+   "result": "SCROLL_Shout_FavourableWind",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step3_A",
+    "Panties"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Air_Step3_A_LOOT_Paw_A_Rabbit_A",
+   "statsId": "SCROLL_LighningBolt",
+   "result": "SCROLL_LighningBolt",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Air_Step3_A",
+    "LOOT_Paw_A_Rabbit_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step2_A_CON_Food_Meat_Raw_A",
+   "statsId": "SCROLL_Summon_BloatedCorpse",
+   "result": "SCROLL_Summon_BloatedCorpse",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step2_A",
+    "Raw Slice Of Meat"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step2_A_TOOL_Intestines_A",
+   "statsId": "SCROLL_Target_Infect",
+   "result": "SCROLL_Target_Infect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step2_A",
+    "TOOL_Intestines_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step2_A_CON_Herb_Mushroom_A",
+   "statsId": "SCROLL_Target_BloodBubble",
+   "result": "SCROLL_Target_BloodBubble",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step2_A",
+    "CON_Herb_Mushroom_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step2_A_LOOT_Skull_Human_A",
+   "statsId": "SCROLL_Target_ShacklesOfPain",
+   "result": "SCROLL_Target_ShacklesOfPain",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step2_A",
+    "Jawless Skull"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step2_A_LOOT_Eye_A",
+   "statsId": "SCROLL_Target_DecayingTouch",
+   "result": "SCROLL_Target_DecayingTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step2_A",
+    "LOOT_Eye_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step3_A_CON_Food_Meat_Raw_A",
+   "statsId": "SCROLL_Summon_BloatedCorpse",
+   "result": "SCROLL_Summon_BloatedCorpse",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step3_A",
+    "Raw Slice Of Meat"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step3_A_TOOL_Intestines_A",
+   "statsId": "SCROLL_Target_Infect",
+   "result": "SCROLL_Target_Infect",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step3_A",
+    "TOOL_Intestines_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step3_A_CON_Herb_Mushroom_A",
+   "statsId": "SCROLL_Target_BloodBubble",
+   "result": "SCROLL_Target_BloodBubble",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step3_A",
+    "CON_Herb_Mushroom_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step3_A_LOOT_Skull_Human_A",
+   "statsId": "SCROLL_Target_ShacklesOfPain",
+   "result": "SCROLL_Target_ShacklesOfPain",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step3_A",
+    "Jawless Skull"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Shadow_Step3_A_LOOT_Eye_A",
+   "statsId": "SCROLL_Target_DecayingTouch",
+   "result": "SCROLL_Target_DecayingTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Shadow_Step3_A",
+    "LOOT_Eye_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step2_A_CON_Food_Pepper_A",
+   "statsId": "SCROLL_Projectile_DimensionalBolt",
+   "result": "SCROLL_Projectile_DimensionalBolt",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step2_A",
+    "CON_Food_Pepper_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step2_A_CON_Food_Garlic",
+   "statsId": "SCROLL_Target_Harmony",
+   "result": "SCROLL_Target_Harmony",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step2_A",
+    "CON_Food_Garlic"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step2_A_TOOL_Figurine_Wood_A",
+   "statsId": "SCROLL_Summon_TotemFromSurface",
+   "result": "SCROLL_Summon_TotemFromSurface",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step2_A",
+    "Wooden Figurine"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step2_A_TOOL_Toy_Wood_A",
+   "statsId": "SCROLL_Summon_TotemFromSurface",
+   "result": "SCROLL_Summon_TotemFromSurface",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step2_A",
+    "LOOT_Toy_Doll_Wood_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step3_A_CON_Food_Pepper_A",
+   "statsId": "SCROLL_Projectile_DimensionalBolt",
+   "result": "SCROLL_Projectile_DimensionalBolt",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step3_A",
+    "CON_Food_Pepper_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step3_A_CON_Food_Garlic",
+   "statsId": "SCROLL_Target_Harmony",
+   "result": "SCROLL_Target_Harmony",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step3_A",
+    "CON_Food_Garlic"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step3_A_TOOL_Figurine_Wood_A",
+   "statsId": "SCROLL_Summon_TotemFromSurface",
+   "result": "SCROLL_Summon_TotemFromSurface",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step3_A",
+    "Wooden Figurine"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Soul_Tormented_Step3_A_TOOL_Toy_Wood_A",
+   "statsId": "SCROLL_Summon_TotemFromSurface",
+   "result": "SCROLL_Summon_TotemFromSurface",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Soul_Tormented_Step3_A",
+    "LOOT_Toy_Doll_Wood_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Foot_Chicken_A",
+   "statsId": "SCROLL_Target_ChickenTouch",
+   "result": "SCROLL_Target_ChickenTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Foot_Chicken_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Foot_Chicken_A_Big",
+   "statsId": "SCROLL_Target_ChickenTouch",
+   "result": "SCROLL_Target_ChickenTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Foot_Chicken_A_Big"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Sinew_A",
+   "statsId": "SCROLL_Shout_Wings",
+   "result": "SCROLL_Shout_Wings",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Sinew_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Tail_A_Rat_A",
+   "statsId": "SCROLL_Target_TentacleLash",
+   "result": "SCROLL_Target_TentacleLash",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Tail_A_Rat_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Antler_A",
+   "statsId": "SCROLL_Shout_BullHorns",
+   "result": "SCROLL_Shout_BullHorns",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Antler_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Antler_A_Adult",
+   "statsId": "SCROLL_Shout_BullHorns",
+   "result": "SCROLL_Shout_BullHorns",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Antler_A_Adult"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step2_A_LOOT_Tail_A_Rat_A_Long",
+   "statsId": "SCROLL_Shout_ChameleonSkin",
+   "result": "SCROLL_Shout_ChameleonSkin",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step2_A",
+    "LOOT_Tail_A_Rat_A_Long"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Foot_Chicken_A",
+   "statsId": "SCROLL_Target_ChickenTouch",
+   "result": "SCROLL_Target_ChickenTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Foot_Chicken_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Foot_Chicken_A_Big",
+   "statsId": "SCROLL_Target_ChickenTouch",
+   "result": "SCROLL_Target_ChickenTouch",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Foot_Chicken_A_Big"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Sinew_A",
+   "statsId": "SCROLL_Shout_Wings",
+   "result": "SCROLL_Shout_Wings",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Sinew_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Tail_A_Rat_A",
+   "statsId": "SCROLL_Target_TentacleLash",
+   "result": "SCROLL_Target_TentacleLash",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Tail_A_Rat_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Antler_A",
+   "statsId": "SCROLL_Shout_BullHorns",
+   "result": "SCROLL_Shout_BullHorns",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Antler_A"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Antler_A_Adult",
+   "statsId": "SCROLL_Shout_BullHorns",
+   "result": "SCROLL_Shout_BullHorns",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Antler_A_Adult"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Life_Step3_A_LOOT_Tail_A_Rat_A_Long",
+   "statsId": "SCROLL_Shout_ChameleonSkin",
+   "result": "SCROLL_Shout_ChameleonSkin",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Life_Step3_A",
+    "LOOT_Tail_A_Rat_A_Long"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step2_A_CON_Drink_Cup_A_Oil",
+   "statsId": "SCROLL_Shout_FlamingTongues",
+   "result": "SCROLL_Shout_FlamingTongues",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step2_A",
+    "CON_Drink_Cup_A_Oil"
+   ]
+  },
+  {
+   "id": "BOOK_Paper_Sheet_A_LOOT_Essence_Fire_Step3_A_CON_Drink_Cup_A_Oil",
+   "statsId": "SCROLL_Shout_FlamingTongues",
+   "result": "SCROLL_Shout_FlamingTongues",
+   "ingredients": [
+    "Parchment",
+    "LOOT_Essence_Fire_Step3_A",
+    "CON_Drink_Cup_A_Oil"
+   ]
+  },
+  {
+   "id": "CON_Potion_Poison_Large_A_CON_Potion_Poison_Large_A2",
+   "statsId": "CON_Potion_Poison_Medium_A",
+   "result": "CON_Potion_Poison_Medium_A",
+   "ingredients": [
+    "CON_Potion_Poison_A",
+    "CON_Herb_Augmentor_Step3_A"
+   ]
+  },
+  {
+   "id": "CON_Potion_Poison_Large_A_CON_Potion_Poison_Large_A3",
+   "statsId": "CON_Potion_Poison_Large_A",
+   "result": "CON_Potion_Poison_Large_A",
+   "ingredients": [
+    "CON_Potion_Poison_Medium_A",
+    "CON_Herb_Augmentor_Step3_A"
+   ]
+  },
+  {
+   "id": "Oil_WPN_Arrow_Fire_A",
+   "statsId": "WPN_Arrow_Explosive_A",
+   "result": "WPN_Arrow_Explosive_A",
+   "ingredients": [
+    "Oil",
+    "WPN_Arrow_Fire_A"
+   ]
+  },
+  {
+   "id": "Water_WPN_Arrow_Stunning_A",
+   "statsId": "WPN_Arrow_Cloud_Static_A",
+   "result": "WPN_Arrow_Cloud_Static_A",
+   "ingredients": [
+    "Water",
+    "WPN_Arrow_Stunning_A"
+   ]
+  },
+  {
+   "id": "WaterWell_WPN_Arrow_Stunning_A",
+   "statsId": "WPN_Arrow_Cloud_Static_A",
+   "result": "WPN_Arrow_Cloud_Static_A",
+   "ingredients": [
+    "WPN_Arrow_Stunning_A"
+   ]
+  },
+  {
+   "id": "EssenceAir_WPN_Arrow_Cloud_Steam_A",
+   "statsId": "WPN_Arrow_Cloud_Static_A",
+   "result": "WPN_Arrow_Cloud_Static_A",
+   "ingredients": [
+    "EssenceAir",
+    "WPN_Arrow_Cloud_Steam_A"
+   ]
+  }
+ ]
+}

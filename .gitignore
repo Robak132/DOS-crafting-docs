@@ -10,3 +10,4 @@ replit.nix
 .pak-work
 dist/
 __pycache__/
+.generated/*

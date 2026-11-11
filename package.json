@@ -11,25 +11,24 @@
     "preview": "vite preview",
     "generate:data": "tsx scripts/generate-data.ts",
     "test": "tsx --test src/test/domain/*.test.ts src/test/components/*.test.tsx src/test/*.test.ts",
-    "check": "tsc --noEmit && prettier src scripts/*.ts vite.config.ts eslint.config.js index.html package.json tsconfig.json .github/workflows/*.yml --check",
-    "format": "prettier src scripts/*.ts vite.config.ts eslint.config.js index.html package.json tsconfig.json .github/workflows/*.yml --write",
-    "verify:dist": "tsx scripts/verify-dist.ts",
-    "lint:sonar": "npm --prefix tools/sonar install --no-audit --no-fund && tools/sonar/node_modules/.bin/eslint src scripts vite.config.ts"
+    "check": "tsc --noEmit && prettier src scripts/*.ts vite.config.ts index.html package.json tsconfig.json .github/workflows/*.yml --check",
+    "format": "prettier src scripts/*.ts vite.config.ts index.html package.json tsconfig.json .github/workflows/*.yml --write",
+    "verify:dist": "tsx scripts/verify-dist.ts"
   },
   "engines": {
-    "node": "^20.19.0 || >=22.12.0",
+    "node": ">=26",
     "npm": ">=10"
   },
   "dependencies": {
-    "preact": "^11.0.1"
+    "preact": "^11.1.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.6",
-    "@types/node": "^22.0.0",
-    "preact-render-to-string": "^6.6.6",
-    "prettier": "^3.9.9",
+    "@types/node": "^26.6.6",
+    "preact-render-to-string": "^6.8.2",
+    "prettier": "^3.9.10",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^7.3.7"
+    "vite": "^8.3.5"
   }
 }

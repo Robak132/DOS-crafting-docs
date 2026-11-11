@@ -37,9 +37,6 @@ a,
 input {
   -webkit-tap-highlight-color: transparent;
 }
-button {
-  cursor: pointer;
-}
 a {
   color: var(--secondary);
   text-decoration: none;
@@ -64,6 +61,7 @@ input {
   min-width: 0;
 }
 button {
+  cursor: pointer;
   color: var(--darkgray);
   background: #202023;
   border: 1px solid var(--lightgray);
@@ -183,6 +181,22 @@ details .recipe-tag-list {
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
+.back-button {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  color: var(--dark);
+  background: #202023;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+}
+.back-button:hover {
+  text-decoration: none;
+  border-color: var(--secondary);
+}
 .eyebrow {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
@@ -280,6 +294,75 @@ details .recipe-tag-list {
   flex: 1;
   width: 0;
   min-width: 0;
+  font-size: 1.05rem;
+  padding: 0.75rem 0.9rem;
+}
+/* While typing the box comes to the centre of the screen, larger, over a dimmed page. */
+.search-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.55);
+}
+.catalog-search[data-focused="true"] {
+  position: fixed;
+  z-index: 41;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(44rem, calc(100vw - 2rem));
+  margin: 0;
+  padding: 1rem;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+}
+.catalog-search[data-focused="true"] .search-row input {
+  font-size: 1.35rem;
+  padding: 0.85rem 1rem;
+}
+.catalog-search[data-focused="true"] .search-scope {
+  font-size: 1rem;
+}
+.search-suggestions {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0.25rem;
+  max-height: 50vh;
+  overflow-y: auto;
+  background: #202023;
+  border: 1px solid var(--lightgray);
+  border-radius: 7px;
+}
+.search-suggestions li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-suggestions li[aria-selected="true"] {
+  background: var(--highlight);
+}
+.search-suggestions .item-icon {
+  width: 24px;
+  height: 24px;
+}
+.search-suggestion-hash {
+  flex: none;
+  width: 24px;
+  text-align: center;
+  color: var(--secondary);
+}
+.search-suggestion-name {
+  color: var(--dark);
+}
+.search-suggestion-other {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--gray);
 }
 .search-scope {
   flex: none;
@@ -379,18 +462,66 @@ details .recipe-tag-list {
   margin: 0;
   white-space: pre-line;
 }
-.preview-recipes {
+.preview-effects {
   margin: 0;
   padding-left: 1.1rem;
 }
+.preview-recipes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.preview-recipes li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.5rem;
+}
 .preview-recipes li + li {
-  margin-top: 0.65rem;
-}
-.preview-recipe-result,
-.preview-recipes small {
-  display: block;
+  margin-top: 0.45rem;
 }
 .preview-recipes small {
+  flex-basis: 100%;
+  color: var(--gray);
+}
+.preview-recipe-items {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.3rem;
+}
+.preview-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.preview-item .item-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.preview-item-name {
+  font-size: 0.85rem;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+}
+/* The quantity sits on the icon's corner, as in the game's inventory. */
+.preview-item:has(.item-icon) .preview-item-qty {
+  position: absolute;
+  right: -0.2rem;
+  bottom: -0.2rem;
+  padding: 0 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark);
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+}
+.preview-item-qty,
+.preview-plus,
+.preview-arrow {
   color: var(--gray);
 }
 
@@ -432,14 +563,18 @@ footer {
 [data-item-lang="pl"] .item-lang-pl {
   display: inline;
 }
+/* Chips set their colour from --item-color, so the role colour wins in every list. */
 .item-craft-mid {
-  color: #9fc5a4 !important;
+  --item-color: #9fc5a4;
+  color: var(--item-color);
 }
 .item-craft-end {
-  color: #bc9cc8 !important;
+  --item-color: #bc9cc8;
+  color: var(--item-color);
 }
 .item-craft-dead {
-  color: #9b969f !important;
+  --item-color: #9b969f;
+  color: var(--item-color);
 }
 .recipe-tag-button[data-state="include"] {
   background: var(--highlight);
@@ -487,9 +622,6 @@ footer {
   }
   .sidebar > .filter-hint {
     margin: 0.7rem 0;
-  }
-  .back-link {
-    font-size: 0.8rem;
   }
 }
 

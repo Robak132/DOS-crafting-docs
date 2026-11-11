@@ -18,17 +18,17 @@
     ]
   },
   "dos2": {
-    "matched": 702,
-    "total": 702,
-    "matchedResults": 454,
-    "totalResults": 454,
+    "matched": 762,
+    "total": 762,
+    "matchedResults": 517,
+    "totalResults": 517,
     "unmatched": []
   },
   "dos2-overhaul": {
-    "matched": 1495,
-    "total": 1498,
-    "matchedResults": 1184,
-    "totalResults": 1185,
+    "matched": 1552,
+    "total": 1555,
+    "matchedResults": 1244,
+    "totalResults": 1245,
     "unmatched": [
       "Basket",
       "Folded Shirts",

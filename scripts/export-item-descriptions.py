@@ -144,7 +144,7 @@ def main():
     resources = {game: helpers['resources'](source / game) for game in ['dos1', 'dos2', 'overhaul']}
     output = {}
     for game in ['dos1', 'dos2', 'dos2-overhaul']:
-        layers = ['dos1'] if game == 'dos1' else ['dos2', 'overhaul'] if game == 'dos2-overhaul' else ['dos2']
+        layers = {'dos1': ['dos1'], 'dos2-overhaul': ['dos2', 'overhaul']}.get(game, ['dos2'])
         templates, strings, stats = {}, {}, {}
         for layer in layers:
             _, tt, ss = resources[layer]

@@ -71,7 +71,9 @@ def resolve(index, recipe, provenance):
         if role == 'result' and item is recipe['result'] and made:
             yield item, made, candidates
             continue
-        chosen = candidates & (outputs if role == 'result' else objects) if combos else set()
+        chosen = set()
+        if combos:
+            chosen = candidates & (outputs if role == 'result' else objects)
         # Crafting Overhaul's Corpse Harvester is no ItemCombination; harvesting gives the corpse part.
         if not combos and role == 'result' and any(re.search(r'\bcorpse$', i['name'], re.I) for i in recipe['ingredients']):
             chosen = {stats for stats in candidates if stats.startswith('Corpse_Part_')}

@@ -4,12 +4,11 @@ import os from "node:os"
 import path from "node:path"
 import { test } from "node:test"
 import { generateData } from "../../scripts/generate-data"
-import { recipeResults } from "../main/domain/recipeResults"
-import type { RecipeItem } from "../main/domain/recipes"
-import type { CatalogData } from "../main/domain/types"
+import { Catalog } from "../main/domain/catalog"
+import type { Item } from "../main/domain/item"
 
-const key = (item: RecipeItem) => `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
-const keys = (items: RecipeItem[]) => JSON.stringify(items.map(key).sort((a, b) => a.localeCompare(b, "en")))
+const key = (item: Item) => `${(item.selectorTag ?? item.name).toLowerCase()}@${item.quantity ?? ""}`
+const keys = (items: Item[]) => JSON.stringify(items.map(key).sort((a, b) => a.localeCompare(b, "en")))
 
 test("built catalogs have Polish labels and list every recipe once", async () => {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), "dos-generated-"))
@@ -18,10 +17,12 @@ test("built catalogs have Polish labels and list every recipe once", async () =>
     const localisation: Record<string, Record<string, { en: string; pl?: string }>> = JSON.parse(
       await fs.readFile("data/tagLocalisation.json", "utf8"),
     )
-    for (const game of ["dos1", "dos2", "dos2-overhaul"]) {
-      const catalog: CatalogData = JSON.parse(
-        await fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8"),
-      )
+    const games = ["dos1", "dos2", "dos2-overhaul"]
+    const files = await Promise.all(
+      games.map((game) => fs.readFile(path.join(directory, `data/catalog-${game}.json`), "utf8")),
+    )
+    for (const [index, game] of games.entries()) {
+      const catalog = new Catalog(JSON.parse(files[index]))
       const english = catalog.tags.filter((tag) => {
         const entry = localisation[game]?.[tag.tag]
         return entry && !entry.pl && tag.label === entry.en
@@ -41,7 +42,7 @@ test("built catalogs have Polish labels and list every recipe once", async () =>
       )
       const seen = new Map<string, string>()
       for (const row of catalog.recipes) {
-        const signature = JSON.stringify([keys(recipeResults(row)), keys(row.ingredients), row.requirements])
+        const signature = JSON.stringify([keys(row.results()), keys(row.ingredients), row.requirements])
         assert.ok(!seen.has(signature), `${game}: ${row.id} repeats ${seen.get(signature)}`)
         seen.set(signature, row.id)
         row.ingredients.forEach((group, slot) => {
@@ -51,7 +52,7 @@ test("built catalogs have Polish labels and list every recipe once", async () =>
           const covered = catalog.recipes.find(
             (other) =>
               other !== row &&
-              keys(recipeResults(other)) === keys(recipeResults(row)) &&
+              keys(other.results()) === keys(row.results()) &&
               other.requirements === row.requirements &&
               other.ingredients.some(
                 (item, index) =>

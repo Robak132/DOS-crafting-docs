@@ -1,28 +1,26 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
-import { formatItemQuantity } from "../../main/domain/recipeQuantity"
-import {
-  catalogItemRows,
-  catalogItems,
-  groupRecipes,
-  itemNameKeys,
-  matchesRecipeQuery,
-  recipeRollsItem,
-  uniqueItemEffects,
-} from "../../main/domain/recipeView"
-import type { RecipeRow } from "../../main/domain/recipes"
+import { Item } from "../../main/domain/item"
+import { ItemList, ItemRecipes } from "../../main/domain/itemList"
+import { Recipe, type RecipeData } from "../../main/domain/recipe"
+import { ResultGroup } from "../../main/domain/resultGroup"
+import { SearchQuery } from "../../main/domain/searchQuery"
+import { TagLabels } from "../../main/domain/tagLabels"
+import { TextKey } from "../../main/domain/textKey"
 
-const row = (id: string, fields: Partial<RecipeRow>): RecipeRow => ({
-  id,
-  result: { name: id, tags: [] },
-  ingredients: [{ name: "Pickaxe", tags: [] }],
-  tags: [],
-  requirements: "",
-  notes: "",
-  remarks: "",
-  source: "",
-  ...fields,
-})
+const row = (id: string, fields: Partial<RecipeData>) =>
+  new Recipe({
+    id,
+    result: { name: id, tags: [] },
+    ingredients: [{ name: "Pickaxe", tags: [] }],
+    tags: [],
+    requirements: "",
+    notes: "",
+    remarks: "",
+    source: "",
+    ...fields,
+  })
+const matches = (recipe: Recipe, query: string) => recipe.matches(new SearchQuery(query), new TagLabels())
 
 const random = row("random", {
   result: {
@@ -42,42 +40,45 @@ const scrap = row("scrap", {
 })
 
 test("random amounts are written x(1-3) and shown as ×(1–3), unknown ones as ×(?)", () => {
-  assert.equal(formatItemQuantity("x(1-3)"), "×(1–3)")
-  assert.equal(formatItemQuantity("x(?)"), "×(?)")
-  assert.equal(formatItemQuantity("x2"), "×2")
+  const label = (quantity: string) => new Item({ name: "Arrow", tags: [], quantity }).quantityLabel
+  assert.equal(label("x(1-3)"), "×(1–3)")
+  assert.equal(label("x(?)"), "×(?)")
+  assert.equal(label("x2"), "×2")
 })
 
 test("a random pool is not an item, but every item it can roll is, and links back to the recipe", () => {
+  const items = new ItemList([random]).items()
   assert.deepEqual(
-    catalogItems([random]).map((item) => item.name),
+    items.map((item) => item.name),
     ["Airshield Scroll", "Tornado Scroll"],
   )
-  assert.ok(catalogItems([random]).every((item) => !("requirements" in item)))
-  assert.ok(matchesRecipeQuery(random, "tornado", {}))
-  assert.ok(recipeRollsItem(random, "airshield-scroll", new Set()))
-  assert.ok(recipeRollsItem(random, undefined, itemNameKeys("Tornado Scroll")))
-  assert.ok(!recipeRollsItem(random, "pickaxe", itemNameKeys("Pickaxe")))
+  assert.ok(items.every((item) => !("requirements" in item)))
+  assert.ok(matches(random, "tornado"))
+  assert.ok(random.canRoll("airshield-scroll", new Set()))
+  assert.ok(random.canRoll(undefined, TextKey.names("Tornado Scroll")))
+  assert.ok(!random.canRoll("pickaxe", TextKey.names("Pickaxe")))
 })
 
 test("every product of a recipe is an item with its own tags; saved notes describe only the main one", () => {
   assert.deepEqual(
-    catalogItems([scrap]).map((item) => item.name),
+    new ItemList([scrap]).items().map((item) => item.name),
     ["Metal Scraps", "Short Stick"],
   )
-  const rows = Object.fromEntries(catalogItemRows([scrap], "en").map((entry) => [entry.item.name, entry]))
+  const rows = Object.fromEntries(new ItemList([scrap]).rows("en").map((entry) => [entry.item.name, entry]))
   assert.deepEqual(rows["Metal Scraps"].tags, ["Metale"])
   assert.deepEqual(rows["Metal Scraps"].effects, [])
-  assert.deepEqual(rows["Short Stick"].effects, ["Effect of the stick"])
-  assert.deepEqual(uniqueItemEffects([scrap], "en", scrap.extraResults![0]), [])
-  assert.ok(matchesRecipeQuery(scrap, "metal scraps", {}))
+  // The game's effect of the main result wins over the saved note.
+  assert.deepEqual(rows["Short Stick"].effects, ["Stick"])
+  assert.deepEqual(new ItemRecipes([scrap], scrap.extraResults![0]).effects("en"), [])
+  assert.ok(matches(scrap, "metal scraps"))
 })
 
 test("recipes share a result cell only when they make the same products", () => {
-  const same = { ...scrap, id: "scrap-2", ingredients: [{ name: "Sword", tags: [] }] }
-  const other = { ...scrap, id: "scrap-3", extraResults: undefined }
+  const same = scrap.with({ id: "scrap-2", ingredients: [{ name: "Sword", tags: [] }] })
+  const other = scrap.with({ id: "scrap-3", extraResults: undefined })
   assert.deepEqual(
-    groupRecipes([scrap, same, other]).map((group) => group.variants.map((variant) => variant.id)),
+    ResultGroup.of([scrap, same, other]).map((group) => group.variants.map((variant) => variant.id)),
     [["scrap", "scrap-2"], ["scrap-3"]],
   )
-  assert.equal(groupRecipes([scrap])[0].results.length, 2)
+  assert.equal(ResultGroup.of([scrap])[0].results.length, 2)
 })

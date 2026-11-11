@@ -1,6 +1,7 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import { renderToString } from "preact-render-to-string"
+import { TagLabels } from "../../main/domain/tagLabels"
 import { TagFilterTree } from "../../main/components/TagFilterTree"
 
 test("selecting a subtype expands its parent and keeps sibling categories visible", () => {
@@ -25,7 +26,7 @@ test("selecting a subtype expands its parent and keeps sibling categories visibl
       ]}
       include={["Bows"]}
       exclude={[]}
-      labels={{}}
+      labels={new TagLabels()}
       onCycle={() => {}}
     />,
   )
@@ -45,7 +46,7 @@ test("include and exclude states are exposed to assistive technology, not only b
       ]}
       include={["Weapons"]}
       exclude={["Armour"]}
-      labels={{}}
+      labels={new TagLabels()}
       onCycle={() => {}}
     />,
   )

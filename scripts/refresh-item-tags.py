@@ -88,7 +88,7 @@ def main():
     library_pages['save_pages'](library)
     roots={node['tag']:node for node in hierarchy['hierarchy']}
     for category in roots['Category']['children']:
-        subtypes=weapons if category['tag']=='Weapons' else armour if category['tag']=='Armour' else None
+        subtypes={'Weapons':weapons,'Armour':armour}.get(category['tag'])
         if subtypes is not None:
             current=[c['tag'] for c in category['children']]
             category['children']=[{'tag':t,'label':labels[t],'children':[]} for t in current+[t for t in subtypes if t not in current]]

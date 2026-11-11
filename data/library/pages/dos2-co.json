@@ -9,7 +9,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -20,7 +21,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -31,7 +33,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -41,7 +44,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -51,7 +55,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -62,7 +67,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -73,7 +79,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -84,7 +91,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -95,7 +103,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -106,7 +115,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -117,7 +127,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -129,7 +140,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -141,7 +153,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -153,7 +166,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -165,7 +179,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -177,7 +192,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -189,7 +205,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -201,7 +218,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -213,7 +231,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -225,7 +244,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -277,7 +297,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -287,7 +308,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -298,7 +320,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -308,7 +331,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -329,7 +353,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -353,7 +378,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -363,7 +389,8 @@
         "Air-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -373,7 +400,8 @@
         "Air-Damage",
         "DOS2-CO",
         "SHOCKED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -382,7 +410,8 @@
       "tags": [
         "Air-Damage",
         "DOS2-CO",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -416,17 +445,6 @@
       ]
     },
     {
-      "slug": "amulet",
-      "title": "Amulet",
-      "titlePl": "Amulet",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
-        "Amulets",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "ancient-human-skull",
       "title": "Ancient Human Skull",
       "titlePl": "Prastara ludzka czaszka",
@@ -435,6 +453,14 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "angel-wings",
+      "title": "Angel Wings",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
       ]
     },
     {
@@ -522,7 +548,6 @@
       "title": "Armour-Piercing Grenade",
       "titlePl": "Granat przeszywający",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Grenades"
@@ -582,7 +607,6 @@
       "slug": "automaton-scroll",
       "title": "Automaton Scroll",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2-CO",
         "Ingredients",
@@ -847,7 +871,8 @@
         "DOS2-CO",
         "DAZED",
         "One-Handed-Maces",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -859,7 +884,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "CRIPPLED",
-        "Spears"
+        "Spears",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -1135,7 +1161,6 @@
       "title": "Bleeding Arrow",
       "titlePl": "Strzała wykrwawiająca",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
         "Arrows"
@@ -1145,7 +1170,6 @@
       "slug": "blessed-blood-arrow",
       "title": "Blessed Blood Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "HEALING",
         "Arrows"
@@ -1155,7 +1179,6 @@
       "slug": "blessed-charming-arrow",
       "title": "Blessed Charming Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CHARMED",
         "Arrows"
@@ -1173,7 +1196,6 @@
       "slug": "blessed-fire-arrow",
       "title": "Blessed Fire Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "HEALING",
         "Arrows"
@@ -1183,7 +1205,6 @@
       "slug": "blessed-love-grenade",
       "title": "Blessed Love Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CHARMED",
         "Grenades"
@@ -1193,7 +1214,6 @@
       "slug": "blessed-poison-flask",
       "title": "Blessed Poison Flask",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "POISONED",
         "Grenades"
@@ -1203,7 +1223,6 @@
       "slug": "blessed-smoke-grenade",
       "title": "Blessed Smoke Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Grenades"
       ]
@@ -1212,7 +1231,6 @@
       "slug": "blessed-smokescreen-arrow",
       "title": "Blessed Smokescreen Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Arrows"
       ]
@@ -1700,7 +1718,8 @@
       "titlePl": "Miotła",
       "tags": [
         "DOS2-CO",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -1806,7 +1825,8 @@
         "DOS2-CO",
         "Fire-Surface",
         "Wands",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1863,7 +1883,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1872,7 +1893,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1882,7 +1904,8 @@
         "Accuracy",
         "DOS2-CO",
         "SUFFOCATING",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1891,7 +1914,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1900,7 +1924,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1910,7 +1935,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1920,7 +1946,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1929,7 +1956,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1939,7 +1967,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SUFFOCATING",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1948,7 +1977,8 @@
       "tags": [
         "DOS2-CO",
         "SUFFOCATING",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -1956,7 +1986,6 @@
       "title": "Charming Arrow",
       "titlePl": "Strzała oczarowująca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1983,7 +2012,6 @@
       "title": "Chemical Warfare Grenade",
       "titlePl": "Granat chemiczny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1993,7 +2021,7 @@
     },
     {
       "slug": "chicken-corpse",
-      "title": "Chicken corpse",
+      "title": "Chicken Corpse",
       "titlePl": "Martwy kurczak",
       "tags": [
         "DOS2-CO",
@@ -2254,7 +2282,6 @@
       "slug": "corpse-harvester",
       "title": "Corpse Harvester",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Ingredients"
       ]
@@ -2339,7 +2366,8 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2349,7 +2377,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2360,7 +2389,8 @@
         "Grants-Skill",
         "DOS1",
         "DOS2-CO",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2368,7 +2398,8 @@
       "title": "Crafted Axe",
       "tags": [
         "DOS2-CO",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2385,7 +2416,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2-CO",
-        "Bows"
+        "Bows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -2406,7 +2438,8 @@
         "DOS2",
         "DOS2-CO",
         "Daggers",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -2430,7 +2463,8 @@
       "title": "Crafted Mace",
       "tags": [
         "DOS2-CO",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2474,7 +2508,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Spears"
+        "Spears",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -2483,7 +2518,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2-CO",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -2676,7 +2712,6 @@
       "slug": "cursed-armour-piercing-grenade",
       "title": "Cursed Armour-Piercing Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Grenades"
       ]
@@ -2685,7 +2720,6 @@
       "slug": "cursed-bleeding-arrow",
       "title": "Cursed Bleeding Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
         "Arrows"
@@ -2695,7 +2729,6 @@
       "slug": "cursed-chemical-warfare-grenade",
       "title": "Cursed Chemical Warfare Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "DISEASED",
         "Grenades"
@@ -2705,7 +2738,6 @@
       "slug": "cursed-debuff-all-arrow",
       "title": "Cursed Debuff All Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Arrows"
       ]
@@ -2714,7 +2746,6 @@
       "slug": "cursed-explosion-arrow",
       "title": "Cursed Explosion Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "NECROFIRE",
         "Arrows"
@@ -2724,7 +2755,6 @@
       "slug": "cursed-flashbang-grenade",
       "title": "Cursed Flashbang Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BLIND",
         "Grenades"
@@ -2734,7 +2764,6 @@
       "slug": "cursed-freezing-arrow",
       "title": "Cursed Freezing Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
         "Arrows"
@@ -2744,7 +2773,6 @@
       "slug": "cursed-frost-grenade",
       "title": "Cursed Frost Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
         "Grenades"
@@ -2754,7 +2782,6 @@
       "slug": "cursed-knocked-out-arrow",
       "title": "Cursed Knocked Out Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "KNOCKED_DOWN",
         "Arrows"
@@ -2764,7 +2791,6 @@
       "slug": "cursed-nailbomb-grenade",
       "title": "Cursed Nailbomb Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
         "Grenades"
@@ -2784,7 +2810,6 @@
       "slug": "cursed-oil-flask",
       "title": "Cursed Oil Flask",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Grenades"
       ]
@@ -2793,7 +2818,6 @@
       "slug": "cursed-poison-arrow",
       "title": "Cursed Poison Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "ACID",
         "Arrows"
@@ -2803,7 +2827,6 @@
       "slug": "cursed-poison-cloud-grenade",
       "title": "Cursed Poison Cloud Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "POISONED",
         "Grenades"
@@ -2813,7 +2836,6 @@
       "slug": "cursed-poisoned-cloud-arrow",
       "title": "Cursed Poisoned Cloud Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "SUFFOCATING",
         "Arrows"
@@ -2823,7 +2845,6 @@
       "slug": "cursed-silver-arrow",
       "title": "Cursed Silver Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CURSED",
         "Arrows"
@@ -2833,7 +2854,6 @@
       "slug": "cursed-slowdown-arrow",
       "title": "Cursed Slowdown Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "SLOWED",
         "Arrows"
@@ -2851,7 +2871,6 @@
       "slug": "cursed-steam-cloud-arrow",
       "title": "Cursed Steam Cloud Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "WET",
         "Arrows"
@@ -2861,7 +2880,6 @@
       "slug": "cursed-stunning-arrow",
       "title": "Cursed Stunning Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "SHOCKED",
         "Arrows"
@@ -2871,7 +2889,6 @@
       "slug": "cursed-taser-grenade",
       "title": "Cursed Taser Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "SHOCKED",
         "Grenades"
@@ -2881,7 +2898,6 @@
       "slug": "cursed-terror-grenade",
       "title": "Cursed Terror Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "FEAR",
         "Grenades"
@@ -2891,7 +2907,6 @@
       "slug": "cursed-tremor-grenade",
       "title": "Cursed Tremor Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "KNOCKED_DOWN",
         "Grenades"
@@ -2901,7 +2916,6 @@
       "slug": "cursed-water-arrow",
       "title": "Cursed Water Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "WET",
         "Arrows"
@@ -2911,7 +2925,6 @@
       "slug": "cursed-water-balloon",
       "title": "Cursed Water Balloon",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "WET",
         "Grenades"
@@ -2977,7 +2990,6 @@
       "slug": "debuff-all-arrow",
       "title": "Debuff All Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Arrows"
       ]
@@ -3059,7 +3071,8 @@
         "DOS2-CO",
         "DAZED",
         "Two-Handed-Maces",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -3222,7 +3235,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3232,7 +3246,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3243,7 +3258,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3253,7 +3269,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3274,7 +3291,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3298,7 +3316,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3308,7 +3327,8 @@
         "Earth-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3318,7 +3338,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "PETRIFIED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3340,7 +3361,8 @@
         "Earth-Damage",
         "DOS2-CO",
         "Oil-Surface",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3528,7 +3550,8 @@
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -3544,7 +3567,6 @@
       "title": "Explosive Arrow",
       "titlePl": "Wybuchowa strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3602,7 +3624,6 @@
       "slug": "face-ripper",
       "title": "Face-ripper",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Ingredients"
       ]
@@ -3696,7 +3717,6 @@
       "title": "Fire Arrow",
       "titlePl": "Ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -3723,7 +3743,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3733,7 +3754,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3744,7 +3766,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3754,7 +3777,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3783,7 +3807,8 @@
         "DOS2-CO",
         "BURNING",
         "Two-Handed-Axes",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -3793,7 +3818,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3817,7 +3843,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3827,7 +3854,8 @@
         "Fire-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3837,7 +3865,8 @@
         "Fire-Damage",
         "DOS2-CO",
         "BURNING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3846,7 +3875,8 @@
       "tags": [
         "Fire-Damage",
         "DOS2-CO",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3854,7 +3884,6 @@
       "title": "Firestorm Grenade",
       "titlePl": "Granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -3895,7 +3924,6 @@
       "title": "Flashbang Grenade",
       "titlePl": "Granat błysków",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "BLIND",
@@ -3978,7 +4006,6 @@
       "title": "Freezing Arrow",
       "titlePl": "Zamrażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4027,7 +4054,6 @@
       "slug": "frost-cloud-arrow",
       "title": "Frost Cloud Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "CHILLED",
         "Arrows"
@@ -4038,7 +4064,6 @@
       "title": "Frost Grenade",
       "titlePl": "Granat mrozu",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4061,7 +4086,8 @@
         "Ice-Surface",
         "WET",
         "Two-Handed-Maces",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4180,7 +4206,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DAZED",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4236,13 +4263,13 @@
       ]
     },
     {
-      "slug": "gloves",
-      "title": "Gloves",
-      "titlePl": "Rękawice",
+      "slug": "glowing-starfish",
+      "title": "Glowing Starfish",
+      "titlePl": "Świetlista rozgwiazda",
       "tags": [
-        "Ingredients",
+        "DOS1",
         "DOS2-CO",
-        "DOS2"
+        "Ingredients"
       ]
     },
     {
@@ -4474,7 +4501,8 @@
         "DOS2-CO",
         "FEAR",
         "Two-Handed-Axes",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4539,16 +4567,6 @@
       ]
     },
     {
-      "slug": "helmet",
-      "title": "Helmet",
-      "titlePl": "Hełm",
-      "tags": [
-        "Ingredients",
-        "DOS2-CO",
-        "DOS2"
-      ]
-    },
-    {
       "slug": "helmet-of-grunt",
       "title": "Helmet of Grunt",
       "tags": [
@@ -4568,7 +4586,6 @@
       "slug": "holy-blessed-grenade",
       "title": "Holy Blessed Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Grenades"
       ]
@@ -4579,7 +4596,6 @@
       "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Grenades"
@@ -4638,7 +4654,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "WET",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4664,7 +4681,8 @@
       "title": "Improv Wand",
       "tags": [
         "Ingredients",
-        "DOS2-CO"
+        "DOS2-CO",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -4868,7 +4886,6 @@
       "title": "Knockdown Arrow",
       "titlePl": "Strzała powalająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5149,6 +5166,17 @@
       ]
     },
     {
+      "slug": "lid-of-a-barrel",
+      "title": "Lid of a Barrel",
+      "titlePl": "Pokrywa od beczki",
+      "tags": [
+        "DOS1",
+        "DOS2-CO",
+        "Ingredients",
+        "Stations-And-Containers"
+      ]
+    },
+    {
       "slug": "life-essence",
       "title": "Life Essence",
       "titlePl": "Esencja życia",
@@ -5284,7 +5312,6 @@
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5910,6 +5937,14 @@
       ]
     },
     {
+      "slug": "mordus-skull-ring",
+      "title": "Mordus' Skull Ring",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
+      ]
+    },
+    {
       "slug": "mortar-and-pestle",
       "title": "Mortar And Pestle",
       "titlePl": "Moździerz i tłuczek",
@@ -6050,7 +6085,6 @@
       "title": "Nailbomb Grenade",
       "titlePl": "Granat z gwoździami",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6127,7 +6161,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "MADNESS",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -6218,7 +6253,6 @@
       "title": "Oil Flask",
       "titlePl": "Flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6537,7 +6571,6 @@
       "slug": "pepper-candy",
       "title": "Pepper Candy",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BURNING",
         "Food-And-Drink",
@@ -6575,6 +6608,14 @@
       ]
     },
     {
+      "slug": "phoenix-wings",
+      "title": "Phoenix Wings",
+      "tags": [
+        "DOS2-CO",
+        "Seasonal-Items"
+      ]
+    },
+    {
       "slug": "physical-staff",
       "title": "Physical Staff",
       "tags": [
@@ -6582,7 +6623,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6592,7 +6634,8 @@
         "Physical-Damage",
         "DOS2-CO",
         "BLEEDING",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6711,7 +6754,6 @@
       "title": "Poison Arrow",
       "titlePl": "Zatruta strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6728,7 +6770,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6739,7 +6782,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6756,7 +6800,6 @@
       "title": "Poison Cloud Grenade",
       "titlePl": "Granat trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6773,7 +6816,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6784,7 +6828,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6792,7 +6837,6 @@
       "title": "Poison Flask",
       "titlePl": "Fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6818,7 +6862,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6830,7 +6875,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6841,7 +6887,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6851,7 +6898,8 @@
         "Poison-Damage",
         "DOS2-CO",
         "Poison-Surface",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6859,7 +6907,6 @@
       "title": "Poisoncloud Arrow",
       "titlePl": "Strzała trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "POISONED",
         "Arrows",
@@ -6894,7 +6941,8 @@
         "Poison-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -6996,10 +7044,11 @@
       "title": "Pumpkin",
       "titlePl": "Dynia",
       "tags": [
-        "Healing",
         "DOS1",
+        "DOS2",
         "DOS2-CO",
         "Food-And-Drink",
+        "Healing",
         "Ingredients"
       ]
     },
@@ -7138,7 +7187,8 @@
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -7299,7 +7349,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7324,7 +7375,6 @@
       "title": "Resurrection Scroll",
       "titlePl": "Zwój Wskrzeszenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "RESURRECT",
@@ -7355,17 +7405,6 @@
       "tags": [
         "DOS2-CO",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "ring",
-      "title": "Ring",
-      "titlePl": "Pierścień",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
-        "Rings",
-        "Ingredients"
       ]
     },
     {
@@ -7667,7 +7706,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "WEAK",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -7678,7 +7718,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7689,7 +7730,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7700,7 +7742,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7711,7 +7754,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7733,7 +7777,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7745,7 +7790,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7757,7 +7803,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "DISEASED",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7768,7 +7815,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7779,7 +7827,8 @@
         "Shadow-Damage",
         "DOS2-CO",
         "DISEASED",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7913,7 +7962,8 @@
         "DOS2-CO",
         "DAZED",
         "Wands",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7936,7 +7986,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "WEAK",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -7950,7 +8001,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -7958,7 +8010,6 @@
       "title": "Silver Arrow",
       "titlePl": "Srebrna strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -8098,7 +8149,6 @@
       "title": "Slowdown Arrow",
       "titlePl": "Strzała spowalniająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -8138,7 +8188,6 @@
       "title": "Smoke Grenade",
       "titlePl": "Granat dymny",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "Grenades"
       ]
@@ -8148,7 +8197,6 @@
       "title": "Smokescreen Arrow",
       "titlePl": "Strzała zasłony dymnej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -8237,7 +8285,6 @@
       "slug": "spooky-pumpkin-grenade",
       "title": "Spooky Pumpkin Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "FEAR",
         "Seasonal-Items",
@@ -8275,7 +8322,8 @@
         "DOS2-CO",
         "BURNING",
         "Staves",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8308,7 +8356,8 @@
         "Ice-Surface",
         "WET",
         "Wands",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8335,7 +8384,6 @@
       "title": "Steamcloud Arrow",
       "titlePl": "Strzała obłoku pary",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "WET",
         "Arrows",
@@ -8400,7 +8448,6 @@
       "title": "Stunning Arrow",
       "titlePl": "Strzała ogłuszająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2-CO",
         "Arrows"
@@ -8481,7 +8528,6 @@
       "title": "Terror Grenade",
       "titlePl": "Granat grozy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -8504,7 +8550,8 @@
         "DOS2-CO",
         "BURNING",
         "Staves",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8642,7 +8689,6 @@
       "slug": "tongue-of-diplomats",
       "title": "Tongue of Diplomats",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "TONGUED",
         "Ingredients",
@@ -8692,7 +8738,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2-CO",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -8728,7 +8775,6 @@
       "title": "Tremor Grenade",
       "titlePl": "Granat wstrząsowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -8833,7 +8879,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8849,7 +8896,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8865,7 +8913,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8882,7 +8931,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8898,7 +8948,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -8915,7 +8966,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9024,7 +9076,8 @@
         "Loremaster",
         "DOS2-CO",
         "SHOCKED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9043,7 +9096,8 @@
         "Finesse",
         "DOS2-CO",
         "SHOCKED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9058,7 +9112,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9073,7 +9128,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9089,7 +9145,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9108,7 +9165,8 @@
         "Loremaster",
         "DOS2-CO",
         "PETRIFIED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9127,7 +9185,8 @@
         "Finesse",
         "DOS2-CO",
         "PETRIFIED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9142,7 +9201,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9157,7 +9217,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9173,7 +9234,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "PETRIFIED",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9192,7 +9254,8 @@
         "Loremaster",
         "DOS2-CO",
         "BURNING",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9211,7 +9274,8 @@
         "Finesse",
         "DOS2-CO",
         "BURNING",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9226,7 +9290,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9241,7 +9306,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BURNING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9258,7 +9324,8 @@
         "DOS2-CO",
         "Fire-Surface",
         "BURNING",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9562,7 +9629,8 @@
         "Loremaster",
         "DOS2-CO",
         "BLEEDING",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9580,7 +9648,8 @@
         "Finesse",
         "DOS2-CO",
         "BLEEDING",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9595,7 +9664,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9611,7 +9681,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9630,7 +9701,8 @@
         "Loremaster",
         "DOS2-CO",
         "POISONED",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9650,7 +9722,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9666,7 +9739,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9683,7 +9757,8 @@
         "DOS2-CO",
         "Poison-Surface",
         "POISONED",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -9796,7 +9871,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "POISONED",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10200,7 +10276,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "BLEEDING",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10305,7 +10382,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10319,7 +10397,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10333,7 +10412,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "Two-Handed-Swords"
+        "Two-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10348,7 +10428,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10364,7 +10445,8 @@
         "Loremaster",
         "Finesse",
         "DOS2-CO",
-        "Bows"
+        "Bows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -10381,7 +10463,8 @@
         "Loremaster",
         "Finesse",
         "DOS2-CO",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -10397,7 +10480,8 @@
         "Grants-Skill",
         "Finesse",
         "DOS2-CO",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -10412,7 +10496,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10436,7 +10521,8 @@
         "Grants-Skill",
         "Finesse",
         "DOS2-CO",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10459,7 +10545,8 @@
         "Grants-Skill",
         "Finesse",
         "DOS2-CO",
-        "Spears"
+        "Spears",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -10474,7 +10561,8 @@
         "Warfare",
         "Grants-Skill",
         "DOS2-CO",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -10589,7 +10677,8 @@
         "Loremaster",
         "DOS2-CO",
         "WET",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10609,7 +10698,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10624,7 +10714,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "WET",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10640,7 +10731,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10657,7 +10749,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10756,7 +10849,6 @@
       "slug": "voodoo-doll-scroll",
       "title": "Voodoo Doll Scroll",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "BLEEDING",
         "Scrolls"
@@ -10786,7 +10878,8 @@
         "DOS2-CO",
         "Source-Surface",
         "Wands",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10868,7 +10961,6 @@
       "title": "Water Arrow",
       "titlePl": "Strzała wodna",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "Water-Surface",
@@ -10896,7 +10988,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10904,7 +10997,6 @@
       "title": "Water Balloon",
       "titlePl": "Balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -10932,7 +11024,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Bows"
+        "Bows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10944,7 +11037,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10955,7 +11049,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -10977,7 +11072,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "One-Handed-Maces"
+        "One-Handed-Maces",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11002,7 +11098,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "Spears"
+        "Spears",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11012,7 +11109,8 @@
         "Water-Damage",
         "Grants-Skill",
         "DOS2-CO",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11023,7 +11121,8 @@
         "DOS2-CO",
         "Water-Surface",
         "WET",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11033,7 +11132,8 @@
         "Water-Damage",
         "DOS2-CO",
         "Water-Surface",
-        "Wands"
+        "Wands",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11087,7 +11187,6 @@
       "slug": "webbed-arrow",
       "title": "Webbed Arrow",
       "tags": [
-        "Casts-Spell",
         "DOS2-CO",
         "WEB",
         "Arrows"
@@ -11099,6 +11198,7 @@
       "titlePl": "Studnia",
       "tags": [
         "DOS1",
+        "DOS2",
         "DOS2-CO",
         "Stations-And-Containers"
       ]
@@ -11169,7 +11269,8 @@
         "Grants-Skill",
         "DOS2-CO",
         "SHOCKED",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11237,7 +11338,8 @@
         "DOS2-CO",
         "WET",
         "Staves",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -11249,7 +11351,8 @@
         "DOS2-CO",
         "FEAR",
         "Staves",
-        "Seasonal-Items"
+        "Seasonal-Items",
+        "Scales-With-Intelligence"
       ]
     },
     {

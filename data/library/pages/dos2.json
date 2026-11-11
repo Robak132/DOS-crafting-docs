@@ -10,11 +10,21 @@
       ]
     },
     {
+      "slug": "acid-infusion-skillbook",
+      "title": "Acid Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Kwasu”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Skillbooks",
+        "Summoning"
+      ]
+    },
+    {
       "slug": "acid-spores-scroll",
       "title": "Acid Spores Scroll",
       "titlePl": "Zwój Kwaśnych Zarodników",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "POISONED",
@@ -160,17 +170,6 @@
       ]
     },
     {
-      "slug": "amulet",
-      "title": "Amulet",
-      "titlePl": "Amulet",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
-        "Amulets",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "ancient-human-skull",
       "title": "Ancient Human Skull",
       "titlePl": "Prastara ludzka czaszka",
@@ -229,7 +228,6 @@
       "title": "Apotheosis Scroll",
       "titlePl": "Zwój Apoteozy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "APOTHEOSIS",
@@ -298,7 +296,6 @@
       "title": "Apportation Scroll",
       "titlePl": "Zwój Przyciągnięcia",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -320,7 +317,6 @@
       "title": "Arcane Stitch Scroll",
       "titlePl": "Zwój Magicznego Szwu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "ARCANE_STITCH",
@@ -343,7 +339,6 @@
       "title": "Armour of Frost Scroll",
       "titlePl": "Zwój Pancerza Mrozu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "MAGIC_SHELL",
@@ -501,16 +496,6 @@
       ]
     },
     {
-      "slug": "belt",
-      "title": "Belt",
-      "titlePl": "Pas",
-      "tags": [
-        "DOS2",
-        "Belts",
-        "Ingredients"
-      ]
-    },
-    {
       "slug": "bench-saw",
       "title": "Bench Saw",
       "titlePl": "Piła warsztatowa",
@@ -536,7 +521,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -544,7 +530,6 @@
       "title": "Black Shroud Scroll",
       "titlePl": "Zwój Czarnego Całunu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -557,6 +542,24 @@
       "tags": [
         "DOS2",
         "Skillbooks"
+      ]
+    },
+    {
+      "slug": "black-tea",
+      "title": "Black Tea",
+      "titlePl": "Czarna herbata",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink"
+      ]
+    },
+    {
+      "slug": "black-tea-leaves",
+      "title": "Black Tea Leaves",
+      "titlePl": "Liście czarnej herbaty",
+      "tags": [
+        "DOS2",
+        "Ingredients"
       ]
     },
     {
@@ -646,7 +649,6 @@
       "title": "Bleed Fire Scroll",
       "titlePl": "Zwój Ognistego Krwotoku",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FIREBLOOD",
@@ -659,9 +661,10 @@
       "title": "Bleed Fire Skillbook",
       "titlePl": "Księga umiejętności „Ognisty Krwotok”",
       "tags": [
-        "Pyrokinetic",
         "DOS2",
-        "Skillbooks"
+        "Pyrokinetic",
+        "Skillbooks",
+        "Teaches-Skill"
       ]
     },
     {
@@ -669,9 +672,19 @@
       "title": "Blessed Ice Grenade",
       "titlePl": "Pobłogosławiony granat lodowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Grenades"
+      ]
+    },
+    {
+      "slug": "blessed-ice-infusion-skillbook",
+      "title": "Blessed Ice Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Pobłogosławione Podsycenie Lodu”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Skillbooks",
+        "Summoning"
       ]
     },
     {
@@ -679,9 +692,19 @@
       "title": "Blessed Oil Flask",
       "titlePl": "Pobłogosławiony flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Grenades"
+      ]
+    },
+    {
+      "slug": "blessed-smoke-cloud-skillbook",
+      "title": "Blessed Smoke Cloud Skillbook",
+      "titlePl": "Księga umiejętności „Błogosławiona Chmura Dymu”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Scoundrel",
+        "Skillbooks"
       ]
     },
     {
@@ -689,7 +712,6 @@
       "title": "Blessed Water Arrow",
       "titlePl": "Pobłogosławiona strzała wodna",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "HEALING",
         "Arrows"
@@ -709,7 +731,6 @@
       "title": "Blessed Water Balloon",
       "titlePl": "Pobłogosławiony balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "WET",
         "Grenades"
@@ -720,7 +741,6 @@
       "title": "Blinding Radiance Scroll",
       "titlePl": "Zwój Oślepiającego Blasku",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -743,7 +763,8 @@
       "titlePl": "Księga umiejętności „Deszcz Krwi”",
       "tags": [
         "DOS2",
-        "Skillbooks"
+        "Skillbooks",
+        "Teaches-Skill"
       ]
     },
     {
@@ -777,11 +798,21 @@
       ]
     },
     {
+      "slug": "blood-storm-skillbook",
+      "title": "Blood Storm Skillbook",
+      "titlePl": "Księga umiejętności „Krwawa Burza”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Necromancer",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "blood-sucker-scroll",
       "title": "Blood Sucker Scroll",
       "titlePl": "Zwój Krwiopijcy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLOOD_BUBBLE",
         "Ingredients",
@@ -857,7 +888,6 @@
       "title": "Bone Cage Scroll",
       "titlePl": "Zwój Kościanej Klatki",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -973,6 +1003,17 @@
       ]
     },
     {
+      "slug": "breathing-bubble-skillbook",
+      "title": "Breathing Bubble Skillbook",
+      "titlePl": "Księga umiejętności „Pęcherz Powietrza”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
       "slug": "broken-angelic-statue",
       "title": "Broken Angelic Statue",
       "tags": [
@@ -1029,7 +1070,6 @@
       "title": "Bull Horns Scroll",
       "titlePl": "Zwój Byczych Rogów",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "HORNS",
@@ -1074,7 +1114,6 @@
       "title": "Cannibalise Scroll",
       "titlePl": "Zwój Kanibalizmu",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1109,9 +1148,9 @@
       "title": "Chain Lightning Scroll",
       "titlePl": "Zwój Łańcucha Piorunów",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "SHOCKED",
         "Ingredients",
         "Scrolls"
@@ -1124,6 +1163,7 @@
       "tags": [
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -1132,7 +1172,6 @@
       "title": "Chameleon Cloak Scroll",
       "titlePl": "Zwój Płaszcza Kameleona",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "INVISIBLE",
@@ -1166,7 +1205,6 @@
       "title": "Charm Scroll",
       "titlePl": "Zwój Oczarowania",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "CHARMED",
@@ -1179,7 +1217,6 @@
       "title": "Charming Arrow",
       "titlePl": "Strzała oczarowująca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1238,7 +1275,6 @@
       "title": "Chemical Warfare Grenade",
       "titlePl": "Granat chemiczny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -1251,7 +1287,6 @@
       "title": "Chicken Claw Scroll",
       "titlePl": "Zwój Kurzego Pazura",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "CHICKEN",
@@ -1303,11 +1338,21 @@
       ]
     },
     {
+      "slug": "cleanse-wounds-skillbook",
+      "title": "Cleanse Wounds Skillbook",
+      "titlePl": "Księga umiejętności „Oczyszczenie Ran”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
       "slug": "closed-circuit-scroll",
       "title": "Closed Circuit Scroll",
       "titlePl": "Zwój Obwodu Zamkniętego",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1341,7 +1386,6 @@
       "title": "Cluster Grenade",
       "titlePl": "Granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -1374,7 +1418,6 @@
       "title": "Conjure Incarnate Scroll",
       "titlePl": "Zwój Przyzwania Przyzwańca",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1396,7 +1439,6 @@
       "title": "Contamination Scroll",
       "titlePl": "Zwój Skażenia",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "POISONED",
@@ -1437,6 +1479,39 @@
       ]
     },
     {
+      "slug": "corpse-explosion-skillbook",
+      "title": "Corpse Explosion Skillbook",
+      "titlePl": "Księga umiejętności „Eksplozja Zwłok”",
+      "tags": [
+        "DOS2",
+        "Necromancer",
+        "Pyrokinetic",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "corrosive-spray-skillbook",
+      "title": "Corrosive Spray Skillbook",
+      "titlePl": "Księga umiejętności „Żrący Prysznic”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Necromancer",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "corrosive-touch-skillbook",
+      "title": "Corrosive Touch Skillbook",
+      "titlePl": "Księga umiejętności „Żrący Dotyk”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Necromancer",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "courage-herbmix",
       "title": "Courage Herbmix",
       "tags": [
@@ -1464,7 +1539,8 @@
         "DOS2",
         "DOS2-CO",
         "Daggers",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -1486,7 +1562,8 @@
         "Physical-Damage",
         "DOS2",
         "Crossbows",
-        "Ingredients"
+        "Ingredients",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -1505,7 +1582,6 @@
       "title": "Cryogenic Stasis Scroll",
       "titlePl": "Zwój Kriostazy",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "PERMAFROST",
@@ -1520,6 +1596,17 @@
       "tags": [
         "Hydrosophist",
         "DOS2",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "cryotherapy-skillbook",
+      "title": "Cryotherapy Skillbook",
+      "titlePl": "Księga umiejętności „Krioterapia”",
+      "tags": [
+        "DOS2",
+        "Huntsman",
+        "Hydrosophist",
         "Skillbooks"
       ]
     },
@@ -1571,7 +1658,6 @@
       "title": "Curse Scroll",
       "titlePl": "Zwój Przekleństwa",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CURSED",
         "Scrolls"
@@ -1582,10 +1668,20 @@
       "title": "Cursed Cluster Grenade",
       "titlePl": "Przeklęty granat kasetowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Grenades"
+      ]
+    },
+    {
+      "slug": "cursed-electric-infusion-skillbook",
+      "title": "Cursed Electric Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Przeklęte Podsycenie Elektryczności”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Skillbooks",
+        "Summoning"
       ]
     },
     {
@@ -1593,7 +1689,6 @@
       "title": "Cursed Fire Arrow",
       "titlePl": "Przeklęta ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Arrows"
@@ -1613,7 +1708,6 @@
       "title": "Cursed Firestorm Grenade",
       "titlePl": "Przeklęty granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BURNING",
         "Grenades"
@@ -1624,7 +1718,6 @@
       "title": "Cursed Poison Flask",
       "titlePl": "Przeklęta fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "POISONED",
         "Grenades"
@@ -1653,7 +1746,6 @@
       "title": "Dazing Bolt Scroll",
       "titlePl": "Zwój Rażenia Piorunem",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1676,7 +1768,6 @@
       "title": "Death Wish Scroll",
       "titlePl": "Zwój Życzenia Śmierci",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DEATH_WISH",
         "Ingredients",
@@ -1697,7 +1788,6 @@
       "title": "Decaying Touch Scroll",
       "titlePl": "Zwój Dotyku Rozkładu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DECAYING_TOUCH",
         "Ingredients",
@@ -1718,7 +1808,6 @@
       "title": "Deep Freeze Scroll",
       "titlePl": "Zwój Głębokiego Zmrożenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "FROZEN",
@@ -1737,11 +1826,21 @@
       ]
     },
     {
+      "slug": "deploy-mass-traps-skillbook",
+      "title": "Deploy Mass Traps Skillbook",
+      "titlePl": "Księga umiejętności „Pole Pułapek”",
+      "tags": [
+        "DOS2",
+        "Huntsman",
+        "Pyrokinetic",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "dimensional-bolt-scroll",
       "title": "Dimensional Bolt Scroll",
       "titlePl": "Zwój Wielowymiarowego Pocisku",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -1812,7 +1911,6 @@
       "title": "Door to Eternity Scroll",
       "titlePl": "Zwój Drzwi do Wieczności",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "ETERNITY_DOOR",
@@ -1867,6 +1965,17 @@
         "DOS2-CO",
         "SLOWED",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "dust-blast-skillbook",
+      "title": "Dust Blast Skillbook",
+      "titlePl": "Księga umiejętności „Kurzawa”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Huntsman",
+        "Skillbooks"
       ]
     },
     {
@@ -1931,9 +2040,9 @@
       "title": "Earthquake Scroll",
       "titlePl": "Zwój Trzęsienia Ziemi",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
+        "DOS1",
         "KNOCKED_DOWN",
         "Ingredients",
         "Scrolls"
@@ -1946,6 +2055,7 @@
       "tags": [
         "Geomancer",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -1966,7 +2076,6 @@
       "title": "Electric Discharge Scroll",
       "titlePl": "Zwój Wyładowania Elektrycznego",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -1985,11 +2094,21 @@
       ]
     },
     {
+      "slug": "electric-infusion-skillbook",
+      "title": "Electric Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Elektryczności”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Skillbooks",
+        "Summoning"
+      ]
+    },
+    {
       "slug": "elemental-totem-scroll",
       "title": "Elemental Totem Scroll",
       "titlePl": "Zwój Totemu Żywiołów",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -2133,7 +2252,6 @@
       "title": "Epidemic Of Fire Scroll",
       "titlePl": "Zwój Epidemii Ognia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "NECROFIRE",
@@ -2156,7 +2274,6 @@
       "title": "Equalise Scroll",
       "titlePl": "Zwój Wyrównania",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -2170,6 +2287,17 @@
       "tags": [
         "Polymorph",
         "DOS2",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "erratic-wisp-skillbook",
+      "title": "Erratic Wisp Skillbook",
+      "titlePl": "Księga umiejętności „Błędny Ognik”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Huntsman",
         "Skillbooks"
       ]
     },
@@ -2214,7 +2342,6 @@
       "title": "Ethereal Storm Scroll",
       "titlePl": "Zwój Eterycznej Burzy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -2232,6 +2359,17 @@
       ]
     },
     {
+      "slug": "evasive-aura-skillbook",
+      "title": "Evasive Aura Skillbook",
+      "titlePl": "Księga umiejętności „Aura Uniku”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Huntsman",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "expensive-wine",
       "title": "Expensive Wine",
       "titlePl": "Drogie wino",
@@ -2245,7 +2383,6 @@
       "title": "Explosive Arrow",
       "titlePl": "Wybuchowa strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2262,6 +2399,17 @@
         "DOS1",
         "DOS2",
         "Arrows"
+      ]
+    },
+    {
+      "slug": "explosive-trap-skillbook",
+      "title": "Explosive Trap Skillbook",
+      "titlePl": "Księga umiejętności „Wybuchająca Pułapka”",
+      "tags": [
+        "DOS2",
+        "Huntsman",
+        "Pyrokinetic",
+        "Skillbooks"
       ]
     },
     {
@@ -2321,7 +2469,6 @@
       "title": "Farsight Infusion Scroll",
       "titlePl": "Zwój Podsycenia Dalekowidzenia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_RANGED",
@@ -2344,7 +2491,6 @@
       "title": "Favourable Wind Scroll",
       "titlePl": "Zwój Korzystnego Wiatru",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "FAVOURABLE_WIND_AURA",
@@ -2386,7 +2532,6 @@
       "title": "Fire Arrow",
       "titlePl": "Ognista strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2418,6 +2563,17 @@
       ]
     },
     {
+      "slug": "fire-infusion-skillbook",
+      "title": "Fire Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Ognia”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Skillbooks",
+        "Summoning"
+      ]
+    },
+    {
       "slug": "fire-resistance-potion",
       "title": "Fire Resistance Potion",
       "titlePl": "Mikstura odporności na ogień",
@@ -2435,7 +2591,6 @@
       "title": "Fire Whip Scroll",
       "titlePl": "Zwój Ognistego Bicza",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BLIND",
@@ -2459,9 +2614,9 @@
       "title": "Fireball Scroll",
       "titlePl": "Zwój Kuli Ognia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
+        "DOS1",
         "Fire-Surface",
         "BURNING",
         "Ingredients",
@@ -2483,7 +2638,6 @@
       "title": "Firebrand Scroll",
       "titlePl": "Zwój Żagwi",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FIRE_BRAND_AURA",
@@ -2506,7 +2660,6 @@
       "title": "Firestorm Grenade",
       "titlePl": "Granat burzy ognistej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Fire-Surface",
@@ -2554,7 +2707,6 @@
       "title": "Flaming Crescendo Scroll",
       "titlePl": "Zwój Płomiennego Finału",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FLAMING_CRESCENDO",
@@ -2573,11 +2725,21 @@
       ]
     },
     {
+      "slug": "flaming-skin-skillbook",
+      "title": "Flaming Skin Skillbook",
+      "titlePl": "Księga umiejętności „Płonąca Skóra”",
+      "tags": [
+        "DOS2",
+        "Polymorph",
+        "Pyrokinetic",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "flaming-tongues-scroll",
       "title": "Flaming Tongues Scroll",
       "titlePl": "Zwój Płomiennych Języków",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "FLAMING_TONGUES",
@@ -2600,7 +2762,6 @@
       "title": "Flay Skin Scroll",
       "titlePl": "Zwój Obdarcia ze Skóry",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "NULL_RESISTANCE",
@@ -2645,7 +2806,6 @@
       "title": "Forced Exchange Scroll",
       "titlePl": "Zwój Wymuszonej Wymiany",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "DEMONIC_BARGAIN",
@@ -2668,9 +2828,9 @@
       "title": "Fortify Scroll",
       "titlePl": "Zwój Kamiennego Pancerza",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
+        "DOS1",
         "FORTIFIED",
         "Ingredients",
         "Scrolls"
@@ -2683,6 +2843,7 @@
       "tags": [
         "Geomancer",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -2691,7 +2852,6 @@
       "title": "Fossil Strike Scroll",
       "titlePl": "Zwój Kamiennego Ciosu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -2714,7 +2874,6 @@
       "title": "Freezing Arrow",
       "titlePl": "Zamrażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2740,7 +2899,6 @@
       "title": "Frost Grenade",
       "titlePl": "Granat mrozu",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -2965,7 +3123,6 @@
       "title": "Global Cooling Scroll",
       "titlePl": "Zwój Globalnego Ochłodzenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHILLED",
@@ -2981,16 +3138,6 @@
         "Hydrosophist",
         "DOS2",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "gloves",
-      "title": "Gloves",
-      "titlePl": "Rękawice",
-      "tags": [
-        "Ingredients",
-        "DOS2-CO",
-        "DOS2"
       ]
     },
     {
@@ -3037,7 +3184,6 @@
       "title": "Grasp of the Starved Scroll",
       "titlePl": "Zwój Uchwytu Wygłodniałych",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CRIPPLED",
         "Ingredients",
@@ -3051,6 +3197,24 @@
       "tags": [
         "DOS2",
         "Skillbooks"
+      ]
+    },
+    {
+      "slug": "green-tea",
+      "title": "Green Tea",
+      "titlePl": "Zielona herbata",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink"
+      ]
+    },
+    {
+      "slug": "green-tea-leaves",
+      "title": "Green Tea Leaves",
+      "titlePl": "Liście zielonej herbaty",
+      "tags": [
+        "DOS2",
+        "Ingredients"
       ]
     },
     {
@@ -3078,7 +3242,6 @@
       "title": "Hail Strike Scroll",
       "titlePl": "Zwój Gradobicia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ice-Surface",
@@ -3205,7 +3368,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -3213,7 +3377,6 @@
       "title": "Haste Scroll",
       "titlePl": "Zwój Przyspieszenia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "HASTED",
@@ -3276,7 +3439,6 @@
       "title": "Healing Ritual Scroll",
       "titlePl": "Zwój Rytuału Uzdrawiającego",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHAIN_HEAL",
@@ -3295,11 +3457,21 @@
       ]
     },
     {
+      "slug": "healing-tears-skillbook",
+      "title": "Healing Tears Skillbook",
+      "titlePl": "Księga umiejętności „Uzdrawiające Łzy”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "heart-of-steel-scroll",
       "title": "Heart of Steel Scroll",
       "titlePl": "Zwój Serca ze Stali",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "STEEL_SKIN",
@@ -3315,16 +3487,6 @@
         "Polymorph",
         "DOS2",
         "Skillbooks"
-      ]
-    },
-    {
-      "slug": "helmet",
-      "title": "Helmet",
-      "titlePl": "Hełm",
-      "tags": [
-        "Ingredients",
-        "DOS2-CO",
-        "DOS2"
       ]
     },
     {
@@ -3488,7 +3650,6 @@
       "titlePl": "Święty granat ręczny",
       "tags": [
         "DOS2-CO",
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "Grenades"
@@ -3581,7 +3742,6 @@
       "title": "Hungry Flower Scroll",
       "titlePl": "Zwój Wygłodniałego Kwiatu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Scrolls"
@@ -3592,7 +3752,6 @@
       "title": "Ice Breaker Scroll",
       "titlePl": "Zwój Lodołamacza",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ingredients",
@@ -3614,7 +3773,6 @@
       "title": "Ice Fan Scroll",
       "titlePl": "Zwój Lodowego Wachlarza",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "Ice-Surface",
@@ -3634,11 +3792,21 @@
       ]
     },
     {
+      "slug": "icy-skin-skillbook",
+      "title": "Icy Skin Skillbook",
+      "titlePl": "Księga umiejętności „Lodowata Skóra”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "ignition-scroll",
       "title": "Ignition Scroll",
       "titlePl": "Zwój Zapłonu",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BURNING",
@@ -3661,7 +3829,6 @@
       "title": "Impalement Scroll",
       "titlePl": "Zwój Nadziania",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -3697,7 +3864,8 @@
         "Fire-Damage",
         "Grants-Skill",
         "DOS2",
-        "Staves"
+        "Staves",
+        "Scales-With-Intelligence"
       ]
     },
     {
@@ -3705,7 +3873,6 @@
       "title": "Infect Scroll",
       "titlePl": "Zwój Zakażenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -3763,6 +3930,17 @@
       ]
     },
     {
+      "slug": "jellyfish-skin-skillbook",
+      "title": "Jellyfish Skin Skillbook",
+      "titlePl": "Księga umiejętności „Skóra Meduzy”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "jellyroom",
       "title": "Jellyroom",
       "titlePl": "Meduzowiec",
@@ -3802,7 +3980,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "One-Handed-Swords"
+        "One-Handed-Swords",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -3822,7 +4001,6 @@
       "title": "Knockdown Arrow",
       "titlePl": "Strzała powalająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4114,7 +4292,6 @@
       "title": "Laser Ray Scroll",
       "titlePl": "Zwój Laserowego Promienia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "BURNING",
@@ -4199,7 +4376,6 @@
       "title": "Living on the Edge Scroll",
       "titlePl": "Zwój Życia na Krawędzi",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DEATH_RESIST",
         "Ingredients",
@@ -4220,7 +4396,6 @@
       "title": "Living Wall Scroll",
       "titlePl": "Zwój Żywej Ściany",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -4293,7 +4468,6 @@
       "title": "Love Grenade",
       "titlePl": "Granat miłości",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -4331,7 +4505,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4341,7 +4516,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "Two-Handed-Maces"
+        "Two-Handed-Maces",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -4353,6 +4529,93 @@
         "Strength",
         "DOS2",
         "Food-And-Drink"
+      ]
+    },
+    {
+      "slug": "mask-of-the-shapeshifter",
+      "title": "Mask of the Shapeshifter",
+      "titlePl": "Maska Zmiennokształtnego",
+      "tags": [
+        "Grants-Skill",
+        "DOS2",
+        "Helmets"
+      ]
+    },
+    {
+      "slug": "mass-breathing-bubbles-skillbook",
+      "title": "Mass Breathing Bubbles Skillbook",
+      "titlePl": "Księga umiejętności „Masowy Pęcherz Powietrza”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
+      "slug": "mass-cleanse-wounds-skillbook",
+      "title": "Mass Cleanse Wounds Skillbook",
+      "titlePl": "Księga umiejętności „Masowe Oczyszczenie Ran”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
+      "slug": "mass-corpse-explosion-skillbook",
+      "title": "Mass Corpse Explosion Skillbook",
+      "titlePl": "Księga umiejętności „Masowa Eksplozja Zwłok”",
+      "tags": [
+        "DOS2",
+        "Necromancer",
+        "Pyrokinetic",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "mass-cryotherapy-skillbook",
+      "title": "Mass Cryotherapy Skillbook",
+      "titlePl": "Księga umiejętności „Masowa Krioterapia”",
+      "tags": [
+        "DOS2",
+        "Huntsman",
+        "Hydrosophist",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "mass-oily-carapace-skillbook",
+      "title": "Mass Oily Carapace Skillbook",
+      "titlePl": "Księga umiejętności „Masowy Oleisty Pancerz”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
+      "slug": "mass-sabotage-skillbook",
+      "title": "Mass Sabotage Skillbook",
+      "titlePl": "Księga umiejętności „Masowy Sabotaż”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "master-of-sparks-skillbook",
+      "title": "Master of Sparks Skillbook",
+      "titlePl": "Księga umiejętności „Mistrz Iskier”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Skillbooks",
+        "Warfare"
       ]
     },
     {
@@ -4638,7 +4901,6 @@
       "title": "Medusa Head Scroll",
       "titlePl": "Zwój Głowy Meduzy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "MEDUSA_HEAD",
@@ -4661,7 +4923,6 @@
       "title": "Mend Metal Scroll",
       "titlePl": "Zwój Naprawy Metalu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "MEND_METAL",
@@ -4704,7 +4965,6 @@
       "title": "Meteor Shower Scroll",
       "titlePl": "Zwój Deszczu Meteorów",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -4762,7 +5022,6 @@
       "slug": "mind-maggot-grenade",
       "title": "Mind Maggot Grenade",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "CHARMED",
         "Grenades"
@@ -4893,7 +5152,6 @@
       "title": "Mosquito Swarm Scroll",
       "titlePl": "Zwój Roju Komarów",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLEEDING",
         "Ingredients",
@@ -5255,7 +5513,6 @@
       "title": "Nailbomb Grenade",
       "titlePl": "Granat z gwoździami",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5271,6 +5528,17 @@
         "DOS2",
         "DOS2-CO",
         "Ingredients"
+      ]
+    },
+    {
+      "slug": "necrofire-infusion-skillbook",
+      "title": "Necrofire Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Nekroognia”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Skillbooks",
+        "Summoning"
       ]
     },
     {
@@ -5300,7 +5568,6 @@
       "title": "Nether Swap Scroll",
       "titlePl": "Zwój Podmiany",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -5333,7 +5600,6 @@
       "title": "Oil Flask",
       "titlePl": "Flakon oleju",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5348,6 +5614,17 @@
         "Stations-And-Containers",
         "Ingredients",
         "DOS2"
+      ]
+    },
+    {
+      "slug": "oily-carapace-skillbook",
+      "title": "Oily Carapace Skillbook",
+      "titlePl": "Księga umiejętności „Oleisty Pancerz”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Skillbooks",
+        "Warfare"
       ]
     },
     {
@@ -5406,19 +5683,10 @@
       ]
     },
     {
-      "slug": "pants",
-      "title": "Pants",
-      "tags": [
-        "Ingredients",
-        "DOS2"
-      ]
-    },
-    {
       "slug": "peace-of-mind-scroll",
       "title": "Peace of Mind Scroll",
       "titlePl": "Zwój Spokoju Sumienia",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "CLEAR_MINDED",
@@ -5553,7 +5821,6 @@
       "title": "Planar Gateway Scroll",
       "titlePl": "Zwój Bramy Sfer",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -5586,7 +5853,6 @@
       "title": "Poison Arrow",
       "titlePl": "Zatruta strzała",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5600,7 +5866,6 @@
       "title": "Poison Cloud Grenade",
       "titlePl": "Granat trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5613,7 +5878,6 @@
       "title": "Poison Dart Scroll",
       "titlePl": "Zwój Zatrutej Rzutki",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Poison-Surface",
@@ -5647,7 +5911,6 @@
       "title": "Poison Flask",
       "titlePl": "Fiolka trucizny",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -5657,11 +5920,21 @@
       ]
     },
     {
+      "slug": "poison-infusion-skillbook",
+      "title": "Poison Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Trucizny”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Skillbooks",
+        "Summoning"
+      ]
+    },
+    {
       "slug": "poison-wave-scroll",
       "title": "Poison Wave Scroll",
       "titlePl": "Zwój Trującej Fali",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -5683,7 +5956,6 @@
       "title": "Poisoncloud Arrow",
       "titlePl": "Strzała trującej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "POISONED",
         "Arrows",
@@ -5709,6 +5981,29 @@
         "DOS2-CO",
         "DOS2",
         "Arrows"
+      ]
+    },
+    {
+      "slug": "poisonous-skin-skillbook",
+      "title": "Poisonous Skin Skillbook",
+      "titlePl": "Księga umiejętności „Trująca Skóra”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "porridge",
+      "title": "Porridge",
+      "titlePl": "Owsianka",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Food-And-Drink",
+        "Healing",
+        "Strength"
       ]
     },
     {
@@ -5832,7 +6127,6 @@
       "title": "Power Infusion Scroll",
       "titlePl": "Zwój Podsycenia Mocy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_POWER",
@@ -5855,7 +6149,6 @@
       "title": "Pressure Spike Scroll",
       "titlePl": "Zwój Skoku Ciśnienia",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -5880,7 +6173,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2",
-        "Spears"
+        "Spears",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -5895,11 +6189,55 @@
       ]
     },
     {
+      "slug": "pumpkin",
+      "title": "Pumpkin",
+      "titlePl": "Dynia",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "DOS2-CO",
+        "Food-And-Drink",
+        "Healing",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "pumpkin-part",
+      "title": "Pumpkin Part",
+      "titlePl": "Kawałek dyni",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "pumpkin-peel",
+      "title": "Pumpkin Peel",
+      "titlePl": "Obierki z dyni",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink",
+        "Ingredients"
+      ]
+    },
+    {
+      "slug": "pumpkin-soup",
+      "title": "Pumpkin Soup",
+      "titlePl": "Zupa z dyni",
+      "tags": [
+        "DOS1",
+        "DOS2",
+        "Food-And-Drink",
+        "Healing",
+        "Perception"
+      ]
+    },
+    {
       "slug": "pyroclastic-eruption-scroll",
       "title": "Pyroclastic Eruption Scroll",
       "titlePl": "Zwój Erupcji Piroklastycznej",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Oil-Surface",
@@ -5932,9 +6270,9 @@
       "title": "Rain Scroll",
       "titlePl": "Zwój Deszczu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
+        "DOS1",
         "WET",
         "Ingredients",
         "Scrolls"
@@ -5947,6 +6285,7 @@
       "tags": [
         "Hydrosophist",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -5955,7 +6294,6 @@
       "title": "Raining Blood Scroll",
       "titlePl": "Zwój Deszczu Krwi",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLEEDING",
         "Ingredients",
@@ -5967,7 +6305,6 @@
       "title": "Raise Bloated Corpse Scroll",
       "titlePl": "Zwój Ożywienia Opuchniętych Zwłok",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -5987,7 +6324,6 @@
       "title": "Raise Bone Widow Scroll",
       "titlePl": "Zwój Ożywienia Kościanej Wdowy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -6007,7 +6343,6 @@
       "title": "Rallying Cry Scroll",
       "titlePl": "Zwój Pokrzepiającego Okrzyku",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "Ingredients",
@@ -6053,7 +6388,6 @@
       "title": "Razzle Dazzle Grenade",
       "titlePl": "Granat Wrzawy",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "BLIND",
         "Grenades"
@@ -6064,7 +6398,6 @@
       "title": "Reactive Armour Scroll",
       "titlePl": "Zwój Pancerza Reaktywnego",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -6110,7 +6443,6 @@
       "title": "Restoration Scroll",
       "titlePl": "Zwój Przywrócenia",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "REGENERATION",
@@ -6133,23 +6465,11 @@
       "title": "Resurrection Scroll",
       "titlePl": "Zwój Wskrzeszenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "RESURRECT",
         "Ingredients",
         "Scrolls"
-      ]
-    },
-    {
-      "slug": "ring",
-      "title": "Ring",
-      "titlePl": "Pierścień",
-      "tags": [
-        "DOS2",
-        "DOS2-CO",
-        "Rings",
-        "Ingredients"
       ]
     },
     {
@@ -6241,6 +6561,17 @@
       ]
     },
     {
+      "slug": "sabotage-skillbook",
+      "title": "Sabotage Skillbook",
+      "titlePl": "Księga umiejętności „Sabotaż”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "scale-scraps",
       "title": "Scale Scraps",
       "titlePl": "Fragmenty łusek",
@@ -6256,7 +6587,6 @@
       "title": "Searing Daggers Scroll",
       "titlePl": "Zwój Palących Sztyletów",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -6280,7 +6610,6 @@
       "title": "Shackles of Pain Scroll",
       "titlePl": "Zwój Oków Bólu",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -6311,7 +6640,6 @@
       "title": "Shadow Infusion Scroll",
       "titlePl": "Zwój Podsycenia Cienia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_SHADOW",
@@ -6367,7 +6695,8 @@
         "Physical-Damage",
         "Grants-Skill",
         "DOS2",
-        "Two-Handed-Axes"
+        "Two-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -6377,7 +6706,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "One-Handed-Axes"
+        "One-Handed-Axes",
+        "Scales-With-Strength"
       ]
     },
     {
@@ -6419,7 +6749,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "Daggers"
+        "Daggers",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -6427,7 +6758,6 @@
       "title": "Shocking Arrow",
       "titlePl": "Porażająca strzała",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "SHOCKED",
         "Arrows"
@@ -6449,9 +6779,9 @@
       "title": "Shocking Touch Scroll",
       "titlePl": "Zwój Porażającego Dotyku",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "SHOCKED",
         "Ingredients",
         "Scrolls"
@@ -6464,6 +6794,7 @@
       "tags": [
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -6482,7 +6813,6 @@
       "title": "Silencing Stare Scroll",
       "titlePl": "Zwój Uciszającego Spojrzenia",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "MUTED",
         "Ingredients",
@@ -6514,7 +6844,6 @@
       "title": "Siphon Poison Scroll",
       "titlePl": "Zwój Wysysania Trucizny",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "Ingredients",
@@ -6536,7 +6865,6 @@
       "title": "Skin Graft Scroll",
       "titlePl": "Zwój Przeszczepu Skóry",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "SHED_SKIN",
@@ -6580,7 +6908,6 @@
       "title": "Slowdown Arrow",
       "titlePl": "Strzała spowalniająca",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6764,11 +7091,21 @@
       ]
     },
     {
+      "slug": "smoke-cover-skillbook",
+      "title": "Smoke Cover Skillbook",
+      "titlePl": "Księga umiejętności „Zasłona Dymna”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "smokescreen-arrow",
       "title": "Smokescreen Arrow",
       "titlePl": "Strzała zasłony dymnej",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -6803,7 +7140,6 @@
       "title": "Soothing Cold Scroll",
       "titlePl": "Zwój Kojącego Zimna",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "FROST_AURA",
@@ -6826,7 +7162,6 @@
       "title": "Soul Mate Scroll",
       "titlePl": "Zwój Bratniej Duszy",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "HEAL_SHARING",
@@ -6867,11 +7202,21 @@
       ]
     },
     {
+      "slug": "sparking-swings-skillbook",
+      "title": "Sparking Swings Skillbook",
+      "titlePl": "Księga umiejętności „Iskrzące Ciosy”",
+      "tags": [
+        "DOS2",
+        "Pyrokinetic",
+        "Skillbooks",
+        "Warfare"
+      ]
+    },
+    {
       "slug": "spider-legs-scroll",
       "title": "Spider Legs Scroll",
       "titlePl": "Zwój Pajęczych Nóg",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "SPIDER_LEGS",
@@ -6904,7 +7249,6 @@
       "title": "Spontaneous Combustion Scroll",
       "titlePl": "Zwój Samozapłonu",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Ingredients",
@@ -6926,7 +7270,6 @@
       "title": "Spread Your Wings Scroll",
       "titlePl": "Zwój Rozwinięcia Skrzydeł",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "WINGS",
@@ -6978,7 +7321,6 @@
       "title": "Static Cloud Arrow",
       "titlePl": "Strzała naelektryzowanej chmury",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "BLIND",
@@ -7001,7 +7343,6 @@
       "title": "Steam Lance Scroll",
       "titlePl": "Zwój Lancy Parowej",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "STEAM_LANCE",
@@ -7024,7 +7365,6 @@
       "title": "Steamcloud Arrow",
       "titlePl": "Strzała obłoku pary",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "WET",
         "Arrows",
@@ -7060,7 +7400,6 @@
       "title": "Summon Fire Slug Scroll",
       "titlePl": "Zwój Przyzwania Ognistego Ślimaka",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Ingredients",
@@ -7082,7 +7421,6 @@
       "title": "Summon Oily Blob Scroll",
       "titlePl": "Zwój Przyzwania Oleistej Plamy",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -7104,7 +7442,6 @@
       "title": "Supercharger Scroll",
       "titlePl": "Zwój Doładowania",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "SUPERCHARGE",
@@ -7127,7 +7464,6 @@
       "title": "Superconductor Scroll",
       "titlePl": "Zwój Nadprzewodnika",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "SHOCKED",
@@ -7159,7 +7495,6 @@
       "title": "Supernova Scroll",
       "titlePl": "Zwój Supernowej",
       "tags": [
-        "Casts-Spell",
         "Pyrokinetic",
         "DOS2",
         "Fire-Surface",
@@ -7208,13 +7543,22 @@
       ]
     },
     {
+      "slug": "teapot",
+      "title": "Teapot",
+      "titlePl": "Imbryk",
+      "tags": [
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "teleportation-scroll",
       "title": "Teleportation Scroll",
       "titlePl": "Zwój Teleportacji",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Ingredients",
         "Scrolls"
       ]
@@ -7226,6 +7570,7 @@
       "tags": [
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -7234,7 +7579,6 @@
       "title": "Tentacle Lash Scroll",
       "titlePl": "Zwój Uderzenia Macką",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "DISARMED",
@@ -7257,7 +7601,6 @@
       "title": "Terrain Transmutation Scroll",
       "titlePl": "Zwój Przemiany Terenu",
       "tags": [
-        "Casts-Spell",
         "Polymorph",
         "DOS2",
         "Ingredients",
@@ -7279,7 +7622,6 @@
       "title": "Terror Grenade",
       "titlePl": "Granat grozy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7316,11 +7658,21 @@
       ]
     },
     {
+      "slug": "throw-dust-skillbook",
+      "title": "Throw Dust Skillbook",
+      "titlePl": "Księga umiejętności „Sypnięcie Pyłem”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Huntsman",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "thunderbolt-grenade",
       "title": "Thunderbolt Grenade",
       "titlePl": "Granat piorunów",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "SHOCKED",
         "Grenades"
@@ -7331,7 +7683,6 @@
       "title": "Thunderstorm Scroll",
       "titlePl": "Zwój Burzy z Piorunami",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
         "Ingredients",
@@ -7423,9 +7774,9 @@
       "title": "Tornado Scroll",
       "titlePl": "Zwój Tornada",
       "tags": [
-        "Casts-Spell",
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Ingredients",
         "Scrolls"
       ]
@@ -7437,6 +7788,7 @@
       "tags": [
         "Aerotheurge",
         "DOS2",
+        "DOS1",
         "Skillbooks"
       ]
     },
@@ -7445,7 +7797,6 @@
       "title": "Totems of the Necromancer Scroll",
       "titlePl": "Zwój Totemów Nekromanty",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "Ingredients",
         "Scrolls"
@@ -7468,7 +7819,8 @@
         "Accuracy",
         "Physical-Damage",
         "DOS2",
-        "Crossbows"
+        "Crossbows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -7484,7 +7836,6 @@
       "title": "Tremor Grenade",
       "titlePl": "Granat wstrząsowy",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7508,6 +7859,17 @@
       ]
     },
     {
+      "slug": "turn-to-oil-skillbook",
+      "title": "Turn To Oil Skillbook",
+      "titlePl": "Księga umiejętności „Przemiana w Olej”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
       "slug": "tusk",
       "title": "Tusk",
       "titlePl": "Kieł",
@@ -7525,7 +7887,8 @@
       "tags": [
         "Physical-Damage",
         "DOS2",
-        "Bows"
+        "Bows",
+        "Scales-With-Finesse"
       ]
     },
     {
@@ -7539,11 +7902,80 @@
       ]
     },
     {
-      "slug": "upperbody-armor",
-      "title": "Upperbody armor",
+      "slug": "vacuum-aura-skillbook",
+      "title": "Vacuum Aura Skillbook",
+      "titlePl": "Księga umiejętności „Aura Próżni”",
       "tags": [
-        "Ingredients",
-        "DOS2"
+        "Aerotheurge",
+        "DOS2",
+        "Necromancer",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "vacuum-touch-skillbook",
+      "title": "Vacuum Touch Skillbook",
+      "titlePl": "Księga umiejętności „Dotyk Próżni”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Necromancer",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "vampiric-hunger-aura-skillbook",
+      "title": "Vampiric Hunger Aura Skillbook",
+      "titlePl": "Księga umiejętności „Aura Wampirycznego Głodu”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "vampiric-hunger-skillbook",
+      "title": "Vampiric Hunger Skillbook",
+      "titlePl": "Księga umiejętności „Wampiryczny Głód”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "vaporise-skillbook",
+      "title": "Vaporise Skillbook",
+      "titlePl": "Księga umiejętności „Odparowanie”",
+      "tags": [
+        "Aerotheurge",
+        "DOS2",
+        "Polymorph",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "venom-coating-skillbook",
+      "title": "Venom Coating Skillbook",
+      "titlePl": "Księga umiejętności „Jadowy Smar”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Scoundrel",
+        "Skillbooks"
+      ]
+    },
+    {
+      "slug": "venomous-aura-skillbook",
+      "title": "Venomous Aura Skillbook",
+      "titlePl": "Księga umiejętności „Jadowa Aura”",
+      "tags": [
+        "DOS2",
+        "Geomancer",
+        "Scoundrel",
+        "Skillbooks"
       ]
     },
     {
@@ -7631,7 +8063,6 @@
       "title": "Warp Infusion Scroll",
       "titlePl": "Zwój Podsycenia Zakrzywienia",
       "tags": [
-        "Casts-Spell",
         "Summoning",
         "DOS2",
         "INF_WARP",
@@ -7654,7 +8085,6 @@
       "title": "Water Arrow",
       "titlePl": "Strzała wodna",
       "tags": [
-        "Casts-Spell",
         "DOS2",
         "DOS2-CO",
         "Water-Surface",
@@ -7679,7 +8109,6 @@
       "title": "Water Balloon",
       "titlePl": "Balon z wodą",
       "tags": [
-        "Casts-Spell",
         "DOS1",
         "DOS2",
         "DOS2-CO",
@@ -7711,6 +8140,17 @@
       ]
     },
     {
+      "slug": "water-infusion-skillbook",
+      "title": "Water Infusion Skillbook",
+      "titlePl": "Księga umiejętności „Podsycenie Wody”",
+      "tags": [
+        "DOS2",
+        "Hydrosophist",
+        "Skillbooks",
+        "Summoning"
+      ]
+    },
+    {
       "slug": "water-resistance-potion",
       "title": "Water Resistance Potion",
       "titlePl": "Mikstura odporności na wodę",
@@ -7734,11 +8174,14 @@
       ]
     },
     {
-      "slug": "weapon-except-of-wands-and-staves",
-      "title": "weapon (except of wands and staves)",
+      "slug": "well",
+      "title": "Well",
+      "titlePl": "Studnia",
       "tags": [
+        "DOS1",
         "DOS2",
-        "Ingredients"
+        "DOS2-CO",
+        "Stations-And-Containers"
       ]
     },
     {
@@ -7766,6 +8209,24 @@
       ]
     },
     {
+      "slug": "white-tea",
+      "title": "White Tea",
+      "titlePl": "Biała herbata",
+      "tags": [
+        "DOS2",
+        "Food-And-Drink"
+      ]
+    },
+    {
+      "slug": "white-tea-leaves",
+      "title": "White Tea Leaves",
+      "titlePl": "Liście białej herbaty",
+      "tags": [
+        "DOS2",
+        "Ingredients"
+      ]
+    },
+    {
       "slug": "wine-barrel",
       "title": "Wine barrel",
       "titlePl": "Beczka wina",
@@ -7781,7 +8242,6 @@
       "title": "Winter Blast Scroll",
       "titlePl": "Zwój Zimowego Podmuchu",
       "tags": [
-        "Casts-Spell",
         "Hydrosophist",
         "DOS2",
         "CHILLED",
@@ -7874,7 +8334,6 @@
       "title": "Worm Tremor Scroll",
       "titlePl": "Zwój Robaczywego Wstrząsu",
       "tags": [
-        "Casts-Spell",
         "Geomancer",
         "DOS2",
         "ENTANGLED",

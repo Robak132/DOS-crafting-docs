@@ -897,6 +897,27 @@
         "TOOL_FishingRod_A"
       ]
     },
+    "FoodFish": {
+      "group": "FoodFish",
+      "label": "Fish",
+      "category": "FoodFish",
+      "members": [
+        "Herring",
+        "Red Snapper",
+        "Chub Fish",
+        "Plaice",
+        "Mackerel",
+        "Sailfish"
+      ],
+      "stats": [
+        "FOOD_FishA",
+        "FOOD_FishB",
+        "FOOD_FishC",
+        "FOOD_FishD",
+        "FOOD_FishE",
+        "FOOD_FishF"
+      ]
+    },
     "GlovesPlate": {
       "group": "GlovesPlate",
       "label": "Plate Bracers",
@@ -980,6 +1001,31 @@
         "ARM_PolymorphUnique_Helmet",
         "ARM_REFERENCE_Heavy_Helmet",
         "ARM_WarriorUnique_Helmet"
+      ]
+    },
+    "Meat": {
+      "group": "Meat",
+      "label": "Meat",
+      "category": "Meat",
+      "members": [
+        "Raw Bird Leg",
+        "Raw Slice Of Meat",
+        "Raw Lumpy Giblets",
+        "Raw Mutton",
+        "Raw Rabbit Meat",
+        "Raw Red Meat",
+        "Raw Ribs",
+        "Ham"
+      ],
+      "stats": [
+        "CON_Food_Meat_BirdLeg_A",
+        "CON_Food_Meat_Cow_A",
+        "CON_Food_Meat_Giblets_A",
+        "CON_Food_Meat_Mutton_A",
+        "CON_Food_Meat_RabbitMeat_A",
+        "CON_Food_Meat_Raw_A",
+        "CON_Food_Meat_Ribs_A",
+        "FOOD_Ham"
       ]
     },
     "PantsPlate": {
@@ -1098,6 +1144,504 @@
       "stats": [
         "WPN_ReferenceShield",
         "WPN_Wood_Shield_A_Round_Shield_CHEAT"
+      ]
+    },
+    "SkillbookAir": {
+      "group": "SkillbookAir",
+      "label": "Aerotheurge Skillbook",
+      "category": "SkillbookAir",
+      "members": [
+        "Apportation Skillbook",
+        "Blinding Radiance Skillbook",
+        "Dazing Bolt Skillbook",
+        "Uncanny Evasion Skillbook",
+        "Favourable Wind Skillbook",
+        "Electric Discharge Skillbook",
+        "Nether Swap Skillbook",
+        "Pressure Spike Skillbook",
+        "Shocking Touch Skillbook",
+        "Companion Air Robot Skillbook",
+        "Superconductor Skillbook",
+        "Teleportation Skillbook",
+        "Tornado Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Air_Apportation",
+        "SKILLBOOK_Air_BlindingRadiance",
+        "SKILLBOOK_Air_DazingBolt",
+        "SKILLBOOK_Air_EvasiveManeuver",
+        "SKILLBOOK_Air_FavourableWind",
+        "SKILLBOOK_Air_LightningBolt",
+        "SKILLBOOK_Air_Netherswap",
+        "SKILLBOOK_Air_PressureSpike",
+        "SKILLBOOK_Air_ShockingTouch",
+        "SKILLBOOK_Air_Summon_AirRobot",
+        "SKILLBOOK_Air_Superconductor",
+        "SKILLBOOK_Air_Teleportation_FreeFall",
+        "SKILLBOOK_Air_Tornado"
+      ]
+    },
+    "SkillbookAirSource": {
+      "group": "SkillbookAirSource",
+      "label": "Source Aerotheurge Skillbook",
+      "category": "SkillbookAirSource",
+      "members": [
+        "Chain Lightning Skillbook",
+        "Closed Circuit Skillbook",
+        "Thunderstorm Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Air_ChainLightning",
+        "SKILLBOOK_Air_ElectricFence",
+        "SKILLBOOK_Air_Lightning"
+      ]
+    },
+    "SkillbookEarth": {
+      "group": "SkillbookEarth",
+      "label": "Geomancer Skillbook",
+      "category": "SkillbookEarth",
+      "members": [
+        "Contamination Skillbook",
+        "Earthquake Skillbook",
+        "Fortify Skillbook",
+        "Living Wall Skillbook",
+        "Mend Metal Skillbook",
+        "Poison Dart Skillbook",
+        "Poison Wave Skillbook",
+        "Fossil Strike Skillbook",
+        "Reactive Armour Skillbook",
+        "Impalement Skillbook",
+        "Siphon Poison Skillbook",
+        "Companion Tiger Skillbook",
+        "Worm Tremor Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Earth_Contamination",
+        "SKILLBOOK_Earth_Earthquake",
+        "SKILLBOOK_Earth_Fortify",
+        "SKILLBOOK_Earth_LivingWall",
+        "SKILLBOOK_Earth_MendMetal",
+        "SKILLBOOK_Earth_PoisonDart",
+        "SKILLBOOK_Earth_PoisonWave",
+        "SKILLBOOK_Earth_PyroclasticRock",
+        "SKILLBOOK_Earth_ReactiveArmor",
+        "SKILLBOOK_Earth_RockSpikes",
+        "SKILLBOOK_Earth_SiphonPoison",
+        "SKILLBOOK_Earth_Summon_Tiger",
+        "SKILLBOOK_Earth_WormTremor"
+      ]
+    },
+    "SkillbookEarthSource": {
+      "group": "SkillbookEarthSource",
+      "label": "Source Geomancer Skillbook",
+      "category": "SkillbookEarthSource",
+      "members": [
+        "Acid Spores Skillbook",
+        "Hungry Flower Skillbook",
+        "Pyroclastic Eruption Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Earth_AcidSpores",
+        "SKILLBOOK_Earth_ArtilleryPlant",
+        "SKILLBOOK_Earth_PyroclasticEruption"
+      ]
+    },
+    "SkillbookFire": {
+      "group": "SkillbookFire",
+      "label": "Pyrokinetic Skillbook",
+      "category": "SkillbookFire",
+      "members": [
+        "Peace of Mind Skillbook",
+        "Firebrand Skillbook",
+        "Fire Whip Skillbook",
+        "Fireball Skillbook",
+        "Flaming Crescendo Skillbook",
+        "Searing Daggers Skillbook",
+        "Flaming Tongues Skillbook",
+        "Haste Skillbook",
+        "Ignition Skillbook",
+        "Laser Ray Skillbook",
+        "Spontaneous Combustion Skillbook",
+        "Companion Bull Skillbook",
+        "Supernova Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Fire_BurnMyEyes",
+        "SKILLBOOK_Fire_FireBrand",
+        "SKILLBOOK_Fire_FireWhip",
+        "SKILLBOOK_Fire_Fireball",
+        "SKILLBOOK_Fire_FlamingCrescendo",
+        "SKILLBOOK_Fire_FlamingDaggers",
+        "SKILLBOOK_Fire_FlamingTongues",
+        "SKILLBOOK_Fire_Haste",
+        "SKILLBOOK_Fire_Ignition",
+        "SKILLBOOK_Fire_LaserRay",
+        "SKILLBOOK_Fire_SpontaneousCombustion",
+        "SKILLBOOK_Fire_Summon_Bull",
+        "SKILLBOOK_Fire_Supernova"
+      ]
+    },
+    "SkillbookFireSource": {
+      "group": "SkillbookFireSource",
+      "label": "Source Pyrokinetic Skillbook",
+      "category": "SkillbookFireSource",
+      "members": [
+        "Summon Fire Slug Skillbook",
+        "Epidemic Of Fire Skillbook",
+        "Meteor Shower Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Fire_FireSlug",
+        "SKILLBOOK_Fire_InfectiousFlame",
+        "SKILLBOOK_Fire_MeteorShower"
+      ]
+    },
+    "SkillbookNecromancy": {
+      "group": "SkillbookNecromancy",
+      "label": "Necromancy Skillbook",
+      "category": "SkillbookNecromancy",
+      "members": [
+        "Companion Ghost Boar Skillbook",
+        "Raise Bloated Corpse Skillbook",
+        "Blood Sucker Skillbook",
+        "Bone Cage Skillbook",
+        "Raise Bone Widow Skillbook",
+        "Death Wish Skillbook",
+        "Living on the Edge Skillbook",
+        "Decaying Touch Skillbook",
+        "Infect Skillbook",
+        "Last Rites Skillbook",
+        "Mosquito Swarm Skillbook",
+        "Resurrection Skillbook",
+        "Shackles of Pain Skillbook",
+        "Silencing Stare Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Necro_Summon_GhostBoar",
+        "SKILLBOOK_Necromancy_BloatedCorpse",
+        "SKILLBOOK_Necromancy_BloodBubble",
+        "SKILLBOOK_Necromancy_BoneCage",
+        "SKILLBOOK_Necromancy_BonePile",
+        "SKILLBOOK_Necromancy_DeathWish",
+        "SKILLBOOK_Necromancy_DeathsDoor",
+        "SKILLBOOK_Necromancy_DecayingTouch",
+        "SKILLBOOK_Necromancy_Infect",
+        "SKILLBOOK_Necromancy_LastRites",
+        "SKILLBOOK_Necromancy_MosquitoSwarm",
+        "SKILLBOOK_Necromancy_Resurrection",
+        "SKILLBOOK_Necromancy_ShacklesOfPain",
+        "SKILLBOOK_Necromancy_SilencingStare"
+      ]
+    },
+    "SkillbookNecromancySource": {
+      "group": "SkillbookNecromancySource",
+      "label": "Source Necromancy Skillbook",
+      "category": "SkillbookNecromancySource",
+      "members": [
+        "Black Shroud Skillbook",
+        "Grasp of the Starved Skillbook",
+        "Totems of the Necromancer Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Necromancy_BlackShroud",
+        "SKILLBOOK_Necromancy_GraspOfTheStarved",
+        "SKILLBOOK_Necromancy_NecromancerTotems"
+      ]
+    },
+    "SkillbookPolymorph": {
+      "group": "SkillbookPolymorph",
+      "label": "Polymorph Skillbook",
+      "category": "SkillbookPolymorph",
+      "members": [
+        "Bull Horns Skillbook",
+        "Chameleon Cloak Skillbook",
+        "Chicken Claw Skillbook",
+        "Equalise Skillbook",
+        "Summon Oily Blob Skillbook",
+        "Medusa Head Skillbook",
+        "Spider Legs Skillbook",
+        "Heart of Steel Skillbook",
+        "Flay Skin Skillbook",
+        "Terrain Transmutation Skillbook",
+        "Tentacle Lash Skillbook",
+        "Spread Your Wings Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Polymorph_BullHorns",
+        "SKILLBOOK_Polymorph_ChameleonSkin",
+        "SKILLBOOK_Polymorph_ChickenTouch",
+        "SKILLBOOK_Polymorph_Equalize",
+        "SKILLBOOK_Polymorph_LaunchOilBlob",
+        "SKILLBOOK_Polymorph_MedusaHead",
+        "SKILLBOOK_Polymorph_SpiderLegs",
+        "SKILLBOOK_Polymorph_SteelSkin",
+        "SKILLBOOK_Polymorph_StripResistance",
+        "SKILLBOOK_Polymorph_SwapGround",
+        "SKILLBOOK_Polymorph_TentacleLash",
+        "SKILLBOOK_Polymorph_Wings"
+      ]
+    },
+    "SkillbookPolymorphSource": {
+      "group": "SkillbookPolymorphSource",
+      "label": "Source Polymorph Skillbook",
+      "category": "SkillbookPolymorphSource",
+      "members": [
+        "Apotheosis Skillbook",
+        "Forced Exchange Skillbook",
+        "Skin Graft Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Polymorph_Apotheosis",
+        "SKILLBOOK_Polymorph_DemonicBargain",
+        "SKILLBOOK_Polymorph_ShedSkin"
+      ]
+    },
+    "SkillbookRanger": {
+      "group": "SkillbookRanger",
+      "label": "Huntsman Skillbook",
+      "category": "SkillbookRanger",
+      "members": [
+        "Ballistic Shot Skillbook",
+        "Elemental Arrowheads Skillbook",
+        "First Aid Skillbook",
+        "Glitter Dust Skillbook",
+        "Barrage Skillbook",
+        "Marksman's Fang Skillbook",
+        "Pin Down Skillbook",
+        "Reactive Shot Skillbook",
+        "Ricochet Skillbook",
+        "Sky Shot Skillbook",
+        "Assassinate Skillbook",
+        "Companion Deer Skillbook",
+        "Tactical Retreat Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Ranger_BallisticShot",
+        "SKILLBOOK_Ranger_ElementalArrowheads",
+        "SKILLBOOK_Ranger_FirstAid",
+        "SKILLBOOK_Ranger_Mark",
+        "SKILLBOOK_Ranger_Multishot",
+        "SKILLBOOK_Ranger_PiercingShot",
+        "SKILLBOOK_Ranger_PinDown",
+        "SKILLBOOK_Ranger_ReactionShot",
+        "SKILLBOOK_Ranger_Ricochet",
+        "SKILLBOOK_Ranger_SkyShot",
+        "SKILLBOOK_Ranger_Snipe",
+        "SKILLBOOK_Ranger_Summon_Deer",
+        "SKILLBOOK_Ranger_TacticalRetreat"
+      ]
+    },
+    "SkillbookRangerSource": {
+      "group": "SkillbookRangerSource",
+      "label": "Source Huntsman Skillbook",
+      "category": "SkillbookRangerSource",
+      "members": [
+        "Arrow Spray Skillbook",
+        "Farsight Skillbook",
+        "Arrow Storm Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Ranger_ArrowSpray",
+        "SKILLBOOK_Ranger_Farsight",
+        "SKILLBOOK_Ranger_RainOfArrows"
+      ]
+    },
+    "SkillbookRogue": {
+      "group": "SkillbookRogue",
+      "label": "Scoundrel Skillbook",
+      "category": "SkillbookRogue",
+      "members": [
+        "Adrenaline Skillbook",
+        "Chloroform Skillbook",
+        "Cloak And Dagger Skillbook",
+        "Corrupted Blade Skillbook",
+        "Gag Order Skillbook",
+        "Rupture Tendons Skillbook",
+        "Wind-up Toy Skillbook",
+        "Sawtooth Knife Skillbook",
+        "Sleeping Arms Skillbook",
+        "Companion Wolf Skillbook",
+        "Terrifying Cruelty Skillbook",
+        "Throwing Knife Skillbook",
+        "Backlash Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Rogue_Adrenaline",
+        "SKILLBOOK_Rogue_Choloroform",
+        "SKILLBOOK_Rogue_CloakAndDagger",
+        "SKILLBOOK_Rogue_CorruptedBlade",
+        "SKILLBOOK_Rogue_GagOrder",
+        "SKILLBOOK_Rogue_KneeBreaker",
+        "SKILLBOOK_Rogue_LaunchBomber",
+        "SKILLBOOK_Rogue_SerratedEdge",
+        "SKILLBOOK_Rogue_SleepingArms",
+        "SKILLBOOK_Rogue_Summon_Wolf",
+        "SKILLBOOK_Rogue_TerrifyingCruelty",
+        "SKILLBOOK_Rogue_ThrowingKnife",
+        "SKILLBOOK_Rogue_Vault"
+      ]
+    },
+    "SkillbookRogueSource": {
+      "group": "SkillbookRogueSource",
+      "label": "Source Scoundrel Skillbook",
+      "category": "SkillbookRogueSource",
+      "members": [
+        "Daggers Drawn Skillbook",
+        "Fan of Knives Skillbook",
+        "Mortal Blow Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Rogue_DaggersDrawn",
+        "SKILLBOOK_Rogue_FanOfKnives",
+        "SKILLBOOK_Rogue_Fatality"
+      ]
+    },
+    "SkillbookSummoning": {
+      "group": "SkillbookSummoning",
+      "label": "Summoning Skillbook",
+      "category": "SkillbookSummoning",
+      "members": [
+        "Cannibalise Skillbook",
+        "Dominate Mind Skillbook",
+        "Dimensional Bolt Skillbook",
+        "Rallying Cry Skillbook",
+        "Conjure Incarnate Skillbook",
+        "Power Infusion Skillbook",
+        "Farsight Infusion Skillbook",
+        "Shadow Infusion Skillbook",
+        "Soul Mate Skillbook",
+        "Supercharger Skillbook",
+        "Elemental Totem Skillbook",
+        "Warp Infusion Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Summoning_Cannibalize",
+        "SKILLBOOK_Summoning_Charm",
+        "SKILLBOOK_Summoning_DimensionalBolt",
+        "SKILLBOOK_Summoning_Harmony",
+        "SKILLBOOK_Summoning_Incarnate",
+        "SKILLBOOK_Summoning_PowerInfusion",
+        "SKILLBOOK_Summoning_RangedInfusion",
+        "SKILLBOOK_Summoning_ShadowInfusion",
+        "SKILLBOOK_Summoning_SoulMate",
+        "SKILLBOOK_Summoning_Supercharge",
+        "SKILLBOOK_Summoning_TotemFromSurface",
+        "SKILLBOOK_Summoning_WarpInfusion"
+      ]
+    },
+    "SkillbookSummoningSource": {
+      "group": "SkillbookSummoningSource",
+      "label": "Source Summoning Skillbook",
+      "category": "SkillbookSummoningSource",
+      "members": [
+        "Door to Eternity Skillbook",
+        "Ethereal Storm Skillbook",
+        "Planar Gateway Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Summoning_CloseTheDoor",
+        "SKILLBOOK_Summoning_Ethereal",
+        "SKILLBOOK_Summoning_PlanarGateway"
+      ]
+    },
+    "SkillbookWarrior": {
+      "group": "SkillbookWarrior",
+      "label": "Warfare Skillbook",
+      "category": "SkillbookWarrior",
+      "members": [
+        "Battering Ram Skillbook",
+        "Blitz Attack Skillbook",
+        "Bouncing Shield Skillbook",
+        "Challenge Skillbook",
+        "Crippling Blow Skillbook",
+        "Deflective Barrier Skillbook",
+        "Enrage Skillbook",
+        "Battle Stomp Skillbook",
+        "Guardian Angel Skillbook",
+        "Phoenix Dive Skillbook",
+        "Companion Bear Skillbook",
+        "Provoke Skillbook",
+        "Whirlwind Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Warrior_BatteringRam",
+        "SKILLBOOK_Warrior_BlinkStrike",
+        "SKILLBOOK_Warrior_BouncingShield",
+        "SKILLBOOK_Warrior_Challenge",
+        "SKILLBOOK_Warrior_CripplingBlow",
+        "SKILLBOOK_Warrior_DeflectiveBarrier",
+        "SKILLBOOK_Warrior_Enrage",
+        "SKILLBOOK_Warrior_GroundSmash",
+        "SKILLBOOK_Warrior_GuardianAngel",
+        "SKILLBOOK_Warrior_PhoenixDive",
+        "SKILLBOOK_Warrior_Summon_Bear",
+        "SKILLBOOK_Warrior_Taunt",
+        "SKILLBOOK_Warrior_Whirlwind"
+      ]
+    },
+    "SkillbookWarriorSource": {
+      "group": "SkillbookWarriorSource",
+      "label": "Source Warfare Skillbook",
+      "category": "SkillbookWarriorSource",
+      "members": [
+        "Onslaught Skillbook",
+        "Overpower Skillbook",
+        "Thick of the Fight Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Warrior_Flurry",
+        "SKILLBOOK_Warrior_Overpower",
+        "SKILLBOOK_Warrior_ThickOfTheFight"
+      ]
+    },
+    "SkillbookWater": {
+      "group": "SkillbookWater",
+      "label": "Hydrosophist Skillbook",
+      "category": "SkillbookWater",
+      "members": [
+        "Healing Ritual Skillbook",
+        "Cryogenic Stasis Skillbook",
+        "Soothing Cold Skillbook",
+        "Armour of Frost Skillbook",
+        "Global Cooling Skillbook",
+        "Hail Strike Skillbook",
+        "Ice Breaker Skillbook",
+        "Ice Fan Skillbook",
+        "Rain Skillbook",
+        "Restoration Skillbook",
+        "Deep Freeze Skillbook",
+        "Companion Crocodile Skillbook",
+        "Winter Blast Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Water_ChainHeal",
+        "SKILLBOOK_Water_CryogenicStasis",
+        "SKILLBOOK_Water_FrostAura",
+        "SKILLBOOK_Water_FrostyShell",
+        "SKILLBOOK_Water_GlobalCooling",
+        "SKILLBOOK_Water_HailStrike",
+        "SKILLBOOK_Water_IceBreaker",
+        "SKILLBOOK_Water_IceFan",
+        "SKILLBOOK_Water_Rain",
+        "SKILLBOOK_Water_Restoration",
+        "SKILLBOOK_Water_Shatter",
+        "SKILLBOOK_Water_Summon_Crocodile",
+        "SKILLBOOK_Water_WinterBlast"
+      ]
+    },
+    "SkillbookWaterSource": {
+      "group": "SkillbookWaterSource",
+      "label": "Source Hydrosophist Skillbook",
+      "category": "SkillbookWaterSource",
+      "members": [
+        "Arcane Stitch Skillbook",
+        "Hail Storm Skillbook",
+        "Steam Lance Skillbook"
+      ],
+      "stats": [
+        "SKILLBOOK_Water_ArcaneStitch",
+        "SKILLBOOK_Water_HailAttack",
+        "SKILLBOOK_Water_SteamLance"
       ]
     },
     "Spear": {

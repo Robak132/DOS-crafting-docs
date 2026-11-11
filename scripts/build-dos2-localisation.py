@@ -23,6 +23,49 @@ def strings(path):
     }
 
 
+HAND_SELECTORS = {
+    "Armor-With-Empty-Rune-Socket": "Pancerz z pustym gniazdem na runę",
+    "Trinket-With-Empty-Rune-Socket": "Ozdoba z pustym gniazdem na runę",
+    "Weapon-With-Empty-Rune-Socket": "Broń z pustym gniazdem na runę",
+    "Shoes-Or-Boots": "Obuwie lub buty",
+    "Boots": "Buty",
+    "Pants": "Nogawice",
+    "Upperbody armor": "Napierśnik",
+    "Body Armor": "Napierśnik",
+    "Lowerbody Armor": "Nogawice",
+    "Armor": "Pancerz",
+    "Boot-Armor": "Buty",
+    "Glove-Armor": "Rękawice",
+    "Helmet-Armor": "Hełm",
+    "Dye": "Farba",
+    "Cape": "Peleryna",
+    "Armor Belt": "Pas",
+    "Mage Gloves": "Rękawice maga",
+    "Warrior Pants": "Nogawice wojownika",
+    "Finesse Based Armor": "Pancerz zręcznościowy",
+    "Intelligence Based Armor": "Pancerz inteligencji",
+    "Strength Based Armor": "Pancerz siłowy",
+    "Mage Body Armor": "Napierśnik maga",
+    "Light Body Armor": "Lekki napierśnik",
+    "Warrior Body Armor": "Napierśnik wojownika",
+    "Warrior Boots": "Buty wojownika",
+    "Light Boots": "Lekkie buty",
+    "Light Gloves": "Lekkie rękawice",
+    "Warrior Gloves": "Rękawice wojownika",
+    "Warrior Helmet": "Hełm wojownika",
+    "Light Pants": "Lekkie nogawice",
+    "Mage Pants": "Nogawice maga",
+    "Two Handed Axe": "Topór dwuręczny",
+    "Two Handed Mace": "Buława dwuręczna",
+    "Two Handed Sword": "Miecz dwuręczny"
+}
+HAND_NAMES = {
+    "weapon (except of wands and staves)": "broń (oprócz różdżek i kosturów)",
+    "Mage Helmet": "Hełm maga",
+    "Two Handed Sword": "Miecz dwuręczny"
+}
+
+
 def main():
     if len(sys.argv) != 3:
         raise SystemExit(__doc__)
@@ -42,7 +85,7 @@ def main():
                     candidates.add(item["namePl"].lstrip("#"))
     candidates.update({"Accuracy", "Wits", "Poison Potion", "Amulet", "Metal"})
     normalized = {
-        re.sub(r"\s*\((?:x\d+|\d+x)\)\s*$", "", value, flags=re.I)
+        re.sub(r"\((?:x\d+|\d+x)\)$", "", value.rstrip(), flags=re.I).rstrip()
         .rsplit("/", 1)[-1].strip(' "\'').casefold()
         for value in candidates
     }
@@ -87,14 +130,17 @@ def main():
               **{f"{kind}{size} Rune{power}": f"{prefix}{pl} runa".capitalize() for size, pl in
                  [("Small", "mała"), ("Medium", "średnia"), ("Large", "duża"), ("Giant", "ogromna")]
                  for kind, power, prefix in [("", "", ""), ("Mystical ", "", "Mistyczna "), ("", " Of Power", "Potężna ")]}}
+    recipe_selectors = [
+        (item["selectorTag"], item["name"].lstrip("#"))
+        for path in (ROOT / "data/library/recipes").glob("*.json")
+        for recipe in json.loads(path.read_text(encoding="utf-8"))["recipes"]
+        for item in recipe["ingredients"] if item.get("selectorTag")
+    ]
     # Selectors are written with dashes ("Cutting-Tool"); reuse the item name's translation.
-    for path in (ROOT / "data/library/recipes").glob("*.json"):
-        for recipe in json.loads(path.read_text(encoding="utf-8"))["recipes"]:
-            for item in recipe["ingredients"]:
-                tag = item.get("selectorTag")
-                name = item["name"].lstrip("#").replace("-", " ")
-                if tag and tag not in selectors and names.get(name):
-                    selectors[tag] = names[name]
+    for tag, label in recipe_selectors:
+        name = label.replace("-", " ")
+        if tag not in selectors and names.get(name):
+            selectors[tag] = names[name]
     combo_groups = json.loads((ROOT / "data/itemComboProperties.json").read_text(encoding="utf-8"))
     for liquid in [*combo_groups["properties"].values(), *combo_groups["objectGroups"].values()]:
         if liquid["group"] in selectors or liquid["group"].startswith("DOS1-"):
@@ -103,6 +149,13 @@ def main():
         label = single(values) if values and single(values) else manual.get(liquid["label"])
         if label:
             selectors[liquid["group"]] = label
+    # A selector shown under the game's label ("#Aerotheurge-Skillbook" for SkillbookAir) is looked up by that label.
+    for tag, label in recipe_selectors:
+        if tag in selectors and label not in selectors and not names.get(label):
+            selectors[label] = selectors[tag]
+    # Groups and Overhaul items the game's Polish files do not name; written by hand.
+    selectors.update({k: v for k, v in HAND_SELECTORS.items() if k not in selectors})
+    names.update({k: v for k, v in HAND_NAMES.items() if k not in names})
     output = {
         "source": {
             "edition": "Divinity Original Sin 2 Definitive Edition",

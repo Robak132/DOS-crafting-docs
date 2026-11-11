@@ -1,12 +1,12 @@
 import assert from "node:assert/strict"
 import { test } from "node:test"
 import { renderToString } from "preact-render-to-string"
+import { TagLabels } from "../../main/domain/tagLabels"
 import { RecipeTable } from "../../main/components/RecipeTable"
-import type { RecipeRow } from "../../main/domain/recipes"
-import { buildTooltipIndex } from "../../main/domain/tooltipIndex"
-import { tooltipItemKey } from "../../main/domain/tooltipIdentity"
+import { Recipe } from "../../main/domain/recipe"
+import { TooltipIndex } from "../../main/domain/tooltipIndex"
 
-const recipe: RecipeRow = {
+const recipe = new Recipe({
   id: "fallback-name",
   result: { name: "Hand Axe", icon: "data/icons/dos2/hand-axe.webp", tags: [] },
   ingredients: [
@@ -19,10 +19,10 @@ const recipe: RecipeRow = {
   notes: "",
   remarks: "",
   source: "",
-}
+})
 
 test("recipe names without a distinct translation remain visible in Polish mode", () => {
-  const html = renderToString(<RecipeTable recipes={[recipe]} catalogSlug="DOS2" labels={{}} />)
+  const html = renderToString(<RecipeTable recipes={[recipe]} catalogSlug="DOS2" labels={new TagLabels()} />)
   for (const name of ["Hand Axe", "Hammer", "Anvil"]) {
     assert.ok(html.includes(`<span class="item-lang">${name}</span>`))
     assert.ok(!html.includes(`<span class="item-lang-en">${name}</span>`))
@@ -35,9 +35,9 @@ test("recipe tables omit effects but preserve crafting instructions and align op
   for (const showRequirements of [true, false]) {
     const html = renderToString(
       <RecipeTable
-        recipes={[{ ...recipe, notes: "Effect must not appear", remarks: "Use a crafting station" }]}
+        recipes={[recipe.with({ notes: "Effect must not appear", remarks: "Use a crafting station" })]}
         catalogSlug="DOS2"
-        labels={{}}
+        labels={new TagLabels()}
         showRequirements={showRequirements}
       />,
     )
@@ -52,10 +52,12 @@ test("recipe tables omit effects but preserve crafting instructions and align op
 })
 
 test("multiple categories do not duplicate recipes or their crafting variants", () => {
-  const multi = { ...recipe, result: { ...recipe.result, tags: ["Weapons", "Scrolls", "Ingredients"] } }
-  const variant = { ...multi, id: "variant", ingredients: [{ name: "Another ingredient", tags: [] }] }
-  const other = { ...recipe, id: "other", result: { name: "Uncategorized", tags: [] } }
-  const html = renderToString(<RecipeTable recipes={[multi, variant, other]} catalogSlug="DOS2" labels={{}} />)
+  const multi = recipe.with({ result: recipe.result.with({ tags: ["Weapons", "Scrolls", "Ingredients"] }) })
+  const variant = multi.with({ id: "variant", ingredients: [{ name: "Another ingredient", tags: [] }] })
+  const other = recipe.with({ id: "other", result: { name: "Uncategorized", tags: [] } })
+  const html = renderToString(
+    <RecipeTable recipes={[multi, variant, other]} catalogSlug="DOS2" labels={new TagLabels()} />,
+  )
   assert.equal(html.match(/<table /g)?.length, 1)
   assert.equal(html.match(/<tr data-recipe-id=/g)?.length, 3)
   assert.equal(html.match(/class="recipe-cell result"/g)?.length, 2)
@@ -67,8 +69,7 @@ test("group chips omit icons and link to matching items instead of an item page"
   const html = renderToString(
     <RecipeTable
       recipes={[
-        {
-          ...recipe,
+        recipe.with({
           ingredients: [
             {
               name: "#Fish",
@@ -79,10 +80,10 @@ test("group chips omit icons and link to matching items instead of an item page"
               icon: "data/icons/groups/fish.svg",
             },
           ],
-        },
+        }),
       ]}
       catalogSlug="DOS2"
-      labels={{}}
+      labels={new TagLabels()}
     />,
   )
   assert.ok(html.includes("recipe-item-group"))
@@ -92,12 +93,12 @@ test("group chips omit icons and link to matching items instead of an item page"
 })
 
 test("expanded upgrades retain their modification and remain separate from ordinary crafting", () => {
-  const upgraded = { ...recipe, transformsIngredient: 0, notes: "Tactical Retreat" }
+  const upgraded = recipe.with({ transformsIngredient: 0, notes: "Tactical Retreat" })
   const html = renderToString(
     <RecipeTable
-      recipes={[recipe, upgraded, { ...upgraded, id: "haste", notes: "Haste" }]}
+      recipes={[recipe, upgraded, upgraded.with({ id: "haste", notes: "Haste" })]}
       catalogSlug="DOS2"
-      labels={{}}
+      labels={new TagLabels()}
     />,
   )
   assert.ok(html.includes('<p class="recipe-remarks">Tactical Retreat</p>'))
@@ -106,20 +107,18 @@ test("expanded upgrades retain their modification and remain separate from ordin
 })
 
 test("shared item slugs with different effects render separate results with exact tooltip identities", () => {
-  const healing = {
-    ...recipe,
-    result: { ...recipe.result, slug: "potion", effect: { en: "Restores vitality" } },
-  }
-  const poisoned = {
-    ...healing,
+  const healing = recipe.with({
+    result: recipe.result.with({ slug: "potion", effect: { en: "Restores vitality" } }),
+  })
+  const poisoned = healing.with({
     id: "poisoned",
-    result: { ...healing.result, effect: { en: "Poisoned" } },
-  }
-  const html = renderToString(<RecipeTable recipes={[healing, poisoned]} catalogSlug="DOS2" labels={{}} />)
+    result: healing.result.with({ effect: { en: "Poisoned" } }),
+  })
+  const html = renderToString(<RecipeTable recipes={[healing, poisoned]} catalogSlug="DOS2" labels={new TagLabels()} />)
   assert.equal(html.match(/class="recipe-cell result"/g)?.length, 2)
-  const index = buildTooltipIndex([healing, poisoned])
+  const index = new TooltipIndex([healing, poisoned])
   for (const row of [healing, poisoned]) {
-    const key = tooltipItemKey(row.result)
+    const key = row.result.tooltipKey
     assert.ok(html.includes(`data-tooltip-key="${key.replaceAll('"', "&quot;")}"`))
     assert.equal(index.find("potion", row.result.name, key), row.result)
   }
@@ -129,8 +128,7 @@ test("a random result lists its possible items with links, levels and random amo
   const html = renderToString(
     <RecipeTable
       recipes={[
-        {
-          ...recipe,
+        recipe.with({
           id: "random",
           result: {
             name: "Random Air Scroll",
@@ -141,10 +139,10 @@ test("a random result lists its possible items with links, levels and random amo
             ],
           },
           ingredients: [{ name: "Wood Chips", tags: [], quantity: "x(1-3)" }],
-        },
+        }),
       ]}
       catalogSlug="receptury"
-      labels={{}}
+      labels={new TagLabels()}
     />,
   )
   assert.match(html, /<details class="recipe-pool"><summary>Możliwe wyniki \(2\)<\/summary>/)
@@ -157,14 +155,13 @@ test("a recipe with several products lists each of them in the result cell", () 
   const html = renderToString(
     <RecipeTable
       recipes={[
-        {
-          ...recipe,
+        recipe.with({
           result: { name: "Short Stick", slug: "short-stick", tags: [] },
           extraResults: [{ name: "Metal Scraps", slug: "metal-scraps", tags: [], quantity: "x2" }],
-        },
+        }),
       ]}
       catalogSlug="DOS2"
-      labels={{}}
+      labels={new TagLabels()}
     />,
   )
   assert.match(html, /<ul class="recipe-ingredients recipe-products">/)

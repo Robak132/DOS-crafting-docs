@@ -62,9 +62,24 @@ export class Upgrade {
     return `${lang === "pl" ? "Wzmocnienie" : "Boost"}: ${effect}`
   }
 
+  /**
+   * The address of its item page, from the English name: "Boost: +10% Air Resistance" →
+   * "boost-plus-10-percent-air-resistance". Upgrades with the same name share one page.
+   */
+  get slug(): string {
+    const words = this.title("en")
+      .toLowerCase()
+      .replaceAll("+", " plus ")
+      .replaceAll("%", " percent ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+    return words.startsWith("boost") ? words : `boost-${words}`
+  }
+
   /** The upgrade as an item: no game item, but listed, searched and filtered like one, under "Upgrades". */
   item(): Item {
     return new Item({
+      slug: this.slug,
       name: this.title("en"),
       namePl: this.title("pl"),
       effect: { ...this.effect },

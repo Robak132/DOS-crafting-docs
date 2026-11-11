@@ -1,3 +1,4 @@
+import assert from "node:assert/strict"
 import fs from "node:fs/promises"
 import path from "node:path"
 import type { Catalog } from "../src/main/domain/catalog"
@@ -15,7 +16,7 @@ import type { Recipe } from "../src/main/domain/recipe"
 import { RecipeStats } from "../src/main/domain/recipeStats"
 import { SmallGroupExpander } from "../src/main/domain/smallGroupExpander"
 import { TagSidebar } from "../src/main/domain/tagSidebar"
-import type { CatalogManifest } from "../src/main/domain/types"
+import type { CatalogManifest, PageSummary } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
 
 type Localised = Record<string, { en: string; pl?: string }> | undefined
@@ -80,7 +81,7 @@ export async function generateData(outputDirectory = "dist") {
     writes.push(fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data)))
   }
   await Promise.all(writes)
-  const pages = library.pages
+  const pages = [...library.pages, ...upgradePages(Object.values(catalogs), library.pages)]
   const manifest: CatalogManifest = {
     pages,
     itemRoles: CraftRoles.ofCatalogs(pages, catalogs),
@@ -97,6 +98,19 @@ export async function generateData(outputDirectory = "dist") {
     `Dane JSON: ${pages.length} stron; DOS1 ${catalogs.dos1.recipes.length}, DOS2 ${catalogs.dos2.recipes.length}, Overhaul ${catalogs["dos2-overhaul"].recipes.length} receptur (${((performance.now() - started) / 1000).toFixed(2)} s).`,
   )
   return manifest
+}
+
+/** The upgrades' item pages of every catalog, one per name; none may take the address of a library page. */
+function upgradePages(catalogs: Catalog[], library: PageSummary[]): PageSummary[] {
+  const taken = new Set(library.map((page) => page.slug))
+  const pages = new Map<string, PageSummary>()
+  for (const page of catalogs.flatMap((data) => data.upgradePages())) {
+    assert.ok(!taken.has(page.slug), `Upgrade page takes the address of an item page: ${page.slug}`)
+    const known = pages.get(page.slug)
+    if (known) known.tags = [...new Set([...known.tags, ...page.tags])]
+    else pages.set(page.slug, page)
+  }
+  return [...pages.values()].sort((a, b) => a.slug.localeCompare(b.slug))
 }
 
 /** Each catalog gets its own copies of the shared items, since it fills them in differently. */

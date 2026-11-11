@@ -4,6 +4,7 @@ import { Recipe, type RecipeData } from "./recipe"
 import { RecipeStats, type TagStat } from "./recipeStats"
 import { TagLabels } from "./tagLabels"
 import { TextKey } from "./textKey"
+import type { PageSummary } from "./types"
 import { Upgrade, type UpgradeData } from "./upgrade"
 
 /** A game's catalog as written to data/catalog-<game>.json. */
@@ -59,9 +60,20 @@ export class Catalog {
     return [...this.recipes, ...this.upgradeRecipes(), ...(this.stock ?? []).map(Recipe.listing)]
   }
 
-  /** The recipes making the item of this page. */
+  /** The recipes making the item of this page, the upgrades giving it included. */
   recipesMaking(slug: string): Recipe[] {
-    return this.recipes.filter((row) => row.makes(slug))
+    return [...this.recipes, ...this.upgradeRecipes()].filter((row) => row.makes(slug))
+  }
+
+  /** Item pages of the upgrades, one per name; each carries the tags of every upgrade sharing it. */
+  upgradePages(): PageSummary[] {
+    const pages = new Map<string, PageSummary>()
+    for (const item of (this.upgrades ?? []).map((upgrade) => upgrade.item())) {
+      const page = pages.get(item.slug!)
+      if (page) page.tags = [...new Set([...page.tags, ...item.tags])]
+      else pages.set(item.slug!, { slug: item.slug!, title: item.name, titlePl: item.namePl, tags: item.tags })
+    }
+    return [...pages.values()]
   }
 
   /** The recipes whose random result can be the item of this page (by slug, or by name for unlinked entries). */

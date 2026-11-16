@@ -20,15 +20,15 @@
     "npm": ">=10"
   },
   "dependencies": {
-    "preact": "^11.1.0"
+    "preact": "^11.2.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.6",
     "@types/node": "^26.6.6",
     "preact-render-to-string": "^6.8.2",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^8.3.5"
+    "vite": "^8.3.8"
   }
 }

@@ -21383,7 +21383,20 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Excludes wands and some other weapons",
-      "source": "Secrets of the Scroll VIII"
+      "source": "Secrets of the Scroll VIII",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Shield",
@@ -21428,7 +21441,11 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -21469,7 +21486,14 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "Also changes item color (cyan)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "LeatherHelmet"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Metal-Chest",
@@ -21508,7 +21532,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Also changes item color (cyan)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-AIR-RESIST-ON-ITEM:Air Essence+#Cloth-Chest-Robe-Or-Sarong",
@@ -21547,7 +21574,12 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "Also changes item color (cyan)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-AIR,-EARTH,-FIRE,-WATER-RESIST-ON-ITEM:Ruby+#Chest-Gloves-Helmet-Belt-Or-Sarong",
@@ -21586,7 +21618,18 @@
       "requirements": "Crafting 5",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": "Secrets of the Scroll IX"
+      "source": "Secrets of the Scroll IX",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "ArmorScale",
+        "ClothArmor",
+        "Garment",
+        "LeatherHelmet",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Mobile Kitchen+#Leather-Chest",
@@ -21626,7 +21669,10 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "Less effective than Metal Scraps",
-      "source": "The Adventurer's Field Guide XII"
+      "source": "The Adventurer's Field Guide XII",
+      "targetCategories": [
+        "ArmorLeather"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Leather Scraps+#Cloth-Chest",
@@ -21661,7 +21707,10 @@
       "requirements": "Crafting 4",
       "notes": "",
       "remarks": "Less effective than Metal Scraps",
-      "source": "The Adventurer's Field Guide XI"
+      "source": "The Adventurer's Field Guide XI",
+      "targetCategories": [
+        "ClothArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Metal Scraps+#Cloth-Chest",
@@ -21696,7 +21745,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "More effective than Leather Scraps",
-      "source": "The Adventurer's Field Guide XI"
+      "source": "The Adventurer's Field Guide XI",
+      "targetCategories": [
+        "ClothArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Metal Scraps+#Leather-Chest",
@@ -21732,7 +21784,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "More effective than Mobile Kitchen",
-      "source": "The Adventurer's Field Guide XI"
+      "source": "The Adventurer's Field Guide XI",
+      "targetCategories": [
+        "ArmorLeather"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Plate Scraps+#Metal-Chest",
@@ -21768,7 +21823,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide XI"
+      "source": "The Adventurer's Field Guide XI",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-ARMOR-ON-ITEM:Scale Scraps+#Metal-Chest",
@@ -21804,7 +21862,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide XI"
+      "source": "The Adventurer's Field Guide XI",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-BLOCKING-CHANCE-ON-ITEM:Anvil+#Metal-Shield",
@@ -21842,7 +21903,10 @@
       "requirements": "Blacksmithing 3",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
-      "source": "The Adventurer's Field Guide III"
+      "source": "The Adventurer's Field Guide III",
+      "targetCategories": [
+        "ShieldMetal"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-BLOCKING-CHANCE-ON-ITEM:Metal Scraps+#Wooden-Shield",
@@ -21877,7 +21941,10 @@
       "requirements": "Blacksmithing 3",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
-      "source": "The Adventurer's Field Guide II"
+      "source": "The Adventurer's Field Guide II",
+      "targetCategories": [
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Whetstone+#Bladed-Melee-Weapon",
@@ -21912,7 +21979,16 @@
       "requirements": "Blacksmithing 2",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
-      "source": "The Adventurer's Field Guide VIII"
+      "source": "The Adventurer's Field Guide VIII",
+      "targetCategories": [
+        "Axe",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Whetstone Wheel+#Bladed-Melee-Weapon",
@@ -21947,7 +22023,16 @@
       "requirements": "Blacksmithing 2",
       "notes": "Stats Increase with Blacksmithing Level",
       "remarks": "",
-      "source": "The Adventurer's Field Guide VIII"
+      "source": "The Adventurer's Field Guide VIII",
+      "targetCategories": [
+        "Axe",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Bowstring+#Bow",
@@ -21989,7 +22074,10 @@
       "requirements": "Crafting 2",
       "notes": "Stats Increase with Crafting Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "Bow"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Bowstring+#Crossbow",
@@ -22028,7 +22116,10 @@
       "requirements": "Crafting 3",
       "notes": "Stats Increase with Crafting Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "Crossbow"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Moonstone+#Club",
@@ -22065,7 +22156,10 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide IX"
+      "source": "The Adventurer's Field Guide IX",
+      "targetCategories": [
+        "Club"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DAMAGE-ON-ITEM:Moonstone+#Staff",
@@ -22104,7 +22198,10 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide IX"
+      "source": "The Adventurer's Field Guide IX",
+      "targetCategories": [
+        "Staff"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DEXTERITY,-PERCEPTION-ON-ITEM:Scope+#Bow",
@@ -22146,7 +22243,10 @@
       "requirements": "Crafting 3",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "Bow"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DEXTERITY,-PERCEPTION-ON-ITEM:Scope+#Crossbow",
@@ -22185,7 +22285,10 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "Crossbow"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DURABILITY-ON-ITEM:Anvil+#Metal-Shield",
@@ -22223,7 +22326,10 @@
       "requirements": "Blacksmithing 2",
       "notes": "",
       "remarks": "If BS skill is above 2, shield will get Add Blocking",
-      "source": "The Adventurer's Field Guide III"
+      "source": "The Adventurer's Field Guide III",
+      "targetCategories": [
+        "ShieldMetal"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-DURABILITY-ON-ITEM:Metal Scraps+#Wooden-Shield",
@@ -22258,7 +22364,10 @@
       "requirements": "Blacksmithing 2",
       "notes": "",
       "remarks": "If BS skill is above 2, shield will get Add Blocking",
-      "source": "The Adventurer's Field Guide II"
+      "source": "The Adventurer's Field Guide II",
+      "targetCategories": [
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-EARTH-DAMAGE-ON-ITEM:Earth Essence+Most Weapons",
@@ -22298,7 +22407,20 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Excludes wands and some other weapons",
-      "source": "Secrets of the Scroll VIII"
+      "source": "Secrets of the Scroll VIII",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Shield",
@@ -22343,7 +22465,11 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Cloth-Chest-Robe-Or-Sarong",
@@ -22382,7 +22508,12 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "Also changes item color (orange)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -22423,7 +22554,14 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "Also changes item color (orange)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "LeatherHelmet"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-EARTH-RESIST-ON-ITEM:Earth Essence+#Metal-Chest",
@@ -22462,7 +22600,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Also changes item color (orange)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-FIRE-DAMAGE-ON-ITEM:Fire Essence+Most Weapons",
@@ -22502,7 +22643,20 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Excludes wands and some other weapons",
-      "source": "Secrets of the Scroll VIII"
+      "source": "Secrets of the Scroll VIII",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Shield",
@@ -22547,7 +22701,11 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Cloth-Chest-Robe-Or-Sarong",
@@ -22586,7 +22744,12 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "Also changes item color (red)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -22627,7 +22790,14 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "Also changes item color (red)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "LeatherHelmet"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-FIRE-RESIST-ON-ITEM:Fire Essence+#Metal-Chest",
@@ -22666,7 +22836,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Also changes item color (red)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-IMMUNITY-TO-SLIPPING-ON-ITEM:Nine Inch Nails+#Boots",
@@ -22704,7 +22877,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorShoes"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Anvil+#Metal-Chest",
@@ -22743,7 +22919,10 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide XIII"
+      "source": "The Adventurer's Field Guide XIII",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Bottle Filled With Oil+#Metal-Chest",
@@ -22784,7 +22963,10 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-MOVEMENT-ON-ITEM:Cup of Oil+#Metal-Chest",
@@ -22824,7 +23006,10 @@
       "requirements": "",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-POISON-DAMAGE-ON-ITEM:BUTELKA TRUCIZNY+Most Weapons",
@@ -22861,7 +23046,20 @@
       "requirements": "Crafting 1",
       "notes": "",
       "remarks": "Excludes wands and some other weapons",
-      "source": "The Adventurer's Field Guide X"
+      "source": "The Adventurer's Field Guide X",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-SNEAKING-ON-ITEM:Shadow Essence+#Chest-Gloves-Helmet-Belt-Or-Sarong",
@@ -22903,7 +23101,18 @@
       "requirements": "Crafting 4",
       "notes": "",
       "remarks": "Also changes item color (green)",
-      "source": "The Adventurer's Guide XV"
+      "source": "The Adventurer's Guide XV",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "ArmorScale",
+        "ClothArmor",
+        "Garment",
+        "LeatherHelmet",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-STRENGTH,,-DEXTERITY-ON-ITEM:Tormented Soul+Most Weapons",
@@ -22940,7 +23149,20 @@
       "requirements": "Crafting 5",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": "Secrets of the Scroll VII"
+      "source": "Secrets of the Scroll VII",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-TENEBRIUM-DAMAGE-ON-ITEM:Tenebrium Bar+Most Weapons",
@@ -22977,7 +23199,18 @@
       "requirements": "Tenebrium 3",
       "notes": "",
       "remarks": "Excludes wands, staves, and some other weapons",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-TENEBRIUM-RESIST-ON-ITEM:Shadow Essence+#Shield",
@@ -23022,7 +23255,11 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-WATER-DAMAGE-ON-ITEM:Water Essence+Most Weapons",
@@ -23062,7 +23299,20 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Excludes wands and some other weapons",
-      "source": "Secrets of the Scroll VIII"
+      "source": "Secrets of the Scroll VIII",
+      "targetCategories": [
+        "Axe",
+        "Bow",
+        "Club",
+        "Crossbow",
+        "Dagger",
+        "Knife",
+        "Spear",
+        "Staff",
+        "Sword",
+        "TwoHandedAxe",
+        "TwoHandedSword"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Shield",
@@ -23107,7 +23357,11 @@
       "requirements": "Crafting 4",
       "notes": "Stats Increase with Hero Level",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Cloth-Chest-Robe-Or-Sarong",
@@ -23146,7 +23400,12 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "Also changes item color (blue)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Leather-Chest-Gloves-Helmet-Or-Belt",
@@ -23187,7 +23446,14 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "Also changes item color (blue)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "LeatherHelmet"
+      ]
     },
     {
       "id": "Ulepszenia/ADD-WATER-RESIST-ON-ITEM:Water Essence+#Metal-Chest",
@@ -23226,7 +23492,10 @@
       "requirements": "Crafting 5",
       "notes": "",
       "remarks": "Also changes item color (blue)",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorScale"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Purple, Green)+#Chest-Gloves-Boots-Or-Sarong",
@@ -23265,7 +23534,16 @@
       "requirements": "Crafting 2",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (White, Yellow, Red)+#Chest-Gloves-Boots-Or-Sarong",
@@ -23304,7 +23582,16 @@
       "requirements": "Crafting 1",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Black)+#Chest-Gloves-Boots-Or-Sarong",
@@ -23343,7 +23630,16 @@
       "requirements": "Crafting 4",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-DYED-TO-(COLOR):Fabric Dye (Blue)+#Chest-Gloves-Boots-Or-Sarong",
@@ -23382,7 +23678,16 @@
       "requirements": "Crafting 3",
       "notes": "",
       "remarks": "",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-DYED-TO-PINK:Grumio's Cotton Candy Dye+#Chest-Gloves-Boots-Or-Sarong",
@@ -23421,7 +23726,16 @@
       "requirements": "",
       "notes": "",
       "remarks": "Enhanced Edition Item",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED:Pearl+#Chest-Gloves-Helmet-Belt-Sarong-Or-Shield",
@@ -23461,7 +23775,20 @@
       "requirements": "Crafting 1",
       "notes": "",
       "remarks": "",
-      "source": "The Adventurer's Field Guide VII"
+      "source": "The Adventurer's Field Guide VII",
+      "targetCategories": [
+        "ArmorBelt",
+        "ArmorGloves",
+        "ArmorHelmet",
+        "ArmorLeather",
+        "ArmorScale",
+        "ClothArmor",
+        "Garment",
+        "LeatherHelmet",
+        "RobeArmor",
+        "ShieldMetal",
+        "ShieldWood"
+      ]
     },
     {
       "id": "Ulepszenia/ITEM-GOLD-VALUE-INCREASED-ITEM-DYED-TO-YELLOW:Golden Grail+#Chest-Gloves-Boots-Or-Sarong",
@@ -23500,7 +23827,16 @@
       "requirements": "",
       "notes": "",
       "remarks": "DLC Item Reusable",
-      "source": ""
+      "source": "",
+      "targetCategories": [
+        "ArmorGloves",
+        "ArmorLeather",
+        "ArmorScale",
+        "ArmorShoes",
+        "ClothArmor",
+        "Garment",
+        "RobeArmor"
+      ]
     }
   ],
   "items": []

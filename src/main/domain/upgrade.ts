@@ -9,6 +9,8 @@ export type UpgradeData = {
   /** The groups of items the upgrade applies to, resolved during data generation. */
   targets?: ItemData[]
   targetTags: string[]
+  /** The game's crafting categories (ComboCategory) of the items it applies to, where the library knows them. */
+  targetCategories?: string[]
   tags: string[]
   ingredients: ItemData[]
   requirements: string
@@ -28,6 +30,7 @@ export class Upgrade {
   declare target: Item
   declare targets?: Item[]
   declare targetTags: string[]
+  declare targetCategories?: string[]
   declare tags: string[]
   declare ingredients: Item[]
   declare requirements: string
@@ -90,7 +93,8 @@ export class Upgrade {
    */
   recipes(): Recipe[] {
     const item = this.item()
-    const targets = this.targets?.length ? this.targets : [this.target]
+    // Resolved to no catalog item at all: one recipe for the target as the library names it.
+    const targets = this.targets?.some((target) => target.groupId) ? this.targets : [this.target]
     return targets.map(
       (target, index) =>
         new Recipe({
@@ -98,8 +102,8 @@ export class Upgrade {
           ingredients: [target, ...this.ingredients],
           result: item,
           tags: item.tags,
-          // A resolved target applies through its group alone; a slot without catalog items applies to none.
-          targetTags: this.targets?.length ? [] : this.targetTags,
+          // A resolved target applies through its group alone; one without catalog items applies to none.
+          targetTags: this.targets ? [] : this.targetTags,
           requirements: this.requirements,
           notes: "",
           remarks: this.remarks,

@@ -39,6 +39,8 @@ const ATTRIBUTES = ["finesse", "intelligence", "strength", "unique", "vanilla", 
 const WEAPONS = ["knife", "club", "staff", "bow", "crossbow", "axe", "mace", "sword", "spear", "dagger", "wand"]
 const QUALIFIERS = [...MATERIALS, ...ATTRIBUTES, ...WEAPONS]
 const QUALIFIED = new RegExp(String.raw`\b(${QUALIFIERS.join("|")})\b`, "i")
+/** Weapons with a blade: what "Bladed Melee Weapon" means. */
+const BLADED = ["Swords", "Axes", "Daggers"]
 
 const withinTags = (item: Item, tags: string[]) =>
   item.tags.some((tag) => tags.some((target) => tagHierarchy.isWithin(tag, target)))
@@ -143,13 +145,29 @@ function slotGroups(upgrade: Upgrade, candidates: Item[]): ItemGroup[] | undefin
   })
 }
 
-/** A single target: its own group when qualified, otherwise every item of its slot. */
+/**
+ * A single target: its own group when qualified, otherwise every item of its slot. A qualified target its
+ * group does not resolve keeps to the items its qualifier names ("Mage Helmet": the mage helmets), even
+ * when that leaves none, rather than taking the whole slot.
+ */
 function targetGroup(upgrade: Upgrade, candidates: Item[]): ItemGroup {
-  const qualified = QUALIFIED.test(words(upgrade.target.selectorTag ?? upgrade.target.name))
-  const matcher = qualified ? GroupMatcher.for(upgrade.target) : undefined
+  const text = words(upgrade.target.selectorTag ?? upgrade.target.name)
+  const matcher = QUALIFIED.test(text) ? GroupMatcher.for(upgrade.target) : undefined
   let members = matcher
     ? candidates.filter((item) => matcher.matches(item) && withinTags(item, upgrade.targetTags))
     : []
-  if (members.length === 0) members = candidates.filter((item) => withinTags(item, upgrade.targetTags))
+  if (members.length === 0) {
+    const qualifier = qualifierOf(text)
+    members = candidates.filter((item) => withinTags(item, upgrade.targetTags) && (!qualifier || qualifier(item)))
+  }
   return new ItemGroup({ id: upgrade.target.nameKey, name: upgrade.target.name, members: byName(members) })
+}
+
+/** The items a target's material ("Metal Chest") or kind ("Bladed Melee Weapon") narrows it to, if it names one. */
+function qualifierOf(text: string): ((item: Item) => boolean) | undefined {
+  const material = targetMaterials.find(([prefix]) => prefix.test(text))?.[1]
+  if (material)
+    return (item) => material.test(`${words(item.name)} ${words((item.craftingCategories ?? []).join(" "))}`)
+  if (/\bbladed\b/.test(text)) return (item) => withinTags(item, BLADED)
+  return undefined
 }

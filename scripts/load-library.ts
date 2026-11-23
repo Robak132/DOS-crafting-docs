@@ -143,6 +143,11 @@ function checkUpgrade(upgrade: UpgradeData, filename: string) {
       upgrade.targetTags.every((tag) => tag !== "Category" && tagHierarchy.isCategory(tag)),
     `Invalid upgrade target: ${upgrade.id}`,
   )
+  assert.ok(
+    upgrade.targetCategories === undefined ||
+      (strings(upgrade.targetCategories) && upgrade.targetCategories.length > 0),
+    `Invalid upgrade target categories: ${upgrade.id}`,
+  )
   assert.ok(strings(upgrade.tags), `Invalid upgrade tags: ${upgrade.id}`)
   assert.ok(
     Array.isArray(upgrade.ingredients) && upgrade.ingredients.every((item) => validItem(item) && !item.pool),

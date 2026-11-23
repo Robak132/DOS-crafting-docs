@@ -13,6 +13,8 @@ import { ItemGroupResolver } from "../src/main/domain/itemGroupResolver"
 import { ItemList } from "../src/main/domain/itemList"
 import { CatalogLocalizer, NameDictionary } from "../src/main/domain/localisation"
 import type { Recipe } from "../src/main/domain/recipe"
+import { TextKey } from "../src/main/domain/textKey"
+import type { Upgrade } from "../src/main/domain/upgrade"
 import { RecipeStats } from "../src/main/domain/recipeStats"
 import { SmallGroupExpander } from "../src/main/domain/smallGroupExpander"
 import { TagSidebar } from "../src/main/domain/tagSidebar"
@@ -20,6 +22,11 @@ import type { CatalogManifest, PageSummary } from "../src/main/domain/types"
 import { loadLibrary } from "./load-library"
 
 type Localised = Record<string, { en: string; pl?: string }> | undefined
+/**
+ * Names readers see for the items upgrades apply to, by the name generation gives them: the library's target
+ * or slot, shown without "#" and dashes, or for targets joined from several the names joined with "; ".
+ */
+type TargetNames = Record<string, { en: string; pl?: string }>
 type Effects = Record<string, { en?: string; pl?: string; recipes?: Record<string, { en: string; pl?: string }> }>
 
 /** Writes `<outputDirectory>/data`; the build passes `dist`, so the catalog data lands next to the app. */
@@ -35,6 +42,7 @@ export async function generateData(outputDirectory = "dist") {
   const effects = JSON.parse(await fs.readFile("data/itemEffects.json", "utf8"))
   const icons: ItemIconMap = JSON.parse(await fs.readFile("data/itemIcons.json", "utf8"))
   const rarity: Record<string, { unique: string[] }> = JSON.parse(await fs.readFile("data/itemRarity.json", "utf8"))
+  const targetNames: TargetNames = JSON.parse(await fs.readFile("data/upgradeTargetNames.json", "utf8"))
   await fs.rm(path.join(outputDirectory, "data"), { recursive: true, force: true })
   await fs.mkdir(path.join(outputDirectory, "data"), { recursive: true })
   await fs.cp("assets/item-icons", path.join(outputDirectory, "data/icons"), { recursive: true })
@@ -67,16 +75,21 @@ export async function generateData(outputDirectory = "dist") {
       ),
     )
     data.groups = groups
-    linkUpgradeTargets(data, groups, inventory)
     for (const row of data.recipes) {
       const effectLabels = noteLabels(row.notes, tagLocalisation[game])
       if (Object.keys(effectLabels).length) row.effectLabels = effectLabels
       for (const item of [row.result, ...row.ingredients]) markGroup(item, groups)
     }
     for (const item of data.upgrades!.flatMap((upgrade) => upgrade.ingredients)) markGroup(item, groups)
+    // Only now: the groups of upgrade targets are for upgrades alone, not for ingredients sharing their name.
+    const upgradeGroups = linkUpgradeTargets(data, groups, inventory)
     // From here on an upgrade is an item like any other: the recipes giving it join the catalog's own.
-    data.recipes = [...data.recipes, ...data.upgrades!.flatMap((upgrade) => upgrade.recipes())]
+    data.recipes = [...data.recipes, ...mergeUpgradeTargets(data.upgrades!, groups, upgradeGroups)]
+    nameUpgradeTargets(data.recipes, groups, upgradeGroups, targetNames)
     delete data.upgrades
+    // Slot groups joined into a wider one are left without a use.
+    const used = new Set(data.recipes.flatMap((row) => (row.isUpgrade ? (row.ingredients[0].groupId ?? []) : [])))
+    for (const id of upgradeGroups) if (!used.has(id)) delete groups[id]
     Object.assign(data, recipeStats(data, tagLocalisation[game]))
     // Items only used in upgrades are ingredients too; the item an upgrade applies to is not.
     const consumed = data.recipes.map((row) =>
@@ -189,19 +202,116 @@ function recipeStats(data: Pick<Catalog, "recipes" | "tags" | "requirements">, t
   return stats
 }
 
-/** Upgrade targets link to the groups of items they apply to. */
-function linkUpgradeTargets(data: Catalog, groups: ItemGroups, inventory: Item[]) {
+/** Upgrade targets link to the groups of items they apply to; returns the ids of the groups it added. */
+function linkUpgradeTargets(data: Catalog, groups: ItemGroups, inventory: Item[]): Set<string> {
+  const added = new Set<string>()
   const targets = new ItemGroupResolver(data.recipes, inventory).upgradeTargets(data.upgrades ?? [])
   for (const upgrade of data.upgrades ?? []) {
+    // A target without catalog items stays a plain label, applying to no item rather than to its whole category.
     const resolved = targets[upgrade.id] ?? []
-    if (!resolved.some((group) => group.members.length > 0)) continue
     upgrade.targets = resolved.map((group) => {
       // A slot without catalog items stays a plain label.
       if (group.members.length === 0) return new Item({ name: group.name, tags: upgrade.target.tags })
       const key = freeGroupKey(groups, group)
+      if (!groups[key]) added.add(key)
       groups[key] = new ItemGroup({ ...group, id: key })
       return new Item({ name: group.name, tags: upgrade.target.tags, groupId: key, groupSize: group.members.length })
     })
+  }
+  return added
+}
+
+/**
+ * The upgrades' recipes, those giving the same boost from the same ingredients joined into one: the groups
+ * of items they apply to become one group (a shirt, gloves and boots upgraded with the same scrap, say).
+ */
+function mergeUpgradeTargets(upgrades: Upgrade[], groups: ItemGroups, upgradeGroups: Set<string>): Recipe[] {
+  const joined = new Map<string, { rows: Recipe[]; targets: Item[]; split: boolean }>()
+  const order: Array<Recipe | string> = []
+  for (const upgrade of upgrades) {
+    const recipes = upgrade.recipes()
+    const split = recipes.length > 1
+    for (const row of recipes) {
+      const target = row.ingredients[0]
+      if (!target.groupId || !groups[target.groupId]) {
+        // A slot without catalog items is named by the target of its other slots ("Chest, Gloves or Sarong").
+        if (!split) order.push(row)
+        continue
+      }
+      const key = JSON.stringify([
+        row.result.slug,
+        row.consumedIngredients().map((item) => [item.slug ?? item.name, item.groupId, item.quantity]),
+        row.requirements,
+        row.remarks,
+        row.source,
+        [...row.tags].sort(),
+      ])
+      const entry = joined.get(key)
+      if (!entry) {
+        joined.set(key, { rows: [row], targets: [upgrade.target], split })
+        order.push(key)
+      } else {
+        entry.rows.push(row)
+        if (!entry.targets.includes(upgrade.target)) entry.targets.push(upgrade.target)
+        entry.split ||= split
+      }
+    }
+  }
+  return order.map((entry) =>
+    typeof entry === "string" ? joinedUpgrade(joined.get(entry)!, groups, upgradeGroups) : entry,
+  )
+}
+
+/** One recipe for upgrades differing only in the item they apply to, applying to every one of those items. */
+function joinedUpgrade(
+  { rows, targets, split }: { rows: Recipe[]; targets: Item[]; split: boolean },
+  groups: ItemGroups,
+  upgradeGroups: Set<string>,
+): Recipe {
+  const [first] = rows
+  if (rows.length === 1 && !split) return first
+  const members = new Map<string, Item>()
+  for (const row of rows)
+    for (const member of groups[row.ingredients[0].groupId!].members) members.set(member.slug ?? member.name, member)
+  // One library target split into slots keeps its own name; several are listed by name until named.
+  const name = targets.length === 1 ? targets[0].name : targets.map((item) => Item.displayName(item.name)).join("; ")
+  const namePl = targets.length === 1 ? targets[0].namePl : undefined
+  const group = new ItemGroup({
+    id: TextKey.item(name),
+    name,
+    members: [...members.values()].sort((a, b) => a.name.localeCompare(b.name)),
+  })
+  const key = freeGroupKey(groups, group)
+  if (!groups[key]) upgradeGroups.add(key)
+  groups[key] = new ItemGroup({ ...group, id: key })
+  const target = new Item({
+    name,
+    namePl,
+    tags: [...new Set(rows.flatMap((row) => row.ingredients[0].tags))],
+    groupId: key,
+    groupSize: group.members.length,
+  })
+  return first.with({
+    ingredients: [target, ...first.consumedIngredients()],
+    sourceRecipeIds: rows.flatMap((row) => row.sourceRecipeIds ?? [row.id]),
+  })
+}
+
+/**
+ * Upgrade targets get the names chosen for them in data/upgradeTargetNames.json, and so do the groups only
+ * upgrades use. Joined targets must have one: their generated name only lists what was joined.
+ */
+function nameUpgradeTargets(recipes: Recipe[], groups: ItemGroups, upgradeGroups: Set<string>, names: TargetNames) {
+  for (const row of recipes) {
+    if (!row.isUpgrade) continue
+    const target = row.ingredients[0]
+    const generated = Item.displayName(target.name)
+    const chosen = names[generated]
+    assert.ok(chosen || !generated.includes("; "), `Missing name in data/upgradeTargetNames.json: ${generated}`)
+    if (!chosen) continue
+    row.ingredients = [target.with({ name: chosen.en, namePl: chosen.pl }), ...row.consumedIngredients()]
+    const id = target.groupId
+    if (id && upgradeGroups.has(id)) groups[id] = new ItemGroup({ ...groups[id], name: chosen.en })
   }
 }
 

@@ -1,0 +1,282 @@
+{
+  "Most Weapons": {
+    "en": "Most Weapons",
+    "pl": "Większość broni"
+  },
+  "Shield": {
+    "en": "Shield",
+    "pl": "Tarcza"
+  },
+  "Leather Chest Gloves Helmet Or Belt": {
+    "en": "Leather Chest, Gloves, Helmet or Belt",
+    "pl": "Skórzany napierśnik, rękawice, hełm lub pas"
+  },
+  "METAL CHEST": {
+    "en": "Metal Chest",
+    "pl": "Metalowy napierśnik"
+  },
+  "Cloth Chest Robe Or Sarong": {
+    "en": "Cloth Chest, Robe or Sarong",
+    "pl": "Płócienny napierśnik, szata lub sarong"
+  },
+  "Chest Gloves Helmet Belt Or Sarong": {
+    "en": "Chest, Gloves, Helmet, Belt or Sarong",
+    "pl": "Napierśnik, rękawice, hełm, pas lub sarong"
+  },
+  "LEATHER CHEST": {
+    "en": "Leather Chest",
+    "pl": "Skórzany napierśnik"
+  },
+  "Cloth Chest": {
+    "en": "Cloth Chest",
+    "pl": "Płócienny napierśnik"
+  },
+  "Metal Shield": {
+    "en": "Metal Shield",
+    "pl": "Metalowa tarcza"
+  },
+  "Wooden Shield": {
+    "en": "Wooden Shield",
+    "pl": "Drewniana tarcza"
+  },
+  "Bladed Melee Weapon": {
+    "en": "Bladed Melee Weapon",
+    "pl": "Broń sieczna"
+  },
+  "Bow": {
+    "en": "Bow",
+    "pl": "Łuk"
+  },
+  "Crossbow": {
+    "en": "Crossbow",
+    "pl": "Kusza"
+  },
+  "Club": {
+    "en": "Club",
+    "pl": "Pałka"
+  },
+  "Staff": {
+    "en": "Staff",
+    "pl": "Kostur"
+  },
+  "Boots": {
+    "en": "Boots",
+    "pl": "Buty"
+  },
+  "Chest Gloves Boots Or Sarong": {
+    "en": "Chest, Gloves, Boots or Sarong",
+    "pl": "Napierśnik, rękawice, buty lub sarong"
+  },
+  "Chest Gloves Helmet Belt Sarong Or Shield": {
+    "en": "Chest, Gloves, Helmet, Belt, Sarong or Shield",
+    "pl": "Napierśnik, rękawice, hełm, pas, sarong lub tarcza"
+  },
+  "Armor With Empty Rune Socket": {
+    "en": "Armour With Empty Rune Socket",
+    "pl": "Pancerz z pustym gniazdem na runę"
+  },
+  "Trinket With Empty Rune Socket": {
+    "en": "Trinket With Empty Rune Socket",
+    "pl": "Ozdoba z pustym gniazdem na runę"
+  },
+  "Weapon With Empty Rune Socket": {
+    "en": "Weapon With Empty Rune Socket",
+    "pl": "Broń z pustym gniazdem na runę"
+  },
+  "Amulet": {
+    "en": "Amulet",
+    "pl": "Amulet"
+  },
+  "Belt": {
+    "en": "Belt",
+    "pl": "Pas"
+  },
+  "Shoes Or Boots": {
+    "en": "Shoes or Boots",
+    "pl": "Obuwie lub buty"
+  },
+  "Weapon (except wands and staves)": {
+    "en": "Weapon (Except Wands and Staves)",
+    "pl": "Broń (bez różdżek i kosturów)"
+  },
+  "Gloves": {
+    "en": "Gloves",
+    "pl": "Rękawice"
+  },
+  "Helmet": {
+    "en": "Helmet",
+    "pl": "Hełm"
+  },
+  "Pants": {
+    "en": "Pants",
+    "pl": "Nogawice"
+  },
+  "Weapon": {
+    "en": "Weapon",
+    "pl": "Broń"
+  },
+  "Ring": {
+    "en": "Ring",
+    "pl": "Pierścień"
+  },
+  "Upperbody": {
+    "en": "Body Armour",
+    "pl": "Napierśnik"
+  },
+  "Mage Gloves": {
+    "en": "Mage Gloves",
+    "pl": "Rękawice maga"
+  },
+  "Warrior Pants": {
+    "en": "Warrior Pants",
+    "pl": "Nogawice wojownika"
+  },
+  "Mage Helmet": {
+    "en": "Mage Helmet",
+    "pl": "Hełm maga"
+  },
+  "Armor": {
+    "en": "Armour",
+    "pl": "Pancerz"
+  },
+  "Mage Body Armor": {
+    "en": "Mage Body Armour",
+    "pl": "Napierśnik maga"
+  },
+  "Light Body Armor": {
+    "en": "Light Body Armour",
+    "pl": "Lekki napierśnik"
+  },
+  "Warrior Body Armor": {
+    "en": "Warrior Body Armour",
+    "pl": "Napierśnik wojownika"
+  },
+  "Mage Boots": {
+    "en": "Mage Boots",
+    "pl": "Buty maga"
+  },
+  "Warrior Boots": {
+    "en": "Warrior Boots",
+    "pl": "Buty wojownika"
+  },
+  "Light Boots": {
+    "en": "Light Boots",
+    "pl": "Lekkie buty"
+  },
+  "Boot Armor": {
+    "en": "Boots",
+    "pl": "Buty"
+  },
+  "Dagger": {
+    "en": "Dagger",
+    "pl": "Sztylet"
+  },
+  "Light Gloves": {
+    "en": "Light Gloves",
+    "pl": "Lekkie rękawice"
+  },
+  "Warrior Gloves": {
+    "en": "Warrior Gloves",
+    "pl": "Rękawice wojownika"
+  },
+  "Glove Armor": {
+    "en": "Gloves",
+    "pl": "Rękawice"
+  },
+  "Warrior Helmet": {
+    "en": "Warrior Helmet",
+    "pl": "Hełm wojownika"
+  },
+  "Light Helmet": {
+    "en": "Light Helmet",
+    "pl": "Lekki hełm"
+  },
+  "Helmet Armor": {
+    "en": "Helmet",
+    "pl": "Hełm"
+  },
+  "Light Pants": {
+    "en": "Light Pants",
+    "pl": "Lekkie nogawice"
+  },
+  "Mage Pants": {
+    "en": "Mage Pants",
+    "pl": "Nogawice maga"
+  },
+  "Lowerbody Armor": {
+    "en": "Pants",
+    "pl": "Nogawice"
+  },
+  "Two Handed Sword": {
+    "en": "Two-Handed Sword",
+    "pl": "Miecz dwuręczny"
+  },
+  "Wand": {
+    "en": "Wand",
+    "pl": "Różdżka"
+  },
+  "Trinket With Empty Rune Socket; Weapon With Empty Rune Socket": {
+    "en": "Trinket or Weapon With Empty Rune Socket",
+    "pl": "Ozdoba lub broń z pustym gniazdem na runę"
+  },
+  "Finesse Based Armor; Bow; Crossbow; Dagger; Knife; Spear": {
+    "en": "Armour and Weapons (Finesse)",
+    "pl": "Pancerz i broń (zręczność)"
+  },
+  "Intelligence Based Armor; Staff; Wand": {
+    "en": "Armour and Weapons (Intelligence)",
+    "pl": "Pancerz i broń (inteligencja)"
+  },
+  "Strength Based Armor; Axe; Mace; Sword; Two Handed Axe; Two Handed Mace; Two Handed Sword": {
+    "en": "Armour and Weapons (Strength)",
+    "pl": "Pancerz i broń (siła)"
+  },
+  "Axe; Two Handed Axe": {
+    "en": "Axe (One- or Two-Handed)",
+    "pl": "Topór (jedno- lub dwuręczny)"
+  },
+  "Mace; Two Handed Mace": {
+    "en": "Mace (One- or Two-Handed)",
+    "pl": "Buława (jedno- lub dwuręczna)"
+  },
+  "Sword; Axe; Mace": {
+    "en": "Sword, Axe or Mace",
+    "pl": "Miecz, topór lub buława"
+  },
+  "Bow; Crossbow": {
+    "en": "Bow or Crossbow",
+    "pl": "Łuk lub kusza"
+  },
+  "Dagger; Knife; Wand": {
+    "en": "Dagger, Knife or Wand",
+    "pl": "Sztylet, nóż lub różdżka"
+  },
+  "Spear; Two Handed Sword": {
+    "en": "Spear or Two-Handed Sword",
+    "pl": "Włócznia lub miecz dwuręczny"
+  },
+  "Spear; Staff; Two Handed Axe; Two Handed Mace; Two Handed Sword": {
+    "en": "Two-Handed Weapon",
+    "pl": "Broń dwuręczna"
+  },
+  "Armor Belt; Leather Upperbody, Gloves, Boots, Helmet, Pants": {
+    "en": "Leather Armour",
+    "pl": "Pancerz skórzany"
+  },
+  "Mage Upperbody, Gloves, Boots, Helmet, Pants; Cloth Upperbody, Gloves, Boots, Helmet, Pants": {
+    "en": "Cloth Armour",
+    "pl": "Pancerz płócienny"
+  },
+  "Warrior Upperbody, Gloves, Boots, Helmet, Pants; Shield": {
+    "en": "Metal Armour or Shield",
+    "pl": "Pancerz metalowy lub tarcza"
+  },
+  "Plate Upperbody, Gloves, Boots, Helmet, Pants; Vanilla Unique Upperbody, Gloves, Boots, Helmet, Pants": {
+    "en": "Plate Armour",
+    "pl": "Pancerz płytowy"
+  },
+  "Body Armor; Boots; Cape; Gloves; Helmet; Lowerbody Armor": {
+    "en": "Any Armour",
+    "pl": "Dowolny pancerz"
+  }
+}

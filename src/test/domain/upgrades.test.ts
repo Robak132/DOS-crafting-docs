@@ -1,7 +1,9 @@
 import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
+import { Item } from "../../main/domain/item"
 import { ItemGroup, type ItemGroups } from "../../main/domain/itemGroup"
+import { ItemGroupResolver } from "../../main/domain/itemGroupResolver"
 import type { Recipe } from "../../main/domain/recipe"
 import { SearchQuery } from "../../main/domain/searchQuery"
 import { TagLabels } from "../../main/domain/tagLabels"
@@ -91,6 +93,22 @@ test("an upgrade resolved to several slots is one recipe per slot, applying thro
   )
   assert.equal(upgradesForItem([ring], ["Rings"], "ring", groups).length, 1)
   assert.deepEqual(upgradesForItem([ring], ["Amulets"], "amulet", groups), [])
+})
+
+test("a qualified target keeps to the items its qualifier names, even when none are in the catalog", () => {
+  const inventory = [
+    new Item({ name: "Unique Geomancer Helmet", tags: ["Helmets"] }),
+    new Item({ name: "Iron Helmet", tags: ["Helmets"] }),
+    new Item({ name: "Trethon's Old Robes", tags: ["Chest-Armour"] }),
+  ]
+  const mage = upgrade("Blind Immunity", ["Helmets"], "Mage Helmet")
+  const metal = upgrade("Armour", ["Chest-Armour"], "METAL CHEST")
+  const targets = new ItemGroupResolver([], inventory).upgradeTargets([mage, metal])
+  assert.deepEqual(
+    targets[mage.id][0].members.map((item) => item.name),
+    ["Unique Geomancer Helmet"],
+  )
+  assert.deepEqual(targets[metal.id][0].members, [])
 })
 
 test("upgrade search covers effect, target and ingredients in both languages", () => {

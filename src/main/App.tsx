@@ -5,7 +5,6 @@ import { ItemIcon } from "./components/ItemIcon"
 import { useEffect, useMemo, useRef, useState } from "preact/hooks"
 import { ItemCatalog } from "./components/ItemCatalog"
 import { RecipeTable } from "./components/RecipeTable"
-import { UpgradeTable } from "./components/UpgradeTable"
 import { Catalog } from "./domain/catalog"
 import { GroupSearch } from "./domain/groupSearch"
 import type { Lang } from "./domain/item"
@@ -336,13 +335,12 @@ export function App() {
   const filterText = filterSummary(filters, labels)
   const activeFilterCount = countFilters(filters)
   const itemRecipes = useMemo(() => {
-    if (!detail.data || !catalog) return { craft: [], rolled: [], used: [], upgrades: [] }
+    if (!detail.data || !catalog) return { craft: [], rolled: [], used: [] }
     const { slug, title } = detail.data
     return {
       craft: catalog.recipesMaking(slug),
       rolled: catalog.recipesRolling(slug, title),
       used: catalog.recipesUsing(slug, title),
-      upgrades: catalog.upgradesUsing(slug, title),
     }
   }, [detail.data, catalog])
   const itemUpgrades = useMemo(
@@ -361,10 +359,7 @@ export function App() {
 
   const suggestionIndex = useMemo(() => {
     if (!catalog) return undefined
-    const items = [
-      ...catalog.recipes.flatMap((row) => [...row.obtainableItems(), ...row.ingredients]),
-      ...(catalog.upgrades ?? []).flatMap((upgrade) => [upgrade.item(), ...upgrade.ingredients]),
-    ]
+    const items = catalog.recipes.flatMap((row) => [...row.obtainableItems(), ...row.consumedIngredients()])
     return new SuggestionIndex(items, catalog.groups)
   }, [catalog])
   // One search bar for the whole site: it filters the catalog, and on an item page it opens the catalog.
@@ -653,39 +648,27 @@ export function App() {
                 {itemUpgrades.length > 0 && (
                   <section>
                     <h2>Możliwe ulepszenia</h2>
-                    <UpgradeTable
-                      upgrades={itemUpgrades}
+                    <RecipeTable
+                      recipes={itemUpgrades}
+                      catalogSlug={activeGame.slug}
                       labels={labels}
-                      game={game}
                       showRequirements={game === "dos1"}
-                      showTargets={false}
+                      searchable
+                      itemRoles={manifest.data?.itemRoles?.[game]}
                     />
                   </section>
                 )}
-                {(itemRecipes.used.length > 0 || itemRecipes.upgrades.length > 0) && (
+                {itemRecipes.used.length > 0 && (
                   <section>
                     <h2>Do czego służy</h2>
-                    {itemRecipes.used.length > 0 && (
-                      <RecipeTable
-                        recipes={itemRecipes.used}
-                        catalogSlug={activeGame.slug}
-                        labels={labels}
-                        showRequirements={game === "dos1"}
-                        searchable
-                        itemRoles={manifest.data?.itemRoles?.[game]}
-                      />
-                    )}
-                    {itemRecipes.upgrades.length > 0 && (
-                      <>
-                        <h3>W ulepszeniach</h3>
-                        <UpgradeTable
-                          upgrades={itemRecipes.upgrades}
-                          labels={labels}
-                          game={game}
-                          showRequirements={game === "dos1"}
-                        />
-                      </>
-                    )}
+                    <RecipeTable
+                      recipes={itemRecipes.used}
+                      catalogSlug={activeGame.slug}
+                      labels={labels}
+                      showRequirements={game === "dos1"}
+                      searchable
+                      itemRoles={manifest.data?.itemRoles?.[game]}
+                    />
                   </section>
                 )}
               </>

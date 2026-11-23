@@ -4,15 +4,13 @@ import { Recipe, type RecipeData } from "./recipe"
 import { RecipeStats, type TagStat } from "./recipeStats"
 import { TagLabels } from "./tagLabels"
 import { TextKey } from "./textKey"
-import type { PageSummary } from "./types"
-import { Upgrade, type UpgradeData } from "./upgrade"
+import type { Upgrade } from "./upgrade"
 
 /** A game's catalog as written to data/catalog-<game>.json. */
 export type CatalogData = {
   recipes: RecipeData[]
   tags: TagStat[]
   requirements: TagStat[]
-  upgrades?: UpgradeData[]
   groups?: Record<string, ItemGroupData>
   /** Items only ever used as ingredients; the item list shows them too. */
   stock?: ItemData[]
@@ -20,11 +18,12 @@ export type CatalogData = {
   itemTags?: TagStat[]
 }
 
-/** Everything one game offers: its recipes, upgrades, item groups and tag counts. */
+/** Everything one game offers: its recipes (the upgrades' among them), item groups and tag counts. */
 export class Catalog {
   declare recipes: Recipe[]
   declare tags: TagStat[]
   declare requirements: TagStat[]
+  /** The library's upgrades, only while the data is generated; the written catalog has them as recipes. */
   declare upgrades?: Upgrade[]
   declare groups?: ItemGroups
   declare stock?: Item[]
@@ -33,7 +32,6 @@ export class Catalog {
   constructor(data: CatalogData) {
     Object.assign(this, data)
     this.recipes = data.recipes.map(Recipe.from)
-    if (data.upgrades) this.upgrades = data.upgrades.map(Upgrade.from)
     if (data.stock) this.stock = data.stock.map(Item.from)
     if (data.groups)
       this.groups = Object.fromEntries(Object.entries(data.groups).map(([id, group]) => [id, ItemGroup.from(group)]))
@@ -50,30 +48,14 @@ export class Catalog {
     return TagLabels.of([...(this.itemTags ?? []), ...this.tags])
   }
 
-  /** The recipes giving the upgrades as items of their own. */
-  upgradeRecipes(): Recipe[] {
-    return (this.upgrades ?? []).map((upgrade) => upgrade.recipe())
-  }
-
-  /** The rows of the item list: every recipe and upgrade, and a listing for each item only used as an ingredient. */
+  /** The rows of the item list: every recipe, and a listing for each item only used as an ingredient. */
   itemRows(): Recipe[] {
-    return [...this.recipes, ...this.upgradeRecipes(), ...(this.stock ?? []).map(Recipe.listing)]
+    return [...this.recipes, ...(this.stock ?? []).map(Recipe.listing)]
   }
 
   /** The recipes making the item of this page, the upgrades giving it included. */
   recipesMaking(slug: string): Recipe[] {
-    return [...this.recipes, ...this.upgradeRecipes()].filter((row) => row.makes(slug))
-  }
-
-  /** Item pages of the upgrades, one per name; each carries the tags of every upgrade sharing it. */
-  upgradePages(): PageSummary[] {
-    const pages = new Map<string, PageSummary>()
-    for (const item of (this.upgrades ?? []).map((upgrade) => upgrade.item())) {
-      const page = pages.get(item.slug!)
-      if (page) page.tags = [...new Set([...page.tags, ...item.tags])]
-      else pages.set(item.slug!, { slug: item.slug!, title: item.name, titlePl: item.namePl, tags: item.tags })
-    }
-    return [...pages.values()]
+    return this.recipes.filter((row) => row.makes(slug))
   }
 
   /** The recipes whose random result can be the item of this page (by slug, or by name for unlinked entries). */
@@ -82,21 +64,15 @@ export class Catalog {
     return this.recipes.filter((row) => row.canRoll(slug, keys))
   }
 
-  /** The recipes taking the item of this page as an ingredient (by slug, or by name for groups). */
+  /** The recipes using the item of this page up (by slug, or by name for groups), the upgrades among them. */
   recipesUsing(slug: string, title: string): Recipe[] {
     const keys = TextKey.names(title, slug)
-    return this.recipes.filter((row) => row.uses(slug, keys))
+    return this.recipes.filter((row) => row.uses(slug, keys, this.groups))
   }
 
   /** The upgrades applying to an item with these tags. */
-  upgradesFor(itemTags: string[], slug: string): Upgrade[] {
-    return (this.upgrades ?? []).filter((upgrade) => upgrade.appliesTo(itemTags, slug, this.groups))
-  }
-
-  /** The upgrades taking the item of this page as an ingredient, directly or through a group. */
-  upgradesUsing(slug: string, title: string): Upgrade[] {
-    const keys = TextKey.names(title, slug)
-    return (this.upgrades ?? []).filter((upgrade) => upgrade.uses(slug, keys, this.groups))
+  upgradesFor(itemTags: string[], slug: string): Recipe[] {
+    return this.recipes.filter((row) => row.appliesTo(itemTags, slug, this.groups))
   }
 
   /** The item of a page as the catalog shows it: a product first, else a pool entry, else an ingredient. */

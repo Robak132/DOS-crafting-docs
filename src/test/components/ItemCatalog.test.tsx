@@ -96,7 +96,7 @@ test("an upgrade is an item of its own, made from its target and ingredients", (
     remarks: "",
     source: "",
   })
-  const [row] = new ItemList([boost.recipe()]).rows()
+  const [row] = new ItemList(boost.recipes()).rows()
   assert.equal(row.item.shownName("pl"), "Wzmocnienie: Odporność na powietrze")
   assert.deepEqual(row.tags, ["Upgrades"])
   assert.deepEqual(

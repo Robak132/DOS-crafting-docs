@@ -18,9 +18,7 @@ async function verifyCatalog(game: string) {
   ])
   assert.ok(Object.keys(descriptions).length > 0, `Missing descriptions for ${game}`)
   // Small groups stay only when the game defines them or an upgrade applies to them.
-  const upgradeGroups = new Set(
-    (catalog.upgrades ?? []).flatMap((upgrade) => (upgrade.targets ?? []).map((t) => t.groupId)),
-  )
+  const upgradeGroups = new Set(catalog.recipes.flatMap((row) => (row.targetTags ? [row.ingredients[0].groupId] : [])))
   for (const [id, group] of Object.entries(catalog.groups ?? {})) {
     assert.ok(
       group.members.length >= 4 || GroupMatcher.isGameGroup(group.name) || upgradeGroups.has(id),

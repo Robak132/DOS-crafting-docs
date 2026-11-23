@@ -20,7 +20,7 @@ export class CraftRoles {
   constructor(recipes: Recipe[]) {
     const slugs = (items: Item[]) => new Set(items.flatMap((item) => (item.slug ? [item.slug] : [])))
     this.craftable = slugs(recipes.flatMap((recipe) => recipe.obtainableItems()))
-    this.usable = slugs(recipes.flatMap((recipe) => recipe.ingredients))
+    this.usable = slugs(recipes.flatMap((recipe) => recipe.consumedIngredients()))
   }
 
   /** The roles of every page's item in each game's catalog. */

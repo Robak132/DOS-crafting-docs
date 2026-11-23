@@ -1,7 +1,9 @@
 import { EffectNote } from "./effectNote"
 import { Item, type ItemData } from "./item"
+import type { ItemGroups } from "./itemGroup"
 import { Requirements } from "./requirements"
 import type { SearchQuery } from "./searchQuery"
+import { tagHierarchy } from "./tagHierarchy"
 import type { TagLabels } from "./tagLabels"
 
 /** A recipe as stored in the recipe library and in the generated catalog JSON. */
@@ -12,6 +14,11 @@ export type RecipeData = {
   transformsIngredient?: number
   /** Source recipe shared by expanded ingredient alternatives. */
   sourceRecipeIds?: string[]
+  /**
+   * Set on an upgrade, whose result is no game item but the boost itself: the first ingredient is the item
+   * it is applied to, and these are the categories that item may be when no resolved group names it.
+   */
+  targetTags?: string[]
   id: string
   ingredients: ItemData[]
   result: ItemData
@@ -37,6 +44,7 @@ export class Recipe {
   declare effectLabels?: Record<string, string>
   declare transformsIngredient?: number
   declare sourceRecipeIds?: string[]
+  declare targetTags?: string[]
   declare id: string
   declare ingredients: Item[]
   declare result: Item
@@ -84,6 +92,28 @@ export class Recipe {
   /** Whether it only lists an item no recipe makes (see {@link listing}). */
   get isListing(): boolean {
     return this.id.startsWith("item:")
+  }
+
+  /** Whether it is an upgrade: its result is a boost applied to the first ingredient (see {@link targetTags}). */
+  get isUpgrade(): boolean {
+    return this.targetTags !== undefined
+  }
+
+  /** The ingredients the craft uses up: all of them, except the item an upgrade is applied to. */
+  consumedIngredients(): Item[] {
+    return this.isUpgrade ? this.ingredients.slice(1) : this.ingredients
+  }
+
+  /**
+   * Whether it is an upgrade applying to the item: membership in the target's group when the catalog
+   * resolved one, otherwise the target categories (e.g. one for any weapon applies to a bow).
+   */
+  appliesTo(itemTags: string[], slug: string | undefined, groups?: ItemGroups): boolean {
+    if (!this.targetTags) return false
+    const target = this.ingredients[0]
+    const group = target.groupId ? groups?.[target.groupId] : undefined
+    if (group) return group.includes(slug)
+    return this.targetTags.some((category) => itemTags.some((tag) => tagHierarchy.isWithin(tag, category)))
   }
 
   /** A copy with some fields changed; the recipe itself stays as it is. */
@@ -145,9 +175,16 @@ export class Recipe {
     return (this.result.pool ?? []).some((item) => item.matches(slug, nameKeys))
   }
 
-  /** Czy receptura używa danego przedmiotu jako składnika (po slug lub nazwie PL/EN). */
-  uses(slug: string | undefined, nameKeys: Set<string>): boolean {
-    return this.ingredients.some((ingredient) => ingredient.matches(slug, nameKeys))
+  /**
+   * Whether it uses the item up as an ingredient: by its page or its name, and for an upgrade also through
+   * membership in an ingredient group. The item an upgrade is applied to is not used up.
+   */
+  uses(slug: string | undefined, nameKeys: Set<string>, groups?: ItemGroups): boolean {
+    return this.consumedIngredients().some((ingredient) =>
+      this.isUpgrade && ingredient.groupId
+        ? Boolean(slug && groups?.[ingredient.groupId]?.includes(slug))
+        : ingredient.matches(slug, nameKeys),
+    )
   }
 
   /** Whether it takes this resolved group as an ingredient. */

@@ -1,9 +1,5 @@
 import { Item, type ItemData } from "./item"
-import type { ItemGroups } from "./itemGroup"
 import { Recipe } from "./recipe"
-import { Requirements } from "./requirements"
-import type { SearchQuery } from "./searchQuery"
-import { tagHierarchy } from "./tagHierarchy"
 
 /** An upgrade as stored in the recipe library and in the generated catalog JSON. */
 export type UpgradeData = {
@@ -22,8 +18,9 @@ export type UpgradeData = {
 }
 
 /**
- * A modification of existing items (an effect added to a weapon, say). The catalog lists it as an artificial
- * item of its own ({@link item}), made by a recipe from the target and the ingredients ({@link recipe}).
+ * A modification of existing items (an effect added to a weapon, say), as the recipe library stores it. The
+ * generated catalog has no upgrades: it lists each as an artificial item of its own ({@link item}), made by
+ * ordinary recipes from the target and the ingredients ({@link recipes}).
  */
 export class Upgrade {
   declare id: string
@@ -87,51 +84,27 @@ export class Upgrade {
     })
   }
 
-  /** The craft giving {@link item}: the item to upgrade (its resolved group when there is one) and the ingredients. */
-  recipe(): Recipe {
-    const item = this.item()
-    const target = this.targets?.length === 1 ? this.targets[0] : this.target
-    return new Recipe({
-      id: `upgrade:${this.id}`,
-      ingredients: [target, ...this.ingredients],
-      result: item,
-      tags: item.tags,
-      requirements: this.requirements,
-      notes: "",
-      remarks: this.remarks,
-      source: this.source,
-    })
-  }
-
-  get requirementList(): Requirements {
-    return new Requirements(this.requirements)
-  }
-
   /**
-   * Whether it applies to the item: membership in the target's group when the catalog resolved one,
-   * otherwise the target category (e.g. one for any weapon applies to a bow).
+   * The crafts giving {@link item}, as the catalog lists them: the item to upgrade and the ingredients. An
+   * upgrade resolved to several groups (one per equipment slot) gets one recipe for each.
    */
-  appliesTo(itemTags: string[], itemSlug?: string, groups?: ItemGroups): boolean {
-    const resolved = (this.targets ?? []).flatMap((target) => (target.groupId ? [groups?.[target.groupId]] : []))
-    if (resolved.length && resolved.every(Boolean)) return resolved.some((group) => group!.includes(itemSlug))
-    return this.targetTags.some((target) => itemTags.some((tag) => tagHierarchy.isWithin(tag, target)))
-  }
-
-  /** Whether it takes the item as an ingredient: by its page, its name, or membership in an ingredient group. */
-  uses(slug: string | undefined, nameKeys: Set<string>, groups?: ItemGroups): boolean {
-    return this.ingredients.some((ingredient) =>
-      ingredient.groupId
-        ? Boolean(slug && groups?.[ingredient.groupId]?.includes(slug))
-        : ingredient.matches(slug, nameKeys),
+  recipes(): Recipe[] {
+    const item = this.item()
+    const targets = this.targets?.length ? this.targets : [this.target]
+    return targets.map(
+      (target, index) =>
+        new Recipe({
+          id: targets.length > 1 ? `upgrade:${this.id}#${index + 1}` : `upgrade:${this.id}`,
+          ingredients: [target, ...this.ingredients],
+          result: item,
+          tags: item.tags,
+          // A resolved target applies through its group alone; a slot without catalog items applies to none.
+          targetTags: this.targets?.length ? [] : this.targetTags,
+          requirements: this.requirements,
+          notes: "",
+          remarks: this.remarks,
+          source: this.source,
+        }),
     )
-  }
-
-  /** Whether the query finds it by effect, target or ingredients, in either language. */
-  matches(query: SearchQuery): boolean {
-    return query.matches([
-      this.effect.en,
-      this.effect.pl,
-      ...[this.target, ...this.ingredients].flatMap((item) => [item.name, item.namePl, item.selectorTag]),
-    ])
   }
 }

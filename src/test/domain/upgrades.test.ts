@@ -2,7 +2,9 @@ import assert from "node:assert/strict"
 import fs from "node:fs"
 import { test } from "node:test"
 import { ItemGroup, type ItemGroups } from "../../main/domain/itemGroup"
+import type { Recipe } from "../../main/domain/recipe"
 import { SearchQuery } from "../../main/domain/searchQuery"
+import { TagLabels } from "../../main/domain/tagLabels"
 import { tagHierarchy } from "../../main/domain/tagHierarchy"
 import { Upgrade, type UpgradeData } from "../../main/domain/upgrade"
 
@@ -19,8 +21,9 @@ const upgrade = (effect: string, targetTags: string[], target = "Shield") =>
     remarks: "",
     source: "",
   })
+const effect = (row: Recipe) => row.result.effect?.en
 const upgradesForItem = (upgrades: Upgrade[], tags: string[], slug?: string, groups?: ItemGroups) =>
-  upgrades.filter((entry) => entry.appliesTo(tags, slug, groups))
+  upgrades.flatMap((entry) => entry.recipes()).filter((row) => row.appliesTo(tags, slug, groups))
 
 test("an item page lists the upgrades whose target covers its category", () => {
   const upgrades = [
@@ -30,10 +33,7 @@ test("an item page lists the upgrades whose target covers its category", () => {
   ]
   // A page stores only its leaf tag; "Weapons" covers it through the hierarchy.
   const bow = ["DOS1", "Bows"]
-  assert.deepEqual(
-    upgradesForItem(upgrades, bow).map((entry) => entry.effect.en),
-    ["Fire Damage", "Bow Damage"],
-  )
+  assert.deepEqual(upgradesForItem(upgrades, bow).map(effect), ["Fire Damage", "Bow Damage"])
   assert.deepEqual(upgradesForItem(upgrades, ["Ingredients"]), [])
 })
 
@@ -48,7 +48,7 @@ test("an upgrade with a resolved target group applies only to that group's membe
       members: [{ name: "Mage Gloves", slug: "mage-gloves", tags: ["Gloves"] }],
     }),
   }
-  assert.deepEqual(upgradesForItem([gloves], ["Gloves"], "mage-gloves", groups), [gloves])
+  assert.deepEqual(upgradesForItem([gloves], ["Gloves"], "mage-gloves", groups).map(effect), ["Crit"])
   assert.deepEqual(upgradesForItem([gloves], ["Gloves"], "bone-gloves", groups), [])
 })
 
@@ -65,16 +65,39 @@ test("an item page lists the upgrades that take it as an ingredient, directly or
     }),
   }
   const using = (slug: string, keys: string[]) =>
-    [essence, rune].filter((entry) => entry.uses(slug, new Set(keys), groups)).map((entry) => entry.effect.en)
+    [essence, rune]
+      .flatMap((entry) => entry.recipes())
+      .filter((row) => row.uses(slug, new Set(keys), groups))
+      .map(effect)
   assert.deepEqual(using("small-air-rune", []), ["Armour"])
   assert.deepEqual(using("air-essence", ["airessence"]), ["Air Resistance"])
+  // The item an upgrade is applied to is not used up.
+  assert.deepEqual(using("shield", ["shield"]), [])
+})
+
+test("an upgrade resolved to several slots is one recipe per slot, applying through its groups only", () => {
+  const ring = upgrade("Crit", ["Rings", "Amulets"], "#Ring-Or-Amulet").with({
+    targets: [
+      { name: "Ring", tags: [], groupId: "ring" },
+      { name: "Amulet", tags: [] },
+    ],
+  })
+  const groups = {
+    ring: new ItemGroup({ id: "ring", name: "Ring", members: [{ name: "Ring", slug: "ring", tags: [] }] }),
+  }
+  assert.deepEqual(
+    ring.recipes().map((row) => row.ingredients[0].name),
+    ["Ring", "Amulet"],
+  )
+  assert.equal(upgradesForItem([ring], ["Rings"], "ring", groups).length, 1)
+  assert.deepEqual(upgradesForItem([ring], ["Amulets"], "amulet", groups), [])
 })
 
 test("upgrade search covers effect, target and ingredients in both languages", () => {
-  const entry = upgrade("Air Resistance", ["Shields"])
-  for (const query of ["air", "odpornosc", "shield", "esencja", "AIR essence"])
-    assert.ok(entry.matches(new SearchQuery(query)), query)
-  assert.ok(!entry.matches(new SearchQuery("fire")))
+  const [row] = upgrade("Air Resistance", ["Shields"]).recipes()
+  const found = (query: string) => row.matches(new SearchQuery(query), new TagLabels(), "all")
+  for (const query of ["air", "odpornosc", "shield", "esencja", "AIR essence"]) assert.ok(found(query), query)
+  assert.ok(!found("fire"))
 })
 
 test("upgrades are stored as modifications, never as items", () => {

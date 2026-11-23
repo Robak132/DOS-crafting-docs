@@ -74,9 +74,15 @@ export async function generateData(outputDirectory = "dist") {
       for (const item of [row.result, ...row.ingredients]) markGroup(item, groups)
     }
     for (const item of data.upgrades!.flatMap((upgrade) => upgrade.ingredients)) markGroup(item, groups)
+    // From here on an upgrade is an item like any other: the recipes giving it join the catalog's own.
+    data.recipes = [...data.recipes, ...data.upgrades!.flatMap((upgrade) => upgrade.recipes())]
+    delete data.upgrades
+    Object.assign(data, recipeStats(data, tagLocalisation[game]))
     // Items only used in upgrades are ingredients too; the item an upgrade applies to is not.
-    const upgradeUses = data.upgradeRecipes().map((row) => row.with({ ingredients: row.ingredients.slice(1) }))
-    data.stock = new ItemList([...data.recipes, ...upgradeUses]).stock()
+    const consumed = data.recipes.map((row) =>
+      row.isUpgrade ? row.with({ ingredients: row.consumedIngredients() }) : row,
+    )
+    data.stock = new ItemList(consumed).stock()
     data.itemTags = recipeStats({ ...data, recipes: data.itemRows() }, tagLocalisation[game]).tags
     writes.push(fs.writeFile(path.join(outputDirectory, `data/catalog-${game}.json`), JSON.stringify(data)))
   }
@@ -100,15 +106,20 @@ export async function generateData(outputDirectory = "dist") {
   return manifest
 }
 
-/** The upgrades' item pages of every catalog, one per name; none may take the address of a library page. */
+/**
+ * The upgrades' item pages of every catalog, one per name, carrying the tags of every upgrade sharing it;
+ * none may take the address of a library page.
+ */
 function upgradePages(catalogs: Catalog[], library: PageSummary[]): PageSummary[] {
   const taken = new Set(library.map((page) => page.slug))
   const pages = new Map<string, PageSummary>()
-  for (const page of catalogs.flatMap((data) => data.upgradePages())) {
-    assert.ok(!taken.has(page.slug), `Upgrade page takes the address of an item page: ${page.slug}`)
-    const known = pages.get(page.slug)
-    if (known) known.tags = [...new Set([...known.tags, ...page.tags])]
-    else pages.set(page.slug, page)
+  const boosts = catalogs.flatMap((data) => data.recipes.filter((row) => row.isUpgrade).map((row) => row.result))
+  for (const item of boosts) {
+    const slug = item.slug!
+    assert.ok(!taken.has(slug), `Upgrade page takes the address of an item page: ${slug}`)
+    const known = pages.get(slug)
+    if (known) known.tags = [...new Set([...known.tags, ...item.tags])]
+    else pages.set(slug, { slug, title: item.name, titlePl: item.namePl, tags: item.tags })
   }
   return [...pages.values()].sort((a, b) => a.slug.localeCompare(b.slug))
 }

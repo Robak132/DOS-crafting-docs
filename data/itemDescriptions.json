@@ -7778,6 +7778,10 @@
       "en": "Hide under the desk of anyone who's rude to you for guaranteed last laughs.",
       "pl": "Schowaj pod biurkiem kogoś niemiłego, aby się zaśmiać jako ostatni."
     },
+    "confoodsouppumpkina": {
+      "en": "Rich, creamy, and comfortingly warm.",
+      "pl": "Intensywna w smaku, kremowa i przyjemnie ciepła."
+    },
     "confoodstewdwarvena": {
       "en": "This simple, gristly dish is considered a fine dessert among Dwarven circles.",
       "pl": "To proste, chrząstkowate danie uchodzi wśród krasnoludów za jedno z najpyszniejszych."
@@ -7922,6 +7926,10 @@
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
     },
+    "conporridgea": {
+      "en": "Breakfast is the most important meal of the day. Eat up!",
+      "pl": "Śniadanie to najważniejszy posiłek dnia. Wcinaj!"
+    },
     "conporridgepotatoa": {
       "en": "Considered a beverage by the hale and suicidal Dwarves of the frozen north.",
       "pl": "Wśród krzepkich i zuchwałych krasnoludów z mroźnej północy uchodzi za napitek."
@@ -8045,10 +8053,6 @@
     "conpotionpoisonvoida": {
       "en": "|Powerful poisoned potion|",
       "pl": "Potężna mikstura trucizny"
-    },
-    "conpotionstardustboileda": {
-      "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor resistance to all types of elemental magic.",
-      "pl": "Ten wzmacniający napój może i cuchnie skwaśniałym mlekiem, ale już jeden łyk zapewni ci niewielką odporność na wszelkie rodzaje magii żywiołów."
     },
     "conpotionstoneskin": {
       "en": "| Stoneskin potion description |",
@@ -8950,6 +8954,18 @@
       "en": "Cultivated and exported from the equator by expert Lizard horticulturists.",
       "pl": "Hodowane i eksportowane z okolic równika przez jaszczurczych mistrzów ogrodnictwa."
     },
+    "foodpumpkin": {
+      "en": "A perfect, orange globe of possibilities.",
+      "pl": "Idealna, pomarańczowa kula wszelkich możliwości."
+    },
+    "foodpumpkinc": {
+      "en": "Useless.",
+      "pl": "Bezużyteczne."
+    },
+    "foodpumpkinpart": {
+      "en": "Someone's already pillaged this pumpkin's treasures.",
+      "pl": "Ktoś już splądrował skarby skryte w tej dyni."
+    },
     "forcedexchangescroll": {
       "en": "A scroll is a one time use spell. Use to start casting!",
       "pl": "Zwój zawiera zaklęcie jednorazowego użytku. Użyj go, by je rzucić."
@@ -8998,6 +9014,10 @@
       "en": "A gleaming arrowhead perpetually coated with condensation; if you don't use it to craft a special arrow, you might as well have it handy to keep your drinks cold.",
       "pl": "Lśniący grot wiecznie otoczony skroploną parą; jeśli nie wykonasz z niego specjalnej strzały, możesz nim schładzać napoje."
     },
+    "furbarbarrelabeera": {
+      "en": "This metal-bound wood exudes the fine scent of ruby-red ale.",
+      "pl": "Okute metalem drewno zalatuje mocno czerwonym piwem."
+    },
     "furbucketamilk": {
       "en": "Ingredient",
       "pl": "Składnik"
@@ -9009,10 +9029,6 @@
     "furbucketnohelmet": {
       "en": "This bucket must have been used for transporting fish. Yeuch.",
       "pl": "Wiadro wykorzystywano zapewne do przenoszenia ryb. Fuj."
-    },
-    "furraanaartableta": {
-      "en": "Use to read.",
-      "pl": "Otwórz, by przeczytać."
     },
     "fuse": {
       "en": "To a grenade maker, fuses are an abundant pleasure: fuses to be bought, fuses to be found, a whole world of fuses! Of course, the REALLY fun part is lighting them.",
@@ -9177,14 +9193,6 @@
     "gregorthered": {
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
-    },
-    "grngrenadelovea": {
-      "en": "Use to read and learn about crafting.",
-      "pl": "Użyj, by przeczytać i dowiedzieć się nieco o rzemiośle."
-    },
-    "grngrenademolotova": {
-      "en": "It's impossible to tell what illicit ingredients are mixed together within this old wine bottle. However, from the manner in which the bottle vibrates in your hands, it's fair to say the mixture is volatile indeed...",
-      "pl": "Trudno powiedzieć, jakie zakazane składniki wymieszano w tej starej butelce po winie. Jednak ze sposobu, w jaki drży w twoich rękach, można wywnioskować, że mieszanina jest doprawdy niestabilna..."
     },
     "grningredientcylinderemptya": {
       "en": "An empty, bulbous cylinder stoppered with pockmarked and tarnished brass. The embossed metal worker's mark hails from a faraway military munitions factory.",
@@ -11986,6 +11994,30 @@
       "en": "Dull and grey, the runes carved on this phoenix-shaped idol are barely visible. Upon the base is etched \"Fear not death while flame burns in my heart.\" Yet no flame glows. Perhaps there is a way to light it?",
       "pl": "Posążek przedstawia feniksa wstającego z popiołów. Jest szary i matowy, a wyryte na nim runy są ledwie widoczne. Na podstawie wyryto „Nie lękam się śmierci, póki ogień w sercu mam.” Nie widać jednak żadnego ognia. Może uda się go jakoś rozpalić?"
     },
+    "questteabranda": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteabrandb": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteabrandc": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteacupbranda": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
+    },
+    "questteacupbrandb": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
+    },
+    "questteacupbrandc": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
+    },
     "questunilootrcdfwitcheye": {
       "en": "The eye is dim and dull; it's either dead or pretty depressed.",
       "pl": "Oko patrzy się mętnym, matowym wzrokiem – jest martwe albo przygnębione."
@@ -12902,13 +12934,25 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairblessedsmokecloud": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairblindingradiance": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairbreathingbubble": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
     "skillbookairchainlightning": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookaircursedelectricinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
     },
     "skillbookairdazingbolt": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -12918,15 +12962,31 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairelectricinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookairevasiveaura": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairfavourablewind": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairjellyfishskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookairlightning": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
     "skillbookairlightningbolt": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairmassbreathingbubbles": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -12942,6 +13002,10 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairsmokecover": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairsuperconductor": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
@@ -12954,6 +13018,26 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairvacuumaura": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairvacuumtouch": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairvaporize": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairwindwalker": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookearthacidinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
     "skillbookearthacidspores": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
@@ -12962,7 +13046,23 @@
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookearthcondense": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthcontamination": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthcorrosivespray": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthcorrosivetouch": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthdustblast": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -12978,13 +13078,29 @@
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookearthmassoilycarapace": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthmendmetal": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthoilycarapace": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookearthpoisondart": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthpoisoninfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookearthpoisonousskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookearthpoisonwave": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -13010,11 +13126,31 @@
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookearththrowdust": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthvenomcoating": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthvenomousaura": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthwormtremor": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookfireburnmyeyes": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirecorpseexplosion": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiredeploymasstraps": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -13029,6 +13165,10 @@
     "skillbookfirefirebrand": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirefireinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
     },
     "skillbookfirefireslug": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -13045,6 +13185,10 @@
     "skillbookfireflamingdaggers": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfireflamingskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookfireflamingtongues": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -13066,7 +13210,35 @@
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookfirelaunchexplosivetrap": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasscorpseexplosion": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasssabotage": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasterofsparks": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookfiremeteorshower": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirenecrofireinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookfiresabotage": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiresparkingswings": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -13262,11 +13434,23 @@
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwaterbloodstorm": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwaterchainheal": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwatercleansewounds": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwatercryogenicstasis": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatercryotherapy": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -13286,11 +13470,31 @@
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwaterhealingtears": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwatericebreaker": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookwatericefan": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatericeinfusion": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatericeskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
+    },
+    "skillbookwatermasscleansewounds": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatermasscryotherapy": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -13307,6 +13511,18 @@
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookwatersteamlance": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatervampirichunger": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatervampirichungeraura": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwaterwaterinfusion": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -15050,18 +15266,6 @@
       "en": "Pliant protection that bends and bolsters in equal measure.",
       "pl": "Sprężysta osłona – giętka, ale zarazem solidna."
     },
-    "armmageboots": {
-      "en": "Chainmail boots for stomping around in. You won't be quiet, but at least you won't stub your toes.",
-      "pl": "Buty kolcze do równego marszu. Nie sposób poruszać się w nich cichcem, ale przynajmniej nie poobijasz sobie palców."
-    },
-    "armmagegloves": {
-      "en": "Worn only by the most devout zealots in Rivellon. Each piece brings one closer to the Divine.",
-      "pl": "Elementy ubioru noszone tylko przez najpobożniejszych i najżarliwszych wyznawców w Rivellonie. Każda część przybliża właściciela do Boskiego."
-    },
-    "armmagelowerbody": {
-      "en": "Worn only by the most devout zealots in Rivellon. Each piece brings one closer to the Divine.",
-      "pl": "Elementy ubioru noszone tylko przez najpobożniejszych i najżarliwszych wyznawców w Rivellonie. Każda część przybliża właściciela do Boskiego."
-    },
     "armmagespookydjinnlowerbody": {
       "en": "Be the genie, embrace the supernatural powers."
     },
@@ -15162,9 +15366,6 @@
     },
     "armspookyghosthelm": {
       "en": "This robe will turn you into a ghost!"
-    },
-    "armspookymaskhelmet": {
-      "en": "Somehow, it's even heavier than it looks. It contains growls of grunts."
     },
     "armspookypumpkinhelmet": {
       "en": "Nothing special, just the head covering of a regular pumpkin."
@@ -16422,9 +16623,6 @@
     "confoodpaella": {
       "en": "An Elven dish prepared by simmering together chicken, seafood, rice, vegetables, and saffron and other seasonings."
     },
-    "confoodpeppera": {
-      "en": "Don't Eet the peppa. It is not sweeet. 'ou should not eet it."
-    },
     "confoodpieapplea": {
       "en": "The signature dessert of the Dukedom of Ferol, apple pie is commonly referred to as 'Ferol tart' by locals.",
       "pl": "Słynny deser księstwa Ferolu – placek jabłkowy przez miejscowych nazywany tartą ferolską."
@@ -16465,6 +16663,10 @@
     },
     "confoodsafranorangecake": {
       "en": "The signature dessert of the Dukedom of Safranberol, safran orange pie is commonly referred to as 'Safran tart' by locals."
+    },
+    "confoodsouppumpkina": {
+      "en": "Rich, creamy, and comfortingly warm.",
+      "pl": "Intensywna w smaku, kremowa i przyjemnie ciepła."
     },
     "confoodspookypeppercandy": {
       "en": "Don't Eet the peppa. It is not sweeet. 'ou should not eet it."
@@ -16641,6 +16843,10 @@
       "en": "The figure in the portrait is rendered with a careful hand. Its eyes seem to follow wherever you go.",
       "pl": "Postać na portrecie namalowano bardzo starannie. Wydaje się podążać za tobą wzrokiem."
     },
+    "conporridgea": {
+      "en": "Breakfast is the most important meal of the day. Eat up!",
+      "pl": "Śniadanie to najważniejszy posiłek dnia. Wcinaj!"
+    },
     "conporridgepotatoa": {
       "en": "Considered a beverage by the hale and suicidal Dwarves of the frozen north.",
       "pl": "Wśród krzepkich i zuchwałych krasnoludów z mroźnej północy uchodzi za napitek."
@@ -16782,10 +16988,6 @@
     "conpotionspookypoisonlargea": {
       "en": "'rink the Eealth Ootion. There is good 'aste in it. 'ou should 'rink it."
     },
-    "conpotionstardustboileda": {
-      "en": "This fortifying brew may reek of sour milk, but one gulp will grant you a minor resistance to all types of elemental magic.",
-      "pl": "Ten wzmacniający napój może i cuchnie skwaśniałym mlekiem, ale już jeden łyk zapewni ci niewielką odporność na wszelkie rodzaje magii żywiołów."
-    },
     "conpotionstoneskin": {
       "en": "| Stoneskin potion description |",
       "pl": "Mikstura, która sprawia, że od razu czujesz się cięższy – jak z kamienia."
@@ -16825,6 +17027,10 @@
       "en": "A charmed satchel capable of carrying far more brick-a-brack than most simple backpacks.",
       "pl": "Zaklęta torba mieszcząca w sobie więcej bibelotów niż większość prostych plecaków."
     },
+    "contbackpackjunk": {
+      "en": "A charmed satchel capable of carrying far more brick-a-brack than most simple backpacks.",
+      "pl": "Zaklęta torba mieszcząca w sobie więcej bibelotów niż większość prostych plecaków."
+    },
     "contbarrela": {
       "en": "Just a barrel.",
       "pl": "Po prostu beczka."
@@ -16856,10 +17062,6 @@
     "contbasket": {
       "en": "Fits one small to medium pet.",
       "pl": "Dla małego lub średniej wielkości zwierzaka."
-    },
-    "contcratemetal": {
-      "en": "| Protected by the Spy Master's Magic, this crate contain's an incredible amount of Death Fog and explosives. It can only be detonated on the Spy Master's Command |",
-      "pl": "Tę skrzynię, chronioną magią Księcia Cienia, wypełnia Trupia Mgła i materiały wybuchowe. Może zostać zdetonowana jedynie na rozkaz Księcia Cienia."
     },
     "contfoodbag": {
       "en": "A charmed food bag capable of carrying far more brick-a-brack than most simple backpacks."
@@ -17623,6 +17825,10 @@
       "en": "The lifeless, worm-like tail is stiff and hard. The animal's spirit has long fled this world.",
       "pl": "Ten pozbawiony życia, przypominający dżdżownicę ogon jest twardy i sztywny. Duch tego zwierzęcia dawno już opuścił ten świat."
     },
+    "doll": {
+      "en": "A hand-carved figurine of well-oiled Lapiterran wood. Those beady little eyes seem to follow you no matter where you place it.",
+      "pl": "Ręcznie rzeźbiona figurka z olejowanego lapiterrańskiego drewna. Jej oczka zdają się przeszywać cię spojrzeniem, niezależnie gdzie ją postawisz."
+    },
     "dominatemindskillbook": {
       "en": "|Summoning skills let you call temporary allies in battle and buff them|",
       "pl": "Biegłość przyzywania pozwala na wezwanie i wzmacnianie tymczasowych sojuszników podczas walki."
@@ -18203,6 +18409,14 @@
       "en": "A perfect, orange globe of possibilities.",
       "pl": "Idealna, pomarańczowa kula wszelkich możliwości."
     },
+    "foodpumpkinc": {
+      "en": "Useless.",
+      "pl": "Bezużyteczne."
+    },
+    "foodpumpkinpart": {
+      "en": "Someone's already pillaged this pumpkin's treasures.",
+      "pl": "Ktoś już splądrował skarby skryte w tej dyni."
+    },
     "foodroastedpork": {
       "en": "It's almost kind of cute, in a terribly morbid sort of way.",
       "pl": "Niemal uroczy – w makabryczny sposób."
@@ -18275,6 +18489,10 @@
     "fruitsalad": {
       "en": "A mixture of different types of chopped fruit served in syrup or juice."
     },
+    "furbarbarrelabeera": {
+      "en": "This metal-bound wood exudes the fine scent of ruby-red ale.",
+      "pl": "Okute metalem drewno zalatuje mocno czerwonym piwem."
+    },
     "furboilingpota2": {
       "en": "Use this boiling pot to make delicious food."
     },
@@ -18331,10 +18549,6 @@
     "furpoorovena2": {
       "en": "Crafters favortie oven. Use it for melting glass and your accesories. Also you can cook delicous food."
     },
-    "furraanaartableta": {
-      "en": "Use to read.",
-      "pl": "Otwórz, by przeczytać."
-    },
     "furspinningwheel2": {
       "en": "Crafters use this wheel for making threads."
     },
@@ -18382,10 +18596,6 @@
     },
     "gencraftballistaafire": {
       "en": "Blackring agents dropped care packages all around the world. Assembled siege ballista is indeed a powerful weapon for experienced war strategists. This Ballista is capable of fire attacks and creates a fire cloud surfaces on exploding area."
-    },
-    "genglass": {
-      "en": "| A pipe that allows smoking of herbmixes. |",
-      "pl": "Fajka, która umożliwia palenie mieszanek ziołowych."
     },
     "genmetal": {
       "en": "Put a lid on it!",
@@ -18583,14 +18793,6 @@
     },
     "griffsbrokenhorn": {
       "en": "A fine trophy to commemorate the slaughter of an innocent beast. It is broken but you can fix it."
-    },
-    "grngrenadelovea": {
-      "en": "Use to read and learn about crafting.",
-      "pl": "Użyj, by przeczytać i dowiedzieć się nieco o rzemiośle."
-    },
-    "grngrenademolotova": {
-      "en": "It's impossible to tell what illicit ingredients are mixed together within this old wine bottle. However, from the manner in which the bottle vibrates in your hands, it's fair to say the mixture is volatile indeed...",
-      "pl": "Trudno powiedzieć, jakie zakazane składniki wymieszano w tej starej butelce po winie. Jednak ze sposobu, w jaki drży w twoich rękach, można wywnioskować, że mieszanina jest doprawdy niestabilna..."
     },
     "grngrenadesmokebomba": {
       "en": "Smoke Bomb. Yes it is not fake, really! Just put it on ground."
@@ -21051,6 +21253,9 @@
       "en": "| Rune description |",
       "pl": "Rzeźbiona runa świeci i szumi od mocy."
     },
+    "mythicalangelwings": {
+      "en": "You have to love that cheery bleesing feeling as you fly..."
+    },
     "mythrilbar": {
       "en": "A strong, promising bar of iron, the core ingredient of any well-made steel.",
       "pl": "Obiecująca sztabka mocnego żelaza będąca podstawą dobrze zahartowanej stali."
@@ -22011,9 +22216,6 @@
       "en": "Instructions for crafting a scythe known as the 'Swornbreaker'.",
       "pl": "Instrukcja wykonania kosy zwanej Wiarołomem."
     },
-    "questblackroseelixir": {
-      "en": "Brewed with using dog tail. This potion gives permanent effects on cosumer until they die."
-    },
     "questfaceripper": {
       "en": "| Face ripper description |",
       "pl": "To paskudne urządzenie służy do usuwania nienaruszonych twarzy odpowiednich nieboszczyków. Zapewne zapytasz: „Po co?”. Osoby parające się odpowiednimi sztukami magicznymi używają ich do tworzenia masek zmiany kształtu."
@@ -22053,9 +22255,6 @@
     "questitemsbag": {
       "en": "A charmed quest items bag capable of carrying far more brick-a-brack than most simple backpacks."
     },
-    "questoilmachine": {
-      "en": "This machine has a complex system which consists of air pollution control, filtration, dye synthesis, drying, grindling-blendng, standardization and packging. At the end of his process it wll separate end product from solid waste."
-    },
     "questrcdfwitchpotion": {
       "en": "|This horrifying brew reeks of a disturbing bovine mix. It was prepared by the Witch in Driftwood Fields.|",
       "pl": "Ta potworna mikstura cuchnie dziwną krowią mieszanką. Przygotowała ją wiedźma z okolic Kłody."
@@ -22071,6 +22270,30 @@
     "questresurrectionidolinert": {
       "en": "Dull and grey, the runes carved on this phoenix-shaped idol are barely visible. Upon the base is etched \"Fear not death while flame burns in my heart.\" Yet no flame glows. Perhaps there is a way to light it?",
       "pl": "Posążek przedstawia feniksa wstającego z popiołów. Jest szary i matowy, a wyryte na nim runy są ledwie widoczne. Na podstawie wyryto „Nie lękam się śmierci, póki ogień w sercu mam.” Nie widać jednak żadnego ognia. Może uda się go jakoś rozpalić?"
+    },
+    "questteabranda": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteabrandb": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteabrandc": {
+      "en": "Steeped in water, it makes a highly-prized drink with earthy, calming properties.",
+      "pl": "Z dodatkiem odrobiny wody to wysoce ceniony napój o ziemistym smaku i właściwościach uspokajających."
+    },
+    "questteacupbranda": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
+    },
+    "questteacupbrandb": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
+    },
+    "questteacupbrandc": {
+      "en": "Best enjoyed near the hearth on a rainy day.",
+      "pl": "Najlepiej smakuje przy kominku w deszczowy dzień."
     },
     "questunilootrcdfwitcheye": {
       "en": "The eye is dim and dull; it's either dead or pretty depressed.",
@@ -23272,13 +23495,25 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairblessedsmokecloud": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairblindingradiance": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairbreathingbubble": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
     "skillbookairchainlightning": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookaircursedelectricinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
     },
     "skillbookairdazingbolt": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -23288,15 +23523,31 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairelectricinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookairevasiveaura": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairfavourablewind": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairjellyfishskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookairlightning": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
     "skillbookairlightningbolt": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairmassbreathingbubbles": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -23312,6 +23563,10 @@
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookairsmokecover": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookairsummonairrobot": {
       "en": "Companion skill books let you call temporary allies in battle and buff them."
     },
@@ -23324,6 +23579,22 @@
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
     "skillbookairtornado": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairvacuumaura": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairvacuumtouch": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairvaporize": {
+      "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookairwindwalker": {
       "en": "Aerotheurge Spells are Air-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności aeroturgiczne to zaklęcia wykorzystujące magię powietrza. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -23348,6 +23619,10 @@
     "skillbookcorpseharvester59blackringmirror": {
       "en": "This mirror shows inner side of the people."
     },
+    "skillbookearthacidinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
     "skillbookearthacidspores": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
@@ -23356,7 +23631,23 @@
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookearthcondense": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthcontamination": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthcorrosivespray": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthcorrosivetouch": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthdustblast": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -23372,13 +23663,29 @@
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookearthmassoilycarapace": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthmendmetal": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthoilycarapace": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookearthpoisondart": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthpoisoninfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookearthpoisonousskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookearthpoisonwave": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -23407,11 +23714,31 @@
     "skillbookearthsummontiger": {
       "en": "Companion skill books let you call temporary allies in battle and buff them."
     },
+    "skillbookearththrowdust": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthvenomcoating": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookearthvenomousaura": {
+      "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookearthwormtremor": {
       "en": "Geomancer Spells are Earth-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności geomantyczne to zaklęcia czerpiące z magii ziemi. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookfireburnmyeyes": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirecorpseexplosion": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiredeploymasstraps": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -23426,6 +23753,10 @@
     "skillbookfirefirebrand": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirefireinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
     },
     "skillbookfirefireslug": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -23442,6 +23773,10 @@
     "skillbookfireflamingdaggers": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfireflamingskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
     },
     "skillbookfireflamingtongues": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -23463,7 +23798,35 @@
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
+    "skillbookfirelaunchexplosivetrap": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasscorpseexplosion": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasssabotage": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiremasterofsparks": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
     "skillbookfiremeteorshower": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfirenecrofireinfusion": {
+      "en": "Summoning skills let you call temporary allies in battle and buff them.",
+      "pl": "Umiejętność przyzywania pozwala ci wezwać na pomoc i wzmocnić tymczasowych sojuszników, którzy wesprą cię w walce."
+    },
+    "skillbookfiresabotage": {
+      "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
+    },
+    "skillbookfiresparkingswings": {
       "en": "Pyrokinetic Spells are Fire-based spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności pirokinektyczne to zaklęcia wykorzystujące magię ognia. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się tej umiejętności."
     },
@@ -23800,11 +24163,23 @@
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwaterbloodstorm": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwaterchainheal": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwatercleansewounds": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwatercryogenicstasis": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatercryotherapy": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -23824,11 +24199,31 @@
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
+    "skillbookwaterhealingtears": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
     "skillbookwatericebreaker": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookwatericefan": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatericeinfusion": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatericeskin": {
+      "en": "Polymorph skills allow you to reshape your body as well as the bodies of your enemies.",
+      "pl": "Umiejętność polimorfii umożliwia ci zmianę kształtu własnego, a także nieprzyjaciół."
+    },
+    "skillbookwatermasscleansewounds": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatermasscryotherapy": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
       "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
@@ -23850,6 +24245,18 @@
     },
     "skillbookwatersummoncrocodile": {
       "en": "Companion skill books let you call temporary allies in battle and buff them."
+    },
+    "skillbookwatervampirichunger": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwatervampirichungeraura": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
+    },
+    "skillbookwaterwaterinfusion": {
+      "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
+      "pl": "Umiejętności hydrozoficzne to zaklęcia wykorzystujące magię wody. Udoskonala je wysoka inteligencja. Przeczytaj tę książkę, by nauczyć się umiejętności."
     },
     "skillbookwaterwinterblast": {
       "en": "Hydrosophist Spells are Water-based magic spells. High intelligence improves these spells. Read this book to learn this spell.",
@@ -25855,14 +26262,23 @@
     "wpnstaffshadow": {
       "en": "This sturdy staff appears to be carved from still-living wood; tender shoots and fresh green leaves bud along its length. A green aura emanates from the tip."
     },
+    "wpnstaffuniqueair": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique air staff is as well-crafted as it is powerful."
+    },
     "wpnstaffuniqueearth": {
       "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique earth staff is as well-crafted as it is powerful."
+    },
+    "wpnstaffuniquefire": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique fire staff is as well-crafted as it is powerful."
     },
     "wpnstaffuniquephysical": {
       "en": "This sturdy staff appears to be carved from still-living wood; tender shoots and fresh green leaves bud along its length. A blue-red aura emanates from the tip."
     },
     "wpnstaffuniquepoison": {
       "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique poison staff is as well-crafted as it is powerful."
+    },
+    "wpnstaffuniquewater": {
+      "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile unique water staff is as well-crafted as it is powerful."
     },
     "wpnsword1hair": {
       "en": "A long sword that exudes command from its gilt-edged hilt to the tip of the tapered blade.",
@@ -26008,10 +26424,6 @@
     "wpnuniquestaffstar": {
       "en": "Whittled from Lucullan timber and wound with bright silken ribbon, this versatile staff is as well-crafted as it is powerful.",
       "pl": "Ten uniwersalny kostur, wystrugany z drewna pochodzącego z Lasu Luculli i owinięty jaskrawą, jedwabną wstążką, to solidnie wykonany i potężny przedmiot."
-    },
-    "wpnuniqueswordice": {
-      "en": "Legends say this ancient weapon could even defeat the mighty Braccus Rex.",
-      "pl": "Legendy powiadają, że ten starożytny oręż mógłby pokonać nawet potężnego Braccusa Reksa."
     },
     "wpnwandair": {
       "en": "This wand whistles delicately if you wave it in the air-- the song of one at home with the wind.",

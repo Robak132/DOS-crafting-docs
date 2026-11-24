@@ -84,7 +84,8 @@ export async function generateData(outputDirectory = "dist") {
     // Only now: the groups of upgrade targets are for upgrades alone, not for ingredients sharing their name.
     const upgradeGroups = linkUpgradeTargets(data, groups, inventory)
     // From here on an upgrade is an item like any other: the recipes giving it join the catalog's own.
-    data.recipes = [...data.recipes, ...mergeUpgradeTargets(data.upgrades!, groups, upgradeGroups)]
+    const upgradeRecipes = mergeUpgradeTargets(data.upgrades!, groups, upgradeGroups)
+    data.recipes = [...data.recipes, ...mergeSizes(upgradeRecipes, groups)]
     nameUpgradeTargets(data.recipes, groups, upgradeGroups, targetNames)
     delete data.upgrades
     // Slot groups joined into a wider one are left without a use.
@@ -293,6 +294,74 @@ function joinedUpgrade(
   })
   return first.with({
     ingredients: [target, ...first.consumedIngredients()],
+    sourceRecipeIds: rows.flatMap((row) => row.sourceRecipeIds ?? [row.id]),
+  })
+}
+
+/** Size words of ingredient groups ("#Small-Rune", "#Mistyczna mała runa") in English and Polish. */
+const SIZE_WORDS = /\b(small|medium|large|giant)\b[\s-]*/i
+const SIZE_WORDS_PL = /(?<![\p{L}])(mała|średnia|duża|ogromna)(?![\p{L}])\s*/iu
+
+/**
+ * Upgrades giving the same boost to the same target with ingredients that differ only in their size
+ * ("#Small-Rune" … "#Giant-Rune") joined into one recipe taking a group of every size.
+ */
+function mergeSizes(recipes: Recipe[], groups: ItemGroups): Recipe[] {
+  const sized = (row: Recipe) => {
+    const found = row.consumedIngredients().filter((item) => item.groupId && SIZE_WORDS.test(item.name))
+    return found.length === 1 ? found[0] : undefined
+  }
+  const joined = new Map<string, Recipe[]>()
+  const order: Array<Recipe | string> = []
+  for (const row of recipes) {
+    const size = row.isUpgrade ? sized(row) : undefined
+    if (!size) {
+      order.push(row)
+      continue
+    }
+    const key = JSON.stringify([
+      row.result.slug,
+      ...row.ingredients.map((item) =>
+        item === size ? item.name.replace(SIZE_WORDS, "") : [item.slug ?? item.name, item.groupId, item.quantity],
+      ),
+      row.requirements,
+      row.remarks,
+      row.source,
+      [...row.tags].sort(),
+    ])
+    const rows = joined.get(key)
+    if (rows) rows.push(row)
+    else {
+      joined.set(key, [row])
+      order.push(key)
+    }
+  }
+  return order.map((entry) => (typeof entry === "string" ? joinedSizes(joined.get(entry)!, sized, groups) : entry))
+}
+
+/** One recipe for upgrades differing only in the size of one ingredient, taking a group of every size. */
+function joinedSizes(rows: Recipe[], sized: (row: Recipe) => Item | undefined, groups: ItemGroups): Recipe {
+  const [first] = rows
+  if (rows.length === 1) return first
+  const item = sized(first)!
+  const members = new Map<string, Item>()
+  for (const row of rows)
+    for (const member of groups[sized(row)!.groupId!].members) members.set(member.slug ?? member.name, member)
+  // "#Small-Rune-Of-Power" reads "Rune of Power".
+  const plain = Item.displayName(item.name.replace(SIZE_WORDS, "")).replace(/ Of /g, " of ")
+  const name = `${plain} (any size)`
+  const pl = item.namePl && Item.displayName(item.namePl.replace(SIZE_WORDS_PL, ""))
+  const namePl = pl ? `${pl.charAt(0).toUpperCase()}${pl.slice(1)} (dowolny rozmiar)` : undefined
+  const group = new ItemGroup({
+    id: TextKey.item(name),
+    name,
+    members: [...members.values()].sort((a, b) => a.name.localeCompare(b.name)),
+  })
+  const key = freeGroupKey(groups, group)
+  groups[key] = new ItemGroup({ ...group, id: key })
+  const joinedItem = item.with({ name, namePl, groupId: key, groupSize: group.members.length })
+  return first.with({
+    ingredients: first.ingredients.map((entry) => (entry === item ? joinedItem : entry)),
     sourceRecipeIds: rows.flatMap((row) => row.sourceRecipeIds ?? [row.id]),
   })
 }
